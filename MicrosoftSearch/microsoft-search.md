@@ -5,7 +5,8 @@ author: anfowler
 manager: mnirkhe
 ms.date: 9/20/2018
 ms.audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
+layout: LandingPage
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -15,69 +16,168 @@ search.appverid:
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: "Microsoft Search is an enterprise search experience that increases productivity and saves time by delivering more relevant search results for your organization"
 ---
+# Microsoft Search in Bing
 
-# Microsoft Search
+<ul class="panelContent cardsW cols cols2">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/a40fcb56-f0f9-4924-ae36-eb0a370665e3.png" alt="People in an office, one pointing at something on a screen." />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h2>Why Microsoft Search in Bing</h2>
+                        <p>Get an enterprise search experience that increases productivity and saves time by delivering more relevant search results for your organization</p>
+                        <p><a href="overview/why-microsoft-search.md">Find out how</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
 
-![People in an office, one pointing at something on a screen.](media/a40fcb56-f0f9-4924-ae36-eb0a370665e3.png)
-  
-## Why Microsoft Search in Bing
+<h2>Featured topics</h2>
 
-Get an enterprise search experience that increases productivity and saves time by delivering more relevant search results for your organization
-  
-[Find out how](overview/why-microsoft-search.md)
-  
-## Featured topics
+<ul class="panelContent cardsW">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/651172f9-f9b6-4fbe-89f3-8adf6450cd7f.png" alt="Microsoft Search in Bing features" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Key features</h3>
+                        <p>See which features are available for admins and users, including what you'll find when you search</p>
+                        <p><a href="overview/features.md">Find out more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/60a078b4-166d-42f4-a3b9-91c04c9001f0.png" alt="Admin quick set up" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Admin quick set up</h3>
+                        <p>Find out how to turn on Microsoft Search in Bing and configure it for your organization in four easy steps</p>
+                        <p><a href="setup/quick-set-up.md">Start now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/d696a83a-6322-477a-befd-4ad102b8204d.png" alt="Frequently asked questions about Microsoft Search in Bing" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>FAQs</h3>
+                        <p>Get answers to some of the commonly asked questions about Microsoft Search in Bing</p>
+                        <p><a href="faqs.md">Browse the FAQ</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
 
-![Microsoft Search in Bing features](media/651172f9-f9b6-4fbe-89f3-8adf6450cd7f.png)
-  
- **Key features**
-  
-See which features are available for admins and users, including what you'll find when you search
-  
-[Find out more](overview/features.md)
-  
-![Admin quick set up](media/60a078b4-166d-42f4-a3b9-91c04c9001f0.png)
-  
- **Admin quick set up**
-  
-Find out how to turn on Microsoft Search in Bing and configure it for your organization in four easy steps
-  
-[Start now](setup/quick-set-up.md)
-  
-![Frequently asked questions about Microsoft Search in Bing](media/d696a83a-6322-477a-befd-4ad102b8204d.png)
-  
- **FAQs**
-  
-Get answers to some of the commonly asked questions about Microsoft Search in Bing
-  
-[Browse the FAQ](faqs.md)
-  
-## Use Microsoft Search in Bing
+<ul class="panelContent cardsW cols cols2">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h2>Use Microsoft Search in Bing</h2>
+                        <p>Microsoft Search in Bing is a simple, fast, and safer way to find information, be more productive, and work smarter</p>
+                        <p><a href="use/use-microsoft-search.md">Find out how</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/c8456838-c6db-41f7-9e84-eebfd9c5b0b8.png" alt="How work results appear on Bing" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
 
-Microsoft Search in Bing is a simple, fast, and safer way to find information, be more productive, and work smarter
-  
-[Find out how](use/use-microsoft-search.md)
-  
-![How work results appear on Bing](media/c8456838-c6db-41f7-9e84-eebfd9c5b0b8.png)
-  
-## More info
-
-[Security](overview/security.md)
-  
-[Requirements](overview/requirements.md)
-  
-[About the Admin portal](overview/about-the-admin-portal.md)
-  
-[Quick set up](setup/quick-set-up.md)
-  
-[Connected services](overview/connected-services.md)
-  
-[Configure Microsoft Search in Bing](setup/set-up-microsoft-search.md)
-  
-[Create bookmarks](bookmarks/create-bookmarks.md)
-  
-[Create Q&amp;As](q-as/create-q-as.md)
-  
-[Add users](setup/add-users.md)
-  
-
+<h2>More info</h2>
+<ul class="panelContent cardsW">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <p><a href="overview/security.md">Security</a></p>
+                        <p><a href="overview/requirements.md">Requirements</a></p>  
+                        <p><a href="overview/about-the-admin-portal.md">About the Admin portal</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <p><a href="setup/quick-set-up.md">Quick set up</a></p>
+                        <p><a href="overview/connected-services.md">Connected services</a></p>
+                        <p><a href="setup/setup.md">Configure Microsoft Search in Bing</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <p><a href="bookmarks/create-bookmarks.md">Create bookmarks</a></p>
+                        <p><a href="qas/create-qas.md">Create Q&As</a></p>
+                        <p><a href="setup/add-users.md">Add users</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>  
