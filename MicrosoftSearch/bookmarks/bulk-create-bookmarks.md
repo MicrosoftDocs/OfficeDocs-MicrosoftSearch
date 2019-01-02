@@ -3,7 +3,7 @@ title: "Bulk create bookmarks"
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
-ms.date: 9/11/2018
+ms.date: 09/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration

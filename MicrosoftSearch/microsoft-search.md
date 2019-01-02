@@ -3,7 +3,7 @@ title: "Microsoft Search"
 ms.author: anfowler
 author: anfowler
 manager: mnirkhe
-ms.date: 9/20/2018
+ms.date: 09/20/2018
 ms.audience: Admin
 ms.topic: landing-page
 layout: LandingPage

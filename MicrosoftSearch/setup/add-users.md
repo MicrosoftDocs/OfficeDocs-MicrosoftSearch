@@ -3,7 +3,7 @@ title: "Add users"
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
-ms.date: 9/12/2018
+ms.date: 09/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration

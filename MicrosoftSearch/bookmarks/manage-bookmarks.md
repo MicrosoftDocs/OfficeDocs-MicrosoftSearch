@@ -3,7 +3,7 @@ title: "Manage bookmarks"
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
-ms.date: 9/8/2018
+ms.date: 09/8/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
