@@ -1,6 +1,6 @@
 ---
 title: "Use the Insights Dashboard"
-ms.author: anfowler
+ms.author: cmcatee-MSFT
 author: anfowler
 manager: mnirkhe
 ms.date: 9/11/2018
