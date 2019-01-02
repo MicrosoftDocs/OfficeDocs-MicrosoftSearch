@@ -161,7 +161,7 @@ description: "Microsoft Search is an enterprise search experience that increases
                     <div class="cardText">
                         <p><a href="setup/quick-set-up.md">Quick set up</a></p>
                         <p><a href="overview/connected-services.md">Connected services</a></p>
-                        <p><a href="setup/setup.md">Configure Microsoft Search in Bing</a></p>
+                        <p><a href="setup/set-up-microsoft-search.md">Set up Microsoft Search</a></p>
                     </div>
                 </div>
             </div>
