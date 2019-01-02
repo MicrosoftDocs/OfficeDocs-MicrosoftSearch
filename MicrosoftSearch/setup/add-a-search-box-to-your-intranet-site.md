@@ -24,7 +24,7 @@ For fast access to relevant search suggestions and work results, add a Microsoft
 
 You need to add two elements to the page: a container for the search box and the script that powers it.
   
-```
+```html
 <div id="bfb_searchbox"></div>
 <script>
     var bfbSearchBoxConfig = {
@@ -56,7 +56,7 @@ To help users search faster, when the page or site loads place the cursor in the
 
 If embedding a script isn't an option for the site, use an iFrame to add the search box:
   
-```
+```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
 
 ```
