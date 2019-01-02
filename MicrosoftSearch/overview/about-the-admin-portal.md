@@ -30,7 +30,7 @@ The Microsoft Search in Bing Admin portal is organized around these areas:
     
     Create promoted results to help people find important tools and resources within the organization by placing them at the top of Bing results
     
-- [Q&As](../q-as/create-and-manage-qas.md)
+- [Q&As](../qas/create-and-manage-qas.md)
     
     Answer the most frequently asked questions in your organization
     

@@ -24,11 +24,11 @@ description: "Key features of Microsoft Search in Bing for admins and end users 
     
     Find sites, tools, and other information within your enterprise
     
-- [Enterprise Q&As](../q-as/create-and-manage-qas.md)
+- [Enterprise Q&As](../qas/create-and-manage-qas.md)
     
     Answer the most frequently asked questions in your organization
     
-- Import and export [bookmarks](../bookmarks/bulk-create-bookmarks.md) and [Q&As](../q-as/bulk-create-qas.md)
+- Import and export [bookmarks](../bookmarks/bulk-create-bookmarks.md) and [Q&As](../qas/bulk-create-qas.md)
     
     Streamline creating and updating with bulk importing, exporting, and editing
     

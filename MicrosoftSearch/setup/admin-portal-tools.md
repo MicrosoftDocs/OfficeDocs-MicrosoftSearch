@@ -22,7 +22,7 @@ The Microsoft Search in Bing Admin portal includes tools and resources designed 
   
 - Content creator browser extension
     
-    Available for admins and editors, use the Chrome or Edge extension to easily [create bookmarks](../bookmarks/create-bookmarks.md) and [Q&As](../q-as/create-qas.md) simply by going to a site or page. 
+    Available for admins and editors, use the Chrome or Edge extension to easily [create bookmarks](../bookmarks/create-bookmarks.md) and [Q&As](../qas/create-qas.md) simply by going to a site or page. 
     
 - Microsoft Search in Bing search extension
     

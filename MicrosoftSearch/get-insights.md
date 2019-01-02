@@ -70,6 +70,6 @@ Easy-to-read graphs in the Impression distribution by result type card show data
   
 [Creating and managing bookmarks](bookmarks/create-and-manage-bookmarks.md)
   
-[Creating and managing Q&As](q-as/create-and-manage-qas.md)
+[Creating and managing Q&As](qas/create-and-manage-qas.md)
   
 

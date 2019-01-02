@@ -98,6 +98,6 @@ Id is a unique identifier for each location and should never be edited. The Last
   
 [Manage bookmarks](../bookmarks/manage-bookmarks.md)
   
-[Manage Q&As](../q-as/manage-qas.md)
+[Manage Q&As](../qas/manage-qas.md)
   
 

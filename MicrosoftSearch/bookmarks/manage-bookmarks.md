@@ -104,6 +104,6 @@ Id is a unique identifier for each bookmark and should never be edited. The Last
   
 [Integrate PowerApps](integrate-powerapps.md)
   
-[Creating and managing Q&As](../q-as/create-and-manage-qas.md)
+[Creating and managing Q&As](../qas/create-and-manage-qas.md)
   
 

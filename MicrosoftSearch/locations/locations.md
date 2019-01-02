@@ -62,6 +62,6 @@ In the Admin portal, you can view locations by their current status:
 
 [Creating and managing bookmarks](../bookmarks/create-and-manage-bookmarks.md)
   
-[Creating and managing Q&As](../q-as/create-and-manage-qas.md)
+[Creating and managing Q&As](../qas/create-and-manage-qas.md)
   
 
