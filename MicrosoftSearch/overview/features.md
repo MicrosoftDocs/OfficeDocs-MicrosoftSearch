@@ -1,0 +1,87 @@
+---
+title: "Features of Microsoft Search"
+ms.author: anfowler
+author: anfowler
+manager: mnirkhe
+ms.date: 12/11/2018
+ms.audience: Admin
+ms.topic: reference
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- BFB160
+- MET150
+- MOE150
+ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
+description: "Key features of Microsoft Search in Bing for admins and end users include bookmarks, Q&amp;As, and management and data insights"
+---
+
+# Features of Microsoft Search
+
+## Key admin features include:
+
+- [Enterprise bookmarks](../bookmarks/create-and-manage-bookmarks.md)
+    
+    Find sites, tools, and other information within your enterprise
+    
+- [Enterprise Q&amp;As](../q-as/create-and-manage-q-as.md)
+    
+    Answer the most frequently asked questions in your organization
+    
+- Import and export [bookmarks](../bookmarks/bulk-create-bookmarks.md) and [Q&amp;As](../q-as/bulk-create-q-as.md)
+    
+    Streamline creating and updating with bulk importing, exporting, and editing
+    
+- [Management](../setup/set-up-microsoft-search.md)
+    
+    Configure, create content, and define search keywords and phrases
+    
+- [Users and permissions](../setup/add-users.md)
+    
+    Your Global Administrator or Microsoft Search in Bing administrator authorizes additional admins who manage the Microsoft Search in Bing configuration, editors who create content, and end users who have access to Microsoft Search in Bing
+    
+- [Analytics ](../get-insights.md) Understand how your organization is using Microsoft Search in Bing 
+    
+## Key end-user features include:
+
+- [People](../use/find-people-and-groups.md)
+    
+    Find people and understand their role within the company, what they're working on, and ways to contact them
+    
+- [Organizational charts](../use/find-people-and-groups.md)
+    
+    Understand a person's place within the company and easily browse their peers, management, and direct reports
+    
+- [Files](../use/find-files.md)
+    
+    Find contextual and relevant files saved on SharePoint and OneDrive for Business
+    
+- [Office 365 groups](../use/find-people-and-groups.md)
+    
+    Find a group by its name or members, explore groups a person belongs to, and browse shared content
+    
+- [Resources and tools](../use/find-resources-tools-and-more.md)
+    
+    Get links to internal and external resources, tools, and more to easily find the information you need
+    
+- [SharePoint sites](../use/find-sharepoint-sites.md)
+    
+    Search for a site by name or see results for a person or group
+    
+- [Teams and Yammer conversations](../use/find-conversations.md)
+    
+    Find contextual and relevant results from public and group conversations
+    
+- First-run experience
+    
+    The first time a user signs in to Microsoft Search in Bing, they'll get information about using it and the types of work results they'll find when they search
+    
+## See also
+
+[Why Microsoft Search in Bing](why-microsoft-search.md)
+  
+[Security for Microsoft Search in Bing](security.md)
+  
+[Administering Microsoft Search in Bing](https://support.office.com/article/58cb3d89-b46c-45c1-91a2-21b81c1f0c33.aspx)
+  
+

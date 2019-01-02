@@ -1,0 +1,108 @@
+---
+title: "Manage Q&amp;As"
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: mnirkhe
+ms.date: 12/18/2018
+ms.audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- BFB160
+- MET150
+- MOE150
+ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
+description: "Find and update answers individually or use  available Microsoft Search in Bing tools to edit them all at once"
+---
+
+# Manage Q&amp;As
+
+Over time, you may need to update a Q&amp;A's status and content to keep it relevant.
+  
+## Filter Q&amp;As
+
+Use the filter option in the upper-right corner of the Q&amp;As page to find Q&amp;As by date and who modified them. For example, set the date slider to 30 days and select an admin or editor to see the list of Q&amp;As they've created or changed in that time.
+  
+## Change Q&amp;A content or settings
+
+1. Go to the Microsoft Search in Bing Admin portal
+    
+2. In the navigation pane, click **Q&amp;As**
+    
+3. To find a Q&amp;A, search, filter, or click a Q&amp;A status to narrow your results
+    
+4. To change or update a Q&amp;A, click the title
+    
+5. Make any changes or updates to the content or settings and preview how they'll appear
+    
+6. Click **Save**
+    
+## Bulk export and edit Q&amp;As
+
+Never edit data in these fields:
+  
+- Id
+    
+- Last Modified
+    
+- Last Modified By
+    
+Id is a unique identifier for each Q&amp;A and should never be edited. The Last Modified and Last Modified By fields should only be used to sort and find Q&amp;As.
+  
+1. If you want to export a subset of your Q&amp;As, filter them
+    
+2. In the upper-right corner of the Q&amp;As page, click **Export**
+    
+3. Save or open the .csv file
+    
+4. Edit data in any of these fields:
+    
+  - Question
+    
+  - URL
+    
+  - Keywords
+    
+  - State
+    
+  - Answer Description
+    
+  - Reserved Keywords
+    
+  - Start Date
+    
+  - End Date
+    
+  - Country/Region
+    
+  - Groups
+    
+  - Device&amp;OS
+    
+  - Targeted Variations
+    
+5. Save the .csv file
+    
+6. In the upper-right corner of the Q&amp;As page, click **Import**
+    
+7. In the Import Q&amp;As **** pane, click **Browse** and select the edited .csv file 
+    
+8. Click **Import**
+    
+You'll get an error if any required data is missing or invalid. Depending on the error, a log file may be generated with more information about the rows and columns that need to be corrected. Make any necessary edits, and try importing the file again.
+  
+> [!NOTE]
+> Until all errors are resolved, you can't create or edit any Q&amp;As. 
+  
+Not all fields are required and required fields vary depending on the Q&amp;A state. Based on the state field, Q&amp;As will be saved as draft, suggested, scheduled, or they will be published automatically. Find out more about required and recommended fields in [create Q&amp;As](create-q-as.md).
+  
+## See also
+
+[Creating and managing Q&amp;As](create-and-manage-q-as.md)
+  
+[Create Q&amp;As](create-q-as.md)
+  
+[Bulk create Q&amp;As](bulk-create-q-as.md)
+  
+

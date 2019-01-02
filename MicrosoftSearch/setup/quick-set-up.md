@@ -1,0 +1,89 @@
+---
+title: "Quick set up for Microsoft Search in Bing"
+ms.author: anfowler
+author: anfowler
+manager: mnirkhe
+ms.date: 12/18/2018
+ms.audience: Admin
+ms.topic: get-started-article
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- BFB160
+- MET150
+- MOE150
+ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
+description: "Learn about the four easy steps needed to enable and use Microsoft Search in Bing."
+---
+
+# Quick set up for Microsoft Search in Bing
+
+Save time by bringing the best of the web and work to your organization.
+  
+## Step 1: Turn on Microsoft Search
+
+1. On the navigation menu in the Office 365 admin center, go to **Settings** \> **Services &amp; add-ins**
+    
+2. Click the **Microsoft Search** service 
+    
+3. In the right pane, turn on **Let People in your company use Microsoft Search**
+    
+4. Click **Save**
+    
+5. Under Manage company experience, click **Launch the Microsoft Search Administration Tool now to manage your organization's search experience**
+  
+This will take you to the Microsoft Search Admin portal to complete the remaining set-up steps.
+    
+## Step 2: Enable Connected services
+
+Get a full enterprise search experience that curates information across different Microsoft services.
+  
+1. Go to the [Microsoft Search Admin portal](https://go.microsoft.com/fwlink/?linkid=856439)
+    
+2. In the navigation pane, click **Connected services**
+    
+    For information about the content associated with each connected service, see [Connected services](../overview/connected-services.md).
+    
+3. For each service you want to connect, click **On**
+    
+    People search may take up to 48 hours to activate.
+    
+## Step 3: Customize Content settings
+
+Content settings ensure a familiar look and feel for your work results. 
+  
+1. In the navigation pane, click **Content settings**
+    
+2. For details about each setting, see [Content settings](content-settings.md)
+    
+## Step 4: Import Best Bets as suggested bookmarks
+
+If your organization has Best Bets set up in SharePoint, you can easily import them into Microsoft Search. The import tool currently supports sharepoint.com and sharepoint.com/search site collections. 
+  
+1. In the navigation pane, click **Tools**
+    
+2. For the Import SharePoint Promoted Result Query Rules as bookmarks tool, click **Import**
+    
+    While importing, a Scheduled status appears. The required time varies based on the number of Best Bets you're importing.
+    
+3. For details about this, see [Admin portal tools](admin-portal-tools.md)
+    
+After you complete this quick setup and [add users](add-users.md), they can go to Bing.com and search for work results. 
+  
+## How do I get to the Microsoft Search Admin portal?
+
+To get to the Admin portal at any time:
+  
+- Go to the [Explore Microsoft Search](https://go.microsoft.com/fwlink/?linkid=2017806) page and click **Admin login**
+    
+- In the Office 365 admin center, in the left menu, go to **Admin centers** \> **Microsoft Search**
+    
+## See also
+
+[Administering Microsoft Search in Bing](https://support.office.com/article/58cb3d89-b46c-45c1-91a2-21b81c1f0c33.aspx)
+  
+[About the Microsoft Search in Bing Admin portal](../overview/about-the-admin-portal.md)
+  
+[Configuring Microsoft Search in Bing](set-up-microsoft-search.md)
+  
+
