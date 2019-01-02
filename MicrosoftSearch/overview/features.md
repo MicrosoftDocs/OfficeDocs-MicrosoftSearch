@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
-description: "Key features of Microsoft Search in Bing for admins and end users include bookmarks, Q&amp;As, and management and data insights"
+description: "Key features of Microsoft Search in Bing for admins and end users include bookmarks, Q&As, and management and data insights"
 ---
 
 # Features of Microsoft Search
@@ -24,11 +24,11 @@ description: "Key features of Microsoft Search in Bing for admins and end users 
     
     Find sites, tools, and other information within your enterprise
     
-- [Enterprise Q&amp;As](../q-as/create-and-manage-q-as.md)
+- [Enterprise Q&As](../q-as/create-and-manage-qas.md)
     
     Answer the most frequently asked questions in your organization
     
-- Import and export [bookmarks](../bookmarks/bulk-create-bookmarks.md) and [Q&amp;As](../q-as/bulk-create-q-as.md)
+- Import and export [bookmarks](../bookmarks/bulk-create-bookmarks.md) and [Q&As](../q-as/bulk-create-qas.md)
     
     Streamline creating and updating with bulk importing, exporting, and editing
     

@@ -20,15 +20,15 @@ description: "Analyze metrics and manage content from the easy-to-use dashboard 
 
 Get data insights and see how users are engaging with your results. User the Admin portal Dashboard to:
   
-- See how many bookmarks and Q&amp;As have been published, scheduled, or suggested
+- See how many bookmarks and Q&As have been published, scheduled, or suggested
     
 - See impressions for top search queries that show work results
     
-- Analyze impression distributions for bookmarks and Q&amp;As
+- Analyze impression distributions for bookmarks and Q&As
     
-## Get details about bookmarks and Q&amp;As
+## Get details about bookmarks and Q&As
 
-Use the Dashboard to see bookmark or Q&amp;A totals by status:
+Use the Dashboard to see bookmark or Q&A totals by status:
   
 - Published: The number of published results that are available to users
     
@@ -36,13 +36,13 @@ Use the Dashboard to see bookmark or Q&amp;A totals by status:
     
 - Suggested: The number of suggestions from users
     
-Bookmarks and Q&amp;A insight cards in the Dashboard also provide easy access to common tasks:
+Bookmarks and Q&A insight cards in the Dashboard also provide easy access to common tasks:
   
-- To view bookmark or Q&amp;A results, click Bookmarks or Q&amp;As on the card title
+- To view bookmark or Q&A results, click Bookmarks or Q&As on the card title
     
-- To add a bookmark or Q&amp;A, click the create option
+- To add a bookmark or Q&A, click the create option
     
-- To bulk add bookmarks or Q&amp;As, click the import option
+- To bulk add bookmarks or Q&As, click the import option
     
 ## Review top search queries
 
@@ -70,6 +70,6 @@ Easy-to-read graphs in the Impression distribution by result type card show data
   
 [Creating and managing bookmarks](bookmarks/create-and-manage-bookmarks.md)
   
-[Creating and managing Q&amp;As](q-as/create-and-manage-q-as.md)
+[Creating and managing Q&As](q-as/create-and-manage-qas.md)
   
 

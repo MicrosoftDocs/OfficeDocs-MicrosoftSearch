@@ -98,6 +98,6 @@ From the Tools section of the Admin portal, download and install the Content cre
   
 [Integrate PowerApps](integrate-powerapps.md)
   
-[Creating and managing Q&amp;As](../q-as/create-and-manage-q-as.md)
+[Creating and managing Q&As](../q-as/create-and-manage-qas.md)
   
 

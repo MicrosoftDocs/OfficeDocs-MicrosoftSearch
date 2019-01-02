@@ -24,13 +24,13 @@ The Microsoft Search in Bing Admin portal is organized around these areas:
   
 - [Dashboard](../get-insights.md)
     
-    Get a quick overview of bookmark and Q&amp;A results, see top search queries, and how your results are performing
+    Get a quick overview of bookmark and Q&A results, see top search queries, and how your results are performing
     
 - [Bookmarks](../bookmarks/create-and-manage-bookmarks.md)
     
     Create promoted results to help people find important tools and resources within the organization by placing them at the top of Bing results
     
-- [Q&amp;As](../q-as/create-and-manage-q-as.md)
+- [Q&As](../q-as/create-and-manage-qas.md)
     
     Answer the most frequently asked questions in your organization
     

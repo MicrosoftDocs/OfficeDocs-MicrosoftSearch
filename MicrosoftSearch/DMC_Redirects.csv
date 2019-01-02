@@ -11,13 +11,13 @@ why-microsoft-search, 38569f03-db18-49ab-96ef-213a1f410935, $$CURRENTPATH$/38569
 about-microsoft-search, b453e6f0-10cf-4384-9914-241f425cd5f9, $$CURRENTPATH$/b453e6f0-10cf-4384-9914-241f425cd5f9, $$NEWPATH$$/use/about-microsoft-search
 bulk-create-bookmarks, def300e7-103c-4e92-a062-28ffa27561d7, $$CURRENTPATH$/def300e7-103c-4e92-a062-28ffa27561d7, $$NEWPATH$$/bookmarks/bulk-create-bookmarks
 user-adoption-guide, 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7, $$CURRENTPATH$/9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7, $$NEWPATH$$/user-adoption-guide
-create-q-as, d432b9d9-3792-47a0-9a13-30a1a83caabc, $$CURRENTPATH$/d432b9d9-3792-47a0-9a13-30a1a83caabc, $$NEWPATH$$/q-as/create-q-as
+create-qas, d432b9d9-3792-47a0-9a13-30a1a83caabc, $$CURRENTPATH$/d432b9d9-3792-47a0-9a13-30a1a83caabc, $$NEWPATH$$/qas/create-qas
 test-single-sign-on, a220c1bf-7cee-448a-90a3-310284d03e81, $$CURRENTPATH$/a220c1bf-7cee-448a-90a3-310284d03e81, $$NEWPATH$$/setup/test-single-sign-on
-q-as, a74ef7c9-9cef-48db-8bca-37dcf0844312, $$CURRENTPATH$/a74ef7c9-9cef-48db-8bca-37dcf0844312, $$NEWPATH$$/q-as/q-as
+qas, a74ef7c9-9cef-48db-8bca-37dcf0844312, $$CURRENTPATH$/a74ef7c9-9cef-48db-8bca-37dcf0844312, $$NEWPATH$$/qas/qas
 plan-your-content, bb9d90b6-6c86-4b19-9235-3bd9b19826ab, $$CURRENTPATH$/bb9d90b6-6c86-4b19-9235-3bd9b19826ab, $$NEWPATH$$/setup/plan-your-content
 suggested-searches, c7f3aa2c-f3f5-4d1b-91cd-4fd4ed3775d3, $$CURRENTPATH$/c7f3aa2c-f3f5-4d1b-91cd-4fd4ed3775d3, $$NEWPATH$$/use/suggested-searches
 find-resources-tools-and-more, a67e015a-e10a-442a-b1c9-511136d54d1f, $$CURRENTPATH$/a67e015a-e10a-442a-b1c9-511136d54d1f, $$NEWPATH$$/use/find-resources-tools-and-more
-manage-q-as, 7e3432e6-5317-4d63-90b0-52da6fddd343, $$CURRENTPATH$/7e3432e6-5317-4d63-90b0-52da6fddd343, $$NEWPATH$$/q-as/manage-q-as
+manage-qas, 7e3432e6-5317-4d63-90b0-52da6fddd343, $$CURRENTPATH$/7e3432e6-5317-4d63-90b0-52da6fddd343, $$NEWPATH$$/qas/manage-qas
 set-default-homepage, c020bd72-9906-4dfd-bc77-57287f5927ce, $$CURRENTPATH$/c020bd72-9906-4dfd-bc77-57287f5927ce, $$NEWPATH$$/setup/set-default-homepage
 create-bookmarks, 40a556e1-61c2-4bd3-b80e-5ad62af77454, $$CURRENTPATH$/40a556e1-61c2-4bd3-b80e-5ad62af77454, $$NEWPATH$$/bookmarks/create-bookmarks
 setup, 1cd06b21-86c6-4713-a564-5c9a7b45c267, $$CURRENTPATH$/1cd06b21-86c6-4713-a564-5c9a7b45c267, $$NEWPATH$$/setup/setup
@@ -32,7 +32,7 @@ add-users, 41723aec-435c-400e-a818-6b1e8a1324c0, $$CURRENTPATH$/41723aec-435c-40
 set-default-browser, 53e2b71a-348b-4dfe-a504-6e97d573effe, $$CURRENTPATH$/53e2b71a-348b-4dfe-a504-6e97d573effe, $$NEWPATH$$/setup/set-default-browser
 sign-in, 429fb92c-e968-4d61-be15-6ecebfdbd157, $$CURRENTPATH$/429fb92c-e968-4d61-be15-6ecebfdbd157, $$NEWPATH$$/use/sign-in
 about-the-admin-portal, fee131cf-c82f-4f4b-b288-6fa98a99b793, $$CURRENTPATH$/fee131cf-c82f-4f4b-b288-6fa98a99b793, $$NEWPATH$$/overview/about-the-admin-portal
-bulk-create-q-as, 7bada218-8908-4956-aae3-6ffaeef384ca, $$CURRENTPATH$/7bada218-8908-4956-aae3-6ffaeef384ca, $$NEWPATH$$/q-as/bulk-create-q-as
+bulk-create-qas, 7bada218-8908-4956-aae3-6ffaeef384ca, $$CURRENTPATH$/7bada218-8908-4956-aae3-6ffaeef384ca, $$NEWPATH$$/qas/bulk-create-qas
 add-a-location, c37cf1b1-5915-4eb1-9f78-72c48cad3b4b, $$CURRENTPATH$/c37cf1b1-5915-4eb1-9f78-72c48cad3b4b, $$NEWPATH$$/locations/add-a-location
 find-files, ff42d668-f721-4ada-b130-77e38508197c, $$CURRENTPATH$/ff42d668-f721-4ada-b130-77e38508197c, $$NEWPATH$$/use/find-files
 import-sharepoint-promoted-results-and-top-queries, 3d2a1498-174e-4214-9cf1-8b58cce5a872, $$CURRENTPATH$/3d2a1498-174e-4214-9cf1-8b58cce5a872, $$NEWPATH$$/bookmarks/import-sharepoint-promoted-results-and-top-queries
@@ -47,9 +47,9 @@ manage-network-connections, 8ad58820-69e0-4ee0-88a7-d207ffa790b7, $$CURRENTPATH$
 set-default-search-engine, ee40010e-5d7f-4ba8-a3f8-d240dab3af6d, $$CURRENTPATH$/ee40010e-5d7f-4ba8-a3f8-d240dab3af6d, $$NEWPATH$$/setup/set-default-search-engine
 integrate-powerapps, 1fadcba3-4a7f-4a55-8476-d4e64d49a15f, $$CURRENTPATH$/1fadcba3-4a7f-4a55-8476-d4e64d49a15f, $$NEWPATH$$/bookmarks/integrate-powerapps
 why-am-i-automatically-signed-in, 94f6fa41-0570-4668-b2fe-d51ed177716c, $$CURRENTPATH$/94f6fa41-0570-4668-b2fe-d51ed177716c, $$NEWPATH$$/use/why-am-i-automatically-signed-in
-publish-default-q-as, 235fef3d-7fdb-46fe-b9f1-d8f8803cd2a2, $$CURRENTPATH$/235fef3d-7fdb-46fe-b9f1-d8f8803cd2a2, $$NEWPATH$$/q-as/publish-default-q-as
+publish-default-qas, 235fef3d-7fdb-46fe-b9f1-d8f8803cd2a2, $$CURRENTPATH$/235fef3d-7fdb-46fe-b9f1-d8f8803cd2a2, $$NEWPATH$$/qas/publish-default-qas
 quick-set-up, bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0, $$CURRENTPATH$/bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0, $$NEWPATH$$/setup/quick-set-up
-create-and-manage-q-as, b40a575d-7727-4bb0-80da-e25131315790, $$CURRENTPATH$/b40a575d-7727-4bb0-80da-e25131315790, $$NEWPATH$$/q-as/create-and-manage-q-as
+create-and-manage-qas, b40a575d-7727-4bb0-80da-e25131315790, $$CURRENTPATH$/b40a575d-7727-4bb0-80da-e25131315790, $$NEWPATH$$/qas/create-and-manage-qas
 connected-services, 161ea667-9b27-4695-b7a8-e8e063141795, $$CURRENTPATH$/161ea667-9b27-4695-b7a8-e8e063141795, $$NEWPATH$$/overview/connected-services
 features, 5861e462-faed-4c3d-824d-ed3aafd80714, $$CURRENTPATH$/5861e462-faed-4c3d-824d-ed3aafd80714, $$NEWPATH$$/overview/features
 faqs, cd3ee09d-58ab-4b8a-8822-fa11a1399672, $$CURRENTPATH$/cd3ee09d-58ab-4b8a-8822-fa11a1399672, $$NEWPATH$$/faqs

@@ -50,6 +50,6 @@ For information about requirements, examples, and available parameters, download
   
 [Integrate PowerApps](integrate-powerapps.md)
   
-[Creating and managing Q&amp;As](../q-as/create-and-manage-q-as.md)
+[Creating and managing Q&As](../q-as/create-and-manage-qas.md)
   
 

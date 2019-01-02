@@ -21,7 +21,7 @@ Your IT department creates and publishes bookmarks to internal and external reso
   
 Bookmark results include a brief description of the site or resource along with a link to it. For example, most organizations will create bookmarks for benefits, HR, career info, IT support, and time off reporting.
   
-Q&amp;A results will generally include this same information as well as a brief answer that may have the info you need and a link if you want to learn more.
+Q&A results will generally include this same information as well as a brief answer that may have the info you need and a link if you want to learn more.
   
 1. Sign in to your work or school account on Bing 
     
@@ -29,7 +29,7 @@ Q&amp;A results will generally include this same information as well as a brief 
     
     For example, try searching for 'benefits,' 'HR,' 'career info,' 'IT support,' or 'report time off.'
     
-3. A bookmark or Q&amp;A result appears at the top of the page or right column
+3. A bookmark or Q&A result appears at the top of the page or right column
     
     Other web results appear under it. They aren't specific to your organization.
     

@@ -64,6 +64,6 @@ Currently, default bookmarks are only available in English.
   
 [Integrate PowerApps](integrate-powerapps.md)
   
-[Creating and managing Q&amp;As](../q-as/create-and-manage-q-as.md)
+[Creating and managing Q&As](../q-as/create-and-manage-qas.md)
   
 

@@ -54,6 +54,6 @@ Add a location and when your users search they'll see the address of the buildin
   
 [Create bookmarks](../bookmarks/create-bookmarks.md)
   
-[Create Q&amp;As](../q-as/create-q-as.md)
+[Create Q&As](../q-as/create-qas.md)
   
 

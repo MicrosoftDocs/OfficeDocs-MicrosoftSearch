@@ -51,6 +51,6 @@ Not all fields are required and required fields vary depending on the location s
   
 [Bulk create bookmarks](../bookmarks/bulk-create-bookmarks.md)
   
-[Bulk create Q&amp;As](../q-as/bulk-create-q-as.md)
+[Bulk create Q&As](../q-as/bulk-create-qas.md)
   
 

@@ -81,7 +81,7 @@ Administrators directly influence the search experience for end users and determ
   
 For more information, see [Configuring Microsoft Search in Bing](setup/set-up-microsoft-search.md).
   
-Editors are subject matter experts who help manage Bookmarks and Q&amp;As within their areas of expertise. Editors should create content that addresses the user scenarios that you identified earlier.
+Editors are subject matter experts who help manage Bookmarks and Q&As within their areas of expertise. Editors should create content that addresses the user scenarios that you identified earlier.
   
 For more information, see [Planning your content](setup/plan-your-content.md).
   
@@ -179,7 +179,7 @@ Send ongoing communications that highlight features and searches to try, as well
   
 Support users and let them know you care by listening to them and acting on their feedback.
   
-Use the insights dashboard to see how the product and the content is performing. Leverage this information to update bookmarks, Q&amp;As, and other communications. This will also help you:
+Use the insights dashboard to see how the product and the content is performing. Leverage this information to update bookmarks, Q&As, and other communications. This will also help you:
   
 1. Improve the content quality: review titles, descriptions, and URLs, optimize keywords, remove obsolete information, and add new information
     

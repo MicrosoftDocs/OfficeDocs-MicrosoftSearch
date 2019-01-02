@@ -24,9 +24,9 @@ Before planning your content, understanding what you can add to Microsoft Search
     
     Quickly give users a link to an internal site, page, or tool where they can get additional information.
     
-- Q&amp;As
+- Q&As
     
-    Provide an answer or info to users including an optional link. Ideally, a Q&amp;A includes all the details your users are looking for so they don't need to go to the source. You can format your Q&amp;A content and include images, lists, and tables.
+    Provide an answer or info to users including an optional link. Ideally, a Q&A includes all the details your users are looking for so they don't need to go to the source. You can format your Q&A content and include images, lists, and tables.
     
 ## Identify information your users need
 
@@ -66,21 +66,21 @@ Build a support team that includes experts from HR, support, sales, and other ke
   
  **Involve your users**
   
-Involving users in the content creation process encourages them to use Microsoft Search in Bing. Ask them to use the feedback link in work results or the Edge or Chrome search extension to suggest bookmarks and Q&amp;As. In addition to suggesting content, they can report errors, like broken or invalid links, and provide other feedback.
+Involving users in the content creation process encourages them to use Microsoft Search in Bing. Ask them to use the feedback link in work results or the Edge or Chrome search extension to suggest bookmarks and Q&As. In addition to suggesting content, they can report errors, like broken or invalid links, and provide other feedback.
   
 ## Create high-quality content
 
  **Titles and descriptions**
   
-People use bookmarks or Q&amp;A titles and descriptions to determine if they address their search intent or if they need to try a different search. Titles and descriptions should reflect the core purpose of the result.
+People use bookmarks or Q&A titles and descriptions to determine if they address their search intent or if they need to try a different search. Titles and descriptions should reflect the core purpose of the result.
   
 A good example of a title might be 'Childcare benefits,' with a description of 'Learn about benefits to help pay child care costs.' This informs users who search for 'childcare' that monetary support benefits are available and provides them a link to find out more.
   
-Q&amp;A titles should pose a question and the description should provide a short but useful answer. If there's additional information that would be helpful, link to it.
+Q&A titles should pose a question and the description should provide a short but useful answer. If there's additional information that would be helpful, link to it.
   
  **Keywords**
   
-Keywords are the terms people in your organization search for on Bing to discover work results. Make your bookmarks and Q&amp;As easier to find by including the right keywords. To identify these keywords, start by answering these questions:
+Keywords are the terms people in your organization search for on Bing to discover work results. Make your bookmarks and Q&As easier to find by including the right keywords. To identify these keywords, start by answering these questions:
   
 - Which search terms are used to find the information you've identified?
     
@@ -94,23 +94,23 @@ For example, if you're creating a result that links to a tool for submitting vac
   
  **Reserved keywords**
   
-Microsoft Search in Bing determines which bookmarks appear as the top work results based on usage. When you need a specific result to appear as the top result, use reserved keywords. A reserved keyword is a unique word or phrase that identifies a bookmark or Q&amp;A result. When a user enters a reserved keyword in the search box, that bookmark or Q&amp;A will be the first result that appears. Use reserved keywords sparingly to allow Microsoft Search in Bing to learn based on usage.
+Microsoft Search in Bing determines which bookmarks appear as the top work results based on usage. When you need a specific result to appear as the top result, use reserved keywords. A reserved keyword is a unique word or phrase that identifies a bookmark or Q&A result. When a user enters a reserved keyword in the search box, that bookmark or Q&A will be the first result that appears. Use reserved keywords sparingly to allow Microsoft Search in Bing to learn based on usage.
   
  **Suggested keywords**
   
-Create an initial set of keywords for a result by using automatic keyword suggestions. These suggestions are based on the title and URL for your bookmark or Q&amp;A.
+Create an initial set of keywords for a result by using automatic keyword suggestions. These suggestions are based on the title and URL for your bookmark or Q&A.
   
  **Group topics**
   
-If you want users to find sets of related content when they search, try using the same keyword for all the bookmarks and Q&amp;As about that topic. For example, if you're adding results about processes and tools around life status changes, you could include a keyword like 'marriage' to them to group together results about updating benefits, tax information, and name and alias changes.
+If you want users to find sets of related content when they search, try using the same keyword for all the bookmarks and Q&As about that topic. For example, if you're adding results about processes and tools around life status changes, you could include a keyword like 'marriage' to them to group together results about updating benefits, tax information, and name and alias changes.
   
 ## Test your content and search experience
 
 After you've published results, it's important to verify:
   
-- The correct bookmark or Q&amp;A appears as the top result
+- The correct bookmark or Q&A appears as the top result
     
-- All related bookmarks or Q&amp;As are relevant
+- All related bookmarks or Q&As are relevant
     
 - No unexpected results are included
     
@@ -128,7 +128,7 @@ Maintaining the accuracy and freshness of your results is critical when you're p
     
 - Update inaccurate or out of date titles and descriptions, including tool, site, or team name changes
     
-- Review queries with low click-through rates and determine if the bookmark or Q&amp;A content needs to be updated
+- Review queries with low click-through rates and determine if the bookmark or Q&A content needs to be updated
     
 - Review SharePoint Online and on-premises search queries, including popular or top queries, abandoned queries, and no queries to understand what users search for and where there are gaps
     

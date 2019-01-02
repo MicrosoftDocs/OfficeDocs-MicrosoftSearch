@@ -74,6 +74,6 @@ In the Admin portal, you can view bookmarks by their current status:
 
 [Configuring Microsoft Search in Bing](../setup/set-up-microsoft-search.md)
   
-[Creating and managing Q&amp;As](../q-as/create-and-manage-q-as.md)
+[Creating and managing Q&As](../q-as/create-and-manage-qas.md)
   
 
