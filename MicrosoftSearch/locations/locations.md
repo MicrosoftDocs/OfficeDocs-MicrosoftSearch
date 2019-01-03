@@ -13,7 +13,7 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
-description: "Overview of all of the ways that you can include your organization's locations Microsoft Search in Bing work results"
+description: "Overview of all of the ways that you can include your organization's locations Microsoft Searc work results"
 ---
 
 # Locations
@@ -57,11 +57,6 @@ In the Admin portal, you can view locations by their current status:
 - Suggested
     
     Suggested locations are based on feedback from users. You may also see default suggestions from Microsoft.
-    
-## See also
 
-[Creating and managing bookmarks](../bookmarks/create-and-manage-bookmarks.md)
-  
-[Creating and managing Q&As](../qas/create-and-manage-qas.md)
   
 

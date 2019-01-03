@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 15c9fada-f7a6-4210-aa6b-028b32217830
-description: "Add lots of locations at once with import tools for the Microsoft Search in Bing Admin portal"
+description: "Add lots of locations at once with import tools for the Microsoft Search Admin portal"
 ---
 
 # Bulk create locations
@@ -42,15 +42,6 @@ You'll get an error if any required data is missing or invalid. Depending on the
 The fields in the import and export locations templates are the same. You can export, bulk edit, and import the edits, or start with an empty template to bulk create new locations.
   
 Not all fields are required and required fields vary depending on the location state. Based on the State field, locations will be saved as draft, suggested, scheduled, or they will be published automatically. To find out more about required and recommended fields, see [Manage locations](manage-locations.md).
-  
-## See also
 
-[Add a location](add-a-location.md)
-  
-[Manage locations](manage-locations.md)
-  
-[Bulk create bookmarks](../bookmarks/bulk-create-bookmarks.md)
-  
-[Bulk create Q&As](../qas/bulk-create-qas.md)
   
 

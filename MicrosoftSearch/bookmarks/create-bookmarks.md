@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 40a556e1-61c2-4bd3-b80e-5ad62af77454
-description: "Create bookmarks or user a browser extension to add them to your Microsoft Search in Bing work results"
+description: "Create bookmarks or user a browser extension to add them to your Microsoft Search work results"
 ---
 
 # Create bookmarks
@@ -24,7 +24,7 @@ Bookmarks help people quickly find important resources, sites, and tools. Each b
 
 For information about creating effective titles, descriptions, keywords, and more, see [Planning your content](../setup/plan-your-content.md).
   
-1. Go to the Microsoft Search in Bing Admin portal
+1. Go to the Microsoft Search Admin portal
     
 2. In the navigation pane, click **Bookmarks**
     
@@ -52,7 +52,7 @@ For information about creating effective titles, descriptions, keywords, and mor
     
 9. Enter **Reserved keywords**
     
-    If a keyword triggers multiple bookmarks, Microsoft Search in Bing will place the most popular one at the top and show the others as related links. Use one or more reserved keywords to ensure that a bookmark always appears as the top result. Reserved keywords can't be shared across bookmarks.
+    If a keyword triggers multiple bookmarks, Microsoft Search will place the most popular one at the top and show the others as related links. Use one or more reserved keywords to ensure that a bookmark always appears as the top result. Reserved keywords can't be shared across bookmarks.
     
 ## Add bookmark settings
 
@@ -81,23 +81,6 @@ Bookmark settings give you additional control over when a bookmark appears and w
 ## Use a browser extension to create content
 
 From the Tools section of the Admin portal, download and install the Content creator browser extension for Edge or Chrome. To use the extension, sign in and go to a site or page you want to add as a bookmark. Review and change the suggested content, including keywords, add any additional content, and save the bookmark.
-  
-## See also
 
-[Planning your content](../setup/plan-your-content.md)
-  
-[Creating and managing bookmarks](create-and-manage-bookmarks.md)
-  
-[Manage bookmarks](manage-bookmarks.md)
-  
-[Publish default bookmarks](publish-default-bookmarks.md)
-  
-[Import SharePoint promoted results and top queries](import-sharepoint-promoted-results-and-top-queries.md)
-  
-[Bulk create bookmarks](bulk-create-bookmarks.md)
-  
-[Integrate PowerApps](integrate-powerapps.md)
-  
-[Creating and managing Q&As](../qas/create-and-manage-qas.md)
   
 

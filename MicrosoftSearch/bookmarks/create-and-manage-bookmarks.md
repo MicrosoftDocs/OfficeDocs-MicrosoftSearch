@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5479dc34-3de0-41c5-94a7-ba87069e6b43
-description: "Overview of all of the ways that you can add and create bookmarks for Microsoft Search in Bing work results"
+description: "Overview of all of the ways that you can add and create bookmarks for Microsoft Search work results"
 ---
 
 # Create and manage bookmarks
@@ -69,11 +69,6 @@ In the Admin portal, you can view bookmarks by their current status:
 - Suggested
     
     Suggested bookmarks are based on feedback from users. You may also see default suggestions from Microsoft.
-    
-## See also
 
-[Configuring Microsoft Search in Bing](../setup/set-up-microsoft-search.md)
-  
-[Creating and managing Q&As](../qas/create-and-manage-qas.md)
   
 

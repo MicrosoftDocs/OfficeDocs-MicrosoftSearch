@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
-description: "Include browser-based apps in bookmarks results for Microsoft Search in Bing"
+description: "Include browser-based apps in bookmarks results for Microsoft Search"
 ---
 
 # Integrate PowerApps
@@ -34,7 +34,7 @@ PowerApps work in any browser and on any device and take less than a minute to a
   
 1. [Find the App ID for the PowerApp](https://go.microsoft.com/fwlink/?linkid=2018005) you want to integrate 
     
-2. In the Microsoft Search in Bing Admin portal, go to **Bookmarks**
+2. In the Microsoft SearchAdmin portal, go to **Bookmarks**
     
 3. Add a bookmark or find an existing bookmark that you want to add a PowerApp to
     
@@ -50,20 +50,7 @@ PowerApps work in any browser and on any device and take less than a minute to a
     
 7. Click **Publish**
     
-When an authorized Microsoft Search in Bing user searches for any of the bookmark's keywords or reserved keywords, the PowerApp will appear in the bookmark result.
-  
-## See also
+When an authorized Microsoft Search user searches on Bing for any of the bookmark's keywords or reserved keywords, the PowerApp will appear in the bookmark result.
 
-[Creating and managing bookmarks](create-and-manage-bookmarks.md)
-  
-[Create bookmarks](create-bookmarks.md)
-  
-[Manage bookmarks](manage-bookmarks.md)
-  
-[Publish default bookmarks](publish-default-bookmarks.md)
-  
-[Import SharePoint promoted results and top queries](import-sharepoint-promoted-results-and-top-queries.md)
-  
-[Bulk create bookmarks](bulk-create-bookmarks.md)
   
 

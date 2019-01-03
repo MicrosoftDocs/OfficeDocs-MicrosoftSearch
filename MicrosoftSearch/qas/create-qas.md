@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d432b9d9-3792-47a0-9a13-30a1a83caabc
-description: "Ways to create answers to frequently asked questions for your Microsoft Search in Bing work results"
+description: "Ways to create answers to frequently asked questions for your Microsoft Search work results"
 ---
 
 # Create Q&As
@@ -22,9 +22,9 @@ Q&As provide an answer or info to users including an optional link. Ideally, a Q
   
 ## Create a Q&A
 
-For information about creating effective titles, descriptions, keywords, and more, see [Planning your content.](../setup/plan-your-content.md)
+For information about creating effective titles, descriptions, keywords, and more, see [Plan your content.](../setup/plan-your-content.md)
   
-1. Go to the Microsoft Search in Bing Admin portal
+1. Go to the Microsoft Search Admin portal
     
 2. In the navigation pane, click **Q&As**
     
@@ -48,7 +48,7 @@ For information about creating effective titles, descriptions, keywords, and mor
     
     Use the preview at the top of the page to see how your tags and formatting will appear on Bing. For information about:
     
-  - HTML tags, see the Supported HTML tags list below
+  - HTML tags, see the supported HTML tags list below
     
   - Built-in options, click **Markdown guide** (question mark icon) 
     
@@ -62,7 +62,7 @@ For information about creating effective titles, descriptions, keywords, and mor
     
 10. Enter **Reserved keywords**
     
-    If a keyword triggers multiple Q&As, Microsoft Search in Bing will place the most popular one at the top and show the others as related links. Use one or more reserved keywords to ensure a Q&A always appears as the top result. Reserved keywords can't be shared across Q&As. Also, sharing reserved keywords across Q&As and bookmarks isn't recommended. If a bookmark and a Q&A share a keyword or a reserved keyword, the bookmark will always take precedence and the Q&A will not appear.
+    If a keyword triggers multiple Q&As, Microsoft Search will place the most popular one at the top and show the others as related links. Use one or more reserved keywords to ensure a Q&A always appears as the top result. Reserved keywords can't be shared across Q&As. Also, sharing reserved keywords across Q&As and bookmarks isn't recommended. If a bookmark and a Q&A share a keyword or a reserved keyword, the bookmark will always take precedence and the Q&A will not appear.
     
 ## Add Q&A settings
 
@@ -129,15 +129,6 @@ You can use existing HTML content or add HTML tags to your answer description. U
 - hr
     
 - img
-    
-## See also
 
-[Planning your content](../setup/plan-your-content.md)
-  
-[Creating and managing Q&As](create-and-manage-qas.md)
-  
-[Manage Q&As](manage-qas.md)
-  
-[Bulk create Q&As](bulk-create-qas.md)
   
 

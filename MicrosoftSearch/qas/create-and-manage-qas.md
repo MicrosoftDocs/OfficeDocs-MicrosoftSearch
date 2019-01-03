@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b40a575d-7727-4bb0-80da-e25131315790
-description: "Overview of all of the ways to create answers to frequently asked questions in the Microsoft Search in Bing Admin portal"
+description: "Overview of all of the ways to create answers to frequently asked questions in the Microsoft Search Admin portal"
 ---
 
 # Create and manage Q&As
@@ -57,11 +57,6 @@ In the Admin portal, you can view Q&As by their current status:
 - Suggested
     
     Suggested Q&As are based on feedback from users.
-    
-## See also
 
-[Manage Q&As](manage-qas.md)
-  
-[Creating and managing Q&As](create-and-manage-qas.md)
   
 

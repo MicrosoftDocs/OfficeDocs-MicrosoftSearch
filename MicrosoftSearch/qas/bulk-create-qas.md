@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
-description: "Quickly add answers to frequently asked questions with import tools in the Microsoft Search in Bing Admin portal"
+description: "Quickly add answers to frequently asked questions with import tools in the Microsoft Search Admin portal"
 ---
 
 # Bulk create Q&As
@@ -42,13 +42,6 @@ You'll get an error if any required data is missing or invalid. Depending on the
 The fields in the import and export Q&A templates are the same. You can export, bulk edit, and import the edits, or start with an empty template to bulk create new Q&As.
   
 Not all fields are required and required fields vary depending on the Q&A state. Based on the state field, Q&As will be saved as draft, suggested, scheduled, or they will be published automatically. Find out more about required and recommended fields in [create Q&As](create-qas.md).
-  
-## See also
 
-[Creating and managing Q&As](create-and-manage-qas.md)
-  
-[Create Q&As](create-qas.md)
-  
-[Manage Q&As](manage-qas.md)
   
 

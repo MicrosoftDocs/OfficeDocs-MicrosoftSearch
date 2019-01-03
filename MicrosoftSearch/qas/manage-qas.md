@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: "Find and update answers individually or use  available Microsoft Search in Bing tools to edit them all at once"
+description: "Find and update answers individually or use available Microsoft Search tools to edit them all at once"
 ---
 
 # Manage Q&As
@@ -26,7 +26,7 @@ Use the filter option in the upper-right corner of the Q&As page to find Q&As by
   
 ## Change Q&A content or settings
 
-1. Go to the Microsoft Search in Bing Admin portal
+1. Go to the Microsoft Search Admin portal
     
 2. In the navigation pane, click **Q&As**
     
@@ -96,13 +96,6 @@ You'll get an error if any required data is missing or invalid. Depending on the
 > Until all errors are resolved, you can't create or edit any Q&As. 
   
 Not all fields are required and required fields vary depending on the Q&A state. Based on the state field, Q&As will be saved as draft, suggested, scheduled, or they will be published automatically. Find out more about required and recommended fields in [create Q&As](create-qas.md).
-  
-## See also
 
-[Creating and managing Q&As](create-and-manage-qas.md)
-  
-[Create Q&As](create-qas.md)
-  
-[Bulk create Q&As](bulk-create-qas.md)
   
 

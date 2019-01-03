@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d49a0b97-e4ca-47cf-ad52-6113787b8402
-description: "Default bookmarks that are available in the Microsoft Search in Bing Admin portal"
+description: "Default bookmarks that are available in the Microsoft Search Admin portal"
 ---
 
 # Publish default bookmarks
@@ -24,7 +24,7 @@ We suggest you review the two sets of default bookmarks:
   
 - Default published bookmarks
     
-    These include results about Microsoft Search in Bing and help for Windows and Office apps. After Microsoft Search in Bing is enabled in the Office 365 admin center, these are automatically published and will appear on Bing. You can edit or delete them at any time.
+    These include results about Microsoft Search and help for Windows and Office apps. After Microsoft Search is enabled in the Microsoft 365 admin center, these are automatically published and will appear on Bing. You can edit or delete them at any time.
     
 - Default suggested bookmarks
     
@@ -34,7 +34,7 @@ If we find an existing bookmark with the same title or URL as a default bookmark
   
 ## Update and publish a default suggested bookmark
 
-1. Go to the Microsoft Search in Bing Admin portal
+1. Go to the Microsoft Search Admin portal
     
 2. In the navigation pane, click **Bookmarks**
     
@@ -49,21 +49,6 @@ If we find an existing bookmark with the same title or URL as a default bookmark
 7. Click **Publish**
     
 Currently, default bookmarks are only available in English. 
-  
-## See also
 
-[Creating and managing bookmarks](create-and-manage-bookmarks.md)
-  
-[Create bookmarks](create-bookmarks.md)
-  
-[Manage bookmarks](manage-bookmarks.md)
-  
-[Import SharePoint promoted results and top queries](import-sharepoint-promoted-results-and-top-queries.md)
-  
-[Bulk create bookmarks](bulk-create-bookmarks.md)
-  
-[Integrate PowerApps](integrate-powerapps.md)
-  
-[Creating and managing Q&As](../qas/create-and-manage-qas.md)
   
 

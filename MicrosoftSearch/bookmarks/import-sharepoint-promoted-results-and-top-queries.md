@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
-description: "Use search queries from SharePoint to create work results for Microsoft Search in Bing"
+description: "Use search queries from SharePoint to create work results for Microsoft Search"
 ---
 
 # Import SharePoint promoted results and top queries
 
-To leverage users' queries and Best Bets you've created in SharePoint, Microsoft Search in Bing includes two tools to import this information as suggested bookmarks: 
+To leverage users' queries and Best Bets you've created in SharePoint, Microsoft Search includes two tools to import this information as suggested bookmarks: 
   
 ## Import SharePoint promoted result query rules
 
@@ -35,21 +35,6 @@ Import these rules, previously called Best Bets, as suggested bookmarks. To make
 - Your top SharePoint queries are excellent candidates for bookmarks. Use the PowerShell script to import them as suggested bookmarks. This script will:
     
 For information about requirements, examples, and available parameters, download the script and review the README file. After the PowerShell script runs, an admin or editor should review the suggested bookmarks and make any necessary edits before they're published.
-  
-## See also
 
-[Creating and managing bookmarks](create-and-manage-bookmarks.md)
-  
-[Create bookmarks](create-bookmarks.md)
-  
-[Manage bookmarks](manage-bookmarks.md)
-  
-[Publish default bookmarks](publish-default-bookmarks.md)
-  
-[Bulk create bookmarks](bulk-create-bookmarks.md)
-  
-[Integrate PowerApps](integrate-powerapps.md)
-  
-[Creating and managing Q&As](../qas/create-and-manage-qas.md)
   
 

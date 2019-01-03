@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: "Find bookmarks that need to be updated and ways to bulk edit bookmark results for Microsoft Search in Bing"
+description: "Find bookmarks that need to be updated and ways to bulk edit bookmark results for Microsoft Search"
 ---
 
 # Manage bookmarks
@@ -26,7 +26,7 @@ Use the filter option in the upper-right corner of the Bookmarks page to find bo
   
 ## Change bookmark content or settings
 
-1. Go to the Microsoft Search in Bing Admin portal
+1. Go to the Microsoft Search Admin portal
     
 2. In the navigation pane, click **Bookmarks**
     
@@ -89,21 +89,6 @@ Id is a unique identifier for each bookmark and should never be edited. The Last
 7. In the Import bookmarks pane, click **Browse** and select the edited .csv file 
     
 8. Click **Import**
-    
-## See also
 
-[Creating and managing bookmarks](create-and-manage-bookmarks.md)
-  
-[Create bookmarks](create-bookmarks.md)
-  
-[Publish default bookmarks](publish-default-bookmarks.md)
-  
-[Import SharePoint promoted results and top queries](import-sharepoint-promoted-results-and-top-queries.md)
-  
-[Bulk create bookmarks](bulk-create-bookmarks.md)
-  
-[Integrate PowerApps](integrate-powerapps.md)
-  
-[Creating and managing Q&As](../qas/create-and-manage-qas.md)
   
 

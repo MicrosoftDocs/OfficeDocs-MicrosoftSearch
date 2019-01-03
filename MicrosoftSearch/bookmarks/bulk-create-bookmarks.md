@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
-description: "Create lots of bookmarks at once with import tools for the Microsoft Search in Bing Admin portal"
+description: "Create lots of bookmarks at once with import tools for the Microsoft Search Admin portal"
 ---
 
 # Bulk create bookmarks
@@ -41,19 +41,6 @@ Note: Until all errors are resolved, you can't create or edit any bookmarks.
 The fields in the import and export bookmark templates are the same. You can export, bulk edit, and import the edits, or start with an empty template to bulk create new bookmarks.
   
 Not all fields are required and required fields vary depending on the bookmark state. Based on the state field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically. Find out more about required and recommended fields in [create bookmarks](create-bookmarks.md).
-  
-## See also
 
-[Creating and managing bookmarks](create-and-manage-bookmarks.md)
-  
-[Create bookmarks](create-bookmarks.md)
-  
-[Manage bookmarks](manage-bookmarks.md)
-  
-[Publish default bookmarks](publish-default-bookmarks.md)
-  
-[Import SharePoint promoted results and top queries](import-sharepoint-promoted-results-and-top-queries.md)
-  
-[Integrate PowerApps](integrate-powerapps.md)
   
 

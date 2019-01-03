@@ -13,7 +13,7 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 235fef3d-7fdb-46fe-b9f1-d8f8803cd2a2
-description: "Review default Q&As that are available in the Microsoft Search in Bing Admin portal"
+description: "Review default Q&As that are available in the Microsoft Search Admin portal"
 ---
 
 # Publish default Q&As
@@ -24,9 +24,9 @@ We suggest you review the two sets of default Q&As:
   
 - Default published Q&As
     
-    These include results with answers to common questions about Microsoft Search in Bing.
+    These include results with answers to common questions about Microsoft Search.
     
-  - For new tenants, they're automatically published when Microsoft Search in Bing is enabled in the Office 365 admin center. You can edit or delete them at any time.
+  - For new tenants, they're automatically published when Microsoft Search is enabled in the Microsoft 365 admin center. You can edit or delete them at any time.
     
   - For existing tenants, they're added to the list of suggested Q&As
     
@@ -38,7 +38,7 @@ If we find an existing Q&A with the same title or URL as a default Q&A, the defa
   
 ## Update and publish a default suggested Q&A
 
-1. Go to the Microsoft Search in Bing Admin portal
+1. Go to the Microsoft Search Admin portal
     
 2. In the navigation pane, click **Q&As**
     
@@ -53,15 +53,6 @@ If we find an existing Q&A with the same title or URL as a default Q&A, the defa
 7. Click **Publish**
     
 Currently, default Q&As are only available in English. 
-  
-## See also
 
-[Creating and managing Q&As](create-and-manage-qas.md)
-  
-[Create Q&As](create-qas.md)
-  
-[Manage Q&As](manage-qas.md)
-  
-[Bulk create Q&As](bulk-create-qas.md)
   
 

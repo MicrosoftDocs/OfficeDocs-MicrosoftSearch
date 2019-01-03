@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c37cf1b1-5915-4eb1-9f78-72c48cad3b4b
-description: "Add locations so your organization's offices, buildings, and other workspaces appear in your Microsoft Search in Bing work results"
+description: "Add locations so your organization's offices, buildings, and other workspaces appear in your Microsoft Search work results"
 ---
 
 # Add a location
 
 Add a location and when your users search they'll see the address of the building, office, or place and its location on a map. They can also use Bing Maps to get directions, see what's nearby, and more.
   
-1. Go to the Microsoft Search in Bing Admin portal
+1. Go to the Microsoft Search Admin portal
     
 2. In the navigation pane, click **Locations**
     
@@ -47,13 +47,6 @@ Add a location and when your users search they'll see the address of the buildin
 9. Enter **Reserved keywords**
     
     Use one or more reserved keywords to ensure that a location always appears as the most relevant result. Reserved keywords can't be shared across locations.
-    
-## See also
 
-[Manage locations](manage-locations.md)
-  
-[Create bookmarks](../bookmarks/create-bookmarks.md)
-  
-[Create Q&As](../qas/create-qas.md)
   
 

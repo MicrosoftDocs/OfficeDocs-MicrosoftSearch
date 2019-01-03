@@ -26,7 +26,7 @@ Use the filter option in the upper-right corner of the Locations page to find lo
   
 ## Change location content
 
-1. Go to the Microsoft Search in Bing Admin portal
+1. Go to the Microsoft Search Admin portal
     
 2. In the navigation pane, click **Locations**
     
@@ -91,13 +91,6 @@ Id is a unique identifier for each location and should never be edited. The Last
 7. In the Import locations pane, click **Browse** and select the edited .csv file 
     
 8. Click **Import**
-    
-## See also
 
-[Add a location](add-a-location.md)
-  
-[Manage bookmarks](../bookmarks/manage-bookmarks.md)
-  
-[Manage Q&As](../qas/manage-qas.md)
   
 
