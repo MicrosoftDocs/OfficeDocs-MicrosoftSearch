@@ -48,7 +48,7 @@ Windows Registry Editor Version 5.00
   
 Double-click the file created and follow the steps to import the file. A successful import should result in the following dialog:
   
-![IE11 success dialog](../media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
+![Registry Editor successful import message](../media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
   
 #### 2. Open the Group Policy Management Console (gpmc.msc) and switch to editing an existing policy or creating a new one
 
@@ -60,11 +60,11 @@ Double-click the file created and follow the steps to import the file. A success
     
 4. From this key, make sure to select DefaultScope.
     
-    ![IE11 GPMC DefaultScope name](../media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
+    ![Registry Browser with DefaultScope selected](../media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
   
 5. Check all sub keys containing the GUID for Bing for business and every value under the key except any path to user profiles. Scroll down to select other items.
     
-    ![IE11 GPCM search scope 2](../media/7eef7690-8bc5-46cf-9cd8-bd134fc77a02.png)
+    ![Registry Browser with additional values selected](../media/7eef7690-8bc5-46cf-9cd8-bd134fc77a02.png)
   
 6. Click Finish to complete this configuration.
     

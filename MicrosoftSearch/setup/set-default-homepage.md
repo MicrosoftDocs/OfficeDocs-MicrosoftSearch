@@ -47,7 +47,7 @@ To set the default homepage for your organization, follow the steps below.
     
 5. Press **F8** to disable all settings before configuring anything. The screen should look like this: 
     
-    ![F8 screen](../media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
+    ![Internet Explorer 10 Properties dialog](../media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
   
 6. Press **F6** on the Home page setting and enter [https://www.bing.com/business?form=BFBSPR](https://www.bing.com/business?form=BFBSPR)
     
