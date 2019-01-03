@@ -38,19 +38,11 @@ On a SharePoint classic site, add a Script Editor Web Part and drop the script i
   
 ## Enable the search box for mobile
 
-For intranet sites or pages available to mobile users, add isMobile: true to the settings object:
-  
-```
-{ containerSelector: "bfb_searchbox", isMobile: true }
-```
+For intranet sites or pages available to mobile users, add isMobile: true to the settings object: `{ containerSelector: "bfb_searchbox", isMobile: true }`
 
 ## Put focus on the search box by default
 
-To help users search faster, when the page or site loads place the cursor in the search box by adding focus: true to the settings object:
-  
-```
-{ containerSelector: "bfb_searchbox", focus: true }
-```
+To help users search faster, when the page or site loads place the cursor in the search box by adding focus: true to the settings object: `{ containerSelector: "bfb_searchbox", focus: true }`
 
 ## Use an iFrame to embed a search box
 
@@ -58,7 +50,6 @@ If embedding a script isn't an option for the site, use an iFrame to add the sea
   
 ```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
-
 ```
 
 ## See also
@@ -68,5 +59,3 @@ If embedding a script isn't an option for the site, use an iFrame to add the sea
 [Set default homepage](set-default-homepage.md)
   
 [Set default browser](set-default-browser.md)
-  
-
