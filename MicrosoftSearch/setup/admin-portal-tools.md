@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
-description: "Overview of Microsoft Search in Bing tools to create and import results, sign in automatically, and search from anywhere"
+description: "Overview of Microsoft Search tools to create and import results, sign in automatically, and search from anywhere"
 ---
 
 # Admin portal tools
 
-The Microsoft Search in Bing Admin portal includes tools and resources designed for admins, editors, and users, including:
+The Microsoft Search Admin portal includes tools and resources designed for admins, editors, and users, including:
   
 - Content creator browser extension
     
@@ -26,7 +26,7 @@ The Microsoft Search in Bing Admin portal includes tools and resources designed 
     
 - Microsoft Search in Bing search extension
     
-    Available for authorized users, use the Chrome or Edge extension to quickly access Microsoft Search in Bing enterprise search without leaving the page or site you're on.
+    Available for authorized users, use the Chrome or Edge extension to quickly access Microsoft Search enterprise search without leaving the page or site you're on.
     
 - Windows 10 and AAD sign-in extension for Chrome
     
@@ -39,19 +39,6 @@ The Microsoft Search in Bing Admin portal includes tools and resources designed 
 - Import SharePoint Promoted Result Query Rules as bookmarks
     
     Available to admins, [import SharePoint promoted results](../bookmarks/import-sharepoint-promoted-results-and-top-queries.md) and top queries, or Best Bets, as suggested bookmarks. 
-    
-## See also
 
-[Configuring Microsoft Search in Bing](set-up-microsoft-search.md)
-  
-[Content settings](content-settings.md)
-  
-[Adding users](add-users.md)
-  
-[Testing single sign-on](test-single-sign-on.md)
-  
-[Planning your content](plan-your-content.md)
-  
-[Creating and managing bookmarks](../bookmarks/create-and-manage-bookmarks.md)
   
 

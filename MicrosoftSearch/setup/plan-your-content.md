@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
-description: "Provide quality content without needing additional resources when you use Microsoft Search in Bing"
+description: "Provide quality content without needing additional resources when you use Microsoft Search"
 ---
 
 # Plan your content
 
-Before planning your content, understanding what you can add to Microsoft Search in Bing will be helpful:
+Before planning your content, understanding what you can add to Microsoft Search will be helpful:
   
 - Bookmarks
     
@@ -62,11 +62,11 @@ For example, traffic, public transit information, local weather, discounts avail
 
  **Leverage subject matter experts**
   
-Build a support team that includes experts from HR, support, sales, and other key areas. To allow your SMEs to contribute content directly, add them as editors in the Admin panel. This also allows you to scale the amount of available content without needing additional staff resources.
+Build a support team that includes experts from HR, support, sales, and other key areas. To allow your SMEs to contribute content directly, add them as editors in the Admin portal. This also allows you to scale the amount of available content without needing additional staff resources.
   
  **Involve your users**
   
-Involving users in the content creation process encourages them to use Microsoft Search in Bing. Ask them to use the feedback link in work results or the Edge or Chrome search extension to suggest bookmarks and Q&As. In addition to suggesting content, they can report errors, like broken or invalid links, and provide other feedback.
+Involving users in the content creation process encourages them to use Microsoft Search. Ask them to use the feedback link in work results or the Edge or Chrome search extension to suggest bookmarks and Q&As. In addition to suggesting content, they can report errors, like broken or invalid links, and provide other feedback.
   
 ## Create high-quality content
 
@@ -94,7 +94,7 @@ For example, if you're creating a result that links to a tool for submitting vac
   
  **Reserved keywords**
   
-Microsoft Search in Bing determines which bookmarks appear as the top work results based on usage. When you need a specific result to appear as the top result, use reserved keywords. A reserved keyword is a unique word or phrase that identifies a bookmark or Q&A result. When a user enters a reserved keyword in the search box, that bookmark or Q&A will be the first result that appears. Use reserved keywords sparingly to allow Microsoft Search in Bing to learn based on usage.
+Microsoft Search determines which bookmarks appear as the top work results based on usage. When you need a specific result to appear as the top result, use reserved keywords. A reserved keyword is a unique word or phrase that identifies a bookmark or Q&A result. When a user enters a reserved keyword in the search box, that bookmark or Q&A will be the first result that appears. Use reserved keywords sparingly to allow Microsoft Search to learn based on usage.
   
  **Suggested keywords**
   
@@ -133,19 +133,6 @@ Maintaining the accuracy and freshness of your results is critical when you're p
 - Review SharePoint Online and on-premises search queries, including popular or top queries, abandoned queries, and no queries to understand what users search for and where there are gaps
     
 To quickly bulk edit your results, use the export and import features in the Admin portal.
-  
-## See also
 
-[Configuring Microsoft Search in Bing](set-up-microsoft-search.md)
-  
-[Content settings](content-settings.md)
-  
-[Adding users](add-users.md)
-  
-[Admin portal tools](admin-portal-tools.md)
-  
-[Testing single sign-on](test-single-sign-on.md)
-  
-[Creating and managing bookmarks](../bookmarks/create-and-manage-bookmarks.md)
   
 

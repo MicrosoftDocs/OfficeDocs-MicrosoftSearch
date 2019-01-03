@@ -1,5 +1,5 @@
 ---
-title: "Quick set up for Microsoft Search in Bing"
+title: "Quick set up for Microsoft Search"
 ms.author: anfowler
 author: anfowler
 manager: mnirkhe
@@ -13,24 +13,24 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
-description: "Learn about the four easy steps needed to enable and use Microsoft Search in Bing."
+description: "Learn about the four easy steps needed to enable and use Microsoft Search."
 ---
 
-# Quick set up for Microsoft Search in Bing
+# Quick set up for Microsoft Search
 
 Save time by bringing the best of the web and work to your organization.
   
 ## Step 1: Turn on Microsoft Search
 
-1. On the navigation menu in the Office 365 admin center, go to **Settings** \> **Services &amp; add-ins**
+1. On the navigation menu in the Microsoft 365 admin center, go to **Settings** \> **Services &amp; add-ins**
     
 2. Click the **Microsoft Search** service 
     
-3. In the right pane, turn on **Let People in your company use Microsoft Search**
+3. In the right pane, turn on **Activate Microsoft Search**
     
 4. Click **Save**
     
-5. Under Manage company experience, click **Launch the Microsoft Search Administration Tool now to manage your organization's search experience**
+5. Click **Get started**
   
 This will take you to the Microsoft Search Admin portal to complete the remaining set-up steps.
     
@@ -76,14 +76,7 @@ To get to the Admin portal at any time:
   
 - Go to the [Explore Microsoft Search](https://go.microsoft.com/fwlink/?linkid=2017806) page and click **Admin login**
     
-- In the Office 365 admin center, in the left menu, go to **Admin centers** \> **Microsoft Search**
-    
-## See also
+- In the Office 365 admin center, in the left pane, go to **Admin centers** \> **Microsoft Search**
 
-[Administering Microsoft Search in Bing](https://support.office.com/article/58cb3d89-b46c-45c1-91a2-21b81c1f0c33.aspx)
-  
-[About the Microsoft Search in Bing Admin portal](../overview/about-the-admin-portal.md)
-  
-[Configuring Microsoft Search in Bing](set-up-microsoft-search.md)
   
 

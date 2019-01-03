@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
-description: "Learn how to configure a default browser for your company with Microsoft Search in Bing."
+description: "Learn how to configure a default browser for your company with Microsoft Search."
 ---
 
 # Set default browser
 
-Configuring the default browser, default search engine, and default homepage will help your users discover Microsoft Search in Bing capabilities, encourage more usage, and provide a smoother experience.
+Configuring the default browser, default search engine, and default homepage will help your users discover Microsoft Search capabilities, encourage more usage, and provide a smoother experience.
   
 To set the default browser for your organization, follow the steps below.
   
@@ -48,25 +48,25 @@ These steps try and create the default associations file in the SYSVOL folder of
     
      `<Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
   
- `<Association Identifier=".html" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
+     `<Association Identifier=".html" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
   
- `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
+     `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
     
   - **Internet Explorer**
     
      `<Association Identifier=".htm" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
   
- `<Association Identifier=".html" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
+     `<Association Identifier=".html" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
   
- `<Association Identifier="http" ProgId="IE.HTTP" ApplicationName="Internet Explorer" />`
+     `<Association Identifier="http" ProgId="IE.HTTP" ApplicationName="Internet Explorer" />`
   
- `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
+     `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
     
 3. Open Group Policy Management Console (gpmc.msc) and switch to editing any existing policy or creating a new one.
     
 1. Navigate to **Computer Configuration\Administrative Templates\Windows Components\File Explorer**
     
-2. Double-click **Set a default associations configuration file**, set it to **Enabled**, and enter the path to AppAssoc.xml (e.g. %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml)
+2. Double-click **Set a default associations configuration file**, set it to **Enabled**, and enter the path to AppAssoc.xml (for example %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml)
     
 4. Enforce the resultant GPO by linking it to the appropriate domain.
     
@@ -92,16 +92,10 @@ Users will be able to change the browser after this policy is set.
   
 5. Navigate to **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** and select the ProgId value. Make sure that the value looks like the one below: 
     
-    ![Select ProgId fro HTTPS in Edit String](../media/3519e13b-4fe7-4d15-946c-82fd50fc49bb.png)
+    ![Select ProgId for HTTPS in Edit String](../media/3519e13b-4fe7-4d15-946c-82fd50fc49bb.png)
   
 3. Enforce the resultant GPO by linking it to the appropriate domain.
     
 Users will be able to change the browser after this policy is set.
-  
-## See also
 
-[Set default search engine](set-default-search-engine.md)
-  
-[Set default homepage](set-default-homepage.md)
-  
 
