@@ -13,15 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8a294807-bb40-474d-bbe5-c5b03b2fb2c8
-description: "Talk to other Microsoft Search in Bing admins and experts in the tech community"
+description: "Talk to other Microsoft Search admins and experts in the tech community"
 ---
 
 # Get support
 
-Tap into the collective wisdom of other Microsoft Search in Bing admins, learn from each other and experts, and share your experiences on the Microsoft Search in Bing section of the [Microsoft Tech Community site](https://go.microsoft.com/fwlink/?linkid=2018001).
-  
-## See also
+Tap into the collective wisdom of other Microsoft Search admins, learn from each other and experts, and share your experiences on the Microsoft Search section of the [Microsoft Tech Community site](https://go.microsoft.com/fwlink/?linkid=2018001).
 
-[FAQs](faqs.md)
   
 

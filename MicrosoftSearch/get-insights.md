@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
-description: "Analyze metrics and manage content from the easy-to-use dashboard in the Microsoft Search in Bing Admin portal"
+description: "Analyze metrics and manage content from the easy-to-use dashboard in the Microsoft Search Admin portal"
 ---
 
 # Use the Insights Dashboard
@@ -63,13 +63,6 @@ Easy-to-read graphs in the Impression distribution by result type card show data
 - To see a custom range between 0 and 90 days, click Custom range and enter the start and end dates
     
 - In the timeline, hover on a data point for impressions by result type for a single day
-    
-## See also
 
-[Adding users](setup/add-users.md)
-  
-[Creating and managing bookmarks](bookmarks/create-and-manage-bookmarks.md)
-  
-[Creating and managing Q&As](qas/create-and-manage-qas.md)
   
 
