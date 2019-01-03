@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: "Microsoft Search is an enterprise search experience that increases productivity and saves time by delivering more relevant search results for your organization"
 ---
-# Microsoft Search in Bing
+# Microsoft Search
 
 <ul class="panelContent cardsW cols cols2">
     <li>
@@ -39,7 +39,7 @@ description: "Microsoft Search is an enterprise search experience that increases
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Why Microsoft Search in Bing</h2>
+                        <h2>Why Microsoft Search</h2>
                         <p>Get an enterprise search experience that increases productivity and saves time by delivering more relevant search results for your organization</p>
                         <p><a href="overview/why-microsoft-search.md">Find out how</a></p>
                     </div>
@@ -81,7 +81,7 @@ description: "Microsoft Search is an enterprise search experience that increases
                     </div>
                     <div class="cardText">
                         <h3>Admin quick set up</h3>
-                        <p>Find out how to turn on Microsoft Search in Bing and configure it for your organization in four easy steps</p>
+                        <p>Find out how to turn on Microsoft Search and configure it for your organization in four easy steps</p>
                         <p><a href="setup/quick-set-up.md">Start now</a></p>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ description: "Microsoft Search is an enterprise search experience that increases
                     </div>
                     <div class="cardText">
                         <h3>FAQs</h3>
-                        <p>Get answers to some of the commonly asked questions about Microsoft Search in Bing</p>
+                        <p>Get answers to some of the commonly asked questions about Microsoft Search</p>
                         <p><a href="faqs.md">Browse the FAQ</a></p>
                     </div>
                 </div>
@@ -114,8 +114,8 @@ description: "Microsoft Search is an enterprise search experience that increases
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Use Microsoft Search in Bing</h2>
-                        <p>Microsoft Search in Bing is a simple, fast, and safer way to find information, be more productive, and work smarter</p>
+                        <h2>Use Microsoft Search</h2>
+                        <p>Microsoft Search is a simple, fast, and safer way to find information, be more productive, and work smarter</p>
                         <p><a href="use/use-microsoft-search.md">Find out how</a></p>
                     </div>
                 </div>
