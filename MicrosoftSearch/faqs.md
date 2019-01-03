@@ -106,7 +106,7 @@ Microsoft Search uses Azure Active Directory to authenticate and authorize acces
   
 ## How do I set Bing as the default search provider for my users?
 
-For information about this, see [Set default search engine](set-default-search-engine.md), [Set default homepage](set-default-homepage.md), and [Set default browser](set-default-browser.md).
+For information about this, see [Set default search engine](setup/set-default-search-engine.md), [Set default homepage](setup/set-default-homepage.md), and [Set default browser](setup/set-default-browser.md).
   
 ## Does Microsoft Search provide search results across tenants?
 

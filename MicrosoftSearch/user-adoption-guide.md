@@ -91,7 +91,7 @@ Microsoft Search users must sign in to Bing with a work or school account. To ma
   
 - Ensure Azure Active directory configurations are correctly set, have a few users try to sign in. For more information, see [Test single sign-on](setup/test-single-sign-on.md).
     
-- Set browser defaults for company-managed devices to Bing. For more information, see [Set default browser](set-default-browser.md).
+- Set browser defaults for company-managed devices to Bing. For more information, see [Set default browser](setup/set-default-browser.md).
     
 - Deploy search extensions for Edge and Chrome users via Group Policy. For more information, see [Admin portal tools](setup/admin-portal-tools.md).
     
