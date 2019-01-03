@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
-description: "Get an overview of the admin portal features and access permissions available with Microsoft Search in Bing"
+description: "Get an overview of the admin portal features and access permissions available with Microsoft Search"
 ---
 
 # About the Admin portal
 
-Microsoft Search in Bing lets you use Bing to search your organization for SharePoint sites and files, internal websites, people, Office 365 groups, and more. Use the Admin portal to manage all aspects of Microsoft Search in Bing.
+Microsoft Search lets you use Bing to search your organization for SharePoint sites and files, internal websites, people, Office 365 groups, and more. Use the Admin portal to manage all aspects of Microsoft Search.
   
-The Microsoft Search in Bing Admin portal is organized around these areas:
+The Microsoft Search Admin portal is organized around these areas:
   
 - [Dashboard](../get-insights.md)
     
@@ -40,11 +40,11 @@ The Microsoft Search in Bing Admin portal is organized around these areas:
     
 - [Users and permissions](../setup/add-users.md)
     
-    Manage portal access for administrators and editors, and provide or restrict access to Microsoft Search in Bing within your organization
+    Manage portal access for administrators and editors, and provide or restrict access to Microsoft Search within your organization
     
 - [Content settings](../setup/content-settings.md)
     
-    Control the look and feel of Microsoft Search in Bing results
+    Control the look and feel of Microsoft Search results on Bing
     
 - [Tools](../setup/admin-portal-tools.md)
     
@@ -52,28 +52,21 @@ The Microsoft Search in Bing Admin portal is organized around these areas:
     
 - [Connected services](connected-services.md)
     
-    Select the information and data sources you want to include in Microsoft Search in Bing work results
+    Select the information and data sources you want to include in Microsoft Search results
     
 ## Who can access the Admin portal
 
-To access the Microsoft Search in Bing Admin portal, you must have one of the following roles:
+To access the Microsoft Search Admin portal, you must have one of the following roles:
   
 - Global admin
     
-- Microsoft Search in Bing admin, assigned by a global admin
+- Microsoft Search admin, assigned by a global admin
     
-- Microsoft Search in Bing editor, assigned by a Microsoft Search in Bing or a global admin
+- Microsoft Search editor, assigned by a Microsoft Search or a global admin
     
-## Go to the Microsoft Search in Bing Admin portal
+## Go to the Microsoft Search Admin portal
 
-You can get to the Admin portal any time going to the [Explore Microsoft Search in Bing page](https://go.microsoft.com/fwlink/?linkid=2017806) and clicking Admin login. 
-  
-## See also
+You can get to the Admin portal any time going to the [Explore Microsoft Search page](https://go.microsoft.com/fwlink/?linkid=2017806) and clicking Admin login. 
 
-[Administering Microsoft Search in Bing](https://support.office.com/article/58cb3d89-b46c-45c1-91a2-21b81c1f0c33.aspx)
-  
-[Quick set up for Microsoft Search in Bing](../setup/quick-set-up.md)
-  
-[Configuring Microsoft Search in Bing](../setup/set-up-microsoft-search.md)
   
 

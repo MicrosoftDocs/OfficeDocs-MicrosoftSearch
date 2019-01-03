@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
-description: "Key features of Microsoft Search in Bing for admins and end users include bookmarks, Q&As, and management and data insights"
+description: "Key features of Microsoft Search for admins and end users include bookmarks, Q&As, and management and data insights"
 ---
 
 # Features of Microsoft Search
@@ -38,9 +38,11 @@ description: "Key features of Microsoft Search in Bing for admins and end users 
     
 - [Users and permissions](../setup/add-users.md)
     
-    Your Global Administrator or Microsoft Search in Bing administrator authorizes additional admins who manage the Microsoft Search in Bing configuration, editors who create content, and end users who have access to Microsoft Search in Bing
+    Your Global Administrator or Microsoft Search administrator authorizes additional admins who manage the Microsoft Search configuration, editors who create content, and end users who have access to Microsoft Search
     
-- [Analytics ](../get-insights.md) Understand how your organization is using Microsoft Search in Bing 
+- [Analytics ](../get-insights.md) 
+    
+    Understand how your organization is using Microsoft Search 
     
 ## Key end-user features include:
 
@@ -74,14 +76,7 @@ description: "Key features of Microsoft Search in Bing for admins and end users 
     
 - First-run experience
     
-    The first time a user signs in to Microsoft Search in Bing, they'll get information about using it and the types of work results they'll find when they search
+    The first time a user signs in to Microsoft Search and goes to Bing, they'll get information about using it and the types of work results they'll find when they search
     
-## See also
-
-[Why Microsoft Search in Bing](why-microsoft-search.md)
-  
-[Security for Microsoft Search in Bing](security.md)
-  
-[Administering Microsoft Search in Bing](https://support.office.com/article/58cb3d89-b46c-45c1-91a2-21b81c1f0c33.aspx)
   
 

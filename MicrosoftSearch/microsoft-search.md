@@ -58,7 +58,7 @@ description: "Microsoft Search is an enterprise search experience that increases
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/651172f9-f9b6-4fbe-89f3-8adf6450cd7f.png" alt="Microsoft Search in Bing features" />
+                            <img src="media/651172f9-f9b6-4fbe-89f3-8adf6450cd7f.png" alt="Features included in Microsoft Search" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -76,7 +76,7 @@ description: "Microsoft Search is an enterprise search experience that increases
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/60a078b4-166d-42f4-a3b9-91c04c9001f0.png" alt="Admin quick set up" />
+                            <img src="media/60a078b4-166d-42f4-a3b9-91c04c9001f0.png" alt="Quick for admins to set up and configure" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -94,7 +94,7 @@ description: "Microsoft Search is an enterprise search experience that increases
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/d696a83a-6322-477a-befd-4ad102b8204d.png" alt="Frequently asked questions about Microsoft Search in Bing" />
+                            <img src="media/d696a83a-6322-477a-befd-4ad102b8204d.png" alt="Frequently asked questions about Microsoft Search" />
                         </div>
                     </div>
                     <div class="cardText">

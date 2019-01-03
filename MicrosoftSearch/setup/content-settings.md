@@ -13,20 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d1432d64-7a97-4b1b-a99f-11291814d361
-description: "Add a logo, company name, and more to your Microsoft Search in Bing work results"
+description: "Add a logo, company name, and more to your Microsoft Search work results"
 ---
 
 # Content settings
 
-With Microsoft Search in Bing, you can ensure a familiar look and feel for results that come from content sources within your organization, such as SharePoint, OneDrive for Business, or your company intranet. 
+With Microsoft Search, you can ensure a familiar look and feel for results that come from content sources within your organization, such as SharePoint, OneDrive for Business, or your company intranet. 
   
 - Organization name
     
-    In most cases Microsoft Search in Bing uses the organization name defined in the Office 365 admin center. To change the name that appears with your work results, enter a new one. It can be up to 50 characters.
+    In most cases Microsoft Search uses the organization name defined in the Office 365 admin center. To change the name that appears with your work results, enter a new one. It can be up to 50 characters.
     
 - Logo
     
-    Your logo appears on all Microsoft Search in Bing results for your organization. Logos must be either PNG or GIF files. Files shouldn't exceed 1 MB in size or be larger than 48px in height. Images will be scaled to 48px to maintain the aspect ratio. A larger image size may not display correctly.
+    Your logo appears on all Microsoft Search results for your organization. Logos must be either PNG or GIF files. Files shouldn't exceed 1 MB in size or be larger than 48px in height. Images will be scaled to 48px to maintain the aspect ratio. A larger image size may not display correctly.
     
 - Color
     
@@ -34,11 +34,11 @@ With Microsoft Search in Bing, you can ensure a familiar look and feel for resul
     
 - Feedback email address
     
-    Microsoft Search in Bing results include a feedback link for suggestions and comments from users. In the Feedback email address field, enter the address feedback should be sent to.
+    Microsoft Search results include a feedback link for suggestions and comments from users. In the Feedback email address field, enter the address feedback should be sent to.
     
 - Query suggestions
     
-    Suggest searches for new Microsoft Search in Bing users to try. Enter up to five sample searches that are likely to return results for all users.
+    Suggest searches for new Microsoft Search users to try. Enter up to five sample searches that are likely to return results for all users.
     
 - Business results
     
@@ -48,22 +48,8 @@ With Microsoft Search in Bing, you can ensure a familiar look and feel for resul
     
     Include relevant public or group conversation results from Microsoft Teams or Microsoft Yammer when your users search.
     
-Configure these settings in the Microsoft Search in Bing Admin portal, just click Content settings in the navigation pane.
+Configure these settings in the Microsoft Search Admin portal, just click Content settings in the navigation pane.
   
-Only Office 365 global admins or Microsoft Search in Bing admins can change content settings. Microsoft Search in Bing editors can view them but can't change them.
-  
-## See also
+Only Office 365 global admins or Microsoft Search admins can change content settings. Microsoft Search editors can view them but can't change them.
 
-[Configuring Microsoft Search in Bing](set-up-microsoft-search.md)
-  
-[Adding users](add-users.md)
-  
-[Admin portal tools](admin-portal-tools.md)
-  
-[Testing single sign-on](test-single-sign-on.md)
-  
-[Planning your content](plan-your-content.md)
-  
-[Creating and managing bookmarks](../bookmarks/create-and-manage-bookmarks.md)
-  
 
