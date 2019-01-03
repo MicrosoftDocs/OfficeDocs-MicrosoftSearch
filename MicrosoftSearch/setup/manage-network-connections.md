@@ -22,46 +22,44 @@ To ensure you and your users can connect to Microsoft Search endpoints, add thes
   
 ## For the Microsoft Search Admin portal:
 
-- www.bingatwork.com
+- `www.bingatwork.com`
     
-- bingforbusiness.com
+- `bingforbusiness.com`
     
-- bingatwork.asgfalcon.io
+- `bingatwork.asgfalcon.io`
     
-- graph.microsoft.com
+- `graph.microsoft.com`
     
-- graph.windows.net
+- `graph.windows.net`
     
-- \*.bingforbusiness.com
+- `\*.bingforbusiness.com`
     
 ## For Microsoft Search in Bing:
 
-- business.bing.com
+- `business.bing.com`
     
-- login.microsoftonline.com
+- `login.microsoftonline.com`
     
-- browser.pipe.aria.microsoft.com
+- `browser.pipe.aria.microsoft.com`
     
-- a.config.skype.com
+- `a.config.skype.com`
     
-- swx.cdn.skype.com
+- `swx.cdn.skype.com`
     
-- latest-swx.cdn.skype.com
+- `latest-swx.cdn.skype.com`
     
-- webdir.online.lync.com
+- `webdir.online.lync.com`
     
-- webpoolsn23a06.infra.lync.com
+- `webpoolsn23a06.infra.lync.com`
     
-- login.windows.net
+- `login.windows.net`
     
-- www.office.com
+- `www.office.com`
     
-- outlook.office.com
+- `outlook.office.com`
     
 ## See also
 
 [Managing Office 365 endpoints](https://go.microsoft.com/fwlink/?linkid=2034092)
   
 [Office 365 URLs and IP address ranges](https://go.microsoft.com/fwlink/?linkid=2034095)
-  
-
