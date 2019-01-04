@@ -12,24 +12,24 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 17c9982a-0fd9-4cf1-b010-69ae3440b41f
-description: "Use Microsoft Search in Bing to find anyone in your company and the information that you'll see"
+description: "Use Microsoft Search to find anyone in your company and the information that you'll see"
 ---
 
 # Find people and groups
 
-It's easy to find information about your co-workers using Microsoft Search in Bing. Just search for their name or alias to find contact info, upcoming meetings you have together, org chart details, group memberships, and files they've shared with you.
+It's easy to find information about your co-workers using Microsoft Search. Just search on Bing for their name or alias to find contact info, upcoming meetings you have together, org chart details, group memberships, and files they've shared with you.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AuTv?autoplay=false]
   
 ## Find people
 
-Your IT department determines the content that appears in Microsoft Search in Bing results.
+Your IT department determines the content that appears in Microsoft Search results.
   
 1. Sign in to your work or school account on Bing
     
 2. Search for 'me,' your name or work alias, or a co-worker's name or alias
     
-    Including both a first and last name will return the best result, but, if you only know part of their name, Microsoft Search in Bing will show you the result that best matches your search and, if possible, offer to show more results.
+    Including both a first and last name will return the best result, but, if you only know part of their name, Microsoft Search will show you the result that best matches your search and, if possible, offer to show more results.
     
 3. A people card appears at the top of the results page or at the top of the right column
     
@@ -43,18 +43,6 @@ Just like you search for yourself or a co-worker, enter the name of a group or g
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AA2V?autoplay=false]
   
-## See also
 
-[Sign in to Microsoft Search in Bing](sign-in.md)
-  
-[Find resources, tools, and more](find-resources-tools-and-more.md)
-  
-[Find SharePoint sites](find-sharepoint-sites.md)
-  
-[Find files](find-files.md)
-  
-[Find conversations](find-conversations.md)
-  
-[Send feedback](send-feedback.md)
   
 

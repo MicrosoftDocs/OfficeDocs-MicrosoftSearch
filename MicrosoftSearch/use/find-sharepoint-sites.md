@@ -12,7 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 3388bdc7-1ee0-497e-b110-fba4a082eb08
-description: "Use Microsoft Search in Bing to find SharePoint sites and the details that you'll see"
+description: "Use Microsoft Search to find SharePoint sites and the details that you'll see"
 ---
 
 # Find SharePoint sites
@@ -28,19 +28,6 @@ Search for SharePoint sites you own or look for ones created by groups or co-wor
     To only see site results, click the **Sites** tab. 
     
 Web results appear under your work results. They aren't specific to your organization.
-  
-## See also
 
-[Sign in to Microsoft Search in Bing](sign-in.md)
-  
-[Find people and groups](find-people-and-groups.md)
-  
-[Find resources, tools, and more](find-resources-tools-and-more.md)
-  
-[Find files](find-files.md)
-  
-[Find conversations](find-conversations.md)
-  
-[Send feedback](send-feedback.md)
   
 

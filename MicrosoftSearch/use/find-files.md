@@ -12,7 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ff42d668-f721-4ada-b130-77e38508197c
-description: "Use Microsoft Search in Bing to find Office files and PDFs and the information that you'll see"
+description: "Use Microsoft Search to find Office files and PDFs and the information that you'll see"
 ---
 
 # Find files
@@ -42,19 +42,5 @@ You can find SharePoint and OneDrive for Business files, including:
 3. File results appears at the top of the results page
     
     Other web results appear under it. They aren't specific to your organization.
-    
-## See also
 
-[Sign in to Microsoft Search in Bing](sign-in.md)
-  
-[Find people and groups](find-people-and-groups.md)
-  
-[Find resources, tools, and more](find-resources-tools-and-more.md)
-  
-[Find SharePoint sites](find-sharepoint-sites.md)
-  
-[Find conversations](find-conversations.md)
-  
-[Send feedback](send-feedback.md)
-  
 

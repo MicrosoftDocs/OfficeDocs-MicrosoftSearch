@@ -12,7 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a67e015a-e10a-442a-b1c9-511136d54d1f
-description: "Use Microsoft Search in Bing to find intranet sites, resources, tools, and links to internal information"
+description: "Use Microsoft Search to find intranet sites, resources, tools, and links to internal information"
 ---
 
 # Find resources, tools, and more
@@ -32,19 +32,6 @@ Q&A results will generally include this same information as well as a brief answ
 3. A bookmark or Q&A result appears at the top of the page or right column
     
     Other web results appear under it. They aren't specific to your organization.
-    
-## See also
 
-[Sign in to Microsoft Search in Bing](sign-in.md)
-  
-[Find people and groups](find-people-and-groups.md)
-  
-[Find SharePoint sites](find-sharepoint-sites.md)
-  
-[Find files](find-files.md)
-  
-[Find conversations](find-conversations.md)
-  
-[Send feedback](send-feedback.md)
   
 

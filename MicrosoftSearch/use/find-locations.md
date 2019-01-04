@@ -12,7 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 3d34bfbc-d4a3-4ef2-85d3-cf92835382ac
-description: "Use Microsoft Search in Bing to find office, building, and other workspace locations, get directions, and more"
+description: "Use Microsoft Search to find office, building, and other workspace locations, get directions, and more"
 ---
 
 # Find locations
@@ -28,21 +28,6 @@ Search for buildings, offices, campuses, and more to see a map result and addres
 3. A map appears at the top of the results page showing the location and the street address
     
     Other web results appear under it. They aren't specific to your organization.
-    
-## See also
 
-[Sign in to Microsoft Search in Bing](sign-in.md)
-  
-[Find people and groups](find-people-and-groups.md)
-  
-[Find resources, tools, and more](find-resources-tools-and-more.md)
-  
-[Find SharePoint sites](find-sharepoint-sites.md)
-  
-[Find files](find-files.md)
-  
-[Find conversations](find-conversations.md)
-  
-[Send feedback](send-feedback.md)
   
 

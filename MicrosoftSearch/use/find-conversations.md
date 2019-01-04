@@ -12,7 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ecd31803-0b32-4ba3-8bb8-a0d1dfb8b856
-description: "Use Microsoft Search in Bing to find Teams and Yammer conversations and the details that you'll see"
+description: "Use Microsoft Search to find Teams and Yammer conversations and the details that you'll see"
 ---
 
 # Find conversations
@@ -45,18 +45,5 @@ You won't see conversation results if your organization doesn't use Teams or Yam
     
     Other web results appear under it. They aren't specific to your organization.
     
-## See also
 
-[Sign in to Microsoft Search in Bing](sign-in.md)
-  
-[Find people and groups](find-people-and-groups.md)
-  
-[Find resources, tools, and more](find-resources-tools-and-more.md)
-  
-[Find SharePoint sites](find-sharepoint-sites.md)
-  
-[Find files](find-files.md)
-  
-[Send feedback](send-feedback.md)
-  
 
