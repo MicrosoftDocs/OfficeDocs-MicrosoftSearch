@@ -55,7 +55,7 @@ For various roles and teams across your organization, consider:
     
 - What users would like to see when it comes to searching for information.
     
-- How the benefits of Microsoft Search in Bing apply to your organization. For more information see [Why Microsoft Search](overview/why-microsoft-search.md).
+- How the benefits of Microsoft Search apply to your organization. For more information see [Why Microsoft Search](overview/why-microsoft-search.md).
     
 Choose the user scenarios that will have the biggest positive impact for your users.
   
@@ -73,7 +73,7 @@ To help you meet your roll-out goals and show a positive impact for your organiz
     
 ## Stage 3: Readiness
 
-Investing time in preparing for your Microsoft Search in Bing rollout will result in a positive impact for your organization. 
+Investing time in preparing for your Microsoft Search rollout will result in a positive impact for your organization. 
   
  **Product and content readiness**
   
@@ -115,7 +115,7 @@ All communications should educate users about how they can sign in to Bing to fi
   
  **Engage partner teams**
   
-As an integral part of Microsoft 365, Microsoft Search complies with GDPR and Tier-C guidelines. Depending on your organization, it may be necessary to share information about Microsoft Search in Bing with your privacy and security teams. For more information, see [Security for Microsoft Search](overview/security.md).
+As an integral part of Microsoft 365, Microsoft Search complies with GDPR and Tier-C guidelines. Depending on your organization, it may be necessary to share information about Microsoft Search with your privacy and security teams. For more information, see [Security for Microsoft Search](overview/security.md).
   
 Make sure your help desk knows about the features and functionality of Microsoft Search, as well as the user requirements to sign in, so they can more effectively support users. For more information, see [Use Microsoft Search](use/use-microsoft-search.md) and [FAQs](faqs.md).
   

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
-description: "Learn how to set Bing as the default homepage for your company with Microsoft Search in Bing."
+description: "Learn how to set Bing as the default homepage for your company with Microsoft Search."
 ---
 
 # Set default homepage
 
-Configuring the default browser, default search engine, and default homepage will help your users discover Microsoft Search in Bing capabilities, encourage more usage, and provide a smoother experience.
+Configuring the default browser, default search engine, and default homepage will help your users discover Microsoft Search  capabilities, encourage more usage, and provide a smoother experience.
   
 To set the default homepage for your organization, follow the steps below.
   
@@ -105,10 +105,6 @@ Each domain your controller handles should get a separate folder. The following 
     
 Users will be able to change the home page after this policy is set.
   
-## See also
 
-[Set default search engine](set-default-search-engine.md)
-  
-[Set default browser](set-default-browser.md)
   
 

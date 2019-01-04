@@ -60,7 +60,7 @@ To enable Microsoft Search for one or more users:
     
 6. Click **Save**
     
-Two hours after they're given preview access, users signing in with their work account on Bing will see relevant work results when they search. For information about signing in to Bing, see [Sign in to Microsoft Search in Bing](../use/sign-in.md).
+Two hours after they're given preview access, users signing in with their work account on Bing will see relevant work results when they search. For information about signing in to Bing, see [Sign in to Microsoft Search](../use/sign-in.md).
 
   
 

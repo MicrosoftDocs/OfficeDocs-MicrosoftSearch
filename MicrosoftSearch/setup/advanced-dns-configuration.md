@@ -29,7 +29,3 @@ To ensure Bing can always identify users within your organization and successful
 Using a CNAME rather than the IP address is preferred since a CNAME will continue to work if the IP address changes. After you make this DNS change, results will continue to appear to your users as if they are coming from `www.bing.com`. 
   
 This requires no additional configuration on client machines and provides a seamless experience for your users. When they go to `bing.com`, they'll be automatically signed in more consistently, and if they can't be signed in automatically, they'll be prompted to do so.
-  
-## See also
-
-[Manage network connections](manage-network-connections.md)

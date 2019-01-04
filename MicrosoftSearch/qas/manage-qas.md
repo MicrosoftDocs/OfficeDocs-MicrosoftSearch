@@ -86,7 +86,7 @@ Id is a unique identifier for each Q&A and should never be edited. The Last Modi
     
 6. In the upper-right corner of the Q&As page, click **Import**
     
-7. In the Import Q&As **** pane, click **Browse** and select the edited .csv file 
+7. In the Import Q&As pane, click **Browse** and select the edited .csv file 
     
 8. Click **Import**
     

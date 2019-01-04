@@ -76,7 +76,7 @@ To get to the Admin portal at any time:
   
 - Go to the [Explore Microsoft Search](https://go.microsoft.com/fwlink/?linkid=2017806) page and click **Admin login**
     
-- In the Office 365 admin center, in the left pane, go to **Admin centers** \> **Microsoft Search**
+- In the Microsoft 365 admin center, in the left pane, go to **Admin centers** \> **Microsoft Search**
 
   
 

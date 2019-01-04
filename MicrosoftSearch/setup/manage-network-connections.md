@@ -57,9 +57,3 @@ To ensure you and your users can connect to Microsoft Search endpoints, add thes
 - `www.office.com`
     
 - `outlook.office.com`
-    
-## See also
-
-[Managing Office 365 endpoints](https://go.microsoft.com/fwlink/?linkid=2034092)
-  
-[Office 365 URLs and IP address ranges](https://go.microsoft.com/fwlink/?linkid=2034095)

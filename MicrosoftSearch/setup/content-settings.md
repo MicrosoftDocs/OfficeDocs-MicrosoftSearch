@@ -22,7 +22,7 @@ With Microsoft Search, you can ensure a familiar look and feel for results that 
   
 - Organization name
     
-    In most cases Microsoft Search uses the organization name defined in the Office 365 admin center. To change the name that appears with your work results, enter a new one. It can be up to 50 characters.
+    In most cases Microsoft Search uses the organization name defined in the Microsoft 365 admin center. To change the name that appears with your work results, enter a new one. It can be up to 50 characters.
     
 - Logo
     
@@ -50,6 +50,6 @@ With Microsoft Search, you can ensure a familiar look and feel for results that 
     
 Configure these settings in the Microsoft Search Admin portal, just click Content settings in the navigation pane.
   
-Only Office 365 global admins or Microsoft Search admins can change content settings. Microsoft Search editors can view them but can't change them.
+Only Microsoft 365 global admins or Microsoft Search admins can change content settings. Microsoft Search editors can view them but can't change them.
 
 

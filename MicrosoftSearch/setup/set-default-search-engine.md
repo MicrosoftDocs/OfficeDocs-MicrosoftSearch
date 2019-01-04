@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
-description: "Learn how to set Bing as your company's default search engine using Microsoft Search in Bing."
+description: "Learn how to set Bing as your company's default search engine using Microsoft Search."
 ---
 
 # Set default search engine
 
-Configuring the default browser, default search engine, and default homepage will help your users discover Microsoft Search in Bing capabilities, encourage more usage, and provide a smoother experience.
+Configuring the default browser, default search engine, and default homepage will help your users discover Microsoft Search capabilities, encourage more usage, and provide a smoother experience.
   
 To set the default search engine for your organization, follow the steps below.
   
@@ -148,12 +148,7 @@ Each domain that your controller handles should get a separate folder. The follo
     
 4. Enforce the resultant GPO by linking it to the appropriate domain.
     
-Setting the default search engine will add the Microsoft Search in Bing search suggestions feature in the browser address bar. Currently, this supports bookmarks only. Users will see the top two bookmark suggestions above public web suggestions as they type in the address bar.
-  
-## See also
+Setting the default search engine will add the Microsoft Search search suggestions feature in the browser address bar. Currently, this supports bookmarks only. Users will see the top two bookmark suggestions above public web suggestions as they type in the address bar.
 
-[Set default homepage](set-default-homepage.md)
-  
-[Set default browser](set-default-browser.md)
   
 
