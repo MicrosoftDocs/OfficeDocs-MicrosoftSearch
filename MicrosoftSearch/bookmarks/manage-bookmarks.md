@@ -57,30 +57,29 @@ Id is a unique identifier for each bookmark and should never be edited. The Last
 3. Save or open the .csv file
     
 4. Edit data in any of these fields:
+   - Title
     
-  - Title
+   - URL
     
-  - URL
+   - Keywords
     
-  - Keywords
+   - State
     
-  - State
+   - Description
     
-  - Description
+   - Reserved Keywords
     
-  - Reserved Keywords
+   - Start Date
     
-  - Start Date
+   - End Date
     
-  - End Date
+   - Country/Region
     
-  - Country/Region
+   - Groups
     
-  - Groups
+   - Device&amp;OS
     
-  - Device&amp;OS
-    
-  - Targeted Variations
+   - Targeted Variations
     
 5. Save the .csv file
     
@@ -89,6 +88,3 @@ Id is a unique identifier for each bookmark and should never be edited. The Last
 7. In the Import bookmarks pane, click **Browse** and select the edited .csv file 
     
 8. Click **Import**
-
-  
-
