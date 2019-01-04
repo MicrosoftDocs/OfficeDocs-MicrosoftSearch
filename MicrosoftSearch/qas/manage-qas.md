@@ -58,29 +58,29 @@ Id is a unique identifier for each Q&A and should never be edited. The Last Modi
     
 4. Edit data in any of these fields:
     
-  - Question
+   - Question
     
-  - URL
+   - URL
+      
+   - Keywords
     
-  - Keywords
+   - State
     
-  - State
+   - Answer Description
     
-  - Answer Description
+   - Reserved Keywords
     
-  - Reserved Keywords
+   - Start Date
     
-  - Start Date
+   - End Date
     
-  - End Date
+   - Country/Region
     
-  - Country/Region
+   - Groups
     
-  - Groups
+   - Device&amp;OS
     
-  - Device&amp;OS
-    
-  - Targeted Variations
+   - Targeted Variations
     
 5. Save the .csv file
     

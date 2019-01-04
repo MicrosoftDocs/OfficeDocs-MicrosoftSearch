@@ -58,31 +58,31 @@ Id is a unique identifier for each location and should never be edited. The Last
     
 4. Edit data in any of these fields:
     
-  - Name
+   - Name
     
-  - Address Line 1
+   - Address Line 1
     
-  - Address Line 2
+   - Address Line 2
     
-  - City
+   - City
     
-  - Address State
+   - Address State
     
-  - Zip Code
+   - Zip Code
     
-  - Country
+   - Country
     
-  - Full Address
+   - Full Address
     
-  - Latitude
+   - Latitude
     
-  - Longitude
+   - Longitude
     
-  - Keywords
+   - Keywords
     
-  - Reserved Keywords
+   - Reserved Keywords
     
-  - State
+   - State
     
 5. Save the .csv file
     
