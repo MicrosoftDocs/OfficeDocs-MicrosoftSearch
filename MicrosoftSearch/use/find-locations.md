@@ -18,6 +18,8 @@ description: "Use Microsoft Search to find office, building, and other workspace
 # Find locations
 
 Search for buildings, offices, campuses, and more to see a map result and address. You can easily get directions and see what's nearby on Bing Maps.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2ACDW?autoplay=false]
   
 1. Sign in to your work or school account on Bing
     
