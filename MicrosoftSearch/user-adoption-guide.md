@@ -55,7 +55,7 @@ For various roles and teams across your organization, consider:
     
 - What users would like to see when it comes to searching for information.
     
-- How the benefits of Microsoft Search apply to your organization. For more information see [Why Microsoft Search](overview/why-microsoft-search.md).
+- How the benefits of Microsoft Search apply to your organization. For more information see [Why Microsoft Search](why-microsoft-search.md).
     
 Choose the user scenarios that will have the biggest positive impact for your users.
   
@@ -79,21 +79,21 @@ Investing time in preparing for your Microsoft Search rollout will result in a p
   
 Administrators directly influence the search experience for end users and determine how Microsoft Search looks for the organization. This includes choosing the types of results you want to surface to your users. Control this by turning on or off results for documents, sites, people, groups, or conversations.
   
-For more information, see [Set up Microsoft Search](setup/set-up-microsoft-search.md).
+For more information, see [Set up Microsoft Search](set-up-microsoft-search.md).
   
 Editors are subject matter experts who help manage Bookmarks and Q&As within their areas of expertise. Editors should create content that addresses the user scenarios that you identified earlier.
   
-For more information, see [Plan your content](setup/plan-your-content.md).
+For more information, see [Plan your content](plan-your-content.md).
   
  **Signing in**
   
 Microsoft Search users must sign in to Bing with a work or school account. To make signing in as seamless as possible for your users:
   
-- Ensure Azure Active directory configurations are correctly set, have a few users try to sign in. For more information, see [Test single sign-on](setup/test-single-sign-on.md).
+- Ensure Azure Active directory configurations are correctly set, have a few users try to sign in. For more information, see [Test single sign-on](test-single-sign-on.md).
     
-- Set browser defaults for company-managed devices to Bing. For more information, see [Set default browser](setup/set-default-browser.md).
+- Set browser defaults for company-managed devices to Bing. For more information, see [Set default browser](set-default-browser.md).
     
-- Deploy search extensions for Edge and Chrome users via Group Policy. For more information, see [Admin portal tools](setup/admin-portal-tools.md).
+- Deploy search extensions for Edge and Chrome users via Group Policy. For more information, see [Admin portal tools](admin-portal-tools.md).
     
  **Draft communications**
   
@@ -115,7 +115,7 @@ All communications should educate users about how they can sign in to Bing to fi
   
  **Engage partner teams**
   
-As an integral part of Microsoft 365, Microsoft Search complies with GDPR and Tier-C guidelines. Depending on your organization, it may be necessary to share information about Microsoft Search with your privacy and security teams. For more information, see [Security for Microsoft Search](overview/security.md).
+As an integral part of Microsoft 365, Microsoft Search complies with GDPR and Tier-C guidelines. Depending on your organization, it may be necessary to share information about Microsoft Search with your privacy and security teams. For more information, see [Security for Microsoft Search](security.md).
   
 Make sure your help desk knows about the features and functionality of Microsoft Search, as well as the user requirements to sign in, so they can more effectively support users. For more information, see [Use Microsoft Search](use/use-microsoft-search.md) and [FAQs](faqs.md).
   

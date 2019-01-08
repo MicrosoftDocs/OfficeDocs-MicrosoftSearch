@@ -41,7 +41,7 @@ description: "Microsoft Search is an enterprise search experience that increases
                     <div class="cardText">
                         <h2>Why Microsoft Search</h2>
                         <p>Get an enterprise search experience that increases productivity and saves time by delivering more relevant search results for your organization</p>
-                        <p><a href="overview/why-microsoft-search.md">Find out how</a></p>
+                        <p><a href="why-microsoft-search.md">Find out how</a></p>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@ description: "Microsoft Search is an enterprise search experience that increases
                     <div class="cardText">
                         <h3>Key features</h3>
                         <p>See which features are available for admins and users, including what you'll find when you search</p>
-                        <p><a href="overview/features.md">Find out more</a></p>
+                        <p><a href="features.md">Find out more</a></p>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@ description: "Microsoft Search is an enterprise search experience that increases
                     <div class="cardText">
                         <h3>Admin quick set up</h3>
                         <p>Find out how to turn on Microsoft Search and configure it for your organization in four easy steps</p>
-                        <p><a href="setup/quick-set-up.md">Start now</a></p>
+                        <p><a href="quick-set-up.md">Start now</a></p>
                     </div>
                 </div>
             </div>
@@ -146,9 +146,9 @@ description: "Microsoft Search is an enterprise search experience that increases
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="overview/security.md">Security</a></p>
-                        <p><a href="overview/requirements.md">Requirements</a></p>  
-                        <p><a href="overview/about-the-admin-portal.md">About the Admin portal</a></p>
+                        <p><a href="security.md">Security</a></p>
+                        <p><a href="requirements.md">Requirements</a></p>  
+                        <p><a href="about-the-admin-portal.md">About the Admin portal</a></p>
                     </div>
                 </div>
             </div>
@@ -159,9 +159,9 @@ description: "Microsoft Search is an enterprise search experience that increases
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="setup/quick-set-up.md">Quick set up</a></p>
-                        <p><a href="overview/connected-services.md">Connected services</a></p>
-                        <p><a href="setup/set-up-microsoft-search.md">Set up Microsoft Search</a></p>
+                        <p><a href="quick-set-up.md">Quick set up</a></p>
+                        <p><a href="connected-services.md">Connected services</a></p>
+                        <p><a href="set-up-microsoft-search.md">Set up Microsoft Search</a></p>
                     </div>
                 </div>
             </div>
@@ -172,9 +172,9 @@ description: "Microsoft Search is an enterprise search experience that increases
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="bookmarks/create-bookmarks.md">Create bookmarks</a></p>
-                        <p><a href="qas/create-qas.md">Create Q&As</a></p>
-                        <p><a href="setup/add-users.md">Add users</a></p>
+                        <p><a href="create-bookmarks.md">Create bookmarks</a></p>
+                        <p><a href="create-qas.md">Create Q&As</a></p>
+                        <p><a href="add-users.md">Add users</a></p>
                     </div>
                 </div>
             </div>

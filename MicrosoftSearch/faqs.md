@@ -22,11 +22,11 @@ These are the frequently asked questions that organizations and users have about
   
 ## What's the value proposition for Microsoft Search?
 
-Microsoft Search is a secure way to search both your work and web content. This kind of integration across web and enterprise is only available with Microsoft. For compliance-related information, see [Security for Microsoft Search](overview/security.md).
+Microsoft Search is a secure way to search both your work and web content. This kind of integration across web and enterprise is only available with Microsoft. For compliance-related information, see [Security for Microsoft Search](security.md).
   
 ## What Microsoft Search features are available now?
 
-For a complete list, see [Features of Microsoft Search](overview/features.md).
+For a complete list, see [Features of Microsoft Search](features.md).
   
 ## Does Microsoft Search support advanced query understanding?
 
@@ -66,7 +66,7 @@ The following file types are surfaced in file search and appear on the Files tab
     
 ## What compliance and trust measures are in place for Microsoft Search?
 
-For information about compliance and trust measures, see [Security for Microsoft Search](overview/security.md).
+For information about compliance and trust measures, see [Security for Microsoft Search](security.md).
   
 ## Where can I get info about Office 365 compliance tiers/categories?
 
@@ -74,7 +74,7 @@ Details can be found in the [Compliance Framework for Industry Standards and Reg
   
 ## How does Microsoft Search keep results secure?
 
-For information about how Microsoft Search keeps your results secure, see [Security for Microsoft Search](overview/security.md).
+For information about how Microsoft Search keeps your results secure, see [Security for Microsoft Search](security.md).
   
 ## What are the content sources for the people card?
 
@@ -90,15 +90,15 @@ Microsoft Search respects security trimming from the source. Users can only see 
   
 ## How are user queries protected from sharing on the web?
 
-For information about how user queries are protected, see [Security for Microsoft Search](overview/security.md).
+For information about how user queries are protected, see [Security for Microsoft Search](security.md).
   
 ## What types of advertising do Microsoft Search users see?
 
-For information about advertising, see [Security for Microsoft Search](overview/security.md).
+For information about advertising, see [Security for Microsoft Search](security.md).
   
 ## What are the minimum requirements to enable Microsoft Search?
 
-For information about requirements, see [Requirements for Microsoft Search](overview/requirements.md).
+For information about requirements, see [Requirements for Microsoft Search](requirements.md).
   
 ## How does Microsoft Search use Azure Active Directory?
 
@@ -106,7 +106,7 @@ Microsoft Search uses Azure Active Directory to authenticate and authorize acces
   
 ## How do I set Bing as the default search provider for my users?
 
-For information about this, see [Set default search engine](setup/set-default-search-engine.md), [Set default homepage](setup/set-default-homepage.md), and [Set default browser](setup/set-default-browser.md).
+For information about this, see [Set default search engine](set-default-search-engine.md), [Set default homepage](set-default-homepage.md), and [Set default browser](set-default-browser.md).
   
 ## Does Microsoft Search provide search results across tenants?
 
@@ -114,15 +114,15 @@ No, cross tenant or shared tenant access is not supported.
   
 ## Where can I get help with keywords and reserved keywords?
 
-For information about using keywords and reserved keywords, see [Plan your content](setup/plan-your-content.md).
+For information about using keywords and reserved keywords, see [Plan your content](plan-your-content.md).
   
 ## Which Office 365 SKUs are supported?
 
-For information about supported SKUs, see [Requirements for Microsoft Search](overview/requirements.md).
+For information about supported SKUs, see [Requirements for Microsoft Search](requirements.md).
   
 ## Is Microsoft Search GDPR compliant?
 
-For information about GDPR compliance, see [Security for Microsoft Search](overview/security.md).
+For information about GDPR compliance, see [Security for Microsoft Search](security.md).
   
 ## Why am I signed into Bing automatically?
 
