@@ -1,8 +1,8 @@
 ---
 title: "Manage locations"
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 11/08/2018
 ms.audience: Admin
 ms.topic: article

@@ -1,8 +1,8 @@
 ---
 title: "Create bookmarks"
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: article
@@ -22,7 +22,7 @@ Bookmarks help people quickly find important resources, sites, and tools. Each b
   
 ## Create a bookmark
 
-For information about creating effective titles, descriptions, keywords, and more, see [Planning your content](../setup/plan-your-content.md).
+For information about creating effective titles, descriptions, keywords, and more, see [Plan your content](../setup/plan-your-content.md).
   
 1. Go to the Microsoft Search Admin portal
     

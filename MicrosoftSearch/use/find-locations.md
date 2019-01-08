@@ -1,8 +1,8 @@
 ---
 title: "Find locations"
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 12/19/2018
 ms.audience: Consumer/IW
 ms.topic: article

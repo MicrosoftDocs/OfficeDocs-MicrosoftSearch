@@ -1,8 +1,8 @@
 ---
 title: "How Microsoft Search keeps your info secure"
-ms.author: anfowler
-author: anfowler
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 9/11/2018
 ms.audience: Consumer/IW
 ms.topic: reference

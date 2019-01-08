@@ -1,8 +1,8 @@
 ---
 title: "Test single sign-on"
-ms.author: anfowler
-author: anfowler
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 09/11/2018
 ms.audience: Admin
 ms.topic: article

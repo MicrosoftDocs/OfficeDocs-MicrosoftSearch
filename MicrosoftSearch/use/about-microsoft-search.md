@@ -1,8 +1,8 @@
 ---
 title: "About Microsoft Search"
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 12/18/2018
 ms.audience: Consumer/IW
 ms.topic: hub-page

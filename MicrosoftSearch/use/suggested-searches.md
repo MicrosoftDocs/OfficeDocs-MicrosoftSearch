@@ -1,8 +1,8 @@
 ---
 title: "Suggested searches"
-ms.author: anfowler
-author: anfowler
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 9/12/2018
 ms.audience: Consumer/IW
 ms.topic: reference

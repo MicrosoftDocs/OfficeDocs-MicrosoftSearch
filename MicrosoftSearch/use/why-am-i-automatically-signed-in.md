@@ -1,8 +1,8 @@
 ---
 title: "Why am I automatically signed in?"
-ms.author: anfowler
-author: anfowler
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 10/15/2018
 ms.audience: Consumer/IW
 ms.topic: reference

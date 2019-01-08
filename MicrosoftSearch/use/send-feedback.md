@@ -1,8 +1,8 @@
 ---
 title: "Send feedback"
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 10/24/2018
 ms.audience: Consumer/IW
 ms.topic: article

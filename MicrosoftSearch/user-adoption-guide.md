@@ -1,8 +1,8 @@
 ---
 title: "User adoption guide"
-ms.author: anfowler
-author: anfowler
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 10/1/2018
 ms.audience: Admin
 ms.topic: reference

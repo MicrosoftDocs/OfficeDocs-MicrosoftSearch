@@ -1,8 +1,8 @@
 ---
 title: "Import SharePoint promoted results and top queries"
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 9/8/2018
 ms.audience: Admin
 ms.topic: reference
