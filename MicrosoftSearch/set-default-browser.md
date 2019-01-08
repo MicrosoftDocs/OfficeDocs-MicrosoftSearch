@@ -88,11 +88,11 @@ Users will be able to change the browser after this policy is set.
     
 4. Navigate to **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** and select the ProgId value. Make sure the value looks like the one below: 
     
-    ![Select ProgID value in Edit String](/media/f6173dcc-b898-4967-8c40-4b0fe411a92b.png)
+    ![Select ProgID value in Edit String](media/f6173dcc-b898-4967-8c40-4b0fe411a92b.png)
   
 5. Navigate to **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** and select the ProgId value. Make sure that the value looks like the one below: 
     
-    ![Select ProgId for HTTPS in Edit String](/media/3519e13b-4fe7-4d15-946c-82fd50fc49bb.png)
+    ![Select ProgId for HTTPS in Edit String](media/3519e13b-4fe7-4d15-946c-82fd50fc49bb.png)
   
 3. Enforce the resultant GPO by linking it to the appropriate domain.
     

@@ -48,7 +48,7 @@ Windows Registry Editor Version 5.00
   
 Double-click the file created and follow the steps to import the file. A successful import should result in the following dialog:
   
-![Registry Editor successful import message](/media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
+![Registry Editor successful import message](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
   
 #### 2. Open the Group Policy Management Console (gpmc.msc) and switch to editing an existing policy or creating a new one
 
@@ -60,11 +60,11 @@ Double-click the file created and follow the steps to import the file. A success
     
 4. From this key, make sure to select DefaultScope.
     
-    ![Registry Browser with DefaultScope selected](/media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
+    ![Registry Browser with DefaultScope selected](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
   
 5. Check all sub keys containing the GUID for Bing for business and every value under the key except any path to user profiles. Scroll down to select other items.
     
-    ![Registry Browser with additional values selected](/media/7eef7690-8bc5-46cf-9cd8-bd134fc77a02.png)
+    ![Registry Browser with additional values selected](media/7eef7690-8bc5-46cf-9cd8-bd134fc77a02.png)
   
 6. Click Finish to complete this configuration.
     
@@ -76,7 +76,7 @@ This warning is by design and alerts users of a program trying to modify their s
     
 2. Navigate to **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\User Preferences**.
     
-3. Select the **User Preference** key. 
+3. Select the **User Preference** key.
     
 4. Click **Finish**.
     
@@ -104,7 +104,7 @@ Each domain that your controller handles should get a separate folder. The follo
     
 2. Navigate to **\<Computer/User\> Configuration\Administrative Templates\** **Windows Components\Microsoft Edge**.
     
-1. Double-click **Set default search engine**, set to **Enabled**, and enter [https://www.bing.com/sa/osd/bfb.xml](https://www.bing.com/sa/osd/bfb.xml)
+1. Double-click **Set default search engine**, set to **Enabled**, and enter `https://www.bing.com/sa/osd/bfb.xml`
     
 3. Enforce the resultant GPO by linking it to the appropriate domain.
     
@@ -136,15 +136,15 @@ Each domain that your controller handles should get a separate folder. The follo
     
 1. Double-click **Enable the default search provider**, and set it to **Enabled**.
     
-2. Double-click **Default search provider icon**, set it to **Enabled**, and enter [https://www.bing.com/sa/simg/bb.ico](https://www.bing.com/sa/simg/bb.ico)
+2. Double-click **Default search provider icon**, set it to **Enabled**, and enter `https://www.bing.com/sa/simg/bb.ico`
     
-3. Double-click **Default search provider instant URL**, and enter [https://www.bing.com/business/search?q={searchTerms}&amp;form=BFBSPR](https://www.bing.com/business/search?q=%7bsearchTerms%7d&amp;form=BFBSPR)
+3. Double-click **Default search provider instant URL**, and enter `https://www.bing.com/business/search?q={searchTerms}&amp;form=BFBSPR`
     
 4. Double-click **Default search provider name**, set it to Enabled, and enter 'Bing for business'
     
-5. Double-click **Default search provider search URL**, set it to **Enabled**, and enter [https://www.bing.com/business/search?q={searchTerms}&amp;form=BFBSPR](https://www.bing.com/business/search?q=%7bsearchTerms%7d&amp;form=BFBSPR)
+5. Double-click **Default search provider search URL**, set it to **Enabled**, and enter `https://www.bing.com/business/search?q={searchTerms}&amp;form=BFBSPR`
     
-6. Double-click **Default search provider suggest URL**, set it to **Enabled**, and enter https://business.bing.com/api/v2/browser/suggest?q={searchTerms}&amp;form=BFBSPA 
+6. Double-click **Default search provider suggest URL**, set it to **Enabled**, and enter `https://business.bing.com/api/v2/browser/suggest?q={searchTerms}&amp;form=BFBSPA`
     
 4. Enforce the resultant GPO by linking it to the appropriate domain.
     
