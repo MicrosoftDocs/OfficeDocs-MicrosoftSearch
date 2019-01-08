@@ -22,7 +22,7 @@ Microsoft Search lets you use Bing to search your organization for SharePoint si
   
 The Microsoft Search Admin portal is organized around these areas:
   
-- [Dashboard](../get-insights.md)
+- [Dashboard](get-insights.md)
     
     Get a quick overview of bookmark and Q&A results, see top search queries, and how your results are performing
     
@@ -67,6 +67,3 @@ To access the Microsoft Search Admin portal, you must have one of the following 
 ## Go to the Microsoft Search Admin portal
 
 You can get to the Admin portal any time going to the [Explore Microsoft Search page](https://go.microsoft.com/fwlink/?linkid=2017806) and clicking Admin login. 
-
-  
-
