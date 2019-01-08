@@ -1,8 +1,8 @@
 ---
 title: "Security for Microsoft Search"
-ms.author: anfowler
-author: anfowler
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 9/12/2018
 ms.audience: Admin
 ms.topic: reference

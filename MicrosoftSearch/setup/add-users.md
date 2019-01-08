@@ -1,8 +1,8 @@
 ---
 title: "Add users"
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 09/12/2018
 ms.audience: Admin
 ms.topic: article

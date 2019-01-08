@@ -1,8 +1,8 @@
 ---
 title: "About the Admin portal"
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 12/11/2018
 ms.audience: Admin
 ms.topic: hub-page

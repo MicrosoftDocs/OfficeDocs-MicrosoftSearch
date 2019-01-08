@@ -1,8 +1,8 @@
 ---
 title: "Features of Microsoft Search"
-ms.author: anfowler
-author: anfowler
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 12/11/2018
 ms.audience: Admin
 ms.topic: reference
@@ -31,6 +31,10 @@ description: "Key features of Microsoft Search for admins and end users include 
 - Import and export [bookmarks](../bookmarks/bulk-create-bookmarks.md) and [Q&As](../qas/bulk-create-qas.md)
     
     Streamline creating and updating with bulk importing, exporting, and editing
+
+- [Locations](../locations/locations.md)
+    
+    Find addresses and locate your organization's buildings, offices, and other workspaces on a map
     
 - [Management](../setup/set-up-microsoft-search.md)
     
@@ -73,6 +77,10 @@ description: "Key features of Microsoft Search for admins and end users include 
 - [Teams and Yammer conversations](../use/find-conversations.md)
     
     Find contextual and relevant results from public and group conversations
+
+- [Locations](../use/find-locations.md)
+    
+    Find address and map results for buildings, offices, campuses, and more
     
 - First-run experience
     

@@ -5,7 +5,7 @@ author: cmcatee-MSFT
 manager: mnirkhe
 ms.date: 12/19/2018
 ms.audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-online-server
 localization_priority: Priority
 search.appverid:

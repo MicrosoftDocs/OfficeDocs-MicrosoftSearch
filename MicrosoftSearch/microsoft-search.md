@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Search"
-ms.author: anfowler
-author: anfowler
-manager: mnirkhe
+ms.author: dawholl
+author: dawholl
+manager: kellis
 ms.date: 09/20/2018
 ms.audience: Admin
 ms.topic: landing-page
