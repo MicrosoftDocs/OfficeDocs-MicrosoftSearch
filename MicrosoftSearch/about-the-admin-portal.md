@@ -26,27 +26,27 @@ The Microsoft Search Admin portal is organized around these areas:
     
     Get a quick overview of bookmark and Q&A results, see top search queries, and how your results are performing
     
-- [Bookmarks](../bookmarks/create-and-manage-bookmarks.md)
+- [Bookmarks](create-and-manage-bookmarks.md)
     
     Create promoted results to help people find important tools and resources within the organization by placing them at the top of Bing results
     
-- [Q&As](../qas/create-and-manage-qas.md)
+- [Q&As](create-and-manage-qas.md)
     
     Answer the most frequently asked questions in your organization
     
-- [Locations](../locations/add-a-location.md)
+- [Locations](add-a-location.md)
     
     Show map results and address information for buildings, offices, campuses, and other important places
     
-- [Users and permissions](../setup/add-users.md)
+- [Users and permissions](add-users.md)
     
     Manage portal access for administrators and editors, and provide or restrict access to Microsoft Search within your organization
     
-- [Content settings](../setup/content-settings.md)
+- [Content settings](content-settings.md)
     
     Control the look and feel of Microsoft Search results on Bing
     
-- [Tools](../setup/admin-portal-tools.md)
+- [Tools](admin-portal-tools.md)
     
     Use browser extensions and other tools to create and import content, minimize the number of times users are prompted to sign in, and find work results on Bing
     

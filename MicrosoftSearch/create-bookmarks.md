@@ -22,7 +22,7 @@ Bookmarks help people quickly find important resources, sites, and tools. Each b
   
 ## Create a bookmark
 
-For information about creating effective titles, descriptions, keywords, and more, see [Planning your content](../setup/plan-your-content.md).
+For information about creating effective titles, descriptions, keywords, and more, see [Planning your content](plan-your-content.md).
   
 1. Go to the Microsoft Search Admin portal
     

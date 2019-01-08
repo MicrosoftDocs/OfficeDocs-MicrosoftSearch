@@ -64,7 +64,7 @@ To enable Microsoft Search for your organization, the Office 365 tenant and the 
     
 - Germany
     
-Once the product is enabled, there's no location requirement for Microsoft Search admins or users. See [Quick set up for Microsoft Search](../setup/quick-set-up.md) for details about enabling it. 
+Once the product is enabled, there's no location requirement for Microsoft Search admins or users. See [Quick set up for Microsoft Search](quick-set-up.md) for details about enabling it. 
 
   
 

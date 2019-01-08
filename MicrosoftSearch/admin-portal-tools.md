@@ -22,7 +22,7 @@ The Microsoft Search Admin portal includes tools and resources designed for admi
   
 - Content creator browser extension
     
-    Available for admins and editors, use the Chrome or Edge extension to easily [create bookmarks](../bookmarks/create-bookmarks.md) and [Q&As](../qas/create-qas.md) simply by going to a site or page. 
+    Available for admins and editors, use the Chrome or Edge extension to easily [create bookmarks](create-bookmarks.md) and [Q&As](create-qas.md) simply by going to a site or page. 
     
 - Microsoft Search in Bing search extension
     
@@ -34,11 +34,11 @@ The Microsoft Search Admin portal includes tools and resources designed for admi
     
 - Import top SharePoint queries as bookmarks
     
-    Available to admins, use this PowerShell script to [import SharePoint top queries](../bookmarks/import-sharepoint-promoted-results-and-top-queries.md) as draft bookmarks. Download the script and open the README file for information about requirements, examples, and available parameters. 
+    Available to admins, use this PowerShell script to [import SharePoint top queries](import-sharepoint-promoted-results-and-top-queries.md) as draft bookmarks. Download the script and open the README file for information about requirements, examples, and available parameters. 
     
 - Import SharePoint Promoted Result Query Rules as bookmarks
     
-    Available to admins, [import SharePoint promoted results](../bookmarks/import-sharepoint-promoted-results-and-top-queries.md) and top queries, or Best Bets, as suggested bookmarks. 
+    Available to admins, [import SharePoint promoted results](import-sharepoint-promoted-results-and-top-queries.md) and top queries, or Best Bets, as suggested bookmarks. 
 
   
 

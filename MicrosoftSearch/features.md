@@ -20,27 +20,27 @@ description: "Key features of Microsoft Search for admins and end users include 
 
 ## Key admin features include:
 
-- [Enterprise bookmarks](../bookmarks/create-and-manage-bookmarks.md)
+- [Enterprise bookmarks](create-and-manage-bookmarks.md)
     
     Find sites, tools, and other information within your enterprise
     
-- [Enterprise Q&As](../qas/create-and-manage-qas.md)
+- [Enterprise Q&As](create-and-manage-qas.md)
     
     Answer the most frequently asked questions in your organization
     
-- Import and export [bookmarks](../bookmarks/bulk-create-bookmarks.md) and [Q&As](../qas/bulk-create-qas.md)
+- Import and export [bookmarks](bulk-create-bookmarks.md) and [Q&As](bulk-create-qas.md)
     
     Streamline creating and updating with bulk importing, exporting, and editing
 
-- [Locations](../locations/locations.md)
+- [Locations](locations.md)
     
     Find addresses and locate your organization's buildings, offices, and other workspaces on a map
     
-- [Management](../setup/set-up-microsoft-search.md)
+- [Management](set-up-microsoft-search.md)
     
     Configure, create content, and define search keywords and phrases
     
-- [Users and permissions](../setup/add-users.md)
+- [Users and permissions](add-users.md)
     
     Your Global Administrator or Microsoft Search administrator authorizes additional admins who manage the Microsoft Search configuration, editors who create content, and end users who have access to Microsoft Search
     
