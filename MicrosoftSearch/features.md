@@ -50,35 +50,35 @@ description: "Key features of Microsoft Search for admins and end users include 
     
 ## Key end-user features include:
 
-- [People](/use/find-people-and-groups.md)
+- [People](use/find-people-and-groups.md)
     
     Find people and understand their role within the company, what they're working on, and ways to contact them
     
-- [Organizational charts](/use/find-people-and-groups.md)
+- [Organizational charts](use/find-people-and-groups.md)
     
     Understand a person's place within the company and easily browse their peers, management, and direct reports
     
-- [Files](/use/find-files.md)
+- [Files](use/find-files.md)
     
     Find contextual and relevant files saved on SharePoint and OneDrive for Business
     
-- [Office 365 groups](/use/find-people-and-groups.md)
+- [Office 365 groups](use/find-people-and-groups.md)
     
     Find a group by its name or members, explore groups a person belongs to, and browse shared content
     
-- [Resources and tools](/use/find-resources-tools-and-more.md)
+- [Resources and tools](use/find-resources-tools-and-more.md)
     
     Get links to internal and external resources, tools, and more to easily find the information you need
     
-- [SharePoint sites](/use/find-sharepoint-sites.md)
+- [SharePoint sites](use/find-sharepoint-sites.md)
     
     Search for a site by name or see results for a person or group
     
-- [Teams and Yammer conversations](/use/find-conversations.md)
+- [Teams and Yammer conversations](use/find-conversations.md)
     
     Find contextual and relevant results from public and group conversations
 
-- [Locations](/use/find-locations.md)
+- [Locations](use/find-locations.md)
     
     Find address and map results for buildings, offices, campuses, and more
     
