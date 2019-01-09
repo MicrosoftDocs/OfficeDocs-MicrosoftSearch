@@ -32,7 +32,7 @@ Before planning your content, understanding what you can add to Microsoft Search
 
 Consider these ideas:
   
-- [Import SharePoint promoted results and top queries](../bookmarks/import-sharepoint-promoted-results-and-top-queries.md) as bookmarks 
+- [Import SharePoint promoted results and top queries](import-sharepoint-promoted-results-and-top-queries.md) as bookmarks 
     
 - Use intranet search logs to determine sites and pages that get the most traffic
     

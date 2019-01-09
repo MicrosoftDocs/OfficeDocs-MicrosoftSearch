@@ -22,7 +22,7 @@ Q&As provide an answer or info to users including an optional link. Ideally, a Q
   
 ## Create a Q&A
 
-For information about creating effective titles, descriptions, keywords, and more, see [Plan your content.](../setup/plan-your-content.md)
+For information about creating effective titles, descriptions, keywords, and more, see [Plan your content.](plan-your-content.md)
   
 1. Go to the Microsoft Search Admin portal
     

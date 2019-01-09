@@ -22,7 +22,7 @@ Bookmarks help people quickly find important resources, sites, and tools. Each b
   
 ## Create a bookmark
 
-For information about creating effective titles, descriptions, keywords, and more, see [Plan your content](../setup/plan-your-content.md).
+For information about creating effective titles, descriptions, keywords, and more, see [Planning your content](plan-your-content.md).
   
 1. Go to the Microsoft Search Admin portal
     
@@ -81,6 +81,3 @@ Bookmark settings give you additional control over when a bookmark appears and w
 ## Use a browser extension to create content
 
 From the Tools section of the Admin portal, download and install the Content creator browser extension for Edge or Chrome. To use the extension, sign in and go to a site or page you want to add as a bookmark. Review and change the suggested content, including keywords, add any additional content, and save the bookmark.
-
-  
-

@@ -42,7 +42,7 @@ Get a full enterprise search experience that curates information across differen
     
 2. In the navigation pane, click **Connected services**
     
-    For information about the content associated with each connected service, see [Connected services](../overview/connected-services.md).
+    For information about the content associated with each connected service, see [Connected services](connected-services.md).
     
 3. For each service you want to connect, click **On**
     
