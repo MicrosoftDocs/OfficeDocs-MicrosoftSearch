@@ -36,11 +36,11 @@ To set Internet Explorer or Microsoft Edge as the default browser, follow these 
     
 4.  `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
     
-These steps try and create the default associations file in the SYSVOL folder of the domain controller. You can also just execute step 1d and paste the results to a network share accessible by all computers in the domain.
+These steps try and create the default associations file in the SYSVOL folder of the domain controller.
   
 ### Add or edit the default associations file
 
-1. Notepad "$SettingsPath\AppAssoc.xml"
+1. `Notepad "$SettingsPath\AppAssoc.xml"`
     
 2. Edit the following entries (.htm, .html, http, https), and remove other entries if they're not needed.
     
