@@ -39,11 +39,11 @@ You can sign out of Bing at any time: in the upper-right corner of any Bing page
   
 You won't be signed in automatically again on this device. If you've used other browsers or devices to sign in to Microsoft Search, you'll need to sign out there as well. 
   
-When you're signed out, your searches won't receive additional protection. They're treated as standard Bing consumer searches and are governed by the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=272895).
+When you're signed out, your searches won't receive additional protection. They're treated as standard Bing consumer searches and are governed by the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement).
   
 ## View your search history
 
-To see your Microsoft Search history for the past 30 days, go to your [search history](https://go.microsoft.com/fwlink?LinkId=275708), and under Microsoft Search in Bing, click **Export**. Searches older than 30 days are automatically cleared from your history.
+To see your Microsoft Search history for the past 30 days, go to your [search history](https://ssl.bing.com/profile/history), and under Microsoft Search in Bing, click **Export**. Searches older than 30 days are automatically cleared from your history.
 
   
 

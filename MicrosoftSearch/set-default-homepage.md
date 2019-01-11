@@ -75,9 +75,9 @@ To set the default homepage for your organization, follow the steps below.
 
 ### Windows XP SP2 or later
 
-The Windows Support article on managing ADMX files and the latest ADMX files for different versions of Windows can be found [on Microsoft Support](https://go.microsoft.com/fwlink/?linkid=2057992).
+The Windows Support article on managing ADMX files and the latest ADMX files for different versions of Windows can be found [on Microsoft Support](https://support.microsoft.com/en-us/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
 
-You'll also need the latest Google policy file, which you can find on [Google Chrome Enterprise Help](https://go.microsoft.com/fwlink/?linkid=2057986).
+You'll also need the latest Google policy file, which you can find on [Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/187202).
   
 If the settings described in this section can't be found inside of GPMC, download the appropriate ADMX and copy them to the [central store](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Central store on the controller is a folder with the following naming convention:
   

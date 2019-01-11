@@ -21,7 +21,7 @@ The first time you sign in to Bing with your work or school account, you'll see 
   
 To make them more relevant to you and other people in your organization, your IT department has reviewed them or created their own.
   
-Occasionally, you'll see messages announcing new features or telling you more about Microsoft Search. We'll always give you a link to learn more or you can go to [Explore Microsoft Search](https://go.microsoft.com/fwlink/?linkid=2017806) for more information. 
+Occasionally, you'll see messages announcing new features or telling you more about Microsoft Search. We'll always give you a link to learn more or you can go to [Explore Microsoft Search](https://www.bing.com/business/explore) for more information. 
 
   
 

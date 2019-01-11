@@ -70,7 +70,7 @@ For information about compliance and trust measures, see [Security for Microsoft
   
 ## Where can I get info about Office 365 compliance tiers/categories?
 
-Details can be found in the [Compliance Framework for Industry Standards and Regulations](https://go.microsoft.com/fwlink/?linkid=2019579) (PDF download). 
+Details can be found in the [Compliance Framework for Industry Standards and Regulations](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (PDF download). 
   
 ## How does Microsoft Search keep results secure?
 

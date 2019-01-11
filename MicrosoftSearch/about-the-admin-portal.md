@@ -66,4 +66,4 @@ To access the Microsoft Search Admin portal, you must have one of the following 
     
 ## Go to the Microsoft Search Admin portal
 
-You can get to the Admin portal any time going to the [Explore Microsoft Search page](https://go.microsoft.com/fwlink/?linkid=2017806) and clicking Admin login. 
+You can get to the Admin portal any time going to the [Explore Microsoft Search page](https://www.bing.com/business/explore) and clicking Admin login. 

@@ -24,15 +24,15 @@ Help your users complete tasks, such as entering vacation time or reporting expe
 
 PowerApps is a service that lets you build business apps that run in a browser or on a phone or tablet with no coding experience required. Learn more:
   
-- [Guided Learning](https://go.microsoft.com/fwlink/?linkid=2017910)
+- [Guided Learning](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
     
-- [Documentation](https://go.microsoft.com/fwlink/?linkid=2017914)
+- [Documentation](https://docs.microsoft.com/en-us/powerapps/)
     
 ## Add a PowerApp to a bookmark
 
 PowerApps work in any browser and on any device and take less than a minute to add.
   
-1. [Find the App ID for the PowerApp](https://go.microsoft.com/fwlink/?linkid=2018005) you want to integrate 
+1. [Find the App ID for the PowerApp](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) you want to integrate 
     
 2. In the Microsoft SearchAdmin portal, go to **Bookmarks**
     

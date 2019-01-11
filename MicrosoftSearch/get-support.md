@@ -18,7 +18,7 @@ description: "Talk to other Microsoft Search admins and experts in the tech comm
 
 # Get support
 
-Tap into the collective wisdom of other Microsoft Search admins, learn from each other and experts, and share your experiences on the Microsoft Search section of the [Microsoft Tech Community site](https://go.microsoft.com/fwlink/?linkid=2018001).
+Tap into the collective wisdom of other Microsoft Search admins, learn from each other and experts, and share your experiences on the Microsoft Search section of the [Microsoft Tech Community site](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch).
 
   
 

@@ -38,7 +38,7 @@ This will take you to the Microsoft Search Admin portal to complete the remainin
 
 Get a full enterprise search experience that curates information across different Microsoft services.
   
-1. Go to the [Microsoft Search Admin portal](https://go.microsoft.com/fwlink/?linkid=856439)
+1. Go to the [Microsoft Search Admin portal](https://www.bingforbusiness.com/admin)
     
 2. In the navigation pane, click **Connected services**
     
@@ -74,7 +74,7 @@ After you complete this quick setup and [add users](add-users.md), they can go t
 
 To get to the Admin portal at any time:
   
-- Go to the [Explore Microsoft Search](https://go.microsoft.com/fwlink/?linkid=2017806) page and click **Admin login**
+- Go to the [Explore Microsoft Search](https://www.bing.com/business/explore) page and click **Admin login**
     
 - In the Microsoft 365 admin center, in the left pane, go to **Admin centers** \> **Microsoft Search**
 

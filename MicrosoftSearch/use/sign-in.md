@@ -25,7 +25,7 @@ If you're already signed in to an Office 365 application, you'll be automaticall
   
 1. In the upper-right corner of any Bing page, click **Sign in** or **Sign in to see business results**
     
-2. If you don't see these sign-in options, go to [Explore Microsoft Search](https://go.microsoft.com/fwlink/?linkid=2017806)
+2. If you don't see these sign-in options, go to [Explore Microsoft Search](https://www.bing.com/business/explore)
     
     You'll be automatically redirected to your organization's sign-in page.
     
