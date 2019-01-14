@@ -6,7 +6,7 @@ manager: kellis
 ms.date: 12/11/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: mssearch
 localization_priority: Normal
 search.appverid:
 - BFB160

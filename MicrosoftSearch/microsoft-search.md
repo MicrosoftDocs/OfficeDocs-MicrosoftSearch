@@ -7,7 +7,7 @@ ms.date: 09/20/2018
 ms.audience: Admin
 ms.topic: landing-page
 layout: LandingPage
-ms.service: o365-administration
+ms.service: mssearch
 localization_priority: Normal
 search.appverid:
 - BFB160

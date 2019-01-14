@@ -6,7 +6,7 @@ manager: kellis
 ms.date: 10/15/2018
 ms.audience: Consumer/IW
 ms.topic: reference
-ms.service: o365-administration
+ms.service: mssearch
 localization_priority: Normal
 search.appverid:
 - BFB160
