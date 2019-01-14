@@ -7,7 +7,7 @@ ms.date: 12/19/2018
 ms.audience: Admin
 ms.topic: article
 ms.prod: office-online-server
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MOE150

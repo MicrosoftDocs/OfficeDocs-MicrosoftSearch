@@ -17,7 +17,13 @@ description: "Get an overview of all of the information that you can find when y
 
 # About Microsoft Search
 
-Microsoft Search is a simple and secure way to find the information you need when you're working. Whether you're looking for people, files, org charts, or internal web sites, Microsoft Search brings it all together in a fast, familiar, secure search experience.
+Microsoft Search effortlessly brings searching work and the web together in one experience. Use Microsoft Search for a simple, fast, powerful, and safer way to get the right information at the right time in any browser and on any device.
+  
+Whether you're searching for people, files, org charts, internal sites and resources, or answers to common questions, you can use Microsoft Search throughout your work day to get answers faster, be more productive, and work smarter. To get work results, just go to [bing.com/business](https://www.bing.com/business), sign in with your work or school account, and search. 
+  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AA2W?autoplay=false]
+
+## What you can find
   
 Use Microsoft Search to find:
   

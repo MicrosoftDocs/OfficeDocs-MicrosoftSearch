@@ -7,7 +7,7 @@ ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MOE150
