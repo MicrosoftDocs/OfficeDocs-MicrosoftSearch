@@ -47,7 +47,6 @@ manage-network-connections, 8ad58820-69e0-4ee0-88a7-d207ffa790b7, $$CURRENTPATH$
 set-default-search-engine, ee40010e-5d7f-4ba8-a3f8-d240dab3af6d, $$CURRENTPATH$/ee40010e-5d7f-4ba8-a3f8-d240dab3af6d, $$NEWPATH$$/set-default-search-engine
 integrate-powerapps, 1fadcba3-4a7f-4a55-8476-d4e64d49a15f, $$CURRENTPATH$/1fadcba3-4a7f-4a55-8476-d4e64d49a15f, $$NEWPATH$$/integrate-powerapps
 why-am-i-automatically-signed-in, 94f6fa41-0570-4668-b2fe-d51ed177716c, $$CURRENTPATH$/94f6fa41-0570-4668-b2fe-d51ed177716c, $$NEWPATH$$/use/why-am-i-automatically-signed-in
-publish-default-qas, 235fef3d-7fdb-46fe-b9f1-d8f8803cd2a2, $$CURRENTPATH$/235fef3d-7fdb-46fe-b9f1-d8f8803cd2a2, $$NEWPATH$$/publish-default-qas
 quick-set-up, bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0, $$CURRENTPATH$/bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0, $$NEWPATH$$/quick-set-up
 create-and-manage-qas, b40a575d-7727-4bb0-80da-e25131315790, $$CURRENTPATH$/b40a575d-7727-4bb0-80da-e25131315790, $$NEWPATH$$/create-and-manage-qas
 connected-services, 161ea667-9b27-4695-b7a8-e8e063141795, $$CURRENTPATH$/161ea667-9b27-4695-b7a8-e8e063141795, $$NEWPATH$$/connected-services

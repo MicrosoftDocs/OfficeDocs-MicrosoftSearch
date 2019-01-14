@@ -28,7 +28,6 @@
 # [Q&As](create-and-manage-qas.md)
 ## [Create Q&As](create-qas.md)
 ## [Manage Q&As](manage-qas.md)
-## [Publish default Q&As](publish-default-qas.md)
 ## [Bulk create Q&As](bulk-create-qas.md)
 # [Locations](locations.md)
 ## [Add a location](add-a-location.md)
