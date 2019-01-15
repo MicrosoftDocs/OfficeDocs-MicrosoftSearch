@@ -76,7 +76,7 @@ Users will be able to change the browser after this policy is set.
 
 1. Configure the local machine that will be used to set the GPO.
     
-1. Open **Control Panel \Programs\Default Programs\Set Default Programs** and set Internet Explorer as the default. 
+1. Open **Control Panel\Programs\Default Programs\Set Default Programs** and set Internet Explorer as the default. 
     
 2. Open Group Policy Management Console (gpmc.msc) and switch to editing any existing policy or creating a new one.
     
