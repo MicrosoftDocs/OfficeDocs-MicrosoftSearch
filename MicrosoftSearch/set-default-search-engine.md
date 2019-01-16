@@ -34,7 +34,8 @@ Paste the following text into a reg(\*.reg) file.
   
 Windows Registry Editor Version 5.00
   
-<pre>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]  "DefaultScope"="{D54CD0C8-C007-4BC4-B2DD-1E4896B8406D}"
+<pre>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]
+"DefaultScope"="{D54CD0C8-C007-4BC4-B2DD-1E4896B8406D}"
 [HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{D54CD0C8-C007-4BC4-B2DD-1E4896B8406D}]
 "Codepage"=dword:0000fde9
 "DisplayName"="Microsoft Search in Bing"
