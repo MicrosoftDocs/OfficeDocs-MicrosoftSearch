@@ -34,7 +34,7 @@ Paste the following text into a reg(\*.reg) file.
   
 Windows Registry Editor Version 5.00
   
-`[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]<br/>"DefaultScope"="{D54CD0C8-C007-4BC4-B2DD-1E4896B8406D}"<br/>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{D54CD0C8-C007-4BC4-B2DD-1E4896B8406D}]<br/>"Codepage"=dword:0000fde9<br/>"DisplayName"="Microsoft Search in Bing"<br/>"OSDFileURL"="https://www.bing.com/sa/osd/bfb.xml"<br/>"FaviconURL"="https://www.bing.com/sa/simg/bb.ico"<br/>"SuggestionsURL_JSON"="https://business.ing.com/api/v2/browser/suggest?q={searchTerms}&amp;form=BFBSPA"<br/>"ShowSearchSuggestions"=dword:00000001<br/>"URL"="https://www.bing.com/business/search?q={searchTerms}&amp;form=BFBSPR"`
+`[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]<br/>"DefaultScope"="{D54CD0C8-C007-4BC4-B2DD-1E4896B8406D}"  [HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{D54CD0C8-C007-4BC4-B2DD-1E4896B8406D}]  "Codepage"=dword:0000fde9<br/>"DisplayName"="Microsoft Search in Bing"  "OSDFileURL"="https://www.bing.com/sa/osd/bfb.xml"  "FaviconURL"="https://www.bing.com/sa/simg/bb.ico"  "SuggestionsURL_JSON"="https://business.ing.com/api/v2/browser/suggest?q={searchTerms}&amp;form=BFBSPA"  "ShowSearchSuggestions"=dword:00000001  "URL"="https://www.bing.com/business/search?q={searchTerms}&amp;form=BFBSPR"`
   
 Double-click the file created and follow the steps to import the file. A successful import should result in the following dialog:
   
