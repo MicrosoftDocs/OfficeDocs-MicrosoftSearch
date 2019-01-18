@@ -116,7 +116,7 @@ description: "Microsoft Search is an enterprise search experience that increases
                     <div class="cardText">
                         <h2>Use Microsoft Search</h2>
                         <p>Microsoft Search is a simple, fast, and safer way to find information, be more productive, and work smarter</p>
-                        <p><a href="use/use-microsoft-search.md">Find out how</a></p>
+                        <p><a href="use/about-microsoft-search.md">Find out how</a></p>
                     </div>
                 </div>
             </div>
