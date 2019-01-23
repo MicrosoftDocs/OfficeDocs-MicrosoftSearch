@@ -21,6 +21,8 @@ description: "Learn why Microsoft Search is intelligent enterprise search for th
 Transform the way people in your organization search for information with Microsoft Search. 
   
 This enterprise search experience increases productivity and saves time by delivering more relevant search results for the workplace. Microsoft Search securely retrieves information from your company, school, or organization—like files, company data, people info, and sites—as well as public web results, and displays them in a single experience.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2EWQN?autoplay=false]
   
 ## Save time with Intelligent Search
 
