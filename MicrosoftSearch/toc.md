@@ -1,4 +1,4 @@
-# [Microsoft Search](microsoft-search.md)
+# [Microsoft Search](index.md)
 # [Overview](why-microsoft-search.md)
 ## [Features](features.md)
 ## [Security](security.md)
