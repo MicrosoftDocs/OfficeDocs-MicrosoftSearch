@@ -7,7 +7,7 @@ ms.date: 10/17/2018
 ms.audience: Admin
 ms.topic: get-started-article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
