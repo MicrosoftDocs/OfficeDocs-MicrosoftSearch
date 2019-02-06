@@ -7,6 +7,7 @@ ms.date: 03/21/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
+ms.custom: MSSEARCHMVP1
 localization_priority: Normal
 search.appverid:
 - BFB160

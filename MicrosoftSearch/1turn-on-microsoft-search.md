@@ -12,6 +12,5 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
 description: "Turn on Microsoft Search in Bing for users in your organization."
 ---
