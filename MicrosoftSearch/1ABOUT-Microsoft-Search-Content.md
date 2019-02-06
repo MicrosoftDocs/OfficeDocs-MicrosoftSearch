@@ -14,3 +14,6 @@ search.appverid:
 - MOE150
 description: "Microsoft Search - not in Bing. We'll use to create our TOC off of this."
 ---
+##Intent
+Main article that covers search for admins. Can reuse some content from "Why Microsoft Search" + need some new content. [MicrosoftSearch](why-microsoft-search.md)
+ 
