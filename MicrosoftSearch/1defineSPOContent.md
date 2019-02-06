@@ -15,3 +15,6 @@ search.appverid:
 - MOE150
 description: "Define which content in SharePoint Online that's searchable, including how to manage your search schema."
 ---
+
+## Intent
+Base on SPO content "Make site content searchable" and "Manage the search schema"

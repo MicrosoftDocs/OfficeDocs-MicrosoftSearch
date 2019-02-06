@@ -14,3 +14,5 @@ search.appverid:
 - MOE150
 description: "Help people find their way around your offices and buildings by adding Locations."
 ---
+## Intent
+Pull content from Locations topics, bulk create location, add a location.

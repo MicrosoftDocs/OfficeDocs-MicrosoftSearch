@@ -14,3 +14,9 @@ search.appverid:
 - MOE150
 description: "Turn on Microsoft Search in Bing for users in your organization."
 ---
+## Intent
+Take from "Quick set-up" focusing on what to do, not the UI steps. 
+
+Reuse some "Content settings", "Security", "Requirements",  "Connected services", "Add user", "Test single sign-on"
+
+Add some info from the Advanced DNS configuration topic. We'll link to the authoritative IP Addresses & URLs content. 

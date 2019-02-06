@@ -14,3 +14,6 @@ search.appverid:
 - MOE150
 description: "Make sure your users get relevant results."
 ---
+
+## Intent
+Make sure results are relevant. How to troubleshoot? daily, weekly, monthly, yearly tasks?
