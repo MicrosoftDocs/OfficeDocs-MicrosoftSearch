@@ -46,9 +46,9 @@ To help prevent errors, make sure your import file is properly formatted and inc
 - Includes the header row that was in the import template
 - Includes all columns that were in the import template
 - The column order is the same as the import template
-- These columns can be empty: Id, Last Modified, Last Modified By, and Lat/Long
+- These columns can be empty: Id, Last Modified, Last Modified By, and Lat/Long  
 If lat/long is empty, we'll try to determine it based on the address
-- The State column can't be empty, this information is required
+- The State column can't be empty, this information is required  
 Based on the State field, locations will be saved as draft, suggested, scheduled, or they will be published automatically.
 
 Also, if you include the Id of an existing location, that location will be replaced with the information in the import file.
