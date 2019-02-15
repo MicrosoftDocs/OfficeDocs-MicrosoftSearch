@@ -42,18 +42,18 @@ You'll get an error if any required data is missing or invalid. Depending on the
 > [!NOTE]
 > Until all errors are resolved, you can't create or edit any locations. 
 
-To help prevent errors, make sure your import file is properly formatted and includes any required fields:
+To help prevent errors, make sure your import file is properly formatted:
 - Includes the header row that was in the import template
 - Includes all columns that were in the import template
 - The column order is the same as the import template
 - These columns can be empty: Id, Last Modified, Last Modified By, and Lat/Long  
-If lat/long is empty, we'll try to determine it based on the address
+We'll try to determine lat/long based on the address if that field is empty
 - The State column can't be empty, this information is required  
 Based on the State field, locations will be saved as draft, suggested, scheduled, or they will be published automatically.
 
 Also, if you include the Id of an existing location, it will be replaced with the information in the import file.
 
-For organizations with mulitple tenants, you can export your locations from one tenant and import it in to another. But you must remove all of the data in the Id column before you import.
+For organizations with mulitple tenants, you can export your locations from one tenant and import it into another. But you must remove all of the data in the Id column before you import.
   
 To find out more about required and recommended fields, see [Manage locations](manage-locations.md).
 

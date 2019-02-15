@@ -50,7 +50,7 @@ Based on the State field, Q&As will be saved as draft, suggested, scheduled, or 
 
 Also, if you include the Id of an existing Q&A, it will be replaced with the information in the import file.
 
-For organizations with mulitple tenants, you can export your Q&As from one tenant and import it in to another. But you must remove all of the data in the Id column before you import.
+For organizations with mulitple tenants, you can export your Q&As from one tenant and import it into another. But you must remove all of the data in the Id column before you import.
 
 To find out more about required and recommended fields, see [Create Q&As](create-qas.md).
 

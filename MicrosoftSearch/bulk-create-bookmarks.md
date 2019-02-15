@@ -50,6 +50,6 @@ Based on the State field, bookmarks will be saved as draft, suggested, scheduled
 
 Also, if you include the Id of an existing bookmark, it will be replaced with the information in the import file.
 
-For organizations with mulitple tenants, you can export your bookmarks from one tenant and import it in to another. But you must remove all of the data in the Id column before you import.
+For organizations with mulitple tenants, you can export your bookmarks from one tenant and import it into another. But you must remove all of the data in the Id column before you import.
 
 To find out more about required and recommended fields, see [Create bookmarks](create-bookmarks.md).
