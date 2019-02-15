@@ -40,7 +40,7 @@ You'll get an error if any required data is missing or invalid. Depending on the
 > [!NOTE]
 > Until all errors are resolved, you can't create or edit any bookmarks. 
 
-To help prevent errors, make sure your import file is properly formatted and includes any required fields:
+To help prevent errors, make sure your import file is properly formatted:
 - Includes the header row that was in the import template
 - Includes all columns that were in the import template
 - The column order is the same as the import template
