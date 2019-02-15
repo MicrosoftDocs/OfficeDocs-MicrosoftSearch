@@ -33,15 +33,26 @@ Download and use the .csv template to bulk create or bulk edit Q&As. It's also a
 6. In the Import Q&As pane, click **Browse** and navigate to the .csv file you want to import 
     
 7. Click **Import**
-    
+
+# Prevent import errors      
 You'll get an error if any required data is missing or invalid. Depending on the error, a log file may be generated with more information about the rows and columns that need to be corrected. Make any necessary edits, and try importing the file again.
-  
+
 > [!NOTE]
 > Until all errors are resolved, you can't create or edit any Q&As. 
-  
-The fields in the import and export Q&A templates are the same. You can export, bulk edit, and import the edits, or start with an empty template to bulk create new Q&As.
-  
-Not all fields are required and required fields vary depending on the Q&A state. Based on the state field, Q&As will be saved as draft, suggested, scheduled, or they will be published automatically. Find out more about required and recommended fields in [create Q&As](create-qas.md).
+
+To help prevent errors, make sure your import file is properly formatted and includes any required fields:
+- Includes the header row that was in the import template
+- Includes all columns that were in the import template
+- The column order is the same as the import template
+- These columns can be empty: Id, Last Modified, and Last Modified By
+- The State column can't be empty, this information is required  
+Based on the State field, Q&As will be saved as draft, suggested, scheduled, or they will be published automatically.
+
+Also, if you include the Id of an existing Q&A, it will be replaced with the information in the import file.
+
+For organizations with mulitple tenants, you can export your Q&As from one tenant and import it in to another. But you must remove all of the data in the Id column before you import.
+
+To find out more about required and recommended fields, see [Create Q&As](create-qas.md).
 
   
 
