@@ -55,7 +55,7 @@ Also, if you include the Id of an existing location, it will be replaced with th
 
 For organizations with mulitple tenants, you can export your locations from one tenant and import it into another. But you must remove all of the data in the Id column before you import.
   
-To find out more about required and recommended fields, see [Manage locations](manage-locations.md).
+To find out more about required and recommended fields, see [Add a location](add-a-location.md).
 
   
 
