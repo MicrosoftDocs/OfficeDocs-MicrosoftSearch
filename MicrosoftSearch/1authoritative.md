@@ -1,7 +1,7 @@
 ---
 title: "Provide authoritative answers, sites, and apps to users"
 ms.author: anfowler
-author: anfowler
+author: adefowler
 manager: mnirkhe
 ms.date: 03/21/2019
 ms.audience: Admin
