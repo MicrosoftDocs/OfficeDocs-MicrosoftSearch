@@ -66,9 +66,32 @@ To help users search faster, when the page or site loads place the cursor in the
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
+## Customize the appearance of the search box 
+
+To help the search box better fit with the style of your intranet, there is a variety of configuration options you can control. Mix and match the appropriate options to suit your needs.
+
+```html
+<div id="bfb_searchbox"></div>
+<script>
+    var bfbSearchBoxConfig = {
+        containerSelector: "bfb_searchbox",
+        width: 560,                             // default: 560, min: 360, max: 650
+        height: 40,                             // default: 40, min: 40, max: 72
+        cornerRadius: 6,                        // default: 6, min: 0, max: 25                                   
+        strokeOutline: true,                    // default: true
+        dropShadow: true,                       // default: true
+        iconColor: "#067FA6",                   // default: #067FA6
+        showCustomGhostText: "Contoso"          // default: not specified
+                                                // when absent, ghost text will be "Search work and the web"
+                                                // when specified, text will be "Search the web and [Contoso]"
+    };
+</script>
+<script async src="https://www.bing.com/business/s?k=sb"></script>
+```
+
 ## Use an iFrame to embed a search box
 
-If embedding a script isn't an option for the site, use an iFrame to add the search box:
+If embedding a script isn't an option for the site, use an iFrame to add the search box. Visual customizations are not available when using this method.
   
 ```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
