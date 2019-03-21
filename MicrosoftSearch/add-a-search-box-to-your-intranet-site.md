@@ -68,7 +68,7 @@ To help users search faster, when the page or site loads place the cursor in the
 
 ## Customize the appearance of the search box 
 
-To help the search box better fit with the style of your intranet, there is a variety of configuration options you can control. Mix and match the appropriate options to suit your needs.
+To help the search box better fit with the style of your intranet, there are a variety of configuration options you can use. Mix and match options to suit your needs.
 
 ```html
 <div id="bfb_searchbox"></div>
@@ -91,7 +91,7 @@ To help the search box better fit with the style of your intranet, there is a va
 
 ## Use an iFrame to embed a search box
 
-If embedding a script isn't an option for the site, use an iFrame to add the search box. Visual customizations are not available when using this method.
+If embedding a script isn't an option for the site, use an iFrame to add the search box. You won't be able to customize the appearance of the search box.
   
 ```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
