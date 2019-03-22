@@ -81,7 +81,7 @@ To help the search box better fit with the style of your intranet, there are a v
         strokeOutline: true,                    // default: true
         dropShadow: true,                       // default: true
         iconColor: "#067FA6",                   // default: #067FA6
-        showCustomGhostText: "Contoso"          // default: not specified
+        companyNameInGhostText: "Contoso"       // default: not specified
                                                 // when absent, ghost text will be "Search work and the web"
                                                 // when specified, text will be "Search the web and [Contoso]"
     };
