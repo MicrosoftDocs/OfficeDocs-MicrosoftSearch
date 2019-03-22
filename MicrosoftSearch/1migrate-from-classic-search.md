@@ -17,3 +17,6 @@ description: "Considerations and instructions for moving to Microsoft search fro
 
 ## Intent
 Migrate from classic search to Microsoft Search in SharePoint	P0	Admin	Include migrating promoted results to bookmarks ("Admin portal tools" in Bing)
+
+https://review.docs.microsoft.com/en-us/MicrosoftSearch/use/about-microsoft-search?branch=MSSearch-MVP1-working
+
