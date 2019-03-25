@@ -40,7 +40,7 @@ The Microsoft Search Admin portal is organized around these areas:
     
 - [Users and permissions](add-users.md)
     
-    Manage portal access for administrators and editors, and provide or restrict access to Microsoft Search within your organization
+    Manage portal access for administrators and editors
     
 - [Content settings](content-settings.md)
     
