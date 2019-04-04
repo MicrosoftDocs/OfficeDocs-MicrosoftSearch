@@ -174,7 +174,7 @@ description: "Microsoft Search is an enterprise search experience that increases
                     <div class="cardText">
                         <p><a href="create-bookmarks.md">Create bookmarks</a></p>
                         <p><a href="create-qas.md">Create Q&As</a></p>
-                        <p><a href="add-users.md">Add users</a></p>
+                        <p><a href="add-users.md">Manage users</a></p>
                     </div>
                 </div>
             </div>

@@ -28,9 +28,9 @@ As part of Office 365, Microsoft Search is easily deployed by enabling it in the
     
     Control the look and feel of Microsoft Search results
     
-- [Adding users](add-users.md)
+- [Managing users](add-users.md)
     
-    Manage portal access for administrators and editors, and provide or restrict access to Microsoft Search within your organization
+    Manage portal access for administrators and editors
     
 - [Admin portal tools](admin-portal-tools.md)
     
