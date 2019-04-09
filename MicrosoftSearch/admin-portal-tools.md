@@ -26,11 +26,11 @@ The Microsoft Search Admin portal includes tools and resources designed for admi
     
 - Microsoft Search in Bing search extension
     
-    Available for authorized users, use the Chrome or Edge extension to quickly access Microsoft Search enterprise search without leaving the page or site you're on.
+    Use the Chrome or Edge extension to quickly access Microsoft Search enterprise search without leaving the page or site you're on.
     
 - Windows 10 and AAD sign-in extension for Chrome
     
-    Available for authorized users, use the Chrome extension to easily authenticate with Azure Active Directory when signing in to supported sites, including Office 365 and Bing. We recommend deploying this extension when you [test single sign-on](test-single-sign-on.md).
+    Use the Chrome extension to easily authenticate with Azure Active Directory when signing in to supported sites, including Office 365 and Bing. We recommend deploying this extension when you [test single sign-on](test-single-sign-on.md).
     
 - Import top SharePoint queries as bookmarks
     

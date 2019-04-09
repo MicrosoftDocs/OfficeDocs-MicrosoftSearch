@@ -68,7 +68,7 @@ If your organization has Best Bets set up in SharePoint, you can easily import t
     
 3. For details about this, see [Admin portal tools](admin-portal-tools.md)
     
-After you complete this quick setup and [add users](add-users.md), they can go to Bing.com and search for work results. 
+After you complete this quick setup, users can go to Bing.com and search for work results. 
   
 ## How do I get to the Microsoft Search Admin portal?
 

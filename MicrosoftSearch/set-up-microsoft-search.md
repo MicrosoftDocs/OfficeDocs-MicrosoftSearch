@@ -18,7 +18,7 @@ description: "All of the information you need to deploy Microsoft Search to your
 
 # Set up Microsoft Search
 
-As part of Office 365, Microsoft Search is easily deployed by enabling it in the Microsoft 365 admin center. Once enabled, a quick configuration to set a logo, name, and color and give users access is all that's needed to get set up. From there, authorized users can sign in to Bing with a work or school account and get work results when they search.
+As part of Office 365, Microsoft Search is easily deployed by enabling it in the Microsoft 365 admin center. Once enabled, a quick configuration to set a logo, name, and color and give admins and editors access is all that's needed to get set up. From there, users can sign in to Bing with a work or school account and get work results when they search.
 
 - [Quick set up](quick-set-up.md)
     
@@ -28,9 +28,9 @@ As part of Office 365, Microsoft Search is easily deployed by enabling it in the
     
     Control the look and feel of Microsoft Search results
     
-- [Adding users](add-users.md)
+- [Managing users](add-users.md)
     
-    Manage portal access for administrators and editors, and provide or restrict access to Microsoft Search within your organization
+    Manage portal access for administrators and editors
     
 - [Admin portal tools](admin-portal-tools.md)
     
