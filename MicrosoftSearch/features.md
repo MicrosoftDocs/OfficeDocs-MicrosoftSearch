@@ -42,7 +42,7 @@ description: "Key features of Microsoft Search for admins and end users include 
     
 - [Users and permissions](add-users.md)
     
-    Your Global Administrator or Microsoft Search administrator authorizes additional admins who manage the Microsoft Search configuration, editors who create content, and end users who have access to Microsoft Search
+    Your Global Administrator or Microsoft Search administrator authorizes additional admins who manage the Microsoft Search configuration and editors who create content
     
 - [Analytics ](get-insights.md) 
     

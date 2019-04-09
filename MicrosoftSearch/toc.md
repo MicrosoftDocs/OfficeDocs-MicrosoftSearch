@@ -1,4 +1,3 @@
-# [Microsoft Search](index.md)
 # [Overview](why-microsoft-search.md)
 ## [Features](features.md)
 ## [Security](security.md)
@@ -8,7 +7,7 @@
 # [Setup](set-up-microsoft-search.md)
 ## [Quick set up](quick-set-up.md)
 ## [Content settings](content-settings.md)
-## [Add users](add-users.md)
+## [Manage users](add-users.md)
 ## [Test single sign-on](test-single-sign-on.md)
 ## [Admin portal tools](admin-portal-tools.md)
 ## [Advanced DNS configuration](advanced-dns-configuration.md)

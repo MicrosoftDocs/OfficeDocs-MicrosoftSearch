@@ -34,7 +34,7 @@ Microsoft Search requires Azure Active Directory authentication to access result
   
 ## Easy to administer and available everywhere
 
-Deploying Microsoft Search is simple—just enable it from the Microsoft 365 admin center and customize settings, including your logo, name, color, and more. Authorized users can access it on any device just by signing in to Bing.
+Deploying Microsoft Search is simple—just enable it from the Microsoft 365 admin center and customize settings, including your logo, name, color, and more. Users can access it on any device just by signing in to Bing.
   
 ## One place to search across Office 365 apps
 
