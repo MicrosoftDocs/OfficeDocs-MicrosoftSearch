@@ -27,6 +27,7 @@ Download and use the .csv template to bulk create, edit, and save bookmarks. To 
 3. Save and open the .csv file
     
 4. Add the bookmark content and settings and save the file
+
     The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors
     
 5. In the upper-right corner of the Bookmarks section, click **Import**
