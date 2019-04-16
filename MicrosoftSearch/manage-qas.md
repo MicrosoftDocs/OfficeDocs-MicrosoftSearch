@@ -83,6 +83,8 @@ Id is a unique identifier for each Q&A and should never be edited. The Last Modi
    - Targeted Variations
     
 5. Save the .csv file
+
+    The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors
     
 6. In the upper-right corner of the Q&As page, click **Import**
     

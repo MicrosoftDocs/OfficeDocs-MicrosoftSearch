@@ -82,6 +82,8 @@ Id is a unique identifier for each bookmark and should never be edited. The Last
    - Targeted Variations
     
 5. Save the .csv file
+
+    The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors
     
 6. In the upper-right corner of the Bookmarks page, click **Import**
     
