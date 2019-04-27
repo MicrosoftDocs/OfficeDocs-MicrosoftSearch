@@ -16,7 +16,8 @@ description: "Get an Overview of Microsoft Search"
 ---
 # Overview of Microsoft Search
 
-Microsoft Search is the unified search capability in the Microsoft 365 productivity apps and the broader Microsoft ecosystem. Over time Microsoft Search will be available in more and more apps across Microsoft 365.
+Microsoft Search is the unified search capability in the Microsoft 365 productivity apps and the broader Microsoft ecosystem.
+![Decorative text listing apps with Microsoft Search.](media/overview-microsoft-search/Search overview_MS in apps_3.png)
 
 Microsoft Search helps users find the right answers, people, and content to complete their tasks in the app they’re already working in. With Microsoft Search: 
 - Users get results that are relevant in the context of the app they search from. For example, when they search in Outlook, they find mails, not sites in SharePoint. When they search in SharePoint, they find sites, pages, and files, not mails.  
@@ -25,7 +26,8 @@ Microsoft Search helps users find the right answers, people, and content to comp
 
 Whichever app they’re working in, Microsoft Search is personal.  Microsoft Search uses insights from the Microsoft Graph to show results that are relevant to each user. Each user will see different results, even if they search for the same words. Users only see results that they already have access to, Microsoft Search doesn’t change permissions.
 
-Users of the Office apps find the Microsoft Search box in the header. 
+Users of the Office apps find the Microsoft Search box in the header.
+![Screenshots of app windows with Microsoft Search bar in the header](media/overview-microsoft-search/Search overview_MS in header.png)
 
 When users click in the search box, search suggests results based on their previous activity in Office 365 and based on content that’s trending in your organization. Files they were working on recently, commands they’ve used recently as well as people they collaborate with are examples of activity that search considers. As users start typing in the search box, the suggested results update. Users can open search results right from the search box.
 
@@ -33,18 +35,22 @@ If the suggestions in the search box aren’t what they’re looking for, clicki
 
 ## Benefits 
 **Search across Microsoft 365 from any Microsoft Search box** – Users can search from any Microsoft Search box and get quickly back to what they were doing. Microsoft Search brings together results from data sources in Office 365, including SharePoint, OneDrive for Business, and Exchange - as well as from the public web.
-**Easy to search** - Microsoft Search suggests results based on users’ previous activity in Office 365, right in the search box. Admins can promote information and answers that users need to complete tasks, for example policies, benefits, resources, tools, and more. 
+
+**Easy to search** - Microsoft Search suggests results based on users’ previous activity in Office 365, right in the search box. Admins can promote information and answers that users need to complete tasks, for example policies, benefits, resources, tools, and more.
+
 **Find shared files** - Microsoft Search uses advanced query understanding to make finding shared files simple. Users can easily find files they’re collaborating on.
-**Show relevant content** - Promote the information and answers your users need to complete tasks, for example policies, benefits, resources, tools, and more. You can also target specific groups, like new hires or remote workers. 
+
+**Show relevant content** - Promote the information and answers your users need to complete tasks, for example policies, benefits, resources, tools, and more. You can also target specific groups, like new hires or remote workers.
+
 **Administer across all apps** - Microsoft Search is on by default and any administration you do applies to Microsoft Search in all the apps.
 
 ## Which apps offer Microsoft Search today? 
-Microsoft Search will over time be the unified search experience across Microsoft 365.
+Over time Microsoft Search will be available in more and more apps across Microsoft 365.
 The following Office 365 apps currently offer Microsoft Search:
 - SharePoint Online 
 - OneDrive for Business 
 - Outlook on the web 
-- Word, Excel, and PowerPoint desktop  
+- Word, Excel, and PowerPoint desktop apps 
 
 In addition, users find Microsoft Search in: 
 - Bing 
@@ -99,7 +105,7 @@ Here’s an overview of the type of results users get in each app:
 
 **The Office 365 home page and Word, Excel, and PowerPoint start pages**: Apps, files, folders, people, organization charts, SharePoint sites, site pages, lists and list items. If defined, answers to common questions, bookmarks that lead to authoritative information, map locations, and tools. The same file types can be found here as in SharePoint.
 
-## Can you tailor Microsoft Search to your organization?
+## Tailoring Microsoft Search to your organization?
 You administer Microsoft Search from the Microsoft Search Admin Center for all apps that have the Microsoft Search box.  
 ### Make it easy to find content
 As an admin you can make it easy for your users to get good organization-specific results when they search from their SharePoint or Office 365 home page or from Bing.
