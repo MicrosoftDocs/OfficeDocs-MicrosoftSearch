@@ -12,12 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Get an Overview of Microsoft Search"
+description: "Get an overview of what Microsoft Search is, it's benefits, and which apps have Microsoft Search today."
 ---
 # Overview of Microsoft Search
 
 Microsoft Search is the unified search capability in the Microsoft 365 productivity apps and the broader Microsoft ecosystem.
-![Decorative text listing apps with Microsoft Search.](media/overview-microsoft-search/Search overview_MS in apps_3.png)
+
+Users find the Microsoft Search box in the header bar.
+![Screenshots of app windows with Microsoft Search bar in the header](media/overview-microsoft-search/Search-overview-MS-in-header.png)
 
 Microsoft Search helps users find the right answers, people, and content to complete their tasks in the app they’re already working in. With Microsoft Search: 
 - Users get results that are relevant in the context of the app they search from. For example, when they search in Outlook, they find mails, not sites in SharePoint. When they search in SharePoint, they find sites, pages, and files, not mails.  
@@ -26,12 +28,11 @@ Microsoft Search helps users find the right answers, people, and content to comp
 
 Whichever app they’re working in, Microsoft Search is personal.  Microsoft Search uses insights from the Microsoft Graph to show results that are relevant to each user. Each user will see different results, even if they search for the same words. Users only see results that they already have access to, Microsoft Search doesn’t change permissions.
 
-Users of the Office apps find the Microsoft Search box in the header.
-![Screenshots of app windows with Microsoft Search bar in the header](media/overview-microsoft-search/Search overview_MS in header.png)
+
 
 When users click in the search box, search suggests results based on their previous activity in Office 365 and based on content that’s trending in your organization. Files they were working on recently, commands they’ve used recently as well as people they collaborate with are examples of activity that search considers. As users start typing in the search box, the suggested results update. Users can open search results right from the search box.
 
-If the suggestions in the search box aren’t what they’re looking for, clicking Enter opens the full list of results. They can use metadata such as who last modified the item and when and where it’s located, as well as preview it to determine if it’s what they’re looking for.
+If the suggestions in the search box aren’t what they’re looking for, clicking Enter opens the full list of results. They can use metadata such as who last modified the item and when, where the items is located, as well as preview it to determine if it’s what they’re looking for.
 
 ## Benefits 
 **Search across Microsoft 365 from any Microsoft Search box** – Users can search from any Microsoft Search box and get quickly back to what they were doing. Microsoft Search brings together results from data sources in Office 365, including SharePoint, OneDrive for Business, and Exchange - as well as from the public web.
@@ -60,26 +61,6 @@ In addition, users find Microsoft Search in:
 
 Users can also initiate a search in Bing from the Edge address bar.
 
-## Requirements 
-Your organization must have an Office 365 tenant with one of the following subscriptions: 
-- Business Essentials 
-- Business Premium 
-- Office 365 F1 
-- Office 365 E1/E2/E3/E5 
-- Microsoft 365 Business 
-- Microsoft 365 Enterprise F1/E3/E5 
-- Microsoft 365 Education for Faculty A3/A5 
-- Office 365 Education for Faculty A1/A1 Plus/A3/A5 
-- Office 365 Education for Faculty E1/E3 
-- Office 365 for Non-Profits NPBE/NPBP/NPE1/NPE3/NPE5 
-
-Your tenant must have:
-- Azure Active Directory
-- SharePoint Online
-- Exchange Online
-
-Only users with active accounts can use Microsoft Search, and they must be signed in.
-
 ## What can users find with Microsoft Search? 
 Microsoft Search searches in content that’s stored in Outlook, OneDrive, and SharePoint Online, including people from the global address list and Office 365 groups. If you use cloud hybrid search to set up a hybrid SharePoint environment, users of Microsoft Search can also get results from on-premises SharePoint content, including any external content you’ve connected to your SharePoint Server environment. Learn more about hybrid search environments.
 
@@ -104,6 +85,26 @@ Here’s an overview of the type of results users get in each app:
 **Windows**: Files and people.
 
 **The Office 365 home page and Word, Excel, and PowerPoint start pages**: Apps, files, folders, people, organization charts, SharePoint sites, site pages, lists and list items. If defined, answers to common questions, bookmarks that lead to authoritative information, map locations, and tools. The same file types can be found here as in SharePoint.
+
+## Requirements 
+Your organization must have an Office 365 tenant with one of the following subscriptions: 
+- Business Essentials 
+- Business Premium 
+- Office 365 F1 
+- Office 365 E1/E2/E3/E5 
+- Microsoft 365 Business 
+- Microsoft 365 Enterprise F1/E3/E5 
+- Microsoft 365 Education for Faculty A3/A5 
+- Office 365 Education for Faculty A1/A1 Plus/A3/A5 
+- Office 365 Education for Faculty E1/E3 
+- Office 365 for Non-Profits NPBE/NPBP/NPE1/NPE3/NPE5 
+
+Your tenant must have:
+- Azure Active Directory
+- SharePoint Online
+- Exchange Online
+
+Only users with active accounts can use Microsoft Search, and they must be **signed in**.
 
 ## Tailoring Microsoft Search to your organization?
 You administer Microsoft Search from the Microsoft Search Admin Center for all apps that have the Microsoft Search box.  
@@ -141,7 +142,7 @@ Microsoft Search is the modern search experience in SharePoint Online. SharePoin
 
 Certain classic search settings **also** apply to Microsoft search: 
 - The search schema determines how content is collected in and retrieved from the search index. Because both search experiences use the same search index to find search results, any changes you make to the search schema, apply to both search experiences. Microsoft Search doesn't support changing the sort order of results or building refiners based on metadata. Therefore, the following search schema settings don’t affect the Microsoft Search experience: sortable, refinable, company name extraction. 
-- The Microsoft Search experience only shows results from the default result source. If you change the default result source, both search experiences are impacted. 
+- The Microsoft Search experience shows results from the same default result source as classic search in SharePoint. If you change the default result source in classic search, both search experiences are impacted. 
 - If you temporarily remove a search result from the classic search results page, the result is also temporarily removed from the Microsoft Search results pages in SharePoint.
  
 ## Microsoft Search in Bing 
