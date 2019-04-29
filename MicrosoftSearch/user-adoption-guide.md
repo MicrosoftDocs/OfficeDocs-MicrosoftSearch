@@ -20,7 +20,7 @@ description: "Find out about methods and processes to help you successfully roll
 
 This information is intended for Microsoft Search admins, change management leaders, and business owners.
   
-To roll out and ensure the successful adoption of Microsoft Searc across your organization, we recommend this four-stage process.
+To roll out and ensure the successful adoption of Microsoft Search across your organization, we recommend this four-stage process.
   
 ## Stage 1: Stakeholders
 
