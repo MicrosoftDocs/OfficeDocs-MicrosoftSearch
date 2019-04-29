@@ -15,6 +15,7 @@ search.appverid:
 description: "Set up Microsoft Search for the first time."
 ---
 # Set up Microsoft Search
+
 **Microsoft Search** is a new search experience that increases productivity and saves time by delivering more relevant search results to users. In **Microsoft Search**, users get a full organization search experience that curates information across different Microsoft services and the web. 
 
 **Microsoft Search** provides a user-friendly interface to help users find information, like files and documents, internal sites and business tools, people and groups, locations and directions, conversations and answers by securely accessing all data sources, including emails, files, SharePoint files, OneDrive content, and other shared resources as well as the internet in the user’s organization. 
