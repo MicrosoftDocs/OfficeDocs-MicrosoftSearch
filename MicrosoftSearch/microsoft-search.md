@@ -98,7 +98,7 @@ description: "Microsoft Search is an enterprise search experience that increases
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>SharePoint integration</h3>
+                        <h3>Search in SharePoint</h3>
                         <p>Wondering how SharePoint and Microsoft Search work together?</p>
                         <p><a href="get-started-search-in-sharepoint-online.md">Get the facts</a></p>
                     </div>
