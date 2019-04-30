@@ -20,29 +20,29 @@ description: "Set up Microsoft Search for the first time."
 
 Learn more about Microsoft Search features, see [Microsoft Search Overview](overview-microsoft-search.md)
 
-##Get Started
+## Get Started
 
 **Microsoft Search** is turned on by default, as a part of Microsoft 365 for all Microsoft apps that supports it. All a user needs to do is to sign-in with a work or school account and use a browser with Bing set as the default search provider.
 
 However, as an administrator you should consider a few things that can make the **Microsoft Search** experience efficient and user friendly in your organization.
 
-###Step 1: Check access level of your users
+### Step 1: Check access level of your users
 
 **Microsoft Search** respects security settings of the content source. What users see in their search result depends on their permissions and access levels. Review the access level of users in your organization to make sure that users only find content that they are allowed to access.
 
 Learn more about planning permissions and [creating permissions levels](https://docs.microsoft.com/en-us/sharepoint/how-to-create-and-edit-permission-levels).
 
-###Step 2: Assign search administrator and search editor
+### Step 2: Assign search administrator and search editor
 
 Search administrators directly influence the search experience for end users. This includes choosing the types of results you want to surface to your users. It may be difficult for one person to choose and create authoritative content on many different topics that users search for in an organization. We recommend that you leverage the expertise and knowledge of SMEs and other users in creating and choosing result content by adding them as editors. 
 
 In **Microsoft Search**, you can manage your organization’s search settings and content using two new roles:
-1. **Search Administrator:** This role can create and manage search result content and define query settings for improved search results within the organization. Search Administrator manages the Microsoft Search configuration and designates Search Editors, who create content.
-2. **Search Editor:** Creates, manages, and deletes content for Microsoft Search in the Microsoft 365 admin center. This role can create and manage editorial content such as frequently asked questions and answers, important places and locations, frequently searched and used sites and apps, etc. They, however, do not have access to manage search settings.
+1. **Search admin:** This role can create and manage search result content and define query settings for improved search results within the organization. Search Administrator manages the Microsoft Search configuration and designates Search Editors, who create content.
+2. **Search editor:** Creates, manages, and deletes content for Microsoft Search in the Microsoft 365 admin center. This role can create and manage editorial content such as frequently asked questions and answers, important places and locations, frequently searched and used sites and apps, etc. They, however, do not have access to manage search settings.
 
 For assigning admin roles, see [Assign admin rights in Office 365 for business](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
-###Step 3: Make content easy to find 
+### Step 3: Make content easy to find 
 
 **Microsoft Search** provides administrators with tools that they can use to build a robust search experience for their users. In Microsoft Search, administrators have three different search content tools that they can create for a better search experience:
 - Bookmark:  Bookmarks are similar to promoted results in SharePoint and help promote the best possible results for your user's queries to the top of the search results and make it easy for your users to find important internal sites. 
@@ -58,7 +58,7 @@ Here are some examples of content that you should consider bookmarking for your 
 
 For creating and managing search content, see [Making content easy to find](make-content-easy-to-find.md).
 
-###Step 4: Test single sign-on
+### Step 4: Test single sign-on
 **Microsoft Search** uses Azure Active Directory (AAD) to authenticate and authorize access to your organization’s data.  This means your users are automatically signed in with your work or school account when you've signed into an Office 365 app or Windows 10.
 
 We recommend that **Microsoft Search** users use single sign-on as it reduces the number of times users are prompted to sign in. Administrators should test single sign-on with a small group of users to help identify any blocking configuration issues. 
@@ -67,13 +67,13 @@ For Chrome users on Windows 10, single sign-in works only when the Windows 10 an
 
 To download and install Windows 10 and AAD sign-in extension for Chrome, go to [Chrome Web Store](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?hl=en).
 
-###Step 5: Training and communication
+### Step 5: Training and communication
 Establish self-service resources that employees can easily access on their own. This will help reduce the overall burden on you and your team to constantly push communications and assist in self-training and educating employees. Provide your users communications, FAQs, videos, and recorded training or webinars. Here are some helpful links to start with:
 - [Find what you need with Microsoft Search in Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Office 365 Training Center](https://support.office.com/office-training-center)
 - [Microsoft Search Center](https://support.office.com/en-us/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
 - 
-###Trying out Microsoft Search in Bing 
+### Trying out Microsoft Search in Bing 
 **Microsoft Search** administrator can turn **Microsoft Search** off in Bing. If turned off, users will not see organization content in Bing search. By default, **Microsoft Search** is turned on in Bing. 
 We recommend that you keep **Microsoft Search** turned on in Bing for a better user experience. 
 
