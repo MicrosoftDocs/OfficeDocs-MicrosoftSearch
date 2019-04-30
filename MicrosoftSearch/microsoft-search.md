@@ -107,3 +107,34 @@ description: "Microsoft Search is an enterprise search experience that increases
         </div>
     </li>
 </ul>
+
+<ul class="panelContent cardsW cols cols2">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h2>Use Microsoft Search</h2>
+                        <p>Microsoft Search is a simple, fast, and safer way to find information, be more productive, and work smarter</p>
+                        <p><a href="https://go.microsoft.com/fwlink/?linkid=2090946">Find out how</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/c8456838-c6db-41f7-9e84-eebfd9c5b0b8.png" alt="How work results appear in Bing" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
