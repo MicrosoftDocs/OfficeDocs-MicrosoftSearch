@@ -22,9 +22,9 @@ Learn more about Microsoft Search features, see [Microsoft Search Overview](over
 
 ##Get Started
 
-**Microsoft Search** is turned on by default, as a part of Microsoft 365 for all Microsoft apps that supports it. All a user has to do is to sign-in with a work or school account and use a browser with Bing set as the default search provider.
+**Microsoft Search** is turned on by default, as a part of Microsoft 365 for all Microsoft apps that supports it. All a user needs to do is to sign-in with a work or school account and use a browser with Bing set as the default search provider.
 
-However, as administrator you should consider a few things that can make the **Microsoft Search** experience efficient and user friendly in your organization.
+However, as an administrator you should consider a few things that can make the **Microsoft Search** experience efficient and user friendly in your organization.
 
 ###Step 1: Check access level of your users
 
@@ -46,10 +46,10 @@ For assigning admin roles, see [Assign admin rights in Office 365 for business](
 
 **Microsoft Search** provides administrators with tools that they can use to build a robust search experience for their users. In Microsoft Search, administrators have three different search content tools that they can create for a better search experience:
 - Bookmark:  Bookmarks are similar to promoted results in SharePoint and help promote the best possible results for your user's queries to the top of the search results and make it easy for your users to find important internal sites. 
-- Questions & Answers: Q&A are similar to frequently asked questions and usually in a question and answer format. It provides the best possible answer(s) to your user's work-related questions.
+- Questions & Answers: Q&A are similar to frequently asked questions and these are usually in a question and answer format. It provides the best possible answer(s) to your user's work-related questions.
 Location: Location are addresses that help users locate your organization's buildings, offices, campuses. 
 
-The more bookmarks, Q&A, and locations you have, the more value and benefit you add for users. However, too many of them can add a substantial management overhead as bookmarks must be reviewed and updated periodically to keep the results relevant and up to date.
+The more Bookmarks, Q&A, and Locations you have, the more value and benefit you add for users. However, too many of them can add a substantial management overhead as they must be reviewed and updated periodically to keep the results relevant and up to date.
 
 Here are some examples of content that you should consider bookmarking for your users:
 - Organization or product or service information.
@@ -65,7 +65,7 @@ We recommend that **Microsoft Search** users use single sign-on as it reduces th
 
 For Chrome users on Windows 10, single sign-in works only when the Windows 10 and AAD sign-in extension for Chrome is installed. Once installed, you can use the Chrome extension to easily authenticate with AAD when signing in to supported sites, including Office 365 and Bing. This functionality is available for authorized users only. 
 
-To download and install Windows 10 and AAD sign-in extension for chrome, go to [Chrome Web Store](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?hl=en).
+To download and install Windows 10 and AAD sign-in extension for Chrome, go to [Chrome Web Store](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?hl=en).
 
 ###Step 5: Training and communication
 Establish self-service resources that employees can easily access on their own. This will help reduce the overall burden on you and your team to constantly push communications and assist in self-training and educating employees. Provide your users communications, FAQs, videos, and recorded training or webinars. Here are some helpful links to start with:
