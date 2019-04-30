@@ -15,7 +15,7 @@ search.appverid:
 description: "Create bookmarks, locations, and Q&A items to make your organization's content easy to find."
 ---
 # Make content easy to find
-**Microsoft Search** helps users find relevant content. Microsoft Search is a secure way to search both your intranet and web content. This kind of integration across web and organization is available only with Microsoft. 
+****Microsoft Search**** helps users find relevant content. **Microsoft Search** is a secure way to search both your intranet and web content. This kind of integration across web and organization is available only with Microsoft. 
 
 Search administrators use their knowledge of the organization and its users to make it easy for users to find the relevant content. 
 
@@ -33,10 +33,10 @@ Find out what your users are searching for and make that easily discoverable. He
 - Research common IT, HR, and support issues and frequently asked questions (FAQs) and answers.
 
 ## Step 2: Leverage Subject Matter Experts (SMEs) and users
-In an organization, users search for a wide range of subject topics ranging from simple such as office addresses, employee benefits to complex topics such as new work processes,, technical information, and how-to-do content. Creating or finding such wide range of content requires knowledge and expertise in different fields, subjects, technologies etc. and a search administrator may not have the requisite expertise or knowledge. Administrator should leverage expertise and knowledge of others in the organization to scale the amount of available content without additional resources.
+In an organization, users search for a wide range of topics ranging from simple such as office addresses, employee benefits to complex topics such as new work processes, technical information, and how-to-do content. Creating or finding such wide range of content requires knowledge and expertise in different fields, subjects, technologies etc. and a Search administrator may not have the requisite expertise or knowledge. Administrators should leverage expertise and knowledge of others in the organization to scale the amount of available content without additional resources.
 
 ### Leverage SMEs
-Leverage SMEs in the organization including experts from HR, support, sales, technology, and other key areas. To allow your SMEs to contribute content directly, add them as search editors. 
+Leverage SMEs in the organization including experts from HR, support, sales, technology, and other key areas. To allow your SMEs to contribute content directly, add them as Search editors. 
 
 ### Involve your users
 Ask users to suggest resources to bookmark. In addition to suggesting content, ask users to report errors, like broken or invalid links.
@@ -48,13 +48,12 @@ In **Microsoft Search**, Search administrator creates Bookmarks, Q&A, Locations,
 People use titles and descriptions to determine if the result answers their search query, or if they need to try a different search. Titles and descriptions should reflect the core purpose of the result. A good example of a title might be 'Childcare benefits,' with a description - 'Learn about benefits to help pay childcare costs.' This informs the users who search 'childcare' that monetary support benefits are available, and provides them a link to find out more. 
 
 ### Keywords
-Keywords are the terms that people in your organization use to find relevant content. Associating the appropriate keywords with search results makes it easier to find the relevant content. Microsoft Search suggests keyword based on the title and URL for your content. To identify additional keywords, start by answering these questions:
+Keywords are the terms that people in your organization use to find relevant content. Associating the appropriate keywords with search results makes it easier to find the relevant content. **Microsoft Search** suggests keyword based on the title and URL for your content. To identify additional keywords, start by answering these questions:
 
 1. Which search terms are used to find the information you've identified?
 1. Leverage any existing taxonomy your organization uses, as well as related variations, acronyms, subjects, and topics.
 1. Which other variations or words do people use to talk about this information?
 1. Leverage your support team to determine these keywords.
-For example, if you're creating a result that links to a tool for submitting vacation requests, keywords such as 'vacation' and 'submit vacation request' are good options to include. You may also find that people in your organization use 'holiday' or 'time off' to describe or search vacation related information. Adding keywords like 'holiday,' 'time off,' 'submit holiday request,' and 'request time off' will make it easier for more of your users to find the relevant content.
 
 For example, if you're creating a result that links to a tool for submitting vacation requests, keywords such as 'vacation' and 'submit vacation request' are good options to include. You may also find that people in your organization use 'holiday' or 'time off' to describe or search vacation related information. Adding keywords like 'holiday,' 'time off,' 'submit holiday request,' and 'request time off' will make it easier for more of your users to find the relevant content.
 
@@ -94,11 +93,11 @@ It is important that authoritative information such as Bookmarks and Q&A are up 
 ## Bookmarks
 You can create a bookmark in just a few steps. Each bookmark includes a title, a URL, and a set of keywords that trigger it. A bookmark can have several keywords and several bookmarks can share the same keyword, but reserved keyword can't be shared. When a Bookmark is created or modified, the search index is refreshed immediately, and the bookmark is available to users immediately.
 
-If your organization has Promoted Results set up in SharePoint, you can import the Promoted Results into Microsoft Search and make the imported content available to your users. This is an easy way to quickly populate search results as soon as you set up Microsoft Search and make it more effective for your users. We recommend that you use promoted results from SharePoint as a reference to understand how to name and create relevant search results. 
+If your organization has Promoted Results set up in SharePoint, you can import the Promoted Results into**Microsoft Search** and make the imported content available to your users. This is an easy way to quickly populate search results as soon as you set up **Microsoft Search** and make it more effective for your users. We recommend that you use promoted results from SharePoint as a reference to understand how to name and create relevant search results. 
 
 ### Add or edit a single bookmark
 1. Go to **Microsoft 365 admin center**.
-1. In the navigation pane, go to **Settings**, and then select **Microsoft Search**.
+1. In the navigation pane, go to **Settings**, and then select ****Microsoft Search****.
 By default, the **Bookmarks** tab is selected.
 1. To add a bookmark, select **Add new**. 
 To edit a bookmark, select the bookmark in the relevant bookmark list. 
@@ -115,28 +114,28 @@ Currently, browser extensions are available for Edge and Chrome.
 ### Bulk add or edit bookmarks
 Search administrator can use the Import or Export features to bulk create or edit bookmarks. This is a very useful feature when an administrator wants to add or edit a large number of bookmarks. 
 
-Use the import/export feature:
-- To bulk add bookmarks - Add details in the bookmark template file, and then import it.
-- To bulk edit bookmarks - Export bookmarks to a .csv file, then edit the bookmark details in the exported .csv file, and then import the updated .csv file.
-- To import promoted sites from SharePoint.
-- To backup bookmarks - Export bookmarks to a .csv file.
+Use the import/export feature to:
+- Bulk add bookmarks - Add details in the bookmark template file, and then import it.
+- Bulk edit bookmarks - Export bookmarks to a .csv file, then edit the bookmark details in the exported .csv file, and then import the updated .csv file.
+- Import promoted sites from SharePoint.
+- Backup bookmarks - Export bookmarks to a .csv file.
 
 To import or export bookmarks:
 1. In the upper-right corner of **Bookmarks** tab, select **Import**. 
 Select **Export** to download all the existing bookmarks in a .csv file.
 1. In the right pane, choose the option to import using a .csv file or from SharePoint.
-The template file lists the required fields and details. 
+Download the template file for a list of the required fields and details. 
 1. Add or edit bookmark details in the template file, and then save it on your computer. 
 1. In the **Import bookmarks** pane, select **Browse** and then the .csv file that you want to import.
 1. Select **Import**.
 
 Here are some important points to be noted regarding the template file:
 - Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*
-- If you include the Id of an existing bookmark, it will be replaced with the information in the import file.
+- If you include the *Id* of an existing bookmark, it will be replaced with the information in the import file.
 - If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.
 - Not all fields in the template file are required and required fields vary depending on the bookmark state.
 - Based on the *State* field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.
-- For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another. But you must remove the data in the Id column before you import.
+- For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another. But you must remove the data in the *Id* column before you import.
 
 #### Prevent import errors
 You'll get an error if any required data is missing or invalid, and a log file is generated with more information about the rows and columns to be corrected. Make necessary edits and try importing the file again. You cannot import or save any bookmarks until all errors are resolved.
@@ -167,11 +166,11 @@ PowerApps is a service that lets you build business apps that run in a browser o
 1. Select **Publish** or **Save to Draft**.
 
 ## Q&A
-Creating a Q&A is similar to creating bookmarks. Q&A allows you to answer the user's question instead of just providing a link to webpage. You can format the answer in rich text using the available tools. If a bookmark and a Q&A share the same keyword, the Bookmark result is shown first. Like Bookmarks, the Q&A index is refreshed immediately after a Q&A is added or changed. 
+Creating a Q&A is similar to creating bookmarks. Q&A allows you to answer the user's question instead of just providing a link to webpage. You can format the answer in rich text using the available tools. If a Bookmark and a Q&A share the same keyword, the Bookmark result is shown first. Like Bookmarks, the Q&A index is refreshed immediately after a Q&A is added or changed. 
 
 ### Add or edit a single Q&A
 1. Go to **Microsoft 365 admin center**.
-1. In the navigation pane, go to **Settings** and **select Microsoft Search**.
+1. In the navigation pane, go to **Settings** and select **Microsoft Search**.
 1. Select **Q&A** tab. By default, the first tab (**Bookmarks**) is selected.
 1. To add a Q&A, select **Add new**.
 To edit a Q&A, select the Q&A in the relevant Q&A list.
@@ -201,27 +200,27 @@ The following HTML tags are supported:
 ### Bulk add or edit Q&A
 Administrators can use the Import and Export features to bulk create or edit Q&A. This is a useful feature when administrators need to add or edit a large number of Q&A. 
 
-Use the import/export feature:
-1. To bulk add Q&A - Add details in the Q&A template file, and then import it.
-1. To bulk edit Q&A - Export Q&A to a .csv file, then edit the Q&A details in the exported .csv file, and then import the .csv file.
-1. To backup Q&A - Export Q&A to a .csv file.
+Use the import/export feature to:
+1. Bulk add Q&A - Add details in the Q&A template file, and then import it.
+1. Bulk edit Q&A - Export Q&A to a .csv file, then edit the Q&A details in the exported .csv file, and then import the .csv file.
+1. Backup Q&A - Export Q&A to a .csv file.
 
 To import or export Q&A:
 1. In the upper-right corner of the Q&A tab, select **Import**. 
-1. Select **Export** to download all the existing Q&A in a .csv file.
+Select **Export** to download all the existing Q&A in a .csv file.
 1. In the right pane, choose the option to import using a .csv file.
-1. The template file lists the required fields and details. 
+Download the template file for a list of the required fields and details. 
 1. Add or edit Q&A details in the template file and save it on your computer. 
 1. In the **Import Q&A** pane, select **Browse**, and then the .csv file that you want to import.
 1. Select **Import**.
 
 Here are some important points regarding the template file:
-- Never edit data in these fields: Id, Last Modified, and Last Modified By
-- If you include the Id of an existing bookmark, it will be replaced with the information in the import file.
+- Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*
+- If you include the *Id* of an existing bookmark, it will be replaced with the information in the import file.
 - If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.
 - Not all fields in the template file are required and required fields vary depending on the bookmark state.
 - Based on the State field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.
-- For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another. But you must remove the data in the Id column before you import.
+- For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another. But you must remove the data in the *Id* column before you import.
 
 **Note:** You cannot import Q&A if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted and include all the required information. 
 
@@ -242,33 +241,33 @@ Location helps your users find addresses and locate your organization's building
 ### Bulk add or edit locations
 Administrators can use the Import or Export feature to bulk add or edit locations. 
 
-Use the import/export feature:
-1. To bulk add location - Add details in the location template file, and then import it. 
-1. To bulk edit locations - Export locations to a .csv file, then edit the location details in the exported .csv file, and then import the updated .csv file.
-1. To backups Locations – Export existing locations to a .csv file.
+Use the import/export feature to:
+1. Bulk add location - Add details in the location template file, and then import it. 
+1. Bulk edit locations - Export locations to a .csv file, then edit the location details in the exported .csv file, and then import the updated .csv file.
+1. Backups Locations – Export existing locations to a .csv file.
 
 To export or import locations:
 1. In the upper-right corner of the **Locations** tab, select **Import**.
-1. Select **Export** to download the existing locations in a .csv file.
+Select **Export** to download the existing locations in a .csv file.
 1. In the right pane, choose the option to import using a .csv file. 
-1. The template file lists the required fields and details.
+Download ehe template file for a list of the required fields and details.
 1. Add or edit location details in the template file, and then save it on your computer. 
 1. In the **Import** locations pane, select **Browse**, and then the .csv file that you want to import.
 1. Select **Import**.
 
 Here are some important points regarding the template file:
-- Never edit data in these fields: Id, Last Modified, and Last Modified By
-- If you include the Id of an existing bookmark, it will be replaced with the information in the import file.
+- Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*
+- If you include the *Id* of an existing bookmark, it will be replaced with the information in the import file.
 - If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.
 - Not all fields in the template file are required and required fields vary depending on the bookmark state.
-- Based on the State field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.
-- For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another. But you must remove the data in the Id column before you import.
+- Based on the *State* field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.
+- For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another. But you must remove the data in the *Id* column before you import.
 
 **Note:** You cannot import Locations if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted and include all the required information. 
 
 For more information on how to prevent error, see [Prevent import errors.](#prevent-import-errors)
 
-## Review and update bookmarks, Q&A, and locations
+## Review and update Bookmarks, Q&A, and Locations
 **Microsoft Search** provides usage statistics for Bookmarks, Q&A, and Locations. The usage statistics shows how users are engaging with your search results and whether users are finding what they are looking for, or are there any gaps in the available content? It helps administrator monitor performance and take appropriate actions to fine tune the search results. 
 
 ### Get details about Bookmarks, Q&A and Locations
@@ -277,14 +276,14 @@ See how many Bookmarks, Q&A, and Locations have been published, scheduled, or su
 - **Scheduled:** The number of scheduled results in the publish pipeline.
 - **Suggested:** The number of suggestions from users.
 
-Suggested Bookmarks, Q&A, and Locations are good indicator of gaps in your content. It will help you understand what your users are looking for, and not finding. This could indicate that you need to create more Bookmarks, Q&A, or Locations or you need to update your existing content by using better keywords, reserved keywords, and search strings to improve the discoverability of content.
+Suggested Bookmarks, Q&A, and Locations are a good indicator of gaps in your content. It will help you understand what your users are looking for, and not finding. This could indicate that you need to create more Bookmarks, Q&A, or Locations or you need to update your existing content by using better keywords, reserved keywords, and search strings to improve the discoverability of content.
 
 ### Review top search queries
-Find out which searches have generated the most impressions over the last 90 days. Impression refers to how many times a page was viewed in search result. The Top Queries card shows the top 25 user searches for each result type with the total number of searches and their click-through rate (CTR). Use this report to identify search query volume and to determine queries with high and low search activity. 
+Find out which searches have generated the most impressions over the last 90 days. Impression refers to how many times a page was viewed in search result. The **Top Queries** card shows the top 25 user searches for each result type with the total number of searches and their click-through rate (CTR). Use this report to identify search query volume and to determine queries with high and low search activity. 
 
-Low search count may indicate user dissatisfaction either because users are not looking for those search content or using different keywords to find that content. CTR shows how often users select the promoted results and how useful your query rules and results are to users. A low CTR indicates that users are finding the content but are making the determination that the content does not meet their search. In such cases, administrators may decide to review the content and ensure that it corresponds with the user’s search and update titles, descriptions, and keywords to align them with the user search queries. 
+Low search count may indicate user dissatisfaction either because users are not looking for those search content or are using different keywords to find that content. CTR shows how often users select the promoted results and how useful your query rules and results are to users. A low CTR indicates that users are finding the content but are making the determination that the content does not meet their search. In such cases, administrators may decide to review the content and ensure that it corresponds with the user’s search and update titles, descriptions, and keywords to align them with the user search queries. 
 
 ### Analyze impressions by result type
-Easy-to-read graphs in the Impression Distribution by Result Type card show impressions over various timeframes. The timeline shows the daily number of impressions for a result type. Determine which result type is most frequently, or infrequently, used. Infrequent use of particular result type does not necessarily mean that the result types are not good. It just shows how users are using the search result.
+Easy-to-read graphs in the **Impression Distribution by Result Type** card show impressions over various timeframes. The timeline shows the daily number of impressions for a result type. Determine which result type is most frequently, or infrequently, used. Infrequent use of particular result type does not necessarily mean that the result types are not good. It just shows how users are using the search result.
 
 Use this report to understand what result types users are using and any changes in user behavior over a period of time. If a particular result type is preferred by users, administrators may decide to create more search results of the same types or  to review the keywords of results types not used by users to ensure that keywords are appropriate.
