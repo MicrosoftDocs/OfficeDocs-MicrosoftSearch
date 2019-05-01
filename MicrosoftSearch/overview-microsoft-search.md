@@ -155,7 +155,7 @@ Search Ads logs pertaining to Microsoft Search are stored separately from public
 Ads are never targeted to a user based on their work identity or organization.
 
 ## See also
-[Set up Microsoft Search](set-up-microsoft-search.md)
+[Set up Microsoft Search](setup-microsoft-search.md)
 
 [Make content easy to find](make-content-easy-to-find.md)
 
