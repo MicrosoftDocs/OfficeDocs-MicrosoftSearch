@@ -65,7 +65,7 @@ We recommend that **Microsoft Search** users use single sign-on as it reduces th
 
 For Chrome users on Windows 10, single sign-in works only when the Windows 10 and AAD sign-in extension for Chrome is installed. Once installed, you can use the Chrome extension to easily authenticate with AAD when signing in to supported sites, including Office 365 and Bing. This functionality is available for authorized users only. 
 
-To download and install Windows 10 and AAD sign-in extension for Chrome, go to [Chrome Web Store](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?hl=en).
+To download and install Windows 10 and AAD sign-in extension for Chrome, go to [Chrome Web Store](https://go.microsoft.com/fwlink/?linkid=2090961).
 
 ### Step 5: Training and communication
 Establish self-service resources that employees can easily access on their own. This will help reduce the overall burden on you and your team to constantly push communications and assist in self-training and educating employees. Provide your users communications, FAQs, videos, and recorded training or webinars. Here are some helpful links to start with:
