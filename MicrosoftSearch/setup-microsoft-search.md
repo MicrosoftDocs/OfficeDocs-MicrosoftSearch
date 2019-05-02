@@ -34,7 +34,7 @@ Learn more about [planning permissions](https://docs.microsoft.com/en-us/sharepo
 
 ### Step 2: Assign Search administrator and Search editor
 
-There are two new roles in Microsoft admin center – Search administrator and Search editor.  Global admin, who has full privileges, assigns admin roles to users including the role of Search administrator. Search administrators can delegate the Search administrator or Search editor roles to other users. For more information on different admin roles, see [About Office 365 admin roles](https://docs.microsoft.com/en-us/office365/admin/add-users/about-admin-roles?view=o365-worldwide).
+There are two new roles in **Microsoft admin center** – Search administrator and Search editor.  Global admin, who has full privileges, assigns admin roles to users including the role of Search administrator. Search administrators can delegate the Search administrator or Search editor roles to other users. For more information on different admin roles, see [About Office 365 admin roles](https://docs.microsoft.com/en-us/office365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
 Search administrators directly influence the search experience for end users. This includes choosing the types of results you want to surface to your users. It may be difficult for one person to choose and create authoritative content on many different topics that users search for in an organization. We recommend that you leverage the expertise and knowledge of SMEs and other users by adding them as editors. 
 
@@ -42,7 +42,7 @@ In **Microsoft Search**, you can manage your organization’s search settings an
 1. **Search Administrator:** This role can create and manage search result content and define query settings for improved search results within the organization. Search administrator manages the **Microsoft Search** configuration and designates Search editors, who create content.
 2. **Search Editor:** Creates, manages, and deletes content for **Microsoft Search** in the Microsoft 365 admin center. This role can create and manage editorial content such as frequently asked questions and answers, important places and locations, frequently searched and used sites and apps, etc. They, however, do not have access to manage search settings.
 
-**Note:** These two new roles, Search administrator and Search editor, are available in the M365 admin center only, not in the legacy admin portal.
+**Note:** These two new roles – Search administrator and Search editor – are available in **Microsoft 365 admin center** only, not in the legacy admin portal.
 
 For assigning admin roles, see [Assign admin rights in Office 365 for business](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
