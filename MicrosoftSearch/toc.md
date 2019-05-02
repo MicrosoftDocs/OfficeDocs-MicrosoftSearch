@@ -2,7 +2,7 @@
 #[Set up Microsoft Search](setup-microsoft-search.md)
 #[Make content easy to find](make-content-easy-to-find.md)
 #[Microsoft Search in SharePoint Online](get-started-search-in-sharepoint-online.md)
-#[Microsoft Search in Bing](why-microsoft-search.md)
+#[Microsoft Search in Bing (Preview)](why-microsoft-search.md)
 ## [Features](features.md)
 ## [Security](security.md)
 ## [About the Admin portal](about-the-admin-portal.md)
