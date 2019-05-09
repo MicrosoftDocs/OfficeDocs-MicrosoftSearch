@@ -1,14 +1,13 @@
 ---
 title: "Microsoft Search"
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 09/20/2018
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
 ms.audience: Admin
 ms.topic: landing-page
 layout: LandingPage
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
@@ -39,9 +38,9 @@ description: "Microsoft Search is an enterprise search experience that increases
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Why Microsoft Search</h2>
+                        <h2>Why Microsoft Search?</h2>
                         <p>Get an enterprise search experience that increases productivity and saves time by delivering more relevant search results for your organization</p>
-                        <p><a href="why-microsoft-search.md">Find out how</a></p>
+                        <p><a href="overview-microsoft-search.md">Find out how</a></p>
                     </div>
                 </div>
             </div>
@@ -62,9 +61,9 @@ description: "Microsoft Search is an enterprise search experience that increases
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Key features</h3>
+                        <h3>Make content searchable</h3>
                         <p>See which features are available for admins and users, including what you'll find when you search</p>
-                        <p><a href="features.md">Find out more</a></p>
+                        <p><a href="make-content-easy-to-find.md">Find out more</a></p>
                     </div>
                 </div>
             </div>
@@ -80,9 +79,9 @@ description: "Microsoft Search is an enterprise search experience that increases
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Admin quick set up</h3>
-                        <p>Find out how to turn on Microsoft Search and configure it for your organization in four easy steps</p>
-                        <p><a href="quick-set-up.md">Start now</a></p>
+                        <h3>Get started</h3>
+                        <p>Find out how to get started with Microsoft Search and configure it for your organization</p>
+                        <p><a href="setup-microsoft-search.md">Start now</a></p>
                     </div>
                 </div>
             </div>
@@ -98,9 +97,9 @@ description: "Microsoft Search is an enterprise search experience that increases
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>FAQs</h3>
-                        <p>Get answers to some of the commonly asked questions about Microsoft Search</p>
-                        <p><a href="faqs.md">Browse the FAQ</a></p>
+                        <h3>Search in SharePoint</h3>
+                        <p>Wondering how SharePoint and Microsoft Search work together?</p>
+                        <p><a href="get-started-search-in-sharepoint-online.md">Get the facts</a></p>
                     </div>
                 </div>
             </div>
@@ -115,8 +114,8 @@ description: "Microsoft Search is an enterprise search experience that increases
                 <div class="card">
                     <div class="cardText">
                         <h2>Use Microsoft Search</h2>
-                        <p>Microsoft Search is a simple, fast, and safer way to find information, be more productive, and work smarter</p>
-                        <p><a href="use/about-microsoft-search.md">Find out how</a></p>
+                        <p>View articles and videos to help train your users to be more productive with Microsoft Search </p>
+                        <p><a href="https://go.microsoft.com/fwlink/?linkid=2090946">Check it out</a></p>
                     </div>
                 </div>
             </div>
@@ -128,7 +127,7 @@ description: "Microsoft Search is an enterprise search experience that increases
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/c8456838-c6db-41f7-9e84-eebfd9c5b0b8.png" alt="How work results appear on Bing" />
+                            <img src="media/c8456838-c6db-41f7-9e84-eebfd9c5b0b8.png" alt="How work results appear in Bing" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -138,46 +137,3 @@ description: "Microsoft Search is an enterprise search experience that increases
         </div>
     </li>
 </ul>
-
-<h2>More info</h2>
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="security.md">Security</a></p>
-                        <p><a href="requirements.md">Requirements</a></p>  
-                        <p><a href="about-the-admin-portal.md">About the Admin portal</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="quick-set-up.md">Quick set up</a></p>
-                        <p><a href="connected-services.md">Connected services</a></p>
-                        <p><a href="set-up-microsoft-search.md">Set up Microsoft Search</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="create-bookmarks.md">Create bookmarks</a></p>
-                        <p><a href="create-qas.md">Create Q&As</a></p>
-                        <p><a href="add-users.md">Manage users</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>  
