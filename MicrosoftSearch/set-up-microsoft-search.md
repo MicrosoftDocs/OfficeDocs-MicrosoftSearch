@@ -19,13 +19,13 @@ description: "All of the information you need to deploy Microsoft Search to your
 # Set up Microsoft Search
 
 > [!IMPORTANT]
-> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins] (setup-microsoft-search.md) in your admin center.
+> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](setup-microsoft-search.md) in your admin center.
 
 > [!IMPORTANT]
 > Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by assigning search admins in your admin center.
 
 **IMPORTANT**
-**Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins] (https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.**
+**Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.**
     
 As part of Office 365, Microsoft Search is easily deployed by enabling it in the Microsoft 365 admin center. Once enabled, a quick configuration to set a logo, name, and color and give admins and editors access is all that's needed to get set up. From there, users can sign in to Bing with a work or school account and get work results when they search.
 
