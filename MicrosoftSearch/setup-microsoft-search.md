@@ -24,7 +24,11 @@ To learn more about **Microsoft Search** features, see [Microsoft Search Overvie
 
 **Microsoft Search** is turned on by default for all Microsoft apps that supports it, as a part of Microsoft 365. All a user needs to do is to sign-in with a work or school account and use a browser with Bing set as the default search provider.
 
-However, as an administrator you should consider a few things that can make the **Microsoft Search** experience efficient and user friendly in your organization.
+You administer **Microsoft Search** from **Microsoft 365 admin center**. Sign in using your login with admin credentials, select **Admin** tile in **App launcher**. In **Microsoft 365 admin center**, select **Microsoft Search** under **Settings** in the left navigation panel. 
+
+**Note:** If you are seeing the legacy admin portal and want to switch to the new admin center, turn on the **Try the preview** switch in the right top corner of admin center. 
+
+As an administrator you should consider a few things that can make the **Microsoft Search** experience efficient and user friendly in your organization.
 
 ### Step 1: Check access level of your users
 
@@ -36,13 +40,13 @@ Learn more about [planning permissions](https://docs.microsoft.com/en-us/sharepo
 
 There are two new roles in **Microsoft admin center** – Search administrator and Search editor.  Global admin, who has full privileges, assigns admin roles to users including the role of Search administrator. Search administrators can delegate the Search administrator or Search editor roles to other users. For more information on different admin roles, see [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
+**Note:** These two new roles – Search admin and Search editor – are available in **Microsoft 365 admin center** only, not in the legacy admin portal. 
+
 Search administrators directly influence the search experience for end users. This includes choosing the types of results you want to surface to your users. It may be difficult for one person to choose and create authoritative content on many different topics that users search for in an organization. We recommend that you leverage the expertise and knowledge of SMEs and other users by adding them as editors. 
 
 In **Microsoft Search**, you can manage your organization’s search settings and content using two new roles:
 1. **Search admin:** This role can create and manage search result content and define query settings for improved search results within the organization. Search administrator manages the **Microsoft Search** configuration and designates Search editors to create content.
 2. **Search editor:** Creates, manages, and deletes content for **Microsoft Search** in the Microsoft 365 admin center. This role can create and manage editorial content such as frequently asked questions and answers, important places and locations, frequently searched and used sites and apps, etc. They, however, do not have access to manage search settings.
-
-**Note:** These two new roles – Search admin and Search editor – are available in **Microsoft 365 admin center** only, not in the legacy admin portal.
 
 For assigning admin roles, see [Assign admin rights in Office 365 for business](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
