@@ -18,6 +18,9 @@ description: "Get an overview of the admin portal features and access permission
 
 # About the Admin portal
 
+> [!IMPORTANT]
+> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
+    
 Microsoft Search lets you use Bing to search your organization for SharePoint sites and files, internal websites, people, Office 365 groups, and more. Use the Admin portal to manage all aspects of Microsoft Search.
   
 The Microsoft Search Admin portal is organized around these areas:

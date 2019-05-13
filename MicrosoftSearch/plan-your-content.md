@@ -18,6 +18,9 @@ description: "Provide quality content without needing additional resources when 
 
 # Plan your content
 
+> [!IMPORTANT]
+> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
+    
 Before planning your content, understanding what you can add to Microsoft Search will be helpful:
   
 - Bookmarks
