@@ -18,9 +18,6 @@ description: "Add a logo, company name, and more to your Microsoft Search work r
 
 # Content settings
 
-> [!IMPORTANT]
-> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
-
 With Microsoft Search, you can ensure a familiar look and feel for results that come from content sources within your organization, such as SharePoint, OneDrive for Business, or your company intranet. 
   
 - Organization name

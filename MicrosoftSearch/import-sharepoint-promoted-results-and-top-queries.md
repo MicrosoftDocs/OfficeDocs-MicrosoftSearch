@@ -18,9 +18,6 @@ description: "Use search queries from SharePoint to create work results for Micr
 
 # Import SharePoint promoted results and top queries
 
-> [!IMPORTANT]
-> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
-
 To leverage users' queries and Best Bets you've created in SharePoint, Microsoft Search includes two tools to import this information as suggested bookmarks: 
   
 ## Import SharePoint promoted result query rules

@@ -18,9 +18,6 @@ description: "Learn how to configure a default browser for your company with Mic
 
 # Set default browser
 
-> [!IMPORTANT]
-> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
-
 Configuring the default browser, default search engine, and default homepage will help your users discover Microsoft Search capabilities, encourage more usage, and provide a smoother experience.
   
 To set the default browser for your organization, follow the steps below.

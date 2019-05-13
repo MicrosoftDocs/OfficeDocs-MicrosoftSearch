@@ -18,9 +18,6 @@ description: "Add these URLs and domains to your firewall allow list so your use
 
 # Manage network connections
 
-> [!IMPORTANT]
-> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
-
 To ensure you and your users can connect to Microsoft Search endpoints, add these URLs to your firewall allow lists.
   
 ## For the Microsoft Search Admin portal:

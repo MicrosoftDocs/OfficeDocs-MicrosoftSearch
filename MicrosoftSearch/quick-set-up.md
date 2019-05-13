@@ -18,9 +18,6 @@ description: "Learn about the four easy steps needed to enable and use Microsoft
 
 # Quick set up for Microsoft Search
 
-> [!IMPORTANT]
-> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
-
 Save time by bringing the best of the web and work to your organization.
   
 ## Step 1: Turn on Microsoft Search

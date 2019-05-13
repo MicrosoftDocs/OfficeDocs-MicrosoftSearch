@@ -18,9 +18,6 @@ description: "Overview of all of the ways to create answers to frequently asked 
 
 # Create and manage Q&As
 
-> [!IMPORTANT]
-> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
-
 ## Create Q&As
 
 Q&As provide the best possible answer for your user's work-related questions. Users can easily discover them when they enter keywords you've associated with them on Bing.

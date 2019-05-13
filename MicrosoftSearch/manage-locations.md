@@ -18,9 +18,6 @@ description: "Over time, you may need to update a location's status and content 
 
 # Manage locations
 
-> [!IMPORTANT]
-> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
-
 Over time, you may need to update a location's status and content to keep it relevant. 
   
 ## Filter locations

@@ -18,9 +18,6 @@ description: "Create bookmarks or user a browser extension to add them to your M
 
 # Create bookmarks
 
-> [!IMPORTANT]
-> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
-
 Bookmarks help people quickly find important resources, sites, and tools. Each bookmark includes a title, a URL, and a set of keywords that trigger it.
   
 ## Create a bookmark

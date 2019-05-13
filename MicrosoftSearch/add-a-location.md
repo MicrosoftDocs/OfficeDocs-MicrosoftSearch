@@ -18,9 +18,6 @@ description: "Add locations so your organization's offices, buildings, and other
 
 # Add a location
 
-> [!IMPORTANT]
-> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
-
 Add a location and when your users search they'll see the address of the building, office, or place and its location on a map. They can also use Bing Maps to get directions, see what's nearby, and more.
   
 1. Go to the Microsoft Search Admin portal
