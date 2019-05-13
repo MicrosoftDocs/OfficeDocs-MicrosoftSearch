@@ -18,6 +18,9 @@ description: "Create lots of bookmarks at once with import tools for the Microso
 
 # Bulk create bookmarks
 
+> [!IMPORTANT]
+> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
+
 Download and use the .csv template to bulk create, edit, and save bookmarks. To bulk edit existing bookmarks, export them from the Admin portal, make the necessary edits, and then import them.
   
 1. In the upper-right corner of the Bookmarks section, click **Import**

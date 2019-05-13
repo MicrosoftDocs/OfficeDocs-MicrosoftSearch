@@ -18,6 +18,9 @@ description: "Get relevant search suggestions and find work results faster by ad
 
 # Add a search box to your intranet site
 
+> [!IMPORTANT]
+> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
+
 For fast access to relevant search suggestions and work results, add a Microsoft Search search box to any intranet site or page.
   
 ## Add a search box to an intranet page
