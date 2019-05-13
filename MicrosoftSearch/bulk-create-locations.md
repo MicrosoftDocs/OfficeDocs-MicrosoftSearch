@@ -18,6 +18,9 @@ description: "Add lots of locations at once with import tools for the Microsoft 
 
 # Bulk create locations
 
+> [!IMPORTANT]
+> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
+    
 Download and use the .csv template to bulk create, edit, and save locations. 
   
 1. In the upper-right corner of the Locations section, click **Import**
