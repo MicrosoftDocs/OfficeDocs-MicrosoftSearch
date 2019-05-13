@@ -17,6 +17,9 @@ description: "Assign permissions and roles to Microsoft Search admins and editor
 ---
 # Manage users
 
+> [!IMPORTANT]
+> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
+    
 Editors can add content, but can't change settings
   
 ## Add admins and editors
