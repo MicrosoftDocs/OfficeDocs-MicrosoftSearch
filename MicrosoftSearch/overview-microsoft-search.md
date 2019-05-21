@@ -75,13 +75,15 @@ Your organization must have an Office 365 tenant with one of the following subsc
 - Office 365 Business Essentials and Business Premium
 - Office 365 A1/A3/A5
 - Office 365 Education E1/E3
-- Office 365 Enterprise E1/E3/E3 developer/E5 
-- Office 365 F1 
-- Microsoft 365 Business 
-- Microsoft 365 A3/A5 
-- Microsoft 365 F1/E3/E5 
+- Office 365 Enterprise E1/E3/E3 developer/E5
+- Office 365 F1
+- Microsoft 365 Business
+- Microsoft 365 A3/A5
+- Microsoft 365 F1/E3/E5
 
-Only users with active accounts can use Microsoft Search, and they must be **signed in**.
+Both users and search administrators must be licensed with one of these subscriptions. Only users with active accounts can use Microsoft Search, and they must be **signed in**.
+> [!NOTE]
+> Microsoft Search is currently available to users and search administrators who are enrolled in Targeted Release.
 
 ## What can users find with Microsoft Search?
 Microsoft Search searches in content that’s stored in Outlook, OneDrive, and SharePoint Online, including people from the global address list and Office 365 groups. If you use cloud hybrid search to set up a hybrid SharePoint environment, users of Microsoft Search can also get results from on-premises SharePoint content, including any external content you’ve connected to your SharePoint Server environment. [Learn more about hybrid search environments](https://docs.microsoft.com/en-us/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).

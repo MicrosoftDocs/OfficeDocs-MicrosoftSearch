@@ -26,6 +26,8 @@ Follow these steps to get your organization going with Microsoft Search in Share
 Influence your organization to start using modern sites instead of classic sites. [Learn about the modern experience in SharePoint](https://support.office.com/article/SharePoint-classic-and-modern-experiences-5725c103-505d-4a6e-9350-300d3ec7d73f).
 ## Step 2: Promote searching from the SharePoint start page 
 Teach your users to search from the app they’re already working in when they need to find something instead of going to the classic Search Center. If they work in an app that doesn’t have a Microsoft Search box yet, guide them to use their SharePoint start page, Office.com home page, or Bing as their starting point for searching. Consider hiding your classic Search Center from users.
+> [!NOTE]
+> Microsoft Search in SharePoint is currently available to users and search administrators who are enrolled in Targeted Release.
 
 ## See also
 [Overview of Microsoft Search](overview-microsoft-search.md)
