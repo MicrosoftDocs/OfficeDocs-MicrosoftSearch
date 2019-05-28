@@ -12,11 +12,11 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Getting your organization started using Microsoft Search in SharePoint Online"
+description: "Get your organization started using Microsoft Search in SharePoint Online"
 ---
 # Get started with Microsoft Search in SharePoint Online
 
-Microsoft Search in SharePoint is the modern search experience in SharePoint Online. SharePoint also offers a classic search experience. As a search administrator you can’t turn on or off neither the modern nor the classic search experience in SharePoint. They are both on by default. Which search experience your users get depends on where they search from:
+Microsoft Search in SharePoint is the modern search experience in SharePoint Online. SharePoint Online also offers a classic search experience. Both search experiences are on by default and both search the same content. As a search administrator you can’t turn on or off neither the modern nor the classic search experience in SharePoint Online. Which search experience your users get depends on where they search from:
 
 - Users get the Microsoft Search box on the SharePoint start page, hub sites, communication sites, and modern team sites.
 - Users get the classic search box on publishing sites, classic team sites, and in the Search Center.
