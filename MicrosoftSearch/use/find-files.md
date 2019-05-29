@@ -12,6 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ff42d668-f721-4ada-b130-77e38508197c
+ROBOTS: NOINDEX
 description: "Use Microsoft Search to find Office files and PDFs and the information that you'll see"
 ---
 

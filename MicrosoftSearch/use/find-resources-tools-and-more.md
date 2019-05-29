@@ -12,6 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a67e015a-e10a-442a-b1c9-511136d54d1f
+ROBOTS: NOINDEX
 description: "Use Microsoft Search to find intranet sites, resources, tools, and links to internal information"
 ---
 

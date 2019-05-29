@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
+ROBOTS: NOINDEX
 description: "Quickly add answers to frequently asked questions with import tools in the Microsoft Search Admin portal"
 ---
 

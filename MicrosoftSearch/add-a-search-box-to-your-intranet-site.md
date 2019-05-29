@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
+ROBOTS: NOINDEX
 description: "Get relevant search suggestions and find work results faster by adding a Microsoft Search search box to an intranet site or page."
 ---
 

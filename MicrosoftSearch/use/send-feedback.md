@@ -12,6 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a51d395b-c281-433b-bb8e-fefac5252110
+ROBOTS: NOINDEX
 description: "Submit feedback and comments about Microsoft Search to your IT department or Microsoft"
 ---
 

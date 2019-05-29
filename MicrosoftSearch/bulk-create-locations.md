@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 15c9fada-f7a6-4210-aa6b-028b32217830
+ROBOTS: NOINDEX
 description: "Add lots of locations at once with import tools for the Microsoft Search Admin portal"
 ---
 

@@ -12,6 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: c7f3aa2c-f3f5-4d1b-91cd-4fd4ed3775d3
+ROBOTS: NOINDEX
 description: "About the sample searches that you see when you use Microsoft Search"
 ---
 

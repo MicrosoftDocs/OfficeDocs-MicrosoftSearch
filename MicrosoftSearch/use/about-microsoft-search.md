@@ -12,6 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: b453e6f0-10cf-4384-9914-241f425cd5f9
+ROBOTS: NOINDEX
 description: "Get an overview of all of the information that you can find when you use Microsoft Search"
 ---
 
