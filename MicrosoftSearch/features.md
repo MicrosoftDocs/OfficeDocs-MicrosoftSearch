@@ -13,10 +13,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
+ROBOTS: NOINDEX
 description: "Key features of Microsoft Search for admins and end users include bookmarks, Q&As, and management and data insights"
 ---
 
 # Features of Microsoft Search
+
+> [!IMPORTANT]
+> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
 
 ## Key admin features include:
 

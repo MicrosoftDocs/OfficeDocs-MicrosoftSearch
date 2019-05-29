@@ -13,8 +13,10 @@ search.appverid:
 - MET150
 - MOE150
 description: "Using Classic and Modern Search in SharePoint Online?"
+ROBOTS: NOINDEX
 ---
 # Get started with Microsoft Search in SharePoint Online
+
 
 Microsoft Search is the modern search experience in SharePoint Online. SharePoint Online also offers a classic search experience. As a search administrator you can’t turn on or off neither the modern nor the classic search experience. They are both on by default. Which search experience your users get depends on where they search from:
 
