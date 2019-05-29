@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
+ROBOTS: NOINDEX
 description: "Use search queries from SharePoint to create work results for Microsoft Search"
 ---
 

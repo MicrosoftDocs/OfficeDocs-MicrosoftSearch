@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
+ROBOTS: NOINDEX
 description: "Learn how to set Bing as the default homepage for your company with Microsoft Search."
 ---
 

@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
+ROBOTS: NOINDEX
 description: "Include browser-based apps in bookmarks results for Microsoft Search"
 ---
 

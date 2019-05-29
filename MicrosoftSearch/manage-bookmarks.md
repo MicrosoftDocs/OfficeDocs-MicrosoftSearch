@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
+ROBOTS: NOINDEX
 description: "Find bookmarks that need to be updated and ways to bulk edit bookmark results for Microsoft Search"
 ---
 

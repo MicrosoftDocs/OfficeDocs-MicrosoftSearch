@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
+ROBOTS: NOINDEX
 description: "All of the information you need to deploy Microsoft Search to your organization"
 ---
 

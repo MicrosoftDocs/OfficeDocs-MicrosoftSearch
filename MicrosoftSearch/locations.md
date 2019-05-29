@@ -13,6 +13,7 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
+ROBOTS: NOINDEX
 description: "Overview of all of the ways that you can include your organization's locations in Microsoft Search work results"
 ---
 

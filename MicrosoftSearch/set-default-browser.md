@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
+ROBOTS: NOINDEX
 description: "Learn how to configure a default browser for your company with Microsoft Search."
 ---
 

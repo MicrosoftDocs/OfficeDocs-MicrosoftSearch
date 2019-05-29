@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
+ROBOTS: NOINDEX
 description: "Learn about the four easy steps needed to enable and use Microsoft Search."
 ---
 
