@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
+ROBOTS: NOINDEX
 description: "Analyze metrics and manage content from the easy-to-use dashboard in the Microsoft Search Admin portal"
 ---
 

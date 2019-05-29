@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d432b9d9-3792-47a0-9a13-30a1a83caabc
+ROBOTS: NOINDEX
 description: "Ways to create answers to frequently asked questions for your Microsoft Search work results"
 ---
 
