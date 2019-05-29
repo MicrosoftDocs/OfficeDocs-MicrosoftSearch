@@ -18,6 +18,9 @@ description: "Key features of Microsoft Search for admins and end users include 
 
 # Features of Microsoft Search
 
+> [!IMPORTANT]
+> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
+
 ## Key admin features include:
 
 - [Enterprise bookmarks](create-and-manage-bookmarks.md)

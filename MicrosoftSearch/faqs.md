@@ -19,6 +19,9 @@ description: "Get answers to commonly asked questions about enterprise search an
 # FAQs
 
 These are the frequently asked questions that organizations and users have about administering and using Microsoft Search.
+
+> [!IMPORTANT]
+> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
   
 ## What's the value proposition for Microsoft Search?
 
