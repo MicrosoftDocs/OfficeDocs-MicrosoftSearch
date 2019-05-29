@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 41b9b33d-fcc4-470c-90ec-068211fbbb16
+ROBOTS: NOINDEX
 description: "The Office 365 requirements and subscriptions that are needed to enable Microsoft Search"
 ---
 

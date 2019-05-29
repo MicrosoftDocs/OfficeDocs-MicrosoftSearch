@@ -13,13 +13,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
+ROBOTS: NOINDEX
 description: "Find and update answers individually or use available Microsoft Search tools to edit them all at once"
 ---
 
 # Manage Q&As
 
 > [!IMPORTANT]
-> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
+> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
     
 Over time, you may need to update a Q&A's status and content to keep it relevant.
   

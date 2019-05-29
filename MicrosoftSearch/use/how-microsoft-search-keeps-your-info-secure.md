@@ -12,6 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 5ab1234e-fbb2-4bf9-a907-fa83389a7dee
+ROBOTS: NOINDEX
 description: "How your info and files are protected when you use Microsoft Search"
 ---
 

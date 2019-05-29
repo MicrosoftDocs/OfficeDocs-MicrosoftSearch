@@ -13,13 +13,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
+ROBOTS: NOINDEX
 description: "All of the information you need to deploy Microsoft Search to your organization"
 ---
 
 # Set up Microsoft Search
 
 > [!IMPORTANT]
-> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
+> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
     
 As part of Office 365, Microsoft Search is easily deployed by enabling it in the Microsoft 365 admin center. Once enabled, a quick configuration to set a logo, name, and color and give admins and editors access is all that's needed to get set up. From there, users can sign in to Bing with a work or school account and get work results when they search.
 

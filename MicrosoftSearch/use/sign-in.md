@@ -12,6 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 429fb92c-e968-4d61-be15-6ecebfdbd157
+ROBOTS: NOINDEX
 description: "Quickly sign in to Microsoft Search or any Office 365 app with a work or school account"
 ---
 

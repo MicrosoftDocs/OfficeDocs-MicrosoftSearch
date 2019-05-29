@@ -12,6 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 3d34bfbc-d4a3-4ef2-85d3-cf92835382ac
+ROBOTS: NOINDEX
 description: "Use Microsoft Search to find office, building, and other workspace locations, get directions, and more"
 ---
 

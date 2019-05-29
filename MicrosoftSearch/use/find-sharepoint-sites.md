@@ -12,6 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 3388bdc7-1ee0-497e-b110-fba4a082eb08
+ROBOTS: NOINDEX
 description: "Use Microsoft Search to find SharePoint sites and the details that you'll see"
 ---
 
