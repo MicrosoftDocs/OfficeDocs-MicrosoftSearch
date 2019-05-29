@@ -19,7 +19,7 @@ description: "Provide quality content without needing additional resources when 
 
 # Plan your content
 
-> ****Microsoft Search**** helps users find relevant content. **Microsoft Search** is a secure way to search both your intranet and web content. This kind of integration across web and organization is available only with Microsoft. 
+****Microsoft Search**** helps users find relevant content. **Microsoft Search** is a secure way to search both your intranet and web content. This kind of integration across web and organization is available only with Microsoft. 
 
 Search administrators use their knowledge of the organization and its users to make it easy for users to find the relevant content. 
 

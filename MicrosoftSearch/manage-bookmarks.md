@@ -16,7 +16,6 @@ ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 ROBOTS: NOINDEX
 description: "Create and update bookmarks and ways to bulk edit bookmark results for Microsoft Search"
 ---
-
 # Manage bookmarks
 
 You can create a bookmark in just a few steps. Each bookmark includes a title, a URL, and a set of keywords that trigger it. A bookmark can have several keywords and several bookmarks can share the same keyword, but reserved keyword can't be shared. When a Bookmark is created or modified, the search index is refreshed immediately, and the bookmark is available to users immediately.

@@ -58,4 +58,4 @@ Here are some important points regarding the template file:
 
 **Note:** You cannot import Locations if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted and include all the required information. 
 
-For more information on how to prevent error, see [Prevent import errors.](#prevent-import-errors)
+For more information on how to prevent error, see [Prevent import errors](manage-bookmarks.md#prevent-import-errors).

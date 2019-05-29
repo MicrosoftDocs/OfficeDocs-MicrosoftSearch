@@ -50,7 +50,7 @@ The following HTML tags are supported:
 - hr
 - img
 
-## Bulk add or edit Q&A
+## Bulk add or edit Q&As
 Administrators can use the Import and Export features to bulk create or edit Q&A. This is a useful feature when administrators need to add or edit a large number of Q&A. 
 
 Use the import/export feature to:
@@ -77,4 +77,4 @@ Here are some important points regarding the template file:
 
 **Note:** You cannot import Q&A if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted and include all the required information. 
 
-For more information on how to prevent error, see [Prevent import errors](#prevent-import-errors).
+For more information on how to prevent error, see [Prevent import errors](manage-bookmarks.md#prevent-import-errors).
