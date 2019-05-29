@@ -18,6 +18,10 @@ description: "Learn how to customize the work results that appear when you use M
 
 # Connected services
 
+> [!IMPORTANT]
+> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
+     
+     
 Microsoft Search lets you use the powerful Bing search engine to search your Office 365 organization's SharePoint files, bookmarked internal websites, people in the global address list, and Office 365 groups.
   
 ## Search for sites and documents
