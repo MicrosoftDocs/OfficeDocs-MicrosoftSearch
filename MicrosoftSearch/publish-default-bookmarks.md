@@ -19,7 +19,7 @@ description: "Default bookmarks that are available in the Microsoft Search Admin
 # Publish default bookmarks
 
 > [!IMPORTANT]
-> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
+> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
     
 To quickly see how bookmarks appear on Bing, publish the provided defaults. Use them as a reference to understand how to name bookmarks and create good keywords.
   

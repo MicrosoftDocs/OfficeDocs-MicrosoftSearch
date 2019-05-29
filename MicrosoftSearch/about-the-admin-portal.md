@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
+ROBOTS: NOINDEX
 description: "Get an overview of the admin portal features and access permissions available with Microsoft Search"
 ---
 

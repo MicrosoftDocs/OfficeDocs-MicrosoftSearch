@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b40a575d-7727-4bb0-80da-e25131315790
+ROBOTS: NOINDEX
 description: "Overview of all of the ways to create answers to frequently asked questions in the Microsoft Search Admin portal"
 ---
 

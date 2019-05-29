@@ -12,6 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 17c9982a-0fd9-4cf1-b010-69ae3440b41f
+ROBOTS: NOINDEX
 description: "Use Microsoft Search to find anyone in your company and the information that you'll see"
 ---
 

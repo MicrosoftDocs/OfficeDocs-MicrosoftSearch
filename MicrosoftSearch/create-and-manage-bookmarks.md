@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5479dc34-3de0-41c5-94a7-ba87069e6b43
+ROBOTS: NOINDEX
 description: "Overview of all of the ways that you can add and create bookmarks for Microsoft Search work results"
 ---
 
