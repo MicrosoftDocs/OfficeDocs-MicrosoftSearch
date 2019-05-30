@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 40a556e1-61c2-4bd3-b80e-5ad62af77454
-ROBOTS: NOINDEX
+ROBOTS: NoIndex
 description: "Create bookmarks or user a browser extension to add them to your Microsoft Search work results"
 ---
 

@@ -8,7 +8,6 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Priority
-ROBOTS: NOINDEX
 search.appverid:
 - BFB160
 - MET150

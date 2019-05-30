@@ -20,6 +20,9 @@ description: "Protect your enterprise data and users while providing information
 # Security for Microsoft Search
 
 With enterprise-grade security, Microsoft Search always keeps your users and data protected.
+
+> [!IMPORTANT]
+> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
   
 ## Secure by default
 

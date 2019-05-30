@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
-ROBOTS: NOINDEX
+ROBOTS: NoIndex
 description: "Assign permissions and roles to Microsoft Search admins and editors"
 ---
 # Manage users

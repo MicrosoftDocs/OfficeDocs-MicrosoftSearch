@@ -13,7 +13,7 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 47eedbb9-6da9-47e0-aac5-078d34a7fd8f
-ROBOTS: NOINDEX
+ROBOTS: NoIndex
 description: "Ensure a seamless sign-in experience for your users by configuring your DNS server using a CNAME"
 ---
 
