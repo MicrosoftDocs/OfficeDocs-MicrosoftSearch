@@ -1,4 +1,7 @@
 #[Overview of Microsoft Search](overview-microsoft-search.md)
 #[Set up Microsoft Search](setup-microsoft-search.md)
-#[Make content easy to find](make-content-easy-to-find.md)
+#[Plan your content](plan-your-content.md)
+##[Manage bookmarks](manage-bookmarks.md)
+##[Manage Q&As](manage-qas.md)
+##[Manage locations](manage-locations.md)
 #[Microsoft Search in SharePoint Online](get-started-search-in-sharepoint-online.md)

@@ -1,8 +1,8 @@
 ---
 title: "Manage Q&As"
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
 ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
@@ -13,7 +13,6 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-ROBOTS: NOINDEX
 description: "Find and update answers individually or use available Microsoft Search tools to edit them all at once"
 ---
 
