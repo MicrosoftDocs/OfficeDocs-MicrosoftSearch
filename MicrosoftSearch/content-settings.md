@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d1432d64-7a97-4b1b-a99f-11291814d361
-ROBOTS: NOINDEX
+ROBOTS: NoIndex
 description: "Add a logo, company name, and more to your Microsoft Search work results"
 ---
 

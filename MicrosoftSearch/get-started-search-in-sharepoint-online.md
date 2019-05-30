@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Get your organization started using Microsoft Search in SharePoint Online"
-ROBOTS: NOINDEX
+
 ---
 # Get started with Microsoft Search in SharePoint Online
 

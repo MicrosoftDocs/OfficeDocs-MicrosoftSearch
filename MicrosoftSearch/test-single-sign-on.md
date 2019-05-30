@@ -8,12 +8,12 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Priority
-ROBOTS: NOINDEX
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
+ROBOTS: NOINDEX
 description: "Reduce the number of times your Windows 10 users are prompted to sign in to Microsoft Search and Office 365"
 ---
 

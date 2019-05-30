@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 161ea667-9b27-4695-b7a8-e8e063141795
-ROBOTS: NOINDEX
+ROBOTS: NoIndex
 description: "Learn how to customize the work results that appear when you use Microsoft Search."
 ---
 
