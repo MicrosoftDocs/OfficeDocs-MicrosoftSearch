@@ -12,6 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ecd31803-0b32-4ba3-8bb8-a0d1dfb8b856
+ROBOTS: NOINDEX
 description: "Use Microsoft Search to find Teams and Yammer conversations and the details that you'll see"
 ---
 

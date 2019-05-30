@@ -3,11 +3,12 @@ title: "Make content easy to find with Microsoft Search"
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 12/11/2018
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Priority
+ROBOTS: NOINDEX
 search.appverid:
 - BFB160
 - MET150

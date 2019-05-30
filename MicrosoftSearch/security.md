@@ -13,12 +13,16 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
+ROBOTS: NOINDEX
 description: "Protect your enterprise data and users while providing information to authorized users with Microsoft Search"
 ---
 
 # Security for Microsoft Search
 
 With enterprise-grade security, Microsoft Search always keeps your users and data protected.
+
+> [!IMPORTANT]
+> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
   
 ## Secure by default
 

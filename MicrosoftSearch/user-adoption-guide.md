@@ -13,10 +13,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
+ROBOTS: NOINDEX
 description: "Find out about methods and processes to help you successfully roll out Microsoft Search to your organization"
 ---
 
 # User adoption guide
+
+> [!IMPORTANT]
+> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
 
 This information is intended for Microsoft Search admins, change management leaders, and business owners.
   

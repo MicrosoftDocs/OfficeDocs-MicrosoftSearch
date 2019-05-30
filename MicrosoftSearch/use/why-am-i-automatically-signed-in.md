@@ -12,6 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 94f6fa41-0570-4668-b2fe-d51ed177716c
+ROBOTS: NOINDEX
 description: "Learn how automatically signing in to Microsoft Search can help you quickly and easily find work results"
 ---
 

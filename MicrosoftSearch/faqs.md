@@ -13,12 +13,16 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: cd3ee09d-58ab-4b8a-8822-fa11a1399672
+ROBOTS: NoIndex
 description: "Get answers to commonly asked questions about enterprise search and Microsoft Search"
 ---
 
 # FAQs
 
 These are the frequently asked questions that organizations and users have about administering and using Microsoft Search.
+
+> [!IMPORTANT]
+> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
   
 ## What's the value proposition for Microsoft Search?
 

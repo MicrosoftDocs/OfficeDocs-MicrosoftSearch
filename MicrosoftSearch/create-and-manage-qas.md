@@ -13,13 +13,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b40a575d-7727-4bb0-80da-e25131315790
+ROBOTS: NoIndex
 description: "Overview of all of the ways to create answers to frequently asked questions in the Microsoft Search Admin portal"
 ---
 
 # Create and manage Q&As
 
 > [!IMPORTANT]
-> Microsoft Search in Bing settings are now available in the Microsoft 365 admin center. Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.
+> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
     
 ## Create Q&As
 
