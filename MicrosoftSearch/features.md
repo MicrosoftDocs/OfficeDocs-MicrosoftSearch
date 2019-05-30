@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
-ROBOTS: NOINDEX
+ROBOTS: NoIndex
 description: "Key features of Microsoft Search for admins and end users include bookmarks, Q&As, and management and data insights"
 ---
 

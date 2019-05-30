@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: cd3ee09d-58ab-4b8a-8822-fa11a1399672
-ROBOTS: NOINDEX
+ROBOTS: NoIndex
 description: "Get answers to commonly asked questions about enterprise search and Microsoft Search"
 ---
 

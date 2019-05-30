@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
-ROBOTS: NOINDEX
+ROBOTS: NoIndex
 description: "Create lots of bookmarks at once with import tools for the Microsoft Search Admin portal"
 ---
 

@@ -21,7 +21,7 @@ description: "Over time, you may need to update a location's status and content 
 
 > [!IMPORTANT]
 > This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
-    
+
 Over time, you may need to update a location's status and content to keep it relevant. 
   
 ## Filter locations

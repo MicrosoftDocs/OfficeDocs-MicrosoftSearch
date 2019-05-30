@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
-ROBOTS: NOINDEX
+ROBOTS: NoIndex
 description: "Get relevant search suggestions and find work results faster by adding a Microsoft Search search box to an intranet site or page."
 ---
 
@@ -21,7 +21,7 @@ description: "Get relevant search suggestions and find work results faster by ad
 
 > [!IMPORTANT]
 > This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
-    
+
 For fast access to relevant search suggestions and work results, add a Microsoft Search search box to any intranet site or page.
   
 ## Add a search box to an intranet page

@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
-ROBOTS: NOINDEX
+ROBOTS: NoIndex
 description: "Overview of Microsoft Search tools to create and import results, sign in automatically, and search from anywhere"
 ---
 

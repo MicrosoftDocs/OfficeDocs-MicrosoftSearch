@@ -8,12 +8,12 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
 localization_priority: Priority
-ROBOTS: NOINDEX
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
+ROBOTS: NOINDEX
 description: "Provide quality content without needing additional resources when you use Microsoft Search"
 ---
 

@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d432b9d9-3792-47a0-9a13-30a1a83caabc
-ROBOTS: NOINDEX
+ROBOTS: NoIndex
 description: "Ways to create answers to frequently asked questions for your Microsoft Search work results"
 ---
 
@@ -21,7 +21,7 @@ description: "Ways to create answers to frequently asked questions for your Micr
 
 > [!IMPORTANT]
 > This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
-    
+
 Q&As provide an answer or info to users including an optional link. Ideally, a Q&A includes all the details your users are looking for so they don't need to go to the source. You can format your Q&A content and include images, lists, and tables.
   
 ## Create a Q&A

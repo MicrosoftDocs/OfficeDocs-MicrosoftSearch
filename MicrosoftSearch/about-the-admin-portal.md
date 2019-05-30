@@ -13,13 +13,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
-ROBOTS: NOINDEX
+ROBOTS: NoIndex
 description: "Get an overview of the admin portal features and access permissions available with Microsoft Search"
 ---
 
 # About the Admin portal
 
->> [!IMPORTANT]
+> [!IMPORTANT]
 > This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
 
     

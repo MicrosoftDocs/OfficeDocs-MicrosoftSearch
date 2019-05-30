@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c37cf1b1-5915-4eb1-9f78-72c48cad3b4b
-ROBOTS: NOINDEX
+ROBOTS: NoIndex
 description: "Add locations so your organization's offices, buildings, and other workspaces appear in your Microsoft Search work results"
 ---
 
