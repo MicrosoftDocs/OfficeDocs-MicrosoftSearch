@@ -1,8 +1,8 @@
 ---
 title: "Plan your content"
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
 ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: reference
@@ -13,7 +13,6 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
-ROBOTS: NOINDEX
 description: "Provide quality content without needing additional resources when you use Microsoft Search"
 ---
 
