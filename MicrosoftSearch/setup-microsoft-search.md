@@ -3,7 +3,7 @@ title: "Set up **Microsoft Search**"
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 04/30/2019
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -24,9 +24,9 @@ To learn more about **Microsoft Search** features, see [Microsoft Search Overvie
 
 **Microsoft Search** is turned on by default for all Microsoft apps that supports it, as a part of Microsoft 365. All a user needs to do is to sign-in with a work or school account and use a browser with Bing set as the default search provider.
 
-You administer **Microsoft Search** from **Microsoft 365 admin center**. Sign in using your login with admin credentials, select **Admin** tile in **App launcher**. In **Microsoft 365 admin center**, select **Microsoft Search** under **Settings** in the left navigation panel. 
+You administer **Microsoft Search** from **Microsoft 365 admin center**. Sign in using your login with admin credentials and select **Admin** tile from the list of Office 365 apps (click **App launcher** icon on the top left corner for the list of apps). In **Microsoft 365 admin center**, select **Microsoft Search** under **Settings** in the left navigation panel. 
 
-**Note:** If you are seeing the legacy admin portal and want to switch to the new admin center, turn on the **Try the preview** switch in the right top corner of admin center. 
+**Note:** If you are seeing **Microsoft Search** under **Settings** in **Microsoft 365 admin center**, turn on the **Try the preview** switch in the right top corner of admin center. 
 
 As an administrator you should consider a few things that can make the **Microsoft Search** experience efficient and user friendly in your organization.
 
