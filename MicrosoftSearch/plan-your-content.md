@@ -94,7 +94,6 @@ It is important that authoritative information such as Bookmarks and Q&A are up 
 - Check for tool, site name, or team name changes.
 - Consider whether the Bookmark or Q&A is authoritative enough or needs a clearer description.
 
-# Review and update Bookmarks, Q&A, and Locations
 **Microsoft Search** provides usage statistics for Bookmarks, Q&A, and Locations. The usage statistics shows how users are engaging with your search results and whether users are finding what they are looking for, or are there any gaps in the available content? It helps administrator monitor performance and take appropriate actions to fine tune the search results. 
 
 ### Get details about Bookmarks, Q&A and Locations
