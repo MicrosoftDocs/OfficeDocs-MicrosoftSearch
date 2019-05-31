@@ -38,7 +38,8 @@ Influence your organization to start using modern sites instead of classic sites
 
 ## Step 3: Promote searching from the SharePoint start page
 
-Teach your users to search from the app they’re already working in when they need to find something or to search from the SharePoint start page instead of from the classic Search Center. Consider hiding your classic Search Center from users.
+Teach your users to search from the SharePoint start page instead of from the classic Search Center. Consider hiding your classic Search Center from users.
 
 ## See also
 [Overview of Microsoft Search](overview-microsoft-search.md)
+[When to use which search experience in SharePoint](https://docs.microsoft.com/sharepoint/get-started-with-modern-search-experience)
