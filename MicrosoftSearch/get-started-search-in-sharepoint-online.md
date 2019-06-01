@@ -17,7 +17,7 @@ description: "Get your organization started using Microsoft Search in SharePoint
 ---
 # Get started with Microsoft Search in SharePoint
 
-Microsoft Search in SharePoint is the modern search experience in SharePoint Online. SharePoint Online also offers a classic search experience. As a search administrator you can’t turn on or off either of these search experiences. They are both on by default. Which search experience your users get depends on where they search from:
+Microsoft Search in SharePoint is the modern search experience in SharePoint Online. SharePoint Online also offers a classic search experience. [Learn about search experiences in SharePoint](https://docs.microsoft.com/en-us/sharepoint/overview-of-search). As a search administrator you can’t turn on or off either of these search experiences. They are both on by default. Which search experience your users get depends on where they search from:
 
 - Users get the Microsoft Search box on the SharePoint start page, hub sites, communication sites, and modern team sites.
 - Users get the classic search box on publishing sites, classic team sites, and in the Search Center.
