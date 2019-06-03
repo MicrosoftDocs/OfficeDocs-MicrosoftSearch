@@ -52,12 +52,11 @@ If the suggestions in the search box aren’t what they’re looking for, **Ente
 
 **Microsoft Search evolves** – The set of content types users can search for and the intelligence of the search box will grow over time.
 
-**Administer across all apps** - Microsoft Search is on by default and any administration you do applies to Microsoft Search in all the apps.
+**Administer across all apps** - Microsoft Search is **on** by default and any administration you do applies to Microsoft Search in all the apps.
 
 ## Apps that currently have Microsoft Search
 
-
-Over time Microsoft Search will be available in more and more apps across Microsoft 365. The following Office 365 apps currently offer Microsoft Search:
+ The following Office 365 apps currently offer Microsoft Search:
 
 - SharePoint Online
 - OneDrive for Business
@@ -99,7 +98,7 @@ As an admin you can make it easy for your users to get good organization-specifi
 
 ## What content is searched?
 
-Microsoft Search can search in content that’s stored in SharePoint Online, OneDrive for Business, and Exchange, including people from the global address list and Office 365 groups. If your organization has set up a hybrid SharePoint environment using cloud hybrid search, users of Microsoft Search can also get results from on-premises SharePoint content, including any external content you’ve connected to your SharePoint Server environment. [Learn more about hybrid search environments](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
+Microsoft Search searches in content that’s stored in SharePoint Online, OneDrive for Business, and Exchange, including people from the global address list and Office 365 groups. If your organization has set up a hybrid SharePoint environment using cloud hybrid search, Microsoft Search also shows results from on-premises SharePoint content, including any external content you’ve connected to your SharePoint Server environment. [Learn more about hybrid search environments](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
 When users search from the SharePoint start page or Office.com, Microsoft Search searches across all the content in their organization and presents all the results it finds. This is known as the **global search scope**.
 
