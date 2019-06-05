@@ -19,9 +19,7 @@ description: "Learn how to set Bing as your company's default search engine usin
 
 # Set default search engine
 
-> [!IMPORTANT]
-> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
-    
+  
 Configuring the default browser, default search engine, and default homepage will help your users discover Microsoft Search capabilities, encourage more usage, and provide a smoother experience.
   
 To set the default search engine for your organization, follow the steps below.
