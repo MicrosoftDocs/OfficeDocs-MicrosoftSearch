@@ -38,7 +38,7 @@ PowerApps work in any browser and on any device and take less than a minute to a
   
 1. [Find the App ID for the PowerApp](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) you want to integrate 
     
-2. In the Microsoft SearchAdmin portal, go to **Bookmarks**
+2. In the Microsoft Search Admin portal, go to **Bookmarks**
     
 3. Add a bookmark or find an existing bookmark that you want to add a PowerApp to
     

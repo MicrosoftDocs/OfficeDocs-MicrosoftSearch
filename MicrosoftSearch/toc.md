@@ -8,4 +8,3 @@
 #[Microsoft Search in SharePoint Online](get-started-search-in-sharepoint-online.md)
 #[User adoption guide](user-adoption-guide.md)
 #[Using Microsoft Search](use/about-microsoft-search.md)
-#[FAQs](faqs.md)
