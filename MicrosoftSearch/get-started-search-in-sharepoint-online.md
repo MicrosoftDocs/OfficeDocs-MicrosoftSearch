@@ -26,12 +26,10 @@ Follow these steps to get your organization going with Microsoft Search in Share
 
 ## Step 1: Prepare for Microsoft Search in SharePoint
 
-Users can only find SharePoint content that's been indexed. Microsoft Search uses the same index for SharePoint content as classic search does, and SharePoint content is crawled and indexed automatically.
-
-Follow the guidelines to [set up Microsoft Search](set-up-microsoft-search.md).
-
+Users can only find SharePoint content that's been indexed. Microsoft Search uses the same index for SharePoint content as classic search does, and SharePoint content is crawled and indexed automatically. 
 If your organization will use both classic search and Microsoft Search in SharePoint, [learn how to avoid impact from classic search settings on Microsoft Search in SharePoint](https://docs.microsoft.com/sharepoint/differences-classic-modern-search).
 
+Follow the guidelines to [set up Microsoft Search](set-up-microsoft-search.md) in general.
 
 
 ## Step 2: Get your organization to adopt modern sites

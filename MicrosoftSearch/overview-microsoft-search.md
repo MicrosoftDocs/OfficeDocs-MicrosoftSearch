@@ -20,7 +20,7 @@ Microsoft Search is the unified search capability in the Microsoft 365 productiv
 
 Microsoft Search helps users find the right answers, people, and content to complete their tasks in the app they’re already working in.
 
-- Users get results that are relevant in the **context** of the app they search from. For example, when they search in Outlook, they find emails, not sites in SharePoint. When they search in SharePoint, they find sites, pages, and files, not emails.
+- Users get results that are relevant in the **context** of the app they search from. For example, when they search in Outlook, they find emails, not sites in SharePoint. When they search in SharePoint, they find sites, pages, and files.
 - Whichever app users are working in; Microsoft Search is **personal**.  Microsoft Search uses insights from the Microsoft Graph to show results that are relevant to each user. Each user might see different results, even if they search for the same words. They only see results that they already have access to, Microsoft Search doesn’t change permissions.
 - Users don’t need to remember where the information is located. For example, a user is working in Word and wants to reuse information from a presentation that a colleague shared from their OneDrive. There’s no need to switch to OneDrive and search for that presentation, they can simply search from Word.  
 - When in Bing, users get results from within their organization in addition to the public web results .
@@ -98,7 +98,7 @@ As an admin you can make it easy for your users to get good organization-specifi
 
 ## What content is searched?
 
-Microsoft Search searches in content that’s stored in SharePoint Online, OneDrive for Business, and Exchange, including people from the global address list and Office 365 groups. If your organization has set up a hybrid SharePoint environment using cloud hybrid search, Microsoft Search also shows results from on-premises SharePoint content, including any external content you’ve connected to your SharePoint Server environment. [Learn more about hybrid search environments](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
+Microsoft Search searches in content that’s stored in SharePoint Online, OneDrive for Business, and Exchange, including people from the global address list and Office 365 groups. If your organization has set up a hybrid SharePoint environment using cloud hybrid search, Microsoft Search returns search results from both online and on-premises SharePoint content, including any external content you’ve connected to your SharePoint Server environment. [Learn more about hybrid search environments](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
 When users search from the SharePoint start page or Office.com, Microsoft Search searches across all the content in their organization and presents all the results it finds. This is known as the **global search scope**.
 
