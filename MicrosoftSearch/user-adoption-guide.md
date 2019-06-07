@@ -19,9 +19,6 @@ description: "Find out about methods and processes to help you successfully roll
 
 # User adoption guide
 
-> [!IMPORTANT]
-> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
-
 This information is intended for Microsoft Search admins, change management leaders, and business owners.
   
 To roll out and ensure the successful adoption of Microsoft Search across your organization, we recommend this four-stage process.
@@ -83,7 +80,7 @@ Investing time in preparing for your Microsoft Search rollout will result in a p
   
 Administrators directly influence the search experience for end users and determine how Microsoft Search looks for the organization. This includes choosing the types of results you want to surface to your users. Control this by turning on or off results for documents, sites, people, groups, or conversations.
   
-For more information, see [Set up Microsoft Search](set-up-microsoft-search.md).
+For more information, see [Set up Microsoft Search](setup-microsoft-search.md).
   
 Editors are subject matter experts who help manage Bookmarks and Q&As within their areas of expertise. Editors should create content that addresses the user scenarios that you identified earlier.
   
@@ -191,7 +188,4 @@ Use the insights dashboard to see how the product and the content is performing.
     
 3. Conduct surveys, focus groups, and feedback sessions to understand what users think of Microsoft Search, increase adoption, and identify improvement areas
     
-Education and feedback is an iterative process. It may be necessary to make changes to content and communications as your users adopt Microsoft Search. 
-
-  
-
+Education and feedback is an iterative process. It may be necessary to make changes to content and communications as your users adopt Microsoft Search.

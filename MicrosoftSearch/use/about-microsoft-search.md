@@ -16,7 +16,7 @@ ROBOTS: NOINDEX
 description: "Get an overview of all of the information that you can find when you use Microsoft Search"
 ---
 
-# About Microsoft Search
+# Using Microsoft Search
 
 Microsoft Search effortlessly brings searching work and the web together in one experience. Use Microsoft Search for a simple, fast, powerful, and safer way to get the right information at the right time in any browser and on any device.
   
