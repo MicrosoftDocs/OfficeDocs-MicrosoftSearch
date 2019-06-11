@@ -140,7 +140,7 @@ Because work-related searches may be sensitive, Microsoft Search uses a set of t
 
 Regardless of whether a user query contains one or more work-related results in the returned response, the following measures are taken:
 
-**Logging** - All search logs pertaining to Microsoft Search traffic are de-identified and stored separately from public, non-Microsoft Search traffic. They're retained for 18 months, and access is restricted for debugging purposes only. The queries in these logs are not used to model or train public features such as autosuggest or related searches for the public web. Restricted access is managed via various secure mechanisms, including security groups and other layers within the engineering system.
+**Logging** - All search logs pertaining to Microsoft Search traffic are de-identified and retained for 18 months. Queries stored in these system logs will only be used to model and train public features such as autosuggest or related searches for public web results when a set of restrictions and frequency thresholds are met, which gives us confidence that these queries are common and not specific to a particular organization. The query must appear a significant amount of times in corelating data from non-Microsoft Search users, and the query must not trigger exclusively enterprise search results. Queries that do not meet these requirements will be stored separately from public, non-Microsoft Search traffic. Restricted access is managed via various secure mechanisms, including security groups and other layers within the engineering system.
 
 **Search history** - When signed in with a work or school account, a user's search history won't be available on other computers or devices.
 
