@@ -26,7 +26,7 @@ To learn more about **Microsoft Search** features, see [Microsoft Search Overvie
 
 You administer **Microsoft Search** from **Microsoft 365 admin center**. Sign in using your login with admin credentials and select **Admin** tile from the list of Office 365 apps (click **App launcher** icon on the top left corner for the list of apps). In **Microsoft 365 admin center**, select **Microsoft Search** under **Settings** in the left navigation panel. 
 
-**Note:** If you are seeing **Microsoft Search** under **Settings** in **Microsoft 365 admin center**, turn on the **Try the preview** switch in the right top corner of admin center. 
+**Note:** If you are NOT seeing **Microsoft Search** under **Settings** in **Microsoft 365 admin center**, turn on the **Try the preview** switch in the right top corner of admin center. 
 
 As an administrator you should consider a few things that can make the **Microsoft Search** experience efficient and user friendly in your organization.
 
