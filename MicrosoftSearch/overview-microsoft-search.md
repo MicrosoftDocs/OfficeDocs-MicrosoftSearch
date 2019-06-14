@@ -145,7 +145,6 @@ Regardless of whether a user query contains one or more work-related results in 
 **Search history** - When signed in with a work or school account, a user's search history won't be available on other computers or devices.
 
 **Advertising** - Enterprise search queries are never shared with or suggested to advertisers.
-Search Ads logs pertaining to Microsoft Search are stored separately from public traffic.
 Ads are never targeted to a user based on their work identity or organization.
 
 ## See also
