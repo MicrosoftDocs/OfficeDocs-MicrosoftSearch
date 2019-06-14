@@ -29,6 +29,3 @@ Search for SharePoint sites you own or look for ones created by groups or co-wor
     To only see site results, click the **Sites** tab. 
     
 Web results appear under your work results. They aren't specific to your organization.
-
-  
-
