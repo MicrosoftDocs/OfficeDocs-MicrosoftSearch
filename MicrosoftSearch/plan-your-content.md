@@ -86,7 +86,7 @@ After you've created Bookmarks and Q&A, it's important to verify that:
 
 Users and SMEs who contributed to content creation can help test and validate the search result.
 
-## Step 5: Review and update periodically
+## Step 5: Use insights to review and update periodically
 It is important that authoritative information such as Bookmarks and Q&A are up to date. Regularly:
 - Fix or remove broken or invalid URL.
 - Remove Bookmarks or Q&A that are no longer relevant.
