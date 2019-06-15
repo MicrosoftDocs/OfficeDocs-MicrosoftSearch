@@ -54,26 +54,15 @@ Regardless of whether a user query contains one or more work results in the retu
   
 - Logging
     
-  - All search logs pertaining to Microsoft Search traffic are de-identified and stored separately from public, non-Microsoft Search traffic. They're retained for 18 months, and access is restricted for debugging purposes only.
-    
-  - The queries in these logs are not used to model or train public features such as autosuggest or related searches for the public web.
-    
-  - Restricted access is managed via various secure mechanisms, including security groups and other layers within the engineering system.
-    
-- Search history
-    
-  - When signed in with a work or school account, a user's search history won't be available on other computers or devices.
+  - All search logs pertaining to Microsoft Search traffic are de-identified. They're retained for 18 months.
+  - Queries stored in these system logs will only be used to model and train public features such as autosuggest or related searches for public web results when a set of restrictions and frequency thresholds are met, which gives us confidence that these queries are common and not specific to a particular organization. The query must appear a significant amount of times in corelating data from non-Microsoft Search users, and the query must not trigger exclusively enterprise search results. Queries that do not meet these requirements will be stored separately from public, non-Microsoft Search traffic.
+  - Restricted access is managed via various secure mechanisms, including security groups and other layers within the engineering system..
     
 - Advertising
     
   - Enterprise search queries are never shared with or suggested to advertisers.
-    
-  - Search Ads logs pertaining to Microsoft Search are stored separately from public traffic.
-    
   - Ads are never targeted to a user based on their work identity or organization.
     
 ## GDPR
 
 The [May 21, 2018, blog post](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) from Microsoft reflects our commitment to GDPR compliance and how Microsoft helps businesses and organizations with their own GDPR compliance obligations. You can find additional detail in the Microsoft [Trust Center FAQ](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs). Microsoft Search queries that operate against organizational customers' Customer Data within the Online Services will also meet the processor commitments outlined in Article 28 as reflected in the [Trust Center FAQ](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs). With respect to queries from Microsoft Search that go to public Bing, Microsoft is a data controller and has implemented measures to de-identify the queries as outlined under GDPR.
-
-
