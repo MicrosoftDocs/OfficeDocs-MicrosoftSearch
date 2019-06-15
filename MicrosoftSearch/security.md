@@ -61,7 +61,6 @@ Regardless of whether a user query contains one or more work results in the retu
 - Advertising
     
   - Enterprise search queries are never shared with or suggested to advertisers.
-    
   - Ads are never targeted to a user based on their work identity or organization.
     
 ## GDPR
