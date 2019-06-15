@@ -55,6 +55,3 @@ PowerApps work in any browser and on any device and take less than a minute to a
 7. Click **Publish**
     
 When an authorized Microsoft Search user searches on Bing for any of the bookmark's keywords or reserved keywords, the PowerApp will appear in the bookmark result.
-
-  
-
