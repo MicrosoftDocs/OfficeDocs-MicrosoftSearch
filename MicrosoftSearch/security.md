@@ -28,7 +28,7 @@ Microsoft Search always ensures requests are made over HTTPS. This safeguard ens
   
 ## Authentication and authorization with Azure Active Directory
 
-Authentication for Microsoft Search is tied to Azure Active Directory. When Microsoft Search users go to Bing, the Bing header will show sign-in options for a Microsoft account as well as a work or school account. If Bing can't determine whether a user is an eligible participant, users can go to the [Explore Microsoft Search](https://www.bing.com/business/explore) page, where they'll be automatically redirected to your organization's sign-in page. 
+Authentication for Microsoft Search is tied to Azure Active Directory. When Microsoft Search users go to Bing, the Bing header will show sign-in options for a Microsoft account as well as a work or school account. If Bing can't determine whether a user is an eligible participant, users can go to the [Explore Microsoft Search](https://www.bing.com/business/explore) page, where they'll be automatically redirected to your organization's sign-in page.
   
 Users can access Microsoft Search only through a work or school account. They need to sign in with the same credentials they use to access Office 365 services such as SharePoint or Outlook. A personal Microsoft account can't be used to sign in to Microsoft Search.
   
@@ -52,14 +52,14 @@ Because work-related searches may be sensitive, Microsoft Search has implemented
   
 Regardless of whether a user query contains one or more work results in the returned response, the following measures are taken:
   
-- Logging
-    
+- Logging 
   - All search logs pertaining to Microsoft Search traffic are de-identified. They're retained for 18 months.
   - Queries stored in these system logs will only be used to model and train public features such as autosuggest or related searches for public web results when a set of restrictions and frequency thresholds are met, which gives us confidence that these queries are common and not specific to a particular organization. The query must appear a significant amount of times in corelating data from non-Microsoft Search users, and the query must not trigger exclusively enterprise search results. Queries that do not meet these requirements will be stored separately from public, non-Microsoft Search traffic.
-  - Restricted access is managed via various secure mechanisms, including security groups and other layers within the engineering system..
-    
-- Advertising
-    
+  - Restricted access is managed via various secure mechanisms, including security groups and other layers within the engineering system.
+- Search history    
+  - When signed in with a work or school account, a user's search history won't be available on other computers or devices.
+ 
+- Advertising   
   - Enterprise search queries are never shared with or suggested to advertisers.
   - Ads are never targeted to a user based on their work identity or organization.
     
