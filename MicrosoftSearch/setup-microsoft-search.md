@@ -32,7 +32,7 @@ As an administrator you should consider a few things that can make the **Microso
 
 ## Step 1: Check access level of your users
 
-**Microsoft Search** respects security settings of the content source. What users see in their search result depends on their permissions and access levels. Review the access level of users in your organization to make sure that users only find content that they are allowed to access.
+Microsoft Search respects security settings of the content source. What users see in their search result depends on their permissions and access levels. Review the access level of users in your organization to make sure that users only find content that they are allowed to access.
 
 Learn more about [planning permissions](https://docs.microsoft.com/en-us/sharepoint/plan-your-permissions-strategy) and [creating permissions levels](https://docs.microsoft.com/en-us/sharepoint/how-to-create-and-edit-permission-levels).
 
