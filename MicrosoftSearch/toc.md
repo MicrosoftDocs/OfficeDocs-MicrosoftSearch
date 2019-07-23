@@ -6,6 +6,7 @@
 ##[Manage bookmarks](manage-bookmarks.md)
 ##[Manage Q&As](manage-qas.md)
 ##[Manage locations](manage-locations.md)
+##[Security for Microsoft Search](security.md)
 #[Microsoft Search in SharePoint Online](get-started-search-in-sharepoint-online.md)
 #[User adoption guide](user-adoption-guide.md)
 #[Using Microsoft Search](use/about-microsoft-search.md)
