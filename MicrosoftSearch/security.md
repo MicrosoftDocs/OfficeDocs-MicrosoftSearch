@@ -13,7 +13,6 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
-ROBOTS: NOINDEX
 description: "Protect your enterprise data and users while providing information to authorized users with Microsoft Search"
 ---
 
