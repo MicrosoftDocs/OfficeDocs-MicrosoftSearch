@@ -52,7 +52,7 @@ Microsoft Search respects security settings of the content source. What users se
 There are two limited admin roles to help you support Microsoft Search – **Search admin** and **Search editor**.
 
 > [!NOTE]
-> Search admin role and the Search editor role only grant permissions in the Microsoft 365 admin center, not the legacy **Microsoft Search in Bing admin portal**. You need to be a global admin to manage Microsoft search in the legacy portal.
+> Search admin role and the Search editor role only grant permissions in the Microsoft 365 admin center, not the legacy **Microsoft Search in Bing admin portal**. You need to be a global admin to manage Microsoft Search in the legacy portal.
 
 Search admins directly influence the search experience for end users. This includes choosing the types of results you want to surface to your users. It may be difficult for one person to choose and create authoritative content on many different topics that users search for in an organization. We recommend that you leverage the expertise and knowledge of subject matter experts (SME) and other users by adding them as Search editors.
 
@@ -79,7 +79,7 @@ Here are some examples of content that you should consider bookmarking for your 
 - Informational content that is available for everyone; for example, information about the company, help for Windows and Office apps, etc.
 - Content that people in the organization generally search for in their day-to-day work. Common work-related searches include employee benefits, time and expense reporting, submitting purchase orders, and getting help from IT services.
 
-For creating and managing search content, see [Making content easy to find](make-content-easy-to-find.md).
+For creating and managing search content, see [Make content easy to find](make-content-easy-to-find.md).
 
 ## Step 4: Test single sign-on
 
@@ -101,7 +101,6 @@ Establish self-service resources that employees can easily access on their own. 
 
 ## Trying out Microsoft Search in Bing
 
-You can turn **Microsoft Search in Bing** off. If turned off, users will not see organization content in Bing search. By default, Microsoft Search is turned on in Bing.
-We recommend that you keep Microsoft Search turned on in Bing for a better user experience.
+You can turn **Microsoft Search in Bing** off. If turned off, users will not see organization content in Bing search. By default, Microsoft Search in Bing is turned on.We recommend that you keep Microsoft Search turned on in Bing for a better user experience.
 
-To turn **Microsoft Search in Bing**, go to **Settings** > **Services & add-ins** in Microsoft 365 admin center and turn Microsoft Search in Bing on or off.
+Go to **Settings** > **Services & add-ins** > **Microsoft Search in Bing** to turn it on or off.
