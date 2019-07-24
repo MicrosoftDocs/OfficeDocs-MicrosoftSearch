@@ -81,7 +81,7 @@ Establish self-service resources that employees can easily access on their own. 
 - [Office 365 Training Center](https://support.office.com/office-training-center)
 - [Microsoft Search Center](https://support.office.com/en-us/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
 
-## Trying out **Microsoft Search** in Bing 
+## Trying out Microsoft Search in Bing 
 **Microsoft Search** administrator can turn **Microsoft Search** off in Bing. If turned off, users will not see organization content in Bing search. By default, **Microsoft Search** is turned on in Bing. 
 We recommend that you keep **Microsoft Search** turned on in Bing for a better user experience. 
 
