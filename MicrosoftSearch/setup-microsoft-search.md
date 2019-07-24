@@ -58,10 +58,10 @@ Search admins directly influence the search experience for end users. This inclu
 
 In Microsoft Search, you can manage your organization’s search settings and content by assigning these roles to users:
 
-1. **Search admin:** This role can create and manage search result content and define query settings for improved search results within the organization. Search admin manages the Microsoft Search configuration and designates Search editors to create content.
+1. **Search admin:** This role can create and manage search result content and define query settings for improved search results within the organization. Search admin manages the Microsoft Search configuration and can perform all of the content-management tasks a Search editor can.
 2. **Search editor:** Creates, manages, and deletes content for Microsoft Search in the Microsoft 365 admin center. This role can create and manage editorial content, such as frequently asked questions and answers, important places and locations, frequently searched and used sites and apps.
 
-For assigning admin roles, see [Assign admin roles](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
+Currently, the Search admin and Search editor roles must be assigned by a global admin. For more information, see [Assign admin roles](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
 ## Step 3: Make content easy to find
 
