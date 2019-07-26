@@ -1,5 +1,4 @@
 #[Overview of Microsoft Search](overview-microsoft-search.md)
-## [Security](security.md)
 #[Set up Microsoft Search](setup-microsoft-search.md)
 #Make content easy to find
 ##[Plan your content](plan-your-content.md)
