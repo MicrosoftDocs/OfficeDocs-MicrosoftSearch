@@ -74,15 +74,15 @@ To help you meet your roll-out goals and show a positive impact for your organiz
     
 ## Stage 3: Readiness
 
-Investing time in preparing for your Microsoft Search rollout will result in a positive impact for your organization. 
+Investing time in preparing for your Microsoft Search rollout will result in a positive impact for your organization. Microsoft provides an <a href="https://aka.ms/MicrosoftSearch/Adoption">Adoption Kit</a> that contains planning guidance, customizable email announcements, survey templates, executive presentations, and more. There's also a <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft Search Resource Center</a> where IT implementers can find other training and adoption resources designed to help make your Microsoft Search rollout a successful one.
   
  **Product and content readiness**
   
-Administrators directly influence the search experience for end users and determine how Microsoft Search looks for the organization. This includes choosing the types of results you want to surface to your users. Control this by turning on or off results for documents, sites, people, groups, or conversations.
+Administrators directly influence the search experience for end users and determine how Microsoft Search looks for the organization. This includes choosing the types of results you want to surface to your users. These results can include links—also known as bookmarks—to documents, sites, people, groups, locations, conversations, and other workplace resources.
   
 For more information, see [Set up Microsoft Search](setup-microsoft-search.md).
   
-Editors are subject matter experts who help manage Bookmarks and Q&As within their areas of expertise. Editors should create content that addresses the user scenarios that you identified earlier.
+Editors are subject matter experts who help manage bookmarks and Q&As within their areas of expertise. Editors should create content that addresses the user scenarios that you identified earlier.
   
 For more information, see [Plan your content](plan-your-content.md).
   
