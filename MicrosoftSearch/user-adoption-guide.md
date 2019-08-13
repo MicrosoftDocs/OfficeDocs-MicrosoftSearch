@@ -74,7 +74,7 @@ To help you meet your roll-out goals and show a positive impact for your organiz
     
 ## Stage 3: Readiness
 
-Investing time in preparing for your Microsoft Search rollout will result in a positive impact for your organization. Microsoft provides an <a href="https://aka.ms/MicrosoftSearch/Adoption">Adoption Kit</a> that contains planning guidance, customizable email announcements, survey templates, executive presentations, and more. There's also a <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft Search Resource Center</a> where IT implementers can find other training and adoption resources designed to help make your Microsoft Search rollout a successful one.
+Investing time in preparing for your Microsoft Search rollout will result in a positive impact for your organization. Microsoft provides an <a href="https://resources.techcommunity.microsoft.com/microsoft-search-in-bing-adoption-kit/">Adoption Kit</a> that contains planning guidance, customizable email announcements, survey templates, executive presentations, and more. There's also a <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft Search Resource Center</a> where IT implementers can find other training and adoption resources designed to help make your Microsoft Search rollout a successful one.
   
  **Product and content readiness**
   
