@@ -20,7 +20,7 @@ description: "Add locations so your organization's offices, buildings, and other
 # Add a location
 
 > [!IMPORTANT]
-> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
+> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then the Microsoft Search in Bing portal will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
     
 Add a location and when your users search they'll see the address of the building, office, or place and its location on a map. They can also use Bing Maps to get directions, see what's nearby, and more.
   

@@ -22,7 +22,7 @@ description: "Learn why Microsoft Search is intelligent enterprise search for th
 Transform the way people in your organization search for information with Microsoft Search. 
 
 > [!IMPORTANT]
-> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
+> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then the Microsoft Search in Bing portal will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
   
 This enterprise search experience increases productivity and saves time by delivering more relevant search results for the workplace. Microsoft Search securely retrieves information from your company, school, or organization—like files, company data, people info, and sites—as well as public web results, and displays them in a single experience.
 

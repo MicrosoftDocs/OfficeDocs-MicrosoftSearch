@@ -18,7 +18,6 @@ description: "Learn how to configure a default browser for your company with Mic
 ---
 
 # Set default browser
-
   
 Configuring the default browser, default search engine, and default homepage will help your users discover Microsoft Search capabilities, encourage more usage, and provide a smoother experience.
   
