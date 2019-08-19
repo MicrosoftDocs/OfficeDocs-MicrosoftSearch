@@ -86,7 +86,7 @@ The people card derives information from Azure Active Directory, Exchange Online
   
 ## Do Microsoft Search users earn Microsoft Rewards?
 
-Microsoft Search searches do not earn Rewards points and are never associated with a user's Microsoft account.
+Microsoft Search searches earn Rewards points if a user is signed in with their work/school account, but also has a Microsoft account (e.g., Live.com, Outlook.com, Hotmail.com) linked to Microsoft Rewards.
   
 ## Does Microsoft Search respect existing file permissions?
 
