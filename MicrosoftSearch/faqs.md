@@ -26,7 +26,7 @@ These are the frequently asked questions that organizations and users have about
   
 ## What's the value proposition for Microsoft Search?
 
-Microsoft Search is a secure way to search both your work and web content. This kind of integration across web and enterprise is only available with Microsoft. For compliance-related information, see [Security for Microsoft Search](security.md).
+Microsoft Search intelligently searches both your work and web content. This kind of integration across web and enterprise is only available with Microsoft. For compliance-related information, see [Security for Microsoft Search](security.md).
   
 ## What Microsoft Search features are available now?
 
@@ -76,9 +76,9 @@ For information about compliance and trust measures, see [Security for Microsoft
 
 Details can be found in the [Compliance Framework for Industry Standards and Regulations](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (PDF download). 
   
-## How does Microsoft Search keep results secure?
+## How does Microsoft Search protect search results?
 
-For information about how Microsoft Search keeps your results secure, see [Security for Microsoft Search](security.md).
+For information about the safety measures in place to protect Microsoft Search keeps your results secure, see [Security for Microsoft Search](security.md).
   
 ## What are the content sources for the people card?
 
