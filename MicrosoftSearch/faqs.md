@@ -1,8 +1,8 @@
 ---
 title: "FAQs"
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 10/19/2018
 ms.audience: Admin
 ms.topic: reference
@@ -17,128 +17,40 @@ ROBOTS: NoIndex
 description: "Get answers to commonly asked questions about enterprise search and Microsoft Search"
 ---
 
-# FAQs
+# Frequently asked questions
 
-These are the frequently asked questions that organizations and users have about administering and using Microsoft Search.
+Here's a list of the most common questions.
 
-> [!IMPORTANT]
-> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
-  
-## What's the value proposition for Microsoft Search?
+> [!TIP]
+> Don't see your question answered here? Ask your question in this article's feedback.
 
-Microsoft Search intelligently searches both your work and web content. This kind of integration across web and enterprise is only available with Microsoft. For compliance-related information, see [Security for Microsoft Search](security.md).
-  
-## What Microsoft Search features are available now?
-
-For a complete list, see [Features of Microsoft Search](features.md).
-  
-## Does Microsoft Search support advanced query understanding?
+## Is advanced query understanding supported?
 
 Yes, Microsoft Search parses query intent from larger phrases. This feature uses AI to learn common superfluous phrases users add to their queries that don't impact their search intent. For example, when a user searches for 'tell me more about how to change my password please' we extract the less important words from the query and trigger based on the relevant ones like 'change password.'
   
-This feature will not override keywords set in the Admin portal.
+This feature will not override keywords set in the admin center.
   
-## Does Microsoft Search search for files on-premises as well as the cloud?
+## Can you search for files on-premises?
 
-Microsoft Search supports searching for documents that live on SharePoint Online, OneDrive for Business, as well as over hybrid on-premises SharePoint and SharePoint Online for the most common Office file types. If you can search on-premises content in SharePoint Online, you should be able to find on-premises content using Microsoft Search. 
+Yes. You can search on-premises SharePoint files if you have a hybrid deployment of SharePoint.
   
-## Does Microsoft Search replace other enterprise search experiences?
+## How do I make Bing the default search engine for people in my org?
 
-Microsoft Search is a complementary offering that brings together results from multiple sources. For more information about supported file types and sources, see the next FAQ.
-  
-## What file types and sources does Microsoft Search support?
+Here's the instructions for setting the default search engine, default homepage, and default browser to give your users the best experience with Microsoft Search in Bing:
 
-We support the following content sources:
-  
-- SharePoint Online
-    
-- Hybrid SharePoint (on-premises + SPO)
-    
-- OneDrive for Business
-    
-The following file types are surfaced in file search and appear on the Files tab for People and Groups:
-  
-- Word
-    
-- Excel
-    
-- PowerPoint
-    
-- OneNote
-    
-- PDF
-    
-## What compliance and trust measures are in place for Microsoft Search?
-
-For information about compliance and trust measures, see [Security for Microsoft Search](security.md).
-  
-## Where can I get info about Office 365 compliance tiers/categories?
-
-Details can be found in the [Compliance Framework for Industry Standards and Regulations](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (PDF download). 
-  
-## How does Microsoft Search protect search results?
-
-For information about the safety measures in place to protect Microsoft Search keeps your results secure, see [Security for Microsoft Search](security.md).
-  
-## What are the content sources for the people card?
-
-The people card derives information from Azure Active Directory, Exchange Online, and SharePoint Online.
-  
-## Do Microsoft Search users earn Microsoft Rewards?
-
-Microsoft Search searches earn Rewards points if a user is signed in with their work/school account, but also has a Microsoft account (e.g., Live.com, Outlook.com, Hotmail.com) linked to Microsoft Rewards.
-  
-## Does Microsoft Search respect existing file permissions?
-
-Microsoft Search respects security trimming from the source. Users can only see information they have access to.
-  
-## How are user queries protected from sharing on the web?
-
-For information about how user queries are protected, see [Security for Microsoft Search](security.md).
-  
-## What types of advertising do Microsoft Search users see?
-
-For information about advertising, see [Security for Microsoft Search](security.md).
-  
-## What are the minimum requirements to enable Microsoft Search?
-
-For information about requirements, see [Requirements for Microsoft Search](requirements.md).
-  
-## How does Microsoft Search use Azure Active Directory?
-
-Microsoft Search uses Azure Active Directory to authenticate and authorize access to your company's data. Microsoft Search conforms to the identity handling practices standard across all Microsoft products. This means your users may be automatically signed in through single sign-on. 
-  
-## How do I set Bing as the default search provider for my users?
-
-For information about this, see [Set default search engine](set-default-search-engine.md), [Set default homepage](set-default-homepage.md), and [Set default browser](set-default-browser.md).
-  
-## Does Microsoft Search provide search results across tenants?
-
-No, cross tenant or shared tenant access is not supported. 
-  
-## Where can I get help with keywords and reserved keywords?
-
-For information about using keywords and reserved keywords, see [Plan your content](plan-your-content.md).
-  
-## Which Office 365 SKUs are supported?
-
-For information about supported SKUs, see [Requirements for Microsoft Search](requirements.md).
-  
-## Is Microsoft Search GDPR compliant?
-
-For information about GDPR compliance, see [Security for Microsoft Search](security.md).
-  
-## Why am I signed into Bing automatically?
-
-Microsoft Search uses AAD single sign-on to automatically sign you in with your work or school account when you've signed in to an Office 365 app, or Windows 10. You can sign out at any time.
-  
-## What is Bing for business?
-
-Microsoft Search was previously called Bing for business.
-  
-## How does Microsoft Search order result cards in the All results carousel?
-
-Microsoft Search uses intelligent ranking algorithms to order result cards based on relevance.
+- [Set Edge as your default browser](set-default-browser.md)
+- [Make Bing your default search engine](set-default-search-engine.md)
+- [Set Bing.com as your enterprise homepage](set-default-homepage.md)
 
   
+## How are my search results protected?
 
+We require Azure Active Directory (AAD) authentication to access results from the Trusted Cloud. Authenticated users only see content they have access to. Search queries are de-identified and logs are separated from public Bing search traffic. This level of protection is unavailable anywhere else in the industry.
+
+## Can I search across federated organizations?
+
+No.
+
+## Where can I get info about Office 365 and Microsoft 365 compliance tiers and categories?
+
+Details can be found in the [Compliance Framework for Industry Standards and Regulations](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (PDF download).
