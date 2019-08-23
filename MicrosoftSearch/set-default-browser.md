@@ -1,8 +1,8 @@
 ---
 title: "Set default browser"
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
@@ -14,64 +14,50 @@ search.appverid:
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
 ROBOTS: NOINDEX
-description: "Learn how to configure a default browser for your company with Microsoft Search."
+description: "Set your default browser to Microsoft Edge or Internet Explorer for Microsoft Search users."
 ---
 
-# Set default browser
+# Make Microsoft Edge the default browser
   
-Configuring the default browser, default search engine, and default homepage will help your users discover Microsoft Search capabilities, encourage more usage, and provide a smoother experience.
+To give your users the best experience with Microsoft Search, you can make Microsoft Edge the default browser. This will only set Microsoft Edge as the default browser for users in your org, individual users can still select a different browser.
   
-To set the default browser for your organization, follow the steps below.
   
-## Windows 8 and above
+## Windows 8 and later
 
-To set Internet Explorer or Microsoft Edge as the default browser, follow these steps:
+These instructions show you how to make Microsoft Edge or Internet Explorer as the default browser for computers running Windows 8 or later. Users will be able to change the browser after this policy is set.
   
-### Create default associations file
+### STEP 1: Create the default associations file
+Create the default associations file in the SYSVOL folder of the domain controller.
 
 1. Open an administrative PowerShell console.
+1. `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
+1. `$SettingsPath="\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN\Settings"`
+1. `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
     
-2.  `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
-    
-3.  `$SettingsPath="\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN\Settings"`
-    
-4.  `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
-    
-These steps try and create the default associations file in the SYSVOL folder of the domain controller.
   
-### Add or edit the default associations file
+### STEP 2. Add or edit the default associations file
 
 1. `Notepad "$SettingsPath\AppAssoc.xml"`
-    
-2. Edit the following entries (.htm, .html, http, https), and remove other entries if they're not needed.
-    
+1. Edit the following entries (.htm, .html, http, https), and remove other entries if they're not needed.
   - **Microsoft Edge**
-    
-     `<Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
-  
-     `<Association Identifier=".html" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
-  
-     `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
+    - `<Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
+              
+    - `<Association Identifier=".html" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
+    - `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
     
   - **Internet Explorer**
     
-     `<Association Identifier=".htm" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier=".html" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier="http" ProgId="IE.HTTP" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
-    
-3. Open Group Policy Management Console (gpmc.msc) and switch to editing any existing policy or creating a new one.
-    
-1. Navigate to **Computer Configuration\Administrative Templates\Windows Components\File Explorer**
-    
-2. Double-click **Set a default associations configuration file**, set it to **Enabled**, and enter the path to AppAssoc.xml (for example %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml)
-    
-4. Enforce the resultant GPO by linking it to the appropriate domain.
-    
-Users will be able to change the browser after this policy is set.
+    - `<Association Identifier=".htm" ProgId="htmlfile" ApplicationName="Internet Explorer" />`        
+    - `<Association Identifier=".html" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
+    - `<Association Identifier="http" ProgId="IE.HTTP" ApplicationName="Internet Explorer" />`
+    - `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
+
+### Step 3. Edit the Group Policy
+
+1. Open **Group Policy Management Console** (gpmc.msc) and switch to editing any existing policy or creating a new one.
+1. Navigate to **Computer Configuration\Administrative Templates\Windows Components\File Explorer**.
+1. Double-click **Set a default associations configuration file**, set it to **Enabled**, and enter the path to AppAssoc.xml (for example %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml) Enforce the resultant GPO by linking it to the appropriate domain.
+
   
 ## Windows 7
 
@@ -97,4 +83,3 @@ Users will be able to change the browser after this policy is set.
   
 3. Enforce the resultant GPO by linking it to the appropriate domain.
     
-Users will be able to change the browser after this policy is set.
