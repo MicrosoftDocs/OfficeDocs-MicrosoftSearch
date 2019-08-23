@@ -19,7 +19,10 @@ description: "Get answers to commonly asked questions about enterprise search an
 
 # Frequently asked questions
 
-Here's a list of the most common questions. Don't see your question answered here? Ask your question in this article's feedback.
+Here's a list of the most common questions.
+
+> [!TIP]
+> Don't see your question answered here? Ask your question in this article's feedback.
 
 ## Is advanced query understanding supported?
 
@@ -31,17 +34,14 @@ This feature will not override keywords set in the Admin portal.
 
 Yes. You can search on-premises SharePoint files if you have a hybrid deployment of SharePoint.
   
-## Can my users earn Microsoft Rewards?
-
-No. Microsoft Search searches don't earn Rewards points and rewards are never associated with a user's work or school account.
-  
 ## How do I make Bing the default search engine for people in my org?
 
 Here's the instructions for setting the default search engine, default homepage, and default browser to give your users the best experience with Microsoft Search in Bing:
 
-- [Set default search engine](set-default-search-engine.md)
-- [Set default homepage](set-default-homepage.md)
-- [Set default browser](set-default-browser.md).
+- [Set Edge as your default browser](set-default-browser.md)
+- [Make Bing your default search engine](set-default-search-engine.md)
+- [Set Bing.com as your enterprise homepage](set-default-homepage.md)
+
   
 ## How are search results kept secure?
 
