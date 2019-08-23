@@ -1,8 +1,8 @@
 ---
 title: "FAQs"
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 10/19/2018
 ms.audience: Admin
 ms.topic: reference
