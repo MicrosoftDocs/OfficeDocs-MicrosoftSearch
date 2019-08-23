@@ -1,4 +1,4 @@
-#[Plan for Microsoft Search]
+#Plan for Microsoft Search
 ##[Overview](overview-microsoft-search.md)
 ##[Set up](setup-microsoft-search.md)
 ##[[Make Microsoft Edge the default browser](set-default-browser.md)]
