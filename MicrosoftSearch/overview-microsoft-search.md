@@ -56,24 +56,25 @@ If the suggestions in the search box aren’t what they’re looking for, **Ente
 
 ## Apps that currently have Microsoft Search
 
- The following Office 365 apps currently offer Microsoft Search:
+ Microsoft Search is turned on by default for all Microsoft apps that support it. All a user needs to do is to sign-in with a work or school account.
 
+The following apps currently offer Microsoft Search:
 - SharePoint Online
 - OneDrive for Business
 - Outlook on the web
 - Office apps on Windows
 
-In addition, users find Microsoft Search in:
+In addition, signed-in users find Microsoft Search in:
 
-- Bing
+- Bing homepage
 - Office.com
 - The starting pages for Word, Excel, and PowerPoint Online
 
-Users can also initiate a search in Bing from the Edge address bar.
+Users can also initiate a search in Bing from the Edge address bar, if they are using Bing as their default search engine.
 
 ## Requirements
 
-Your organization must have an Office 365 tenant with one of the following subscriptions:
+You must have one of the following Office 365 or Microsoft 365 subscriptions:
 
 - Office 365 Business Essentials and Business Premium
 - Office 365 A1/A3/A5
@@ -84,11 +85,11 @@ Your organization must have an Office 365 tenant with one of the following subsc
 - Microsoft 365 A3/A5
 - Microsoft 365 F1/E3/E5
 
-Both users and search administrators must be licensed with one of these subscriptions. Only users with active accounts can use Microsoft Search, and they must be **signed in**.
+Both users and search admins must be assigned on of these licenses. Only users with active accounts can use Microsoft Search, and they must be **signed in**, because Microsoft Search requires Azure Active Directory
 
 ## Tailoring Microsoft Search to your organization
 
-As an admin you can make it easy for your users to get good organization-specific results when they search from their SharePoint start page, Office.com, or Bing. You administer Microsoft Search in the Microsoft 365 admin center.
+As an admin you can make it easy for your users to get good organization-specific results when they search from their SharePoint start page, Office.com, or Bing. You do this by defining answers that Microsoft Search shows in response to certain keywords in queries. There are several types of answer that you can define: 
 
 **Show useful content** - Help users find important tools and resources within your organization by bookmarking them. Just as you can create a bookmark to a public webpage, you can create a bookmark for any internal webpage, which your users can search for. You can also integrate a Power App in the bookmark so users can complete their task directly from the bookmark.
 
@@ -96,11 +97,15 @@ As an admin you can make it easy for your users to get good organization-specifi
 
 **Show useful locations** - Show map results and address information for your organization's buildings, offices, and other workspaces on a map. Users can use the maps to get directions, see what's nearby, and more.
 
+You can view usage statistics that show how users are engaging with your answers and whether users are finding what they were looking for. Based on this you can fine-tune answers or add new answers.
+
+For more information about using keywords and reserved keywords, see [Make content easy to find](make-content-easy-to-find.md).
+
 ## What content is searched?
 
-Microsoft Search searches in content that’s stored in SharePoint Online, OneDrive for Business, and Exchange, including people from the global address list and Office 365 groups. If your organization has set up a hybrid SharePoint environment using cloud hybrid search, Microsoft Search returns search results from both online and on-premises SharePoint content, including any external content you’ve connected to your SharePoint Server environment. [Learn more about hybrid search environments](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
+Microsoft Search searches in an the content that your organization has stored in SharePoint Online, OneDrive for Business, and Exchange, including the global address list and Office 365 groups. Microsoft Search does not search across tenants or show results from content that's shared by organizations. If your organization has set up a hybrid SharePoint environment using cloud hybrid search, Microsoft Search returns search results from both online and on-premises SharePoint content, including any external content you’ve connected to your SharePoint Server environment. [Learn more about hybrid search environments](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-When users search from the SharePoint start page or Office.com, Microsoft Search searches across all the content in their organization and presents all the results it finds. This is known as the **global search scope**.
+When users search from the SharePoint start page or Office.com, Microsoft Search searches across all the content in their organization and presents the results that the user has permission to see. This is known as the **global search scope**.
 
 When users search from Bing, users get the most relevant results from all the content in their organization embedded in the list of results from the **web**. If they need to see **all** organizational results, the global search scope is only a click away.
 
@@ -123,6 +128,8 @@ Users find the following types of results when they search from:
 
 When a user searches, Microsoft Search processes the query and parses search intent from larger phrases, using Artificial Intelligence (AI) to learn common superfluous phrases users add to their queries that don't impact their search intent. For example, when a user searches for "how to change my password" we extract the less important words from the query and trigger based on the relevant ones like "change password".  
 
+Microsoft Search does not create a new index, it searches the existing indexes of SharePoint Online, OneDrive for Business, and Exchange content.
+
 The search results that the user has **permission** to see are presented on the search results page. Microsoft Search uses intelligent ranking algorithms to order results based on relevance.
 
 ## Microsoft Search in SharePoint
@@ -137,6 +144,8 @@ You can customize the classic search experience, for example by adding custom re
 ## Microsoft Search in Bing
 
 Because work-related searches may be sensitive, Microsoft Search uses a set of trust measures for how these searches are handled by the public web results part of Bing.
+
+Microsoft Search requests are made over HTTPS. This ensures the connection is encrypted end-to-end for enhanced security. Additionally, all search logs pertaining to Microsoft Search traffic are de-identified and stored separately from public, non-Microsoft Search traffic.
 
 Regardless of whether a user query contains one or more work-related results in the returned response, the following measures are taken:
 

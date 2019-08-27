@@ -18,19 +18,16 @@ description: "Include browser-based apps in bookmarks results for Microsoft Sear
 ---
 
 # Integrate PowerApps
-
-> [!IMPORTANT]
-> This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then it will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
-    
+   
 Help your users complete tasks, such as entering vacation time or reporting expenses by integrating existing PowerApps into your bookmarks. Integrated PowerApps appear within a bookmark result, eliminating the need to go to a different site or open a separate tool, which saves times and effort.
   
 ## What are PowerApps?
 
 PowerApps is a service that lets you build business apps that run in a browser or on a phone or tablet with no coding experience required. Learn more:
   
-- [Guided Learning](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
+- [Guided Learning](https://docs.microsoft.com/learn/browse/?products=powerapps)
     
-- [Documentation](https://docs.microsoft.com/en-us/powerapps/)
+- [Documentation](https://docs.microsoft.com/powerapps/)
     
 ## Add a PowerApp to a bookmark
 

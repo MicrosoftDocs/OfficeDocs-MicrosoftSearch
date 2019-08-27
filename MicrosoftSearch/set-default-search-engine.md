@@ -1,8 +1,8 @@
 ---
 title: "Set default search engine"
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
@@ -17,79 +17,13 @@ ROBOTS: NOINDEX
 description: "Learn how to set Bing as your company's default search engine using Microsoft Search."
 ---
 
-# Set default search engine
+# Make Bing the default search engine
+  
+This article explains how to make Bing the default search engine for Microsoft Edge, Google Chrome, and Internet Explorer. 
+  
+## Microsoft Edge on Windows 10, Version 1703 or later
 
-  
-Configuring the default browser, default search engine, and default homepage will help your users discover Microsoft Search capabilities, encourage more usage, and provide a smoother experience.
-  
-To set the default search engine for your organization, follow the steps below.
-  
-## Internet Explorer
-
-### Internet Explorer 11
-
-Users will be able to change the search provider after this policy is set.
-  
-#### 1. Configure the local machine that will be used to set the GPO
-
-Paste the following text into a reg(\*.reg) file.
-  
-Windows Registry Editor Version 5.00
-  
-<pre>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]
-"DefaultScope"="{D54CD0C8-C007-4BC4-B2DD-1E4896B8406D}"
-[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{D54CD0C8-C007-4BC4-B2DD-1E4896B8406D}]
-"Codepage"=dword:0000fde9
-"DisplayName"="Microsoft Search in Bing"
-"OSDFileURL"="https://www.bing.com/sa/osd/bfb.xml"
-"FaviconURL"="https://www.bing.com/sa/simg/bb.ico"
-"SuggestionsURL_JSON"="https://business.ing.com/api/v2/browser/suggest?q={searchTerms}&amp;form=BFBSPA"
-"ShowSearchSuggestions"=dword:00000001
-"URL"="https://www.bing.com/business/search?q={searchTerms}&amp;form=BFBSPR"</pre>
-  
-Double-click the file created and follow the steps to import the file. A successful import should result in the following dialog:
-  
-![Registry Editor successful import message](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
-  
-#### 2. Open the Group Policy Management Console (gpmc.msc) and switch to editing an existing policy or creating a new one
-
-1. Navigate to **User Configuration\Policies\Preferences\Windows Settings**.
-    
-2. Right-click on **Registry\New** and select **Registry Wizard**. From the Registry Browser window, select **Local Computer** and click **Next**.
-    
-3. Navigate to **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\SearchScopes**.
-    
-4. From this key, make sure to select DefaultScope.
-    
-    ![Registry Browser with DefaultScope selected](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
-  
-5. Check all sub keys containing the GUID for Microsoft Search in Bing and every value under the key except any path to user profiles. Scroll down to select other items.
-    
-    ![Registry Browser with additional values selected](media/7eef7690-8bc5-46cf-9cd8-bd134fc77a02.png)
-  
-6. Click Finish to complete this configuration.
-    
-#### 3. Set up User Preferences to help eliminate a warning the user may get when DefaultScope search is enforced
-
-This warning is by design and alerts users of a program trying to modify their settings.
-  
-1. Within the same GPO, right click on **Registry\New** and select **Registry Wizard**.
-    
-2. Navigate to **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\User Preferences**.
-    
-3. Select the **User Preference** key.
-    
-4. Click **Finish**.
-    
-5. Click on the newly created object. On the right-side pane double click on the User Preferences object, change the **Action** to **Delete and Save**.
-    
-Enforce the resultant GPO by linking it to the appropriate domain.
-  
-## Microsoft Edge
-
-### Windows 10, Version 1703 or later
-
-Users will be able to change the search provider after this policy is set.
+Although you'll set Bing as the default search engine, Microsoft Edge allows users to change their settings to use a different search engine.
   
 For the latest ADMX files for various versions of Windows, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/en-us/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
   
@@ -108,12 +42,11 @@ Each domain that your controller handles should get a separate folder. The follo
 1. Double-click **Set default search engine**, set to **Enabled**, and enter `https://www.bing.com/sa/osd/bfb.xml`
     
 3. Enforce the resultant GPO by linking it to the appropriate domain.
-    
-## Google Chrome
 
-### Windows XP SP2 or later
 
-Users won't be able to change the search provider after this policy is set.
+## Google Chrome on Windows XP SP2 or later
+
+Users won't be able to change the default search engine after this policy is set.
   
 Chrome comes with its own set of group policy settings which can be downloaded in the form of an ADMX file from [Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/187202). If operating systems Windows Vista/Server 2008 or later are used to manage GPO's for the domain, the ADMX file provided in this package takes care of Chrome settings on Windows XP SP2 or later.
   
@@ -150,3 +83,61 @@ Each domain that your controller handles should get a separate folder. The follo
 10. Enforce the resultant GPO by linking it to the appropriate domain.
     
 Setting the default search engine will add the Microsoft Search search suggestions feature in the browser address bar. Currently, this supports bookmarks only. Users will see the top two bookmark suggestions above public web suggestions as they type in the address bar.
+
+## Internet Explorer 11 or later
+
+Users will be able to change the search provider after this policy is set.
+  
+### STEP 1. Configure the local machine that will be used to set the GPO
+
+Paste the following text into a reg(\*.reg) file.
+  
+Windows Registry Editor Version 5.00
+  
+<pre>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]
+"DefaultScope"="{D54CD0C8-C007-4BC4-B2DD-1E4896B8406D}"
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{D54CD0C8-C007-4BC4-B2DD-1E4896B8406D}]
+"Codepage"=dword:0000fde9
+"DisplayName"="Microsoft Search in Bing"
+"OSDFileURL"="https://www.bing.com/sa/osd/bfb.xml"
+"FaviconURL"="https://www.bing.com/sa/simg/bb.ico"
+"SuggestionsURL_JSON"="https://business.ing.com/api/v2/browser/suggest?q={searchTerms}&amp;form=BFBSPA"
+"ShowSearchSuggestions"=dword:00000001
+"URL"="https://www.bing.com/business/search?q={searchTerms}&amp;form=BFBSPR"</pre>
+  
+Double-click the file created and follow the steps to import the file. A successful import should result in the following dialog:
+  
+![Registry Editor successful import message](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
+  
+### STEP 2. Open the Group Policy Management Console (gpmc.msc) and switch to editing an existing policy or creating a new one
+
+1. Navigate to **User Configuration\Policies\Preferences\Windows Settings**.
+    
+2. Right-click on **Registry\New** and select **Registry Wizard**. From the Registry Browser window, select **Local Computer** and click **Next**.
+    
+3. Navigate to **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\SearchScopes**.
+    
+4. From this key, make sure to select DefaultScope.
+    
+    ![Registry Browser with DefaultScope selected](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
+  
+5. Check all sub keys containing the GUID for Microsoft Search in Bing and every value under the key except any path to user profiles. Scroll down to select other items.
+    
+    ![Registry Browser with additional values selected](media/7eef7690-8bc5-46cf-9cd8-bd134fc77a02.png)
+  
+6. Click Finish to complete this configuration.
+    
+### STEP 3. Set up User Preferences to help eliminate a warning the user may get when DefaultScope search is enforced
+
+This warning is by design and alerts users of a program trying to modify their settings.
+  
+1. Within the same GPO, right click on **Registry\New** and select **Registry Wizard**.
+    
+2. Navigate to **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\User Preferences**.
+    
+3. Select the **User Preference** key.
+    
+4. Click **Finish**.
+    
+5. Click on the newly created object. On the right-side pane double click on the User Preferences object, change the **Action** to **Delete and Save**.
+1. Enforce the resultant GPO by linking it to the appropriate domain.
