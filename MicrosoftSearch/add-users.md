@@ -39,4 +39,4 @@ Editors can add content, but can't change settings
     
 ## Add users
 
-By default, Microsoft Search is available to everyone in your organization. To modify access, use [conditional access in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview).
+By default, Microsoft Search is available to everyone in your organization. To modify access, use [conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).

@@ -111,7 +111,7 @@ To edit a bookmark, select the bookmark in the relevant bookmark list.
 Search administrators can create search content easily by using browser extensions. Install the browser extension and then go to the site you want to add as bookmark and add the site as bookmark.
 
 Currently, browser extensions are available for Edge and Chrome. 
-- To download Edge extension, go to [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and download the app.
+- To download Edge extension, go to [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and download the app.
 - To download Chrome extension, go to [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and download the app.
 
 ### Bulk add or edit bookmarks
@@ -157,13 +157,13 @@ Help your users complete tasks, such as entering vacation time or reporting expe
 #### What are PowerApps?
 
 PowerApps is a service that lets you build business apps that run in a browser or on a phone or tablet with no coding experience required. PowerApps work in any browser and on any device and take less than a minute to add. For more on PowerApps, see:
-- [Guided Learning](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
-- [Documentation](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid)
+- [Guided Learning](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [Documentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps Home](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 #### Add a PowerApp to a bookmark
 
-1. Find the [App ID for the PowerApp](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) that you want to add.
+1. Find the [App ID for the PowerApp](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) that you want to add.
 1. Sign in and go to **Microsoft 365 admin center**.
 1. In the navigation pane, go to **Settings**, and then select **Microsoft Search**.
 1. Add a bookmark or find an existing bookmark that you want to add a **PowerApp** to.

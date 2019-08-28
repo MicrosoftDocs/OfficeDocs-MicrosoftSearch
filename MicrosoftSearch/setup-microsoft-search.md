@@ -43,7 +43,7 @@ Microsoft Search respects security settings of the content source. What users se
 | People          | You can hide certain users from being searched in your address list by setting the `HiddenFromAddressListEnabled` parameter to `true` using the [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user) cmdlet. |
 | Microsoft Teams | [Manage user access to Microsoft Teams](https://docs.microsoft.com/microsoftteams/user-access)                                                                                                                                                      |
 | OneDrive        | [Manage sharing](https://docs.microsoft.com/OneDrive/manage-sharing)                                                                                                                                                                                |
-| SharePoint      | [Planning permissions](https://docs.microsoft.com/en-us/sharepoint/plan-your-permissions-strategy)<br> [Creating permissions levels](https://docs.microsoft.com/en-us/sharepoint/how-to-create-and-edit-permission-levels)                          |
+| SharePoint      | [Planning permissions](https://docs.microsoft.com/sharepoint/plan-your-permissions-strategy)<br> [Creating permissions levels](https://docs.microsoft.com/sharepoint/how-to-create-and-edit-permission-levels)                          |
 | OneNote         | You can't search on files that are embedded in OneNote. [Change permissions for a notebook on OneDrive](https://support.office.com/article/B9600CCF-045A-40E6-9913-4A7EB02869A5)                                                                    |
 | Yammer          | [Yammer security settings](https://docs.microsoft.com/Yammer/manage-security-and-compliance/yammer-security-settings)                                                                                                                               |
 
@@ -54,7 +54,7 @@ In Microsoft Search, you can manage your organization’s search settings and co
 1. **Search admin:** This role can create and manage search result content and define query settings for improved search results within the organization. Search admin manages the Microsoft Search configuration and can perform all of the content-management tasks a Search editor can.
 2. **Search editor:** Creates, manages, and deletes content for Microsoft Search in the Microsoft 365 admin center. This role can create and manage editorial content, such as frequently asked questions and answers, important places and locations, frequently searched and used sites and apps.
 
-Currently, the Search admin and Search editor roles must be assigned by a global admin. For more information, see [Assign admin roles](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
+Currently, the Search admin and Search editor roles must be assigned by a global admin. For more information, see [Assign admin roles](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
 Search administrators directly influence the search experience for end users. This includes choosing the types of results you want to surface to your users. It may be difficult for one person to choose and create authoritative content on many different topics that users search for in an organization. We recommend that you leverage the expertise and knowledge of subject matter experts (SME) and other users by adding them as Search editors.
 
@@ -80,6 +80,6 @@ For creating and managing search content, see [Make content easy to find](make-c
 
 Establish self-service resources that employees can easily access on their own. This will help reduce the overall burden on you and your team to constantly push communications and assist in self-training and educating employees. Provide your users communications, FAQs, videos, and recorded training or webinars. Here are some helpful links to start with:
 
-- [Find what you need with Microsoft Search in Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
+- [Find what you need with Microsoft Search in Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446)
 - [Office 365 Training Center](https://support.office.com/office-training-center)
-- [Microsoft Search Center](https://support.office.com/en-us/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
+- [Microsoft Search Center](https://support.office.com/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc)
