@@ -12,7 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Get an overview of what Microsoft Search is, it's benefits, and which apps that currently have Microsoft Search."
+description: "Get an overview of what Microsoft Search is, its benefits, and which apps that currently have Microsoft Search."
 ---
 # Overview of Microsoft Search
 
@@ -23,7 +23,7 @@ Microsoft Search helps users find the right answers, people, and content to comp
 - Users get results that are relevant in the **context** of the app they search from. For example, when they search in Outlook, they find emails, not sites in SharePoint. When they search in SharePoint, they find sites, pages, and files.
 - Whichever app users are working in; Microsoft Search is **personal**.  Microsoft Search uses insights from the Microsoft Graph to show results that are relevant to each user. Each user might see different results, even if they search for the same words. They only see results that they already have access to, Microsoft Search doesn’t change permissions.
 - Users don’t need to remember where the information is located. For example, a user is working in Word and wants to reuse information from a presentation that a colleague shared from their OneDrive. There’s no need to switch to OneDrive and search for that presentation, they can simply search from Word.  
-- When in Bing, users get results from within their organization in addition to the public web results .
+- When in Bing, users get results from within their organization in addition to the public web results.
 
 ## What users see
 
@@ -44,19 +44,19 @@ If the suggestions in the search box aren’t what they’re looking for, **Ente
 
 **Search across Microsoft 365 from any Microsoft Search box** – Users can search from any Microsoft Search box and get quickly back to what they were doing. Microsoft Search brings together results from data sources in Office 365, including SharePoint, OneDrive for Business, and Exchange.
 
-**Easy to search** - Microsoft Search suggests results based on users’ previous activity in Office 365, right in the search box.
+**Easy to search** – Microsoft Search suggests results based on users’ previous activity in Office 365, right in the search box.
 
-**Find shared files** - Microsoft Search uses advanced query understanding to make finding shared files simple. Users can easily find files they’re collaborating on.
+**Find shared files** – Microsoft Search uses advanced query understanding to make finding shared files simple. Users can easily find files they’re collaborating on.
 
-**Show relevant content** - Promote the information and answers your users need to complete tasks, for example policies, benefits, resources, tools, and more. You can also target specific groups, like new hires or remote workers.
+**Show relevant content** – Promote the information and answers your users need to complete tasks, for example policies, benefits, resources, tools, and more. You can also target specific groups, like new hires or remote workers.
 
 **Microsoft Search evolves** – The set of content types users can search for and the intelligence of the search box will grow over time.
 
-**Administer across all apps** - Microsoft Search is **on** by default and any administration you do applies to Microsoft Search in all the apps.
+**Administer across all apps** – Microsoft Search is **on** by default and any administration you do applies to Microsoft Search in all the apps.
 
 ## Apps that currently have Microsoft Search
 
- Microsoft Search is turned on by default for all Microsoft apps that support it. All a user needs to do is to sign-in with a work or school account.
+ Microsoft Search is turned on by default for all Microsoft apps that support it. All a user needs to do is to sign in with a work or school account.
 
 The following apps currently offer Microsoft Search:
 - SharePoint Online
@@ -91,11 +91,11 @@ Both users and search admins must be assigned on of these licenses. Only users w
 
 As an admin you can make it easy for your users to get good organization-specific results when they search from their SharePoint start page, Office.com, or Bing. You do this by defining answers that Microsoft Search shows in response to certain keywords in queries. There are several types of answer that you can define: 
 
-**Show useful content** - Help users find important tools and resources within your organization by bookmarking them. Just as you can create a bookmark to a public webpage, you can create a bookmark for any internal webpage, which your users can search for. You can also integrate a Power App in the bookmark so users can complete their task directly from the bookmark.
+**Show useful content** – Help users find important tools and resources within your organization by bookmarking them. Just as you can create a bookmark to a public webpage, you can create a bookmark for any internal webpage, which your users can search for. You can also integrate a Power App in the bookmark so users can complete their task directly from the bookmark.
 
 **Offer answers to common questions** – Give the best answer for the most frequently asked questions in your organization. When users enter a common question in the search box, Microsoft Search shows the answer as a result instead of just providing a link to the web page.
 
-**Show useful locations** - Show map results and address information for your organization's buildings, offices, and other workspaces on a map. Users can use the maps to get directions, see what's nearby, and more.
+**Show useful locations** – Show map results and address information for your organization's buildings, offices, and other workspaces on a map. Users can use the maps to get directions, see what's nearby, and more.
 
 You can view usage statistics that show how users are engaging with your answers and whether users are finding what they were looking for. Based on this you can fine-tune answers or add new answers.
 
@@ -149,11 +149,11 @@ Microsoft Search requests are made over HTTPS. This ensures the connection is en
 
 Regardless of whether a user query contains one or more work-related results in the returned response, the following measures are taken:
 
-**Logging** - All search logs pertaining to Microsoft Search traffic are de-identified and retained for 18 months. Queries stored in these system logs will only be used to model and train public features such as autosuggest or related searches for public web results when a set of restrictions and frequency thresholds are met, which gives us confidence that these queries are common and not specific to a particular organization. The query must appear a significant amount of times in corelating data from non-Microsoft Search users, and the query must not trigger exclusively enterprise search results. Queries that do not meet these requirements will be stored separately from public, non-Microsoft Search traffic. Restricted access is managed via various secure mechanisms, including security groups and other layers within the engineering system.
+**Logging** – All search logs pertaining to Microsoft Search traffic are de-identified and retained for 18 months. Queries stored in these system logs will only be used to model and train public features such as autosuggest or related searches for public web results when a set of restrictions and frequency thresholds are met, which gives us confidence that these queries are common and not specific to a particular organization. The query must appear a significant amount of times in corelating data from non-Microsoft Search users, and the query must not trigger exclusively enterprise search results. Queries that do not meet these requirements will be stored separately from public, non-Microsoft Search traffic. Restricted access is managed via various secure mechanisms, including security groups and other layers within the engineering system.
 
-**Search history** - When signed in with a work or school account, a user's search history won't be available on other computers or devices.
+**Search history** – When signed in with a work or school account, a user's search history won't be available on other computers or devices.
 
-**Advertising** - Enterprise search queries are never shared with or suggested to advertisers.
+**Advertising** – Enterprise search queries are never shared with or suggested to advertisers.
 Ads are never targeted to a user based on their work identity or organization.
 
 ## See also
