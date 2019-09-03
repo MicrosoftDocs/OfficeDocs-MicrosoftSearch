@@ -43,6 +43,6 @@ Teach your users to search from the SharePoint start page instead of from the cl
 ## See also
 [Overview of Microsoft Search](overview-microsoft-search.md)
 
-[Learn about the search experiences in SharePoint](https://docs.microsoft.com/en-us/sharepoint/overview-of-search)
+[Learn about the search experiences in SharePoint](https://docs.microsoft.com/sharepoint/overview-of-search)
 
 [When to use which search experience in SharePoint](https://docs.microsoft.com/sharepoint/get-started-with-modern-search-experience)

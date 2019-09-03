@@ -112,7 +112,7 @@ When users search from Bing, users get the most relevant results from all the co
 ## What types of results can users find?
 Users find the following types of results when they search from:
 
-**SharePoint**: Files, folders, people in your organization, organization charts, sites, site pages, news, lists and list items. If defined, answers to common questions, bookmarks that lead to authoritative information, locations, and tools. [Learn which types of files you can find](https://docs.microsoft.com/en-us/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
+**SharePoint**: Files, folders, people in your organization, organization charts, sites, site pages, news, lists and list items. If defined, answers to common questions, bookmarks that lead to authoritative information, locations, and tools. [Learn which types of files you can find](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 **Office.com and Word, Excel, and PowerPoint Online start pages**: Apps, files, folders, people, organization charts, SharePoint sites, site pages, lists and list items. If defined, answers to common questions, bookmarks that lead to authoritative information, locations, and tools. Files of the same type as in SharePoint can be found.
 
@@ -139,7 +139,7 @@ Microsoft Search in SharePoint is the modern search experience in SharePoint Onl
 - Users get the Microsoft Search box on the SharePoint start page, hub sites, communication sites, and modern team sites.
 - Users get the classic search box on publishing sites, classic team sites, and in the Search Center.
 
-You can customize the classic search experience, for example by adding custom refiners to the search results page or displaying a certain type of result differently. You can’t customize the Microsoft Search experience in SharePoint like that. Some of the customizations you make for classic search might impact Microsoft Search in SharePoint. If your organization will use both search experiences in SharePoint, [learn about the differences and how to avoid impacting Microsoft Search in SharePoint](https://docs.microsoft.com/en-us/sharepoint/differences-classic-modern-search).
+You can customize the classic search experience, for example by adding custom refiners to the search results page or displaying a certain type of result differently. You can’t customize the Microsoft Search experience in SharePoint like that. Some of the customizations you make for classic search might impact Microsoft Search in SharePoint. If your organization will use both search experiences in SharePoint, [learn about the differences and how to avoid impacting Microsoft Search in SharePoint](https://docs.microsoft.com/sharepoint/differences-classic-modern-search).
 
 ## Microsoft Search in Bing
 
