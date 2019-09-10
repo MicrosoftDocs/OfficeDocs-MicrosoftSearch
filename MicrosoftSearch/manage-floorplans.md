@@ -17,7 +17,7 @@ description: "The floorplans feature in Microsoft Search helps users find people
 ---
 # Manage floorplans
 
-  ![Office location isn’t just a number with Microsoft Search.](floorplans-fig1.png "Office location.")
+  ![Office location isn’t just a number with Microsoft Search.](media/floorplans-fig1.png "Office location.")
 
 *Figure 1 – Office location isn’t just a number with Microsoft Search.*
 
@@ -37,7 +37,7 @@ To enable users to find information about offices and building facilities, you n
 3. Standardized and unique nomenclature for identifying buildings and floors
 4. Employees' locations to the room numbers mapped in Azure Active Directory (AAD)
 
- ![The office location data is defined in AAD as employee seat numbers.](floorplans-fig2.png "Office location data is defined in AAD.")
+ ![The office location data is defined in AAD as employee seat numbers.](media/floorplans-fig2.png "Office location data is defined in AAD.")
 
 *Figure 2 – The office location data is defined in AAD as employee seat numbers.*
 
@@ -56,7 +56,7 @@ Once a building is identified, you can add its floorplans. All floorplans must b
 Each building and floorplan must have a unique identification code. Buildings, floors, wings, and room numbers are used to uniquely identify office locations in AAD. You must use only one standardized pattern to define the office locations in a building. For example, your organization might standardize on a pattern where the first character identifies the building (A), followed by a number identifying the floor (1), and then a three-digit number identifying a room (119). In this example, A1/119 would uniquely identify room 119 on the first floor of Building A and B2/309 would uniquely identify room 309 on the second floor of Building B.
 Whichever numbering system you decide upon needs to be followed consistently for all rooms, floors, and buildings of your organization.
 
-![Office floorplan search.](floorplans-fig3.png "Office floorplan search.")
+![Office floorplan search.](media/floorplans-fig3.png "Office floorplan search.")
 
 *Figure 3 – Office floorplan search*
 
@@ -68,7 +68,7 @@ Unlike Bookmarks and Q&A, the index is not refreshed immediately, and it can tak
 
 ## Add floorplan
 
-  ![Specify the Floor and Wing or Zone that each file represents.](floorplans-fig4.png "Specify the Floor and Wing or Zone.")
+  ![Specify the Floor and Wing or Zone that each file represents.](media/floorplans-fig4.png "Specify the Floor and Wing or Zone.")
 
 *Figure 4 – Specify the Floor and Wing or Zone that each file represents.*
 
@@ -81,7 +81,7 @@ Unlike Bookmarks and Q&A, the index is not refreshed immediately, and it can tak
 
 If a floorplan cannot be uploaded, an error messages should identify the issue and solution. For troubleshooting DWG file upload issues, see the Troubleshoot Errors section. The Next button will be disabled until all floorplans are successfully uploaded.
 
-  ![Specify the office location that’s related to the seat numbers you assigned.](floorplans-fig5.png "Specify the office location.")
+  ![Specify the office location that’s related to the seat numbers you assigned.](media/floorplans-fig5.png "Specify the office location.")
 
 *Figure 5 – Specify the office location that’s related to the seat numbers you assigned.*
 
@@ -91,7 +91,7 @@ This helps define what the AAD code for a building might look like in the organi
 9. Next, specify the location nomenclature. Here you define what each of the different characters or numbers in the code identifies. For example, the building code PS35/13/0124 identifies a building name and number (PS35), followed by a floor number (13th floor), and finally, the room number (0124). Microsoft Search tries to extract the pattern and displays it for confirmation. The Search Admin can determine the pattern by looking at the location information for an employee in the address card.
 10. After associating a building with an AAD location and specifying location patterns for all uploaded floorplans, select Publish to add to the floorplans. Or you can save the plans as a draft for publishing later.
 
-![When mapping is complete, you’re ready to go](floorplans-fig6.png "Mapping complete")
+![When mapping is complete, you’re ready to go](media/loorplans-fig6.png "Mapping complete")
 
 *Figure 6 – When mapping is complete, you’re ready to go*
 
