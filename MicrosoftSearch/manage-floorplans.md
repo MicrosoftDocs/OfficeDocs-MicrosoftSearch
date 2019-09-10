@@ -91,7 +91,7 @@ This helps define what the AAD code for a building might look like in the organi
 9. Next, specify the location nomenclature. Here you define what each of the different characters or numbers in the code identifies. For example, the building code PS35/13/0124 identifies a building name and number (PS35), followed by a floor number (13th floor), and finally, the room number (0124). Microsoft Search tries to extract the pattern and displays it for confirmation. The Search Admin can determine the pattern by looking at the location information for an employee in the address card.
 10. After associating a building with an AAD location and specifying location patterns for all uploaded floorplans, select Publish to add to the floorplans. Or you can save the plans as a draft for publishing later.
 
-![When mapping is complete, you’re ready to go](media/loorplans-fig6.png "Mapping complete")
+![When mapping is complete, you’re ready to go](media/floorplans-fig6.png "Mapping complete")
 
 *Figure 6 – When mapping is complete, you’re ready to go*
 
