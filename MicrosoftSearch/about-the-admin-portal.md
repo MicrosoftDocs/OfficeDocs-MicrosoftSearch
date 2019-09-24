@@ -17,7 +17,7 @@ ROBOTS: NoIndex
 description: "Get an overview of the admin portal features and access permissions available with Microsoft Search"
 ---
 
-# About the Admin portal
+# About the Admin portalhailsjdlfj
 
 > [!IMPORTANT]
 > This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then the Microsoft Search in Bing portal will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
