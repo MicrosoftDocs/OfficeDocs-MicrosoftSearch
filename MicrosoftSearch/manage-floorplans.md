@@ -53,7 +53,11 @@ Once a building is identified, you can add its floorplans. All floorplans must b
 
 ### Step 3: Unique identification codes
 
-Each building and floorplan must have a unique identification code. Buildings, floors, wings, and room numbers are used to uniquely identify office locations in AAD. You must use only one standardized pattern to define the office locations in a building. For example, your organization might standardize on a pattern where the first character identifies the building (A), followed by a number identifying the floor (1), and then a three-digit number identifying a room (119). In this example, A1/119 would uniquely identify room 119 on the first floor of Building A and B2/309 would uniquely identify room 309 on the second floor of Building B.
+Each building and floorplan must have a unique identification code. Buildings, floors, wings, and room numbers are used to uniquely identify office locations in AAD. You must use only one standardized pattern to define the office locations in a building. 
+
+For example, your organization might standardize on a pattern where the first character identifies the building (A), followed by a number identifying the floor (1), and then a three-digit number identifying a room (119). 
+
+In this example, A1/119 would uniquely identify room 119 on the first floor of Building A and B2/309 would uniquely identify room 309 on the second floor of Building B.
 Whichever numbering system you decide upon needs to be followed consistently for all rooms, floors, and buildings of your organization.
 
 ![Office floorplan search.](media/floorplans-fig3.png "Office floorplan search.")
@@ -63,6 +67,7 @@ Whichever numbering system you decide upon needs to be followed consistently for
 ### Step 4: Personnel and office data in AAD
 
 All office locations and employee office data must be stored in AAD in order to be mapped to floorplans. All office locations must have unique values; that is, two or more people may sit in an open area that has an office location ID of B1/0001, but B1/0001 is a unique location and there is no other location with the same code in AAD.
+
  **Note:** When a user searches for a room or office location of a colleague, the room numbers in floorplans are matched with office locations in AAD. If a match is found, then the floor map is shown.
 It can take several hours for new or changed floorplans to appear in search results.
 
@@ -105,6 +110,7 @@ This helps define what the AAD code for a building might look like in the organi
 3. Select the Floorplans tab. The existing floorplans are listed under Published or Draft.
 4. Select the floorplan you want and click Edit.
 5. Edit the details and floorplans and save.
+
  **Note:** The draft facility is not available once the building is published. A Search Editor can still edit a published building, but they cannot make partial changes and save it to draft. They need to make the changes in one session. Any changes saved are shown in the Office location tab in the People card in Microsoft Search. A Search Editor can choose to unpublish a building, in which case the building is moved to the Drafts section and the details are not shown in the Office location tab.
 
 ## Troubleshoot errors
