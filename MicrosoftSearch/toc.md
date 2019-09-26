@@ -12,5 +12,9 @@
 ##[Manage bookmarks](manage-bookmarks.md)
 ##[Manage Q&As](manage-qas.md)
 ##[Manage locations](manage-locations.md)
+##[Manage floor plans](manage-floorplans.md)
 #Connectors
 #Customization and configuration
+#[User adoption guide](user-adoption-guide.md)
+#[Frequently asked questions](faqs.md)
+#[Using Microsoft Search](use/about-microsoft-search.md)
