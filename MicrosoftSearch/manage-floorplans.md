@@ -63,8 +63,8 @@ Whichever numbering system you decide upon needs to be followed consistently for
 ### Step 4: Personnel and office data in AAD
 
 All office locations and employee office data must be stored in AAD in order to be mapped to floorplans. All office locations must have unique values; that is, two or more people may sit in an open area that has an office location ID of B1/0001, but B1/0001 is a unique location and there is no other location with the same code in AAD.
-NOTE **Note:** When a user searches for a room or office location of a colleague, the room numbers in floorplans are matched with office locations in AAD. If a match is found, then the floor map is shown.
-Unlike Bookmarks and Q&A, the index is not refreshed immediately, and it can take several hours for new or changed floorplans to appear in search results.
+ **Note:** When a user searches for a room or office location of a colleague, the room numbers in floorplans are matched with office locations in AAD. If a match is found, then the floor map is shown.
+It can take several hours for new or changed floorplans to appear in search results.
 
 ## Add floorplan
 
@@ -95,7 +95,7 @@ This helps define what the AAD code for a building might look like in the organi
 
 *Figure 6 – When mapping is complete, you’re ready to go*
 
- Note: A draft is a building for which floorplans or mapping is incomplete. A draft enables multiple people such as IT admins, business admins, and facility management teams to coordinate in uploading and creating floorplans. It also allows users to upload floorplans in stages.
+ **Note:** A draft is a building for which floorplans or mapping is incomplete. A draft enables multiple people such as IT admins, business admins, and facility management teams to coordinate in uploading and creating floorplans. It also allows users to upload floorplans in stages.
 11. In the Floorplans tab on the Microsoft Search home page, the published or saved draft floorplans are listed under Published or Draft.
 
 ## Edit floorplan
@@ -105,7 +105,7 @@ This helps define what the AAD code for a building might look like in the organi
 3. Select the Floorplans tab. The existing floorplans are listed under Published or Draft.
 4. Select the floorplan you want and click Edit.
 5. Edit the details and floorplans and save.
- Note: The draft facility is not available once the building is published. A Search Editor can still edit a published building, but they cannot make partial changes and save it to draft. They need to make the changes in one session. Any changes saved are shown in the Office location tab in the People card in Microsoft Search. A Search Editor can choose to unpublish a building, in which case the building is moved to the Drafts section and the details are not shown in the Office location tab.
+ **Note:** The draft facility is not available once the building is published. A Search Editor can still edit a published building, but they cannot make partial changes and save it to draft. They need to make the changes in one session. Any changes saved are shown in the Office location tab in the People card in Microsoft Search. A Search Editor can choose to unpublish a building, in which case the building is moved to the Drafts section and the details are not shown in the Office location tab.
 
 ## Troubleshoot errors
 
