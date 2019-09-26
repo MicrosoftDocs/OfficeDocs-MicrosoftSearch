@@ -10,6 +10,7 @@
 ##[Manage bookmarks](manage-bookmarks.md)
 ##[Manage Q&As](manage-qas.md)
 ##[Manage locations](manage-locations.md)
+##[Manage floorplans](manage-floorplans.md)
 #[User adoption guide](user-adoption-guide.md)
 #[Frequently asked questions](faqs.md)
 #[Using Microsoft Search](use/about-microsoft-search.md)
