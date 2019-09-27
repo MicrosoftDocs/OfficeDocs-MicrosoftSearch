@@ -33,7 +33,7 @@ PowerApps is a service that lets you build business apps that run in a browser o
 
 PowerApps work in any browser and on any device and take less than a minute to add.
   
-1. [Find the App ID for the PowerApp](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) you want to integrate 
+1. [Find the App ID for the PowerApp](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) you want to integrate.
     
 2. In the Microsoft Search Admin portal, go to **Bookmarks**
     
