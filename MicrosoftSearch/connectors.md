@@ -142,11 +142,6 @@ Add a short description.
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us//media/logos/logo_Windows.svg" alt="Windows logo" />
-                        </div>
-                    </div>
                     <div class="cardText">
                         <h3>Connector name</h3>
                         <p>Description</p>
@@ -160,11 +155,6 @@ Add a short description.
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us//media/logos/logo_Windows.svg" alt="Windows logo" />
-                        </div>
-                    </div>
                     <div class="cardText">
                         <h3>Connector name</h3>
                         <p>Description</p>
@@ -178,11 +168,6 @@ Add a short description.
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us//media/logos/logo_Windows.svg" alt="Windows logo" />
-                        </div>
-                    </div>
                     <div class="cardText">
                         <h3>Connector name</h3>
                         <p>Description</p>
