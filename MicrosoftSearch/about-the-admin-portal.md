@@ -1,7 +1,7 @@
 ---
 title: "About the Admin portal"
-ms.author: dawholl
-author: dawholl
+ms.author: v-pamcna
+author: TrishaMc1
 manager: kellis
 ms.date: 12/11/2018
 ms.audience: Admin

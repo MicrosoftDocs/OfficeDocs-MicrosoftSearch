@@ -19,7 +19,7 @@ description: "Learn how to set Bing as your company's default search engine usin
 
 # Make Bing the default search engine
   
-This article explains how to make Bing the default search engine for Microsoft Edge, Google Chrome, and Internet Explorer. 
+This article explains how you can make Bing the default search engine for Microsoft Edge, Google Chrome, and Internet Explorer. 
   
 ## Microsoft Edge on Windows 10, Version 1703 or later
 
