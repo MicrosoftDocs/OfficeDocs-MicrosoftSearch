@@ -30,7 +30,7 @@ Add a short description.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h4>Connector name</h4>
+                        <h3>Connector name</h3>
                         <p>Description</p>
                         <p><a href="">Link</a></p>
                     </div>
@@ -48,7 +48,7 @@ Add a short description.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h4>Connector name</h4>
+                        <h3>Connector name</h3>
                         <p>Description</p>
                         <p><a href="">Link</a></p>
                     </div>
@@ -66,7 +66,7 @@ Add a short description.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h4>Connector name</h4>
+                        <h3>Connector name</h3>
                         <p>Description</p>
                         <p><a href="">Link</a></p>
                     </div>
