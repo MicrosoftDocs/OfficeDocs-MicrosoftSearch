@@ -18,6 +18,7 @@ ms.author: samanro
 Add a short description.
 
 <h2>Section name</h2>
+<h3>Heading name</h3>
 <ul class="panelContent cardsY">
     <li>
         <div class="cardSize">
@@ -29,7 +30,7 @@ Add a short description.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Connector name</h3>
+                        <h4>Connector name</h4>
                         <p>Description</p>
                         <p><a href="">Link</a></p>
                     </div>
@@ -47,7 +48,7 @@ Add a short description.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Connector name</h3>
+                        <h4>Connector name</h4>
                         <p>Description</p>
                         <p><a href="">Link</a></p>
                     </div>
@@ -65,7 +66,64 @@ Add a short description.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Connector name</h3>
+                        <h4>Connector name</h4>
+                        <p>Description</p>
+                        <p><a href="">Link</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+<h3>Heading name</h3>
+<ul class="panelContent cardsY">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us//media/logos/logo_Windows.svg" alt="Windows logo" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h4>Connector name</h4>
+                        <p>Description</p>
+                        <p><a href="">Link</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us//media/logos/logo_Windows.svg" alt="Windows logo" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h4>Connector name</h4>
+                        <p>Description</p>
+                        <p><a href="">Link</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us//media/logos/logo_Windows.svg" alt="Windows logo" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h4>Connector name</h4>
                         <p>Description</p>
                         <p><a href="">Link</a></p>
                     </div>
