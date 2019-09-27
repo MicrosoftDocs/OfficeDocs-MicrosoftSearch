@@ -79,7 +79,7 @@ Add a short description.
 ---
 
 <h2>Section name</h2>
-<ul class="panelContent cardsW">
+<ul class="panelContent cardsY">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
