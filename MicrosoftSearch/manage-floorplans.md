@@ -12,7 +12,6 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ms.assetid: 8ab9aa00-cd74-405f-8411-9a1c3cfacdb9
 description: "The floorplans feature in Microsoft Search helps users find people, offices, and other amenities within a building."
 ---
 # Manage floorplans
