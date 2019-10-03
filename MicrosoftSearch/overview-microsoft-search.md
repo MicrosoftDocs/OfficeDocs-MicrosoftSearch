@@ -141,20 +141,14 @@ Microsoft Search in SharePoint is the modern search experience in SharePoint Onl
 
 You can customize the classic search experience, for example by adding custom refiners to the search results page or displaying a certain type of result differently. You can’t customize the Microsoft Search experience in SharePoint like that. Some of the customizations you make for classic search might impact Microsoft Search in SharePoint. If your organization will use both search experiences in SharePoint, [learn about the differences and how to avoid impacting Microsoft Search in SharePoint](https://docs.microsoft.com/sharepoint/differences-classic-modern-search).
 
-## Microsoft Search in Bing
-
-Because work-related searches may be sensitive, Microsoft Search uses a set of trust measures for how these searches are handled by the public web results part of Bing.
-
-Microsoft Search requests are made over HTTPS. This ensures the connection is encrypted end-to-end for enhanced security. Additionally, all search logs pertaining to Microsoft Search traffic are de-identified and stored separately from public, non-Microsoft Search traffic.
-
-Regardless of whether a user query contains one or more work-related results in the returned response, the following measures are taken:
-
-**Logging** – All search logs pertaining to Microsoft Search traffic are de-identified and retained for 18 months. Queries stored in these system logs will only be used to model and train public features such as autosuggest or related searches for public web results when a set of restrictions and frequency thresholds are met, which gives us confidence that these queries are common and not specific to a particular organization. The query must appear a significant amount of times in corelating data from non-Microsoft Search users, and the query must not trigger exclusively enterprise search results. Queries that do not meet these requirements will be stored separately from public, non-Microsoft Search traffic. Restricted access is managed via various secure mechanisms, including security groups and other layers within the engineering system.
-
-**Search history** – When signed in with a work or school account, a user's search history won't be available on other computers or devices.
-
-**Advertising** – Enterprise search queries are never shared with or suggested to advertisers.
-Ads are never targeted to a user based on their work identity or organization.
+## Microsoft Search in Bing protects enterprise searches 
+When a user enters an enterprise search query in Microsoft Search, two simultaneous search requests occur: (1) a search of the enterprise’s internal resources, and (2) a separate search of public results from Bing.com. Because enterprise searches might be sensitive, Microsoft Search has implemented a set of trust measures that describe how the separate search of public results from Bing.com is handled. 
+-	**Logging**
+    - All search logs that pertain to Microsoft Search traffic are disassociated from your workplace identity.
+    - If a set of restrictions or frequency thresholds are met which give us confidence that the query is not specific to a particular organization, the query will be treated as described in the Bing services section of the Privacy Statement. For example, such queries will be used to model and train public features such as autosuggest or related searches. 
+    - Queries that do not meet the set of restrictions or frequency thresholds will be stored separately from public, non-Microsoft Search traffic. 
+-	**Advertising**
+    - Advertising shown on Bing.com in connection with enterprise searches is solely related to the content of the search queries. Ads are never targeted to users based on their workplace identity.
 
 ## See also
 
