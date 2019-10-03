@@ -49,7 +49,7 @@ Add a short description.
                     </div>
                     <div class="cardText">
                         <h3>Connector name</h3>
-                        <p>Description</p>
+                        <p>Description: not sure how long these descriptions can be so I'm adding text to see how much text the card can accept. I'm not sure how long these descriptions can be so I'm adding text to see how much text the card can accept. not sure how long these descriptions can be so I'm adding text to see how much text the card can accept. </p>
                         <p><a href="">Link</a></p>
                     </div>
                 </div>
@@ -144,7 +144,7 @@ Add a short description.
                 <div class="card">
                     <div class="cardText">
                         <h3>Connector name</h3>
-                        <p>Description</p>
+                        <p>Description: not sure how long these descriptions can be so I'm adding text to see how much text the card can accept. I'm not sure how long these descriptions can be so I'm adding text to see how much text the card can accept. not sure how long these descriptions can be so I'm adding text to see how much text the card can accept. </p>
                         <p><a href="">Link</a></p>
                     </div>
                 </div>
