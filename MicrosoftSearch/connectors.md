@@ -143,8 +143,8 @@ Add a short description.
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Connector name</h3>
-                        <p>Description: not sure how long these descriptions can be so I'm adding text to see how much text the card can accept. I'm not sure how long these descriptions can be so I'm adding text to see how much text the card can accept. not sure how long these descriptions can be so I'm adding text to see how much text the card can accept. </p>
+                        <h3>Adobe AEM</h3>
+                        <p>Connector for Adobe AEM with full support of its security model. Indexes pages, attachments, and other generated document types from Adobe AEM in near real time. The connector fully supports AEM’s built-in user and group management, as well as AEM installations based on Active Directory and other directory services. 6th generation Raytion search connector. </p>
                         <p><a href="">Link</a></p>
                     </div>
                 </div>
