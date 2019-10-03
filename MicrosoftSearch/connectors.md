@@ -75,7 +75,7 @@ Add a short description.
         </div>
     </li>
 </ul>
-<h3>Connectors by our Partners</h3>
+<h3>Heading name</h3>
 <ul class="panelContent cardsY">
     <li>
         <div class="cardSize">
@@ -136,7 +136,7 @@ Add a short description.
 
 ---
 
-<h2>Section name</h2>
+<h2>Connectors by our Partners</h2>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
