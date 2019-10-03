@@ -13,11 +13,11 @@ ms.topic: landing-page
 ms.date: 12/13/2017
 ms.author: samanro
 ---
-# Microsoft Search connectors
+# Microsoft Graph connector catalog
 
 Add a short description.
 
-<h2>Section name</h2>
+<h2>Connectors by Microsoft</h2>
 <h3>Heading name</h3>
 <ul class="panelContent cardsY">
     <li>
@@ -75,7 +75,7 @@ Add a short description.
         </div>
     </li>
 </ul>
-<h3>Heading name</h3>
+<h3>Connectors by our Partners</h3>
 <ul class="panelContent cardsY">
     <li>
         <div class="cardSize">
