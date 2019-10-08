@@ -76,7 +76,7 @@ It can take several hours for new or changed floor plans to appear in search res
 2. In the navigation pane, go to Settings and select Microsoft Search.
 3. Select Floor plans tab.
 4. Select Add floor plans to open the Add floor plans dialog.
-5. Select the building in the drop-down and select Next. If the building is not listed in the dropdown, you can add it as a new location. See [Manage Locations](manage-locations.md) for more info.
+5. Select the building in the drop-down and select Next. If the building is not listed in the drop-down, you can add it as a new location. See [Manage Locations](manage-locations.md) for more info.
 6. Select Upload files and select the floor plan you want to upload. All floor plans must be in DWG format. You can upload multiple floor plans at the same time. After the file is uploaded, identify the floor and/or wing in the building that the floor plan is for.  
 
 If a floor plan cannot be uploaded, an error messages should identify the issue and solution. For troubleshooting DWG file upload issues, see the Troubleshoot Errors section. The Next button will be disabled until all floor plans are successfully uploaded.
