@@ -30,7 +30,7 @@ Add a short description.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Connector name</h3>
+                        <h3>Azure Data Lake Storage Gen2</h3>
                         <p>Description</p>
                         <p><a href="">Link</a></p>
                     </div>
