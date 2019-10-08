@@ -1,5 +1,5 @@
 ---
-title: Connectors
+title: Connector catalog
 description: Add a short description
 services: skype-for-business-online-admin
 author: samanro
