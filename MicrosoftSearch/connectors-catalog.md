@@ -145,8 +145,7 @@ Add a short description.
                         <h3>Adobe AEM</h3>
                         <p>by <a href="https://www.raytion.com/products/enterprise-search-connectors">Raytion</a></p>
                         <p>Connector for Adobe AEM with full support of its security model. Indexes pages, attachments, and other generated document types from Adobe AEM in near real time. The connector fully supports AEM’s built-in user and group management, as well as AEM installations based on Active Directory and other directory services. 6th generation Raytion search connector. </p>
-                        <p><a href="search@raytion.com">Contact us</a></p>
-                        <img src="https://docs.microsoft.com/en-us//media/logos/logo_Windows.svg" alt="Windows logo" />
+                        <p><a href="search@raytion.com">Contact us</a> <img src="https://docs.microsoft.com/en-us//media/logos/logo_Windows.svg" alt="Windows logo" width="100" height="100" align="right"/></p>
                     </div>
                 </div>
             </div>
