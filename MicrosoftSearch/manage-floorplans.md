@@ -20,10 +20,10 @@ description: "The floor plans feature in Microsoft Search helps users find peopl
 
 *Figure 1 – Office location isn’t just a number with Microsoft Search.*
 
-The floor plans feature in Microsoft Search helps users find people, offices, and other amenities within a building. Floor plans answer users' queries such as:
+The floor plans feature in Microsoft Search helps users find people and meeting rooms within a building. Floor plans answer users' queries such as:
 
 1. Where is Allan Deyoung's office?
-2. Where is conference room C1?
+2. Where is meeting room C1?
 
 To make it easy to find answers to queries like these, information about an organization's buildings, offices, and facilities needs to be available and made searchable. Larger organizations usually have facilities or space management teams who may already have this info available. In a smaller organization, the Search Administrator might have to create and add it. A Search Administrator can delegate this work and allow other employees or vendors to add floor plans and building information by designating them as Search Editors in the M365 admin center.
 To enable users to find information about offices and building facilities, you need to add:
@@ -48,14 +48,14 @@ Once a building is identified, you can add its floor plans. All floor plans must
 
 ### Step 3: Unique identification codes
 
-Each building and floor plan should have a unique identification code. Buildings, floors, wings, and room numbers are used to uniquely identify office locations in AAD. You must use only one standardized pattern to define the office locations in a building.
+Each building should have a unique identification code. Buildings, floors, wings, and room numbers are used to uniquely identify office locations in AAD. You must use only one standardized pattern to define the office locations in a building.
 
 For example, your organization might standardize on a pattern where the first character identifies the building (A), followed by a number identifying the floor (1), and then a three-digit number identifying a room (119). 
 
 In this example, A1/119 would uniquely identify room 119 on the first floor of Building A and B2/309 would uniquely identify room 309 on the second floor of Building B.
 Whichever numbering system you decide upon needs to be followed consistently for all rooms, floors, and buildings of your organization.
 
-![Office floor plan search.](media/floorplans-fig1.png "Office floor plan search.")
+![Office floor plan search.](media/floorplans-fig3.png "Office floor plan search.")
 
 *Figure 3 – Office floor plan search*
 
@@ -76,7 +76,7 @@ It can take several hours for new or changed floor plans to appear in search res
 2. In the navigation pane, go to Settings and select Microsoft Search.
 3. Select Floor plans tab.
 4. Select Add floor plans to open the Add floor plans dialog.
-5. Select the building in the dropdown and select Next. If the building is not listed in the dropdown, you can add it as a new location. See [Manage Locations](manage-locations.md) for more info.
+5. Select the building in the drop-down and select Next. If the building is not listed in the dropdown, you can add it as a new location. See [Manage Locations](manage-locations.md) for more info.
 6. Select Upload files and select the floor plan you want to upload. All floor plans must be in DWG format. You can upload multiple floor plans at the same time. After the file is uploaded, identify the floor and/or wing in the building that the floor plan is for.  
 
 If a floor plan cannot be uploaded, an error messages should identify the issue and solution. For troubleshooting DWG file upload issues, see the Troubleshoot Errors section. The Next button will be disabled until all floor plans are successfully uploaded.
@@ -105,7 +105,7 @@ If a floor plan cannot be uploaded, an error messages should identify the issue 
 4. Select the floor plan you want and click Edit.
 5. Edit the details and floor plans and save.
 
- **Note:** The draft facility is not available once the building is published. A Search Editor can still edit a published building, but they cannot make partial changes and save it to draft. They need to make the changes in one session. Any changes saved are shown in the Office location tab in the People card in Microsoft Search. A Search Editor can choose to unpublish a building, in which case the building is moved to the Drafts section and the details are not shown in the Office location tab.
+ **Note:** The draft facility is not available once the building is published. A Search Editor can still edit a published building, but they cannot make partial changes and save it to draft. They need to make the changes in one session. Any changes saved are shown in the Office tab in the People card in Microsoft Search. A Search Editor can choose to unpublish a building, in which case the building is moved to the Drafts section and the details are not shown in the Office location tab.
 
 ## Troubleshoot errors
 
