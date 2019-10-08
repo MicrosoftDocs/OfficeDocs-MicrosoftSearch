@@ -18,7 +18,7 @@ ms.author: samanro
 Add a short description.
 
 <h2>Connectors by Microsoft</h2>
-<ul class="panelContent cardsF">
+<ul class="panelContent cardsM">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
