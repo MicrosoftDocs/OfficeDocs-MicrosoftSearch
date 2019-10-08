@@ -18,7 +18,7 @@ ms.author: samanro
 Add a short description.
 
 <h2>Connectors by Microsoft</h2>
-<ul class="panelContent cardsM">
+<ul class="panelContent cardsY">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -30,6 +30,7 @@ Add a short description.
                     </div>
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
+                        <p>by <a href="https://www.raytion.com/products/enterprise-search-connectors">Microsoft</a></p>
                         <p>The Azure Data Lake Storage Gen2 connector for Microsoft Search will allow your organization to search for files and their content stored in Azure Blob Containers and hierarchy enabled folders within a given Azure Data lake Storage Account.</p>
                         <p><a href="">More details</a></p>
                     </div>
@@ -145,6 +146,7 @@ Add a short description.
                         <p>by <a href="https://www.raytion.com/products/enterprise-search-connectors">Raytion</a></p>
                         <p>Connector for Adobe AEM with full support of its security model. Indexes pages, attachments, and other generated document types from Adobe AEM in near real time. The connector fully supports AEM’s built-in user and group management, as well as AEM installations based on Active Directory and other directory services. 6th generation Raytion search connector. </p>
                         <p><a href="search@raytion.com">Contact us</a></p>
+                        <img src="https://docs.microsoft.com/en-us//media/logos/logo_Windows.svg" alt="Windows logo" />
                     </div>
                 </div>
             </div>
