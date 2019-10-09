@@ -26,8 +26,8 @@ Add a short description.
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The Azure Data Lake Storage Gen2 connector for Microsoft Search will allow your organization to search for files and their content stored in Azure Blob Containers and hierarchy enabled folders within a given Azure Data lake Storage Account.</p>
-                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="ADLS logo" width="40" height="40" align="right"></p>
+                        <p>The Azure Data Lake Storage Gen2 connector for Microsoft Search will allow your organization to search for files and their content stored in Azure Blob Containers and hierarchy enabled folders within a given Azure Data Lake Storage Account.</p>
+                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="ADLS logo" width="37" height="37" align="right"></p>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@ Add a short description.
                         <h3>Enterprise Website</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>The enterprise website connector for Microsoft Search will allow your organization to search for files and their content stored in any non-Sharepoint enterprise website.</p>
-                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="40" height="40" align="right"></p>
+                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="37" height="37" align="right"></p>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ Add a short description.
                         <h3>File share</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>The file share connector for Microsoft Search will allow your organization to search for on-premises file shares.</p>
-                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="ADLS logo" width="40" height="40" align="right"></p>
+                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="ADLS logo" width="37" height="37" align="right"></p>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@ Add a short description.
                         <h3>MediaWiki</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>The MediaWiki connector for Microsoft Search will allow your organization to search for MediaWiki articles through your registered account.</p>
-                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="40" height="40" align="right"></p>
+                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="37" height="37" align="right"></p>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@ Add a short description.
                         <h3>Modern Search SQL</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>The modern search SQL connector for Microsoft Search will allow your organization to search data housed in on-premises SQL databases.</p>
-                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="40" height="40" align="right"></p>
+                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="37" height="37" align="right"></p>
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@ Add a short description.
                         <h3>ServiceNow</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>The ServiceNow connector for Microsoft Search will allow your organization to search for knowledge-based articles from your application.</p>
-                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="40" height="40" align="right"></p>
+                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="37" height="37" align="right"></p>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@ Add a short description.
                         <h3>Adobe AEM</h3>
                         <p>by <a href="https://www.raytion.com/products/enterprise-search-connectors">Raytion</a></p>
                         <p>Connector for Adobe AEM with full support of its security model. Indexes pages, attachments, and other generated document types from Adobe AEM in near real time. The connector fully supports AEM’s built-in user and group management, as well as AEM installations based on Active Directory and other directory services. 6th generation Raytion search connector. </p>
-                        <p><a href="mailto:search@raytion.com">Contact us</a> <img src="https://docs.microsoft.com/en-us//media/logos/logo_Windows.svg" alt="Windows logo" width="40" height="40" align="right"></p>
+                        <p><a href="mailto:search@raytion.com">Contact us</a> <img src="https://docs.microsoft.com/en-us//media/logos/logo_Windows.svg" alt="Windows logo" width="37" height="37" align="right"></p>
                     </div>
                 </div>
             </div>
