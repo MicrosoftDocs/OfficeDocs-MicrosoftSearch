@@ -18,6 +18,15 @@
 ##[Connectors Preview](connectors-preview.md)
 ##[Connectors Catalog](connectors-catalog.md)
 ##[Manage your connector](manage-connector.md)
+##Connectors by Microsoft 
+###[Configure your built-in connector](configure-connector.md)
+###[Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+###[Enterprise Website](enterprise-web-connector.md)
+###[File-share](file-share-connector.md)
+###[Modern Search SQL](MSSQL-connector.md)
+###[MediaWiki](mediawiki-connector.md)
+###[ServiceNow](servicenow-connector.md)
+##[Terms and conditions](terms-and-conditions.md)
 #Customization and configuration
 #[User adoption guide](user-adoption-guide.md)
 #[Frequently asked questions](faqs.md)
