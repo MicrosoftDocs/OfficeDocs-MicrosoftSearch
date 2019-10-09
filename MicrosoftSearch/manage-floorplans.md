@@ -16,7 +16,7 @@ description: "The floor plans feature in Microsoft Search helps users find peopl
 ---
 # Manage floor plans
 
-  ![Office location isn’t just a number with Microsoft Search.](media/floorplans-fig1.png "Office location.")
+  ![Office location isn’t just a number with Microsoft Search.](media/floorplans-fig3.png "Office location.")
 
 *Figure 1 – Office location isn’t just a number with Microsoft Search.*
 
@@ -54,10 +54,6 @@ For example, your organization might standardize on a pattern where the first ch
 
 In this example, A1/119 would uniquely identify room 119 on the first floor of Building A and B2/309 would uniquely identify room 309 on the second floor of Building B.
 Whichever numbering system you decide upon needs to be followed consistently for all rooms, floors, and buildings of your organization.
-
-![Office floor plan search.](media/floorplans-fig3.png "Office floor plan search.")
-
-*Figure 3 – Office floor plan search*
 
 ### Step 4: Personnel and office data in AAD
 
