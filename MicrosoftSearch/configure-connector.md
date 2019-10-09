@@ -1,5 +1,5 @@
 ---
-title: "Configure your Microsoft Graph Connector"
+title: "Configure your built-in connector in the M365 admin portal"
 ms.author: v-pamcn
 author: TrishaMc1
 manager: mnirkhe
@@ -12,10 +12,10 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Configure your Microsoft Graph Connector."
+description: "Configure your built-in connector in the M365 admin portal"
 ---
 
-# Configure your Microsoft Graph Connector
+# Configure your built-in connector in the M365 admin portal
 
 content TBD 
 
