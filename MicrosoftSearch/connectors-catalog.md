@@ -41,8 +41,7 @@ Add a short description.
                         <h3>Enterprise Website</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>The enterprise website connector for Microsoft Search will allow your organization to search for files and their content stored in any non-Sharepoint enterprise website.</p>
-                        <br></br>
-                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="37" height="37" align="right"></p>
+                        [More details](enterprise-web-connector.md) <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="37" height="37" align="right"></p>
                     </div>
                 </div>
             </div>
