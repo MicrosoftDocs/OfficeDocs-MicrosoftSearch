@@ -27,9 +27,9 @@ The following operations are supported in the Microsoft 365 admin portal for eac
 
 **Operations** | **Microsoft built-in connector** | **Partner connector** | **Custom-built connector**
 --- | --- | --- | ---
-Add a connection | :heavy_check_mark: <br></br> (See [Configure your Microsoft built-in connector](configure-connector.md)) | :x: <br></br> (Contact your partner) | :x:
+Add a connection | :heavy_check_mark: (See [configure your Microsoft built-in connector](configure-connector.md)) | :x: (Contact your partner) | :x:
 Delete a connection | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
-Edit a published connection | <li>:heavy_check_mark: Name</li><li>:heavy_check_mark: Description</li><li>:heavy_check_mark: Authentication credentials for your external data source</li><li>:heavy_check_mark: Gateway credentials for your on-premises data source</li><li>:heavy_check_mark: Refresh schedule</li> | <li>:heavy_check_mark: Name</li><li>:heavy_check_mark: Description</li> | <li>:heavy_check_mark: Name</li><li>:heavy_check_mark: Description</li>
+Edit a published connection | :heavy_check_mark: Name<br></br>:heavy_check_mark: Description<br></br>:heavy_check_mark: Authentication credentials for your external data source<br></br>:heavy_check_mark: Gateway credentials for your on-premises data source<br></br>:heavy_check_mark: Refresh schedule<br></br>:heavy_check_mark: Name<br></br>:heavy_check_mark: Description | :heavy_check_mark: Name<br></br>:heavy_check_mark: Description
 Edit a draft connection | :heavy_check_mark: | :x: | :x: 
 
 
