@@ -17,5 +17,6 @@ description: "Manage Microsoft Graph Connectors in the M365 Admin portal."
 
 # Manage Microsoft Graph Connectors in the M365 Admin portal
 
-content TBD 
+> [!NOTE]
+> Don't see your question answered here? Ask your question in this article's feedback.
 
