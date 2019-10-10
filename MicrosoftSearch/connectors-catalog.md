@@ -17,7 +17,11 @@ ms.author: samanro
 
 Add a short description.
 
-<h2>Connectors by Microsoft</h2>
+#### In this article
+<p><a href="#Microsoft">Connectors by Microsoft</a></p>
+<p><a href="#Partners">Connectors by our Partners</a></p>
+
+<h2 id="Microsoft">Connectors by Microsoft</h2>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -110,7 +114,7 @@ Add a short description.
 
 ---
 
-<h2>Connectors by our Partners</h2>
+<h2 id="Partners">Connectors by our Partners</h2>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
