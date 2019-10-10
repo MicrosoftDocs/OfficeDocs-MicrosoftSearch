@@ -122,7 +122,7 @@ Microsoft provides ready to configure out-of-the-box connectors available to set
  
 
 ### Connectors by our partners
-Check out our [connector catalog](connector-catalog.md) to learn what connectors our partners support and contact them to utilize their connector solutions. You can manage your connectors from our partners in the M365 admin portal as well. 
+Check out our [connector catalog](connectors-catalog.md) to learn what connectors our partners support and contact them to utilize their connector solutions. You can manage your connectors from our partners in the M365 admin portal as well. 
 
 ### Build your own connector
 Developers can use Microsoft Graph to create connectors to index custom types or files. A connector is an application that uses the Microsoft Graph indexing API to create a connection and push items into the search index. For more information, see the Microsoft Search indexing API overview.
@@ -130,6 +130,7 @@ Developers can use Microsoft Graph to create connectors to index custom types or
 
 
 <h2 id="office365">Office 365 plans we support</h2>
+
 Microsoft Graph Connectors are only supported by the following Office 365 plans:
 * [Enterprise](https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans) E3 & E5
 * [Education](https://www.microsoft.com/en-us/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1) A3 & A5
