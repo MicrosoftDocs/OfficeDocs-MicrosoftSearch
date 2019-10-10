@@ -15,14 +15,14 @@ search.appverid:
 description: "Microsoft Graph Connectors preview."
 ---
 
-# Connectors preview for Microsoft Graph Connectors
+# Microsoft Graph Connectors preview
 
 Microsoft Graph connectors, indexing APIs and search APIs are currently in preview. We encourage customers try the connectors and provide us with feedback. We do not encourage customers to use connectors in production during the preview period. 
  
 ## Targeted Release Requirement 
 To try connectors, you must have the Targeted release option set for either your tenant, or for your Search and Tenant admins. The Targeted release requirement applies regardless of which preview environment you choose below. 
  
-To learn more about the Targeted Release option and how to set it, click here. 
+To learn more about the Targeted Release option and how to set it, click [here](https://docs.microsoft.com/en-us/office365/admin/manage/release-options-in-office-365?view=o365-worldwide). 
  
 ## Environment for Preview 
 There are 2 ways that we recommend customers to try out connectors, the indexing APIs and search APIs: 
@@ -36,7 +36,7 @@ During the Preview period, you should expect the following:
 * Except for content ingested as a file, the content will only show up in the search results page under a custom vertical. This applies mainly to content where user-defined-types are used. 
 
  
-To join the preview program, click [here]: https://forms.office.com/Pages/DesignPage.aspx#FormId=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u&Preview=%7B%22PreviousTopView%22%3A%22None%22%7D&TopView=Preview. 
+To join the preview program, click [here](https://forms.office.com/Pages/DesignPage.aspx#FormId=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u&Preview=%7B%22PreviousTopView%22%3A%22None%22%7D&TopView=Preview).
 
 
 
