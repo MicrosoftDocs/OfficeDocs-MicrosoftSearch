@@ -27,7 +27,7 @@ Add a short description.
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>The Azure Data Lake Storage Gen2 connector for Microsoft Search will allow your organization to search for files and their content stored in Azure Blob Containers and hierarchy enabled folders within a given Azure Data Lake Storage Account.</p>
-                        <p><a href=azure-data-lake-connector.md>More details</a> <img src="Azure_Data_Lake_Small.png" alt="ADLS logo" width="37" height="37" align="right"></p>
+                        <p><a href=azure-data-lake-connector.md>More details</a> <img src="Azure_Data_Lake_Small.png" alt="ADLS logo" width="35" height="35" align="right"></p>
                     </div>
                 </div>
             </div>
