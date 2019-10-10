@@ -1,5 +1,5 @@
 ---
-title: "Modern Search SQL connector configuration in the M365 Admin portal"
+title: "Microsoft SQL connector configuration in the M365 Admin portal"
 ms.author: v-pamcn
 author: TrishaMc1
 manager: mnirkhe
@@ -12,10 +12,10 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Modern Search SQL connector configuration in the M365 Admin portal."
+description: "Microsoft SQL connector configuration in the M365 Admin portal."
 ---
 
-# Modern Search SQL connector configuration in the M365 Admin portal
+# Microsoft SQL connector configuration in the M365 Admin portal
 
 content TBD 
 

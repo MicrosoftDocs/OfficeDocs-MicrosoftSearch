@@ -27,7 +27,7 @@ Add a short description.
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>The Azure Data Lake Storage Gen2 connector for Microsoft Search will allow your organization to search for files and their content stored in Azure Blob Containers and hierarchy enabled folders within a given Azure Data Lake Storage Account.</p>
-                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="ADLS logo" width="37" height="37" align="right"></p>
+                        <p><a href=azure-data-lake-connector.md>More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="ADLS logo" width="37" height="37" align="right"></p>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@ Add a short description.
                         <h3>File share</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>The file share connector for Microsoft Search will allow your organization to search for on-premises file shares.</p>
-                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="ADLS logo" width="37" height="37" align="right"></p>
+                        <p><a href=file-share-connector.md>More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="ADLS logo" width="37" height="37" align="right"></p>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@ Add a short description.
                         <h3>MediaWiki</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>The MediaWiki connector for Microsoft Search will allow your organization to search for MediaWiki articles through your registered account.</p>
-                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="37" height="37" align="right"></p>
+                        <p><a href=mediawiki-connector.md>More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="37" height="37" align="right"></p>
                     </div>
                 </div>
             </div>
@@ -81,10 +81,10 @@ Add a short description.
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Modern Search SQL</h3>
+                        <h3>Microsoft SQL</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The modern search SQL connector for Microsoft Search will allow your organization to search data housed in on-premises SQL databases.</p>
-                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="37" height="37" align="right"></p>
+                        <p>The Microsoft SQL connector for Microsoft Search will allow your organization to search data housed in on-premises SQL databases.</p>
+                        <p><a href=MSSQL-connector.md>More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="37" height="37" align="right"></p>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@ Add a short description.
                         <h3>ServiceNow</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>The ServiceNow connector for Microsoft Search will allow your organization to search for knowledge-based articles from your application.</p>
-                        <p><a href="">More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="37" height="37" align="right"></p>
+                        <p><a href=servicenow-connector.md>More details</a> <img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135502/Azure-DataLake-icon.png" alt="Enterprise Website" width="37" height="37" align="right"></p>
                     </div>
                 </div>
             </div>
