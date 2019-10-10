@@ -14,7 +14,7 @@
 ##[Manage Q&As](manage-qas.md)
 ##[Manage locations](manage-locations.md)
 ##[Manage floor plans](manage-floorplans.md)
-#[Connectors](connectors.md)
+#[Connectors preview](connectors-preview.md)
 #Customization and configuration
 #[User adoption guide](user-adoption-guide.md)
 #[Frequently asked questions](faqs.md)
