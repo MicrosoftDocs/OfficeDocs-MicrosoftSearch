@@ -27,12 +27,14 @@ The following operations are supported in the Microsoft 365 admin portal for eac
 
 **Operations** | **Microsoft built-in connector** | **Partner connector** | **Custom-built connector**
 --- | --- | --- | ---
-Add a connection | :heavy_check_mark: [Configure your Microsoft built-in connector](configure-connector.md) | :heavy_cross_mark: Contact your partner | :heavy_cross_mark:
-Delete a connection | yo | yo | yo
-Edit a published connection | yo | yo | yo
-Edit a draft connection | yo | yo | yo 
+Add a connection | :heavy_check_mark: [Configure your Microsoft built-in connector](configure-connector.md) | :x: <br></br> Contact your partner | :x:
+Delete a connection | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
+Edit a published connection | :heavy_check_mark: <li>Name</li><li>Description</li><li>Authentication credentials for your external data source</li><li>Gateway credentials for your on-premises data source</li><li>Refresh schedule</li> | :heavy_check_mark: <li>Name</li><li>Description</li> | :heavy_check_mark: <li>Name</li><li>Description</li>
+Edit a draft connection | :heavy_check_mark: | :x: | :x: 
 
 
 > [!NOTE]
-> Don't see your question answered here? Ask your question in this article's feedback.
+> * When publishing a Microsoft built-in connector, it may take a few minutes for the connector to be confirmed. In the interim, the connector will show its status as pending. And during this time, auto-refresh is not enabled, and thus you need to manually refresh.
+> * The connectors admin portal does not support viewing and editing of your search schema once the connection has been published. If you choose to edit the schema, you must first delete your connection and create a new one.
+
 
