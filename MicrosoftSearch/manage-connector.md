@@ -27,7 +27,7 @@ The following operations are supported in the Microsoft 365 admin portal for eac
 
 **Operations** | **Microsoft built-in connector** | **Partner connector** | **Custom-built connector**
 --- | --- | --- | ---
-Add a connection | <ul><li>:heavy_check_mark:</li><li><a href="configure-connector.md">Configure your Microsoft built-in connector</a></li></ul> | <u1><li>:heavy_cross_mark:</li><li>Contact your partner</li></u1> | <u1><li>:heavy_cross_mark:</li></u1>
+Add a connection | :heavy_check_mark: [Configure your Microsoft built-in connector](configure-connector.md) | :heavy_cross_mark: Contact your partner | :heavy_cross_mark:
 Delete a connection | yo | yo | yo
 Edit a published connection | yo | yo | yo
 Edit a draft connection | yo | yo | yo 
