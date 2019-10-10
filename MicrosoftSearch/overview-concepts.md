@@ -1,18 +1,17 @@
 ---
-title: "Overview and concepts"
-ms.author: v-pamcn
-author: TrishaMc1
-manager: mnirkhe
-ms.date: 10/08/2019
-ms.audience: Admin
-ms.topic: article
+title: Overview and concepts for Microsoft Graph Connectors
+description: Add a short description
+services: skype-for-business-online-admin
+author: monaray
+manager: samanro
+layout: LandingPage
+ms.assetid: 
 ms.service: mssearch
-localization_priority: Priority
-search.appverid:
-- BFB160
-- MET150
-- MOE150
-description: "Overview and concepts for Microsoft Graph Connectors (Preview)."
+ms.tgt_pltfrm: na
+ms.devlang: na
+ms.topic: landing-page
+ms.date: 10/10/2019
+ms.author: monaray
 ---
 
 # Overview and concepts for Microsoft Graph Connectors
@@ -124,7 +123,7 @@ Developers can use Microsoft Graph to create connectors to index custom types or
 ( NEED TO INSERT LINKS ABOVE ^^^^ )
 
 
-## Office 365 plans 
+## Office 365 plans we support
 Microsoft Graph Connectors are only supported by the following Office 365 plans:
 * [Enterprise](https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans) E3 & E5
 * [Education](https://www.microsoft.com/en-us/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1) A3 & A5
