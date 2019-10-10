@@ -9,6 +9,7 @@
 #Insights
 #Answers
 ##[Plan your content](plan-your-content.md)
+##[Manage Acronyms](manage-acronyms.md)
 ##[Manage bookmarks](manage-bookmarks.md)
 ##[Manage Q&As](manage-qas.md)
 ##[Manage locations](manage-locations.md)
