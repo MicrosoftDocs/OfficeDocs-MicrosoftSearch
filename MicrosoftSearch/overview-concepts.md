@@ -16,12 +16,18 @@ ms.author: monaray
 
 # Overview and concepts for Microsoft Graph Connectors
 
-## What are connectors? 
+#### In this article
+* <a href="#connectors">What are connectors?</a>
+* <a href="#types">Types of connectors</a>
+* <a href="#office365">Office 365 plans we support</a>
+* <a href="concepts">Connector concepts</a>
+
+<h2 id="connectors">What are connectors?</h2>
 
 Microsoft Search indexes all your Microsoft 365 data to enable search. Connectors allow your organization to ingest and index third-party data for use in Microsoft Search. This third-party data can be hosted on-premises or in the public or private cloud. Connectors allow your organization to expand the breadth of information searchable from your Microsoft Search application to enhance your search capabilities. 
 
 
-## Types of Connectors
+<h2 id="types">Types of connectors</h2>
 
 ### Connectors by Microsoft
 Microsoft provides ready to configure out-of-the-box connectors available to set up from the M365 admin portal. Below you can check out the connectors Microsoft provides and learn how to [configure your Microsoft built-in connector](configure-connector.md).
@@ -123,7 +129,7 @@ Developers can use Microsoft Graph to create connectors to index custom types or
 ( NEED TO INSERT LINKS ABOVE ^^^^ )
 
 
-## Office 365 plans we support
+<h2 id="office365">Office 365 plans we support</h2>
 Microsoft Graph Connectors are only supported by the following Office 365 plans:
 * [Enterprise](https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans) E3 & E5
 * [Education](https://www.microsoft.com/en-us/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1) A3 & A5
@@ -133,7 +139,7 @@ To learn more about these plans, refer to Office 365 products [website](https://
 Once you have your admin login credentials, you can log into the Microsoft 365 admin portal and [manage your connector](manage-connector.md).
 
 
-## Connector concepts
+<h2 id="concepts">Connector concepts</h2>
 
 #### High-level architecture
 { INSERT GRAPHIC HERE = what does the graphic look like for MS-built connectors vs partner vs build your own? } 
