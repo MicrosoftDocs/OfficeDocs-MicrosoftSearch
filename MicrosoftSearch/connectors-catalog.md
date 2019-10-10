@@ -18,8 +18,8 @@ ms.author: samanro
 Add a short description.
 
 #### In this article
-<p><a href="#Microsoft">Connectors by Microsoft</a></p>
-<p><a href="#Partners">Connectors by our Partners</a></p>
+* <a href="#Microsoft">Connectors by Microsoft</a>
+* <a href="#Partners">Connectors by our Partners</a>
 
 <h2 id="Microsoft">Connectors by Microsoft</h2>
 <ul class="panelContent cardsZ">
