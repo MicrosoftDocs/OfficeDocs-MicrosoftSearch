@@ -29,12 +29,14 @@ The following operations are supported in the Microsoft 365 admin portal for eac
 --- | --- | --- | ---
 Add a connection | :heavy_check_mark: (See [configure your Microsoft built-in connector](configure-connector.md)) | :x: (Contact your partner) | :x:
 Delete a connection | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
-Edit a published connection | :heavy_check_mark: Name<br></br> :heavy_check_mark: Description<br></br> :heavy_check_mark: Authentication credentials for your external data source<br></br> :heavy_check_mark: Gateway credentials for your on-premises data source<br></br> :heavy_check_mark: Refresh schedule<br></br> :heavy_check_mark: Name<br></br> :heavy_check_mark: Description | :heavy_check_mark: Name<br></br> :heavy_check_mark: Description
+Edit a published connection | :heavy_check_mark: Name<br></br> :heavy_check_mark: Description<br></br> :heavy_check_mark: Authentication credentials for your external data source<br></br> :heavy_check_mark: Gateway credentials for your on-premises data source<br></br> :heavy_check_mark: Refresh schedule<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Description | :heavy_check_mark: Name<br></br> :heavy_check_mark: Description
 Edit a draft connection | :heavy_check_mark: | :x: | :x: 
 
 
 > [!NOTE]
 > * When publishing a Microsoft built-in connector, it may take a few minutes for the connector to be confirmed. In the interim, the connector will show its status as pending. And during this time, auto-refresh is not enabled, and thus you need to manually refresh.
 > * The connectors admin portal does not support viewing and editing of your search schema once the connection has been published. If you choose to edit the schema, you must first delete your connection then create a new one.
+> * When managing your connector's refresh schedule, the number of items being synced during each sync session will be displayed. However, the history of your syncs will not be available.
+
 
 
