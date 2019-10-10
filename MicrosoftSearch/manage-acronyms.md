@@ -36,14 +36,14 @@ The suggested results include all the meanings of ABC that are present within th
 > [!NOTE]
 > Users must enter a query that includes the acronym’s specified *keywords* to trigger its corresponding Answers. 
  
-# Set up Microsoft Search Acronyms Answers   in your organization
+## Set up Acronyms Answers in your organization
 Microsoft Search queries two data sources for Acronyms Answers to users’ searches:
 
 1. **Editorial Acronyms**. Provided by IT administrators in the [Admin portal](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).
 
 2. **Mined Acronyms**. Mined by Microsoft Search from the user’s personal email and documents and also from publicly available data within the organization.
 
-## Set up Editorial Acronyms
+### Set up Editorial Acronyms
 IT admins can set up Editorial Acronyms within the    [Acronyms tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch). They can add acronyms from any internal site or repository to the **Admin** portal. Editorial Acronyms can be added to **Published** or **Draft** state:
 
 **Published state**. Acronyms are available to the organization’s employees through Microsoft Search.
@@ -63,7 +63,7 @@ Admins can add acronyms individually or bulk import them in a CSV file. Upload a
 > [!NOTE]
 > As specified in the CSV column names, you must add the Acronym, Expansion, and State fields.
 
-## CSV fields
+### CSV fields
 **Acronym**. Contains the actual short form or acronym. An example is ABC.
 
 **Expansion**. Contains the expansion of the acronym. An example is the American Ballet Center.
@@ -78,7 +78,7 @@ Admins can add acronyms individually or bulk import them in a CSV file. Upload a
 
 - **Published**. Adds the acronym to the Published state and makes it available in Microsoft Search.
 
-## Mined Acronyms
+### Mined Acronyms
 Microsoft Search understands that Editorial Acronyms data gets stale without maintenance. Also, many acronyms used within teams might be relevant to users, but admins might not add them to the Editorial Acronyms data. To resolve those issues, Microsoft Search mines acronyms from additional sources:
 
 - Users’ own emails and documents in SharePoint, OneDrive, and OneNote.
