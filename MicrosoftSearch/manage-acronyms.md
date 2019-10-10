@@ -21,7 +21,7 @@ Employees often run into unfamiliar acronyms and abbreviations that are used wit
 Some employees might be hesitant to ask for definitions of these acronyms and abbreviations for fear of sounding ignorant. At other times, an organization doesn’t have a source of reference for its standard terminology. Microsoft Search solves that problem  with its Acronyms Answers feature.
 
 ## What users experience
-Azure Active Directory (Azure AD) signed-in employees can get definitions with Acronyms Answers in Bing.com, Office.com, and SharePoint online. In the **Search** boxes in the header bars, users enter queries like these examples:
+Azure Active Directory (Azure AD) signed-in employees can get definitions with Acronyms Answers in [Bing](https://Bing.com), [Microsoft Office](https://Office.com), and [Microsoft SharePoint online](https://microsoft.sharepoint.com). In the **Search** boxes in the header bars, users enter queries like these examples:
 
 - *What is* ABC
 - *Define* ABC
