@@ -35,7 +35,7 @@ You need to configure the database server you want crawled and the on-premises d
 
 ## Full crawl (required)
 In this step, you need to configure the SQL query which will be executed for full crawl of the database. The full crawl selects all the columns you want to be made **queryable**, **searchable**, or **retrievable** (See [connector concepts](connectors-concepts.md) for more information on search schemas). Additionally, you can specify the ACL columns which you plan to use to restrict access of the search results to a specific set of users or groups.
->[TIP!]
+>[NOTE!]
 >You may have to join multiple tables to get all the desired columns.
 
 ### Example
@@ -44,13 +44,14 @@ In this step, you need to configure the SQL query which will be executed for ful
 ### Selected data columns (required) & ACL columns (optional)
 The 5 data columns selected (OrderId, OrderTitle, OrderDesc, CreatedDateTime, IsDeleted) hold the data that the admin wishes to utilize for the search. The ACL columns (AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups) are optional but determine viewing permissions for each row of data. Any of these data columns can be made queryable, searchable, or retrievable. 
 
-**Query snippet from the example**
+**Query snippet from the example**:
+
 “SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted”
 
 ### Watermark (required)
 A full-crawl watermark column is used by the connector to batch and resume full crawl queries to prevent overloading the database. The value of the watermark column will be used to fetch each subsequent batch and resume querying from the last checkpoint.
 
-**Query snippets from the example**
+**Query snippets from the example**:
 * “WHERE (CreatedDateTime > @watermark)”: Mention the watermark column name with “@watermark” reserved keyword. If the sort order of watermark column is ascending, use “>” symbol, otherwise use “<” symbol. 
 * “ORDER BY CreatedDateTime ASC”: Sort on watermark column in ascending or descending order. 
 
