@@ -28,13 +28,9 @@ This article is intended for Microsoft Search Azure Data Lake Storage Gen2 conne
 **Step** | **Details** | **Required/Optional?** 
 --- | --- | --- 
 Subscription Whitelisting | We need to whitelist customer’s Azure Subscription that has the Azure Data Lake Storage Gen 2 Account. This is needed to enable using Multi-Protocol Access based SDK to access the Azure Data Lake Storage Gen 2 Account. | Required
-Granting Access | If you do not wish to provide us the Access Keys to their Azure Data Lake Gen 2 Storage account, you will need to grant read access to our GCS (Graph Connector Services) First Party Name in the Access Control tab of the ADLS (Azure Data Lake Storage Account).
-
-**First Party App ID**: 56c1da01-2129-48f7-9355-af6d59d42766
+Granting Access | If you do not wish to provide us the Access Keys to their Azure Data Lake Gen 2 Storage account, you will need to grant read access to our GCS (Graph Connector Services) First Party Name in the Access Control tab of the ADLS (Azure Data Lake Storage Account).<br></br> **First Party App ID**: 56c1da01-2129-48f7-9355-af6d59d42766
 **First Party App Name**: Graph Connector Service | Optional
-Notification Storage Account and Queue | If in the future there is support added for processing changes near-real time in Graph Connector Services, we can monitor ADLS Change notifications stored in a queue. For this you will need to create a queue either in the same storage account where your ADLS Storage is, or you can use a different storage account and create a queue.
-
-Once you have a queue, you can go to the Events Tab of the queue to configure Event Subscription where you can choose all the Blob events that the queue will receive as well as to connect the Queue to the ADLS Storage account. | Optional
+Notification Storage Account and Queue | If in the future there is support added for processing changes near-real time in Graph Connector Services, we can monitor ADLS Change notifications stored in a queue. For this you will need to create a queue either in the same storage account where your ADLS Storage is, or you can use a different storage account and create a queue.<br></br> Once you have a queue, you can go to the Events Tab of the queue to configure Event Subscription where you can choose all the Blob events that the queue will receive as well as to connect the Queue to the ADLS Storage account. | Optional
 
 ## Connect to data source
 On the authentication and config screen, please provide Primary Storage Connection String which is a required field for us to access your storage account. You can get this by going to the Azure Portal and navigating to the Keys section of the ADLS Storage account. Copy the connection string and paste it in here.
