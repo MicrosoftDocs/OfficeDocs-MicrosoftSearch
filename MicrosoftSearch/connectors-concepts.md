@@ -17,10 +17,10 @@ description: "concepts about connectors"
 
 # Connectors Concepts
 
-### High-level architecture
+## High-level architecture
 { INSERT GRAPHIC HERE = what does the graphic look like for MS-built connectors vs partner vs build your own? } 
 
-### Definitions
+## Definitions
 
 *Data source*
 The data source is the third-party data you want to be indexed and stored in the Microsoft Search index. The data source can either live on-premises or in the cloud.
