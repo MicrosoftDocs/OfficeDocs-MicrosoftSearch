@@ -9,11 +9,12 @@
 #Insights
 #Answers
 ##[Plan your content](plan-your-content.md)
+##[Manage Acronyms](manage-acronyms.md)
 ##[Manage bookmarks](manage-bookmarks.md)
 ##[Manage Q&As](manage-qas.md)
 ##[Manage locations](manage-locations.md)
 ##[Manage floor plans](manage-floorplans.md)
-#[Connectors](connectors.md)
+#[Connectors preview](connectors-preview.md)
 #Customization and configuration
 #[User adoption guide](user-adoption-guide.md)
 #[Frequently asked questions](faqs.md)
