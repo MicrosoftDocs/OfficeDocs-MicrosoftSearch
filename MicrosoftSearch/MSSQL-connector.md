@@ -56,6 +56,7 @@ A full-crawl watermark column is used by the connector to batch and resume full 
 * “ORDER BY CreatedDateTime ASC”: Sort on watermark column in ascending or descending order. 
 
 **Additional watermark configuration**
+
 ![](MSSQL-watermark.png)
 
 In the above configuration, CreatedDateTime is the selected watermark column. The admin needs to specify the data type of watermark column to fetch the first batch of rows. In this case, the data type is 'DateTime'. 
