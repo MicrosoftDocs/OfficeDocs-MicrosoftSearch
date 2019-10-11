@@ -14,7 +14,8 @@
 ##[Manage locations](manage-locations.md)
 ##[Manage floor plans](manage-floorplans.md)
 #Connectors (preview)
-##[Overview and concepts](overview-concepts.md)
+##[Overview](connectors-overview.md)
+##[Concepts](connectors-concepts.md)
 ##[Connectors Preview](connectors-preview.md)
 ##[Connectors Catalog](connectors-catalog.md)
 ##[Manage your connector](manage-connector.md)
@@ -27,7 +28,7 @@
 ###[Microsoft SQL](MSSQL-connector.md)
 ###[MediaWiki](mediawiki-connector.md)
 ###[ServiceNow](servicenow-connector.md)
-##[Terms and conditions](terms-and-conditions.md)
+##[Terms of Use](terms-and-conditions.md)
 #Customization and configuration
 #[User adoption guide](user-adoption-guide.md)
 #[Frequently asked questions](faqs.md)
