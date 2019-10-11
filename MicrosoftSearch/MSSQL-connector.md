@@ -35,7 +35,7 @@ You need to configure the database server you want crawled and the on-premises d
 
 ## Full crawl (required)
 In this step, you need to configure the SQL query which will be executed for full crawl of the database. The full crawl selects all the columns you want to be made **queryable**, **searchable**, or **retrievable** (See [connector concepts](connectors-concepts.md) for more information on search schemas). Additionally, you can specify the ACL columns which you plan to use to restrict access of the search results to a specific set of users or groups.
->[NOTE!]
+>[!TIP]
 >You may have to join multiple tables to get all the desired columns.
 
 ### Example
@@ -82,5 +82,4 @@ The above example has components that resemble the full crawl components with th
 * Access Control Lists (ACLs) are supported only using User Principal Name (UPN), Azure Active Directory ID (AAD), or Active Directory Security ID (SID). 
 ( ADD LINKS ^^^^ ???)
 * The connector does not support indexing rich content present inside the database columns such as HTML, JSON, XML, blobs, and document parsings present as links inside the database column.
-
 
