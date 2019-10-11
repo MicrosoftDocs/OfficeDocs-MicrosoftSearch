@@ -22,13 +22,13 @@ description: "concepts about connectors"
 
 ## Definitions
 
-*Data source*
+### Data source 
 The data source is the third-party data you want to be indexed and stored in the Microsoft Search index. The data source can either live on-premises or in the cloud.
 
-*Connection*
+### Connection
 A connection to a data source entails proper access to the data (authentication), traversal of the document repository, and feeding of the data to the graph connector service for indexing. 
 
-*Search schema*
+### Search schema
 The search schema is a set of search attributes associated with the set of managed properties—these attributes enable search functionalities of the different properties and help determine what results are displayed on the search results page and what results are searchable from the end user experience. The following attributes are supported and enable the following functionalities:
 
 **Managed Property Setting** | **What it does** | **Example**
@@ -37,11 +37,11 @@ The search schema is a set of search attributes associated with the set of manag
 *Queryable* | Enables searching for a match for that particular property. The property name must be specified in the query either programmatically or verbatim. | If the property is “Title,” a query must contain “Title: Enterprise.”
 *Retrievable* | Enables the content of this property to be displayed in the search results. | 
 
-*Custom search application*
+### Custom search application
 A software application built on top of Microsoft Graph APIs that enables custom search capabilities and custom search interfaces. Customizable search capabilities include search rankings, filtering results, and data source reporting. Learn how to build your own application experience on top of M365 and third-party data here. 
 ( INSERT LINKS ABOVE ) ^^^
 
-*Search user interface*
+### Search user interface
 The user interface (UI) used by your employees or customers to search content from your Microsoft Search application. Learn how to customize your search UI by creating your verticals and modern result types here.
 ( INSERT LINKS ABOVE ) ^^^
 
