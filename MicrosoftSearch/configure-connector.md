@@ -86,7 +86,7 @@ After you have set up all the settings to configure your connector, the admin po
 ## Next Steps: Search Results Page Customization
 A search vertical allows the user to filter based on content type and manifests as a tab at the top of the search results page. A modern result type (MRT) is the UI designating how the search result is presented on the search results page. To learn more about how to create your verticals and modern result types, see Search results page customization.
 
-> [NOTE!]
+> [!NOTE]
 > Once you have established your connection, you must create a new vertical and modern result type. Without this step, data from your connection will not show up in the search results page.
 
 ## How do I know this worked?
