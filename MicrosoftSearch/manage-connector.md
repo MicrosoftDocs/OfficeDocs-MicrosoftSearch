@@ -15,7 +15,7 @@ search.appverid:
 description: "Manage Microsoft Graph Connectors in the M365 Admin portal."
 ---
 
-# Manage Microsoft Graph Connectors in the M365 Admin portal
+# Manage you Connector in the M365 Admin portal
 
 In order to get access to manage your connectors, you must be designated as a search administrator for your tenant. If you are not a search administrator, you must contact your tenant administrator to provision you for this role.
 
