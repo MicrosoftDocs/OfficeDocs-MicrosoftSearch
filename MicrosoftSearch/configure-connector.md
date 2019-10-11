@@ -33,9 +33,9 @@ For any of the Microsoft built-in connectors, you can begin configuring your con
 1.	In the [Microsoft 365 admin center](https://admin.microsoft.com), log into your account using the credentials of your M365 test tenant.
 2.	Go to **Settings** > **Microsoft Search** > **Connectors**. 
 3.	Select **Add a connector**.
+![](addconnector.png)
 4.	From the list of available connectors, select the connector of your choice.
-
-( ADD PHOTOS OF FINAL PRODUCT ??????? )
+![](addconnectortype.png)
 
 ## Step 1: Name the connector
 When you first create a connection, you must specify:
