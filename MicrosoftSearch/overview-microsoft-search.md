@@ -144,7 +144,7 @@ You can customize the classic search experience, for example by adding custom re
 ## Microsoft Search in Bing
 Because work-related searches may be sensitive, Microsoft Search uses a set of trust measures for how these searches are handled by the public web results part of Bing.
 
-Microsoft Search requests are made over HTTPS. This ensures the connection is encrypted end-to-end for enhanced security. Additionally, all search logs pertaining to Microsoft Search traffic are de-identified and stored separately from public, non-Microsoft Search traffic. 
+Microsoft Search requests are made over HTTPS. This ensures the connection is encrypted end-to-end for enhanced security. Additionally, all search logs pertaining to Microsoft Search traffic are de-identified and stored separately from public, non-Microsoft Search traffic.
 
 Regardless of whether a user query contains one or more work-related results in the returned response, the following measures are taken:
 
@@ -154,7 +154,7 @@ Regardless of whether a user query contains one or more work-related results in 
 
 **Advertising** – Enterprise search queries are never shared with or suggested to advertisers.
 
-Ads are never targeted to a user based on their work identity or organization. 
+Ads are never targeted to a user based on their work identity or organization.
 
 ## See also
 
