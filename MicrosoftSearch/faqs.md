@@ -57,3 +57,4 @@ Details can be found in the [Compliance Framework for Industry Standards and Reg
 ## Can users earn Microsoft Rewards points with their work or school account?
 
 Microsoft Search requires that enterprise users sign in with a work or school account. But users can’t join or sign in to the Microsoft Rewards program with those accounts. However, there is an instance when an enterprise user may see Rewards points accrue. This can happen when a Microsoft Search user has a Rewards account that was created with a <a href="https://www.microsoft.com/en-us/welcome?rtc=1">Microsoft account</a>. (The email address associated with a Microsoft account can be from Outlook.com, Hotmail.com, Gmail, Yahoo, or other providers.) If users sign in alternately with both their work account and Microsoft account in the same browser session, they might accrue points to their Rewards account. Users can stop accruing points while searching with Microsoft Search by clearing their cookies. 
+
