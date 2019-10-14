@@ -17,5 +17,7 @@ description: "MediaWiki connector configuration in the M365 Admin portal."
 
 # MediaWiki connector configuration in the M365 Admin portal
 
-content TBD 
+........... content TBD .............
+
+This article is intended for M365 Search administrators, or anyone who is responsible for configuring, running, and monitoring the connector. Here you can find information on what to know before configuring your connector, how to get started, and additional information regarding connector capabilities, limitations, and troubleshooting techniques.   
 

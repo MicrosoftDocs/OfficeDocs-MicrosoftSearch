@@ -20,7 +20,7 @@ description: "File share connector configuration in the M365 Admin portal."
 ## Overview
 The file share connector for Microsoft Search will allow the users in your organization to search on-premises file shares. The search results from these shares will be merged with the results from Sharepoint and One Drive for Business (ODB).
 
-This article is intended for Microsoft Search file share connector administrators, or anyone who is responsible for configuring, running, and monitoring the connector. Here you can find information on what to know before configuring your connector, additional information regarding connector capabilities, and limitations.
+This article is intended for M365 Search administrators, or anyone who is responsible for configuring, running, and monitoring the connector. Here you can find information on what to know before configuring your connector, how to get started, and additional information regarding connector capabilities, limitations, and troubleshooting techniques.
 
 ## Connect to data source
 In the connect to data source page do the following:
