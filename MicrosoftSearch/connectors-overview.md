@@ -40,7 +40,7 @@ Microsoft provides ready to configure out-of-the-box connectors available to set
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The Azure Data Lake Storage Gen2 connector for Microsoft Search will allow your organization to search for files and their content stored in Azure Blob Containers and hierarchy enabled folders within a given Azure Data Lake Storage Account.</p>
+                        <p>The Azure Data Lake Storage Gen2 connector for Microsoft Search will allow your organization to search for files and their content stored in Azure Blob Containers and hierarchy enabled folders within a given Azure Data Lake Storage Account.<br></br></p>
                         <p><a href=azure-data-lake-connector.md>More details</a> <img src="Azure_Data_Lake_Small.png" alt="ADLS logo" width="35" height="35" align="right"></p>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ Microsoft provides ready to configure out-of-the-box connectors available to set
                     <div class="cardText">
                         <h3>Enterprise Website</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The enterprise website connector for Microsoft Search will allow your organization to search for files and their content stored in any non-Sharepoint enterprise website.</p> <a href=enterprise-web-connector.md>More details</a> <img src="IntranetSites_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
+                        <p>The enterprise website connector for Microsoft Search will allow your organization to search for files and their content stored in any non-Sharepoint enterprise website.<br></br><br></br></p> <a href=enterprise-web-connector.md>More details</a> <img src="IntranetSites_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ Microsoft provides ready to configure out-of-the-box connectors available to set
                     <div class="cardText">
                         <h3>File share</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The file share connector for Microsoft Search will allow your organization to search for on-premises file shares.</p>
+                        <p>The file share connector for Microsoft Search will allow your organization to search for on-premises file shares.<br></br><br></br></p>
                         <p><a href=file-share-connector.md>More details</a> <img src="FileConnectorLogo_Small.png" alt="ADLS logo" width="35" height="35" align="right"></p>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ Microsoft provides ready to configure out-of-the-box connectors available to set
                     <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The MediaWiki connector for Microsoft Search will allow your organization to search for MediaWiki articles through your registered account.</p>
+                        <p>The MediaWiki connector for Microsoft Search will allow your organization to search for MediaWiki articles through your registered account.<br></br></p>
                         <p><a href=mediawiki-connector.md>More details</a> <img src="MediaWiki_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ Microsoft provides ready to configure out-of-the-box connectors available to set
                     <div class="cardText">
                         <h3>Microsoft SQL</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The Microsoft SQL connector for Microsoft Search will allow your organization to search data housed in on-premises SQL databases.</p>
+                        <p>The Microsoft SQL connector for Microsoft Search will allow your organization to search data housed in on-premises SQL databases.<br></br><br></br></p>
                         <p><a href=MSSQL-connector.md>More details</a> <img src="SqlConnectorLogo_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
                     </div>
                 </div>
@@ -111,7 +111,7 @@ Microsoft provides ready to configure out-of-the-box connectors available to set
                     <div class="cardText">
                         <h3>ServiceNow</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The ServiceNow connector for Microsoft Search will allow your organization to search for knowledge-based articles from your application.</p>
+                        <p>The ServiceNow connector for Microsoft Search will allow your organization to search for knowledge-based articles from your application.<br></br></p>
                         <p><a href=servicenow-connector.md>More details</a> <img src="ServiceNow_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
                     </div>
                 </div>
