@@ -1,4 +1,4 @@
-#Plan for Microsoft Search - IGNITE
+#Plan for Microsoft Search - IGNITE 
 ##[Overview](overview-microsoft-search.md)
 ##[Set up](setup-microsoft-search.md)
 ##[Get started with Microsoft Search in SharePoint](get-started-search-in-sharepoint-online.md)
