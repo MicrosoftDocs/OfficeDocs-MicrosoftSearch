@@ -20,7 +20,6 @@ ms.author: monaray
 * <a href="#connectors">What are connectors?</a>
 * <a href="#types">Types of connectors</a>
 * <a href="#office365">Office 365 plans we support</a>
-* <a href="concepts">Connector concepts</a>
 
 <h2 id="connectors">What are connectors?</h2>
 

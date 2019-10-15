@@ -121,6 +121,50 @@ Add a short description.
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
+                        <h3>Aderant</h3>
+                        <p>by <a href="https://www.bainsight.com/indexing-connectors/">BA Insight</a></p>
+                        <p>The Aderant connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time.</p>
+                        <p><a href="https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/">More details</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                       <h3>Adobe AEM</h3>
+                        <p>by <a href="https://www.raytion.com/products/enterprise-search-connectors">Raytion</a></p>
+                        <p>Indexes pages, attachments, and other generated document types from Adobe AEM in near real time. The connector fully supports AEM’s built-in user and group management, as well as AEM installations based on Active Directory and other directory services. 6th generation Raytion search connector.</p>
+                        <p><a href="mailto:search@raytion.com">Contact us</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Adobe Experience Manager</h3>
+                        <p>by <a href="https://www.accenture.com/us-en/services/applied-intelligence/search-content-analytics-content-connectors">Accenture</a></p>
+                        <p></p>
+                        <p><a href="mailto:info.stc@accenture.com">Contact us</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+<ul class="panelContent cardsZ">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
                         <h3>Adobe AEM</h3>
                         <p>by <a href="https://www.raytion.com/products/enterprise-search-connectors">Raytion</a></p>
                         <p>Connector for Adobe AEM with full support of its security model. Indexes pages, attachments, and other generated document types from Adobe AEM in near real time. The connector fully supports AEM’s built-in user and group management, as well as AEM installations based on Active Directory and other directory services. 6th generation Raytion search connector. </p>
