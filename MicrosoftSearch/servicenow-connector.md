@@ -20,7 +20,7 @@ description: "ServiceNow connector configuration in the M365 Admin portal."
 ## Overview
 The ServiceNow connector for Microsoft Search will allow your organization to index **knowledge base articles** that are visible to all users within your tenant. Once you have configured the connector and sync’d content from ServiceNow, the end user will then be able to search for those articles from any Microsoft Search client.   
 
-This article is intended for M365 Search administrators, or anyone who is responsible for configuring, running, and monitoring the connector. Here you can find information on what to know before configuring your connector, how to get started, and additional information regarding connector capabilities, limitations, and troubleshooting techniques. 
+This article is intended for M365 Search administrators, or anyone who is responsible for configuring, running, and monitoring the connector. Here you can find information on what to know before configuring your connector, how to get started, and additional information regarding connector capabilities, limitations, and troubleshooting techniques.
 
 ## Things to know before configuring your connector
 * Your organization’s ServiceNow instance URL: This will typically look like https:/?<your-organization-domain>.service-now.com 

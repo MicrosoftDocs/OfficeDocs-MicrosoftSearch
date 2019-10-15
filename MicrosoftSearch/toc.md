@@ -28,7 +28,7 @@
 ###[Microsoft SQL](MSSQL-connector.md)
 ###[MediaWiki](mediawiki-connector.md)
 ###[ServiceNow](servicenow-connector.md)
-##[Terms of Use](terms-and-conditions.md)
+##[Terms of Use](terms-of-use.md)
 #Customization and configuration
 #[User adoption guide](user-adoption-guide.md)
 #[Frequently asked questions](faqs.md)

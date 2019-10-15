@@ -20,7 +20,7 @@ description: "Microsoft SQL connector configuration in the M365 Admin portal."
 ## Overview
 The Microsoft (MS) SQL server connector for Microsoft Search will allow your organization to discover and index data from an on-premises MS SQL server database. The connector will ingest the specified content into the Microsoft search index and support periodic full and incremental crawl to keep the index up to date with the source. SQL server connector supports restricting access to the search results by specifying Access Control Lists (ACLs) while configuring the connector. 
 
-This article is intended for Microsoft Search MS SQL connector administrators, or anyone who is responsible for configuring, running, and monitoring the connector. Here you can find information on what to know before configuring your connector, additional information regarding connector capabilities, and limitations.
+This article is intended for M365 Search administrators, or anyone who is responsible for configuring, running, and monitoring the connector. Here you can find information on what to know before configuring your connector, how to get started, and additional information regarding connector capabilities, limitations, and troubleshooting techniques.
 
 ## Things to know before configuring your connector
 MS SQL server connector connects to the data source and traverses the content by issuing specified SQL queries during configuration. SQL queries need to enlist all the database columns the admin desires to index, including any SQL-joins which need to be performed to get all the columns. The SQL query also needs to specify the Access Control Lists (ACLs) which will be used to restrict access to the search results.

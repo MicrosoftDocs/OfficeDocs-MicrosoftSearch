@@ -23,7 +23,7 @@ Microsoft Graph connectors, indexing APIs and search APIs are currently in previ
 To try connectors, you must have the Targeted release option set for either your tenant, or for your Search and Tenant admins. The Targeted release requirement applies regardless of which preview environment you choose below. 
  
 To learn more about the Targeted Release option and how to set it, click [here](https://docs.microsoft.com/en-us/office365/admin/manage/release-options-in-office-365?view=o365-worldwide). 
- 
+
 ## Environment for Preview 
 There are 2 ways that we recommend customers to try out connectors, the indexing APIs and search APIs: 
 1.	Test tenant. Many customers have a tenant that they use to try out new features before moving full-scale production. If your organization has a test tenant, we encourage you to use it to try connectors and give us feedback. 
