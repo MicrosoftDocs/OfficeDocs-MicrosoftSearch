@@ -391,7 +391,7 @@ Add a short description.
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Alfresco</h3>
+                        <h3>Azure SQL Database</h3>
                         <p>by <a href="https://www.bainsight.com/indexing-connectors/">BA Insight</a></p>
                         <p>The Alfresco Connector supports both full and incremental crawls. Incremental crawls extract only content which has changed since the last crawl.</p>
                         <p><a href="https://www.bainsight.com/connectors/alfresco-connector-sharepoint-azure-elasticsearch/">More details</a></p>

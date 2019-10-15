@@ -17,21 +17,29 @@ description: "Configure a gateway connection"
 
 # Configure a gateway connection
 
-TODO !!!!!!!!!!!
+The on-premises data gateway acts as a bridge to provide quick and secure data transfer between on-premises data (data that isn't in the cloud) and several Microsoft cloud services, such as Power BI. By using a gateway, organizations can keep databases and other data sources on their on-premises networks, yet securely use that on-premises data in cloud services.
 
-## Gateway setup
-The file share connector relies on PowerBI gateway for connecting with your on-premises file share. Follow the steps to install the gateway:
-•	Please visit this link to download and install the latest gateway setup
-•	Machine specification requirements are also present in the same page
-•	The machine needs to be in the same network as the file share for better performance
-•	It is recommended that you use a dedicated machine for this gateway
-•	Please use your test tenant credentials to sign in during installation
-•	Please add the search admin as the admin for the gateway machine
-•	During the private preview and even later, it is recommended that all the regular updates gateway prompts with are installed
-•	Please enable gateway monitoring for the private preview using the following steps: 
-o	Turn on performance counters and change flags in the configuration file to enable logging. Please follow the steps in this link : https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-performance
-	Please make sure you have access to the logs folder: \Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report. If you do not, please change this folder location to one that you have access to. (Use “ReportFilePath” in the config file). 
-o	Enable additional logging on the gateway. Turn on the “Additional logging” toggle on the Diagnostics tab of gateway. You can find more information on this here (Update 2).
-o	You might be asked to send the logs to the Microsoft team in case of any reported bugs on the gateway.
+## Installing your gateway
+You can follow the steps in [this article](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem) to download and install your Power BI gateway.
+
+Please note the following machine specification requirements for configuration:
+* The machine needs to be in the same network as the on-premises database for better performance 
+* It is recommended you use a dedicated machine for this gateway
+
+## Things to note during setup
+* Use your test tenant credentials to sign in during installation
+* Add the search admin as the admin for the gateway machine
+* Ensure all regular updates the gateway prompts are installed
+
+## Enabling gateway monitoring 
+Turn on performance counters and change flags in the configuration file to enable logging by following [these steps](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-performance).
+
+>[!NOTE]
+Make sure you have access to the logs folder: *\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report* <br></br> If you do not, please change this folder location to one that you have access to. (Use “ReportFilePath” in the config file). Turn on the “Additional logging” toggle on the Diagnostics tab of gateway to enable additional logging.
+
+>[!NOTE]
+You might be asked to send the logs to the Microsoft team in case of any reported bugs on the gateway.
+
+For additional resources on configuring your gateway connection see [this in-depth article on on-premises data gateways](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem-indepth).
 
 
