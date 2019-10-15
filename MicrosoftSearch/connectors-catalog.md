@@ -346,10 +346,10 @@ Add a short description.
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Alfresco</h3>
-                        <p>by <a href="https://www.bainsight.com/indexing-connectors/">BA Insight</a></p>
-                        <p>The Alfresco Connector supports both full and incremental crawls. Incremental crawls extract only content which has changed since the last crawl.</p>
-                        <p><a href="https://www.bainsight.com/connectors/alfresco-connector-sharepoint-azure-elasticsearch/">More details</a></p>
+                        <h3>Azure Blob Storage</h3>
+                        <p>by <a href="https://www.accenture.com/us-en/services/applied-intelligence/search-content-analytics-content-connectors">Accenture</a></p>
+                        <p></p>
+                        <p><a href="mailto: info.stc@accenture.com">Contact us</a></p>
                     </div>
                 </div>
             </div>
@@ -360,10 +360,11 @@ Add a short description.
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                       <h3>Alfresco Content Services</h3>
-                        <p>by <a href="https://www.raytion.com/products/enterprise-search-connectors">Raytion</a></p>
-                        <p>Connector for Alfresco One. Indexes documents, folders and user profiles from Alfresco One in near real time. The connector fully supports Alfresco’s built-in user and group management, as well as Alfresco installations based on Active Directory and other directory services. 6th generation Raytion search connector.</p>
-                        <p><a href="mailto:search@raytion.com">Contact us</a></p>                    </div>
+                        <h3>Azure Data Lake</h3>
+                        <p>by <a href="https://www.accenture.com/us-en/services/applied-intelligence/search-content-analytics-content-connectors">Accenture</a></p>
+                        <p></p>
+                        <p><a href="mailto: info.stc@accenture.com">Contact us</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -373,10 +374,10 @@ Add a short description.
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Amazon Aurora</h3>
-                        <p>by <a href="https://www.bainsight.com/indexing-connectors/">BA Insight</a></p>
-                        <p>Our Amazon Aurora Connector is built upon industry standard database access methods, so it equally supports databases from other systems such as Oracle, MySQL, and IBM DB2</p>
-                        <p><a href="https://www.bainsight.com/connectors/amazon-aurora-connector-sharepoint-azure-elasticsearch/">More details</a></p>
+                        <h3>Azure Event Hub</h3>
+                        <p>by <a href="https://www.accenture.com/us-en/services/applied-intelligence/search-content-analytics-content-connectors">Accenture</a></p>
+                        <p></p>
+                        <p><a href="mailto: info.stc@accenture.com">Contact us</a></p>
                     </div>
                 </div>
             </div>
