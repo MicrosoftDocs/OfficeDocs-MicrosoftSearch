@@ -39,7 +39,7 @@ Microsoft provides ready to configure out-of-the-box connectors available to set
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The Azure Data Lake Storage Gen2 connector for Microsoft Search will allow your organization to search for files and their content stored in Azure Blob Containers and hierarchy enabled folders within a given Azure Data Lake Storage Account.<br></br></p>
+                        <p>The Azure Data Lake Storage Gen2 connector for Microsoft Search will allow your organization to search for files and their content stored in Azure Blob Containers and hierarchy enabled folders within a given Azure Data lake Storage Account.</p>
                         <p><a href=azure-data-lake-connector.md>More details</a> <img src="Azure_Data_Lake_Small.png" alt="ADLS logo" width="35" height="35" align="right"></p>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ Microsoft provides ready to configure out-of-the-box connectors available to set
                     <div class="cardText">
                         <h3>Enterprise Website</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The enterprise website connector for Microsoft Search will allow your organization to search for files and their content stored in any non-Sharepoint enterprise website.<br></br><br></br></p> <a href=enterprise-web-connector.md>More details</a> <img src="IntranetSites_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
+                        <p>The Enterprise Website connector for Microsoft Search will allow your organization to index content from your company’s websites that are visible to all users within your company (tenant) but not visible to people outside your company. Once you have configured the connector and synced content from the website, the end user will then be able to search for those articles from any Microsoft Search client.</p><a href=enterprise-web-connector.md>More details</a> <img src="IntranetSites_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@ Microsoft provides ready to configure out-of-the-box connectors available to set
                     <div class="cardText">
                         <h3>File share</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The file share connector for Microsoft Search will allow your organization to search for on-premises file shares.<br></br><br></br></p>
+                        <p>The file share connector for Microsoft Search will allow the users in your organization to search on-premises file shares. The search results from these shares will be merged with the results from Sharepoint and One Drive for Business (ODB).</p>
                         <p><a href=file-share-connector.md>More details</a> <img src="FileConnectorLogo_Small.png" alt="ADLS logo" width="35" height="35" align="right"></p>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ Microsoft provides ready to configure out-of-the-box connectors available to set
                     <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The MediaWiki connector for Microsoft Search will allow your organization to search for MediaWiki articles through your registered account.<br></br></p>
+                        <p>TBD</p>
                         <p><a href=mediawiki-connector.md>More details</a> <img src="MediaWiki_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ Microsoft provides ready to configure out-of-the-box connectors available to set
                     <div class="cardText">
                         <h3>Microsoft SQL</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The Microsoft SQL connector for Microsoft Search will allow your organization to search data housed in on-premises SQL databases.<br></br><br></br></p>
+                        <p>The Microsoft SQL server connector for Microsoft Search will allow your organization to discover and index data from an on-premises MS SQL server database. The connector will ingest the specified content into the Microsoft search index and support periodic full and incremental crawl to keep the index up to date with the source. SQL server connector supports restricting access to the search results by specifying Access Control Lists (ACLs) while configuring the connector.</p>
                         <p><a href=MSSQL-connector.md>More details</a> <img src="SqlConnectorLogo_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ Microsoft provides ready to configure out-of-the-box connectors available to set
                     <div class="cardText">
                         <h3>ServiceNow</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The ServiceNow connector for Microsoft Search will allow your organization to search for knowledge-based articles from your application.<br></br></p>
+                        <p>The ServiceNow connector for Microsoft Search will allow your organization to index Knowledge base articles that are visible to all users within your tenant. Once you have configured the connector and synced content from ServiceNow, the end user will then be able to search for those articles from any Microsoft Search client.</p>
                         <p><a href=servicenow-connector.md>More details</a> <img src="ServiceNow_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
                     </div>
                 </div>
