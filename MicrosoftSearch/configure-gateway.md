@@ -16,11 +16,10 @@ description: "Configure a gateway connection"
 ---
 
 # Configure a gateway connection
-
 The on-premises data gateway acts as a bridge to provide quick and secure data transfer between on-premises data (data that isn't in the cloud) and several Microsoft cloud services, such as Power BI. By using a gateway, organizations can keep databases and other data sources on their on-premises networks, yet securely use that on-premises data in cloud services.
 
 ## Installing your gateway
-You can follow the steps in [this article](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem) to download and install your Power BI gateway.
+You can follow the steps in [this article](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install) to download and install your Power BI gateway.
 
 Please note the following machine specification requirements for configuration:
 * The machine needs to be in the same network as the on-premises database for better performance 
