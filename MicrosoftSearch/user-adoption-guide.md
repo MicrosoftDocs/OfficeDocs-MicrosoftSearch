@@ -116,7 +116,7 @@ All communications should educate users about how they can sign in to Bing to fi
   
  **Engage partner teams**
   
-As an integral part of Microsoft 365, Microsoft Search complies with GDPR and Tier-C guidelines. Depending on your organization, it may be necessary to share information about Microsoft Search with your privacy and security teams. For more information, see [Security for Microsoft Search](security.md).
+As an integral part of Microsoft 365, Microsoft Search complies with GDPR and Tier-C guidelines. Depending on your organization, it may be necessary to share information about Microsoft Search with your privacy and security teams. For more information, see [Security for Microsoft Search](overview-microsoft-search#microsoft-search-in-bing-protects-enterprise-searches).
   
 Make sure your help desk knows about the features and functionality of Microsoft Search, as well as the user requirements to sign in, so they can more effectively support users. For more information, see [Use Microsoft Search](use/about-microsoft-search.md) and [FAQs](faqs.md).
   
