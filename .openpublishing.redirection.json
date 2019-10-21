@@ -1,0 +1,16 @@
+{
+  "redirections": [
+      {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/about-the-admin-portal.md",
+          "redirect_url": "/MicrosoftSearch/use/sign-in",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/set-default-browser.md",
+          "redirect_url": "/MicrosoftSearch/use/sign-in",
+          "redirect_document_id": false
+      }
+  ]
+}
+
+
