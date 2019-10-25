@@ -30,7 +30,7 @@ ms.author: samanro
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Data Lake Storage connector also indexes hierarchy-enabled folders in Data Lake Storage accounts that you specify.</p>
-                        <p><b><a href=azure-data-lake-connector.md>More details</a></b> <img src="Azure_Data_Lake_Small.png" alt="ADLS logo" width="35" height="35" align="right"></p>
+                        <p><b><a href=azure-data-lake-connector.md><font color="FF00CC">More details</font></a></b> <img src="Azure_Data_Lake_Small.png" alt="ADLS logo" width="35" height="35" align="right"></p>
                     </div>
                 </div>
             </div>
