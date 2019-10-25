@@ -23,6 +23,7 @@ Add a short description.
 
 <h2 id="Microsoft">Connectors by Microsoft</h2>
 <ul class="panelContent cardsZ">
+<div class="d-flex align-items-stretch">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -64,6 +65,7 @@ Add a short description.
             </div>
         </div>
     </li>
+    </div>
 </ul>
 <ul class="panelContent cardsZ">
     <li>
