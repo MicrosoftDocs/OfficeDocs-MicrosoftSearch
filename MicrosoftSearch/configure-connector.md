@@ -25,7 +25,7 @@ This article guides search administrators through the steps of configuring a Mic
 * [Microsoft SQL](MSSQL-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
-## SET UP
+## Set up
 To configure any of the Microsoft-built connectors, go to the Microsoft 365 [admin center]():
 1.	Sign in to your account with the credentials for your Microsoft 365 test tenant.
 2.	Go to **Settings** > **Microsoft Search** > **Connectors**.

@@ -15,46 +15,38 @@ search.appverid:
 description: "Azure Data Lake configuration in the M365 Admin portal."
 ---
 
-# Azure Data Lake connector configuration in the M365 Admin portal
+# CONFIGURE A CONNECTOR FOR AZURE DATA LAKE  GEN2 IN MICROSOFT 365
 
-## Overview
-The Azure Data Lake Storage Gen2 connector for Microsoft Search will allow your organization to search for files and their content stored in Azure Blob Containers and hierarchy enabled folders within a given Azure Data lake Storage Account. 
+With the [Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction) connector for Microsoft Search, users in your organization can search for files and their content. This connector accesses data stored in Azure Blob containers and hierarchy-enabled folders within an Azure Data Lake Storage Gen 2 account.
 
-This article is intended for M365 Search administrators, or anyone who is responsible for configuring, running, and monitoring the connector. Here you can find information on what to know before configuring your connector, how to get started, and additional information regarding connector capabilities, limitations, and troubleshooting techniques.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Azure Data Lake connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.  
 
-## Things to know before configuring your connector
+## Connect to a data source
 
-**Step** | **Details** | **Required/Optional?** 
---- | --- | --- 
-Subscription Whitelisting | We need to whitelist customer’s Azure Subscription that has the Azure Data Lake Storage Gen 2 Account. This is needed to enable using Multi-Protocol Access based SDK to access the Azure Data Lake Storage Gen 2 Account. | Required
-Granting Access | If you do not wish to provide us the Access Keys to their Azure Data Lake Gen 2 Storage account, you will need to grant read access to our GCS (Graph Connector Services) First Party Name in the Access Control tab of the ADLS (Azure Data Lake Storage Account).<br></br><br></br> **First Party App ID**: 56c1da01-2129-48f7-9355-af6d59d42766<br></br> **First Party App Name**: Graph Connector Service | Optional
-Notification Storage Account and Queue | If in the future there is support added for processing changes near-real time in Graph Connector Services, we can monitor ADLS Change notifications stored in a queue. For this you will need to create a queue either in the same storage account where your ADLS Storage is, or you can use a different storage account and create a queue.<br></br><br></br> Once you have a queue, you can go to the Events Tab of the queue to configure Event Subscription where you can choose all the Blob events that the queue will receive as well as to connect the Queue to the ADLS Storage account. | Optional
+### Primary storage connection string 
+On the **Authentication and config** screen, provide the Primary Storage Connection String. That string is required to allow access to your storage account. To find your connection string, go to the [Azure portal](https://ms.portal.azure.com/#home) and navigate to the **Keys** section of the Data Lake Storage Gen 2 account. Copy and paste the connection string in the appropriate field on the screen.
 
-## Connect to data source
-On the authentication and config screen, please provide Primary Storage Connection String which is a required field for us to access your storage account. You can get this by going to the Azure Portal and navigating to the Keys section of the ADLS Storage account. Copy the connection string and paste it in here.
+If you do not want to provide the **AccountKey** (a parameter in the primary storage connection string), you have to grant read access to our Graph Connectors Service. In the **Access Control** tab of your Data Lake Storage Gen 2 account, follow the instructions to grant access to the following app:
+    First Party App ID: 56c1da01-2129-48f7-9355-af6d59d42766
+    First Party App Name: Graph Connector Service
 
-![](ADLS-connect2data.png)
+### Storage account and queue notifications (Optional)
+Support to process changes in real time in the Graph Connectors Service might be added in the future. In that case, we’ll monitor Data Lake Storage Gen 2 change notifications stored in a queue. You’ll need to create a queue in the same account as your Data Lake Storage Gen 2 or in another storage account.
 
-## Search schema
-On the Manage Schema screen, you can optionally change the queryable, searchable and retrievable properties of the File Schema that will be indexed from ADLS Storage Account.
+After you create a queue, go to the **Events** tab in the queue page to configure Event Subscription. Choose all the Blob events that the queue will receive and connect the queue to the Data Lake Storage Gen 2 account.
 
-![](ADLS-schema.png)
+## Manage the search schema
+On the **Manage Schema** screen, you have the option to change the schema attributes (queryable, searchable, and retrievable) associated with the managed properties. These managed property attributes are data indexed from your Data Lake Storage Gen 2 account.
 
 ## Manage search permissions
-On the Manage search permissions screen, you can choose to have us ingest the Access Control (ACLs) from your Storage account and do trimming of search content based on the currently logged in AAD User or make all the content indexed from your Storage Account visible to everyone in your organization.
-
-![](ADLS-ACLs.png)
-
-## Set refresh schedule 
-On the Refresh Settings screen, you can set the incremental crawl interval and the full crawl intervals. The default is 15 minutes for the incremental crawl and 1 week for the full crawl. 
-
-![](ADLS-refresh.png)
-
+On the **Manage search permissions** screen, you can choose to ingest the Access Control Lists (ACLs) from your storage account. When these search permissions are set, search content is trimmed based on the permissions assigned to the signed-in Azure AD user searching the content. Alternatively, you can choose to make all the content indexed from your storage account visible to everyone in your organization. In this case, everyone in your organization will have access to all the data in your storage account.
+ 
+## Set the refresh schedule
+On the **Refresh Settings** screen, you can set the incremental crawl interval and the full crawl intervals. The defaults are 15 minutes for an incremental crawl and one week for a full crawl.
+ 
 ## Limitations
-As of now, ADLS Gen 2 Multi-Protocol Access is only enabled in Central US, West Central US, Canada Central, East US, East Asis, North Europe, East US2, South East Asia, West Europe, West US, Australia East, Japan East, West US2 and Brazil South. Please refer to the documentation below for any updates.
+Currently, Data Lake Storage Gen 2 Multi-Protocol Access is available only in Central US, West Central US, Canada Central, East US, East Asias, North Europe, East US2, South East Asia, West Europe, West US, Australia East, Japan East, West US2, and Brazil South. 
 
-## Additional information & resources
-See [data lake storage multi-protocol access](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-multi-protocol-access) for more information.
-
+For updates and more information, see  [Multi-protocol access on Azure Data Lake Storage (preview)](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-multi-protocol-access).
 
 

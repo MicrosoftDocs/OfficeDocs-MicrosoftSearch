@@ -15,55 +15,45 @@ search.appverid:
 description: "File share connector configuration in the M365 Admin portal."
 ---
 
-# File share connector configuration in the M365 Admin portal
+# Configure a file share connector in Microsoft 365
 
-## Overview
-The file share connector for Microsoft Search will allow the users in your organization to search on-premises file shares. The search results from these shares will be merged with the results from Sharepoint and One Drive for Business (ODB).
+With the file share connector for Microsoft Search, users in your organization can search on-premises file shares. The search results from these shares merge with the results from SharePoint and Microsoft OneDrive for Business.
 
-This article is intended for M365 Search administrators, or anyone who is responsible for configuring, running, and monitoring the connector. Here you can find information on what to know before configuring your connector, how to get started, and additional information regarding connector capabilities, limitations, and troubleshooting techniques.
+This article is intended for Microsoft 365 Search administrators, or anyone who is responsible for configuring, running, and monitoring the connector. Here you can find information on what to know before configuring your connector, how to get started, and additional information regarding connector capabilities, limitations, and troubleshooting techniques.  
 
-## Connect to data source
-In the connect to data source page do the following:
-1. Select **Create** > **Folder**.
-2. Provide a path to the file share.
-3. From the dropdown, select your previously installed gateway. See [configure your gateway](configure-gateway.md) for more information. Provide the credentials of the Windows user account that has **read access** to all the files in the share. Click **Next**.
-4. You will be taken to a screen which lists all the files present in the share. Verify this and click **Create**.
-5. You will be taken to a success screen. Click **Next**.
-6. You can see all the metadata that is fetched in the following screen.
+## Install a data gateway
+In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install and on-premises gateway](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install) to learn more.  
+
+## Connect to a data source
+On the **Connect to data source** page, create a folder and provide a path to the file share. Then select your previously installed gateway. Enter the credentials for a Windows user account with **read access** to all the files in the share. You can then verify the files present in the share and see all the fetched metadata. 
 
 ## Manage search permissions
-In the "Manage search permissions" screen, let the search be visible to **Everyone**.
+In the **Manage search permissions** screen, make the search visible to **Everyone**.
 
-## Set refresh schedule
-The default refresh interval is 15 minutes. You can choose to update this if you would like.
+## Set the refresh schedule
+The recommended default refresh schedule interval is 15 minutes, but you can change it to another interval that you prefer.
 
-## Monitoring the connection
-( ADD SOMETHING ABOUT MANAGE CONNECTORS )
-Admins can also see a progress bar which indicates how many files are identified by the crawl and how many got successfully ingested so far. Right after creating the connection, this progress bar shows the total number of files detected in the share. Once the initial full crawl gets successfully completed, this bar shows the progress for periodic incremental crawls. Only the newly detected changes will be shown in the progress bar for incremental crawl.
+## Set up your search results page
+To display different file connection results in the **Files** and **All** tabs, you need to set up a SharePoint search engine results page (SERP): 
+- The **All* table shows combined results from connections and SharePoint searches. 
+- The **Files** vertical shows results from only file connections.
 
-![](FS-monitor-connection.png)
+To set up your SERP, take these steps:
+1.	Create a SharePoint site collection with a modern search page.
 
-Below are the four states that show up in the ‘status’ column against each connection:
-* **Syncing**: the connector is crawling the data from the source to index the existing items and make any updates
-* **Enabled**: the connection is enabled and there is no active crawl running against it. ‘Last sync time’ indicates when the last successful crawl happened. The connection is as fresh as the time present there.
-* **Paused**: the crawls are paused by the admins through the pause option. The next crawl will run only when it is manually resumed. However, the data from this connection will continue to be searchable.
-* **Failed**: there was a critical failure in the connection. This requires manual intervention. The admin needs to take appropriate action based on the error message shown. Data which was indexed until the error occurred will be searchable.
+2.	Install a [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588).
 
-## Setting up your search results page (SERP)
-You need to set up the SharePoint search engine results page so that different file connections results can be displayed in the ‘Files’ & ‘All’ tabs. Combined results from connections and SharePoint would be found in the ‘All’ tab.. Results from only file connections are displayed in the ‘Files’ vertical. 
+3.	Open SharePoint Online Management Shell as an administrator and import the **Microsoft.SharePoint.Client.dll** module present at `C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll`. 
 
-Follow these steps to set up your SERP:
-1. Create a SharePoint site collection with a modern search page.
+> [!NOTE]
+> This path might not be the same for all users.
 
-2.	Install (if not already installed) [SharePoint Online Management Shell](https://www.microsoft.com/en-us/download/details.aspx?id=35588).
-
-3. Open SharePoint Online (SPO) Management shell as an administrator and import “Microsoft.SharePoint.Client.dll” module present in "C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll". (This path can be different for users). 
-To import the module please run this command in SPO Management shell:
+To import the module, run this command in SharePoint Online Management Shell:
 ```bash
 Import-Module "C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll" 
 ```
 
-4. Run the script inside SPO Management shell.
+4. Now run this script:
 ```bash
 $orgName = Read-Host -prompt 'Please enter your org name'
 $userName = Read-Host -prompt 'Enter user name'
@@ -92,16 +82,12 @@ Write-Host "Success" -ForegroundColor Cyan
 Read-Host -Prompt 'Press enter to exit'
 ```
 
-5. Enter the details (organization name, username, password, site URL, etc.) as prompted in PowerShell.
-
-**Example**: If your admin credentials are admin@a830edad9050849823J19081300.onmicrosoft.com, then your organization name would be a830edad9050849823J19081300 and your site URL would be https:// a830edad9050849823J19081300.sharepoint.com.
-
-![](SPOdetails.png)
+5. Enter the required values in PowerShell, such as organization name, username, password, and site URL. As an **example**, if your admin credentials are `admin@a830edad9050849823J19081300.onmicrosoft.com`, then your organization name is **a830edad9050849823J19081300**, and your site URL is `https:// a830edad9050849823J19081300.sharepoint.com`.
 
 > [!NOTE]
 > The **AllProperties** setting can only be done at a site collection level (Teams/Comms site).
 
-6. Now you should be able to search for ingested files and see them under the "Files" tab. 
+6.	Now you can search for indexed files and see results on the **Files** tab.
 
 ## Searching for file share content in the SERP
 Navigate to the Sharepoint home page of the test tenant to search for any ingested content.
@@ -111,23 +97,19 @@ Navigate to the Sharepoint home page of the test tenant to search for any ingest
 
 File results of local file shares cannot be viewed in the browser by clicking on the result, due to browser restrictions. Thus, after clicking on the file result you need to copy the link from the popup and paste it in the address bar of your system’s file browser (Windows explorer in case you are using Windows OS). This will allow you to open the file on your system. See below.
 
-![](fileshare-search.png)
+## Search for file share content in the search results page
+To search for indexed content, go to the SharePoint home page of the test tenant. To see the results, select the **Files** vertical.
+
+Because of browser restrictions, you can’t select a file result to view or open files from local file share searches. To open these files, copy the file result’s link and paste it into the address bar of your system’s browser. For Windows OS, use Windows Explorer. Then you can open the file on your system.
 
 ## Troubleshooting
-When there is something critically wrong with the connection, the status of the connection is shown as ‘failed’. In that case, there are three kinds of errors you can see in the details page when you click on the failing connection.
-1. Gateway not reachable (error code: 11): The gateway machine being used by the connection is down. Please verify if the PowerBI process is running on the gateway machine.
-2. Authentication error (error code: 12): The credentials which were used for creating the connection expired or is no longer valid. Enter the right credentials to resolve this.
-3. Internal error (error code: anything other than 11 and 12): There is some error in the connector infrastructure. Please reach out to [searchconnectorsfeedback@service.microsoft.com](searchconnectorsfeedback@service.microsoft.com) with the following details.
-    * Dataset ID
-    * Screenshot of the error you see in the admin portal
-    * Gateway logs. You can follow the instruction [here](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app) to export the logs. Please send the ODGLogs.zip folder.
-
-^^^^^^ WHAT IS THIS EMAIL???
+If something is critically wrong with a connection, its status shows as **failed**. To get more information on three types of errors, go to the **error details** page and select the failing connection.
+1.	**Gateway not reachable (error code: 11)**. The gateway machine for the connection is down. Verify if the Microsoft Power BI process runs on the gateway machine.
+2.	**Authentication error (error code: 12)**. The credentials that were used for creating the connection expired or are no longer valid. To resolve this error, enter valid credentials.
+3.	**Internal error (error code: anything other than 11 or 12)**. There’s an error in the connector infrastructure. See the [Feedback](connectors-feedback.md) article to find out how to report these errors.
 
 ## Limitations
-* You can only ingest 'files' with a fixed schema (no custom properties)
-* NTFS ACLs are support on search (share ACLs are not respected as of now. Support for the same will be added soon)
-* No support for external identities (needs mapping to Azure Active Directory identities)
-^^^ ADD LINKS. WHAT IS NTFS??
-
-
+The File share connector has these limitations in the preview release:
+* You can only index files with fixed properties, not files with custom properties. 
+* File share Access Control Lists aren’t currently supported.
+* External identities aren’t supported. They must be mapped to Azure Active Directory identities.
