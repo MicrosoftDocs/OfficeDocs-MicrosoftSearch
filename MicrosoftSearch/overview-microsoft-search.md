@@ -23,7 +23,7 @@ Microsoft Search helps users find the right answers, people, and content to comp
 - Users get results that are relevant in the **context** of the app they search from. For example, when they search in Outlook, they find emails, not sites in SharePoint. When they search in SharePoint, they find sites, pages, and files.
 - Whichever app users are working in; Microsoft Search is **personal**.  Microsoft Search uses insights from the Microsoft Graph to show results that are relevant to each user. Each user might see different results, even if they search for the same words. They only see results that they already have access to, Microsoft Search doesn’t change permissions.
 - Users don’t need to remember where the information is located. For example, a user is working in Word and wants to reuse information from a presentation that a colleague shared from their OneDrive. There’s no need to switch to OneDrive and search for that presentation, they can simply search from Word.  
-- When in Bing, users get results from within their organization in addition to the public web results.
+- When in [Bing](https://bing.com), users get results from within their organization in addition to the public web results.
 
 ## What users see
 
@@ -144,9 +144,9 @@ You can customize the classic search experience, for example by adding custom re
 ## Microsoft Search in Bing protects enterprise searches 
 When a user enters an enterprise search query in Microsoft Search, two simultaneous search requests occur: (1) a search of the enterprise’s internal resources, and (2) a separate search of public results from Bing.com. Because enterprise searches might be sensitive, Microsoft Search has implemented a set of trust measures that describe how the separate search of public results from Bing.com is handled. 
 -	**Logging**
-    - All search logs that pertain to Microsoft Search traffic are disassociated from your workplace identity.
-    - If a set of restrictions or frequency thresholds are met which give us confidence that the query is not specific to a particular organization, the query will be treated as described in the Bing services section of the [Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement). For example, such queries will be used to model and train public features such as autosuggest or related searches. 
-    - Queries that do not meet the set of restrictions or frequency thresholds will be stored separately from public, non-Microsoft Search traffic. 
+    - All search logs that pertain to Microsoft Search in Bing traffic are disassociated from your workplace identity.
+    - If a set of restrictions or frequency thresholds are met which give us confidence that the query is not specific to a particular organization, the query will be treated as described in the Bing services section of the [Privacy Statement](https://privacy.microsoft.com/privacystatement). For example, such queries will be used to model and train public features such as autosuggest or related searches. 
+    - Queries that do not meet the set of restrictions or frequency thresholds will be stored separately from public, non-Microsoft Search traffic.
 -	**Advertising**
     - Advertising shown on Bing.com in connection with enterprise searches is solely related to the content of the search queries. Ads are never targeted to users based on their workplace identity.
 
