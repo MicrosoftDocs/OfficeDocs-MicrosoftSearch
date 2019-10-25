@@ -1,140 +1,72 @@
 ---
-title: Overview for Microsoft Graph Connectors
-description: Add a short description
-services: skype-for-business-online-admin
-author: monaray
-manager: samanro
-layout: LandingPage
-ms.assetid: 
+title: "Connectors Overview"
+ms.author: v-pamcn
+author: TrishaMc1
+manager: mnirkhe
+ms.date: 10/08/2019
+ms.audience: Admin
+ms.topic: article
 ms.service: mssearch
-ms.tgt_pltfrm: na
-ms.devlang: na
-ms.topic: landing-page
-ms.date: 10/10/2019
-ms.author: monaray
+localization_priority: Priority
+search.appverid:
+- BFB160
+- MET150
+- MOE150
+description: "Microsoft Graph Connectors overview"
 ---
 
-# Overview for Microsoft Graph Connectors
+# Overview of Microsoft Graph connectors preview release
+Microsoft Search indexes all your Microsoft 365 data to make it searchable by users. With Microsoft Graph connectors, your organization can ingest and index third-party data to appear in Microsoft Search results. The third-party data can be hosted on-premises or in the public or private clouds. Connectors expand the amount of information that’s searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem.
 
-#### In this article
-* <a href="#connectors">What are connectors?</a>
-* <a href="#types">Types of connectors</a>
-* <a href="#office365">Office 365 plans we support</a>
+**DISCLAIMER:** Microsoft Graph connectors, indexing APIs, and search APIs are currently in preview. To find out more about the preview, see [Connectors Preview](connectors-preview.md). Follow the [Microsoft Graph Connectors Public Preview Interest Form]( https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u) to sign up.
 
-<h2 id="connectors">What are connectors?</h2>
+## Architecture of Microsoft Graph connectors
+The following architectural diagram of the Microsoft Graph platform shows how source data flows through content ingestion and indexing to user results in [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) clients.  This article explains each of the key building blocks in the Microsoft Graph connectors data flow process.
 
-Microsoft Search indexes all your Microsoft 365 data to enable search. Connectors allow your organization to ingest and index third-party data for use in Microsoft Search. This third-party data can be hosted on-premises or in the public or private cloud. Connectors allow your organization to expand the breadth of information searchable from your Microsoft Search application to enhance your search capabilities. 
+[ADD DIAGRAM HERE]
 
+Source data first flows through Microsoft’s content indexing API to be indexed and stored. Then the API instantiates one connection per data source. These connections interact with Microsoft Search, so users can get search results with queries.
 
-<h2 id="types">Types of connectors</h2>
+You can configure six connectors by Microsoft in the Microsoft 365 [admin center](https://admin.microsoft.com). The portal simplifies configuring your connector with a simple user interface.
+
+To create a **connection** to a data source, admins need authenticated access to the data and the entire document repository. The data is fed to the graph connector service for indexing.
+
+## Available connectors
+Over 130 connectors are available for preview. They include connectors by Microsoft and connectors by our partners. You can also build your own connector with the Microsoft Graph connectors API.
 
 ### Connectors by Microsoft
-Microsoft provides ready to configure out-of-the-box connectors available to set up from the M365 admin portal. Below you can check out the connectors Microsoft provides and learn how to [configure your Microsoft built-in connector](configure-connector.md).
+The Microsoft Graph connectors preview release includes six Microsoft-built connectors. You can set them up in the [Microsoft 365 Admin Center](https://admin.microsoft.com) and learn how to [configure your Microsoft-built connector](configure-connector.md). 
+The following sections give brief descriptions for these ready-to-configure connectors. You can get more information in the linked articles for each connector.
 
-<ul class="panelContent cardsZ">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Azure Data Lake Storage Gen2</h3>
-                        <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The Azure Data Lake Storage Gen2 connector for Microsoft Search will allow your organization to search for files and their content stored in Azure Blob Containers and hierarchy enabled folders within a given Azure Data lake Storage Account.</p>
-                        <p><a href=azure-data-lake-connector.md>More details</a> <img src="Azure_Data_Lake_Small.png" alt="ADLS logo" width="35" height="35" align="right"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Enterprise Website</h3>
-                        <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The Enterprise Website connector for Microsoft Search will allow your organization to index content from your company’s websites that are visible to all users within your company (tenant) but not visible to people outside your company. Once you have configured the connector and synced content from the website, the end user will then be able to search for those articles from any Microsoft Search client.</p><a href=enterprise-web-connector.md>More details</a> <img src="IntranetSites_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>File share</h3>
-                        <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The file share connector for Microsoft Search will allow the users in your organization to search on-premises file shares. The search results from these shares will be merged with the results from Sharepoint and One Drive for Business (ODB).</p>
-                        <p><a href=file-share-connector.md>More details</a> <img src="FileConnectorLogo_Small.png" alt="ADLS logo" width="35" height="35" align="right"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
-<ul class="panelContent cardsZ">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>MediaWiki</h3>
-                        <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>TBD</p>
-                        <p><a href=mediawiki-connector.md>More details</a> <img src="MediaWiki_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Microsoft SQL</h3>
-                        <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The Microsoft SQL server connector for Microsoft Search will allow your organization to discover and index data from an on-premises MS SQL server database. The connector will ingest the specified content into the Microsoft search index and support periodic full and incremental crawl to keep the index up to date with the source. SQL server connector supports restricting access to the search results by specifying Access Control Lists (ACLs) while configuring the connector.</p>
-                        <p><a href=MSSQL-connector.md>More details</a> <img src="SqlConnectorLogo_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>ServiceNow</h3>
-                        <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>The ServiceNow connector for Microsoft Search will allow your organization to index Knowledge base articles that are visible to all users within your tenant. Once you have configured the connector and synced content from ServiceNow, the end user will then be able to search for those articles from any Microsoft Search client.</p>
-                        <p><a href=servicenow-connector.md>More details</a> <img src="ServiceNow_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
- 
+- **[Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)**. With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Data Lake Storage connector also indexes hierarchy-enabled folders in Data Lake Storage accounts that you specify.
+Learn more about the [Data Lake Storage connector](azure-data-lake-connector.md).
 
-### Connectors by our partners
-Check out our [connector catalog](connectors-catalog.md) to learn what connectors our partners support and contact them to utilize their connector solutions. You can manage your connectors from our partners in the M365 admin portal as well. 
+- **Enterprise website**. With this Microsoft Graph connector, users in your organization can search over pages in any non-SharePoint enterprise website.
+Learn more about the [Enterprise website connector](enterprise-web-connector.md).
+
+- **File share**. With this Microsoft Graph connector, users in your organization can search for files stored on on-premises Windows file shares.
+Learn more about the [File share connector](file-share-connector.md).
+
+- **[MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)**. With this Microsoft Graph connector, users can search for knowledge-base articles on wiki sites your organization creates with MediaWiki.
+Learn more about the [MediaWiki connector](mediawiki-connector.md).
+
+- **[Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2017)**. With this Microsoft Graph connector, users in your organization can search for data in on-premises SQL Server databases.
+Learn more about the [Microsoft SQL Server connector](MSSQL-connector.md).
+
+- **[ServiceNow](https://www.servicenow.com)**. With this Microsoft Graph connector, users in your organization can search for knowledge base articles from your ServiceNow instance.
+Learn more about the [ServiceNow connector](servicenow-connector.md).
+
+### Connectors from our partners
+The connectors gallery available in the Microsoft Graph connectors preview includes many created by developers in the [Microsoft Partner Network](https://partner.microsoft.com/en-US/). To learn how to preview these connectors, contact our partners. You can manage your partner connectors in the [Microsoft 365 admin center](https://admin.microsoft.com).
+Learn more about connectors from our partners in the [connector gallery](connectors-catalog.md).
 
 ### Build your own connector
-Developers can use Microsoft Graph to create connectors to index custom types or files. A connector is an application that uses the Microsoft Graph indexing API to create a connection and push items into the search index. For more information, see the Microsoft Search indexing API overview.
-( NEED TO INSERT LINKS ABOVE ^^^^ )
+To index custom data types or files, developers can create connectors in [Microsoft Graph](https://developer.microsoft.com/graph/). A connector is an application that uses the Microsoft Graph API to create a connection and push items into the search index. For more information, see the Microsoft Search [indexing API overview](). 
+ADD LINK TO MS GRAPH ^^^
 
+## Requirements
+To use connectors, you must have one of the following Microsoft 365 subscriptions:
+- [Enterprise E3/E5](https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans)
+- [Education A3/A5](https://www.microsoft.com/en-us/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)
 
-<h2 id="office365">Office 365 plans we support</h2>
-
-Microsoft Graph Connectors are only supported by the following Office 365 plans:
-* [Enterprise](https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans) E3 & E5
-* [Education](https://www.microsoft.com/en-us/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1) A3 & A5
-
-To learn more about these plans, refer to Office 365 products [website](https://products.office.com/en-us/compare-all-microsoft-office-products-b?&t41437&activetab=tab:primaryr1). 
-
-Once you have your admin login credentials, you can log into the Microsoft 365 admin portal and [manage your connector](manage-connector.md).
-
+Search admins must be assigned one of these licenses. To [manage your connector](manage-connector.md), sign in to the Microsoft 365 [admin center]((https://admin.microsoft.com) with your admin credentials.
