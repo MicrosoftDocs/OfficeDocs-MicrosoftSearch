@@ -124,7 +124,7 @@ ms.author: samanro
                         <h3>Aderant</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
                         <p>The Aderant connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time.</p>
-                        <p><a href="https://www.bainsight.com/indexing-connectors/">More details</a></p>
+                        <p><a href="https://www.bainsight.com/indexing-connectors/"<p style="font-weight:500;"><font color="0065BA">More details</font></p></a></p>
                     </div>
                 </div>
             </div>
