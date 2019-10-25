@@ -15,8 +15,21 @@
 ##[Manage Q&As](manage-qas.md)
 ##[Manage locations](manage-locations.md)
 ##[Manage floor plans](manage-floorplans.md)
-#[Connectors](connectors.md)
-#[Customization and configuration]
+#Connectors (preview)
+##[Overview](connectors-overview.md)
+##[Connectors Preview](connectors-preview.md)
+##[Connectors gallery](connectors-catalog.md)
+##[Manage your connector](manage-connector.md)
+##Connectors by Microsoft
+###[Configure your built-in connector](configure-connector.md)
+###[Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+###[Enterprise Website](enterprise-web-connector.md)
+###[File-share](file-share-connector.md)
+###[Microsoft SQL](MSSQL-connector.md)
+###[MediaWiki](mediawiki-connector.md)
+###[ServiceNow](servicenow-connector.md)
+##[Terms of Use](terms-of-use.md)
+#Customization and configuration
 #[User adoption guide](user-adoption-guide.md)
 #[Frequently asked questions](faqs.md)
 #[Using Microsoft Search](use/about-microsoft-search.md)
