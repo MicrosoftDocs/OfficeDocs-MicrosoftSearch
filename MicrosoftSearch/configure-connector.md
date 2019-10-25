@@ -15,80 +15,90 @@ search.appverid:
 description: "Configure your built-in connector in the M365 admin portal"
 ---
 
-# Configure your built-in connector in the M365 admin portal
+# Configure your Microsoft-built connector in Microsoft 365
 
-The purpose of this article is to guide search administrators through the general steps of configuring a Microsoft built-in connector. The steps outline the general flow of setting up your connector in the Microsoft 365 search admin portal. However, more detailed information with regards to setting up a specific Microsoft built-in connector can be found at the following links:
-
-* [Azure data lake storage gen2](azure-data-lake-connector.md)
+This article guides search administrators through the steps of configuring a Microsoft-built connector. It outlines the flow of setting up a connection in the Microsoft Search [admin center](https://admin.microsoft.com). For more detailed information on how to set up specific Microsoft-built connectors, see  these web pages:
+* [Azure Data Lake](azure-data-lake-connector.md)
 * [Enterprise website](enterprise-web-connector.md)
 * [File share](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [Microsoft SQL](MSSQL-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
-
-## Get Started
-For any of the Microsoft built-in connectors, you can begin configuring your connector by going to the Microsoft 365 admin portal. 
-
-1.	In the [Microsoft 365 admin center](https://admin.microsoft.com), log into your account using the credentials of your M365 test tenant.
-2.	Go to **Settings** > **Microsoft Search** > **Connectors**. 
+## SET UP
+To configure any of the Microsoft-built connectors, go to the Microsoft 365 [admin center]():
+1.	Sign in to your account with the credentials for your Microsoft 365 test tenant.
+2.	Go to **Settings** > **Microsoft Search** > **Connectors**.
 3.	Select **Add a connector**.
-![](addconnector.png)
 4.	From the list of available connectors, select the connector of your choice.
+[ UPDATE PHOTO BELOW ]
 ![](addconnectortype.png)
 
-## Step 1: Name the connector
-When you first create a connection, you must specify:
+
+### Name the connector
+To create a connection, first specify these attributes:
 1.	Name of the connection
-2.	Description (optional)
+2.	Connection ID
+3.	Description (optional)
 
-The connection ID will be automatically generated based on the name you provide and is used for creating implicit properties. If you want to change the connection ID, it must only comprise of alphanumeric characters. Illegal characters include _________. 
+The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters. 
 
-## Step 2: Connect to data source
-Based on the type of connector, the data connection process will vary. See [configure your gateway](configure-gateway.md) to learn more about connecting to your on-premises data source.
+### Connect to a data source
+The data connection process varies  based on the type of connector. To learn more about connecting to your on-premises data source, see [Configure your gateway](https://review.docs.microsoft.com/en-us/MicrosoftSearch/configure-gateway).
 
-## Step 3: Select source properties 
-Source properties are the data fields from your third-party data source that are ingested into the Microsoft Search index. However, you do have the option to modify this selection if you choose to do so by selecting “Edit properties” in the side bar. You can only select **up to 64 source properties**. 
+### Select source properties
+The data fields set by your third-party data source as source properties are indexed into Microsoft Search. To modify these properties, select **Edit properties** in the side bar on the right of the **Connectors** page. You can select **up to 64 source properties**.
 
-## Step 4: Search schema
-For all the connectors except the File-Share connector, user-defined-types (UDTs) must be manually determined. Thus a search schema is required to enable search capabilities for each field. We support searchable, queryable, and retrievable properties. To learn more about these properties, see the [connector concepts](connectors-concepts.md) section. 
+###  Manage the search schema 
+Admins can set the search schema attributes to control search functionality of each source property. A search schema helps determine what results display on the search results page and what information end users can view and access.
 
-The connection wizard will automatically select a search schema based on the set of source properties you choose. However, you can modify this schema before proceeding to the next step. 
+Search schema attributes include **searchable**, **queryable**, and **retrievable**. The following table lists each of the attributes that Microsoft Graph connectors support and explains their functions.
 
-Things to keep in mind:
-* For connectors that ingest UDTs, we recommend **NOT** marking the field containing the main content retrievable. If selected, significant performance issues will occur when rendering the search results. A content field for a ServiceNow knowledge-based article for example would be the “Text” field; this field should not be marked retrievable. 
-* Only properties marked retrievable can be rendered in the search results and utilized to create your modern result types (MRTs). 
-* Only string properties can be marked searchable. if ingesting a knowledge-based article 
+**Search schema attribute** | **Function** | **Example**
+--- | --- | ---
+SEARCHABLE | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the property is “title,” a query for “Enterprise” returns answers that contain the word “Enterprise” in any text or title.
+QUERYABLE | Searches by query for a match for a particular property. The property name must be specified in the query either programmatically or verbatim. |  If the property is “Title,” the query must contain “Title: Enterprise.”
+RETRIEVABLE | Makes the content of a property retrievable and displayable in the search results. | 
 
-> [!NOTE]
-> Once a connection is created, you **cannot** modify the schema. If you choose to do so, you must delete your connection and reinstate a new one. 
+For all connectors except the File share, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by clicking the check boxes for each property and attribute in the search schema page.
 
-## Step 5: Manage search permissions (ACLs)
-ACLs stands for Access Control Lists which determine who in your organization has access to each item of data. The file share connector only supports ACLs that can be mapped to the [Azure active directory (AAD)](https://docs.microsoft.com/en-us/azure/active-directory/). The rest of our connectors supports search permissions that are made visible to everyone.  
-## Step 6: Set refresh schedule
-The refresh schedule determines how often your data in the Microsoft Search index is synced with your original data store. This is done in two ways: with a full crawl and an incremental crawl.
-* A **_full crawl_** allows the search engine to process and index every item in the content source, regardless of the previous crawls. It is primarily used for these situations:
-    * Detecting deletions of data 
-    * The incremental crawl failed to crawl content for errors
-    * A software update for Microsoft Search is required
-    *The search schema has been modified 
-    * ACLs have been modified 
-    * Crawl rules have been modified
-* An **_incremental crawl_** allows the search engine to process and index only the items which have been newly created or modified since the last successful crawl. This means that not all the data in the content source is re-indexed. It is primarily used for to detect content updates, metadata updates, permission updates, and so on.
+These restrictions and recommendations apply to search schema settings:
+* For connectors that ingest custom types, we recommend that you **do not** mark the field that contains the main content *retrievable*. Significant performance issues occur when search results render with that search attribute. An example is the **Text** content field for a ServiceNow knowledge-base article.
+* Only properties marked as retrievable render in the search results and can be used to create modern result types (MRTs).
+* Only string properties can be marked searchable.
 
-An incremental crawl takes much less time since unchanged items are not processed. However, we need both to execute periodically to ensure an accurate data sync between the content source and the search index. 
+> [!Note]
+> After you create a connection, you **can’t** modify the schema. To do that, you need to delete your connection and reinstate a new one.
 
-Each type of connector warrants a different default refresh schedule based on how often the data is typically modified and what types of modifications are made to the content. To find our more information about the default crawl schedules, see the special connector topic pages. 
+###  Manage search permissions
+Access Control Lists (ACLs) determine which users in your organization can access each item of data. The file share connector supports only ACLs that can be mapped to [Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/). All the other connectors support search permissions that are visible to all users.
 
-## Step 7: Review connector settings
-After you have set up all the settings to configure your connector, the admin portal will take you to a page that allows you to review your configuration. You are allowed to go back through the configuration process to edit any setting before confirming your connection. You can learn more about [managing your connector](manage-connector.md) in the Microsoft 365 admin portal.
+### Set the refresh schedule
+The refresh schedule determines how often your data in the Microsoft Search index is synced with your original data store. You can schedule the refresh in two ways: full crawl or incremental crawl.
 
-## Next Steps: Search Results Page Customization
-A search vertical allows the user to filter based on content type and manifests as a tab at the top of the search results page. A modern result type (MRT) is the UI designating how the search result is presented on the search results page. To learn more about how to create your verticals and modern result types, see Search results page customization.
+With a **full crawl**, the search engine processes and indexes every item in the content source, regardless of previous crawls. Full crawl works best in these situations: 
+* You need to detect deletions of data.
+* The incremental crawl failed to crawl content for errors.
+* A software update for Microsoft Search is required. Updates modify the search schema.
+* ACLs were modified.
+* Crawl rules were modified.
 
-> [!NOTE]
-> Once you have established your connection, you must create a new vertical and modern result type. Without this step, data from your connection will not show up in the search results page.
+With an **incremental crawl**, the search engine can process and index only the items that were created or modified since the last successful crawl. Therefore, not all the data in the content source is re-indexed. Incremental crawl works best to detect content, metadata, permission, and other updates.
+
+Incremental crawls are much faster than full crawls because unchanged items aren’t processed. To maintain an accurate data sync between the content source and the search index, you need to run both crawls periodically.
+
+Each connector type requires a unique default refresh schedule based on how often data is usually modified and the type of modifications. 
+
+### Review connector settings
+After you configure your connector, the Microsoft 365 [admin center](https://admin.microsoft.com) takes you to a page where you can review your settings. You can go back through the configuration process to edit any setting before you confirm the connection. To learn more, see [Manage your connector](manage-connector.md) in the admin center.
+
+## Next steps: Customize the search results page
+With the Microsoft Search user interface (UI), your end users can search content from your Microsoft 365 productivity apps and the broader Microsoft ecosystem. A search vertical refers to the tabs that are shown when a user views their search results in SharePoint, Office.com, and Microsoft Search in Bing. You can customize search verticals to narrow down results so that only a certain type of search results is displayed .These verticals appear as a tab on the top of the search results page. A modern result type (MRT) is the UI that designates how results are presented. 
+
+You must create your own verticals and MRTs, so end users can view search results from new connections. Without this step, data from your connection won’t show up on the search results page.
+
+To learn more about how to create your verticals and MRTs, see [Search results page customization](). 
+ADD LINK TO SERP DOCS ^^^
 
 ## How do I know this worked?
-In your M365 admin portal under the Connector tab, there is a list of your published connections. Once you have published a connection successfully, the connector will show up here. Refer to [manage your connector](manage-connector.md) to learn how to make updates and deletions. 
-
+Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
