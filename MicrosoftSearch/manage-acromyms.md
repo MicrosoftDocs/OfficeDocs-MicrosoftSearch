@@ -41,11 +41,12 @@ In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settin
 
 Microsoft Search queries two data sources to provide Acronyms answers to users’ searches:
 
-1.	**Editorial acronyms**. Provided by IT administrators in the [admin center] (https://admin.microsoft.com).
+1.	**Editorial acronyms**. Provided by IT administrators in the [admin center](https://admin.microsoft.com).
 2.	**Mined acronyms**. Mined by Microsoft Search from the user’s personal email and documents and also from publicly available data within the organization.
 
 ### Set up editorial acronyms
 IT admins can set up editorial acronyms on the [Acronyms tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) in the [admin center]( https://admin.microsoft.com). You can add acronyms from any internal site or repository to the admin center. Editorial acronyms can be added to **Published** or **Draft** state:
+
 **Published state**. Acronyms are available to the organization’s employees through Microsoft Search.
 
 > [!NOTE]
@@ -64,7 +65,7 @@ Admins can add acronyms individually or bulk import them in a CSV file. Upload a
 
 **Expansion**. Contains the expansion of the acronym. An example is *Deep Neural Network*.
 
-**Description**. A brief description of the acronym that gives users quick insight into what the acronym and its expansion mean. For example, *A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers *.
+**Description**. A brief description of the acronym that gives users quick insight into what the acronym and its expansion mean. For example, *A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers*.
 
 **Source**. The URL of the page or website where you want users to go for more information about the acronym.
 
@@ -79,6 +80,7 @@ It might be a challenge for admins to add all the acronyms used within an organi
 - Users’ emails.
 - Documents in [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/) and [Microsoft OneNote](http://www.onenote.com/).
 - Public documents within the organization that users have access to in SharePoint, OneDrive, or OneNote.
+
 Microsoft Search makes sure that only users with access and permissions to a document can see the acronyms that are mined from it. The acronyms are mined from a user’s inbox and stored in the user shard. Only the user can access the acronyms mined from the user’s own inbox.
 
 > [!NOTE]
