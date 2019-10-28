@@ -1,8 +1,8 @@
 ---
-title: "Terms of Use"
+title: "Microsoft Search Public Preview: Terms of Use"
 ms.author: monaray97
-author: Mounika Narayanan
-manager: mnirkhe
+author: adefowler
+manager: shohara
 ms.date: 10/09/2019
 ms.audience: Admin
 ms.topic: article
@@ -15,7 +15,7 @@ search.appverid:
 description: "legal terms and conditions for MS Graph Connectors public preview"
 ---
 
-# Terms of Use
+# Microsoft Search Public Preview: Terms of Use
 
 Microsoft Graph Connectors are a preview feature and are subject to the same terms of use described under “Previews” in the [Online Services Terms](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English).
 
