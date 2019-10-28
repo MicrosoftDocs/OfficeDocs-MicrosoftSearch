@@ -27,6 +27,11 @@ Microsoft Search floor plans help users find people and meeting rooms within a b
 
 To make it easy to find answers to questions like these, information about an organization's buildings, offices, and facilities needs to be available and made searchable. Larger organizations usually have facilities or space management teams and may already have this info available. In a smaller organization, the Search admin might have to create and add it.
 
+## 48 hours before you begin
+Before you start to upload floor plans, you'll need to index the users' office locations. Depending on the size of your organization, it can take up to 48 hours to complete. If you ignore this step, you'll get errors while performing the procedure. 
+
+
+
 ## Things to consider...
 To help users to find information about offices and building facilities, you need to add:
 

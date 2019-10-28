@@ -6,11 +6,12 @@
 #Get insights
 #Provide answers
 ##[Plan your content](plan-your-content.md)
+##Acronyms
 ##[Bookmarks](manage-bookmarks.md)
-##[Q&As](manage-qas.md)
-##[Locations](manage-locations.md)
 ##[Floor plans](manage-floorplans.md)
 ###Floor plan best practices
+##[Locations](manage-locations.md)
+##[Q&As](manage-qas.md)
 #Connect to data (preview)
 ##[Overview](connectors-overview.md)
 ##[Connectors Preview](connectors-preview.md)
@@ -25,7 +26,10 @@
 ###[MediaWiki](mediawiki-connector.md)
 ###[ServiceNow](servicenow-connector.md)
 ##[Terms of Use](terms-of-use.md)
-#Customize results
+#Customize and configure
+##Verticals
+##Result types
+##Layouts
 ##Microsoft Search in Bing
 ###[Make Microsoft Edge the default browser](set-default-browser.md)
 ###[Make Bing the default search engine](set-default-search-engine.md)
