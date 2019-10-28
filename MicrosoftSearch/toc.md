@@ -9,7 +9,7 @@
 ##Acronyms
 ##[Bookmarks](manage-bookmarks.md)
 ##[Floor plans](manage-floorplans.md)
-###Floor plan best practices
+###[Best practices for floor plans](floorplans-bestpractices.md)
 ##[Locations](manage-locations.md)
 ##[Q&As](manage-qas.md)
 #Connect to data (preview)
