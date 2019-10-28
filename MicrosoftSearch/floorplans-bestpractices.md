@@ -1,13 +1,13 @@
 ---
 title: "Best practices for Microsoft Search floor plans"
-ms.author: v-pamcn
-author: TrishaMc1
-manager: mnirkhe
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
