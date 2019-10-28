@@ -30,7 +30,11 @@ To make it easy to find answers to questions like these, information about an or
 ## 48 hours before you begin
 Before you start to upload floor plans, you'll need to index the users' office locations. Depending on the size of your organization, it can take up to 48 hours to complete. If you ignore this step, you'll get errors while performing the procedure. 
 
+![Screen capture of floor plans page with "Microsoft needs to gather and organize office locations before you can upload floor plans" notice.](media/floorplans_hydrationstep.png)
 
+In the Microsoft 365 admin center, go to **Settings** > **Microsoft Search** > **Floor plans**, and then select **Get started**.
+
+If you don't see this notice, then you or someone in your organization has already initiated this step.
 
 ## Things to consider...
 To help users to find information about offices and building facilities, you need to add:
@@ -42,9 +46,9 @@ To help users to find information about offices and building facilities, you nee
 |**Office** property on all user accounts     |    Each user account needs to have the **office** property with their office location. And office locations should follow a standard format and include building, floor and room info.   <br> In Azure AD, this property is called **office location**.    |
 |Floor plan file in DWG format     |   You'll need a separate floor plan for each floor or wing of your building and include the office information in the same format that you used in the user's Office property. The file needs to be in AutoCad drawing DWG format. If you need to create floor plan, you can use Microsoft Visio. |
 
- ![Screen capture of a user's contact card in Outlook showing the Office property.](media/floorplans-fig2.png)  **COMMENT 2: IS THE PROPERTY CALLED "SEAT NUMBERS" IN AAD? ALSO THIS CARD NEEDS TO GET UPDATED WITH THE CURRENT OUTLOOK PEOPLE CARD. HEIDI SENDING.**
+ ![Screen capture of a user's contact card in Outlook showing the "Office location" property.](media/floorplans-fig2.png)  **COMMENT 2: IS THE PROPERTY CALLED "SEAT NUMBERS" IN AAD? ALSO THIS CARD NEEDS TO GET UPDATED WITH THE CURRENT OUTLOOK PEOPLE CARD. HEIDI SENDING.**
 
-*Figure 2 – The office location can be added in the Active users Office property. defined in AAD as employee seat numbers.*
+*Figure 2 – The user's office can be added in the Active users "Office" property. In Azure AD, this is called "Office location.*
 
 ## Building location
 
@@ -104,9 +108,7 @@ If a floor plan cannot be uploaded, an error messages should identify the issue 
 
 *Figure 6 – When mapping is complete, you’re ready to go*
 
- **Note:** When a floor plan is in a draft state it's building for which floor plans or mapping is incomplete. A draft lets stakeholders coordinate in uploading and creating floor plans. It also allows your to upload floor plans in stages.
-
-10. In the Floor plans tab on the Microsoft Search home page, the published or saved draft floor plans are listed under Published or Draft. **COMMENT 8: THIS ISN'T A STEP AND REALLY DOESN'T FIT HERE**
+ **Note:** When a floor plan is in a draft state, it is incomplete. A draft lets stakeholders coordinate in uploading and creating floor plans. It also allows you to upload floor plans in stages.
 
 ## Edit floor plan
 
