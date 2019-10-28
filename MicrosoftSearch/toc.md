@@ -3,8 +3,7 @@
 ##[Set up](setup-microsoft-search.md)
 ##[Get started with Microsoft Search in SharePoint](get-started-search-in-sharepoint-online.md)
 ##[Frequently asked questions](faqs.md)
-#[Get insights]
-##[Get started with Microsoft Search in SharePoint](get-started-search-in-sharepoint-online.md)
+#Get insights
 #Provide answers
 ##[Plan your content](plan-your-content.md)
 ##[Bookmarks](manage-bookmarks.md)
