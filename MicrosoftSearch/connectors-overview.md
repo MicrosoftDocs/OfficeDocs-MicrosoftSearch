@@ -61,8 +61,10 @@ There are over 130 connectors available for preview from our ecosystem partners.
 Learn more about connectors from our partners in the [connector gallery](connectors-gallery.md).
 
 ### Build your own connector
-To index custom data types or files, developers can create connectors in [Microsoft Graph](https://developer.microsoft.com/graph/). A connector is an application that uses the Microsoft Graph API to create a connection and push items into the search index. For more information, see the [Microsoft Graph Search API overview](TBD). 
-ADD LINK TO MS GRAPH ^^^
+To index custom data types or files, developers can create connectors in [Microsoft Graph](https://developer.microsoft.com/graph/). A connector is an application that uses the Microsoft Graph indexing API to create a connection and push items into the search index. For more information, see the [Microsoft Graph indexing API overview](/graph/search-index-overview).
+
+### Search results with your custom-built connector
+Once custom data in indexed, developers can query this data using the search API in Microsoft Graph. You can view your data in any application. For more information, see [Microsoft Graph search API](https://aka.ms/mssearchapi).
 
 ## License Requirements
 To use connectors, you must have one of the following Microsoft 365 subscriptions:

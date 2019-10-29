@@ -32,7 +32,7 @@ Delete a connection | :heavy_check_mark: | :heavy_check_mark:
 Edit a published connection | :heavy_check_mark: Name<br></br> :heavy_check_mark: Description<br></br> :heavy_check_mark: Authentication credentials for your external data source<br></br> :heavy_check_mark: Gateway credentials for your on-premises data source<br></br> :heavy_check_mark: Refresh schedule<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Description
 Edit a draft connection | :heavy_check_mark: | :x:
 
-## MONITOR YOUR CONNECTION STATUS
+## Monitor your connection status
 After you create a connection, the number of processed items shows on the **Connectors ** tab on the **Microsoft Search** page. After the initial full crawl completes successfully, the progress for periodic incremental crawls displays. This page provides information about the connector’s day-to-day operations and an overview of the logs and error history. 
 Four states show up in the **Status** column against each connection:
 * **Syncing**. The connector is crawling the data from the source to index the existing items and make any updates.
