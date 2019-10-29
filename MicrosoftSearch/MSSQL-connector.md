@@ -15,71 +15,65 @@ search.appverid:
 description: "Microsoft SQL connector configuration in the M365 Admin portal."
 ---
 
-# Microsoft SQL connector configuration in the M365 Admin portal
+# Configure a Microsoft SQL server connector in Microsoft 365
 
-## Overview
-The Microsoft (MS) SQL server connector for Microsoft Search will allow your organization to discover and index data from an on-premises MS SQL server database. The connector will ingest the specified content into the Microsoft search index and support periodic full and incremental crawl to keep the index up to date with the source. SQL server connector supports restricting access to the search results by specifying Access Control Lists (ACLs) while configuring the connector. 
+With a Microsoft SQL Server connector for Microsoft Search, your organization can discover and index data from an on-premises SQL Server database. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With the SQL Server connector, you can also restrict access to search results for certain users. 
 
-This article is intended for M365 Search administrators, or anyone who is responsible for configuring, running, and monitoring the connector. Here you can find information on what to know before configuring your connector, how to get started, and additional information regarding connector capabilities, limitations, and troubleshooting techniques.
+This article is intended for Microsoft Search SQL connector administrators, or anyone who is responsible for configuring, running, and monitoring the connector. Here you can find information on what to know before configuring your connector, additional information regarding connector capabilities, and limitations.
 
-## Things to know before configuring your connector
-MS SQL server connector connects to the data source and traverses the content by issuing specified SQL queries during configuration. SQL queries need to enlist all the database columns the admin desires to index, including any SQL-joins which need to be performed to get all the columns. The SQL query also needs to specify the Access Control Lists (ACLs) which will be used to restrict access to the search results.
+## Install a data gateway
+In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install and on-premises gateway](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install) to learn more.  
 
-### Pre-requirements 
-* The database needs to be running SQL server version 2008 or later. 
-* An on-premises data gateway is required for configuring this connector. More details about the gateway can be found [here](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem). 
+## Connect to a data source
+To connect a SQL Server connector to a data source, you must configure the database server you want crawled and the on-premises gateway. You can then connect to the database with the required authentication method. 
 
-## Connect to data source
-You need to configure the database server you want crawled and the on-premises data gateway with authentication to connect to the database.
-( SHOULD WE ADD MORE INFO HERE ?????)
+>[!NOTE]
+> Your database must run SQL Server version 2008 or later
 
-## Full crawl (required)
-In this step, you need to configure the SQL query which will be executed for full crawl of the database. The full crawl selects all the columns you want to be made **queryable**, **searchable**, or **retrievable** (See [connector concepts](connectors-concepts.md) for more information on search schemas). Additionally, you can specify the ACL columns which you plan to use to restrict access of the search results to a specific set of users or groups.
->[!TIP]
->You may have to join multiple tables to get all the desired columns.
+To search your database content, you must specify SQL queries when you configure the connector. These SQL queries need to name all the database columns that you want to index (i.e. source properties), including any SQL joins that need to be performed to get all the columns. To restrict access to search results, you must specify Access Control Lists (ACLs) with SQL queries when you configure the SQL Server connector. 
 
-### Example
-![](MSSQL-fullcrawl.png)
+## Full crawl (Required)
+In this step, you configure the SQL query that runs a full crawl of the database. The full crawl selects all the columns or properties you want to be made **queryable**, **searchable**, or **retrievable**. For more information, see [Manage the search schema](configure-built-in-connector.md/#manage-search-schema). You can also specify ACL columns to restrict access of search results to specific users or groups. 
 
-### Selected data columns (required) & ACL columns (optional)
-The 5 data columns selected (OrderId, OrderTitle, OrderDesc, CreatedDateTime, IsDeleted) hold the data that the admin wishes to utilize for the search. The ACL columns (AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups) are optional but determine viewing permissions for each row of data. Any of these data columns can be made queryable, searchable, or retrievable. 
+> [!Tip]
+> To get all the columns that you need, you can join multiple tables.
 
-**Query snippet from the example**:
+![](media/MSSQL-fullcrawl.png)
 
-“SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted”
+### Select data columns (Required) and ACL columns (Optional)
+The example demonstrates selecting five data columns that hold the data for the search: OrderId, OrderTitle, OrderDesc, CreatedDateTime, and IsDeleted. To set view permissions for each row of data, you can optionally select these ACL columns: AllowedUsers, AllowedGroups, DeniedUsers, and DeniedGroups. All these data columns can be made queryable, searchable, or retrievable. 
 
-### Watermark (required)
-A full-crawl watermark column is used by the connector to batch and resume full crawl queries to prevent overloading the database. The value of the watermark column will be used to fetch each subsequent batch and resume querying from the last checkpoint.
+Select data columns as shown in this example query: 
+ `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
-**Query snippets from the example**:
-* “WHERE (CreatedDateTime > @watermark)”: Mention the watermark column name with “@watermark” reserved keyword. If the sort order of watermark column is ascending, use “>” symbol, otherwise use “<” symbol. 
-* “ORDER BY CreatedDateTime ASC”: Sort on watermark column in ascending or descending order. 
+### Watermark (Required)
+To prevent overloading the database, the connector batches and resumes full-crawl queries with a full-crawl watermark column. By using the value of the watermark column, each subsequent batch is fetched, and querying is resumed from the last checkpoint. Essentially this is a mechanism to control data refresh for full crawls. 
 
-**Additional watermark configuration**
+Create query snippets for watermarks as shown in these examples:
+* `WHERE (CreatedDateTime > @watermark)`. Cite the watermark column name with the reserved keyword `@watermark`. If the sort order of the watermark column is ascending, use `>`; otherwise, use `<`.
+* `ORDER BY CreatedDateTime ASC`. Sort on the watermark column in ascending or descending order.
 
-![](MSSQL-watermark.png)
+In the configuration shown in the following image, `CreatedDateTime` is the selected watermark column. To fetch the first batch of rows, specify the data type of the watermark column. In this case, the data type is `DateTime`.
 
-In the above configuration, CreatedDateTime is the selected watermark column. The admin needs to specify the data type of watermark column to fetch the first batch of rows. In this case, the data type is 'DateTime'. 
+![](media/MSSQL-watermark.png)
 
-The first query will fetch the first *n* many rows by using: “CreatedDateTime > January 1, 1753 00:00:00 (min value of DateTime data type)” in the query. After the first batch is fetched, the highest value of CreatedDateTime returned in the batch (assuming the rows are sorted in ascending order), say March 1, 2019 03:00:00, will be saved as the checkpoint. The next batch of *n* rows will be fetched using “CreatedDateTime > March 1, 2019 03:00:00” in the query.
+The first query fetches the first **N** amount of rows by using: "CreatedDateTime > January 1, 1753 00:00:00" (min value of DateTime data type). After the first batch is fetched, the highest value of `CreatedDateTime` returned in the batch is saved as the checkpoint if the rows are sorted in ascending order. An example is March 1, 2019 03:00:00. Then the next batch of N rows is fetched by using "CreatedDateTime > March 1, 2019 03:00:00" in the query.
 
-### Skipping soft-deleted rows (optional)
-If your database has rows that are soft-deleted and you want excluded from the search index, you need to specify the soft-delete column name and value that indicates the row is deleted.
+### Skipping soft-deleted rows (Optional)
+To exclude soft-deleted rows in your database from being indexed, specify the soft-delete column name and value that indicates the row is deleted.
 
-![](MSSQL-softdelete.png)
+![](media/MSSQL-softdelete.png)
 
-## Incremental crawl (optional)
-In this step, you can optionally configure the SQL query to execute an incremental crawl of the database. This allows the connector to make any changes to the data since the last incremental crawl. Like in the full crawl, you need to select all columns which you want to be made queryable, searchable, or retrievable. And you need to specify the same set of ACL columns which you specified in full crawl query. 
+## Incremental crawl (Optional)
+In this optional step, you provide a SQL query to run an incremental crawl of the database. With this query, the SQL Server connector makes any changes to the data since the last incremental crawl. As in the full crawl, select all columns that you want to be made **queryable**, **searchable**, or **retrievable**. Specify the same set of ACL columns that you specified in full crawl query.
 
-### Example
-![](MSSQL-incrcrawl.png)
+The components in following image resemble the full crawl components with one exception. In this case, "ModifiedDateTime" is the selected watermark column. Review the [full crawl steps](#full-crawl-required) to learn how to write your incremental crawl query.
 
-The above example has components that resemble the full crawl components with the following exception:
-* ModifiedDateTime is the selected watermark column
+![](media/MSSQL-incrcrawl.png)
 
 ## Limitations
-* MS SQL server connector currently only supports an on-premises database running SQL server version 2008 or later. 
-* Access Control Lists (ACLs) are supported only using User Principal Name (UPN), Azure Active Directory ID (AAD), or Active Directory Security ID (SID). 
-( ADD LINKS ^^^^ ???)
-* The connector does not support indexing rich content present inside the database columns such as HTML, JSON, XML, blobs, and document parsings present as links inside the database column.
+The Microsoft SQL connector has these limitations in the preview release:
+* The on-premises database must run SQL Server version 2008 or later.
+* ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security.
+* Indexing rich content inside database columns is not supported. Examples of content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
 
