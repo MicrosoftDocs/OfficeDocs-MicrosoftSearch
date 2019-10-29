@@ -31,8 +31,7 @@ To configure any of the Microsoft-built connectors, go to the Microsoft 365 [adm
 2.	Go to **Settings** > **Microsoft Search** > **Connectors**.
 3.	Select **Add a connector**.
 4.	From the list of available connectors, select the connector of your choice.
-[ UPDATE PHOTO BELOW ]
-![](addconnectortype.png)
+![](media/addconnector.png)
 
 
 ### Name the connector
