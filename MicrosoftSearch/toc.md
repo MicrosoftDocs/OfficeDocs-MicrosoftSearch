@@ -18,7 +18,7 @@
 #Connectors (preview)
 ##[Overview](connectors-overview.md)
 ##[Connectors Preview](connectors-preview.md)
-##[Connectors gallery](connectors-catalog.md)
+##[Connectors gallery](connectors-gallery.md)
 ##[Manage your connector](manage-connector.md)
 ##Connectors by Microsoft
 ###[Configure your Microsoft-built connector](configure-connector.md)
