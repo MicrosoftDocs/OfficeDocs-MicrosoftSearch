@@ -115,6 +115,7 @@ ms.author: samanro
 
 <h2 id="Partners">Connectors by our Partners</h2>
 <!--- 1 ROW --->
+<h3 id="A"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
