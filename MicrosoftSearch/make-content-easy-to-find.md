@@ -7,7 +7,7 @@ ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 ROBOTS: NOINDEX
 search.appverid:
 - BFB160
@@ -138,7 +138,7 @@ Here are some important points to be noted regarding the template file:
 - If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.
 - Not all fields in the template file are required and required fields vary depending on the bookmark state.
 - Based on the *State* field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.
-- For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another. But you must remove the data in the *Id* column before you import.
+- For partners who manage multiple organizations, you can export your bookmarks from one org and import them into another. But you must remove the data in the *Id* column before you import.
 
 #### Prevent import errors
 
@@ -236,7 +236,7 @@ Here are some important points regarding the template file:
 - If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.
 - Not all fields in the template file are required and required fields vary depending on the bookmark state.
 - Based on the State field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.
-- For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another. But you must remove the data in the *Id* column before you import.
+- For partners who manage multiple organizations, you can export your bookmarks from one org and import them into another. But you must remove the data in the *Id* column before you import.
 
 **Note:** You cannot import Q&A items if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted and include all the required information. 
 
@@ -283,7 +283,7 @@ Here are some important points regarding the template file:
 - If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.
 - Not all fields in the template file are required and required fields vary depending on the bookmark state.
 - Based on the *State* field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.
-- For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another. But you must remove the data in the *Id* column before you import.
+- For partners who manage multiple organizations, you can export your bookmarks from one org and import them into another. But you must remove the data in the *Id* column before you import.
 
 **Note:** You cannot import Locations if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted and include all the required information. 
 

@@ -3,19 +3,16 @@
 ##[Set up](setup-microsoft-search.md)
 ##[Get started with Microsoft Search in SharePoint](get-started-search-in-sharepoint-online.md)
 ##[Frequently asked questions](faqs.md)
-##[Make Microsoft Edge the default browser](set-default-browser.md)
-##[Make Bing the default search engine](set-default-search-engine.md)
-##[Make Bing.com the default home page](set-default-homepage.md)
-#[Insights]
-#[Answers]
-##[Get started with Microsoft Search in SharePoint](get-started-search-in-sharepoint-online.md)
-#Make content easy to find
+#Get insights
+#Provide answers
 ##[Plan your content](plan-your-content.md)
-##[Manage bookmarks](manage-bookmarks.md)
-##[Manage Q&As](manage-qas.md)
-##[Manage locations](manage-locations.md)
-##[Manage floor plans](manage-floorplans.md)
-#Connectors (preview)
+##Acronyms
+##[Bookmarks](manage-bookmarks.md)
+##[Floor plans](manage-floorplans.md)
+###[Best practices for floor plans](floorplans-bestpractices.md)
+##[Locations](manage-locations.md)
+##[Q&As](manage-qas.md)
+#Connect to data (preview)
 ##[Overview](connectors-overview.md)
 ##[Connectors Preview](connectors-preview.md)
 ##[Connectors gallery](connectors-gallery.md)
@@ -28,9 +25,13 @@
 ###[Microsoft SQL](MSSQL-connector.md)
 ###[MediaWiki](mediawiki-connector.md)
 ###[ServiceNow](servicenow-connector.md)
-##[Feedback](connectors-feedback.md)
-##[Terms of Use for connectors Preview](terms-of-use.md)
-#Customization and configuration
-#[User adoption guide](user-adoption-guide.md)
-#[Frequently asked questions](faqs.md)
-#[Using Microsoft Search](use/about-microsoft-search.md)
+##[Terms of Use](terms-of-use.md)
+#Customize and configure
+##Verticals
+##Result types
+##Layouts
+##Microsoft Search in Bing
+###[Make Microsoft Edge the default browser](set-default-browser.md)
+###[Make Bing the default search engine](set-default-search-engine.md)
+###[Make Bing.com the default home page](set-default-homepage.md)
+##[User adoption guide](user-adoption-guide.md)
