@@ -29,7 +29,7 @@ ms.author: samanro
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Data Lake Storage connector also indexes hierarchy-enabled folders in Data Lake Storage accounts that you specify.</p><br></br><br></br>
+                        <p>With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Data Lake Storage connector also indexes hierarchy-enabled folders in Data Lake Storage accounts that you specify.</p><br></br>
                         <p><a href=azure-data-lake-connector.md><p style="font-weight:500;"><font color="0065BA">More details</font></p></a> <img src="media/Azure_Data_Lake_Small.png" alt="ADLS logo" width="35" height="35" align="right"></p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ ms.author: samanro
                     <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>With this Microsoft Graph connector, users can search for knowledge-based articles on wiki sites your organization creates with MediaWiki.</p><br></br><br></br>
+                        <p>With this Microsoft Graph connector, users can search for knowledge-based articles on wiki sites your organization creates with MediaWiki.</p><br></br>
                         <p><a href=mediawiki-connector.md><p style="font-weight:500;"><font color="0065BA">More details</font></p></a> <img src="media/MediaWiki_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
                     </div>
                 </div>
@@ -86,7 +86,7 @@ ms.author: samanro
                     <div class="cardText">
                         <h3>Microsoft SQL</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>With this Microsoft Graph connector, users in your organization can search for data in on-premises SQL Server databases.</p><br></br><br></br>
+                        <p>With this Microsoft Graph connector, users in your organization can search for data in on-premises SQL Server databases.</p><br></br>
                         <p><a href=MSSQL-connector.md><p style="font-weight:500;"><font color="0065BA"><p style="font-weight:500;"><font color="0065BA">More details</font></p></font></p></a> <img src="media/SqlConnectorLogo_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ ms.author: samanro
                     <div class="cardText">
                         <h3>ServiceNow</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>With this Microsoft Graph connector, users in your organization can search for knowledge-based articles from your ServiceNow instance.</p><br></br><br></br>
+                        <p>With this Microsoft Graph connector, users in your organization can search for knowledge-based articles from your ServiceNow instance.</p><br></br>
                         <p><a href=servicenow-connector.md><p style="font-weight:500;"><font color="0065BA">More details</font></p></a> <img src="media/ServiceNow_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
                     </div>
                 </div>
