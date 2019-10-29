@@ -72,8 +72,8 @@ ms.author: samanro
                     <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>With this Microsoft Graph connector, users can search for knowledge-based articles on wiki sites your organization creates with MediaWiki.<br></br></p>
-                        <p><a href=mediawiki-connector.md><p style="font-weight:500;"><font color="0065BA">More details</font></p></a> <img src="media/MediaWiki_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
+                        <p>With this Microsoft Graph connector, users can search for knowledge-based articles on wiki sites your organization creates with MediaWiki.<br></br><br></br></p>
+                        <p><a href=mediawiki-connector.md><p style="font-weight:500;"><font color="0065BA">More details</a> <img src="media/MediaWiki_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></font></p></p>
                     </div>
                 </div>
             </div>
@@ -86,8 +86,8 @@ ms.author: samanro
                     <div class="cardText">
                         <h3>Microsoft SQL</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>With this Microsoft Graph connector, users in your organization can search for data in on-premises SQL Server databases.<br></br></p>
-                        <p><a href=MSSQL-connector.md><p style="font-weight:500;"><font color="0065BA"><p style="font-weight:500;"><font color="0065BA">More details</font></p></font></p></a> <img src="media/SqlConnectorLogo_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
+                        <p>With this Microsoft Graph connector, users in your organization can search for data in on-premises SQL Server databases.<br></br><br></br></p>
+                        <p><a href=MSSQL-connector.md><p style="font-weight:500;"><font color="0065BA"><p style="font-weight:500;"><font color="0065BA">More details</a> <img src="media/SqlConnectorLogo_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></font></p></p>
                     </div>
                 </div>
             </div>
@@ -100,8 +100,8 @@ ms.author: samanro
                     <div class="cardText">
                         <h3>ServiceNow</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>With this Microsoft Graph connector, users in your organization can search for knowledge-based articles from your ServiceNow instance.<br></br></p>
-                        <p><a href=servicenow-connector.md><p style="font-weight:500;"><font color="0065BA">More details</font></p></a> <img src="media/ServiceNow_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
+                        <p>With this Microsoft Graph connector, users in your organization can search for knowledge-based articles from your ServiceNow instance.<br></br><br></br></p>
+                        <p><a href=servicenow-connector.md><p style="font-weight:500;"><font color="0065BA">More details</a> <img src="media/ServiceNow_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></font></p></p>
                     </div>
                 </div>
             </div>
