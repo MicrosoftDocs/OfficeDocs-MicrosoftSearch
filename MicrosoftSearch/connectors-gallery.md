@@ -13,8 +13,18 @@ ms.topic: landing-page
 ms.date: 12/13/2017
 ms.author: samanro
 ---
-# Microsoft Graph Connector Gallery
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  padding-bottom: 50px;
+}
+</style>
+</head>
+<body>
 
+# Microsoft Graph Connector Gallery
 
 #### In this article
 * <a href="#Microsoft">Connectors by Microsoft</a>
@@ -23,6 +33,7 @@ ms.author: samanro
 <h2 id="Microsoft">Connectors by Microsoft</h2>
 <ul class="panelContent cardsZ">
     <li>
+    <div>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -35,6 +46,7 @@ ms.author: samanro
                 </div>
             </div>
         </div>
+    </div>
     </li>
     <li>
         <div class="cardSize">
@@ -1993,3 +2005,6 @@ ms.author: samanro
         </div>
     </li>
 </ul>
+
+</body>
+</html>
