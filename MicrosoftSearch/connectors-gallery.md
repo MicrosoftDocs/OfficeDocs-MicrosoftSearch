@@ -30,7 +30,7 @@ ms.author: samanro
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Data Lake Storage connector also indexes hierarchy-enabled folders in Data Lake Storage accounts that you specify.<br></br></p>
-                        <p><a href=azure-data-lake-connector.md><p style="font-weight:500;"><font color="0065BA">More details</font></p></a> <img src="media/Azure_Data_Lake_Small.png" alt="ADLS logo" width="35" height="35" align="right"></p>
+                        <p><a href=azure-data-lake-connector.md><p style="font-weight:500;"><font color="0065BA">More details</a> <img src="media/Azure_Data_Lake_Small.png" alt="ADLS logo" width="35" height="35" align="right"></font></p></p>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@ ms.author: samanro
                     <div class="cardText">
                         <h3>Enterprise Website</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>With this Microsoft Graph connector, users in your organization can search over pages in any non-SharePoint enterprise website.<br></br><br></br></p><a href=enterprise-web-connector.md><p style="font-weight:500;"><font color="0065BA">More details</font></p></a> <img src="media/IntranetSites_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></p>
+                        <p>With this Microsoft Graph connector, users in your organization can search over pages in any non-SharePoint enterprise website.<br></br><br></br></p><a href=enterprise-web-connector.md><p style="font-weight:500;"><font color="0065BA">More details</a> <img src="media/IntranetSites_Small.png" alt="Enterprise Website" width="35" height="35" align="right"></font></p></p>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@ ms.author: samanro
                         <h3>File share</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>With this Microsoft Graph connector, users in your organization can search for files stored on on-premises Windows file shares.<br></br><br></br></p>
-                        <p><a href=file-share-connector.md><p style="font-weight:500;"><font color="0065BA">More details</font></p></a> <img src="media/FileConnectorLogo_Small.png" alt="ADLS logo" width="35" height="35" align="right"></p>
+                        <p><a href=file-share-connector.md><p style="font-weight:500;"><font color="0065BA">More details</a> <img src="media/FileConnectorLogo_Small.png" alt="ADLS logo" width="35" height="35" align="right"></font></p></p>
                     </div>
                 </div>
             </div>
