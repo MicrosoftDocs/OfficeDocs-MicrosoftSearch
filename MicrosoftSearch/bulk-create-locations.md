@@ -59,7 +59,7 @@ Based on the State field, locations will be saved as draft, suggested, scheduled
 
 Also, if you include the Id of an existing location, it will be replaced with the information in the import file.
 
-For organizations with mulitple tenants, you can export your locations from one tenant and import it into another. But you must remove all of the data in the Id column before you import.
+For partners who manage multiple organizations, you can export your locations from one org and import them into another. But you must remove all of the data in the Id column before you import.
   
 To find out more about required and recommended fields, see [Add a location](add-a-location.md).
 
