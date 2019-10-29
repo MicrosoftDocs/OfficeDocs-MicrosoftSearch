@@ -7,7 +7,7 @@ ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
@@ -35,11 +35,15 @@ Support to process changes in real time in the Graph Connectors Service might be
 
 After you create a queue, go to the **Events** tab in the queue page to configure Event Subscription. Choose all the Blob events that the queue will receive and connect the queue to the Data Lake Storage Gen 2 account.
 
+![](media/ADLSconfig.png)
+
 ## Manage the search schema
 On the **Manage Schema** screen, you have the option to change the schema attributes (queryable, searchable, and retrievable) associated with the managed properties. These managed property attributes are data indexed from your Data Lake Storage Gen 2 account.
 
 ## Manage search permissions
 On the **Manage search permissions** screen, you can choose to ingest the Access Control Lists (ACLs) from your storage account. When these search permissions are set, search content is trimmed based on the permissions assigned to the signed-in Azure AD user searching the content. Alternatively, you can choose to make all the content indexed from your storage account visible to everyone in your organization. In this case, everyone in your organization will have access to all the data in your storage account.
+
+![](media/ADLSpermissions.png)
  
 ## Set the refresh schedule
 On the **Refresh Settings** screen, you can set the incremental crawl interval and the full crawl intervals. The defaults are 15 minutes for an incremental crawl and one week for a full crawl.

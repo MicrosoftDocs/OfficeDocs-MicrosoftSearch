@@ -7,7 +7,7 @@ ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
@@ -31,8 +31,8 @@ To configure any of the Microsoft-built connectors, go to the Microsoft 365 [adm
 2.	Go to **Settings** > **Microsoft Search** > **Connectors**.
 3.	Select **Add a connector**.
 4.	From the list of available connectors, select the connector of your choice.
-![](media/addconnector.png)
 
+![](media/addconnector.png)
 
 ### Name the connector
 To create a connection, first specify these attributes:
@@ -61,6 +61,8 @@ RETRIEVABLE | Makes the content of a property retrievable and displayable in the
 
 For all connectors except the File share, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by clicking the check boxes for each property and attribute in the search schema page.
 
+![](media/manageschema.png)
+
 These restrictions and recommendations apply to search schema settings:
 * For connectors that ingest custom types, we recommend that you **do not** mark the field that contains the main content *retrievable*. Significant performance issues occur when search results render with that search attribute. An example is the **Text** content field for a ServiceNow knowledge-base article.
 * Only properties marked as retrievable render in the search results and can be used to create modern result types (MRTs).
@@ -87,6 +89,8 @@ With an **incremental crawl**, the search engine can process and index only the 
 Incremental crawls are much faster than full crawls because unchanged items aren’t processed. To maintain an accurate data sync between the content source and the search index, you need to run both crawls periodically.
 
 Each connector type requires a unique default refresh schedule based on how often data is usually modified and the type of modifications. 
+
+![](media/refreshschedule.png)
 
 ### Review connector settings
 After you configure your connector, the Microsoft 365 [admin center](https://admin.microsoft.com) takes you to a page where you can review your settings. You can go back through the configuration process to edit any setting before you confirm the connection. To learn more, see [Manage your connector](manage-connector.md) in the admin center.

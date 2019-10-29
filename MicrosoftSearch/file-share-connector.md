@@ -7,7 +7,7 @@ ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
@@ -101,6 +101,8 @@ File results of local file shares cannot be viewed in the browser by clicking on
 To search for indexed content, go to the SharePoint home page of the test tenant. To see the results, select the **Files** vertical.
 
 Because of browser restrictions, you can’t select a file result to view or open files from local file share searches. To open these files, copy the file result’s link and paste it into the address bar of your system’s browser. For Windows OS, use Windows Explorer. Then you can open the file on your system.
+
+![](media/fileshare-search.png)
 
 ## Troubleshooting
 If something is critically wrong with a connection, its status shows as **failed**. To get more information on three types of errors, go to the **error details** page and select the failing connection.

@@ -7,7 +7,7 @@ ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
@@ -37,7 +37,8 @@ In this step, you configure the SQL query that runs a full crawl of the database
 
 > [!Tip]
 > To get all the columns that you need, you can join multiple tables.
-{ PHOTO }
+
+![](media/MSSQL-fullcrawl.png)
 
 ### Select data columns (Required) and ACL columns (Optional)
 The example demonstrates selecting five data columns that hold the data for the search: OrderId, OrderTitle, OrderDesc, CreatedDateTime, and IsDeleted. To set view permissions for each row of data, you can optionally select these ACL columns: AllowedUsers, AllowedGroups, DeniedUsers, and DeniedGroups. All these data columns can be made queryable, searchable, or retrievable. 
@@ -52,26 +53,27 @@ Create query snippets for watermarks as shown in these examples:
 * `WHERE (CreatedDateTime > @watermark)`. Cite the watermark column name with the reserved keyword `@watermark`. If the sort order of the watermark column is ascending, use `>`; otherwise, use `<`.
 * `ORDER BY CreatedDateTime ASC`. Sort on the watermark column in ascending or descending order.
 
- { PHOTO } 
 In the configuration shown in the following image, `CreatedDateTime` is the selected watermark column. To fetch the first batch of rows, specify the data type of the watermark column. In this case, the data type is `DateTime`.
 
-{ PHOTO }
+![](media/MSSQL-watermark.png)
 
 The first query fetches the first **N** amount of rows by using: "CreatedDateTime > January 1, 1753 00:00:00" (min value of DateTime data type). After the first batch is fetched, the highest value of `CreatedDateTime` returned in the batch is saved as the checkpoint if the rows are sorted in ascending order. An example is March 1, 2019 03:00:00. Then the next batch of N rows is fetched by using "CreatedDateTime > March 1, 2019 03:00:00" in the query.
 
 ### Skipping soft-deleted rows (Optional)
 To exclude soft-deleted rows in your database from being indexed, specify the soft-delete column name and value that indicates the row is deleted.
- { PHOTO }
+
+![](media/MSSQL-softdelete.png)
 
 ## Incremental crawl (Optional)
 In this optional step, you provide a SQL query to run an incremental crawl of the database. With this query, the SQL Server connector makes any changes to the data since the last incremental crawl. As in the full crawl, select all columns that you want to be made **queryable**, **searchable**, or **retrievable**. Specify the same set of ACL columns that you specified in full crawl query.
 
 The components in following image resemble the full crawl components with one exception. In this case, "ModifiedDateTime" is the selected watermark column. Review the [full crawl steps](#full-crawl-required) to learn how to write your incremental crawl query.
 
+![](media/MSSQL-incrcrawl.png)
+
 ## Limitations
 The Microsoft SQL connector has these limitations in the preview release:
 * The on-premises database must run SQL Server version 2008 or later.
 * ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security.
 * Indexing rich content inside database columns is not supported. Examples of content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
- 
- { PHOTO }
+

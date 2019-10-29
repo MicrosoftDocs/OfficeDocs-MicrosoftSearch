@@ -7,7 +7,7 @@ ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
@@ -23,6 +23,8 @@ This article is intended for Microsoft 365 Search administrators, or anyone who 
 
 ## Connect to a data source
 Enter your MediaWiki URL and credentials for authenticating the connection.
+
+![](media/mediawiki-auth.png)
 
 ## Manage the search schema
 After successful connection, configure the search schema mapping. You can choose which properties to make **queryable**, **searchable**, and **retrievable**. 
