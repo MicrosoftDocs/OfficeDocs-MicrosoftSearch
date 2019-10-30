@@ -1,9 +1,9 @@
 ---
 title: "Enterprise Website connector configuration in the M365 Admin portal"
 ms.author: v-pamcn
-author: TrishaMc1
+author: monaray
 manager: mnirkhe
-ms.date: 10/08/2019
+ms.date: 11/04/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -22,7 +22,7 @@ With the Enterprise Website connector for Microsoft Search, your organization ca
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Enterprise Website connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.  
 
 ## Connect to a data source 
-To connect to your data source, you need your root URL and some form of authentication (Basic Authentication or OAuth 2.0 with Azure AD)
+To connect to your data source, you need your root URL and some form of authentication (Basic Authentication or OAuth 2.0 with Azure AD).
 
 ### Root URL
 The root URL is what initiates the crawl and is used for authentication. You can get the URL from the home page of the website you want to crawl.
@@ -30,9 +30,8 @@ The root URL is what initiates the crawl and is used for authentication. You can
 ### Authentication 
 Basic Authentication requires a username and password. Create this bot account by using the Microsoft 365 [admin center](https://admin.microsoft.com).
 
-OAuth 2.0 with Azure AD requires a tenant ID, resource ID, Client ID, and Client Secret. 
+OAuth 2.0 with Azure AD requires a tenant ID, resource ID, Client ID, and Client Secret.
 For more information, see Authorize access to Azure Active Directory web applications using the OAuth 2.0 code grant flow. Register with the following values:
-
     Name: Microsoft Search
     Redirect_URI: https://gcs.office.com/v1.0/admin/oauth/callback
 

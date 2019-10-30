@@ -34,9 +34,11 @@ In the **Manage search permissions** screen, make the search visible to **Everyo
 The recommended default refresh schedule interval is 15 minutes, but you can change it to another interval that you prefer.
 
 ## Set up your search results page
-To display different file connection results in the **Files** and **All** tabs, you need to set up a SharePoint search engine results page (SERP): 
-- The **All* table shows combined results from connections and SharePoint searches. 
-- The **Files** vertical shows results from only file connections.
+To display different file connection results in the **All** and **Files** tabs, you need to set up a SharePoint search engine results page (SERP): 
+- The **All** table shows combined results from file connections, SharePoint files, OneDrive files, and SharePoint sites. 
+- The **Files** vertical shows all file results from connections, SharePoint, and OneDrive.
+This essentially means that results from file connections are added to already existing results in both **All** and **Files** verticals.
+
 
 To set up your SERP, take these steps:
 1.	Create a SharePoint site collection with a modern search page.
@@ -87,18 +89,10 @@ Read-Host -Prompt 'Press enter to exit'
 > [!NOTE]
 > The **AllProperties** setting can only be done at a site collection level (Teams/Comms site).
 
-6.	Now you can search for indexed files and see results on the **Files** tab.
-
-## Searching for file share content in the SERP
-Navigate to the Sharepoint home page of the test tenant to search for any ingested content.
-
-> [!NOTE]
-> You must click on the "Files" vertical to see the results.
-
-File results of local file shares cannot be viewed in the browser by clicking on the result, due to browser restrictions. Thus, after clicking on the file result you need to copy the link from the popup and paste it in the address bar of your system’s file browser (Windows explorer in case you are using Windows OS). This will allow you to open the file on your system. See below.
+6. Now you can search for indexed files and see results in both the **All** and **Files** tabs.
 
 ## Search for file share content in the search results page
-To search for indexed content, go to the SharePoint home page of the test tenant. To see the results, select the **Files** vertical.
+To search for indexed content, go to the SharePoint home page of the test tenant. To see the results, you can select either the **All** or **Files** tab.
 
 Because of browser restrictions, you can’t select a file result to view or open files from local file share searches. To open these files, copy the file result’s link and paste it into the address bar of your system’s browser. For Windows OS, use Windows Explorer. Then you can open the file on your system.
 
