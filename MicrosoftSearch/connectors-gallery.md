@@ -131,7 +131,7 @@ ms.author: samanro
 ---
 
 <h2 id="Partners">Connectors by our Partners</h2>
-<h4>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h4>
+<h3><a href="#A">A</a> <a href="#B">B</a> C D E F G H I J K L M N O P Q R S T U V W X Y Z</h3>
 <!--- 1 ROW --->
 <h3 id="A"></h3>
 <ul class="panelContent cardsZ">
@@ -422,6 +422,7 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 7 ROW --->
+<h3 id="B"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
