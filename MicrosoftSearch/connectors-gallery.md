@@ -35,12 +35,12 @@ div {
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card">
+                <div class="card" style="height:240px">
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Data Lake Storage connector also indexes hierarchy-enabled folders in Data Lake Storage accounts that you specify.<div></div></p>
-                        <p><a href=azure-data-lake-connector.md><p style="font-weight:500;"><font color="0065BA">More details</a> <img src="media/Azure_Data_Lake_Small.png" alt="ADLS logo" width="35" height="35" align="right"></font></p></p>
+                        <p style="font-weight:500;"><a href=azure-data-lake-connector.md><font color="0065BA">More details</a> <img src="media/Azure_Data_Lake_Small.png" alt="ADLS logo" width="35" height="35" align="right"></font></p>
                     </div>
                 </div>
             </div>
