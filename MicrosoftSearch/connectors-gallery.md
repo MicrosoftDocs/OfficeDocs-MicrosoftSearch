@@ -13,15 +13,6 @@ ms.topic: landing-page
 ms.date: 12/13/2017
 ms.author: samanro
 ---
-<style>
-.card {
-  overflow: hidden;
-}
-.card:hover {
-  height: 300px;
-}
-</style>
-
 # Microsoft Graph Connector Gallery
 
 #### In this article
@@ -2170,3 +2161,10 @@ ms.author: samanro
         </div>
     </li>
 </ul>
+
+<script>
+document.getElementById("card").onmouseover = function() 
+{
+    this.style.height = "300px";
+}
+</script>
