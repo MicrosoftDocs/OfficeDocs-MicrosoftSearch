@@ -27,10 +27,10 @@ This article guides search administrators through the steps of configuring a Mic
 
 ## Set up
 To configure any of the Microsoft-built connectors, go to the [Microsoft 365 admin center](https://admin.microsoft.com):
-1.	Sign in to your account with the credentials for your Microsoft 365 test tenant.
-2.	Go to **Settings** > **Microsoft Search** > **Connectors**.
-3.	Select **Add a connector**.
-4.	From the list of available connectors, select the connector of your choice.
+1. Sign in to your account with the credentials for your Microsoft 365 test tenant.
+2. Go to **Settings** > **Microsoft Search** > **Connectors**.
+3. Select **Add a connector**.
+4. From the list of available connectors, select the connector of your choice.
 
 ![](media/addconnector.png)
 
@@ -93,7 +93,7 @@ Each connector will have a different optimal set of refresh schedules based on h
 ![](media/refreshschedule.png)
 
 ### Review connector settings
-After you configure your connector, the [Microsoft 365 admin center](https://admin.microsoft.com) takes you to a page where you can review your settings. You can go back through the configuration process to edit any setting before you confirm the connection. To learn more, see [Manage your connector](manage-connector.md) in the admin center.
+After you configure your connector, the [Microsoft 365 admin center](https://admin.microsoft.com) takes you to a page where you can review your settings. You can go back through the configuration process to edit any setting before you confirm the connection. To learn more, see [Manage your connector](manage-connector.md).
 
 ## Next steps: Customize the search results page
 With the Microsoft Search user interface (UI), your end users can search content from your Microsoft 365 productivity apps and the broader Microsoft ecosystem. A search vertical refers to the tabs that are shown when a user views their search results in SharePoint, Office.com, and Microsoft Search in Bing. You can customize search verticals to narrow down results so that only a certain type of search results is displayed. These verticals appear as a tab on the top of the search results page. A modern result type (MRT) is the UI that designates how results are presented.

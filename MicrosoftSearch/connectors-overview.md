@@ -17,7 +17,7 @@ description: "Microsoft Graph Connectors overview"
 
 # Overview of Microsoft Graph connectors
 
-Microsoft Search indexes all your Microsoft 365 data to make it searchable by users. With Microsoft Graph connectors, your organization can index third-party data to appear in Microsoft Search results. The third-party data can be hosted on-premises or in the public or private clouds. Connectors expand the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem.
+Microsoft Search indexes all your Microsoft 365 data to make it searchable for users. With Microsoft Graph connectors, your organization can index third-party data to appear in Microsoft Search results. The third-party data can be hosted on-premises or in the public or private clouds. Connectors expand the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem.
 
 **DISCLAIMER:** Microsoft Graph connectors, indexing APIs, and search APIs are currently in preview. To learn more about the preview, see [Connectors Preview](connectors-preview.md). To participate in the preview, you must first submit the [Microsoft Graph Connectors Preview Signup form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
 

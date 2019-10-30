@@ -17,7 +17,7 @@ description: "Azure Data Lake configuration in the M365 Admin portal."
 
 # Configure a connector for Azure Data Lake Gen2 in Microsoft 365
 
-With the [Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction) connector for Microsoft Search, users in your organization can search for files and their content. This connector accesses data stored in Azure Blob containers and hierarchy-enabled folders within an Azure Data Lake Storage Gen 2 account.
+With the [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) connector for Microsoft Search, users in your organization can search for files and their content. This connector accesses data stored in Azure Blob containers and hierarchy-enabled folders within an Azure Data Lake Storage Gen 2 account.
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Azure Data Lake connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
@@ -46,7 +46,7 @@ On the **Manage search permissions** screen, you can choose to ingest the Access
 ![](media/ADLSpermissions.png)
  
 ## Set the refresh schedule
-On the **Refresh Settings** screen, you can set the incremental crawl interval and the full crawl interval. The default intervals for the Azure Data Lake connector are 15 minutes for an incremental crawl and one week for a full crawl.
+On the **Refresh Settings** screen, you can set the incremental crawl interval and the full crawl interval. The default intervals for the Azure Data Lake Storage connector are 15 minutes for an incremental crawl and one week for a full crawl.
  
 ## Limitations
 Currently, Data Lake Storage Gen 2 Multi-Protocol Access is available only in the Central US, West Central US, Canada Central, East US, East Asias, North Europe, East US2, South East Asia, West Europe, West US, Australia East, Japan East, West US2, and Brazil South.
