@@ -33,7 +33,8 @@ Edit a published connection | :heavy_check_mark: Name<br></br> :heavy_check_mark
 Edit a draft connection | :heavy_check_mark: | :x:
 
 ## Monitor your connection status
-After you create a connection, the number of processed items shows on the **Connectors ** tab on the **Microsoft Search** page. After the initial full crawl completes successfully, the progress for periodic incremental crawls displays. This page provides information about the connector’s day-to-day operations and an overview of the logs and error history. 
+After you create a connection, the number of processed items shows on the **Connectors** tab on the **Microsoft Search** page. After the initial full crawl completes successfully, the progress for periodic incremental crawls displays. This page provides information about the connector's day-to-day operations and an overview of the logs and error history.
+
 Four states show up in the **Status** column against each connection:
 * **Syncing**. The connector is crawling the data from the source to index the existing items and make any updates.
 * **Enabled**: The connection is enabled, and there’s no active crawl running against it. **Last sync time** indicates when the last successful crawl happened. The connection is as fresh as the last sync time.
@@ -43,11 +44,11 @@ Four states show up in the **Status** column against each connection:
 ### Monitor errors
 For each Active Connector** on the **Connectors** tab shows, any existing errors show under the **Error** tab. The tab lists error codes, the count of each, and error log download options. See the example in the following table.
 
-![](errormonitoring.jpg)
+![](media/errormonitoring.jpg)
 
 To view an error’s specific details, select its error code. A screen appears with error details and a link. The most recent errors appear at the top. See the example in the following table.
 
-![](errormonitoring.jpg)
+![](media/errormonitoring.jpg)
 
 ## Preview limitations
 * When you **publish** a Microsoft-built connector, it might take a few minutes for the connection to be created. During that time, the connection shows its status as pending. Also, there’s no auto-refresh, so you need to refresh manually.

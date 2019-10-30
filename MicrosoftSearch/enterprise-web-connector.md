@@ -15,14 +15,14 @@ search.appverid:
 description: "Enterprise Website configuration in the M365 Admin portal."
 ---
 
-# Configure an Enterprise Website connector in Microsoft 365 
+# Configure an Enterprise Website connector in Microsoft 365
 
 With the Enterprise Website connector for Microsoft Search, your organization can index articles and **content from its internal-facing websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Enterprise Website connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.  
 
 ## Connect to a data source 
-To connect to your data source, you need your root URL and some form of authentication (Basic Authentication or OAuth 2.0 with Azure AD).
+To connect to your data source, you need your root URL and a form of authentication (Basic Authentication or OAuth 2.0 with Azure AD).
 
 ### Root URL
 The root URL is what initiates the crawl and is used for authentication. You can get the URL from the home page of the website you want to crawl.
