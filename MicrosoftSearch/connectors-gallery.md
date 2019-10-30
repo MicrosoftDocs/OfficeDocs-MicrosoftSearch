@@ -24,7 +24,8 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="{height:240px;overflow:hidden}
+                :hover {height: 300px;}">
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
@@ -585,7 +586,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;overflow:hidden">
+                <div class="card" style="height:240px;">
                     <div class="cardText">
                         <h3>eRoom</h3>
                         <p>by <a href="https://www.accenture.com" target="_blank">Accenture</a></p>
