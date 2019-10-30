@@ -24,7 +24,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;overflow-y:scroll;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com" data-linktype="external">Microsoft</a></p>
@@ -41,7 +41,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Enterprise Website</h3>
                         <p>by <a href="https://www.microsoft.com" data-linktype="external">Microsoft</a></p>
@@ -58,7 +58,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>File share</h3>
                         <p>by <a href="https://www.microsoft.com" data-linktype="external">Microsoft</a></p>
@@ -77,7 +77,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p>by <a href="https://www.microsoft.com" data-linktype="external">Microsoft</a></p>
@@ -94,7 +94,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Microsoft SQL</h3>
                         <p>by <a href="https://www.microsoft.com" data-linktype="external">Microsoft</a></p>
@@ -111,7 +111,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>ServiceNow</h3>
                         <p>by <a href="https://www.microsoft.com" data-linktype="external">Microsoft</a></p>
@@ -138,7 +138,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Aderant</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -153,7 +153,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Adobe AEM</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -168,7 +168,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Adobe Experience Manager</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -186,7 +186,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Alfresco</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -201,7 +201,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Alfresco Content Services</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -216,7 +216,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Amazon Aurora</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -234,7 +234,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Amazon RDS</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -249,7 +249,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Amazon S3</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -264,7 +264,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Amazon S3</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -282,7 +282,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Atlassian Confluence</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -297,7 +297,7 @@ ms.author: samanro
    <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Atlassian Confluence</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -312,7 +312,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Atlassian Confluence Cloud</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -330,7 +330,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Atlassian Jira</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -345,7 +345,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Atlassian Jira Cloud</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -360,7 +360,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Azure Blob Storage</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -378,7 +378,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Azure Data Lake</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -393,7 +393,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Azure Event Hub</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -408,7 +408,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Azure SQL Database</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -426,7 +426,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Box</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -441,7 +441,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Box</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -456,7 +456,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Box</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -474,7 +474,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Confluence</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -489,7 +489,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>CuadraSTAR</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -504,7 +504,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Deltek</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -522,7 +522,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Documentum / Documentum DQL</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -537,7 +537,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Elasticsearch</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -552,7 +552,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Elite / E3</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -570,7 +570,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>EMC eRoom</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -585,7 +585,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>eRoom</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -600,7 +600,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>e-Spirit FirstSpirit</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -618,7 +618,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Facebook Workplace</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -633,7 +633,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Facebook Workplace</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -648,7 +648,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>File Share</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -666,7 +666,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>File System</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -681,7 +681,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>File System</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -696,7 +696,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>FTP</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -714,7 +714,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>GitLab</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -729,7 +729,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Google Cloud SQL</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -744,7 +744,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Google Drive</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -762,7 +762,7 @@ ms.author: samanro
         <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Hbase</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -777,7 +777,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>HDFS</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -792,7 +792,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>HP Consolidated Archive (EAS)</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -810,7 +810,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>IBM Connections</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -825,7 +825,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>IBM Connections</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -840,7 +840,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>IBM Connections</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -858,7 +858,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>IBM Connections Cloud</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -873,7 +873,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>IBM Content Manager</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -888,7 +888,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>IBM Db2</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -906,7 +906,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>IBM FileNet P8</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -921,7 +921,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>IBM Lotus Notes</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -936,7 +936,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>IBM Notes</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -954,7 +954,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>IBM WebSphere</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -969,7 +969,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>iManage Work</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -984,7 +984,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>JIRA Issues</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1002,7 +1002,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Jive</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1017,7 +1017,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Jive</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1032,7 +1032,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Jive</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1050,7 +1050,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Kafka</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1065,7 +1065,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Kinesis</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1080,7 +1080,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>LDAP</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1098,7 +1098,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>LDAP</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1113,7 +1113,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>LegalKEY</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1128,7 +1128,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>LexisNexis InterAction</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1146,7 +1146,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Lotus Notes</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1161,7 +1161,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Lotus Notes Databases</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1176,7 +1176,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>MediaPlatform PrimeTime</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1194,7 +1194,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>MediaWiki</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1209,7 +1209,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Micro Focus Content Manager (HPE Records Manager/HP TRIM)</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1224,7 +1224,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Microsoft Azure AD</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1242,7 +1242,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Microsoft SharePoint</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1257,7 +1257,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Microsoft SQL Server</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1272,7 +1272,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Microsoft Windows File Server</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1291,7 +1291,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Microsoft Yammer</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1306,7 +1306,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>MySQL</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1321,7 +1321,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>NetDocuments</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1339,7 +1339,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Nuxeo</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1354,7 +1354,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Objective</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1369,7 +1369,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>OneDrive</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1387,7 +1387,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>OpenText Content Server</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1402,7 +1402,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>OpenText Documentum</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1417,7 +1417,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>OpenText Documentum</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1435,7 +1435,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>OpenText eDOCS DM</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1450,7 +1450,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>OpenText Livelink/RM</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1465,7 +1465,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Oracle Database</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1483,7 +1483,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Oracle Knowledge Advanced Cloud</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1498,7 +1498,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Oracle WebCenter</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1513,7 +1513,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Oracle WebCenter Content (UCM/Stellent</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1531,7 +1531,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Pironet NDH pirobase CMS</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1546,7 +1546,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>PostgreSQL</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1561,7 +1561,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>RDBMS Server</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1579,7 +1579,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Relational databases</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1594,7 +1594,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>RSS</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1609,7 +1609,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Salesforce</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1627,7 +1627,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Salesforce</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1642,7 +1642,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Salesforce</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1657,7 +1657,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>SAP ERP</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1675,7 +1675,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>SAP HANA</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1690,7 +1690,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>SAP NetWeaver Portal</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1705,7 +1705,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>SAP PLM DMS</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1723,7 +1723,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>ServiceNow</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1738,7 +1738,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>ServiceNow</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1753,7 +1753,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>ServiceNow</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1771,7 +1771,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>SharePoint 2013</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1786,7 +1786,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>SharePoint 2016</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1801,7 +1801,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>SharePoint Online</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1819,7 +1819,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Sitecore</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1834,7 +1834,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Sitecore</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1849,7 +1849,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>SMB</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1867,7 +1867,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>SMB File Share</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1882,7 +1882,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>SMTP</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1897,7 +1897,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>SQL Database</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1916,7 +1916,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Any SQL-based CRM system</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -1931,7 +1931,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>StageR</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1946,7 +1946,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Symantec Enterprise Vault</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -1964,7 +1964,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>TeamForge</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1979,7 +1979,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Twitter</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -1994,7 +1994,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Veeva Vault</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -2012,7 +2012,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Veritas Enterprise Vault</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -2027,7 +2027,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Veritas Enterprise Vault (Symantec eVault)</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -2042,7 +2042,7 @@ ms.author: samanro
         <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Web Crawler</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -2060,7 +2060,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>windream ECM-System</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -2075,7 +2075,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Xerox DocuShare</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
@@ -2090,7 +2090,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                        <h3>Xerox DocuShare</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
@@ -2108,7 +2108,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Yammer</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
@@ -2123,7 +2123,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:auto;">
                     <div class="cardText">
                         <h3>Yammer</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
