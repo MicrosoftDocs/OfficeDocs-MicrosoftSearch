@@ -45,7 +45,7 @@ At a high-level, there are 3 main steps for adding a vertical.
 
 Once you start the wizard, you'll be guided through the steps to define the vertical's name, content source and scope of the content that it will search. The vertical is created in a disabled state.  You will enable the vertical later.
 
-You can use a limited set of KQL to narrow down the scope,the page shows the properties available to you. We recommend using free text-keywords and property restrictions with Boolean operators for creating the KQL.
+You can use a limited set of Keyword Query Language (KQL) syntax to narrow down the scope,the page shows the properties available to you. We recommend using free text-keywords and property restrictions with Boolean operators for creating the KQL.
 
 ### Create a vertical at the organization level
 
@@ -89,10 +89,23 @@ A search result type is a rule that causes distinct kinds of search results to b
 1. In the navigation pane, go to **Custom experience**, and then select Result type tab.
 1. To add a result type, select **Add**. <br> OR <br>To edit a result type, select the result type in the list.
 
-## View the vertical after enabling
+### View the vertical after enabling
 
 After you enable the vertical, it might take a while before you can view it.
 If you want to wait after enabling it, you can append *cacheClear=true* to the URL in SharePoint and Office.com to view the vertical immediately.
+
+## Troubleshooting
+
+Here's a list of common issues you might encounter and actions for fixing them.
+
+
+|Error  |Action  |
+|---------|---------|
+|Cache miss and hit for MRT and vertical     |         |
+|Something went wrong     |         |
+|Not seeing content source - no connections created     |         |
+|Row4     |         |
+
 
 ## Next steps
 [STEP 3: Customize the results layout](customize-results-layout.md)
