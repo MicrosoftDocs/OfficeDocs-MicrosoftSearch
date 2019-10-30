@@ -15,14 +15,15 @@ description: "Best practices for Microsoft Search floor plans"
 ---
 # Best practices for Microsoft Search floor plans
 
-To successfully implement Microsoft Search floor plans, you need to coordinate 3 pieces of data:
-- Building location data: What format and how to add?
-- Floor plan map in DWG format: How to view and what data should it contain for maximum success?
-- Employee office location in Azure AD: What format to use and how to add?
+To successfully implement Microsoft Search floor plans, you need to coordinate three pieces of data:
+- **Building location data**. What format and how to add?
+- **Floor plan map in DWG format**. How to view and what data should it contain for maximum success?
+- **Employee office location in [Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/services/active-directory/)**. What format to use and how to add?
+
 This article discusses the best practices for deploying Microsoft Search floor plans.
 
 ## Building location data
-Before you can add floor plans, you to add your buildings to Microsoft Search locations. To do that, you’ll need to know this information:
+Before you add floor plans, you need to add your buildings to Microsoft Search locations. Provide the required building data shown in the following table:
 
 |Required building data  |Example  |
 |---------|---------|
@@ -31,29 +32,29 @@ Before you can add floor plans, you to add your buildings to Microsoft Search lo
 |Latitude-longitude  (optional)   |    40.760539, -73.975341      |
 |Keywords     |    New York Office, Building 1, main office, headquarters     |
 
-If you are adding many buildings at a time, use the **Import** feature in the **Locations** tab rather than adding locations one at a time. The import feature lets you specify the latitude-longitude. The **Add floor plans** wizard only lets you add the street address. For more information, see [Manage locations].
+You can add many buildings at a time by using the **Import** feature in the **Locations** tab instead of adding locations one at a time. With the **Import** feature, you can specify the latitude-longitude. In the **Add floor plans** wizard, you can only add the street address. For more information, see [Manage locations](manage-locations.md).
 
 ## Floor plan map in DWG format
-Microsoft Search needs you to upload floor plans in DWG format with very specific information. For more information about creating and viewing DWG formatted files, see [DWG Viewers](https://www.autodesk.in/products/dwg). 
+To build maps in Microsoft Search, you need to upload floor plans in DWG format with specific information. To learn how to create and view DWG-formatted files, see [DWG Viewers](https://www.autodesk.in/products/dwg). 
 
-For example in the following diagram, there are a few things that should be pointed out.
-1. Room numbers are defined as “B1 1001”, “B1 1002”. 
- Where B1 is the building code, and 1001 contains the floor number "1" and the office number "001".
-1. Room layouts - Defining layouts such as chairs and desks can help when multiple users share an office.
-1. Room types – Office, corridor, open area, toilet.
-1. Asset info – For example, if users are in an open space, you can denote which desk they sit at. In this example, those are denoted by TB1, TB2.
+Floor plan maps display four elements:
+1. **Room numbers**. In the following example, room numbers are defined as **B1 1001** and **B1 1002**. **B1** is the building code, and 1001 contains the floor number **1** and the office number **001**.
+1. **Room layouts.** To help clarify details when multiple users share an office, you can define layouts like chairs and desk.
+1. **Room types**. Some examples include office, corridor, open area, and toilet.
+1. **Asset info** If users are in an open space, you can denote which desk they sit at. In this example, the desks are denoted by **TB1** and **TB2**.
 
-![Simple office map showing how to label room numbers, assets, and room types.](media/Floorplans-LayoutwithCallouts.png)
+![Simple office map showing how to label room numbers, assets, and room types](media/Floorplans-LayoutwithCallouts.png)
 
-In this diagram, room numbers are the most important item. This gets mapped to a person’s office location on their user account as shown below.
+In this diagram, room numbers are the most important item. They're mapped to a person’s office location on their user account as shown in the following image.
+
 ####insert outlook people card####
 
-This information is stored in Azure AD in the **Office location** property. In the Microsoft 365 admin center, it’s called the “Office” property and can be added in Active users.
+This information is stored in Azure AD in the **Office location** property. In the Microsoft 365 [admin center](https://admin.microsoft.com), it’s called the **Office** property and can be added in Active users.
 
-### Working with DWG files
-Microsoft Search requires floor plans in DWG format. DWG is an AutoCAD format. The file must contain **layout** and **label** data. The labels MOST important for floor plans is **room numbers**. 
+### DWG files
+Microsoft Search requires floor plan files in DWG, which is format an AutoCAD format. The files must contain **layout** and **label** data. **Room numbers** are the most important labels for floor plans. 
 
-We recommend that you create your office numbering system using the exact match method as in the following table, but you are not limited to that labeling. For example, if the user's office location in Azure AD is "B1 1001", you have the following options for labeling the room number in the DWG file.
+We recommend that you create your office numbering system with the exact match method shown in the following table. But you are not limited to that labeling. For example, if the user's office location in Azure AD is "B1 1001", you have the following options for labeling the room number in the DWG file.
 
 
 |Match  |Layout  |
