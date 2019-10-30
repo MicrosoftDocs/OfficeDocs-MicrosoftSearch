@@ -56,7 +56,7 @@ To create the vertical on Microsoft Search in SharePoint home, Bing or Office.co
 
 ### Create a vertical at the site level
 
-1. On the SharePoint site where you want to create teh vertical, go to **Settings**.
+1. On the SharePoint site where you want to create the vertical, go to **Settings**.
 1. Select **Site information**, and then **View all site settings**.
 1. Look for the **Microsoft Search** section, and then select **Configure Microsoft Search for this site collection**.
 1. In the navigation pane, go to **Custom experience**, and then select the **Verticals** tab.
