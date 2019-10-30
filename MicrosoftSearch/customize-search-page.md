@@ -101,7 +101,7 @@ Here's a list of common issues you might encounter and actions for fixing them.
 
 |Error  |Action  |
 |---------|---------|
-|Cache miss and hit for MRT and vertical     |         |
+|Why don't I see my result layout? | Wait for a few minutes        |
 |Something went wrong     |         |
 |Not seeing content source - no connections created     |         |
 |Row4     |         |
