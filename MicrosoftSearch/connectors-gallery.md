@@ -24,8 +24,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="{height:240px;overflow:hidden}
-                :hover {height: 300px;}">
+                <div class="card" onmouseover="expand(this)" onmouseout="normal(this)">
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
@@ -2137,3 +2136,13 @@ ms.author: samanro
         </div>
     </li>
 </ul>
+
+<script>
+function expand(x) {
+  x.style.height = "300px";
+}
+
+function normal(x) {
+  x.style.height = "240px";
+}
+</script>
