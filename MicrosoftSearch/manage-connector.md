@@ -44,11 +44,11 @@ Four states show up in the **Status** column against each connection:
 ### Monitor errors
 For each Active Connector** on the **Connectors** tab shows, any existing errors show under the **Error** tab. The tab lists error codes, the count of each, and error log download options. See the example in the following table.
 
-![](media/errormonitoring.jpg)
+![](media/errormonitoring1.jpg)
 
 To view an error’s specific details, select its error code. A screen appears with error details and a link. The most recent errors appear at the top. See the example in the following table.
 
-![](media/errormonitoring.jpg)
+![](media/errormonitoring2.jpg)
 
 ## Preview limitations
 * When you **publish** a Microsoft-built connector, it might take a few minutes for the connection to be created. During that time, the connection shows its status as pending. Also, there’s no auto-refresh, so you need to refresh manually.
