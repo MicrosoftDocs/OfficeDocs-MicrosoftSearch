@@ -24,7 +24,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" style="height:240px;">
+                <div class="card" style="height:240px;overflow-y:scroll;">
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com" data-linktype="external">Microsoft</a></p>
@@ -131,6 +131,7 @@ ms.author: samanro
 ---
 
 <h2 id="Partners">Connectors by our Partners</h2>
+<h4>Search by </h4>
 <!--- 1 ROW --->
 <h3 id="A"></h3>
 <ul class="panelContent cardsZ">
