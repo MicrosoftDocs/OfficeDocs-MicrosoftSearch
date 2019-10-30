@@ -140,7 +140,7 @@ ms.author: samanro
 ---
 
 <h2 id="Partners">Connectors by our Partners</h2>
-<h3><a href="#A">A</a> <a href="#B">B</a> C D E F G H I J K L M N O P Q R S T U V W X Y Z</h3>
+<h3><a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a></h3>
 <!--- 1 ROW --->
 <h3 id="A"></h3>
 <ul class="panelContent cardsZ">
@@ -480,6 +480,8 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 8 ROW --->
+<h3 id="C"></h3>
+<h3 id="D"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -528,6 +530,7 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 9 ROW --->
+<h3 id="E"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -624,6 +627,7 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 11 ROW --->
+<h3 id="F"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -720,6 +724,7 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 13 ROW --->
+<h3 id="G"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -768,6 +773,7 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 14 ROW --->
+<h3 id="H"></h3>
 <ul class="panelContent cardsZ">
         <li>
         <div class="cardSize">
@@ -816,6 +822,7 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 15 ROW --->
+<h3 id="I"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -960,6 +967,7 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 18 ROW --->
+<h3 id="J"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -1056,6 +1064,8 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 20 ROW --->
+<h3 id="K"></h3>
+<h3 id="L"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -1152,6 +1162,7 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 22 ROW --->
+<h3 id="M"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -1297,6 +1308,7 @@ ms.author: samanro
 
 </ul>
 <!--- 25 ROW --->
+<h3 id="N"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -1345,6 +1357,7 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 26 ROW --->
+<h3 id="O"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -1537,6 +1550,9 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 30 ROW --->
+<h3 id="P"></h3>
+<h3 id="Q"></h3>
+<h3 id="R"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -1585,6 +1601,7 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 31 ROW --->
+<h3 id="S"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -1970,6 +1987,9 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 39 ROW --->
+<h3 id="T"></h3>
+<h3 id="U"></h3>
+<h3 id="V"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -2018,6 +2038,7 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 40 ROW --->
+<h3 id="W"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -2066,6 +2087,7 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 41 ROW --->
+<h3 id="X"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -2114,6 +2136,8 @@ ms.author: samanro
     </li>
 </ul>
 <!--- 42 ROW --->
+<h3 id="Y"></h3>
+<h3 id="Z"></h3>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
