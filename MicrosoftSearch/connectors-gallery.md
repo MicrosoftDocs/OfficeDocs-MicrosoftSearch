@@ -13,6 +13,15 @@ ms.topic: landing-page
 ms.date: 12/13/2017
 ms.author: samanro
 ---
+<style>
+.card {
+  overflow: hidden;
+}
+.card:hover {
+  height: 300px;
+}
+</style>
+
 # Microsoft Graph Connector Gallery
 
 #### In this article
@@ -24,7 +33,7 @@ ms.author: samanro
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card" onmouseover="expand(this)" onmouseout="normal(this)">
+                <div class="card" style="height:240px;">
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
@@ -2137,13 +2146,3 @@ ms.author: samanro
         </div>
     </li>
 </ul>
-
-<script>
-function expand(x) {
-  x.style.height = "300px";
-}
-
-function normal(x) {
-  x.style.height = "240px";
-}
-</script>
