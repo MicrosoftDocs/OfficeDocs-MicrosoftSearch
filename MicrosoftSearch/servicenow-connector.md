@@ -34,6 +34,7 @@ To use OAuth for authentication, a ServiceNow admin needs to provision an endpoi
 To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
 The following tables provides guidance on how to fill out the endpoint creation form:
+
 **Field** | **Description** | **Recommended Value**
 --- | --- | ---
 Name | This unique value identifies the application that you require OAuth access for. | Microsoft Search

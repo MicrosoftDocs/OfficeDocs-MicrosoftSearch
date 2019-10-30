@@ -24,7 +24,8 @@ Microsoft Search indexes all your Microsoft 365 data to make it searchable by us
 ## Architecture
 The following architectural diagram of the Microsoft Graph platform shows how connector content flows through content indexing to user results in [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) clients.  This article explains each of the key building blocks in the Microsoft Graph connectors data flow process.
 
-[ADD DIAGRAM HERE]
+[SEE TEMPORARY DIAGRAM BELOW]
+![](highlevel-connectors_FINAL.jpg)
 
 Source data first flows through Microsoft’s content indexing API to be indexed and stored. Then the API instantiates one connection per data source. These connections interact with Microsoft Search, so users can get search results.
 
