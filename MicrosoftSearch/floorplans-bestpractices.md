@@ -3,7 +3,6 @@ title: "Best practices for Microsoft Search floor plans"
 ms.author: anfowler
 author: adefowler
 manager: shohara
-ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -19,7 +18,7 @@ description: "Best practices for Microsoft Search floor plans"
 To successfully implement Microsoft Search floor plans, you need to coordinate three pieces of data:
 - **Building location data**. What format and how to add?
 - **Floor plan map in DWG format**. How to view and what data should it contain for maximum success?
-- **Employee office location in [Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/services/active-directory/)**. What format to use and how to add?
+- **Employee office location in [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/)**. What format to use and how to add?
 
 This article discusses the best practices for deploying Microsoft Search floor plans.
 
