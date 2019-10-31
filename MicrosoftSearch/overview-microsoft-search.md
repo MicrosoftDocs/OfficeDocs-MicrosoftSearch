@@ -77,7 +77,7 @@ The search results that the user has **permission** to see are presented on the 
 When a user enters a search query in Microsoft Search in Bing, two simultaneous search requests occur:
 
 - A search of the enterprise's internal resources.
-- a separate search of public results from `Bing.com`. Because enterprise searches might be sensitive, Microsoft Search has implemented a set of trust measures that describe how the separate search of public results from `Bing.com` is handled.
+- A separate search of public results from `Bing.com`. Because enterprise searches might be sensitive, Microsoft Search has implemented a set of trust measures that describe how the separate search of public results from `Bing.com` is handled.
 
 Because enterprise searches might be sensitive, Microsoft Search has implemented a set of trust measures that describe how the separate search of public results from `Bing.com` is handled.
 
