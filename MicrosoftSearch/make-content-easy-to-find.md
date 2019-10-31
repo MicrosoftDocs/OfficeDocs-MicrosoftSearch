@@ -84,7 +84,7 @@ After you create [bookmarks](manage-bookmarks.md) and [Q&A](manage-qas.md), veri
 Users and SMEs who contribute to content creation can help test and validate search results.
 
 ## Review and update periodically
-Authoritative information like [bookmarks](manage-bookmarks.md) and [Q&A](manage.qas.md) need to stay fresh. Take these steps regularly:
+Authoritative information like [bookmarks](manage-bookmarks.md) and [Q&A](manage-qas.md) need to stay fresh. Take these steps regularly:
 - Fix or remove broken and invalid URLs.
 - Remove bookmarks or Q&A that are no longer relevant.
 - Check for tool, site name, or team name changes.
