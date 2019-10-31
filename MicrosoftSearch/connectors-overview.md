@@ -58,8 +58,8 @@ Learn more about the [File share connector](file-share-connector.md).
 - **[MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)**. With this Microsoft Graph connector, users can search for knowledge-base articles on wiki sites your organization creates with MediaWiki.
 Learn more about the [MediaWiki connector](mediawiki-connector.md).
 
-- **[Microsoft SQL Server](https://www.microsoft.com/sql-server/sql-server-2017)**. With this Microsoft Graph connector, users in your organization can search for data in on-premises SQL Server databases.
-Learn more about the [Microsoft SQL Server connector](MSSQL-connector.md).
+- **[Microsoft SQL server](https://www.microsoft.com/sql-server/sql-server-2017)**. With this Microsoft Graph connector, users in your organization can search for data in on-premises SQL server databases.
+Learn more about the [Microsoft SQL server connector](MSSQL-connector.md).
 
 - **[ServiceNow](https://www.servicenow.com)**. With this Microsoft Graph connector, users in your organization can search for knowledge-base articles from your ServiceNow instance.
 Learn more about the [ServiceNow connector](servicenow-connector.md).
