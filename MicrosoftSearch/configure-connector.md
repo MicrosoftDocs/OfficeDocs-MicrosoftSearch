@@ -22,7 +22,7 @@ This article guides search administrators through the steps of configuring a Mic
 * [Enterprise websites](enterprise-web-connector.md)
 * [File share](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)
-* [Microsoft SQL Server](MSSQL-connector.md)
+* [Microsoft SQL server](MSSQL-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
 ## Set up
