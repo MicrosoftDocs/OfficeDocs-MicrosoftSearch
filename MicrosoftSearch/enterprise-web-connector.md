@@ -32,8 +32,8 @@ Basic Authentication requires a username and password. Create this bot account b
 
 OAuth 2.0 with Azure AD requires a tenant ID, resource ID, Client ID, and Client Secret.
 For more information, see [Authorize access to Azure Active Directory web applications using OAuth 2.0 code grant flow](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code). Register with the following values:
-    Name: Microsoft Search
-    Redirect_URI: https://gcs.office.com/v1.0/admin/oauth/callback
+* **Name:** Microsoft Search
+* **Redirect_URI:** `https://gcs.office.com/v1.0/admin/oauth/callback`
 
 To get the values for named tenant, resource, client_id, and client_secret, go to **Use the authorization code to request an access token** on the redirect URL webpage.
 
