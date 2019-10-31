@@ -72,7 +72,7 @@ These restrictions and recommendations apply to search schema settings:
 > After you create a connection, you **can't** modify the schema. To do that, you need to delete your connection and create a new one.
 
 ###  Manage search permissions
-Access Control Lists (ACLs) determine which users in your organization can access each item of data. The file share connector supports only ACLs that can be mapped to [Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/). All the other connectors support search permissions that are visible to all users.
+Access Control Lists (ACLs) determine which users in your organization can access each item of data. The file share connector supports only ACLs that can be mapped to [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/). All the other connectors support search permissions that are visible to all users.
 
 ### Set the refresh schedule
 The refresh schedule determines how often your data is synced with the index in Microsoft Graph and Microsoft Search. You can schedule the refresh in two ways: full crawl or incremental crawl.
