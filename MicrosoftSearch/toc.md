@@ -12,20 +12,21 @@
 ###[Best practices for floor plans](floorplans-bestpractices.md)
 ##[Locations](manage-locations.md)
 ##[Q&As](manage-qas.md)
-#Connect to data (preview)
+#Connectors (preview)
 ##[Overview](connectors-overview.md)
-##[Connectors Preview](connectors-preview.md)
+##[Preview release](connectors-preview.md)
 ##[Connectors gallery](connectors-gallery.md)
 ##[Manage your connector](manage-connector.md)
-##Connectors by Microsoft
-###[Configure your Microsoft-built connector](configure-connector.md)
+##Configure Microsoft-built connectors
+###[Connector setup](configure-connector.md)
 ###[Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 ###[Enterprise website](enterprise-web-connector.md)
 ###[File share](file-share-connector.md)
 ###[Microsoft SQL](MSSQL-connector.md)
 ###[MediaWiki](mediawiki-connector.md)
 ###[ServiceNow](servicenow-connector.md)
-##[Terms of Use](terms-of-use.md)
+##[Feedback](connectors-feedback.md)
+##[Terms of use](terms-of-use.md)
 #Customize and configure
 ##Verticals
 ##Result types
