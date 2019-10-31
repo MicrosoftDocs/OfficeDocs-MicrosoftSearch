@@ -3,12 +3,11 @@ title: "Make content easy to find with Microsoft Search"
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 05/30/2019
+ms.date: 10/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
-ROBOTS: NOINDEX
 search.appverid:
 - BFB160
 - MET150
@@ -17,63 +16,61 @@ description: "Create bookmarks, locations, and Q&A items to make your organizati
 ---
 # Make content easy to find
 
-Microsoft Search helps users find relevant content. Microsoft Search is a secure way to search both your intranet and web content. This kind of integration across web and organization is available only with Microsoft. 
+Microsoft Search helps users find relevant content. It's a secure way to search both your intranet and web content. This type of integration across the web and organizations is only available from Microsoft. 
 
-Search administrators use their knowledge of the organization and its users to make it easy for users to find the relevant content. 
+Search administrators use their knowledge of an organization to make it easy for users to find relevant content. 
 
-## Step 1: Identify information your users need
-Find out what your users are searching for and make that easily discoverable. Here are some ideas for finding out what information users need: 
+## Identify the information your users need
+To find out what your users need and make that information easily discoverable, try some of these methods:
 
 - Use intranet search logs to determine sites and pages that get the most traffic.
 - Determine apps, sites, and tools that are used on a daily or weekly basis.
 - Find direct links for employee benefits.
 - Find policies and processes that users need to be aware of.
-- Decide ‘who’ and ‘how’ users should contact Support.
-- Get information that is needed on a recurring basis, either seasonally or based on business cycles; for example, people looking for tools to book time off or quarterly financial updates.
-- Collect policies for regional or mobile users, like benefits that vary by location.
-- Determine internal sites and information for common web searches; for example, traffic, public transit information, local weather, discounts available from corporate partners, and health and fitness programs.
+- Decide who users contact for support and how they do that.
+- Get information that's needed on a recurring basis, either seasonally or based on business cycles. An example is people looking for tools to book time off or quarterly financial updates.
+- Collect policies for regional or mobile users. Examples are benefits that vary by location.
+- Determine internal sites and information for common web searches. Examples are traffic, public transit information, local weather, discounts available from corporate partners, and health and fitness programs.
 - Find information about company-sponsored events, conferences, or retreats.
 - Research common IT, HR, and support issues and frequently asked questions (FAQs) and answers.
 
-## Step 2: Leverage Subject Matter Experts (SMEs) and users
-In an organization, users search for a wide range of topics ranging from simple such as office addresses, employee benefits to complex topics such as new work processes, technical information, and how-to-do content. Creating or finding such wide range of content requires knowledge and expertise in different fields, subjects, technologies etc. and a Search administrator may not have the requisite expertise or knowledge. Administrators should leverage expertise and knowledge of others in the organization to scale the amount of available content without additional resources.
+## Leverage subject mattmr experts (SMEs) and users
+In an organization, users search for a range of simple to complex topics. Simple examples are office addresses and employee benefits. Complex examples are new work processes, technical information, and how-to-do content. To create or find such a wide variety of content, you need expertise in different fields, subjects, and technologies. Most search administrators don't have specific knowledge on every subject. To scale the amount of available content without outside resources, seek expertise and knowledge from others in your organization.
 
 ### Leverage SMEs
-Leverage SMEs in the organization including experts from HR, support, sales, technology, and other key areas. To allow your SMEs to contribute content directly, add them as Search editors. 
+Leverage the SMEs in your organization including experts from HR, support, sales, technology, and other key areas. SMEs can contribute content directly if you add them as Microsoft Search editors. 
 
 ### Involve your users
-Ask users to suggest resources to bookmark. In addition to suggesting content, ask users to report errors, like broken or invalid links.
+Ask users to suggest resources to bookmark. Also ask users to report errors like broken or invalid links.
 
-## Step 3: Improve findability of content 
-In Microsoft Search, Search administrator creates Bookmarks, Q&A, Locations, and PowerApps to improve the findability of content. Each of these search components includes a title, a URL, and a set of keywords that trigger it.
+## Make content easy to find 
+In Microsoft Search, administrators create [Bookmarks](manage-bookmarks.md), [Q&A](manage-qas.md), [Locations](manage-locations.md), and [PowerApps](integrate-powerapps.md) that make content easier to find. Each of these search components includes a title, a URL, and a set of keywords that trigger it.
 
 ### Titles and descriptions
-People use titles and descriptions to determine if the result answers their search query, or if they need to try a different search. Titles and descriptions should reflect the core purpose of the result. A good example of a title might be 'Childcare benefits,' with a description - 'Learn about benefits to help pay childcare costs.' This informs the users who search 'childcare' that monetary support benefits are available, and provides them a link to find out more. 
+Connected titles and descriptions help users determine whether or not results answer their search query. Good titles and descriptions reflect the core purpose of the result. An example is the title **Childcare benefits** with the description *Learn about benefits to help pay childcare costs*. With this connected data, users who search for **childcare** can find monetary support benefits and get a link to find out more.
 
 ### Keywords
-Keywords are the terms that people in your organization use to find relevant content. Associating the appropriate keywords with search results makes it easier to find the relevant content. Microsoft Search suggests keyword based on the title and URL for your content. To identify additional keywords, start by answering these questions:
+With keywords, users in your organization can search and find relevant content. You need to associate keyword terms with their related search results. Microsoft Search suggests keywords based on the title and URL of your content. To identify more keywords, get answers to these questions:
 
-1. Which search terms are used to find the information you've identified?
-1. Leverage any existing taxonomy your organization uses, as well as related variations, acronyms, subjects, and topics.
-1. Which other variations or words do people use to talk about this information?
-1. Leverage your support team to determine these keywords.
+1. **What search terms can find the information you identified?** Refer to any existing terminology in your organization, as well as related variations, acronyms, subjects, and topics.
+1. **What variations or words do people use to talk about this information?** Ask your support team to provide these keywords.
 
-For example, if you're creating a result that links to a tool for submitting vacation requests, keywords such as 'vacation' and 'submit vacation request' are good options to include. You may also find that people in your organization use 'holiday' or 'time off' to describe or search vacation related information. Adding keywords like 'holiday,' 'time off,' 'submit holiday request,' and 'request time off' will make it easier for more of your users to find the relevant content.
+For example, if you create a result that links to a tool for submitting vacation requests, keywords **vacation** and **submit vacation request** are good options to include. Users in your organization might also search for vacation-related information with **holiday** or **time off**. To make it easier for users to find relevant content, add those keywords and others like **submit holiday request** and **request time off**.
 
 ### Reserved keywords
- A reserved keyword is a unique term or phrase that triggers a result. Unlike other keywords, a reserved keyword can be associated with one result only. Use reserved keywords sparingly to allow Microsoft Search to learn based on usage.
+ A reserved keyword is a unique term or phrase that triggers a result. Unlike other keywords, reserved keywords are associated with one result only. Use reserved keywords sparingly to allow Microsoft Search to learn based on usage.
 
-For example, if you create a bookmark for a site for submitting your hours and add “log time” as a reserved keyword, users in your organization who search “log time” see the site for submitting your hours as the only bookmark in the Microsoft Search box. 
+An example is a bookmark for a site for submitting your hours. If **log time** is a reserved keyword, users in your organization who search for **log time** see that site as the only bookmark in the Microsoft Search box. 
 
-### Using keyword to group related content
-If you want users to find sets of related content when they search for a term, then try using the same keyword for all related content. For example, if you're adding results about processes and tools around life status changes, you could include a keyword like 'marriage' to group together results about updating benefits, tax information, and name and alias changes.
+### Group related content with keywords
+If you want users to find sets of related content when they search for a specific term, assign the same keyword to all related content. An example is a search for processes and tools around life status changes. To group answers together on updating benefits, tax information, and name and alias changes, include a keyword like **marriage**.
 
 ### Search settings
-Use search settings to tailor your content and target specific groups of users. Microsoft Search has the following settings that give you additional control over when a search result appears and who sees it.
+With search settings, you can tailor your content and target specific groups of users. These Microsoft Search settings control when a search result appears and who sees it:
 
-- **Dates:** Set a start date as well as an end date to control when content will be made available or unavailable. For example, time sensitive material appears in search result when it is relevant.
-- **Country/region:** Select countries or regions so that only users in those locations will see the content. For example, country specific information appears in search results in those countries only.
-- **Groups:** Use the Groups settings to make a result available only to members of a selected group. For example, if you're creating sites that pertain only to employees in the HR department, you could map this setting to the appropriate HR security group.
+- **Dates:** To control when content is available or unavailable, set a start date and an end date. For example, time-sensitive material appears in search result when it's relevant.
+- **Country/region:** You can select countries or regions, so only users in those locations see certain content. For example, country-specific information appears in search results in those countries only.
+- **Groups:** The **Groups** settings make results available only to members of selected groups. For example, if you're creating sites that pertain only to employees in the HR department, you could map this setting to the appropriate HR security group.
 - **Device & OS:** Select device types or operating systems so that only users searching on those devices or using those systems will see that bookmark.
 - **Targeted variations:** Use this setting to vary the content of the bookmark based on a user's device and location.
 
