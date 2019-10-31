@@ -34,7 +34,7 @@ The File share connector only supports search permissions visible to **Everyone*
 The recommended default refresh schedule interval is 15 minutes, but you can change it to another interval that you prefer.
 
 ## Set up your search results page
-To display different file connection results in the **All** and **Files** tabs, you need to set up a SharePoint search engine results page (SERP): 
+To display different file connection results in the **All** and **Files** tabs, you need to set up a SharePoint search engine results page:
 - The **All** table shows combined results from your file connections, SharePoint files, OneDrive files, and SharePoint sites. 
 - The **Files** vertical shows all file results from your connections, SharePoint, and OneDrive.
 Results from file connections are added to already existing results in both the **All** and **Files** verticals.
