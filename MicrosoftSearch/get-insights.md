@@ -23,10 +23,6 @@ When you first go to Microsoft Search in the Microsoft 365 admin center, you'll 
 
 Here are the reports that are available on the insights dashboard.
 
-## Query volume (Queries, clicks, and click-through rate)
-
-The most prominent report on the page is the Query volume report. This report displays the number of search queries users perform over time. With Query volume, you can identify search query volume trends and determine days or months of high and low search activity.
-
 ## Top queries
 
 This report gives details about the top 2000 search queries that users run. For a query to appear in Top queries, the query must get at least three clicks.
