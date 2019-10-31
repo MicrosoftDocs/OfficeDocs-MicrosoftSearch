@@ -74,7 +74,7 @@ To index custom data types or files, developers can create connectors in [Micros
 ### Search results with your custom-built connector
 Once custom data is indexed, developers can query this data using the search API in Microsoft Graph. You can view your data in any application. For more information, see [Microsoft Graph search API](https://aka.ms/mssearchapi).
 
-## License Requirements
+## License requirements
 To view data from connectors in your search results, users must have one of the following Microsoft 365 subscriptions:
-- [Enterprise E3/E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
-- [Education A3/A5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)
+- <a href="https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans" target="_blank">Enterprise E3/E5</a>
+- <a href="https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1" target="_blank">Education A3/A5</a>

@@ -17,11 +17,11 @@ description: "Microsoft Graph Connectors preview."
 
 # Microsoft Graph connectors preview
 
-Microsoft Graph connectors, indexing APIs, and search APIs are currently in preview. To gain access to connectors functionality, you must request to join the preview program by submitting the [Microsoft Graph Connectors Preview Signup Form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u). This is an early preview, and there is no service level guarantee. We encourage customers to try connectors functionality and provide feedback. We don’t recommend using connectors for production purposes during the preview period.
+Microsoft Graph connectors, indexing APIs, and search APIs are currently in preview. To gain access to connectors functionality, you must request to join the preview program by submitting the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">Microsoft Graph Connectors Preview Signup Form</a>. This is an early preview, and there is no service level guarantee. We encourage customers to try connectors functionality and provide feedback. We don’t recommend using connectors for production purposes during the preview period.
 
 ## Set up targeted release
 To try connectors, you must have the **Targeted release** option set for all users in your organization. The Targeted release requirement applies no matter which of the following preview environments you choose.
-To learn more about the Targeted release option and how to set it, see [Set up the Standard or Targeted release options in Office 365](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide).
+To learn more about the Targeted release option and how to set it, see <a href="https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide" target="_blank">Set up the Standard or Targeted release options in Office 365</a>.
 
 ## Choose a preview environment 
 To try connectors, indexing APIs, and search APIs, we recommend these two methods:
