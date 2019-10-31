@@ -35,7 +35,7 @@ Support to process changes in real time in the Graph Connectors Service might be
 
 After you create a queue, go to the **Events** tab in the queue page to configure Event Subscription. Choose all the Blob events that the queue will receive and connect the queue to the Azure Data Lake Storage Gen2 account.
 
-![](media/ADLSconfig.png)
+![](media/ADLSconfig.png =250x)
 
 ## Manage the search schema
 On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, and **retrievable**) associated with the managed properties. These managed property attributes are data indexed from your Azure Data Lake Storage Gen2 account.
