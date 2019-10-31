@@ -13,7 +13,8 @@ ms.topic: landing-page
 ms.date: 11/04/2019
 ms.author: samanro
 ---
-# Microsoft Graph Connector Gallery
+
+# Microsoft Graph connectors gallery
 
 #### In this article
 * <a href="#Microsoft">Connectors by Microsoft</a>
@@ -28,7 +29,7 @@ ms.author: samanro
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
-                        <p>With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Data Lake Storage connector also indexes hierarchy-enabled folders in Data Lake Storage accounts that you specify.</p>
+                        <p>With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Azure Data Lake Storage Gen2 connector also indexes hierarchy-enabled folders in Data Lake Storage accounts that you specify.</p>
                         <div style="margin-top:20px">
                         <div style="font-weight:500;float:left;width:33%"><a href="azure-data-lake-connector" target="_blank" data-linktype="relative-path"><font color="0065BA">More details</font></a> </div>
                             <div style="float:right"> <img src="media/azure_data_lake_small.png" alt="Azure Data Lake Storage Gen2" width="35" height="35" align="right" data-linktype="relative-path"></div>
@@ -43,12 +44,12 @@ ms.author: samanro
             <div class="cardPadding">
                 <div class="card" style="height: 235px; overflow: hidden;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='235px'">
                     <div class="cardText">
-                        <h3>Enterprise Website</h3>
+                        <h3>Enterprise websites</h3>
                         <p>by <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
                         <p>With this Microsoft Graph connector, users in your organization can search over pages in any non-SharePoint enterprise website.</p>
                         <div style="margin-top:20px">
                         <div style="font-weight:500;float:left;width:33%"><a href="enterprise-web-connector" target="_blank" data-linktype="relative-path"><font color="0065BA">More details</font></a> </div>
-                            <div style="float:right"> <img src="media/IntranetSites_Small.png" alt="Enterprise Website" width="35" height="35" align="right" data-linktype="relative-path"></div>
+                            <div style="float:right"> <img src="media/IntranetSites_Small.png" alt="Enterprise websites" width="35" height="35" align="right" data-linktype="relative-path"></div>
                     </div>
                     </div>
                 </div>
@@ -65,7 +66,7 @@ ms.author: samanro
                         <p>With this Microsoft Graph connector, users in your organization can search for files stored on on-premises Windows file shares.</p>
                         <div style="margin-top:20px">
                         <div style="font-weight:500;float:left;width:33%"><a href="file-share-connector" target="_blank" data-linktype="relative-path"><font color="0065BA">More details</font></a> </div>
-                            <div style="float:right"> <img src="media/FileConnectorLogo_Small.png" alt="Enterprise Website" width="35" height="35" align="right" data-linktype="relative-path"></div>
+                            <div style="float:right"> <img src="media/FileConnectorLogo_Small.png" alt="File share" width="35" height="35" align="right" data-linktype="relative-path"></div>
                     </div>
                     </div>
                 </div>
@@ -96,12 +97,12 @@ ms.author: samanro
             <div class="cardPadding">
                 <div class="card" style="height: 235px; overflow: hidden;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='235px'">
                     <div class="cardText">
-                        <h3>Microsoft SQL</h3>
+                        <h3>Microsoft SQL server</h3>
                         <p>by <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
                         <p>With this Microsoft Graph connector, users in your organization can search for data in on-premises SQL Server databases.</p>
                         <div style="margin-top:20px">
                         <div style="font-weight:500;float:left;width:33%"><a href="MSSQL-connector" target="_blank" data-linktype="relative-path"><font color="0065BA">More details</font></a> </div>
-                            <div style="float:right"> <img src="media/SqlConnectorLogo_Small.png" alt="Microsoft SQL" width="35" height="35" align="right" data-linktype="relative-path"></div>
+                            <div style="float:right"> <img src="media/SqlConnectorLogo_Small.png" alt="Microsoft SQL server" width="35" height="35" align="right" data-linktype="relative-path"></div>
                     </div>
                     </div>
                 </div>

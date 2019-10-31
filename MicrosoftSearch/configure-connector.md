@@ -15,14 +15,14 @@ search.appverid:
 description: "Configure your built-in connector in the M365 admin portal"
 ---
 
-# Configure your Microsoft-built connector in Microsoft 365
+# Set up your Microsoft-built connector in Microsoft 365
 
-This article guides search administrators through the steps of configuring a Microsoft-built connector. It outlines the flow of setting up a connection in the [Microsoft Search admin center](https://admin.microsoft.com/AdminPortal/Home#/MicrosoftSearch). For more details on how to set up specific Microsoft-built connectors, see these web pages:
-* [Azure Data Lake](azure-data-lake-connector.md)
-* [Enterprise website](enterprise-web-connector.md)
+This article guides search administrators through the steps of configuring a Microsoft-built connector. It outlines the flow of setting up a connection in the [Microsoft 365 admin center](https://admin.microsoft.com). For more details on how to set up specific Microsoft-built connectors, see these web pages:
+* [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+* [Enterprise websites](enterprise-web-connector.md)
 * [File share](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)
-* [Microsoft SQL](MSSQL-connector.md)
+* [Microsoft SQL server](MSSQL-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
 ## Set up
@@ -32,7 +32,7 @@ To configure any of the Microsoft-built connectors, go to the [Microsoft 365 adm
 3. Select **Add a connector**.
 4. From the list of available connectors, select the connector of your choice.
 
-![](media/addconnector.png)
+![](media/addconnector_final.png)
 
 ### Name the connector
 To create a connection, first specify these attributes:
@@ -40,10 +40,10 @@ To create a connection, first specify these attributes:
 2. Connection ID
 3. Description (optional)
 
-The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters.
+The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters.
 
 ### Connect to a data source
-The data connection process varies based on the type of connector. To learn more about connecting to your on-premises data source, see [Configure your gateway](aka.ms/configuregateway).
+The data connection process varies based on the type of connector. To learn more about connecting to your on-premises data source, see [Install an on-premises data gateway](aka.ms/configuregateway).
 
 ### Select source properties
 The data fields set by your third-party data source as source properties are indexed into Microsoft Search. To modify these properties, select **Edit properties** in the side bar on the right of the **Connectors** page. You can select **up to 64 source properties**.
@@ -69,10 +69,10 @@ These restrictions and recommendations apply to search schema settings:
 * Only string properties can be marked searchable.
 
 > [!Note]
-> After you create a connection, you **can’t** modify the schema. To do that, you need to delete your connection and re-create a new one.
+> After you create a connection, you **can't** modify the schema. To do that, you need to delete your connection and create a new one.
 
 ###  Manage search permissions
-Access Control Lists (ACLs) determine which users in your organization can access each item of data. The file share connector supports only ACLs that can be mapped to [Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/). All the other connectors support search permissions that are visible to all users.
+Access Control Lists (ACLs) determine which users in your organization can access each item of data. The file share connector supports only ACLs that can be mapped to [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/). All the other connectors support search permissions that are visible to all users.
 
 ### Set the refresh schedule
 The refresh schedule determines how often your data is synced with the index in Microsoft Graph and Microsoft Search. You can schedule the refresh in two ways: full crawl or incremental crawl.
@@ -103,4 +103,4 @@ You must create your own verticals and result types, so end users can view searc
 To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).
 
 ## How do I know this worked?
-Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+Go to the list of your published connections under the **Connectors** tab in the [Microsoft 365 admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).

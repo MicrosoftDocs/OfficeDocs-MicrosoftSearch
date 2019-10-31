@@ -15,7 +15,7 @@ search.appverid:
 description: "legal terms and conditions for MS Graph Connectors public preview"
 ---
 
-# Microsoft Search Public Preview: Terms of Use
+# Microsoft Search public preview: Terms of Use
 
 Microsoft Graph Connectors are a preview feature and are subject to the same terms of use described under "Previews" in the [Online Services Terms](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English).
 

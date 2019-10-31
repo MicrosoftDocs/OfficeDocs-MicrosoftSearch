@@ -24,7 +24,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ## Connect to a data source
 To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**, credentials for this account, and the Client ID and Client Secret for OAuth authentication.  
 
-Your organization’s **ServiceNow instance URL** typically looks like **https://<your-organization-domain>.service-now.com**. Along with this URL, you will need an account for setting up the connection to ServiceNow as well as for allowing Microsoft Search to periodically update the articles from ServiceNow based on the refresh schedule.
+Your organization’s **ServiceNow instance URL** typically looks like **https://&lt;your-organization-domain>.service-now.com**. Along with this URL, you will need an account for setting up the connection to ServiceNow as well as for allowing Microsoft Search to periodically update the articles from ServiceNow based on the refresh schedule.
 
 To authenticate and sync content from ServiceNow, choose one of two supported methods: 
 1. Basic authentication 
