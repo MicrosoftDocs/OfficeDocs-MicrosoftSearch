@@ -30,7 +30,7 @@ The following architectural diagram of the Microsoft Graph platform shows how co
 
 The API instantiates one connection per data source. Then the source data flows through Microsoft’s content indexing API to be indexed and stored. Established connections interact with Microsoft Search, so users can get search results.
 
-You can configure all the Microsoft-built connectors in the [Microsoft Search admin center](https://admin.microsoft.com/AdminPortal/Home#/MicrosoftSearch). The admin center simplifies configuring your connector with a simple user interface.
+You can configure all the Microsoft-built connectors in the [Microsoft 365 admin center](https://admin.microsoft.com). The admin center simplifies configuring your connector with a simple user interface.
 
 To create a **connection** to a data source, admins need authenticated access to the data and the entire content repository. The data is fed to the graph connector service for indexing.
 
@@ -42,15 +42,15 @@ To preview connectors from one of our ecosystem partners, contact them directly.
 You can also build your own connector with the [Microsoft Graph indexing API](/graph/search-index-overview).
 
 ### Connectors by Microsoft
-The Microsoft Graph connectors preview release includes 6 Microsoft-built connectors. You can set them up in the [Microsoft 365 admin center](https://admin.microsoft.com) and learn how to [configure your Microsoft-built connector](configure-connector.md).
+The Microsoft Graph connectors preview release includes 6 Microsoft-built connectors. You can set them up in the [Microsoft 365 admin center](https://admin.microsoft.com) and learn how to [Set up your Microsoft-built connector](configure-connector.md).
 
 The following sections provide brief descriptions for these Microsoft-built connectors. You can get more information in the linked articles for each connector.
 
 - **[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)**. With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Data Lake Storage connector also indexes hierarchy-enabled folders in Data Lake Storage accounts that you specify.
-Learn more about the [Data Lake Storage connector](azure-data-lake-connector.md).
+Learn more about the [Azure Data Lake Storage Gen2 connector](azure-data-lake-connector.md).
 
-- **Enterprise website**. With this Microsoft Graph connector, users in your organization can search over pages in any non-SharePoint enterprise website.
-Learn more about the [Enterprise website connector](enterprise-web-connector.md).
+- **Enterprise websites**. With this Microsoft Graph connector, users in your organization can search over pages in any non-SharePoint enterprise website.
+Learn more about the [Enterprise websites connector](enterprise-web-connector.md).
 
 - **File share**. With this Microsoft Graph connector, users in your organization can search for files stored on on-premises Windows file shares.
 Learn more about the [File share connector](file-share-connector.md).

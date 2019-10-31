@@ -23,4 +23,3 @@ The Microsoft Graph connectors team responds to the search admin community acros
 * **Documentation bugs:** If you find a bug in the Microsoft Graph connectors documentation, open an [issue](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch/issues) on GitHub. Be sure to tell us which topic is factually incorrect or unclear. To help us fix the problem faster, quote the text to be changed.
 * **Feature requests:** If our platform doesn't empower you to do what you need, make your feature suggestions under the category **Connectors** on the [Microsoft Search UserVoice](https://office365.uservoice.com/forums/925270-microsoft-search).
 
-![](media/uservoice.png)
