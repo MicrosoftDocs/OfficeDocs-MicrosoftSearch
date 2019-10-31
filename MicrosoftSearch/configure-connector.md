@@ -40,7 +40,7 @@ To create a connection, first specify these attributes:
 2. Connection ID
 3. Description (optional)
 
-The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters.
+The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters.
 
 ### Connect to a data source
 The data connection process varies based on the type of connector. To learn more about connecting to your on-premises data source, see [Install an on-premises data gateway](aka.ms/configuregateway).
@@ -69,7 +69,7 @@ These restrictions and recommendations apply to search schema settings:
 * Only string properties can be marked searchable.
 
 > [!Note]
-> After you create a connection, you **can't** modify the schema. To do that, you need to delete your connection and re-create a new one.
+> After you create a connection, you **can't** modify the schema. To do that, you need to delete your connection and create a new one.
 
 ###  Manage search permissions
 Access Control Lists (ACLs) determine which users in your organization can access each item of data. The file share connector supports only ACLs that can be mapped to [Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/). All the other connectors support search permissions that are visible to all users.
