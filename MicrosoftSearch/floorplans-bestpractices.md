@@ -29,7 +29,7 @@ Before you add floor plans, you need to add your buildings to Microsoft Search l
 |Required building data  |Example  |
 |---------|---------|
 |Name     |    Building 1, New York City     |
-|Street address     |     123 Any Avenue, New York City, NY 10118  |
+|Street address     |     123 Any Avenue, New York, NY 10118  |
 |Latitude-longitude  (optional)   |    40.760539, -73.975341      |
 |Keywords     |    New York Office, Building 1, main office, headquarters     |
 
