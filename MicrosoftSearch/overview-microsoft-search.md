@@ -137,7 +137,7 @@ The search results that the user has **permission** to see are presented on the 
 Microsoft Search in SharePoint is the modern search experience in SharePoint Online. SharePoint Online also offers a classic search experience. Both experiences are on by default and both search the same content. As a search administrator you can’t turn on either experience in SharePoint Online. Which search experience your users get depends on where they search from:
 
 - Users get the Microsoft Search box on the SharePoint start page, hub sites, communication sites, and modern team sites.
-- Users get the classic search box on publishing sites, classic team sites, and in the Search Center.
+- Users get the classic search box on publishing sites, classic team sites, and in the [SharePoint Search Center](https://docs.microsoft.com/en-us/sharepoint/manage-search-center).
 
 You can customize the classic search experience, for example by adding custom refiners to the search results page or displaying a certain type of result differently. You can’t customize the Microsoft Search experience in SharePoint like that. Some of the customizations you make for classic search might impact Microsoft Search in SharePoint. If your organization will use both search experiences in SharePoint, [learn about the differences and how to avoid impacting Microsoft Search in SharePoint](https://docs.microsoft.com/sharepoint/differences-classic-modern-search).
 
