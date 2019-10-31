@@ -76,15 +76,17 @@ The search results that the user has **permission** to see are presented on the 
 
 When a user enters a search query in Microsoft Search in Bing, two simultaneous search requests occur:
 
-- A search of your organization’s internal resources
-- A separate search of public results from Bing.com. Because enterprise searches might be sensitive, Microsoft Search in Bing has implemented a set of trust measures that describe how the separate search of public results from Bing.com is handled.
+- A search of the enterprise's internal resources.
+- a separate search of public results from `Bing.com`. Because enterprise searches might be sensitive, Microsoft Search has implemented a set of trust measures that describe how the separate search of public results from `Bing.com` is handled.
 
-Because searches for internal content might be sensitive, Microsoft Search has implemented a set of trust measures that describe how the separate search of public results from Bing.com is handled.
+Because enterprise searches might be sensitive, Microsoft Search has implemented a set of trust measures that describe how the separate search of public results from `Bing.com` is handled.
 
-- **Logging** - All Bing.com search logs that pertain to Microsoft Search in Bing traffic are disassociated from your workplace identity.
-  - If a set of restrictions or frequency thresholds are met which give us confidence that the query is not specific to a particular organization, the query will be treated as described in the Bing services section of the [Privacy Statement](https://privacy.microsoft.com/privacystatement). For example, such queries will be used to model and train public features, such as autosuggest.
-  - Queries that do not meet the set of restrictions or frequency thresholds will be stored separately from public, non-Microsoft Search traffic.
-- **Advertising** - Ads shown on Bing.com in connection with internal searches is solely related to the content of the search queries. Ads are never targeted to users based on their workplace identity.
+### Logging
+ - All `Bing.com` search logs that pertain to Microsoft Search in Bing traffic are disassociated from your workplace identity.
+- If a set of restrictions or frequency thresholds are met which give us confidence that the query is not specific to a particular organization, the query will be treated as described in the Bing services section of the [Privacy Statement](https://privacy.microsoft.com/privacystatement). For example, such queries will be used to model and train public features, such as autosuggest or related searches.
+- Queries that do not meet the set of restrictions or frequency thresholds will be stored separately from public, non-Microsoft Search traffic.
+### Advertising 
+Advertising shown on `Bing.com` in connection with enterprise searches is solely related to the content of the search queries. Ads are never targeted to users based on their workplace identity.
 
 ## See also
 
