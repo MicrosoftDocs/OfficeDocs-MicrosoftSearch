@@ -15,11 +15,11 @@ search.appverid:
 description: "Enterprise Website configuration in the M365 Admin portal."
 ---
 
-# Configure an Enterprise Website connector in Microsoft 365
+# Configure an Enterprise websites connector in Microsoft 365
 
-With the Enterprise Website connector for Microsoft Search, your organization can index articles and **content from its internal-facing websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
+With the Enterprise websites connector for Microsoft Search, your organization can index articles and **content from its internal-facing websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Enterprise Website connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.  
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Enterprise websites connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.  
 
 ## Connect to a data source 
 To connect to your data source, you need your root URL and a form of authentication (Basic Authentication or OAuth 2.0 with Azure AD).
@@ -40,7 +40,7 @@ To get the values for named tenant, resource, client_id, and client_secret, go t
 For even more information, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
 
 ### Reverse proxy URL 
-The Enterprise Website connector is cloud-based, so it doesn't access on-premises content. To provide that access, install a reverse proxy. A reverse proxy provides secure, reliable access to on-premises websites. We recommend Azure Application Proxy (AAP).
+The Enterprise websites connector is cloud-based, so it doesn't access on-premises content. To provide that access, install a reverse proxy. A reverse proxy provides secure, reliable access to on-premises websites. We recommend Azure Application Proxy (AAP).
 
 The reverse proxy requirement for root URL and authentication is the same as for cloud-based content except that the root URL and authentication are provided by the reverse proxy server.
 
@@ -53,7 +53,7 @@ Source properties are defined based on the data format of the enterprise website
 There is no support for Access Control Lists (ACLs). Thus, it is advised to connect only the websites that are visible to any user within your organization.
 
 ## Set the refresh schedule
-The Enterprise Website connector only supports a full crawl. This means that the connector reads all the website's content during every crawl. To make sure the connector gets enough time to read the content, it is recommended to set a large refresh schedule interval. We recommend a scheduled refresh between three days and two weeks.
+The Enterprise websites connector only supports a full crawl. This means that the connector reads all the website's content during every crawl. To make sure the connector gets enough time to read the content, it is recommended to set a large refresh schedule interval. We recommend a scheduled refresh between three days and two weeks.
 
 ## Limitations 
-The Enterprise Website connector doesn't support searching data on dynamic webpages. Examples of those webpages live in content management systems like Confluence and Unily or databases that store website content.
+The Enterprise websites connector doesn't support searching data on dynamic webpages. Examples of those webpages live in content management systems like Confluence and Unily or databases that store website content.
