@@ -3,7 +3,6 @@ title: "Connectors feedback page"
 ms.author: v-pamcn
 author: monaray
 manager: mnirkhe
-ms.date: 11/04/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,7 +11,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Connectors feedback page"
+description: "How to provide feedback for Microsoft Search Connectors"
 ---
 
 # Feedback
@@ -20,6 +19,6 @@ description: "Connectors feedback page"
 The Microsoft Graph connectors team responds to the search admin community across several channels:
 
 * **General questions:** Send an email to the [Microsoft Graph connectors feedback group](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com).
-* **Documentation bugs:** If you find a bug in the Microsoft Graph connectors documentation, open an [issue](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch/issues) on GitHub. Be sure to tell us which topic is factually incorrect or unclear. To help us fix the problem faster, quote the text to be changed.
+* **Documentation feedback:** If you've got any questions about the Microsoft Graph connectors documentation, or to tell us what you like or don't like, you can provide feedback at the bottom of any article. 
 * **Feature requests:** If our platform doesn't empower you to do what you need, make your feature suggestions under the category **Connectors** on the <a href="https://office365.uservoice.com/forums/925270-microsoft-search" target="_blank" data-linktype="external">Microsoft Search UserVoice</a>.
 

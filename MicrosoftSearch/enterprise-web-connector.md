@@ -12,10 +12,10 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Enterprise Website configuration in the M365 Admin portal."
+description: "Set up the Enterprise websites connector for Microsoft Search"
 ---
 
-# Configure an Enterprise websites connector in Microsoft 365
+# Configure an Enterprise websites connector
 
 With the Enterprise websites connector for Microsoft Search, your organization can index articles and **content from its internal-facing websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
 

@@ -12,7 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Azure Data Lake configuration in the M365 Admin portal."
+description: "Set up the Azure Data Lake Storage Gen2 connector fo Microsoft Search."
 ---
 
 # Configure an Azure Data Lake Storage Gen2 connector in Microsoft 365

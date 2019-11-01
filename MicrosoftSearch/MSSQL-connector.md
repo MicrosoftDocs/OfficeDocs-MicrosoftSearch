@@ -38,7 +38,7 @@ In this step, you configure the SQL query that runs a full crawl of the database
 > [!Tip]
 > To get all the columns that you need, you can join multiple tables.
 
-![](media/MSSQL-fullcrawl.png)
+![Script showing the OrderTable and AclTable with example properties](media/MSSQL-fullcrawl.png)
 
 ### Select data columns (Required) and ACL columns (Optional)
 The example demonstrates selection of five data columns that hold the data for the search: OrderId, OrderTitle, OrderDesc, CreatedDateTime, and IsDeleted. To set view permissions for each row of data, you can optionally select these ACL columns: AllowedUsers, AllowedGroups, DeniedUsers, and DeniedGroups. All these data columns can be made **queryable**, **searchable**, or **retrievable**.
@@ -62,14 +62,14 @@ The first query fetches the first **N** amount of rows by using: "CreatedDateTim
 ### Skipping soft-deleted rows (Optional)
 To exclude soft-deleted rows in your database from being indexed, specify the soft-delete column name and value that indicates the row is deleted.
 
-![](media/MSSQL-softdelete.png)
+![Soft delete settings: "Soft delete column" and "Value of soft delete column which indicates a deleted row"](media/MSSQL-softdelete.png)
 
 ## Incremental crawl (Optional)
 In this optional step, provide a SQL query to run an incremental crawl of the database. With this query, the Microsoft SQL server connector makes any changes to the data since the last incremental crawl. As in the full crawl, select all columns that you want to be made **queryable**, **searchable**, or **retrievable**. Specify the same set of ACL columns that you specified in the full crawl query.
 
 The components in the following image resemble the full crawl components with one exception. In this case, "ModifiedDateTime" is the selected watermark column. Review the [full crawl steps](#full-crawl-required) to learn how to write your incremental crawl query and see the following image as an example.
 
-![](media/MSSQL-incrcrawl.png)
+![Incremental crawl script showing OrderTable, AclTable and example properties that can be used.](media/MSSQL-incrcrawl.png)
 
 ## Limitations
 The Microsoft SQL server connector has these limitations in the preview release:

@@ -93,9 +93,9 @@ Read-Host -Prompt 'Press enter to exit'
 ## Search for file share content in the search results page
 To search for indexed content, go to the SharePoint home page of your test tenant. Results will be displayed in the **All** and **Files** tabs.
 
-Because of browser restrictions, you can't select a file result to view or open files from local file share searches. To open these files, copy the file result's link and paste it into the address bar of your system's browser. For Windows OS, use Windows Explorer. Then you can open the file on your system.
+Because of browser restrictions, you can't select a file result to view or open files from local file share searches. To open these files, copy the file result's link and paste it into the address bar of your system's browser. For Windows, use Windows Explorer. Then you can open the file on your system.
 
-![](media/fileshare-search.png)
+![SharePoint search with the copy link dialog box open.](media/fileshare-search.png)
 
 ## Troubleshooting
 If something is critically wrong with a connection, its status shows as **failed**. To get more information on the three types of errors, go to the **error details** page and select the failing connection. See [Manage your connector](manage-connector.md) to learn more.

@@ -12,7 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Microsoft Graph Connectors overview"
+description: "Overview of Microsoft Graph connectors for Microsfot Search"
 ---
 
 # Overview of Microsoft Graph connectors
