@@ -22,7 +22,7 @@ You can design the result layout for a custom vertical using the search layout d
 Once the layout is ready, you use the [Adaptive Cards Template language](https://docs.microsoft.com/adaptive-cards/templating/language)  to create thea result layout JSON which is used to define a result type. You map the result properties to the layout using the Mapping step in the layout designer.  
 
 ## Create a layout on your own
-Creating a layout on your own requires knowledge of [adaptive cards](https://docs.microsoft.com/en-us/adaptive-cards/authoring-cards/getting-started) and their [schema](https://adaptivecards.io/explorer/). Search result layout uses a subset of the elements offered by adaptive cards and you can use the layout designer to learn about the supported set of elements.  
+Creating a layout on your own requires knowledge of [adaptive cards](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started) and their [schema](https://adaptivecards.io/explorer/). Search result layout uses a subset of the elements offered by adaptive cards and you can use the layout designer to learn about the supported set of elements.  
 
 While creating your own layout, create the adaptive card layout using data from your , and then finalize the layout.
 There are two main steps in creating your own layout
@@ -195,7 +195,7 @@ Before you get started, there are a few things that you should do and a few thin
 ## Resources
 [Customize search result page](customize-search-page.md)
 
-[Adaptive cards](https://docs.microsoft.com/en-us/adaptive-cards/authoring-cards/getting-started)
+[Adaptive cards](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started)
 
 [Adaptive Cards Template language](https://docs.microsoft.com/adaptive-cards/templating/language)
 

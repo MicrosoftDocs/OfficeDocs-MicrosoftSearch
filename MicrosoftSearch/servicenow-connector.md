@@ -12,7 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "ServiceNow connector configuration in the M365 Admin portal."
+description: "Set up the ServiceNow connector for Microsoft Search"
 ---
 
 # Configure a ServiceNow connector in Microsoft 365

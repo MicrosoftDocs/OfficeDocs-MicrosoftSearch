@@ -22,7 +22,7 @@ With the File share connector for Microsoft Search, users in your organization c
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a File share connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques. 
 
 ## Install a data gateway
-In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install and on-premises gateway](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install) to learn more.  
+In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install and on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) to learn more.  
 
 ## Connect to a data source
 On the **Connect to data source** page, create a folder and provide a path to the file share. Then select your previously installed gateway. Enter the credentials for a Windows user account with **read access** to all the files in the share. You can then verify the files present in the share and see all the fetched metadata.
@@ -93,9 +93,9 @@ Read-Host -Prompt 'Press enter to exit'
 ## Search for file share content in the search results page
 To search for indexed content, go to the SharePoint home page of your test tenant. Results will be displayed in the **All** and **Files** tabs.
 
-Because of browser restrictions, you can't select a file result to view or open files from local file share searches. To open these files, copy the file result's link and paste it into the address bar of your system's browser. For Windows OS, use Windows Explorer. Then you can open the file on your system.
+Because of browser restrictions, you can't select a file result to view or open files from local file share searches. To open these files, copy the file result's link and paste it into the address bar of your system's browser. For Windows, use Windows Explorer. Then you can open the file on your system.
 
-![](media/fileshare-search.png)
+![SharePoint search with the copy link dialog box open.](media/fileshare-search.png)
 
 ## Troubleshooting
 If something is critically wrong with a connection, its status shows as **failed**. To get more information on the three types of errors, go to the **error details** page and select the failing connection. See [Manage your connector](manage-connector.md) to learn more.

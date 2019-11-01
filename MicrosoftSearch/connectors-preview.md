@@ -2,8 +2,7 @@
 title: "Connectors preview"
 ms.author: v-pamcn
 author: monaray
-manager: mnirkhe
-ms.date: 11/04/2019
+manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +11,12 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Microsoft Graph Connectors preview."
+description: "Find out about Microsoft Graph Connectors preview for Microsoft Search."
 ---
 
 # Microsoft Graph connectors preview
 
-Microsoft Graph connectors, indexing APIs, and search APIs are currently in preview. To gain access to connectors functionality, you must request to join the preview program by submitting the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">Microsoft Graph Connectors Preview Signup Form</a>. This is an early preview, and there is no service level guarantee. We encourage customers to try connectors functionality and provide feedback. We don’t recommend using connectors for production purposes during the preview period.
+Microsoft Graph connectors, indexing APIs, and search APIs are currently in preview. To gain access to connectors functionality, you must request to join the preview program by submitting the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">Microsoft Graph Connectors Preview Sign up Form</a>. This is an early preview, and there is no service level guarantee. We encourage customers to try connectors functionality and provide feedback. We don’t recommend using connectors for production purposes during the preview period.
 
 ## Set up targeted release
 To try connectors, you must have the **Targeted release** option set for all users in your organization. The Targeted release requirement applies no matter which of the following preview environments you choose.

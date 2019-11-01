@@ -12,7 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "legal terms and conditions for MS Graph Connectors public preview"
+description: "legal terms and conditions for Microsoft Graph Connectors public preview for Microsoft search"
 ---
 
 # Microsoft Search public preview: Terms of Use

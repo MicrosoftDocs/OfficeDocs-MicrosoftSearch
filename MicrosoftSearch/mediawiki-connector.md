@@ -22,9 +22,7 @@ With the MediaWiki connector for Microsoft Search, your organization can discove
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a MediaWiki connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
 ## Connect to a data source
-Enter your MediaWiki URL and credentials for authenticating the connection.
-
-![](media/mediawiki-auth.png)
+Enter your MediaWiki URL and credentials for authenticating the connection. You'll need the following information: **Tenant ID**, **Resource ID**, **Client ID**, and the **Client Secret**.
 
 ## Manage the search schema
 After successful connection, configure the search schema mapping. You can choose which properties to make **queryable**, **searchable**, and **retrievable**.

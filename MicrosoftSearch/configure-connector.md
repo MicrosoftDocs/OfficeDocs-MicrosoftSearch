@@ -2,8 +2,7 @@
 title: "Configure your built-in connector in the M365 admin portal"
 ms.author: v-pamcn
 author: monaray
-manager: mnirkhe
-ms.date: 11/04/2019
+manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +11,12 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Configure your built-in connector in the M365 admin portal"
+description: "Configure your built-in connector in the Microsoft  admin center"
 ---
 
 # Set up your Microsoft-built connector in Microsoft 365
 
-This article guides search administrators through the steps of configuring a Microsoft-built connector. It outlines the flow of setting up a connection in the [Microsoft 365 admin center](https://admin.microsoft.com). For more details on how to set up specific Microsoft-built connectors, see these web pages:
+This article guides you through the steps of configuring a Microsoft-built connector. It outlines the flow of setting up a connection in the [Microsoft 365 admin center](https://admin.microsoft.com). For more details on how to set up specific Microsoft-built connectors, see these articles:
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 * [Enterprise websites](enterprise-web-connector.md)
 * [File share](file-share-connector.md)
@@ -43,7 +42,7 @@ To create a connection, first specify these attributes:
 The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters.
 
 ### Connect to a data source
-The data connection process varies based on the type of connector. To learn more about connecting to your on-premises data source, see [Install an on-premises data gateway](aka.ms/configuregateway).
+The data connection process varies based on the type of connector. To learn more about connecting to your on-premises data source, see [Install an on-premises data gateway](https://aka.ms/configuregateway).
 
 ### Select source properties
 The data fields set by your third-party data source as source properties are indexed into Microsoft Search. To modify these properties, select **Edit properties** in the side bar on the right of the **Connectors** page. You can select **up to 64 source properties**.

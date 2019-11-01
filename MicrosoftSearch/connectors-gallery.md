@@ -1,6 +1,6 @@
 ---
 title: Connector gallery
-description: Add a short description
+description: Lists all of the Microsoft Graph connectors for Microsoft Search
 services: microsoft-search
 author: monaray
 manager: samanro
@@ -10,7 +10,6 @@ ms.service: mssearch
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
-ms.date: 11/04/2019
 ms.author: samanro
 ---
 
