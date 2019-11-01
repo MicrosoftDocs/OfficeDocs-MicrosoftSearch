@@ -13,7 +13,8 @@ ms.topic: landing-page
 ms.date: 11/04/2019
 ms.author: samanro
 ---
-# Microsoft Graph Connector Gallery
+
+# Microsoft Graph connectors gallery
 
 
 #### In this article

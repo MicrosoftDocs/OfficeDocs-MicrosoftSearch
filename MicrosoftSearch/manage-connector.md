@@ -53,5 +53,5 @@ To view an error's specific details, select its error code. A screen appears wit
 
 ## Preview limitations
 * When you **publish** a Microsoft-built connector, it might take a few minutes for the connection to be created. During that time, the connection shows its status as pending. Also, there's no auto-refresh, so you need to refresh manually.
-* The [Microsoft 365 admin center](https://admin.microsoft.com) doesn't support viewing and editing **search schema** after a connection is published. To edit a schema, delete your connection and then create a new one.
+* The [Microsoft 365 admin center](https://admin.microsoft.com) doesn't support viewing and editing the **search schema** after a connection is published. To edit the search schema, delete your connection and then create a new one.
 * When you manage your connection's **refresh schedule**, the number of items that sync during each session are displayed. However, the sync history isn't available.
