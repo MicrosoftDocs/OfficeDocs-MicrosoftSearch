@@ -1,9 +1,8 @@
 ---
-title: "Azure Data Lake connector configuration in the M365 Admin portal"
+title: "Azure Data Lake connector for Microsoft Search"
 ms.author: v-pamcn
 author: monaray
-manager: mnirkhe
-ms.date: 11/04/2019
+manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,10 +11,10 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Azure Data Lake Storage Gen2 connector fo Microsoft Search."
+description: "Set up the Azure Data Lake Storage Gen2 connector for Microsoft Search"
 ---
 
-# Configure an Azure Data Lake Storage Gen2 connector in Microsoft 365
+# Azure Data Lake Storage Gen2 connector for Microsoft Search
 
 With the [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) connector for Microsoft Search, users in your organization can search for files and their content. This connector accesses data stored in Azure Blob containers and hierarchy-enabled folders within an Azure Data Lake Storage Gen 2 account.
 

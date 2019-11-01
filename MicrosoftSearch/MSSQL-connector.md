@@ -1,5 +1,5 @@
 ---
-title: "Microsoft SQL connector configuration in the M365 Admin portal"
+title: "Microsoft SQL connector for Microsoft Search"
 ms.author: v-pamcn
 author: monaray
 manager: mnirkhe
@@ -12,10 +12,10 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Microsoft SQL connector configuration in the M365 Admin portal."
+description: "Set up the Microsoft SQL connector for Microsoft Search."
 ---
 
-# Configure a Microsoft SQL server connector in Microsoft 365
+# Microsoft SQL server connector for Microsoft Search
 
 With a Microsoft SQL server connector for Microsoft Search, your organization can discover and index data from an on-premises SQL Server database. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With the SQL Server connector, you can also restrict access to search results for certain users.
 

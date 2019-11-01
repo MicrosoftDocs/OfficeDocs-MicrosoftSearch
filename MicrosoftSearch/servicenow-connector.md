@@ -1,5 +1,5 @@
 ---
-title: "ServiceNow connector configuration in the M365 Admin portal"
+title: "ServiceNow connector for Microsoft Search"
 ms.author: v-pamcn
 author: TrishaMc1
 manager: mnirkhe
@@ -15,7 +15,7 @@ search.appverid:
 description: "Set up the ServiceNow connector for Microsoft Search"
 ---
 
-# Configure a ServiceNow connector in Microsoft 365
+# ServiceNow connector for Microsoft Search
 
 With the ServiceNow connector for Microsoft Search, your organization can index knowledge-base articles that are visible to all users within your organization. After you configure the connector and index content from ServiceNow, end users can search for those articles from any Microsoft Search client.  
 

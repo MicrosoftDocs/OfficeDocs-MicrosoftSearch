@@ -2,8 +2,7 @@
 title: "Connectors Overview"
 ms.author: v-pamcn
 author: monaray
-manager: mnirkhe
-ms.date: 11/04/2019
+manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

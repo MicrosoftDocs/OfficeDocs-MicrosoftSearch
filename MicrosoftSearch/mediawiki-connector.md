@@ -1,5 +1,5 @@
 ---
-title: "MediaWiki connector configuration in the M365 Admin portal"
+title: "MediaWiki connector for Microsoft Search"
 ms.author: v-pamcn
 author: monaray
 manager: mnirkhe
@@ -12,10 +12,10 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "MediaWiki connector configuration in the M365 Admin portal."
+description: "Set up the MediaWiki connector for Microsoft Search"
 ---
 
-# Configure a MediaWiki connector in Microsoft 365
+# MediaWiki connector in Microsoft for Microsoft Search
 
 With the MediaWiki connector for Microsoft Search, your organization can discover and index data from a wiki created by using MediaWiki software. This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.
 

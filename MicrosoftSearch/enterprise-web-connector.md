@@ -15,7 +15,7 @@ search.appverid:
 description: "Set up the Enterprise websites connector for Microsoft Search"
 ---
 
-# Configure an Enterprise websites connector
+# Enterprise websites connector for Microsoft Search
 
 With the Enterprise websites connector for Microsoft Search, your organization can index articles and **content from its internal-facing websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
 

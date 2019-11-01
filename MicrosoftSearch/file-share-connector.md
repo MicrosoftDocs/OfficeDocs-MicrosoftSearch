@@ -1,5 +1,5 @@
 ---
-title: "File share connector configuration in the M365 Admin portal"
+title: "File share connector for Microsoft Search"
 ms.author: v-pamcn
 author: TrishaMc1
 manager: mnirkhe
@@ -12,10 +12,10 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "File share connector configuration in the M365 Admin portal."
+description: "Set up the file share connector for Microsoft Search."
 ---
 
-# Configure a File share connector in Microsoft 365
+# File share connector for Microsoft Search
 
 With the File share connector for Microsoft Search, users in your organization can search on-premises file shares. The search results from these shares merge with the results from SharePoint and Microsoft OneDrive for Business.
 
