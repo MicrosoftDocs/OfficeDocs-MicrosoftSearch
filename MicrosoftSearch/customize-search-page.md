@@ -28,7 +28,7 @@ At the top of the Microsoft search results page there is a row of tabs, these ar
 
 You can add search verticals that are relevant to your organization. These will appear on the Microsoft search results page in SharePoint, Office.com, and Bing.  For example, you could create one vertical for  marketing related content and another for sales, based on the type of information that each group would want to have. You can add verticals to show results only from content indexed via Connectors.  
 
-**DISCLAIMER:** Verticals and result types are currently in preview as a part of Microsoft Connectors preview. You cannot create a vertical for content residing in SharePoint or from content indexed by the FileShare connector. To find out more about the preview, see [Connectors Preview](connectors-preview.md). Follow the [Microsoft Graph Connectors Public Preview Interest Form]( https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u) to sign up.
+**DISCLAIMER:** Verticals and result types are currently in preview as a part of Microsoft Connectors preview. You cannot create a vertical for content residing in SharePoint or from content indexed by the FileShare connector. To find out more about the preview, see [Connectors Preview](connectors-preview.md). To participate in the preview, you must first submit the [Microsoft Graph Connectors Preview Signup form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
 
 ## Things to consider...
 
