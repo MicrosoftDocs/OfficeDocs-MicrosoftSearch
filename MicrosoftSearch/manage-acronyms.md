@@ -42,7 +42,7 @@ In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settin
 Microsoft Search queries two data sources to provide Acronyms answers to users’ searches:
 
 1.	**Editorial acronyms**. Provided by IT administrators in the [admin center](https://admin.microsoft.com).
-2.	**Mined acronyms**. Mined by Microsoft Search from the user’s personal email and documents and also from publicly available data within the organization.
+2.	**Mined acronyms**. Mined by Microsoft Search from the user’s personal email and documents and publicly available data within the organization.
 
 ### Set up editorial acronyms
 IT admins can set up editorial acronyms on the [Acronyms tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) in the  [Microsoft 365 admin center]( https://admin.microsoft.com). You can add acronyms from any internal site or repository to the admin center. Editorial acronyms can be added to **Published** or **Draft** state:
@@ -113,7 +113,7 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **Q: Do documents need to be in a specific format for mining to pick them up?**
 
-**A:** No. Mining works on all your emails and documents in any format.
+**A:** No. We support all file types except image, folders, and zip files.
 
 **Q: Will Microsoft mine acronyms from documents in all languages?**
 
