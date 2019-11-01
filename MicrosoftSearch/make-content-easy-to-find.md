@@ -45,7 +45,7 @@ With [PowerApps](integrate-powerapps.md), you can build business apps that run i
 ### Add a PowerApp to a bookmark
 
 1. Find the [App ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) for the PowerApp that you want to add.
-1. In the [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search**. 
+1. In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search**. 
 1. Add a bookmark or find an existing bookmark that you want to add a PowerApp to.
 1. In **Bookmark settings**, select **Power App**. Then select **Add a Power App**.
 1. Enter the **App ID**. The height and width adjust automatically. [Bookmarks](manage-bookmarks.md) can support both portrait and landscape orientations, but currently the size can't be changed. To make it easy to test, the bookmark preview shows a fully functional PowerApp .
