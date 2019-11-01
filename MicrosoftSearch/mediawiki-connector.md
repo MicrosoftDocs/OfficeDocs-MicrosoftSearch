@@ -15,7 +15,7 @@ search.appverid:
 description: "Set up the MediaWiki connector for Microsoft Search"
 ---
 
-# MediaWiki connector in Microsoft for Microsoft Search
+# MediaWiki connector for Microsoft Search
 
 With the MediaWiki connector for Microsoft Search, your organization can discover and index data from a wiki created by using MediaWiki software. This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.
 
