@@ -43,13 +43,13 @@ Four states show up in the **Status** column against each connection:
 * **Failed**. The connection had a critical failure. This error requires manual intervention. The admin needs to take appropriate action based on the error message shown. Data that was indexed until the error occurred is searchable.
 
 ### Monitor errors
-For each **Active Connector** on the **Connectors** tab, any existing crawl errors show under the **Error** tab. The tab lists error codes, the count of each, and error log download options. See the example in the following image.
+For each **Active Connector** on the **Connectors** tab, any existing crawl errors show under the **Error** tab. The tab lists error codes, the count of each, and error log download options. See the example in the following image. Select an **error code** to view the error's details.
 
-![](media/errormonitoring1.jpg)
+![Connectors list with a connector selected and details pane showing 3 errors for this connector.](media/errormonitoring1.png)
 
 To view an error's specific details, select its error code. A screen appears with error details and a link. The most recent errors appear at the top. See the example in the following table.
 
-![](media/errormonitoring2.jpg)
+![Connector list with a connector selected and details pane showing the list of errors for the connector. ](media/errormonitoring2.png)
 
 ## Preview limitations
 * When you **publish** a Microsoft-built connector, it might take a few minutes for the connection to be created. During that time, the connection shows its status as pending. Also, there's no auto-refresh, so you need to refresh manually.
