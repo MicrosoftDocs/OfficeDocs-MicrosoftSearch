@@ -3,7 +3,7 @@ title: "Microsoft Search Overview"
 ms.author: anfowler
 author: adefowler
 manager: shohara
-ms.date: 12/11/2018
+ms.date: 11/01/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -16,7 +16,7 @@ description: "Get an overview of what Microsoft Search is, its benefits, and whi
 ---
 # Overview of Microsoft Search
 
-Microsoft Search helps you find what you need to complete what you’re working on. Whether you're searching for people, files, org charts, sites, or answers to common questions, you can use Microsoft Search throughout your work day to get answers.
+Microsoft Search helps you find what you need to complete what you’re working on. Whether you're searching for people, files, org charts, sites, or answers to common questions, you can use Microsoft Search throughout your workday to get answers.
 
 Microsoft Search helps users find the right answers, people, and content to complete their tasks in the app they’re already working in.
 
