@@ -43,7 +43,7 @@ To create a connection, first specify these attributes:
 The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters.
 
 ### Connect to a data source
-The data connection process varies based on the type of connector. To learn more about connecting to your on-premises data source, see [Install an on-premises data gateway](aka.ms/configuregateway).
+The data connection process varies based on the type of connector. To learn more about connecting to your on-premises data source, see [Install an on-premises data gateway](https://aka.ms/configuregateway).
 
 ### Select source properties
 The data fields set by your third-party data source as source properties are indexed into Microsoft Search. To modify these properties, select **Edit properties** in the side bar on the right of the **Connectors** page. You can select **up to 64 source properties**.

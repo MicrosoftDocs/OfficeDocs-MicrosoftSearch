@@ -37,7 +37,7 @@ For more information, see [Authorize access to Azure Active Directory web applic
 
 To get the values for named tenant, resource, client_id, and client_secret, go to **Use the authorization code to request an access token** on the redirect URL webpage.
 
-For even more information, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
+For even more information, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ### Reverse proxy URL 
 The Enterprise websites connector is cloud-based, so it doesn't access on-premises content. To provide that access, install a reverse proxy. A reverse proxy provides secure, reliable access to on-premises websites. We recommend Azure Application Proxy (AAP).

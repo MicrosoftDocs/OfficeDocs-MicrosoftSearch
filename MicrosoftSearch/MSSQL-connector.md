@@ -22,7 +22,7 @@ With a Microsoft SQL server connector for Microsoft Search, your organization ca
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
 ## Install a data gateway
-In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install and on-premises gateway](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install) to learn more.  
+In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install and on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) to learn more.  
 
 ## Connect to a data source
 To connect your Microsoft SQL server connector to a data source, you must configure the database server you want crawled and the on-premises gateway. You can then connect to the database with the required authentication method.

@@ -42,7 +42,7 @@ Download and use the .csv template to bulk create, edit, and save locations.
 
 The fields in the import and export locations templates are the same. You can export, bulk edit, and import the edits, or start with an empty template to bulk create new locations. To bulk edit existing locations, export them from the Admin portal, make the necessary edits, and then import them.
 
-# Prevent import errors  
+## Prevent import errors  
 You'll get an error if any required data is missing or invalid. Depending on the error, a log file may be generated with more information about the rows and columns that need to be corrected. Make any necessary edits, and try importing the file again.
   
 > [!NOTE]

@@ -69,12 +69,12 @@ There are over 100 connectors available for preview from our ecosystem partners.
 Learn more about connectors from our partners in the [Microsoft Graph connectors gallery](connectors-gallery.md).
 
 ### Build your own connector
-To index custom data types or files, developers can create connectors in [Microsoft Graph](https://developer.microsoft.com/graph/). A connector is an application that uses the Microsoft Graph indexing API to create a connection and push items into the Microsoft Search index. For more information, see the [Microsoft Graph indexing API overview](/graph/search-index-overview).
+To index custom data types or files, developers can create connectors in [Microsoft Graph](https://developer.microsoft.com/graph/). A connector is an application that uses the Microsoft Graph indexing API to create a connection and push items into the Microsoft Search index. For more information, see the [Microsoft Graph indexing API overview](https://docs.microsoft.com/graph/overview).
 
 ### Search results with your custom-built connector
-Once custom data is indexed, developers can query this data using the search API in Microsoft Graph. You can view your data in any application. For more information, see [Microsoft Graph search API](graph/search-concept-overview).
+Once custom data is indexed, developers can query this data using the search API in Microsoft Graph. You can view your data in any application. For more information, see [Microsoft Graph search API](https://docs.microsoft.com/graph/search-concept-overview).
 
 ## License requirements
 To view data from connectors in your search results, users must have one of the following Microsoft 365 subscriptions:
-- <a href="https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans" target="_blank">Enterprise E3/E5</a>
-- <a href="https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1" target="_blank">Education A3/A5</a>
+- <a href="https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans" target="_blank">Microsoft 365 for enterprise E3 or E5</a>
+- <a href="https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1" target="_blank">Microsoft 365 Education A3 or A5</a>

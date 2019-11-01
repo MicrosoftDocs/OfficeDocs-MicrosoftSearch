@@ -40,7 +40,7 @@ Download and use the .csv template to bulk create, edit, and save bookmarks. To 
     
 7. Click **Import**
 
-# Prevent import errors      
+## Prevent import errors      
 You'll get an error if any required data is missing or invalid. Depending on the error, a log file may be generated with more information about the rows and columns that need to be corrected. Make any necessary edits, and try importing the file again.
 
 > [!NOTE]
