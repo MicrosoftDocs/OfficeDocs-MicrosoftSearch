@@ -34,4 +34,4 @@
 ###[Make Microsoft Edge the default browser](set-default-browser.md)
 ###[Make Bing the default search engine](set-default-search-engine.md)
 ###[Make Bing.com the default home page](set-default-homepage.md)
-#[User adoption guide](user-adoption-guide.md)
+###[User adoption guide](user-adoption-guide.md)
