@@ -15,11 +15,11 @@ search.appverid:
 description: "Set up the Enterprise websites connector for Microsoft Search"
 ---
 
-# Enterprise websites connector for Microsoft Search
+# Enterprise websites connector
 
-With the Enterprise websites connector for Microsoft Search, your organization can index articles and **content from its internal-facing websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
+With the Enterprise websites connector, your organization can index articles and **content from its internal-facing websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Enterprise websites connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.  
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Enterprise websites connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.  
 
 ## Connect to a data source 
 To connect to your data source, you need your root URL and a form of authentication (Basic Authentication or OAuth 2.0 with Azure AD).

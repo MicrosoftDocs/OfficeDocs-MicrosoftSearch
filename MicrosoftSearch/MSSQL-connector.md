@@ -15,11 +15,11 @@ search.appverid:
 description: "Set up the Microsoft SQL connector for Microsoft Search."
 ---
 
-# Microsoft SQL server connector for Microsoft Search
+# Microsoft SQL server connector
 
-With a Microsoft SQL server connector for Microsoft Search, your organization can discover and index data from an on-premises SQL Server database. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With the SQL Server connector, you can also restrict access to search results for certain users.
+With a Microsoft SQL server connector, your organization can discover and index data from an on-premises SQL Server database. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With the SQL Server connector, you can also restrict access to search results for certain users.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
 ## Install a data gateway
 In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install and on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) to learn more.  

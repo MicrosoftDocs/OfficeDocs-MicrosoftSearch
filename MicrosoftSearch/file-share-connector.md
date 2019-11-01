@@ -15,11 +15,11 @@ search.appverid:
 description: "Set up the file share connector for Microsoft Search."
 ---
 
-# File share connector for Microsoft Search
+# File share connector
 
-With the File share connector for Microsoft Search, users in your organization can search on-premises file shares. The search results from these shares merge with the results from SharePoint and Microsoft OneDrive for Business.
+With the File share connector, users in your organization can search on-premises file shares. The search results from these shares merge with the results from SharePoint and Microsoft OneDrive for Business.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a File share connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques. 
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a File share connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
 ## Install a data gateway
 In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install and on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) to learn more.  

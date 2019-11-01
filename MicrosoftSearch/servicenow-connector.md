@@ -15,11 +15,11 @@ search.appverid:
 description: "Set up the ServiceNow connector for Microsoft Search"
 ---
 
-# ServiceNow connector for Microsoft Search
+# ServiceNow connector
 
-With the ServiceNow connector for Microsoft Search, your organization can index knowledge-base articles that are visible to all users within your organization. After you configure the connector and index content from ServiceNow, end users can search for those articles from any Microsoft Search client.  
+With the ServiceNow connector, your organization can index knowledge-base articles that are visible to all users within your organization. After you configure the connector and index content from ServiceNow, end users can search for those articles from any Microsoft Search client.  
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
 ## Connect to a data source
 To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**, credentials for this account, and the Client ID and Client Secret for OAuth authentication.  

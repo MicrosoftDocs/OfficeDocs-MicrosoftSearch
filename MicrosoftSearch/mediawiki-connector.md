@@ -15,11 +15,11 @@ search.appverid:
 description: "Set up the MediaWiki connector for Microsoft Search"
 ---
 
-# MediaWiki connector for Microsoft Search
+# MediaWiki connector
 
-With the MediaWiki connector for Microsoft Search, your organization can discover and index data from a wiki created by using MediaWiki software. This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.
+With the MediaWiki connector, your organization can discover and index data from a wiki created by using MediaWiki software. This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a MediaWiki connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a MediaWiki connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
 ## Connect to a data source
 Enter your MediaWiki URL and credentials for authenticating the connection. You'll need the following information: **Tenant ID**, **Resource ID**, **Client ID**, and the **Client Secret**.

@@ -14,11 +14,11 @@ search.appverid:
 description: "Set up the Azure Data Lake Storage Gen2 connector for Microsoft Search"
 ---
 
-# Azure Data Lake Storage Gen2 connector for Microsoft Search
+# Azure Data Lake Storage Gen2 connector
 
-With the [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) connector for Microsoft Search, users in your organization can search for files and their content. This connector accesses data stored in Azure Blob containers and hierarchy-enabled folders within an Azure Data Lake Storage Gen 2 account.
+With the [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) connector, users in your organization can search for files and their content. This connector accesses data stored in Azure Blob containers and hierarchy-enabled folders within an Azure Data Lake Storage Gen 2 account.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Azure Data Lake Storage Gen2 connector for Microsoft Search. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Azure Data Lake Storage Gen2 connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
 ## Connect to a data source
 
