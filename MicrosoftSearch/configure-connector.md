@@ -60,7 +60,7 @@ RETRIEVABLE | Only retrievable properties can be used in result type and display
 
 For all connectors except the file share connector, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by clicking the check boxes for each property and attribute in the search schema page.
 
-![](media/manageschema.png)
+![Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions.](media/manageschema.png)
 
 These restrictions and recommendations apply to search schema settings:
 * For connectors that index custom types, we recommend that you **do not** mark the field that contains the main content **retrievable**. Significant performance issues occur when search results render with that search attribute. An example is the **Text** content field for a ServiceNow knowledge-base article.
@@ -89,7 +89,7 @@ Incremental crawls are much faster than full crawls because unchanged items aren
 
 Each connector will have a different optimal set of refresh schedules based on how often data is modified and the type of modifications.
 
-![](media/refreshschedule.png)
+![Incremental crawl and full crawl interval settings showing Incremental at 15 minutes and Full crawl at 1 week.](media/refreshschedule.png)
 
 ### Review connector settings
 After you configure your connector, the [Microsoft 365 admin center](https://admin.microsoft.com) takes you to a page where you can review your settings. You can go back through the configuration process to edit any setting before you confirm the connection. To learn more, see [Manage your connector](manage-connector.md).

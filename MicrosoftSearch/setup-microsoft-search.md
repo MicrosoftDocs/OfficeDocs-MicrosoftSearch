@@ -23,7 +23,7 @@ To learn more about Microsoft Search features, see [Microsoft Search Overview](o
 
 ## Get Started
 
-Microsoft Search is turned on by default for all Microsoft apps that supports it, as a part of Microsoft 365. All a user needs to do is to sign-in with a work or school account and use a browser with Bing set as the default search provider.
+Microsoft Search is turned on by default for all Microsoft apps that supports it, as a part of Microsoft 365. There is no setup required,but you can improve the overall Microsoft Search experience through some basic administrative tasks.
 
 You manage Microsoft Search from Microsoft 365 admin center.
 
@@ -33,21 +33,7 @@ You manage Microsoft Search from Microsoft 365 admin center.
 
 As an admin you should consider a few things that can make the Microsoft Search experience efficient and user friendly in your organization.
 
-## Step 1: Check access level of your users
-
-Microsoft Search respects security settings of the content source. What users see in their search result depends on their permissions and access levels. Review the access level of users in your organization to make sure that users only find content that they are allowed to access.
-
-| Service         | Description                                                                                                                                                                                                                                         |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Groups          | [Add or remove members from groups](https://docs.microsoft.com/office365/admin/create-groups/add-or-remove-members-from-groups)                                                                                                                     |
-| People          | You can hide certain users from being searched in your address list by setting the `HiddenFromAddressListEnabled` parameter to `true` using the [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user) cmdlet. |
-| Microsoft Teams | [Manage user access to Microsoft Teams](https://docs.microsoft.com/microsoftteams/user-access)                                                                                                                                                      |
-| OneDrive        | [Manage sharing](https://docs.microsoft.com/OneDrive/manage-sharing)                                                                                                                                                                                |
-| SharePoint      | [Default SharePpint groups](https://docs.microsoft.com/sharepoint/default-sharepoint-groups)<br> (Team site permissions also include members of the associated Office 365 group.)                          |
-| OneNote         | You can't search on files that are embedded in OneNote. [Change permissions for a notebook on OneDrive](https://support.office.com/article/B9600CCF-045A-40E6-9913-4A7EB02869A5)                                                                    |
-| Yammer          | [Yammer security settings](https://docs.microsoft.com/Yammer/manage-security-and-compliance/yammer-security-settings)                                                                                                                               |
-
-## Step 2: Assign Search admin and Search editor
+## Step 1: Assign Search admin and Search editor
 
 In Microsoft Search, you can manage your organization’s search settings and content by assigning these roles to users:
 
@@ -58,27 +44,19 @@ Currently, the Search admin and Search editor roles must be assigned by a global
 
 Search administrators directly influence the search experience for end users. This includes choosing the types of results you want to surface to your users. It may be difficult for one person to choose and create authoritative content on many different topics that users search for in an organization. We recommend that you leverage the expertise and knowledge of subject matter experts (SME) and other users by adding them as Search editors.
 
-## Step 3: Make content easy to find
+## Step 3: Create answers
 
-Microsoft Search provides administrators with tools that they can use to build a robust search experience for their users. In Microsoft Search, administrators have three different search contents that they can create for a better search experience and to improve the findability of content:
+Microsoft Search provides administrators with tools that they can use to build a robust search experience for their users. In Microsoft Search, administrators have three different search contents that they can create for a better search experience and to improve the "findability" of content:
 
-- **Bookmarks:** Bookmarks are similar to promoted results in SharePoint and help promote the best possible results for your user's queries to the top of the search results and make it easy for your users to find important internal sites.
-- **Questions & Answers:** Q&A are similar to frequently asked questions and these are usually in a question and answer format. It provides the best possible answer(s) to your user's work-related questions.
-- **Locations:** Locations are addresses that help users locate your organization's buildings, offices, and campuses.
+Bookmarks are the most commonly used answer type. They promote the best possible results for your users’ queries to the top of the search results and make it easy for your users to find what they are looking for.
+Informational content that is available for everyone; for example, information about the company, help for Windows and Office apps, etc.
+Content that people in the organization generally search for in their day-to-day work. Common work-related searches include employee benefits, time and expense reporting, submitting purchase orders, and getting help from IT services.
 
-The more Bookmarks, Q&A, and Locations you have, the more value and benefit you add for users. However, too many of them can add a substantial management overhead as they must be reviewed and updated periodically to keep the results relevant and up to date.
+For creating and managing answers, see [Plan your content](plan-your-content.md).
 
-Here are some examples of content that you should consider bookmarking for your users:
+## Next steps
 
-- Organization or product or service information.
-- Informational content that is available for everyone; for example, information about the company, help for Windows and Office apps, etc.
-- Content that people in the organization generally search for in their day-to-day work. Common work-related searches include employee benefits, time and expense reporting, submitting purchase orders, and getting help from IT services.
-
-For creating and managing search content, see [Make content easy to find](make-content-easy-to-find.md).
-
-## Step 4: Training and communication
-
-Establish self-service resources that employees can easily access on their own. This will help reduce the overall burden on you and your team to constantly push communications and assist in self-training and educating employees. Provide your users communications, FAQs, videos, and recorded training or webinars. Here are some helpful links to start with:
+If you'd like to learn more about how your users will use Microsoft Search, see the following articles:
 
 - [Find what you need with Microsoft Search in Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446)
 - [Office 365 Training Center](https://support.office.com/office-training-center)
