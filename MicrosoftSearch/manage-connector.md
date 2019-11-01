@@ -1,5 +1,5 @@
 ---
-title: "Manage Microsoft Graph Connectors in the M365 Admin portal"
+title: "Manage Microsoft Graph Connectors for Microsoft Search"
 ms.author: v-pamcn
 author: monaray
 manager: mnirkhe
@@ -12,15 +12,15 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Manage Microsoft Graph Connectors in the M365 Admin portal."
+description: "Manage Microsoft Graph Connectors for Microsoft Search."
 ---
 
-# Manage your connector in Microsoft 365
+# Manage your connector for Microsoft Search
 
 To access and manage your connectors, you must be designated as a search administrator for your tenant. Contact your tenant administrator to provision you for the search administrator role.
 
 ## Get started
-Navigate to the connectors management portal:
+
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Go to **Settings** > **Microsoft Search** > **Connectors**.
 

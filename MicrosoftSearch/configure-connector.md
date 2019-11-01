@@ -1,5 +1,5 @@
 ---
-title: "Configure your built-in connector in the M365 admin portal"
+title: "Configure your built-in connector for Microsoft Search"
 ms.author: v-pamcn
 author: monaray
 manager: shohara
@@ -11,7 +11,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Configure your built-in connector in the Microsoft  admin center"
+description: "Configure your built-in connector for Microsoft Search"
 ---
 
 # Set up your Microsoft-built connector in Microsoft 365

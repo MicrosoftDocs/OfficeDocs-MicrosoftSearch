@@ -1,5 +1,5 @@
 ---
-title: "Enterprise Website connector configuration in the M365 Admin portal"
+title: "Enterprise Websites connector for Microsoft Search"
 ms.author: v-pamcn
 author: monaray
 manager: mnirkhe
