@@ -44,7 +44,7 @@ Currently, the Search admin and Search editor roles must be assigned by a global
 
 Search administrators directly influence the search experience for end users. This includes choosing the types of results you want to surface to your users. It may be difficult for one person to choose and create authoritative content on many different topics that users search for in an organization. We recommend that you leverage the expertise and knowledge of subject matter experts (SME) and other users by adding them as Search editors.
 
-## Step 3: Create answers
+## Step 2: Create answers
 
 Microsoft Search provides administrators with tools that they can use to build a robust search experience for their users. In Microsoft Search, administrators have three different search contents that they can create for a better search experience and to improve the "findability" of content:
 
