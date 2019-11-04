@@ -38,7 +38,7 @@ The table shows the team hierarchy and what each person contributes.
 |Change management team  <br/> |Ensure product value is easy to understand  <br/> Create a plan for the roll out  <br/> |IT  <br/> |
 |Champions  <br/> |Evangelize the product to peers and teams  <br/> |Any (staff)  <br/> |
 |Search administrator  <br/> |Identify user adoption core team members  <br/> Administrate Microsoft Search, including look and feel of the experience and ongoing management  <br/> Drive discussions to show the value of Microsoft Search  <br/> |IT  <br/> |
-|Editors  <br/> |Create content in the Admin portal  <br/> |IT/Any  <br/> |
+|Editors  <br/> |Create content in the admin center  <br/> |IT/Any  <br/> |
    
 ## Stage 2: Scenarios
 
@@ -116,7 +116,7 @@ All communications should educate users about how they can sign in to Bing to fi
   
  **Engage partner teams**
   
-As an integral part of Microsoft 365, Microsoft Search complies with GDPR and Tier-C guidelines. Depending on your organization, it may be necessary to share information about Microsoft Search with your privacy and security teams. For more information, see [Security for Microsoft Search](security.md).
+As an integral part of Microsoft 365, Microsoft Search complies with GDPR and Tier-C guidelines. Depending on your organization, it may be necessary to share information about Microsoft Search with your privacy and security teams. For more information, see [Security for Microsoft Search](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches).
   
 Make sure your help desk knows about the features and functionality of Microsoft Search, as well as the user requirements to sign in, so they can more effectively support users. For more information, see [Use Microsoft Search](use/about-microsoft-search.md) and [FAQs](faqs.md).
   
