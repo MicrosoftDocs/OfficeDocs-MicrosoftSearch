@@ -6,10 +6,30 @@
           "redirect_document_id": true
         },
         {
-          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/set-default-browser.md",
-          "redirect_url": "/MicrosoftSearch/use/sign-in",
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/add-a-location.md",
+          "redirect_url": "/MicrosoftSearch/manage-locations",
+          "redirect_document_id": true
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/bulk-create-locations.md",
+          "redirect_url": "/MicrosoftSearch/manage-locations",
           "redirect_document_id": false
-      }
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/about-microsoft-search.md",
+          "redirect_url": "https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc",
+          "redirect_document_id": true
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/sign-in.md",
+          "redirect_url": "https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc",
+          "redirect_document_id": false 
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/why-am-i-automatically-signed-in.md",
+          "redirect_url": "https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc",
+          "redirect_document_id": false
+        }
   ]
 }
 
