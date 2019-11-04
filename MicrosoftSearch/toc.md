@@ -1,7 +1,6 @@
 #Plan for Microsoft Search
 ##[Overview](overview-microsoft-search.md)
 ##[Set up](setup-microsoft-search.md)
-##[Microsoft Search in SharePoint](get-started-search-in-sharepoint-online.md)
 ##[Frequently asked questions](faqs.md)
 #[Get insights](get-insights.md)
 #Provide answers
@@ -30,6 +29,7 @@
 #Customize and configure
 ##[Microsoft Search page](customize-search-page.md)
 ##[Search result layouts](customize-results-layout.md)
+##[Microsoft Search in SharePoint](get-started-search-in-sharepoint-online.md)
 ##Microsoft Search in Bing
 ###[Make Microsoft Edge the default browser](set-default-browser.md)
 ###[Make Bing the default search engine](set-default-search-engine.md)
