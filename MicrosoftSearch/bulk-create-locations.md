@@ -42,7 +42,7 @@ Download and use the .csv template to bulk create, edit, and save locations.
 
 The fields in the import and export locations templates are the same. You can export, bulk edit, and import the edits, or start with an empty template to bulk create new locations. To bulk edit existing locations, export them from the Admin portal, make the necessary edits, and then import them.
 
-# Prevent import errors  
+## Prevent import errors  
 You'll get an error if any required data is missing or invalid. Depending on the error, a log file may be generated with more information about the rows and columns that need to be corrected. Make any necessary edits, and try importing the file again.
   
 > [!NOTE]
@@ -59,7 +59,7 @@ Based on the State field, locations will be saved as draft, suggested, scheduled
 
 Also, if you include the Id of an existing location, it will be replaced with the information in the import file.
 
-For organizations with mulitple tenants, you can export your locations from one tenant and import it into another. But you must remove all of the data in the Id column before you import.
+For partners who manage multiple organizations, you can export your locations from one org and import them into another. But you must remove all of the data in the Id column before you import.
   
 To find out more about required and recommended fields, see [Add a location](add-a-location.md).
 

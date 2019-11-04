@@ -7,7 +7,7 @@ ms.date: 12/19/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MOE150
@@ -18,7 +18,6 @@ description: "Ensure a seamless sign-in experience for your users by configuring
 ---
 
 # Advanced DNS configuration
-
 
 To ensure Bing can always identify users within your organization and successfully sign them in to their work or school account, configure your internal DNS server or proxy server to resolve from `www.bing.com` to `ms.bing.com`. To do this, create a DNS entry for `www.bing.com` to be a CNAME for `ms.bing.com`.
   

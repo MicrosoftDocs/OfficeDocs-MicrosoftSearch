@@ -38,7 +38,7 @@ The table shows the team hierarchy and what each person contributes.
 |Change management team  <br/> |Ensure product value is easy to understand  <br/> Create a plan for the roll out  <br/> |IT  <br/> |
 |Champions  <br/> |Evangelize the product to peers and teams  <br/> |Any (staff)  <br/> |
 |Search administrator  <br/> |Identify user adoption core team members  <br/> Administrate Microsoft Search, including look and feel of the experience and ongoing management  <br/> Drive discussions to show the value of Microsoft Search  <br/> |IT  <br/> |
-|Editors  <br/> |Create content in the Admin portal  <br/> |IT/Any  <br/> |
+|Editors  <br/> |Create content in the admin center  <br/> |IT/Any  <br/> |
    
 ## Stage 2: Scenarios
 

@@ -40,7 +40,7 @@ Download and use the .csv template to bulk create or bulk edit Q&As. It's also a
     
 7. Click **Import**
 
-# Prevent import errors      
+## Prevent import errors      
 You'll get an error if any required data is missing or invalid. Depending on the error, a log file may be generated with more information about the rows and columns that need to be corrected. Make any necessary edits, and try importing the file again.
 
 > [!NOTE]
@@ -56,7 +56,7 @@ Based on the State field, Q&As will be saved as draft, suggested, scheduled, or 
 
 Also, if you include the Id of an existing Q&A, it will be replaced with the information in the import file.
 
-For organizations with mulitple tenants, you can export your Q&As from one tenant and import it into another. But you must remove all of the data in the Id column before you import.
+For partners who manage multiple organizations, you can export your Q&As from one org and import them into another. But you must remove all of the data in the Id column before you import.
 
 To find out more about required and recommended fields, see [Create Q&As](create-qas.md).
 
