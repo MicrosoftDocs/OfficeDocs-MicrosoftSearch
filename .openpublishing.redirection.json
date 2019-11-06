@@ -77,42 +77,42 @@
         },
         {
           "source_path": "MicrosoftSearch/admin-portal-tools.md",
-          "redirect_url": "/OfficeDocs/overview-microsoft-search",
+          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
           "redirect_document_id": true
         },
         {
           "source_path": "MicrosoftSearch/connected-services.md",
-          "redirect_url": "/OfficeDocs/overview-microsoft-search",
+          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
           "redirect_document_id": false
         },
         {
           "source_path": "MicrosoftSearch/content-settings.md",
-          "redirect_url": "/OfficeDocs/overview-microsoft-search",
+          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
           "redirect_document_id": false
         },
         {
           "source_path": "MicrosoftSearch/features.md",
-          "redirect_url": "/OfficeDocs/overview-microsoft-search",
+          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
           "redirect_document_id": false
         },
         {
           "source_path": "MicrosoftSearch/get-support.md",
-          "redirect_url": "/OfficeDocs/overview-microsoft-search",
+          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
           "redirect_document_id": false
         },
         {
           "source_path": "MicrosoftSearch/requirements.md",
-          "redirect_url": "/OfficeDocs/overview-microsoft-search",
+          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
           "redirect_document_id": false
         },
         {
           "source_path": "MicrosoftSearch/security.md",
-          "redirect_url": "/OfficeDocs/overview-microsoft-search",
+          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
           "redirect_document_id": false
         },
         {
           "source_path": "MicrosoftSearch/why-microsoft-search.md",
-          "redirect_url": "/OfficeDocs/overview-microsoft-search",
+          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
           "redirect_document_id": false
         },
         {
@@ -127,37 +127,37 @@
         },
         {
           "source_path": "MicrosoftSearch/bulk-create-bookmarks.md",
-          "redirect_url": "/OfficeDocs/manage-bookmarks",
+          "redirect_url": "/MicrosoftSearch/manage-bookmarks",
           "redirect_document_id": true
         },
         {
           "source_path": "MicrosoftSearch/create-and-manage-bookmarks.md",
-          "redirect_url": "/OfficeDocs/manage-bookmarks",
+          "redirect_url": "/MicrosoftSearch/manage-bookmarks",
           "redirect_document_id": false
         },
         {
           "source_path": "MicrosoftSearch/create-bookmarks.md",
-          "redirect_url": "/OfficeDocs/manage-bookmarks",
+          "redirect_url": "/MicrosoftSearch/manage-bookmarks",
           "redirect_document_id": false
         },
         {
           "source_path": "MicrosoftSearch/publish-default-bookmarks.md",
-          "redirect_url": "/OfficeDocs/manage-bookmarks",
+          "redirect_url": "/MicrosoftSearch/manage-bookmarks",
           "redirect_document_id": false
         },
         {
           "source_path": "MicrosoftSearch/bulk-create-qas.md",
-          "redirect_url": "/OfficeDocs/manage-qas",
+          "redirect_url": "/MicrosoftSearch/manage-qas",
           "redirect_document_id": true
         },
         {
           "source_path": "MicrosoftSearch/create-and-manage-qas.md",
-          "redirect_url": "/OfficeDocs/manage-qas",
+          "redirect_url": "/MicrosoftSearch/manage-qas",
           "redirect_document_id": false
         },
         {
           "source_path": "MicrosoftSearch/create-qas.md",
-          "redirect_url": "/OfficeDocs/manage-qas",
+          "redirect_url": "/MicrosoftSearch/manage-qas",
           "redirect_document_id": false
         }
       ]
