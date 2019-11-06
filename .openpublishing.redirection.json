@@ -126,6 +126,76 @@
           "redirect_document_id": false
         }
         {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/bulk-create-bookmarks.md",
+          "redirect_url": "/MicrosoftSearch/manage-bookmarks",
+          "redirect_document_id": true
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/create-and-manage-bookmarks.md",
+          "redirect_url": "/MicrosoftSearch/manage-bookmarks",
+          "redirect_document_id": false
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/create-bookmarks.md",
+          "redirect_url": "/MicrosoftSearch/manage-bookmarks",
+          "redirect_document_id": false
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/publish-default-bookmarks.md",
+          "redirect_url": "/MicrosoftSearch/manage-bookmarks",
+          "redirect_document_id": false
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/bulk-create-qas.md",
+          "redirect_url": "/MicrosoftSearch/manage-qas",
+          "redirect_document_id": true
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
+          "redirect_url": "/MicrosoftSearch/manage-qas",
+          "redirect_document_id": false
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
+          "redirect_url": "/MicrosoftSearch/manage-qas",
+          "redirect_document_id": false
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
+          "redirect_url": "/MicrosoftSearch/   ",
+          "redirect_document_id": true
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
+          "redirect_url": "/MicrosoftSearch/   ",
+          "redirect_document_id": true
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
+          "redirect_url": "/MicrosoftSearch/   ",
+          "redirect_document_id": true
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
+          "redirect_url": "/MicrosoftSearch/   ",
+          "redirect_document_id": true
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
+          "redirect_url": "/MicrosoftSearch/   ",
+          "redirect_document_id": true
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
+          "redirect_url": "/MicrosoftSearch/   ",
+          "redirect_document_id": true
+        }
+        {
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
+          "redirect_url": "/MicrosoftSearch/   ",
+          "redirect_document_id": true
+        }
+        {
           "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
           "redirect_url": "/MicrosoftSearch/   ",
           "redirect_document_id": true
