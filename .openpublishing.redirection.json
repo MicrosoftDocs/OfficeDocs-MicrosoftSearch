@@ -2,7 +2,7 @@
   "redirections": [
       {
           "source_path": "MicrosoftSearch/use/about-the-admin-portal.md",
-          "redirect_url": "/MicrosoftSearch/use/sign-in",
+          "redirect_url": "https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc",
           "redirect_document_id": true
         },
         {
@@ -18,7 +18,7 @@
         {
           "source_path": "MicrosoftSearch/use/about-microsoft-search.md",
           "redirect_url": "https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc",
-          "redirect_document_id": true
+          "redirect_document_id": false
         },
         {
           "source_path": "MicrosoftSearch/use/sign-in.md",
@@ -72,7 +72,7 @@
         },
         {
           "source_path": "MicrosoftSearch/add-users.md",
-          "redirect_url": "https://docs.microsoft.com/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor",
+          "redirect_url": "https://docs.microsoft.com/microsoftsearch/setup-microsoft-search#step-1-assign-search-admin-and-search-editor",
           "redirect_document_id": true
         },
         {
