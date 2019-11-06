@@ -151,62 +151,15 @@
           "redirect_document_id": true
         }
         {
-          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/create-and-manage-qas.md",
           "redirect_url": "/MicrosoftSearch/manage-qas",
           "redirect_document_id": false
         }
         {
-          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
+          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/create-qas.md",
           "redirect_url": "/MicrosoftSearch/manage-qas",
           "redirect_document_id": false
         }
-        {
-          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
-          "redirect_url": "/MicrosoftSearch/   ",
-          "redirect_document_id": true
-        }
-        {
-          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
-          "redirect_url": "/MicrosoftSearch/   ",
-          "redirect_document_id": true
-        }
-        {
-          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
-          "redirect_url": "/MicrosoftSearch/   ",
-          "redirect_document_id": true
-        }
-        {
-          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
-          "redirect_url": "/MicrosoftSearch/   ",
-          "redirect_document_id": true
-        }
-        {
-          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
-          "redirect_url": "/MicrosoftSearch/   ",
-          "redirect_document_id": true
-        }
-        {
-          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
-          "redirect_url": "/MicrosoftSearch/   ",
-          "redirect_document_id": true
-        }
-        {
-          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
-          "redirect_url": "/MicrosoftSearch/   ",
-          "redirect_document_id": true
-        }
-        {
-          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
-          "redirect_url": "/MicrosoftSearch/   ",
-          "redirect_document_id": true
-        }
-        {
-          "source_path": "OfficeDocs-MicrosoftSearch-pr/MicrosoftSearch/use/   .md",
-          "redirect_url": "/MicrosoftSearch/   ",
-          "redirect_document_id": true
-        }
-        
-
       ]
 }
 
