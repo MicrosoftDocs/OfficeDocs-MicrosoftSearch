@@ -2,17 +2,17 @@
   "redirections": [
       {
           "source_path": "MicrosoftSearch/use/about-the-admin-portal.md",
-          "redirect_url": "/OfficeDocs/use/sign-in",
+          "redirect_url": "/MicrosoftSearch/use/sign-in",
           "redirect_document_id": true
         },
         {
           "source_path": "MicrosoftSearch/add-a-location.md",
-          "redirect_url": "/OfficeDocs/manage-locations",
+          "redirect_url": "/MicrosoftSearch/manage-locations",
           "redirect_document_id": true
         },
         {
           "source_path": "MicrosoftSearch/bulk-create-locations.md",
-          "redirect_url": "/OfficeDocs/manage-locations",
+          "redirect_url": "/MicrosoftSearch/manage-locations",
           "redirect_document_id": false
         },
         {
