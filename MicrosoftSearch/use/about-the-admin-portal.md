@@ -23,6 +23,7 @@ description: "Get an overview of the admin portal features and access permission
 > This article applies to the Microsoft Search in Bing admin portal. We’re moving the portal to the Microsoft 365 admin center, and then the Microsoft Search in Bing portal will be removed. We recommend that you use the Microsoft 365 admin center to get started. [Overview of Microsoft Search](overview-microsoft-search.md).
 
     
+Microsoft Search lets you use Bing to search your organization for SharePoint sites and files, internal websites, people, Office 365 groups, and more. Use the Admin portal to manage all aspects of Microsoft Search.
   
 The Microsoft Search Admin portal is organized around these areas:
   
