@@ -3,7 +3,6 @@ title: "File share connector for Microsoft Search"
 ms.author: v-pamcn
 author: TrishaMc1
 manager: mnirkhe
-ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -22,13 +21,15 @@ With the File share connector, users in your organization can search on-premises
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a File share connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
 ## Install a data gateway
-In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install and on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) to learn more.  
+In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install an on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) to learn more.  
+
+## Content requirements
+**File types**. Only files in these formats can be indexed and searched: DOC, DOCM, DOCX, DOT, DOTX, EML, GIF, HTML, JPEG, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS, and ZIP. Only the textual content of these formats is indexed. All multimedia content is ignored.
+ 
+**File size limits**. The maximum supported file size is 100 MB. Files that exceed 100 MB are skipped from indexing. The maximum post-processed size limit is 4 MB. Processing stops when a file's size reaches 4 MB. As a result, some phrases present in the file might not work for search.
 
 ## Connect to a data source
-On the **Connect to data source** page, create a folder and provide a path to the file share. Then select your previously installed gateway. Enter the credentials for a Windows user account with **read access** to all the files in the share. You can then verify the files present in the share and see all the fetched metadata.
-
-## Manage search permissions
-The File share connector only supports search permissions visible to **Everyone**. Indexed data appears in the search results and is visible to all users in the organization.
+On the **Connect to data source** page, select **File share** and provide the name, connection ID, and description. In the next page, provide the path to the file share and select your previously installed gateway. Enter the credentials for a Windows user account with read access to all the files in the share. Go through the rest of the settings and publish the connection.
 
 ## Set the refresh schedule
 The recommended default refresh schedule interval is 15 minutes, but you can change it to another interval that you prefer.
@@ -106,5 +107,5 @@ If something is critically wrong with a connection, its status shows as **failed
 ## Limitations
 The File share connector has these limitations in the preview release:
 * You can only index files with fixed properties, not files with custom properties.
-* File share Access Control Lists (ACLs) aren't currently supported.
+* File share Access Control Lists (ACLs) aren't currently supported. Only file NTFS ACLs are supported.
 * External identities aren't supported. They must be mapped to Azure Active Directory identities.
