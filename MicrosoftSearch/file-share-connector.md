@@ -26,7 +26,7 @@ In order to access your third-party data, you must install and configure a Micro
 ## Content requirements
 **File types**. Only files in these formats can be indexed and searched: DOC, DOCM, DOCX, DOT, DOTX, EML, GIF, HTML, JPEG, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS, and ZIP. Only the textual content of these formats is indexed. All multimedia content is ignored.
  
-**File size limits**. The maximum supported file size is 100 MB. Files that exceed 100 MB are skipped from indexing. The maximum post-processed size limit is 4 MB. Processing stops when a file's size reaches 4 MB. As a results, some phrases present in the file might not work for search.
+**File size limits**. The maximum supported file size is 100 MB. Files that exceed 100 MB are skipped from indexing. The maximum post-processed size limit is 4 MB. Processing stops when a file's size reaches 4 MB. As a result, some phrases present in the file might not work for search.
 
 ## Connect to a data source
 On the **Connect to data source** page, select **File share** and provide the name, connection ID, and description. In the next page, provide the path to the file share and select your previously installed gateway. Enter the credentials for a Windows user account with read access to all the files in the share. Go through the rest of the settings and publish the connection.
