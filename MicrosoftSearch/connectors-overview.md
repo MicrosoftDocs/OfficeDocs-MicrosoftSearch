@@ -1,17 +1,17 @@
 ---
 title: "Connectors Overview"
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Overview of Microsoft Graph connectors for Microsfot Search"
+description: "Overview of Microsoft Graph connectors for Microsoft Search"
 ---
 
 # Overview of Microsoft Graph connectors

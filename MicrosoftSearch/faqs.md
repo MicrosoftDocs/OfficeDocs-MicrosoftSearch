@@ -3,16 +3,14 @@ title: "FAQs"
 ms.author: anfowler
 author: adefowler
 manager: shohara
-ms.date: 10/19/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NoIndex
 description: "Get answers to commonly asked questions about enterprise search and Microsoft Search"
 ---
 

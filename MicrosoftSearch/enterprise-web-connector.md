@@ -1,13 +1,12 @@
 ---
 title: "Enterprise Websites connector for Microsoft Search"
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
-ms.date: 11/04/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
