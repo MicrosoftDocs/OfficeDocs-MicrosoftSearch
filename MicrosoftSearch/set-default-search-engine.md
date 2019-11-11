@@ -3,7 +3,6 @@ title: "Set default search engine"
 ms.author: anfowler
 author: adefowler
 manager: shohara
-ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,7 +12,6 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
-ROBOTS: NOINDEX
 description: "Learn how to set Bing as your company's default search engine using Microsoft Search."
 ---
 

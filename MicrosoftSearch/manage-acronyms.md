@@ -3,7 +3,6 @@ title: "Manage Acronym answers in Microsoft Search"
 ms.author: v-pamcna
 author: TrishaMc1
 manager: mnirkhe
-ms.date: 10/28/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

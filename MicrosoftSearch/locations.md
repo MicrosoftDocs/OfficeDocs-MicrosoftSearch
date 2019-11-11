@@ -3,7 +3,6 @@ title: "Locations"
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: mssearch
@@ -13,7 +12,6 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
-ROBOTS: NOINDEX
 description: "Overview of all of the ways that you can include your organization's locations in Microsoft Search work results"
 ---
 

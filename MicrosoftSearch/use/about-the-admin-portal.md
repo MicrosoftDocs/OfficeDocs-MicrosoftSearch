@@ -3,17 +3,15 @@ title: "About the Admin portal"
 ms.author: v-pamcna
 author: TrishaMc1
 manager: kellis
-ms.date: 12/11/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
-ROBOTS: NoIndex
 description: "Get an overview of the admin portal features and access permissions available with Microsoft Search"
 ---
 

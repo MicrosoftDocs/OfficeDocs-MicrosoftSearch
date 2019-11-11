@@ -3,7 +3,6 @@ title: "Set default browser"
 ms.author: anfowler
 author: adefowler
 manager: shohara
-ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,7 +12,6 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
-ROBOTS: NOINDEX
 description: "Set your default browser to Microsoft Edge or Internet Explorer for Microsoft Search users."
 ---
 

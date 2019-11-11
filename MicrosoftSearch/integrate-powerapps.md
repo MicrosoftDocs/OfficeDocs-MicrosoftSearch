@@ -3,7 +3,6 @@ title: "Integrate PowerApps"
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,7 +12,6 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
-ROBOTS: NOINDEX
 description: "Include browser-based apps in bookmarks results for Microsoft Search"
 ---
 

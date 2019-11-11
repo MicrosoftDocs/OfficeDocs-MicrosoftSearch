@@ -3,7 +3,6 @@ title: "User adoption guide"
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 10/1/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -13,7 +12,6 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
-ROBOTS: NOINDEX
 description: "Find out about methods and processes to help you successfully roll out Microsoft Search to your organization"
 ---
 
