@@ -1,5 +1,5 @@
 ---
-title: "Use the Insights Dashboard"
+title: "Microsoft Search Insights dashboard reports"
 ms.author: anfowler
 author: adefowler
 manager: shohara
