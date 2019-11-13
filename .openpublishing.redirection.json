@@ -16,6 +16,11 @@
           "redirect_document_id": false
         },
         {
+          "source_path": "MicrosoftSearch/locations.md",
+          "redirect_url": "/MicrosoftSearch/manage-locations",
+          "redirect_document_id": false
+        },
+        {
           "source_path": "MicrosoftSearch/use/about-microsoft-search.md",
           "redirect_url": "https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc",
           "redirect_document_id": false
