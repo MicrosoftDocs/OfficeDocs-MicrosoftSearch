@@ -3,7 +3,6 @@ title: "Plan your content"
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch

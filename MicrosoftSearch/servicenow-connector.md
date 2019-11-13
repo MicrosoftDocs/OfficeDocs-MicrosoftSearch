@@ -3,7 +3,6 @@ title: "ServiceNow connector for Microsoft Search"
 ms.author: v-pamcn
 author: TrishaMc1
 manager: mnirkhe
-ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

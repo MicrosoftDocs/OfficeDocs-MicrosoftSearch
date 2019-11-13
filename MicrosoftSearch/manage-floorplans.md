@@ -3,7 +3,6 @@ title: "Manage floor plans"
 ms.author: rasrivas
 author: rasrivas
 manager: tonytha
-ms.date: 11/01/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -84,7 +83,7 @@ To be mapped to floor plans, all office locations and employee office data must 
 
 ## Troubleshoot errors
 
-You can't go to the next step of defining floor, wing, and room information until all errors are fixed. The following table file upload error messages and actions for fixing the issues.
+You can't go to the next step of defining floor, wing, and room information until all errors are fixed. The following table lists file upload error messages and actions for fixing the issues.
 
 | Error message   | Type    | Action       |
 |:----------------| :--------- | :-------------- |

@@ -1,6 +1,6 @@
 ---
 title: "Connectors preview"
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: shohara
 ms.audience: Admin

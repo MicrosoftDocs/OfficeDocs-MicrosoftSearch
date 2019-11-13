@@ -3,7 +3,6 @@ title: "Best practices for Microsoft Search floor plans"
 ms.author: anfowler
 author: adefowler
 manager: shohara
-ms.date: 10/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
