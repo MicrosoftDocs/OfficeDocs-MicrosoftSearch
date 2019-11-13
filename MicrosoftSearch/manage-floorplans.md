@@ -83,7 +83,7 @@ To be mapped to floor plans, all office locations and employee office data must 
 
 ## Troubleshoot errors
 
-You can't go to the next step of defining floor, wing, and room information until all errors are fixed. The following table file upload error messages and actions for fixing the issues.
+You can't go to the next step of defining floor, wing, and room information until all errors are fixed. The following table lists file upload error messages and actions for fixing the issues.
 
 | Error message   | Type    | Action       |
 |:----------------| :--------- | :-------------- |
