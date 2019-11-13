@@ -16,7 +16,7 @@ description: "Overview of Microsoft Graph connectors for Microsoft Search"
 
 # Overview of Microsoft Graph connectors
 
-Microsoft Search indexes all your Microsoft 365 data to make it searchable for users. With Microsoft Graph connectors, your organization can index third-party data to appear in Microsoft Search results. The third-party data can be hosted on-premises or in the public or private clouds. Connectors expand the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem.
+Microsoft Search indexes all your [Microsoft 365](https://www.microsoft.com/microsoft-365) data to make it searchable for users. With Microsoft Graph connectors, your organization can index third-party data to appear in Microsoft Search results. The third-party data can be hosted on-premises or in the public or private clouds. Connectors expand the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem.
 
 > [!IMPORTANT]
 > **DISCLAIMER**: Microsoft Graph connectors and Microsoft Search APIs (index and search) are currently in preview. To learn more about the preview, see [Microsoft Graph connectors preview](connectors-preview.md). To participate in the preview, you must first submit the [Microsoft Graph Connectors Preview Signup form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
@@ -24,11 +24,11 @@ Microsoft Search indexes all your Microsoft 365 data to make it searchable for u
 ## Architecture
 The following architectural diagram of the Microsoft Graph platform shows how connector content flows through content indexing to user results in [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) clients. This article explains each of the key building blocks in the Microsoft Graph connectors data flow process.
 
-![](media/highlevel-connectors_FINAL.png)
+![Diagram: on-premises and cloud-based data is pulled by connectors and indexed by the Microsoft Search API, and then the Microsoft Search service delivers the results to users.](media/highlevel-connectors_FINAL.png)
 
 The API instantiates one connection per data source. Then the API indexes and stores the data. Established connections interact with Microsoft Search, so users can get search results.
 
-You can configure all the Microsoft-built connectors in the [Microsoft 365 admin center](https://admin.microsoft.com). The admin center simplifies configuring your connector with a simple user interface.
+You can configure all the Microsoft-built connectors in the Microsoft 365 [admin center](https://admin.microsoft.com). The admin center simplifies configuring your connector with a simple user interface.
 
 To create a **connection** to a data source, admins need authenticated access to the data and the entire content repository. The data is fed to the graph connector service for indexing.
 
@@ -40,7 +40,7 @@ To preview connectors from one of our ecosystem partners, contact them directly.
 You can also [build your own connector](https://docs.microsoft.com/graph/search-concept-overview).
 
 ### Connectors by Microsoft
-The Microsoft Graph connectors preview release includes 6 Microsoft-built connectors. You can set them up in the [Microsoft 365 admin center](https://admin.microsoft.com) and learn how to [Set up your Microsoft-built connector](configure-connector.md).
+The Microsoft Graph connectors preview release includes 6 Microsoft-built connectors. You can set them up in the [admin center](https://admin.microsoft.com) and learn how to [Set up your Microsoft-built connector](configure-connector.md).
 
 The following sections provide brief descriptions for these Microsoft-built connectors. You can get more information in the linked articles for each connector.
 
@@ -70,7 +70,7 @@ Learn more about connectors from our partners in the [Microsoft Graph connectors
 To index custom data types or files, developers can create connectors in [Microsoft Graph](https://developer.microsoft.com/graph/). A connector is an application that [creates a connection](https://docs.microsoft.com/graph/search-index-manage-connections) and pushes items into the Microsoft Search index. For more information, see the [Overview for extending the Microsoft Search experience for apps on Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
 
 ### Search results with your custom-built connector
-Once custom data is indexed, developers can [query this data](https://docs.microsoft.com/graph/search-concept-custom-types). You can view your data in any application. For more information, see the [Overview for extending the Microsoft Search experience for apps on Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
+After custom data is indexed, developers can [query this data](https://docs.microsoft.com/graph/search-concept-custom-types). You can view your data in any application. For more information, see the [Overview for extending the Microsoft Search experience for apps on Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
 
 ## License requirements
 To view data from connectors in your search results, users must have one of the following Microsoft 365 subscriptions:

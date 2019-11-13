@@ -16,7 +16,7 @@ description: "Set up the file share connector for Microsoft Search."
 
 # File share connector
 
-With the File share connector, users in your organization can search on-premises file shares. The search results from these shares merge with the results from SharePoint and Microsoft OneDrive for Business.
+With the file share connector, users in your organization can search on-premises file shares. The search results from these shares merge with the results from SharePoint and Microsoft OneDrive for Business.
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a File share connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
