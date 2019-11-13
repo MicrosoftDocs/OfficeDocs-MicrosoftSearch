@@ -3,7 +3,6 @@ title: "Set default homepage"
 ms.author: anfowler
 author: adefowler
 manager: shohara
-ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,7 +12,6 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
-ROBOTS: NOINDEX
 description: "Learn how to set Bing as the default homepage for your company with Microsoft Search."
 ---
 

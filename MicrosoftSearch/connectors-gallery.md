@@ -1,16 +1,18 @@
 ---
-title: Connector gallery
-description: Lists all of the Microsoft Graph connectors for Microsoft Search
-services: microsoft-search
+title: "Connector gallery"
+ms.author: mounika.narayanan
 author: monaray
-manager: samanro
-layout: LandingPage
-ms.assetid: 
-ms.service: mssearch
-ms.tgt_pltfrm: na
-ms.devlang: na
+manager: shohara
+ms.audience: Admin
 ms.topic: landing-page
-ms.author: samanro
+ms.service: mssearch
+localization_priority: Normal
+search.appverid:
+- BFB160
+- MET150
+- MOE150
+description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
+
 ---
 
 # Microsoft Graph connectors gallery

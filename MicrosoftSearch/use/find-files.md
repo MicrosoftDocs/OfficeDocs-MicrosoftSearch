@@ -3,7 +3,6 @@ title: "Find files"
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 12/18/2018
 ms.audience: Consumer/IW
 ms.topic: article
 ms.service: mssearch
