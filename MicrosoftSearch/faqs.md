@@ -23,13 +23,13 @@ Here's a list of the most common questions.
 
 ## Is advanced query understanding supported?
 
-Yes, Microsoft Search parses query intent from larger phrases. This feature uses AI to learn common superfluous phrases users add to their queries that don't impact their search intent. For example, when a user searches for 'tell me more about how to change my password please' we extract the less important words from the query and trigger based on the relevant ones like 'change password.'
+Yes, Microsoft Search parses query intent from larger phrases. This feature uses AI to learn common superfluous phrases users add to their queries that don't impact their search intent. For example, when a user searches for *tell me more about how to change my password please*, we extract the less important words from the query and trigger based on the relevant ones like *change password*.
   
-This feature will not override keywords set in the admin center.
+This feature won't override keywords set in the Microsoft 365 [admin center](https://admin.microsoft.com).
   
 ## Can you search for files on-premises?
 
-Yes. You can search on-premises SharePoint files if you have a hybrid deployment of SharePoint.
+Yes. You can search on-premises [SharePoint](http://sharepoint.com/) files if you have a hybrid deployment of SharePoint.
   
 ## How do I make Bing the default search engine for people in my org?
 
