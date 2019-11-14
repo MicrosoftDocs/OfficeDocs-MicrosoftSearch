@@ -1,9 +1,8 @@
 ---
 title: "Microsoft Search Public Preview: Terms of Use"
-ms.author: monaray97
+ms.author: anfowler
 author: adefowler
 manager: shohara
-ms.date: 11/04/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,7 +11,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "legal terms and conditions for Microsoft Graph Connectors public preview for Microsoft search"
+description: "Legal terms and conditions for Microsoft Graph connectors public preview for Microsoft Search"
 ---
 
 # Microsoft Graph connectors public preview: Terms of Use

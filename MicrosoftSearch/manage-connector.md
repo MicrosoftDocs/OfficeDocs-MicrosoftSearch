@@ -1,9 +1,8 @@
 ---
 title: "Manage Microsoft Graph Connectors for Microsoft Search"
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
-ms.date: 11/04/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
