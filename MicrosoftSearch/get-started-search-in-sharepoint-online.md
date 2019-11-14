@@ -3,7 +3,6 @@ title: "Get started with Microsoft Search in SharePoint Online"
 ms.author: tlarsen
 author: tlarsen
 manager: mnirkhe
-ms.date: 10/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

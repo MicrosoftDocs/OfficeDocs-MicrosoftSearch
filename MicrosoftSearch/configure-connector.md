@@ -1,6 +1,6 @@
 ---
 title: "Configure your Microsoft-built connector for Microsoft Search"
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: shohara
 ms.audience: Admin
@@ -16,7 +16,7 @@ description: "Configure your Microsoft-built connector for Microsoft Search"
 
 # Set up your Microsoft-built connector for Microsoft Search
 
-This article guides you through the steps of configuring a Microsoft-built connector. It outlines the flow of setting up a connection in the [Microsoft 365 admin center](https://admin.microsoft.com). For more details on how to set up specific Microsoft-built connectors, see these articles:
+This article guides you through the steps of configuring a Microsoft-built connector. It outlines the flow of setting up a connection in the Microsoft 365 [admin center](https://admin.microsoft.com). For more details on how to set up specific Microsoft-built connectors, see these articles:
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 * [Enterprise websites](enterprise-web-connector.md)
 * [File share](file-share-connector.md)
@@ -25,13 +25,13 @@ This article guides you through the steps of configuring a Microsoft-built conne
 * [ServiceNow](servicenow-connector.md)
 
 ## Set up
-To configure any of the Microsoft-built connectors, go to the [Microsoft 365 admin center](https://admin.microsoft.com):
-1. Sign in to your account with the credentials for your Microsoft 365 test tenant.
+To configure any of the Microsoft-built connectors, go to the [admin center](https://admin.microsoft.com):
+1. Sign in to your account with the credentials for your [Microsoft 365](https://www.microsoft.com/microsoft-365) test tenant.
 2. Go to **Settings** > **Microsoft Search** > **Connectors**.
 3. Select **Add a connector**.
 4. From the list of available connectors, select the connector of your choice.
 
-![](media/addconnector_final.png)
+![Data sources available include: ADLS Gen2 Connector, Enterprise websites, ServiceNow, File share, Microsoft SQL server, and MediaWiki.](media/addconnector_final.png)
 
 ### Name the connector
 To create a connection, first specify these attributes:
@@ -54,16 +54,16 @@ Search schema attributes include **searchable**, **queryable**, and **retrievabl
 
 **Search schema attribute** | **Function** | **Example**
 --- | --- | ---
-SEARCHABLE | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the property is "title," a query for "Enterprise" returns answers that contain the word "Enterprise" in any text or title.
-QUERYABLE | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the "Title" property is queryable, then the query  “Title: Enterprise” is supported.
-RETRIEVABLE | Only retrievable properties can be used in result type and displayable in the search result. | 
+SEARCHABLE | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the property is **title**, a query for **Enterprise** returns answers that contain the word **Enterprise** in any text or title.
+QUERYABLE | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the **Title** property is queryable, then the query **Title: Enterprise** is supported.
+RETRIEVABLE | Only retrievable properties can be used in the result type and display in the search result. | 
 
-For all connectors except the file share connector, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by clicking the check boxes for each property and attribute in the search schema page.
+For all connectors except the file share connector, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute in the search schema page.
 
 ![Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions.](media/manageschema.png)
 
 These restrictions and recommendations apply to search schema settings:
-* For connectors that index custom types, we recommend that you **do not** mark the field that contains the main content **retrievable**. Significant performance issues occur when search results render with that search attribute. An example is the **Text** content field for a ServiceNow knowledge-base article.
+* For connectors that index custom types, we recommend that you **do not** mark the field that contains the main content **retrievable**. Significant performance issues occur when search results render with that search attribute. An example is the **Text** content field for a [ServiceNow](https://www.servicenow.com) knowledge-base article.
 * Only properties marked as retrievable render in the search results and can be used to create modern result types (MRTs).
 * Only string properties can be marked searchable.
 
@@ -92,14 +92,14 @@ Each connector will have a different optimal set of refresh schedules based on h
 ![Incremental crawl and full crawl interval settings showing Incremental at 15 minutes and Full crawl at 1 week.](media/refreshschedule.png)
 
 ### Review connector settings
-After you configure your connector, the [Microsoft 365 admin center](https://admin.microsoft.com) takes you to a page where you can review your settings. You can go back through the configuration process to edit any setting before you confirm the connection. To learn more, see [Manage your connector](manage-connector.md).
+After you configure your connector, the [admin center](https://admin.microsoft.com) takes you to a page where you can review your settings. You can go back through the configuration process to edit any setting before you confirm the connection. To learn more, see [Manage your connector](manage-connector.md).
 
 ## Next steps: Customize the search results page
-With the Microsoft Search user interface (UI), your end users can search content from your Microsoft 365 productivity apps and the broader Microsoft ecosystem. A search vertical refers to the tabs that are shown when a user views their search results in SharePoint, Office.com, and Microsoft Search in Bing. You can customize search verticals to narrow down results so that only a certain type of search results is displayed. These verticals appear as a tab on the top of the search results page. A modern result type (MRT) is the UI that designates how results are presented.
+With the Microsoft Search user interface (UI), your end users can search content from your [Microsoft 365](https://www.microsoft.com/microsoft-365) productivity apps and the broader Microsoft ecosystem. A search vertical refers to the tabs that are shown when a user views their search results in [SharePoint](http://sharepoint.com/), [Microsoft Office](https://Office.com), and Microsoft Search in [Bing](https://Bing.com). You can customize search verticals to narrow down results, so that only a certain type of search results is displayed. These verticals appear as a tab on the top of the search results page. A modern result type (MRT) is the UI that designates how results are presented.
 
 You must create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won’t show up on the search results page.
 
 To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).
 
 ## How do I know this worked?
-Go to the list of your published connections under the **Connectors** tab in the [Microsoft 365 admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).

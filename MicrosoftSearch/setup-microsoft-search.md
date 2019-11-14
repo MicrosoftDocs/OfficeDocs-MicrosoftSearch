@@ -3,7 +3,6 @@ title: "Set up Microsoft Search"
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 08/06/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

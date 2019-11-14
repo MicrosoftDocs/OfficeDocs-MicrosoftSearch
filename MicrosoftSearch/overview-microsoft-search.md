@@ -3,7 +3,6 @@ title: "Microsoft Search Overview"
 ms.author: anfowler
 author: adefowler
 manager: shohara
-ms.date: 11/01/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
