@@ -29,7 +29,7 @@ In order to access your third-party data, you must install and configure a [Micr
 **File size limits**. The maximum supported file size is 100 MB. Files that exceed 100 MB are skipped from indexing. The maximum post-processed size limit is 4 MB. Processing stops when a file's size reaches 4 MB. As a result, some phrases present in the file might not work for search.
 
 ## Connect to a data source
-On the **Connect to data source** page, select **File share** and provide the name, connection ID, and description. On the next page, provide the path to the file share and select your previously installed gateway. Enter the credentials for a [Microsoft Windows](http://microsoft.com/windows) user account with read access to all the files in the share. Go through the rest of the settings and publish the connection.
+On the **Connect to data source** page, select **File share** and provide the name, connection ID, and description. On the next page, provide the path to the file share and select your previously installed gateway. Enter the credentials for a [Microsoft Windows](https://microsoft.com/windows) user account with read access to all the files in the share. Go through the rest of the settings and publish the connection.
 
 ## Set the refresh schedule
 The recommended default refresh schedule interval is 15 minutes, but you can change it to another interval that you prefer.
@@ -94,7 +94,7 @@ Read-Host -Prompt 'Press enter to exit'
 ## Search for file share content in the search results page
 To search for indexed content, go to the [SharePoint](http://sharepoint.com/) home page of your test tenant. Results will be displayed in the **All** and **Files** tabs.
 
-Because of browser restrictions, you can't select a file result to view or open files from local file share searches. To open these files, copy the file result's link and paste it into the address bar of your system's browser. For [Windows](http://microsoft.com/windows), use Windows Explorer. Then you can open the file on your system.
+Because of browser restrictions, you can't select a file result to view or open files from local file share searches. To open these files, copy the file result's link and paste it into the address bar of your system's browser. For [Windows](https://microsoft.com/windows), use Windows Explorer. Then you can open the file on your system.
 
 ![SharePoint search with the copy link dialog box open.](media/fileshare-search.png)
 
