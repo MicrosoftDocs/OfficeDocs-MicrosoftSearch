@@ -40,7 +40,7 @@ If the suggestions in the search box aren’t what users are looking for, **Ente
 
 ## Benefits of Microsoft Search
 
-**Search across Microsoft 365 from any Microsoft Search box** – Users can search from any Microsoft Search box and get quickly back to what they were doing. Microsoft Search brings together results from data sources in Office 365, including [SharePoint](http://sharepoint.com/), [Microsoft OneDrive for Business](https://onedrive.live.com/about/en-us/business/), and [Microsoft Exchange Server](https://products.office.com/en-us/exchange/microsoft-exchange-server).
+**Search across Microsoft 365 from any Microsoft Search box** – Users can search from any Microsoft Search box and get quickly back to what they were doing. Microsoft Search brings together results from data sources in Office 365, including [SharePoint](http://sharepoint.com/), [Microsoft OneDrive for Business](https://onedrive.live.com/about/business/), and [Microsoft Exchange Server](https://products.office.com/exchange/microsoft-exchange-server).
 
 **Easy to search** – Microsoft Search suggests results based on users’ previous activity in Office 365, right in the **Search** box.
 
