@@ -173,7 +173,7 @@
         {
           "source_path": "MicrosoftSearch/quick-set-up.md",
           "redirect_url": "/MicrosoftSearch/setup-microsoft-search",
-          "redirect_document_id": true
+          "redirect_document_id": false
         },
         {
           "source_path": "MicrosoftSearch/set-up-microsoft-search.md",
