@@ -25,7 +25,7 @@ To get your organization going with Microsoft Search in SharePoint, take the ste
 
 ## Prepare for Microsoft Search in SharePoint
 
-Users can only find SharePoint content that's been indexed. Microsoft Search and classic search share the same index for SharePoint content, which is crawled and indexed automatically. 
+Users can only find [SharePoint](http://sharepoint.com/) content that's been indexed. Microsoft Search and classic search share the same index for SharePoint content, which is crawled and indexed automatically. 
 
 Some organizations use both classic search and Microsoft Search in SharePoint. To learn how to avoid impact from classic search settings on Microsoft Search in SharePoint, see [Differences between the classic and modern search experiences in SharePoint Online](https://docs.microsoft.com/sharepoint/differences-classic-modern-search).
 
@@ -38,7 +38,7 @@ For a better search experience, influence your organization to try modern instea
 
 ## Promote searching from the SharePoint start page
 
-Teach your users to search from the [SharePoint](http://sharepoint.com/) start page instead of from the classic[Search Center](https://docs.microsoft.com/sharepoint/manage-search-center). Consider hiding your classic Search Center from users.
+Teach your users to search from the [SharePoint](http://sharepoint.com/) start page instead of from the classic [Search Center](https://docs.microsoft.com/sharepoint/manage-search-center). Consider hiding your classic Search Center from users.
 
 ## See also
 [Overview of Microsoft Search](overview-microsoft-search.md)

@@ -1,1 +1,2 @@
 /MicrosoftSearch/ @adefowler
+/MicrosoftSearch/ @jeffkizn
