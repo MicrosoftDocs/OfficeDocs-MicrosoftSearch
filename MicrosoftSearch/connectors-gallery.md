@@ -5,6 +5,7 @@ author: monaray
 manager: shohara
 ms.audience: Admin
 ms.topic: landing-page
+layout: LandingPage
 ms.service: mssearch
 localization_priority: Normal
 search.appverid:
