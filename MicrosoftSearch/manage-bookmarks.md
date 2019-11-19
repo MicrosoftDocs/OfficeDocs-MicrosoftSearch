@@ -70,6 +70,9 @@ To prevent errors, make sure your import file is properly formatted and:
 - The column order is the same as the import template
 - All columns have values, except the three that can be empty: *Id*, *Last Modified*, and *Last Modified By* 
 - The *State* column is not empty, as this information is required
+- To prevent duplication errors refer to below points
+    - If Example.com is already added and customer is adding it again from import file, then the system will throw an error. This is to avoid duplication and behaviour is consistent across all Microsoft Search features like Acronyms, Q&A.
+    - However, if the customer wants to update any other parameter of existing bookmark, say keyword or description, then that can be done in the import file but the customer should copy the Bookmark ID in the appropriate column of import file. If bookmark ID is present, system will not consider it as new addition but an update and this will go through without any error. Even if there is no update, still the customer can copy the bookmark ID and the import will go through.
 
 ## PowerApps
 Help your users complete tasks, such as entering vacation time or reporting expenses, by adding existing PowerApps to your bookmarks. 
