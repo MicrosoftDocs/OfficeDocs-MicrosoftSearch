@@ -1,7 +1,7 @@
 ---
 title: "Customize the search results layout"
 ms.author: anfowler
-author: adefowler
+author: jeffkizn
 manager: shohara
 ms.audience: Admin
 ms.topic: article
