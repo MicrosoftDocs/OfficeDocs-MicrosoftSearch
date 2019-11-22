@@ -45,6 +45,8 @@ The example demonstrates selection of five data columns that hold the data for t
 Select data columns as shown in this example query: 
  `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
+ { new content goes here }
+
 ### Watermark (Required)
 To prevent overloading the database, the connector batches and resumes full-crawl queries with a full-crawl watermark column. By using the value of the watermark column, each subsequent batch is fetched, and querying is resumed from the last checkpoint. Essentially this is a mechanism to control data refresh for full crawls.
 
