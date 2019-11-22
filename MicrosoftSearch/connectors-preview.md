@@ -16,7 +16,7 @@ description: "Find out about Microsoft Graph Connectors preview for Microsoft Se
 
 # Microsoft Graph connectors preview
 
-Microsoft Graph connectors, indexing APIs, and search APIs are currently in preview. To gain access to connectors functionality, you must request to join the preview program by submitting the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">Microsoft Graph Connectors Preview Sign up Form</a>. This is an early preview, and there's no service level guarantee. We encourage customers to try connectors functionality and provide feedback. We don’t recommend using connectors for production purposes during the preview period.
+Microsoft Graph connectors and Microsoft Search APIs (query and index) are currently in preview status. To gain access to connectors functionality, you must request to join the preview program by submitting the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">Microsoft Graph Connectors Preview Sign up Form</a>. This is an early preview, and there's no service level guarantee. We encourage customers to try connectors functionality and provide feedback. We don’t recommend using connectors for production purposes during the preview period.
 
 ## Set up Targeted release
 To try connectors, you must have the **Targeted release** option set for all users in your organization. The Targeted release requirement applies no matter which of the following preview environments you choose.
