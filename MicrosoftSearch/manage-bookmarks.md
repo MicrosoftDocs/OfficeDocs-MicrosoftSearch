@@ -70,9 +70,10 @@ To prevent errors, make sure your import file is properly formatted and:
 - The column order is the same as the import template
 - All columns have values, except the three that can be empty: *Id*, *Last Modified*, and *Last Modified By* 
 - The *State* column is not empty, as this information is required
-- To prevent duplication errors refer to below points
-    - If Example.com is already added and customer is adding it again from import file, then the system will throw an error. This is to avoid duplication and behaviour is consistent across all Microsoft Search features like Acronyms, Q&A.
-    - However, if the customer wants to update any other parameter of existing bookmark, say keyword or description, then that can be done in the import file but the customer should copy the Bookmark ID in the appropriate column of import file. If bookmark ID is present, system will not consider it as new addition but an update and this will go through without any error. Even if there is no update, still the customer can copy the bookmark ID and the import will go through.
+
+To prevent bookmark-to-bookmark duplication errors, follow these best practices:
+- Don't use duplicate URLS for different bookmarks. If a URL is already is assigned to another bookmark and you are adding it again from an import file, then you will get an error. This also applies to duplicate URLs for other types of answers.
+- Use the bookmark ID column when updating existing bookmarks. You can update any other property of an existing bookmark, such as keyword or description, but you should make sure the bookmark ID in the appropriate column of import file. If the bookmark ID is present, the service won't consider it as new addition, and it will process an error.
 
 ## PowerApps
 Help your users complete tasks, such as entering vacation time or reporting expenses, by adding existing PowerApps to your bookmarks. 
