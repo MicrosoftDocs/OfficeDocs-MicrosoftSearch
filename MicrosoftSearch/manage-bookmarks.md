@@ -75,7 +75,7 @@ To prevent errors, make sure your import file is properly formatted and:
 To prevent bookmark-to-bookmark duplication errors, follow these best practices:
 
 - Don't use duplicate URLS for different bookmarks. If a URL is already is assigned to another bookmark and you are adding it again from an import file, then you will get an error. This also applies to duplicate URLs for other types of answers.
-- Use the *bookmark ID* column when updating existing bookmarks. You can update any other property of an existing bookmark, such as keyword or description, but you should make sure the *bookmark ID* is in the appropriate column of the import file. If the bookmark ID is present, the service won't consider it as new addition, and it won't process it as an error.
+- Use the *bookmark ID* column when updating existing bookmarks. You can update any other property of an existing bookmark, such as keyword or description, but you should make sure the *bookmark ID* is in the appropriate column of the import file. If the *bookmark ID* is present, the service won't consider it as new addition, and it won't be processed as an error.
 
 ## PowerApps
 Help your users complete tasks, such as entering vacation time or reporting expenses, by adding existing PowerApps to your bookmarks. 
