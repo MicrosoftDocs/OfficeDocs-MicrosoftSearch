@@ -66,6 +66,7 @@ Here are some important points to be noted regarding the template file:
 You'll get an error if any required data is missing or invalid, and a log file is generated with more information about the rows and columns to be corrected. Make necessary edits and try importing the file again. You cannot import or save any bookmarks until all errors are resolved.
 
 To prevent errors, make sure your import file is properly formatted and:
+
 - Includes the header row and all the columns that were in the import template
 - The column order is the same as the import template
 - All columns have values, except the three that can be empty: *Id*, *Last Modified*, and *Last Modified By* 
