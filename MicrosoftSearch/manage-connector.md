@@ -60,11 +60,11 @@ Below is the list of different errors that can appear against any connection. If
 1003 | The account associated with the connector doesn't have permission to access the item. |  Ensure the proper account has access to the item you want indexed.
 1004 | Can't reach the on-premises data gateway. Make sure the gateway service is running. | Go to the machine which has the gateway and check if the Power BI gateway is running by opening the Power BI gateway application. Verify if the gateway is signed in with the admin account used for Microsoft Search. 
 1005 | Credentials associated with this data source have expired. Renew the credentials and update the connection. | Click **Edit** to update the authentication credentials. 
-1006 | Your gateway version is out of date and doesn’t support this connector anymore. You will need to update the gateway. | Please visit (Install an on-premises data gateway)[https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install] to download  and install the latest version of the Power BI gateway on the machine containing the gateway.
+1006 | Your gateway version is out of date and doesn’t support this connector anymore. You will need to update the gateway. | Please visit (Install an on-premises data gateway)[https://docs.microsoft.com/data-integration/gateway/service-gateway-install] to download  and install the latest version of the Power BI gateway on the machine containing the gateway.
 2001 | Indexing is throttled because of a large number of updates in the queue. Depending on the queue, it can take some time for the updates to complete. | Please wait until the queue gets cleared.
 2002 | Indexing failed due to unsupported item formatting. | See connector-specific documentation for more information.
 2003 | Indexing failed due to unsupported item content. | See connector-specific documentation for more information. 
-2004 | The [file size](https://docs.microsoft.com/en-us/microsoftsearch/file-share-connector#content-requirements) is too large to be indexed. It must be 100 MB or less before processing and no larger than 4 MB after processing. The file gets indexed partially in this case. Few phrases present in the file might not return a search result. |  
+2004 | The [file size](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements) is too large to be indexed. It must be 100 MB or less before processing and no larger than 4 MB after processing. The file gets indexed partially in this case. Few phrases present in the file might not return a search result. |  
 5000 | Something went wrong. If this continues, contact support. | 
 
 ## Preview limitations
