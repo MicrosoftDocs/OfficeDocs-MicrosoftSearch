@@ -66,10 +66,15 @@ Here are some important points to be noted regarding the template file:
 You'll get an error if any required data is missing or invalid, and a log file is generated with more information about the rows and columns to be corrected. Make necessary edits and try importing the file again. You cannot import or save any bookmarks until all errors are resolved.
 
 To prevent errors, make sure your import file is properly formatted and:
+
 - Includes the header row and all the columns that were in the import template
 - The column order is the same as the import template
 - All columns have values, except the three that can be empty: *Id*, *Last Modified*, and *Last Modified By* 
 - The *State* column is not empty, as this information is required
+
+To prevent bookmark-to-bookmark duplication errors, follow these best practices:
+- Don't use duplicate URLS for different bookmarks. If a URL is already is assigned to another bookmark and you are adding it again from an import file, then you will get an error. This also applies to duplicate URLs for other types of answers.
+- Use the *bookmark ID* column when updating existing bookmarks. You can update any other property of an existing bookmark, such as keyword or description, but you should make sure the *bookmark ID* is in the appropriate column of the import file. If the *bookmark ID* is present, the service won't consider it as new addition, and it won't be processed as an error.
 
 ## PowerApps
 Help your users complete tasks, such as entering vacation time or reporting expenses, by adding existing PowerApps to your bookmarks. 
