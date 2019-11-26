@@ -52,13 +52,13 @@ If the suggestions in the search box aren’t what users are looking for, **Ente
 
 ## Tailoring Microsoft Search to your organization
 
-As an administrator you can create and amazing Microsoft Search experience for your users. 
+As an administrator you can create an amazing Microsoft Search experience for your users. 
 
 **Show useful content** – Answers provide fast, authoritative results to search queries based on keywords. [Make content easy to find](make-content-easy-to-find.md).
 
-**Add external content** - Microsoft Graph Connectors allow you to bring external content into the index. Use connectors to enrich the search experience with data and files from outside of the Microsoft 365. [Overview of Microsoft Graph connectors](connectors-overview.md)
+**Add external content** – Microsoft Graph Connectors allow you to bring external content into the index. Use connectors to enrich the search experience with data and files from outside of Microsoft 365. [Overview of Microsoft Graph connectors](connectors-overview.md)
 
-**Customize the user experience** - You can customize the user experience through the use of verticals and other configurations. [Customize the Microsoft Search page](customize-search-page.md)
+**Customize the user experience** – You can customize the user experience through the use of verticals and other configurations. [Customize the Microsoft Search page](customize-search-page.md)
 
 ## What content is searched?
 
@@ -81,7 +81,7 @@ When a user enters a search query in Microsoft Search in Bing, two simultaneous 
 Because enterprise searches might be sensitive, Microsoft Search has implemented a set of trust measures that describe how the separate search of public results from `Bing.com` is handled.
 
 ### Logging
- - All `Bing.com` search logs that pertain to Microsoft Search in Bing traffic are disassociated from your workplace identity.
+- All `Bing.com` search logs that pertain to Microsoft Search in Bing traffic are disassociated from your workplace identity.
 - If a set of restrictions or frequency thresholds are met which give us confidence that the query is not specific to a particular organization, the query will be treated as described in the Bing services section of the [Privacy Statement](https://privacy.microsoft.com/privacystatement). For example, such queries will be used to model and train public features, such as autosuggest or related searches.
 - Queries that do not meet the set of restrictions or frequency thresholds will be stored separately from public, non-Microsoft Search traffic.
 ### Advertising 
