@@ -15,7 +15,7 @@ description: "Protect your company's data and end users while providing informat
 ---
 # Security for Microsoft Search in Bing
 
-With enterprise-grade security, Microsoft Search keeps your users and data protected.
+With enterprise-grade security, Microsoft Search keeps your users and workplace data protected.
 
 ## Secure by default
 
@@ -48,12 +48,12 @@ When a user enters a search query in Microsoft Search in Bing, two simultaneous 
 
 Because workplace searches might be sensitive, Microsoft Search has implemented a set of trust measures that describe how the separate search of public results from Bing.com is handled.
 
-### 
+### Logging
 
 <Need an intro paragraph here>
 
 - All Bing.com search logs that pertain to Microsoft Search in Bing traffic are disassociated from your workplace identity.
-- If a set of restrictions or frequency thresholds are met which give us confidence that the query is not specific to a particular organization, the query will be treated as described in the Search and artificial intelligence section of the Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement). For example, such queries will be used to model and train public features, such as autosuggest or related searches.
+- If a set of restrictions or frequency thresholds are met which give us confidence that the query is not specific to a particular organization, the query will be treated as described in the Search and artificial intelligence section of the [Privacy Statement](https://privacy.microsoft.com/privacystatement). For example, such queries will be used to model and train public features, such as autosuggest or related searches.
 - Queries that do not meet the set of restrictions or frequency thresholds will be stored separately from public, non-Microsoft Search traffic.
 
 ### Advertising
