@@ -1,5 +1,5 @@
 ---
-title: "Security for Microsoft Search"
+title: "Security and Privacy for Microsoft Search in Bing"
 ms.author: anfowler
 author: adefowler
 manager: shohara
@@ -11,11 +11,11 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Protect your company's data and end users while providing information to authorized users with Microsoft Search"
+description: "Protect your company's data and end users while providing information to authorized users with Microsoft Search in Bing"
 ---
-# Security for Microsoft Search in Bing
+# Security and Privacy for Microsoft Search in Bing
 
-With enterprise-grade security, Microsoft Search keeps your users and workplace data protected.
+With enhanced privacy and security measures, Microsoft Search in Bing helps protect your users and workplace data.
 
 ## Secure by default
 
@@ -31,9 +31,9 @@ Users can access Microsoft Search only through a work or school account. They ne
 
 If a user is already authenticated with their work or school account in another service, such as Outlook or SharePoint, they'll be automatically signed into the same work or school account when they go to Bing in the same browser. Also, when the user signs out of their work or school account, they'll be automatically signed out from other Microsoft Office services in the same browser.
   
-## Communicates with the Trusted Cloud from the browser
+## Communicates with the Microsoft cloud from the browser
 
-When a user signs in with their work or school account, Bing will download the necessary client libraries to the browser to enable Microsoft Search results. Then, when they search, the in-browser code calls the Office 365 cloud to get work results. To do this, Microsoft Search uses a dedicated API that is Tier C (SOC2 Type 1) compliant pursuant to the Office 365 [Compliance Framework for Industry Standards and Regulations] (https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (PDF download). This means work results and work data never flow through non-compliant Bing systems. 
+When a user signs in with their work or school account, Bing will download the necessary client libraries to the browser to enable Microsoft Search results. Then, when they search, the in-browser code calls the Office 365 cloud to get work results. To do this, Microsoft Search uses a dedicated API that is Tier C (SOC2 Type 1) compliant pursuant to the Office 365 [Compliance Framework for Industry Standards and Regulations] (https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (PDF download). This means work results and work data never flow through non-compliant Bing systems.
   
 ## Permissions
 
