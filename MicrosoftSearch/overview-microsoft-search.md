@@ -64,28 +64,16 @@ As an administrator you can create an amazing Microsoft Search experience for yo
 
 Microsoft Search shows the content that your organization has stored in Microsoft 365 or indexed through connectors. Microsoft Search does not search across tenants or show results from content that's shared by other organizations. If your organization has set up a hybrid SharePoint environment using cloud hybrid search, Microsoft Search returns search results from both online and on-premises SharePoint content, including any external content you’ve connected to your SharePoint Server environment. [Learn more about hybrid search environments](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-Users will get the same enterprise search results they get from other locations and will also get results from the internet.
+Users will get the same search results they get from other locations and will also get results from the internet.
 
 ## How does Microsoft Search work?
 
 When a user searches, Microsoft Search processes the query and parses search intent from larger phrases, using Artificial Intelligence (AI) to learn common superfluous phrases users add to their queries that don't impact their search intent. For example, when a user searches for "how to change my password" we extract the less important words from the query and trigger based on the relevant ones like "change password".  
 The search results that the user has **permission** to see are presented on the search results page. Microsoft Search uses intelligent ranking algorithms to order results based on relevance.
 
-## Microsoft Search in Bing protects enterprise searches
+## How does Microsoft Search in Bing help protect my company data?
 
-When a user enters a search query in Microsoft Search in Bing, two simultaneous search requests occur:
-
-- A search of your organization’s internal resources.
-- A separate search of public results from Bing.com. 
-
-Because enterprise searches might be sensitive, Microsoft Search has implemented a set of trust measures that describe how the separate search of public results from `Bing.com` is handled.
-
-### Logging
-- All `Bing.com` search logs that pertain to Microsoft Search in Bing traffic are disassociated from your workplace identity.
-- If a set of restrictions or frequency thresholds are met which give us confidence that the query is not specific to a particular organization, the query will be treated as described in the Bing services section of the [Privacy Statement](https://privacy.microsoft.com/privacystatement). For example, such queries will be used to model and train public features, such as autosuggest or related searches.
-- Queries that do not meet the set of restrictions or frequency thresholds will be stored separately from public, non-Microsoft Search traffic.
-### Advertising 
-Advertising shown on `Bing.com` in connection with enterprise searches is solely related to the content of the search queries. Ads are never targeted to users based on their workplace identity.
+[Security and Privacy for Microsoft Search in Bing](security-for-search.md)
 
 ## See also
 
