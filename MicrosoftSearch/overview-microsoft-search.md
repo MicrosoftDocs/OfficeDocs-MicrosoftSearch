@@ -64,7 +64,7 @@ As an administrator you can create an amazing Microsoft Search experience for yo
 
 Microsoft Search shows the content that your organization has stored in Microsoft 365 or indexed through connectors. Microsoft Search does not search across tenants or show results from content that's shared by other organizations. If your organization has set up a hybrid SharePoint environment using cloud hybrid search, Microsoft Search returns search results from both online and on-premises SharePoint content, including any external content you’ve connected to your SharePoint Server environment. [Learn more about hybrid search environments](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-Users will get the same enterprise search results they get from other locations and will also get results from the internet.
+Users will get the same search results they get from other locations and will also get results from the internet.
 
 ## How does Microsoft Search work?
 
