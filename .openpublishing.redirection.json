@@ -83,7 +83,7 @@
     {
       "source_path": "MicrosoftSearch/add-users.md",
       "redirect_url": "https://docs.microsoft.com/microsoftsearch/setup-microsoft-search#step-1-assign-search-admin-and-search-editor",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "MicrosoftSearch/admin-portal-tools.md",
