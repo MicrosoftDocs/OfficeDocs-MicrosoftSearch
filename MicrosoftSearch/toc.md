@@ -1,4 +1,3 @@
-
 #Plan for Microsoft Search
 ##[Overview](overview-microsoft-search.md)
 ##[Set up](setup-microsoft-search.md)
@@ -37,4 +36,3 @@
 ###[Make Bing the default search engine](set-default-search-engine.md)
 ###[Make Bing.com the default home page](set-default-homepage.md)
 ###[User adoption guide](user-adoption-guide.md)
-
