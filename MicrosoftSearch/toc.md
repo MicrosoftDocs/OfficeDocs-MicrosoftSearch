@@ -1,9 +1,9 @@
-#Plan for Microsoft Search
+# Plan for Microsoft Search
 ##[Overview](overview-microsoft-search.md)
 ##[Set up](setup-microsoft-search.md)
 ##[Frequently asked questions](faqs.md)
 #[Get insights](get-insights.md)
-#Provide answers
+# Provide answers
 ##[Plan your content](plan-your-content.md)
 ##[Acronyms](manage-acronyms.md)
 ##[Bookmarks](manage-bookmarks.md)
@@ -11,12 +11,12 @@
 ###[Best practices](floorplans-bestpractices.md)
 ##[Locations](manage-locations.md)
 ##[Q&As](manage-qas.md)
-#Connectors (preview)
+# Connectors (preview)
 ##[Overview](connectors-overview.md)
 ##[Preview release](connectors-preview.md)
 ##[Connectors gallery](connectors-gallery.md)
 ##[Manage your connector](manage-connector.md)
-##Microsoft-built connectors
+## Microsoft-built connectors
 ###[Connector setup](configure-connector.md)
 ###[Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 ###[Enterprise websites](enterprise-web-connector.md)
@@ -26,11 +26,11 @@
 ###[ServiceNow](servicenow-connector.md)
 ##[Feedback](connectors-feedback.md)
 ##[Terms of use](terms-of-use.md)
-#Customize and configure
+# Customize and configure
 ##[Microsoft Search page](customize-search-page.md)
 ##[Search result layouts](customize-results-layout.md)
 ##[Microsoft Search in SharePoint](get-started-search-in-sharepoint-online.md)
-##Microsoft Search in Bing
+## Microsoft Search in Bing
 ###[Security and Privacy](security-for-search.md)
 ###[Make Microsoft Edge the default browser](set-default-browser.md)
 ###[Make Bing the default search engine](set-default-search-engine.md)
