@@ -38,7 +38,7 @@
     {
       "source_path": "MicrosoftSearch/use/find-conversations.md",
       "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "MicrosoftSearch/use/find-locations.md",
@@ -73,12 +73,12 @@
     {
       "source_path": "MicrosoftSearch/use/how-microsoft-search-keeps-your-info-secure.md",
       "redirect_url": "https://www.microsoft.com/trust-center",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "MicrosoftSearch/use/send-feedback.md",
       "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-in-bing-0b64be13-f20f-4e17-82b6-4deaea4940fb",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "MicrosoftSearch/add-users.md",
@@ -128,7 +128,7 @@
     {
       "source_path": "MicrosoftSearch/advanced-dns-configuration.md",
       "redirect_url": "https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "MicrosoftSearch/manage-network-connections.md",
