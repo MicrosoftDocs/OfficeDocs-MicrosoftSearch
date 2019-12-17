@@ -1,186 +1,194 @@
 {
   "redirections": [
-      {
-          "source_path": "MicrosoftSearch/use/about-the-admin-portal.md",
-          "redirect_url": "https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc",
-          "redirect_document_id": true
-        },
-        {
-          "source_path": "MicrosoftSearch/add-a-location.md",
-          "redirect_url": "/MicrosoftSearch/manage-locations",
-          "redirect_document_id": true
-        },
-        {
-          "source_path": "MicrosoftSearch/bulk-create-locations.md",
-          "redirect_url": "/MicrosoftSearch/manage-locations",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/locations.md",
-          "redirect_url": "/MicrosoftSearch/manage-locations",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/use/about-microsoft-search.md",
-          "redirect_url": "https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/use/sign-in.md",
-          "redirect_url": "https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc",
-          "redirect_document_id": false 
-        },
-        {
-          "source_path": "MicrosoftSearch/use/why-am-i-automatically-signed-in.md",
-          "redirect_url": "https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/use/find-conversations.md",
-          "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
-          "redirect_document_id": true
-        },
-        {
-          "source_path": "MicrosoftSearch/use/find-locations.md",
-          "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/use/find-people-and-groups.md",
-          "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/use/find-resources-tools-and-more.md",
-          "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/use/find-sharepoint-sites.md",
-          "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/use/suggested-searches.md",
-          "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/use/find-files.md",
-          "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/use/how-microsoft-search-keeps-your-info-secure.md",
-          "redirect_url": "https://www.microsoft.com/trust-center",
-          "redirect_document_id": true
-        },
-        {
-          "source_path": "MicrosoftSearch/use/send-feedback.md",
-          "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-in-bing-0b64be13-f20f-4e17-82b6-4deaea4940fb",
-          "redirect_document_id": true
-        },
-        {
-          "source_path": "MicrosoftSearch/add-users.md",
-          "redirect_url": "https://docs.microsoft.com/microsoftsearch/setup-microsoft-search#step-1-assign-search-admin-and-search-editor",
-          "redirect_document_id": true
-        },
-        {
-          "source_path": "MicrosoftSearch/admin-portal-tools.md",
-          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
-          "redirect_document_id": true
-        },
-        {
-          "source_path": "MicrosoftSearch/connected-services.md",
-          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/content-settings.md",
-          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/features.md",
-          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/get-support.md",
-          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/requirements.md",
-          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/security.md",
-          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/why-microsoft-search.md",
-          "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/advanced-dns-configuration.md",
-          "redirect_url": "https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges",
-          "redirect_document_id": true
-        },
-        {
-          "source_path": "MicrosoftSearch/manage-network-connections.md",
-          "redirect_url": "https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/bulk-create-bookmarks.md",
-          "redirect_url": "/MicrosoftSearch/manage-bookmarks",
-          "redirect_document_id": true
-        },
-        {
-          "source_path": "MicrosoftSearch/create-and-manage-bookmarks.md",
-          "redirect_url": "/MicrosoftSearch/manage-bookmarks",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/create-bookmarks.md",
-          "redirect_url": "/MicrosoftSearch/manage-bookmarks",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/publish-default-bookmarks.md",
-          "redirect_url": "/MicrosoftSearch/manage-bookmarks",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/bulk-create-qas.md",
-          "redirect_url": "/MicrosoftSearch/manage-qas",
-          "redirect_document_id": true
-        },
-        {
-          "source_path": "MicrosoftSearch/create-and-manage-qas.md",
-          "redirect_url": "/MicrosoftSearch/manage-qas",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/create-qas.md",
-          "redirect_url": "/MicrosoftSearch/manage-qas",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/quick-set-up.md",
-          "redirect_url": "/MicrosoftSearch/setup-microsoft-search",
-          "redirect_document_id": false
-        },
-        {
-          "source_path": "MicrosoftSearch/set-up-microsoft-search.md",
-          "redirect_url": "/MicrosoftSearch/setup-microsoft-search",
-          "redirect_document_id": false
-        }
-      ]
+    {
+      "source_path": "MicrosoftSearch/use/about-the-admin-portal.md",
+      "redirect_url": "https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/add-a-location.md",
+      "redirect_url": "/MicrosoftSearch/manage-locations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "MicrosoftSearch/bulk-create-locations.md",
+      "redirect_url": "/MicrosoftSearch/manage-locations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/locations.md",
+      "redirect_url": "/MicrosoftSearch/manage-locations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/use/about-microsoft-search.md",
+      "redirect_url": "https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/use/sign-in.md",
+      "redirect_url": "https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/use/why-am-i-automatically-signed-in.md",
+      "redirect_url": "https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/use/find-conversations.md",
+      "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/use/find-locations.md",
+      "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/use/find-people-and-groups.md",
+      "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/use/find-resources-tools-and-more.md",
+      "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/use/find-sharepoint-sites.md",
+      "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/use/suggested-searches.md",
+      "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/use/find-files.md",
+      "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/use/how-microsoft-search-keeps-your-info-secure.md",
+      "redirect_url": "https://www.microsoft.com/trust-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/use/send-feedback.md",
+      "redirect_url": "https://support.office.com/article/find-what-you-need-with-microsoft-search-in-bing-0b64be13-f20f-4e17-82b6-4deaea4940fb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/add-users.md",
+      "redirect_url": "https://docs.microsoft.com/microsoftsearch/setup-microsoft-search#step-1-assign-search-admin-and-search-editor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/admin-portal-tools.md",
+      "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "MicrosoftSearch/connected-services.md",
+      "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/content-settings.md",
+      "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/features.md",
+      "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/get-support.md",
+      "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/requirements.md",
+      "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/security.md",
+      "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/why-microsoft-search.md",
+      "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/advanced-dns-configuration.md",
+      "redirect_url": "https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/manage-network-connections.md",
+      "redirect_url": "https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/bulk-create-bookmarks.md",
+      "redirect_url": "/MicrosoftSearch/manage-bookmarks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "MicrosoftSearch/create-and-manage-bookmarks.md",
+      "redirect_url": "/MicrosoftSearch/manage-bookmarks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/create-bookmarks.md",
+      "redirect_url": "/MicrosoftSearch/manage-bookmarks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/publish-default-bookmarks.md",
+      "redirect_url": "/MicrosoftSearch/manage-bookmarks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/bulk-create-qas.md",
+      "redirect_url": "/MicrosoftSearch/manage-qas",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "MicrosoftSearch/create-and-manage-qas.md",
+      "redirect_url": "/MicrosoftSearch/manage-qas",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/create-qas.md",
+      "redirect_url": "/MicrosoftSearch/manage-qas",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/quick-set-up.md",
+      "redirect_url": "/MicrosoftSearch/setup-microsoft-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/set-up-microsoft-search.md",
+      "redirect_url": "/MicrosoftSearch/setup-microsoft-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/microsoft-search.md",
+      "redirect_url": "index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/use/index.md",
+      "redirect_url": "about-microsoft-search",
+      "redirect_document_id": false
+    }
+  ]
 }
-
-
