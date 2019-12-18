@@ -27,7 +27,7 @@
 ## [Feedback](connectors-feedback.md)
 ## [Terms of use](terms-of-use.md)
 # Customize and configure
-## [Microsoft Search page](customize-search-page.md)
+## [Manage verticals and result types](customize-search-page.md)
 ## [Search result layouts](customize-results-layout.md)
 ## [Microsoft Search in SharePoint](get-started-search-in-sharepoint-online.md)
 ## Microsoft Search in Bing
