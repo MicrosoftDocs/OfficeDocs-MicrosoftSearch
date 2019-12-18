@@ -42,7 +42,7 @@ You can choose different views of the report by filtering on the type of answer.
 
 ## Impression distribution
 
-This report shows impression distribution in [Bing](https://Bing.com) over time for various answers. Examples are bookmarks, people, Q&A, files, locations, file sites, groups, and conversations. 
+This report shows impression distribution in [Bing](https://Bing.com) over time for various answers. Examples are bookmarks, people, Q&A, files, locations, file sites, groups, and conversations.
 
 ![Impressions report with 90 days selected as the time period.](media/Insights-impressions.png)
 
