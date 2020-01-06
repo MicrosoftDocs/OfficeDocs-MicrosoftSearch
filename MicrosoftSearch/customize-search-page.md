@@ -13,7 +13,7 @@ search.appverid:
 - MOE150
 description: "Add search verticals and customize search results"
 ---
-# Customize the Microsoft Search page
+# Customize the search results page
 
 By creating search verticals and result types, you can customize the search results that are shown to users when they search in [SharePoint](http://sharepoint.com/), [Microsoft Office](https://Office.com), and Microsoft Search in [Bing](https://Bing.com). Verticals make it easier for users to find the information they’ve got permission to see. For example, you can create a search vertical for marketing analysis data from third-party software for your users in the marketing department. You can also define result types and customize the layout for this data.  
 
