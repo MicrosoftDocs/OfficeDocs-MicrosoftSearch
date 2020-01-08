@@ -95,7 +95,7 @@ After you start the wizard, you're guided through the steps to define the name, 
 ### View the vertical after enabling
 
 After you enable the vertical, it might take a while before you can view it.
-If you want to wait after enabling it, you can append **cacheClear=true** to the URL in [SharePoint](http://sharepoint.com/) and [Office](https://Office.com) to view the vertical immediately.
+If you do not want to wait after enabling it, you can append **cacheClear=true** to the URL in [SharePoint](http://sharepoint.com/) and [Office](https://Office.com) to view the vertical immediately.
 
 ## Troubleshooting
 
