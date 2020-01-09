@@ -29,7 +29,7 @@ To try connectors, indexing APIs, and search APIs, we recommend these two method
 
 ## Preview limitations
 The preview release has the following limitations:
-* The public preview for Microsoft Graph Connectors are only available for tenants in the U.S. and Europe regions. 
+* The public preview for Microsoft Graph Connectors are only available for tenants registered in the U.S. and Europe regions. However, this does not include special locations France and the UK.
 * Ingestion throughput is throttled at about four items per second.
 * There's no support for schema updates. After you create a connection setup, there's no way to update the schema. You can only delete and re-create the connection.
 * Indexed content only shows up in the search results page under a custom vertical. This restriction applies to content with custom types.
