@@ -1,2 +1,1 @@
-/MicrosoftSearch/ @adefowler
 /MicrosoftSearch/ @jeffkizn
