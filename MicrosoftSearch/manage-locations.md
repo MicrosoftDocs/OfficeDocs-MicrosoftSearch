@@ -35,7 +35,7 @@ Administrators can use the Import or Export feature to bulk add or edit location
 Use the import/export feature to:
 1. Bulk add location - Add details in the location template file, and then import it. 
 1. Bulk edit locations - Export locations to a .csv file, then edit the location details in the exported .csv file, and then import the updated .csv file.
-1. Backups Locations – Export existing locations to a .csv file.
+1. Backup locations – Export existing locations to a .csv file.
 
 To export or import locations:
 1. In the upper-right corner of the **Locations** tab, select **Import**.
