@@ -1,8 +1,8 @@
 ---
 title: "Manage Q&As"
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -17,9 +17,10 @@ description: "Find and update answers individually or use available Microsoft Se
 
 # Manage Q&As
 
-Creating a Q&A is similar to creating bookmarks. Q&A allows you to answer the user's question instead of just providing a link to webpage. You can format the answer in rich text using the available tools. If a Bookmark and a Q&A share the same keyword, the Bookmark result is shown first. Like Bookmarks, the Q&A index is refreshed immediately after a Q&A is added or changed. 
+Creating a Q&A is similar to creating bookmarks. Q&A allows you to answer the user's question instead of just providing a link to webpage. You can format the answer in rich text using the available tools. If a Bookmark and a Q&A share the same keyword, the Bookmark result is shown first. Like Bookmarks, the Q&A index is refreshed immediately after a Q&A is added or changed.
 
 ## Add or edit a single Q&A
+
 1. Go to **Microsoft 365 admin center**.
 1. In the navigation pane, go to **Settings** and select **Microsoft Search**.
 1. Select **Q&A** tab. By default, the first tab (**Bookmarks**) is selected.
@@ -29,8 +30,10 @@ To edit a Q&A, select the Q&A in the relevant Q&A list.
 1. Save your changes.
 
 ### Supported HTML tags
+
 You can use existing HTML content or add HTML tags to your answer (description). Unsupported tags are ignored.  
 The following HTML tags are supported:
+
 - blockquote
 - div
 - em
@@ -48,24 +51,37 @@ The following HTML tags are supported:
 - hr
 - img
 
+## Add or edit Q&As using browser extensions
+
+Search administrators can create search content easily by using browser extensions. Install the browser extension and then go to the site you want from which you want to generate a Q&A. You can then generate the Q&A and include a link to the source site.
+
+Currently, browser extensions are available for Edge and Chrome.
+
+- To download Edge extension, go to [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and download the app.
+- To download Chrome extension, go to [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and download the app.
+
 ## Bulk add or edit Q&As
-Administrators can use the Import and Export features to bulk create or edit Q&A. This is a useful feature when administrators need to add or edit a large number of Q&A. 
+
+Administrators can use the Import and Export features to bulk create or edit Q&A. This is a useful feature when administrators need to add or edit a large number of Q&A.
 
 Use the import/export feature to:
+
 1. Bulk add Q&A - Add details in the Q&A template file, and then import it.
 1. Bulk edit Q&A - Export Q&A to a .csv file, then edit the Q&A details in the exported .csv file, and then import the .csv file.
 1. Backup Q&A - Export Q&A to a .csv file.
 
 To import or export Q&A:
-1. In the upper-right corner of the Q&A tab, select **Import**. 
+
+1. In the upper-right corner of the Q&A tab, select **Import**.
 Select **Export** to download all the existing Q&A in a .csv file.
 1. In the right pane, choose the option to import using a .csv file.
-Download the template file for a list of the required fields and details. 
-1. Add or edit Q&A details in the template file and save it on your computer. 
+Download the template file for a list of the required fields and details.
+1. Add or edit Q&A details in the template file and save it on your computer.
 1. In the **Import Q&A** pane, select **Browse**, and then the .csv file that you want to import.
 1. Select **Import**.
 
 Here are some important points regarding the template file:
+
 - Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*
 - If you include the *Id* of an existing bookmark, it will be replaced with the information in the import file.
 - If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.
@@ -73,6 +89,6 @@ Here are some important points regarding the template file:
 - Based on the State field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.
 - For partners who manage multiple organizations, you can export your bookmarks from one org and import them into another. But you must remove the data in the *Id* column before you import.
 
-**Note:** You cannot import Q&A if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted and include all the required information. 
+**Note:** You cannot import Q&A if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted and include all the required information.
 
 For more information on how to prevent error, see [Prevent import errors](manage-bookmarks.md#prevent-import-errors).
