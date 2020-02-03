@@ -53,7 +53,7 @@ The following HTML tags are supported:
 
 ## Add or edit Q&As using browser extensions
 
-Search administrators can create search content easily by using browser extensions. Install the browser extension and then go to the site you want from which you want to generate a Q&A. You can then generate the Q&A and include a link to the source site.
+Search administrators can create search content easily by using browser extensions. Install the browser extension and then go to the site from which you want to generate a Q&A. You can then create the Q&A and include a link to the source site.
 
 Currently, browser extensions are available for Edge and Chrome.
 
