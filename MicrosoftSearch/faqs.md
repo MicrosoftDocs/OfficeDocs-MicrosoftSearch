@@ -1,8 +1,8 @@
 ---
 title: "FAQs"
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -13,7 +13,7 @@ search.appverid:
 - MOE150
 description: "Get answers to commonly asked questions about enterprise search and Microsoft Search"
 ---
-
+<!-- markdownlint-disable no-trailing-punctuation -->
 # Frequently asked questions
 
 Here's a list of the most common questions.
@@ -39,7 +39,6 @@ Here's the instructions for setting the default search engine, default homepage,
 - [Make Bing your default search engine](set-default-search-engine.md)
 - [Set Bing.com as your enterprise homepage](set-default-homepage.md)
 
-  
 ## How are my search results protected?
 
 We require [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) authentication to access results from the Trusted Cloud. Authenticated users only see content they have access to. Search queries are de-identified, and logs are separated from public [Bing](https://Bing.com) search traffic. This level of protection is unavailable anywhere else in the industry.
@@ -48,11 +47,10 @@ We require [Azure Active Directory](https://docs.microsoft.com/azure/active-dire
 
 No.
 
-## Where can I get info about Office 365 and Microsoft 365 compliance tiers and categories?
+## Where can I get info about Office 365 security, compliance, and privacy?
 
-Details can be found in the [Compliance Framework for Industry Standards and Regulations](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (PDF download).
+Details can be found on the [Trust Center pages for Office 365](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx).
 
 ## Can users earn Microsoft Rewards points with their work or school account?
 
-Microsoft Search requires that enterprise users sign in with a work or school account. But users can’t join or sign in to the Microsoft Rewards program with those accounts. However, there is an instance when an enterprise user may see Rewards points accrue. This can happen when a Microsoft Search user has a Rewards account that was created with a <a href="https://www.microsoft.com/welcome?rtc=1">Microsoft account</a>. (The email address associated with a Microsoft account can be from Outlook.com, Hotmail.com, Gmail, Yahoo, or other providers.) If users sign in alternately with both their work account and Microsoft account in the same browser session, they might accrue points to their Rewards account. Users can stop accruing points while searching with Microsoft Search by clearing their cookies. 
-
+Microsoft Search requires that enterprise users sign in with a work or school account. But users can’t join or sign in to the Microsoft Rewards program with those accounts. However, there is an instance when an enterprise user may see Rewards points accrue. This can happen when a Microsoft Search user has a Rewards account that was created with a [Microsoft account](https://www.microsoft.com/welcome?rtc=1). (The email address associated with a Microsoft account can be from Outlook.com, Hotmail.com, Gmail, Yahoo, or other providers.) If users sign in alternately with both their work account and Microsoft account in the same browser session, they might accrue points to their Rewards account. Users can stop accruing points while searching with Microsoft Search by clearing their cookies.
