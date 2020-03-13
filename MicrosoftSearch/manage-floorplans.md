@@ -36,9 +36,9 @@ Here are some good examples fo this building's code: 2, B2, Building2, Building 
 ### Step 2: Review your floor plans
 
 Floor plans files must be in DWG format. DWG files can contain text labels. When a text label marks a room, it is called a room label. The DWG file must have **at least 10 rooms** marked with labels. Here are some examples of DWG files with different label types:
-| **Text labels including room labels**                  | **Text labels but no room labels**                 | **No text labels**          |
-| :-------------------: | :-------------------: |:---------------:|
-| ![floorplans-textandroomlabels.png](media/floorplans-textandroomlabels.png) | ![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png) | ![floorplans-nolabels.png](media/floorplans-nolabels.png)
+|**Text labels including room labels**|**Text labels but no room labels**|**No text labels**|
+|:-----:|:-----:|:-----:|
+|![floorplans-textandroomlabels.png](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
 
 See the FAQ section for information on viewing and updating DWG files.
 
@@ -95,7 +95,7 @@ In [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft
 
 ### Step 8: (Optional) Specify location patterns
 
-After uploading a floor plan, the text labels will be compared to the office locations in your users' profiles. If there are fewer than 10 matches, the **Specify location patterns** screen appears. Location patterns are used to extract floor, wing, and room information from office locations. 
+After uploading a floor plan, the text labels will be compared to the office locations in your users' profiles. If there are fewer than 10 matches, the **Specify location patterns** screen appears. Location patterns are used to extract floor, wing, and room information from office locations.
 
 ![floorplans-locationpattern.png](media/floorplans-locationpattern.png)
 
@@ -135,7 +135,7 @@ To update an existing floor plan, select the floor plan you want to change, and 
 
 **Q:** **What's the best format for text labels in DWG files?
 
-**A:** For the best results, text labels should contain floor numbers and room numbers. The examples below use 2 or SC for the building code. 
+**A:** For the best results, text labels should contain floor numbers and room numbers. The examples below use 2 or SC for the building code.
 <!-- markdownlint-disable no-inline-html -->
 |Room label types|Floor|Room|Sample text label|Office location (building code/text label)|
 |:-----|:-----|:-----|:-----|:-----|
