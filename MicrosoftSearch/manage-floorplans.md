@@ -36,6 +36,7 @@ Here are some good examples fo this building's code: 2, B2, Building2, Building 
 ### Step 2: Review your floor plans
 
 Floor plans files must be in DWG format. DWG files can contain text labels. When a text label marks a room, it is called a room label. The DWG file must have **at least 10 rooms** marked with labels. Here are some examples of DWG files with different label types:
+
 |**Text labels including room labels**|**Text labels but no room labels**|**No text labels**|
 |:-----:|:-----:|:-----:|
 |![floorplans-textandroomlabels.png](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
