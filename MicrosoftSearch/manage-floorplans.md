@@ -39,7 +39,7 @@ Floor plans files must be in DWG format; DWG files can contain text labels. When
 |:-----:|:-----:|:-----:|
 |![floorplans-textandroomlabels.png](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
 
-See the [FAQ](#Frequently-asked-questions) section for information on viewing and updating DWG files.
+See the [FAQ](#frequently-asked-questions) section for information on viewing and updating DWG files.
 
 ### Step 3: Update office locations on user profiles
 
