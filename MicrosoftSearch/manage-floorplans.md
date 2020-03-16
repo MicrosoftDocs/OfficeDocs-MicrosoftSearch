@@ -27,9 +27,9 @@ Follow these steps to setup floor plans answers in **Microsoft Search**.
 
 ### Step 1: Determine your building codes
 
-Building codes are used as part of a users office location. You'll use these codes when updating user profiles. Let's say your organization has a building at this location: *Building 2, 350 5th Avenue, New York City, NY 10016*
+Building codes are used as part of a user's office location. You'll use these codes when updating user profiles. Let's say your organization has a building at this location: *Building 2, 350 5th Avenue, New York City, NY 10016*
 
-Here are some good examples fo this building's code: 2, B2, Building2, Building 2, or NYCB2. Each building must have a unique code.
+Here are some good examples for this building's code: 2, B2, Building2, Building 2, or NYCB2. Each building must have a unique code.
 
 ### Step 2: Review your floor plans
 
@@ -39,13 +39,13 @@ Floor plans files must be in DWG format; DWG files can contain text labels. When
 |:-----:|:-----:|:-----:|
 |![floorplans-textandroomlabels.png](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
 
-See the FAQ section for information on viewing and updating DWG files.
+See the [FAQ](#Frequently-asked-questions) section for information on viewing and updating DWG files.
 
 ### Step 3: Update office locations on user profiles
 
 A user's office location is a combination of a building code and a room label. For example, if the building code is *2* and the room label is *1173*, the office location would be *2/1173*.
 
-Add or update office locations for each user in your organization. You can change office location on the user profile in the Microsoft 365 [admin center](https://admin.microsoft.com) or you can change in in your on-premises Active Directory to sync into Azure Active Directory. *PhysicalDeliveryOfficeName* is the field that is used for office location. If your room labels do not include floor numbers, see the FAQ for tips.
+Add or update office locations for each user in your organization. You can change office location on the user profile in the Microsoft 365 [admin center](https://admin.microsoft.com) or you can change in your on-premises Active Directory to sync into Azure Active Directory. *PhysicalDeliveryOfficeName* is the field that is used for office location. If your room labels do not include floor numbers, see the FAQ for tips.
 
 In this example, Allan's office is in room 1173 on floor 1 of building 2.
 ![floorplans-userlestview.png](media/floorplans-userlistview.png)
@@ -69,7 +69,7 @@ For more details about locations, see [Manage Locations](manage-locations.md)
 
 ### Step 6: Gather and organize office locations
 
-Before you can use floor plans, office locations must be indexed. This is a one-time operations that can take up to 48 hours to complete. The total time will depend on the size of your organization.
+Before you can use floor plans, office locations must be indexed. This is a one-time operation that can take up to 48 hours to complete. The total time will depend on the size of your organization.
 
 In [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Floor plans**, and then select **Get started**. If you don't see this notice, this step has already been completed for your organization
 
