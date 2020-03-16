@@ -27,15 +27,13 @@ Follow these steps to setup floor plans answers in **Microsoft Search**.
 
 ### Step 1: Determine your building codes
 
-Building codes are used as part of a users office location. You'll use these codes when updating user profiles. Let's say your organization has a building at this location:
-
-Building 2, 350 5th Avenue, New York City, NY 10016
+Building codes are used as part of a users office location. You'll use these codes when updating user profiles. Let's say your organization has a building at this location: *Building 2, 350 5th Avenue, New York City, NY 10016*
 
 Here are some good examples fo this building's code: 2, B2, Building2, Building 2, or NYCB2. Each building must have a unique code.
 
 ### Step 2: Review your floor plans
 
-Floor plans files must be in DWG format. DWG files can contain text labels. When a text label marks a room, it is called a room label. The DWG file must have **at least 10 rooms** marked with labels. Here are some examples of DWG files with different label types:
+Floor plans files must be in DWG format; DWG files can contain text labels. When a text label marks a room, it is called a room label. The DWG file must have **at least 10 rooms** marked with labels. Here are some examples of DWG files with different label types:
 
 |**Text labels including room labels**|**Text labels but no room labels**|**No text labels**|
 |:-----:|:-----:|:-----:|
@@ -45,7 +43,7 @@ See the FAQ section for information on viewing and updating DWG files.
 
 ### Step 3: Update office locations on user profiles
 
-A user's office location is a combination of a building code and a  room label. For example, if the building code is *2* and the room label is *1173*, the office location would be *2/1173*.
+A user's office location is a combination of a building code and a room label. For example, if the building code is *2* and the room label is *1173*, the office location would be *2/1173*.
 
 Add or update office locations for each user in your organization. You can change office location on the user profile in the Microsoft 365 [admin center](https://admin.microsoft.com) or you can change in in your on-premises Active Directory to sync into Azure Active Directory. *PhysicalDeliveryOfficeName* is the field that is used for office location. If your room labels do not include floor numbers, see the FAQ for tips.
 
@@ -57,13 +55,13 @@ In this example, Allan's office is in room 1173 on floor 1 of building 2.
 
 ### Step 4: Verify office location
 
-Use **Microsoft Search** to find a user and verify that their office locations is appearing correctly. If you have just updated locations, you may need to wait up to **72 hours** for the updates to appear in the search results.
+Use **Microsoft Search** to find a user and verify that their office location is appearing correctly. If you have just updated locations, you may need to wait up to **72 hours** for the updates to appear in the search results.
 
 ![floorplans-peoplecard.png](media/floorplans-peoplecard.png)
 
 ### Step 5: Add building locations
 
-Floor plans uses Locations to define your buildings. In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Locations**, and then select **Add**. Enter the name, address, and keywords for the building. Add as many buildings as you need.
+Floor plans uses [Locations](manage-locations.md) to define your buildings. In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Locations**, and then select **Add**. Enter the name, address, and keywords for the building. Add as many buildings as you need.
 
 ![floorplans-locations.png](media/floorplans-locations.png)
 
@@ -85,7 +83,7 @@ In [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft
 4. When the upload is complete, you must enter floor number that is represented in the floor plan file. Then select **Next**.
 5. (Optional) If your floor has wings or zones, enter that detail.
 6. Enter the building code for this floor plan. The building code can be found on users' office location property. For example, if a user's office location is **2/1173**, then the building code is **2**.
-7. (Optional) Review and identify the location patters for all uploaded floor plans, and then select **Next**.
+7. (Optional) Review and identify the location patterns for all uploaded floor plans and then select **Next**.
 8. You will see a review screen listing how many office locations were mapped to the floor plans. Select **Details** to ensure the mapping is correct.
 9. When you're ready, select **Publish** to make the floor plan available in **Microsoft Search**.
 
@@ -122,9 +120,10 @@ To update an existing floor plan, select the floor plan you want to change, and 
 **Q:** How do I view and edit DWG files?
 
 **A:** Use any of these options to view DWG files:
-    - Upload the file to SharePoint and open it.
-    - Open the file in [Microsoft Visio](https://support.office.com/article/Open-insert-convert-and-save-DWG-and-DXF-AutoCAD-drawings-60cab691-0f4c-4fc9-b775-583273c8dac5) or [Autodesk DWG TrueView](https://www.autodesk.com/products/dwg).
-    - Upload the file to [Autodesk Online Viewer](https://viewer.autodesk.com/).
+
+- Upload the file to SharePoint and open it.
+- Open the file in [Microsoft Visio](https://support.office.com/article/Open-insert-convert-and-save-DWG-and-DXF-AutoCAD-drawings-60cab691-0f4c-4fc9-b775-583273c8dac5) or [Autodesk DWG TrueView](https://www.autodesk.com/products/dwg).
+- Upload the file to [Autodesk Online Viewer](https://viewer.autodesk.com/).
 
 **Q:** How do I add text labels to unmarked rooms?
 
