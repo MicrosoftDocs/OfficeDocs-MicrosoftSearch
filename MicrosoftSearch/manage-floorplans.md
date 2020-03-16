@@ -78,7 +78,7 @@ In [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft
 ### Step 7: Upload floor plans
 
 1. In the [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Floor plans**, and then select **Add**.
-2. Select a building in the drop-down list and select **Next**. If the building isn't listed, go back and [add building locations](#Step-5:-Add-building-locations).
+2. Select a building in the drop-down list and select **Next**. If the building isn't listed, go back and [add building locations](#Step-5-Add-building-locations).
 3. Select **Upload files**, and then choose the floor plan you are uploading.
 4. When the upload is complete, you must enter floor number that is represented in the floor plan file. Then select **Next**.
 5. (Optional) If your floor has wings or zones, enter that detail.
@@ -113,7 +113,7 @@ To update an existing floor plan, select the floor plan you want to change, and 
 |Upload floor plans|No data found.|Error|Check your file to make sure it's the correct one and then upload it again or delete it.|
 |Upload floor plans|External references are missing in this file. Either upload CC_1_furniture.dwg or delete this file.|Warning|Upload external reference files or delete.|
 |Upload floor plans|Could not read room numbers or tags in the DWG file. Please delete this file.|Warning|Check your DWG file to make sure the data is included and then delete the file and try again.|
-|Link office locations|No office locations found in AAD. Add location data to AAD before setting up floor plans.|Error|[Update office locations on user profiles](#Step-3:-Update-office-locations-on-user-profiles) |
+|Link office locations|No office locations found in AAD. Add location data to AAD before setting up floor plans.|Error|[Update office locations on user profiles](#Step-3-Update-office-locations-on-user-profiles) |
 
 ## Frequently asked questions
 
