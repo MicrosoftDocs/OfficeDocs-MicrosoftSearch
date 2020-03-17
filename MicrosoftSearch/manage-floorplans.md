@@ -156,6 +156,7 @@ To update an existing floor plan, select the floor plan you want to change, and 
 **A:** Yes, you can. When you update office locations in the user's AAD profile, include the floor number as part of the room number, even if it's missing from the DWG file. After you upload the file, the Specify location patterns screen will appear and you can indicate both values.
 
 For example, a DWG file that includes room numbers, but no floor numbers, may look similar to this:
+
 ![floorplans-nofloors.png](media/floorplans-nofloors.png)
 
 The office location in the user's profile should be 2/1175 where '2' is the building code, '1' is the floor number, and '175' is the room number.
