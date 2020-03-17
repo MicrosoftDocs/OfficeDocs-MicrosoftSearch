@@ -8,7 +8,6 @@
 ## [Acronyms](manage-acronyms.md)
 ## [Bookmarks](manage-bookmarks.md)
 ## [Floor plans](manage-floorplans.md)
-### [Best practices](floorplans-bestpractices.md)
 ## [Locations](manage-locations.md)
 ## [Q&As](manage-qas.md)
 # Connectors (preview)
