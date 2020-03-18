@@ -28,7 +28,7 @@ To try connectors, indexing APIs, and search APIs, we recommend these two method
 2. **Test site collection**. If you don't have a test tenant, you can create a test site collection to try out connectors functionality. To show results from connectors without impacting the search pages anywhere else in your organization, customize the search experience of only that site collection.
 
 ## Preview limitations
-The preview release has the following limitations:
+The preview release has the following limitations: 
 * Ingestion throughput is throttled at about four items per second.
 * There's no support for schema updates. After you create a connection setup, there's no way to update the schema. You can only delete and re-create the connection.
 * Indexed content only shows up in the search results page under a custom vertical. This restriction applies to content with custom types.
