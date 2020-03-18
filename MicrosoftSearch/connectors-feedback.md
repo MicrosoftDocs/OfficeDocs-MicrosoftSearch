@@ -20,5 +20,5 @@ The Microsoft Graph connectors team responds to the search admin community acros
 
 * **General questions:** Send an email to the [Microsoft Graph connectors feedback group](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com).
 * **Documentation feedback:** If you have questions about the Microsoft Graph connectors documentation or want to tell us what you like or don't like, you can provide feedback at the bottom of any article. 
-* **Feature requests:** If our platform doesn't empower you to do what you need, make your feature suggestions under the category **Connectors** on the <a href="https://office365.uservoice.com/forums/925270-microsoft-search" target="_blank" data-linktype="external">Microsoft Search UserVoice</a>.
+* **Feature requests:** If our platform doesn't empower you to do what you need, make your feature suggestions under the category **Connectors** on the <a href="https://microsoftsearch.uservoice.com/forums/926998-connectors" target="_blank" data-linktype="external">Microsoft Search UserVoice</a>.
 
