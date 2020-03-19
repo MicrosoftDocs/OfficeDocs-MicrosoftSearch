@@ -126,7 +126,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Microsoft SQL</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'">With this Microsoft Graph connector, users in your organization can search for data in on-premises Mirosoft SQL server databases.</p>
+                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'">With this Microsoft Graph connector, users in your organization can search for data in on-premises Microsoft SQL server databases.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="MSSQL-connector.md" target="_blank" data-linktype="relative-path">
@@ -1444,7 +1444,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>NetDocuments</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'">The NetDocuments Connector indexes content stored in NetDocs so that users can search and retrieve NetDocuments content directly from within their portal.  The connector applies document security in NetDocs to Mirosoft Search automatically, so user information remains secure.  Metadata stored in NetDocuments can be mapped to equivalent terms so that users have a seamless search experience.</p>
+                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'">The NetDocuments Connector indexes content stored in NetDocs so that users can search and retrieve NetDocuments content directly from within their portal.  The connector applies document security in NetDocs to Microsoft Search automatically, so user information remains secure.  Metadata stored in NetDocuments can be mapped to equivalent terms so that users have a seamless search experience.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/netdocuments-connector-sharepoint-azure-elasticsearch"><font color="0065BA">More details</font></a>
                         </p>
