@@ -33,7 +33,7 @@ Microsoft Search users can get definitions with Acronyms in [Bing](https://Bing.
 The suggested results include all the meanings of DNN that are present within the user’s organization.
 
 > [!NOTE]
-> Users must enter a query that includes the acronym’s specified *keywords* to trigger its corresponding answers.  
+> Users must enter a query that includes the acronym’s specified *keywords* to trigger its corresponding answers. Acronym queries are not case sensitive. 
 
 ## Set up Acronyms answers
 In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** >**Acronyms**, and then select **Add acronyms**. 
