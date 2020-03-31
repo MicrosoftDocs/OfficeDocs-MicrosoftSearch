@@ -32,7 +32,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
-                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.min-height='100px'; this.style.height='auto';" onmouseout="this.style.height='100px'; this.style.overflow='hidden';">With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Azure Data Lake Storage Gen2 connector also indexes hierarchy-enabled folders in Azure Data Lake Storage Gen2 accounts that you specify.</p>
+                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'; this.style.overflow='hidden';">With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Azure Data Lake Storage Gen2 connector also indexes hierarchy-enabled folders in Azure Data Lake Storage Gen2 accounts that you specify.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="azure-data-lake-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
@@ -53,7 +53,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Enterprise websites</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'; this.style.overflow='hidden';" style="height: 100px; overflow: hidden;">With this Microsoft Graph connector, users in your organization can search over pages in any non-SharePoint enterprise website.</p>
+                        <p onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'; this.style.overflow='hidden';" style="min-height: 100px; overflow: hidden;">With this Microsoft Graph connector, users in your organization can search over pages in any non-SharePoint enterprise website.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="enterprise-web-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
