@@ -1,0 +1,33 @@
+### YamlMime:Landing
+title: Connector gallery
+summary: These are the connectors available in "Lists all of the Microsoft Graph connectors for Microsoft Search
+
+metadata:
+  title: "Connector gallery"
+  ms.author: mounika.narayanan  
+  author: monaray
+  manager: shohara
+  ms.audience: Admin
+  ms.topic: landing-page
+  layout: LandingPage
+  ms.service: mssearch
+  localization_priority: Normal
+  search.appverid:
+    - BFB160
+    - MET150
+    - MOE150
+  description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
+
+# Microsoft Graph connectors gallery
+
+
+
+## "Microsoft">Connectors by Microsoft
+landingContent:
+  # Card                        
+  - title: Azure Data Lake Storage Gen2
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Azure Data Lake v2
+            url: https://www.microsoft.com
