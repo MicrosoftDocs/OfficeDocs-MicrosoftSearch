@@ -32,15 +32,13 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>by <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
-                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'; this.style.overflow='hidden';">With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Azure Data Lake Storage Gen2 connector also indexes hierarchy-enabled folders in Azure Data Lake Storage Gen2 accounts that you specify.</p>
+                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.min-height='100px'; this.style.height='auto';" onmouseout="this.style.height='100px'; this.style.overflow='hidden';">With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Azure Data Lake Storage Gen2 connector also indexes hierarchy-enabled folders in Azure Data Lake Storage Gen2 accounts that you specify.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
-                                <a href="azure-data-lake-connector.md" target="_blank" data-linktype="relative-path">
+                                <a href="azure-data-lake-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
                                     <font color="0065BA">More details</font>
                                 </a>
-                            </div>
-                            <div style="display:inline; margin-left:210px">
-                                <img src="media/Azure_Data_Lake_Small.png" alt="Azure Data Lake Storage Gen2" width="35" height="35" align="right" data-linktype="relative-path" />
+                             <img src="media/Azure_Data_Lake_Small.png" alt="Azure Data Lake Storage Gen2" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path" />
                             </div>
                         </div>
                     </div>
@@ -55,15 +53,13 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Enterprise websites</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'" style="height: 100px; overflow: hidden;">With this Microsoft Graph connector, users in your organization can search over pages in any non-SharePoint enterprise website.</p>
+                        <p onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'; this.style.overflow='hidden';" style="height: 100px; overflow: hidden;">With this Microsoft Graph connector, users in your organization can search over pages in any non-SharePoint enterprise website.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
-                                <a href="enterprise-web-connector.md" target="_blank" data-linktype="relative-path">
+                                <a href="enterprise-web-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
                                     <font color="0065BA">More details</font>
                                 </a>
-                            </div>
-                            <div style="display:inline; margin-left:210px">
-                                <img src="media/IntranetSites_Small.png" alt="Enterprise websites" width="35" height="35" align="right" />
+                             <img src="media/IntranetSites_Small.png" alt="Enterprise websites" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
                             </div>
                         </div>
                     </div>
@@ -78,15 +74,13 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>File share</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'">With this Microsoft Graph connector, users in your organization can search for files stored on on-premises Windows file shares.</p>
+                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'; this.style.overflow='hidden';">With this Microsoft Graph connector, users in your organization can search for files stored on on-premises Windows file shares.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
-                                <a href="file-share-connector.md" target="_blank" data-linktype="relative-path">
+                                <a href="file-share-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
                                     <font color="0065BA">More details</font>
                                 </a>
-                            </div>
-                            <div style="display:inline; margin-left:210px">
-                                <img src="media/FileConnectorLogo_Small.png" alt="File share" width="35" height="35" align="right" />
+                             <img src="media/FileConnectorLogo_Small.png" alt="File share" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
                             </div>
                         </div>
                     </div>
@@ -103,15 +97,13 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'">With this Microsoft Graph connector, users can search for knowledge-base articles on wiki sites your organization creates with MediaWiki.</p>
+                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'; this.style.overflow='hidden';">With this Microsoft Graph connector, users can search for knowledge-base articles on wiki sites your organization creates with MediaWiki.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
-                                <a href="mediawiki-connector.md" target="_blank" data-linktype="relative-path">
+                                <a href="mediawiki-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
                                     <font color="0065BA">More details</font>
                                 </a>
-                            </div>
-                            <div style="display:inline; margin-left:210px">
-                                <img src="media/MediaWiki_Small.png" alt="MediaWiki" width="35" height="35" align="right" />
+                             <img src="media/MediaWiki_Small.png" alt="MediaWiki" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
                             </div>
                         </div>
                     </div>
@@ -126,15 +118,13 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Microsoft SQL</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'">With this Microsoft Graph connector, users in your organization can search for data in on-premises Microsoft SQL server databases.</p>
+                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'; this.style.overflow='hidden';">With this Microsoft Graph connector, users in your organization can search for data in on-premises Microsoft SQL server databases.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
-                                <a href="MSSQL-connector.md" target="_blank" data-linktype="relative-path">
+                                <a href="MSSQL-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
                                     <font color="0065BA">More details</font>
                                 </a>
-                            </div>
-                            <div style="display:inline; margin-left:210px">
-                                <img src="media/SqlConnectorLogo_Small.png" alt="Microsoft SQL server" width="35" height="35" align="right" />
+                             <img src="media/SqlConnectorLogo_Small.png" alt="Microsoft SQL server" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
                             </div>
                         </div>
                     </div>
@@ -149,15 +139,13 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>ServiceNow</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'">With this Microsoft Graph connector, users in your organization can search for knowledge-base articles from your ServiceNow instance.</p>
+                        <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'; this.style.overflow='hidden';">With this Microsoft Graph connector, users in your organization can search for knowledge-base articles from your ServiceNow instance.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
-                                <a href="servicenow-connector.md" target="_blank" data-linktype="relative-path">
+                                <a href="servicenow-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
                                     <font color="0065BA">More details</font>
                                 </a>
-                            </div>
-                            <div style="display:inline; margin-left:210px">
-                                <img src="media/ServiceNow_Small.png" alt="Enterprise Website" width="35" height="35" align="right" />
+                             <img src="media/ServiceNow_Small.png" alt="Enterprise Website" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
                             </div>
                         </div>
                     </div>
@@ -2306,3 +2294,4 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
         </div>
     </li>
 </ul>
+
