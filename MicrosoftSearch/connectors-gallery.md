@@ -207,7 +207,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Adobe Experience Manager</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Adobe Experience Manager (AEM) connector will crawl content from an Adobe Experience Manager server. The connector fetches access control lists (ACLs) for document level security (currently only Closed Users Groups). It can filter content based on properties using expected values or patterns or pages base on the scheduled on and off time.</p>
+                        <p>The Adobe Experience Manager (AEM) connector will crawl content from an Adobe Experience Manager server. The connector fetc.hes access control lists for document level security (currently only Closed Users Groups). It can filter content based on properties using expected values or patterns or pages base on the scheduled on and off time.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/AEM+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -293,7 +293,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Amazon S3</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Amazon S3 connector will crawl content from any Amazon Simple Storage Service. Each file is submitted with its metadata (size, location, last accessed etc). Updates are discovered automatically.</p>
+                        <p>The Amazon S3 connector will crawl content from any Amazon Simple Storage Service. Each file is submitted with its metadata (size, location, last accessed etc.). Updates are discovered automatically.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Amazon+S3+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -309,7 +309,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Amazon S3</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>The Amazon S3 Connector works with all content stored in S3.  Organization can use the connector to securely connector to S3 and index content from S3 buckets. Powerfull filtering capabilities give organization control about what content found in S3 should be indexed.</p>
+                        <p>The Amazon S3 Connector works with all content stored in S3.  Organization can use the connector to securely connector to S3 and index content from S3 buckets. Powerful filtering capabilities give organization control about what content found in S3 should be indexed.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/amazon-s3-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">More details</font></a>
                         </p>
@@ -411,7 +411,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Azure Blob Storage</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Azure Blob Storage connector will crawl content from the Azure Blob Container. Each blob is submitted with its metadata (size, location, last accessed etc). Updates are discovered automatically.</p>
+                        <p>The Azure Blob Storage connector will crawl content from the Azure Blob Container. Each blob is submitted with its metadata (size, location, last accessed etc.). Updates are discovered automatically.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Blob+Storage+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -430,7 +430,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Azure Data Lake</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Azure Data Lake connector will crawl content from the Azure Data Lake Store cloud at either root or specified paths. Each file is submitted with its metadata (size, location, last accessed etc). Updates are discovered automatically.</p>
+                        <p>The Azure Data Lake connector will crawl content from the Azure Data Lake Store cloud at either root or specified paths. Each file is submitted with its metadata (size, location, last accessed etc.). Updates are discovered automatically.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -446,7 +446,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Azure Event Hub</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Event Hub connector fetches events from Azure streams and submits them after performing an optional transform.</p>
+                        <p>The Event Hub connector fetc.hes events from Azure streams and submits them after performing an optional transform.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Events+Hub+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -513,7 +513,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Box</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Box connector will crawl content from Box repository. The connector will retrieve the supported elements using the RESTful API (Content API Basics 2.0 version), for authentication will use Box API (that uses OAuth 2). Each file is submitted with its metadata (size, location, last accessed etc). Updates are discovered automatically.</p>
+                        <p>Box connector will crawl content from Box repository. The connector will retrieve the supported elements using the RESTful API (Content API Basics 2.0 version), for authentication will use Box API (that uses OAuth 2). Each file is submitted with its metadata (size, location, last accessed etc.). Updates are discovered automatically.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Box++Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -736,7 +736,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>File System</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The File System connector crawls local file (or locally mounted) systems, traversing folders to build a complete index. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed, etc).</p>
+                        <p>The File System connector crawls local file (or locally mounted) systems, traversing folders to build a complete index. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed, etc.).</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/STSR/Staging+Repository+-+Legacy"><font color="0065BA">More details</font></a>
                         </p>
@@ -768,7 +768,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>FTP</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Aspire File Transfer Protocol (FTP) connector provides access to files and folders on an FTP server. Each file is submitted with its metadata (size, location, last accessed etc). Updates are discovered automatically.</p>
+                        <p>The Aspire File Transfer Protocol (FTP) connector provides access to files and folders on an FTP server. Each file is submitted with its metadata (size, location, last accessed etc.). Updates are discovered automatically.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/FTP+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -854,7 +854,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>HDFS</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Hadoop Distributed File system (HDFS) connector will crawl content from any given HDFS Cluster using the WebHDFS http interface. Each file is submitted with its metadata (size, location, last accessed, etc). Updates are discovered automatically.</p>
+                        <p>The Hadoop Distributed File system (HDFS) connector will crawl content from any given HDFS Cluster using the WebHDFS http interface. Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/HDFS+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -1144,7 +1144,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Kafka</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Kafka connector fetches messages from a Kafka message stream and submits them after performing an optional transform.</p>
+                        <p>The Kafka connector fetc.hes messages from a Kafka message stream and submits them after performing an optional transform.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Kafka+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -1160,7 +1160,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Kinesis</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Kinesis connector fetches data from Amazon Kinesis Data Streams and submits them after performing an optional transform.</p>
+                        <p>The Kinesis connector fetc.hes data from Amazon Kinesis Data Streams and submits them after performing an optional transform.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Kinesis+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -1176,7 +1176,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>LDAP</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>The LDAP Connector enables organizations to connect to any LDAP compliant directory and index any record from it. Organizatins can filter to specific subsets of the directory and retrieve only specifc fields, making it simple to search for users, contract or groups stored anywhere in your directory.</p>
+                        <p>The LDAP Connector enables organizations to connect to any LDAP compliant directory and index any record from it. Organizations can filter to specific subsets of the directory and retrieve only specific fields, making it simple to search for users, contract or groups stored anywhere in your directory.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/indexing-connectors/1/"><font color="0065BA">More details</font></a>
                         </p>
@@ -1483,7 +1483,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>OneDrive</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The OneDrive connector will crawl content from Microsoft OneDrive, traversing folders to find files. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed etc) and access control (acls).</p>
+                        <p>The OneDrive connector will crawl content from Microsoft OneDrive, traversing folders to find files. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed etc.) and access control lists.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/OneDrive+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -1993,7 +1993,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>SMB</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The SMB connector crawls files and directories across shared drives. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed, etc) and access control lists (acls).</p>
+                        <p>The SMB connector crawls files and directories across shared drives. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed, etc.) and access control lists.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SMB+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -2028,7 +2028,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>SMTP</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The SMTP connector will process e-mails send to it. The email and attachments are submitted with metadata such as to, from, subject, etc</p>
+                        <p>The SMTP connector will process e-mails send to it. The email and attachments are submitted with metadata such as to, from, subject, etc.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/"><font color="0065BA">More details</font></a>
                         </p>
@@ -2044,7 +2044,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                        <h3>SQL Database</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Connector for SQL servers, such as Oracle, Microsoft SQL or Postgres. Indexes and interpretes records from database tables and views in near real time.</p>
+                        <p>Connector for SQL servers, such as Oracle, Microsoft SQL or Postgres. Indexes and interprets records from database tables and views in near real time.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-sql-database-connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -2268,7 +2268,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Yammer</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Yammer connector will crawl content from Yammer messages and metadata including sender, group and thread details. It runs from any machine with access to the given to the AEM server and optionally supports content fetching and connection throttling.</p>
+                        <p>The Yammer connector will crawl content from Yammer messages and metadata including sender, group and thread details. It runs from any machine with access to the given to the AEM server and optionally supports content fetc.hing and connection throttling.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Yammer+Connector"><font color="0065BA">More details</font></a>
                         </p>
