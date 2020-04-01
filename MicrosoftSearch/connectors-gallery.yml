@@ -1,6 +1,5 @@
 ### YamlMime:Hub
 title: Microsoft Graph connectors gallery
-# summary: These are the connectors available in Microsoft Graph connectors for Microsoft Search
 
 metadata:
   title: "Connector gallery"
@@ -17,10 +16,9 @@ metadata:
     - MOE150
   description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
 
-# productDirectory 1
+# productDirectory 
 productDirectory:
   title: Connectors by Microsoft
-  # summary: These are the connectors built by Microsoft
   items:
   # Card                        
   - title: Azure Data Lake Storage Gen2
@@ -40,7 +38,6 @@ productDirectory:
     summary: With this Microsoft Graph connector, users in your organization can search for files stored on on-premises Windows file shares.
     url: file-share-connector.md
 
-# productDirectory 2
-productDirectory:
-    title: Connectors by our Partners
-    # summary: These are the connectors built by our partners
+# productDirectory
+#productDirectory:
+#    title: Connectors by our Partners
