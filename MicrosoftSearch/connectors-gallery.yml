@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Microsoft Graph connectors gallery
-### summary: These are the connectors available in Microsoft Graph connectors for Microsoft Search
+# summary: These are the connectors available in Microsoft Graph connectors for Microsoft Search
 
 metadata:
   title: "Connector gallery"
@@ -20,7 +20,7 @@ metadata:
 # productDirectory 1
 productDirectory:
   title: Connectors by Microsoft
-# summary: These are the connectors built by Microsoft
+  # summary: These are the connectors built by Microsoft
   items:
   # Card                        
   - title: Azure Data Lake Storage Gen2
@@ -43,4 +43,4 @@ productDirectory:
 # productDirectory 2
 productDirectory:
     title: Connectors by our Partners
-# summary: These are the connectors built by our partners
+    # summary: These are the connectors built by our partners
