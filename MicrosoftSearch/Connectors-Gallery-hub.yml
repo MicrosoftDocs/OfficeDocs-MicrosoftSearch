@@ -24,14 +24,18 @@ productDirectory:
   items:
   # Card                        
   - title: Azure Data Lake Storage Gen2
+    imageSrc: ./media/Azure_Data_Lake_Small.png
+    summary: With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Azure Data Lake Storage Gen2 connector also indexes hierarchy-enabled folders in Azure Data Lake Storage Gen2 accounts that you specify.
     links:
       - text: Learn more
         url: azure-data-lake-connector.md
-    imageSrc: ./media/Azure_Data_Lake_Small.png
+    
   
   # Card
   - title: Enterprise websites
+    imageSrc: ./media/IntranetSites_Small.png
+    summary: With this Microsoft Graph connector, users in your organization can search over pages in any non-SharePoint enterprise website.
     links:
       - text: Learn more
         url: enterprise-web-connector.md
-    imageSrc: ./media/IntranetSites_Small.png
+    
