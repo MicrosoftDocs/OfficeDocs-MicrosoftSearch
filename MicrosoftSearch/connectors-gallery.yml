@@ -1,5 +1,6 @@
 ### YamlMime:Hub
 title: Microsoft Graph connectors gallery
+brand: m365
 
 metadata:
   title: "Connector gallery"
@@ -56,26 +57,30 @@ productDirectory:
     summary: With this Microsoft Graph connector, users in your organization can search for knowledge-base articles from your ServiceNow instance.
     url: servicenow-connector.md
 
-conceptualContent:
-  title: Connectors by our Partners
-  items:
-    # Card
-    - title: Aderant by BA Insight
-      links: 
-        - url: https://www.bainsight.com
-          itemType: reference
-          text: BA Insight
-      summary: The Aderant connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time.
-      footerLink: 
+additionalContent:
+  sections:
+  - title: Connectors by our Partners
+    items:
+      # Card
+      - title: Aderant
         url: https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/
-        text: More details
-    # Card
-    - title: Adobe AEM
-      links:
-        - url: ttps://www.raytion.com
-          itemType: reference 
-          text: Raytion
-      summary: The Aderant connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time.
-      footerLink: 
-        url: https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/
-        text: More details
+        summary: The Aderant connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time.
+        links:
+          - url: https://www.bainsight.com
+            text: BA Insight
+      # Card
+      - title: Adobe AEM
+        url: https://www.raytion.com/connectors/adobe-experience-manager-aem
+        summary: Connector for Adobe AEM. Indexes pages, attachments, and other generated document types from Adobe AEM in near real time. The connector fully supports AEM's built-in user and group management, as well as AEM installations based on Active Directory and other directory services. 6th generation Raytion search connector.
+        links:
+          - url: https://www.raytion.com
+            text: Raytion
+
+      # Card
+      - title: Adobe Experience Manager
+        url: https://contentanalytics.digital.accenture.com/display/aspire40/AEM+Connector
+        summary: The Adobe Experience Manager (AEM) connector will crawl content from an Adobe Experience Manager server. The connector fetc.hes access control lists for document level security (currently only Closed Users Groups). It can filter content based on properties using expected values or patterns or pages base on the scheduled on and off time.
+        links:
+          - url: https://www.accenture.com">Accenture
+            text: Accenture
+      
