@@ -56,26 +56,26 @@ productDirectory:
     summary: With this Microsoft Graph connector, users in your organization can search for knowledge-base articles from your ServiceNow instance.
     url: servicenow-connector.md
 
-additionalContent:
-  sections:
-    - title: Connectors by our Partners
-      items:
-      # Card
-      - title: Aderant
-        links:
-          - url: https://www.bainsight.com
-            text: BA Insight
-        summary: The Aderant connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time.
-        #footerLink: 
-        #  url: https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/
-        #  text: More details
-        
-      # Card
-      - title: Aderant
-        links:
-          - url: https://www.bainsight.com
-            text: BA Insight
-        summary: The Aderant connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time.
-        #footerLink: 
-        #  url: https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/
-        #  text: More details
+conceptualContent:
+  title: Connectors by our Partners
+  items:
+    # Card
+    - title: Aderant by BA Insight
+      links: 
+        - url: https://www.bainsight.com
+          itemType: reference
+          text: BA Insight
+      summary: The Aderant connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time.
+      footerLink: 
+        url: https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/
+        text: More details
+    # Card
+    - title: Adobe AEM
+      links:
+        - url: ttps://www.raytion.com
+          itemType: reference 
+          text: Raytion
+      summary: The Aderant connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time.
+      footerLink: 
+        url: https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/
+        text: More details
