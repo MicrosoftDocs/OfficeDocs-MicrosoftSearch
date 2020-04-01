@@ -63,24 +63,23 @@ additionalContent:
     items:
       # Card
       - title: Aderant
-        url: https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/
         summary: The Aderant connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time.
         links:
-          - url: https://www.bainsight.com
-            text: BA Insight
+          - url: https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/
+            text: More details from BA Insight
       # Card
       - title: Adobe AEM
-        url: https://www.raytion.com/connectors/adobe-experience-manager-aem
         summary: Connector for Adobe AEM. Indexes pages, attachments, and other generated document types from Adobe AEM in near real time. The connector fully supports AEM's built-in user and group management, as well as AEM installations based on Active Directory and other directory services. 6th generation Raytion search connector.
         links:
-          - url: https://www.raytion.com
-            text: Raytion
+          - url: https://www.raytion.com/connectors/adobe-experience-manager-aem
+            text: More details from Raytion
 
       # Card
       - title: Adobe Experience Manager
-        url: https://contentanalytics.digital.accenture.com/display/aspire40/AEM+Connector
         summary: The Adobe Experience Manager (AEM) connector will crawl content from an Adobe Experience Manager server. The connector fetc.hes access control lists for document level security (currently only Closed Users Groups). It can filter content based on properties using expected values or patterns or pages base on the scheduled on and off time.
         links:
-          - url: https://www.accenture.com">Accenture
-            text: Accenture
+          - url: https://contentanalytics.digital.accenture.com/display/aspire40/AEM+Connector
+            text: More details from Accenture
+      
+      
       
