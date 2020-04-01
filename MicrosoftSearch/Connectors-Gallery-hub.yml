@@ -1,0 +1,30 @@
+### YamlMime:Hub
+title: Connector gallery
+summary: These are the connectors available in "Lists all of the Microsoft Graph connectors for Microsoft Search
+
+metadata:
+  title: "Connector gallery"
+  ms.author: mounika.narayanan  
+  author: monaray
+  manager: shohara
+  ms.audience: Admin
+  ms.topic: hub-page
+  ms.service: mssearch
+  localization_priority: Normal
+  search.appverid:
+    - BFB160
+    - MET150
+    - MOE150
+  description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
+
+# productDirectory
+productDirectory:
+  title: Connectors by Microsoft
+  summary: There are connectors built by Microsoft
+  items:
+  # Card                        
+  - title: Azure Data Lake Storage Gen2
+    links:
+      - text: Azure Data Lake v2
+        url: azure-data-lake-connector.md
+    imageSrc: ./media/Azure_Data_Lake_Small.png
