@@ -17,21 +17,21 @@ description: "Find and update answers individually or use available Microsoft Se
 
 # Manage Q&As
 
-Creating a Q&A is similar to creating bookmarks. Q&A allows you to answer the user's question instead of just providing a link to webpage. You can format the answer in rich text using the available tools. If a Bookmark and a Q&A share the same keyword, the Bookmark result is shown first. Like Bookmarks, the Q&A index is refreshed immediately after a Q&A is added or changed.
+Creating a Q&A is similar to creating bookmarks. Q&A allows you to answer the user's question instead of just providing a link to webpage. You can format the answer in rich text using the available tools. If a bookmark and a Q&A share the same keyword, the bookmark result is shown first. Like bookmarks, the Q&A index is refreshed immediately after a Q&A is added or changed.
 
 ## Add or edit a single Q&A
 
 1. Go to **Microsoft 365 admin center**.
 1. In the navigation pane, go to **Settings** and select **Microsoft Search**.
-1. Select **Q&A** tab. By default, the first tab (**Bookmarks**) is selected.
+1. Select the **Q&A** tab. By default, the first tab (**Bookmarks**) is selected.
 1. To add a Q&A, select **Add new**.
-To edit a Q&A, select the Q&A in the relevant Q&A list.
-1. As you add or edit the information, the preview automatically updates.
+To edit a Q&A, select the Q&A in the relevant Q&A list.  As you add or edit the information, the preview automatically updates.
 1. Save your changes.
 
 ### Supported HTML tags
 
-You can use existing HTML content or add HTML tags to your answer (description). Unsupported tags are ignored.  
+You can use existing HTML content or add HTML tags to your answer (description). Unsupported tags are ignored.
+
 The following HTML tags are supported:
 
 - blockquote
@@ -62,13 +62,13 @@ Currently, browser extensions are available for Edge and Chrome.
 
 ## Bulk add or edit Q&As
 
-Administrators can use the Import and Export features to bulk create or edit Q&A. This is a useful feature when administrators need to add or edit a large number of Q&A.
+Administrators can use the Import and Export features to bulk create or edit Q&As. This is a useful feature when you need to add or edit a large number of Q&As.
 
 Use the import/export feature to:
 
-1. Bulk add Q&A - Add details in the Q&A template file, and then import it.
-1. Bulk edit Q&A - Export Q&A to a .csv file, then edit the Q&A details in the exported .csv file, and then import the .csv file.
-1. Backup Q&A - Export Q&A to a .csv file.
+- Bulk add Q&A - Add details in the Q&A template file, and then import it.
+- Bulk edit Q&A - Export Q&A to a .csv file, edit the Q&A details in the exported .csv file, and then import the .csv file.
+- Backup Q&A - Export Q&A to a .csv file.
 
 To import or export Q&A:
 
@@ -77,18 +77,19 @@ Select **Export** to download all the existing Q&A in a .csv file.
 1. In the right pane, choose the option to import using a .csv file.
 Download the template file for a list of the required fields and details.
 1. Add or edit Q&A details in the template file and save it on your computer.
-1. In the **Import Q&A** pane, select **Browse**, and then the .csv file that you want to import.
+1. In the **Import Q&A** pane, select **Browse**, and then select the .csv file that you want to import.
 1. Select **Import**.
 
-Here are some important points regarding the template file:
+Here are some important points about the template file:
 
-- Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*
-- If you include the *Id* of an existing bookmark, it will be replaced with the information in the import file.
+- Never edit data in these fields: **Id**, **Last Modified**, and **Last Modified By**
+- If you include the **Id** of an existing bookmark, it will be replaced with the information in the import file.
 - If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.
-- Not all fields in the template file are required and required fields vary depending on the bookmark state.
-- Based on the State field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.
-- For partners who manage multiple organizations, you can export your bookmarks from one org and import them into another. But you must remove the data in the *Id* column before you import.
+- Not all fields in the template file are required, and required fields vary depending on the bookmark state.
+- Based on the **State** field, bookmarks will be saved as *draft*, *suggested*, or *scheduled*, or they will be published automatically.
+- For partners who manage multiple organizations, you can export your bookmarks from one org and import them into another. But you must remove the data in the **Id** column before you import.
 
-**Note:** You cannot import Q&A if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted and include all the required information.
+> [!NOTE]
+> You can't import Q&As if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted, and include all the required information.
 
-For more information on how to prevent error, see [Prevent import errors](manage-bookmarks.md#prevent-import-errors).
+For more information about avoiding errors, see [Prevent import errors](manage-bookmarks.md#prevent-import-errors).
