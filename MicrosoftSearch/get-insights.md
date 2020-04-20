@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Search Insights dashboard reports"
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch

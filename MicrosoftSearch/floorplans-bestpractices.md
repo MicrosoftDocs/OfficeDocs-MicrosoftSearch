@@ -1,8 +1,8 @@
 ---
 title: "Best practices for Microsoft Search floor plans"
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,6 +13,7 @@ search.appverid:
 - MOE150
 description: "Best practices for Microsoft Search floor plans"
 ---
+<!-- markdownlint-disable no-inline-html -->
 # Best practices for Microsoft Search floor plans
 
 To successfully implement Microsoft Search floor plans, you need to coordinate three pieces of data:
@@ -24,6 +25,7 @@ To successfully implement Microsoft Search floor plans, you need to coordinate t
 The best practices for deploying Microsoft Search floor plans are also described in the following sections.
 
 ## Building location data
+
 Before you add floor plans, you need to add your buildings to Microsoft Search locations. Provide the following required building data:
 
 |Required building data  |Example  |
@@ -36,7 +38,8 @@ Before you add floor plans, you need to add your buildings to Microsoft Search l
 You can add many buildings at a time by using the **Import** feature in the **Locations** tab instead of adding locations one at a time. With the **Import** feature, you can specify the latitude-longitude. For more information, see [Manage locations](manage-locations.md).
 
 ## Floor plan map in DWG format
-To build maps in Microsoft Search, you need to upload floor plans in DWG format with specific information. To learn how to create and view DWG-formatted files, see [DWG Viewers](https://www.autodesk.in/products/dwg). 
+
+To build maps in Microsoft Search, you need to upload floor plans in DWG format with specific information. To learn how to create and view DWG-formatted files, see [DWG Viewers](https://www.autodesk.in/products/dwg).
 
 Floor plan maps display four elements:
 
@@ -54,6 +57,7 @@ In this diagram, room numbers are the most important item. They're mapped to a p
 This information is stored in [Azure AD](https://azure.microsoft.com/services/active-directory/) in the **PhysicalDeliveryOfficeName** property. In the Microsoft 365 [admin center](https://admin.microsoft.com), it’s called the **Office** property and can be added in **Active users**.
 
 ### DWG files
+
 Microsoft Search requires floor plan files in DWG, which is an [AutoCAD](https://www.autodesk.com/autocad) drawing format. The files must contain **layout** and **label** data. **Room numbers** are the most important labels for floor plans.
 
 We recommend that you create your office numbering system with the exact-match method shown in the following table. But you aren't limited to that labeling. For example, if the user's office location in [Azure AD](https://azure.microsoft.com/services/active-directory/) is **B1 1001**, you can label the room number in the DWG file with any of the options that follow.
@@ -65,6 +69,7 @@ We recommend that you create your office numbering system with the exact-match m
 |Match room number only <br> **1**<br>Room number: 1        |    ![Single office floor map with the office number "1"](media/floorplans-layoutroomonly.png)     |
 
 ## User account office location
+
 To map an employee’s location, the room numbers in DWG files are mapped to office locations in the user’s account in [Azure AD](https://azure.microsoft.com/services/active-directory/). The **Office location** property needs to match the office location information in the DWG file.
 
 The following table explains best practices for mapping location data:
@@ -77,5 +82,6 @@ The following table explains best practices for mapping location data:
 |
 
 ## Next steps
+
 [Manage locations](manage-locations.md)<br>
 [Manage floor plans](manage-floorplans.md)
