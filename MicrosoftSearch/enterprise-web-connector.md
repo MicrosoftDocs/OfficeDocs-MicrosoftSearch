@@ -55,7 +55,7 @@ There's no support for Access Control Lists (ACLs). Thus, we recommend connectin
 The Enterprise websites connector only supports a full crawl. This means that the connector reads all the website's content during every crawl. To make sure the connector gets enough time to read the content, we recommend that you set a large refresh schedule interval. We recommend a scheduled refresh between three days and two weeks. 
 
 ## Troubleshooting
-If something is critically wrong with a connection, its status shows as failed. To get more information on the types of errors, go to the error details page after selecting the failing connection.  Click on the error code to see more detailed errors. Also refer to [Manage your connector](https://docs.microsoft.com/en-us/microsoftsearch/manage-connector) to learn more.
+If something is critically wrong with a connection, its status shows as failed. To get more information on the types of errors, go to the error details page after selecting the failing connection.  Click on the error code to see more detailed errors. Also refer to [Manage your connector](https://docs.microsoft.com/microsoftsearch/manage-connector) to learn more.
 
  **Detailed Error code** | **Error message**
  --- | --- 
