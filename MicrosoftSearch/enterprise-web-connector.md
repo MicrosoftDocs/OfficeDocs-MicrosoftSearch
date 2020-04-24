@@ -55,7 +55,7 @@ There's no support for Access Control Lists (ACLs). Thus, we recommend connectin
 The Enterprise websites connector only supports a full crawl. This means that the connector reads all the website's content during every crawl. To make sure the connector gets enough time to read the content, we recommend that you set a large refresh schedule interval. We recommend a scheduled refresh between three days and two weeks. 
 
 ## Troubleshooting
-If something is critically wrong with a connection, its status shows as failed. To get more information on the types of errors, go to the error details page after selecting the failing connection.  Click on the error code to see more detailed errors. Also refer to [Manage your connector](https://docs.microsoft.com/microsoftsearch/manage-connector) to learn more.
+When reading the website's content, the crawl may encounter some source errors which are represented by the detailed error codes below. To get more information on the types of errors, go to the **error details** page after selecting the connection. Click on the **error code** to see more detailed errors. Also refer to [Manage your connector](https://docs.microsoft.com/microsoftsearch/manage-connector) to learn more.
 
  **Detailed Error code** | **Error message**
  --- | --- 
@@ -70,7 +70,7 @@ If something is critically wrong with a connection, its status shows as failed. 
  6024 | The source page that is being tried to index has unsupported content.
 
 * Errors 6001-6013 occur when the data source is not reachable due to a network issue or when the data source itself is deleted, moved, or renamed. Check if the data source details provided are still valid.
-* Errors 6021-24 error occur when the data source contains non-textual content on the page or when the page is not an HTML. Please check the data source and add this page in exclusion list or ignore the error.
+* Errors 6021-6024 error occur when the data source contains non-textual content on the page or when the page is not an HTML. Please check the data source and add this page in exclusion list or ignore the error.
 
 ## Limitations
-The Enterprise websites connector doesn't support searching data on dynamic webpages. Examples of those webpages live in content management systems like [Confluence](https://www.atlassian.com/software/confluence) and [Unily](https://www.unily.com/) or databases that store website content.
+The Enterprise websites connector doesn't support searching data on **dynamic webpages**. Examples of those webpages live in content management systems like [Confluence](https://www.atlassian.com/software/confluence) and [Unily](https://www.unily.com/) or databases that store website content.
