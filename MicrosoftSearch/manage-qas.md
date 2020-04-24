@@ -17,13 +17,13 @@ description: "Find and update answers individually or use available Microsoft Se
 
 # Manage Q&As
 
-Creating a Q&A is similar to creating bookmarks. Q&A allows you to answer the user's question instead of just providing a link to webpage. You can format the answer in rich text using the available tools. If a bookmark and a Q&A share the same keyword, the bookmark result is shown first. Like bookmarks, the Q&A index is refreshed immediately after a Q&A is added or changed.
+Creating a Q&A is similar to creating bookmarks. Q&A allows you to answer the user's questions instead of just providing a link to a webpage. You can also format the answer in rich text. If a bookmark and a Q&A share the same keyword, the bookmark result is shown first. Like bookmarks, the Q&A index is refreshed immediately after a Q&A is added or changed.
 
 ## Add or edit a single Q&A
 
 1. Go to **Microsoft 365 admin center**.
 1. In the navigation pane, go to **Settings** and select **Microsoft Search**.
-1. Select the **Q&A** tab. By default, the first tab (**Bookmarks**) is selected.
+1. Select the **Q&A** tab. (By default, the first tab (**Bookmarks**) is selected.)
 1. To add a Q&A, select **Add new**.
 To edit a Q&A, select the Q&A in the relevant Q&A list.  As you add or edit the information, the preview automatically updates.
 1. Save your changes.
@@ -53,30 +53,30 @@ The following HTML tags are supported:
 
 ## Add or edit Q&As using browser extensions
 
-Search administrators can create search content easily by using browser extensions. Install the browser extension and then go to the site from which you want to generate a Q&A. You can then create the Q&A and include a link to the source site.
+Search administrators can create search content easily by using browser extensions. Install the browser extension and then go to the site where you want to generate a Q&A. You can then create the Q&A and include a link to the source site.
 
-Currently, browser extensions are available for Edge and Chrome.
+Currently, browser extensions are available for Microsoft Edge and Chrome.
 
-- To download Edge extensions, go to [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and download the app.
-- To download Chrome extensions, go to [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and download the app.
+- To download Edge extensions, go to [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab).
+- To download Chrome extensions, go to the [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm).
 
 ## Bulk add or edit Q&As
 
-Administrators can use the Import and Export features to bulk create or edit Q&As. This is a useful feature when you need to add or edit a large number of Q&As.
+Administrators can use the Import and Export features to bulk create or edit Q&As.
 
 Use the import/export feature to:
 
-- Bulk add Q&A - Add details in the Q&A template file, and then import it.
-- Bulk edit Q&A - Export Q&A to a .csv file, edit the Q&A details in the exported .csv file, and then import the .csv file.
-- Backup Q&A - Export Q&A to a .csv file.
+- Bulk add Q&As - Add details in the Q&A template file, and then import it.
+- Bulk edit Q&As - Export Q&As to a .csv file, edit the Q&A details in the exported file, and then import the file.
+- Back up Q&As - Export Q&As to a .csv file.
 
-To import or export Q&A:
+To import or export Q&As:
 
 1. In the upper-right corner of the Q&A tab, select **Import**.
-Select **Export** to download all the existing Q&A in a .csv file.
-1. In the right pane, choose the option to import using a .csv file.
+Select **Export** to download all the existing Q&As in a .csv file.
+1. In the right pane, choose the option to import by using a .csv file.
 Download the template file for a list of the required fields and details.
-1. Add or edit Q&A details in the template file and save it on your computer.
+1. Add or edit Q&A details in the template file, and save it on your computer.
 1. In the **Import Q&A** pane, select **Browse**, and then select the .csv file that you want to import.
 1. Select **Import**.
 
