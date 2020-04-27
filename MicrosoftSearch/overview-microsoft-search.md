@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Search Overview"
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -52,31 +52,29 @@ If the suggestions in the search box aren’t what users are looking for, **Ente
 
 ## Tailoring Microsoft Search to your organization
 
-As an administrator you can create an amazing Microsoft Search experience for your users. 
+As an administrator you can create an amazing Microsoft Search experience for your users.
 
-**Show useful content** – Answers provide fast, authoritative results to search queries based on keywords. [Make content easy to find](make-content-easy-to-find.md).
+**Show useful content** – Answers provide fast, authoritative results to search queries based on keywords. [Plan your content](plan-your-content.md).
 
 **Add external content** – Microsoft Graph Connectors allow you to bring external content into the index. Use connectors to enrich the search experience with data and files from outside of Microsoft 365. [Overview of Microsoft Graph connectors](connectors-overview.md)
 
 **Customize the user experience** – You can customize the user experience through the use of verticals and other configurations. [Customize the Microsoft Search page](customize-search-page.md)
 
-## What content is searched?
+## What content is searched
 
 Microsoft Search shows the content that your organization has stored in Microsoft 365 or indexed through connectors. Microsoft Search does not search across tenants or show results from content that's shared by other organizations. If your organization has set up a hybrid SharePoint environment using cloud hybrid search, Microsoft Search returns search results from both online and on-premises SharePoint content, including any external content you’ve connected to your SharePoint Server environment. [Learn more about hybrid search environments](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
 Users will get the same search results they get from other locations and will also get results from the internet.
 
-## How does Microsoft Search work?
+## How Microsoft Search works
 
 When a user searches, Microsoft Search processes the query and parses search intent from larger phrases, using Artificial Intelligence (AI) to learn common superfluous phrases users add to their queries that don't impact their search intent. For example, when a user searches for "how to change my password" we extract the less important words from the query and trigger based on the relevant ones like "change password".  
 The search results that the user has **permission** to see are presented on the search results page. Microsoft Search uses intelligent ranking algorithms to order results based on relevance.
 
-## How does Microsoft Search in Bing help protect my company data?
+## How Microsoft Search in Bing protects your company data
 
 [Security and Privacy for Microsoft Search in Bing](security-for-search.md)
 
 ## See also
 
 [Set up Microsoft Search](setup-microsoft-search.md)
-
-[Make content easy to find](make-content-easy-to-find.md)
