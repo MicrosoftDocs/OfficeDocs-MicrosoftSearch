@@ -23,7 +23,7 @@ Creating a Q&A is similar to creating bookmarks. Q&As allow you to answer the us
 
 1. Go to **Microsoft 365 admin center**.
 1. In the navigation pane, go to **Settings** and select **Microsoft Search**.
-1. Select the **Q&A** tab. (By default, the first tab,  **Bookmarks**, is selected.)
+1. Select the **Q&A** tab.
 1. To add a Q&A, select **Add new**.
 To edit a Q&A, select the Q&A in the relevant Q&A list. As you add or edit the information, the preview automatically updates.
 1. Save your changes.
@@ -53,7 +53,7 @@ The following HTML tags are supported:
 
 ## Add or edit Q&As using browser extensions
 
-Search administrators can create search content easily by using browser extensions. Install the browser extension, and then go to the site where you want to generate a Q&A. You can then create the Q&A and include a link to the source site.
+Search administrators can create search content easily by using browser extensions. Install the browser extension, and then go to the site from which you want to generate a Q&A. You can then create the Q&A and include a link to the source site.
 
 Currently, browser extensions are available for Microsoft Edge and Chrome.
 
