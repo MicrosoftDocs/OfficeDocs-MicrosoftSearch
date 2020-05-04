@@ -64,7 +64,7 @@ Currently, browser extensions are available for Microsoft Edge and Chrome.
 
 Administrators can use the Import and Export features to bulk create or edit Q&As.
 
-Use the import/export feature to:
+Use the Import/Export feature to:
 
 - Bulk add Q&As - Add details in the Q&A template file, and then import it.
 - Bulk edit Q&As - Export Q&As to a .csv file, edit the Q&A details in the exported file, and then import the file.
@@ -79,7 +79,7 @@ Select **Export** to download all the existing Q&As in a .csv file.
 1. In the **Import Q&A** pane, select **Browse**, and then select the .csv file that you want to import.
 1. Select **Import**.
 
-Important points about the template file:
+Important template file tips:
 
 - Never edit data in these fields: **Id**, **Last Modified**, and **Last Modified By**
 - If you include the **Id** of an existing bookmark, it will be replaced with the information in the import file.
