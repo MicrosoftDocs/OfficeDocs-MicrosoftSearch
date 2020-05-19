@@ -1,8 +1,8 @@
 ---
 title: "Set up Microsoft Search"
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -16,7 +16,7 @@ description: "Set up Microsoft Search for the first time."
 
 # Set up Microsoft Search
 
-Microsoft Search provides a user-friendly interface to help users find information like files and documents, internal sites and business tools, people and groups, locations and directions, conversations and answers. It does this by securely accessing all data sources, including emails, files, SharePoint files, OneDrive content, and other shared resources as well as the internet in the user’s organization.
+Microsoft Search provides a user-friendly interface to help users find information like files and documents, internal sites and business tools, people and groups, locations and directions, conversations and answers. It does this by securely accessing all data sources, including emails, files, SharePoint files, OneDrive content, and other shared resources as well. With Microsoft Search in Bing you can get search results from the internet as well.
 
 To learn more about Microsoft Search features, see [Microsoft Search Overview](overview-microsoft-search.md).
 
