@@ -15,7 +15,7 @@ description: "Create and update Acronyms answers in Microsoft Search"
 ---
 # Manage Acronyms answers in Microsoft Search
 
-Employees often run into unfamiliar acronyms and abbreviations used by their organization or team. Terms that are specific to organizations or teams might be new to people who move from one team to another, those who work with internal partner teams, or new employees.
+Users often run into unfamiliar acronyms and abbreviations used by their organization or team. Terms that are specific to organizations or teams might be new to people who move from one team to another, those who work with internal partner teams, or are new to the organization.
 
 Organizations don't always have a single reference for their standard terminology. Lack of a single reference makes it hard to find definitions or expansions for these acronyms. Microsoft Search solves that problem with Acronyms.
 
@@ -30,7 +30,7 @@ Microsoft Search users can get definitions with Acronyms in [Bing](https://Bing.
 - *Meaning of* DNN
 - DNN *means*
 
-The suggested results include all the meanings of DNN that are present within the user’s organization.
+The result includes all the meanings of DNN that are present within the user’s organization.
 
 > [!NOTE]
 > Users must enter a query that includes the acronym’s specified *keywords* to trigger its corresponding answers. Acronym queries are not case sensitive. 
@@ -44,12 +44,12 @@ Microsoft Search queries two data sources to provide Acronyms answers to users�
 2.	**Mined acronyms**. Mined by Microsoft Search from the user’s personal email and documents and publicly available data within the organization.
 
 ### Set up editorial acronyms
-IT admins can set up editorial acronyms on the [Acronyms tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) in the  [Microsoft 365 admin center]( https://admin.microsoft.com). You can add acronyms from any internal site or repository to the admin center. Editorial acronyms can be added to **Published** or **Draft** state:
+Search admins can set up editorial acronyms on the [Acronyms tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) in the  [Microsoft 365 admin center]( https://admin.microsoft.com). You can add acronyms from any internal site or repository to the admin center. Editorial acronyms can be added to **Published** or **Draft** state:
 
 **Published state**. Acronyms are available to the organization’s employees through Microsoft Search.
 
 > [!NOTE]
-> It might take up  to three days for acronyms added to Published state to become available in Microsoft Search.
+> It might take up to three days for acronyms added to Published state to become available in Microsoft Search.
 
 **Draft state**. If admins want to review Acronyms answers before making them available in Microsoft Search, they can add the acronyms to Draft state. Acronyms added to Draft state aren’t available in Microsoft Search. Admins need to add the acronyms to Published state to make them available.
 
@@ -92,11 +92,11 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **Q: How long does it take for editorial acronyms to be visible in Microsoft Search after they’re published?**
 
-**A:**  It takes up  to three days for acronyms added to Published state to become available in Microsoft Search. 
+**A:**  It takes up to three days for acronyms added to Published state to become available in Microsoft Search. 
 
 **Q: How do users trigger Acronyms answers?**
 
-**A**: To get Acronyms answers, users must enter specific query patterns in a [Bing](https://bing.com), [Office 365](https://Office.com), or [SharePoint](https://products.office.com/sharepoint/collaboration) **Search** box. Examples of queries that find answers for the term *DNN* are as follows:
+**A**: To get Acronyms answers, users must enter specific query patterns in a [Bing](https://bing.com) **Search** box. Examples of queries that find answers for the term *DNN* are as follows:
 
 - *What is* DNN
 - *Define* DNN
