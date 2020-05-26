@@ -1,8 +1,8 @@
 ---
 title: "Manage Acronym answers in Microsoft Search"
-ms.author: v-pamcna
-author: TrishaMc1
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -44,7 +44,7 @@ Microsoft Search queries two data sources to provide Acronyms answers to users�
 2.	**Mined acronyms**. Mined by Microsoft Search from the user’s personal email and documents and publicly available data within the organization.
 
 ### Set up editorial acronyms
-Search admins can set up editorial acronyms on the [Acronyms tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) in the  [Microsoft 365 admin center]( https://admin.microsoft.com). You can add acronyms from any internal site or repository to the admin center. Editorial acronyms can be added to **Published** or **Draft** state:
+Search administrators can set up editorial acronyms on the [Acronyms tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) in the  [Microsoft 365 admin center]( https://admin.microsoft.com). You can add acronyms from any internal site or repository to the admin center. Editorial acronyms can be added to **Published** or **Draft** state:
 
 **Published state**. Acronyms are available to the organization’s employees through Microsoft Search.
 
