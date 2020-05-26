@@ -80,10 +80,10 @@ It might be a challenge for admins to add all the acronyms used within an organi
 - Documents in [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/) and [Microsoft OneNote](http://www.onenote.com/).
 - Public documents within the organization that users have access to in SharePoint, OneDrive, or OneNote.
 
-Microsoft Search makes sure that only users with access and permissions to a document can see the acronyms that are mined from it. The acronyms are mined from a user’s inbox and stored in the user shard. Only the user can access the acronyms mined from the user’s own inbox.
+Microsoft Search makes sure that only users with access and permissions to a document can see the acronyms that are mined from it. When an acronym is mined from a user's mailbox, only that user can see that acronym.
 
 > [!NOTE]
-> No IT admin setup is needed for mined acronyms.
+> No setup is needed for mined acronyms.
 
 ## Frequently asked questions
 **Q: How is editorial and mined data ranked?**
