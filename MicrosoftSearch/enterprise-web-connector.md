@@ -21,7 +21,7 @@ With the Enterprise websites connector, your organization can index articles and
 This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) administrators or anyone who configures, runs, and monitors an Enterprise websites connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.  
 
 ## Connect to a data source 
-To connect to your data source, you need your root URL and a form of authentication: Basic Authentication or OAuth 2.0 with [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/).
+To connect to your data source, you need your root URL and Basic Authentication.
 
 ### Root URL
 The root URL is what initiates the crawl and is used for authentication. You can get the URL from the home page of the website you want to crawl.

@@ -1991,6 +1991,25 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
+                       <h3>Slack</h3>
+                        <p>by <a href="https://www.raytion.com">Raytion</a></p>
+                        <p>The connector for Slack efficiently and robustly synchronizes Slack content with Microsoft Search. It robustly indexes messages, threads and shared files from all public channels. All in near real time. The connector ensures that all documents come with a comprehensive set of metadata, which allows developing the best search experience. Even in vibrant environments the Slack connector keeps track of all changes and guarantees an updated search index.</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.raytion.com/connectors/raytion-slack-connector"><font color="0065BA">More details</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+<!--- 37 ROW --->
+<ul class="panelContent cardsZ">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
                         <h3>SMB</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
                         <p>The SMB connector crawls files and directories across shared drives. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed, etc.) and access control lists.</p>
@@ -2002,9 +2021,6 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
-</ul>
-<!--- 37 ROW --->
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2037,6 +2053,9 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+</ul>
+<!--- 38 ROW --->
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2053,10 +2072,6 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
-
-</ul>
-<!--- 38 ROW --->
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2089,6 +2104,9 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+</ul>
+<!--- 39 ROW --->
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2105,9 +2123,6 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
-</ul>
-<!--- 39 ROW --->
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2140,6 +2155,9 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+</ul>
+<!--- 40 ROW --->
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2156,9 +2174,6 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
-</ul>
-<!--- 40 ROW --->
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2191,6 +2206,9 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+</ul>
+<!--- 41 ROW --->
+<ul class="panelContent cardsZ">
         <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2207,9 +2225,6 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
-</ul>
-<!--- 41 ROW --->
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2242,6 +2257,9 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+</ul>
+<!--- 42 ROW --->
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2258,9 +2276,6 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
-</ul>
-<!--- 42 ROW --->
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2294,4 +2309,3 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
         </div>
     </li>
 </ul>
-
