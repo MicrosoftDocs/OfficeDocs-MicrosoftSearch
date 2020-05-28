@@ -29,22 +29,6 @@ The root URL is what initiates the crawl and is used for authentication. You can
 ### Authentication 
 Basic Authentication requires a username and password. Create this bot account by using the Microsoft 365 [admin center](https://admin.microsoft.com).
 
-OAuth 2.0 with [Azure AD](https://docs.microsoft.com/azure/active-directory/) requires a tenant ID, resource ID, Client ID, and Client Secret.
-For more information, see [Authorize access to Azure Active Directory web applications using OAuth 2.0 code grant flow](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code). Register with the following values:
-* **Name:** Microsoft Search
-* **Redirect_URI:** `https://gcs.office.com/v1.0/admin/oauth/callback`
-
-To get the values for named tenant, resource, client_id, and client_secret, go to **Use the authorization code to request an access token** on the redirect URL webpage.
-
-For even more information, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
-
-### Reverse proxy URL 
-The Enterprise websites connector is cloud-based, so it doesn't access on-premises content. To provide that access, install a reverse proxy. A reverse proxy provides secure, reliable access to on-premises websites. We recommend [Azure Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
-
-The reverse proxy requirement for root URL and authentication is the same as for cloud-based content, except that the root URL and authentication are provided by the reverse proxy server.
-
-See [Security considerations for accessing apps remotely with Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-security).
-
 ## Select the source properties 
 Source properties are defined based on the data format of the enterprise website. However, you can create an **Exclusion list** to exclude some URLs from getting crawled if that content is sensitive or not worth crawling. To create an exclusion list, browse through the root URL. You have the option to add the excluded URLs to the list during the configuration process.
 
