@@ -76,7 +76,7 @@ A search result type is a rule that causes distinct kinds of search results to b
 - **One or more conditions** to compare each search result against, such as the content source of the search result.  
 - A **result layout** to use for search results that meet the conditions. The result layout controls the way that all results that meet the conditions appear and behave on a search results page.
 
-**You must create at least one result type for results to display on the vertical.** You can create multiple result types for each vertical, which allows you to use different layouts for different type of results. For example, you can customize *Severity 1* incidents to have more-prominent colors and a larger font compared to *Severity 3* incidents.
+**You must create at least one result type for results to display on the vertical.** You can create multiple result types for each vertical, which allows you to use different layouts for different type of results. For example, you can customize *Severity 1* incidents to have more prominent colors and a larger font compared to *Severity 3* incidents.
 
 After you start the wizard, you're guided through the steps to define the name, content source, and conditions for the result type. You can define the priority of the result type from the list view.
   
