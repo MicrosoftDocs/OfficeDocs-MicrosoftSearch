@@ -110,7 +110,7 @@ After you configure your connector, the [admin center](https://admin.microsoft.c
 
 ## Next steps: Customize the search results page
 
-With the Microsoft Search user interface (UI), your end users can search content from your [Microsoft 365](https://www.microsoft.com/microsoft-365) productivity apps and the broader Microsoft ecosystem. A search vertical refers to the tabs that are shown when a user views their search results in [SharePoint](http://sharepoint.com/), [Microsoft Office](https://Office.com), and Microsoft Search in [Bing](https://Bing.com). You can customize search verticals to narrow down results, so that only a certain type of search results is displayed. These verticals appear as a tab on the top of the search results page. A modern result type (MRT) is the UI that designates how results are presented.
+With the Microsoft Search user interface (UI), your end users can search content from your [Microsoft 365](https://www.microsoft.com/microsoft-365) productivity apps and the broader Microsoft ecosystem. A search vertical refers to the tabs that are shown when a user views their search results in [SharePoint](https://sharepoint.com/), [Microsoft Office](https://Office.com), and Microsoft Search in [Bing](https://Bing.com). You can customize search verticals to narrow down results, so that only a certain type of search results is displayed. These verticals appear as a tab on the top of the search results page. A modern result type (MRT) is the UI that designates how results are presented.
 
 You must create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won’t show up on the search results page.
 
