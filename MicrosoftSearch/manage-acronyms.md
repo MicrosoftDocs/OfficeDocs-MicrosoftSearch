@@ -20,6 +20,7 @@ Users often run into unfamiliar acronyms and abbreviations used by their organiz
 Organizations don't always have a single reference for their standard terminology. Lack of a single reference makes it hard to find definitions or expansions for these acronyms. Microsoft Search solves that problem with Acronyms.
 
 ## What users experience
+
 Microsoft Search users can get definitions with Acronyms in [Bing](https://Bing.com). In the **Search** box, users enter queries like these examples:
 
 - *What is* DNN
@@ -33,17 +34,19 @@ Microsoft Search users can get definitions with Acronyms in [Bing](https://Bing.
 The result includes all the meanings of DNN that are present within the user’s organization.
 
 > [!NOTE]
-> Users must enter a query that includes the acronym’s specified *keywords* to trigger its corresponding answers. Acronym queries are not case sensitive. 
+> Users must enter a query that includes the acronym’s specified *keywords* to trigger its corresponding answers. Acronym queries are not case sensitive.
 
 ## Set up Acronyms answers
-In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** >**Acronyms**, and then select **Add acronyms**. 
+
+In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** >**Acronyms**, and then select **Add acronyms**.
 
 Microsoft Search queries two data sources to provide Acronyms answers to users’ searches:
 
-1.	**Editorial acronyms**. Provided by IT administrators in the [admin center](https://admin.microsoft.com).
-2.	**Mined acronyms**. Mined by Microsoft Search from the user’s personal email and documents and publicly available data within the organization.
+1. **Editorial acronyms**. Provided by IT administrators in the [admin center](https://admin.microsoft.com).
+2. **Mined acronyms**. Mined by Microsoft Search from the user’s personal email and documents and publicly available data within the organization.
 
 ### Set up editorial acronyms
+
 Search administrators can set up editorial acronyms on the [Acronyms tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) in the  [Microsoft 365 admin center]( https://admin.microsoft.com). You can add acronyms from any internal site or repository to the admin center. Editorial acronyms can be added to **Published** or **Draft** state:
 
 **Published state**. Acronyms are available to the organization’s employees through Microsoft Search.
@@ -60,6 +63,7 @@ Admins can add acronyms individually or bulk import them in a CSV file. Upload a
 | *XXX* | *Spelled out abbreviation* |  | *URL* | *Published or Draft* |
 
 ### CSV fields
+
 **Acronym**. Contains the actual short form or acronym. An example is *DNN*.
 
 **Expansion**. Contains the expansion of the acronym. An example is *Deep Neural Network*.
@@ -74,6 +78,7 @@ Admins can add acronyms individually or bulk import them in a CSV file. Upload a
 - **Published**. Adds the acronym to the Published state and makes it available in Microsoft Search.
 
 ### Mined acronyms
+
 It might be a challenge for admins to add all the acronyms used within an organization to Answers. This feature can find acronyms that search administrators aren’t even aware of. To do that work, Microsoft Search also mines acronyms from these sources:
 
 - Users’ emails.
@@ -86,13 +91,14 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 > No setup is needed for mined acronyms.
 
 ## Frequently asked questions
+
 **Q: How is editorial and mined data ranked?**
 
 **A:** The feature currently ranks editorial acronyms above mined acronyms.
 
 **Q: How long does it take for editorial acronyms to be visible in Microsoft Search after they’re published?**
 
-**A:**  It takes up to three days for acronyms added to Published state to become available in Microsoft Search. 
+**A:**  It takes up to three days for acronyms added to Published state to become available in Microsoft Search.
 
 **Q: How do users trigger Acronyms answers?**
 
@@ -112,8 +118,8 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **Q: What if my organization doesn’t want to show mined acronyms? Can I stop showing mined acronyms in search results?**
 
-**A**: To turn off showing mined acronyms in search results, create a customer support ticket by following the instructions at [Contact support for business products](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support).
-After you create a support ticket, it takes up to 48 hours for mined acronyms to stop appearing in search results. 
+**A**: To turn off showing mined acronyms in search results, create a customer support ticket by following the instructions at [Contact support for business products](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support).
+After you create a support ticket, it takes up to 48 hours for mined acronyms to stop appearing in search results.
 
 **Q: When will I see Acronyms answers in [Office 365](https://Office.com) and [SharePoint Online](https://products.office.com/sharepoint/collaboration)?**
 
