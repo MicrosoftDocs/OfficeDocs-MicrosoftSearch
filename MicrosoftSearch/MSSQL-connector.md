@@ -1,5 +1,5 @@
 ---
-title: "Microsoft SQL connector for Microsoft Search"
+title: "Microsoft SQL server and Azure SQL connector for Microsoft Search"
 ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
@@ -11,25 +11,27 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Microsoft SQL connector for Microsoft Search."
+description: "Set up the Microsoft SQL server or Azure SQL connector for Microsoft Search."
 ---
 
-# Microsoft SQL server connector
+# Microsoft SQL server and Azure SQL connector
 
-With a Microsoft SQL server connector, your organization can discover and index data from an on-premises SQL Server database. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With the SQL Server connector, you can also restrict access to search results for certain users.
+With a Microsoft SQL server or Azure SQL connector, your organization can discover and index data from an on-premises SQL Server database or a database hosted in your Azure SQL instance in the cloud. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
-## Install a data gateway
+## Install a data gateway (required for on-premises Microsoft SQL server connector only)
 In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install an on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) to learn more.  
 
 ## Connect to a data source
 To connect your Microsoft SQL server connector to a data source, you must configure the database server you want crawled and the on-premises gateway. You can then connect to the database with the required authentication method.
 
-> [!NOTE]
-> Your database must run SQL server version 2008 or later.
+For Azure SQL connector, you need to only specify the server name or IP address you want to connect to. Azure SQL connector only supports Azure Active Directory Open ID connect (OIDC) authentication to connect to the database.
 
-To search your database content, you must specify SQL queries when you configure the connector. These SQL queries need to name all the database columns that you want to index (i.e. source properties), including any SQL joins that need to be performed to get all the columns. To restrict access to search results, you must specify Access Control Lists (ACLs) with SQL queries when you configure the Microsoft SQL server connector.
+> [!NOTE]
+> Your database must run SQL server version 2008 or later for the Microsoft SQL server connector to be able to connect to it
+
+To search your database content, you must specify SQL queries when you configure the connector. These SQL queries need to name all the database columns that you want to index (i.e. source properties), including any SQL joins that need to be performed to get all the columns. To restrict access to search results, you must specify Access Control Lists (ACLs) within SQL queries when you configure the connector.
 
 ## Full crawl (Required)
 In this step, you configure the SQL query that runs a full crawl of the database. The full crawl selects all the columns or properties you want to be made **queryable**, **searchable**, or **retrievable**. You can also specify ACL columns to restrict access of search results to specific users or groups.
@@ -86,7 +88,7 @@ The following ID types are supported for using as ACLs:
 ![](media/MSSQL-ACL2.png)
 
 ## Incremental crawl (Optional)
-In this optional step, provide a SQL query to run an incremental crawl of the database. With this query, the Microsoft SQL server connector makes any changes to the data since the last incremental crawl. As in the full crawl, select all columns that you want to be made **queryable**, **searchable**, or **retrievable**. Specify the same set of ACL columns that you specified in the full crawl query.
+In this optional step, provide a SQL query to run an incremental crawl of the database. With this query, the SQL connector determines any changes to the data since the last incremental crawl. As in the full crawl, select all columns that you want to be made **queryable**, **searchable**, or **retrievable**. Specify the same set of ACL columns that you specified in the full crawl query.
 
 The components in the following image resemble the full crawl components with one exception. In this case, "ModifiedDateTime" is the selected watermark column. Review the [full crawl steps](#full-crawl-required) to learn how to write your incremental crawl query and see the following image as an example.
 
@@ -96,7 +98,7 @@ The components in the following image resemble the full crawl components with on
 You can choose to use the [ACLs specified in the full crawl screen](#full-crawl-manage-search-permissions) or you can override them to make your content visible to everyone.
 
 ## Limitations
-The Microsoft SQL server connector has these limitations in the preview release:
-* The on-premises database must run SQL server version 2008 or later.
+The SQL connectors have these limitations in the preview release:
+* Microsoft SQL server connector: The on-premises database must run SQL server version 2008 or later.
 * ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security. 
 * Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
