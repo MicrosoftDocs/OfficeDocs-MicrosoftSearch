@@ -28,10 +28,10 @@ This article guides you through the steps of configuring a Microsoft-built conne
 
 ## Set up
 
-To configure any of the Microsoft-built connectors, go to the [admin center](https://admin.microsoft.com):
+Complete the following steps to configure any of the Microsoft-built connectors.
 
-1. Sign in to your account with the credentials for your [Microsoft 365](https://www.microsoft.com/microsoft-365) test tenant.
-2. Go to **Settings** > **Microsoft Search** > **Connectors**.
+1. Go to the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in the [Microsoft 365 admin center](https://admin.microsoft.com).
+2. Sign in to your account with the credentials for your [Microsoft 365](https://www.microsoft.com/microsoft-365) tenant.
 3. Select **Add a connector**.
 4. From the list of available connectors, select the connector of your choice.
 
