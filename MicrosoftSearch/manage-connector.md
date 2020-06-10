@@ -24,7 +24,7 @@ Navigate to the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/M
 
 For each connector type, the [Microsoft 365 admin center](https://admin.microsoft.com) supports the operations shown in the following table:
 
-**Operation** | **Microsoft-built connector** | **Partner or custom-built connector**
+Operation | Microsoft-built connector | Partner or custom-built connector
 --- | --- | ---
 Add a connection | :heavy_check_mark: (See [Configure your Microsoft-built connector](configure-connector.md)) | :x: (Refer to your partner or custom-built connector admin UX)
 Delete a connection | :heavy_check_mark: | :heavy_check_mark:
@@ -57,7 +57,7 @@ To view an error's specific details, select its error code. A screen appears wit
 
 Below is the list of different errors that can appear against any connection. If these solutions don’t work, contact support or send us [feedback](connectors-feedback.md).
 
-**Error code** | **Error message** | **Solution**
+Error code | Error message | Solution
 --- | --- | ---
 1000 | The data source isn't available. Check your internet connection or make sure the data source is still accessible by the connector. | This error occurs when the data source is not reachable due to a network issue or when the data source itself is deleted, moved, or renamed. Check if the data source details provided are still valid.
 1001 | Can't update the data, because the data source is throttling the connector. | To unthrottle the data source, check if its scale limits can be increased or wait until a less traffic-heavy time of the day.
