@@ -61,7 +61,7 @@ Admins can set the search schema attributes to control search functionality of e
 
 Search schema attributes include **searchable**, **queryable**, and **retrievable**. The following table lists each of the attributes that Microsoft Graph connectors support and explains their functions.
 
-**Search schema attribute** | **Function** | **Example**
+**Search schema attribute** | **Function** | Example
 --- | --- | ---
 SEARCHABLE | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the property is **title**, a query for **Enterprise** returns answers that contain the word **Enterprise** in any text or title.
 QUERYABLE | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the **Title** property is queryable, then the query **Title: Enterprise** is supported.
