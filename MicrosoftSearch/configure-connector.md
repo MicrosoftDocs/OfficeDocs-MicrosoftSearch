@@ -28,10 +28,10 @@ This article guides you through the steps of configuring a Microsoft-built conne
 
 ## Set up
 
-To configure any of the Microsoft-built connectors, go to the [admin center](https://admin.microsoft.com):
+Complete the following steps to configure any of the Microsoft-built connectors.
 
-1. Sign in to your account with the credentials for your [Microsoft 365](https://www.microsoft.com/microsoft-365) test tenant.
-2. Go to **Settings** > **Microsoft Search** > **Connectors**.
+1. Go to the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in the [Microsoft 365 admin center](https://admin.microsoft.com).
+2. Sign in to your account with the credentials for your [Microsoft 365](https://www.microsoft.com/microsoft-365) tenant.
 3. Select **Add a connector**.
 4. From the list of available connectors, select the connector of your choice.
 
@@ -61,7 +61,7 @@ Admins can set the search schema attributes to control search functionality of e
 
 Search schema attributes include **searchable**, **queryable**, and **retrievable**. The following table lists each of the attributes that Microsoft Graph connectors support and explains their functions.
 
-**Search schema attribute** | **Function** | **Example**
+Search schema attribute | Function | Example
 --- | --- | ---
 SEARCHABLE | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the property is **title**, a query for **Enterprise** returns answers that contain the word **Enterprise** in any text or title.
 QUERYABLE | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the **Title** property is queryable, then the query **Title: Enterprise** is supported.
