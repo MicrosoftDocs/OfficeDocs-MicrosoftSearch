@@ -21,7 +21,7 @@ With the Azure DevOps connector, your organization can index work items in its i
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Azure DevOps connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
 >[!IMPORTANT]
-The Azure DevOps connector supports only the Azure DevOps cloud service. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015, and TFS 2013 are not supported by this connector.
+>The Azure DevOps connector supports only the Azure DevOps cloud service. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015, and TFS 2013 are not supported by this connector.
 
 ## Connect to a data source
 
@@ -75,7 +75,6 @@ The Azure DevOps connector currently only supports search permissions visible to
 
 ## Set the refresh schedule
 
-The Azure DevOps connector supports refresh schedules for both full and incremental crawls. 
-A full crawl finds deleted work items that were previously synced to the Microsoft Search index. A full crawl runs to sync all the work items. To sync new work items and updates to existing work items, you need to schedule incremental crawls.
+The Azure DevOps connector supports refresh schedules for both full and incremental crawls. A full crawl finds deleted work items that were previously synced to the Microsoft Search index. A full crawl runs to sync all the work items. To sync new work items and updates to existing work items, you need to schedule incremental crawls.
 
 The recommended schedule is one hour for an incremental crawl and one day for a full crawl.
