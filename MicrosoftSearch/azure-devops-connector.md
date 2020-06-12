@@ -41,7 +41,7 @@ The following table provides guidance on how to fill out the app registration fo
 | Authorization callback URL        | A required callback URL that the authorization server redirects to. | <https://gcs.office.com/v1.0/admin/oauth/callback>|
 | Authorized scopes | This is the scope of access for the application | Select the following scopes: Identity (read), Work Items (read), Variable Groups (read), Project and team (read)|
 
-On registering the app with the details above, you will get the **App ID** and **Client Secret** for the app that need to be furnished to the connector.
+On registering the app with the details above, you will get the **App ID** and **Client Secret** that will be used to configure the connector.
 
 >[!NOTE]
 >To revoke access to any app registered in Azure DevOps, go to User settings at the right top of your Azure DevOps instance. Click on Profile and then click on Authorizations in the Security section of the side pane. Hover over an authorized OAuth app to see the Revoke button at the corner of the app details.
