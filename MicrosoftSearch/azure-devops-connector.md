@@ -16,7 +16,7 @@ description: "Set up the Azure DevOps connector for Microsoft Search"
 
 # Azure DevOps Connector
 
-With the Azure DevOps connector, your organization can index work items in its instance of Azure DevOps service. After you configure the connector and index content from Azure DevOps, end users can search for those work items in any Microsoft Search client.
+With the Azure DevOps connector, your organization can index work items in its instance of the Azure DevOps service. After you configure the connector and index content from Azure DevOps, end users can search for those items in Microsoft Search.
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Azure DevOps connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
@@ -60,8 +60,7 @@ If you choose to index the entire organization, items in all projects in the org
 
 ![Configure data](media/ADO_configure_data.png)
 
-You can further select which fields of work items you want the
-connection to index and preview data in these fields before proceeding.
+Next, select which fields you want the connection to index and preview data in these fields before proceeding.
 
 ![Choose propoerties](media/ADO_choose_properties.png)
 
@@ -71,7 +70,7 @@ Configure the search schema mapping. You can choose which properties to make **
 
 ## Manage search permissions
 
-The Azure DevOps connector currently only supports search permissions visible to **Everyone**. Indexed data appears in the search results and is visible to all users in the organization.
+The Azure DevOps connector currently only supports search permissions **Visible to Everyone**. Indexed data will appear in the search results for all users.
 
 ## Set the refresh schedule
 
