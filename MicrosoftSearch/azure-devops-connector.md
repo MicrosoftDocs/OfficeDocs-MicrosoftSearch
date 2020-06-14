@@ -48,7 +48,7 @@ On registering the app with the details above, you will get the **App ID** and *
 
 ### Connection settings
 
-After registering the Microsoft Search app with Azure DevOps, you can complete the connections settings step. Enter your organization name, App ID, and Client secret.
+After registering the Microsoft Search app with Azure DevOps, you can complete the connection settings step. Enter your organization name, App ID, and Client secret.
 
 ![Connection Application Settings](media/ADO_Connection_settings_2.png)
 
@@ -58,7 +58,7 @@ You can choose for the connection to index either the entire organization or spe
 
 If you choose to index the entire organization, items in all projects in the organization will get indexed. New projects and items will be indexed during the next crawl after they are created. If you choose individual projects, only work items in those projects will be indexed.
 
-![Configure data](media/ADO_configure_data.png)
+![Configure data](media/ADO_Configure_data.png)
 
 Next, select which fields you want the connection to index and preview data in these fields before proceeding.
 
