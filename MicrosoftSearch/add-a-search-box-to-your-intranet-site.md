@@ -19,7 +19,13 @@ description: "Get relevant search suggestions and find work results faster by ad
 
 # Add a search box to your intranet site
 
-For fast access to relevant search suggestions and work results, add a Microsoft Search search box to any intranet site or page.
+To provide your users with easy access to results from your organization, add a Microsoft Search in Bing search box to any intranet site or page. These are some of the benefits:
+
+- A search box on your SharePoint or intranet portal provides a familiar, trusted entry point to start searching
+- Supports all major web browsers, including Google Chrome, Microsoft Edge, and Microsoft Internet Explorer 11
+- Only search suggestions from your organization appear, web suggestions are never included
+- Takes users to a Microsoft Search in Bing work results page, which excludes ads and web results
+- Depending on your implementation, you control the appearance and behavior of the search box
   
 ## Add a search box to an intranet page
 
@@ -97,3 +103,7 @@ If embedding a script isn't an option for the site, use an iFrame to add the sea
 ```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
 ```
+
+## SharePoint modern sites
+
+To successfully format a Microsoft Search in Bing search box on a SharePoint modern site, you must use a SharePoint Framework Extension. For more information, see [Overview of SharePoint Framework Extensions](sharepoint/dev/spfx/extensions/overview-extensions).
