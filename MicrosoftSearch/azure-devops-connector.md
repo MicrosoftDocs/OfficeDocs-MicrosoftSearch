@@ -36,7 +36,7 @@ The following table provides guidance on how to fill out the app registration fo
  **Mandatory Fields** | **Description**      | **Recommended Value**
 --- | --- | ---
 | Company Name         | This is the name of your company. | Use an appropriate value   |
-| Application name     | This unique value identifies the application your are authorizing.    | Microsoft Search     |
+| Application name     | This unique value identifies the application that you're authorizing.    | Microsoft Search     |
 | Application website  | This required field is the URL of the application that will request access to your Azure DevOps instance during connector setup.  | <https://gcs.office.com/>                |
 | Authorization callback URL        | A required callback URL that the authorization server redirects to. | <https://gcs.office.com/v1.0/admin/oauth/callback>|
 | Authorized scopes | This is the scope of access for the application | Select the following scopes: Identity (read), Work Items (read), Variable Groups (read), Project and team (read)|
@@ -62,7 +62,7 @@ If you choose to index the entire organization, items in all projects in the org
 
 Next, select which fields you want the connection to index and preview data in these fields before proceeding.
 
-![Choose propoerties](media/ADO_choose_properties.png)
+![Choose properties](media/ADO_choose_properties.png)
 
 ## Manage the search schema
 
