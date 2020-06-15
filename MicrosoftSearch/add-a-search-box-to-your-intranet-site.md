@@ -106,4 +106,4 @@ If embedding a script isn't an option for the site, use an iFrame to add the sea
 
 ## SharePoint modern sites
 
-To successfully format a Microsoft Search in Bing search box on a SharePoint modern site, you must use a SharePoint Framework Extension. For more information, see [Overview of SharePoint Framework Extensions](sharepoint/dev/spfx/extensions/overview-extensions).
+To successfully format a Microsoft Search in Bing search box on a SharePoint modern site, you must use a SharePoint Framework Extension. For more information, see [Overview of SharePoint Framework Extensions](/sharepoint/dev/spfx/extensions/overview-extensions).
