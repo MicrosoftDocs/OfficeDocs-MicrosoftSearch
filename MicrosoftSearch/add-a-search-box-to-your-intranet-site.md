@@ -22,7 +22,7 @@ description: "Get relevant search suggestions and find work results faster by ad
 To provide your users with easy access to results from your organization, add a Microsoft Search in Bing search box to any intranet site or page. These are some of the benefits:
 
 - A search box on your SharePoint or intranet portal provides a familiar, trusted entry point to start searching
-- Supports all major web browsers, including Google Chrome, Microsoft Edge, and Microsoft Internet Explorer 11
+- Supports all major web browsers, including Google Chrome and Microsoft Edge
 - Only search suggestions from your organization appear, web suggestions are never included
 - Takes users to a Microsoft Search in Bing work results page, which excludes ads and web results
 - Depending on your implementation, you control the appearance and behavior of the search box
