@@ -25,7 +25,7 @@ To provide your users with easy access to results from your organization, add a 
 - Supports all major web browsers, including Google Chrome and Microsoft Edge
 - Only search suggestions from your organization appear, web suggestions are never included
 - Takes users to a Microsoft Search in Bing work results page, which excludes ads and web results
-- Depending on your implementation, you control the appearance and behavior of the search box
+- You control the appearance and behavior of the search box
   
 ## Add a search box to an intranet page
 
@@ -89,8 +89,8 @@ To help the search box better fit with the style of your intranet, there are a v
         dropShadow: true,                       // default: true
         iconColor: "#067FA6",                   // default: #067FA6
         companyNameInGhostText: "Contoso"       // default: not specified
-                                                // when absent, ghost text will be "Search work and the web"
-                                                // when specified, text will be "Search the web and [Contoso]"
+                                                // when absent, ghost text will be "Search work"
+                                                // when specified, text will be "Search <companyNameInGhostText>"
     };
 </script>
 <script async src="https://www.bing.com/business/s?k=sb"></script>
