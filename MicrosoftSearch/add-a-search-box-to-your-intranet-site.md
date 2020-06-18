@@ -103,7 +103,3 @@ If embedding a script isn't an option for the site, use an iFrame to add the sea
 ```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
 ```
-
-## SharePoint modern sites
-
-To successfully format a Microsoft Search in Bing search box on a SharePoint modern site, you must use a SharePoint Framework Extension. For more information, see [Overview of SharePoint Framework Extensions](https://docs.microsoft.com/sharepoint/dev/spfx/extensions/overview-extensions).
