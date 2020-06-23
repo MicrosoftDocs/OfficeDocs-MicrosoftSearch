@@ -59,7 +59,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                                 <a href="azure-devops-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
                                     <font color="0065BA">More details</font>
                                 </a>
-                             <img src="media/AzureDevOps_Small.png" alt="Azure DevOps" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path" />
+                             <img src="media/AzureDevOps_Medium.png" alt="Azure DevOps" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path" />
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                                 <a href="MSSQL-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
                                     <font color="0065BA">More details</font>
                                 </a>
-                             <img src="media/AzureSqlConnectorLogo_Small.png" alt="Azure SQL" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path" />
+                             <img src="media/AzureSqlConnectorLogo_Medium.png" alt="Azure SQL" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path" />
                             </div>
                         </div>
                     </div>
