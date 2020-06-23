@@ -20,6 +20,8 @@ description: "Configure your Microsoft-built connector for Microsoft Search"
 This article guides you through the steps of configuring a Microsoft-built connector. It outlines the flow of setting up a connection in the Microsoft 365 [admin center](https://admin.microsoft.com). For more details on how to set up specific Microsoft-built connectors, see these articles:
 
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+* [Azure DevOps](azure-devops-connector.md)
+* [Azure SQL](MSSQL-connector.md)
 * [Enterprise websites](enterprise-web-connector.md)
 * [File share](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)

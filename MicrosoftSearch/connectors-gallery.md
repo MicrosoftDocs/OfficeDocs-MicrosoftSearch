@@ -51,6 +51,50 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
+                        <h3>Azure DevOps</h3>
+                        <p>by <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
+                        <p>With this Microsoft Graph connector, users in your organization can search for work items in your Azure DevOps instance.</p>
+                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
+                            <div style="font-weight:500;width:150px;display:inline">
+                                <a href="azure-devops-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
+                                    <font color="0065BA">More details</font>
+                                </a>
+                             <img src="media/AzureDevOps_Small.png" alt="Azure DevOps" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="overflow: hidden; height: 235px;">
+                    <div class="cardText">
+                        <h3>Azure SQL</h3>
+                        <p>by <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
+                        <p>With this Microsoft Graph connector, users in your organization can search for data from your Azure SQL database.</p>
+                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
+                            <div style="font-weight:500;width:150px;display:inline">
+                                <a href="MSSQL-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
+                                    <font color="0065BA">More details</font>
+                                </a>
+                             <img src="media/AzureSqlConnectorLogo_Small.png" alt="Azure SQL" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+<ul class="panelContent cardsZ">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="overflow: hidden; height: 235px;">
+                    <div class="cardText">
                         <h3>Enterprise websites</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>With this Microsoft Graph connector, users in your organization can search over pages in any non-SharePoint enterprise website.</p>
@@ -88,8 +132,6 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
-</ul>
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -111,6 +153,8 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+</ul>
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -154,8 +198,6 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
         </div>
     </li>
 </ul>
-
-
 
 ---
 
