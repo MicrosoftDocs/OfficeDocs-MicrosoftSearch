@@ -82,10 +82,13 @@ In [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft
 3. Select **Upload files**, and then choose the floor plan you are uploading.
 4. When the upload is complete, you must enter floor number that is represented in the floor plan file. Then select **Next**.
 5. (Optional) If your floor has wings or zones, enter that detail.
-6. Enter the building code for this floor plan. The building code can be found on users' office location property. For example, if a user's office location is **2/1173**, then the building code is **2**.
-7. (Optional) Review and identify the location patterns for all uploaded floor plans and then select **Next**.
-8. You will see a review screen listing how many office locations were mapped to the floor plans. Select **Details** to ensure the mapping is correct.
-9. When you're ready, select **Publish** to make the floor plan available in **Microsoft Search**.
+6. You will see a review screen listing how many office locations were mapped to the floor plans. Select **Details** to ensure the mapping is correct.
+    - If no users are mapped or you're not satisfied with the mapping, select **Continue mapping**. To publish, select **Skip and publish**.
+7. Enter the building code for this floor plan. The building code can be found on users' office location property. For example, if a user's office location is **2/1173**, then the building code is **2**.
+8. On the review screen, repeat step 6 to ensure the mapping is correct.
+9. (Optional) Review and identify the location patterns for all uploaded floor plans and then select **Next**.
+10. On the review screen, repeat step 6 to ensure the mapping is correct.
+11. When you're ready, select **Publish** to make the floor plan available in **Microsoft Search**.
 
 > [!NOTE]
 > **It takes 48 hours for the floor plans to be published.** After that your users will see a floor plan results similar to the one below when they search for a co-worker's office.
