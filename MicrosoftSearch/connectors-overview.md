@@ -50,6 +50,12 @@ The following sections provide brief descriptions for these Microsoft-built conn
 - **[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)**. With this Microsoft Graph connector, users in your organization can search for files and content stored in Azure Blob containers. The Azure Data Lake Storage Gen2 connector also indexes hierarchy-enabled folders in Azure Data Lake Storage Gen2 accounts that you specify.
 Learn more about the [Azure Data Lake Storage Gen2 connector](azure-data-lake-connector.md).
 
+- **[Azure DevOps](https://azure.microsoft.com/services/devops)**. With this Microsoft Graph connector, users in your organization can search for work items from your Azure DevOps instance.
+Learn more about the [Azure DevOps connector](azure-devops-connector.md).
+
+- **[Azure SQL](https://azure.microsoft.com/services/sql-database)**. With this Microsoft Graph connector, users in your organization can search for data from your Azure SQL database.
+Learn more about the [Azure SQL connector](MSSQL-connector.md).
+
 - **Enterprise websites**. With this Microsoft Graph connector, users in your organization can search over pages in any non-SharePoint enterprise website.
 Learn more about the [Enterprise websites connector](enterprise-web-connector.md).
 
@@ -80,8 +86,8 @@ After custom data is indexed, developers can [query this data](https://docs.micr
 
 ## License requirements
 
-To view data from connectors in your search results, users must have one of the following Microsoft 365 subscriptions:
+To view data from connectors in your search results, users must have one of the following Microsoft 365 or Office 365 subscriptions:
 
-- [Microsoft 365 for enterprise E3 or E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
+- [Microsoft 365 or Office 365 Enterprise E3 or E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
 
-- [Microsoft 365 Education A3 or A5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)
+- [Microsoft 365 or Office 365 Education A3 or A5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)
