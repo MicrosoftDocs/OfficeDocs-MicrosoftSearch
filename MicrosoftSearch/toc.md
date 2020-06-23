@@ -18,7 +18,7 @@
 ## Microsoft-built connectors
 ### [Connector setup](configure-connector.md)
 ### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
-### [Azure SQL and SQL server](MSSQL-connector.md)
+### [Azure SQL and Microsoft SQL server](MSSQL-connector.md)
 ### [Enterprise websites](enterprise-web-connector.md)
 ### [File share](file-share-connector.md)
 ### [MediaWiki](mediawiki-connector.md)
