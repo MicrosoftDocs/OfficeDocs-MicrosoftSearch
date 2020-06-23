@@ -14,7 +14,7 @@ search.appverid:
 description: "Set up the file share connector for Microsoft Search."
 ---
 
-# The file share connector for Microsoft Search
+# File share connector
 
 With the file share connector, users in your organization can search on-premises file shares. The search results from these shares merge with the results from [SharePoint](http://sharepoint.com/) and [Microsoft OneDrive for Business](https://onedrive.live.com/about/business/).
 

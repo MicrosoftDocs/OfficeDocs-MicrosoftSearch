@@ -14,7 +14,7 @@ search.appverid:
 description: "Set up the Azure DevOps connector for Microsoft Search"
 ---
 
-# Azure DevOps Connector
+# Azure DevOps connector
 
 With the Azure DevOps connector, your organization can index work items in its instance of the Azure DevOps service. After you configure the connector and index content from Azure DevOps, end users can search for those items in Microsoft Search.
 
