@@ -116,7 +116,7 @@ To update an existing floor plan, select the floor plan you want to change, and 
 |Upload floor plans|No data found.|Error|Check your file to make sure it's the correct one and then upload it again or delete it.|
 |Upload floor plans|External references are missing in this file. Either upload CC_1_furniture.dwg or delete this file.|Warning|Upload external reference files or delete.|
 |Upload floor plans|Could not read room numbers or tags in the DWG file. Please delete this file.|Warning|Check your DWG file to make sure the data is included and then delete the file and try again.|
-|Link office locations|No office locations found in AAD. Add location data to AAD before setting up floor plans.|Error|[Update office locations on user profiles](#step-3-update-office-locations-on-user-profiles) |
+|Link office locations|No office locations found in Azure Active Directory. Add location data to Azure Active Directory before setting up floor plans.|Error|[Update office locations on user profiles](#step-3-update-office-locations-on-user-profiles) |
 
 ## Frequently asked questions
 
@@ -156,7 +156,7 @@ To update an existing floor plan, select the floor plan you want to change, and 
 
 **Q:** Can I use a DWG file that doesn't include floor numbers?
 
-**A:** Yes, you can. When you update office locations in the user's AAD profile, include the floor number as part of the room number, even if it's missing from the DWG file. After you upload the file, the Specify location patterns screen will appear and you can indicate both values.
+**A:** Yes, you can. When you update office locations in the user's Azure Active Directory profile, include the floor number as part of the room number, even if it's missing from the DWG file. After you upload the file, the Specify location patterns screen will appear and you can indicate both values.
 
 For example, a DWG file that includes room numbers, but no floor numbers, may look similar to this:
 
