@@ -38,16 +38,16 @@ The result includes all the meanings of DNN that are present within the user’s
 
 ## Set up Acronyms answers
 
-In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** >**Acronyms**, and then select **Add acronyms**.
+In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Answers** > [**Acronyms**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms), and then select **Add acronyms**.
 
 Microsoft Search queries two data sources to provide Acronyms answers to users’ searches:
 
-1. **Editorial acronyms**. Provided by IT administrators in the [admin center](https://admin.microsoft.com).
+1. **Editorial acronyms**. Provided by IT administrators in the [admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms).
 2. **Mined acronyms**. Mined by Microsoft Search from the user’s personal email and documents and publicly available data within the organization.
 
 ### Set up editorial acronyms
 
-Search administrators can set up editorial acronyms on the [Acronyms tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) in the  [Microsoft 365 admin center]( https://admin.microsoft.com). You can add acronyms from any internal site or repository to the admin center. Editorial acronyms can be added to **Published** or **Draft** state:
+Search administrators can set up editorial acronyms on the [Acronyms tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) in the  [Microsoft Search admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch). You can add acronyms from any internal site or repository to the admin center. Editorial acronyms can be added to **Published** or **Draft** state:
 
 **Published state**. Acronyms are available to the organization’s employees through Microsoft Search.
 

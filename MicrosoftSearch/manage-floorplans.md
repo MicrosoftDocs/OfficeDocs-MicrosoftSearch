@@ -61,7 +61,7 @@ Use **Microsoft Search** to find a user and verify that their office location is
 
 ### Step 5: Add building locations
 
-Floor plans uses [Locations](manage-locations.md) to define your buildings. In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Locations**, and then select **Add**. Enter the name, address, and keywords for the building. Add as many buildings as you need.
+Floor plans uses [Locations](manage-locations.md) to define your buildings. In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Answers** > [**Locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations), and then select **Add**. Enter the name, address, and keywords for the building. Add as many buildings as you need.
 
 ![floorplans-locations.png](media/floorplans-locations.png)
 
@@ -71,13 +71,13 @@ For more details about locations, see [Manage Locations](manage-locations.md)
 
 Before you can use floor plans, office locations must be indexed. This is a one-time operation that can take up to 48 hours to complete. The total time will depend on the size of your organization.
 
-In [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Floor plans**, and then select **Get started**. If you don't see this notice, this step has already been completed for your organization
+In [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Answers** > [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), and then select **Get started**. If you don't see this notice, this step has already been completed for your organization
 
 ![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
 
 ### Step 7: Upload floor plans
 
-1. In the [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Floor plans**, and then select **Add**.
+1. In the [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Answers** > [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans).
 2. Select a building in the drop-down list and select **Next**. If the building isn't listed, go back and [add building locations](#step-5-add-building-locations).
 3. Select **Upload files**, and then choose the floor plan you are uploading.
 4. When the upload is complete, you must enter floor number that is represented in the floor plan file. Then select **Next**.
@@ -136,7 +136,7 @@ To update an existing floor plan, select the floor plan you want to change, and 
 
 **A:** Create a DWG file in Microsoft Visio, Autodesk AutoCAD, or any other DWG editor. Make sure 10 or more rooms are labeled in the file.
 
-**Q:** **What's the best format for text labels in DWG files?
+**Q:** What's the best format for text labels in DWG files?
 
 **A:** For the best results, text labels should contain floor numbers and room numbers. The examples below use 2 or SC for the building code.
 <!-- markdownlint-disable no-inline-html -->
