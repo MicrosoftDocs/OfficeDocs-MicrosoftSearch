@@ -53,7 +53,7 @@ You can use a limited set of [Keyword Query Language (KQL)](https://docs.microso
 
 To create the vertical on Microsoft Search in [SharePoint](https://sharepoint.com/) home, [Office](https://office.com), or [Bing](https://bing.com), follow these steps:
 
-1. In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Verticals**.
+1. In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Customization** > [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 1. Select **Add** to get started.  
 
 ### Create a vertical at the site level
@@ -82,7 +82,7 @@ After you start the wizard, you're guided through the steps to define the name, 
   
 ### Create a result type at the organization level
 
-1. In the [admin center](https://admin.microsoft.com), go to **Setting** > **Microsoft Search**, and then select **Result type**.
+1. In the [admin center](https://admin.microsoft.com), go to **Setting** > **Microsoft Search** > **Customizations** > [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
 1. To add a **Result type**, select **Add**. To edit a result type, select the result type in the relevant list.
 
 ### Create a results type at the site level

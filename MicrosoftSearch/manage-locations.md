@@ -24,8 +24,7 @@ Location helps your users find addresses and locate your organization's building
 ### Add or edit a single location
 
 1. Go to **Microsoft 365 admin center**.
-1. In the navigation pane, go to **Settings** and select **Microsoft Search**.
-1. Select **Locations** tab. By default, the **Bookmarks** tab is selected on the **Microsoft Search** page.
+1. In the navigation pane, go to **Settings** > **Microsoft Search** > **Answers** > [**Locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
 1. To add a new location, select **Add new**.
 1. To edit a location, select the location in the relevant locations list.
 1. As you add or edit the information, the preview automatically updates.
