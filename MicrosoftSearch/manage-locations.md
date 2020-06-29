@@ -45,7 +45,7 @@ To export or import locations:
 1. In the upper-right corner of the **Locations** tab, select **Import**.
 Select **Export** to download the existing locations in a .csv file.
 1. In the right pane, choose the option to import using a .csv file.
-Download ehe template file for a list of the required fields and details.
+Download the template file for a list of the required fields and details.
 1. Add or edit location details in the template file, and then save it on your computer.
 1. In the **Import** locations pane, select **Browse**, and then the .csv file that you want to import.
 1. Select **Import**.
