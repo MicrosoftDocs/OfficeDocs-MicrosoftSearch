@@ -22,8 +22,7 @@ Creating a Q&A is similar to creating bookmarks. Q&As allow you to answer the us
 ## Add or edit a single Q&A
 
 1. Go to **Microsoft 365 admin center**.
-1. In the navigation pane, go to **Settings** and select **Microsoft Search**.
-1. Select the **Q&A** tab.
+1. In the navigation pane, go to **Settings** > **Microsoft Search** > **Answers** > [**Q&A**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
 1. To add a Q&A, select **Add new**.
 To edit a Q&A, select the Q&A in the relevant Q&A list. As you add or edit the information, the preview automatically updates.
 1. Save your changes.

@@ -23,8 +23,7 @@ If your organization has Promoted Results set up in SharePoint, you can import t
 ## Add or edit a single bookmark
 
 1. Go to **Microsoft 365 admin center**.
-1. In the navigation pane, go to **Settings**, and then select **Microsoft Search**.
-By default, the **Bookmarks** tab is selected.
+1. In the navigation pane, go to **Settings** > **Microsoft Search** > **Answers** > [**Bookmarks**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks).
 1. To add a bookmark, select **Add new**.
 To edit a bookmark, select the bookmark in the relevant bookmark list.
 1. As you add or edit the information, the preview automatically updates.
@@ -100,8 +99,8 @@ Power Apps is a service that lets you build business apps that run in a browser 
 ### Add a Power App to a bookmark
 
 1. Find the [App ID for the Power App](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) that you want to add.
-1. Sign in and go to **Microsoft 365 admin center**.
-1. In the navigation pane, go to **Settings**, and then select **Microsoft Search**.
+1. Sign in to the [**Microsoft 365 admin center**](https://admin.microsoft.com).
+1. In the navigation pane, go to **Settings** > **Microsoft Search** > **Answers** > [**Bookmarks**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks).
 1. Add a bookmark or find an existing bookmark that you want to add a **PowerApp** to.
 1. In **Bookmark settings**, select **Power App**, and then **Add a Power App**.
 1. Enter or paste the **App ID**.
