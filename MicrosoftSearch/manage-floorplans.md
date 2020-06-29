@@ -136,7 +136,7 @@ To update an existing floor plan, select the floor plan you want to change, and 
 
 **A:** Create a DWG file in Microsoft Visio, Autodesk AutoCAD, or any other DWG editor. Make sure 10 or more rooms are labeled in the file.
 
-**Q:** **What's the best format for text labels in DWG files?
+**Q:** What's the best format for text labels in DWG files?
 
 **A:** For the best results, text labels should contain floor numbers and room numbers. The examples below use 2 or SC for the building code.
 <!-- markdownlint-disable no-inline-html -->
