@@ -30,8 +30,8 @@ OAuth 2.0 with [Azure AD](https://docs.microsoft.com/azure/active-directory/) re
 
 For more information, see [Authorize access to Azure Active Directory web applications using OAuth 2.0 code grant flow](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code). Register with the following values:
 
-***Name:** Microsoft Search
-***Redirect_URI:** `https://gcs.office.com/v1.0/admin/oauth/callback`
+**Name:** Microsoft Search <br/>
+**Redirect_URI:** `https://gcs.office.com/v1.0/admin/oauth/callback`
 
 To get the values for the resource, client_id, and client_secret, go to **Use the authorization code to request an access token** on the redirect URL webpage.
 
@@ -52,7 +52,7 @@ The Enterprise websites connector only supports a full crawl. This means that th
 ## Troubleshooting
 When reading the website's content, the crawl may encounter some source errors which are represented by the detailed error codes below. To get more information on the types of errors, go to the **error details** page after selecting the connection. Click on the **error code** to see more detailed errors. Also refer to [Manage your connector](https://docs.microsoft.com/microsoftsearch/manage-connector) to learn more.
 
- **Detailed Error code** | **Error message**
+ Detailed Error code | Error message
  --- | --- 
  6001	| The site that is being tried to index is not reachable 
  6005 | The source page that is being tried to index has been blocked by as per robots.txt configuration.
