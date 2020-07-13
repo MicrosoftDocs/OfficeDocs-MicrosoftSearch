@@ -21,13 +21,24 @@ With the Enterprise websites connector, your organization can index articles and
 This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) administrators or anyone who configures, runs, and monitors an Enterprise websites connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.  
 
 ## Connect to a data source 
-To connect to your data source, you need your root URL and Basic Authentication.
-
-### Root URL
-The root URL is what initiates the crawl and is used for authentication. You can get the URL from the home page of the website you want to crawl.
+To connect to your data source, you need your root URL and a form of authentication: None, Basic Authentication, or OAuth 2.0 with [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/).
 
 ### Authentication 
 Basic Authentication requires a username and password. Create this bot account by using the Microsoft 365 [admin center](https://admin.microsoft.com).
+
+OAuth 2.0 with [Azure AD](https://docs.microsoft.com/azure/active-directory/) requires a resource ID, Client ID, and Client Secret.
+
+For more information, see [Authorize access to Azure Active Directory web applications using OAuth 2.0 code grant flow](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code). Register with the following values:
+
+***Name:** Microsoft Search
+***Redirect_URI:** `https://gcs.office.com/v1.0/admin/oauth/callback`
+
+To get the values for the resource, client_id, and client_secret, go to **Use the authorization code to request an access token** on the redirect URL webpage.
+
+For even more information, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+
+### Root URL
+The root URL is what initiates the crawl and is used for authentication. You can get the URL from the home page of the website you want to crawl.
 
 ## Select the source properties 
 Source properties are defined based on the data format of the enterprise website. However, you can create an **Exclusion list** to exclude some URLs from getting crawled if that content is sensitive or not worth crawling. To create an exclusion list, browse through the root URL. You have the option to add the excluded URLs to the list during the configuration process.
@@ -36,7 +47,7 @@ Source properties are defined based on the data format of the enterprise website
 There's no support for Access Control Lists (ACLs). Thus, we recommend connecting only the websites that are visible to any user within your organization.
 
 ## Set the refresh schedule
-The Enterprise websites connector only supports a full crawl. This means that the connector reads all the website's content during every crawl. To make sure the connector gets enough time to read the content, we recommend that you set a large refresh schedule interval. We recommend a scheduled refresh between three days and two weeks. 
+The Enterprise websites connector only supports a full crawl. This means that the connector reads all the website's content during every crawl. To make sure the connector gets enough time to read the content, we recommend that you set a large refresh schedule interval. We recommend a scheduled refresh between one and two weeks.
 
 ## Troubleshooting
 When reading the website's content, the crawl may encounter some source errors which are represented by the detailed error codes below. To get more information on the types of errors, go to the **error details** page after selecting the connection. Click on the **error code** to see more detailed errors. Also refer to [Manage your connector](https://docs.microsoft.com/microsoftsearch/manage-connector) to learn more.
