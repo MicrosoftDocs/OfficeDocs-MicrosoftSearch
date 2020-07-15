@@ -15,7 +15,7 @@ description: "Create and update Acronyms answers in Microsoft Search"
 ---
 # Manage Acronyms answers in Microsoft Search
 
-Users often run into unfamiliar acronyms and abbreviations used by their organization or team. Terms that are specific to organizations or teams might be new to people who move from one team to another, those who work with internal partner teams, or are new to the organization.
+Users often run into unfamiliar acronyms and abbreviations used by their organization or team. Terms that are specific to organizations or teams might be new to people who move from one team to another, work with internal partner teams, or are new to the organization.
 
 Organizations don't always have a single reference for their standard terminology. Lack of a single reference makes it hard to find definitions or expansions for these acronyms. Microsoft Search solves that problem with Acronyms.
 
@@ -68,7 +68,7 @@ Admins can add acronyms individually or bulk import them in a CSV file. Upload a
 
 **Expansion**. Contains the expansion of the acronym. An example is *Deep Neural Network*.
 
-**Description**. A brief description of the acronym that gives users quick insight into what the acronym and its expansion mean. For example, *A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers*.
+**Description**. A brief description of the acronym that gives users more info about the acronym and its expansion. For example, *A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers*.
 
 **Source**. The URL of the page or website where you want users to go for more information about the acronym.
 
@@ -82,7 +82,7 @@ Admins can add acronyms individually or bulk import them in a CSV file. Upload a
 It might be a challenge for admins to add all the acronyms used within an organization to Answers. This feature can find acronyms that search administrators aren’t even aware of. To do that work, Microsoft Search also mines acronyms from these sources:
 
 - Users’ emails.
-- Documents in [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/) and [Microsoft OneNote](http://www.onenote.com/).
+- Documents in [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/), and [Microsoft OneNote](http://www.onenote.com/).
 - Public documents within the organization that users have access to in SharePoint, OneDrive, or OneNote.
 
 Microsoft Search makes sure that only users with access and permissions to a document can see the acronyms that are mined from it. When an acronym is mined from a user's mailbox, only that user can see that acronym.
