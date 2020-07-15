@@ -82,7 +82,7 @@ Admins can add acronyms individually or bulk import them in a CSV file. Upload a
 It might be a challenge for admins to add all the acronyms used within an organization to Answers. This feature can find acronyms that search administrators aren’t even aware of. To do that work, Microsoft Search also mines acronyms from these sources:
 
 - Users’ emails.
-- Documents in [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/), and [Microsoft OneNote](http://www.onenote.com/).
+- Documents in [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/), and [Microsoft OneNote](https://www.onenote.com/).
 - Public documents within the organization that users have access to in SharePoint, OneDrive, or OneNote.
 
 Microsoft Search makes sure that only users with access and permissions to a document can see the acronyms that are mined from it. When an acronym is mined from a user's mailbox, only that user can see that acronym.
