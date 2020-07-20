@@ -36,7 +36,7 @@ Complete the following steps to configure any of the Microsoft-built connectors.
 3. Select **Add a connector**.
 4. From the list of available connectors, select the connector of your choice.
 
-![Data sources available include: ADLS Gen2 Connector, Enterprise websites, ServiceNow, Microsoft SQL server, and MediaWiki.](media/addconnector_final.png)
+![Data sources available include: Azure DevOps Connector, ServiceNow, ADLS Gen2, Enterprise websites, MediaWiki, Microsoft SQL server, and Azure SQL.](media/add_connector.png)
 
 ### Name the connector
 
