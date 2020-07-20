@@ -35,7 +35,7 @@ You can add search verticals that are relevant to your organization. These will 
 
 Before you start, make sure that the connector has been indexed. This can take up to 48 hours, depending on the file size.
 
-You can’t create a vertical for content that resides in [SharePoint](https://sharepoint.com/) or from content that's indexed by the [file share connector](file-share-connector.md). Learn how to [index content](configure-connector.md).
+You can’t create a vertical for content that resides in [SharePoint](https://sharepoint.com/).
 
 There are three basic steps to add a vertical:
 
