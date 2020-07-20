@@ -23,7 +23,6 @@ This article guides you through the steps of configuring a Microsoft-built conne
 * [Azure DevOps](azure-devops-connector.md)
 * [Azure SQL](MSSQL-connector.md)
 * [Enterprise websites](enterprise-web-connector.md)
-* [File share](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [Microsoft SQL server](MSSQL-connector.md)
 * [ServiceNow](servicenow-connector.md)
@@ -37,7 +36,7 @@ Complete the following steps to configure any of the Microsoft-built connectors.
 3. Select **Add a connector**.
 4. From the list of available connectors, select the connector of your choice.
 
-![Data sources available include: ADLS Gen2 Connector, Enterprise websites, ServiceNow, File share, Microsoft SQL server, and MediaWiki.](media/addconnector_final.png)
+![Data sources available include: ADLS Gen2 Connector, Enterprise websites, ServiceNow, Microsoft SQL server, and MediaWiki.](media/addconnector_final.png)
 
 ### Name the connector
 
@@ -69,7 +68,7 @@ SEARCHABLE | Makes the text content of a property searchable. Property contents 
 QUERYABLE | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the **Title** property is queryable, then the query **Title: Enterprise** is supported.
 RETRIEVABLE | Only retrievable properties can be used in the result type and display in the search result. |
 
-For all connectors except the file share connector, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute in the search schema page.
+For all connectors custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute in the search schema page.
 
 ![Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions.](media/manageschema.png)
 
@@ -84,7 +83,7 @@ These restrictions and recommendations apply to search schema settings:
 
 ### Manage search permissions
 
-Access Control Lists (ACLs) determine which users in your organization can access each item of data. The file share connector supports only ACLs that can be mapped to [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/). All the other connectors support search permissions that are visible to all users.
+Access Control Lists (ACLs) determine which users in your organization can access each item of data. All the connectors support search permissions that are visible to all users.
 
 ### Set the refresh schedule
 
