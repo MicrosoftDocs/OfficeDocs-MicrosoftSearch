@@ -116,27 +116,6 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
-                        <h3>File share</h3>
-                        <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>With this Microsoft Graph connector, users in your organization can search for files stored on on-premises Windows file shares.</p>
-                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
-                            <div style="font-weight:500;width:150px;display:inline">
-                                <a href="file-share-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
-                                    <font color="0065BA">More details</font>
-                                </a>
-                             <img src="media/FileConnectorLogo_Small.png" alt="File share" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="overflow: hidden; height: 235px;">
-                    <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p>by <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>With this Microsoft Graph connector, users can search for knowledge-based articles on wiki sites your organization creates with MediaWiki.</p>
