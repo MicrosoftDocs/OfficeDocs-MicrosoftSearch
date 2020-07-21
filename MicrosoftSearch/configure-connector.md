@@ -17,7 +17,7 @@ description: "Configure your Microsoft-built connector for Microsoft Search"
 
 # Set up your Microsoft-built connector for Microsoft Search
 
-This article guides you through the steps of configuring a Microsoft-built connector. It outlines the flow of setting up a connection in the Microsoft 365 [admin center](https://admin.microsoft.com). For more details on how to set up specific Microsoft-built connectors, see these articles:
+This article guides you through the steps of configuring a Microsoft-built connector. It outlines the flow of setting up a connection in the Microsoft 365 [admin center](https://admin.microsoft.com). For more information on how to set up specific Microsoft-built connectors, see these articles:
 
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 * [Azure DevOps](azure-devops-connector.md)
@@ -68,7 +68,7 @@ SEARCHABLE | Makes the text content of a property searchable. Property contents 
 QUERYABLE | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the **Title** property is queryable, then the query **Title: Enterprise** is supported.
 RETRIEVABLE | Only retrievable properties can be used in the result type and display in the search result. |
 
-For all connectors custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute in the search schema page.
+For all connectors, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute in the search schema page.
 
 ![Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions.](media/manageschema.png)
 
@@ -91,13 +91,13 @@ The refresh schedule determines how often your data is synced with the index in 
 
 With a **full crawl**, the search engine processes and indexes every item in the content source, regardless of previous crawls. Full crawl works best in these situations:
 
-* You need to detect deletions of data.
+* Detecting deletions of data.
 * The incremental crawl failed to crawl content for errors.
-* A software update for Microsoft Search is required. Updates modify the search schema.
 * ACLs were modified.
 * Crawl rules were modified.
+* A software update for Microsoft Search is required. Updates modify the search schema.
 
-With an **incremental crawl**, the search engine can process and index only the items that were created or modified since the last successful crawl. Therefore, not all the data in the content source is re-indexed. Incremental crawls works best to detect content, metadata, permission, and other updates.
+With an **incremental crawl**, the search engine can process and index only the items that were created or modified since the last successful crawl. Therefore, not all the data in the content source is re-indexed. Incremental crawls work best to detect content, metadata, permission, and other updates.
 
 Incremental crawls are much faster than full crawls because unchanged items aren’t processed. To maintain an accurate data sync between the content source and the search index, you need to run both crawls periodically.
 
@@ -113,10 +113,10 @@ After you configure your connector, the [admin center](https://admin.microsoft.c
 
 With the Microsoft Search user interface (UI), your end users can search content from your [Microsoft 365](https://www.microsoft.com/microsoft-365) productivity apps and the broader Microsoft ecosystem. A search vertical refers to the tabs that are shown when a user views their search results in [SharePoint](https://sharepoint.com/), [Microsoft Office](https://Office.com), and Microsoft Search in [Bing](https://Bing.com). You can customize search verticals to narrow down results, so that only a certain type of search results is displayed. These verticals appear as a tab on the top of the search results page. A modern result type (MRT) is the UI that designates how results are presented.
 
-You must create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won’t show up on the search results page.
+Create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won’t show up on the search results page.
 
 To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).
 
-## How do I know this worked?
+## How do I know the connection setup worked?
 
 Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).

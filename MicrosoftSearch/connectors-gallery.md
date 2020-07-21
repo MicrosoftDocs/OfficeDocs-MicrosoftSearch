@@ -74,7 +74,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Azure SQL</h3>
                         <p>by <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
-                        <p>With this Microsoft Graph connector, users in your organization can search for data from your Azure SQL database.</p>
+                        <p>With this Microsoft Graph connector, users in your organization can search for data from your Azure SQL Database.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="MSSQL-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
@@ -451,7 +451,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Azure Data Lake</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Azure Data Lake connector will crawl content from the Azure Data Lake Store cloud at either root or specified paths. Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically.</p>
+                        <p>The Azure Data Lake connector will crawl content from the ADLS cloud at either root or specified paths. Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -620,7 +620,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Elasticsearch</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Elasticsearch connector will crawl content from an Elastic index using a user defined query. It can identify updates automatically or use a timestamp in the index.</p>
+                        <p>The Elasticsearch connector will crawl content from an Elastic index using a user-defined query. It can identify updates automatically or use a timestamp in the index.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Elasticsearch+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -1079,7 +1079,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>iManage Work</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>The iManage Work Connector provides full security and operates at high throughput to minimize crawl times while maintaining a low performance impact on Work. It only requires read access, and there is no need to install client software on any iManage server. This results in seamless and simultaneous access to all content stored in iManage Work.</p>
+                        <p>The iManage Work Connector provides full security and operates at high throughput to minimize crawl times while maintaining a low-performance impact on Work. It only requires read access, and there is no need to install client software on any iManage server. This results in seamless and simultaneous access to all content stored in iManage Work.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/imanage-work-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">More details</font></a>
                         </p>
@@ -1197,7 +1197,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>LDAP</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>The LDAP Connector enables organizations to connect to any LDAP compliant directory and index any record from it. Organizations can filter to specific subsets of the directory and retrieve only specific fields, making it simple to search for users, contacts, or groups stored anywhere in your directory.</p>
+                        <p>The LDAP Connector enables organizations to connect to any LDAP-compliant directory and index any record from it. Organizations can filter to specific subsets of the directory and retrieve only specific fields, making it simple to search for users, contacts, or groups stored anywhere in your directory.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/indexing-connectors/1/"><font color="0065BA">More details</font></a>
                         </p>
@@ -1963,7 +1963,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>SharePoint Online</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The SharePoint Online connector will crawl content from any SharePoint Online site collection URL. The connector will retrieve Sites, Lists, Folders, List Items, and Attachments as well as other pages (in .aspx format). This connector supports SharePoint running in the Microsoft O365 offering. Support for crawling the on-premise offerings of SharePoint are supported by SharePoint 2010/2007 Connector and SharePoint 2013 Connector.</p>
+                        <p>The SharePoint Online connector will crawl content from any SharePoint Online site collection URL. The connector will retrieve Sites, Lists, Folders, List Items, and Attachments as well as other pages (in .aspx format). This connector supports SharePoint running in the Microsoft O365 offering. Support for crawling the on-premise offerings of SharePoint is supported by SharePoint 2010/2007 Connector and SharePoint 2013 Connector.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+Online+Connector"><font color="0065BA">More details</font></a>
                         </p>
