@@ -71,7 +71,6 @@ Error code | Error message | Solution
 2001 | Indexing is throttled because of a large number of updates in the queue. Depending on the queue, it can take some time for the updates to complete. | Please wait until the queue gets cleared.
 2002 | Indexing failed due to unsupported item formatting. | See connector-specific documentation for more information.
 2003 | Indexing failed due to unsupported item content. | See connector-specific documentation for more information.
-2004 | The [file size](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements) is too large to be indexed. It must be 100 MB or less before processing and no larger than 4 MB after processing. The file gets indexed partially in this case. Few phrases present in the file might not return a search result. | See [file share specific documentation](https://docs.microsoft.com/MicrosoftSearch/file-share-connector#content-requirements) for more information.
 5000 | Something went wrong. If this continues, contact support. |
 
 ## Preview limitations
