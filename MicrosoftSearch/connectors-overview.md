@@ -59,9 +59,6 @@ Learn more about the [Azure SQL connector](MSSQL-connector.md).
 - **Enterprise websites**. With this Microsoft Graph connector, users in your organization can search over pages in any non-SharePoint enterprise website.
 Learn more about the [Enterprise websites connector](enterprise-web-connector.md).
 
-- **File share**. With this Microsoft Graph connector, users in your organization can search for files stored on on-premises Windows file shares.
-Learn more about the [File share connector](file-share-connector.md).
-
 - **[MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)**. With this Microsoft Graph connector, users can search for knowledge-base articles on wiki sites your organization creates with MediaWiki.
 Learn more about the [MediaWiki connector](mediawiki-connector.md).
 
