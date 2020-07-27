@@ -1,5 +1,5 @@
 ---
-title: "Create custom search results pages in SharePoint Online"
+title: "Create a custom search results page in SharePoint Online"
 ms.author: jeffkizn
 author: jeffkizn
 manager: jeffkizn
@@ -9,7 +9,7 @@ ms.service: mssearch
 localization_priority: Normal
 description: "Create your own search results page for a SharePoint Online site"
 ---
-# Create custom search results pages in SharePoint Online
+# Create a custom search results page in SharePoint Online
 
 One way to customize the search experience in SharePoint is to create a custom search results page for a site. This allows you to use a page that you created, rather than the default in Microsoft Search results page. This gives you more flexibility on how the search results experience looks for your users.
 
