@@ -28,7 +28,9 @@
 # Customize and configure
 ## [Manage verticals and result types](customize-search-page.md)
 ## [Search result layouts](customize-results-layout.md)
-## [Microsoft Search in SharePoint](get-started-search-in-sharepoint-online.md)
+## Microsoft Search in SharePoint
+### [Overview](get-started-search-in-sharepoint-online.md)
+### [Create custom search results pages in SharePoint Online](create-search-results-pages.md)
 ## Microsoft Search in Bing
 ### [Security and Privacy](security-for-search.md)
 ### [Add a search box to your intranet site](add-a-search-box-to-your-intranet-site.md)
