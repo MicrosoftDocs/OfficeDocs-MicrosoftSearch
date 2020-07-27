@@ -39,7 +39,7 @@ Once set, the custom search results page is displayed when you search using the 
 A page layout named **HeaderlessSearchResults** can be used to make the search results page appear closer to our out of box search results experience. This new layout can only be active for the pages that are set to be the custom search results page.
 
 To set the page layout, you can use the [Set-PnPClientSidePageSharePoint PnP PowerShell
-command](https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/set-pnpclientsidepage?view=sharepoint-ps) with -LayoutType HeaderlessSearchResults.
+command](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnpclientsidepage?view=sharepoint-ps) with -LayoutType HeaderlessSearchResults.
 
 ## Use SharePoint Framework Query extensions
 
