@@ -15,7 +15,7 @@ One way to customize the search experience in SharePoint is to create a custom s
 
 >[!NOTE]
 > To make changes to the default Microsoft Search results page that is
-available by default, please see [customize the Microsoft Search Page](customize-search-page.md)
+available by default, please see [Customize the search results page](customize-search-page.md).
 
 With a custom results page you can create a new page that can be used to control the layout and design of search results to support your organization's needs. You can use any built-in web parts, open-source search web parts from SharePoint Patterns and Practices community, as well as any custom web parts that you may have developed using SharePoint Framework.
 
@@ -25,10 +25,10 @@ To configure a custom results page in SharePoint Online follow the steps below:
 
 1. Browse to the site where you would like to configure a custom results page and go to **Site Settings > Site Collection Settings > Search Settings**.
 
-2. In Search Settings, uncheck the "Use the same results page settings as my parent" option, and choose to "Send queries to a custom results page", and provide a value for **Results page URL:** and save your changes. The URL you use here should be the page you created to use as your custom results page.
+2. In Search Settings, clear selection from **Use the same results page settings as my parent**, choose **Send queries to a custom results page**, and provide a value for **Results page URL:**. Then, save your changes. The URL you use here should be for the page that you created to use as your custom results page.
 
 >[!NOTE]
-> The custom results page needs to be on the same domain as your site but does not have to be in the same site collection.  
+> The custom results page needs to be on the same domain as your site, but it does not have to be in the same site collection.  
 
 Alternatively, you can use the [Set-PnPSearchSettings SharePoint PnP PowerShell command](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnpsearchsettings?view=sharepoint-ps) to set the value instead of using the Site Settings page.
 
