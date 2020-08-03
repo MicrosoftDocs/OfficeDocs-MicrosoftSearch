@@ -23,6 +23,25 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ## Install a data gateway (required for on-premises Microsoft SQL server connector only)
 In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install an on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) to learn more.  
 
+## Install a data gateway (required for on-premises Microsoft SQL server connector only)
+In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install an on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) to learn more.  
+
+## Register an app
+For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer Microsoft Graph documentation on how to [register an app](https://docs.microsoft.com/graph/auth-register-app-v2). 
+
+After completing the app registration and taking note of the app name, application (client) id and tenant id, you need to [generate a new client secret](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client secret will only be displayed once. Remember to note & store the client secret securely. Use the client id and client secret while configuring a new connection in Microsoft Search. 
+
+To add the registered app to your Azure SQL database, you need to:
+ - Login to your Azure SQL DB
+ - Open a new query window
+ - Create a new user by running the command ‘CREATE USER [app name] FROM EXTERNAL PROVIDER’
+ - Add user to role by running command 'exec sp_addrolemember 'db_datareader', [app name]'
+   Or 
+   'ALTER ROLE db_datareader ADD MEMBER [app name]'
+
+>[!NOTE]
+>To revoke access to any app registered in Azure Active Directory, refer the Azure documentation on [removing a registered app](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
+
 ## Connect to a data source
 To connect your Microsoft SQL server connector to a data source, you must configure the database server you want crawled and the on-premises gateway. You can then connect to the database with the required authentication method.
 
