@@ -76,15 +76,16 @@ Error code | Error message | Solution
 ## Monitor your index quota utilization 
 During the preview period, every organization has a fixed quota of up to 2 million items for indexing content from external systems across all connections.
 
-> [!IMPORTANT]
-> **NOTE**: Graph Connectors quota is available for free for the duration of the preview and will change at general availability.
+> [!NOTE]
+> Graph Connectors quota is available for free for the duration of the preview and will change at general availability.
 
 The available index quota and consumption will be displayed on the Connectors landing page.
 
 ![Index quota utilization bar.](media/quota_utilization.png)
 
 The quota utilization bar will indicate various states based on consumption of quota by your organization:
-State | Quota Consumption
+
+State | Quota consumption
 --- | ---
 Normal | 1-69%
 High | 70-89%
