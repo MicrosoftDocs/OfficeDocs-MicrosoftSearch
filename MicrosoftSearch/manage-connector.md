@@ -77,7 +77,7 @@ Error code | Error message | Solution
 During the preview period, every organization has a fixed quota of up to 2 million items for indexing content from external systems across all connections.
 
 > [!NOTE]
-> Graph Connectors quota is available for free for the duration of the preview and will change at general availability.
+> Graph Connectors quota is available for free for the duration of the preview. This will change at general availability. 
 
 The available index quota and consumption will be displayed on the Connectors landing page.
 
