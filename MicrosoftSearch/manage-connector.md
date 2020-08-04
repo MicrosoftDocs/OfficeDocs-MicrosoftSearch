@@ -53,7 +53,7 @@ For each **Active Connector** on the **Connectors** tab, any existing crawl erro
 
 To view an error's specific details, select its error code. A screen appears with error details and a link. The most recent errors appear at the top. See the example in the following table.
 
-![Connector list with a connector selected and details pane showing the list of errors for the connector. ](media/errormonitoring2.png)
+![Connector list with a connector selected and details pane showing the list of errors for the connector.](media/errormonitoring2.png)
 
 Below is the list of different errors that can appear against any connection. If these solutions don’t work, contact support or send us [feedback](connectors-feedback.md).
 
@@ -73,6 +73,34 @@ Error code | Error message | Solution
 2003 | Indexing failed due to unsupported item content. | See connector-specific documentation for more information.
 5000 | Something went wrong. If this continues, contact support. |
 
+## Monitor your index quota utilization 
+During the preview period, every organization has a fixed quota of up to 2 million items for indexing content from external systems across all connections.
+
+> [!IMPORTANT]
+> **NOTE**: Graph Connectors quota is available for free for the duration of the preview and will change at general availability.
+
+The available index quota and consumption will be displayed on the Connectors landing page.
+
+![Index quota utilization bar.](media/quota_utilization.png)
+
+The quota utilization bar will indicate various states based on consumption of quota by your organization:
+State | Quota Consumption
+--- | ---
+Normal | 1-69%
+High | 70-89%
+Critical | 90%-99%
+Full | 100%
+
+The number of items indexed will also be displayed with each connection. The number of items indexed by each connection contributes to the total quota available for your organization.
+
+When index quota is exceeded for your organization, all active connections will be impacted and those connections will stop ingesting content. To fix this, you can do any of the following:
+
+* Identify connections which have too much content being ingested and update them to index fewer items to make room for quota. To update the connection, you must delete and create a new connection with a new ingestion filter which brings in fewer items.
+
+* Permanently delete one or more connections
+
+* Contact Microsoft if you need to increase the index quota limit for your organization.
+
 ## Preview limitations
 
 * When you **publish** a Microsoft-built connector, it might take a few minutes for the connection to be created. During that time, the connection shows its status as pending. Also, there's no auto-refresh, so you need to refresh manually.
@@ -80,3 +108,5 @@ Error code | Error message | Solution
 * The [Microsoft 365 admin center](https://admin.microsoft.com) doesn't support viewing and editing the **search schema** after a connection is published. To edit the search schema, delete your connection and then create a new one.
 
 * When you manage your connection's **refresh schedule**, the number of items that sync during each session are displayed. However, the sync history isn't available.
+
+* When quota utilization for your organization hits critical or higher limits, you will **not** be notified via Message Center.  Periodically check the Connectors management page to ensure the configured connections have not exceeded the overall quota limits for your organization.
