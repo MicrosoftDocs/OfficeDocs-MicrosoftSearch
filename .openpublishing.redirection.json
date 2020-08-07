@@ -189,6 +189,11 @@
       "source_path": "MicrosoftSearch/use/index.md",
       "redirect_url": "about-microsoft-search",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/floorplans-bestpractices.md",
+      "redirect_url": "/MicrosoftSearch/manage-floorplans",
+      "redirect_document_id": true
     }
   ]
 }
