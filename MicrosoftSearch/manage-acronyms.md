@@ -21,7 +21,7 @@ Organizations don't always have a single reference for their standard terminolog
 
 ## What users experience
 
-Microsoft Search users can get definitions with Acronyms in [Bing](https://Bing.com) and [SharePoint](https://products.office.com/sharepoint/collaboration). In the **Search** box, users enter queries like these examples:
+Microsoft Search users can get definitions with Acronyms in [Bing](https://Bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration), and [Office 365](https://Office.com). In the **Search** box, users enter queries like these examples:
 
 - *What is* DNN
 - *Define* DNN
@@ -102,7 +102,7 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **Q: How do users trigger Acronyms answers?**
 
-**A**: To get Acronyms answers, users must enter specific query patterns in a [Bing](https://bing.com) or [SharePoint](https://products.office.com/sharepoint/collaboration) **Search** box. Currently, Acronym answers aren't available in [Office 365](https://Office.com).
+**A**: To get Acronyms answers, users must enter specific query patterns in a [Bing](https://bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration), or [Office 365](https://Office.com) **Search** box.
 
 **Q: How long does it take for mined acronyms to appear after you receive or send a new email or document?**
 
@@ -120,7 +120,3 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **A**: To turn off showing mined acronyms in search results, create a customer support ticket by following the instructions at [Contact support for business products](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support).
 After you create a support ticket, it takes up to 48 hours for mined acronyms to stop appearing in search results.
-
-**Q: When will I see Acronyms answers in [Office 365](https://Office.com)?**
-
-**A**: Acronyms answers in Office 365 are part of our product roadmap, but we're currently unable to provide a date or timeframe.
