@@ -18,10 +18,26 @@ description: "Set up the Microsoft SQL server or Azure SQL connector for Microso
 
 With a Microsoft SQL server or Azure SQL connector, your organization can discover and index data from an on-premises SQL Server database or a database hosted in your Azure SQL instance in the cloud. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques. 
 
 ## Install a data gateway (required for on-premises Microsoft SQL server connector only)
 In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install an on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) to learn more.  
+
+## Register an app
+For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer Microsoft Graph documentation on how to [register an app](https://docs.microsoft.com/graph/auth-register-app-v2). 
+
+After completing the app registration and taking note of the app name, application (client) id and tenant id, you need to [generate a new client secret](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client secret will only be displayed once. Remember to note & store the client secret securely. Use the client id and client secret while configuring a new connection in Microsoft Search. 
+
+To add the registered app to your Azure SQL database, you need to:
+ - Login to your Azure SQL DB
+ - Open a new query window
+ - Create a new user by running the command ‘CREATE USER [app name] FROM EXTERNAL PROVIDER’
+ - Add user to role by running command 'exec sp_addrolemember 'db_datareader', [app name]'
+   Or 
+   'ALTER ROLE db_datareader ADD MEMBER [app name]'
+
+>[!NOTE]
+>To revoke access to any app registered in Azure Active Directory, refer the Azure documentation on [removing a registered app](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
 
 ## Connect to a data source
 To connect your Microsoft SQL server connector to a data source, you must configure the database server you want crawled and the on-premises gateway. You can then connect to the database with the required authentication method.
@@ -55,7 +71,7 @@ The use of each of the ACL columns in the above query is described below. The fo
 * **DeniedUsers**: This specifies the list of users who do **not** have access to the search results. In the following example, users john@contoso.com and keith@contoso.com do not have access to record with OrderId = 13, whereas everyone else has access to this record. 
 * **DeniedGroups**: This specifies the group of users who do **not** have access to the search results. In the following example, groups engg-team@contoso.com and pm-team@contoso.com do not have access to record with OrderId = 15, whereas everyone else has access to this record.  
 
-![](media/MSSQL-ACL1.png)
+![Sample data showing the OrderTable and AclTable with example properties](media/MSSQL-ACL1.png)
 
 ### Watermark (Required)
 To prevent overloading the database, the connector batches and resumes full-crawl queries with a full-crawl watermark column. By using the value of the watermark column, each subsequent batch is fetched, and querying is resumed from the last checkpoint. Essentially this is a mechanism to control data refresh for full crawls.
@@ -66,7 +82,7 @@ Create query snippets for watermarks as shown in these examples:
 
 In the configuration shown in the following image, `CreatedDateTime` is the selected watermark column. To fetch the first batch of rows, specify the data type of the watermark column. In this case, the data type is `DateTime`.
 
-![](media/MSSQL-watermark.png)
+![Watermark column configuration](media/MSSQL-watermark.png)
 
 The first query fetches the first **N** amount of rows by using: "CreatedDateTime > January 1, 1753 00:00:00" (min value of DateTime data type). After the first batch is fetched, the highest value of `CreatedDateTime` returned in the batch is saved as the checkpoint if the rows are sorted in ascending order. An example is March 1, 2019 03:00:00. Then the next batch of **N** rows is fetched by using "CreatedDateTime > March 1, 2019 03:00:00" in the query.
 
@@ -85,7 +101,7 @@ The following ID types are supported for using as ACLs:
 * **Azure Active Directory (AAD) ID**: In AAD, every user or group has an object ID which looks something like ‘e0d3ad3d-0000-1111-2222-3c5f5c52ab9b’ 
 * **Active Directory (AD) Security ID**: In an on-premises AD setup, every user and group has an immutable, unique security identifier which looks something like ‘S-1-5-21-3878594291-2115959936-132693609-65242.’
 
-![](media/MSSQL-ACL2.png)
+![Search permission settings to configure access control lists](media/MSSQL-ACL2.png)
 
 ## Incremental crawl (Optional)
 In this optional step, provide a SQL query to run an incremental crawl of the database. With this query, the SQL connector determines any changes to the data since the last incremental crawl. As in the full crawl, select all columns that you want to be made **queryable**, **searchable**, or **retrievable**. Specify the same set of ACL columns that you specified in the full crawl query.
