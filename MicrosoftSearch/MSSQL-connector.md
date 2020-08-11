@@ -26,10 +26,10 @@ In order to access your third-party data, you must install and configure a Micro
 ## Register an app
 For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer Microsoft Graph documentation on how to [register an app](https://docs.microsoft.com/graph/auth-register-app-v2). 
 
-After completing the app registration and taking note of the app name, application (client) id and tenant id, you need to [generate a new client secret](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client secret will only be displayed once. Remember to note & store the client secret securely. Use the client id and client secret while configuring a new connection in Microsoft Search. 
+After completing the app registration and taking note of the app name, application (client) ID and tenant ID, you need to [generate a new client secret](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client secret will only be displayed once. Remember to note & store the client secret securely. Use the client ID and client secret while configuring a new connection in Microsoft Search. 
 
-To add the registered app to your Azure SQL database, you need to:
- - Login to your Azure SQL DB
+To add the registered app to your Azure SQL Database, you need to:
+ - Log in to your Azure SQL DB
  - Open a new query window
  - Create a new user by running the command ‘CREATE USER [app name] FROM EXTERNAL PROVIDER’
  - Add user to role by running command 'exec sp_addrolemember 'db_datareader', [app name]'
@@ -66,7 +66,7 @@ Select data columns as shown in this example query:
 To manage access to the search results, you can specify one or more ACL columns in the query. The SQL connector allows you to control access at per record level. You can choose to have the same access control for all records in a table. If the ACL information is stored in a separate table, you might have to do a join with those tables in your query.
 
 The use of each of the ACL columns in the above query is described below. The following list explains the 4 **access control mechanisms**. 
-* **AllowedUsers**: This specifies the list of user IDs who will be able to access the search results. In the following example, list of users: john@contoso.com , keith@contoso.com, and lisa@contoso.com would only have access to a record with OrderId = 12. 
+* **AllowedUsers**: This specifies the list of user IDs who will be able to access the search results. In the following example, list of users: john@contoso.com, keith@contoso.com, and lisa@contoso.com would only have access to a record with OrderId = 12. 
 * **AllowedGroups**: This specifies the group of users who will be able to access the search results. In the following example, group sales-team@contoso.com would only have access to record with OrderId = 12.
 * **DeniedUsers**: This specifies the list of users who do **not** have access to the search results. In the following example, users john@contoso.com and keith@contoso.com do not have access to record with OrderId = 13, whereas everyone else has access to this record. 
 * **DeniedGroups**: This specifies the group of users who do **not** have access to the search results. In the following example, groups engg-team@contoso.com and pm-team@contoso.com do not have access to record with OrderId = 15, whereas everyone else has access to this record.  
@@ -84,7 +84,7 @@ In the configuration shown in the following image, `CreatedDateTime` is the sele
 
 ![Watermark column configuration](media/MSSQL-watermark.png)
 
-The first query fetches the first **N** amount of rows by using: "CreatedDateTime > January 1, 1753 00:00:00" (min value of DateTime data type). After the first batch is fetched, the highest value of `CreatedDateTime` returned in the batch is saved as the checkpoint if the rows are sorted in ascending order. An example is March 1, 2019 03:00:00. Then the next batch of **N** rows is fetched by using "CreatedDateTime > March 1, 2019 03:00:00" in the query.
+The first query fetches the first **N** number of rows by using: "CreatedDateTime > January 1, 1753 00:00:00" (min value of DateTime data type). After the first batch is fetched, the highest value of `CreatedDateTime` returned in the batch is saved as the checkpoint if the rows are sorted in ascending order. An example is March 1, 2019 03:00:00. Then the next batch of **N** rows is fetched by using "CreatedDateTime > March 1, 2019 03:00:00" in the query.
 
 ### Skipping soft-deleted rows (Optional)
 To exclude soft-deleted rows in your database from being indexed, specify the soft-delete column name and value that indicates the row is deleted.
@@ -98,8 +98,8 @@ Each of the ACL columns is expected to be a multi-valued column. These multiple 
  
 The following ID types are supported for using as ACLs: 
 * **User Principal Name (UPN)**: A User Principal Name (UPN) is the name of a system user in an email address format. A UPN (for example: john.doe@domain.com) consists of the username (logon name), separator (the @ symbol), and domain name (UPN suffix). 
-* **Azure Active Directory (AAD) ID**: In AAD, every user or group has an object ID which looks something like ‘e0d3ad3d-0000-1111-2222-3c5f5c52ab9b’ 
-* **Active Directory (AD) Security ID**: In an on-premises AD setup, every user and group has an immutable, unique security identifier which looks something like ‘S-1-5-21-3878594291-2115959936-132693609-65242.’
+* **Azure Active Directory (AAD) ID**: In Azure AD, every user or group has an object ID which looks something like ‘e0d3ad3d-0000-1111-2222-3c5f5c52ab9b’ 
+* **Active Directory (AD) Security ID**: In an on-premises AD setup, every user and group have an immutable, unique security identifier which looks something like ‘S-1-5-21-3878594291-2115959936-132693609-65242.’
 
 ![Search permission settings to configure access control lists](media/MSSQL-ACL2.png)
 
