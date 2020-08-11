@@ -14,7 +14,7 @@ search.appverid:
 description: "Set up the Microsoft SQL server or Azure SQL connector for Microsoft Search."
 ---
 
-# Azure SQL and Microsoft SQL server connectors
+
 
 With a Microsoft SQL server or Azure SQL connector, your organization can discover and index data from an on-premises SQL Server database or a database hosted in your Azure SQL instance in the cloud. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
