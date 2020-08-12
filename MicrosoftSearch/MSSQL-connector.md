@@ -74,20 +74,19 @@ The use of each of the ACL columns in the above query is described below. The fo
 ![Sample data showing the OrderTable and AclTable with example properties](media/MSSQL-ACL1.png)
 
 ### Supported data types
-The below table summarizes the SQL data types that are supported in the MS SQL and Azure SQL connectors. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer documentaton on [property resource types](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties). 
+The below table summarizes the SQL data types that are supported in the MS SQL and Azure SQL connectors. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer documentation on [property resource types](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties). 
 
 | Category | Source data type | Indexing data type |
 | ------------ | ------------ | ------------ |
-| Date and time | Date <br> Datetime <br> Datetime2 <br> Smalldatetime | DateTime |
-| Exact numeric | Bigint <br> Int <br> Smallint <br> Tinyint | Int64 |
-| Exact numeric | Bit | Boolean |
-| Approximate numeric | Float <br> Real | Double |
-| Character string | Char <br> VarChar <br> Text | String |
-| Unicode character strings | NChar <br> NVarChar <br> NText | String |
-| Other data types | UniqueIdentifier | String |
+| Date and time | date <br> datetime <br> datetime2 <br> smalldatetime | datetime |
+| Exact numeric | bigint <br> int <br> smallint <br> tinyint | int64 |
+| Exact numeric | bit | boolean |
+| Approximate numeric | float <br> real | double |
+| Character string | char <br> varchar <br> text | string |
+| Unicode character strings | nchar <br> nvarchar <br> ntext | string |
+| Other data types | uniqueidentifier | string |
 
-
-For any other data type currently not directly supported, the column needs to be explicitly casted to a supported data type.
+For any other data type currently not directly supported, the column needs to be explicitly cast to a supported data type.
 
 ### Watermark (Required)
 To prevent overloading the database, the connector batches and resumes full-crawl queries with a full-crawl watermark column. By using the value of the watermark column, each subsequent batch is fetched, and querying is resumed from the last checkpoint. Essentially this is a mechanism to control data refresh for full crawls.
