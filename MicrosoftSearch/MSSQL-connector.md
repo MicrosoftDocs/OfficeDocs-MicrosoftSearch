@@ -18,7 +18,7 @@ description: "Set up the Microsoft SQL server or Azure SQL connector for Microso
 
 With a Microsoft SQL server or Azure SQL connector, your organization can discover and index data from an on-premises SQL Server database or a database hosted in your Azure SQL instance in the cloud. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques. 
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server or Azure SQL connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques. 
 
 ## Install a data gateway (required for on-premises Microsoft SQL server connector only)
 In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install an on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) to learn more.  
@@ -72,6 +72,22 @@ The use of each of the ACL columns in the above query is described below. The fo
 * **DeniedGroups**: This specifies the group of users who do **not** have access to the search results. In the following example, groups engg-team@contoso.com and pm-team@contoso.com do not have access to record with OrderId = 15, whereas everyone else has access to this record.  
 
 ![Sample data showing the OrderTable and AclTable with example properties](media/MSSQL-ACL1.png)
+
+### Supported data types
+The below table summarizes the SQL data types that are supported in the MS SQL and Azure SQL connectors. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer documentaton on [property resource types](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties). 
+
+| Category | Source data type | Indexing data type |
+| ------------ | ------------ | ------------ |
+| Date and time | Date <br> Datetime <br> Datetime2 <br> Smalldatetime | DateTime |
+| Exact numeric | Bigint <br> Int <br> Smallint <br> Tinyint | Int64 |
+| Exact numeric | Bit | Boolean |
+| Approximate numeric | Float <br> Real | Double |
+| Character string | Char <br> VarChar <br> Text | String |
+| Unicode character strings | NChar <br> NVarChar <br> NText | String |
+| Other data types | UniqueIdentifier | String |
+
+
+For any other data type currently not directly supported, the column needs to be explicitly casted to a supported data type.
 
 ### Watermark (Required)
 To prevent overloading the database, the connector batches and resumes full-crawl queries with a full-crawl watermark column. By using the value of the watermark column, each subsequent batch is fetched, and querying is resumed from the last checkpoint. Essentially this is a mechanism to control data refresh for full crawls.
