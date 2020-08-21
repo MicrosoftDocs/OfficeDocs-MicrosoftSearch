@@ -15,7 +15,10 @@ description: "Renaming Microsoft Search in the admin navigation to Search & Inte
 ---
 # Search & Intelligence
 
-Microsoft Search administration is currently found in the  [Microsoft 365 admin center](https://admin.microsoft.com) under **Settings** > **[Microsoft Search](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).** We are renaming the navigation to Search & Intelligence. This change will start to rollout to customers on October 1, 2020 and reach all customers in a matter of weeks.
+Microsoft Search administration is currently found in the  [Microsoft 365 admin center](https://admin.microsoft.com) under **Settings** > **[Microsoft Search](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).** We are renaming the navigation to **Search & Intelligence.**
+
+> [!Important]
+> This change will start to rollout to customers on October 1, 2020 and reach all customers in a matter of weeks.
 
 ## Why we are making this change
 
