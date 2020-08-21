@@ -11,6 +11,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
+ROBOTS: NoIndex
 description: "Renaming Microsoft Search in the admin navigation to Search & Intelligence"
 ---
 # Search & Intelligence
