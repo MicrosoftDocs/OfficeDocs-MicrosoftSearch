@@ -31,4 +31,4 @@ The future starts with this rename to Search & Intelligence which will be follow
 
 ## No change in the brand
 
-Microsoft Search is here to stay and is the product that brings you enterprise search. The name change in the navigation just enables the future.
+The change in navigation does not represent a change to the Microsoft Search product and/or brand and is designed to provide a location for future consolidation of related products and technologies.
