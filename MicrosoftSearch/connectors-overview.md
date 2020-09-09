@@ -1,8 +1,8 @@
 ---
 title: "Connectors Overview"
-ms.author: mounika.narayanan
-author: monaray
-manager: shohara
+ms.author: monaray
+author: monaray97
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

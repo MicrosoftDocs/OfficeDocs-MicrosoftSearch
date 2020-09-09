@@ -1,8 +1,8 @@
 ---
 title: "File share connector for Microsoft Search"
-ms.author: v-pamcn
-author: TrishaMc1
-manager: mnirkhe
+ms.author: monaray
+author: monaray97
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
