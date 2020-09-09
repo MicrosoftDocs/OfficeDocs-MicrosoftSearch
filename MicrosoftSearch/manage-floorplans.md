@@ -45,7 +45,7 @@ See the [FAQ](#frequently-asked-questions) section for information on viewing an
 
 A user's office location is a combination of a building code and a room label. For example, if the building code is *2* and the room label is *1173*, the office location would be *2/1173*.
 
-Add or update office locations for each user in your organization. You can change office location on the user profile in the Microsoft 365 [admin center](https://admin.microsoft.com) or you can change in your on-premises Active Directory to sync into Azure Active Directory. *PhysicalDeliveryOfficeName* is the field that is used for office location. If your room labels do not include floor numbers, see the FAQ for tips.
+Add or update office locations for each user in your organization. You can change office location on the user profile in the [Microsoft 365 admin center](https://admin.microsoft.com) or you can change in your on-premises Active Directory to sync into Azure Active Directory. *PhysicalDeliveryOfficeName* is the field that is used for office location. If your room labels do not include floor numbers, see the FAQ for tips.
 
 In this example, Allan's office is in room 1173 on floor 1 of building 2.
 ![floorplans-userlestview.png](media/floorplans-userlistview.png)
@@ -61,7 +61,7 @@ Use **Microsoft Search** to find a user and verify that their office location is
 
 ### Step 5: Add building locations
 
-Floor plans uses [Locations](manage-locations.md) to define your buildings. In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Answers** > [**Locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations), and then select **Add**. Enter the name, address, and keywords for the building. Add as many buildings as you need.
+Floor plans uses [Locations](manage-locations.md) to define your buildings. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations), and then select **Add**. Enter the name, address, and keywords for the building. Add as many buildings as you need.
 
 ![floorplans-locations.png](media/floorplans-locations.png)
 
@@ -71,13 +71,13 @@ For more details about locations, see [Manage Locations](manage-locations.md)
 
 Before you can use floor plans, office locations must be indexed. This is a one-time operation that can take up to 48 hours to complete. The total time will depend on the size of your organization.
 
-In [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Answers** > [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), and then select **Get started**. If you don't see this notice, this step has already been completed for your organization
+In [admin center](https://admin.microsoft.com), go to [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), and then select **Get started**. If you don't see this notice, this step has already been completed for your organization
 
 ![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
 
 ### Step 7: Upload floor plans
 
-1. In the [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Answers** > [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans).
+1. In the [admin center](https://admin.microsoft.com), go to [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans).
 2. Select a building in the drop-down list and select **Next**. If the building isn't listed, go back and [add building locations](#step-5-add-building-locations).
 3. Select **Upload files**, and then choose the floor plan you are uploading.
 4. When the upload is complete, you must enter floor number that is represented in the floor plan file. Then select **Next**.

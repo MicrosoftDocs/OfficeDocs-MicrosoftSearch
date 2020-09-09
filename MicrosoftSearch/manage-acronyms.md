@@ -38,7 +38,7 @@ The result includes all the meanings of DNN that are present within the user’s
 
 ## Set up Acronyms answers
 
-In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Answers** > [**Acronyms**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms), and then select **Add acronyms**.
+In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Acronyms**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms), and then select **Add acronym**.
 
 Microsoft Search queries two data sources to provide Acronyms answers to users’ searches:
 
