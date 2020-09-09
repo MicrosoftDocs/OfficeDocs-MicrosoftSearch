@@ -24,7 +24,7 @@ This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) adm
 To connect to your data source, you need your root URL and a form of authentication: None, Basic Authentication, or OAuth 2.0 with [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/).
 
 ### Authentication 
-Basic Authentication requires a username and password. Create this bot account by using the Microsoft 365 [admin center](https://admin.microsoft.com).
+Basic Authentication requires a username and password. Create this bot account by using the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 OAuth 2.0 with [Azure AD](https://docs.microsoft.com/azure/active-directory/) requires a resource ID, Client ID, and Client Secret.
 
