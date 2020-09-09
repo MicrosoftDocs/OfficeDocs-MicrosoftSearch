@@ -1,8 +1,8 @@
 ---
 title: "ServiceNow connector for Microsoft Search"
-ms.author: v-pamcn
-author: TrishaMc1
-manager: mnirkhe
+ms.author: monaray
+author: monaray97
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -21,12 +21,14 @@ With the ServiceNow connector, your organization can index knowledge-base articl
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
 ## Connect to a data source
+
 To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**, credentials for this account, and the Client ID and Client Secret for OAuth authentication.  
 
 Your organization’s **ServiceNow instance URL** typically looks like **https://&lt;your-organization-domain>.service-now.com**. Along with this URL, you will need an account for setting up the connection to ServiceNow as well as for allowing Microsoft Search to periodically update the articles from ServiceNow based on the refresh schedule.
 
-To authenticate and sync content from ServiceNow, choose one of two supported methods: 
-1. Basic authentication 
+To authenticate and sync content from ServiceNow, choose one of two supported methods:
+
+1. Basic authentication
 2. OAuth (recommended)
 
 > [!Note]
@@ -45,16 +47,20 @@ Active | Select the check box to make the application registry active. | Set to 
 Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8640000 seconds). | 31,536,000 (1 year)
 Access token lifespan | The number of seconds that an access token is valid. | 43,200 (12 hours)
 
-## Set a sync filter 
+## Set a sync filter
+
 With a sync filter, you can specify conditions for syncing articles. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only articles that are published and active. The SyncNow configuration page describes how to capture and set a sync filter.
 
 ## Manage the search schema
+
 After successful connection, configure the search schema mapping. You can choose which properties to make **queryable**, **searchable**, and **retrievable**.
 
 ## Manage search permissions
+
 The ServiceNow connector only supports search permissions visible to **Everyone**. Indexed data appears in the search results and is visible to all users in the organization.
- 
-## Set the refresh schedule 
+
+## Set the refresh schedule
+
 The ServiceNow connector supports refresh schedules for both full and incremental crawls. We recommend that you set both.
 
 A full crawl schedule finds deleted articles that were previously synced to the Microsoft Search index and any articles that moved out of the sync filter. When you first connect to ServiceNow, a full crawl runs to sync all the knowledge-base articles. To sync new items and make updates, you need to schedule incremental crawls.

@@ -25,7 +25,7 @@ Here's a list of the most common questions.
 
 Yes, Microsoft Search parses query intent from larger phrases. This feature uses AI to learn common superfluous phrases users add to their queries that don't impact their search intent. For example, when a user searches for *tell me more about how to change my password please*, we extract the less important words from the query and trigger based on the relevant ones like *change password*.
   
-This feature won't override keywords set in the Microsoft 365 [admin center](https://admin.microsoft.com).
+This feature won't override keywords set in the [Microsoft 365 admin center](https://admin.microsoft.com).
   
 ## Can you search for files on-premises?
 

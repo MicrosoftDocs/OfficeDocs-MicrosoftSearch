@@ -1,8 +1,8 @@
 ---
 title: "MediaWiki connector for Microsoft Search"
-ms.author: v-pamcn
-author: monaray
-manager: mnirkhe
+ms.author: monaray
+author: monaray97
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -21,19 +21,25 @@ With the MediaWiki connector, your organization can discover and index data from
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a MediaWiki connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
 ## Connect to a data source
+
 Enter your MediaWiki URL and credentials for authenticating the connection. You'll need the following information: **Tenant ID**, **Resource ID**, **Client ID**, and the **Client Secret**.
 
 ## Manage the search schema
+
 After successful connection, configure the search schema mapping. You can choose which properties to make **queryable**, **searchable**, and **retrievable**.
 
 ## Manage search permissions
+
 The MediaWiki connector only supports search permissions visible to **Everyone**. Indexed data appears in the search results and is visible to all users in the organization.
 
-## Set the refresh schedule 
+## Set the refresh schedule
+
 This schedule refreshes indexed data, so changes to the wiki are reflected in Microsoft Search. All new pages, deleted pages, page content, or metadata changes appear in search results after the specified refresh interval. The crawl time is dependent on the size of the wiki. Currently the connector crawls at around 50 pages per minute.
 
-## Limitations 
+## Limitations
+
 The MediaWiki connector has these limitations in the preview release:
+
 * Supports only cloud-based wikis.
 * Supports only Basic or OAuth 2.0 with Azure Active Directory or Azure authentication.
 * Doesn't support namespace selection for indexing. Indexes only **Main**, **Category**, and **File** namespaces.

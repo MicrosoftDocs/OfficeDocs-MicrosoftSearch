@@ -1,7 +1,7 @@
 ---
 title: "Customize the Microsoft Search page"
-ms.author: jypal6
-author: jypal
+ms.author: jypal
+author: jypal6
 manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
@@ -53,7 +53,7 @@ You can use a limited set of [Keyword Query Language (KQL)](https://docs.microso
 
 To create the vertical on Microsoft Search in [SharePoint](https://sharepoint.com/) home, [Office](https://office.com), or [Bing](https://bing.com), follow these steps:
 
-1. In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Customization** > [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 1. Select **Add** to get started.  
 
 ### Create a vertical at the site level
@@ -82,7 +82,7 @@ After you start the wizard, you're guided through the steps to define the name, 
   
 ### Create a result type at the organization level
 
-1. In the [admin center](https://admin.microsoft.com), go to **Setting** > **Microsoft Search** > **Customizations** > [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
 1. To add a **Result type**, select **Add**. To edit a result type, select the result type in the relevant list.
 
 ### Create a results type at the site level
@@ -91,7 +91,7 @@ After you start the wizard, you're guided through the steps to define the name, 
 1. Select **Site information** and then **View all site settings**.
 1. Look for the Microsoft Search section, and then select **Configure Microsoft Search for this site collection**.
 1. In the navigation pane, go to **Custom experience**, and select **Result type** tab.
-2. To add a result type, select **Add**.  Or, to edit a result type, select the result type in the list.
+1. To add a result type, select **Add**.  Or, to edit a result type, select the result type in the list.
 
 ### View the vertical after it's enabled
 

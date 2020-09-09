@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Search"
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: landing-page
 layout: LandingPage
@@ -15,6 +15,7 @@ search.appverid:
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: "Microsoft Search is an enterprise search experience that increases productivity and saves time by delivering more relevant search results for your organization"
 ---
+<!-- markdownlint-disable no-inline-html -->
 # Microsoft Search
 
 <ul class="panelContent cardsW cols cols2">

@@ -1,7 +1,7 @@
 ---
 title: "Manage Microsoft Graph Connectors for Microsoft Search"
-ms.author: mounika.narayanan
-author: monaray
+ms.author: monaray
+author: monaray97
 manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
@@ -13,7 +13,7 @@ search.appverid:
 - MOE150
 description: "Manage Microsoft Graph Connectors for Microsoft Search."
 ---
-
+<!-- markdownlint-disable no-inline-html -->
 # Manage your connector for Microsoft Search
 
 To access and manage your connectors, you must be designated as a search administrator for your tenant. Contact your tenant administrator to provision you for the search administrator role.
@@ -73,11 +73,12 @@ Error code | Error message | Solution
 2003 | Indexing failed due to unsupported item content. | See connector-specific documentation for more information.
 5000 | Something went wrong. If this continues, contact support. |
 
-## Monitor your index quota utilization 
+## Monitor your index quota utilization
+
 During the preview period, every organization has a fixed quota of up to 2 million items for indexing content from external systems across all connections.
 
 > [!NOTE]
-> Graph Connectors quota is available for free for the duration of the preview. This will change at general availability. 
+> Graph Connectors quota is available for free for the duration of the preview. This will change at general availability.
 
 The available index quota and consumption will be displayed on the Connectors landing page.
 
