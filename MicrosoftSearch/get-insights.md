@@ -19,7 +19,7 @@ description: "Analyze metrics and manage content from the Insights dashboard in 
 
 You can use the Microsoft Search Insights dashboard to manage [Bing](https://Bing.com) data for your published answers. This is just one of the steps needed to [make content easy to find](make-content-easy-to-find.md) for your users.
 
-When you first go to Microsoft Search in the Microsoft 365 [admin center](https://admin.microsoft.com), you enter on the Insights dashboard.
+When you first go to Microsoft Search in the [Microsoft 365 admin center](https://admin.microsoft.com), you enter on the Insights dashboard.
 
 ![Insights-dashboard.png](media/Insights-dashboard.png)
 
