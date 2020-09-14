@@ -1,6 +1,6 @@
 ---
 title: "Customize the Microsoft Search page"
-ms.author: jypal6
+ms.author: jeffkizn
 author: jypal
 manager: jeffkizn
 ms.audience: Admin
