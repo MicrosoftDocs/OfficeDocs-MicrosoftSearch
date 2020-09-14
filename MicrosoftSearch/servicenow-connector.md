@@ -1,6 +1,6 @@
 ---
 title: "ServiceNow connector for Microsoft Search"
-ms.author: v-pamcn
+ms.author: mnirkhe
 author: TrishaMc1
 manager: mnirkhe
 ms.audience: Admin
