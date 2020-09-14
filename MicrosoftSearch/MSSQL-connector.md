@@ -1,7 +1,7 @@
 ---
 title: "Microsoft SQL server and Azure SQL connector for Microsoft Search"
-ms.author: mounika.narayanan
-author: monaray
+ms.author: monaray
+author: monaray97
 manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
