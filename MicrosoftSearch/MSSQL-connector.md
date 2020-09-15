@@ -18,26 +18,24 @@ description: "Set up the Microsoft SQL server or Azure SQL connector for Microso
 
 With a Microsoft SQL server or Azure SQL connector, your organization can discover and index data from an on-premises SQL Server database or a database hosted in your Azure SQL instance in the cloud. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server or Azure SQL connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques. 
 
 ## Install a data gateway (required for on-premises Microsoft SQL server connector only)
 
 In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install an on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) to learn more.  
 
 ## Register an app
+For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer Microsoft Graph documentation on how to [register an app](https://docs.microsoft.com/graph/auth-register-app-v2). 
 
-For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer Microsoft Graph documentation on how to [register an app](https://docs.microsoft.com/graph/auth-register-app-v2).
+After completing the app registration and taking note of the app name, application (client) id and tenant id, you need to [generate a new client secret](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client secret will only be displayed once. Remember to note & store the client secret securely. Use the client id and client secret while configuring a new connection in Microsoft Search. 
 
-After completing the app registration and taking note of the app name, application (client) ID and tenant ID, you need to [generate a new client secret](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client secret will only be displayed once. Remember to note & store the client secret securely. Use the client ID and client secret while configuring a new connection in Microsoft Search.
-
-To add the registered app to your Azure SQL Database, you need to:
-
-- Log in to your Azure SQL DB
-- Open a new query window
-- Create a new user by running the command ‘CREATE USER [app name] FROM EXTERNAL PROVIDER’
-- Add user to role by running command 'exec sp_addrolemember 'db_datareader', [app name]'
- Or
-'ALTER ROLE db_datareader ADD MEMBER [app name]'
+To add the registered app to your Azure SQL database, you need to:
+ - Login to your Azure SQL DB
+ - Open a new query window
+ - Create a new user by running the command ‘CREATE USER [app name] FROM EXTERNAL PROVIDER’
+ - Add user to role by running command 'exec sp_addrolemember 'db_datareader', [app name]'
+   Or 
+   'ALTER ROLE db_datareader ADD MEMBER [app name]'
 
 >[!NOTE]
 >To revoke access to any app registered in Azure Active Directory, refer the Azure documentation on [removing a registered app](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
@@ -79,22 +77,6 @@ The use of each of the ACL columns in the above query is described below. The fo
 * **DeniedGroups**: This specifies the group of users who do **not** have access to the search results. In the following example, groups engg-team@contoso.com and pm-team@contoso.com do not have access to record with OrderId = 15, whereas everyone else has access to this record.  
 
 ![Sample data showing the OrderTable and AclTable with example properties](media/MSSQL-ACL1.png)
-
-### Supported data types
-
-The below table summarizes the SQL data types that are supported in the MS SQL and Azure SQL connectors. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer documentation on [property resource types](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties).
-<!-- markdownlint-disable no-inline-html -->
-| Category | Source data type | Indexing data type |
-| ------------ | ------------ | ------------ |
-| Date and time | date <br> datetime <br> datetime2 <br> smalldatetime | datetime |
-| Exact numeric | bigint <br> int <br> smallint <br> tinyint | int64 |
-| Exact numeric | bit | boolean |
-| Approximate numeric | float <br> real | double |
-| Character string | char <br> varchar <br> text | string |
-| Unicode character strings | nchar <br> nvarchar <br> ntext | string |
-| Other data types | uniqueidentifier | string |
-
-For any other data type currently not directly supported, the column needs to be explicitly cast to a supported data type.
 
 ### Watermark (Required)
 

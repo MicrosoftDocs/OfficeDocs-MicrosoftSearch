@@ -1,8 +1,8 @@
 ---
 title: "Enterprise Websites connector for Microsoft Search"
 ms.author: monaray
-author: monaray97    
-manager: jameslau
+author: monaray97
+manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

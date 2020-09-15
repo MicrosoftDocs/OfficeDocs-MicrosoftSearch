@@ -2,7 +2,7 @@
 title: "Connectors Overview"
 ms.author: monaray
 author: monaray97
-manager: jameslau
+manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
