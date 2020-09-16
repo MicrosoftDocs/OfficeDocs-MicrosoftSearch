@@ -100,7 +100,6 @@ Power Apps is a service that lets you build business apps that run in a browser 
 1. Find the [App ID for the Power App](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) that you want to add.
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Bookmarks**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks).
 1. Add a bookmark or find an existing bookmark that you want to add a **PowerApp** to.
-1. In **Bookmark settings**, select **Power App**, and then **Add a Power App**.
-1. Enter or paste the **App ID**.
-    The height and width are automatically adjusted. Bookmarks can support both portrait and landscape orientations, but currently the size can't be changed. The bookmark preview shows a fully functional PowerApp to make it easy to test.
+1. In **Bookmark settings**, enter or paste the **App ID**.
+    The height and width are automatically adjusted based on the orientation that was selected when the PowerApp was created. Bookmarks support both portrait and landscape orientations. The bookmark preview shows a fully functional PowerApp to make it easy to test.
 1. Select **Publish** or **Save to Draft**.
