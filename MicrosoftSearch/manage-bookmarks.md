@@ -91,7 +91,7 @@ Help your users complete tasks, such as entering vacation time or reporting expe
 
 Power Apps is a service that lets you build business apps that run in a browser or on a phone or tablet with no coding experience required. Power Apps work in any browser and on any device and take less than a minute to add. For more on Power Apps, see:
 
-- [Guided Learning](https://docs.microsoft.com/en-us/learn/browse/?terms=power%20apps)
+- [Guided Learning](https://docs.microsoft.com/learn/browse/?terms=power%20apps)
 - [Documentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [Power Apps Home](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
