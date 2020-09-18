@@ -16,7 +16,7 @@ description: "Create and update bookmarks and ways to bulk edit bookmark results
 ---
 # Manage bookmarks
 
-You can create a bookmark in just a few steps. Each bookmark includes a title, a URL, and a set of keywords that trigger it. You can also add categories to a bookmark that can be used for sorting and filtering in the admin portal. A bookmark can have several keywords and several bookmarks can share the same keyword, but reserved keyword can't be shared. When a bookmark is created or modified, the search index is refreshed immediately, and the bookmark is available to users immediately.
+You can create a bookmark in just a few steps. Each bookmark includes a title, a URL, and a set of keywords that trigger it. You can also add categories to a bookmark that can be used for sorting and filtering in the admin portal. A bookmark can have several keywords and bookmarks can share the same keyword, but reserved keyword can't be shared. When a bookmark is created or modified, the search index is refreshed immediately, and the bookmark is available to users immediately.
 
 If your organization set up Promoted Results in SharePoint, you can import the Promoted Results into **Microsoft Search** and make the imported content available to your users. This is an easy way to quickly populate search results as soon as you set up **Microsoft Search** and make it more effective for your users. We recommend using promoted results from SharePoint as a reference to understand how to name and create relevant search results.
 
@@ -39,7 +39,7 @@ Currently, browser extensions are available for Edge and Chrome.
 
 ## Bulk add or edit bookmarks
 
-Search administrators can use the Import or Export features to bulk create or edit bookmarks. This is a very useful feature when you want to add or edit a large number of bookmarks.
+Use the Import or Export feature to bulk create or edit bookmarks. It makes adding or editing a large number of bookmarks faster and easier.
 
 Use the import/export feature to:
 
@@ -76,11 +76,11 @@ To prevent errors, make sure your import file is properly formatted and:
 - Includes the header row and all the columns that were in the import template
 - The column order is the same as the import template
 - All columns have values, except the three that can be empty: *Id*, *Last Modified*, and *Last Modified By*
-- The *State* column is not empty, as this information is required
+- The *State* column is not empty, it's required information
 
 To prevent bookmark-to-bookmark duplication errors:
 
-- Don't use duplicate URLS for different bookmarks. If a URL is assigned to another bookmark and you try to it again from an import file, you'll get an error. This also applies to duplicate URLs for other types of answers.
+- Don't use duplicate URLS for different bookmarks. If a URL is assigned to another bookmark and you try to add it again from an import file, you'll get an error. This also applies to duplicate URLs for other types of answers.
 - When updating existing bookmarks, use the *bookmark ID* column. You can update any other property of an existing bookmark, such as keyword or description, but you should make sure the *bookmark ID* is in the appropriate column of the import file. If the *bookmark ID* is present, it won't be treated as new addition and won't be processed as an error.
 
 ## Power Apps
