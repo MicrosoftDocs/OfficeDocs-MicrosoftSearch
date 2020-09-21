@@ -27,10 +27,10 @@ In order to access your third-party data, you must install and configure a Micro
 ## Register an app
 For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer Microsoft Graph documentation on how to [register an app](https://docs.microsoft.com/graph/auth-register-app-v2). 
 
-After completing the app registration and taking note of the app name, application (client) id and tenant id, you need to [generate a new client secret](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client secret will only be displayed once. Remember to note & store the client secret securely. Use the client id and client secret while configuring a new connection in Microsoft Search. 
+After completing the app registration and taking note of the app name, application (client) ID and tenant ID, you need to [generate a new client secret](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client secret will only be displayed once. Remember to note & store the client secret securely. Use the client ID and client secret while configuring a new connection in Microsoft Search. 
 
 To add the registered app to your Azure SQL database, you need to:
- - Login to your Azure SQL DB
+ - Log in to your Azure SQL DB
  - Open a new query window
  - Create a new user by running the command ‘CREATE USER [app name] FROM EXTERNAL PROVIDER’
  - Add user to role by running command 'exec sp_addrolemember 'db_datareader', [app name]'
