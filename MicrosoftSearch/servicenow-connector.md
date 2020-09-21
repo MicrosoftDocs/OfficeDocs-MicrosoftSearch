@@ -1,8 +1,8 @@
 ---
 title: "ServiceNow connector for Microsoft Search"
-ms.author: monaray
-author: monaray97
-manager: jameslau
+ms.author: mnirkhe
+author: TrishaMc1
+manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -28,19 +28,19 @@ Your organization’s **ServiceNow instance URL** typically looks like **https:/
 
 To authenticate and sync content from ServiceNow, choose one of two supported methods:
 
-1. Basic authentication
-2. OAuth (recommended)
+ - Basic authentication
+ - OAuth (recommended)
 
 > [!Note]
 > To use OAuth for authentication, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance, so that the Microsoft Search app can access the instance. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
 The following table provides guidance on how to fill out the endpoint creation form:
 
-**Field** | **Description** | **Recommended Value**
+Field | Description | Recommended Value
 --- | --- | ---
 Name | This unique value identifies the application that you require OAuth access for. | Microsoft Search
 Client ID | A read-only, auto-generated unique ID for the application. The instance uses the client ID when it requests an access token. | NA
-Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each another. | Follow security best-practices by treating this as a password.
+Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each other. | Follow security best-practices by treating this as a password.
 Redirect URL | A required callback URL that the authorization server redirects to. | https://gcs.office.com/v1.0/admin/oauth/callback
 Logo URL | A URL that contains the image for the application logo. | NA
 Active | Select the check box to make the application registry active. | Set to active
