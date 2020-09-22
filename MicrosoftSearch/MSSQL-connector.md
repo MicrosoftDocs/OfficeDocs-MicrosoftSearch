@@ -129,6 +129,6 @@ You can choose to use the [ACLs specified in the full crawl screen](#full-crawl-
 
 The SQL connectors have these limitations in the preview release:
 
-* Microsoft SQL erver connector: The on-premises database must run SQL server version 2008 or later.
+* Microsoft SQL Server connector: The on-premises database must run SQL server version 2008 or later.
 * ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security.
 * Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
