@@ -2,7 +2,7 @@
 title: "MediaWiki connector for Microsoft Search"
 ms.author: monaray
 author: monaray97
-manager: jameslau
+manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

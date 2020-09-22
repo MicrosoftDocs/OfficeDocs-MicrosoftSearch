@@ -1,8 +1,8 @@
 ---
 title: "File share connector for Microsoft Search"
-ms.author: monaray
-author: monaray97
-manager: jameslau
+ms.author: mnirkhe
+author: TrishaMc1
+manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -47,47 +47,49 @@ To set up your search results page, take these steps:
 
 3. Open SharePoint Online Management Shell as an administrator and import the **Microsoft.SharePoint.Client.dll** module present at `C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll`.
 
-> [!NOTE]
-> This path might not be the same for all users.
+   > [!NOTE]
+   > This path might not be the same for all users.
 
-To import the module, run this command in [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588):
-```bash
-Import-Module "C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll" 
-```
+   To import the module, run this command in [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588):
+
+   ```powershell
+   Import-Module "C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll" 
+   ```
 
 4. Now run this script:
-```bash
-$orgName = Read-Host -prompt 'Please enter your org name'
-$userName = Read-Host -prompt 'Enter user name'
-$userCreds = Get-Credential -UserName $userName -Message "Type the password"
-Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCreds
 
-$url = Read-Host -Prompt 'Please enter the site url'
-$site = Get-SPOSite -Identity $url
-Set-SPOSite $url -DenyAddAndCustomizePages 0
-
-$pwd = Read-Host -AsSecureString 'type the password'
-$context = New-Object Microsoft.SharePoint.Client.ClientContext($url)
-$credential = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredentials($userName, $pwd)
-$context.Credentials = $credential
-$web = $context.Web
-$context.Load($web)
-$web.AllProperties["AllVerticalContent"] = "Combined"
-$web.Update()
-$context.ExecuteQuery()
-$web.AllProperties["FilesVerticalContent"] = "ConnectorsOnly"
-$web.Update()
-$context.ExecuteQuery()
-Set-SPOSite $url -DenyAddAndCustomizePages 1
-
-Write-Host "Success" -ForegroundColor Cyan
-Read-Host -Prompt 'Press enter to exit'
-```
-
+   ```powershell
+   $orgName = Read-Host -prompt 'Please enter your org name'
+   $userName = Read-Host -prompt 'Enter user name'
+   $userCreds = Get-Credential -UserName $userName -Message "Type the password"
+   Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCreds
+   
+   $url = Read-Host -Prompt 'Please enter the site url'
+   $site = Get-SPOSite -Identity $url
+   Set-SPOSite $url -DenyAddAndCustomizePages 0
+   
+   $pwd = Read-Host -AsSecureString 'type the password'
+   $context = New-Object Microsoft.SharePoint.Client.ClientContext($url)
+   $credential = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredentials($userName, $pwd)
+   $context.Credentials = $credential
+   $web = $context.Web
+   $context.Load($web)
+   $web.AllProperties["AllVerticalContent"] = "Combined"
+   $web.Update()
+   $context.ExecuteQuery()
+   $web.AllProperties["FilesVerticalContent"] = "ConnectorsOnly"
+   $web.Update()
+   $context.ExecuteQuery()
+   Set-SPOSite $url -DenyAddAndCustomizePages 1
+   
+   Write-Host "Success" -ForegroundColor Cyan
+   Read-Host -Prompt 'Press enter to exit'
+   ```
+   
 5. Enter the required values in [Microsoft PowerShell](https://microsoft.com/powershell), such as organization name, username, password, and site URL. As an **example**, if your admin credentials are `admin@a830edad9050849823J19081300.onmicrosoft.com`, then your organization name is **a830edad9050849823J19081300**, and your site URL is `https:// a830edad9050849823J19081300.sharepoint.com`.
 
-> [!NOTE]
-> The **AllProperties** setting can only be done at a site collection level (Teams/Comms site).
+   > [!NOTE]
+   > The **AllProperties** setting can only be done at a site collection level (Teams/Comms site).
 
 6. Now you can search for indexed files and see results in both the **All** and **Files** tabs.
 
