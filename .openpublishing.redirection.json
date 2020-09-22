@@ -197,7 +197,7 @@
     },
     {
       "source_path": "MicrosoftSearch/file-share-connector.md",
-      "redirect_url": "MicrosoftSearch/connectors-overview.md",
+      "redirect_url": "/MicrosoftSearch/connectors-overview",
       "redirect_document_id": true
     }
   ]
