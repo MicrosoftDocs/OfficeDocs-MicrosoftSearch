@@ -194,6 +194,11 @@
       "source_path": "MicrosoftSearch/floorplans-bestpractices.md",
       "redirect_url": "/MicrosoftSearch/manage-floorplans",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "MicrosoftSearch/file-share-connector.md",
+      "redirect_url": "/MicrosoftSearch/connectors-overview",
+      "redirect_document_id": true
     }
   ]
 }
