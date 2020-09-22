@@ -1,5 +1,5 @@
 ---
-title: "Microsoft SQL server and Azure SQL connector for Microsoft Search"
+title: "Microsoft SQL Server and Azure SQL connector for Microsoft Search"
 ms.author: monaray
 author: monaray97
 manager: mnirkhe
@@ -11,16 +11,16 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Microsoft SQL server or Azure SQL connector for Microsoft Search."
+description: "Set up the Microsoft SQL Server or Azure SQL connector for Microsoft Search."
 ---
 
-# Azure SQL and Microsoft SQL server connectors
+# Azure SQL and Microsoft SQL Server connectors
 
-With a Microsoft SQL server or Azure SQL connector, your organization can discover and index data from an on-premises SQL Server database or a database hosted in your Azure SQL instance in the cloud. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
+With a Microsoft SQL Server or Azure SQL connector, your organization can discover and index data from an on-premises SQL Server database or a database hosted in your Azure SQL instance in the cloud. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques. 
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL Server or Azure SQL connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
-## Install a data gateway (required for on-premises Microsoft SQL server connector only)
+## Install a data gateway (required for on-premises Microsoft SQL Server connector only)
 
 In order to access your third-party data, you must install and configure a Microsoft Power BI gateway. See [Install an on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) to learn more.  
 
@@ -42,12 +42,12 @@ To add the registered app to your Azure SQL database, you need to:
 
 ## Connect to a data source
 
-To connect your Microsoft SQL server connector to a data source, you must configure the database server you want crawled and the on-premises gateway. You can then connect to the database with the required authentication method.
+To connect your Microsoft SQL Server connector to a data source, you must configure the database server you want crawled and the on-premises gateway. You can then connect to the database with the required authentication method.
 
 For the Azure SQL connector, you only need to specify the server name or IP address you want to connect to. Azure SQL connector only supports Azure Active Directory Open ID connect (OIDC) authentication to connect to the database.
 
 > [!NOTE]
-> Your database must run SQL server version 2008 or later for the Microsoft SQL server connector to be able to connect.
+> Your database must run SQL server version 2008 or later for the Microsoft SQL Server connector to be able to connect.
 
 To search your database content, you must specify SQL queries when you configure the connector. These SQL queries need to name all the database columns that you want to index (i.e. source properties), including any SQL joins that need to be performed to get all the columns. To restrict access to search results, you must specify Access Control Lists (ACLs) within SQL queries when you configure the connector.
 
@@ -129,6 +129,6 @@ You can choose to use the [ACLs specified in the full crawl screen](#full-crawl-
 
 The SQL connectors have these limitations in the preview release:
 
-* Microsoft SQL server connector: The on-premises database must run SQL server version 2008 or later.
+* Microsoft SQL Server connector: The on-premises database must run SQL server version 2008 or later.
 * ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security.
 * Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
