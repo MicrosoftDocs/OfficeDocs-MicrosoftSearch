@@ -13,7 +13,7 @@
 # Connectors (preview)
 ## [Overview](connectors-overview.md)
 ## [Preview release](connectors-preview.md)
-## [Connectors gallery](connectors-gallery.md)
+## [Connectors gallery](connectors-gallery.yml)
 ## [Manage your connector](manage-connector.md)
 ## Microsoft-built connectors
 ### [Connector setup](configure-connector.md)
