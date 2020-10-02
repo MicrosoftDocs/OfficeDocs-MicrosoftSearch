@@ -114,7 +114,7 @@ All other values can be default.
 **Field** | **Recommended Value**
 --- | ---
 OIDC Provider |  Azure AD
-OIDC Metadata URL | This must be in the form https://login.microsoftonline.com/"tenandId"/.well-known/openid-configuration replace "tenantID" with Directory (tenant) ID from step 1 (without quotes).
+OIDC Metadata URL | This must be in the form https\://login.microsoftonline.com/"tenandId"/.well-known/openid-configuration <br/>Replace "tenantID" with Directory (tenant) ID from step 1 (without quotes).
 OIDC Configuration Cache Life Span |  120
 Application | Global
 User Claim | sub
