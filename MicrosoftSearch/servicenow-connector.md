@@ -20,7 +20,7 @@ With the ServiceNow connector, your organization can index knowledge-base articl
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
-Learn how to access Microsoft built connectors from [Set up your Microsoft-built connector for Microsoft Search](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector). ServiceNow connector specific configuration is explained in the article below.
+Learn how to access Microsoft built connectors from [Set up your Microsoft-built connector for Microsoft Search](https://docs.microsoft.com/microsoftsearch/configure-connector). ServiceNow connector specific configuration is explained in the article below.
 
 ## Connection Settings
 To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**, credentials for this account, and the Client ID and Client Secret for OAuth authentication.  
@@ -44,7 +44,7 @@ The following table provides guidance on how to fill out the endpoint creation f
 --- | --- | ---
 Name | This unique value identifies the application that you require OAuth access for. | Microsoft Search
 Client ID | A read-only, auto-generated unique ID for the application. The instance uses the client ID when it requests an access token. | NA
-Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each another. | Follow security best-practices by treating this as a password.
+Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each other. | Follow security best-practices by treating this as a password.
 Redirect URL | A required callback URL that the authorization server redirects to. | https://gcs.office.com/v1.0/admin/oauth/callback
 Logo URL | A URL that contains the image for the application logo. | NA
 Active | Select the check box to make the application registry active. | Set to active
@@ -59,15 +59,15 @@ To use Azure AD OpenID Connect for authentication, follow the steps below.
 
 ###### Step 1: Register a new application in Azure Active Directory
 
-To learn about registering a new application in Azure Active Directory, see [Register an application](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#register-an-application). Select single tenant organizational directory. Redirect URI is not needed. After registration, note down the Application (client) ID and Directory (tenant) ID.
+To learn about registering a new application in Azure Active Directory, see [Register an application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-an-application). Select single tenant organizational directory. Redirect URI is not needed. After registration, note down the Application (client) ID and Directory (tenant) ID.
 
 ###### Step 2: Create a client secret
 
-To learn about creating a client secret, see [Creating a client secret](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Take a note of client secret.
+To learn about creating a client secret, see [Creating a client secret](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Take a note of client secret.
 
-###### Step 3: Retreive Service Principal Object Identifier
+###### Step 3: Retrieve Service Principal Object Identifier
 
-Follow the steps to retreive Service Principal Object Identifier
+Follow the steps to retrieve Service Principal Object Identifier
 
 1. Run PowerShell
 2. Install Azure PowerShell using the following command
@@ -146,7 +146,7 @@ Use Application ID as Client ID (from step 1), and Client secret (from step 2) i
 With a ServiceNow query string, you can specify conditions for syncing articles. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only articles that are published and active. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
 ## Manage the search schema
-After successful connection, configure the search schema mapping. You can choose which properties to make **queryable**, **searchable**, and **retrievable**. To learn more about managing your search schema, see [Manage the search schema](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector#manage-the-search-schema).
+After successful connection, configure the search schema mapping. You can choose which properties to make **queryable**, **searchable**, and **retrievable**. To learn more about managing your search schema, see [Manage the search schema](https://docs.microsoft.com/microsoftsearch/configure-connector#manage-the-search-schema).
 
 ## Manage search permissions
 The ServiceNow connector only supports search permissions visible to **Everyone**. Indexed data appears in the search results and is visible to all users in the organization.
@@ -161,4 +161,4 @@ The recommended default is one day for a full crawl and four hours for an increm
 After you configure your connector, you can review and publish the connection.
 
 ## Next steps
-After publishing the connection, you need to customise the search results page. To learn about customising search results, see [Customize the search results page](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
+After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
