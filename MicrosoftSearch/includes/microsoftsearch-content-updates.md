@@ -60,3 +60,11 @@
 | 9/22/2020 | [ServiceNow connector for Microsoft Search](/MicrosoftSearch/servicenow-connector) | modified |
 | 9/22/2020 | [Microsoft SQL Server and Azure SQL connector for Microsoft Search](/MicrosoftSearch/mssql-connector) | modified |
 | 9/22/2020 | File share connector for Microsoft Search | removed |
+
+
+## Week of September 28, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/2/2020 | [ServiceNow connector for Microsoft Search](/MicrosoftSearch/servicenow-connector) | modified |
