@@ -68,3 +68,11 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 10/2/2020 | [ServiceNow connector for Microsoft Search](/MicrosoftSearch/servicenow-connector) | modified |
+
+
+## Week of October 05, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/9/2020 | [FAQs](/MicrosoftSearch/faqs) | modified |
