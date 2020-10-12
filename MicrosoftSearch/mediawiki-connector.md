@@ -38,7 +38,7 @@ This schedule refreshes indexed data, so changes to the wiki are reflected in Mi
 
 ## Limitations
 
-The MediaWiki connector has these limitations in the preview release:
+The MediaWiki connector has these limitations in the preview release::
 
 * Supports only cloud-based wikis.
 * Supports only Basic or OAuth 2.0 with Azure Active Directory or Azure authentication.
