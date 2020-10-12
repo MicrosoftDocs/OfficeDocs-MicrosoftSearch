@@ -91,7 +91,7 @@ After you start the wizard, you're guided through the steps to define the name, 
 1. Select **Site information** and then **View all site settings**.
 1. Look for the Microsoft Search section, and then select **Configure Microsoft Search for this site collection**.
 1. In the navigation pane, go to **Custom experience**, and select **Result type** tab.
-1. To add a result type, select **Add**.  Or, to edit a result type, select the result type in the list.
+1. To add a Result Type, select **Add**.  Or, to edit a result type, select the result type in the list.
 
 ### View the vertical after it's enabled
 
