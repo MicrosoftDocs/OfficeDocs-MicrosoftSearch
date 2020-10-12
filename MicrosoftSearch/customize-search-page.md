@@ -28,6 +28,16 @@ At the top of the Microsoft Search results page, there's a row of tabs. These ar
 
 You can add search verticals that are relevant to your organization. These will appear on the Microsoft Search results page in [SharePoint](https://sharepoint.com/), [Office](https://Office.com), and [Bing](https://bing.com). For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each group needs. You can add verticals to show results only from content indexed via connectors.  
 
+### Multiple Connections in a vertical
+
+A search vertical can now surface results from multiple connector sources. You can now add one or more connections under a search vertical providing greater flexibility in designing your search result page. The existing administrative experience of vertical setup has been enhanced to allow you to select multiple connections in the 'Content Source' step. 
+The search output in a search vertical with multiple connections greatly benefits from accurately appointing as many semantic labels as possible. You can add semantic labels upon schema definition and ingestion. (Please find [here](https://docs.microsoft.com/en-us/graph/search-index-manage-schema#labels) additional information on how to create and manage semantic labels). 
+
+#### Things you should know 
+
+1. A connection can be added as a content source only under one vertical. Reusing connections under multiple verticals is not allowed. 
+2. If you need to setup a query for a search vertical where multiple connection sources have been added, common source properties should be used to create a such a query. 
+
 >[!NOTE]
 > Verticals and result types are currently in preview as a part of the Microsoft Graph connectors preview. For more about the preview, see [Connectors preview](connectors-preview.md). To participate in the preview, you must first submit the [Microsoft Graph Connectors Preview Signup form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
 
