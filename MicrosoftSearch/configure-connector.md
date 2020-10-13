@@ -58,7 +58,17 @@ The data fields set by your third-party data source as source properties are ind
 
 ### Manage the search schema
 
-Admins can set the search schema attributes to control search functionality of each source property. A search schema helps determine what results display on the search results page and what information end users can view and access.
+#### Content property
+
+You can select which source property is the **content** property (full-text index of the item) by selecting any string property from the **content** property dropdown. Alternatively, you can keep the default selected property if one is present.
+
+It is especially important that the correct property is selected since this property used for full-text indexing of content, search results page snippet generation, language detection, HTML/text support, ranking and relevance, and query formulation.
+
+If you select a property for **content**, you will have the option of using the system-generated property **ResultSnippet** when you [create your result type](docs.microsoft.com/Microsoftsearch/customize-results-layout#show-snippet-on-search-result). This property serves as a placeholder for the dynamic snippets that are generated from the **content** property at query time. If you use this property in your result type, snippets will be generated in your search results.
+
+#### Search schema attributes
+
+You can set the search schema attributes to control search functionality of each source property. A search schema helps determine what results display on the search results page and what information end users can view and access.
 
 Search schema attributes include **searchable**, **queryable**, and **retrievable**. The following table lists each of the attributes that Microsoft Graph connectors support and explains their functions.
 
@@ -72,11 +82,14 @@ For all connectors, custom types must be set manually. To activate search capabi
 
 ![Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions.](media/manageschema.png)
 
-These restrictions and recommendations apply to search schema settings:
+#### Restrictions and recommendations for search schema settings
 
-* For connectors that index custom types, we recommend that you **do not** mark the field that contains the main content **retrievable**. Significant performance issues occur when search results render with that search attribute. An example is the **Text** content field for a [ServiceNow](https://www.servicenow.com) knowledge-base article.
+* The **content** property is searchable only. Once selected in the dropdown, this property cannot be marked **retrievable** or **queryable**. Significant performance issues occur when search results render with the **content** property. An example is the **Text** content field for a [ServiceNow](https://www.servicenow.com) knowledge-base article.
+
 * Only properties marked as retrievable render in the search results and can be used to create modern result types (MRTs).
+
 * Only string properties can be marked searchable.
+
 
 > [!Note]
 > After you create a connection, you **can't** modify the schema. To do that, you need to delete your connection and create a new one.
