@@ -64,7 +64,7 @@ You can select which source property is the **content** property (full-text inde
 
 It is especially important that the correct property is selected since this property used for full-text indexing of content, search results page snippet generation, language detection, HTML/text support, ranking and relevance, and query formulation.
 
-If you select a property for **content**, you will have the option of using the system-generated property **ResultSnippet** when you [create your result type](docs.microsoft.com/Microsoftsearch/customize-results-layout#show-snippet-on-search-result). This property serves as a placeholder for the dynamic snippets that are generated from the **content** property at query time. If you use this property in your result type, snippets will be generated in your search results.
+If you select a property for **content**, you will have the option of using the system-generated property **ResultSnippet** when you [create your result type](docs.microsoft.com/Microsoftsearch/customize-results-layout). This property serves as a placeholder for the dynamic snippets that are generated from the **content** property at query time. If you use this property in your result type, snippets will be generated in your search results.
 
 #### Search schema attributes
 
