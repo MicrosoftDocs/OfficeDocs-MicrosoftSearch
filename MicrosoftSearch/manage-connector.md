@@ -20,7 +20,7 @@ To access and manage your connectors, you must be designated as a search adminis
 
 ## Get started
 
-Navigate to the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in the [Microsoft 365 admin center](https://admin.microsoft.com).
+Navigate to the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) under **Settings** > **Microsoft Search** in the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 For each connector type, the [Microsoft 365 admin center](https://admin.microsoft.com) supports the operations shown in the following table:
 
