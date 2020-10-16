@@ -17,12 +17,18 @@
 ## [Manage your connector](manage-connector.md)
 ## Microsoft-built connectors
 ### [Connector setup](configure-connector.md)
+### Special Topics
+#### [On-prem agent (preview)](on-prem-agend.md)
+#### [User mapping (preview)](user-mapping.md)
 ### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 ### [Azure DevOps](azure-devops-connector.md)
 ### [Azure SQL and Microsoft SQL Server](MSSQL-connector.md)
 ### [Enterprise websites](enterprise-web-connector.md)
+### [File share (preview)](fileshare-connector.md)
 ### [MediaWiki](mediawiki-connector.md)
+### [Salesforce (preview)](salesforce-connector.md)
 ### [ServiceNow](servicenow-connector.md)
+### [On-prem SharePoint (preview)](onprem-sharepoint.md)
 ## [Feedback](connectors-feedback.md)
 ## [Terms of use](terms-of-use.md)
 # Customize and configure
