@@ -76,3 +76,11 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 10/9/2020 | [FAQs](/MicrosoftSearch/faqs) | modified |
+
+
+## Week of October 12, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/14/2020 | [Configure your Microsoft-built connector for Microsoft Search](/MicrosoftSearch/configure-connector) | modified |
