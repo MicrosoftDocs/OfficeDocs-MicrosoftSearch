@@ -39,13 +39,11 @@ By using a filter, you can see feedback for specific answer types. You can also 
 
 You can use the search box above the feedback list to search for feedback on a specific query.
 
-## Read comments and suggestions
-
 In the feedback list, the Verbatim column indicates what user's feedback also includes a comment or suggestion. To read it, click the query to open the **Detail** panel.
 
 ## Update feedback state
 
-As feedback comes in, it will be in a New state and will remain there until you change it to Resolved or Duplicate.
+As feedback comes in, it will be in a *New* state and will remain there until you change it to *Resolved* or *Duplicate*.
 
 To change this state:
 
