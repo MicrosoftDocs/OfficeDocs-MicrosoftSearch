@@ -26,6 +26,8 @@ search.appverid:
 
 description: "Setup the connector for Microsoft Search" 
 
+ROBOTS: NOINDEX, NOFOLLOW
+
 --- 
 
  
