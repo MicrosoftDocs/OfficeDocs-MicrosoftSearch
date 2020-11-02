@@ -27,9 +27,10 @@ For example, if your organization has 100 Microsoft 365 E5 licenses th
 To purchase additional Graph Connectors index capacity (or quota), get in touch with your Microsoft Account Manager or complete the following steps:
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com) navigation menu, go to **Billing>Purchase services**.
-2.  At the bottom of the Purchase services page, select **Add-ons**.
+2. At the bottom of the Purchase services page, select **Add-ons**.
 3. Select **Extra Graph Connector Capacity**.
 4. Select **Buy** then complete your order preferences.
 5. Select **Check out now**. 
+
 >[!NOTE]
 >Currently Graph Connectors only support up to 7 Million items of total index quota, which includes any built-in quota bundled into Microsoft 365 or Office 365 E5 licenses. The platform will support higher limits in the future. Please contact Microsoft support or your Microsoft account manager if you have any questions.
