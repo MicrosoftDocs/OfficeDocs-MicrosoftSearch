@@ -2,7 +2,7 @@
 title: "License requirements and pricing"
 ms.author: rusamai
 author: rsamai
-manager: shohara
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
