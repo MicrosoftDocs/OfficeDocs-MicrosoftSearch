@@ -3,14 +3,20 @@ title: "License requirements and pricing"
 ms.author: rusamai
 author: rsamai
 manager: jameslau
-ms.audience: Admin
+ms.audience: Global or Billing Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
-description: "License requirements for Microsoft Graph connectors public preview for Microsoft Search"
+search.appverid:
+- BFB160
+- MET150
+- MOE150
+- description: "License requirements for Microsoft Graph connectors public preview for Microsoft Search"
 ---
 
 # License requirements and pricing
+
+This article is intended for Global or Billing Admins who want to learn about how to purchase additional Graph connectors quota for their organization.
 
 You need a valid Microsoft 365 or Office 365 license and sufficient Graph Connectors quota for your organization to view data from connectors in your search results.
 
