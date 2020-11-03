@@ -20,7 +20,7 @@ You need a valid Microsoft 365 or Office 365 license and sufficient 
 
 All of the Graph Connectors by Microsoft are free. However, you need index quota to ingest content from those connectors.
 
-Each Microsoft 365 or Office 365 E5 license or Topic Experience add-on license includes 500 items of index quota, which counts towards your organization's quota for ingesting content from Graph connectors.
+Each Microsoft 365 or Office 365 E5 license includes 500 items of index quota, which counts towards your organization's quota for ingesting content from Graph connectors.
 
 For example, if your organization has 100 Microsoft 365 E5 licenses, then your organization has 100 x 500 = 50,000 items worth of Graph Connectors index quota.
 
