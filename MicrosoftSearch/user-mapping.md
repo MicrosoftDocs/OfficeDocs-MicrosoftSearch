@@ -39,17 +39,12 @@ This step you can select the Azure AD user property you are creating the mapping
 
 You can select one of the following Azure AD properties: 
 
-Azure AD property | Definition | Example 
+| Azure AD property    | Definition           | Example         |
+| :------------------- | :------------------- |:--------------- |
+| User Principal Name (UPN)  | A UPN consists of a UPN prefix (the user account name) and a UPN suffix (a DNS domain name). The prefix is joined with the suffix using the "@" symbol. | us1@contoso.onmicrosoft.com |
+| Azure AD ID                 | An Azure AD ID for a given user is the unique GUID of the user.                 | 58006c96-9e6e-45ea-8c88-4a56851eefad            |
+| Active Directory Security ID (SID)                  | SID (Security Identifier) is a unique identifier that Active Directory uses to identify objects as security principal.                  | S-1-5-21-453406510-812318184-4183662089             |
 
---- | --- | --- 
-
-User Principal Name (UPN) | A UPN consists of a UPN prefix (the user account name) and a UPN suffix (a DNS domain name). The prefix is joined with the suffix using the "@" symbol. | us1@contoso.onmicrosoft.com 
-
-Azure AD ID | An Azure AD ID for a given user is the unique GUID of the user. | 58006c96-9e6e-45ea-8c88-4a56851eefad 
-
-Active Directory Security ID (SID) | SID (Security Identifier) is a unique identifier that Active Directory uses to identify objects as security principal. | S-1-5-21-453406510-812318184-4183662089 
-
- 
 
 ### Select non-Azure AD user properties to map 
 
@@ -59,17 +54,13 @@ You can select a non-Azure AD user property from the dropdown and provide a regu
 
 See some examples of regular expressions and their outputs applied to a sample string below: 
 
-Sample String | Regular expression | Output of regular expression on sample string 
+| Sample String                  | Regular expression                 | Output of regular expression on sample string           |
+| :------------------- | :------------------- |:---------------|
+| Alexis Vasquez  | .* | Alexis Vasquez |
+| Alexis Vasquez                 | ..$                 | ez            |
+| Alexis Vasquez                  | (\w+)$                  | Vasquez             |
 
----| --- | --- 
 
-Alexis Vasquez | .* | Alexis Vasquez  
-
-Alexis Vasquez | ..$ | ez 
-
-Alexis Vasquez | (\w+)$ | Vasquez  
-
- 
 
 You can add as many non-Azure AD user properties as you would like expressions for. That way you can apply different regular expressions to the same user property if your final formula warrants that.  
 
@@ -83,13 +74,11 @@ In the formula box, “{0}” corresponds to the output of the regular expressio
 
 See some examples of formulas below with sample regular expression outputs and formula outputs: 
 
-Sample formula | Value of {0} on sample user | Value of {1} on sample user | Output of formula  
+| Sample formula                  | Value of {0} on sample user                 | Value of {1} on sample user           | Output of formula                  |
+| :------------------- | :------------------- |:---------------|:---------------|
+| {0}.{1}@contoso.com  | firstname | lastname |firstname.lastname@contoso.com
+| {0}@domain.com                 | userid                 |             |userid@domain.com
 
-{0}.{1}@contoso.com | firstname | lastname | firstname.lastname@contoso.com  
-
-{0}@domain.com | userid | | userid@domain.com  
-
- 
 
 After you provide your formula, you can optionally click “Preview” to see a preview of 5 random users from your data source with their respective user mappings applied. The output of the preview includes the value of the non-Azure AD user properties selected in step 2 for those users and the output of the final formula provided in step 3 for that user. It also indicates whether the output of the formula could be resolved to the an Azure AD user in your tenant via a “Success” or “Failed” icon.  
 
