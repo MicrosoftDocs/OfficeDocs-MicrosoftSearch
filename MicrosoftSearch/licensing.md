@@ -7,10 +7,6 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
-search.appverid:
-- BFB160
-- MET150
-- MOE150
 description: "License requirements for Microsoft Graph connectors public preview for Microsoft Search"
 ---
 
