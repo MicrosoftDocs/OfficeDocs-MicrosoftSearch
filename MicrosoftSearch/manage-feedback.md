@@ -19,13 +19,13 @@ description: "Review and act on user feedback in Microsoft Search"
 
 Creating a great search experience for your users is a partnership between Microsoft and the search administrator. Feedback from your users allows us to continuously evaluate the product and tune it for the best experience. Some feedback, however, is best addressed by you.
 
-We are now offering feedback management tools that will allow you to review the feedback your users are providing on the search experience.
+We are now offering tools that will allow you to review and manage the feedback your users are providing on the search experience.
 
 ## How users submit feedback
 
 As people in your organization use Microsoft Search, they may have feedback on the experience. When they click a feedback link on the results page, they can categorize their feedback and include additional comments.
 
-![feedback-global-dialog.png](media/feedback-global-dialog.png)
+![Global feedback form](media/feedback/feedback-global-dialog.png)
 
 Users also have the option to send their query and other diagnostic info, along with the category and comments, to Microsoft. Diagnostic info will include some personal data such as a user identifier. [Learn more](https://privacy.microsoft.com/en-US/privacystatement) about privacy and how we protect this data. The diagnostic data contains the most critical bits of information that Microsoft needs to use the feedback item for product improvement.
 
