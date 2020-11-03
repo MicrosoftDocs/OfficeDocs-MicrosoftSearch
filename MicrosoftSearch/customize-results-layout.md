@@ -173,7 +173,7 @@ Select a field in the layout to highlight the variables that need to be mapped. 
 
 ### Show snippet on search result  
 
-Dynamic snippets generated on the **content** property of the connector result can be shown on the search result. **ResultSnippet** is the system property that acts as a placeholder property for the snippets generated for each Connector result. To show the snippets on the result layout, the **ResultSnippet** system property must be mapped to an appropriate field, for example Description, in the search result layout. Snippets generated on each result also highlight the matches in the Snippet with the query term entered by the user. 
+Dynamic snippets generated on the **content** property of the connector result can be shown on the search result. **ResultSnippet** is the system property that acts as a placeholder property for the snippets generated for each Connector result. To show the snippets on the result layout, the **ResultSnippet** system property must be mapped to an appropriate field, for example Description, in the search result layout. Snippets generated on each result also highlight the matches in the Snippet with the query term entered by the user.
 
 ## Things to consider
 
@@ -193,7 +193,7 @@ Before you get started, there are a few things that you should do and a few thin
 - Don't define invalid data types when binding values. For more information about data types, see [Manage the Search schema](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema).
 - Avoid cropping the result on the result page by following the maximum height of the result layout JSON. If you exceed the maximum height of the result layout, the result will be cropped on the result page.
 - Don't use `px` values in element properties.
-- Don't use markdown when with the **ResultSnippet** property in the result layout to highlight query match in the search result. 
+- Don't use markdown when with the **ResultSnippet** property in the result layout to highlight query match in the search result.
 
 ## Resources
 
