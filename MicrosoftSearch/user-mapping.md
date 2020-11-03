@@ -87,17 +87,16 @@ After you provide your formula, you can optionally click **Preview** to see a pr
  
 
 > [!Note] 
-
 > You can still proceed with creating your connection if one or more user mappings have a “Failed” status after you click **Preview**. The preview shows 5 random users and their mappings from your data source. If the mapping you provide does not map all users, you may experience this case. 
 
  
 
 ## Limitations  
 
-Only one mapping is supported for all users. Conditional mappings are not supported.  
+- Only one mapping is supported for all users. Conditional mappings are not supported.  
 
-You cannot change your mapping once the connection is published.  
+- You cannot change your mapping once the connection is published.  
 
-Only regex-based expressions against the non-AAD user properties are currently supported for the transformation. 
+- Only regex-based expressions against the non-AAD user properties are currently supported for the transformation. 
 
-There are only 3 Azure AD identities you can choose to map to (UPN, Azure AD ID, and AD SID). 
+- There are only 3 Azure AD identities you can choose to map to (UPN, Azure AD ID, and AD SID). 
