@@ -75,7 +75,7 @@ If you share feedback, either automatically or manually, it never includes queri
 As a search administrator you should understand the major personas in your organization and what types of content those people typically interact with and search for. With this understanding, you can use feedback to make targeted improvements to your users' search experience.
 
 1. “I did not find what I was looking for” and similar feedback can be used to identify content users want, but is not currently included in the search index. Determining this often takes investigation and inference based on understanding your users. Once found, decide which methods of including that content would be most appropriate:
-    1. Bookmarks are useful for content sources having a high-quality landing page and a limited variety of search terms, so that the user community gets a high quality result from the bookmark and can then efficiently find what they are looking for.
+    1. Bookmarks are useful for content sources having a high-quality landing page and a limited variety of search terms, so that the user community gets a high-quality result from the bookmark and can then efficiently find what they are looking for.
     1. Q&A are useful for individual answers that are fairly frequent, yet do not change.
     1. Connectors are useful for content sources with a wide variety of content and wide variety of search terms.
 1. “The results took too long to load” & “I found a problem” may be indicators of a wider problem. Looking for this feedback daily may help and if multiple cases appear, you can verify the search experience for yourself and open a support case with Microsoft if needed. This type of feedback is also important to Microsoft and is a good reason to flow all feedback to us.
