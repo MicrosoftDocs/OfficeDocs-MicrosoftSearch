@@ -28,7 +28,6 @@ These steps are only relevant to search administrators who are setting up a Serv
  
 
 > [!Note] 
-
 > If you are setting up a Salesforce connector and select **Only people with access to this data source** and identity type **AAD** on the search permissions screen, refer to the [Salesforce](salesforce-connector.md) article for steps on how to map Azure AD identities.  
  
 

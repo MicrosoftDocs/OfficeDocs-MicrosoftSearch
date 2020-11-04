@@ -69,26 +69,28 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
 
 ![Select the Refresh Token Policy named "Refresh token is valid until revoked "](media/sf3.jpg)
 
-You can now return to the Connection settings page  scan now go to the back to the connector settings screen in the M365 admin center. 
-	- For the Instance URL, use https://[domain].my.salesforce.com where domain would be your Salesforce domain for your organization. 
-	- Enter the Client ID and Client Secret you got from the previous steps and click Sign in. 
-The first time you do this, you will get a pop up asking you to login to Salesforce with your admin username and password. 
+Return to the M365 Admin Center to complete the rest of the setup process for your Graph Connector.  
 
+Configure the Connection settings as follows:
+
+- For the Instance URL, use https://[domain].my.salesforce.com where domain would be the Salesforce domain for your organization. 
+- Enter the Client ID and Client Secret you obtained from your Salesforce account and click Sign in. 
+- If this is the first time you have attempted to Sign in with these settings, you will get a pop up asking you to login to Salesforce with your admin username and password.The screenshot below shows the popup. Enter your credentials and hit Log in. 
 ![Login pop up asking for Username and password](media/sf4.png)
+>[!NOTE] If your organization uses single sign-on (SSO), you can click on **Use Custom Domain** to enter the domain and click **Continue**. It will go to your organization specific login page where you will have an option to login with SSO. If the pop up does not appear, it might be getting blocked in your browser, so you must allow pop-ups and redirects.*
+- Check that the connection was successful by looking for a green banner that says "Connection successful as show in the screenshot below. 
 
-Enter your credentials and hit Log in. The screenshot below shows a successful login.
+![Screenshot of successful login. The green banner that says "Connection successful is located under the field for your Salesforce Instance URL](media/sf5.png)
 
-![The successful login is indicatd by a green banner that says "Connection successful". This banner is located under the Instance URL](media/sf5.png)
 
->[!NOTE] If your organization uses single sign-on (SSO), you can click on **Use Custom Domain** to enter the domain and click **Continue**. It will go to your organization specific login page where you will have an option to login with SSO. If you do not see the pop up, it might be getting blocked in your browser and you must allow pop-ups and redirects.*
 
 ## Manage search permissions
 You will need to select the users that will see search results from this data source. If you choose to create an Access Control List (ACL) that allows only certain Azure Active Directory (AAD) or Non-AAD users to see the search results, you will then need to map the identities. 
 
 ### Select Permissions
-You can choose to allow everyone in your organization to see search results from this Connector or create an Access Control List (ACL) that allows only certain users to see search results from this Salesforce Connector. ACL’s can include Azure Active Directory (AAD)identities, Non-AAD identities, or both.Learn more about the identities in the [Map your non-Azure AD Identities](user-mapping.md) page.
+You can choose to allow everyone in your organization to see search results from this Connector or create an Access Control List (ACL) that allows only certain users to see search results from this Salesforce Connector. ACL’s can include Azure Active Directory (AAD) identities, Non-AAD identities, or both. Learn more about the identities in the [Map your non-Azure AD Identities](user-mapping.md) page.
 
-![Select permissions.Either "Only people with access to this data source" or "Everyone""](media/sf6.png)
+![Select permissions. Either "Only people with access to this data source" or "Everyone." The option "Only people with access to this data source includes a drop-down menu that allows you to select the type of identity of the content source.](media/sf6.png)
 
 ### Map non-AAD identities 
 If you created an Access Control List that includes non-AAD identities, you will be asked to select the AAD user property that will be used to manage search permissions. The drop-down menu of options includes Active Directory SID, User Principal Name, and AAD ID. 
@@ -98,9 +100,14 @@ Once you select the AAD user property, select at least one non-AAD property to m
 Finally, create a formula that combines the regex outputs from the non-Azure AAD properties you selected with the AAD property you selected, and enter the formula in the space provided.
 
 ### Map AAD identities
-If you created an Access Control List that includes AAD identities, you will be asked to... select how your organization currently maps AAD properties with the federation ID in Salesforce. The available properties are listed in a drop-down menu that includes the following options: FirstName, LastName, Domain, User Principal Name, Active Directory SID, AAD ID and Domain. 
+If you created an Access Control List that includes AAD identities, you will be asked to select how your organization currently maps AAD properties with the federation ID in Salesforce. 
+
+You will need to select which type of AAD property to match. The available properties are listed in a drop-down menu that includes the following options: FirstName, LastName, Domain, User Principal Name, Active Directory SID, AAD ID and Domain. You can choose to add more than one property.
  
-The screenshot below shows an example of a completed mapping. To map with that field, selects that property from the dropdown, add a formula to complete the mapping to the federation ID and then click on Preview to see the validation happen with some sample users. 
+The screenshot below shows an example of a common scenario in which the admin has chosen to match only one AAD property ("User Principal Name"). The admin also added a format for their expression ("{0}M365x623869.onmicrosoft.com").
+
+//insert reference
+ To map with the same  and then previewed the results. to map only one mpleted mapping. To map with that field, select that property from the dropdown, add a formula to complete the mapping to the federation ID, then click on Preview to see the validation happen with some sample users. 
 
 ![Form an expression by selecting the Azure AD user property and add a format for your expression.](media/sf7.png)
 
