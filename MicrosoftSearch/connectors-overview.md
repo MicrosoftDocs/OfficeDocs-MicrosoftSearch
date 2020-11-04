@@ -83,8 +83,6 @@ After custom data is indexed, developers can [query this data](https://docs.micr
 
 ## License requirements
 
-To view data from connectors in your search results, users must have one of the following Microsoft 365 or Office 365 subscriptions:
+You need a valid Microsoft 365 or Office 365 license and sufficient Graph Connectors quota for users in your organization to view data from connectors in their search results.
 
-- [Microsoft 365 or Office 365 Enterprise E3 or E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
-
-- [Microsoft 365 or Office 365 Education A3 or A5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)
+To learn more, see [License requirements and pricing](licensing.md).
