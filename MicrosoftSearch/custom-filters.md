@@ -41,15 +41,15 @@ A custom filter can be created inside a vertical based on a connection property.
 
 To create a filter on Microsoft search follow these steps:
 
-1. In the Microsoft 365 admin center, go to Settings > Microsoft Search > Customization > Verticals.
+1. In the Microsoft 365 admin center, go to the [Verticals](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals) page.
 2. Create/Edit the vertical in which you want to create the filter
-3. Navigate to the ‘Filters’ step in the wizard
-4. Click on ‘Add Filter’ and get started
+3. Navigate to the 'Filters' step in the wizard
+4. Click on 'Add Filter' and get started
 After adding filters, you can review and save the vertical.
 
 ## Known Limitations
 
-1. You can currently create filters only on String & Date type managed properties. 
+1. You can currently create filters only on String & Date type managed properties.
 2. You cannot create hierarchical filters
 
 ## Resources
