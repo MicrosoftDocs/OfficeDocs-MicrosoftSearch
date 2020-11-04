@@ -157,6 +157,7 @@ The ServiceNow connector supports refresh schedules for both full and incrementa
 A full crawl schedule finds deleted articles that were previously synced to the Microsoft Search index and any articles that moved out of the sync filter. When you first connect to ServiceNow, a full crawl runs to sync all the knowledge-base articles. To sync new items and make updates, you need to schedule incremental crawls.
 
 The recommended default is one day for a full crawl and four hours for an incremental crawl.
+
 ## Review and publish
 After you configure your connector, you can review and publish the connection.
 
