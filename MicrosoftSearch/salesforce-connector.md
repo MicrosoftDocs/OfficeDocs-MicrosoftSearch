@@ -38,15 +38,15 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
 
 - Navigate to Apps -> App Manager. 
 
-- Click on **New connected app**. 
+- Select **New connected app**. 
 
 - Complete the API section as follows: 
 
     - Select the checkbox for **Enable Oauth Settings**.
 
-    - Specify the Callback URL as: *https://gcs.office.com/v1.0/admin/oauth/callback* 
+    - Specify the Callback URL as: [https://gcs.office.com/v1.0/admin/oauth/callback](https://gcs.office.com/v1.0/admin/oauth/callback)
 
-    - Select these required Oauth scopes. 
+    - Select these required OAuth scopes. 
 
         - Access and manage your data (api) 
 
@@ -81,8 +81,6 @@ Configure the Connection settings as follows:
 - Check that the connection was successful by looking for a green banner that says "Connection successful as show in the screenshot below. 
 
 ![Screenshot of successful login. The green banner that says "Connection successful is located under the field for your Salesforce Instance URL](media/sf5.png)
-
-
 
 ## Manage search permissions
 You will need to select the users that will see search results from this data source. If you choose to create an Access Control List (ACL) that allows only certain Azure Active Directory (AAD) or Non-AAD users to see the search results, you will then need to map the identities. 

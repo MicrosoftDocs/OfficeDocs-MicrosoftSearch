@@ -91,6 +91,7 @@ After you provide your formula, you can optionally click **Preview** to see a pr
 
 ## Limitations  
 
+test commit
 - Only one mapping is supported for all users. Conditional mappings are not supported.  
 
 - You cannot change your mapping once the connection is published.  
