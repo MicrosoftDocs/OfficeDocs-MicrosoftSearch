@@ -29,13 +29,11 @@ At the top of the Microsoft Search results page, there's a row of tabs. These ar
 You can add search verticals that are relevant to your organization. These will appear on the Microsoft Search results page in [SharePoint](https://sharepoint.com/), [Office](https://Office.com), and [Bing](https://bing.com). For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each group needs. You can add verticals to show results only from content indexed via connectors.  
 
 >[!NOTE]
-> Verticals and result types are currently in preview as a part of the Microsoft Graph connectors preview. For more about the preview, see [Connectors preview](connectors-preview.md). To participate in the preview, you must first submit the [Microsoft Graph Connectors Preview Signup form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
+> Verticals and result types are currently in preview as a part of the Microsoft Graph connectors preview and you can't use them for content that resides in [SharePoint](https://sharepoint.com/). For more about the preview, see [Connectors preview](connectors-preview.md). To participate in the preview, you must first submit the [Microsoft Graph Connectors Preview Signup form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
 
 ## Things to consider
 
 Before you start, make sure that the connector has been indexed. This can take up to 48 hours, depending on the file size.
-
-You can’t create a vertical for content that resides in [SharePoint](https://sharepoint.com/).
 
 There are three basic steps to add a vertical:
 
