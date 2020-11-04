@@ -1,5 +1,5 @@
 ---
-title: "Customize the search results layout"
+title: "Manage search result layouts"
 ms.author: jypal
 author: jypal6
 manager: jeffkizn
