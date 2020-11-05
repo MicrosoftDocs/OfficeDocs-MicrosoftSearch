@@ -1,5 +1,5 @@
 ---
-title: "Customize the search results layout"
+title: "Manage search result layouts"
 ms.author: jypal
 author: jypal6
 manager: jeffkizn
@@ -193,7 +193,7 @@ Before you get started, there are a few things that you should do and a few thin
 - Don't define invalid data types when binding values. For more information about data types, see [Manage the Search schema](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema).
 - Avoid cropping the result on the result page by following the maximum height of the result layout JSON. If you exceed the maximum height of the result layout, the result will be cropped on the result page.
 - Don't use `px` values in element properties.
-- Don't use markdown when with the **ResultSnippet** property in the result layout to highlight query match in the search result.
+- Don't use markdown with the **ResultSnippet** property in the result layout to highlight query match in the search result.
 
 ## Resources
 

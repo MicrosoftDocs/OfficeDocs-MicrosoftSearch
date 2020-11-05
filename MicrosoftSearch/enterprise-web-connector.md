@@ -22,7 +22,11 @@ This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) adm
 
 ## Connect to a data source
 
-To connect to your data source, you need your root URL and a form of authentication: None, Basic Authentication, or OAuth 2.0 with [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/).
+To connect to your data source, you need to fill in the root URL of the website and the type of authentication you'd like to use: None, Basic Authentication, or OAuth 2.0 with [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/).
+
+### URL
+
+Use the URL field to specify the root of the website that you'd like to crawl. The enterprise websites connector will use this URL as the starting point and follow all the links from this URL for its crawl.
 
 ### Authentication
 
@@ -39,21 +43,21 @@ To get the values for the resource, client_id, and client_secret, go to **Use th
 
 For even more information, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
-### Root URL
+## Add URLs to exclude
 
-The root URL is what initiates the crawl and is used for authentication. You can get the URL from the home page of the website you want to crawl.
-
-## Select the source properties
-
-Source properties are defined based on the data format of the enterprise website. However, you can create an **Exclusion list** to exclude some URLs from getting crawled if that content is sensitive or not worth crawling. To create an exclusion list, browse through the root URL. You have the option to add the excluded URLs to the list during the configuration process.
+You can optionally create an **Exclusion list** to exclude some URLs from getting crawled if that content is sensitive or not worth crawling. To create an exclusion list, browse through the root URL. You have the option to add the excluded URLs to the list during the configuration process.
 
 ## Manage search permissions
 
-There's no support for Access Control Lists (ACLs). Thus, we recommend connecting only the websites that are visible to any user within your organization.
+There's no support for Access Control Lists (ACLs). Thus, we recommend connecting only to websites that are visible to all users within your organization.
+
+## Manage schema
+
+Source properties that are predefined for the enterprise website connector. You can choose which properties to make **queryable**, **searchable** and **retrievable**. See [Search schema attributes](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector#search-schema-attributes) to learn more.
 
 ## Set the refresh schedule
 
-The Enterprise websites connector only supports a full crawl. This means that the connector reads all the website's content during every crawl. To make sure the connector gets enough time to read the content, we recommend that you set a large refresh schedule interval. We recommend a scheduled refresh between one and two weeks.
+The Enterprise websites connector only supports a full refresh. This means that the connector will recrawl all the website's content during every refresh. To make sure the connector gets enough time to crawl the content, we recommend that you set a large refresh schedule interval. We recommend a scheduled refresh between one and two weeks.
 
 ## Troubleshooting
 
