@@ -18,37 +18,38 @@ ROBOTS: NOINDEX, NOFOLLOW
 # Connectors Result Cluster Experience 
 
 ## Overview of the Connectors result cluster (Preview)  
-Graph connectors are a great way for enterprises to onboard and search for new content sources that are not part of Microsoft 365. With Connectors Result Clusters, enterprises can now search for content from third party data sources in their default view (the All tab) in SharePoint, Office.com and Microsoft Search in Bing. 
+ With Connectors result clusters, enterprises can search for content from third party data sources in their default view (the All tab) in SharePoint, Office.com and Microsoft Search in Bing. 
 
-Result clusters help users easily discover and explore third party content which was previously only present in search verticals tied to connectors. The results shown in a result cluster are grouped together based on how they are configured by the tenant administrator in a search vertical.  
+Result clusters help users easily discover and explore third party content previously only in search verticals tied to connectors. The results shown in a result cluster are grouped together based on how they are configured by the tenant administrator in a search vertical.  
 
 ## How connector results are selected  
-Connector results provided in the Result Cluster are derived from individual search verticals with connector content.Relevant results are chosen based on relevant clues derived from the ‘title’ and ‘result snippet’ properties of the results and the content part of the items. 
+Connector results provided in the result cluster are derived from individual search verticals with connector content. Each search vertical provides a set of relevant results which becomes a candidate result cluster. Relevant results are chosen based on the "title" property, result snippet, and content component of each item. 
 
-To ensure discovery of content from the search verticals, we highly recommend providing meaningful and informative titles for your items. This positively impacts the arbitration of candidates, and the likelihood of your content to show up in a Result Cluster. Avoid the use of IDs as ‘title’ – unless your users are using IDs to look for content. 
+To ensure discovery of content from the search verticals, we recommend providing meaningful titles for your items. This positively impacts the arbitration of result cluster candidates and the likelihood of your content showing up in a result cluster. For example, avoid the use of IDs as values for the property "title" unless your users are using IDs to look for content. 
 
-How often a Result Cluster is shown varies on several factors such as the number of search verticals that you configure and the type of content. By interacting with Result Clusters, either by clicking on them or ignoring them, you will implicitly provide hints that over time will adjust the triggering of Result Clusters.
+How often a result cluster is shown varies on factors such as the number of search verticals that you configure and the type of content. By either selecting or ignoring result cluster results, you will implicitly provide hints that will adjust the triggering of result clusters over time.
 
 ## Search result experience for connector results
-The search result experience for connector items shown in Result cluster is system generated. You must declare the properties that are going to be used as ‘Title’ and ‘Content’ during connection registration for results to appear in Result Cluster. The result cluster does not use result layout defined using result type.
+The search result experience for connector items shown in your result cluster is system generated. You must declare the "title" property and item content during connection registration if you want results to appear in your result cluster. The result cluster does not use result layout defined using result type.
 
 ## Preview limitations  
-Result Clusters is presently in preview as we are working to ensure that the experience doesn’t have any impact on performance and ensuring high quality of the connectors results shown.  
-
-During the preview phase, we would love to get feedback from customers who have tried out the experience and let us know which aspects work well and which need improvement.
+If you have tried using the result cluster experience in the preview phase, please let us know which aspects work well and which need improvement.
 
 ## Enabling this experience   
-The Result Cluster experience is turned off by default.  
-Turn on the experience at organization level:   
-1.	In the Microsoft 365 admin center, go to Settings > Microsoft Search > Customization > Verticals.  
-2.	Select  ‘All’ vertical to find ‘Show connector results’. 
-Turn on the experience at the site level 
-1.	On the SharePoint site where you want the experience, go to Settings. 
-2.	Select Site information and then View all site settings. 
-3.	Look for the Microsoft Search section, and then select Configure Microsoft Search for this site collection. 
-4.	In the navigation pane, go to Custom experience, and then select the Verticals tab. 
-5.	Select  and open ‘All’ vertical to find ‘Show connector results’.
+The result cluster experience is turned off by default.  
+Follow these steps to turn on the experience at the organization level:   
 
-## View the Result cluster experience after it's enabled
-After you turn on the result cluster experience, it might take a while before you  can view it. If you don't want to wait after turning it on, you can append cacheClear=true to the URL in SharePoint and Office to try the experience immediately.  
+Microsoft 365 Admin Center
+1.	In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to **Settings** > **Microsoft Search** > **Customization** > **Verticals**.  
+2.	Select  the **All** vertical and go to the **Show connector results** section. Turn on the experience at the site level. 
+
+Sharepoint
+1. On the SharePoint site where you want the result cluster experience, go to **Settings**. 
+2. 	Go to **Site information**>**View all site settings**. 
+3.	Go to the Microsoft Search section, then select **Configure Microsoft Search for this site collection**.
+4.	In the navigation pane, go to **Custom experience**, then select **Verticals**. 
+5.	Select the **All** vertical, then enable **Show connector results**.
+
+## View the result cluster experience after it is enabled
+After you turn on the result cluster experience, it might take a while before you can view it. If you want the experience immediately, you can append *cacheClear=true* to the URL in SharePoint and Office.  
 
