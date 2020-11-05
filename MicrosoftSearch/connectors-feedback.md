@@ -11,10 +11,10 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "How to provide feedback for Microsoft Search Connectors"
+description: "How to provide feedback for Microsoft Graph connectors"
 ---
 
-# Provide feedback for Microsoft Search connectors
+# Provide feedback for Microsoft Graph connectors
 
 The Microsoft Graph connectors team responds to the search admin community across several channels:
 
