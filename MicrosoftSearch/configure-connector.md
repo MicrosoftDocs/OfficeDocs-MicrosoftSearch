@@ -49,11 +49,13 @@ You will need to specify these attributes:
 
 The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters. 
 
-### Step 3: Connection Settings
+## Step 3: Connection Settings
 
-The process to configure connection settings varies based on the type of data source. See the Connector-specific information for the type of Graph connector you want to add to your tenant to complete this step in the setup process. 
+The process to configure the Connection settings varies based on the type of data source. See the Connector-specific information for the type of data source you want to add to your tenant to complete this step in the setup process.  
 
-To learn more about connecting to your on-premises data source, see [Install an on-premises data gateway](https://aka.ms/configuregateway).
+To learn more about connecting to an on-premises data source, see [Install an on-premises data gateway](https://aka.ms/configuregateway).
+
+## Step 4: Assign property labels
 
 ### Select source properties
 
