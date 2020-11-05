@@ -15,42 +15,45 @@ description: "Configure your Microsoft-built connector for Microsoft Search"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# Set up your Microsoft-built connector for Microsoft Search
+# General setup instructions for Graph connectors by Microsoft 
 
-This article guides you through the steps of configuring a Microsoft-built connector. It outlines the flow of setting up a connection in the Microsoft 365 [admin center](https://admin.microsoft.com). For more information on how to set up specific Microsoft-built connectors, see these articles:
+This article summarizes the basic process required to use the [Microsoft 365 admin center](https://admin.microsoft.com) to setup any of the Graph connectors by Microsoft. The basic process includes the following steps:  
 
-* [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
-* [Azure DevOps](azure-devops-connector.md)
-* [Azure SQL](MSSQL-connector.md)
-* [Enterprise websites](enterprise-web-connector.md)
-* [MediaWiki](mediawiki-connector.md)
-* [Microsoft SQL server](MSSQL-connector.md)
-* [ServiceNow](servicenow-connector.md)
+1. Add a Graph connector in the Microsoft 365 admin center.
+2. Name the connection.
+3. Configure the connection settings.
+4. Assign property labels.
+5. Manage schema.
+6. Choose refresh settings.
+7. Review the connection.
 
-## Set up
+It is important to note that the setup process is very similar for all the Graph connectors by Microsoft but is not exactly the same. **In addition to reading this article, be sure to read the connector-specific information that applies to the data source(s) you plan to add to your tenant.**  
+
+## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
 Complete the following steps to configure any of the Microsoft-built connectors.
 
-1. Go to the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Sign in to your account with the credentials for your [Microsoft 365](https://www.microsoft.com/microsoft-365) tenant.
-3. Select **Add a connector**.
-4. From the list of available connectors, select the connector of your choice.
+1. Sign into your admin account in the [Microsoft 365 admin center](https://admin.microsoft.com)
+2. Go to the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors), which you can locate by selecting **Settings** in the navigation menu and then selecting **Microsoft Search**.
+3. Select **+Add**.
+4. Select the data source of your choice from the menu of available options.
 
-![Data sources available include: Azure DevOps Connector, ServiceNow, ADLS Gen2, Enterprise websites, MediaWiki, Microsoft SQL server, and Azure SQL.](media/add_connector.png)
+![Data sources available include: ADLS Gen2, Enterprise websites, Microsoft SQL server, Azure SQL, Oracle SQL database, ServiceNow, File share, Azure DevOps, and MediaWiki.](media/add-connector.png)
 
-### Name the connector
+## Step 2: Name the connection
+You will need to specify these attributes: 
 
-To create a connection, first specify these attributes:
+* Name  
+* Connection ID 
+* Description (optional) 
 
-1. Name of the connection
-2. Connection ID
-3. Description (optional)
+The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters. 
 
-The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters.
+### Step 3: Connection Settings
 
-### Connect to a data source
+The process to configure connection settings varies based on the type of data source. See the Connector-specific information for the type of Graph connector you want to add to your tenant to complete this step in the setup process. 
 
-The data connection process varies based on the type of connector. To learn more about connecting to your on-premises data source, see [Install an on-premises data gateway](https://aka.ms/configuregateway).
+To learn more about connecting to your on-premises data source, see [Install an on-premises data gateway](https://aka.ms/configuregateway).
 
 ### Select source properties
 
