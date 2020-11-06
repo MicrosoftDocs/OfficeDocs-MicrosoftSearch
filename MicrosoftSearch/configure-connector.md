@@ -22,12 +22,13 @@ This article summarizes the basic process required to use the [Microsoft 365 adm
 1. Add a Graph connector in the Microsoft 365 admin center.
 2. Name the connection.
 3. Configure the connection settings.
-4. Assign property labels.
-5. Manage schema.
-6. Choose refresh settings.
-7. Review the connection.
+4. Manage search persmissions.
+5. Assign property labels.
+6. Manage schema.
+7. Choose refresh settings.
+8. Review the connection.
 
-It is important to note that the setup process is very similar for all the Graph connectors by Microsoft but is not exactly the same. **In addition to reading this article, be sure to read the connector-specific information that applies to the data source(s) you plan to add to your tenant.**  
+It is important to note that the setup process is very similar for all the Graph connectors by Microsoft but is not exactly the same. **In addition to reading this article, be sure to read the connector-specific for your data source.**  
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
@@ -40,6 +41,8 @@ Complete the following steps to configure any of the Microsoft-built connectors.
 
 ![Data sources available include: ADLS Gen2, Enterprise websites, Microsoft SQL server, Azure SQL, Oracle SQL database, ServiceNow, File share, Azure DevOps, and MediaWiki.](media/add-connector.png)
 
+>[!Note:] You can add a maximum of ten Graph connections to each tenant.
+
 ## Step 2: Name the connection
 You will need to specify these attributes: 
 
@@ -49,47 +52,47 @@ You will need to specify these attributes:
 
 The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters. 
 
-## Step 3: Connection Settings
+## Step 3: Configure the connection Settings
 
 The process to configure the Connection settings varies based on the type of data source. See the Connector-specific information for the type of data source you want to add to your tenant to complete this step in the setup process.  
 
 To learn more about connecting to an on-premises data source, see [Install an on-premises data gateway](https://aka.ms/configuregateway).
 
-## Step 4: Assign property labels
+## Step 4: Manage search permissions
+In this step you can choose whether to allow everyone in your organization to see search results from this data source. For some types of Graph connectors, you can also choose to allow only certain users to see search results from this data source. 
 
-### Select source properties
+## Step 5: Assign property labels
+You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users. By default, some of the Labels will already been assigned source properties.
 
-The data fields set by your third-party data source as source properties are indexed into Microsoft Search. To modify these properties, select **Edit properties** in the side bar on the right of the **Connectors** page. You can select **up to 64 source properties**.
+## Step 6: Manage schema
+You can manage the schema for the results that will be indexed. For a source property to be indexed, at least one of the following attributes must be selected: **Query, Search, Retrieve**.
 
-### Manage the search schema
+### Content property
+It is strongly recommended that you select a **Content Property" from the drop-down menu of options, or keep the default if one is present. This property is used for full-text indexing of content, search results page snippet generation, [result cluster](result-cluster.md) participation, language detection, HTML/text support, ranking and relevance, and query formulation. 
 
-#### Content property
+If you select a content property, you will have the option of using the system-generated property **ResultSnippet** when you [create your result type](customize-results-layout.md). This property serves as a placeholder for the dynamic snippets that are generated from the content property at query time. If you use this property in your result type, snippets will be generated in your search results.
 
-You can select which source property is the **content** property (full-text index of the item) by selecting any string property from the **content** property dropdown. Alternatively, you can keep the default selected property if one is present.
+### Search schema attributes
 
-It is especially important that the correct property is selected since this property used for full-text indexing of content, search results page snippet generation, language detection, HTML/text support, ranking and relevance, and query formulation.
-
-If you select a property for **content**, you will have the option of using the system-generated property **ResultSnippet** when you [create your result type](customize-results-layout.md). This property serves as a placeholder for the dynamic snippets that are generated from the **content** property at query time. If you use this property in your result type, snippets will be generated in your search results.
-
-#### Search schema attributes
-
-You can set the search schema attributes to control search functionality of each source property. A search schema helps determine what results display on the search results page and what information end users can view and access.
-
-Search schema attributes include **searchable**, **queryable**, and **retrievable**. The following table lists each of the attributes that Microsoft Graph connectors support and explains their functions.
-
-Search schema attribute | Function | Example
---- | --- | ---
-SEARCHABLE | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the property is **title**, a query for **Enterprise** returns answers that contain the word **Enterprise** in any text or title.
-QUERYABLE | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the **Title** property is queryable, then the query **Title: Enterprise** is supported.
-RETRIEVABLE | Only retrievable properties can be used in the result type and display in the search result. |
-
-For all connectors, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute in the search schema page.
+Your search schema determines what results display on the search results page and what information end users can view and access. The connection wizard automatically selects a search schema based on the set of source properties you chose. You can modify this schema by selecting the check boxes for each search schema attribute. The search schema attributes include **Query**, **Search**, and **Retrieve**. 
 
 ![Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions.](media/manageschema.png)
 
-#### Restrictions and recommendations for search schema settings
+The following table explains the function of each of the search schema attributes attributes.
 
-* The **content** property is searchable only. Once selected in the dropdown, this property cannot be marked **retrievable** or **queryable**. Significant performance issues occur when search results render with the **content** property. An example is the **Text** content field for a [ServiceNow](https://www.servicenow.com) knowledge-base article.
+Search schema attribute | Function | Example
+--- | --- | ---
+QUERY | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the **Title** property is queryable, then the query **Title: Enterprise** is supported.
+SEARCH | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the **Title** property is searchable, then the query **Title: Enterprise** returns answers that contain the word "Enterprise" in any text or title.
+RETRIEVE | Only retrievable properties can be used in the result type and displayed in the search result. | If the title property is retrievable, then
+
+***What about the refine property?***
+
+### Restrictions and recommendations for search schema settings
+
+* The **content** property is searchable only. Once selected in the dropdown, this property cannot be marked **retrievable** or **queryable**. 
+
+* Significant performance issues occur when search results render with the **content** property. An example is the **Text** content field for a [ServiceNow](https://www.servicenow.com) knowledge-base article.
 
 * Only properties marked as retrievable render in the search results and can be used to create modern result types (MRTs).
 
@@ -99,15 +102,13 @@ For all connectors, custom types must be set manually. To activate search capabi
 > [!Note]
 > After you create a connection, you **can't** modify the schema. To do that, you need to delete your connection and create a new one.
 
-### Manage search permissions
+## Step 7: Refresh settings
 
-Access Control Lists (ACLs) determine which users in your organization can access each item of data. All the connectors support search permissions that are visible to all users.
+The refresh interval determines how often your data is synced with the index in Microsoft Graph and Microsoft Search. Each type of data source has a different set of optimal refresh schedules based on how often data is modified and the type of modifications.
 
-### Set the refresh schedule
+There are two types of refresh intervals, which are **Full refresh** and **Incremental refresh**, but incremental refreshes are not available for some data sources.
 
-The refresh schedule determines how often your data is synced with the index in Microsoft Graph and Microsoft Search. You can schedule the refresh in two ways: full crawl or incremental crawl.
-
-With a **full crawl**, the search engine processes and indexes every item in the content source, regardless of previous crawls. Full crawl works best in these situations:
+With a **full refresh**, the search engine processes and indexes every item in the content source, regardless of previous crawls. Full refreshes works best for these situations:
 
 * Detecting deletions of data.
 * The incremental crawl failed to crawl content for errors.
@@ -115,26 +116,20 @@ With a **full crawl**, the search engine processes and indexes every item in the
 * Crawl rules were modified.
 * A software update for Microsoft Search is required. Updates modify the search schema.
 
-With an **incremental crawl**, the search engine can process and index only the items that were created or modified since the last successful crawl. Therefore, not all the data in the content source is re-indexed. Incremental crawls work best to detect content, metadata, permission, and other updates.
+***Should above be in parentheses?***
 
-Incremental crawls are much faster than full crawls because unchanged items aren’t processed. To maintain an accurate data sync between the content source and the search index, you need to run both crawls periodically.
+With an **incremental refersh**, the search engine can process and index only the items that were created or modified since the last successful crawl. Therefore, not all the data in the content source is re-indexed. Incremental refreshes work best to detect content, metadata, permission, and other updates.
 
-Each connector will have a different optimal set of refresh schedules based on how often data is modified and the type of modifications.
+Incremental refreshes are much faster than full refreshes because unchanged items aren’t processed. However, if you choose to run incremental refreshes, you will still need to run full refreshes periodically to maintain an accurate data sync between the content source and the search index.
 
 ![Incremental crawl and full crawl interval settings showing Incremental at 15 minutes and Full crawl at 1 week.](media/refreshschedule.png)
 
-### Review connector settings
+***Change screenshot for one that shows both options in new UI***
 
-After you configure your connector, the [admin center](https://admin.microsoft.com) takes you to a page where you can review your settings. You can go back through the configuration process to edit any setting before you confirm the connection. To learn more, see [Manage your connector](manage-connector.md).
+## Step 8: Review connection
 
-## Next steps: Customize the search results page
-
-With the Microsoft Search user interface (UI), your end users can search content from your [Microsoft 365](https://www.microsoft.com/microsoft-365) productivity apps and the broader Microsoft ecosystem. A search vertical refers to the tabs that are shown when a user views their search results in [SharePoint](https://sharepoint.com/), [Microsoft Office](https://Office.com), and Microsoft Search in [Bing](https://Bing.com). You can customize search verticals to narrow down results, so that only a certain type of search results is displayed. These verticals appear as a tab on the top of the search results page. A modern result type (MRT) is the UI that designates how results are presented.
-
-Create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won’t show up on the search results page.
-
-To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).
+You can review your entire configuration and edit settings as needed before completing the connection. **Be sure to read the connector-specific information for your data source if you have not already done so.** Select **Finish updating** when you are ready to complete the connection.
 
 ## How do I know the connection setup worked?
 
-Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md). 
