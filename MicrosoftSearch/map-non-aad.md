@@ -1,5 +1,5 @@
 ---
-title: "User Mapping" 
+title: "Mapping non-AAD identities" 
 ms.author: monaray 
 author: monaray97 
 manager: jameslau 
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150 
 
 ROBOTS: NOINDEX, NOFOLLOW
-description: "User mapping information" 
+description: "steps on how to map non-AAD identities" 
 --- 
 
 
@@ -25,8 +25,9 @@ This article walks you through the steps of mapping your non-Azure AD identities
 
 These steps are only relevant to search administrators who are setting up a [ServiceNow](servicenow-connector.md) or [Salesforce](salesforce-connector.md) connectors by Microsoft with search permissions for "Only people with access to this data source" and identity type "Non-AAD."
 
-> [!NOTE] If you are setting up a Salesforce connector and select **Only people with access to this data source** and identity type **AAD** on the search permissions screen, refer to the [Map your Azure AD Identities](map-aad.md) article for steps on how to map Azure AD identities.  
- 
+>[!NOTE]
+>If you are setting up a Salesforce connector and select **Only people with access to this data source** and identity type **AAD** on the search permissions screen, refer to the [Map your Azure AD Identities](map-aad.md) article for steps on how to map Azure AD identities.  
+
 ## Steps for mapping your non-Azure AD properties
 
 ### 1. Select an Azure AD user property  
@@ -72,7 +73,8 @@ Below are some examples of formulas with sample regular expression outputs and f
 
 After you provide your formula, you can optionally click **Preview** to see a preview of 5 random users from your data source with their respective user mappings applied. The output of the preview includes the value of the non-Azure AD user properties selected in step 2 for those users and the output of the final formula provided in step 3 for that user. It also indicates whether the output of the formula could be resolved to an Azure AD user in your tenant via a "Success" or "Failed" icon.  
 
-> [!NOTE] You can still proceed with creating your connection if one or more user mappings have a "Failed" status after you click **Preview**. The preview shows 5 random users and their mappings from your data source. If the mapping you provide does not map all users, you may experience this case.
+>[!NOTE]
+>You can still proceed with creating your connection if one or more user mappings have a "Failed" status after you click **Preview**. The preview shows 5 random users and their mappings from your data source. If the mapping you provide does not map all users, you may experience this case.
 
 ## Sample non-Azure AD mapping
 
