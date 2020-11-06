@@ -29,7 +29,7 @@ To connect to your Azure DevOps instance, you need your Azure DevOps [organizati
 
 ### Register an app
 
-You must register an app in Azure DevOps so that the Microsoft Search app can access the instance. To learn more, see Azure DevOps documentation on how to [register an app](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app).
+You must register an app in Azure DevOps so that the Microsoft Search app can access the instance. To learn more, see Azure DevOps documentation on how to [register an app](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app).
 
 The following table provides guidance on how to fill out the app registration form:
 
@@ -64,15 +64,16 @@ Next, select which fields you want the connection to index and preview data in t
 
 ![Choose properties](media/ADO_choose_properties.png)
 
-## Manage the search schema
-
-Configure the search schema mapping. You can choose which properties to make **queryable**, **searchable** and **retrievable**.
-
 ## Manage search permissions
 
 The Azure DevOps connector currently only supports search permissions **Visible to Everyone**. Indexed data will appear in the search results for all users.
 
-## Set the refresh schedule
+## Manage search schema
+
+Configure the search schema mapping. You can choose which properties to make **queryable**, **searchable** and **retrievable**.
+
+
+## Set refresh schedule
 
 The Azure DevOps connector supports refresh schedules for both full and incremental crawls. A full crawl finds deleted work items that were previously synced to the Microsoft Search index. A full crawl runs to sync all the work items. To sync new work items and updates to existing work items, you need to schedule incremental crawls.
 
