@@ -28,12 +28,25 @@ At the top of the Microsoft Search results page, there's a row of tabs. These ar
 
 You can add search verticals that are relevant to your organization. These will appear on the Microsoft Search results page in [SharePoint](https://sharepoint.com/), [Office](https://Office.com), and [Bing](https://bing.com). For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each group needs. You can add verticals to show results only from content indexed via connectors.  
 
+### Multiple connections in a vertical
+
+A search vertical can now surface results from multiple connector sources. You can now add one or more connections under a search vertical providing greater flexibility in designing your search result page. The existing administrative experience of vertical setup has been enhanced to allow you to select multiple connections in the 'Content Source' step.
+The search output in a search vertical with multiple connections greatly benefits from accurately appointing as many semantic labels as possible. You can add semantic labels upon schema definition and ingestion. (Please find here additional information on how to create and manage semantic labels).
+
+### Things you should know
+
+1. A connection can be added as a content source only under one vertical. Reusing connections under multiple verticals is not allowed.
+2. If you need to setup a query for a search vertical where multiple connection sources have been added, common source properties should be used to create a such a query.
+
 >[!NOTE]
-> Verticals and result types are currently in preview as a part of the Microsoft Graph connectors preview and can't be used for content that resides in [SharePoint](https://sharepoint.com/). For more about the preview, see [Connectors preview](connectors-preview.md). To participate in the preview, you must first submit the [Microsoft Graph Connectors Preview Signup form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
+> Verticals and result types are currently in preview as a part of the Microsoft Graph connectors preview. For more about the preview, see [Connectors preview](connectors-preview.md). To participate in the preview, you must first submit the [Microsoft Graph Connectors Preview Signup form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
+Multiple connections in a vertical is currently in preview. For more about the preview, see [Connectors preview](connectors-preview.md).
 
 ## Things to consider
 
 Before you start, make sure that the connector has been indexed. This can take up to 48 hours, depending on the file size.
+
+You can’t create a vertical for content that resides in [SharePoint](https://sharepoint.com/).
 
 There are three basic steps to add a vertical:
 
@@ -51,16 +64,16 @@ You can use a limited set of [Keyword Query Language (KQL)](https://docs.microso
 
 To create the vertical on Microsoft Search in [SharePoint](https://sharepoint.com/) home, [Office](https://office.com), or [Bing](https://bing.com), follow these steps:
 
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
-1. Select **Add** to get started.  
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
+2. Select **Add** to get started.  
 
 ### Create a vertical at the site level
 
 1. On the [SharePoint](https://sharepoint.com/) site where you want the vertical, go to **Settings**.
-1. Select **Site information** and then **View all site settings**.
-1. Look for the **Microsoft Search** section, and then select **Configure Microsoft Search for this site collection**.
-1. In the navigation pane, go to **Custom experience**, and then select the **Verticals** tab.
-1. To add a vertical, select **Add**.
+2. Select **Site information** and then **View all site settings**.
+3. Look for the **Microsoft Search** section, and then select **Configure Microsoft Search for this site collection**.
+4. In the navigation pane, go to **Custom experience**, and then select the **Verticals** tab.
+5. To add a vertical, select **Add**.
   Or, to edit a vertical, select it in the list.
 
 Remember, verticals are created in a disabled state. They must be enabled before users can see them.
@@ -69,29 +82,35 @@ Remember, verticals are created in a disabled state. They must be enabled before
 
 You can define how results are displayed in the vertical by designing the layout using result types. The result layout lets you show important information directly in the search results, so users don't have to select each result to see if they found what they're looking for.
 
-A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It consists of the following:
+### Default search result layout
+
+A default search result layout will be shown for Connector content if **labels** and **content** property have been mapped correctly to the source properties at the time of configuring the connector. The label **title** is the most important label. It is **strongly recommended** that you have a property assigned to this label to use default search result layout.
+
+### Create your own result type
+
+You can decide to create your own search result layout and override the default search result layout by creating a **result type**. A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It consists of the following:
 
 - **One or more conditions** to compare each search result against, such as the content source of the search result.  
 - A **result layout** to use for search results that meet the conditions. The result layout controls the way that all results that meet the conditions appear and behave on a search results page.
 
-**You must create at least one result type for results to display on the vertical.** You can create multiple result types for each vertical, which allows you to use different layouts for different type of results. For example, you can customize *Severity 1* incidents to have more prominent colors and a larger font compared to *Severity 3* incidents.
+**If appropriate mapping is not done to show default search result layout, Yyou must create at least one result type for results to display on the vertical.** You can create multiple result types for each vertical, which allows you to use different layouts for different type of results. For example, you can customize *Severity 1* incidents to have more prominent colors and a larger font compared to *Severity 3* incidents.
 
 After you start the wizard, you're guided through the steps to define the name, content source, and conditions for the result type. You can define the priority of the result type from the list view.
   
 ### Create a result type at the organization level
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
-1. To add a **Result type**, select **Add**. To edit a result type, select the result type in the relevant list.
+2. To add a **Result type**, select **Add**. To edit a result type, select the result type in the relevant list.
 
 ### Create a results type at the site level
 
 1. On the [SharePoint](https://sharepoint.com/) site where you want to create the result type, go to **Settings**.
-1. Select **Site information** and then **View all site settings**.
-1. Look for the Microsoft Search section, and then select **Configure Microsoft Search for this site collection**.
-1. In the navigation pane, go to **Custom experience**, and select **Result type** tab.
-1. To add a result type, select **Add**.  Or, to edit a result type, select the result type in the list.
+2. Select **Site information** and then **View all site settings**.
+3. Look for the Microsoft Search section, and then select **Configure Microsoft Search for this site collection**.
+4. In the navigation pane, go to **Custom experience**, and select **Result type** tab.
+5. To add a result type, select **Add**.  Or, to edit a result type, select the result type in the list.
 
-### View the vertical after it's enabled
+## STEP 3: View the vertical after it's enabled
 
 After you enable the vertical, it might take a while before you can view it. If you don't want to wait after enabling it, you can append **cacheClear=true** to the URL in [SharePoint](https://sharepoint.com/) and [Office](https://office.com) to view the vertical immediately.
 

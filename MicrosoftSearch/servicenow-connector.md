@@ -23,17 +23,21 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 Learn how to access Microsoft built connectors from [Set up your Microsoft-built connector for Microsoft Search](https://docs.microsoft.com/microsoftsearch/configure-connector). ServiceNow connector specific configuration is explained in the article below.
 
 ## Connection Settings
+
 To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**, credentials for this account, and the Client ID and Client Secret for OAuth authentication.  
 
 Your organization’s **ServiceNow instance URL** typically looks like **https://&lt;your-organization-domain>.service-now.com**. Along with this URL, you will need an account for setting up the connection to ServiceNow as well as for allowing Microsoft Search to periodically update the articles from ServiceNow based on the refresh schedule. The account should have <em>knowledge</em> role. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
 
 To authenticate and sync content from ServiceNow, choose **one of three** supported methods:
+
 1. Basic authentication 
 2. ServiceNow OAuth (recommended)
 3. Azure AD OpenID Connect
 
 #### Basic authentication
+
 Enter the username and password of ServiceNow account with <em>knowledge</em> role to authenticate to your instance.
+
 #### ServiceNow OAuth
 
 To use ServiceNow OAuth for authentication, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance, so that the Microsoft Search app can access the instance. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
@@ -142,16 +146,20 @@ Access the ServiceNow account you created with ServiceNow Principal ID as User I
 
 Use Application ID as Client ID (from step 1), and Client secret (from step 2) in admin center configuration wizard to authenticate to your ServiceNow instance using Azure AD OpenID Connect.
 
-## Filter data 
+## Filter data
+
 With a ServiceNow query string, you can specify conditions for syncing articles. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only articles that are published and active. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
 ## Manage search permissions
+
 The ServiceNow connector only supports search permissions visible to **Everyone**. Indexed data appears in the search results and is visible to all users in the organization.
 
-## Manage the search schema
+## Manage schema
+
 After successful connection, configure the search schema mapping. You can choose which properties to make **queryable**, **searchable**, and **retrievable**. To learn more about managing your search schema, see [Manage the search schema](https://docs.microsoft.com/microsoftsearch/configure-connector#manage-the-search-schema).
 
 ## Set the refresh schedule
+
 The ServiceNow connector supports refresh schedules for both full and incremental crawls. We recommend that you set both.
 
 A full crawl schedule finds deleted articles that were previously synced to the Microsoft Search index and any articles that moved out of the sync filter. When you first connect to ServiceNow, a full crawl runs to sync all the knowledge-base articles. To sync new items and make updates, you need to schedule incremental crawls.
@@ -159,7 +167,9 @@ A full crawl schedule finds deleted articles that were previously synced to the 
 The recommended default is one day for a full crawl and four hours for an incremental crawl.
 
 ## Review and publish
+
 After you configure your connector, you can review and publish the connection.
 
 ## Next steps
+
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
