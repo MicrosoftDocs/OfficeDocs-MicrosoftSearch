@@ -15,14 +15,14 @@ description: "Details of the Connectors Result Cluster experience"
 
 ROBOTS: NOINDEX, NOFOLLOW
 ---
-# Connectors Result Cluster Experience 
+# Connectors Result Cluster Experience
 
-## Overview of the Connectors result cluster (Preview)  
+## Overview of the Connectors result cluster (Preview)
 Graph connectors are a great way for enterprises to onboard and search for new content sources that are not part of Microsoft 365. With Connectors Result Clusters, enterprises can now search for content from third party data sources in their default view (the All tab) in SharePoint, Office.com and Microsoft Search in Bing. 
 
 Result clusters help users easily discover and explore third party content which was previously only present in search verticals tied to connectors. The results shown in a result cluster are grouped together based on how they are configured by the tenant administrator in a search vertical.  
 
-## How connector results are selected  
+## How connector results are selected
 Connector results provided in the Result Cluster are derived from individual search verticals with connector content. Each search vertical provides a set of relevant results (currently the top two) which becomes a Result Cluster candidate. Candidates are chosen based on relevant clues derived from the ‘title’ and ‘result snippet’ properties of the results and the content part of the items. 
 
 To ensure discovery of content from the search verticals, we highly recommend providing meaningful and informative titles for your items. This positively impacts the arbitration of candidates, and the likelihood of your content to show up in a Result Cluster. Avoid the use of IDs as ‘title’ – unless your users are using IDs to look for content. 
@@ -51,5 +51,3 @@ Turn on the experience at the site level
 
 ## View the Result cluster experience after it's enabled
 After you turn on the result cluster experience, it might take a while before you  can view it. If you don't want to wait after turning it on, you can append cacheClear=true to the URL in SharePoint and Office to try the experience immediately.  
-
-
