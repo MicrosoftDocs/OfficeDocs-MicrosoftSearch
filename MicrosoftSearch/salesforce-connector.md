@@ -90,10 +90,10 @@ You can choose to ingest Access Control Lists (ACLs) from your Salesforce instan
 ![Select permissions screen that has been completed by an admin. The admin has selected the "Only people with access to this data source" option and has also selected "AAD" from a drop down menu of identity types.](media/sf6.png)
 
 ### Map non-AAD identities 
-If you chose to ingest an ACL from your Salesforce instance and selected "non-AAD" for the identity type see [Map your non-Azure AD Identities ](user-mapping.md) for instructions on mapping the identities.
+If you chose to ingest an ACL from your Salesforce instance and selected "non-AAD" for the identity type see [Map your non-Azure AD Identities ](map-non-aad.md) for instructions on mapping the identities.
 
 ### Map AAD identities
-If you chose to ingest an ACL from your Salesforce instance and selected "AAD" for the identity type see Map your Azure AD Identities for instructions on mapping the identities.
+If you chose to ingest an ACL from your Salesforce instance and selected "AAD" for the identity type see [Map your Azure AD Identities](map-aad.md) for instructions on mapping the identities.
 
 ## Assign property labels 
 You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users. By default, some of the Labels like ”Title”, “url”, and  “LastModifiedBy” have already been assigned source properties.
