@@ -21,23 +21,19 @@ description: "User mapping information"
 
 # Map your non-Azure AD Identities  
 
-This article walks you through the steps of mapping your non-Azure AD identities to your Azure AD identities so that people in your Access Control List (ACL) with non-Azure AD identities can see connector search results scoped to them. 
+This article walks you through the steps of mapping your non-Azure AD identities to your Azure AD identities so that people in your Access Control List (ACL) with non-Azure AD identities can see connector search results scoped to them.
 
-These steps are only relevant to search administrators who are setting up a ServiceNow or [Salesforce](salesforce-connector.md) connectors by Microsoft with search permissions for “Only people with access to this data source” and identity type “Non-AAD.” 
+These steps are only relevant to search administrators who are setting up a [ServiceNow](servicenow-connector.md) or [Salesforce](salesforce-connector.md) connectors by Microsoft with search permissions for "Only people with access to this data source" and identity type "Non-AAD."
 
+> [!Note] If you are setting up a Salesforce connector and select **Only people with access to this data source** and identity type **AAD** on the search permissions screen, refer to the [Map your Azure AD Identities](map-aad.md) article for steps on how to map Azure AD identities.  
  
-
-> [!Note] 
-> If you are setting up a Salesforce connector and select **Only people with access to this data source** and identity type **AAD** on the search permissions screen, refer to the [Salesforce](salesforce-connector.md) article for steps on how to map Azure AD identities.  
- 
-
-## Steps for mapping your non-Azure AD properties 
+## Steps for mapping your non-Azure AD properties
 
 ### 1. Select an Azure AD user property  
 
 You can select the Azure AD user property you are creating the mapping for. This is the target property you are aiming to map your non-Azure AD identities to.  
 
-You can select one of the following Azure AD properties: 
+You can select one of the following Azure AD properties:
 
 | Azure AD property    | Definition           | Example         |
 | :------------------- | :------------------- |:--------------- |
@@ -45,10 +41,9 @@ You can select one of the following Azure AD properties:
 | Azure AD ID                 | An Azure AD ID for a given user is the unique GUID of the user.                 | 58006c96-9e6e-45ea-8c88-4a56851eefad            |
 | Active Directory Security ID (SID)                  | SID (Security Identifier) is a unique identifier that Active Directory uses to identify objects as security principal.                  | S-1-5-21-453406510-812318184-4183662089             |
 
+### 2. Select non-Azure AD user properties to map
 
-### 2. Select non-Azure AD user properties to map 
-
-You can select non-Azure AD properties pulled from your data source to apply regular expressions on. To learn more about where to find these properties in your data source, see the ServiceNow and [Salesforce](salesforce-connector.md) pages.  
+You can select non-Azure AD properties pulled from your data source to apply regular expressions on. To learn more about where to find these properties in your data source, see the [ServiceNow](servicenow-connector.md) and [Salesforce](salesforce-connector.md) pages.  
 
 You can select a non-Azure AD user property from the dropdown and provide a regular expression to be applied on those user property values. To learn more about regular expressions, see [regular expression reference]( https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).  
 
@@ -60,17 +55,13 @@ Below are some examples of regular expressions and their outputs applied to a sa
 | Alexis Vasquez                 | ..$                 | ez            |
 | Alexis Vasquez                  | (\w+)$                  | Vasquez             |
 
-
-
 You can add as many non-Azure AD user properties as you would like expressions for. You can apply different regular expressions to the same user property if your final formula warrants that.  
 
- 
-
-### 3. Create formula to complete mapping 
+### 3. Create formula to complete mapping
 
 You can combine the outputs of the regular expressions applied to each of your non-Azure AD user properties to form the Azure AD property selected in step 1.
 
-In the formula box, “{0}” corresponds to the output of the regular expression applied to the *first* non-Azure AD property you selected. “{1}” corresponds to the output of the regular expression applied to the *second* non-Azure AD property you selected. “{2}” corresponds to the output of the regular expression applied to the *third* non-Azure AD property, and so on.  
+In the formula box, "{0}" corresponds to the output of the regular expression applied to the *first* non-Azure AD property you selected. "{1}" corresponds to the output of the regular expression applied to the *second* non-Azure AD property you selected. "{2}" corresponds to the output of the regular expression applied to the *third* non-Azure AD property, and so on.  
 
 Below are some examples of formulas with sample regular expression outputs and formula outputs: 
 
@@ -79,23 +70,22 @@ Below are some examples of formulas with sample regular expression outputs and f
 | {0}.{1}@contoso.com  | firstname | lastname |firstname.lastname@contoso.com
 | {0}@domain.com                 | userid                 |             |userid@domain.com
 
+After you provide your formula, you can optionally click **Preview** to see a preview of 5 random users from your data source with their respective user mappings applied. The output of the preview includes the value of the non-Azure AD user properties selected in step 2 for those users and the output of the final formula provided in step 3 for that user. It also indicates whether the output of the formula could be resolved to an Azure AD user in your tenant via a "Success" or "Failed" icon.  
 
-After you provide your formula, you can optionally click **Preview** to see a preview of 5 random users from your data source with their respective user mappings applied. The output of the preview includes the value of the non-Azure AD user properties selected in step 2 for those users and the output of the final formula provided in step 3 for that user. It also indicates whether the output of the formula could be resolved to an Azure AD user in your tenant via a “Success” or “Failed” icon.  
+> [!Note] You can still proceed with creating your connection if one or more user mappings have a "Failed" status after you click **Preview**. The preview shows 5 random users and their mappings from your data source. If the mapping you provide does not map all users, you may experience this case.
 
- 
+## Sample non-Azure AD mapping
 
-> [!Note] 
-> You can still proceed with creating your connection if one or more user mappings have a “Failed” status after you click **Preview**. The preview shows 5 random users and their mappings from your data source. If the mapping you provide does not map all users, you may experience this case. 
+See the snapshot below for a sample non-Azure AD mapping.
 
- 
+![Sample snapshot of how to fill out the non-Azure AD mapping page](media/non-aad-mapping.png)
 
 ## Limitations  
 
-test commit
 - Only one mapping is supported for all users. Conditional mappings are not supported.  
 
 - You cannot change your mapping once the connection is published.  
 
-- Only regex-based expressions against the non-AAD user properties are currently supported for the transformation. 
+- Only regex-based expressions against the non-AAD user properties are currently supported for the transformation.
 
-- There are only 3 Azure AD identities you can choose to map to (UPN, Azure AD ID, and AD SID). 
+- There are only 3 Azure AD identities you can choose to map to (UPN, Azure AD ID, and AD SID).
