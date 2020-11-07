@@ -18,6 +18,7 @@ description: "Configure your Microsoft-built connector for Microsoft Search"
 # General setup instructions for Graph connectors by Microsoft 
 
 This article summarizes the basic process required to use the [Microsoft 365 admin center](https://admin.microsoft.com) to setup any of the Graph connectors by Microsoft. The basic process includes the following steps:  
+<!---Add links to each section in the doc--->
 
 1. Add a Graph connector in the Microsoft 365 admin center.
 2. Name the connection.
@@ -52,7 +53,7 @@ You will need to specify these attributes:
 
 The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters. 
 
-## Step 3: Configure the connection Settings
+## Step 3: Configure the connection settings
 
 The process to configure the Connection settings varies based on the type of data source. See the Connector-specific information for the type of data source you want to add to your tenant to complete this step in the setup process.  
 
@@ -74,19 +75,22 @@ If you select a content property, you will have the option of using the system-g
 
 ### Search schema attributes
 
-Your search schema determines what results display on the search results page and what information end users can view and access. The connection wizard automatically selects a search schema based on the set of source properties you chose. You can modify this schema by selecting the check boxes for each search schema attribute. The search schema attributes include **Query**, **Search**, and **Retrieve**. 
+Your search schema determines what results display on the search results page and what information end users can view and access. The connection wizard automatically selects a search schema based on the set of source properties you chose. You can modify this schema by selecting the check boxes for each search schema attribute. The search schema attributes include **Query**, **Search**, **Retrieve**, and **Refine**.
+
+<!---Alias needs to be described somewhere--->
 
 ![Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions.](media/manageschema.png)
+
+<!---Replace screenshot with updated UI.  Match the source properties that are named and attributes that are checked in the examples in the table-->
 
 The following table explains the function of each of the search schema attributes attributes.
 
 Search schema attribute | Function | Example
 --- | --- | ---
-QUERY | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the **Title** property is queryable, then the query **Title: Enterprise** is supported.
-SEARCH | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the **Title** property is searchable, then the query **Title: Enterprise** returns answers that contain the word "Enterprise" in any text or title.
-RETRIEVE | Only retrievable properties can be used in the result type and displayed in the search result. | If the title property is retrievable, then
-
-***What about the refine property?***
+QUERY | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the **Title** property is queryable, then the query **Title: Enterprise** will search the string "Enterprise" only in the **Title** property.
+SEARCH | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the **Author** property is searchable, then users can query by author's name (e.g. "Jane Doe") in a free-text search.  
+RETRIEVE | Only retrievable properties can be used in the result type and displayed in the search result. | If the **Title** property is retrievable, you can use it in the [result type](https://docs.microsoft.com/microsoftsearch/customize-results-layout).
+REFINE |
 
 ### Restrictions and recommendations for search schema settings
 
@@ -98,33 +102,30 @@ RETRIEVE | Only retrievable properties can be used in the result type and displa
 
 * Only string properties can be marked searchable.
 
-
 > [!Note]
 > After you create a connection, you **can't** modify the schema. To do that, you need to delete your connection and create a new one.
 
 ## Step 7: Refresh settings
 
-The refresh interval determines how often your data is synced with the index in Microsoft Graph and Microsoft Search. Each type of data source has a different set of optimal refresh schedules based on how often data is modified and the type of modifications.
+The refresh interval determines how often your data is synced between the data source and Microsoft Search. Each type of data source has a different set of optimal refresh schedules based on how often data is modified and the type of modifications.
 
 There are two types of refresh intervals, which are **Full refresh** and **Incremental refresh**, but incremental refreshes are not available for some data sources.
 
-With a **full refresh**, the search engine processes and indexes every item in the content source, regardless of previous crawls. Full refreshes works best for these situations:
+With a full refresh, the search engine processes and indexes every item in the content source, regardless of previous crawls. A full refresh works best for these situations:
 
 * Detecting deletions of data.
-* The incremental crawl failed to crawl content for errors.
+* The incremental refresh failed to update content due to errors.
 * ACLs were modified.
 * Crawl rules were modified.
-* A software update for Microsoft Search is required. Updates modify the search schema.
+* When schema for the connection has been updated (schema updates are not yet supported)
 
-***Should above be in parentheses?***
-
-With an **incremental refersh**, the search engine can process and index only the items that were created or modified since the last successful crawl. Therefore, not all the data in the content source is re-indexed. Incremental refreshes work best to detect content, metadata, permission, and other updates.
+With an **Incremental refersh**, the search engine can process and index only the items that were created or modified since the last successful crawl. Therefore, not all the data in the content source is re-indexed. Incremental refreshes work best to detect content, metadata, permission, and other updates.
 
 Incremental refreshes are much faster than full refreshes because unchanged items aren’t processed. However, if you choose to run incremental refreshes, you will still need to run full refreshes periodically to maintain an accurate data sync between the content source and the search index.
 
 ![Incremental crawl and full crawl interval settings showing Incremental at 15 minutes and Full crawl at 1 week.](media/refreshschedule.png)
 
-***Change screenshot for one that shows both options in new UI***
+<!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
 ## Step 8: Review connection
 
