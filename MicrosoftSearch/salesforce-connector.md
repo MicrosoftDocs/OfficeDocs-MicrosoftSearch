@@ -25,7 +25,7 @@ With the Salesforce Graph connector, your organization can index Contacts, Oppor
 This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) administrators or anyone who configures, runs, and monitors a Salesforce connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
 >[!IMPORTANT]
-> The Salesforce Graph connector currently supports Summer ’20, Spring’20, Winter’20, and Summer ’19 versions.
+>The Salesforce Graph connector currently supports Summer ’20, Spring’20, Winter’20, and Summer ’19 versions.
 
 ## Connection settings
 
@@ -64,7 +64,7 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
 	- Select **edit policies**
 	- For refresh token policy, select **Refresh token is valid until revoked**
 
-![Select the Refresh Token Policy named "Refresh token is valid until revoked "](media/salesforce-connector/oauthpolicies.png)
+  ![Select the Refresh Token Policy named "Refresh token is valid until revoked "](media/salesforce-connector/oauthpolicies.png)
 
 You can now use the [M365 Admin Center](https://admin.microsoft.com/) to complete the rest of the setup process for your Graph connector.  
 
@@ -73,12 +73,19 @@ Configure the Connection settings for your Graph connector as follows:
 - For the Instance URL, use https://[domain].my.salesforce.com where domain would be the Salesforce domain for your organization. 
 - Enter the Client ID and Client Secret you obtained from your Salesforce instance and select Sign in.
 - If this is the first time you have attempted to Sign in with these settings, you will get a pop up asking you to login to Salesforce with your admin username and password. The screenshot below shows the popup. Enter your credentials and select Log in.
+<<<<<<< Updated upstream
 
   ![Login pop up asking for Username and password.](media/salesforce-connector/sf4.png)
 
 >[!NOTE]
 >If the pop up does not appear, it might be getting blocked in your browser, so you must allow pop-ups and redirects.
 
+=======
+![Login pop up asking for Username and password.](media/salesforce-connector/sf4.png)
+>[!NOTE]
+>If the pop up does not appear, it might be getting blocked in your browser, so you must allow pop-ups and redirects.
+
+>>>>>>> Stashed changes
 >[!NOTE]
 >If your organization uses single sign-on (SSO), you can select **Use Custom Domain** in the bottom, right-hand corner of the login interface. Enter the domain and then select **Continue**. It will go to your organization specific login page where you will have an option to login with SSO. 
 - Check that the connection was successful by searching for a green banner that says "Connection successful" as show in the screenshot below. 
