@@ -73,19 +73,12 @@ Configure the Connection settings for your Graph connector as follows:
 - For the Instance URL, use https://[domain].my.salesforce.com where domain would be the Salesforce domain for your organization. 
 - Enter the Client ID and Client Secret you obtained from your Salesforce instance and select Sign in.
 - If this is the first time you have attempted to Sign in with these settings, you will get a pop up asking you to login to Salesforce with your admin username and password. The screenshot below shows the popup. Enter your credentials and select Log in.
-<<<<<<< Updated upstream
 
   ![Login pop up asking for Username and password.](media/salesforce-connector/sf4.png)
 
 >[!NOTE]
 >If the pop up does not appear, it might be getting blocked in your browser, so you must allow pop-ups and redirects.
 
-=======
-![Login pop up asking for Username and password.](media/salesforce-connector/sf4.png)
->[!NOTE]
->If the pop up does not appear, it might be getting blocked in your browser, so you must allow pop-ups and redirects.
-
->>>>>>> Stashed changes
 >[!NOTE]
 >If your organization uses single sign-on (SSO), you can select **Use Custom Domain** in the bottom, right-hand corner of the login interface. Enter the domain and then select **Continue**. It will go to your organization specific login page where you will have an option to login with SSO. 
 - Check that the connection was successful by searching for a green banner that says "Connection successful" as show in the screenshot below. 
