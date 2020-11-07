@@ -49,15 +49,15 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
 
         - Perform requests on your behalf at any time (refresh_token, offline_access) 
 
-    - Select the checkbox for **Require secret for web server flow**. 
+    - Select the checkbox for **Require secret for web server flow**.
 
     - Save the app. 
     
-![API section in Salesforce instance after admin has entered all required configurations listed above.](media/salesforce-connector/sf1.png)
+    ![API section in Salesforce instance after admin has entered all required configurations listed above.](media/salesforce-connector/sf1.png)
 
--	Copy the consumer key and the consumer secret. These will be used as the Client ID and the Client Secret when you configure the Connection Settings for your Graph Connector in the Microsoft 365 admin portal.
+- Copy the consumer key and the consumer secret. These will be used as the Client ID and the Client Secret when you configure the Connection Settings for your Graph Connector in the Microsoft 365 admin portal.
 
-![Results returned by API section in Salesforce instance after admin has submitted all required configurations. Consumer Key is at top of left column and Consumer Secret is at top of right column.](media/salesforce-connector/clientsecret.png)
+  ![Results returned by API section in Salesforce instance after admin has submitted all required configurations. Consumer Key is at top of left column and Consumer Secret is at top of right column.](media/salesforce-connector/clientsecret.png)
 - Before closing your Salesforce instance, perform the following steps to ensure that refresh tokens do not expire: 
 	- Go to Apps -> App Manager
 	- Find the app you just created and select the drop down on the right. Select **Manage**
@@ -73,13 +73,17 @@ Configure the Connection settings for your Graph connector as follows:
 - For the Instance URL, use https://[domain].my.salesforce.com where domain would be the Salesforce domain for your organization. 
 - Enter the Client ID and Client Secret you obtained from your Salesforce instance and select Sign in.
 - If this is the first time you have attempted to Sign in with these settings, you will get a pop up asking you to login to Salesforce with your admin username and password. The screenshot below shows the popup. Enter your credentials and select Log in.
-![Login pop up asking for Username and password.](media/salesforce-connector/sf4.png)
->[!NOTE] If the pop up does not appear, it might be getting blocked in your browser, so you must allow pop-ups and redirects.
 
->[!NOTE] If your organization uses single sign-on (SSO), you can select **Use Custom Domain** in the bottom, right-hand corner of the login interface. Enter the domain and then select **Continue**. It will go to your organization specific login page where you will have an option to login with SSO. 
+  ![Login pop up asking for Username and password.](media/salesforce-connector/sf4.png)
+
+>[!NOTE]
+>If the pop up does not appear, it might be getting blocked in your browser, so you must allow pop-ups and redirects.
+
+>[!NOTE]
+>If your organization uses single sign-on (SSO), you can select **Use Custom Domain** in the bottom, right-hand corner of the login interface. Enter the domain and then select **Continue**. It will go to your organization specific login page where you will have an option to login with SSO. 
 - Check that the connection was successful by searching for a green banner that says "Connection successful" as show in the screenshot below. 
 
-![Screenshot of successful login. The green banner that says "Connection successful" is located under the field for your Salesforce Instance URL](media/salesforce-connector/sf5.png)
+  ![Screenshot of successful login. The green banner that says "Connection successful" is located under the field for your Salesforce Instance URL](media/salesforce-connector/sf5.png)
 
 ## Manage search permissions
 You will need to choose which users will see search results from this data source. If you allow only certain Azure Active Directory (AAD) or Non-AAD users to see the search results, you will then need to map the identities.
@@ -98,18 +102,20 @@ If you chose to ingest an ACL from your Salesforce instance and selected "AAD" f
 ## Assign property labels 
 You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users. By default, some of the Labels like ”Title”, “url”, and  “LastModifiedBy” have already been assigned source properties.
 
-![Assign property labels screen showing default Source properties.](media/salesforce-connector/sf8.png) 
+![Assign property labels screen showing default Source properties.](media/salesforce-connector/sf8.png)
 
 ## Manage Schema
 You can select what source properties should be indexed so that they can show up in search results. The connection wizard by default selects a search schema based on a set of source properties. You can modify it by selecting the check boxes for each property and attribute in the search schema page. Search schema attributes include Search, Query, Retrieve and Refine. 
 Refine allows you to define the properties which can be later used as custom refiners or filters in the search experience.  
+
 ![Select the schema for each source property. The options are Query, Search, Retrieve, and Refine](media/salesforce-connector/sf9.png)
 
 ## Set the refresh schedule
 
 The Salesforce connector only supports refresh schedules for full crawls currently.
 
->[!Important] A full crawl finds deleted objects and users that were previously synced to the Microsoft Search index.
+>[!IMPORTANT]
+>A full crawl finds deleted objects and users that were previously synced to the Microsoft Search index.
 
 The recommended schedule is one week for a full crawl.
 
