@@ -1,6 +1,6 @@
 ---
 title: "Managing User Feedback"
-ms.author: jeffkizn
+ms.author: lebhansa
 author: jeffkizn
 manager: parulm
 ms.audience: Admin
@@ -27,7 +27,7 @@ As people in your organization use Microsoft Search, they may have feedback on t
 
 ![Global feedback form](media/feedback/feedback-global-dialog.png)
 
-Users also have the option to send their query and other diagnostic info, along with the category and comments, to Microsoft. Diagnostic info will include some personal data such as a user identifier. [Learn more](https://privacy.microsoft.com/en-US/privacystatement) about privacy and how we protect this data. The diagnostic data contains the most critical bits of information that Microsoft needs to use the feedback item for product improvement.
+Users also have the option to send their query and other diagnostic info, along with the category and comments, to Microsoft. Diagnostic info will include some personal data such as a user identifier. [Learn more](https://privacy.microsoft.com/en-US/privacystatement) about privacy and how we protect this data. The diagnostic data contains the most critical information that Microsoft needs to use the feedback item for product improvement.
 
 Most feedback submissions appear in the [Feedback](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) section of the Microsoft Search admin center. Feedback sent with the **I want to suggest an internal link** category appears as a suggested bookmark in the [Bookmarks](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) section and can be seen by filtering on **Suggested** status.
 
@@ -49,7 +49,7 @@ To change this state:
 
 1. Next to the query, select **More Options** (three vertical dots).
 1. On the menu, select **Mark as resolved** or **Mark as duplicate.**
-1. The list will refresh and show the updated State.
+1. The list will refresh and show the updated state.
 
 You can also update the state for multiple items, just select them, then select More Options next any of those items.
 
@@ -61,14 +61,14 @@ If you want to share search feedback with others or retain them for longer than 
 
 By default, all user feedback is sent to Microsoft and addition to you. To stop sending feedback to Microsoft, click **Manage settings**, and clear the **Automatically send user feedback to Microsoft** check box. It can take up to 24 hours for this change to take effect.
 
-If you've decided to not automatically send feedback, you can still send individual pieces of feedback to Microsoft.
+If you've decided to not send feedback to Microsoft automatically, you can still send individual pieces of feedback to Microsoft.
 
 1. Select the feedback that you want to share.
 1. In the action bar, select More (three dots), and click **Send feedback to Microsoft**.
 
 1. The status in the Sent to Microsoft column will change to Pending. When the feedback is sent, it will change to Yes.
 
-If you share feedback, either automatically or manually, it never includes queries and other diagnostic info for users that opted to not include this information.
+If you share feedback automatically or manually, it never includes queries and other diagnostic info for users that opted to not include this information.
 
 ## Suggestions on how to use feedback
 
@@ -78,5 +78,5 @@ As a search administrator you should understand the major personas in your organ
     1. Bookmarks are useful for content sources having a high-quality landing page and a limited variety of search terms, so that the user community gets a high-quality result from the bookmark and can then efficiently find what they are looking for.
     1. Q&A are useful for individual answers that are fairly frequent, yet do not change.
     1. Connectors are useful for content sources with a wide variety of content and wide variety of search terms.
-1. “The results took too long to load” & “I found a problem” may be indicators of a wider problem. Looking for this feedback daily may help and if multiple cases appear, you can verify the search experience for yourself and open a support case with Microsoft if needed. This type of feedback is also important to Microsoft and is a good reason to flow all feedback to us.
-1. “I want to suggest an internal link” can be evaluated for being added as bookmarks or connected content. Your first though should be a bookmark; if the bookmark gets high usage, you can consider bringing in content through a connector to enable an even richer search experience.
+1. “The results took too long to load” & “I found a problem” may be indicators of a broader problem. Looking for this feedback daily may help and if multiple cases appear, you can verify the search experience for yourself and open a support case with Microsoft if needed. This type of feedback is also important to Microsoft and is an excellent reason to flow all feedback to us.
+1. “I want to suggest an internal link” can be evaluated for being added as bookmarks or connected content. Your first thought should be a bookmark; if the bookmark gets high usage, you can consider bringing in content through a connector to enable an even richer search experience.
