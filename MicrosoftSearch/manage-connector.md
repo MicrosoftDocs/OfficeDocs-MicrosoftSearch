@@ -14,7 +14,8 @@ search.appverid:
 description: "Manage Microsoft Graph Connectors for Microsoft Search."
 ---
 <!-- markdownlint-disable no-inline-html -->
-# Manage your connector for Microsoft Search
+
+# Manage your connections for Microsoft Search
 
 To access and manage your connectors, you must be designated as a search administrator for your tenant. Contact your tenant administrator to provision you for the search administrator role.
 
