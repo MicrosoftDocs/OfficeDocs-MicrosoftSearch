@@ -27,7 +27,7 @@ As people in your organization use Microsoft Search, they may have feedback on t
 
 ![Global feedback form](media/feedback/feedback-global-dialog.png)
 
-Users also have the option to send their query and other diagnostic info, along with the category and comments, to Microsoft. Diagnostic info will include some personal data such as a user identifier. [Learn more](https://privacy.microsoft.com/en-US/privacystatement) about privacy and how we protect this data. The diagnostic data contains the most critical information that Microsoft needs to use the feedback item for product improvement.
+Users also have the option to send their query and other diagnostic info, along with the category and comments, to Microsoft. [Learn more](https://privacy.microsoft.com/en-US/privacystatement) about privacy and how we protect this data. The diagnostic data contains the most critical information that Microsoft needs to use the feedback item for product improvement.
 
 Most feedback submissions appear in the [Feedback](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) section of the Microsoft Search admin center. Feedback sent with the **I want to suggest an internal link** category appears as a suggested bookmark in the [Bookmarks](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) section and can be seen by filtering on **Suggested** status.
 
