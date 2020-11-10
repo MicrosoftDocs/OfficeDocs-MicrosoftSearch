@@ -51,9 +51,9 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
 
     - Select the checkbox for **Require secret for web server flow**.
 
-    - Save the app. 
+    - Save the app.
     
-    ![API section in Salesforce instance after admin has entered all required configurations listed above.](media/salesforce-connector/sf1.png)
+      ![API section in Salesforce instance after admin has entered all required configurations listed above.](media/salesforce-connector/sf1.png)
 
 - Copy the consumer key and the consumer secret. These will be used as the Client ID and the Client Secret when you configure the Connection Settings for your Graph Connector in the Microsoft 365 admin portal.
 
@@ -76,12 +76,13 @@ Configure the Connection settings for your Graph connector as follows:
 
   ![Login pop up asking for Username and password.](media/salesforce-connector/sf4.png)
 
->[!NOTE]
->If the pop up does not appear, it might be getting blocked in your browser, so you must allow pop-ups and redirects.
+  >[!NOTE]
+  >If the pop up does not appear, it might be getting blocked in your browser, so you must allow pop-ups and redirects.
 
->[!NOTE]
->If your organization uses single sign-on (SSO), you can select **Use Custom Domain** in the bottom, right-hand corner of the login interface. Enter the domain and then select **Continue**. It will go to your organization specific login page where you will have an option to login with SSO. 
-- Check that the connection was successful by searching for a green banner that says "Connection successful" as show in the screenshot below. 
+  >[!NOTE]
+  >If your organization uses single sign-on (SSO), you can select **Use Custom Domain** in the bottom, right-hand corner of the login interface. Enter the domain and then select **Continue**. It will go to your organization specific login page where you will have an option to login with SSO.
+
+- Check that the connection was successful by searching for a green banner that says "Connection successful" as show in the screenshot below.
 
   ![Screenshot of successful login. The green banner that says "Connection successful" is located under the field for your Salesforce Instance URL](media/salesforce-connector/sf5.png)
 
