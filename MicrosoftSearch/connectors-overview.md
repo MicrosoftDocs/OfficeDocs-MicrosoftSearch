@@ -25,12 +25,12 @@ The rest of this article is intended to help Microsoft 365 administrators locate
 * [What data sources can be connected to Microsoft Search?](#what-data-sources-can-be-connected-to-microsoft-search)
 * [How do I manage my connections?](#how-do-i-manage-my-connections)
 * [What are the license requirements and terms of use for Graph connectors?](#what-are-the-license-requirements-and-terms-of-use-for-graph-connectors)
-* [How do I customize and configure search results?](#how-do-I-customize-and-configure-search-results)
+* [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results)
 * [How do I search my connector data from a custom application?](#how-do-i-search-my-connector-data-from-a-custom-application)
 
 <!---Modify to another note that is more accurate--->
 > [!IMPORTANT]
-> Microsoft Graph connectors and Microsoft Search APIs are now globally available. The first rollouts will be to customers configured for  targeted release. If you want to use a Graph connector in your tenant, be sure to opt into [Targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide). 
+> Microsoft Graph connectors and Microsoft Search APIs are now globally available. The first rollouts will be to customers configured for  targeted release. If you want to use a Graph connector in your tenant, be sure to opt into [Targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide).
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
@@ -52,9 +52,11 @@ You can use the Microsoft 365 Microsoft 365 [admin center](https://admin.microso
 To create a **connection** to a data source, admins need authenticated access to the data and the entire content repository. The data is fed to the graph connector service for indexing.--->
 
 ## What data sources can be connected to Microsoft Search?
+
 Microsoft created ten out-of-the box Graph connectors, and our ecosystem partners have created over 100 additional Graph connectors. You can also build your own Graph connector. 
 
 ### Graph connectors by Microsoft
+
 You can connect to the following data sources using Graph connectors created by Microsoft:
 
 <!---Need to add a few links below when docs exist--->
@@ -72,15 +74,17 @@ You can connect to the following data sources using Graph connectors created by 
 The [Graph connectors gallery](connectors-gallery.md) contains a brief description of each of these Graph connectors. If you are ready to connect one of these data sources to your tenant, be sure to read the [General setup instructions](configure-connector.md) and any other articles in the Setup connectors by Microsoft section that apply to your data source.
 
 ### Graph connectors by our partners
+
 The [Microsoft Graph connectors gallery](connectors-gallery.md) includes a brief descriptions of each of the Graph connectors created by our partners and a link to each partner's website. Contact each partner directly to learn more.
 
 ### Build your own Graph connector
+
 If you plan to build your own Graph connector, see the [Overview of the Microsoft Search API in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview)
  for more information.
 
 ## How do I manage my connections?
-You can manage your connections from the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in the [Microsoft 365 admin center](https://admin.microsoft.com/). See [Manage your connections](manage-connector.md) for more information.
 
+You can manage your connections from the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in the [Microsoft 365 admin center](https://admin.microsoft.com/). See [Manage your connections](manage-connector.md) for more information.
 
 ## What are the license requirements and terms of use for Graph connectors?
 
@@ -89,6 +93,7 @@ You need a valid Microsoft 365 or Office 365 license and sufficient Graph Connec
 To learn more, see [License requirements and pricing](licensing.md) and [Terms of use](terms-of-use.md).
 
 ## How do I customize and configure search results?
+
 There are a number of ways to customize and configure search results. See the following articles to learn more:
 <!---Need links for first two articles below--->
 * Manage search verticals and result types
