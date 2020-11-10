@@ -22,11 +22,11 @@ description: "Overview of Microsoft Graph connectors for Microsoft Search"
 
 The rest of this article is intended to help Microsoft 365 administrators locate the resources that are avaiable to answer the following questions:
 
-* [What data sources can be connected to Microsoft Search?](#What-data-sources-can-be-connected-to-Microsoft-Search?)
-* [How do I manage my connections?](#How-do-I-manage-my-connections?)
-* [What are the license requirements and terms of use for Graph connectors?](What-are-the-license-requirements-and-terms-of-use-for-Graph-connectors?)
-* [How do I customize and configure search results?](#How-do-I-customize-and-configure-search-results)
-* [How do I search my connector data from a custom application?](#How-do-I-search-my-connector-data-from-a-custom-application)
+* [What data sources can be connected to Microsoft Search?](#what-data-sources-can-be-connected-to-microsoft-search)
+* [How do I manage my connections?](#how-do-i-manage-my-connections)
+* [What are the license requirements and terms of use for Graph connectors?](#what-are-the-license-requirements-and-terms-of-use-for-graph-connectors)
+* [How do I customize and configure search results?](#how-do-I-customize-and-configure-search-results)
+* [How do I search my connector data from a custom application?](#how-do-i-search-my-connector-data-from-a-custom-application)
 
 <!---Modify to another note that is more accurate--->
 > [!IMPORTANT]
