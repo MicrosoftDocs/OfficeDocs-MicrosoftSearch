@@ -24,13 +24,14 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 Enter your MediaWiki URL and credentials for authenticating the connection. You'll need the following information: **Tenant ID**, **Resource ID**, **Client ID**, and the **Client Secret**.
 
-## Manage the search schema
-
-After successful connection, configure the search schema mapping. You can choose which properties to make **queryable**, **searchable**, and **retrievable**.
-
 ## Manage search permissions
 
 The MediaWiki connector only supports search permissions visible to **Everyone**. Indexed data appears in the search results and is visible to all users in the organization.
+
+## Manage schema
+
+On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, and **retrievable**) associated with the properties. See [Search schema attributes](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector#search-schema-attributes) to learn more.
+
 
 ## Set the refresh schedule
 
