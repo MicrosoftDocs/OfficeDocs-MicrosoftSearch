@@ -87,7 +87,7 @@ Configure the Connection settings for your Graph connector as follows:
   ![Screenshot of successful login. The green banner that says "Connection successful" is located under the field for your Salesforce Instance URL](media/salesforce-connector/sf5.png)
 
 ## Manage search permissions
-You will need to choose which users will see search results from this data source. If you allow only certain Azure Active Directory (AAD) or Non-AAD users to see the search results, you will then need to map the identities.
+You will need to choose which users will see search results from this data source. If you allow only certain Azure Active Directory (Azure AD) or Non-Azure AD users to see the search results, you will then need to map the identities.
 
 ### Select Permissions
 You can choose to ingest Access Control Lists (ACLs) from your Salesforce instance, or you can allow everyone in your organization to see search results from this data source. ACLs can include Azure Active Directory (AAD) identities, Non-AAD identities, or both.
