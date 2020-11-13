@@ -32,7 +32,6 @@ The MediaWiki connector only supports search permissions visible to **Everyone**
 
 On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, and **retrievable**) associated with the properties. See [Search schema attributes](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector#search-schema-attributes) to learn more.
 
-
 ## Set the refresh schedule
 
 This schedule refreshes indexed data, so changes to the wiki are reflected in Microsoft Search. All new pages, deleted pages, page content, or metadata changes appear in search results after the specified refresh interval. The crawl time is dependent on the size of the wiki. Currently the connector crawls at around 50 pages per minute.

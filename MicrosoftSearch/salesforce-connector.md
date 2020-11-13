@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Set up the Salesforce connector for Microsoft Search"
 ---
 
-# Salesforce connector
+# Salesforce connector (preview)
 
 With the Salesforce Graph connector, your organization can index Contacts, Opportunities, Leads and Accounts objects in your Salesforce instance. After you configure the connector and index content from Salesforce, end users can search for those items from any Microsoft Search client.
 
