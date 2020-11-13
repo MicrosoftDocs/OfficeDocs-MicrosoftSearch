@@ -25,7 +25,7 @@ With the Salesforce Graph connector, your organization can index Contacts, Oppor
 This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) administrators or anyone who configures, runs, and monitors a Salesforce connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
 >[!IMPORTANT]
->The Salesforce Graph connector currently supports Summer ’20, Spring ’20, Winter ’20, and Summer ’19 versions.
+>The Salesforce Graph connector currently supports Summer '19 or later.
 
 ## Connection settings
 
@@ -90,18 +90,18 @@ Configure the Connection settings for your Graph connector as follows:
 You will need to choose which users will see search results from this data source. If you allow only certain Azure Active Directory (Azure AD) or Non-Azure AD users to see the search results, you will then need to map the identities.
 
 ### Select Permissions
-You can choose to ingest Access Control Lists (ACLs) from your Salesforce instance, or you can allow everyone in your organization to see search results from this data source. ACLs can include Azure Active Directory (AAD) identities, Non-AAD identities, or both.
+You can choose to ingest Access Control Lists (ACLs) from your Salesforce instance, or you can allow everyone in your organization to see search results from this data source. ACLs can include Azure Active Directory (AAD) identities (users who are federated from Azure AD to Salesforce), non-Azure AD identities (native Salesforce users who have corresponding identities in Azure AD), or both.
 
 ![Select permissions screen that has been completed by an admin. The admin has selected the "Only people with access to this data source" option and has also selected "AAD" from a drop down menu of identity types.](media/salesforce-connector/sf6.png)
 
 ### Map non-AAD identities 
-If you chose to ingest an ACL from your Salesforce instance and selected "non-AAD" for the identity type see [Map your non-Azure AD Identities ](map-non-aad.md) for instructions on mapping the identities.
+If you chose to ingest an ACL from your Salesforce instance and selected "non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities.
 
 ### Map AAD identities
-If you chose to ingest an ACL from your Salesforce instance and selected "AAD" for the identity type see [Map your Azure AD Identities](map-aad.md) for instructions on mapping the identities.
+If you chose to ingest an ACL from your Salesforce instance and selected "AAD" for the identity type see [Map your Azure AD Identities](map-aad.md) for instructions on mapping the identities. To learn how to set up Azure AD SSO for Salesforce, see this [tutorial](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/salesforce-tutorial).
 
 ## Assign property labels 
-You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users. By default, some of the Labels like ”Title”, “url”, and  “LastModifiedBy” have already been assigned source properties.
+You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users. By default, some of the Labels like "Title," "URL," "CreatedBy," and  "LastModifiedBy" have already been assigned source properties.
 
 ![Assign property labels screen showing default Source properties.](media/salesforce-connector/sf8.png)
 
@@ -125,7 +125,6 @@ The recommended schedule is one week for a full crawl.
 - The Graph connector does not currently support Apex based , territory-based sharing and sharing using personal groups from Salesforce.
 - There is a known bug in the Salesforce API that the Graph connector uses where the private org wide defaults for leads is not honored currently.  
 - If a field has field level security (FLS) set for a profile, the Graph connector will not ingest that field for any profiles in that Salesforce org. Users will thus not be able to search on values for those fields, nor will it  show up in the results.  
-- Any FLS set up will be honored during the Full syncs of the connector.
 - In the Manage Schema screen these common standard property names are listed once and the selection done to make them queryable, searchable and retrievable apply to all or none.
     - Name
     - Url 
