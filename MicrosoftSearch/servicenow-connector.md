@@ -173,9 +173,13 @@ If you choose **Only people with access to this data source**, you need to furth
 
 If you chose to ingest an ACL from your ServiceNow instance and selected "non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities.
 
-## Manage the search schema
+## Assign property labels
 
-After successful connection, configure the search schema mapping. You can choose which properties to make **queryable**, **searchable**, and **retrievable**. To learn more about managing your search schema, see [Manage the search schema](https://docs.microsoft.com/microsoftsearch/configure-connector#manage-the-search-schema).
+You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
+
+## Manage schema
+
+On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, **retrievable**, and **refinable**) associated with the properties, add optional aliases, and choose the **Content** property.
 
 ## Set the refresh schedule
 

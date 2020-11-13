@@ -82,9 +82,13 @@ Next, select which fields you want the connection to index and preview data in t
 
 The Azure DevOps connector supports search permissions visible to **Only people with access to this data source** or **Everyone**. If you choose **Only people with access to this data source**,indexed data will appear in the search results for users who have access to them based on permissions to users or groups at the Organization, Project or Area path level in Azure DevOps. If you choose **Everyone**, indexed data will appear in the search results for all users.
 
-## Manage the search schema
+## Assign property labels
 
-Configure the search schema mapping. You can choose which properties to make **queryable**, **searchable** and **retrievable**.
+You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
+
+## Manage schema
+
+On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, **retrievable**, and **refinable**) associated with the properties, add optional aliases, and choose the **Content** property.
 
 ## Set the refresh schedule
 

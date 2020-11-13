@@ -30,13 +30,13 @@ description: "On-Prem Agent"
 
 <!-- markdownlint-disable no-inline-html --> 
 
-# On-Prem Agent 
+# On-Prem Agent
 
-## Graph connector agent 
+## Graph connector agent
 
 On-prem Graph connectors require you to install *Graph connector agent* software. It allows quick and secure data transfer between on-premises data and cloud services. This article guides you through the steps of installing and configuring the software. Once configured, it will be available for creating connections to your on-prem data sources from the [Microsoft 365 admin center](https://admin.microsoft.com).
 
-## Installation 
+## Installation
 
 Download the latest version of Graph connector agent using [this link](https://download.microsoft.com/download/d/d/e/dde18236-9c67-437d-a864-894a0a888ef2/AgentPackage.msi) and install the software using the installation wizard. With the recommended configuration of the machine described below, the software can seamlessly handle up to three connections. Any connections beyond that might degrade the performance. 
 
