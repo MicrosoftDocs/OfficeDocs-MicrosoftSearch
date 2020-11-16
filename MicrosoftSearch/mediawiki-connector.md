@@ -28,10 +28,13 @@ Enter your MediaWiki URL and credentials for authenticating the connection. You'
 
 The MediaWiki connector only supports search permissions visible to **Everyone**. Indexed data appears in the search results and is visible to all users in the organization.
 
+## Assign property labels
+
+You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
+
 ## Manage schema
 
-On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, and **retrievable**) associated with the properties. See [Search schema attributes](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector#search-schema-attributes) to learn more.
-
+On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, **retrievable**, and **refinable**) associated with the properties, add optional aliases, and choose the **Content** property.
 
 ## Set the refresh schedule
 

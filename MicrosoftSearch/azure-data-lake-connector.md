@@ -53,9 +53,17 @@ On the **Manage search permissions** screen, you can choose to ingest the Access
 
 For a connection to [Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction), all the content indexed from the configured source is visible to everyone in your organization. Access control lists are not supported at Blob level in Azure Blob Storage.
 
+## Manage search permissions
+
+The Azure Data Lake Storage Gen2 connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. Indexed data that appears in the search results could be visible to all users in the organization or only to users who have access to each item.
+
+## Assign property labels
+
+You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
+
 ## Manage schema
 
-On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, and **retrievable**) associated with the properties. See [Search schema attributes](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector#search-schema-attributes) to learn more.
+On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, **retrievable**, and **refinable**) associated with the properties, add optional aliases, and choose the **Content** property.
 
 ## Set the refresh schedule
 

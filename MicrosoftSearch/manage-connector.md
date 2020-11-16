@@ -46,6 +46,20 @@ Four states show up in the **Status** column against each connection:
 
 * **Failed**. The connection had a critical failure. This error requires manual intervention. The admin needs to take appropriate action based on the error message shown. Data that was indexed until the error occurred is searchable.
 
+### View your last crawl info
+
+After the first initial incremental or full crawl completes successfully, the last crawl data values are displayed under the last crawl header in the detail pane. If there was no last crawl that ran, you will not see any information under the last crawl header. This information about last crawl will help you gain insights into how the crawl performed and take necessary steps wherever required.
+
+The following last crawl values will be available for each connection:
+
+Value | Description
+--- | ---
+Completed at | Date and time the last crawl got completed
+Type | Incremental or full crawl
+Duration | how much time did the last crawl take to complete
+Successes | Number of items that have been successfully ingested in the last crawl
+Errors | Number of items that errored in the last crawl
+
 ### Monitor errors
 
 For each **Active Connector** on the **Connectors** tab, any existing crawl errors show under the **Error** tab. The tab lists error codes, the count of each, and error log download options. See the example in the following image. Select an **error code** to view the error's details.
@@ -76,14 +90,13 @@ Error code | Error message | Solution
 
 ## Monitor your index quota utilization
 
-During the preview period, every organization has a fixed quota of up to 2 million items for indexing content from external systems across all connections.
+The available index quota and consumption is displayed on the connectors landing page.
 
-> [!NOTE]
-> Graph Connectors quota is available for free for the duration of the preview. This will change at general availability.
+![Index quota utilization bar](media/quota_utilization.png)
 
-The available index quota and consumption will be displayed on the Connectors landing page.
-
-![Index quota utilization bar.](media/quota_utilization.png)
+>[!NOTE]
+>During the preview period, every organization trying out Graph connectors was provided a free fixed quota of up to 2 million items across all connections. With Graph connectors being generally available, the free quota will expire on Feb 1st, 2021 for those organizations who have been using Graph connectors in preview.
+>Microsoft-built Graph connectors labeled as ["Preview"](connectors-preview.md) will not be included in the total charged index quota for your organization. However, it will count towards the max number of 10 connections you can configure for your organization and the max number of 7 million items your organization can index across connections.
 
 The quota utilization bar will indicate various states based on consumption of quota by your organization:
 
@@ -96,20 +109,22 @@ Full | 100%
 
 The number of items indexed will also be displayed with each connection. The number of items indexed by each connection contributes to the total quota available for your organization.
 
-When index quota is exceeded for your organization, all active connections will be impacted and those connections will stop ingesting content. To fix this, you can do any of the following:
+When index quota is exceeded for your organization, all active connections will be impacted, and those connections will operate in **limit exceeded** state. In this state, your active connections  
+
+* Will not be able to add new items.
+
+* Will be able to update or delete existing items.
+
+To fix this, you can do any of the following:
+
+* Learn how to purchase index quota for your organization at [Licensing requirements and pricing](licensing.md).
 
 * Identify connections which have too much content being ingested and update them to index fewer items to make room for quota. To update the connection, you must delete and create a new connection with a new ingestion filter which brings in fewer items.
 
 * Permanently delete one or more connections
 
-* Contact Microsoft if you need to increase the index quota limit for your organization.
+## Limitations
 
-## Preview limitations
+* When you **publish** a Microsoft-built connector, it might take a few minutes for the connection to be created. During that time, the connection will show its status as pending.
 
-* When you **publish** a Microsoft-built connector, it might take a few minutes for the connection to be created. During that time, the connection shows its status as pending. Also, there's no auto-refresh, so you need to refresh manually.
-
-* The [Microsoft 365 admin center](https://admin.microsoft.com) doesn't support viewing and editing the **search schema** after a connection is published. To edit the search schema, delete your connection and then create a new one.
-
-* When you manage your connection's **refresh schedule**, the number of items that sync during each session are displayed. However, the sync history isn't available.
-
-* When quota utilization for your organization hits critical or higher limits, you will **not** be notified via Message Center.  Periodically check the Connectors management page to ensure the configured connections have not exceeded the overall quota limits for your organization.
+* The [Microsoft 365 admin center](https://admin.microsoft.com) doesn't support editing the **search schema** after a connection is published. To edit the search schema, delete your connection and then create a new one.

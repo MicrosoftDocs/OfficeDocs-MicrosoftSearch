@@ -23,7 +23,7 @@ This article summarizes the basic process required to use the [Microsoft 365 adm
 1. Add a Graph connector in the Microsoft 365 admin center.
 2. Name the connection.
 3. Configure the connection settings.
-4. Manage search persmissions.
+4. Manage search permissions.
 5. Assign property labels.
 6. Manage schema.
 7. Choose refresh settings.
@@ -60,41 +60,68 @@ The process to configure the Connection settings varies based on the type of dat
 To learn more about connecting to an on-premises data source, see [Install an on-premises data gateway](https://aka.ms/configuregateway).
 
 ## Step 4: Manage search permissions
-In this step you can choose whether to allow everyone in your organization to see search results from this data source. For some types of Graph connectors, you can also choose to allow only certain users to see search results from this data source. 
+
+Access Control Lists (ACLs) determine which users in your organization can access each item of data.  
+
+Some connectors like [Microsoft SQL](MSSQL-connector.md) and [Azure Data Lake Storage Gen2](azure-data-lake-connector.md) natively support [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/) ACLs.
+
+Other connectors like [ServiceNow](servicenow-connector.md), [Azure DevOps](azure-devops-connector.md), and [Salesforce](salesforce-connector.md) support syncing of non-Azure AD users and groups.  
 
 ## Step 5: Assign property labels
-You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users. By default, some of the Labels will already been assigned source properties.
+You can assign semantic labels to your source properties on the "Assign property labels" page. Labels are well known tags provided by Microsoft that provide semantic meaning. They allow Microsoft to integrate your connector data into Microsoft 365 experiences such as enhanced search, people cards, intelligent discovery, and more.  
+
+The following table lists the currently supported labels and their descriptions.  
+
+Label | Description
+--- | ---  
+**title** | The title for the item that you want shown in search and other experiences 
+**url** | The target url of the item in the source system 
+**createdBy** | Name of the person who created the item 
+**lastModifiedBy** | Name of the person who most recently edited the item 
+**authors** | Name of the people who participated/collaborated on the item 
+**createdDateTime** | When was the item created 
+**lastModifiedDateTime** | When was the item most recently edited 
+**fileName** | Name of the file item 
+**fileExtension** | Type of file item such as .pdf or .word 
+
+The properties on this page are pre-selected based on your data source, but you can change this selection if there is a different property that is better suited for a particular label.  
+
+The label **title** is the most important label. It is **strongly recommended** that you have a property assigned to this label in order for your connection to participate in the [result cluster experience](result-cluster.md).
+
+Incorrectly mapping labels will cause a deteriorated search experience. It is okay for some labels to not have a property assigned to it.  
 
 ## Step 6: Manage schema
-You can manage the schema for the results that will be indexed. For a source property to be indexed, at least one of the following attributes must be selected: **Query, Search, Retrieve**.
 
 ### Content property
-It is strongly recommended that you select a **Content Property" from the drop-down menu of options, or keep the default if one is present. This property is used for full-text indexing of content, search results page snippet generation, [result cluster](result-cluster.md) participation, language detection, HTML/text support, ranking and relevance, and query formulation. 
+
+It is strongly recommended that you select a **Content Property" from the drop-down menu of options, or keep the default if one is present. This property is used for full-text indexing of content, search results page snippet generation, [result cluster](result-cluster.md) participation, language detection, HTML/text support, ranking and relevance, and query formulation.
 
 If you select a content property, you will have the option of using the system-generated property **ResultSnippet** when you [create your result type](customize-results-layout.md). This property serves as a placeholder for the dynamic snippets that are generated from the content property at query time. If you use this property in your result type, snippets will be generated in your search results.
 
+### Creating aliases for source properties
+
+You can add aliases to your properties under the "Alias" column on the "Manage schema" page. Aliases are friendly names for your properties. They are used in queries and in the creation of filters. They are also used to normalize source properties from multiple connections such that they have the same name. That way you can create a single filter for a vertical with multiple connections. See [Customize the search results page](customize-search-page.md) for more information.  
+
 ### Search schema attributes
 
-Your search schema determines what results display on the search results page and what information end users can view and access. The connection wizard automatically selects a search schema based on the set of source properties you chose. You can modify this schema by selecting the check boxes for each search schema attribute. The search schema attributes include **Query**, **Search**, **Retrieve**, and **Refine**.
+You can set the search schema attributes to control search functionality of each source property. A search schema helps determine what results display on the search results page and what information end users can view and access.
 
-<!---Alias needs to be described somewhere--->
-
-![Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions.](media/manageschema.png)
-
-<!---Replace screenshot with updated UI.  Match the source properties that are named and attributes that are checked in the examples in the table-->
-
-The following table explains the function of each of the search schema attributes attributes.
+Search schema attributes include **searchable**, **queryable**, **retrievable**, and **refinable**. The following table lists each of the attributes that Microsoft Graph connectors support and explains their functions.
 
 Search schema attribute | Function | Example
 --- | --- | ---
-QUERY | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the **Title** property is queryable, then the query **Title: Enterprise** will search the string "Enterprise" only in the **Title** property.
-SEARCH | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the **Author** property is searchable, then users can query by author's name (e.g. "Jane Doe") in a free-text search.  
-RETRIEVE | Only retrievable properties can be used in the result type and displayed in the search result. | If the **Title** property is retrievable, you can use it in the [result type](https://docs.microsoft.com/microsoftsearch/customize-results-layout).
-REFINE |
+SEARCHABLE | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the property is **title**, a query for **Enterprise** returns answers that contain the word **Enterprise** in any text or title.
+QUERYABLE | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the **Title** property is queryable, then the query **Title: Enterprise** is supported. 
+RETRIEVABLE | Only retrievable properties can be used in the result type and display in the search result. |
+REFINABLE | Refinable properties can be used as in the Microsoft Search results page. | Users in your organization can [filter](custom-filters.md) by **lastModifiedDateTime** in the search results page if the property is marked refinable during connection setup
 
+For all connectors except the File share connector, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute in the search schema page.
+
+![Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions.](media/manageschema.png)
+ 
 ### Restrictions and recommendations for search schema settings
 
-* The **content** property is searchable only. Once selected in the dropdown, this property cannot be marked **retrievable** or **queryable**. 
+* The **content** property is searchable only. Once selected in the dropdown, this property cannot be marked **retrievable** or **queryable**.
 
 * Significant performance issues occur when search results render with the **content** property. An example is the **Text** content field for a [ServiceNow](https://www.servicenow.com) knowledge-base article.
 
@@ -102,7 +129,7 @@ REFINE |
 
 * Only string properties can be marked searchable.
 
-> [!Note]
+> [!NOTE]
 > After you create a connection, you **can't** modify the schema. To do that, you need to delete your connection and create a new one.
 
 ## Step 7: Refresh settings
@@ -119,7 +146,7 @@ With a full refresh, the search engine processes and indexes every item in the c
 * Crawl rules were modified.
 * When schema for the connection has been updated (schema updates are not yet supported)
 
-With an **Incremental refersh**, the search engine can process and index only the items that were created or modified since the last successful crawl. Therefore, not all the data in the content source is re-indexed. Incremental refreshes work best to detect content, metadata, permission, and other updates.
+With an **Incremental refresh**, the search engine can process and index only the items that were created or modified since the last successful crawl. Therefore, not all the data in the content source is re-indexed. Incremental refreshes work best to detect content, metadata, permission, and other updates.
 
 Incremental refreshes are much faster than full refreshes because unchanged items aren’t processed. However, if you choose to run incremental refreshes, you will still need to run full refreshes periodically to maintain an accurate data sync between the content source and the search index.
 
@@ -133,4 +160,4 @@ You can review your entire configuration and edit settings as needed before comp
 
 ## How do I know the connection setup worked?
 
-Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md). 
+Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
