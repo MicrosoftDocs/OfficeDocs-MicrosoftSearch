@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 # Connectors Result Cluster Experience 
 
 ## Overview of the Connectors result cluster (Preview)  
- With Connectors result clusters, enterprises can search for content from third party data sources in their default view (the All tab) in SharePoint, Office.com and Microsoft Search in Bing. 
+ With Connectors result clusters, enterprises can search for content from third party data sources in their default view (the All tab) in SharePoint, Office.com. 
 
 Result clusters help users easily discover and explore third party content previously only in search verticals tied to connectors. The results shown in a result cluster are grouped together based on how they are configured by the tenant administrator in a search vertical.  
 
