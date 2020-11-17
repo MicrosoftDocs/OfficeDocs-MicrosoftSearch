@@ -39,7 +39,7 @@ Your organization’s **ServiceNow instance URL** typically looks like **https:/
 >* sys_user_grmember
 >* user_criteria
 >* kb_knowledge_base  
->To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_securing_table_records).
+> You can create and assign a role for the account you use to connect with Microsoft Search. Read access to the tables can be assigned on that role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls).
 
 To authenticate and sync content from ServiceNow, choose **one of three** supported methods: 
 1. Basic authentication 
