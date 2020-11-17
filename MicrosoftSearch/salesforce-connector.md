@@ -58,7 +58,7 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
 - Copy the consumer key and the consumer secret. These will be used as the Client ID and the Client Secret when you configure the Connection Settings for your Graph Connector in the Microsoft 365 admin portal.
 
   ![Results returned by API section in Salesforce instance after admin has submitted all required configurations. Consumer Key is at top of left column and Consumer Secret is at top of right column.](media/salesforce-connector/clientsecret.png)
-- Before closing your Salesforce instance, perform the following steps to ensure that refresh tokens do not expire: 
+- Before closing your Salesforce instance, perform the following steps to ensure that refresh tokens do not expire:
 	- Go to Apps -> App Manager
 	- Find the app you just created and select the drop down on the right. Select **Manage**
 	- Select **edit policies**
