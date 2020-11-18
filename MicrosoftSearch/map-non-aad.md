@@ -14,8 +14,7 @@ search.appverid:
 
 - MOE150 
 
-ROBOTS: NOINDEX, NOFOLLOW
-description: "steps on how to map non-AAD identities" 
+description: "Steps on how to map non-AAD identities" 
 --- 
 
 

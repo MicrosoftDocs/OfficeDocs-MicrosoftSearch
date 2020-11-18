@@ -36,7 +36,7 @@ It is important to note that the setup process is very similar for all the Graph
 Complete the following steps to configure any of the Microsoft-built connectors.
 
 1. Sign into your admin account in the [Microsoft 365 admin center](https://admin.microsoft.com)
-2. Go to the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors), which you can locate by selecting **Settings** in the navigation menu and then selecting **Microsoft Search**.
+2. Go to the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) by selecting **Settings**, then **Search & intelligence** in the navigation menu.
 3. Select **+Add**.
 4. Select the data source of your choice from the menu of available options.
 

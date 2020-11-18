@@ -2,7 +2,7 @@
 title: "Salesforce connector for Microsoft Search"
 ms.author: rusamai
 author: rsamai
-manager: jameslao
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,9 +11,6 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-
-ROBOTS: NOINDEX, NOFOLLOW
-
 
 description: "Set up the Salesforce connector for Microsoft Search"
 ---

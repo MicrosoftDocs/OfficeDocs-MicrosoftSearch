@@ -66,9 +66,9 @@ You can connect to the following data sources using Graph connectors created by 
 * [Enterprise websites](enterprise-web-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [Microsoft SQL Server](MSSQL-connector.md)
-* On-prem file share
+* [File share](fileshare-connector.md)
 * Oracle (preview)
-* Salesforce (preview)
+* [Salesforce (preview)](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
 The [Graph connectors gallery](connectors-gallery.md) contains a brief description of each of these Graph connectors. If you are ready to connect one of these data sources to your tenant, be sure to read the [General setup instructions](configure-connector.md) and any other articles in the Setup connectors by Microsoft section that apply to your data source.
@@ -95,9 +95,8 @@ To learn more, see [License requirements and pricing](licensing.md) and [Terms o
 ## How do I customize and configure search results?
 
 There are a number of ways to customize and configure search results. See the following articles to learn more:
-<!---Need links for first two articles below--->
-* Manage search verticals and result types
-* Manage search result layouts
+* [Manage search verticals and result types](customize-search-page.md)
+* [Manage search result layouts](customize-results-layout.md)
 * [Result cluster experience](result-cluster.md)
 * [Custom filters](custom-filters.md)
 
