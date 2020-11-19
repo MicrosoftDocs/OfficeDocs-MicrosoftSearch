@@ -125,6 +125,14 @@ The components in the following image resemble the full crawl components with on
 
 You can choose to use the [ACLs specified in the full crawl screen](#full-crawl-manage-search-permissions) or you can override them to make your content visible to everyone.
 
+## Assign property labels
+
+You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
+
+## Manage schema
+
+On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, **retrievable**, and **refinable**) associated with the properties, add optional aliases, and choose the **Content** property.
+
 ## Limitations
 
 The SQL connectors have these limitations in the preview release:
