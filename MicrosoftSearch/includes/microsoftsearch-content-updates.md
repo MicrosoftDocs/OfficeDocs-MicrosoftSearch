@@ -2,6 +2,15 @@
 
 
 
+## Week of November 09, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/10/2020 | [Managing User Feedback](/MicrosoftSearch/manage-feedback) | modified |
+| 11/11/2020 | [Managing User Feedback](/MicrosoftSearch/manage-feedback) | modified |
+
+
 ## Week of November 02, 2020
 
 
@@ -29,11 +38,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 10/14/2020 | [Configure your Microsoft-built connector for Microsoft Search](/MicrosoftSearch/configure-connector) | modified |
-
-
-## Week of October 05, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/9/2020 | [FAQs](/MicrosoftSearch/faqs) | modified |
