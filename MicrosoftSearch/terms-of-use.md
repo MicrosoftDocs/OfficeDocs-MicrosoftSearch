@@ -14,9 +14,7 @@ search.appverid:
 description: "Legal terms and conditions for Microsoft Graph connectors public preview for Microsoft Search"
 ---
 
-# Microsoft Graph connectors public preview: Terms of Use
-
-Microsoft Graph connectors are a preview feature and are subject to the same terms of use described under "Previews" in the [Online Services Terms](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English).
+# Microsoft Graph connectors: Terms of Use
 
 Your use of Microsoft Graph Connectors may be subject to third party terms and conditions. Microsoft is not a party to your agreement(s) with third parties and any concerns or questions regarding third party terms or services should be directed to the third party. You, as the data controller for your data, are responsible for the indexing of data into your Microsoft 365 tenant.
 
