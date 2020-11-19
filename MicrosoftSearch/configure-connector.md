@@ -15,7 +15,7 @@ description: "Configure your Microsoft-built connector for Microsoft Search"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# General setup instructions for Graph connectors by Microsoft 
+# Setup overview for Graph connectors by Microsoft 
 
 This article summarizes the basic process required to use the [Microsoft 365 admin center](https://admin.microsoft.com) to setup any of the Graph connectors by Microsoft. The basic process includes the following steps:  
 <!---Add links to each section in the doc--->
@@ -36,9 +36,8 @@ It is important to note that the setup process is very similar for all the Graph
 Complete the following steps to configure any of the Microsoft-built connectors.
 
 1. Sign into your admin account in the [Microsoft 365 admin center](https://admin.microsoft.com)
-2. Go to the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) by selecting **Settings**, then **Search & intelligence** in the navigation menu.
-3. Select **+Add**.
-4. Select the data source of your choice from the menu of available options.
+2. In the navigation pane, select **Settings**, and then select **Search & intelligence**. Select the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
+3.  Select **+Add**, and then select the data source of your choice from the menu of available options.
 
 ![Data sources available include: ADLS Gen2, Enterprise websites, Microsoft SQL server, Azure SQL, Oracle SQL database, ServiceNow, File share, Azure DevOps, and MediaWiki.](media/add-connector.png)
 

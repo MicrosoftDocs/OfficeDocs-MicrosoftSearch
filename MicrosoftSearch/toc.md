@@ -15,7 +15,7 @@
 ## [Preview release](connectors-preview.md)
 ## [Connectors gallery](connectors-gallery.md)
 ## Graph connectors by Microsoft
-### [General setup instructions](configure-connector.md)
+### [Setup overview](configure-connector.md)
 ### [Set up your on-prem Agent (preview)](on-prem-agent.md)
 ### [Map your non Azure AD Identities (preview)](map-non-add)
 ### [Map your Azure AD Identities ](map-aad.md)
@@ -32,10 +32,10 @@
 ## [Licensing](licensing.md)
 ## [Feedback](connectors-feedback.md)
 ## [Terms of use](terms-of-use.md)
-# Customize and configure search results
-## [Manage search verticals and result types](customize-search-page.md)
+# Customize and configure
+## [Manage verticals and result types](customize-search-page.md)
 ## [Manage search result layouts](customize-results-layout.md)
-## [Manage result cluster experience](result-cluster.md)
+## [Manage result cluster](result-cluster.md)
 ## [Manage custom filters](custom-filters.md)
 ## Microsoft Search in SharePoint
 ### [Overview](get-started-search-in-sharepoint-online.md)

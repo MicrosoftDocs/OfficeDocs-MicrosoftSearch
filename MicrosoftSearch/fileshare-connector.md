@@ -13,7 +13,6 @@ search.appverid:
 - MOE150
 description: "Set up the file share connector for Microsoft Search"
 ---
-<!-- markdownlint-disable no-inline-html -->
 
 # File share connector
 

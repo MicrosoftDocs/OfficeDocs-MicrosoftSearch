@@ -30,17 +30,15 @@ You can add search verticals that are relevant to your organization. These will 
 
 ### Multiple connections in a vertical
 
-A search vertical can now surface results from multiple connector sources. You can now add one or more connections under a search vertical providing greater flexibility in designing your search result page. The existing administrative experience of vertical setup has been enhanced to allow you to select multiple connections in the 'Content Source' step.
-The search output in a search vertical with multiple connections greatly benefits from accurately appointing as many semantic labels as possible. You can add semantic labels upon schema definition and ingestion. (Please find here additional information on how to create and manage semantic labels).
+A search vertical can now surface results from multiple connector sources. This provides greater flexibility in designing your search result page. The existing administrative experience of vertical setup allows you to select multiple connections in the "Content Source" step.
+If you accurately appoint as many semantic labels as possible, this experience will be enhanced. You can add semantic labels upon schema definition and ingestion.
+
+[Here](#configure-connector-step-5-assign-property-labels) is additional information on how to create and manage semantic labels.
 
 ### Things you should know
 
 1. A connection can be added as a content source only under one vertical. Reusing connections under multiple verticals is not allowed.
 2. If you need to setup a query for a search vertical where multiple connection sources have been added, common source properties should be used to create a such a query.
-
->[!NOTE]
-> Verticals and result types are currently in preview as a part of the Microsoft Graph connectors preview. For more about the preview, see [Connectors preview](connectors-preview.md). To participate in the preview, you must first submit the [Microsoft Graph Connectors Preview Signup form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
-Multiple connections in a vertical is currently in preview. For more about the preview, see [Connectors preview](connectors-preview.md).
 
 ## Things to consider
 

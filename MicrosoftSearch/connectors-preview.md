@@ -31,16 +31,4 @@ The set of connectors and features in preview include:
 * [Azure DevOps connector](azure-devops-connector.md)
 * [Salesforce connector](salesforce-connector.md)
 * [ServiceNow connector](servicenow.md) with search permissions that use source ACLs
-* [Result cluster experience](result-cluster.md)
-
-## Limitations
-
-The following are known limitations:
-
-* Ingestion throughput is throttled at about four items per second.
-
-* There's no support for schema updates. After you create a connection setup, there's no way to update the schema. You can only delete and re-create the connection.
-
-* There's a connections limit. Each tenant can create up to 10 connections.
-
-* Edit support for connection is not available. Once the connection has been created, you cannot edit or change it. If you need to change any details, you must delete and recreate the connection.
+* [Manage result cluster](result-cluster.md)
