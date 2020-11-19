@@ -169,6 +169,9 @@ The ServiceNow connector supports search permissions visible to **Everyone** or 
 If you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Azure Active Directory (AAD) provisioned users or Non-AAD users.
 
 >[!NOTE]
+>The ServiceNow connector is in **preview** if you choose **Only people with access to this data source**.
+
+>[!NOTE]
 >If you choose AAD as the type of identity source, make sure you are assigning UPN source property to email targeted property in ServiceNow. To verify or change your mappings, see [Customizing user provisioning attribute-mappings for SaaS applications in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes).
 
 If you chose to ingest an ACL from your ServiceNow instance and selected "non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities.
