@@ -26,7 +26,7 @@ Microsoft Search is turned on by default for all Microsoft apps that supports it
 
 You manage Microsoft Search from Microsoft 365 admin center.
 
-1. In Microsoft 365 admin center, go to **Settings** > **Microsoft Search**.
+1. In Microsoft 365 admin center, go to **Settings** > **Search & intelligence**.
 
 **Note:** If you are NOT seeing Microsoft Search under **Settings**, turn on the **Try the preview** switch in the right top corner of any admin center page.
 
