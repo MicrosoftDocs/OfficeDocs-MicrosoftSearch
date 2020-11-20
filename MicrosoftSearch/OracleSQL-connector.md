@@ -1,5 +1,5 @@
 ---
-title: "Microsoft SQL server and Azure SQL connector for Microsoft Search"
+title: "Oracle SQL connector for Microsoft Search"
 ms.author: vivg
 author: Vivek
 manager: harshkum
@@ -14,46 +14,22 @@ search.appverid:
 description: "Set up the Oracle SQL connector for Microsoft Search."
 ---
 
-# Azure SQL and Microsoft SQL server connectors
+# Oracle SQL connector
 
-With a Microsoft SQL server or Azure SQL connector, your organization can discover and index data from an on-premises SQL Server database or a database hosted in your Azure SQL instance in the cloud. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
+With the Oracle SQL connector, your organization can discover and index data from an on-premises Oracle database. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With the Oracle SQL connector, you can also restrict access to search results for certain users.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server or Azure SQL connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques. 
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Oracle SQL connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
-## Install the Graph connector agent (required for on-premises Microsoft SQL server connector only)
+## Install the Graph connector agent
 In order to access your on-premises third-party data, you must install and configure the Graph connector agent. See [Install the Graph connector agent](on-prem-agent.md) to learn more.  
 
-## Register an app (for Azure SQL connector only)
-For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer Microsoft Graph documentation on how to [register an app](https://docs.microsoft.com/graph/auth-register-app-v2). 
-
-After completing the app registration and taking note of the app name, application (client) ID and tenant ID, you need to [generate a new client secret](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client secret will only be displayed once. Remember to note & store the client secret securely. Use the client ID and client secret while configuring a new connection in Microsoft Search. 
-
-To add the registered app to your Azure SQL Database, you need to:
- - Log in to your Azure SQL DB
- - Open a new query window
- - Create a new user by running the command ‘CREATE USER [app name] FROM EXTERNAL PROVIDER’
- - Add user to role by running command 'exec sp_addrolemember 'db_datareader', [app name]'
-   Or 
-   'ALTER ROLE db_datareader ADD MEMBER [app name]'
-
->[!NOTE]
->To revoke access to any app registered in Azure Active Directory, refer the Azure documentation on [removing a registered app](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
-
 ## Connect to a data source
-To connect your Microsoft SQL server connector to a data source, you must configure the database server you want crawled and the on-prem agent. You can then connect to the database with the required authentication method.
+To connect your Oracle SQL connector to a data source, you must configure the database server you want crawled and the on-premises Graph connector agent. You can then connect to the database with the required authentication method.
+
+For Oracle SQL connector, you need to specify the Hostname, Port and Service (database) name along with the preferred authentication method, username and password.
 
 > [!NOTE]
-> Your database must run SQL server version 2008 or later for the Microsoft SQL server connector to be able to connect.
-
-For the Azure SQL connector, you only need to specify the server name or IP address you want to connect to. Azure SQL connector only supports Azure Active Directory Open ID connect (OIDC) authentication to connect to the database.
-
-For added security, you may configure IP firewall rules for your Azure SQL server or database. To learn more about setting up IP firewall rules, refer documentation on [IP firewall rules](https://docs.microsoft.com/azure/azure-sql/database/firewall-configure). Add the following client IP ranges in the firewall settings.
-
-| Region | IP Range |
-| ------------ | ------------ |
-| NAM | 52.250.92.252/30, 52.224.250.216/30 |
-| EUR | 20.54.41.208/30, 51.105.159.88/30 |
-| APC | 52.139.188.212/30, 20.43.146.44/30 |
+> Your database must run Oracle database version 11g or later for the connector to be able to connect. The connector supports Oracle database hosted on Windows, Linux and Azure VM platforms.
 
 To search your database content, you must specify SQL queries when you configure the connector. These SQL queries need to name all the database columns that you want to index (i.e. source properties), including any SQL joins that need to be performed to get all the columns. To restrict access to search results, you must specify Access Control Lists (ACLs) within SQL queries when you configure the connector.
 
@@ -82,17 +58,16 @@ The use of each of the ACL columns in the above query is described below. The fo
 ![Sample data showing the OrderTable and AclTable with example properties](media/MSSQL-ACL1.png)
 
 ### Supported data types
-The below table summarizes the SQL data types that are supported in the MS SQL and Azure SQL connectors. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer documentation on [property resource types](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties). 
+The below table summarizes the data types that are supported by the Oracle SQL connector. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer documentation on [property resource types](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties). 
 
 | Category | Source data type | Indexing data type |
 | ------------ | ------------ | ------------ |
-| Date and time | date <br> datetime <br> datetime2 <br> smalldatetime | datetime |
-| Exact numeric | bigint <br> int <br> smallint <br> tinyint | int64 |
-| Exact numeric | bit | boolean |
-| Approximate numeric | float <br> real | double |
-| Character string | char <br> varchar <br> text | string |
-| Unicode character strings | nchar <br> nvarchar <br> ntext | string |
-| Other data types | uniqueidentifier | string |
+| Number datatype | NUMBER(p,0) | int64 (for p <= 18) <br> double (for p > 18) |
+| Floating-point number datatype | NUMBER(p,s) <br> FLOAT(p) | double |
+| Date datatype | DATE <br> TIMESTAMP <br> TIMESTAMP(n) | datetime |
+| Character datatype | CHAR(n) <br> VARCHAR <br> VARCHAR2 <br> LONG <br> CLOB <br> NCLOB | string |
+| Unicode character datatype | NCHAR <br> NVARCHAR | string |
+| RowID datatype | ROWID <br> UROWID | string |
 
 For any other data type currently not directly supported, the column needs to be explicitly cast to a supported data type.
 
@@ -100,8 +75,8 @@ For any other data type currently not directly supported, the column needs to be
 To prevent overloading the database, the connector batches and resumes full-crawl queries with a full-crawl watermark column. By using the value of the watermark column, each subsequent batch is fetched, and querying is resumed from the last checkpoint. Essentially this is a mechanism to control data refresh for full crawls.
 
 Create query snippets for watermarks as shown in these examples:
-* `WHERE (CreatedDateTime > @watermark)`. Cite the watermark column name with the reserved keyword `@watermark`. If the sort order of the watermark column is ascending, use `>`; otherwise, use `<`.
-* `ORDER BY CreatedDateTime ASC`. Sort on the watermark column in ascending or descending order.
+* `WHERE (CreatedDateTime > @watermark)`. Cite the watermark column name with the reserved keyword `@watermark`. You can only sort the watermark column in ascending order.
+* `ORDER BY CreatedDateTime ASC`. Sort on the watermark column in ascending order.
 
 In the configuration shown in the following image, `CreatedDateTime` is the selected watermark column. To fetch the first batch of rows, specify the data type of the watermark column. In this case, the data type is `DateTime`.
 
@@ -136,13 +111,27 @@ The components in the following image resemble the full crawl components with on
 ## Manage search permissions 
 You can choose to use the [ACLs specified in the full crawl screen](#full-crawl-manage-search-permissions) or you can override them to make your content visible to everyone.
 
+## Set the refresh schedule
+The Oracle SQL connector supports refresh schedules for both full and incremental crawls. We recommend that you set both.
+
+A full crawl schedule finds deleted rows that were previously synced to the Microsoft Search index and any rows that moved out of the sync filter. When you first connect to the database, a full crawl runs to sync all the rows retrieved from the full crawl query. To sync new rows and make updates, you need to schedule incremental crawls.
+
 ## Next steps: Customize the search results page
 Create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won’t show up on the search results page.
 
 To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).
 
 ## Limitations
-The SQL connectors have these limitations in the preview release:
-* Microsoft SQL server connector: The on-premises database must run SQL server version 2008 or later.
+The Oracle SQL connector has these limitations in the preview release:
+* The on-premises database must run Oracle Database version 11g or later.
 * ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security. 
 * Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
+
+## Troubleshooting guide
+Underneath is a list of common errors observed while configuring the connector and their possible reasons.
+| Configuration step | Error message | Possible reason(s) |
+| ------------ | ------------ | ------------ |
+| Database settings | Error from database server: Connection request timed out | Invalid Hostname <br> Host not reachable |
+| Database settings | Error from database server: ORA-12541: TNS: No listner | Invalid Port |
+| Database settings | Error from database server: ORA-12514: TNS:listner does not currently know of service requested in connector descriptor | Invalid service (database) name |
+| Database settings | Error from database server: Login failed for user '`user`'. | Invalid username or password |
