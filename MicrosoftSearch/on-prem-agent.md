@@ -64,7 +64,7 @@ Authentication details can be provided in one of the following forms.
 
 ## Using thumbprint certificate for authentication
 
-If you have already configured the authentication details by following [Configuring the client secret for authentication](#Configuring-the-client-secret-for-authentication) , then you can jump directly to [Setup overview](configure-connector.md).
+If you have already configured the authentication details by following [Configuring the client secret for authentication](#configuring-the-client-secret-for-authentication) , then you can jump directly to [Setup overview](configure-connector.md).
 
 1. Open **App registration** and select **Certificates and secrets** from the navigation pane. Copy the certificate thumbprint.
 ![List of thumbrint certificates when Certificates and secrets is selected in the left pane](media/onprem-agent/certificates.png)
