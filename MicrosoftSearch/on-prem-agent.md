@@ -1,31 +1,18 @@
 --- 
-
 title: "On Prem Agent" 
-
 ms.author: rusamai 
-
 author: rsamai 
-
 manager: jameslau 
-
 ms.audience: Admin 
-
 ms.topic: article 
-
 ms.service: mssearch 
-
 localization_priority: Normal 
-
 search.appverid: 
-
 - BFB160 
-
 - MET150 
-
 - MOE150 
-
+ROBOTS: NoIndex
 description: "On-Prem Agent" 
-
 --- 
 
 # On-Prem Agent
@@ -68,7 +55,7 @@ Once you have created the App for the agent, you must configure the agent with a
 
 Authentication details can be provided in one of the following forms.
 
-### Configuring the client secret for authentation
+### Configuring the client secret for authentication
 
 1. Go to the [Azure portal](https://portal.azure.com) and sign in with admin credentials for the tenant.
 2. Open **App Registration** from the navigation pane and go to the appropriate App. Under **Manage**, select **Certificates and secrets**.
@@ -77,7 +64,7 @@ Authentication details can be provided in one of the following forms.
 
 ## Using thumbprint certificate for authentication
 
-If you have already configured the authentication details by following [Configuring the client secret for authentation](#Configuring-the-client-secret-for-authentication) , then you can jump directy to [Setup overview](configure-connector.md).
+If you have already configured the authentication details by following [Configuring the client secret for authentication](#configuring-the-client-secret-for-authentication) , then you can jump directly to [Setup overview](configure-connector.md).
 
 1. Open **App registration** and select **Certificates and secrets** from the navigation pane. Copy the certificate thumbprint.
 ![List of thumbrint certificates when Certificates and secrets is selected in the left pane](media/onprem-agent/certificates.png)

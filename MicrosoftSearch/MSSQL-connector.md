@@ -11,7 +11,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Oracle SQL connector for Microsoft Search."
+description: "Set up the Microsoft SQL connector for Microsoft Search."
 ---
 
 # Azure SQL and Microsoft SQL server connectors
