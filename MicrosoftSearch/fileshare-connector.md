@@ -11,6 +11,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
+ROBOTS: NoIndex
 description: "Set up the file share connector for Microsoft Search"
 ---
 

@@ -1,31 +1,18 @@
 --- 
-
 title: "On Prem Agent" 
-
 ms.author: rusamai 
-
 author: rsamai 
-
 manager: jameslau 
-
 ms.audience: Admin 
-
 ms.topic: article 
-
 ms.service: mssearch 
-
 localization_priority: Normal 
-
 search.appverid: 
-
 - BFB160 
-
 - MET150 
-
 - MOE150 
-
+ROBOTS: NoIndex
 description: "On-Prem Agent" 
-
 --- 
 
 # On-Prem Agent
