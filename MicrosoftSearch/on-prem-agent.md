@@ -12,7 +12,7 @@ search.appverid:
 - MET150 
 - MOE150 
 ROBOTS: NoIndex
-description: "On-Prem Agent" 
+description: "On-prem Agent" 
 --- 
 
 # Graph connector agent
@@ -68,7 +68,7 @@ There are three simple steps for using certificate-based authentication:
 
 ##### Step 1: Get a certificate
 
-The script below can be used to generate a self-signed certificate. However, your organization may not allow self-signed certificates. In that case, use this information to understand the requirements and acquire a certificate in accordance to your organization's policies.
+The script below can be used to generate a self-signed certificate. Your organization may not allow self-signed certificates. In that case, use this information to understand the requirements and acquire a certificate in accordance to your organization's policies.
 
 ```Powershell
 $dnsName = "<TenantDomain like agent.onmicrosoft.com>" # Your DNS name
@@ -96,13 +96,13 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 ##### Step 3: Assign the certificate to the agent
 
-If you used the sample script to generate a certificate, the PFX file canbe found in the location identified in the script.
+If you used the sample script to generate a certificate, the PFX file can be found in the location identified in the script.
 
 1. Download the certificate pfx file onto the Agent machine.
-1. Double click the pfx file to launch the certificate installation dialog.
+1. Double-click the pfx file to launch the certificate installation dialog.
 1. Select 'Local Machine' for store location while installing the certificate.
 1. After installing the certificate, open 'Manage computer certificates' through Start menu
 1. Select the newly installed certificate under 'Personal' -> 'Certificates'
 1. Right click on the cert and select 'All Tasks' -> 'Manage Private Keys…' Option
-1. In the permissions dialog select add option. In the user selection dialog write: 'NT Service\GcaHostService' and click 'OK'. Do not click the 'Check Names' button.
+1. In the permissions dialog, select add option. In the user selection dialog, write: 'NT Service\GcaHostService' and click 'OK'. Do not click the 'Check Names' button.
 1. Click okay on the permissions dialog. The agent machine is now configured for agent to generate tokens using the certificate.
