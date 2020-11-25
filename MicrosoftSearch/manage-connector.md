@@ -86,6 +86,7 @@ Error code | Error message | Solution
 2001 | Indexing is throttled because of a large number of updates in the queue. Depending on the queue, it can take some time for the updates to complete. | Please wait until the queue gets cleared.
 2002 | Indexing failed due to unsupported item formatting. | See connector-specific documentation for more information.
 2003 | Indexing failed due to unsupported item content. | See connector-specific documentation for more information.
+2010 | This connection is no longer valid because of an update made by Microsoft. Please delete the connection and create a new one. | Please delete the connection and create a new one. 
 5000 | Something went wrong. If this continues, contact support. |
 
 ## Monitor your index quota utilization
