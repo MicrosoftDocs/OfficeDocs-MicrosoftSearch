@@ -21,13 +21,13 @@ Using on-prem Graph connectors require you to install *Graph connector agent* so
 
 ## Installation
 
-Download the latest version of Graph connector agent [here](https://download.microsoft.com/download/d/d/e/dde18236-9c67-437d-a864-894a0a888ef2/AgentPackage.msi) and install the software using the installation wizard. With the recommended configuration of the machine described below, the software can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
+Download the latest version of Graph connector agent [here](https://download.microsoft.com/download/d/d/e/dde18236-9c67-437d-a864-894a0a888ef2/AgentPackage.msi) and install the software using the installation wizard. Using the recommended configuration of the machine described below, the software can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
 
 Recommended configuration:
 
 * Windows 10, Windows Server 2012 R2 and above
-* 8 cores, 3GHz
-* 16GB RAM, 1GB Disk Space
+* 8 cores, 3 GHz
+* 16 GB RAM, 1 GB Disk Space
 * Network access to data source and internet through 443
 
 ## Create and configure an App for the agent  
@@ -55,8 +55,8 @@ Authentication details can be provided using a client secret or a certificate. F
 
 1. Go to the [Azure portal](https://portal.azure.com) and sign in with admin credentials for the tenant.
 2. Open **App Registration** from the navigation pane and go to the appropriate App. Under **Manage**, select **Certificates and secrets**.
-3. Select **New Client secret** and select an expiry period for the secret. Copy the generated secret and save it because it will not be shown again.
-4. Use this Client secret along with the Application ID to configure the agent. Do not use any blank spaces in the **Name** field of the agent. Alpha numeric characters are accepted.
+3. Select **New Client secret** and select an expiry period for the secret. Copy the generated secret and save it because it won't be shown again.
+4. Use this Client secret along with the Application ID to configure the agent. You cannot use blank spaces in the **Name** field of the agent. Alpha numeric characters are accepted.
 
 #### Using a certificate for authentication
 
@@ -104,5 +104,5 @@ If you used the sample script to generate a certificate, the PFX file can be fou
 1. After installing the certificate, open 'Manage computer certificates' through Start menu
 1. Select the newly installed certificate under 'Personal' -> 'Certificates'
 1. Right click on the cert and select 'All Tasks' -> 'Manage Private Keys…' Option
-1. In the permissions dialog, select add option. In the user selection dialog, write: 'NT Service\GcaHostService' and click 'OK'. Do not click the 'Check Names' button.
+1. In the permissions dialog, select add option. In the user selection dialog, write: 'NT Service\GcaHostService' and click 'OK'. Don't click the 'Check Names' button.
 1. Click okay on the permissions dialog. The agent machine is now configured for agent to generate tokens using the certificate.
