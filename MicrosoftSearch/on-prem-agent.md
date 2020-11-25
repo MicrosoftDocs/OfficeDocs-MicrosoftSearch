@@ -21,13 +21,13 @@ Using on-prem Graph connectors require you to install *Graph connector agent* so
 
 ## Installation
 
-Download the latest version of Graph connector agent [here](https://download.microsoft.com/download/d/d/e/dde18236-9c67-437d-a864-894a0a888ef2/AgentPackage.msi) and install the software using the installation wizard. Using the recommended configuration of the machine described below, the software can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
+Download the latest version of Graph connector agent [here](https://aka.ms/gcadownload) and install the software using the installation wizard. Using the recommended configuration of the machine described below, the software can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
 
 Recommended configuration:
 
-* Windows 10, Windows Server 2012 R2 and above
+* Windows 10, Windows Server 2016 R2 and above
 * 8 cores, 3 GHz
-* 16 GB RAM, 1 GB Disk Space
+* 16 GB RAM, 2 GB Disk Space
 * Network access to data source and internet through 443
 
 ## Create and configure an App for the agent  
@@ -44,7 +44,7 @@ Before using the agent, you must create an app and configure the authentication 
 6. Select **Microsoft Graph** and then **Application permissions**.
 7. Search for "ExternalItem.ReadWrite.All" and "Directory.Read.All" from the permissions and select **Add permissions**.
 8. Select **Grant admin consent for [TenantName]** and confirm by selecting **Yes**.
-9. Check that the permissions are in the granted state.
+9. Check that the permissions are in the "granted" state.
      ![Permissions shown as granted in green on right hand column.](media/onprem-agent/granted-state.png)
 
 ### Configure Authentication
