@@ -2,6 +2,23 @@
 
 
 
+## Week of November 23, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/23/2020 | [Microsoft SQL server and Azure SQL connector for Microsoft Search](/MicrosoftSearch/mssql-connector) | modified |
+| 11/23/2020 | [ServiceNow connector for Microsoft Search](/MicrosoftSearch/servicenow-connector) | modified |
+| 11/23/2020 | [Set up Microsoft Search](/MicrosoftSearch/setup-microsoft-search) | modified |
+| 11/23/2020 | [Microsoft Search Public Preview: Terms of Use](/MicrosoftSearch/terms-of-use) | modified |
+| 11/24/2020 | [Microsoft SQL server and Azure SQL connector for Microsoft Search](/MicrosoftSearch/mssql-connector) | modified |
+| 11/24/2020 | [Oracle SQL connector for Microsoft Search](/MicrosoftSearch/oraclesql-connector) | modified |
+| 11/24/2020 | [File share connector](/MicrosoftSearch/fileshare-connector) | modified |
+| 11/24/2020 | [On Prem Agent](/MicrosoftSearch/on-prem-agent) | modified |
+| 11/25/2020 | [Manage Microsoft Graph Connectors for Microsoft Search](/MicrosoftSearch/manage-connector) | modified |
+| 11/25/2020 | [On-Premises Agent](/MicrosoftSearch/on-prem-agent) | modified |
+
+
 ## Week of November 16, 2020
 
 
@@ -45,11 +62,3 @@
 | 11/5/2020 | [Azure DevOps connector for Microsoft Search](/MicrosoftSearch/azure-devops-connector) | modified |
 | 11/5/2020 | [Manage search result layouts](/MicrosoftSearch/customize-results-layout) | modified |
 | 11/5/2020 | [ServiceNow connector for Microsoft Search](/MicrosoftSearch/servicenow-connector) | modified |
-
-
-## Week of October 19, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/19/2020 | [Customize the search results layout](/MicrosoftSearch/customize-results-layout) | modified |
