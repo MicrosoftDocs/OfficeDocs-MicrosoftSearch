@@ -17,7 +17,7 @@ description: "Details of the Connectors Result Cluster experience"
 
 ## Overview of the Graph connectors result cluster (Preview)  
 
- With Graph connectors result clusters, enterprises can search for content from third party data sources in their default view (the All tab) in SharePoint and Office.com.
+With Graph connectors result clusters, enterprises can search for content from third party data sources in their default view (the All tab) in SharePoint and Office.com.
 
 Result clusters help users discover all third party content (previoulsy tied to a single connector and vertical) in one place. The results shown in a result cluster are grouped together based on how the tenant administrator configures them in a search vertical.  
 
@@ -34,14 +34,14 @@ The search result experience for connector items shown in your result cluster is
 ## Enable result clusters
   
 The result cluster experience is turned off by default.  
+
 Follow these steps to turn on the experience at the organization level:
 
-Microsoft 365 Admin Center
-
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to **Settings** > **Search & intelligence** > **Customization** > **Verticals**.  
-2. Select  the **All** vertical and go to the **Show connector results** section. Turn on the experience at the site level.
+2. Select  the **All** vertical, then enable **Show connector results**. 
 
-Sharepoint
+
+Follow these steps to turn on the experience at the site level:
 
 1. On the SharePoint site where you want the result cluster experience, go to **Settings**.
 2. Go to **Site information**>**View all site settings**.
