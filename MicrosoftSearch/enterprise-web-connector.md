@@ -20,13 +20,23 @@ With the Enterprise websites connector, your organization can index articles and
 
 This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) administrators or anyone who configures, runs, and monitors an Enterprise websites connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.  
 
-## Connect to a data source
+## Connection Settings
 
-To connect to your data source, you need to fill in the root URL of the website and the type of authentication you'd like to use: None, Basic Authentication, or OAuth 2.0 with [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/).
+To connect to your data source, you need to fill in the root URL of the website, select a crawl source, and the type of authentication you'd like to use: None, Basic Authentication, or OAuth 2.0 with [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/). After you complete this information you click Test Connection to verify your settings.
 
 ### URL
 
 Use the URL field to specify the root of the website that you'd like to crawl. The enterprise websites connector will use this URL as the starting point and follow all the links from this URL for its crawl.
+
+### Crawl Source: On-premises or Cloud
+
+You now have the option to choose between two different crawl modes: Cloud and Agent.
+
+To crawl your on-premises third-party data, select Agent. To access on-premises data, you must first install and configure the Graph connector agent. To learn more, see [Graph connector agent](https://docs.microsoft.com/microsoftsearch/on-prem-agent).
+
+If you selected Agent as the Crawl Mode, then choose the On-Prem Agent that you installed and configured earlier.  
+
+![Screenshot of Connection Settings pane for Enterprise Web connector](media/connectors-enterpriseweb-settings.png)
 
 ### Authentication
 
@@ -42,6 +52,10 @@ For more information, see [Authorize access to Azure Active Directory web applic
 To get the values for the resource, client_id, and client_secret, go to **Use the authorization code to request an access token** on the redirect URL webpage.
 
 For even more information, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+
+## Support for Robots.txt
+
+The connector checks to see if there is a robots.txt file for your root site and, if one exists, it will follow and respect the directions found within that file. If you do not want the connector to crawl certain pages or directories on your site, you can call out those pages or directories in the "Disallow" declarations in your robots.txt file.
 
 ## Add URLs to exclude
 
