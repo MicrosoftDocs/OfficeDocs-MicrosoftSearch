@@ -44,9 +44,9 @@ In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to [Bookma
 
 Search admins and editors can add bookmarks in the Microsoft 365 admin center. Bookmarks can be published or saved to draft. Publishing a bookmark immediately refreshes the search index so users can begin discovering and using it right away. You can also schedule a bookmark by specifying the date and time it will be published.
 
-**Published**: Bookmarks are available to the organization’s users through Microsoft Search.
-**Draft**: Bookmarks saved as drafts are not available to your users. Use this status if you or other stakeholders want to review or update bookmarks before publishing them.
-**Scheduled**: Bookmarks that will be published on the specified date and time.
+- **Published**: Bookmarks are available to the organization’s users through Microsoft Search.
+- **Draft**: Bookmarks saved as drafts are not available to your users. Use this status if you or other stakeholders want to review or update bookmarks before publishing them.
+- **Scheduled**: Bookmarks that will be published on the specified date and time.
 
 You can use the Microsoft Search content creator browser extension to easily add bookmarks. To install the browser extension, go to the site you want to add as a bookmark, and click Add in the extension.
 Install the extension for Edge and Chrome:
