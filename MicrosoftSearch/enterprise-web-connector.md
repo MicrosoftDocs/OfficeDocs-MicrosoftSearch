@@ -28,11 +28,13 @@ To connect to your data source, you need to fill in the root URL of the website,
 
 Use the URL field to specify the root of the website that you'd like to crawl. The enterprise websites connector will use this URL as the starting point and follow all the links from this URL for its crawl.
 
-### Crawl Source: Cloud or On-premises (Preview)
+### Crawl Mode: Cloud or On-premises (Preview)
 
-For your cloud websites, select Cloud as the crawl mode. Also, the connector now supports crawling of on-premises websites. This feature is in preview. To access that data, you must first install and configure the Graph connector agent. To learn more, see [Graph connector agent](https://docs.microsoft.com/microsoftsearch/on-prem-agent).
+For your cloud websites, select Cloud as the crawl mode.
 
-For your on-premises websites, select Agent as the crawl mode and then choose the on-premises agent that you installed and configured earlier.  
+Also, the connector now supports crawling of on-premises websites. This agent mode feature is in preview. To access your on-premises data, you must first install and configure the Graph connector agent. To learn more, see [Graph connector agent](https://docs.microsoft.com/microsoftsearch/on-prem-agent).
+
+For your on-premises websites, select Agent as the crawl mode and then choose the On-Prem Agent that you installed and configured earlier.  
 
 ![Screenshot of Connection Settings pane for Enterprise Web connector](media/connectors-enterpriseweb-settings.png)
 
@@ -40,7 +42,7 @@ For your on-premises websites, select Agent as the crawl mode and then choose th
 
 Basic Authentication requires a username and password. Create this bot account by using the [Microsoft 365 admin center](https://admin.microsoft.com).
 
-OAuth 2.0 with [Azure AD](https://docs.microsoft.com/azure/active-directory/) requires a resource ID, Client ID, and Client Secret.
+OAuth 2.0 with [Azure AD](https://docs.microsoft.com/azure/active-directory/) requires a resource ID, Client ID, and Client Secret. Currently, OAuth 2.0 only works with Cloud mode.
 
 For more information, see [Authorize access to Azure Active Directory web applications using OAuth 2.0 code grant flow](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code). Register with the following values:
 
