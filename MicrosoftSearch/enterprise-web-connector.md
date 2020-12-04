@@ -28,13 +28,11 @@ To connect to your data source, you need to fill in the root URL of the website,
 
 Use the URL field to specify the root of the website that you'd like to crawl. The enterprise websites connector will use this URL as the starting point and follow all the links from this URL for its crawl.
 
-### Crawl Source: On-premises or Cloud
+### Crawl Source: Cloud or On-premises (Preview)
 
-You now have the option to choose between two different crawl modes: Cloud and Agent.
+For your cloud websites, select Cloud as the crawl mode. Also, the connector now supports crawling of on-premises websites. This feature is in preview. To access that data, you must first install and configure the Graph connector agent. To learn more, see [Graph connector agent](https://docs.microsoft.com/microsoftsearch/on-prem-agent).
 
-To crawl your on-premises third-party data, select Agent. To access on-premises data, you must first install and configure the Graph connector agent. To learn more, see [Graph connector agent](https://docs.microsoft.com/microsoftsearch/on-prem-agent).
-
-If you selected Agent as the Crawl Mode, then choose the On-Prem Agent that you installed and configured earlier.  
+For your on-premises websites, select Agent as the crawl mode and then choose the on-premises agent that you installed and configured earlier.  
 
 ![Screenshot of Connection Settings pane for Enterprise Web connector](media/connectors-enterpriseweb-settings.png)
 
