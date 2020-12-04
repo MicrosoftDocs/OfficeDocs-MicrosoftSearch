@@ -22,7 +22,7 @@ This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) adm
 
 ## Connection Settings
 
-To connect to your data source, you need to fill in the root URL of the website, select a crawl source, and the type of authentication you'd like to use: None, Basic Authentication, or OAuth 2.0 with [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/). After you complete this information you click Test Connection to verify your settings.
+To connect to your data source, you need to fill in the root URL of the website, select a crawl source, and the type of authentication you'd like to use: None, Basic Authentication, or OAuth 2.0 with [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/). After you complete this information, click Test Connection to verify your settings.
 
 ### URL
 
@@ -79,22 +79,22 @@ The Enterprise websites connector only supports a full refresh. This means that 
 
 ## Troubleshooting
 
-When reading the website's content, the crawl may encounter some source errors which are represented by the detailed error codes below. To get more information on the types of errors, go to the **error details** page after selecting the connection. Click on the **error code** to see more detailed errors. Also refer to [Manage your connector](https://docs.microsoft.com/microsoftsearch/manage-connector) to learn more.
+When reading the website's content, the crawl may encounter some source errors, which are represented by the detailed error codes below. To get more information on the types of errors, go to the **error details** page after selecting the connection. Click on the **error code** to see more detailed errors. Also refer to [Manage your connector](https://docs.microsoft.com/microsoftsearch/manage-connector) to learn more.
 
  Detailed Error code | Error message
  --- | ---
  6001 | The site that is being tried to index is not reachable
  6005 | The source page that is being tried to index has been blocked by as per robots.txt configuration.
  6008 | Unable to resolve the DNS
- 6009 | For all client side errors (Except HTTP 404, 408), please refer to HTTP 4xx error codes for details.
+ 6009 | For all client-side errors (Except HTTP 404, 408), refer to HTTP 4xx error codes for details.
  6013 | The source page that is being tried to index could not be found. (HTTP 404 error)
  6018 | The source page is not responding, and the request has timed out. (HTTP 408 error)
  6021 | The source page that is being tried to index has no textual content on the page.
- 6023 | The source page that is being tried to index is unsupported (not a HTML page)
+ 6023 | The source page that is being tried to index is unsupported (not an HTML page)
  6024 | The source page that is being tried to index has unsupported content.
 
 * Errors 6001-6013 occur when the data source is not reachable due to a network issue or when the data source itself is deleted, moved, or renamed. Check if the data source details provided are still valid.
-* Errors 6021-6024 error occur when the data source contains non-textual content on the page or when the page is not an HTML. Please check the data source and add this page in exclusion list or ignore the error.
+* Errors 6021-6024 occur when the data source contains non-textual content on the page or when the page is not an HTML. Check the data source and add this page in exclusion list or ignore the error.
 
 ## Limitations
 
