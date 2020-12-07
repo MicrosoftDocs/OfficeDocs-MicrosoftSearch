@@ -26,6 +26,7 @@ Download the latest version of Graph connector agent [here](https://aka.ms/gcado
 Recommended configuration:
 
 * Windows 10, Windows Server 2016 R2 and above
+* [.NET Core Desktop Runtime 3.1 (x64)](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * 8 cores, 3 GHz
 * 16 GB RAM, 2 GB Disk Space
 * Network access to data source and internet through 443
