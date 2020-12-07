@@ -11,7 +11,6 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NoIndex
 description: "Review Microsoft Search usage reports"
 ---
 
