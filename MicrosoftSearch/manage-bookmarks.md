@@ -56,7 +56,7 @@ Install the extension for Edge and Chrome:
 
 ### Import SharePoint results
 
-If your organization set up Promoted Results in SharePoint, you can import the Promoted Results for your tenant into Microsoft Search and make the imported content available to your users. In most cases, importing SharePoint results takes just a few minutes. If you're importing a large number of results, it may take up to 48 hours. This is an easy way to quickly populate search results and make it more effective for your users. We recommend using promoted results from SharePoint as a reference to understand how to name and create relevant search results.
+If your organization set up Promoted Results in SharePoint, you can import the titles, URLs, and descriptions from the Promoted Results for your tenant into Microsoft Search and make the imported content available to your users. In most cases, importing SharePoint results takes just a few minutes. If you're importing a large number of results, it may take up to 48 hours. This is an easy way to quickly populate search results and make it more effective for your users. We recommend using promoted results from SharePoint as a reference to understand how to name and create relevant search results.
 
 ### Add default and suggested bookmarks
 
