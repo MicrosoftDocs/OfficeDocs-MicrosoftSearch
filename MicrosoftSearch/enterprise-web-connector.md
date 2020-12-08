@@ -99,3 +99,7 @@ When reading the website's content, the crawl may encounter some source errors, 
 ## Limitations
 
 The Enterprise websites connector doesn't support searching data on **dynamic webpages**. Examples of those webpages live in content management systems like [Confluence](https://www.atlassian.com/software/confluence) and [Unily](https://www.unily.com/) or databases that store website content.
+
+## Next steps
+
+After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
