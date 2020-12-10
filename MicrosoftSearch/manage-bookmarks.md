@@ -16,53 +16,68 @@ description: "Create and update bookmarks and ways to bulk edit bookmark results
 ---
 # Manage bookmarks
 
-You can create a bookmark in just a few steps. Each bookmark includes a title, a URL, and a set of keywords that trigger it. You can also add categories to a bookmark that can be used for sorting and filtering in the admin portal. A bookmark can have several keywords and bookmarks can share the same keyword, but reserved keyword can't be shared. When a bookmark is created or modified, the search index is refreshed immediately, and the bookmark is available to users immediately.
+Bookmarks help people quickly find important sites and tools with just a search. Each bookmark includes a title, URL, a set of user-friendly keywords to trigger the bookmark, and a category.
 
-If your organization set up Promoted Results in SharePoint, you can import the Promoted Results into **Microsoft Search** and make the imported content available to your users. This is an easy way to quickly populate search results as soon as you set up **Microsoft Search** and make it more effective for your users. We recommend using promoted results from SharePoint as a reference to understand how to name and create relevant search results.
+## What makes a great bookmark
 
-## Add or edit a single bookmark
+A great bookmark has four key elements:
 
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Bookmarks**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks).
-1. To add a bookmark, select **Add**.
-To edit a bookmark, select the bookmark in the relevant bookmark list.
-1. As you add or edit the information, the preview automatically updates.
-1. Save your changes.
+1. A strong, informative **title**. Aim for no more than 8 words or about 60 characters maximum. You want your users to click on the title and view the content, but avoid obvious clickbait:
+    - Good: Try this week’s tasty favorites from the cafeteria menu. Title is clear, concise, and interesting, but could be overpromising.
+    - Better: This week’s cafeteria menu. Doesn't overpromise or sound like an ad.
+    - Avoid: You won’t believe what’s coming to the cafeteria menu this week. Uses clickbait clichés that sound like an ad.
+2. A succinct **description**, about 300 characters, that summarizes the purpose or functionality of the linked resource.
+3. A collection of **keywords** that will help people find the bookmark when they search. We suggest a minimum of at least five keywords. Also, include variations that people in your organization might use, for example, dining menu, lunch menus, and café menu could all be variations for cafeteria menu.
+4. A helpful set of **categories** that make it easier to sort and filter bookmarks in the admin center. Your users never see the assigned categories.
 
-## Add or edit bookmark using browser extensions
+## Create bookmark answers
 
-Search administrators can create search content easily by using browser extensions. Install the browser extension, go to the site you want to add as bookmark, and add the bookmark.
+In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to [Bookmarks](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) and choose how you want to create new bookmarks:
 
-Currently, browser extensions are available for Edge and Chrome.
+- Add bookmarks
+- Import SharePoint results
+- Add default bookmarks and suggested bookmarks
+- Import bookmarks
+- Publish or review recommended bookmarks
 
-- To download Edge extensions, go to [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and download the app.
-- To download Chrome extensions, go to [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and download the app.
+### Add bookmarks
 
-## Bulk add or edit bookmarks
+Search admins and editors can add bookmarks in the Microsoft 365 admin center. Bookmarks can be published or saved to draft. Publishing a bookmark immediately refreshes the search index so users can begin discovering and using it right away. You can also schedule a bookmark by specifying the date and time it will be published.
 
-Use the Import or Export feature to bulk create or edit bookmarks. It makes adding or editing a large number of bookmarks faster and easier. Use it to:
+- **Published**: Bookmarks are available to the organization’s users through Microsoft Search.
+- **Draft**: Bookmarks saved as drafts are not available to your users. Use this status if you or other stakeholders want to review or update bookmarks before publishing them.
+- **Scheduled**: Bookmarks that will be published on the specified date and time.
 
-- Bulk add bookmarks - Add details in the bookmark template file, and then import it.
-- Bulk edit bookmarks - Export bookmarks to a .csv file, then edit the bookmark details in the exported .csv file, and then import the updated .csv file.
-- Import promoted sites from SharePoint.
-- Backup bookmarks - Export bookmarks to a .csv file.
+You can use the Microsoft Search content creator browser extension to easily add bookmarks. To install the browser extension, go to the site you want to add as a bookmark, and click Add in the extension.
+Install the extension for Edge and Chrome:
 
-To import or export bookmarks:
+- For Chromium Edge or Chrome: go to the [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and add the extension.
+- For legacy Edge: go to the [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and add the extension.
 
-1. In the upper-right corner of **Bookmarks** tab, select **Import**.
-Select **Export** to download all the existing bookmarks in a .csv file.
-1. In the right pane, choose the option to import using a .csv file or from SharePoint.
-Download the template file for a list of the required fields and details.
-1. Add or edit bookmark details in the template file, and then save it on your computer.
-1. In the **Import bookmarks** pane, select **Browse** and then the .csv file that you want to import.
-1. Select **Import**.
+### Import SharePoint results
 
-Here are some important points about the template file:
+If your organization set up Promoted Results in SharePoint, you can import the titles, URLs, and descriptions from the Promoted Results for your tenant into Microsoft Search and make the imported content available to your users. In most cases, importing SharePoint results takes just a few minutes. If you're importing a large number of results, it may take up to 48 hours. This is an easy way to quickly populate search results and make it more effective for your users. We recommend using promoted results from SharePoint as a reference to understand how to name and create relevant search results.
+
+### Add default and suggested bookmarks
+
+We've included some default suggested bookmarks that your users may find helpful, including bookmarks for HR, benefits, IT support, password management and more. Review, update, and publish these suggested bookmarks to provide high-quality results to your users right away.
+
+Your users can also suggest bookmarks that would like to see added using feedback links in Microsoft Search. Their recommendations will appear as suggested bookmarks.
+
+### Import bookmarks
+
+Use the Import feature to make adding or editing a large number of bookmarks faster and easier. Use it to:
+
+- Bulk add bookmarks: Add details in the bookmark template file, and then import it.
+- Bulk edit bookmarks: Export bookmarks to a .csv file, edit the bookmark details in the exported file, and then import the edited file.
+
+A few important points about the template file:
 
 - Never edit data in these fields: *ID*, *Last Modified*, and *Last Modified By*
 - If you include the *ID* of an existing bookmark, it will be replaced with the information in the import file.
-- For existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.
+- For existing bookmarks with the same title or URL, the bookmark will be updated with information in the import file.
 - Not all fields in the template file are required and required fields vary depending on the bookmark state.
-- Based on the *State* field, bookmarks will be saved as draft, suggested, scheduled, or they'll be published automatically.
+- Based on the *State* field, bookmarks will be saved as draft, suggested, scheduled, excluded, or they'll be published automatically.
 - For partners who manage multiple organizations, you can export your bookmarks from one org and import them into another. But you must remove the data in the *ID* column before you import.
 
 ### Prevent import errors
@@ -75,29 +90,64 @@ To prevent errors, make sure your import file is properly formatted and:
 - The column order is the same as the import template
 - All columns have values, except the three that can be empty: *ID*, *Last Modified*, and *Last Modified By*
 - The *State* column is not empty, it's required information
+- When importing Published, Suggested, Scheduled, or Draft bookmarks, the *Title*, *URL*, and *Keywords* columns are required
+- When importing Excluded bookmarks, the *URL* column is required
 
 To prevent bookmark-to-bookmark duplication errors:
 
 - Don't use duplicate URLS for different bookmarks. If a URL is assigned to another bookmark and you try to add it again from an import file, you'll get an error. This also applies to duplicate URLs for other types of answers.
 - When updating existing bookmarks, use the *bookmark ID* column. You can update any other property of an existing bookmark, such as keyword or description, but you should make sure the *bookmark ID* is in the appropriate column of the import file. If the *bookmark ID* is present, it won't be treated as new addition and won't be processed as an error.
 
-## Power Apps
+### Publish or review recommended bookmarks
 
-Help your users complete tasks, such as entering vacation time or reporting expenses, by adding existing Power Apps to your bookmarks.
+To reduce the manual effort required to add bookmarks, Microsoft Search can evaluate SharePoint links in your organization and recommend bookmarks, and you can review them before publishing or set them to automatically publish. No setup is needed for recommended bookmarks, they're enabled and set to auto-publish by default. To change these settings at any time, select **Manage bookmarks** to open the Bookmark settings panel.
 
-### Power Apps explained
+![Screenshot of Recommended bookmark settings in the Microsoft 365 admin portal](media/bookmarks-recommendedsettings.png)
 
-Power Apps is a service that lets you build business apps that run in a browser or on a phone or tablet with no coding experience required. Power Apps work in any browser and on any device and take less than a minute to add. For more on Power Apps, see:
+If recommended bookmarks are enabled, the recommendation engine will evaluate SharePoint sites in your organization to identify high-traffic links. After an initial evaluation period, the recommended bookmarks will either be auto-published or added to the list of suggested bookmarks. The next cycle—a 30-day evaluation period followed by auto-publishing or adding suggested bookmarks—will then begin.
 
-- [Guided Learning](https://docs.microsoft.com/learn/browse/?terms=power%20apps)
-- [Documentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
-- [Power Apps Home](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
+We suggest Search admins or editors review these auto-published or suggested bookmarks on a regular basis. Also, recommended bookmarks will never include URLs found in existing Published, Suggested, Scheduled, or Excluded bookmarks.
 
-### Add a Power App to a bookmark
+To ensure only users with access will see a recommended bookmark in their work results, an access check feature is included for all recommended bookmarks. Users that don't have permissions to access a SharePoint site will never see the recommended bookmark for that site. This access check is controlled by the option **Only people with access to this link** in the Groups setting for each recommended bookmark.
 
-1. Find the [App ID for the Power App](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) that you want to add.
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Bookmarks**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks).
-1. Add a bookmark or find an existing bookmark that you want to add a **Power App** to.
-1. In **Bookmark settings**, select **Power App**, and enter or paste the **App ID**.
-    The height and width are automatically adjusted based on the orientation that was selected when the Power App was created. Bookmarks support both portrait and landscape orientations. The bookmark preview shows a fully functional PowerApp to make it easy to test.
-1. Select **Publish** or **Save to Draft**.
+The access check will stop if the URL in the recommended bookmark or the Groups setting is changed.
+
+To prevent the recommendation engine from publishing or suggesting a bookmark to a particular site, you can add the URL to an excluded list. The recommendation engine will never publish or suggest a bookmark for an excluded site or a page within an excluded site.
+
+## About keywords and reserved keywords
+
+A bookmark can have several keywords and bookmarks can share the same keyword, but reserved keyword can't be shared. A reserved keyword is a unique term or phrase that triggers one specific bookmark. A reserved keyword can be associated with one answer only. Use reserved keywords sparingly.
+
+## Frequently asked questions
+
+**Q: How long does it take for a bookmark to be visible in Microsoft Search after it's published?**
+
+**A:**  A bookmark is available in Microsoft Search immediately after publishing.
+
+**Q: How long does it take for a recommended bookmark to appear?**
+
+**A:**  Recommended bookmarks will only appear in Microsoft Search if both Recommended bookmarks and auto-publishing are enabled. During the initial evaluation period, the recommendation engine will evaluate SharePoint traffic to identify suitable bookmarks and then auto-publish them. Once published they become available immediately in Microsoft Search.
+
+**Q: Will Microsoft Search recommend bookmarks from sites in all languages?**
+
+**A**: Yes, Microsoft Search can recommend bookmarks from any internal SharePoint site, regardless of the language.
+
+**Q: Can I stop showing recommended bookmarks in search results?**
+
+**A:** To stop showing recommended bookmarks, turn the auto-publish setting off in your admin center. Recommended bookmarks will be added to the list of suggested bookmarks.
+
+**Q: How can I identify a recommended bookmark in search results or the admin center?**
+
+**A:** In search results, recommended bookmarks include the phrase "Suggested for you" before the URL. In the admin center, mined bookmarks will have an Owner value of "SYSTEM".
+
+**Q: How is access to a recommended bookmark managed?**
+
+**A**: A Microsoft-engineered access engine determines if the bookmark URL is accessible to a particular user and will only show the recommended bookmark to the correct audience. However, if the URL is edited or the Groups setting is changed, the engineered access engine will be disabled.
+
+**Q: What happens if no action is taken on recommended bookmarks added to the Suggested list?**
+
+**A**: To avoid a high volume of bookmarks in the suggested list, a recommended bookmark (owner = SYSTEM) will be purged after 180 days.
+
+**Q: Where do I find the App ID for a Power App?**
+
+**A**: Go to the Power Apps site and view the Details pane for the app. Learn more about [getting an app ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id).
