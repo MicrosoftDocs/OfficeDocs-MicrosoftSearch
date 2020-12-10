@@ -58,3 +58,7 @@ On the **Manage Schema** screen, you have the option to change the schema attrib
 ## Set the refresh schedule
 
 The recommended default refresh schedule interval is 15 minutes, but you can change it based on your preferences.
+
+## Result layout
+
+We recommend you to use the default result layout for file connector results. It comes ready with appropriate icons and the controls that help you navigate to the file path. You need not run any extra steps to use the default layout. If you create a new layout for the connection you created, this new layout overrides the default layout.
