@@ -33,7 +33,7 @@ Recommended configuration:
 
 ## Create and configure an App for the agent  
 
-Before using the agent, you must create an app and configure the authentication details.
+Before using the agent, you must create an app and configure the authentication details which can be used during registration. Prior to registration, the agent app asks you to sign in. Search admin is the minimum required previlige for the account required for signing into the app.
 
 ### Create an app
 
@@ -50,7 +50,7 @@ Before using the agent, you must create an app and configure the authentication 
 
 ### Configure Authentication
 
-Authentication details can be provided using a client secret or a certificate. Follow the steps for your choice.
+Authentication details can be provided using a client secret or a certificate. Follow the steps of your choice.
 
 #### Configuring the client secret for authentication
 
