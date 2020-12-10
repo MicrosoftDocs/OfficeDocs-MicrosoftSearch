@@ -2,6 +2,14 @@
 
 
 
+## Week of November 30, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/30/2020 | [Connectors result cluster](/MicrosoftSearch/result-cluster) | modified |
+
+
 ## Week of November 23, 2020
 
 

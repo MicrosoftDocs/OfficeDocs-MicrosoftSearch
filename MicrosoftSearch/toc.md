@@ -2,7 +2,7 @@
 ## [Overview](overview-microsoft-search.md)
 ## [Set up](setup-microsoft-search.md)
 ## [Frequently asked questions](faqs.md)
-# [Get insights](get-insights.md)
+# [Get insights](usage-reports.md)
 # Provide answers
 ## [Plan your content](plan-your-content.md)
 ## [Acronyms](manage-acronyms.md)
