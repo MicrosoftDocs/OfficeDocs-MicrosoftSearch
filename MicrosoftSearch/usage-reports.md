@@ -19,7 +19,7 @@ description: "Review Microsoft Search usage reports"
 Search usage reports enable you to gain more understanding of how search is functioning in your organization. The insights generated from these reports will help you [make content easy to find](https://docs.microsoft.com/microsoftsearch/make-content-easy-to-find) and take actions that will make search a more useful and delightful experience for your users.
 
 > [!IMPORTANT]
-> Microsoft Search usage reports are currently in preview.
+> Microsoft Search usage reports are currently in preview and rolling out to admins in Targeted Release. Ensure your admin account is in the targeted release ring to see these reports.
 
 The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from SharePoint Home and Office.com search boxes. You can see data from the past 31 days, per day, or monthly for the previous year. These reports are just rolling out so it will take time to accrue the historical data.
 
@@ -35,6 +35,9 @@ A previous version of this page included data from searches executed for Microso
 |Top Queries|This report shows the most popular search queries. Use this report to understand what types of information your users are searching for.|
 |Abandoned Queries|This report shows popular search queries that receive low click-through. Use this report to identify search queries that might create user dissatisfaction and to improve the discoverability of content. You can then determine if creating an answer, like a Bookmark, or ingesting new content through a Graph connector is the right action.|
 |No Results Queries|This report shows popular search queries that returned no results. Use this report to identify search queries that might create user dissatisfaction and to improve the discoverability of content. You can then determine if creating an answer, like a Bookmark, or ingesting new content through a Graph connector is the right action.|
+
+> [!NOTE]
+> There is currently an issue with the CTR (Click Through Rate) shown for Top Queries. The value displayed on the dashboard is 100 times greater than the actual value. To get the real CTR, either divide the number on the dashboard by 100 or use the download button to get the report in Excel where the value is displayed properly. 
 
 ## Viewing reports
 
