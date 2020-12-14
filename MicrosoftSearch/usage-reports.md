@@ -37,7 +37,7 @@ A previous version of this page included data from searches executed for Microso
 |No Results Queries|This report shows popular search queries that returned no results. Use this report to identify search queries that might create user dissatisfaction and to improve the discoverability of content. You can then determine if creating an answer, like a Bookmark, or ingesting new content through a Graph connector is the right action.|
 
 > [!NOTE]
-> There is currently an issue with the CTR (Click Through Rate) shown for Top Queries. The value displayed on the dashboard is 100 times greater than the actual value. To get the real CTR, either divide the number on the dashboard by 100 or use the download button to get the report in Excel where the value is displayed properly. 
+> There is currently an issue with the CTR (Click Through Rate) shown for Top Queries. The value displayed on the dashboard is 100 times greater than the actual value. To get the real CTR, either divide the number on the dashboard by 100 or use the download button to get the report in Excel where the value is displayed properly.
 
 ## Viewing reports
 
