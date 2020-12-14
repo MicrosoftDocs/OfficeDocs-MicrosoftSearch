@@ -19,7 +19,7 @@ description: "Review Microsoft Search usage reports"
 Search usage reports enable you to gain more understanding of how search is functioning in your organization. The insights generated from these reports will help you [make content easy to find](https://docs.microsoft.com/microsoftsearch/make-content-easy-to-find) and take actions that will make search a more useful and delightful experience for your users.
 
 > [!IMPORTANT]
-> Microsoft Search usage reports are currently in preview.
+> Microsoft Search usage reports are currently in preview and rolling out to admins in Targeted Release. Ensure your admin account is in the targeted release ring to see these reports.
 
 The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from SharePoint Home and Office.com search boxes. You can see data from the past 31 days, per day, or monthly for the previous year. These reports are just rolling out so it will take time to accrue the historical data.
 
@@ -36,11 +36,14 @@ A previous version of this page included data from searches executed for Microso
 |Abandoned Queries|This report shows popular search queries that receive low click-through. Use this report to identify search queries that might create user dissatisfaction and to improve the discoverability of content. You can then determine if creating an answer, like a Bookmark, or ingesting new content through a Graph connector is the right action.|
 |No Results Queries|This report shows popular search queries that returned no results. Use this report to identify search queries that might create user dissatisfaction and to improve the discoverability of content. You can then determine if creating an answer, like a Bookmark, or ingesting new content through a Graph connector is the right action.|
 
+> [!NOTE]
+> There is currently an issue with the CTR (Click Through Rate) shown for Top Queries. The value displayed on the dashboard is 100 times greater than the actual value. To get the real CTR, either divide the number on the dashboard by 100 or use the download button to get the report in Excel where the value is displayed properly.
+
 ## Viewing reports
 
 When you navigate to the usage reports page, all the reports are available to view. You can use the date filter to pick a specific day or month to view.
 
-Downloading a report will allow you to see reports from a broader range of time. Click on the download arrow and select **past 31 days** or **past 12 months**. The report downloads as an Excel spreadsheet. If you selected past 31 days, the spreadsheet will have am individual tab for each day. The past 12 months download will have a tab for each month.
+Downloading a report will allow you to see reports from a broader range of time. Click on the download arrow and select **past 31 days** or **past 12 months**. The report downloads as an Excel spreadsheet. If you selected past 31 days, the spreadsheet will have an individual tab for each day. The past 12 months download will have a tab for each month.
 
 To view Bing’s top queries and impression distribution reports click on the link on the page.
 
@@ -52,7 +55,7 @@ The calendar view today in Microsoft search usage reports is a two-step process.
 
 The top, abandoned, and failed query tables show results from either the day or the month you choose.
 
-**When will I see aggregate data for past 7 days, past 30 days, etc. like Bing’s top queries reports?**
+**When will I see aggregate data for past 7 days, past 30 days, etc... like Bing’s top queries reports?**
 
 We are considering this type of aggregation and simplifying the data range filtering for future versions of these reports.
 
@@ -64,6 +67,6 @@ Currently, filtering by source is not available. The reports combine searches fr
 
 We are working on additional filters that will help make sense of search usage at a more granular level of your organization. For example, you will be able to see query volume for a specific geography or department.
 
-**Why are the Microsoft Search in Bing reports on a separate page?**
+**Why is the Microsoft Search in Bing reports on a separate page?**
 
 Modernizing search in Office 365 applications to Microsoft Search has required us to join previously disparate systems, including the reports generation. This takes time and we felt it was more important to get these reports out now versus waiting until we could complete the integration of the Bing data. Once we complete the integration, the data from all search endpoints will be included in the same reports.
