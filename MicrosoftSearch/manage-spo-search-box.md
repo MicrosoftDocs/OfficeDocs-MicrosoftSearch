@@ -35,7 +35,7 @@ Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
 
 When you create a new site in SharePoint Online today, and type into the search box, you are taken to the Microsoft Search results page. This page shows results from your current site by default and allows you to expand the scope of your search to the hub that the current site is associated with (if there is one), or to the whole organization.
 
-The scope the search box uses, by default, depends on site type.
+The scope the search box uses, by default, depends on type of site.
 
 * Regular sites search over the current site.
 * Hub sites search over all sites in the hub.
@@ -52,7 +52,7 @@ Set-PnPSearchSettings -SearchScope Tenant
 
 After running these commands, the site that was previously showing results from the current site by default will start to show results from the whole organization.
 
-To go back to the default setting, run the commands again with the value “DefaultScope. To search across the Hub, use “Hub” as the SearchScope value.
+To go back to the default setting, run the commands again with the value “DefaultScope". To search across the Hub, use “Hub” as the SearchScope value.
 
 This setting applies at the individual site level. There is no equivalent setting for site collections.
 
@@ -79,8 +79,11 @@ After running these commands, the search box will no longer show up in the navig
 There are several points to consider:
 
 * This setting only applies to the search box in the suite navigation bar. It does not apply to search boxes that are in the page, or to search boxes on classic pages.
-* Once you’ve disabled the search box in the navigation bar, if you want search functionality in your site, you will have to provide it yourself using a custom web part or a SharePoint Framework extension
-* *This solution will remove the search box from lists and libraries for your site as well. Your custom search solution will need to consider contextual searches for SharePoint lists and libraries, in addition to side wide search.
+
+* Once you’ve disabled the search box in the navigation bar, if you want search functionality in your site, you will have to provide it yourself using a custom web part or a SharePoint Framework extension.
+
+* This solution will remove the search box from lists and libraries for your site as well. Your custom search solution will need to consider contextual searches for SharePoint lists and libraries, in addition to site-wide search.
+
 * If you apply the setting to the root site of your domain, the SharePoint start page will also stop showing the search box.
 
 ## Changing the hint displayed in the search box

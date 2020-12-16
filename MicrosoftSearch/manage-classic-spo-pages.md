@@ -25,11 +25,11 @@ Using Microsoft Search is recommended for all sites, including classic, but if y
 
 Classic sites will start using Microsoft Search if all of the following are true.
 
-* The site is based on the team site template (like STS#0 and STS#1)
-* The site does not have the publishing feature turned on
-* The site does not use a custom master page (a different master page than oslo.master or seattle.master)
-* There are no active query rules other than those adding promoted results for the site, site collection or tenant on the default result source
-* There are no custom result types for the site or the site collection on the default result source
+* The site is based on the team site template (like STS#0 and STS#1).
+* The site does not have the publishing feature turned on.
+* The site does not use a custom master page (a different master page than oslo.master or seattle.master).
+* There are no active query rules other than those adding promoted results for the site, site collection or tenant on the default result source.
+* There are no custom result types for the site or the site collection on the default result source.
 * The site or the site collection it is part of has not opted out of the switch using the SearchBoxInNavBar setting described below.
 
 After the switch to Microsoft Search, classic pages in the site will start to show the search box in the suite navigation bar and remove the classic search box from the page. Then, when a user searches for a term, the results will be displayed using the modern search experience of Microsoft Search.
@@ -63,7 +63,7 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar ModernOnly
 
 ## Opting into Microsoft Search
 
-For those sites that do not meet the criteria listed above, or for specific sites in a site collections that opted to stay in classic, you can manually enable the Microsoft Search experience.
+For those sites that do not meet the criteria listed above, or for specific sites in a site collection that opted to stay in classic, you can manually enable the Microsoft Search experience.
 
 To change this setting for a specific site, you can use this command:
 
