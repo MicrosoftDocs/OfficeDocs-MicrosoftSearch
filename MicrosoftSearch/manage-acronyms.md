@@ -94,7 +94,7 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **Q: How is editorial and mined data ranked?**
 
-**A:** The feature currently ranks editorial acronyms above mined acronyms.
+**A:** The ranking of the results may vary from user to user as they are personalized based on relevance.
 
 **Q: How long does it take for editorial acronyms to be visible in Microsoft Search after they’re published?**
 
