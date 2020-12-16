@@ -50,9 +50,9 @@ Set-PnPSearchSettings -SearchScope Tenant
 # DefaultScope | Hub | Site | Tenant
 ```
 
-After running these commands, the site that was previously showing results from the current site by default will start to show results from the whole organization.
+After running this command, the site that was previously showing results from the current site by default will start to show results from the whole organization.
 
-To go back to the default setting, run the commands again with the value “DefaultScope". To search across the Hub, use “Hub” as the SearchScope value.
+To go back to the default setting, run the command again with the value “DefaultScope". To search across the Hub, use “Hub” as the SearchScope value.
 
 This setting applies at the individual site level. There is no equivalent setting for site collections.
 
@@ -106,5 +106,3 @@ Set-PnPSearchSettings -Scope Site -SearchBoxPlaceholderText "my placeholder"
 ```
 
 To go back to the default placeholder text, set the value to be blank ("").
-
-This setting applies at the individual site level. There is no equivalent setting for site collections.
