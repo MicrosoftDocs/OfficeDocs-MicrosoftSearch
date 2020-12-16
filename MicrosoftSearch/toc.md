@@ -33,11 +33,13 @@
 # Customize and configure
 ## [Manage verticals and result types](customize-search-page.md)
 ## [Manage search result layouts](customize-results-layout.md)
-## [Manage result cluster](result-cluster.md)
+## [Manage result clusters](result-cluster.md)
 ## [Manage custom filters](custom-filters.md)
 ## Microsoft Search in SharePoint
 ### [Overview](get-started-search-in-sharepoint-online.md)
 ### [Create a custom search results page](create-search-results-pages.md)
+### [Manage search box settings](manage-spo-search-box.md)
+### [Use Microsoft Search on classic pages](manage-classic-spo-pages.md)
 ## Microsoft Search in Bing
 ### [Security and Privacy](security-for-search.md)
 ### [Add a search box to your intranet site](add-a-search-box-to-your-intranet-site.md)
