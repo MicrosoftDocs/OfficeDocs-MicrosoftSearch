@@ -36,9 +36,6 @@ A previous version of this page included data from searches executed for Microso
 |Abandoned Queries|This report shows popular search queries that receive low click-through. Use this report to identify search queries that might create user dissatisfaction and to improve the discoverability of content. You can then determine if creating an answer, like a Bookmark, or ingesting new content through a Graph connector is the right action.|
 |No Results Queries|This report shows popular search queries that returned no results. Use this report to identify search queries that might create user dissatisfaction and to improve the discoverability of content. You can then determine if creating an answer, like a Bookmark, or ingesting new content through a Graph connector is the right action.|
 
-> [!NOTE]
-> There is currently an issue with the CTR (Click Through Rate) shown for Top Queries. The value displayed on the dashboard is 100 times greater than the actual value. To get the real CTR, either divide the number on the dashboard by 100 or use the download button to get the report in Excel where the value is displayed properly.
-
 ## Viewing reports
 
 When you navigate to the usage reports page, all the reports are available to view. You can use the date filter to pick a specific day or month to view.
@@ -49,9 +46,9 @@ To view Bing’s top queries and impression distribution reports click on the li
 
 ## Frequently asked questions
 
-**When I select past 31 days or past 12 months, why do I then have to choose a specific day or specific month respectively.**
+**When I select past 31 days or past 12 months, why do I then have to choose a specific day or specific month.**
 
-The calendar view today in Microsoft search usage reports is a two-step process. first select the date range from the dropdown (past 31 days or past 12 months) and then select the start day or month.
+The calendar view, today, in Microsoft search usage reports is a two-step process. First select the date range from the dropdown (past 31 days or past 12 months) and then select the start day or month.
 
 The top, abandoned, and failed query tables show results from either the day or the month you choose.
 
