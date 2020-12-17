@@ -25,11 +25,13 @@ The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Hom
 
 A previous version of this page included data from searches executed for Microsoft Search in Bing on Bing.com. That data will be integrated into these reports soon, but for now, you can still see those reports by clicking the link at the bottom of the page to **View Bing's top queries and impression distribution**.
 
-![Search usage reports dashboard](media/usage-reports/usage_reports_v2.png)
+> [!div class="mx-imgBorder"]
+> ![Search usage reports dashboard](media/usage-reports/usage_reports_v2.png)
+
 
 ## Overview of search reports
 
-|**Report**|**Description**|
+| Report | Description |
 |:-----|:-----|
 |Query Volume|This report shows the number of search queries performed. Use this report to identify search query volume trends and to determine periods of high and low search activity.|
 |Top Queries|This report shows the most popular search queries. Use this report to understand what types of information your users are searching for.|
