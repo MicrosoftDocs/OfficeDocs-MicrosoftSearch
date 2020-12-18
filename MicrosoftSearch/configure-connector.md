@@ -29,7 +29,7 @@ This article summarizes the basic process required to use the [Microsoft 365 adm
 7. Choose refresh settings.
 8. Review the connection.
 
-It is important to note that the setup process is very similar for all the Graph connectors by Microsoft but is not exactly the same. **In addition to reading this article, be sure to read the connector-specific for your data source.**  
+It is important to note that the setup process is very similar for all the Graph connectors by Microsoft but is not exactly the same. **In addition to reading this article, be sure to read the connector-specific information for your data source.**  
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
