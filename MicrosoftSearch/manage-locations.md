@@ -23,10 +23,8 @@ Location helps your users find addresses and locate your organization's building
 
 ### Add or edit a single location
 
-1. Go to **Microsoft 365 admin center**.
-1. In the navigation pane, go to **Settings** and select **Microsoft Search**.
-1. Select **Locations** tab. By default, the **Bookmarks** tab is selected on the **Microsoft Search** page.
-1. To add a new location, select **Add new**.
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
+1. To add a new location, select **Add**.
 1. To edit a location, select the location in the relevant locations list.
 1. As you add or edit the information, the preview automatically updates.
 1. Save your changes.
@@ -46,7 +44,7 @@ To export or import locations:
 1. In the upper-right corner of the **Locations** tab, select **Import**.
 Select **Export** to download the existing locations in a .csv file.
 1. In the right pane, choose the option to import using a .csv file.
-Download ehe template file for a list of the required fields and details.
+Download the template file for a list of the required fields and details.
 1. Add or edit location details in the template file, and then save it on your computer.
 1. In the **Import** locations pane, select **Browse**, and then the .csv file that you want to import.
 1. Select **Import**.
@@ -60,6 +58,7 @@ Here are some important points regarding the template file:
 - Based on the *State* field, locations will be saved as draft, suggested, scheduled, or they will be published automatically.
 - For partners who manage multiple organizations, you can export your locations from one org and import them into another. But you must remove the data in the *Id* column before you import.
 
-**Note:** You cannot import Locations if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted and include all the required information.
+> [!NOTE]
+> You cannot import Locations if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted and include all the required information.
 
 For more information on how to prevent error, see [Prevent import errors](manage-bookmarks.md#prevent-import-errors).

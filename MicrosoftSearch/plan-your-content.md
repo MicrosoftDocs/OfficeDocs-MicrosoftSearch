@@ -1,8 +1,8 @@
 ---
 title: "Plan your content"
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -17,9 +17,9 @@ description: "Provide quality content without needing additional resources when 
 
 # Plan your content
 
-**Microsoft Search** helps users find relevant content. **Microsoft Search** is a secure way to search both your intranet and web content. This kind of integration across web and organization is available only with Microsoft. 
+**Microsoft Search** helps users find relevant content. **Microsoft Search** is a secure way to search both your intranet and web content. This kind of integration across web and organization is available only with Microsoft.
 
-Search administrators use their knowledge of the organization and its users to make it easy for users to find the relevant content. 
+Search administrators use their knowledge of the organization and its users to make it easy for users to find the relevant content.
 
 ## Step 1: Identify information your users need
 
@@ -42,19 +42,19 @@ In an organization, users search for a wide range of topics ranging from simple 
 
 ### Leverage SMEs
 
-Leverage SMEs in the organization including experts from HR, support, sales, technology, and other key areas. To allow your SMEs to contribute content directly, add them as Search editors. 
+Leverage SMEs in the organization including experts from HR, support, sales, technology, and other key areas. To allow your SMEs to contribute content directly, add them as Search editors.
 
 ### Involve your users
 
 Ask users to suggest resources to bookmark. In addition to suggesting content, ask users to report errors, like broken or invalid links.
 
-## Step 3: Improve findability of content 
+## Step 3: Improve findability of content
 
 In **Microsoft Search**, Search administrator creates Bookmarks, Q&A, Locations, and PowerApps to improve the findability of content. Each of these search components includes a title, a URL, and a set of keywords that trigger it.
 
 ### Titles and descriptions
 
-People use titles and descriptions to determine if the result answers their search query, or if they need to try a different search. Titles and descriptions should reflect the core purpose of the result. A good example of a title might be 'Childcare benefits,' with a description - 'Learn about benefits to help pay childcare costs.' This informs the users who search 'childcare' that monetary support benefits are available, and provides them a link to find out more. 
+People use titles and descriptions to determine if the result answers their search query, or if they need to try a different search. Titles and descriptions should reflect the core purpose of the result. A good example of a title might be 'Childcare benefits,' with a description - 'Learn about benefits to help pay childcare costs.' This informs the users who search 'childcare' that monetary support benefits are available, and provides them a link to find out more.
 
 ### Keywords
 
@@ -107,13 +107,13 @@ It is important that authoritative information such as Bookmarks and Q&A are up 
 - Check for tool, site name, or team name changes.
 - Consider whether the Bookmark or Q&A is authoritative enough or needs a clearer description.
 
-**Microsoft Search** provides usage statistics for Bookmarks, Q&A, and Locations. The usage statistics shows how users are engaging with your search results and whether users are finding what they are looking for, or are there any gaps in the available content? It helps administrator monitor performance and take appropriate actions to fine tune the search results. 
+**Microsoft Search** provides usage statistics for Bookmarks, Q&A, and Locations. The usage statistics shows how users are engaging with your search results and whether users are finding what they are looking for, or are there any gaps in the available content? It helps administrator monitor performance and take appropriate actions to fine tune the search results.
 
 ### Get details about Bookmarks, Q&A and Locations
 
 See how many Bookmarks, Q&A, and Locations have been published, scheduled, or suggested. Use the dashboard to see Bookmark, Q&A, or Location totals by status:
 
-- **Published:** The number of published results that are 
+- **Published:** The number of published results that are
 available to users.
 - **Scheduled:** The number of scheduled results in the publish pipeline.
 - **Suggested:** The number of suggestions from users.
@@ -122,9 +122,9 @@ Suggested Bookmarks, Q&A, and Locations are a good indicator of gaps in your con
 
 ### Review top search queries
 
-Find out which searches have generated the most impressions over the last 90 days. Impression refers to how many times a page was viewed in search result. The **Top Queries** card shows the top 25 user searches for each result type with the total number of searches and their click-through rate (CTR). Use this report to identify search query volume and to determine queries with high and low search activity. 
+Find out which searches have generated the most impressions over the last 90 days. Impression refers to how many times a page was viewed in search result. The **Top Queries** card shows the top 25 user searches for each result type with the total number of searches and their click-through rate (CTR). Use this report to identify search query volume and to determine queries with high and low search activity.
 
-Low search count may indicate user dissatisfaction either because users are not looking for those search content or are using different keywords to find that content. CTR shows how often users select the promoted results and how useful your query rules and results are to users. A low CTR indicates that users are finding the content but are making the determination that the content does not meet their search. In such cases, administrators may decide to review the content and ensure that it corresponds with the user’s search and update titles, descriptions, and keywords to align them with the user search queries. 
+Low search count may indicate user dissatisfaction either because users are not looking for those search content or are using different keywords to find that content. CTR shows how often users select the promoted results and how useful your query rules and results are to users. A low CTR indicates that users are finding the content but are making the determination that the content does not meet their search. In such cases, administrators may decide to review the content and ensure that it corresponds with the user’s search and update titles, descriptions, and keywords to align them with the user search queries.
 
 ### Analyze impressions by result type
 

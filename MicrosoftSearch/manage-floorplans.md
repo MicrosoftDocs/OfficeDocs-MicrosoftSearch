@@ -45,7 +45,7 @@ See the [FAQ](#frequently-asked-questions) section for information on viewing an
 
 A user's office location is a combination of a building code and a room label. For example, if the building code is *2* and the room label is *1173*, the office location would be *2/1173*.
 
-Add or update office locations for each user in your organization. You can change office location on the user profile in the Microsoft 365 [admin center](https://admin.microsoft.com) or you can change in your on-premises Active Directory to sync into Azure Active Directory. *PhysicalDeliveryOfficeName* is the field that is used for office location. If your room labels do not include floor numbers, see the FAQ for tips.
+Add or update office locations for each user in your organization. You can change office location on the user profile in the [Microsoft 365 admin center](https://admin.microsoft.com) or you can change in your on-premises Active Directory to sync into Azure Active Directory. *PhysicalDeliveryOfficeName* is the field that is used for office location. If your room labels do not include floor numbers, see the FAQ for tips.
 
 In this example, Allan's office is in room 1173 on floor 1 of building 2.
 ![floorplans-userlestview.png](media/floorplans-userlistview.png)
@@ -61,7 +61,7 @@ Use **Microsoft Search** to find a user and verify that their office location is
 
 ### Step 5: Add building locations
 
-Floor plans uses [Locations](manage-locations.md) to define your buildings. In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Locations**, and then select **Add**. Enter the name, address, and keywords for the building. Add as many buildings as you need.
+Floor plans uses [Locations](manage-locations.md) to define your buildings. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations), and then select **Add**. Enter the name, address, and keywords for the building. Add as many buildings as you need.
 
 ![floorplans-locations.png](media/floorplans-locations.png)
 
@@ -71,21 +71,24 @@ For more details about locations, see [Manage Locations](manage-locations.md)
 
 Before you can use floor plans, office locations must be indexed. This is a one-time operation that can take up to 48 hours to complete. The total time will depend on the size of your organization.
 
-In [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Floor plans**, and then select **Get started**. If you don't see this notice, this step has already been completed for your organization
+In [admin center](https://admin.microsoft.com), go to [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), and then select **Get started**. If you don't see this notice, this step has already been completed for your organization
 
 ![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
 
 ### Step 7: Upload floor plans
 
-1. In the [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search** > **Floor plans**, and then select **Add**.
+1. In the [admin center](https://admin.microsoft.com), go to [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans).
 2. Select a building in the drop-down list and select **Next**. If the building isn't listed, go back and [add building locations](#step-5-add-building-locations).
 3. Select **Upload files**, and then choose the floor plan you are uploading.
 4. When the upload is complete, you must enter floor number that is represented in the floor plan file. Then select **Next**.
 5. (Optional) If your floor has wings or zones, enter that detail.
-6. Enter the building code for this floor plan. The building code can be found on users' office location property. For example, if a user's office location is **2/1173**, then the building code is **2**.
-7. (Optional) Review and identify the location patterns for all uploaded floor plans and then select **Next**.
-8. You will see a review screen listing how many office locations were mapped to the floor plans. Select **Details** to ensure the mapping is correct.
-9. When you're ready, select **Publish** to make the floor plan available in **Microsoft Search**.
+6. You will see a review screen listing how many office locations were mapped to the floor plans. Select **Details** to ensure the mapping is correct.
+    - If no users are mapped or you're not satisfied with the mapping, select **Continue mapping**. To publish, select **Skip and publish**.
+7. Enter the building code for this floor plan. The building code can be found on users' office location property. For example, if a user's office location is **2/1173**, then the building code is **2**.
+8. On the review screen, repeat step 6 to ensure the mapping is correct.
+9. (Optional) Review and identify the location patterns for all uploaded floor plans and then select **Next**.
+10. On the review screen, repeat step 6 to ensure the mapping is correct.
+11. When you're ready, select **Publish** to make the floor plan available in **Microsoft Search**.
 
 > [!NOTE]
 > **It takes 48 hours for the floor plans to be published.** After that your users will see a floor plan results similar to the one below when they search for a co-worker's office.
@@ -113,7 +116,7 @@ To update an existing floor plan, select the floor plan you want to change, and 
 |Upload floor plans|No data found.|Error|Check your file to make sure it's the correct one and then upload it again or delete it.|
 |Upload floor plans|External references are missing in this file. Either upload CC_1_furniture.dwg or delete this file.|Warning|Upload external reference files or delete.|
 |Upload floor plans|Could not read room numbers or tags in the DWG file. Please delete this file.|Warning|Check your DWG file to make sure the data is included and then delete the file and try again.|
-|Link office locations|No office locations found in AAD. Add location data to AAD before setting up floor plans.|Error|[Update office locations on user profiles](#step-3-update-office-locations-on-user-profiles) |
+|Link office locations|No office locations found in Azure Active Directory. Add location data to Azure Active Directory before setting up floor plans.|Error|[Update office locations on user profiles](#step-3-update-office-locations-on-user-profiles) |
 
 ## Frequently asked questions
 
@@ -123,7 +126,7 @@ To update an existing floor plan, select the floor plan you want to change, and 
 
 - Upload the file to SharePoint and open it.
 - Open the file in [Microsoft Visio](https://support.office.com/article/Open-insert-convert-and-save-DWG-and-DXF-AutoCAD-drawings-60cab691-0f4c-4fc9-b775-583273c8dac5) or [Autodesk DWG TrueView](https://www.autodesk.com/products/dwg).
-- Upload the file to [Autodesk Online Viewer](https://viewer.autodesk.com/).
+- Upload the file to [Autodesk's Online Viewer](https://viewer.autodesk.com/).
 
 **Q:** How do I add text labels to unmarked rooms?
 
@@ -133,7 +136,7 @@ To update an existing floor plan, select the floor plan you want to change, and 
 
 **A:** Create a DWG file in Microsoft Visio, Autodesk AutoCAD, or any other DWG editor. Make sure 10 or more rooms are labeled in the file.
 
-**Q:** **What's the best format for text labels in DWG files?
+**Q:** What's the best format for text labels in DWG files?
 
 **A:** For the best results, text labels should contain floor numbers and room numbers. The examples below use 2 or SC for the building code.
 <!-- markdownlint-disable no-inline-html -->
@@ -153,7 +156,7 @@ To update an existing floor plan, select the floor plan you want to change, and 
 
 **Q:** Can I use a DWG file that doesn't include floor numbers?
 
-**A:** Yes, you can. When you update office locations in the user's AAD profile, include the floor number as part of the room number, even if it's missing from the DWG file. After you upload the file, the Specify location patterns screen will appear and you can indicate both values.
+**A:** Yes, you can. When you update office locations in the user's Azure Active Directory profile, include the floor number as part of the room number, even if it's missing from the DWG file. After you upload the file, the Specify location patterns screen will appear and you can indicate both values.
 
 For example, a DWG file that includes room numbers, but no floor numbers, may look similar to this:
 
