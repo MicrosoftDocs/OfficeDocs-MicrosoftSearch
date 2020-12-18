@@ -37,7 +37,7 @@ Complete the following steps to configure any of the Microsoft-built connectors.
 
 1. Sign into your admin account in the [Microsoft 365 admin center](https://admin.microsoft.com)
 2. In the navigation pane, select **Settings**, and then select **Search & intelligence**. Select the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
-3.  Select **+Add**, and then select the data source of your choice from the menu of available options.
+3. Select **+Add**, and then select the data source of your choice from the menu of available options.
 
 ![Data sources available include: ADLS Gen2, Enterprise websites, Microsoft SQL server, Azure SQL, Oracle SQL database, ServiceNow, File share, Azure DevOps, and MediaWiki.](media/add-connector.png)
 
