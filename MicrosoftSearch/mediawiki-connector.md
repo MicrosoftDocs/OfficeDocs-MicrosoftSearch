@@ -24,7 +24,7 @@ general instructions provided in the [Set up your Graph connector](configure-con
 already done so, read the entire Set up your Graph connector article to understand the general setup process.
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR 
-instructions that apply to only MediaWiki Graph connectors. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#Limitations) for MediaWiki Graph connectors. 
+other instructions that apply to only MediaWiki Graph connectors. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations) for MediaWiki Graph connectors. 
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center.
 Follow the general setup instructions.
