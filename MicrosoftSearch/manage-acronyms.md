@@ -54,7 +54,7 @@ Search administrators can add acronyms on the [Acronyms tab](https://admin.micro
 > [!NOTE]
 > It might take up to three days for acronyms added to Published state to become available in Microsoft Search.
 
-**Draft state**. If admins want to review an acronyms before making it available in Microsoft Search, they can add the acronym in a Draft state. Acronyms in the Draft state will not appear in search results. You will need to move the acronym to the Published state to make it appear in search results.
+**Draft state**. If you want to review an acronym before making it available in Microsoft Search, you can add the acronym in a Draft state. Acronyms in the Draft state will not appear in search results. You will need to move the acronym to the Published state to make it appear in search results.
 
 You can add acronyms individually or bulk import them in a CSV file. Upload a CSV file with the fields shown in the following table:
 
@@ -94,7 +94,7 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **Q: How is admin-curated and system-curated data ranked?**
 
-**A:** The ranking of results may vary from person to person as results are personalized for each user. Neither of these categories will always take precendence over the other.
+**A:** The ranking of results may vary from person to person as results are personalized for each user. Neither of these categories will always take precedence over the other.
 
 **Q: How long does it take for admin-curated acronyms to be visible in Microsoft Search after they’re published?**
 
