@@ -61,4 +61,4 @@ The recommended default refresh schedule interval is 15 minutes, but you can cha
 
 ## Result layout
 
-We recommend you to use the default result layout for file connector results. It comes ready with appropriate icons and the controls that help you navigate to the file path. You need not run any extra steps to use the default layout. If you create a new layout for the connection you created, this new layout overrides the default layout.
+We recommend that you use the default result layout to display your Fileshare connector results because it has appropriate icons and controls that help you navigate to the file path. If you create a new result layout, it will override the default.
