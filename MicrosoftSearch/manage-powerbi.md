@@ -11,7 +11,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-robots: NOINDEX, NOFOLLOW
+robots: NOINDEX:NOFOLLOW
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: "Manage how Power BI reports and data appear in search results"
 ---
