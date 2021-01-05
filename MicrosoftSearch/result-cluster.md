@@ -17,19 +17,21 @@ description: "Details of the Connectors Result Cluster experience"
 
 ## Overview of the Graph connectors result cluster (Preview)  
 
-With Graph connectors result clusters, enterprises can search for content from third party data sources in their default view (the All tab) in SharePoint and Office.com.
+With Graph connectors result clusters, enterprises can now search for content from third party data sources in their default view (the All tab) in SharePoint, Office.com and Microsoft Search in Bing.
 
-Result clusters help users discover all third party content (previoulsy tied to a single connector and vertical) in one place. The results shown in a result cluster are grouped together based on how the tenant administrator configures them in a search vertical.  
+Result clusters help users discover all third party content (previoulsy tied to a single connector and vertical) in one place. The results shown in a result cluster are grouped together based on the search vertical configuration.
 
 ## How connector results are selected and displayed
 
-Connector results provided in the result cluster are derived from individual search verticals with connector content. Each search vertical provides a set of relevant results which becomes a candidate result cluster. Relevant results are chosen based on the "title" property, result snippet, and content component of each item.
+Connector results provided in the result cluster are derived from individual search verticals with connector content. Each search vertical provides a set of relevant results which becomes a candidate result cluster. Relevant results are chosen based on the "title" property, content property of each item (property marked as *isContent=true* on the schema)
 
 To ensure discovery of content from the search verticals, we recommend providing meaningful titles for your items. This positively impacts the arbitration of result cluster candidates and the likelihood of your content showing up in a result cluster. For example, avoid the use of IDs as values for the property "title" unless your users are using IDs to look for content.
 
-How often a result cluster is shown varies on factors such as the number of search verticals that you configure and the type of content. By either selecting or ignoring result cluster results, you will implicitly provide hints that will adjust the triggering of result clusters over time.
+How often a result cluster is shown varies on factors such as the number of search verticals that you configure and the type of content. By either interacting or ignoring result cluster, you will implicitly provide hints that will adjust it's triggering  over time.
 
-The search result experience for connector items shown in your result cluster is system generated and does not use custom result layouts. You must declare the "title" property and item content during connection registration if you want results to appear in your result cluster.
+The search result experience for connector items shown in your result cluster uses [result types](https://docs.microsoft.com/en-us/microsoftsearch/customize-search-page#create-your-own-result-type) defined by the administrator. If the same is not configured by the admin, system generated [layout](https://docs.microsoft.com/en-us/microsoftsearch/customize-search-page#default-search-result-layout) is used. 
+
+Please note that it is highly recommended to use the “title” property as search result title and content property as search description. Not doing so could impact the triggering of the result cluster and create poor user experience as the data shown in result cluster will not correlate with the search query entered by the user. 
 
 ## Enable result clusters
   
@@ -41,7 +43,7 @@ Follow these steps to turn on the experience at the organization level:
 2. Select  the **All** vertical, then enable **Show connector results**. 
 
 
-Follow these steps to turn on the experience at the site level:
+Follow these steps to turn on the experience at the site level (SharePoint):
 
 1. On the SharePoint site where you want the result cluster experience, go to **Settings**.
 2. Go to **Site information**>**View all site settings**.
