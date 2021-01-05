@@ -11,7 +11,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-robots: NOINDEX
+robots: NOINDEX, NOFOLLOW
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: "Manage how Power BI reports and data appear in search results"
 ---
@@ -37,13 +37,13 @@ Microsoft Search users can find Power BI results by searching from the Windows s
 
 Replace `<topic>` in the examples above with the information you're looking for, like sales, usage, capacity, 2021, Q1, and more, to see relevant results from Power BI.
 
-:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="Screenshot of a SERP with Power BI answers and vertical" border="false":::
+:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="Screenshot of a SERP with Power BI answers and vertical" border="true":::
 
 ## Turn Power BI search on or off
 
 Power BI results are enabled for your organization by default. Your Power BI admin can disable them at any time. In the Power BI Admin portal, go to Tenant settings and disable the **Use global search for Power BI** setting. To learn more, see [Administering Power BI in the admin portal](https://docs.microsoft.com/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview).
 
-:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Screenshot of setting to turn Power BI answers on or off" border="false":::
+:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Screenshot of setting to turn Power BI answers on or off" border="true":::
 
 ## Frequently Asked Questions
 
