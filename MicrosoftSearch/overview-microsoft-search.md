@@ -34,7 +34,7 @@ When users click in the **Search** box, search suggests results based on their p
 
 ![Screenshots of the Microsoft Search box with a query and suggested results](media/SERP_text_520.png)
 
-If the suggestions in the search box aren’t what users are looking for, **Enter** opens the full list of results. They can use metadata such as who last modified the item and when, where the items is located, as well as preview it to determine if it’s what they’re looking for.
+If the suggestions in the search box aren’t what users are looking for, **Enter** opens the full list of results. They can use metadata such as who last modified the item and when, where the item is located, as well as preview it to determine if it’s what they’re looking for.
 
 ![Screenshots of the Microsoft Search results page](media/search_box.png)
 
