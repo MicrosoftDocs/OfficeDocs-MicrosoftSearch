@@ -24,10 +24,10 @@ This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) adm
 ### Primary storage connection string 
 On the **Authentication and config** screen, provide the Primary Storage Connection String. That string is required to allow access to your storage account. To find your connection string, go to the [Azure portal](https://ms.portal.azure.com/#home) and navigate to the **Keys** section of your relevant Azure Storage account. Copy and paste the connection string in the appropriate field on the screen.
 
-If you do not prefer to provide the **AccountKey** (a parameter in the primary storage connection string), you will need to grant access to our Graph Connectors Service for the following roles. 
+If you do not prefer to provide the **AccountKey** (a parameter in the primary storage connection string), you will need to grant access to our Graph Connectors Service for the following roles. (This feature is only supported for hierarchical storage. Traditional Blob storage will have to provide AccountKey.)
 * Storage Blob Data Reader
 * Storage Queue Data Contributor
-* Storage Blob Delegator (only for hierarchical storage)
+* Storage Blob Delegator
 
 Navigate to the **Access Control** tab of your Azure Storage account, and follow the instructions there to grant access to the following app:
 * **First Party App ID:** 56c1da01-2129-48f7-9355-af6d59d42766
