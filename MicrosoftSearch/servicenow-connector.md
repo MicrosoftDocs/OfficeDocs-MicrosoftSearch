@@ -214,3 +214,12 @@ Follow the general setup instructions.
 ## Next steps
 
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
+
+## Limitations
+ServiceNow Graph connector has the following limitations in its latest release:
+- Indexing knowledge articles available to everyone in an organisation is a generally available feature.
+- *Only people with access to this data source* feature under Manage Search permissions step is in preview and processes only [user criteria](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) permissions. Any other type of access permissions will not be applied in the search results.
+- User criteria with advanced scripts are not supported in the current preview version. Any knowledge articles with such an access restriction will be indexed with deny everyone access i.e. they will not appear in search results to any user until we support them.
+
+## Troubleshooting
+After publishing your connection, customising the results page, you can review the status under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
