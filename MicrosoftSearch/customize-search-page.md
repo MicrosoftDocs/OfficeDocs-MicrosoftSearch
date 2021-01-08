@@ -56,7 +56,7 @@ There are three basic steps to add a vertical:
 
 After you start the wizard, you're guided through the steps to define the vertical's name, content source, and scope of the content to search. The vertical is created in a disabled state. You'll enable it later.
 
-You can use a limited set of [Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) to narrow the scope. This page lists the properties that are available. We recommend that you use freetext keywords and property restrictions with boolean operators for creating the KQL.
+You can use a limited set of [Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) to narrow the scope. This page lists the properties that are available. We recommend that you use free-text keywords and property restrictions with boolean operators for creating the KQL.
 
 ### Create a vertical at the organization level
 
@@ -91,7 +91,7 @@ You can decide to create your own search result layout and override the default 
 - **One or more conditions** to compare each search result against, such as the content source of the search result.  
 - A **result layout** to use for search results that meet the conditions. The result layout controls the way that all results that meet the conditions appear and behave on a search results page.
 
-**If appropriate mapping is not done to show default search result layout, Yyou must create at least one result type for results to display on the vertical.** You can create multiple result types for each vertical, which allows you to use different layouts for different type of results. For example, you can customize *Severity 1* incidents to have more prominent colors and a larger font compared to *Severity 3* incidents.
+**If appropriate mapping is not done to show default search result layout, You must create at least one result type for results to display on the vertical.** You can create multiple result types for each vertical, which allows you to use different layouts for different type of results. For example, you can customize *Severity 1* incidents to have more prominent colors and a larger font compared to *Severity 3* incidents.
 
 After you start the wizard, you're guided through the steps to define the name, content source, and conditions for the result type. You can define the priority of the result type from the list view.
   
@@ -110,7 +110,7 @@ After you start the wizard, you're guided through the steps to define the name, 
 
 ## STEP 3: View the vertical after it's enabled
 
-After you enable the vertical, it might take a while before you can view it. If you don't want to wait after enabling it, you can append **cacheClear=true** to the URL in [SharePoint](https://sharepoint.com/) and [Office](https://office.com) to view the vertical immediately. For [Bing](https://bing.com), append **&features=uncachedVerticals** to the Work vertical URL to view the verticals immediately. 
+After you enable the vertical, it might take a while before you can view it. If you don't want to wait after enabling it, you can append **cacheClear=true** to the URL in [SharePoint](https://sharepoint.com/) and [Office](https://office.com) to view the vertical immediately. For [Bing](https://bing.com), append **&features=uncachedVerticals** to the Work vertical URL to view the verticals immediately.
 
 ## Troubleshooting
 
