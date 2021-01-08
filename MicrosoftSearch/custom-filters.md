@@ -35,7 +35,7 @@ To create a filter on Microsoft search follow these steps:
 1. Additional filter capabilities exist on connection content.
 
     - You can also create filter on an alias to connector source properties
-    - If a vertical has multiple connections, you can create a common filter across these connections. This can be done by creating the filter on an common alias which aliases source properties across across the different connections. For example you can create an **Author** filter across a ServiceNow amd a Jira connection by creating aliases as follows:
+    - If a vertical has multiple connections, you can create a common filter across these connections. This can be done by creating the filter on an common alias which aliases source properties across across the different connections. For example you can create an **Author** filter across a ServiceNow and a Jira connection by creating aliases as follows:
 
     | Connection | Property | Alias |
     | --- | --- | --- |
