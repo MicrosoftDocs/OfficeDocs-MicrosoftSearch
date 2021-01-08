@@ -33,7 +33,7 @@ You can add search verticals that are relevant to your organization. These will 
 A search vertical can now surface results from multiple connector sources. This provides greater flexibility in designing your search result page. The existing administrative experience of vertical setup allows you to select multiple connections in the "Content Source" step.
 If you accurately appoint as many semantic labels as possible, this experience will be enhanced. You can add semantic labels upon schema definition and ingestion.
 
-[Here](configure-connector.md#Step-5:-Assign-property-labels) is additional information on how to create and manage semantic labels.
+[Here](configure-connector.md#step-5-assign-property-labels) is additional information on how to create and manage semantic labels.
 
 ### Things you should know
 
