@@ -22,14 +22,14 @@ Using Microsoft Search is recommended for all sites, including classic, but if y
 
 ## Classic sites that will automatically switch to Microsoft Search
 
-Classic sites will start using Microsoft Search if all of the following are true.
+Classic sites will start using Microsoft Search if all of the following are true:
 
 * The site is based on the team site template (like STS#0 and STS#1).
-* The site does not have the publishing feature turned on.
+* The site does not have the publishing feature turned ON.
 * The site does not use a custom master page (a different master page than oslo.master or seattle.master).
 * There are no active query rules other than those adding promoted results for the site, site collection or tenant on the default result source.
 * There are no custom result types for the site or the site collection on the default result source.
-* The site or the site collection it is part of has not opted out of the switch using the SearchBoxInNavBar setting described below.
+* The site or the site collection is not opted out of the switch using the `SearchBoxInNavBar` setting described below.
 
 After the switch to Microsoft Search, classic pages in the site will start to show the search box in the suite navigation bar and remove the classic search box from the page. Then, when a user searches for a term, the results will be displayed using the modern search experience of Microsoft Search.
 
@@ -39,11 +39,11 @@ If your site meets the criteria listed above, but you do not want it to switch t
 
 You can use this command at any time, before or after the switch happens, so it is easy to go back to the search experience you had previously.
 
-To run the commands below, you will use PowerShell with SharePoint PnP PowerShell extensions. You can install and learn more about how to get started [here](https://docs.microsoft.com/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps). You will sign into your site or site collection using this command:
+To run the commands below, you will use PowerShell with SharePoint PnP PowerShell extensions. You can install and learn more about how to get started [here](https://docs.microsoft.com/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps). You will sign in to your site or site collection using this command:
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
-# this will prompt you to sign into your site. Use the site owner credentials
+# this will prompt you to sign in to your site. Use the site owner credentials.
 ```
 
 To stay with classic search experience for a site, run the following command:
