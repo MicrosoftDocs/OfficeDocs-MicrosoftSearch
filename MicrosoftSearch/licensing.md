@@ -18,9 +18,19 @@ description: "License requirements for Microsoft Graph connectors public preview
 
 This article is intended for Global or Billing Admins who want to learn about how to purchase additional Graph connectors quota for their organization.
 
-You need a valid Microsoft 365 or Office 365 license and sufficient Graph connectors quota for your organization to view data from connectors in your search results. All of the [Graph connectors by Microsoft](configure-connector.md) are free. However, you need to have sufficient index quota to ingest content from those connectors.
+Any valid Microsoft 365 or Office 365 license allows you to view data from connectors in your search results.
 
-Each Microsoft 365 or Office 365 E5 license includes 500 items of index quota, which counts towards your organization's quota for ingesting content from Graph connectors. For example, if your organization has 100 Microsoft 365 E5 licenses, then your organization has 100 x 500 = 50,000 items worth of Graph connectors index quota.
+To index content using Graph connectors, you need to have sufficient index quota. Graph connectors index quota is available via:
+- Entitlement built into Microsoft 365 or Office 365 E5 licenses
+- Purchase of add-on index quota (see below on purchasing instructions)
+
+>[!NOTE]
+>All of the Graph connectors by Microsoft are free. However, you need to have sufficient index quota to ingest content from those connectors.
+
+The following license type includes entitlement to 500 items of index quota, which counts towards your organization's quota for ingesting content from Graph connectors.
+- Microsoft 365 E5 or Office 365 E5
+
+For example, if your organization has 100 Microsoft 365 E5 licenses, then your organization has 100 x 500 = 50,000 items worth of Graph connectors index quota.
 
 To purchase additional Graph connectors quota, get in touch with your Microsoft Account Manager or complete the following steps:
 

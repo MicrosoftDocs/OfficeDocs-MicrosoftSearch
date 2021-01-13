@@ -29,7 +29,7 @@ This article summarizes the basic process required to use the [Microsoft 365 adm
 7. Choose refresh settings.
 8. Review the connection.
 
-It is important to note that the setup process is very similar for all the Graph connectors by Microsoft but is not exactly the same. **In addition to reading this article, be sure to read the connector-specific for your data source.**  
+It is important to note that the setup process is very similar for all the Graph connectors by Microsoft but is not exactly the same. **In addition to reading this article, be sure to read the connector-specific information for your data source.**  
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
@@ -37,7 +37,7 @@ Complete the following steps to configure any of the Microsoft-built connectors.
 
 1. Sign into your admin account in the [Microsoft 365 admin center](https://admin.microsoft.com)
 2. In the navigation pane, select **Settings**, and then select **Search & intelligence**. Select the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
-3.  Select **+Add**, and then select the data source of your choice from the menu of available options.
+3. Select **+Add**, and then select the data source of your choice from the menu of available options.
 
 ![Data sources available include: ADLS Gen2, Enterprise websites, Microsoft SQL server, Azure SQL, Oracle SQL database, ServiceNow, File share, Azure DevOps, and MediaWiki.](media/add-connector.png)
 
