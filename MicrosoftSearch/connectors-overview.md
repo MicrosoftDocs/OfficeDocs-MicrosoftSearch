@@ -20,7 +20,7 @@ description: "Overview of Microsoft Graph connectors for Microsoft Search"
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
-The rest of this article is intended to help Microsoft 365 administrators locate the resources that are avaiable to answer the following questions:
+The rest of this article is intended to help Microsoft 365 administrators locate the resources that are available to answer the following questions:
 
 * [What data sources can be connected to Microsoft Search?](#what-data-sources-can-be-connected-to-microsoft-search)
 * [How do I manage my connections?](#how-do-i-manage-my-connections)
