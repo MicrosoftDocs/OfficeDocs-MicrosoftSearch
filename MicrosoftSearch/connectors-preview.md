@@ -16,11 +16,11 @@ description: "Find out about Microsoft Graph Connectors preview for Microsoft Se
 
 # Microsoft Graph connectors preview release and features
 
-Microsoft Graph connectors and Microsoft Search APIs are now generally available. The initial rollout will be to customers configured for Targeted Release. Upon rollout completion to all tenants, index quota utilization from connectors content will become subject to billing. See [Licensing requirements and pricing](licensing.md) for more information.
+Microsoft Graph connectors and Microsoft Search APIs are now generally available. The initial rollout will be to customers configured for Targeted Release. This rollout will go on until the end of February 2021. Upon rollout completion to all tenants, index quota utilization from connectors content will become subject to billing. See [Licensing requirements and pricing](licensing.md) for more information.
 
 ## Set up Targeted release
 
-If you want to use Graph connectors in your tenant during rollout, you must opt into Targeted release. To learn more about the Targeted release option and how to set it, see [Set up the Standard or Targeted release options in Office 365](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide).
+If you want to use Graph connectors in your tenant during rollout, you **must** opt into Targeted release. To learn more about the Targeted release option and how to set it, see [Set up the Standard or Targeted release options in Office 365](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide).
 
 ## Preview features
 
