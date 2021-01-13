@@ -9,6 +9,7 @@
 ## [Bookmarks](manage-bookmarks.md)
 ## [Floor plans](manage-floorplans.md)
 ## [Locations](manage-locations.md)
+## [Power BI](manage-powerbi.md)
 ## [Q&As](manage-qas.md)
 # Connectors (preview)
 ## [Overview](connectors-overview.md)
