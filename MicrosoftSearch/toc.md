@@ -18,7 +18,7 @@
 ## Graph connectors by Microsoft
 ### [Setup overview](configure-connector.md)
 ### [Map your non Azure AD Identities (preview)](map-non-aad.md)
-### [Map your Azure AD Identities ](map-aad.md)
+### [Map your Azure AD Identities (preview)](map-aad.md)
 ### Connector-specific information
 #### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 #### [Azure DevOps (preview)](azure-devops-connector.md)
@@ -28,6 +28,7 @@
 #### [Salesforce (preview)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## [Manage your connections](manage-connector.md)
+## [Connection Details and Errors](connector-details-errors.md)
 ## [Licensing](licensing.md)
 ## [Feedback](connectors-feedback.md)
 ## [Terms of use](terms-of-use.md)
