@@ -11,11 +11,11 @@
 ## [Locations](manage-locations.md)
 ## [Power BI](manage-powerbi.md)
 ## [Q&As](manage-qas.md)
-# Connectors (preview)
+# Connectors
 ## [Overview](connectors-overview.md)
 ## [Preview release](connectors-preview.md)
 ## [Connectors gallery](connectors-gallery.md)
-## Graph connectors by Microsoft
+## Set up connectors by Microsoft
 ### [Setup overview](configure-connector.md)
 ### [Map your non Azure AD Identities (preview)](map-non-aad.md)
 ### [Map your Azure AD Identities (preview)](map-aad.md)
@@ -30,7 +30,6 @@
 ## [Manage your connections](manage-connector.md)
 ## [Connection Details and Errors](connector-details-errors.md)
 ## [Licensing](licensing.md)
-## [Feedback](connectors-feedback.md)
 ## [Terms of use](terms-of-use.md)
 # Customize and configure
 ## [Manage verticals and result types](customize-search-page.md)
