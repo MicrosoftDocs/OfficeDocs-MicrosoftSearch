@@ -33,7 +33,7 @@ Recommended configuration:
 
 ## Create and configure an App for the agent  
 
-Before using the agent, you must create an app and configure the authentication details which can be used during registration. Prior to registration, the agent app asks you to sign in. Search admin is the minimum required previlige for the account required for signing into the app.
+First, sign in and note that the minimum required privilege on the account is search administrator. The agent will then ask you to provide authentication details. Use the steps below to create an app and generate the required authentication details.
 
 ### Create an app
 
