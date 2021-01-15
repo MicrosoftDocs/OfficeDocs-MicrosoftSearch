@@ -70,7 +70,7 @@ To view an error's specific details, select its error code. A screen appears wit
 
 ![Connector list with a connector selected and details pane showing the list of errors for the connector.](media/errormonitoring2.png)
 
-Below is the list of different errors that can appear against any connection. If these solutions don’t work, contact support or send us [feedback]((https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch/issues)).
+Below is the list of different errors that can appear against any connection.
 
 Error code | Error message | Solution
 --- | --- | ---
