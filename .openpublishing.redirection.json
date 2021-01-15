@@ -204,6 +204,11 @@
       "source_path": "MicrosoftSearch/get-insights.md",
       "redirect_url": "/MicrosoftSearch/usage-reports",
       "redirect_document_id": true
-    }
+    },
+    {
+      "source_path": "MicrosoftSearch/set-default-browser.md",
+      "redirect_url": "https://docs.microsoft.com/deployedge/edge-default-browser",
+      "redirect_document_id": false
+    }    
   ]
 }
