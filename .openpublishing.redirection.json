@@ -208,7 +208,7 @@
     {
       "source_path": "MicrosoftSearch/connectors-feedback.md",
       "redirect_url": "/MicrosoftSearch/connectors-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "MicrosoftSearch/set-default-browser.md",
