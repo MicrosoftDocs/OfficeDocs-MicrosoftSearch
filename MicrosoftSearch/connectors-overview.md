@@ -20,7 +20,7 @@ description: "Overview of Microsoft Graph connectors for Microsoft Search"
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
-The rest of this article is intended to help Microsoft 365 administrators locate the resources that are avaiable to answer the following questions:
+The rest of this article is intended to help Microsoft 365 administrators locate the resources that are available to answer the following questions:
 
 * [What data sources can be connected to Microsoft Search?](#what-data-sources-can-be-connected-to-microsoft-search)
 * [How do I manage my connections?](#how-do-i-manage-my-connections)
@@ -30,7 +30,7 @@ The rest of this article is intended to help Microsoft 365 administrators locate
 
 <!---Modify to another note that is more accurate--->
 > [!IMPORTANT]
-> Microsoft Graph connectors and Microsoft Search APIs are now generally available. The first rollouts will be to customers configured for  targeted release. If you want to use a Graph connector in your tenant, users and administrators must opt into [Targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide).
+> Microsoft Graph connectors and Microsoft Search APIs are now generally available. The first rollouts will be to customers configured for  targeted release. If you want to use a Graph connector in your tenant, users and administrators must opt into [Targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true).
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
@@ -101,3 +101,17 @@ There are a number of ways to customize and configure search results. See the fo
 ## How do I search my connector data from a custom application?
 
 After custom data is indexed, developers can [query this data](https://docs.microsoft.com/graph/search-concept-custom-types). You can view your data in any application. For more information, see the [Overview of the Microsoft Search API in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
+
+## Limitations
+
+* When you **publish** a Microsoft-built connector, it might take a few minutes for the connection to be created. During that time, the connection will show its status as pending.
+
+* The [Microsoft 365 admin center](https://admin.microsoft.com) doesn't support editing the **search schema** after a connection is published. To edit the search schema, delete your connection and then create a new one.
+
+* Ingestion throughput is throttled at about four items per second.
+
+* There is no support for schema updates. After you create a connection setup, there's no way to update the schema. You can only delete and re-create the connection.
+
+* There is a connections limit. Each tenant can create up to 10 connections.
+
+* Edit support for connection is not available. Once the connection has been created, you cannot edit or change it. If you need to change any details, you must delete and recreate the connection.
