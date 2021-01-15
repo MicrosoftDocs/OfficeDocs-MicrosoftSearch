@@ -208,7 +208,7 @@
     {
       "source_path": "MicrosoftSearch/set-default-browser.md",
       "redirect_url": "/deployedge/edge-default-browser",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }    
   ]
 }
