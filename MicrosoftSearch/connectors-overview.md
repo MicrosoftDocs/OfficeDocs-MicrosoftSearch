@@ -25,12 +25,13 @@ The rest of this article is intended to help Microsoft 365 administrators locate
 * [What data sources can be connected to Microsoft Search?](#what-data-sources-can-be-connected-to-microsoft-search)
 * [How do I manage my connections?](#how-do-i-manage-my-connections)
 * [What are the license requirements and terms of use for Graph connectors?](#what-are-the-license-requirements-and-terms-of-use-for-graph-connectors)
+* [What are the preview features?](#what-are-the-preview-features?)
 * [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results)
 * [How do I search my connector data from a custom application?](#how-do-i-search-my-connector-data-from-a-custom-application)
 
-<!---Modify to another note that is more accurate--->
+<!---Modify to another note that is more accurate after rollout completion--->
 > [!IMPORTANT]
-> Microsoft Graph connectors and Microsoft Search APIs are now generally available. The first rollouts will be to customers configured for  targeted release. If you want to use a Graph connector in your tenant, users and administrators must opt into [Targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true).
+> Microsoft Graph connectors and Microsoft Search APIs are now generally available. The first rollout is scheduled to last until February 2021. Until then, only tenants and users who have opted into [Targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true) will be able to use Graph connectors. Upon rollout completion to all tenants, index quota utilization from connectors content will become subject to billing. See [Licensing requirements and pricing](licensing.md) for more information.
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
@@ -88,6 +89,17 @@ You can manage your connections from the [Connectors tab](https://admin.microsof
 You need a valid Microsoft 365 or Office 365 license and sufficient Graph Connectors quota for users in your organization to view data from connectors in their search results.
 
 To learn more, see [License requirements and pricing](licensing.md) and [Terms of use](terms-of-use.md).
+
+## What are the preview features?
+
+Although Microsoft Graph connectors and Microsoft Search APIs are now generally available, there are several features that are in preview.
+
+The set of connectors and features in preview include:
+
+* [Azure DevOps connector](azure-devops-connector.md)
+* [Salesforce connector](salesforce-connector.md)
+* [ServiceNow connector](servicenow-connector.md) with search permissions that use source ACLs
+* [Manage result cluster](result-cluster.md)
 
 ## How do I customize and configure search results?
 

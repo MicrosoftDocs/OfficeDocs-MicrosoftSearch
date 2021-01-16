@@ -15,7 +15,7 @@ description: "Connectors Details and Errors"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
-# View Connection Details and Errors for Microsoft Search
+# View connection details and errors
 
 To access and manage your connectors, you must be designated as a search administrator for your tenant. Contact your tenant administrator to provision you for the search administrator role.
 
