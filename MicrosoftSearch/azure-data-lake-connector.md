@@ -52,7 +52,7 @@ On the **Manage search permissions** screen, you can choose to ingest the Access
 
 For a connection to [Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction), all the content indexed from the configured source is visible to everyone in your organization. Access control lists are not supported at Blob level in Azure Blob Storage.
 
-## Manage search permissions
+## Search permissions
 
 The Azure Data Lake Storage Gen2 connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. Indexed data that appears in the search results could be visible to all users in the organization or only to users who have access to each item.
 
