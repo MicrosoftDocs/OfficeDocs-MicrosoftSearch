@@ -7,7 +7,7 @@
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 1/13/2021 | [Configure your Microsoft-built connector for Microsoft Search](/MicrosoftSearch/configure-connector) | modified |
+| 1/12/2021 | [Connectors Details and Errors](/MicrosoftSearch/connector-details-errors) | added |
 | 1/13/2021 | [Connectors Overview](/MicrosoftSearch/connectors-overview) | modified |
 | 1/13/2021 | [Connectors preview](/MicrosoftSearch/connectors-preview) | modified |
 | 1/13/2021 | [License requirements and pricing](/MicrosoftSearch/licensing) | modified |
@@ -33,14 +33,6 @@
 | 1/8/2021 | [Customize the Microsoft Search page](/MicrosoftSearch/customize-search-page) | modified |
 
 
-## Week of December 21, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 12/22/2020 | [Manage Acronym answers in Microsoft Search](/MicrosoftSearch/manage-acronyms) | modified |
-
-
 ## Week of December 14, 2020
 
 
@@ -52,3 +44,11 @@
 | 12/17/2020 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
 | 12/18/2020 | [Customize the Microsoft Search page](/MicrosoftSearch/customize-search-page) | modified |
 | 12/18/2020 | [Manage bookmarks](/MicrosoftSearch/manage-bookmarks) | modified |
+
+
+## Week of December 21, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/22/2020 | [Manage Acronym answers in Microsoft Search](/MicrosoftSearch/manage-acronyms) | modified |
