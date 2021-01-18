@@ -16,35 +16,54 @@ description: "Set up the MediaWiki connector for Microsoft Search"
 
 # MediaWiki connector
 
-With the MediaWiki connector, your organization can discover and index data from a wiki created by using MediaWiki software. This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.
+With the MediaWiki connector, your organization can discover and index data from a wiki created by using MediaWiki software. This 
+connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a MediaWiki connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a MediaWiki Graph connector. It supplements the
+general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not 
+already done so, read the entire Set up your Graph connector article to understand the general setup process.
 
-## Connect to a data source
+Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR 
+other instructions that apply to only MediaWiki Graph connectors. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations) for MediaWiki Graph connectors. 
 
-Enter your MediaWiki URL and credentials for authenticating the connection. You'll need the following information: **Tenant ID**, **Resource ID**, **Client ID**, and the **Client Secret**.
+## Step 1: Add a Graph connector in the Microsoft 365 admin center.
+Follow the general setup instructions.
 
-## Manage search permissions
+## Step 2: Name the connection.
+Follow the general setup instructions.
+ 
+## Step 3: Configure the connection settings.
+Enter your **Wiki URL** and choose the **Authentication type** from the drop-down menu of options. The options are **None**, **Basic**, and **OAuth
+2.0 AAD**.
 
-The MediaWiki connector only supports search permissions visible to **Everyone**. Indexed data appears in the search results and is visible to all users in the organization.
+If you choose **Basic** as the Authentication type, you will need to provide the **Username** and **Password** for the wiki.
 
-## Assign property labels
+If you choose **OAuth 2.0 AAD** as the Authentication type, you will need to provide the **Resource ID** of the wiki installation. You will also 
+need to provide the **Client ID** and **Client secret** generated on the AAD Application registration page. 
 
-You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
+## Step 4: Manage search permissions
+The MediaWiki connector only supports search permissions visible to **Everyone**. Indexed data appears in the search results and is visible to all 
+users in the organization.
 
-## Manage schema
+## Step 5: Assign property labels
+Follow the general setup instructions.
 
-On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, **retrievable**, and **refinable**) associated with the properties, add optional aliases, and choose the **Content** property.
+## Step 6: Manage schema
+Follow the general setup instructions.
 
-## Set the refresh schedule
+## Step 7: Choose refresh settings
+Follow the general setup instructions.
 
-This schedule refreshes indexed data, so changes to the wiki are reflected in Microsoft Search. All new pages, deleted pages, page content, or metadata changes appear in search results after the specified refresh interval. The crawl time is dependent on the size of the wiki. Currently the connector crawls at around 50 pages per minute.
+## Step 8: Review connection
+Follow the general setup instructions.
+
+<!---## Troubleshooting-->
+<!---To be added-->
 
 ## Limitations
-
 The MediaWiki connector has these limitations in the preview release:
 
 * Supports only cloud-based wikis.
 * Supports only Basic or OAuth 2.0 with Azure Active Directory or Azure authentication.
-* Doesn't support namespace selection for indexing. Indexes only **Main**, **Category**, and **File** namespaces.
+* Doesn't support namespace selection for indexing. Indexes only Main, Category, and File namespaces.
 * Doesn't support Access Control Lists (ACLs). Thus, indexed pages are visible to all users in the organization.
