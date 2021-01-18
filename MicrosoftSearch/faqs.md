@@ -23,7 +23,7 @@ Here's a list of the most common questions.
 
 ## Is advanced query understanding supported?
 
-Yes, Microsoft Search parses query intent from larger phrases. This feature uses AI to learn common superfluous phrases users add to their queries that don't impact their search intent. For example, when a user searches for *tell me more about how to change my password please*, we extract the less important words from the query and trigger based on the relevant ones like *change password*.
+Yes, Microsoft Search parses query intent from larger phrases. This feature uses AI to learn common superfluous phrases users add to their queries that don't impact their search intent. For example, when a user searches for *tell me more about how to change my password*, we extract the less important words from the query and trigger based on the relevant ones like *change password*.
   
 This feature won't override keywords set in the [Microsoft 365 admin center](https://admin.microsoft.com).
   
@@ -35,13 +35,13 @@ Yes. You can search on-premises [SharePoint](http://sharepoint.com/) files if yo
 
 Here's the instructions for setting the default search engine, default homepage, and default browser to give your users the best experience with Microsoft Search in [Bing](https://Bing.com):
 
-- [Set Microsoft Edge as your default browser](set-default-browser.md)
+- [Set Microsoft Edge as your default browser](/deployedge/edge-default-browser)
 - [Make Bing your default search engine](set-default-search-engine.md)
 - [Set Bing.com as your enterprise homepage](set-default-homepage.md)
 
 ## How are my search results protected?
 
-We require [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) authentication to access results from the Trusted Cloud. Authenticated users only see content they have access to. Search queries are de-identified, and logs are separated from public [Bing](https://Bing.com) search traffic. This level of protection is unavailable anywhere else in the industry.
+We require [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) authentication to access results from the Trusted Cloud. Authenticated users only see content they have access to. Search queries are de-identified, and logs are separated from public [Bing](https://Bing.com) search traffic when you use Microsoft Search in Bing.
 
 ## Can I search across federated organizations?
 

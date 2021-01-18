@@ -1,8 +1,8 @@
 ---
 title: "Manage bookmarks"
-ms.author: jeffkizn
-author: jeffkizn
-manager: parulm
+ms.author: dawholl
+author: dawholl
+manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -138,7 +138,7 @@ A bookmark can have several keywords and bookmarks can share the same keyword, b
 
 **Q: How can I identify a recommended bookmark in search results or the admin center?**
 
-**A:** In search results, recommended bookmarks include the phrase "Suggested for you" before the URL. In the admin center, mined bookmarks will have an Owner value of "SYSTEM".
+**A:** In search results, recommended bookmarks include the phrase "Suggested for you" before the URL. In the admin center, recommended bookmarks will have an Owner value of "SYSTEM".
 
 **Q: How is access to a recommended bookmark managed?**
 
