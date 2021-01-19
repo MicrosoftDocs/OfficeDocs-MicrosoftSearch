@@ -214,6 +214,11 @@
       "source_path": "MicrosoftSearch/set-default-browser.md",
       "redirect_url": "https://docs.microsoft.com/deployedge/edge-default-browser",
       "redirect_document_id": false
-    }    
+    },
+    {
+      "source_path": "MicrosoftSearch/connectors-preview.md",
+      "redirect_url": "/MicrosoftSearch/connectors-overview",
+      "redirect_document_id": false
+    }
   ]
 }
