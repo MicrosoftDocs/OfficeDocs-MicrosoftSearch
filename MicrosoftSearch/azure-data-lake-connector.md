@@ -26,11 +26,10 @@ This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) adm
 
 On the **Authentication and config** screen, provide the Primary Storage Connection String. That string is required to allow access to your storage account. To find your connection string, go to the [Azure portal](https://ms.portal.azure.com/#home) and navigate to the **Keys** section of your relevant Azure Storage account. Copy and paste the connection string in the appropriate field on the screen.
 
-If you do not prefer to provide the **AccountKey** (a parameter in the primary storage connection string), you will need to grant access to our Graph Connectors Service for the following roles.
-
+If you do not prefer to provide the **AccountKey** (a parameter in the primary storage connection string), you will need to grant access to our Graph Connectors Service for the following roles. (This feature is only supported for hierarchical storage. Traditional Blob storage will have to provide AccountKey.)
 * Storage Blob Data Reader
 * Storage Queue Data Contributor
-* Storage Blob Delegator (only for hierarchical storage)
+* Storage Blob Delegator
 
 Navigate to the **Access Control** tab of your Azure Storage account, and follow the instructions there to grant access to the following app:
 
@@ -53,7 +52,7 @@ On the **Manage search permissions** screen, you can choose to ingest the Access
 
 For a connection to [Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction), all the content indexed from the configured source is visible to everyone in your organization. Access control lists are not supported at Blob level in Azure Blob Storage.
 
-## Manage search permissions
+## Search permissions
 
 The Azure Data Lake Storage Gen2 connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. Indexed data that appears in the search results could be visible to all users in the organization or only to users who have access to each item.
 
