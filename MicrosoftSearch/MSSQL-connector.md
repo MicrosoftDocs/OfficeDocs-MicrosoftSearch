@@ -18,13 +18,15 @@ description: "Set up the Microsoft SQL connector for Microsoft Search."
 
 With a Microsoft SQL server or Azure SQL connector, your organization can discover and index data from an on-premises SQL Server database or a database hosted in your Azure SQL instance in the cloud. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server or Azure SQL connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques. 
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server or Azure SQL connector. It supplements the general instructions provided in the [Set up your Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector) article. If you have not already done so, read the entire Set up your Graph connector article to understand the general setup process.
+
+Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Microsoft SQL server and Azure SQL connectors. This article also includes information about Limitations for Microsoft SQL server and Azure SQL connector.
 
 ## Install the Graph connector agent (required for on-premises Microsoft SQL server connector only)
 In order to access your on-premises third-party data, you must install and configure the Graph connector agent. See [Install the Graph connector agent](on-prem-agent.md) to learn more.  
 
 ## Register an app (for Azure SQL connector only)
-For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer Microsoft Graph documentation on how to [register an app](https://docs.microsoft.com/graph/auth-register-app-v2). 
+For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer Microsoft Graph documentation on how to [register an app](https://docs.microsoft.com/graph/auth-register-app-v2).
 
 After completing the app registration and taking note of the app name, application (client) ID and tenant ID, you need to [generate a new client secret](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client secret will only be displayed once. Remember to note & store the client secret securely. Use the client ID and client secret while configuring a new connection in Microsoft Search. 
 
@@ -39,7 +41,19 @@ To add the registered app to your Azure SQL Database, you need to:
 >[!NOTE]
 >To revoke access to any app registered in Azure Active Directory, refer the Azure documentation on [removing a registered app](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
 
-## Connect to a data source
+## Step 1: Add a Graph connector in the Microsoft 365 admin center.
+Follow the general [setup instructions](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+## Step 2: Name the connection.
+
+Follow the general [setup instructions](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+ 
+## Step 3: Configure the connection settings.
+
 To connect your Microsoft SQL server connector to a data source, you must configure the database server you want crawled and the on-prem agent. You can then connect to the database with the required authentication method.
 
 > [!NOTE]
@@ -57,7 +71,8 @@ For added security, you may configure IP firewall rules for your Azure SQL serve
 
 To search your database content, you must specify SQL queries when you configure the connector. These SQL queries need to name all the database columns that you want to index (i.e. source properties), including any SQL joins that need to be performed to get all the columns. To restrict access to search results, you must specify Access Control Lists (ACLs) within SQL queries when you configure the connector.
 
-## Full crawl (Required)
+## Step 3a: Full crawl (Required)
+
 In this step, you configure the SQL query that runs a full crawl of the database. The full crawl selects all the columns or properties you want to be made **queryable**, **searchable**, or **retrievable**. You can also specify ACL columns to restrict access of search results to specific users or groups.
 
 > [!Tip]
@@ -66,6 +81,7 @@ In this step, you configure the SQL query that runs a full crawl of the database
 ![Script showing the OrderTable and AclTable with example properties](media/MSSQL-fullcrawl.png)
 
 ### Select data columns (Required) and ACL columns (Optional)
+
 The example demonstrates selection of five data columns that hold the data for the search: OrderId, OrderTitle, OrderDesc, CreatedDateTime, and IsDeleted. To set view permissions for each row of data, you can optionally select these ACL columns: AllowedUsers, AllowedGroups, DeniedUsers, and DeniedGroups. All these data columns can be made **queryable**, **searchable**, or **retrievable**.
 
 Select data columns as shown in this example query: 
@@ -126,23 +142,57 @@ The following ID types are supported for using as ACLs:
 
 ![Search permission settings to configure access control lists](media/MSSQL-ACL2.png)
 
-## Incremental crawl (Optional)
+## Step 3b: Incremental crawl (Optional)
+
 In this optional step, provide a SQL query to run an incremental crawl of the database. With this query, the SQL connector determines any changes to the data since the last incremental crawl. As in the full crawl, select all columns that you want to be made **queryable**, **searchable**, or **retrievable**. Specify the same set of ACL columns that you specified in the full crawl query.
 
 The components in the following image resemble the full crawl components with one exception. In this case, "ModifiedDateTime" is the selected watermark column. Review the [full crawl steps](#full-crawl-required) to learn how to write your incremental crawl query and see the following image as an example.
 
 ![Incremental crawl script showing OrderTable, AclTable and example properties that can be used.](media/MSSQL-incrcrawl.png)
 
-## Manage search permissions 
+## Step 4: Assign property labels
+
+Follow the general [setup instructions](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector).
+
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+## Step 5: Manage schema
+
+Follow the general setup instructions.
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+## Step 6: Manage search permissions
+
 You can choose to use the [ACLs specified in the full crawl screen](#full-crawl-manage-search-permissions) or you can override them to make your content visible to everyone.
 
+## Step 7: Choose refresh settings
+
+Follow the general setup instructions.
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+## Step 8: Review connection
+
+Follow the general setup instructions.
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
 ## Next steps: Customize the search results page
+
 Create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won’t show up on the search results page.
 
 To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).
 
+<!---## Troubleshooting-->
+
+<!---Insert troubleshooting recommendations for this data source-->
+
 ## Limitations
+
 The SQL connectors have these limitations in the preview release:
+
 * Microsoft SQL server connector: The on-premises database must run SQL server version 2008 or later.
-* ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security. 
+* ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security.
 * Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.

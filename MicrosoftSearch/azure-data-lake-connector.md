@@ -18,9 +18,21 @@ description: "Set up the Azure Data Lake Storage Gen2 connector for Microsoft Se
 
 With the Azure Data Lake Storage Gen2 connector, users in your organization can search for files stored in [Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) and [Azure Data Lake Gen 2 Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) accounts.
 
-This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) administrators or anyone who configures, runs, and monitors an Azure Data Lake Storage Gen2 connector. It gives an overview of the connector configuration, capabilities, limitations, and troubleshooting techniques. In the article, we use *Azure Storage* as a generic term for [Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) and [Azure Data Lake Gen 2 Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction).
+This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) administrators or anyone who configures, runs, and monitors an Azure Data Lake Storage Gen2 Graph connector. It gives an overview of the connector configuration, capabilities, limitations, and troubleshooting techniques. In the article, we use *Azure Storage* as a generic term for [Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) and [Azure Data Lake Gen 2 Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction).
 
-## Connect to a data source
+## Step 1: Add a Graph connector in the Microsoft 365 admin center.
+
+Follow the general [setup instructions](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+## Step 2: Name the connection.
+
+Follow the general [setup instructions](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+## Step 3: Configure the connection settings.
 
 ### Primary storage connection string
 
@@ -43,7 +55,7 @@ Support to process changes in real time in the Graph Connectors Service might be
 
 After you create a queue, go to the **Events** tab on the queue page to configure **Event Subscription**. Choose all the Blob events that the queue will receive, and connect the queue to the Azure Storage account.
 
-## Manage search permissions
+## Step 3a: Manage search permissions
 
 ### Azure Data Lake Gen 2
 
@@ -53,22 +65,30 @@ On the **Manage search permissions** screen, you can choose to ingest the Access
 
 For a connection to [Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction), all the content indexed from the configured source is visible to everyone in your organization. Access control lists are not supported at Blob level in Azure Blob Storage.
 
-## Manage search permissions
+## Step 4: Manage search permissions
 
 The Azure Data Lake Storage Gen2 connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. Indexed data that appears in the search results could be visible to all users in the organization or only to users who have access to each item.
 
-## Assign property labels
+## Step 5: Assign property labels
 
 You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
 
-## Manage schema
+## Step 6: Manage schema
 
 On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, **retrievable**, and **refinable**) associated with the properties, add optional aliases, and choose the **Content** property.
 
-## Set the refresh schedule
+## Step 7: Choose refresh settings
 
 On the **Refresh Settings** screen, you can set the incremental crawl interval and the full crawl interval. The default intervals for the Azure Data Lake Storage Gen2 connector are 15 minutes for an incremental crawl and one week for a full crawl.
 
+## Step 8: Review connection
+
+Follow the general setup instructions.
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+<!---## Troubleshooting-->
+<!---Insert troubleshooting recommendations for this data source-->
 ## Limitations
 
 A published connection for Azure Blob Storage cannot be reconfigured for Azure Data Lake Storage Gen2 source and vice-versa. In such scenarios, it is recommended to configure a new connection.
