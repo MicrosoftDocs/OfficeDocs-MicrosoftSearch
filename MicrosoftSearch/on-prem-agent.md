@@ -31,6 +31,15 @@ Recommended configuration:
 * 16 GB RAM, 2 GB Disk Space
 * Network access to data source and internet through 443
 
+After you install the agent, if your organization's proxy servers or firewalls block communication to unknown domains, please whitelist the below ones.
+
+1. *.servicebus.windows.net
+2. *.events.data.microsoft.com
+3. https://login.microsoftonline.com
+4. https://gcs.office.com
+5. https://graph.microsoft.com/
+
+
 ## Create and configure an App for the agent  
 
 First, sign in and note that the minimum required privilege on the account is search administrator. The agent will then ask you to provide authentication details. Use the steps below to create an app and generate the required authentication details.
