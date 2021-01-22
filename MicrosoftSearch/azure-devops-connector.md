@@ -22,19 +22,21 @@ With the Azure DevOps connector, your organization can index work items in its i
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Azure DevOps connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
 
 >[!IMPORTANT]
->The Azure DevOps connector supports only the Azure DevOps cloud service. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015, and TFS 2013 are not supported by this connector. 
+>The Azure DevOps connector supports only the Azure DevOps cloud service. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015, and TFS 2013 are not supported by this connector.
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center.
-Follow the general [setup instructions](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector).
+## Step 1: Add a Graph connector in the Microsoft 365 admin center
+
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-## Step 2: Name the connection.
-Follow the general [setup instructions](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector).
+## Step 2: Name the connection
+
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-## Step 3: Configure the connection settings.
+## Step 3: Configure the connection settings
 
 To connect to your Azure DevOps instance, you need your Azure DevOps [organization](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization) name, its App ID, and client secret for OAuth authentication.
 
@@ -95,7 +97,7 @@ The recommended schedule is one hour for an incremental crawl and one day for a 
 
 ## Step 8: Review connection
 
-Follow the general [setup instructions](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector).
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 

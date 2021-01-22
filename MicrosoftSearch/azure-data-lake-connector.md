@@ -20,19 +20,19 @@ With the Azure Data Lake Storage Gen2 connector, users in your organization can 
 
 This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) administrators or anyone who configures, runs, and monitors an Azure Data Lake Storage Gen2 Graph connector. It gives an overview of the connector configuration, capabilities, limitations, and troubleshooting techniques. In the article, we use *Azure Storage* as a generic term for [Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) and [Azure Data Lake Gen 2 Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction).
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center.
+## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
-Follow the general [setup instructions](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector).
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-## Step 2: Name the connection.
+## Step 2: Name the connection
 
-Follow the general [setup instructions](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector).
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-## Step 3: Configure the connection settings.
+## Step 3: Configure the connection settings
 
 ### Primary storage connection string
 
@@ -83,7 +83,7 @@ On the **Refresh Settings** screen, you can set the incremental crawl interval a
 
 ## Step 8: Review connection
 
-Follow the general setup instructions.
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
