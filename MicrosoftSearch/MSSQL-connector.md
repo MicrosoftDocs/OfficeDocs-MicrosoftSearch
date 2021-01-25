@@ -14,19 +14,35 @@ search.appverid:
 description: "Set up the Microsoft SQL connector for Microsoft Search."
 ---
 
-# Azure SQL and Microsoft SQL server connectors
+# Azure SQL and Microsoft SQL server Graph connectors
 
 With a Microsoft SQL server or Azure SQL connector, your organization can discover and index data from an on-premises SQL Server database or a database hosted in your Azure SQL instance in the cloud. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server or Azure SQL connector. It supplements the general instructions provided in the [Set up your Graph connector](https://docs.microsoft.com/microsoftsearch/configure-connector) article. If you have not already done so, read the entire Set up your Graph connector article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server or Azure SQL connector. It supplements the general instructions provided in the [Set up your Graph connector](https://docs.microsoft.com/microsoftsearch/configure-connector) article. If you have not already done so, read the entire Setup your Graph connector article to understand the general setup process.
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Microsoft SQL server and Azure SQL connectors. This article also includes information about Limitations for Microsoft SQL server and Azure SQL connector.
 
-## Install the Graph connector agent (required for on-premises Microsoft SQL server connector only)
+## Before you get started
+
+### Install the Graph connector agent (required for on-premises Microsoft SQL server connector only)
 
 In order to access your on-premises third-party data, you must install and configure the Graph connector agent. See [Install the Graph connector agent](on-prem-agent.md) to learn more.  
 
-## Register an app (for Azure SQL connector only)
+## Step 1: Add a Graph connector in the Microsoft 365 admin center
+
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+## Step 2: Name the connection
+
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+## Step 3: Configure the connection settings
+
+### Register an app (for Azure SQL connector only)
 
 For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer Microsoft Graph documentation on how to [register an app](https://docs.microsoft.com/graph/auth-register-app-v2).
 
@@ -44,19 +60,7 @@ To add the registered app to your Azure SQL Database, you need to:
 >[!NOTE]
 >To revoke access to any app registered in Azure Active Directory, refer the Azure documentation on [removing a registered app](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center
-
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
-<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
-instructions.-->
-
-## Step 2: Name the connection
-
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
-<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
-instructions.-->
-
-## Step 3: Configure the connection settings
+### Connection settings
 
 To connect your Microsoft SQL server connector to a data source, you must configure the database server you want crawled and the on-prem agent. You can then connect to the database with the required authentication method.
 
@@ -73,7 +77,7 @@ For added security, you may configure IP firewall rules for your Azure SQL serve
 | EUR | 20.54.41.208/30, 51.105.159.88/30 |
 | APC | 52.139.188.212/30, 20.43.146.44/30 |
 
-To search your database content, you must specify SQL queries when you configure the connector. These SQL queries need to name all the database columns that you want to index (i.e. source properties), including any SQL joins that need to be performed to get all the columns. To restrict access to search results, you must specify Access Control Lists (ACLs) within SQL queries when you configure the connector.
+To search your database content, you must specify SQL queries when you configure the connector. These SQL queries need to name all the database columns that you want to index (that is, source properties), including any SQL joins that need to be performed to get all the columns. To restrict access to search results, you must specify Access Control Lists (ACLs) within SQL queries when you configure the connector.
 
 ## Step 3a: Full crawl (Required)
 
@@ -93,12 +97,12 @@ Select data columns as shown in this example query:
 
 To manage access to the search results, you can specify one or more ACL columns in the query. The SQL connector allows you to control access at per record level. You can choose to have the same access control for all records in a table. If the ACL information is stored in a separate table, you might have to do a join with those tables in your query.
 
-The use of each of the ACL columns in the above query is described below. The following list explains the 4 **access control mechanisms**.
+The use of each of the ACL columns in the above query is described below. The following list explains the four **access control mechanisms**.
 
-- **AllowedUsers**: This specifies the list of user IDs who will be able to access the search results. In the following example, list of users: john@contoso.com, keith@contoso.com, and lisa@contoso.com would only have access to a record with OrderId = 12.
-- **AllowedGroups**: This specifies the group of users who will be able to access the search results. In the following example, group sales-team@contoso.com would only have access to record with OrderId = 12.
-- **DeniedUsers**: This specifies the list of users who do **not** have access to the search results. In the following example, users john@contoso.com and keith@contoso.com do not have access to record with OrderId = 13, whereas everyone else has access to this record.
-- **DeniedGroups**: This specifies the group of users who do **not** have access to the search results. In the following example, groups engg-team@contoso.com and pm-team@contoso.com do not have access to record with OrderId = 15, whereas everyone else has access to this record.  
+- **AllowedUsers**: This column specifies the list of user IDs who can access the search results. In the following example, list of users: john@contoso.com, keith@contoso.com, and lisa@contoso.com would only have access to a record with OrderId = 12.
+- **AllowedGroups**: This column specifies the group of users who will be able to access the search results. In the following example, group sales-team@contoso.com would only have access to record with OrderId = 12.
+- **DeniedUsers**: This column specifies the list of users who do **not** have access to the search results. In the following example, users john@contoso.com and keith@contoso.com do not have access to record with OrderId = 13, whereas everyone else has access to this record.
+- **DeniedGroups**: This column specifies the group of users who do **not** have access to the search results. In the following example, groups engg-team@contoso.com and pm-team@contoso.com do not have access to record with OrderId = 15, whereas everyone else has access to this record.  
 
 ![Sample data showing the OrderTable and AclTable with example properties](media/MSSQL-ACL1.png)
 
@@ -120,7 +124,7 @@ For any other data type currently not directly supported, the column needs to be
 
 ### Watermark (Required)
 
-To prevent overloading the database, the connector batches and resumes full-crawl queries with a full-crawl watermark column. By using the value of the watermark column, each subsequent batch is fetched, and querying is resumed from the last checkpoint. Essentially this is a mechanism to control data refresh for full crawls.
+To prevent overloading the database, the connector batches and resumes full-crawl queries with a full-crawl watermark column. By using the value of the watermark column, each subsequent batch is fetched, and querying is resumed from the last checkpoint. Essentially this mechanisms controls data refresh for full crawls.
 
 Create query snippets for watermarks as shown in these examples:
 
@@ -141,15 +145,15 @@ To exclude soft-deleted rows in your database from being indexed, specify the so
 
 ### Full crawl: Manage search permissions
 
-Click **Manage permissions** to select the various access control (ACL) columns which specify the access control mechanism. Select the column name you specified in the full crawl SQL query.
+Select **Manage permissions** to choose the various access control (ACL) columns that specify the access control mechanism. Select the column name you specified in the full crawl SQL query.
 
 Each of the ACL columns is expected to be a multi-valued column. These multiple ID values can be separated by separators such as semicolon (;), comma (,), and so on. You need to specify this separator in the **value separator** field.
 
 The following ID types are supported for using as ACLs:
 
 - **User Principal Name (UPN)**: A User Principal Name (UPN) is the name of a system user in an email address format. A UPN (for example: john.doe@domain.com) consists of the username (logon name), separator (the @ symbol), and domain name (UPN suffix).
-- **Azure Active Directory (AAD) ID**: In Azure AD, every user or group has an object ID which looks something like ‘e0d3ad3d-0000-1111-2222-3c5f5c52ab9b’.
-- **Active Directory (AD) Security ID**: In an on-premises AD setup, every user and group have an immutable, unique security identifier which looks something like ‘S-1-5-21-3878594291-2115959936-132693609-65242.’
+- **Azure Active Directory (AAD) ID**: In Azure AD, every user or group has an object ID that looks something like ‘e0d3ad3d-0000-1111-2222-3c5f5c52ab9b’.
+- **Active Directory (AD) Security ID**: In an on-premises AD setup, every user and group have an immutable, unique security identifier that looks something like ‘S-1-5-21-3878594291-2115959936-132693609-65242.’
 
 ![Search permission settings to configure access control lists](media/MSSQL-ACL2.png)
 
@@ -170,7 +174,7 @@ instructions.-->
 
 ## Step 5: Manage schema
 
-Follow the general setup instructions.
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
@@ -180,13 +184,13 @@ You can choose to use the [ACLs specified in the full crawl screen](#full-crawl-
 
 ## Step 7: Choose refresh settings
 
-Follow the general setup instructions.
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## Step 8: Review connection
 
-Follow the general setup instructions.
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 

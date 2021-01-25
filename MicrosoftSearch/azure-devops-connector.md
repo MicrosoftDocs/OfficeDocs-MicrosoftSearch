@@ -15,7 +15,7 @@ search.appverid:
 description: "Set up the Azure DevOps connector for Microsoft Search" 
 --- 
 
-# Azure DevOps connector (preview)
+# Azure DevOps Graph connector (preview)
 
 With the Azure DevOps connector, your organization can index work items in its instance of the Azure DevOps service. After you configure the connector and index content from Azure DevOps, end users can search for those items in Microsoft Search.
 
@@ -23,6 +23,10 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 >[!IMPORTANT]
 >The Azure DevOps connector supports only the Azure DevOps cloud service. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015, and TFS 2013 are not supported by this connector.
+
+<!---## Before you get started-->
+
+<!---Insert "Before you get started" recommendations for this data source-->
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
@@ -40,7 +44,7 @@ instructions.-->
 
 To connect to your Azure DevOps instance, you need your Azure DevOps [organization](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization) name, its App ID, and client secret for OAuth authentication.
 
-## Step 3a: Register an app
+### Register an app
 
 You must register an app in Azure DevOps so that the Microsoft Search app can access the instance. To learn more, see Azure DevOps documentation on how to [register an app](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app).
 
@@ -59,13 +63,13 @@ On registering the app with the details above, you will get the **App ID** and *
 >[!NOTE]
 >To revoke access to any app registered in Azure DevOps, go to User settings at the right top of your Azure DevOps instance. Click on Profile and then click on Authorizations in the Security section of the side pane. Hover over an authorized OAuth app to see the Revoke button at the corner of the app details.
 
-## Step 3b: Connection settings
+### Connection settings
 
 After registering the Microsoft Search app with Azure DevOps, you can complete the connection settings step. Enter your organization name, App ID, and Client secret.
 
 ![Connection Application Settings](media/ADO_Connection_settings_2.png)
 
-## Step 3c: Select projects and fields
+### Select projects and fields
 
 You can choose for the connection to index either the entire organization or specific projects.
 
@@ -83,16 +87,15 @@ The Azure DevOps connector supports search permissions visible to **Only peopl
 
 ## Step 5: Assign property labels
 
-You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
 
 ## Step 6: Manage schema
 
-On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, **retrievable**, and **refinable**) associated with the properties, add optional aliases, and choose the **Content** property.
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
 
 ## Step 7: Choose refresh settings
 
-The Azure DevOps connector supports refresh schedules for both full and incremental crawls. A full crawl finds deleted work items that were previously synced to the Microsoft Search index. A full crawl runs to sync all the work items. To sync new work items and updates to existing work items, you need to schedule incremental crawls.
-
+The Azure DevOps connector supports refresh schedules for both full and incremental crawls. 
 The recommended schedule is one hour for an incremental crawl and one day for a full crawl.
 
 ## Step 8: Review connection
