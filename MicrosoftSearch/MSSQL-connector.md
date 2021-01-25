@@ -64,7 +64,8 @@ To add the registered app to your Azure SQL Database, you need to:
 
 To connect your Microsoft SQL server connector to a data source, you must configure the database server you want crawled and the on-prem agent. You can then connect to the database with the required authentication method.
 
-> [!NOTE] Your database must run Oracle database version 11g or later for the connector to be able to connect. The connector supports Oracle database hosted on Windows, Linux and Azure VM platforms.
+> [!NOTE] 
+> Your database must run SQL server version 2008 or later for the Microsoft SQL server connector to be able to connect.
 
 For the Azure SQL connector, you only need to specify the server name or IP address you want to connect to. Azure SQL connector only supports Azure Active Directory Open ID connect (OIDC) authentication to connect to the database.
 
