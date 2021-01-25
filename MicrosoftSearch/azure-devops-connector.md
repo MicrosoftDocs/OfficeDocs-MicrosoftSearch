@@ -1,6 +1,6 @@
 --- 
 
-title: "Azure DevOps connector for Microsoft Search" 
+title: "Azure DevOps Graph connector for Microsoft Search" 
 ms.author: shgrover 
 author: shakungrover05 
 manager: jeffkizn 
