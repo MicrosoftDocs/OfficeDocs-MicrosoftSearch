@@ -11,12 +11,12 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Microsoft SQL connector for Microsoft Search."
+description: "Set up the Microsoft SQL Graph connector for Microsoft Search."
 ---
 
 # Azure SQL and Microsoft SQL server Graph connectors
 
-With a Microsoft SQL server or Azure SQL connector, your organization can discover and index data from an on-premises SQL Server database or a database hosted in your Azure SQL instance in the cloud. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
+With a Microsoft SQL server or Azure SQL Graph connector, your organization can discover and index data from an on-premises SQL Server database or a database hosted in your Azure SQL instance in the cloud. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server or Azure SQL connector. It supplements the general instructions provided in the [Set up your Graph connector](https://docs.microsoft.com/microsoftsearch/configure-connector) article. If you have not already done so, read the entire Setup your Graph connector article to understand the general setup process.
 
@@ -81,7 +81,7 @@ To search your database content, you must specify SQL queries when you configure
 
 ## Step 3a: Full crawl (Required)
 
-In this step, you configure the SQL query that runs a full crawl of the database. The full crawl selects all the columns or properties you want to be made **queryable**, **searchable**, or **retrievable**. You can also specify ACL columns to restrict access of search results to specific users or groups.
+In this step, you configure the SQL query that runs a full crawl of the database. The full crawl selects all the columns or properties where you want to select the options **Query**, **Search**, or **Retrieve**. You can also specify ACL columns to restrict access of search results to specific users or groups.
 
 > [!Tip]
 > To get all the columns that you need, you can join multiple tables.
@@ -90,7 +90,7 @@ In this step, you configure the SQL query that runs a full crawl of the database
 
 ### Select data columns (Required) and ACL columns (Optional)
 
-The example demonstrates selection of five data columns that hold the data for the search: OrderId, OrderTitle, OrderDesc, CreatedDateTime, and IsDeleted. To set view permissions for each row of data, you can optionally select these ACL columns: AllowedUsers, AllowedGroups, DeniedUsers, and DeniedGroups. All these data columns can be made **queryable**, **searchable**, or **retrievable**.
+The example demonstrates a selection of five data columns that hold the data for the search: OrderId, OrderTitle, OrderDesc, CreatedDateTime, and IsDeleted. To set view permissions for each row of data, you can optionally select these ACL columns: AllowedUsers, AllowedGroups, DeniedUsers, and DeniedGroups. All these data columns also have the options to **Query**, **Search**, or **Retrieve**.
 
 Select data columns as shown in this example query: 
  `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
@@ -159,7 +159,7 @@ The following ID types are supported for using as ACLs:
 
 ## Step 3b: Incremental crawl (Optional)
 
-In this optional step, provide a SQL query to run an incremental crawl of the database. With this query, the SQL connector determines any changes to the data since the last incremental crawl. As in the full crawl, select all columns that you want to be made **queryable**, **searchable**, or **retrievable**. Specify the same set of ACL columns that you specified in the full crawl query.
+In this optional step, provide a SQL query to run an incremental crawl of the database. With this query, the SQL connector determines any changes to the data since the last incremental crawl. As in the full crawl, select all columns where you want to select the options **Query**, **Search**, or **Retrieve**. Specify the same set of ACL columns that you specified in the full crawl query.
 
 The components in the following image resemble the full crawl components with one exception. In this case, "ModifiedDateTime" is the selected watermark column. Review the [full crawl steps](###Step-3a:-Full-crawl-(Required)) to learn how to write your incremental crawl query and see the following image as an example.
 

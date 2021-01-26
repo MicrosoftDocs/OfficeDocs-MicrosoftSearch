@@ -1,5 +1,5 @@
 ---
-title: "Configure your Microsoft-built connector for Microsoft Search"
+title: "Configure your Microsoft-built Graph connector for Microsoft Search"
 ms.author: monaray
 author: monaray97
 manager: jameslau
@@ -11,13 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Configure your Microsoft-built connector for Microsoft Search"
+description: "Configure your Microsoft-built Graph connector for Microsoft Search"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
 # Setup overview for Graph connectors by Microsoft 
 
-This article summarizes the basic process required to use the [Microsoft 365 admin center](https://admin.microsoft.com) to setup any of the Graph connectors by Microsoft. The basic process includes the following steps:  
+This article summarizes the basic process required to use the [Microsoft 365 admin center](https://admin.microsoft.com) to set up any of the Graph connectors by Microsoft. The basic process includes the following steps:  
 <!---Add links to each section in the doc--->
 
 1. Add a Graph connector in the Microsoft 365 admin center.
@@ -29,11 +29,15 @@ This article summarizes the basic process required to use the [Microsoft 365 adm
 7. Choose refresh settings.
 8. Review the connection.
 
-It is important to note that the setup process is very similar for all the Graph connectors by Microsoft but is not exactly the same. **In addition to reading this article, be sure to read the connector-specific information for your data source.**  
+It is important to note that the setup process is similar for all the Graph connectors by Microsoft but is not exactly the same. **In addition to reading this article, be sure to read the connector-specific information for your data source.**  
+
+<!---## Before you get started-->
+
+<!---Insert "Before you get started" recommendations for this data source-->
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
-Complete the following steps to configure any of the Microsoft-built connectors.
+Complete the following steps to configure any of the Microsoft-built Graph connectors.
 
 1. Sign into your admin account in the [Microsoft 365 admin center](https://admin.microsoft.com)
 2. In the navigation pane, select **Settings**, and then select **Search & intelligence**. Select the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
@@ -44,13 +48,14 @@ Complete the following steps to configure any of the Microsoft-built connectors.
 >[!Note:] You can add a maximum of ten Graph connections to each tenant.
 
 ## Step 2: Name the connection
-You will need to specify these attributes: 
+
+You will need to specify these attributes:
 
 * Name  
-* Connection ID 
-* Description (optional) 
+* Connection ID
+* Description (optional)
 
-The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters. 
+The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters.
 
 ## Step 3: Configure the connection settings
 
@@ -67,21 +72,22 @@ Some connectors like [Microsoft SQL](MSSQL-connector.md) and [Azure Data Lake St
 Other connectors like [ServiceNow](servicenow-connector.md), [Azure DevOps](azure-devops-connector.md), and [Salesforce](salesforce-connector.md) support syncing of non-Azure AD users and groups.  
 
 ## Step 5: Assign property labels
-You can assign semantic labels to your source properties on the "Assign property labels" page. Labels are well known tags provided by Microsoft that provide semantic meaning. They allow Microsoft to integrate your connector data into Microsoft 365 experiences such as enhanced search, people cards, intelligent discovery, and more.  
+
+You can assign semantic labels to your source properties on the "Assign property labels" page. Labels are well-known tags provided by Microsoft that provide semantic meaning. They allow Microsoft to integrate your connector data into Microsoft 365 experiences such as enhanced search, people cards, intelligent discovery, and more.  
 
 The following table lists the currently supported labels and their descriptions.  
 
 Label | Description
 --- | ---  
-**title** | The title for the item that you want shown in search and other experiences 
-**url** | The target url of the item in the source system 
-**createdBy** | Name of the person who created the item 
-**lastModifiedBy** | Name of the person who most recently edited the item 
-**authors** | Name of the people who participated/collaborated on the item 
-**createdDateTime** | When was the item created 
-**lastModifiedDateTime** | When was the item most recently edited 
-**fileName** | Name of the file item 
-**fileExtension** | Type of file item such as .pdf or .word 
+**title** | The title for the item that you want shown in search and other experiences
+**url** | The target url of the item in the source system
+**createdBy** | Name of the person who created the item
+**lastModifiedBy** | Name of the person who most recently edited the item
+**authors** | Name of the people who participated/collaborated on the item
+**createdDateTime** | When was the item created
+**lastModifiedDateTime** | When was the item most recently edited
+**fileName** | Name of the file item
+**fileExtension** | Type of file item such as .pdf or .word
 
 The properties on this page are pre-selected based on your data source, but you can change this selection if there is a different property that is better suited for a particular label.  
 
@@ -105,14 +111,14 @@ You can add aliases to your properties under the "Alias" column on the "Manage s
 
 You can set the search schema attributes to control search functionality of each source property. A search schema helps determine what results display on the search results page and what information end users can view and access.
 
-Search schema attributes include **searchable**, **queryable**, **retrievable**, and **refinable**. The following table lists each of the attributes that Microsoft Graph connectors support and explains their functions.
+Search schema attributes include **Query**, **Search**, **Retrieve**, and **Refine**. The following table lists each of the attributes that Microsoft Graph connectors support and explains their functions.
 
 Search schema attribute | Function | Example
 --- | --- | ---
-SEARCHABLE | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the property is **title**, a query for **Enterprise** returns answers that contain the word **Enterprise** in any text or title.
-QUERYABLE | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the **Title** property is queryable, then the query **Title: Enterprise** is supported. 
-RETRIEVABLE | Only retrievable properties can be used in the result type and display in the search result. |
-REFINABLE | Refinable properties can be used as in the Microsoft Search results page. | Users in your organization can [filter](custom-filters.md) by **lastModifiedDateTime** in the search results page if the property is marked refinable during connection setup
+SEARCH | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the property is **title**, a query for **Enterprise** returns answers that contain the word **Enterprise** in any text or title.
+QUERY | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the **Title** property can be queried, then the query **Title: Enterprise** is supported.
+RETRIEVE | Only retrievable properties can be used in the result type and display in the search result. |
+REFINE | The refine option can be used as in the Microsoft Search results page. | Users in your organization can [filter](custom-filters.md) by **lastModifiedDateTime** in the search results page if the refine property is marked during connection setup
 
 For all connectors except the File share connector, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute in the search schema page.
 
@@ -120,7 +126,7 @@ For all connectors except the File share connector, custom types must be set man
  
 ### Restrictions and recommendations for search schema settings
 
-* The **content** property is searchable only. Once selected in the dropdown, this property cannot be marked **retrievable** or **queryable**.
+* The **content** property is searchable only. Once selected in the dropdown, this property cannot be used with the options **retrieve** or **query**.
 
 * Significant performance issues occur when search results render with the **content** property. An example is the **Text** content field for a [ServiceNow](https://www.servicenow.com) knowledge-base article.
 
@@ -143,9 +149,9 @@ With a full refresh, the search engine processes and indexes every item in the c
 * The incremental refresh failed to update content due to errors.
 * ACLs were modified.
 * Crawl rules were modified.
-* When schema for the connection has been updated (schema updates are not yet supported)
+* When schema for the connection has been updated (schema updates are not yet supported).
 
-With an **Incremental refresh**, the search engine can process and index only the items that were created or modified since the last successful crawl. Therefore, not all the data in the content source is re-indexed. Incremental refreshes work best to detect content, metadata, permission, and other updates.
+With an **Incremental refresh**, the search engine can process and index only the items that were created or modified since the last successful crawl. Therefore, not all the data in the content source is reindexed. Incremental refreshes work best to detect content, metadata, permission, and other updates.
 
 Incremental refreshes are much faster than full refreshes because unchanged items aren’t processed. However, if you choose to run incremental refreshes, you will still need to run full refreshes periodically to maintain an accurate data sync between the content source and the search index.
 
@@ -160,3 +166,9 @@ You can review your entire configuration and edit settings as needed before comp
 ## How do I know the connection setup worked?
 
 Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+
+<!---## Troubleshooting-->
+<!---Insert troubleshooting recommendations for this data source-->
+
+<!---## Limitations-->
+<!---Insert limitations for this data source-->
