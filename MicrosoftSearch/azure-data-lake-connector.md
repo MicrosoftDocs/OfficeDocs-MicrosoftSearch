@@ -80,6 +80,9 @@ On the **Refresh Settings** screen, you can set the incremental crawl interval a
 Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
+<!---## Troubleshooting-->
+<!---Insert troubleshooting recommendations for this data source-->
+
 ## Limitations
 
 A published connection for Azure Blob Storage cannot be reconfigured for Azure Data Lake Storage Gen2 source and vice-versa. In such scenarios, it is recommended to configure a new connection.
