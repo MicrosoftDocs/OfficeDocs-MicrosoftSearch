@@ -31,7 +31,7 @@ Recommended configuration:
 * 16 GB RAM, 2 GB Disk Space
 * Network access to data source and internet through 443
 
-After you install the agent, if your organization's proxy servers or firewalls block communication to unknown domains, please whitelist the below ones.
+After you install the agent, if your organization's proxy servers or firewalls block communication to unknown domains, please add below ones to the allow list.
 
 1. *.servicebus.windows.net
 2. *.events.data.microsoft.com
