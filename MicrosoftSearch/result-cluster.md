@@ -53,4 +53,4 @@ Follow these steps to turn on the experience at the SharePoint site level:
 
 ## View the result cluster experience after it is enabled
 
-After you turn on the result cluster experience, it might take a few minutes before you can view it. If you want the experience immediately, you can append *cacheClear=true* to the URL in SharePoint and Office.
+After you turn on the result cluster experience, it might take about 12 hours before you can view it. If you want the experience immediately, you can append *cacheClear=true* to the URL in SharePoint and Office.
