@@ -17,9 +17,13 @@ description: "Set up the Enterprise websites Graph connector for Microsoft Searc
 
 # Enterprise websites Graph connector
 
-With the Enterprise websites connector, your organization can index articles and **content from its internal-facing websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
+The Enterprise websites Graph connector allows your organization to index articles and **content from its internal-facing websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
 
-This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) administrators or anyone who configures, runs, and monitors an Enterprise websites connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.  
+> [!NOTE]
+> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
+
+This article is for anyone who configures, runs, and monitors a ServiceNow Graph connector. It supplements the general setup process, and shows instructions that apply only for the ServiceNow Graph connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
+
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->

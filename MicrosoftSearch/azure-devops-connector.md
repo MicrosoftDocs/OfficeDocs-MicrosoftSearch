@@ -17,9 +17,12 @@ description: "Set up the Azure DevOps Graph connector for Microsoft Search"
 
 # Azure DevOps Graph connector (preview)
 
-With the Azure DevOps connector, your organization can index work items in its instance of the Azure DevOps service. After you configure the connector and index content from Azure DevOps, end users can search for those items in Microsoft Search.
+The Azure DevOps connector allows your organization to index work items in its instance of the Azure DevOps service. After you configure the connector and index content from Azure DevOps, end users can search for those items in Microsoft Search.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Azure DevOps connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
+> [!NOTE]
+> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
+
+This article is for anyone who configures, runs, and monitors a ServiceNow Graph connector. It supplements the general setup process, and shows instructions that apply only for the ServiceNow Graph connector.
 
 >[!IMPORTANT]
 >The Azure DevOps connector supports only the Azure DevOps cloud service. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015, and TFS 2013 are not supported by this connector.
@@ -46,7 +49,7 @@ To connect to your Azure DevOps instance, you need your Azure DevOps [organizati
 
 ### Register an app
 
-You must register an app in Azure DevOps so that the Microsoft Search app can access the instance. To learn more, see Azure DevOps documentation on how to [register an app](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app).
+Register an app in Azure DevOps so that the Microsoft Search app can access the instance. To learn more, see Azure DevOps documentation on how to [register an app](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app).
 
 The following table provides guidance on how to fill out the app registration form:
 

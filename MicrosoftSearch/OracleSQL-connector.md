@@ -1,7 +1,7 @@
 ---
 title: "Oracle SQL Graph connector for Microsoft Search"
-ms.author: vivg
-author: Vivek
+ms.author: vivg, mecampos
+author: Vivek, mecampos
 manager: harshkum
 ms.audience: Admin
 ms.topic: article
@@ -17,11 +17,12 @@ description: "Set up the Oracle SQL Graph connector for Microsoft Search."
 
 # Oracle SQL Graph connector
 
-With the Oracle SQL Graph connector, your organization can discover and index data from an on-premises Oracle database. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With the Oracle SQL connector, you can also restrict access to search results for certain users.
+The Oracle SQL Graph connector allows your organization to discover and index data from an on-premises Oracle database. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With the Oracle SQL connector, you can also restrict access to search results for certain users.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Oracle SQL connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Setup your Graph connector article to understand the general setup process.
+> [!NOTE]
+> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
 
-Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions or other instructions that apply to only Oracle SQL connectors. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations) for Oracle SQL connector.
+This article is for anyone who configures, runs, and monitors a ServiceNow Graph connector. It supplements the general setup process, and shows instructions that apply only for the ServiceNow Graph connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
 ## Before you get started-->
 

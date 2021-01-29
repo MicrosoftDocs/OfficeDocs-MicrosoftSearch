@@ -16,12 +16,12 @@ description: "Set up the MediaWiki Graph connector for Microsoft Search"
 
 # MediaWiki Graph connector
 
-With the MediaWiki Graph connector, your organization can discover and index data from a wiki created by using MediaWiki software. This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.
+The MediaWiki Graph connector allows your organization to discover and index data from a wiki created by using MediaWiki software. This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a MediaWiki Graph connector. It supplements the
-general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Set up your Graph connector article to understand the general setup process.
+> [!NOTE]
+> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
 
-Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only MediaWiki Graph connectors. This article also includes information about [Limitations](#limitations) for MediaWiki Graph connectors.
+This article is for anyone who configures, runs, and monitors a ServiceNow Graph connector. It supplements the general setup process, and shows instructions that apply only for the MediaWiki Graph connector. This article also includes information about [Limitations](#limitations).
 
 <!---## Before you get started-->
 

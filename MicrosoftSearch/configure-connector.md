@@ -17,7 +17,7 @@ description: "Configure your Microsoft-built Graph connector for Microsoft Searc
 
 # Setup overview for Graph connectors by Microsoft 
 
-This article summarizes the basic process required to use the [Microsoft 365 admin center](https://admin.microsoft.com) to set up any of the Graph connectors by Microsoft. The basic process includes the following steps:  
+This article shows the basic process required to set up any of the Graph connectors by Microsoft in the [Microsoft 365 admin center](https://admin.microsoft.com). The basic process includes the following steps:  
 <!---Add links to each section in the doc--->
 
 1. Add a Graph connector in the Microsoft 365 admin center.
@@ -29,7 +29,8 @@ This article summarizes the basic process required to use the [Microsoft 365 adm
 7. Choose refresh settings.
 8. Review the connection.
 
-It is important to note that the setup process is similar for all the Graph connectors by Microsoft but is not exactly the same. **In addition to reading this article, be sure to read the connector-specific information for your data source.**  
+> [!NOTE]
+> The setup process is similar for all the Graph connectors by Microsoft but is not exactly the same. **In addition to reading this article, be sure to read the connector-specific information for your data source.**  
 
 <!---## Before you get started-->
 
@@ -37,7 +38,7 @@ It is important to note that the setup process is similar for all the Graph conn
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
-Complete the following steps to configure any of the Microsoft-built Graph connectors.
+Complete the following steps to configure any of the Microsoft-built Graph connectors:
 
 1. Sign into your admin account in the [Microsoft 365 admin center](https://admin.microsoft.com)
 2. In the navigation pane, select **Settings**, and then select **Search & intelligence**. Select the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
@@ -49,7 +50,7 @@ Complete the following steps to configure any of the Microsoft-built Graph conne
 
 ## Step 2: Name the connection
 
-You will need to specify these attributes:
+Specify these attributes:
 
 * Name  
 * Connection ID
@@ -59,7 +60,7 @@ The connection ID creates implicit properties for your connector. It must contai
 
 ## Step 3: Configure the connection settings
 
-The process to configure the Connection settings varies based on the type of data source. See the Connector-specific information for the type of data source you want to add to your tenant to complete this step in the setup process.  
+The process to configure the connection settings varies based on the type of data source. See the Connector-specific information for the type of data source you want to add to your tenant to complete this step in the setup process.  
 
 To learn more about connecting to an on-premises data source, see [Install an on-premises data gateway](https://aka.ms/configuregateway).
 
@@ -89,29 +90,29 @@ Label | Description
 **fileName** | Name of the file item
 **fileExtension** | Type of file item such as .pdf or .word
 
-The properties on this page are pre-selected based on your data source, but you can change this selection if there is a different property that is better suited for a particular label.  
+The properties on this page are pre-selected based on your data source, but you can change this selection if there's a different property that is better suited for a particular label.  
 
-The label **title** is the most important label. It is **strongly recommended** that you have a property assigned to this label in order for your connection to participate in the [result cluster experience](result-cluster.md).
+The label **title** is the most important label. It's **strongly recommended** you have a property assigned to this label in order for your connection to participate in the [result cluster experience](result-cluster.md).
 
-Incorrectly mapping labels will cause a deteriorated search experience. It is okay for some labels to not have a property assigned to it.  
+Incorrectly mapping labels will cause a deteriorated search experience. It's okay for some labels to not have a property assigned to it.  
 
 ## Step 6: Manage schema
 
 ### Content property
 
-It is strongly recommended that you select a **Content Property" from the drop-down menu of options, or keep the default if one is present. This property is used for full-text indexing of content, search results page snippet generation, [result cluster](result-cluster.md) participation, language detection, HTML/text support, ranking and relevance, and query formulation.
+It's recommended you select a **Content Property" from the drop-down menu of options, or keep the default if one is present. This property is used for full-text indexing of content, search results page snippet generation, [result cluster](result-cluster.md) participation, language detection, HTML/text support, ranking and relevance, and query formulation.
 
 If you select a content property, you will have the option of using the system-generated property **ResultSnippet** when you [create your result type](customize-results-layout.md). This property serves as a placeholder for the dynamic snippets that are generated from the content property at query time. If you use this property in your result type, snippets will be generated in your search results.
 
 ### Creating aliases for source properties
 
-You can add aliases to your properties under the "Alias" column on the "Manage schema" page. Aliases are friendly names for your properties. They are used in queries and in the creation of filters. They are also used to normalize source properties from multiple connections such that they have the same name. That way you can create a single filter for a vertical with multiple connections. See [Customize the search results page](customize-search-page.md) for more information.  
+You can add aliases to your properties under the "Alias" column on the "Manage schema" page. Aliases are friendly names for your properties. They are used in queries and in the creation of filters. They are also used to normalize source properties from multiple connections such that they have the same name. That way you can create a single filter for a vertical with multiple connections. For more information, see [Customize the search results page](customize-search-page.md).  
 
 ### Search schema attributes
 
 You can set the search schema attributes to control search functionality of each source property. A search schema helps determine what results display on the search results page and what information end users can view and access.
 
-Search schema attributes include **Query**, **Search**, **Retrieve**, and **Refine**. The following table lists each of the attributes that Microsoft Graph connectors support and explains their functions.
+Search schema attributes include options to **Query**, **Search**, **Retrieve**, and **Refine**. The following table lists each of the attributes that Microsoft Graph connectors support and explains their functions.
 
 Search schema attribute | Function | Example
 --- | --- | ---
@@ -123,7 +124,7 @@ REFINE | The refine option can be used as in the Microsoft Search results page. 
 For all connectors except the File share connector, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute in the search schema page.
 
 ![Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions.](media/manageschema.png)
- 
+
 ### Restrictions and recommendations for search schema settings
 
 * The **content** property is searchable only. Once selected in the dropdown, this property cannot be used with the options **retrieve** or **query**.
@@ -153,7 +154,7 @@ With a full refresh, the search engine processes and indexes every item in the c
 
 With an **Incremental refresh**, the search engine can process and index only the items that were created or modified since the last successful crawl. Therefore, not all the data in the content source is reindexed. Incremental refreshes work best to detect content, metadata, permission, and other updates.
 
-Incremental refreshes are much faster than full refreshes because unchanged items aren’t processed. However, if you choose to run incremental refreshes, you will still need to run full refreshes periodically to maintain an accurate data sync between the content source and the search index.
+Incremental refreshes are much faster than full refreshes because unchanged items aren’t processed. However, if you choose to run incremental refreshes, you still need to run full refreshes periodically to maintain an accurate data sync between the content source and the search index.
 
 ![Incremental crawl and full crawl interval settings showing Incremental at 15 minutes and Full crawl at 1 week.](media/refreshschedule.png)
 
@@ -172,3 +173,7 @@ Go to the list of your published connections under the **Connectors** tab in the
 
 <!---## Limitations-->
 <!---Insert limitations for this data source-->
+
+## Next steps
+
+After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).

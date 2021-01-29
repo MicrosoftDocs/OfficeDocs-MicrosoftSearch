@@ -16,11 +16,13 @@ description: "Set up the Microsoft SQL Graph connector for Microsoft Search."
 
 # Azure SQL and Microsoft SQL server Graph connectors
 
-With a Microsoft SQL server or Azure SQL Graph connector, your organization can discover and index data from an on-premises SQL Server database or a database hosted in your Azure SQL instance in the cloud. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
+The Microsoft SQL server or Azure SQL Graph connector allows your organization to discover and index data from an on-premises SQL Server database, or a database hosted in your Azure SQL instance in the cloud.
+The Graph connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Microsoft SQL server or Azure SQL connector. It supplements the general instructions provided in the [Set up your Graph connector](https://docs.microsoft.com/microsoftsearch/configure-connector) article. If you have not already done so, read the entire Setup your Graph connector article to understand the general setup process.
+> [!NOTE]
+> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
 
-Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Microsoft SQL server and Azure SQL connectors. This article also includes information about Limitations for Microsoft SQL server and Azure SQL connector.
+This article is for anyone who configures, runs, and monitors a ServiceNow Graph connector. It supplements the general setup process, and shows instructions that apply only for the ServiceNow Graph connector. This article also includes information about [Limitations](#limitations) for the Microsoft SQL server and Azure SQL connectors.
 
 ## Before you get started
 

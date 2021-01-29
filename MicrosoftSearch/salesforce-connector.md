@@ -17,9 +17,12 @@ description: "Set up the Salesforce Graph connector for Microsoft Search"
 
 # Salesforce Graph connector (preview)
 
-With the Salesforce Graph connector, your organization can index Contacts, Opportunities, Leads, and Accounts objects in your Salesforce instance. After you configure the connector and index content from Salesforce, end users can search for those items from any Microsoft Search client.
+The Salesforce Graph connector, allows your organization to index Contacts, Opportunities, Leads, and Accounts objects in your Salesforce instance. After you configure the connector and index content from Salesforce, end users can search for those items from any Microsoft Search client.
 
-This article is for [Microsoft 365](https://www.microsoft.com/microsoft-365) administrators or anyone who configures, runs, and monitors a Salesforce connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
+> [!NOTE]
+> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
+
+This article is for anyone who configures, runs, and monitors a ServiceNow Graph connector. It supplements the general setup process, and shows instructions that apply only for the Salesforce Graph connector. This article also includes information about [Limitations](#limitations).
 
 >[!IMPORTANT]
 >The Salesforce Graph connector currently supports Summer '19 or later.
@@ -55,7 +58,7 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
 - Copy the consumer key and the consumer secret. This information will be used as the Client ID and the Client Secret when you configure the Connection Settings for your Graph Connector in the Microsoft 365 admin portal.
 
   ![Results returned by API section in Salesforce instance after admin has submitted all required configurations. Consumer Key is at top of left column and Consumer Secret is at top of right column.](media/salesforce-connector/clientsecret.png)
-- Before closing your Salesforce instance, perform the following steps to ensure that refresh tokens do not expire:
+- Before closing your Salesforce instance, follow these steps to ensure that refresh tokens do not expire:
 	- Go to Apps -> App Manager
 	- Find the app you created and select the drop-down on the right. Select **Manage**
 	- Select **edit policies**
