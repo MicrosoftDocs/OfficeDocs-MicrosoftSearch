@@ -31,7 +31,7 @@ This article is intended to help Microsoft 365 administrators locate the resourc
 
 <!---Modify to another note that is more accurate--->
 > [!IMPORTANT]
-> Microsoft Graph connectors and Microsoft Search APIs are now generally available. The first rollouts will be to customers configured for  targeted release. If you want to use a Graph connector in your tenant, users and administrators must opt into [Targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide).
+> Microsoft Graph connectors and Microsoft Search APIs are now generally available. The first rollouts will be to customers configured for  targeted release. If you want to use a Graph connector in your tenant, users and administrators must opt into [Targeted release](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide).
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
@@ -103,4 +103,4 @@ After custom data is indexed, developers can [query this data](https://docs.micr
 
 ## Next steps
 
-Make sure you customize the search results as recommended in this article [How do I customize and configure search results?](how-do-I-customize-and-configure-search-results?). To learn more about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
+Make sure you customize the search results as recommended in this article [How do I customize and configure search results?](#how-do-I-customize-and-configure-search-results). To learn more about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
