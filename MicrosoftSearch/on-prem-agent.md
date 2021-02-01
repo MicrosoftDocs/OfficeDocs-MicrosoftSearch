@@ -33,7 +33,7 @@ Recommended configuration:
 
 ## Create and configure an App for the agent  
 
-Before using the agent, you must create an app and configure the authentication details.
+First, sign in and note that the minimum required privilege on the account is search administrator. The agent will then ask you to provide authentication details. Use the steps below to create an app and generate the required authentication details.
 
 ### Create an app
 
@@ -50,7 +50,7 @@ Before using the agent, you must create an app and configure the authentication 
 
 ### Configure Authentication
 
-Authentication details can be provided using a client secret or a certificate. Follow the steps for your choice.
+Authentication details can be provided using a client secret or a certificate. Follow the steps of your choice.
 
 #### Configuring the client secret for authentication
 

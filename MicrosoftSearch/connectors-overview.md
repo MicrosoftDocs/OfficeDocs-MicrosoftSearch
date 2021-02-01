@@ -26,11 +26,13 @@ This article is intended to help Microsoft 365 administrators locate the resourc
 * [What data sources can be connected to Microsoft Search?](#what-data-sources-can-be-connected-to-microsoft-search)
 * [How do I manage my connections?](#how-do-i-manage-my-connections)
 * [What are the license requirements and terms of use for Graph connectors?](#what-are-the-license-requirements-and-terms-of-use-for-graph-connectors)
+* [What are the preview features?](#what-are-the-preview-features)
 * [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results)
 * [How do I search my connector data from a custom application?](#how-do-i-search-my-connector-data-from-a-custom-application)
 
-<!---Modify to another note that is more accurate--->
+<!---Modify to another note that is more accurate after rollout completion--->
 > [!IMPORTANT]
+
 > Microsoft Graph connectors and Microsoft Search APIs are now generally available. The first rollouts will be to customers configured for  targeted release. If you want to use a Graph connector in your tenant, users and administrators must opt into [Targeted release](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true).
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
@@ -88,6 +90,17 @@ You need a valid Microsoft 365 or Office 365 license and sufficient Graph Connec
 
 To learn more, see [License requirements and pricing](licensing.md) and [Terms of use](terms-of-use.md).
 
+## What are the preview features?
+
+Although Microsoft Graph connectors and Microsoft Search APIs are now generally available, there are several features that are in preview.
+
+The set of connectors and features in preview include:
+
+* [Azure DevOps connector](azure-devops-connector.md)
+* [Salesforce connector](salesforce-connector.md)
+* [ServiceNow connector](servicenow-connector.md) with search permissions that use source ACLs
+* [Manage result cluster](result-cluster.md)
+
 ## How do I customize and configure search results?
 
 There are many ways to customize and configure search results. See the following articles to learn more:
@@ -104,3 +117,17 @@ After custom data is indexed, developers can [query this data](https://docs.micr
 ## Next steps
 
 Make sure you customize the search results as recommended in this article [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results). To learn more about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
+
+## Limitations
+
+* When you **publish** a Microsoft-built connector, it might take a few minutes for the connection to be created. During that time, the connection will show its status as pending.
+
+* The [Microsoft 365 admin center](https://admin.microsoft.com) doesn't support editing the **search schema** after a connection is published. To edit the search schema, delete your connection and then create a new one.
+
+* Ingestion throughput is throttled at about four items per second.
+
+* There is no support for schema updates. After you create a connection setup, there's no way to update the schema. You can only delete and re-create the connection.
+
+* There is a connections limit. Each tenant can create up to 10 connections.
+
+* Edit support for connection is not available. Once the connection has been created, you cannot edit or change it. If you need to change any details, you must delete and recreate the connection.

@@ -44,7 +44,7 @@ If you prefer not to provide the **AccountKey** (a parameter in the primary stor
 
 * Storage Blob Data Reader
 * Storage Queue Data Contributor
-* Storage Blob Delegator (only for hierarchical storage)
+* Storage Blob Delegator
 
 Navigate to the **Access Control** tab of your Azure Storage account, and follow the instructions there to grant access to the following app:
 

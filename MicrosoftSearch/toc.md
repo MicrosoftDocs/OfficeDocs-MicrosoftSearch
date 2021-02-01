@@ -9,15 +9,16 @@
 ## [Bookmarks](manage-bookmarks.md)
 ## [Floor plans](manage-floorplans.md)
 ## [Locations](manage-locations.md)
+## [Power BI](manage-powerbi.md)
 ## [Q&As](manage-qas.md)
-# Connectors (preview)
+# Connectors
 ## [Overview](connectors-overview.md)
 ## [Preview release](connectors-preview.md)
 ## [Connectors gallery](connectors-gallery.md)
-## Graph connectors by Microsoft
+## Set up connectors by Microsoft
 ### [Setup overview](configure-connector.md)
 ### [Map your non Azure AD Identities (preview)](map-non-aad.md)
-### [Map your Azure AD Identities ](map-aad.md)
+### [Map your Azure AD Identities (preview)](map-aad.md)
 ### Connector-specific information
 #### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 #### [Azure DevOps (preview)](azure-devops-connector.md)
@@ -27,9 +28,10 @@
 #### [Oracle SQL] (preview)(OracleSQL-connector.md)
 #### [Salesforce (preview)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
-## [Manage your connections](manage-connector.md)
+## Manage your connections
+### [Monitor your connections](manage-connector.md)
+### [View connection details and errors](connector-details-errors.md)
 ## [Licensing](licensing.md)
-## [Feedback](connectors-feedback.md)
 ## [Terms of use](terms-of-use.md)
 # Customize and configure
 ## [Manage verticals and result types](customize-search-page.md)
@@ -44,7 +46,7 @@
 ## Microsoft Search in Bing
 ### [Security and Privacy](security-for-search.md)
 ### [Add a search box to your intranet site](add-a-search-box-to-your-intranet-site.md)
-### [Make Microsoft Edge the default browser](set-default-browser.md)
+### [Make Microsoft Edge the default browser](/deployedge/edge-default-browser)
 ### [Make Bing the default search engine](set-default-search-engine.md)
 ### [Make Bing.com the default home page](set-default-homepage.md)
 ### [User adoption guide](user-adoption-guide.md)
