@@ -227,7 +227,3 @@ ServiceNow Graph connector has the following limitations in its latest release:
 - Indexing knowledge articles available to everyone in an organization is a generally available feature.
 - *Only people with access to this data source* feature under Manage Search permissions step is in preview and processes only [user criteria](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) permissions. Any other type of access permissions won't be applied in the search results.
 - User criteria with advanced scripts aren't supported in the current preview version. Knowledge articles with an access restriction will be indexed with deny everyone access, and won't appear in search results to any user until we support them.
-
-## Next steps
-
-After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
