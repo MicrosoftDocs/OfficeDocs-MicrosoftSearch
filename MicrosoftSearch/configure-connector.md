@@ -48,7 +48,8 @@ Complete the following steps to configure any of the Microsoft-built Graph conne
 
 ![Data sources available include: ADLS Gen2, Enterprise websites, Microsoft SQL server, Azure SQL, Oracle SQL database, ServiceNow, File share, Azure DevOps, and MediaWiki.](media/add-connector.png)
 
-> [!NOTE] You can add a maximum of ten Graph connections to each tenant.
+> [!NOTE]
+> You can add a maximum of ten Graph connections to each tenant.
 
 ## Step 2: Name the connection
 

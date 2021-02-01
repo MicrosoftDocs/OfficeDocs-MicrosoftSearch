@@ -164,7 +164,7 @@ The following ID types are supported for using as ACLs:
 
 In this optional step, provide a SQL query to run an incremental crawl of the database. With this query, the SQL connector determines any changes to the data since the last incremental crawl. As in the full crawl, select all columns where you want to select the options **Query**, **Search**, or **Retrieve**. Specify the same set of ACL columns that you specified in the full crawl query.
 
-The components in the following image resemble the full crawl components with one exception. In this case, "ModifiedDateTime" is the selected watermark column. Review the [full crawl steps](#Step-3a:-Full-crawl-(Required)) to learn how to write your incremental crawl query and see the following image as an example.
+The components in the following image resemble the full crawl components with one exception. In this case, "ModifiedDateTime" is the selected watermark column. Review the [full crawl steps](step-3a-full-crawl-required) to learn how to write your incremental crawl query and see the following image as an example.
 
 ![Incremental crawl script showing OrderTable, AclTable and example properties that can be used.](media/MSSQL-incrcrawl.png)
 
