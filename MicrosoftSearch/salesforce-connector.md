@@ -1,8 +1,8 @@
 ---
 title: "Salesforce Graph connector for Microsoft Search"
-ms.author: rusamai
-author: rsamai
-manager: jameslau
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,6 +14,7 @@ search.appverid:
 
 description: "Set up the Salesforce Graph connector for Microsoft Search"
 ---
+<!---Previous ms.author: rusamai --->
 
 # Salesforce Graph connector (preview)
 
@@ -58,7 +59,7 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
 - Copy the consumer key and the consumer secret. This information will be used as the Client ID and the Client Secret when you configure the Connection Settings for your Graph Connector in the Microsoft 365 admin portal.
 
   ![Results returned by API section in Salesforce instance after admin has submitted all required configurations. Consumer Key is at top of left column and Consumer Secret is at top of right column.](media/salesforce-connector/clientsecret.png)
-- Before closing your Salesforce instance, follow these steps to ensure that refresh tokens do not expire:
+- Before closing your Salesforce instance, follow these steps to ensure that refresh tokens don't expire:
 	- Go to Apps -> App Manager
 	- Find the app you created and select the drop-down on the right. Select **Manage**
 	- Select **edit policies**
@@ -84,7 +85,7 @@ For the Instance URL, use https://[domain].my.salesforce.com where domain would 
 
 Enter the Client ID and Client Secret you obtained from your Salesforce instance and select Sign in.
 
-If this is the first time you have attempted to sign in with these settings, you will get a pop-up asking you to log in to Salesforce with your admin username and password. The screenshot below shows the popup. Enter your credentials and select "Log In".
+The first time you've attempted to sign in with these settings, you'll get a pop-up asking you to log in to Salesforce with your admin username and password. The screenshot below shows the popup. Enter your credentials and select "Log In".
 
   ![Login pop up asking for Username and password.](media/salesforce-connector/sf4.png)
 
@@ -97,11 +98,11 @@ Check that the connection was successful by searching for a green banner that sa
 
 ## Step 4: Manage search permissions
 
-You will need to choose which users will see search results from this data source. If you allow only certain Azure Active Directory (Azure AD) or Non-Azure AD users to see the search results, you will then need to map the identities.
+You'll need to choose which users will see search results from this data source. If you allow only certain Azure Active Directory (Azure AD) or Non-Azure AD users to see the search results, make sure you map the identities.
 
 ## Step 4a: Select permissions
 
-You can choose to ingest Access Control Lists (ACLs) from your Salesforce instance, or you can allow everyone in your organization to see search results from this data source. ACLs can include Azure Active Directory (AAD) identities (users who are federated from Azure AD to Salesforce), non-Azure AD identities (native Salesforce users who have corresponding identities in Azure AD), or both.
+You can choose to ingest Access Control Lists (ACLs) from your Salesforce instance, or allow everyone in your organization to see search results from this data source. ACLs can include Azure Active Directory (AAD) identities (users who are federated from Azure AD to Salesforce), non-Azure AD identities (native Salesforce users who have corresponding identities in Azure AD), or both.
 
   >[!NOTE]
   >If you use a third-party Identity Provider like Ping ID or secureAuth, you should select "non-AAD" as the identity type.
@@ -116,11 +117,11 @@ If you chose to ingest an ACL from your Salesforce instance and selected "AAD" f
 
 ## Step 5: Assign property labels
 
-You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users. By default, some of the Labels like "Title," "URL," "CreatedBy," and  "LastModifiedBy" have already been assigned source properties.
+You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure better search results for end users. By default, some of the Labels like "Title," "URL," "CreatedBy," and  "LastModifiedBy" have already been assigned source properties.
 
 ## Step 6: Manage schema
 
-You can select what source properties should be indexed so that they can show up in search results. The connection wizard by default selects a search schema based on a set of source properties. You can modify it by selecting the check boxes for each property and attribute in the search schema page. Search schema attributes include Search, Query, Retrieve, and Refine.
+You can select what source properties should be indexed so that they show up in search results. The connection wizard by default selects a search schema based on a set of source properties. You can modify it by selecting the check boxes for each property and attribute in the search schema page. Search schema attributes include Search, Query, Retrieve, and Refine.
 Refine allows you to define the properties that can be later used as custom refiners or filters in the search experience.  
 
 ![Select the schema for each source property. The options are Query, Search, Retrieve, and Refine](media/salesforce-connector/sf9.png)
@@ -144,10 +145,10 @@ Follow the general [setup instructions](https://docs.microsoft.com/microsoftsear
 
 ## Limitations
 
-- The Graph connector does not currently support Apex based, territory-based sharing and sharing using personal groups from Salesforce.
-- There is a known bug in the Salesforce API that the Graph connector uses where the private org-wide defaults for leads are not honored currently.  
-- If a field has field level security (FLS) set for a profile, the Graph connector will not ingest that field for any profiles in that Salesforce org. Users will thus not be able to search on values for those fields, nor will it  show up in the results.  
-- In the Manage Schema screen these common standard property names are listed once, and the options are **Query**, **Search**, **Retrieve**, and **Refine**, apply to all or none.
+- The Graph connector doesn't currently support Apex based, territory-based sharing and sharing using personal groups from Salesforce.
+- There's a known bug in the Salesforce API the Graph connector uses, where the private org-wide defaults for leads aren't honored currently.  
+- If a field has field level security (FLS) set for a profile, the Graph connector won't ingest that field for any profiles in that Salesforce org. As a result, users won't be able to search on values for those fields, nor will it show up in the results.  
+- In the Manage Schema screen these common standard property names are listed once, the options are **Query**, **Search**, **Retrieve**, and **Refine**, and apply to all or none.
     - Name
     - Url
     - Description

@@ -1,8 +1,8 @@
 ---
 title: "MediaWiki Graph connector for Microsoft Search"
-ms.author: monaray
-author: monaray97
-manager: mnirkhe
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,6 +13,7 @@ search.appverid:
 - MOE150
 description: "Set up the MediaWiki Graph connector for Microsoft Search"
 ---
+<!---Previous ms.author: monaray --->
 
 # MediaWiki Graph connector
 

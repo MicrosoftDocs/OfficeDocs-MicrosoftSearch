@@ -1,8 +1,8 @@
 ---
 title: "ServiceNow Graph connector for Microsoft Search"
-ms.author: kam1, mecampos
-author: TheKarthikeyan, mecampos
-manager: harshkum
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,7 +13,7 @@ search.appverid:
 - MOE150
 description: "Set up the ServiceNow Graph connector for Microsoft Search"
 ---
-
+<!---Previous ms.author: kam1 --->
 
 # ServiceNow Graph Connector
 

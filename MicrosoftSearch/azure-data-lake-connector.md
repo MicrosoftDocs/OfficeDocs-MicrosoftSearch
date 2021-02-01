@@ -1,8 +1,8 @@
 ---
 title: "Azure Data Lake Graph connector for Microsoft Search"
-ms.author: monaray
-author: monaray97
-manager: shohara
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,6 +13,7 @@ search.appverid:
 - MOE150
 description: "Set up the Azure Data Lake Storage Gen2 Graph connector for Microsoft Search"
 ---
+<!---Previous ms.author: monaray --->
 
 # Azure Data Lake Storage Gen2 Graph connector
 

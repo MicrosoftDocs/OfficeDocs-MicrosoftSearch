@@ -1,8 +1,8 @@
 ---
 title: "Configure your Microsoft-built Graph connector for Microsoft Search"
-ms.author: monaray
-author: monaray97
-manager: jameslau
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,11 +13,13 @@ search.appverid:
 - MOE150
 description: "Configure your Microsoft-built Graph connector for Microsoft Search"
 ---
+<!-- Previous ms.author: monaray -->
+
 <!-- markdownlint-disable no-trailing-punctuation -->
 
 # Setup overview for Graph connectors by Microsoft 
 
-This article shows the basic process required to set up any of the Graph connectors by Microsoft in the [Microsoft 365 admin center](https://admin.microsoft.com). The basic process includes the following steps:  
+This article shows the basic process required to set up the Graph connectors **by Microsoft** in the [Microsoft 365 admin center](https://admin.microsoft.com). The basic process includes the following steps:  
 <!---Add links to each section in the doc--->
 
 1. Add a Graph connector in the Microsoft 365 admin center.
@@ -46,14 +48,14 @@ Complete the following steps to configure any of the Microsoft-built Graph conne
 
 ![Data sources available include: ADLS Gen2, Enterprise websites, Microsoft SQL server, Azure SQL, Oracle SQL database, ServiceNow, File share, Azure DevOps, and MediaWiki.](media/add-connector.png)
 
->[!Note:] You can add a maximum of ten Graph connections to each tenant.
+> [!NOTE] You can add a maximum of ten Graph connections to each tenant.
 
 ## Step 2: Name the connection
 
 Specify these attributes:
 
-* Name  
-* Connection ID
+* Name (required)
+* Connection ID (required)
 * Description (optional)
 
 The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters.
@@ -106,7 +108,7 @@ If you select a content property, you will have the option of using the system-g
 
 ### Creating aliases for source properties
 
-You can add aliases to your properties under the "Alias" column on the "Manage schema" page. Aliases are friendly names for your properties. They are used in queries and in the creation of filters. They are also used to normalize source properties from multiple connections such that they have the same name. That way you can create a single filter for a vertical with multiple connections. For more information, see [Customize the search results page](customize-search-page.md).  
+You can add aliases to your properties under the "Alias" column on the "Manage schema" page. Aliases are friendly names for your properties, and also used in queries and in the creation of filters. They're also used to normalize source properties from multiple connections such that they have the same name. That way you can create a single filter for a vertical with multiple connections. For more information, see [Customize the search results page](customize-search-page.md).  
 
 ### Search schema attributes
 
@@ -119,7 +121,7 @@ Search schema attribute | Function | Example
 SEARCH | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the property is **title**, a query for **Enterprise** returns answers that contain the word **Enterprise** in any text or title.
 QUERY | Searches by query for a match for a particular property. The property name can then be specified in the query either programmatically or verbatim. |  If the **Title** property can be queried, then the query **Title: Enterprise** is supported.
 RETRIEVE | Only retrievable properties can be used in the result type and display in the search result. |
-REFINE | The refine option can be used as in the Microsoft Search results page. | Users in your organization can [filter](custom-filters.md) by **lastModifiedDateTime** in the search results page if the refine property is marked during connection setup
+REFINE | The refine option can be used as in the Microsoft Search results page. | Users in your organization can [filter](custom-filters.md) by **URL** in the search results page if the refine property is marked during connection setup
 
 For all connectors except the File share connector, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute in the search schema page.
 
@@ -142,19 +144,19 @@ For all connectors except the File share connector, custom types must be set man
 
 The refresh interval determines how often your data is synced between the data source and Microsoft Search. Each type of data source has a different set of optimal refresh schedules based on how often data is modified and the type of modifications.
 
-There are two types of refresh intervals, which are **Full refresh** and **Incremental refresh**, but incremental refreshes are not available for some data sources.
+There are two types of refresh intervals, which are **Full refresh** and **Incremental refresh**, but incremental refreshes aren't available for some data sources.
 
 With a full refresh, the search engine processes and indexes every item in the content source, regardless of previous crawls. A full refresh works best for these situations:
 
 * Detecting deletions of data.
-* The incremental refresh failed to update content due to errors.
+* The incremental refresh found errors, and failed.
 * ACLs were modified.
 * Crawl rules were modified.
-* When schema for the connection has been updated (schema updates are not yet supported).
+* The schema for the connection has been updated (schema updates aren't yet supported).
 
-With an **Incremental refresh**, the search engine can process and index only the items that were created or modified since the last successful crawl. Therefore, not all the data in the content source is reindexed. Incremental refreshes work best to detect content, metadata, permission, and other updates.
+With an **Incremental refresh**, the search engine can process and index only the items that were created or modified since the last successful crawl. As a result, not all the data in the content source is reindexed. Incremental refreshes work best to detect content, metadata, permission, and other updates.
 
-Incremental refreshes are much faster than full refreshes because unchanged items aren’t processed. However, if you choose to run incremental refreshes, you still need to run full refreshes periodically to maintain an accurate data sync between the content source and the search index.
+Incremental refreshes are much faster than full refreshes because unchanged items aren’t processed. However, if you choose to run incremental refreshes, you still need to run full refreshes periodically to maintain correct data sync between the content source and the search index.
 
 ![Incremental crawl and full crawl interval settings showing Incremental at 15 minutes and Full crawl at 1 week.](media/refreshschedule.png)
 
@@ -162,17 +164,20 @@ Incremental refreshes are much faster than full refreshes because unchanged item
 
 ## Step 8: Review connection
 
-You can review your entire configuration and edit settings as needed before completing the connection. **Be sure to read the connector-specific information for your data source if you have not already done so.** Select **Finish updating** when you are ready to complete the connection.
+You can review your entire configuration and edit settings as needed before completing the connection. **Be sure to read the connector-specific information for your data source if you haven't already done so.** Select **Finish updating** when you're ready to complete the connection.
 
 ## How do I know the connection setup worked?
 
 Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
-<!---## Troubleshooting-->
+## Troubleshooting
 <!---Insert troubleshooting recommendations for this data source-->
+Read the connector-specific information for your data source.
 
-<!---## Limitations-->
+
+## Limitations
 <!---Insert limitations for this data source-->
+Read the connector-specific information for your data source.
 
 ## Next steps
 

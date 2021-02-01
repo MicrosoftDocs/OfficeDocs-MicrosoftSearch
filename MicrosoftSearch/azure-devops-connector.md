@@ -1,9 +1,9 @@
 --- 
 
 title: "Azure DevOps Graph connector for Microsoft Search" 
-ms.author: shgrover 
-author: shakungrover05 
-manager: jeffkizn 
+ms.author: mecampos 
+author: mecampos 
+manager: umas 
 ms.audience: Admin 
 ms.topic: article 
 ms.service: mssearch 
@@ -13,11 +13,12 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Set up the Azure DevOps Graph connector for Microsoft Search" 
---- 
+---
+<!---Previous ms.author: shgrover --->
 
 # Azure DevOps Graph connector (preview)
 
-The Azure DevOps connector allows your organization to index work items in its instance of the Azure DevOps service. After you configure the connector and index content from Azure DevOps, end users can search for those items in Microsoft Search.
+The Azure DevOps Graph connector allows your organization to index work items in its instance of the Azure DevOps service. After you configure the connector and index content from Azure DevOps, end users can search for those items in Microsoft Search.
 
 > [!NOTE]
 > Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
@@ -61,7 +62,7 @@ The following table provides guidance on how to fill out the app registration fo
 | Authorization callback URL        | A required callback URL that the authorization server redirects to. | <https://gcs.office.com/v1.0/admin/oauth/callback>|
 | Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), Work Items (read), Variable Groups (read), Project and team (read), Graph (read)|
 
-On registering the app with the details above, you will get the **App ID** and **Client Secret** that will be used to configure the connector.
+On registering the app with the details above, you'll get the **App ID** and **Client Secret** that will be used to configure the connector.
 
 >[!NOTE]
 >To revoke access to any app registered in Azure DevOps, go to User settings at the right top of your Azure DevOps instance. Select Profile and then select Authorizations in the Security section of the side pane. Hover over an authorized OAuth app to see the Revoke button at the corner of the app details.
@@ -76,7 +77,9 @@ After registering the Microsoft Search app with Azure DevOps, you can complete t
 
 You can choose for the connection to index either the entire organization or specific projects.
 
-If you choose to index the entire organization, items in all projects in the organization will get indexed. New projects and items will be indexed during the next crawl after they are created. If you choose individual projects, only work items in those projects will be indexed.
+If you choose to index the entire organization, items in all projects in the organization will get indexed. New projects and items will be indexed during the next crawl after they're created.
+
+If you choose individual projects, only work items in those projects will be indexed.
 
 ![Configure data](media/ADO_Configure_data.png)
 

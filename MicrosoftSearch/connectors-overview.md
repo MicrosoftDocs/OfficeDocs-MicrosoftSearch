@@ -1,8 +1,8 @@
 ---
-title: "Connectors Overview"
-ms.author: monaray
-author: monaray97
-manager: shohara
+title: "Microsoft Graph Connectors Overview"
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,14 +13,15 @@ search.appverid:
 - MOE150
 description: "Overview of Microsoft Graph connectors for Microsoft Search"
 ---
+<!---Previous ms.author: monaray --->
 
 # Overview of Microsoft Graph connectors
 
-[Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) indexes all your [Microsoft 365](https://www.microsoft.com/microsoft-365) data to make it searchable for users. With Microsoft Graph connectors, your organization can index third-party data so it appears in Microsoft Search results. This expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem. The third-party data can be hosted on-premises or in the public or private clouds.
+[Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) indexes all your [Microsoft 365](https://www.microsoft.com/microsoft-365) data to make it searchable for users. With Microsoft Graph connectors, your organization can index third-party data so it appears in Microsoft Search results. This feature expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem. The third-party data can be hosted on-premises or in the public or private clouds.
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
-The rest of this article is intended to help Microsoft 365 administrators locate the resources that are avaiable to answer the following questions:
+This article is intended to help Microsoft 365 administrators locate the resources that are available to answer the following questions:
 
 * [What data sources can be connected to Microsoft Search?](#what-data-sources-can-be-connected-to-microsoft-search)
 * [How do I manage my connections?](#how-do-i-manage-my-connections)
@@ -50,38 +51,36 @@ To create a **connection** to a data source, admins need authenticated access to
 
 ## What data sources can be connected to Microsoft Search?
 
-Microsoft provides ten Graph connectors and our ecosystem partners have created over 100 additional Graph connectors. You can also build your own Graph connector. 
+Microsoft provides 9 Graph connectors and our ecosystem partners have created over 100 more Graph connectors. You can also build your own Graph connector.
 
 ### Graph connectors by Microsoft
 
 You can connect to the following data sources using Graph connectors created by Microsoft:
 
-<!---Need to add a few links below when docs exist--->
+<!---Add links below when new docs are created--->
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 * [Azure DevOps](azure-devops-connector.md)
-* Azure SQL
+* [Azure SQL and Microsoft SQL Server](MSSQL-connector.md)
 * [Enterprise websites](enterprise-web-connector.md)
 * [MediaWiki](mediawiki-connector.md)
-* [Microsoft SQL Server](MSSQL-connector.md)
 * [File share](fileshare-connector.md)
-* Oracle (preview)
+* [Oracle SQL (preview)](OracleSQL-connector.md)
 * [Salesforce (preview)](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
-The [Graph connectors gallery](connectors-gallery.md) contains a brief description of each of these Graph connectors. If you are ready to connect one of these data sources to your tenant, be sure to read the [Setup overview](configure-connector.md) and any other articles in the Setup connectors by Microsoft section that apply to your data source.
+The [Graph connectors gallery](connectors-gallery.md) contains a brief description of each of these Graph connectors. If you're ready to connect one of these data sources to your tenant, be sure to read the [Setup overview](configure-connector.md) and any other articles in the Setup connectors by Microsoft section that apply to your data source.
 
 ### Graph connectors by our partners
 
-The [Microsoft Graph connectors gallery](connectors-gallery.md) includes a brief descriptions of each of the Graph connectors created by our partners and a link to each partner's website. Contact each partner directly to learn more.
+The [Microsoft Graph connectors gallery](connectors-gallery.md) includes a brief description of each of the Graph connectors created by our partners, and a link to each partner's website. To learn more, contact each partner directly.
 
 ### Build your own Graph connector
 
-If you plan to build your own Graph connector, see the [Overview of the Microsoft Search API in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview)
- for more information.
+You can build your own Graph connector if you prefer. For more information on building Graph connectors, see the [Overview of the Microsoft Search API in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
 
 ## How do I manage my connections?
 
-You can manage your connections from the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in the [Microsoft 365 admin center](https://admin.microsoft.com/). See [Manage your connections](manage-connector.md) for more information.
+You can manage your connections from the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in the [Microsoft 365 admin center](https://admin.microsoft.com/). For more information about managing connections, see: [Manage your connections](manage-connector.md).
 
 ## What are the license requirements and terms of use for Graph connectors?
 
@@ -91,7 +90,7 @@ To learn more, see [License requirements and pricing](licensing.md) and [Terms o
 
 ## How do I customize and configure search results?
 
-There are a number of ways to customize and configure search results. See the following articles to learn more:
+There are many ways to customize and configure search results. See the following articles to learn more:
 
 * [Manage verticals and result types](customize-search-page.md)
 * [Manage search result layouts](customize-results-layout.md)
@@ -101,3 +100,7 @@ There are a number of ways to customize and configure search results. See the fo
 ## How do I search my connector data from a custom application?
 
 After custom data is indexed, developers can [query this data](https://docs.microsoft.com/graph/search-concept-custom-types). You can view your data in any application. For more information, see the [Overview of the Microsoft Search API in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
+
+## Next steps
+
+Make sure you customize the search results as recommended in this article [How do I customize and configure search results?](how-do-I-customize-and-configure-search-results?). To learn more about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).

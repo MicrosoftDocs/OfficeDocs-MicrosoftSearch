@@ -1,8 +1,8 @@
 ---
 title: "Microsoft SQL server and Azure SQL Graph connector for Microsoft Search"
-ms.author: vivg
-author: Vivek
-manager: harshkum
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,6 +13,7 @@ search.appverid:
 - MOE150
 description: "Set up the Microsoft SQL Graph connector for Microsoft Search."
 ---
+<!---Previous ms.author: vivg --->
 
 # Azure SQL and Microsoft SQL server Graph connectors
 

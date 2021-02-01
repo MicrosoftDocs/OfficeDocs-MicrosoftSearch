@@ -1,8 +1,8 @@
 ---
 title: "Oracle SQL Graph connector for Microsoft Search"
-ms.author: vivg, mecampos
-author: Vivek, mecampos
-manager: harshkum
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,6 +14,7 @@ search.appverid:
 ROBOTS: NoIndex
 description: "Set up the Oracle SQL Graph connector for Microsoft Search."
 ---
+<!---Previous ms.author:vivg --->
 
 # Oracle SQL Graph connector
 
