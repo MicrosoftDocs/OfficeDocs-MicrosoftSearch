@@ -81,7 +81,7 @@ The use of each of the ACL columns in the above query is described below. The fo
 
 ### Supported data types
 
-The below table summarizes the data types that are supported by the Oracle SQL connector. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer documentation on [property resource types](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties).
+The below table summarizes the data types that are supported by the Oracle SQL connector. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer documentation on [property resource types](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties&preserve-view=true).
 
 | Category | Source data type | Indexing data type |
 | ------------ | ------------ | ------------ |
