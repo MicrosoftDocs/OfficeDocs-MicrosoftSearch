@@ -1,5 +1,5 @@
 ---
-title: "Microsoft SQL server and Azure SQL Graph connector for Microsoft Search"
+title: "Azure SQL and Microsoft SQL server Graph connector for Microsoft Search"
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -11,7 +11,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Microsoft SQL Graph connector for Microsoft Search."
+description: "Set up the Azure SQL and Microsoft SQL Graph connector for Microsoft Search."
 ---
 <!---Previous ms.author: vivg --->
 
