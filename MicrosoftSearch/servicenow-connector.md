@@ -69,7 +69,7 @@ To use ServiceNow OAuth for authentication, provision an endpoint in your Servic
 
 The following table provides guidance on how to fill out the endpoint creation form:
 
-**Field** | **Description** | **Recommended Value**
+Field | Description | Recommended Value 
 --- | --- | ---
 Name | Unique value that identifies the application that you require OAuth access for. | Microsoft Search
 Client ID | A read-only, auto generated unique ID for the application. The instance uses the client ID when it requests an access token. | NA
@@ -98,24 +98,30 @@ To learn about creating a client secret, see [Creating a client secret](https://
 
 Follow the steps to retrieve Service Principal Object Identifier
 
-1. Run PowerShell
-2. Install Azure PowerShell using the following command
-```<language>
+1. Run PowerShell.
+
+2. Install Azure PowerShell using the following command.
+
+   ```powershell
    Install-Module -Name Az -AllowClobber -Scope CurrentUser
-```
-3. Connect to Azure
-```<language>
-    Connect-AzAccount
-```
-4. Get Service Principal Object Identifier
-```<language>
+   ```
+
+3. Connect to Azure.
+
+   ```powershell
+   Connect-AzAccount
+   ```
+
+4. Get Service Principal Object Identifier.
+
+   ```powershell
    Get-AzADServicePrincipal -ApplicationId "Application-ID"
-```
-Replace "Application-ID" with Application (client) ID (without quotes) of the application you registered in step 3.a. Note the value of ID object from PowerShell output. It's the Service Principal ID.
+   ```
+   Replace "Application-ID" with Application (client) ID (without quotes) of the application you registered in step 3.a. Note the value of ID object from PowerShell output. It's the Service Principal ID.
 
 Now you have all the information required from Azure portal. A quick summary of the information is given in the table below.
 
-**Property** | **Description**
+Property | Description 
 --- | ---
 Directory ID (Tenant ID) | Unique ID of the Azure Active Directory tenant, from step 3.a.
 Application ID (Client ID) | Unique ID of the application registered in step 3.a.
@@ -127,28 +133,30 @@ Service Principal ID | An identity for the application running as a service. (fr
 The ServiceNow instance needs the following configuration:
 
 1. Register a new OAuth OIDC entity. To learn, see [Create an OAuth OIDC provider](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/security/task/add-OIDC-entity.html).
+
 2. The following table provides guidance on how to fill out OIDC provider registration form
 
-**Field** | **Description** | **Recommended Value**
---- | --- | ---
-Name | A unique name that identifies the OAuth OIDC entity. | Azure AD
-Client ID | The client ID of the application registered in the third-party OAuth OIDC server. The instance uses the client ID when requesting an access token. | Application (Client) ID from step 3.a
-Client Secret | The client secret of the application registered in the third-party OAuth OIDC server. | Client Secret from step 3.b
+   Field | Description | Recommended Value
+   --- | --- | ---
+   Name | A unique name that identifies the OAuth OIDC entity. | Azure AD
+   Client ID | The client ID of the application registered in the third-party OAuth OIDC server. The instance uses the client ID when requesting an access token. | Application (Client) ID from step 3.a
+   Client Secret | The client secret of the application registered in the third-party OAuth OIDC server. | Client Secret from step 3.b
 
-All other values can be default.
+   All other values can be default.
 
 3. In the OIDC provider registration form, you need to add a new OIDC provider configuration. Select the search icon against *OAuth OIDC Provider Configuration* field to open the records of OIDC configurations. Select New.
+
 4. The following table provides guidance on how to fill out OIDC provider configuration form
 
-**Field** | **Recommended Value**
---- | ---
-OIDC Provider |  Azure AD
-OIDC Metadata URL | The URL must be in the form https\://login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>Replace "tenantID" with Directory (tenant) ID from step 3.a.
-OIDC Configuration Cache Life Span |  120
-Application | Global
-User Claim | sub
-User Field | User ID
-Enable JTI claim verification | Disabled
+   Field | Recommended Value
+   --- | ---
+   OIDC Provider |  Azure AD
+   OIDC Metadata URL | The URL must be in the form https\://login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>Replace "tenantID" with Directory (tenant) ID from step 3.a.
+   OIDC Configuration Cache Life Span |  120
+   Application | Global
+   User Claim | sub
+   User Field | User ID
+   Enable JTI claim verification | Disabled
 
 5. Select Submit and Update the OAuth OIDC Entity form.
 
@@ -158,7 +166,7 @@ Refer the instructions to create a ServiceNow account, [create a user in Service
 
 The following table provides guidance on how to fill out the ServiceNow user account registration
 
-**Field** | **Recommended Value**
+Field | Recommended Value
 --- | ---
 User ID | Service Principal ID from step 3.c
 Web service access only | Checked
