@@ -21,7 +21,7 @@ description: "Set up the Oracle SQL Graph connector for Microsoft Search."
 The Oracle SQL Graph connector allows your organization to discover and index data from an on-premises Oracle database. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With the Oracle SQL connector, you can also restrict access to search results for certain users.
 
 > [!NOTE]
-> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
+> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
 
 This article is for anyone who configures, runs, and monitors a ServiceNow Graph connector. It supplements the general setup process, and shows instructions that apply only for the ServiceNow Graph connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
