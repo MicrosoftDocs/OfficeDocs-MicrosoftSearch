@@ -42,11 +42,14 @@ This article shows the basic process required to set up the Graph connectors **b
 
 Complete the following steps to configure any of the Microsoft-built Graph connectors:
 
-1. Sign into your admin account in the [Microsoft 365 admin center](https://admin.microsoft.com)
+1. Sign into your admin account in the [Microsoft 365 admin center](https://admin.microsoft.com).
+
 2. In the navigation pane, select **Settings**, and then select **Search & intelligence**. Select the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
+
 3. Select **+Add**, and then select the data source of your choice from the menu of available options.
 
-![Data sources available include: ADLS Gen2, Enterprise websites, Microsoft SQL server, Azure SQL, Oracle SQL database, ServiceNow, File share, Azure DevOps, and MediaWiki.](media/add-connector.png)
+   > [!div class="mx-imgBorder"]
+   > ![Data sources available include: ADLS Gen2, Enterprise websites, Microsoft SQL server, Azure SQL, Oracle SQL database, ServiceNow, File share, Azure DevOps, and MediaWiki.](media/add-connector.png)
 
 > [!NOTE]
 > You can add a maximum of ten Graph connections to each tenant.
@@ -126,7 +129,8 @@ REFINE | The refine option can be used as in the Microsoft Search results page. 
 
 For all connectors except the File share connector, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute in the search schema page.
 
-![Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions.](media/manageschema.png)
+> [!div class="mx-imgBorder"]
+> ![Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions.](media/manageschema.png)
 
 ### Restrictions and recommendations for search schema settings
 
@@ -159,7 +163,8 @@ With an **Incremental refresh**, the search engine can process and index only th
 
 Incremental refreshes are much faster than full refreshes because unchanged items aren’t processed. However, if you choose to run incremental refreshes, you still need to run full refreshes periodically to maintain correct data sync between the content source and the search index.
 
-![Incremental crawl and full crawl interval settings showing Incremental at 15 minutes and Full crawl at 1 week.](media/refreshschedule.png)
+> [!div class="mx-imgBorder"]
+> ![Incremental crawl and full crawl interval settings showing Incremental at 15 minutes and Full crawl at 1 week.](media/refreshschedule.png)
 
 <!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
