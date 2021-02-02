@@ -54,7 +54,7 @@ Register an app in Azure DevOps so that the Microsoft Search app can access the 
 
 The following table provides guidance on how to fill out the app registration form:
 
- **Mandatory Fields** | **Description**      | **Recommended Value**
+andatory Fields | Description | Recommended Value
 --- | --- | ---
 | Company Name         | The name of your company. | Use an appropriate value   |
 | Application name     | A unique value that identifies the application that you're authorizing.    | Microsoft Search     |
