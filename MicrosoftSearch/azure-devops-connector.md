@@ -58,8 +58,8 @@ The following table provides guidance on how to fill out the app registration fo
 --- | --- | ---
 | Company Name         | The name of your company. | Use an appropriate value   |
 | Application name     | A unique value that identifies the application that you're authorizing.    | Microsoft Search     |
-| Application website  | The URL of the application that will request access to your Azure DevOps instance during connector setup. (Required).  | <https://<span>gcs.office.</span>com/>
-| Authorization callback URL        | A required callback URL that the authorization server redirects to. | <https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback>|
+| Application website  | The URL of the application that will request access to your Azure DevOps instance during connector setup. (Required).  | https://<span>gcs.office.</span>com/
+| Authorization callback URL        | A required callback URL that the authorization server redirects to. | https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback|
 | Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), Work Items (read), Variable Groups (read), Project and team (read), Graph (read)|
 
 On registering the app with the details above, you'll get the **App ID** and **Client Secret** that will be used to configure the connector.
