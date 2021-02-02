@@ -54,18 +54,22 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
 
     - Save the app.
     
-      ![API section in Salesforce instance after admin has entered all required configurations listed above.](media/salesforce-connector/sf1.png)
+      > [!div class="mx-imgBorder"]
+	  > ![API section in Salesforce instance after admin has entered all required configurations listed above.](media/salesforce-connector/sf1.png)
 
 - Copy the consumer key and the consumer secret. This information will be used as the Client ID and the Client Secret when you configure the Connection Settings for your Graph Connector in the Microsoft 365 admin portal.
 
-  ![Results returned by API section in Salesforce instance after admin has submitted all required configurations. Consumer Key is at top of left column and Consumer Secret is at top of right column.](media/salesforce-connector/clientsecret.png)
+  > [!div class="mx-imgBorder"]
+  > ![Results returned by API section in Salesforce instance after admin has submitted all required configurations. Consumer Key is at top of left column and Consumer Secret is at top of right column.](media/salesforce-connector/clientsecret.png)
+  
 - Before closing your Salesforce instance, follow these steps to ensure that refresh tokens don't expire:
 	- Go to Apps -> App Manager
 	- Find the app you created and select the drop-down on the right. Select **Manage**
 	- Select **edit policies**
 	- For refresh token policy, select **Refresh token is valid until revoked**
 
-  ![Select the Refresh Token Policy named "Refresh token is valid until revoked "](media/salesforce-connector/oauthpolicies.png)
+  > [!div class="mx-imgBorder"]
+  > ![Select the Refresh Token Policy named "Refresh token is valid until revoked "](media/salesforce-connector/oauthpolicies.png)
 
 You can now use the [M365 Admin Center](https://admin.microsoft.com/) to complete the rest of the setup process for your Graph connector.
 
@@ -94,7 +98,8 @@ The first time you've attempted to sign in with these settings, you'll get a pop
 
 Check that the connection was successful by searching for a green banner that says "Connection successful" as show in the screenshot below.
 
-  ![Screenshot of successful login. The green banner that says "Connection successful" is located under the field for your Salesforce Instance URL](media/salesforce-connector/sf5.png)
+  > [!div class="mx-imgBorder"]
+  > ![Screenshot of successful login. The green banner that says "Connection successful" is located under the field for your Salesforce Instance URL](media/salesforce-connector/sf5.png)
 
 ## Step 4: Manage search permissions
 
@@ -104,10 +109,11 @@ You'll need to choose which users will see search results from this data source.
 
 You can choose to ingest Access Control Lists (ACLs) from your Salesforce instance, or allow everyone in your organization to see search results from this data source. ACLs can include Azure Active Directory (AAD) identities (users who are federated from Azure AD to Salesforce), non-Azure AD identities (native Salesforce users who have corresponding identities in Azure AD), or both.
 
-  >[!NOTE]
-  >If you use a third-party Identity Provider like Ping ID or secureAuth, you should select "non-AAD" as the identity type.
+>[!NOTE]
+>If you use a third-party Identity Provider like Ping ID or secureAuth, you should select "non-AAD" as the identity type.
 
-![Select permissions screen that has been completed by an admin. The admin has selected the "Only people with access to this data source" option and has also selected "AAD" from a drop down menu of identity types.](media/salesforce-connector/sf6.png)
+> [!div class="mx-imgBorder"]
+> ![Select permissions screen that has been completed by an admin. The admin has selected the "Only people with access to this data source" option and has also selected "AAD" from a drop down menu of identity types.](media/salesforce-connector/sf6.png)
 
 If you chose to ingest an ACL from your Salesforce instance and selected "non-AAD" for the identity type, see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities.
 
@@ -124,7 +130,8 @@ You can assign a source property to each label by choosing from a menu of option
 You can select what source properties should be indexed so that they show up in search results. The connection wizard by default selects a search schema based on a set of source properties. You can modify it by selecting the check boxes for each property and attribute in the search schema page. Search schema attributes include Search, Query, Retrieve, and Refine.
 Refine allows you to define the properties that can be later used as custom refiners or filters in the search experience.  
 
-![Select the schema for each source property. The options are Query, Search, Retrieve, and Refine](media/salesforce-connector/sf9.png)
+> [!div class="mx-imgBorder"]
+> ![Select the schema for each source property. The options are Query, Search, Retrieve, and Refine](media/salesforce-connector/sf9.png)
 
 ## Step 7: Set the refresh schedule
 
