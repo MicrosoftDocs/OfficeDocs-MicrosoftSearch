@@ -56,7 +56,8 @@ Also, the connector now supports crawling of on-premises websites. This mode is 
 
 For your on-premises websites, select **Agent** as the crawl mode and in the **On-Prem Agent** field, choose the Graph connector agent that you installed and configured earlier.  
 
-![Screenshot of Connection Settings pane for Enterprise Web connector](media/enterprise-web-connector/connectors-enterpriseweb-settings.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Connection Settings pane for Enterprise Web connector](media/enterprise-web-connector/connectors-enterpriseweb-settings.png)
 
 ### Authentication
 
