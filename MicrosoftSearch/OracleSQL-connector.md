@@ -23,7 +23,7 @@ The Oracle SQL Graph connector allows your organization to discover and index da
 > [!NOTE]
 > Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
 
-This article is for anyone who configures, runs, and monitors an Oracle SQL Graph connector. It supplements the general setup process, and shows instructions that apply only for the ServiceNow Graph connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors an Oracle SQL Graph connector. It supplements the general setup process, and shows instructions that apply only for the Oracle SQL Graph connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
 ## Before you get started
 

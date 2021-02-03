@@ -11,7 +11,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "License requirements for Microsoft Graph connectors public preview for Microsoft Search"
+description: "License requirements and pricing for Microsoft Graph connectors public preview for Microsoft Search"
 ---
 <!---Previous ms.author: rusamai --->
 
