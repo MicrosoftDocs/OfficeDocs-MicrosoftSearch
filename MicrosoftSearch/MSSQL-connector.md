@@ -23,7 +23,7 @@ The Graph connector indexes specified content into Microsoft Search. To keep the
 > [!NOTE]
 > Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
 
-This article is for anyone who configures, runs, and monitors a ServiceNow Graph connector. It supplements the general setup process, and shows instructions that apply only for the ServiceNow Graph connector. This article also includes information about [Limitations](#limitations) for the Microsoft SQL server and Azure SQL connectors.
+This article is for anyone who configures, runs, and monitors a Azure SQL and Microsoft SQL server Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure SQL and Microsoft SQL server Graph connector. This article also includes information about [Limitations](#limitations) for the Microsoft SQL server and Azure SQL connectors.
 
 ## Before you get started
 
@@ -55,7 +55,7 @@ To add the registered app to your Azure SQL Database, you need to:
 
 - Log in to your Azure SQL DB
 - Open a new query window
-- Create a new user by running the command ‘CREATE USER [app name] FROM EXTERNAL PROVIDER’
+- Create a new user by running the command 'CREATE USER [app name] FROM EXTERNAL PROVIDER'
 - Add user to role by running command 'exec sp_addrolemember 'db_datareader', [app name]'
    Or
    'ALTER ROLE db_datareader ADD MEMBER [app name]'
@@ -155,8 +155,8 @@ Each of the ACL columns is expected to be a multi-valued column. These multiple 
 The following ID types are supported for using as ACLs:
 
 - **User Principal Name (UPN)**: A User Principal Name (UPN) is the name of a system user in an email address format. A UPN (for example: john.doe@domain.com) consists of the username (logon name), separator (the @ symbol), and domain name (UPN suffix).
-- **Azure Active Directory (AAD) ID**: In Azure AD, every user or group has an object ID that looks something like ‘e0d3ad3d-0000-1111-2222-3c5f5c52ab9b’.
-- **Active Directory (AD) Security ID**: In an on-premises AD setup, every user and group have an immutable, unique security identifier that looks something like ‘S-1-5-21-3878594291-2115959936-132693609-65242.’
+- **Azure Active Directory (AAD) ID**: In Azure AD, every user or group has an object ID that looks something like 'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b'.
+- **Active Directory (AD) Security ID**: In an on-premises AD setup, every user and group have an immutable, unique security identifier that looks something like 'S-1-5-21-3878594291-2115959936-132693609-65242.'
 
 ![Search permission settings to configure access control lists](media/MSSQL-ACL2.png)
 
@@ -199,7 +199,7 @@ instructions.-->
 
 ## Next steps: Customize the search results page
 
-Create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won’t show up on the search results page.
+Create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won't show up on the search results page.
 
 To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).
 

@@ -23,8 +23,6 @@ The File share Graph connector allows users in your organization to search on-pr
 > [!NOTE]
 > Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
 
-This article is for anyone who configures, runs, and monitors a ServiceNow Graph connector. It supplements the general setup process, and shows instructions that apply only for the MediaWiki Graph connector.
-
 ## Before you get started
 
 ### Install the Graph connector agent
