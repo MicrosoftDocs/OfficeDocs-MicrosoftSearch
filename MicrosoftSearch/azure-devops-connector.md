@@ -23,7 +23,7 @@ The Azure DevOps Graph connector allows your organization to index work items in
 > [!NOTE]
 > Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
 
-This article is for anyone who configures, runs, and monitors a Azure DevOps connector. It supplements the general setup process, and shows instructions that apply only for the ServiceNow Graph connector.
+This article is for anyone who configures, runs, and monitors an Azure DevOps Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure DevOps Graph connector.
 
 >[!IMPORTANT]
 >The Azure DevOps connector supports only the Azure DevOps cloud service. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015, and TFS 2013 are not supported by this connector.
