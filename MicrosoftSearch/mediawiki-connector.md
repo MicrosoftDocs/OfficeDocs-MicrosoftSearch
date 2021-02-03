@@ -22,7 +22,7 @@ The MediaWiki Graph connector allows your organization to discover and index dat
 > [!NOTE]
 > Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
 
-This article is for anyone who configures, runs, and monitors a ServiceNow Graph connector. It supplements the general setup process, and shows instructions that apply only for the MediaWiki Graph connector. This article also includes information about [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors a MediaWiki Graph connector. It supplements the general setup process, and shows instructions that apply only for the MediaWiki Graph connector. This article also includes information about [Limitations](#limitations).
 
 <!---## Before you get started-->
 

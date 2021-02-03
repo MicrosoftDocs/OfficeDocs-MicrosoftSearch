@@ -23,7 +23,7 @@ The Oracle SQL Graph connector allows your organization to discover and index da
 > [!NOTE]
 > Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
 
-This article is for anyone who configures, runs, and monitors a ServiceNow Graph connector. It supplements the general setup process, and shows instructions that apply only for the ServiceNow Graph connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors an Oracle SQL Graph connector. It supplements the general setup process, and shows instructions that apply only for the ServiceNow Graph connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
 ## Before you get started
 
@@ -124,8 +124,8 @@ Each of the ACL columns is expected to be a multi-valued column. These multiple 
 The following ID types are supported for using as ACLs:
 
 * **User Principal Name (UPN)**: A User Principal Name (UPN) is the name of a system user in an email address format. A UPN (for example: john.doe@domain.com) consists of the username (logon name), separator (the @ symbol), and domain name (UPN suffix).
-* **Azure Active Directory (AAD) ID**: In Azure AD, every user or group has an object ID that looks something like ‘e0d3ad3d-0000-1111-2222-3c5f5c52ab9b’
-* **Active Directory (AD) Security ID**: In an on-premises AD setup, every user and group have an immutable, unique security identifier that looks something like ‘S-1-5-21-3878594291-2115959936-132693609-65242.’
+* **Azure Active Directory (AAD) ID**: In Azure AD, every user or group has an object ID that looks something like 'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b'
+* **Active Directory (AD) Security ID**: In an on-premises AD setup, every user and group have an immutable, unique security identifier that looks something like 'S-1-5-21-3878594291-2115959936-132693609-65242.'
 
 ![Search permission settings to configure access control lists](media/MSSQL-ACL2.png)
 
@@ -164,7 +164,7 @@ Follow the general [setup instructions](https://docs.microsoft.com/microsoftsear
 
 ## Next steps: Customize the search results page
 
-Create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won’t show up on the search results page.
+Create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won't show up on the search results page.
 
 To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).
 
