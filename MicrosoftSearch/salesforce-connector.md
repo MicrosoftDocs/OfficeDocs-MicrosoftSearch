@@ -23,7 +23,7 @@ The Salesforce Graph connector, allows your organization to index Contacts, Oppo
 > [!NOTE]
 > Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
 
-This article is for anyone who configures, runs, and monitors a ServiceNow Graph connector. It supplements the general setup process, and shows instructions that apply only for the Salesforce Graph connector. This article also includes information about [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors a Salesforce Graph connector. It supplements the general setup process, and shows instructions that apply only for the Salesforce Graph connector. This article also includes information about [Limitations](#limitations).
 
 >[!IMPORTANT]
 >The Salesforce Graph connector currently supports Summer '19 or later.
@@ -55,7 +55,7 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
     - Save the app.
     
       > [!div class="mx-imgBorder"]
-	  > ![API section in Salesforce instance after admin has entered all required configurations listed above.](media/salesforce-connector/sf1.png)
+      > ![API section in Salesforce instance after admin has entered all required configurations listed above.](media/salesforce-connector/sf1.png)
 
 - Copy the consumer key and the consumer secret. This information will be used as the Client ID and the Client Secret when you configure the Connection Settings for your Graph Connector in the Microsoft 365 admin portal.
 
@@ -63,10 +63,10 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
   > ![Results returned by API section in Salesforce instance after admin has submitted all required configurations. Consumer Key is at top of left column and Consumer Secret is at top of right column.](media/salesforce-connector/clientsecret.png)
   
 - Before closing your Salesforce instance, follow these steps to ensure that refresh tokens don't expire:
-	- Go to Apps -> App Manager
-	- Find the app you created and select the drop-down on the right. Select **Manage**
-	- Select **edit policies**
-	- For refresh token policy, select **Refresh token is valid until revoked**
+    - Go to Apps -> App Manager
+    - Find the app you created and select the drop-down on the right. Select **Manage**
+    - Select **edit policies**
+    - For refresh token policy, select **Refresh token is valid until revoked**
 
   > [!div class="mx-imgBorder"]
   > ![Select the Refresh Token Policy named "Refresh token is valid until revoked "](media/salesforce-connector/oauthpolicies.png)

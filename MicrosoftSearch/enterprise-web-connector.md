@@ -24,7 +24,7 @@ The Enterprise websites Graph connector allows your organization to index articl
 > [!NOTE]
 > Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
 
-This article is for anyone who configures, runs, and monitors a ServiceNow Graph connector. It supplements the general setup process, and shows instructions that apply only for the ServiceNow Graph connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors a Enterprise websites connector. It supplements the general setup process, and shows instructions that apply only for the Enterprise websites connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
 <!---## Before you get started-->
 
