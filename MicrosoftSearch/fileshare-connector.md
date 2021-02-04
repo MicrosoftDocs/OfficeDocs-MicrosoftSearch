@@ -1,8 +1,8 @@
 ---
-title: "File share connector"
-ms.author: rusamai
-author: rsamai
-manager: jameslau
+title: "File share Graph connector for Microsoft Search"
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,53 +12,78 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: "Set up the file share connector for Microsoft Search"
+description: "Set up the File share Graph connector for Microsoft Search"
 ---
+<!---Previous ms.author: rusamai --->
 
-# File share connector
+# File share Graph connector
 
-With the File share Graph connector, users in your organization can search on-premise Windows file shares.
+The File share Graph connector allows users in your organization to search on-premise Windows file shares.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a file share connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
+> [!NOTE]
+> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
 
-## Install Graph connector agent
+## Before you get started
 
-In order to index your Windows file shares, you must install and register [Graph connector agent](on-prem-agent.md) software.
+### Install the Graph connector agent
 
-## Content requirements
+To index your Windows file shares, you must install and register the Graph connector agent. See [Install the Graph connector agent](on-prem-agent.md) to learn more.  
+
+### Content requirements
 
 ### File types
 
-Content of the following formats can be indexed and searched: DOC, DOCM, DOCX, DOT, DOTX, EML, GIF, HTML, JPEG, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS, and ZIP. Only the textual content of these formats is indexed. All multimedia content is ignored. For any file that does not belong to this format, the metadata alone is indexed.
+Content of the following formats can be indexed and searched: DOC, DOCM, DOCX, DOT, DOTX, EML, GIF, HTML, JPEG, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS, and ZIP. Only the textual content of these formats is indexed. All multimedia content is ignored. For any file that doesn't belong to this format, the metadata alone is indexed.
 
 ### File size limits
 
-The maximum supported file size is 100 MB. Files that exceed 100 MB are not indexed. The maximum post-processed size limit is 4 MB. Processing stops when a file's size reaches 4 MB. Therefore, some phrases present in the file might not work for search.
+The maximum supported file size is 100 MB. Files that exceed 100 MB aren't indexed. The maximum post-processed size limit is 4 MB. Processing stops when a file's size reaches 4 MB. Therefore, some phrases present in the file might not work for search.
 
-## Connect to a data source
+## Step 1: Add a Graph connector in the Microsoft 365 admin center
+
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## Step 2: Name the connection
+
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## Step 3: Configure the connection settings
 
 On the **Connect to data source** page, select **File share** and provide the name, connection ID, and description. On the next page, provide the path to the file share and select your previously installed Graph connector agent. Enter the credentials for a [Microsoft Windows](https://microsoft.com/windows) user account with read access to all the files in the file share.
 
-## Preserve last access time
+### Preserve last access time
 
-When the connector attempts to crawl a file, the "last access time" field in its metadata is updated. If you depend on that field for any archiving and backup solutions and do not want to update it when the connector accesses it, you can configure this option in the **Advanced settings** page.
+When the connector attempts to crawl a file, the "last access time" field in its metadata is updated. If you depend on that field for any archiving and backup solutions and doesn't want to update it when the connector accesses it, you can configure this option in the **Advanced settings** page.
 
-## Manage search permissions
+## Step 4: Manage search permissions
 
 You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists. If you want to use Share Access Control Lists, select the appropriate option on the **Advanced settings** page. If you want to use NTFS Access Control Lists, select the appropriate option on the **Manage search permissions** page.
 
-## Assign property labels
+## Step 5: Assign property labels
 
-You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## Manage schema
+## Step 6: Manage schema
 
-On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, **retrievable**, and **refinable**) associated with the properties, add optional aliases, and choose the **Content** property.
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## Set the refresh schedule
+## Step 7: Choose refresh settings
 
-The recommended default refresh schedule interval is 15 minutes, but you can change it based on your preferences.
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## Result layout
+## Step 8: Review connection
 
-We recommend that you use the default result layout to display your Fileshare connector results because it has appropriate icons and controls that help you navigate to the file path. If you create a new result layout, it will override the default.
+Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+<!---## Troubleshooting-->
+<!---Insert troubleshooting recommendations for this data source-->
+
+<!---## Limitations-->
+<!---Insert limitations for this data source-->
