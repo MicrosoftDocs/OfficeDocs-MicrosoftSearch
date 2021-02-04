@@ -118,5 +118,5 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **Q: What if my organization doesn’t want to show system-curated acronyms? Can I stop showing this type of acronym in my search results?**
 
-**A**: To turn off showing system-curated acronyms in search results, create a customer support ticket by following the instructions at [Contact support for business products](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support).
+**A**: To turn off showing system-curated acronyms in search results, create a customer support ticket by following the instructions at [Contact support for business products](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
 After you create a support ticket, it takes up to 48 hours for system-curated acronyms to stop appearing in search results.
