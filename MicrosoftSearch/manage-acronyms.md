@@ -58,9 +58,9 @@ Search administrators can add acronyms on the [Acronyms tab](https://admin.micro
 
 You can add acronyms individually or bulk import them in a CSV file. Upload a CSV file with the fields shown in the following table:
 
-| Acronym (Mandatory) | Stands For (Mandatory) | Url | Description  | State (mandatory) | Last Modified | Last Modified By | Id |
+| Acronym (Mandatory) | Expansion (Mandatory) | Url | Description  | State (mandatory) | Last Modified | Last Modified By | Id |
 | --------- | --------- | --------- | ---------- | --------- |--------- |--------- |--------- |
-| *XXX* | *Spelled out abbreviation* |  |  | *Published or Draft* |  |  |  |
+| *XXX* | *Spelled out abbreviation* | *Source* |  | *Published or Draft* |  |  |  |
 
 ### CSV fields
 
