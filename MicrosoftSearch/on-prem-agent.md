@@ -116,3 +116,6 @@ If you used the sample script to generate a certificate, the PFX file can be fou
 1. Right click on the cert and select 'All Tasks' -> 'Manage Private Keys…' Option
 1. In the permissions dialog, select add option. In the user selection dialog, write: 'NT Service\GcaHostService' and click 'OK'. Don't click the 'Check Names' button.
 1. Click okay on the permissions dialog. The agent machine is now configured for agent to generate tokens using the certificate.
+
+## Troubleshooting
+1. If a connection fails with the error '1011: The Graph connector agent is not reachable or offline.', please log in to the machine where agent is installed and start the agent application if it is not running already. If the connection continues to fail after this, please verify that the certificate/client secret provided to the agent during registration has not expired and has required permissions.
