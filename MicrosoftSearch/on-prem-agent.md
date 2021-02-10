@@ -118,4 +118,4 @@ If you used the sample script to generate a certificate, the PFX file can be fou
 1. Click okay on the permissions dialog. The agent machine is now configured for agent to generate tokens using the certificate.
 
 ## Troubleshooting
-1. If a connection fails with the error '1011: The Graph connector agent is not reachable or offline.', log in to the machine where agent is installed and start the agent application if it isn't running already. If the connection continues to fail after this, please verify that the certificate or client secret provided to the agent during registration hasn't expired and has required permissions.
+1. If a connection fails with the error '1011: The Graph connector agent is not reachable or offline.', log in to the machine where agent is installed and start the agent application if it isn't running already. If the connection continues to fail, verify that the certificate or client secret provided to the agent during registration hasn't expired and has required permissions.
