@@ -35,9 +35,9 @@ After you install the agent, if your organization's proxy servers or firewalls b
 
 1. *.servicebus.windows.net
 2. *.events.data.microsoft.com
-3. https://login.microsoftonline.com
-4. https://gcs.office.com
-5. https://graph.microsoft.com/
+3. https://<span>login.microsoftonline.</span>com
+4. https://<span>gcs.office.</span>com/
+5. https://<span>graph.microsoft.</span>com/
 
 
 ## Create and configure an App for the agent  
@@ -116,3 +116,6 @@ If you used the sample script to generate a certificate, the PFX file can be fou
 1. Right click on the cert and select 'All Tasks' -> 'Manage Private Keys…' Option
 1. In the permissions dialog, select add option. In the user selection dialog, write: 'NT Service\GcaHostService' and click 'OK'. Don't click the 'Check Names' button.
 1. Click okay on the permissions dialog. The agent machine is now configured for agent to generate tokens using the certificate.
+
+## Troubleshooting
+1. If a connection fails with the error '1011: The Graph connector agent is not reachable or offline.', log in to the machine where agent is installed and start the agent application if it isn't running already. If the connection continues to fail, verify that the certificate or client secret provided to the agent during registration hasn't expired and has required permissions.
