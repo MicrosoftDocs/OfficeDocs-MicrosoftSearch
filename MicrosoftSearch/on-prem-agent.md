@@ -35,9 +35,9 @@ After you install the agent, if your organization's proxy servers or firewalls b
 
 1. *.servicebus.windows.net
 2. *.events.data.microsoft.com
-3. https://login.microsoftonline.com
-4. https://gcs.office.com
-5. https://graph.microsoft.com/
+3. https://<span>login.microsoftonline.</span>com
+4. https://<span>gcs.office.</span>com/
+5. https://<span>graph.microsoft.</span>com/
 
 
 ## Create and configure an App for the agent  
