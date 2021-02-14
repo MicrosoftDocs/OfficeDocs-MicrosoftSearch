@@ -2,6 +2,15 @@
 
 
 
+## Week of February 08, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/9/2021 | [On-Premises Agent](/MicrosoftSearch/on-prem-agent) | modified |
+| 2/12/2021 | [On-Premises Agent](/MicrosoftSearch/on-prem-agent) | modified |
+
+
 ## Week of February 01, 2021
 
 
