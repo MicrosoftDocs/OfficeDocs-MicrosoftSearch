@@ -17,8 +17,8 @@
 ## [Connectors gallery](connectors-gallery.md)
 ## Set up connectors by Microsoft
 ### [Setup overview](configure-connector.md)
-### [Map your non Azure AD Identities (preview)](map-non-aad.md)
-### [Map your Azure AD Identities (preview)](map-aad.md)
+### [Map non-Azure AD Identities (preview)](map-non-aad.md)
+### [Map Azure AD Identities (preview)](map-aad.md)
 ### Connector-specific information
 #### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 #### [Azure DevOps (preview)](azure-devops-connector.md)
@@ -28,8 +28,8 @@
 #### [Oracle SQL (preview)](OracleSQL-connector.md)
 #### [Salesforce (preview)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
-## Manage your connections
-### [Monitor your connections](manage-connector.md)
+## Manage connections
+### [Monitor connections](manage-connector.md)
 ### [View connection details and errors](connector-details-errors.md)
 ## [Licensing](licensing.md)
 ## [Terms of use](terms-of-use.md)
