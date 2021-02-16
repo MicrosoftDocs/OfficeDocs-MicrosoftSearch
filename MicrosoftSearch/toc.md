@@ -17,6 +17,7 @@
 ## [Connectors gallery](connectors-gallery.md)
 ## Set up connectors by Microsoft
 ### [Setup overview](configure-connector.md)
+### [Set up the graph connector agent (preview)](on-prem-agent.md)
 ### [Map non-Azure AD Identities (preview)](map-non-aad.md)
 ### [Map Azure AD Identities (preview)](map-aad.md)
 ### Connector-specific information
