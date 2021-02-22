@@ -13,7 +13,6 @@
 ## [Q&As](manage-qas.md)
 # Connectors
 ## [Overview](connectors-overview.md)
-## [Preview release](connectors-preview.md)
 ## [Connectors gallery](connectors-gallery.md)
 ## Set up connectors by Microsoft
 ### [Setup overview](configure-connector.md)
