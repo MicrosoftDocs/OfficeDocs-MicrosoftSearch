@@ -65,7 +65,7 @@ Note that windows by default provides 'Read' permission to 'Everyone' in Share A
 
 You will not be able choose Share ACLs if the share path you provide does not follow the pattern \\<server-name>\<share-name>. If your share path has the format \\<server-name>\<folder1>\<share-name>, you can create a path in the supported format by going to 'Advanced Sharing' under 'Sharing' option for a file share.
 
-![Advanced_sharing](media/file_advanced_sharing.png)
+![Advanced_sharing](media/file_advanced_sharing_2.png)
 
 ## Step 5: Assign property labels
 
