@@ -20,7 +20,7 @@ description: "Set up the Azure Data Lake Storage Gen2 Graph connector for Micros
 The Azure Data Lake Storage Gen2 Graph connector allows users in your organization to search for files stored in [Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) and [Azure Data Lake Gen 2 Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) accounts.
 
 > [!NOTE]
-> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
+> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
 This article is for anyone who configures, runs, and monitors an Azure Data Lake Storage Gen2 connector. It supplements the general setup process, and shows instructions that apply only for the Azure Data Lake Storage Gen2 connector. This article also includes information about [Limitations](#limitations).
 

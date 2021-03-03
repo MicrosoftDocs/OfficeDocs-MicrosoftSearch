@@ -21,7 +21,7 @@ description: "Set up the Salesforce Graph connector for Microsoft Search"
 The Salesforce Graph connector, allows your organization to index Contacts, Opportunities, Leads, and Accounts objects in your Salesforce instance. After you configure the connector and index content from Salesforce, end users can search for those items from any Microsoft Search client.
 
 > [!NOTE]
-> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
+> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
 This article is for anyone who configures, runs, and monitors a Salesforce Graph connector. It supplements the general setup process, and shows instructions that apply only for the Salesforce Graph connector. This article also includes information about [Limitations](#limitations).
 

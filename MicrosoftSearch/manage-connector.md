@@ -25,11 +25,11 @@ Navigate to the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/M
 
 For each connector type, the [Microsoft 365 admin center](https://admin.microsoft.com) supports the operations shown in the following table:
 
-Operation | Microsoft-built connector | Partner or custom-built connector
+Operation | Graph connectors by Microsoft | Partner or Graph connectors
 --- | --- | ---
-Add a connection | :heavy_check_mark: (See [Configure your Microsoft-built connector](configure-connector.md)) | :x: (Refer to your partner or custom-built connector admin UX)
+Add a connection | :heavy_check_mark: (See [Setup overview](configure-connector.md)) | :x: (Refer to your partner or custom-built connector admin UX)
 Delete a connection | :heavy_check_mark: | :heavy_check_mark:
-Edit a published connection | :heavy_check_mark: Name<br></br> :heavy_check_mark: Description<br></br> :heavy_check_mark: Authentication credentials for your external data source<br></br> :heavy_check_mark: Gateway credentials for your on-premises data source<br></br> :heavy_check_mark: Refresh schedule<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Description
+Edit a published connection | :heavy_check_mark: Name and Description<br></br> :heavy_check_mark: Connection settings<br></br> :heavy_check_mark: Property labels<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: Refresh schedule<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Description
 Edit a draft connection | :heavy_check_mark: | :x:
 
 ## Monitor your connection status

@@ -29,6 +29,8 @@ This article is intended to help Microsoft 365 administrators locate the resourc
 * [What are the preview features?](#what-are-the-preview-features)
 * [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results)
 * [How do I search my connector data from a custom application?](#how-do-i-search-my-connector-data-from-a-custom-application)
+* [How do I customize search results?](#how-do-i-customize-search-results)
+* [What are the connector limitations](#what-are-the-connector-limitations)
 
 <!---Modify to another note that is more accurate after rollout completion--->
 > [!IMPORTANT]
@@ -115,7 +117,7 @@ After custom data is indexed, developers can [query this data](https://docs.micr
 
 ## How do I customize search results?
 
-Make sure you customize the search results as recommended in this article [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results). To learn more about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
+The next step is to customize the search results as recommended in this article [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results). To learn more about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
 ## What are the connector limitations?
 
@@ -127,6 +129,6 @@ Make sure you customize the search results as recommended in this article [How d
 
 * There is no support for schema updates. After you create a connection setup, there's no way to update the schema. You can only delete and re-create the connection.
 
-* There is a connections limit. Each tenant can create up to 10 connections.
+* There is a connection limit. Each tenant can create up to 10 connections.
 
-* Edit support for connection is not available. Once the connection has been created, you cannot edit or change it. If you need to change any details, you must delete and recreate the connection.
+* Edit support for connection is not available. Once the connection has been created, you can't edit or change it. If you need to change any details, you must delete and recreate the connection.

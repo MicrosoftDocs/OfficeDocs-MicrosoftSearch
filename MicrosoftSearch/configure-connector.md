@@ -11,7 +11,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Configure your Microsoft-built Graph connector for Microsoft Search"
+description: "Setup overview for Graph connectors by Microsoft"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -22,14 +22,20 @@ description: "Configure your Microsoft-built Graph connector for Microsoft Searc
 This article shows the basic process required to set up the Graph connectors **by Microsoft** in the [Microsoft 365 admin center](https://admin.microsoft.com). The basic process includes the following steps:  
 <!---Add links to each section in the doc--->
 
-1. Add a Graph connector in the Microsoft 365 admin center.
-2. Name the connection.
-3. Configure the connection settings.
-4. Manage search permissions.
-5. Assign property labels.
-6. Manage schema.
-7. Choose refresh settings.
-8. Review the connection.
+1. [Add a Graph connector in the Microsoft 365 admin center](#step-1-add-a-graph-connector-in-the-Microsoft-365-admin-center)
+2. [Name the connection](#step-2-name-the-connection)
+3. [Configure the connection settings](#step-3-configure-the-connection-settings)
+4. [Manage search permissions](#step-4-manage-search-permissions)
+5. [Assign property labels](#step-5-assign-property-labels)
+6. [Manage schema](#step-6-manage-schema)
+7. [Refresh settings](#step-7-refresh-settings)
+8. [Review connection](#step-8-review-connection)
+
+This article also includes information about troubleshooting, limitations, and next steps:
+
+* [Troubleshooting](#troubleshooting)
+* [Limitations](#limitations)
+* [Next steps](#next-steps)
 
 > [!NOTE]
 > The setup process is similar for all the Graph connectors by Microsoft but is not exactly the same. **In addition to reading this article, be sure to read the connector-specific information for your data source.**  
@@ -106,7 +112,7 @@ Incorrectly mapping labels will cause a deteriorated search experience. It's oka
 
 ### Content property
 
-It's recommended you select a **Content Property" from the drop-down menu of options, or keep the default if one is present. This property is used for full-text indexing of content, search results page snippet generation, [result cluster](result-cluster.md) participation, language detection, HTML/text support, ranking and relevance, and query formulation.
+It's recommended you select a **Content Property** from the drop-down menu of options, or keep the default if one is present. This property is used for full-text indexing of content, search results page snippet generation, [result cluster](result-cluster.md) participation, language detection, HTML/text support, ranking and relevance, and query formulation.
 
 If you select a content property, you will have the option of using the system-generated property **ResultSnippet** when you [create your result type](customize-results-layout.md). This property serves as a placeholder for the dynamic snippets that are generated from the content property at query time. If you use this property in your result type, snippets will be generated in your search results.
 
@@ -161,7 +167,7 @@ With a full refresh, the search engine processes and indexes every item in the c
 
 With an **Incremental refresh**, the search engine can process and index only the items that were created or modified since the last successful crawl. As a result, not all the data in the content source is reindexed. Incremental refreshes work best to detect content, metadata, permission, and other updates.
 
-Incremental refreshes are much faster than full refreshes because unchanged items aren’t processed. However, if you choose to run incremental refreshes, you still need to run full refreshes periodically to maintain correct data sync between the content source and the search index.
+Incremental refreshes are much faster than full refreshes because unchanged items aren't processed. However, if you choose to run incremental refreshes, you still need to run full refreshes periodically to maintain correct data sync between the content source and the search index.
 
 > [!div class="mx-imgBorder"]
 > ![Incremental crawl and full crawl interval settings showing Incremental at 15 minutes and Full crawl at 1 week.](media/refreshschedule.png)
@@ -172,18 +178,22 @@ Incremental refreshes are much faster than full refreshes because unchanged item
 
 You can review your entire configuration and edit settings as needed before completing the connection. **Be sure to read the connector-specific information for your data source if you haven't already done so.** Select **Finish updating** when you're ready to complete the connection.
 
-## How do I know the connection setup worked?
+### Confirm if the connection setup worked
 
 Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
 ## Troubleshooting
 <!---Insert troubleshooting recommendations for this data source-->
-Read the connector-specific information for your data source.
+Read the connector-specific information for your data source. 
 
+> [!NOTE]
+> Not all connector-specific articles include troubleshooting recommendations at this point.
 
 ## Limitations
 <!---Insert limitations for this data source-->
-Read the connector-specific information for your data source.
+To learn about limitations that apply to all data sources see the [Overview of Microsoft Graph connectors](connectors-overview) article.
+
+See the connector-specific information for your data source to find out if other limitations apply to that  particular Graph connector.
 
 ## Next steps
 
