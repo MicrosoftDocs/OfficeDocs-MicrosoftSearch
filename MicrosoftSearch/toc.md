@@ -24,6 +24,7 @@
 #### [Azure DevOps (preview)](azure-devops-connector.md)
 #### [Azure SQL and Microsoft SQL Server](MSSQL-connector.md)
 #### [Enterprise websites](enterprise-web-connector.md)
+#### [File share](fileshare-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
 #### [Oracle SQL (preview)](OracleSQL-connector.md)
 #### [Salesforce (preview)](salesforce-connector.md)

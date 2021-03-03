@@ -59,7 +59,13 @@ When the connector attempts to crawl a file, the "last access time" field in its
 
 ## Step 4: Manage search permissions
 
-You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists. If you want to use Share Access Control Lists, select the appropriate option on the **Advanced settings** page. If you want to use NTFS Access Control Lists, select the appropriate option on the **Manage search permissions** page.
+You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists, by selecting the desired option in **Manage search permissions** page. The user accounts and groups provided in these Access Control Lists must be managed by Active Directory (AD). If you are using any other system for user accounts management, you can select 'everyone' option, which lets users search for all the files without any access restrictions. However, when users try to open the file, access controls set at the source apply.
+
+Note that windows by default provides 'Read' permission to 'Everyone' in Share ACLs when a folder is shared on network. By extension, if you are choosing Share ACLs in **Manage search permissions**, users will be able to search for all the files. If you want to restrict access, remove 'Read' access for 'Everyone' in file shares and provide access only to the desired users and groups. The connector then reads these access restrictions and applies them to search.
+
+You can choose Share ACLs only if the share path you provided follows UNC path format. You can create a path in UNC format by going to 'Advanced Sharing' under 'Sharing' option.
+
+![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 
 ## Step 5: Assign property labels
 
