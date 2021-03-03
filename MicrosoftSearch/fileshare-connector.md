@@ -63,7 +63,7 @@ You can restrict the permission to search for any file based on Share Access Con
 
 Note that windows by default provides 'Read' permission to 'Everyone' in Share ACLs when a folder is shared on network. By extension, if you are choosing Share ACLs in **Manage search permissions**, users will be able to search for all the files. If you want to restrict access, remove 'Read' access for 'Everyone' in file shares and provide access only to the desired users and groups. The connector then reads these access restrictions and applies them to search.
 
-You will not be able choose Share ACLs if the share path you provide does not follow the pattern \\<server-name>\<share-name>. If your share path has the format \\<server-name>\<folder1>\<share-name>, you can create a path in the supported format by going to 'Advanced Sharing' under 'Sharing' option for a file share.
+You can choose Share ACLs only if the share path you provided follows UNC path format. You can create a path in UNC format by going to 'Advanced Sharing' under 'Sharing' option.
 
 ![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 
