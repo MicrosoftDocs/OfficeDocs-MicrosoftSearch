@@ -27,6 +27,7 @@ Any valid **Microsoft 365 or Office 365 license** allows you to view data from c
 
 >[!IMPORTANT]
 >All of the Graph connectors by Microsoft are free. However, you need to have sufficient index quota to ingest content from those connectors.
+
 To index content using Graph connectors, you need to have sufficient index quota. Graph connectors index quota is available via:
 
 ## Entitlement built into Microsoft 365 or Office 365 E5 licenses
