@@ -24,7 +24,7 @@ The Enterprise websites Graph connector allows your organization to index articl
 > [!NOTE]
 > Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
-This article is for anyone who configures, runs, and monitors a Enterprise websites connector. It supplements the general setup process, and shows instructions that apply only for the Enterprise websites connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors an Enterprise websites connector. It supplements the general setup process, and shows instructions that apply only for the Enterprise websites connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
 <!---## Before you get started-->
 
@@ -43,6 +43,9 @@ Follow the general [setup instructions](https://docs.microsoft.com/microsoftsear
 ## Step 3: Configure the connection settings
 
 To connect to your data source, you need to fill in the root URL of the website, select a crawl source, and the type of authentication you'd like to use: None, Basic Authentication, or OAuth 2.0 with [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/). After you complete this information, select Test Connection to verify your settings.
+
+> [!NOTE]
+> If the site you want to crawl has a sitemap defined, the connector will only crawl the URLs listed in the sitemap. If no sitemap is defined, the connector will do a deep crawl of all the links found on the root URL of the site.
 
 ### URL
 

@@ -13,24 +13,24 @@
 ## [Q&As](manage-qas.md)
 # Connectors
 ## [Overview](connectors-overview.md)
-## [Preview release](connectors-preview.md)
 ## [Connectors gallery](connectors-gallery.md)
 ## Set up connectors by Microsoft
 ### [Setup overview](configure-connector.md)
-### [Set-up the Graph connector agent (preview)](on-prem-agent.md)
-### [Map your non Azure AD Identities (preview)](map-non-aad.md)
-### [Map your Azure AD Identities (preview)](map-aad.md)
+### [Set up the graph connector agent (preview)](on-prem-agent.md)
+### [Map non-Azure AD Identities (preview)](map-non-aad.md)
+### [Map Azure AD Identities (preview)](map-aad.md)
 ### Connector-specific information
 #### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 #### [Azure DevOps (preview)](azure-devops-connector.md)
 #### [Azure SQL and Microsoft SQL Server](MSSQL-connector.md)
 #### [Enterprise websites](enterprise-web-connector.md)
+#### [File share](fileshare-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
 #### [Oracle SQL (preview)](OracleSQL-connector.md)
 #### [Salesforce (preview)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
-## Manage your connections
-### [Monitor your connections](manage-connector.md)
+## Manage connections
+### [Monitor connections](manage-connector.md)
 ### [View connection details and errors](connector-details-errors.md)
 ## [Licensing](licensing.md)
 ## [Terms of use](terms-of-use.md)
