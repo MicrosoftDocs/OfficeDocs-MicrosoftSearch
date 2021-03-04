@@ -3,6 +3,7 @@ title: "Configure your Microsoft-built Graph connector for Microsoft Search"
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -22,7 +23,7 @@ description: "Setup overview for Graph connectors by Microsoft"
 This article shows the basic process required to set up the Graph connectors **by Microsoft** in the [Microsoft 365 admin center](https://admin.microsoft.com). The basic process includes the following steps:  
 <!---Add links to each section in the doc--->
 
-1. [Add a Graph connector in the Microsoft 365 admin center](#step-1-add-a-graph-connector-in-the-Microsoft-365-admin-center)
+1. [Add a Graph connector in the Microsoft 365 admin center](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [Name the connection](#step-2-name-the-connection)
 3. [Configure the connection settings](#step-3-configure-the-connection-settings)
 4. [Manage search permissions](#step-4-manage-search-permissions)
@@ -191,7 +192,7 @@ Read the connector-specific information for your data source.
 
 ## Limitations
 <!---Insert limitations for this data source-->
-To learn about limitations that apply to all data sources see the [Overview of Microsoft Graph connectors](connectors-overview) article.
+To learn about limitations that apply to all data sources see the [Overview of Microsoft Graph connectors](connectors-overview.md) article.
 
 See the connector-specific information for your data source to find out if other limitations apply to that  particular Graph connector.
 
