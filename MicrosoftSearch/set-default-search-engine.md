@@ -94,6 +94,7 @@ Double-click the file created and follow the steps to import the file. A success
 2. Right-click on **Registry\New** and select **Registry Wizard**. From the Registry Browser window, select **Local Computer** and click **Next**.
 3. Navigate to **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\SearchScopes**.
 4. From this key, make sure to select DefaultScope.
+
     ![Registry Browser with DefaultScope selected](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
 5. Check all sub keys containing the GUID for Microsoft Search in Bing and every value under the key except any path to user profiles. Scroll down to select other items.
 6. Click Finish to complete this configuration.
