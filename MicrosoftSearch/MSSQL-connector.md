@@ -3,6 +3,7 @@ title: "Azure SQL and Microsoft SQL server Graph connector for Microsoft Search"
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

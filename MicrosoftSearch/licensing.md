@@ -22,7 +22,7 @@ This article is for Global or Billing Admins who want to learn about how to purc
 Any valid **Microsoft 365 or Office 365 license** allows you to view data from connectors in your search results.
 
 > [!TIP]
-> **Microsoft Graph connectors & Viva Topics Trial Now Available**: 
+> **Microsoft Graph connectors & Viva Topics Trial Now Available**:
 > If you don't have index quota available and want to try Microsoft Graph connectors now you can request a **Promo code** with [Microsoft Viva Topics](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab), as detailed [here](#microsoft-graph-connectors-now-available-with-microsoft-viva-topics-trial).
 
 >[!IMPORTANT]
