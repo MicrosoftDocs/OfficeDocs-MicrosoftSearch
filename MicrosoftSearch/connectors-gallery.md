@@ -391,7 +391,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Atlassian Confluence</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Confluence connector will crawl content from any Confluence content repository. The connector retrieves spaces, pages, blogs, attachments and comments. The connector uses the Confluence REST API to crawl Confluence content.</p>
+                        <p>The Confluence connector will crawl content from any Confluence content repository. The connector retrieves spaces, pages, blogs, attachments, and comments. The connector uses the Confluence REST API to crawl Confluence content.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Atlassian+Confluence+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -407,7 +407,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                        <h3>Atlassian Confluence</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Connector for Atlassian Confluence. Indexes pages, blog posts, attachments, comments, spaces, profiles and hub sites for tags from on-premise Confluence instances in near real time. The connector fully supports Confluence's built-in user and group management, as well as Confluence installations based on Active Directory and other directory services. 6th generation Raytion search connector.</p>
+                        <p>Connector for Atlassian Confluence. Indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from on-premise Confluence instances in near real time. The connector fully supports Confluence's built-in user and group management, as well as Confluence installations based on Active Directory and other directory services. 6th generation Raytion search connector.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-confluence-connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -423,7 +423,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                        <h3>Atlassian Confluence Cloud</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Connector for Atlassian Confluence Cloud. Indexes pages, blog posts, attachments, comments, spaces, profiles and hub sites for tags from on-premise Confluence instances in near real time. The connector fully supports Confluence Cloud's built-in user and group management. 6th generation Raytion search connector.</p>
+                        <p>Connector for Atlassian Confluence Cloud. Indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from on-premise Confluence instances in near real time. The connector fully supports Confluence Cloud's built-in user and group management. 6th generation Raytion search connector.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-confluence-cloud-connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -474,7 +474,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Azure Blob Storage</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Azure Blob Storage connector will crawl content from the Azure Blob Container. Each blob is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically.</p>
+                        <p>The Azure Blob Storage connector will crawl content from the Azure Blob Container. Each blob is submitted with its metadata (size, location, last accessed, and so on.). Updates are discovered automatically.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Blob+Storage+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -493,7 +493,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Azure Data Lake</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Azure Data Lake connector will crawl content from the ADLS cloud at either root or specified paths. Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically.</p>
+                        <p>The Azure Data Lake connector will crawl content from the ADLS cloud at either root or specified paths. Each file is submitted with its metadata (size, location, last accessed, and so on.). Updates are discovered automatically.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -646,7 +646,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Documentum / Documentum DQL</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The Documentum Connector will crawl content from any Documentum content repository. DQL is a query language that allows you to perform very complex queries involving specialized searching capabilities for document and content management. The Aspire Documentum DQL connector will crawl content from Documentum.</p>
+                        <p>The Documentum Connector will crawl content from any Documentum content repository. DQL is a query language that allows you to perform complex queries involving specialized searching capabilities for document and content management. The Aspire Documentum DQL connector will crawl content from Documentum.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Documentum+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -764,7 +764,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                        <h3>Facebook Workplace</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Connector for Facebook Workplace. Indexes project groups, conversations and shared documents from Facebook Workplace in near real time. The connector fully supports Facebook Workplace's built-in user and group management. 6th generation Raytion search connector.</p>
+                        <p>Connector for Facebook Workplace. Indexes project groups, conversations, and shared documents from Facebook Workplace in near real time. The connector fully supports Facebook Workplace's built-in user and group management. 6th generation Raytion search connector.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-facebook-workplace-connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -968,7 +968,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>IBM Connections</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>The IBM Connections Connector was specifically developed for IBM Connections, establishing a secure connection to the Connections application and mapping the content, including metadata and attachments, from the Connections schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.</p>
+                        <p>The IBM Connections Connector was developed for IBM Connections, establishing a secure connection to the Connections application and mapping the content, including metadata and attachments, from the Connections schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/ibm-connections-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">More details</font></a>
                         </p>
@@ -1156,7 +1156,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Jive</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The JIVE connector will crawl content from any JIVE Community with an enabled REST API v3. The connector will retrieve documents stored in spaces, groups, projects, and blogs and any sub-folders contained in it.</p>
+                        <p>The JIVE connector will crawl content from any JIVE Community with an enabled REST API v3. The connector will retrieve documents stored in spaces, groups, projects, and blogs and any subfolders contained in it.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Jive+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -1172,7 +1172,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Jive</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>The Jive Connector was specifically developed for Jive, establishing a secure connection to the Jive application and mapping the content including metadata and attachments from the Jive schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.</p>
+                        <p>The Jive Connector was developed for Jive, establishing a secure connection to the Jive application and mapping the content including metadata and attachments from the Jive schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/jive-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">More details</font></a>
                         </p>
@@ -1376,7 +1376,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Micro Focus Content Manager (HPE Records Manager/HP TRIM)</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>The HP TRIM Connector was specifically developed for HP Records Manager, establishing a secure connection to the TRIM application and mapping the content, including metadata and attachments, from the TRIM schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.</p>
+                        <p>The HP TRIM Connector was developed for HP Records Manager, establishing a secure connection to the TRIM application and mapping the content, including metadata and attachments, from the TRIM schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/hp-trim-connector-sharepoint-azure-elasticsearch"><font color="0065BA">More details</font></a>
                         </p>
@@ -1530,7 +1530,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>Objective</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>The Objective Connector was specifically developed for Objective, establishing a secure connection to Objective and mapping the content including metadata from the Objective schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.</p>
+                        <p>The Objective Connector was developed for Objective, establishing a secure connection to Objective and mapping the content including metadata from the Objective schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/objective-connector-sharepoint-azure-elasticsearch"><font color="0065BA">More details</font></a>
                         </p>
@@ -1546,7 +1546,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>OneDrive</h3>
                         <p>by <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>The OneDrive connector will crawl content from Microsoft OneDrive, traversing folders to find files. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed, etc.) and access control lists.</p>
+                        <p>The OneDrive connector will crawl content from Microsoft OneDrive, traversing folders to find files. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed, and so on.) and access control lists.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/OneDrive+Connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -1616,7 +1616,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                         <h3>OpenText eDOCS DM</h3>
                         <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Users of the OpenText eDOCS DM Connector are able to search for content housed in eDOCS repositories directly from within Microsoft Search, eliminating the need to perform multiple searches to locate needed content. Security established within eDOCS is maintained by the connector to make certain that content is only seen by those who have been granted access.</p>
+                        <p>Users of the OpenText eDOCS DM Connector are able to search for content housed in eDOCS repositories directly from within Microsoft Search, eliminating the need to perform multiple searches to locate needed content. Security established within eDOCS is maintained by the connector to make certain that content is only seen by those users who have been granted access.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/edocs-dm-connector-sharepoint-azure-elasticsearch"><font color="0065BA">More details</font></a>
                         </p>
