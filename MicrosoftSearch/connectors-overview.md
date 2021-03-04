@@ -3,6 +3,7 @@ title: "Microsoft Graph Connectors Overview"
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
