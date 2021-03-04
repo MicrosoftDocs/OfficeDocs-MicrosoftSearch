@@ -3,6 +3,7 @@ title: "Manage Microsoft Graph Connectors for Microsoft Search"
 ms.author: monaray
 author: monaray97
 manager: mnirkhe
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
