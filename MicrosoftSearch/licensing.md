@@ -54,7 +54,7 @@ There are two options to explore Graph connectors with Microsoft Viva Topics:
 
      Visit [Microsoft Viva Topics](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab) and select the Free trial option.
 
-2. Contact your Microsoft Account Manager to request a **Promo code** for trial index capacity with Microsoft Viva Topics trial. With a **Promo code** you can get access during six months, for 50 users.
+2. Contact your Microsoft account manager to request a **Promo code** for trial index capacity with Microsoft Viva Topics trial. With a **Promo code** you can get access during six months, for 50 users.
 
 >[!NOTE]
 >Currently Microsoft Graph connectors only support up to 7 million items of total index quota, which includes any built-in quota bundled into Microsoft 365 or Office 365 E5 licenses. The platform will support higher limits in the future. Please contact Microsoft support or your Microsoft account manager if you have any questions.
