@@ -3,6 +3,7 @@ title: "License requirements and pricing"
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Global or Billing Admin
 ms.topic: article
 ms.service: mssearch
