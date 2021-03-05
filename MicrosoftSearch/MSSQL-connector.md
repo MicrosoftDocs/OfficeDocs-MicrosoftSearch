@@ -3,6 +3,7 @@ title: "Azure SQL and Microsoft SQL server Graph connector for Microsoft Search"
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -21,7 +22,7 @@ The Microsoft SQL server or Azure SQL Graph connector allows your organization t
 The Graph connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
 > [!NOTE]
-> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
+> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
 This article is for anyone who configures, runs, and monitors a Azure SQL and Microsoft SQL server Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure SQL and Microsoft SQL server Graph connector. This article also includes information about [Limitations](#limitations) for the Microsoft SQL server and Azure SQL connectors.
 
@@ -197,11 +198,11 @@ Follow the general [setup instructions](https://docs.microsoft.com/microsoftsear
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-## Next steps: Customize the search results page
+<!---## Next steps: Customize the search results page
 
 Create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won't show up on the search results page.
 
-To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).
+To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).-->
 
 <!---## Troubleshooting-->
 

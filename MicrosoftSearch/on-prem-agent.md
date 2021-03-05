@@ -3,6 +3,7 @@ title: "On-Premises Agent"
 ms.author: rusamai 
 author: rsamai 
 manager: jameslau 
+audience: Admin
 ms.audience: Admin 
 ms.topic: article 
 ms.service: mssearch 
