@@ -3,6 +3,7 @@ title: "ServiceNow Graph connector for Microsoft Search"
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -20,7 +21,7 @@ description: "Set up the ServiceNow Graph connector for Microsoft Search"
 The ServiceNow Graph connector allows your organization to index knowledge-based articles visible to users according to the user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, users can search for the articles from any Microsoft Search client.
 
 > [!NOTE]
-> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
+> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
 This article is for anyone who configures, runs, and monitors a ServiceNow Graph connector. It supplements the general setup process, and shows instructions that apply to only for the ServiceNow Graph connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
   
@@ -38,7 +39,7 @@ Follow the general [setup instructions](https://docs.microsoft.com/microsoftsear
 
 To connect to your ServiceNow data, use your organization's **ServiceNow instance URL** credentials for this account, the Client ID, and Client Secret for OAuth authentication.  
 
-Your organization’s **ServiceNow instance URL** typically looks like **https://&lt;your-organization-domain>.service-now.com**. Along with this URL, you need an account for setting up the connection to ServiceNow and for allowing Microsoft Search to update the articles from ServiceNow based on the refresh schedule. The account should at least have <em>knowledge</em> role. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
+Your organization's **ServiceNow instance URL** typically looks like **https://&lt;your-organization-domain>.service-now.com**. Along with this URL, you need an account for setting up the connection to ServiceNow and for allowing Microsoft Search to update the articles from ServiceNow based on the refresh schedule. The account should at least have <em>knowledge</em> role. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
 
 >[!NOTE]
 >If you want to crawl user and group identities to honor access permissions of knowledge articles in Microsoft Search results, the account should have access to read the following table records in ServiceNow:

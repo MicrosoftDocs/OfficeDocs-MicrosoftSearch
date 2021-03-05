@@ -4,6 +4,7 @@ title: "Azure DevOps Graph connector for Microsoft Search"
 ms.author: mecampos 
 author: mecampos 
 manager: umas 
+audience: Admin
 ms.audience: Admin 
 ms.topic: article 
 ms.service: mssearch 
@@ -21,7 +22,7 @@ description: "Set up the Azure DevOps Graph connector for Microsoft Search"
 The Azure DevOps Graph connector allows your organization to index work items in its instance of the Azure DevOps service. After you configure the connector and index content from Azure DevOps, end users can search for those items in Microsoft Search.
 
 > [!NOTE]
-> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
+> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
 This article is for anyone who configures, runs, and monitors an Azure DevOps Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure DevOps Graph connector.
 

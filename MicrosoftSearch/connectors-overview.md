@@ -3,6 +3,7 @@ title: "Microsoft Graph Connectors Overview"
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -29,6 +30,8 @@ This article is intended to help Microsoft 365 administrators locate the resourc
 * [What are the preview features?](#what-are-the-preview-features)
 * [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results)
 * [How do I search my connector data from a custom application?](#how-do-i-search-my-connector-data-from-a-custom-application)
+* [How do I customize search results?](#how-do-i-customize-search-results)
+* [What are the connector limitations](#what-are-the-connector-limitations)
 
 <!---Modify to another note that is more accurate after rollout completion--->
 > [!IMPORTANT]
@@ -113,11 +116,11 @@ There are many ways to customize and configure search results. See the following
 
 After custom data is indexed, developers can [query this data](https://docs.microsoft.com/graph/search-concept-custom-types). You can view your data in any application. For more information, see the [Overview of the Microsoft Search API in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
 
-## Next steps
+## How do I customize search results?
 
-Make sure you customize the search results as recommended in this article [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results). To learn more about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
+The next step is to customize the search results as recommended in this article [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results). To learn more about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
-## Limitations
+## What are the connector limitations?
 
 * When you **publish** a Microsoft-built connector, it might take a few minutes for the connection to be created. During that time, the connection will show its status as pending.
 
@@ -127,6 +130,6 @@ Make sure you customize the search results as recommended in this article [How d
 
 * There is no support for schema updates. After you create a connection setup, there's no way to update the schema. You can only delete and re-create the connection.
 
-* There is a connections limit. Each tenant can create up to 10 connections.
+* There is a connection limit. Each tenant can create up to 10 connections.
 
-* Edit support for connection is not available. Once the connection has been created, you cannot edit or change it. If you need to change any details, you must delete and recreate the connection.
+* Edit support for connection is not available. Once the connection has been created, you can't edit or change it. If you need to change any details, you must delete and recreate the connection.

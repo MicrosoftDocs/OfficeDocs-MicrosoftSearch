@@ -3,6 +3,7 @@ title: "Enterprise websites Graph connector for Microsoft Search"
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -22,7 +23,7 @@ description: "Set up the Enterprise websites Graph connector for Microsoft Searc
 The Enterprise websites Graph connector allows your organization to index articles and **content from its internal-facing websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
 
 > [!NOTE]
-> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
+> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
 This article is for anyone who configures, runs, and monitors an Enterprise websites connector. It supplements the general setup process, and shows instructions that apply only for the Enterprise websites connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
@@ -44,12 +45,12 @@ Follow the general [setup instructions](https://docs.microsoft.com/microsoftsear
 
 To connect to your data source, you need to fill in the root URL of the website, select a crawl source, and the type of authentication you'd like to use: None, Basic Authentication, or OAuth 2.0 with [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/). After you complete this information, select Test Connection to verify your settings.
 
-> [!NOTE]
-> If the site you want to crawl has a sitemap defined, the connector will only crawl the URLs listed in the sitemap. If no sitemap is defined, the connector will do a deep crawl of all the links found on the root URL of the site.
-
 ### URL
 
 Use the URL field to specify the root of the website that you'd like to crawl. The enterprise websites connector will use this URL as the starting point and follow all the links from this URL for its crawl.
+
+> [!NOTE]
+> If the site you want to crawl has a sitemap defined, the connector will only crawl the URLs listed in the sitemap. If no sitemap is defined, the connector will do a deep crawl of all the links found on the root URL of the site.
 
 ### Crawl mode: Cloud or On-premises (Preview)
 
