@@ -128,6 +128,10 @@ A bookmark can have several keywords and bookmarks can share the same keyword, b
 
 **A:**  Recommended bookmarks will only appear in Microsoft Search if both Recommended bookmarks and auto-publishing are enabled. During the initial evaluation period, the recommendation engine will evaluate SharePoint traffic to identify suitable bookmarks and then auto-publish them. Once published they become available immediately in Microsoft Search.
 
+**Q: How long does it take for a deleted bookmark to be removed from Microsoft Search results?**
+
+**A**: Deleted bookmarks are immediately removed from work results.
+
 **Q: Will Microsoft Search recommend bookmarks from sites in all languages?**
 
 **A**: Yes, Microsoft Search can recommend bookmarks from any internal SharePoint site, regardless of the language.
