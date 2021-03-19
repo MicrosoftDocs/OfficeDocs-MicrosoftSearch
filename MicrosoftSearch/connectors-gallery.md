@@ -2371,23 +2371,6 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
-<!-- This is the "template" for each box > Copy and edit to add new boxes
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="min-height:240px;">
-                    <div class="cardText">
-                        <h3>Test</h3>
-                        <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>The Yammer Connector establishes a secure connection to the Yammer application and maps the content including metadata and attachments from the Yammer schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.</p>
-                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
-                            <a href="https://www.bainsight.com/connectors/yammer-connector-sharepoint-azure-elasticsearch"><font color="0065BA">More details</font></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li> >--->
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2484,6 +2467,29 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+<!-- This is the "template" for each box > Copy and edit to add new boxes
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>Test</h3>
+                        <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>The Yammer Connector establishes a secure connection to the Yammer application and maps the content including metadata and attachments from the Yammer schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/yammer-connector-sharepoint-azure-elasticsearch"><font color="0065BA">More details</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li> >--->
+<!-- --->
+<!-- --->
+<!-- For simplicity, and while I find a better format for this boxes, I am adding the new connectors in one single line, please refer to the template above if you need a better understanding of the lines next--->
+<!-- --->
+<!-- --->
+<!-- --->
 <li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira (Cloud)</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>The Jira (Cloud Version) Connector performs searches against all Jira objects,  eliminating the need to navigate to Jira directly.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/jira-cloud-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
 <li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Kaltura</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>The Kaltura Connector enables the indexing of not only video, but also a variety of other types of information including Categories, Data, Documents and more.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/kaltura-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
 <li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Dynamics 365</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>Our Microsoft Dynamics 365 CRM connector supports both on-premise CRM installations and Dynamics CRM Online. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-dynamics-crm-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
