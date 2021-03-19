@@ -82,7 +82,7 @@
     },
     {
       "source_path": "MicrosoftSearch/add-users.md",
-      "redirect_url": "https://docs.microsoft.com/microsoftsearch/setup-microsoft-search#step-1-assign-search-admin-and-search-editor",
+      "redirect_url": "/microsoftsearch/setup-microsoft-search#step-1-assign-search-admin-and-search-editor",
       "redirect_document_id": false
     },
     {
@@ -127,12 +127,12 @@
     },
     {
       "source_path": "MicrosoftSearch/advanced-dns-configuration.md",
-      "redirect_url": "https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges",
+      "redirect_url": "/office365/enterprise/urls-and-ip-address-ranges",
       "redirect_document_id": false
     },
     {
       "source_path": "MicrosoftSearch/manage-network-connections.md",
-      "redirect_url": "https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges",
+      "redirect_url": "/office365/enterprise/urls-and-ip-address-ranges",
       "redirect_document_id": false
     },
     {
@@ -212,7 +212,7 @@
     },
     {
       "source_path": "MicrosoftSearch/set-default-browser.md",
-      "redirect_url": "https://docs.microsoft.com/deployedge/edge-default-browser",
+      "redirect_url": "/deployedge/edge-default-browser",
       "redirect_document_id": false
     },
     {

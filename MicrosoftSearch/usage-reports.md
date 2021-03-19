@@ -16,7 +16,7 @@ description: "Review Microsoft Search usage reports"
 
 # Microsoft Search Usage Reports
 
-Search usage reports enable you to gain more understanding of how search is functioning in your organization. The insights generated from these reports will help you [make content easy to find](https://docs.microsoft.com/microsoftsearch/make-content-easy-to-find) and take actions that will make search a more useful and delightful experience for your users.
+Search usage reports enable you to gain more understanding of how search is functioning in your organization. The insights generated from these reports will help you [make content easy to find](./make-content-easy-to-find.md) and take actions that will make search a more useful and delightful experience for your users.
 
 The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from SharePoint Home and Office.com search boxes. You can see data from the past 31 days, per day, or monthly for the previous year. These reports are just rolling out so it will take time to accrue the historical data.
 
