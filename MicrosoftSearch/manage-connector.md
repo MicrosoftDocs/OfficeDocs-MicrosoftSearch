@@ -33,15 +33,15 @@ Delete a connection | :heavy_check_mark: | :heavy_check_mark:
 Edit a published connection | :heavy_check_mark: Name and Description<br></br> :heavy_check_mark: Connection settings<br></br> :heavy_check_mark: Property labels<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: Refresh schedule<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Description
 Edit a draft connection | :heavy_check_mark: | :x:
 
-## Monitor your connection status
+## Monitor your connection state
 
 After you create a connection, the number of processed items shows on the **Connectors** tab on the **Microsoft Search** page. After the initial full crawl completes successfully, the progress for periodic incremental crawls displays. This page provides information about the connector's day-to-day operations and an overview of the logs and error history.
 
-Four states show up in the **Status** column against each connection:
+Four states show up in the **State** column against each connection:
 
 * **Syncing**. The connector is crawling the data from the source to index the existing items and make any updates.
 
-* **Enabled**: The connection is enabled, and there's no active crawl running against it. **Last sync time** indicates when the last successful crawl happened. The connection is as fresh as the last sync time.
+* **Ready**: The connection is ready, and there's no active crawl running against it. **Last sync time** indicates when the last successful crawl happened. The connection is as fresh as the last sync time.
 
 * **Paused**. The crawls are paused by the admins through the pause option. The next crawl runs only when it's manually resumed. However, the data from this connection continues to be searchable.
 
@@ -52,19 +52,23 @@ Four states show up in the **Status** column against each connection:
 The available index quota and consumption is displayed on the connectors landing page.
 
 ![Index quota utilization bar](media/quota_utilization.png)
-
+ 
 >[!NOTE]
 >During the preview period, every organization trying out Graph connectors was provided a free fixed quota of up to 2 million items across all connections. With Graph connectors being generally available, the free quota will expire on April 1st, 2021 for those organizations who have been using Graph connectors in preview.
 >Microsoft-built Graph connectors labeled as ["Preview"](connectors-preview.md) will not be included in the total charged index quota for your organization. However, it will count towards the max number of 10 connections you can configure for your organization and the max number of 7 million items your organization can index across connections; each connection is limited 700,000 items. 
 
 The quota utilization bar will indicate various states based on consumption of quota by your organization:
 
-State | Quota consumption
---- | ---
-Normal | 1-69%
-High | 70-89%
+State | Quota utilization levels
+--- | --- 
+Normal | 0-79%
+High | 80-89%
 Critical | 90%-99%
 Full | 100%
+
+<!-- 
+![Quota utilization levels](media/connectors-quota-utilization-levels.png)
+-->
 
 The number of items indexed will also be displayed with each connection. The number of items indexed by each connection contributes to the total quota available for your organization.
 
