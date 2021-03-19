@@ -2452,4 +2452,37 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>iManage Cloud</h3>
+                        <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>BA Insight's iManage Cloud Connector securely indexes both the full text and metadata of documents in the Work workspaces into the search engine.</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/connector-for-imanage-work-cloud/"><font color="0065BA">More details</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>Jira</h3>
+                        <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>The Jira Connector enables users to perform searches against all Jira objects, eliminating the need to go to Jira directly.</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/jira-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">More details</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:540px;"><div class="cardText"><h3>Jira (Cloud)</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>The Jira (Cloud Version) Connector performs searches against all Jira objects,  eliminating the need to navigate to Jira directly.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/jira-cloud-connector-for-sharepoint-azure-elasticsearch/"0065BA">More details</font></a></p></div></div></div></div></li>
 </ul>
