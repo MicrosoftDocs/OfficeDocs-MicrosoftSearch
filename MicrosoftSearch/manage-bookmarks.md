@@ -154,4 +154,4 @@ A bookmark can have several keywords and share the same keyword, but reserved ke
 
 **Q: Where do I find the App ID for a Power App?**
 
-**A**: Go to the Power Apps site and view the Details pane for the app. Learn more about [getting an app ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id).
+**A**: Go to the Power Apps site and view the Details pane for the app. Learn more about [getting an app ID](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id).

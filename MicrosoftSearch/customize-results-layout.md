@@ -18,11 +18,11 @@ description: "Using adaptive cards, create a layout to view your customized sear
 
 You can design the result layout for a custom vertical using the search layout designer. You can start designing the layout by choosing templates offered in the layout designer and using them if they fit your requirements. Or you can choose to edit these templates in various ways to fit your requirements. For example, add/remove images, add/remove text, and modify text. If none of the templates meet your requirements, you can choose to start designing your layout using a blank template.  
 
-After the layout is ready, use the [Adaptive Cards Template language](https://docs.microsoft.com/adaptive-cards/templating/language) to create a result layout JSON that's used to define a result type. You map the result properties to the layout using the Mapping step in the layout designer.  
+After the layout is ready, use the [Adaptive Cards Template language](/adaptive-cards/templating/language) to create a result layout JSON that's used to define a result type. You map the result properties to the layout using the Mapping step in the layout designer.  
 
 ## Create a layout on your own
 
-Creating a layout on your own requires knowledge of [adaptive cards](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started) and their [schema](https://adaptivecards.io/explorer/). Search result layout uses a subset of the elements offered by adaptive cards, and you can use the layout designer to learn about the supported set of elements.  
+Creating a layout on your own requires knowledge of [adaptive cards](/adaptive-cards/authoring-cards/getting-started) and their [schema](https://adaptivecards.io/explorer/). Search result layout uses a subset of the elements offered by adaptive cards, and you can use the layout designer to learn about the supported set of elements.  
 
 While creating your own layout, create the adaptive card layout using data from your connector, and then finalize the layout.
 There are two main steps in creating your own layout:
@@ -190,7 +190,7 @@ Before you get started, there are a few things that you should do and a few thin
 
 ### Don't
 
-- Don't define invalid data types when binding values. For more information about data types, see [Manage the Search schema](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema).
+- Don't define invalid data types when binding values. For more information about data types, see [Manage the Search schema](/sharepoint/search/manage-the-search-schema).
 - Avoid cropping the result on the result page by following the maximum height of the result layout JSON. If you exceed the maximum height of the result layout, the result will be cropped on the result page.
 - Don't use `px` values in element properties.
 - Don't use markdown with the **ResultSnippet** property in the result layout to highlight query match in the search result.
@@ -199,8 +199,8 @@ Before you get started, there are a few things that you should do and a few thin
 
 [Customize search result page](customize-search-page.md)
 
-[Adaptive cards](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started)
+[Adaptive cards](/adaptive-cards/authoring-cards/getting-started)
 
-[Adaptive Cards Template language](https://docs.microsoft.com/adaptive-cards/templating/language)
+[Adaptive Cards Template language](/adaptive-cards/templating/language)
 
 [Adaptive card schema](https://adaptivecards.io/explorer/)

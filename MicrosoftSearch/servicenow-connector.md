@@ -27,12 +27,12 @@ This article is for anyone who configures, runs, and monitors a ServiceNow Graph
   
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 2: Name the connection
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 3: Connection Settings
@@ -89,11 +89,11 @@ To use Azure AD OpenID Connect for authentication, follow the steps below.
 
 ## Step 3.a: Register a new application in Azure Active Directory
 
-To learn about registering a new application in Azure Active Directory, see [Register an application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-an-application). Select single tenant organizational directory. Redirect URI isn't needed. After registration, note down the Application (client) ID and Directory (tenant) ID.
+To learn about registering a new application in Azure Active Directory, see [Register an application](/azure/active-directory/develop/quickstart-register-app#register-an-application). Select single tenant organizational directory. Redirect URI isn't needed. After registration, note down the Application (client) ID and Directory (tenant) ID.
 
 ## Step 3.b: Create a client secret
 
-To learn about creating a client secret, see [Creating a client secret](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Take a note of client secret.
+To learn about creating a client secret, see [Creating a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Take a note of client secret.
 
 ## Step 3.c: Retrieve Service Principal Object Identifier
 
@@ -198,23 +198,23 @@ If you select **Only people with access to this data source**, you need to furth
 >The ServiceNow connector is in **preview** if you choose **Only people with access to this data source**.
 
 >[!NOTE]
->If you choose AAD as the type of identity source, make sure you are assigning UPN source property to email targeted property in ServiceNow. To verify or change your mappings, see [Customizing user provisioning attribute-mappings for SaaS applications in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes).
+>If you choose AAD as the type of identity source, make sure you are assigning UPN source property to email targeted property in ServiceNow. To verify or change your mappings, see [Customizing user provisioning attribute-mappings for SaaS applications in Azure Active Directory](/azure/active-directory/app-provisioning/customize-application-attributes).
 
 If you chose to ingest an ACL from your ServiceNow instance and selected "non-AAD" for the identity type, see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities.
 
 ## Step 6: Assign property labels
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 7: Manage schema
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 8: Choose refresh settings
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 >[!NOTE]
@@ -222,7 +222,7 @@ Follow the general [setup instructions](https://docs.microsoft.com/microsoftsear
 
 ## Step 9: Review Connection
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Troubleshooting

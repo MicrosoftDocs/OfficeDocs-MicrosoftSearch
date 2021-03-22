@@ -41,7 +41,7 @@ Here's the instructions for setting the default search engine, default homepage,
 
 ## How are my search results protected?
 
-We require [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) authentication to access results from the Trusted Cloud. Authenticated users only see content they have access to. Search queries are de-identified, and logs are separated from public [Bing](https://Bing.com) search traffic when you use Microsoft Search in Bing.
+We require [Azure Active Directory](/azure/active-directory/) authentication to access results from the Trusted Cloud. Authenticated users only see content they have access to. Search queries are de-identified, and logs are separated from public [Bing](https://Bing.com) search traffic when you use Microsoft Search in Bing.
 
 ## Can I search across federated organizations?
 
@@ -57,4 +57,4 @@ Microsoft Search requires that enterprise users sign in with a work or school ac
 
 ## Can guest users leverage Microsoft Search in my organization?
 
-Microsoft 365 enables rich collaboration with people outside of your organization through [guest access.](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization) These users will be able to perform search operations on documents, sites, groups, lists, and libraries. However, guest users will not get the full, personalized, Microsoft Search experience and may need to leverage the on-page search box instead of the unified Microsoft Search box in the header.
+Microsoft 365 enables rich collaboration with people outside of your organization through [guest access.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) These users will be able to perform search operations on documents, sites, groups, lists, and libraries. However, guest users will not get the full, personalized, Microsoft Search experience and may need to leverage the on-page search box instead of the unified Microsoft Search box in the header.

@@ -23,15 +23,15 @@ Help your users complete tasks, like entering vacation time or reporting expense
 
 [Power Apps](https://products.office.com/business/microsoft-powerapps) is a service that lets you build business apps that run in a browser or on a phone or tablet with no coding experience required. Learn more:
   
-- [Guided Learning](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [Guided Learning](/learn/browse/?products=powerapps)
     
-- [Documentation](https://docs.microsoft.com/powerapps/)
+- [Documentation](/powerapps/)
     
 ## Add a Power App to a bookmark
 
 [Power Apps(https://products.office.com/business/microsoft-powerapps) work in any browser and on any device and take less than a minute to add.
   
-1. [Find the App ID for the Power App](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) you want to integrate.
+1. [Find the App ID for the Power App](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) you want to integrate.
     
 2. In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Bookmarks**.
     

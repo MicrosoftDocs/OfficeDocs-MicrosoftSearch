@@ -37,7 +37,7 @@ The Windows Support article on managing ADMX files and the latest ADMX files for
 
 You'll also need the latest Google policy file, which you can find on [Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/187202).
   
-If the settings described in this section can't be found inside of GPMC, download the appropriate ADMX and copy them to the [central store](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Central store on the controller is a folder with the following naming convention:
+If the settings described in this section can't be found inside of GPMC, download the appropriate ADMX and copy them to the [central store](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Central store on the controller is a folder with the following naming convention:
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   
