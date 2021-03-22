@@ -34,12 +34,12 @@ In order to access your on-premises third-party data, you must install and confi
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 2: Name the connection
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 3: Configure the connection settings
@@ -82,7 +82,7 @@ The use of each of the ACL columns in the above query is described below. The fo
 
 ### Supported data types
 
-The below table summarizes the data types that are supported by the Oracle SQL connector. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer documentation on [property resource types](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties&preserve-view=true).
+The below table summarizes the data types that are supported by the Oracle SQL connector. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer documentation on [property resource types](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties).
 
 | Category | Source data type | Indexing data type |
 | ------------ | ------------ | ------------ |
@@ -140,12 +140,12 @@ The components in the following image resemble the full crawl components with on
 
 ## Step 4: Assign property labels
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 5: Manage schema
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 6: Manage search permissions
@@ -160,7 +160,7 @@ A full crawl schedule finds deleted rows that were previously synced to the Micr
 
 ## Step 8: Review connection
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!--- ## Next steps: Customize the search results page

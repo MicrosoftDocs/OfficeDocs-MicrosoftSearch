@@ -31,12 +31,12 @@ This article is for anyone who configures, runs, and monitors a MediaWiki Graph 
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 2: Name the connection
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 3: Configure the connection settings
@@ -54,22 +54,22 @@ The MediaWiki connector only supports search permissions visible to **Everyone**
 
 ## Step 5: Assign property labels
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 6: Manage schema
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 7: Choose refresh settings
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 8: Review connection
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->

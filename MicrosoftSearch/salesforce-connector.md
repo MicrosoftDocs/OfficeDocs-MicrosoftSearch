@@ -76,12 +76,12 @@ You can now use the [M365 Admin Center](https://admin.microsoft.com/) to complet
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 2: Name the connection
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 3: Configure the connection settings
@@ -120,7 +120,7 @@ If you chose to ingest an ACL from your Salesforce instance and selected "non-AA
 
 ## Step 4b: Map AAD identities
 
-If you chose to ingest an ACL from your Salesforce instance and selected "AAD" for the identity type, see [Map your Azure AD Identities](map-aad.md) for instructions on mapping the identities. To learn how to set up Azure AD SSO for Salesforce, see this [tutorial](https://docs.microsoft.com/azure/active-directory/saas-apps/salesforce-tutorial).
+If you chose to ingest an ACL from your Salesforce instance and selected "AAD" for the identity type, see [Map your Azure AD Identities](map-aad.md) for instructions on mapping the identities. To learn how to set up Azure AD SSO for Salesforce, see this [tutorial](/azure/active-directory/saas-apps/salesforce-tutorial).
 
 ## Step 5: Assign property labels
 
@@ -145,7 +145,7 @@ The recommended schedule is one week for a full crawl.
 
 ## Step 8: Review connection
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->

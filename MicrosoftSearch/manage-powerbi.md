@@ -40,7 +40,7 @@ Replace `<topic>` in the examples above with the information you're looking for,
 
 ## Turn Power BI search on or off
 
-Power BI results are enabled for your organization by default. Your Power BI admin can disable them at any time. In the Power BI Admin portal, go to Tenant settings and disable the **Use global search for Power BI** setting. To learn more, see [Administering Power BI in the admin portal](https://docs.microsoft.com/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview).
+Power BI results are enabled for your organization by default. Your Power BI admin can disable them at any time. In the Power BI Admin portal, go to Tenant settings and disable the **Use global search for Power BI** setting. To learn more, see [Administering Power BI in the admin portal](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview).
 
 :::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Screenshot of setting to turn Power BI answers on or off" border="true":::
 

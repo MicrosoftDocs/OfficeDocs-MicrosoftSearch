@@ -34,13 +34,13 @@ In order to access your on-premises third-party data, you must install and confi
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## Step 2: Name the connection
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
@@ -48,9 +48,9 @@ instructions.-->
 
 ### Register an app (for Azure SQL connector only)
 
-For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer Microsoft Graph documentation on how to [register an app](https://docs.microsoft.com/graph/auth-register-app-v2).
+For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer Microsoft Graph documentation on how to [register an app](/graph/auth-register-app-v2).
 
-After completing the app registration and taking note of the app name, application (client) ID and tenant ID, you need to [generate a new client secret](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client secret will only be displayed once. Remember to note & store the client secret securely. Use the client ID and client secret while configuring a new connection in Microsoft Search.
+After completing the app registration and taking note of the app name, application (client) ID and tenant ID, you need to [generate a new client secret](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client secret will only be displayed once. Remember to note & store the client secret securely. Use the client ID and client secret while configuring a new connection in Microsoft Search.
 
 To add the registered app to your Azure SQL Database, you need to:
 
@@ -62,7 +62,7 @@ To add the registered app to your Azure SQL Database, you need to:
    'ALTER ROLE db_datareader ADD MEMBER [app name]'
 
 >[!NOTE]
->To revoke access to any app registered in Azure Active Directory, refer the Azure documentation on [removing a registered app](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
+>To revoke access to any app registered in Azure Active Directory, refer the Azure documentation on [removing a registered app](/azure/active-directory/develop/quickstart-remove-app).
 
 ### Connection settings
 
@@ -73,7 +73,7 @@ To connect your Microsoft SQL server connector to a data source, you must config
 
 For the Azure SQL connector, you only need to specify the server name or IP address you want to connect to. Azure SQL connector only supports Azure Active Directory Open ID connect (OIDC) authentication to connect to the database.
 
-For added security, you may configure IP firewall rules for your Azure SQL server or database. To learn more about setting up IP firewall rules, refer documentation on [IP firewall rules](https://docs.microsoft.com/azure/azure-sql/database/firewall-configure). Add the following client IP ranges in the firewall settings.
+For added security, you may configure IP firewall rules for your Azure SQL server or database. To learn more about setting up IP firewall rules, refer documentation on [IP firewall rules](/azure/azure-sql/database/firewall-configure). Add the following client IP ranges in the firewall settings.
 
 | Region | IP Range |
 | ------------ | ------------ |
@@ -112,7 +112,7 @@ The use of each of the ACL columns in the above query is described below. The fo
 
 ### Supported data types
 
-The below table summarizes the SQL data types that are supported in the MS SQL and Azure SQL connectors. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer documentation on [property resource types](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties&preserve-view=true).
+The below table summarizes the SQL data types that are supported in the MS SQL and Azure SQL connectors. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer documentation on [property resource types](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties).
 
 | Category | Source data type | Indexing data type |
 | ------------ | ------------ | ------------ |
@@ -171,14 +171,14 @@ The components in the following image resemble the full crawl components with on
 
 ## Step 4: Assign property labels
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## Step 5: Manage schema
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
@@ -188,13 +188,13 @@ You can choose to use the [ACLs specified in the full crawl screen](#full-crawl-
 
 ## Step 7: Choose refresh settings
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## Step 8: Review connection
 
-Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 

@@ -37,13 +37,13 @@ Currently, browser extensions are available for [Microsoft Edge](https://www.mic
 By adding existing [PowerApps](integrate-powerapps.md) to your [Bookmarks](manage-bookmarks.md), users can complete tasks like entering vacation time or reporting expenses. 
 
 With [PowerApps](integrate-powerapps.md), you can build business apps that run in a browser or on a phone or tablet. No coding experience is required. PowerApps work in any browser and on any device. They take less than a minute to add. To learn more about PowerApps, see these articles:
-- [Guided learning](https://docs.microsoft.com/learn/browse/?products=powerapps)
-- [PowerApps documentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
+- [Guided learning](/learn/browse/?products=powerapps)
+- [PowerApps documentation](/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps home](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 ### Add a PowerApp to a bookmark
 
-1. Find the [App ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) for the PowerApp that you want to add.
+1. Find the [App ID](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) for the PowerApp that you want to add.
 1. In the Microsoft 365 [admin center](https://admin.microsoft.com), go to **Settings** > **Microsoft Search**. 
 1. Add a bookmark or find an existing bookmark that you want to add a PowerApp to.
 1. In **Bookmark settings**, select **Power App**. Then select **Add a Power App**.
@@ -203,7 +203,7 @@ Authoritative information like [Bookmarks](manage-bookmarks.md) and [Q&A](manage
 
 ## Get insights about Bookmarks, Q&A, and Locations
 
-Microsoft Search shows you how many [Bookmarks](manage-bookmarks.md), [Q&A](manage-qas.md), and [Locations](manage-locations.md) are published, scheduled, or suggested. The [Insights dashboard](get-insights.md) shows bookmark, Q&A, and location totals by status:
+Microsoft Search shows you how many [Bookmarks](manage-bookmarks.md), [Q&A](manage-qas.md), and [Locations](manage-locations.md) are published, scheduled, or suggested. The [Insights dashboard](./usage-reports.md) shows bookmark, Q&A, and location totals by status:
 
 - **Published:** The number of published results that are available to users.
 - **Scheduled:** The number of scheduled results in the publish pipeline.
@@ -213,12 +213,12 @@ Suggested [Bookmarks](manage-bookmarks.md), [Q&A](manage-qas.md), and [Locations
 
 ### Review top search queries
 
-To find out which searches generated the most impressions in the last 90 days, review your top search queries. *Impression* means how many times a page was viewed in search results. The **Top Queries** card on the [Insights dashboard](get-insights.md) shows the top 25 user searches for each result type, the total number of searches, and the click-through rate (CTR). With this report, you can identify search query volume and determine queries with high and low search activity.
+To find out which searches generated the most impressions in the last 90 days, review your top search queries. *Impression* means how many times a page was viewed in search results. The **Top Queries** card on the [Insights dashboard](./usage-reports.md) shows the top 25 user searches for each result type, the total number of searches, and the click-through rate (CTR). With this report, you can identify search query volume and determine queries with high and low search activity.
 
 Low search count might indicate user dissatisfaction. Either users aren't looking for that content, or they're using different keywords to find it. CTR shows how often users select the promoted results and how useful your query rules and results are to users. A low CTR indicates that users find the content, but it doesn't meet their needs. In such cases, review the content. To align content to search queries, make sure it matches users' search and update titles, descriptions, and keywords. 
 
 ### Analyze impressions by result type
 
-Easy-to-read graphs in the **Impression distribution** card on the [Insights dashboard](get-insights.md) show impressions over various time frames. The timeline shows the daily number of impressions for a result type. With these graphs, you can determine which result type is most frequently or infrequently used. Infrequent use of a particular result type doesn't necessarily mean that the result type isn't good. It just shows how users are using the search result.
+Easy-to-read graphs in the **Impression distribution** card on the [Insights dashboard](./usage-reports.md) show impressions over various time frames. The timeline shows the daily number of impressions for a result type. With these graphs, you can determine which result type is most frequently or infrequently used. Infrequent use of a particular result type doesn't necessarily mean that the result type isn't good. It just shows how users are using the search result.
 
  If a particular result type is preferred by users, you might create more search results of the same type. To ensure that keywords are appropriate, review the keywords of results types with low usage. With this report, you can also see changes in user behavior over time.
