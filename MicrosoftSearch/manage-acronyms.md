@@ -43,7 +43,7 @@ In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Acron
 Microsoft Search queries two data sources to provide Acronyms answers to users’ searches:
 
 1. **Admin-curated**. Provided by IT administrators in the [admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms).
-2. **System-curated**. Discovered by Microsoft Search from users' email and documents and publicly available data within the organization.
+2. **System-curated**. Discovered by Microsoft Search from users' email and documents, as well as publicly available data within the organization.
 
 ### Set up Admin-curated acronyms
 
@@ -58,7 +58,7 @@ Search administrators can add acronyms on the [Acronyms tab](https://admin.micro
 
 You can add acronyms individually or bulk import them in a CSV file. Upload a CSV file with the fields shown in the following table:
 
-| Acronym (Mandatory) | Expansion (Mandatory) | Url | Description  | State (Mandatory) | Last Modified | Last Modified By | Id |
+| Acronym (Mandatory) | Stands for (Mandatory) | Url | Description  | State (Mandatory) | Last Modified | Last Modified By | Id |
 | --------- | --------- | --------- | ---------- | --------- |--------- |--------- |--------- |
 | *XXX* | *Spelled out abbreviation* | *Source* |  | *Published or Draft* |  |  |  |
 
@@ -66,7 +66,7 @@ You can add acronyms individually or bulk import them in a CSV file. Upload a CS
 
 **Acronym**. Contains the actual short form or acronym. An example is *DNN*.
 
-**Expansion**. Contains the expansion of the acronym. An example is *Deep Neural Network*.
+**Stands for**. Contains the expansion of the acronym. An example is *Deep Neural Network*.
 
 **Description**. A brief description of the acronym that gives users more info about the acronym and its expansion. For example, *A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers*.
 
@@ -88,7 +88,7 @@ It might be a challenge for admins to add all the acronyms used within an organi
 Microsoft Search makes sure that only users with access and permissions to a document can see the acronyms that are discovered from it. When an acronym is found in a user's mailbox, only that user can see that acronym.
 
 > [!NOTE]
-> No setup is needed for admin-curated acronyms.
+> No setup is needed for system-curated acronyms.
 
 ## Frequently asked questions
 
@@ -108,13 +108,17 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **A:** Acronyms found in a new email or document take up to seven days to appear in Microsoft Search results.
 
-**Q: Do documents need to be in a specific format for mining to pick them up?**
+**Q: How long does it take for a deleted acronym to be removed from Microsoft Search results?**
 
-**A:** No. We support all file types except image, folders, and zip files.
+**A**: It takes up to two days for admin-curated acronyms to stop appearing in search results.
+
+**Q: For system-curated acronyms, do documents need to be in a specific format?**
+
+**A:** No. We support all file types except image, folder, and zip files.
 
 **Q: Will Microsoft discover acronyms from documents in all languages?**
 
-**A**: Microsoft only supports mining from documents in English. Support for other languages will be added in phases.
+**A**: Microsoft only supports system-curated acronyms from documents in English. Support for other languages will be added in phases.
 
 **Q: What if my organization doesn’t want to show system-curated acronyms? Can I stop showing this type of acronym in my search results?**
 
