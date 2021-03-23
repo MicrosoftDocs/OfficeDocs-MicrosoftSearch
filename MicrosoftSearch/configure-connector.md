@@ -198,4 +198,4 @@ See the connector-specific information for your data source to find out if other
 
 ## Next steps
 
-After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](#next-steps-customize-the-search-results-page).
+After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](customize-search-page.md).

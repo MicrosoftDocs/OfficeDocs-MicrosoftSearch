@@ -118,7 +118,7 @@ After custom data is indexed, developers can [query this data](/graph/search-con
 
 ## How do I customize search results?
 
-The next step is to customize the search results as recommended in this article [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results). To learn more about customizing search results, see [Customize the search results page](./configure-connector.md#next-steps-customize-the-search-results-page).
+The next step is to customize the search results as recommended in this article [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results). To learn more about customizing search results, see [Customize the search results page](customize-search-page.md).
 
 ## What are the connector limitations?
 
