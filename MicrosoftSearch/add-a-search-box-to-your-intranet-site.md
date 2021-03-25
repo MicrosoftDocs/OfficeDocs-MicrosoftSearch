@@ -101,5 +101,5 @@ To help the search box better fit with the style of your intranet, there are a v
 If embedding a script isn't an option for the site, use an iFrame to add the search box. You won't be able to customize the appearance of the search box.
   
 ```html
-<iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
+<iframe title="BingSearchBox" width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
 ```
