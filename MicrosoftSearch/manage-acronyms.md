@@ -24,13 +24,13 @@ Organizations don't always have a single reference for their standard terminolog
 Microsoft Search users can get definitions with Acronyms in [Bing](https://Bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration), and [Office 365](https://Office.com). In the **Search** box, users enter queries like these examples:
 
 - *What is* DNN
-- *Define* dnn
+- *Define* DNN
 - DNN *definition*
 - *Expand* DNN
-- dnn *expansion*
+- DNN *expansion*
 - *Meaning of* DNN
 - DNN *means*
-- dnn *stands for*
+- DNN *stands for*
 
 The result includes all the meanings of DNN that are present within the user’s organization.
 
@@ -111,6 +111,10 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 **Q: How long does it take for system-curated acronyms to appear after you receive or send a new email or document?**
 
 **A:** Acronyms found in a new email or document take up to seven days to appear in Microsoft Search results.
+
+**Q: What happens when an acronym is both excluded and published?**
+
+**A:** The excluded acronym is given priority and prevents the published acronym from appearing in search results. It doesn't delete or remove the published acronym.
 
 **Q: How long does it take for an acronym to be excluded from Microsoft Search results?**
 
