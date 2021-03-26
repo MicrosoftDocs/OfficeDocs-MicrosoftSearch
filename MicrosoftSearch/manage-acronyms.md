@@ -57,7 +57,7 @@ Search administrators can add acronyms on the [Acronyms tab](https://admin.micro
 
 **Draft state**. If you want to review an acronym before making it available in Microsoft Search, you can add the acronym in a Draft state. Acronyms in the Draft state will not appear in search results. You will need to move the acronym to the Published state to make it appear in search results.
 
-**Excluded state**. If you want to prevent an acronym from appearing in Microsoft Search, add it in an Excluded state. To stop an acronym from being excluded, you'll need to delete the excluded acronym and add it or verify it's in your published list.
+**Excluded state**. If you want to prevent an acronym from appearing in Microsoft Search, use **Exclude an acronym** to add it. To stop an acronym from being excluded, you'll need to delete the excluded acronym and add it or verify it's in your published list.
 
 You can add acronyms individually or bulk import them in a CSV file. Upload a CSV file with the fields shown in the following table:
 
@@ -102,7 +102,7 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **Q: How long does it take for admin-curated acronyms to be visible in Microsoft Search after they’re published?**
 
-**A:**  It takes up to three days for acronyms added to Published state to become available in Microsoft Search.
+**A:**  It takes up to a day for acronyms added to Published state to become available in Microsoft Search.
 
 **Q: How do users trigger acronyms answers?**
 
@@ -126,7 +126,7 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **Q: Will Microsoft discover acronyms from documents in all languages?**
 
-**A**: Microsoft only supports system-curated acronyms from documents in English. Support for other languages will be added in phases.
+**A**: Microsoft only supports system-curated acronyms from documents in English, Spanish, French, Italian, German, and Portuguese. Support for other languages will be added in phases.
 
 **Q: What if my organization doesn’t want to show system-curated acronyms? Can I stop showing this type of acronym in my search results?**
 
