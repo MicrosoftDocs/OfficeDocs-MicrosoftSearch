@@ -82,7 +82,7 @@ To help the search box better fit with the style of your intranet, there are a v
 <script>
     var bfbSearchBoxConfig = {
         containerSelector: "bfb_searchbox",
-        title: "BingSearchBox",                 // default: "BingSearchBox"
+        title: "Bing search box",                 // default: "Bing search box"
         width: 560,                             // default: 560, min: 360, max: 650
         height: 40,                             // default: 40, min: 40, max: 72
         cornerRadius: 6,                        // default: 6, min: 0, max: 25                                   
@@ -102,5 +102,5 @@ To help the search box better fit with the style of your intranet, there are a v
 If embedding a script isn't an option for the site, use an iFrame to add the search box. You won't be able to customize the appearance of the search box.
   
 ```html
-<iframe title="BingSearchBox" width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
+<iframe title="Bing search box" width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
 ```
