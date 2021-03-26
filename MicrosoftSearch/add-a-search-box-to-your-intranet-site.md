@@ -82,6 +82,7 @@ To help the search box better fit with the style of your intranet, there are a v
 <script>
     var bfbSearchBoxConfig = {
         containerSelector: "bfb_searchbox",
+        title: "BingSearchBox",                 // default: "BingSearchBox"
         width: 560,                             // default: 560, min: 360, max: 650
         height: 40,                             // default: 40, min: 40, max: 72
         cornerRadius: 6,                        // default: 6, min: 0, max: 25                                   
