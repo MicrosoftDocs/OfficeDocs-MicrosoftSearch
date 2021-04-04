@@ -2,6 +2,15 @@
 
 
 
+## Week of March 29, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/29/2021 | [License requirements and pricing](/MicrosoftSearch/licensing) | modified |
+| 3/30/2021 | [Customize the Microsoft Search page](/MicrosoftSearch/customize-search-page) | modified |
+
+
 ## Week of March 22, 2021
 
 
