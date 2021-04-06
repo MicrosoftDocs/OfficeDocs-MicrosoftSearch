@@ -102,6 +102,7 @@ The set of connectors and features in preview include:
 * [Salesforce connector](salesforce-connector.md)
 * [ServiceNow connector](servicenow-connector.md) with search permissions that use source ACLs
 * [Manage result cluster](result-cluster.md)
+* [Multiple connections under a vertical](multiple-connections-in-a-vertical.md)
 
 ## How do I customize and configure search results?
 
