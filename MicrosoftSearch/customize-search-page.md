@@ -52,6 +52,9 @@ There are three basic steps to add a vertical:
 2. Define what the results for this vertical will look like.  
 3. Enable the vertical (to be displayed) from the vertical list page.
 
+> [!NOTE]
+> Multiple connections in a vertical is currently in preview. For more about the preview, see [Connectors preview](connectors-preview.md).
+
 ## STEP 1: Create the search vertical
 
 After you start the wizard, you're guided through the steps to define the vertical's name, content source, and scope of the content to search. The vertical is created in a disabled state. You'll enable it later.
