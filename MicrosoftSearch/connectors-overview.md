@@ -102,6 +102,7 @@ The set of connectors and features in preview include:
 * [Salesforce connector](salesforce-connector.md)
 * [ServiceNow connector](servicenow-connector.md) with search permissions that use source ACLs
 * [Manage result cluster](result-cluster.md)
+* [Multiple connections under a vertical](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fmicrosoftsearch%2Fcustomize-search-page%23multiple-connections-in-a-vertical&data=04%7C01%7Cv-revathib%40microsoft.com%7C36345d06dc634135b43d08d8f8a5f8cb%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637532739047755457%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=6p8Y7%2F%2Bjs4x9GMkk7S8DyH%2FTYstM%2FFCdlmeIThgcHjQ%3D&reserved=0)
 
 ## How do I customize and configure search results?
 
