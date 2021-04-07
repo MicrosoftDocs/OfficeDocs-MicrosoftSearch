@@ -35,9 +35,6 @@ If you accurately appoint as many semantic labels as possible, this experience w
 
 [Here](configure-connector.md#step-5-assign-property-labels) is additional information on how to create and manage semantic labels.
 
-> [!NOTE]
-> Multiple connections in a vertical is currently in preview. For more about the preview, see [Connectors preview](connectors-preview.md).
-
 ### Things you should know
 
 1. A connection can be added as a content source only under one vertical. Reusing connections under multiple verticals is not allowed.
@@ -54,6 +51,9 @@ There are three basic steps to add a vertical:
 1. Create the vertical. In this step, you define the vertical’s name, content source, and scope of the content to search.
 2. Define what the results for this vertical will look like.  
 3. Enable the vertical (to be displayed) from the vertical list page.
+
+> [!NOTE]
+> Multiple connections in a vertical is currently in preview. For more information about preview, see [Connectors preview features.](connectors-overview.md/#what-are-the-preview-features?).
 
 ## STEP 1: Create the search vertical
 
