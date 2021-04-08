@@ -123,14 +123,12 @@ The next step is to customize the search results as recommended in this article 
 
 ## What are the connector limitations?
 
-* When you **publish** a Microsoft-built connector, it might take a few minutes for the connection to be created. During that time, the connection will show its status as pending.
+* When you **publish** a Microsoft-built connector, it can take a few minutes for the connection to be created. During that time, the connection will show its status as pending.
 
-* The [Microsoft 365 admin center](https://admin.microsoft.com) doesn't support editing the **search schema** after a connection is published. To edit the search schema, delete your connection and then create a new one.
-
-* Ingestion throughput is throttled at about four items per second.
+* Ingestion throughput is throttled at approimately four items per second.
 
 * There is no support for schema updates. After you create a connection setup, there's no way to update the schema. You can only delete and re-create the connection.
 
 * There is a connection limit. Each tenant can create up to 10 connections.
 
-* Edit support for connection is not available. Once the connection has been created, you can't edit or change it. If you need to change any details, you must delete and recreate the connection.
+* You cannot edit or change a connection after it has been created. If you need to change any details, you must delete and recreate the connection.
