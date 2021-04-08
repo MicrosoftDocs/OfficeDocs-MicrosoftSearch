@@ -36,7 +36,7 @@ If you accurately appoint as many semantic labels as possible, this experience w
 [Here](configure-connector.md#step-5-assign-property-labels) is additional information on how to create and manage semantic labels.
 
 > [!NOTE]
-> Multiple connections in a vertical is currently in preview. For more information about preview, see [Connectors preview features.](connectors-overview.md/#what-are-the-preview-features?).
+> Multiple connections in a vertical is currently in preview. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features?).
 
 ### Things you should know
 
