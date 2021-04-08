@@ -35,6 +35,9 @@ If you accurately appoint as many semantic labels as possible, this experience w
 
 [Here](configure-connector.md#step-5-assign-property-labels) is additional information on how to create and manage semantic labels.
 
+> [!NOTE]
+> Multiple connections in a vertical is currently in preview. For more information about preview, see [Connectors preview features.](connectors-overview.md/#what-are-the-preview-features?).
+
 ### Things you should know
 
 1. A connection can be added as a content source only under one vertical. Reusing connections under multiple verticals is not allowed.
@@ -56,7 +59,7 @@ There are three basic steps to add a vertical:
 
 After you start the wizard, you're guided through the steps to define the vertical's name, content source, and scope of the content to search. The vertical is created in a disabled state. You'll enable it later.
 
-You can use a limited set of [Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) to narrow the scope. This page lists the properties that are available. We recommend that you use free-text keywords and property restrictions with boolean operators for creating the KQL.
+You can use a limited set of [Keyword Query Language (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) to narrow the scope. This page lists the properties that are available. We recommend that you use free-text keywords and property restrictions with boolean operators for creating the KQL.
 
 ### Create a vertical at the organization level
 
@@ -110,7 +113,10 @@ After you start the wizard, you're guided through the steps to define the name, 
 
 ## STEP 3: View the vertical after it's enabled
 
-After you enable the vertical, it might take a while before you can view it. If you don't want to wait after enabling it, you can append **cacheClear=true** to the URL in [SharePoint](https://sharepoint.com/) and [Office](https://office.com) to view the vertical immediately. For [Bing](https://bing.com), append **&features=uncachedVerticals** to the Work vertical URL to view the verticals immediately.
+After you enable the vertical, it will take a few hours before you can view it. If you don't want to wait after enabling it, you can append **cacheClear=true** to the URL in [SharePoint](https://sharepoint.com/) and [Office](https://office.com) to view the vertical immediately. For [Bing](https://bing.com), append **&features=uncachedVerticals** to the Work vertical URL to view the verticals immediately. 
+
+> [!NOTE]
+> Added verticals will not be visible on [SharePoint](https://sharepoint.com/) and [Office](https://office.com) when viewed from mobile web browsers.
 
 ## Troubleshooting
 

@@ -64,7 +64,7 @@ To help you meet your roll-out goals and show a positive impact for your organiz
   
 1. **Change management:** Determine how you'll measure awareness of Microsoft Search and the success of communications about it. 
     
-2. **Usage:** You can leverage data from your Insights Dashboard including daily and monthly active users (DAU and MAU), the content types that are getting the most views, and top search keywords to measure usage over time. For more information, see [Microsoft Search Insights dashboard reports](get-insights.md).
+2. **Usage:** You can leverage data from your Insights Dashboard including daily and monthly active users (DAU and MAU), the content types that are getting the most views, and top search keywords to measure usage over time. For more information, see [Microsoft Search Insights dashboard reports](./usage-reports.md).
     
 3. **User satisfaction:** Use the data you gathered from surveys and user focus groups to determine your baseline. Net satisfaction (NSAT) and Net Promoter Scores (NPS) can also provide helpful measurements. Regardless of the method you use, keep it consistent, so you can see impact over time. 
     
@@ -88,9 +88,9 @@ For more information, see [Plan your content](plan-your-content.md).
   
 Microsoft Search users must sign in to [Bing](https://Bing.com) with a work or school account. To make signing in as seamless as possible for your users:
   
-- To make sure [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) configurations are correctly set, have a few users try to sign in. For more information, see [Test single sign-on](test-single-sign-on.md).
+- To make sure [Azure Active Directory](/azure/active-directory/) configurations are correctly set, have a few users try to sign in. For more information, see [Test single sign-on](test-single-sign-on.md).
     
-- Set browser defaults for company-managed devices to Bing. For more information, see [Set default browser](set-default-browser.md).
+- Set browser defaults for company-managed devices to Bing. For more information, see [Set default browser](/deployedge/edge-default-browser).
     
 - Deploy search extensions for [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) and [Google Chrome](https://www.google.com) users via Group Policy. For more information, see [Microsoft Search Overview](overview-microsoft-search.md).
     
