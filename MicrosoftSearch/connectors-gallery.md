@@ -1297,6 +1297,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
 </ul>
 <!--- 20 ROW --->
 <ul class="panelContent cardsZ">
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Kaltura</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>The Kaltura Connector enables the indexing of not only video, but also various other types of information including Categories, Data, Documents and more.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/kaltura-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -1313,7 +1314,6 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Kaltura</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>The Kaltura Connector enables the indexing of not only video, but also various other types of information including Categories, Data, Documents and more.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/kaltura-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -1970,6 +1970,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SAP ERP (Cloud)</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight's SAP ERP (Cloud Version) Connector is designed to bring items from SAP into a search index.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-sap-erp-cloud/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 33 ROW --->
 <ul class="panelContent cardsZ">
@@ -1989,6 +1990,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SAP HANA (Cloud)</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>The SAP HANA (Cloud Version) Connector honors the security of the source database and provides both full and incremental crawls so that users have the latest information available all of the time. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-sap-hana-cloud-version/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2056,6 +2058,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2072,6 +2075,8 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>ServiceNow (Cloud)</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>The BA Insight ServiceNow (Cloud Version) Connector honors the security of the source system and provides both full and incremental crawls so users have the latest information available all the time.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/servicenow-cloud-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2010</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight's SharePoint 2010 Connector allows you to connect to SharePoint 2010, fetch data from any site, document library, or list; and index this content securely. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2010-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 35 ROW --->
 <ul class="panelContent cardsZ">
@@ -2091,6 +2096,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2013</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight's SharePoint 2013 Connector allows you to connect to SharePoint 2013, fetch data from any site, document library, or list; and index this content securely. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2013-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2107,6 +2113,8 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2016</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight's SharePoint Connector allows you to connect to SharePoint 2016, fetch data from any site, document library, or list; and index this content securely.  </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2016-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2019</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight's SharePoint Connector allows you to connect to SharePoint 2019, fetch data from any site, document library, or list; and index this content securely. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-sharepoint-2019/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2123,6 +2131,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint Online</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight's SharePoint Online Connector allows you to connect to SharePoint Online, fetch data from any site, document library, or list; and index this content securely.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-online-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 36 ROW --->
 <ul class="panelContent cardsZ">
@@ -2397,6 +2406,8 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Website Crawler</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>The BA Insight Website Crawler Connector makes it possible to surface content from any website in a single consolidated search index, along with content from other repositories. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/website-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>West km</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>The BA Insight West km Connector supports search across transaction and litigation documents, including the creation of custom search results pages.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/westkm-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2503,16 +2514,6 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
 <!-- --->
 <!-- --->
 <!-- --->
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SAP ERP (Cloud)</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight's SAP ERP (Cloud Version) Connector is designed to bring items from SAP into a search index.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-sap-erp-cloud/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SAP HANA (Cloud)</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>The SAP HANA (Cloud Version) Connector honors the security of the source database and provides both full and incremental crawls so that users have the latest information available all of the time. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-sap-hana-cloud-version/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>ServiceNow (Cloud)</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>The BA Insight ServiceNow (Cloud Version) Connector honors the security of the source system and provides both full and incremental crawls so users have the latest information available all the time.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/servicenow-cloud-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2010</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight's SharePoint 2010 Connector allows you to connect to SharePoint 2010, fetch data from any site, document library, or list; and index this content securely. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2010-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2013</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight's SharePoint 2013 Connector allows you to connect to SharePoint 2013, fetch data from any site, document library, or list; and index this content securely. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2013-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2016</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight's SharePoint Connector allows you to connect to SharePoint 2016, fetch data from any site, document library, or list; and index this content securely.  </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2016-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2019</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight's SharePoint Connector allows you to connect to SharePoint 2019, fetch data from any site, document library, or list; and index this content securely. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-sharepoint-2019/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint Online</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight's SharePoint Online Connector allows you to connect to SharePoint Online, fetch data from any site, document library, or list; and index this content securely.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-online-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Website Crawler</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>The BA Insight Website Crawler Connector makes it possible to surface content from any website in a single consolidated search index, along with content from other repositories. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/website-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>West km</h3><p>by <a href="https://www.bainsight.com">BA Insight</a></p><p>The BA Insight West km Connector supports search across transaction and litigation documents, including the creation of custom search results pages.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/westkm-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
 <li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Azure AD </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>Secure enterprise search connector for reliably indexing content from Microsoft Azure Active Directory (Azure AD) and intelligently searching it with Microsoft Graph. It indexes objects from Azure AD via the Microsoft Graph API. The connector can be used for ingesting principals into Microsoft Graph in near real time to implement use cases like expert search, equipment search, and location search or to provide early-binding security trimming in conjunction with custom data sources. The connector supports federated authentication against Microsoft 365.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-azure-ad-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
 <li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Confluence </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>Secure enterprise search connector for reliably indexing content from Atlassian Confluence and intelligently searching it with Microsoft Graph. It robustly indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from on-premise Confluence instances in near real time. The connector fully supports Atlassian Confluence's built-in user and group management, as well as Confluence installations based on Active Directory and other directory services.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-confluence-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
 <li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Confluence Cloud </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>Secure enterprise search connector for reliably indexing content from Atlassian Confluence Cloud and intelligently searching it with Microsoft Graph. It robustly indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from Confluence Cloud instances in near real time. The connector fully supports Atlassian Confluence Cloud's built-in user and group management.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-confluence-cloud-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
