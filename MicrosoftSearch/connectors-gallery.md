@@ -421,6 +421,22 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
+                        <h3>Atlassian Confluence (Cloud)</h3>
+                        <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>Our Confluence (Cloud Version) Connector is an enterprise grade indexing connector that enables content stored in Confluence to be crawled and indexed.</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/connector-for-confluence-cloud-version/"><font color="0065BA">More details</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
                        <h3>Atlassian Confluence Cloud</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
                         <p>Connector for Atlassian Confluence Cloud. Indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from on-premise Confluence instances in near real time. The connector fully supports Confluence Cloud's built-in user and group management. Sixth generation Raytion search connector.</p>
