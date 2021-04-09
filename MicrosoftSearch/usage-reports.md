@@ -3,7 +3,6 @@ title: "Search Usage Reports"
 ms.author: ankmis
 author: jeffkizn
 manager: parulm
-ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 audience: Admin
