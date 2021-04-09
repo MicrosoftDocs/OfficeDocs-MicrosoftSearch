@@ -55,7 +55,7 @@ The calendar view, today, in Microsoft search usage reports is a two-step proces
 
 The top, abandoned, and failed query tables show results from either the day or the month you choose.
 
-**When will I see aggregate data for past 7 days, past 30 days, etc... like Bing’s top queries reports?**
+**When will I see aggregate data for past 7 days, past 30 days, and so on...like Bing’s top queries reports?**
 
 We are considering this type of aggregation and simplifying the data range filtering for future versions of these reports.
 
