@@ -30,9 +30,12 @@ A previous version of this page included data from searches executed for Microso
 | Report | Description |
 |:-----|:-----|
 |Query Volume|This report shows the number of search queries performed. Use this report to identify search query volume trends and to determine periods of high and low search activity.|
-|Top Queries|This report shows the most popular search queries. Use this report to understand what types of information your users are searching for.|
+|Top Queries|This report shows the most popular search queries. A query is added to this report when it is searched at least three times with a click on a result. Use this report to understand what types of information your users are searching for.|
 |Abandoned Queries|This report shows popular search queries that receive low click-through. Use this report to identify search queries that might create user dissatisfaction and to improve the discoverability of content. You can then determine if creating an answer, like a Bookmark, or ingesting new content through a Graph connector is the right action.|
 |No Results Queries|This report shows popular search queries that returned no results. Use this report to identify search queries that might create user dissatisfaction and to improve the discoverability of content. You can then determine if creating an answer, like a Bookmark, or ingesting new content through a Graph connector is the right action.|
+
+>[!NOTE]
+>There is currently a known issue where queries satisfied by an answer like a Bookmark are counted as an abandoned query.
 
 ## Viewing reports
 
