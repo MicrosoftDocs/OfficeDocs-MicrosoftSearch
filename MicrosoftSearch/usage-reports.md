@@ -3,9 +3,11 @@ title: "Search Usage Reports"
 ms.author: ankmis
 author: jeffkizn
 manager: parulm
-ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
+audience: Admin
+ms.audience: Admin
+ms.date: 04/09/2021
 localization_priority: Normal
 search.appverid:
 - BFB160
@@ -30,9 +32,12 @@ A previous version of this page included data from searches executed for Microso
 | Report | Description |
 |:-----|:-----|
 |Query Volume|This report shows the number of search queries performed. Use this report to identify search query volume trends and to determine periods of high and low search activity.|
-|Top Queries|This report shows the most popular search queries. Use this report to understand what types of information your users are searching for.|
+|Top Queries|This report shows the most popular search queries. A query is added to this report when it is searched at least three times with a click on a result. Use this report to understand what types of information your users are searching for.|
 |Abandoned Queries|This report shows popular search queries that receive low click-through. Use this report to identify search queries that might create user dissatisfaction and to improve the discoverability of content. You can then determine if creating an answer, like a Bookmark, or ingesting new content through a Graph connector is the right action.|
 |No Results Queries|This report shows popular search queries that returned no results. Use this report to identify search queries that might create user dissatisfaction and to improve the discoverability of content. You can then determine if creating an answer, like a Bookmark, or ingesting new content through a Graph connector is the right action.|
+
+>[!NOTE]
+>There is currently a known issue where queries satisfied by an answer like a Bookmark are counted as an abandoned query.
 
 ## Viewing reports
 
@@ -50,7 +55,7 @@ The calendar view, today, in Microsoft search usage reports is a two-step proces
 
 The top, abandoned, and failed query tables show results from either the day or the month you choose.
 
-**When will I see aggregate data for past 7 days, past 30 days, etc... like Bing’s top queries reports?**
+**When will I see aggregate data for past 7 days, past 30 days, and so on...like Bing’s top queries reports?**
 
 We are considering this type of aggregation and simplifying the data range filtering for future versions of these reports.
 
