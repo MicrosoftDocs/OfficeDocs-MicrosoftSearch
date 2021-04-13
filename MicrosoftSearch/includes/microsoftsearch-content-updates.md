@@ -2,6 +2,18 @@
 
 
 
+## Week of April 05, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/6/2021 | [Customize the Microsoft Search page](/MicrosoftSearch/customize-search-page) | modified |
+| 4/8/2021 | [Connector gallery](/MicrosoftSearch/connectors-gallery) | modified |
+| 4/8/2021 | [Microsoft Graph Connectors Overview](/MicrosoftSearch/connectors-overview) | modified |
+| 4/8/2021 | [Customize the Microsoft Search page](/MicrosoftSearch/customize-search-page) | modified |
+| 4/9/2021 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
+
+
 ## Week of March 29, 2021
 
 
