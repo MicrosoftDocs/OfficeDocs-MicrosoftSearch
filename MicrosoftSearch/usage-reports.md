@@ -38,6 +38,7 @@ A previous version of this page included data from searches executed for Microso
 
 >[!NOTE]
 >There is currently a known issue where queries satisfied by an answer like a Bookmark are counted as an abandoned query.
+>A query is added to the Top Queries report when it is searched at least three (3) times with a click on a result. 
 
 ## Viewing reports
 
