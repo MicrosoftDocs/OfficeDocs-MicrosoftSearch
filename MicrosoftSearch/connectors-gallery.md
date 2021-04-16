@@ -407,7 +407,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                     <div class="cardText">
                        <h3>Atlassian Confluence</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Connector for Atlassian Confluence. Indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from on-premise Confluence instances in near real time. The connector fully supports Confluence's built-in user and group management, as well as Confluence installations based on Active Directory and other directory services. Sixth generation Raytion search connector.</p>
+                        <p>Secure enterprise search connector for reliably indexing content from Atlassian Confluence and intelligently searching it with Microsoft Graph. It robustly indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from on-premise Confluence instances in near real time. The connector fully supports Atlassian Confluence's built-in user and group management, as well as Confluence installations based on Active Directory and other directory services.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-confluence-connector"><font color="0065BA">More details</font></a>
                         </p>
@@ -637,7 +637,6 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
             </div>
         </div>
     </li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Confluence </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>Secure enterprise search connector for reliably indexing content from Atlassian Confluence and intelligently searching it with Microsoft Graph. It robustly indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from on-premise Confluence instances in near real time. The connector fully supports Atlassian Confluence's built-in user and group management, as well as Confluence installations based on Active Directory and other directory services.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-confluence-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
 <li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Confluence Cloud </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>Secure enterprise search connector for reliably indexing content from Atlassian Confluence Cloud and intelligently searching it with Microsoft Graph. It robustly indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from Confluence Cloud instances in near real time. The connector fully supports Atlassian Confluence Cloud's built-in user and group management.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-confluence-cloud-connector/"><font color="0065BA">More details</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
