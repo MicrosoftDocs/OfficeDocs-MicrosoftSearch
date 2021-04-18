@@ -2,6 +2,14 @@
 
 
 
+## Week of April 12, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/13/2021 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
+
+
 ## Week of April 05, 2021
 
 
