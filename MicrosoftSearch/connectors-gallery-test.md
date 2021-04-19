@@ -176,7 +176,7 @@ Allows your organization to search your ServiceNow instance for knowledge-based 
 
 :::row:::
 
-:::column span="":::
+::column span="":::
 
 ---
 
