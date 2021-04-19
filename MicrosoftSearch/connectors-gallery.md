@@ -165,7 +165,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
                         <p>Enables your organization to discover and index data from an on-premises database. Indexes specified content into Microsoft Search and supports periodic crawls. You can also restrict access to search results for certain users.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
-                                <a href="mediawiki-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
+                                <a href="OracleSQL-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
                                     <font color="0065BA">More details</font>
                                 </a>
                              <img src="media/OracleSQL.png" alt="MediaWiki" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
