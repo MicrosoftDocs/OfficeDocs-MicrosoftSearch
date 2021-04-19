@@ -1,28 +1,30 @@
 ---
-title: "Connector gallery test"
+title: "Connector gallery"
 ms.author: mecampos
+author: mecampos
+manager: umas
+ms.audience: Admin
+ms.topic: landing-page
+layout: LandingPage
+ms.service: mssearch
+localization_priority: Normal
+search.appverid:
+- BFB160
+- MET150
+- MOE150
+description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
+
 ---
-<!---div {
-}
-
-<p>Hello crazy world!</p>
-
-<html>
-    <head>
-    </head>
-    <body>
-    <h2>This is a heading</h2>
-    <p>Hello crazy world!</p>
-    </body>
-</html>--->
 
 # Microsoft Graph connectors gallery
 
 ## Connectors by Microsoft
+
 :::row:::
 :::column span="":::
----
+
 ### Azure Data Lake Storage Gen2
+
 by [Microsoft](https://www.microsoft.com)
 
 Enables your organization to search for content stored in Azure Blob containers. Indexes hierarchy-enabled folders in specified Azure Data Lake Storage Gen2 accounts.
@@ -33,8 +35,9 @@ Enables your organization to search for content stored in Azure Blob containers.
 
 :::column-end:::
 :::column span="":::
----
+
 ### Azure DevOps
+
 by [Microsoft](https://www.microsoft.com)
 
 Allows your organization to search for work items in your Azure DevOps instance.
@@ -45,13 +48,10 @@ Allows your organization to search for work items in your Azure DevOps instance.
 
 :::column-end:::
 
-:::row-end:::
-
-:::row:::
-
 :::column span="":::
----
+
 ### Azure SQL
+
 by [Microsoft](https://www.microsoft.com)
 
 Enables your organization to search for data from your Azure SQL.
@@ -67,8 +67,9 @@ Enables your organization to search for data from your Azure SQL.
 :::row:::
 
 :::column span="":::
----
+
 ### Enterprise websites
+
 by [Microsoft](https://www.microsoft.com)
 
 Allows your organization to search any non-SharePoint enterprise website.
@@ -79,13 +80,12 @@ Allows your organization to search any non-SharePoint enterprise website.
 
 :::column-end:::
 
-:::row-end:::
-
-:::row:::
-
 :::column span="":::
+
 ---
+
 ### MediaWiki
+
 by [Microsoft](https://www.microsoft.com)
 
 Enables your organization to search knowledge-based articles on sites it creates with MediaWiki.
@@ -96,13 +96,12 @@ Enables your organization to search knowledge-based articles on sites it creates
 
 :::column-end:::
 
-:::row-end:::
-
-:::row:::
-
 :::column span="":::
+
 ---
+
 ### Microsoft SQL
+
 by [Microsoft](https://www.microsoft.com)
 
 Allows your organization to search on-premises Microsoft SQL server databases.
@@ -116,8 +115,11 @@ Allows your organization to search on-premises Microsoft SQL server databases.
 :::row:::
 
 :::column span="":::
+
 ---
+
 ### Oracle SQL
+
 by [Microsoft](https://www.microsoft.com)
 
 Enables your organization to discover and index data from an on-premises database. Indexes specified content into Microsoft Search and supports periodic crawls. You can also restrict access to search results for certain users.
@@ -126,13 +128,12 @@ Enables your organization to discover and index data from an on-premises databas
 
 :::column-end:::
 
-:::row-end:::
-
-:::row:::
-
 :::column span="":::
+
 ---
+
 ### Salesforce
+
 by [Microsoft](https://www.microsoft.com)
 
 Allows your organization to search your Salesforce instance for Contacts, Opportunities, Leads, and Accounts objects.
@@ -143,13 +144,12 @@ Allows your organization to search your Salesforce instance for Contacts, Opport
 
 :::column-end:::
 
-:::row-end:::
-
-:::row:::
-
 :::column span="":::
+
 ---
+
 ### ServiceNow
+
 by [Microsoft](https://www.microsoft.com)
 
 Allows your organization to search your ServiceNow instance for knowledge-based articles.
@@ -165,5 +165,7 @@ Allows your organization to search your ServiceNow instance for knowledge-based 
 :::row:::
 
 :::column span="":::
+
 ---
+
 :::column-end::: :::row-end:::
