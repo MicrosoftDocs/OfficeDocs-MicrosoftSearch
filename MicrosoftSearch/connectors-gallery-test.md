@@ -232,3 +232,49 @@ Enables your organization to search for data from your Azure SQL.
 
 :::row:::
    :::column span="2":::
+
+---
+
+### Azure Data Lake Storage Gen2
+
+by [Microsoft](https://www.microsoft.com)
+
+Enables your organization to search for content stored in Azure Blob containers. Indexes hierarchy-enabled folders in specified Azure Data Lake Storage Gen2 accounts.
+
+[More details](azure-data-lake-connector.md)
+
+:::column-end:::
+:::column span="2":::
+
+---
+
+### Azure DevOps
+
+by [Microsoft](https://www.microsoft.com)
+
+Allows your organization to search for work items in your Azure DevOps instance.
+
+[More details](azure-devops-connector.md)
+
+:::column-end:::
+
+:::column span="2":::
+
+---
+
+### Azure SQL
+
+by [Microsoft](https://www.microsoft.com)
+
+Enables your organization to search for data from your Azure SQL.
+
+[More details](MSSQL-connector.md)
+
+   :::column-end:::
+
+   :::column span="2":::
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="2":::
