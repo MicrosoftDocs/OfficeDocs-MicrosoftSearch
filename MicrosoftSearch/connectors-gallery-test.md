@@ -191,42 +191,30 @@ Allows your organization to search your ServiceNow instance for knowledge-based 
 :::row:::
 :::column span="":::
 
+<!--- ROW --->
+
 ---
 
-### Azure Data Lake Storage Gen2
+### Aderant
 
-by [Microsoft](https://www.microsoft.com)
+by [BA Insight](https://www.bainsight.com/)
 
-Enables your organization to search for content stored in Azure Blob containers. Indexes hierarchy-enabled folders in specified Azure Data Lake Storage Gen2 accounts.
+The Aderant connector honors the security of the source system and provides both full and incremental crawls, so the users have the latest information available to them all the time.
 
-[More details](azure-data-lake-connector.md)
+[More details](https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/)
 
 :::column-end:::
 :::column span="":::
 
 ---
 
-### Azure DevOps
+### Adobe AEM
 
-by [Microsoft](https://www.microsoft.com)
+by [Raytion](https://www.raytion.com/)
 
-Allows your organization to search for work items in your Azure DevOps instance.
+Connector for Adobe AEM. Indexes pages, attachments, and other generated document types from Adobe AEM in near real time. The connector fully supports AEM's built-in user and group management, as well as AEM installations based on Active Directory and other directory services. Sixth generation Raytion search connector.
 
-[More details](azure-devops-connector.md)
-
-:::column-end:::
-
-:::column span="":::
-
----
-
-### Azure DevOps
-
-by [Microsoft](https://www.microsoft.com)
-
-Allows your organization to search for work items in your Azure DevOps instance.
-
-[More details](azure-devops-connector.md)
+[More details](https://www.raytion.com/connectors/adobe-experience-manager-aem)
 
 :::column-end:::
 
@@ -234,13 +222,13 @@ Allows your organization to search for work items in your Azure DevOps instance.
 
 ---
 
-### Azure SQL
+### Adobe Experience Manager
 
-by [Microsoft](https://www.microsoft.com)
+by [Accenture](https://www.accenture.com/)
 
-Enables your organization to search for data from your Azure SQL.
+The Adobe Experience Manager (AEM) connector will crawl content from an Adobe Experience Manager server. The connector fetches access control lists for document level security (currently only Closed Users Groups). It can filter content based on properties using expected values or patterns or pages based on the scheduled on and off time.
 
-[More details](MSSQL-connector.md)
+[More details](https://contentanalytics.digital.accenture.com/display/aspire40/AEM+Connector)
 
    :::column-end:::
 
@@ -251,42 +239,30 @@ Enables your organization to search for data from your Azure SQL.
 :::row:::
    :::column span="":::
 
+<!--- --->
+
 ---
 
-### Azure Data Lake Storage Gen2
+### Alfresco
 
-by [Microsoft](https://www.microsoft.com)
+by [BA Insight](https://www.bainsight.com/)
 
-Enables your organization to search for content stored in Azure Blob containers. Indexes hierarchy-enabled folders in specified Azure Data Lake Storage Gen2 accounts.
+The Alfresco Connector is built on the BAI connector framework, which is the platform used to build all our connectors and provides secure connectivity to enterprise systems.
 
-[More details](azure-data-lake-connector.md)
+[More details](https://www.bainsight.com/connectors/alfresco-connector-sharepoint-azure-elasticsearch/)
 
 :::column-end:::
 :::column span="":::
 
 ---
 
-### Azure DevOps
+### Alfresco Content Services
 
-by [Microsoft](https://www.microsoft.com)
+by [Raytion](https://www.raytion.com/)
 
-Allows your organization to search for work items in your Azure DevOps instance.
+Connector for Alfresco One. Indexes documents, folders, and user profiles from Alfresco One in near real time. The connector fully supports Alfresco's built-in user and group management, as well as Alfresco installations based on Active Directory and other directory services. Sixth generation Raytion search connector.
 
-[More details](azure-devops-connector.md)
-
-:::column-end:::
-
-:::column span="":::
-
----
-
-### Azure DevOps
-
-by [Microsoft](https://www.microsoft.com)
-
-Allows your organization to search for work items in your Azure DevOps instance.
-
-[More details](azure-devops-connector.md)
+[More details](https://www.raytion.com/connectors/raytion-alfresco-connector)
 
 :::column-end:::
 
@@ -294,13 +270,13 @@ Allows your organization to search for work items in your Azure DevOps instance.
 
 ---
 
-### Azure SQL
+### Amazon Aurora
 
-by [Microsoft](https://www.microsoft.com)
+by [BA Insight](https://www.bainsight.com/)
 
-Enables your organization to search for data from your Azure SQL.
+The Amazon Aurora Connector is built upon industry standard database access methods, so it equally supports databases from other systems such as Oracle, MySQL, and IBM DB2.
 
-[More details](MSSQL-connector.md)
+[More details](https://www.bainsight.com/connectors/amazon-aurora-connector-sharepoint-azure-elasticsearch/)
 
    :::column-end:::
 
@@ -310,3 +286,5 @@ Enables your organization to search for data from your Azure SQL.
 
 :::row:::
    :::column span="":::
+
+<!--- --->
