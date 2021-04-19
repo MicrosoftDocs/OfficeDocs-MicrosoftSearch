@@ -288,3 +288,52 @@ The Amazon Aurora Connector is built upon industry standard database access meth
    :::column span="":::
 
 <!--- --->
+<!--- ROW --->
+
+---
+
+### Aderant
+
+by [BA Insight](https://www.bainsight.com/)
+
+The Aderant connector honors the security of the source system and provides both full and incremental crawls, so the users have the latest information available to them all the time.
+
+[More details](https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/)
+
+:::column-end:::
+:::column span="":::
+
+---
+
+### Adobe AEM
+
+by [Raytion](https://www.raytion.com/)
+
+Connector for Adobe AEM. Indexes pages, attachments, and other generated document types from Adobe AEM in near real time. The connector fully supports AEM's built-in user and group management, as well as AEM installations based on Active Directory and other directory services. Sixth generation Raytion search connector.
+
+[More details](https://www.raytion.com/connectors/adobe-experience-manager-aem)
+
+:::column-end:::
+
+:::column span="":::
+
+---
+
+### Adobe Experience Manager
+
+by [Accenture](https://www.accenture.com/)
+
+The Adobe Experience Manager (AEM) connector will crawl content from an Adobe Experience Manager server. The connector fetches access control lists for document level security (currently only Closed Users Groups). It can filter content based on properties using expected values or patterns or pages based on the scheduled on and off time.
+
+[More details](https://contentanalytics.digital.accenture.com/display/aspire40/AEM+Connector)
+
+   :::column-end:::
+
+   :::column span="":::
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="":::
+
+<!--- --->
