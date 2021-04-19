@@ -220,6 +220,20 @@ Allows your organization to search for work items in your Azure DevOps instance.
 
 ---
 
+### Azure DevOps
+
+by [Microsoft](https://www.microsoft.com)
+
+Allows your organization to search for work items in your Azure DevOps instance.
+
+[More details](azure-devops-connector.md)
+
+:::column-end:::
+
+:::column span="":::
+
+---
+
 ### Azure SQL
 
 by [Microsoft](https://www.microsoft.com)
@@ -248,6 +262,20 @@ Enables your organization to search for content stored in Azure Blob containers.
 [More details](azure-data-lake-connector.md)
 
 :::column-end:::
+:::column span="":::
+
+---
+
+### Azure DevOps
+
+by [Microsoft](https://www.microsoft.com)
+
+Allows your organization to search for work items in your Azure DevOps instance.
+
+[More details](azure-devops-connector.md)
+
+:::column-end:::
+
 :::column span="":::
 
 ---
