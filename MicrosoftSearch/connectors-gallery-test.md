@@ -184,7 +184,7 @@ Allows your organization to search your ServiceNow instance for knowledge-based 
 ## Connectors by our Partners
 
 :::row:::
-:::column span="2":::
+:::column span="":::
 
 ---
 
@@ -197,7 +197,7 @@ Enables your organization to search for content stored in Azure Blob containers.
 [More details](azure-data-lake-connector.md)
 
 :::column-end:::
-:::column span="2":::
+:::column span="":::
 
 ---
 
@@ -211,7 +211,7 @@ Allows your organization to search for work items in your Azure DevOps instance.
 
 :::column-end:::
 
-:::column span="2":::
+:::column span="":::
 
 ---
 
@@ -225,12 +225,12 @@ Enables your organization to search for data from your Azure SQL.
 
    :::column-end:::
 
-   :::column span="2":::
+   :::column span="":::
    :::column-end:::
 :::row-end:::
 
 :::row:::
-   :::column span="2":::
+   :::column span="":::
 
 ---
 
@@ -243,7 +243,7 @@ Enables your organization to search for content stored in Azure Blob containers.
 [More details](azure-data-lake-connector.md)
 
 :::column-end:::
-:::column span="2":::
+:::column span="":::
 
 ---
 
@@ -257,7 +257,7 @@ Allows your organization to search for work items in your Azure DevOps instance.
 
 :::column-end:::
 
-:::column span="2":::
+:::column span="":::
 
 ---
 
@@ -271,9 +271,9 @@ Enables your organization to search for data from your Azure SQL.
 
    :::column-end:::
 
-   :::column span="2":::
+   :::column span="":::
    :::column-end:::
 :::row-end:::
 
 :::row:::
-   :::column span="2":::
+   :::column span="":::
