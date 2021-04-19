@@ -176,7 +176,7 @@ Allows your organization to search your ServiceNow instance for knowledge-based 
 
 :::row:::
 
-::column span="":::
+:::column span="":::
 
 ---
 
@@ -188,7 +188,7 @@ Allows your organization to search your ServiceNow instance for knowledge-based 
 <!--- --->
 <!--- --->
 <!--- --->
-## Connectors our Partners
+## Connectors by our Partners
 
 :::row:::
 :::column span="":::
