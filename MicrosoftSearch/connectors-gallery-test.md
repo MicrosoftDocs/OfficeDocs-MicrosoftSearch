@@ -180,10 +180,6 @@ Allows your organization to search your ServiceNow instance for knowledge-based 
    :::column span="":::
 
 ---
-   :::row-end:::
-   :::column-end:::
-
----
 <!--- --->
 <!--- --->
 <!--- --->
