@@ -177,14 +177,13 @@ Allows your organization to search your ServiceNow instance for knowledge-based 
 :::row:::
 
 ::column span="":::
+:::column-end::: :::row-end:::
 
 ---
 
-:::column-end::: :::row-end:::
-
    :::column-end:::
-   :::column span="":::
 
+---
 <!--- --->
 <!--- --->
 <!--- --->
@@ -250,7 +249,9 @@ Enables your organization to search for data from your Azure SQL.
 
 :::row:::
 
-:::column span="":::
+::column span="":::
+:::column-end::: :::row-end:::
+
+---
 
    :::column-end:::
-   :::column span="":::
