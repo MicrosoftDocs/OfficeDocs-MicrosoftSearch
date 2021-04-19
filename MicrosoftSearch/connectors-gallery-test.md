@@ -177,6 +177,11 @@ Allows your organization to search your ServiceNow instance for knowledge-based 
 
 :::column span="":::
 
+   :::column-end:::
+   :::column span="":::
+
+   :::column-end:::
+:::row-end:::
 ---
 <!--- --->
 <!--- --->
