@@ -23,6 +23,8 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
 :::row:::
 :::column span="":::
 
+---
+
 ### Azure Data Lake Storage Gen2
 
 by [Microsoft](https://www.microsoft.com)
@@ -36,6 +38,8 @@ Enables your organization to search for content stored in Azure Blob containers.
 :::column-end:::
 :::column span="":::
 
+---
+
 ### Azure DevOps
 
 by [Microsoft](https://www.microsoft.com)
@@ -44,11 +48,13 @@ Allows your organization to search for work items in your Azure DevOps instance.
 
 [More details](azure-devops-connector.md)
 
-:::image type="icon" source="media/AzureDevOps_Medium.png" alt-text="Conceptual representation of what bots look like in the Teams client." border="false":::
+:::image type="icon" source="media/AzureDevOps_Medium.png":::
 
 :::column-end:::
 
 :::column span="":::
+
+---
 
 ### Azure SQL
 
@@ -67,6 +73,8 @@ Enables your organization to search for data from your Azure SQL.
 :::row:::
 
 :::column span="":::
+
+---
 
 ### Enterprise websites
 
@@ -105,7 +113,9 @@ Enables your organization to search knowledge-based articles on sites it creates
 by [Microsoft](https://www.microsoft.com)
 
 Allows your organization to search on-premises Microsoft SQL server databases.
+
 [More details](MSSQL-connector.md)
+
 :::image type="icon" source="media/SqlConnectorLogo_Small.png":::
 
 :::column-end:::
@@ -123,7 +133,9 @@ Allows your organization to search on-premises Microsoft SQL server databases.
 by [Microsoft](https://www.microsoft.com)
 
 Enables your organization to discover and index data from an on-premises database. Indexes specified content into Microsoft Search and supports periodic crawls. You can also restrict access to search results for certain users.
+
 [More details](OracleSQL-connector.md)
+
 :::image type="icon" source="media/OracleSQL.png":::
 
 :::column-end:::
@@ -169,3 +181,76 @@ Allows your organization to search your ServiceNow instance for knowledge-based 
 ---
 
 :::column-end::: :::row-end:::
+
+   :::column-end:::
+   :::column span="":::
+
+<!--- --->
+<!--- --->
+<!--- --->
+## Connectors our Partners
+
+:::row:::
+:::column span="":::
+
+---
+
+### Azure Data Lake Storage Gen2
+
+by [Microsoft](https://www.microsoft.com)
+
+Enables your organization to search for content stored in Azure Blob containers. Indexes hierarchy-enabled folders in specified Azure Data Lake Storage Gen2 accounts.
+
+[More details](azure-data-lake-connector.md)
+
+:::column-end:::
+:::column span="":::
+
+---
+
+### Azure DevOps
+
+by [Microsoft](https://www.microsoft.com)
+
+Allows your organization to search for work items in your Azure DevOps instance.
+
+[More details](azure-devops-connector.md)
+
+:::column-end:::
+
+:::column span="":::
+
+---
+
+### Azure DevOps
+
+by [Microsoft](https://www.microsoft.com)
+
+Allows your organization to search for work items in your Azure DevOps instance.
+
+[More details](azure-devops-connector.md)
+
+:::column-end:::
+
+:::column span="":::
+
+---
+
+### Azure SQL
+
+by [Microsoft](https://www.microsoft.com)
+
+Enables your organization to search for data from your Azure SQL.
+
+[More details](MSSQL-connector.md)
+
+:::column-end:::
+
+:::row-end:::
+
+:::row:::
+
+:::column span="":::
+
+   :::column-end:::
+   :::column span="":::
