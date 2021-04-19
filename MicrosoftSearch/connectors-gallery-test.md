@@ -243,15 +243,11 @@ Enables your organization to search for data from your Azure SQL.
 
 [More details](MSSQL-connector.md)
 
-:::column-end:::
+   :::column-end:::
 
+   :::column span="":::
+   :::column-end:::
 :::row-end:::
 
 :::row:::
-
-::column span="":::
-:::column-end::: :::row-end:::
-
----
-
-   :::column-end:::
+   :::column span="2":::
