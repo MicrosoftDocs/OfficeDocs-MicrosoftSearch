@@ -32,7 +32,7 @@ Enables your organization to search for content stored in Azure Blob containers.
 
 [More details](azure-data-lake-connector.md)
 
-:::image type="icon" source="media/Azure_Data_Lake_Small.png" width="35" height="35":::
+:::image type="icon" source="media/Azure_Data_Lake_Small.png":::
 
 :::column-end:::
 :::column span="":::
