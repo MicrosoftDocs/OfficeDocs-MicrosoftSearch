@@ -169,14 +169,13 @@ Allows your organization to search your ServiceNow instance for knowledge-based 
 
 :::image type="icon" source="media/ServiceNow_Small.png":::
 
-   :::column-end:::
+:::column-end:::
 
-   :::column span="":::
-   :::column-end:::
 :::row-end:::
 
 :::row:::
-   :::column span="":::
+
+:::column span="":::
 
 ---
 <!--- --->
