@@ -216,20 +216,6 @@ Allows your organization to search for work items in your Azure DevOps instance.
 
 ---
 
-### Azure DevOps
-
-by [Microsoft](https://www.microsoft.com)
-
-Allows your organization to search for work items in your Azure DevOps instance.
-
-[More details](azure-devops-connector.md)
-
-:::column-end:::
-
-:::column span="2":::
-
----
-
 ### Azure SQL
 
 by [Microsoft](https://www.microsoft.com)
