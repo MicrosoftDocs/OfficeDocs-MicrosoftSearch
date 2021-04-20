@@ -33,9 +33,15 @@ To index content using Graph connectors, you need to have sufficient index quota
 
 ## Entitlement built into Microsoft 365 or Office 365 E5 licenses
 
-The Microsoft 365 E5 or Office 365 E5 license type includes entitlement to 500 items of index quota, which counts towards your organization's quota for ingesting content from Graph connectors. Note that this is not included with Microsoft 365 A5 or Office 365 A5.
+The following licenses include entitlement to 500 items of index quota, which counts towards your organization's quota for ingesting content from Graph connectors:
+
+* The Microsoft 365 E5 or Office 365 E5
+* [Microsoft Viva Topics](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
 For example, if your organization has 100 Microsoft 365 E5 licenses, then your organization has 100 x 500 = 50,000 items worth of Graph connectors index quota.
+
+<!---Comment requested in PR#143--->
+Note that Microsoft 365 A5 or Office 365 A5 do not include this entitlement.
 
 ## Purchase of add-on index quota
 To purchase more Graph connectors quota get in touch with your Microsoft Account Manager, or complete the following steps:
