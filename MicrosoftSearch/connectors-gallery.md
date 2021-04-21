@@ -2193,9 +2193,9 @@ Secure enterprise search connector for reliably indexing content from SAP PLM DM
 
 by [Accenture](https://www.accenture.com/)
 
+The Service Now connector will crawl content from ServiceNow.
 
-
-[More details]()
+[More details](https://contentanalytics.digital.accenture.com/display/aspire40/ServiceNow+Connector)
 
    :::column-end:::
 
@@ -2215,9 +2215,9 @@ by [Accenture](https://www.accenture.com/)
 
 by [BA Insight](https://www.bainsight.com/)
 
+ ServiceNow Connector honors the security of the source system and provides both full and incremental crawls, so users always have the latest information available to them.
 
-
-[More details]()
+[More details](https://www.bainsight.com/connectors/servicenow-connector-sharepoint-azure-elasticsearch)
 
 :::column-end:::
 :::column span="":::
