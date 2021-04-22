@@ -52,11 +52,11 @@ Use the URL field to specify the root of the website that you'd like to crawl. T
 > [!NOTE]
 > If the site you want to crawl has a sitemap defined, the connector will only crawl the URLs listed in the sitemap. If no sitemap is defined, the connector will do a deep crawl of all the links found on the root URL of the site.
 
-### Crawl mode: Cloud or On-premises (Preview)
+### Crawl mode: Cloud or On-premises
 
 The crawl mode determines the type of websites you want to index, either cloud or on-premises. For your cloud websites, select **Cloud** as the crawl mode.
 
-Also, the connector now supports crawling of on-premises websites. This mode is in preview. To access your on-premises data, you must first install and configure the Graph connector agent. To learn more, see [Graph connector agent](./on-prem-agent.md).
+Also, the connector now supports crawling of on-premises websites. To access your on-premises data, you must first install and configure the Graph connector agent. To learn more, see [Graph connector agent](./on-prem-agent.md).
 
 For your on-premises websites, select **Agent** as the crawl mode and in the **On-Prem Agent** field, choose the Graph connector agent that you installed and configured earlier.  
 
