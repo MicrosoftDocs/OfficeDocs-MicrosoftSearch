@@ -2,6 +2,17 @@
 
 
 
+## Week of April 19, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/20/2021 | [Connector gallery](/MicrosoftSearch/connectors-gallery) | modified |
+| 4/20/2021 | [License requirements and pricing](/MicrosoftSearch/licensing) | modified |
+| 4/21/2021 | [Connector gallery](/MicrosoftSearch/connectors-gallery) | modified |
+| 4/22/2021 | [Enterprise websites Graph connector for Microsoft Search](/MicrosoftSearch/enterprise-web-connector) | modified |
+
+
 ## Week of April 12, 2021
 
 
@@ -71,13 +82,3 @@
 | 3/23/2021 | [Configure your Microsoft-built Graph connector for Microsoft Search](/MicrosoftSearch/configure-connector) | modified |
 | 3/23/2021 | [Microsoft Graph Connectors Overview](/MicrosoftSearch/connectors-overview) | modified |
 | 3/26/2021 | [Manage Acronym answers in Microsoft Search](/MicrosoftSearch/manage-acronyms) | modified |
-
-
-## Week of March 15, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/18/2021 | [Manage bookmarks](/MicrosoftSearch/manage-bookmarks) | modified |
-| 3/19/2021 | [Connector gallery](/MicrosoftSearch/connectors-gallery) | modified |
-| 3/19/2021 | [Manage Microsoft Graph Connectors for Microsoft Search](/MicrosoftSearch/manage-connector) | modified |
