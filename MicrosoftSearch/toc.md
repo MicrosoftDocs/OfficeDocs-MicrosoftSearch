@@ -16,7 +16,7 @@
 ## [Connectors gallery](connectors-gallery.md)
 ## Set up connectors by Microsoft
 ### [Setup overview](configure-connector.md)
-### [Set up the graph connector agent (preview)](on-prem-agent.md)
+### [Set up the graph connector agent](on-prem-agent.md)
 ### [Map non-Azure AD Identities (preview)](map-non-aad.md)
 ### [Map Azure AD Identities (preview)](map-aad.md)
 ### Connector-specific information
@@ -26,7 +26,7 @@
 #### [Enterprise websites](enterprise-web-connector.md)
 #### [File share](fileshare-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
-#### [Oracle SQL (preview)](OracleSQL-connector.md)
+#### [Oracle SQL](OracleSQL-connector.md)
 #### [Salesforce (preview)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## Manage connections
