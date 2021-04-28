@@ -25,8 +25,7 @@ To provide your users with easy access to results from your organization, add a 
 - Supports all major web browsers, including Google Chrome and Microsoft Edge
 - Only search suggestions from your organization appear, web suggestions are never included
 - Takes users to a Microsoft Search in Bing work results page, which excludes ads and web results
-- Land users on one of the default verticals or a custom vertical you create
-- You control the appearance and behavior of the search box
+- You control the appearance and behavior of the search box, including the ability to land users on a default vertical or a custom vertical you've created
   
 ## Add a search box to an intranet page
 
@@ -101,13 +100,13 @@ To help the search box better fit with the style of your intranet, there are a v
 
 ## Direct users to a default or custom vertical
 
-To provide easy integration between your line-of-business apps or intranet sites and your work results, you can also customize the search box by specifying the default or custom vertical that users should land on when they click a search suggestion.
+To provide easy integration between your line-of-business apps or intranet sites and your work results, you can also customize the search box by specifying a default or custom vertical that users should land on when they click a search suggestion.
 
-Use the vertical option in bfbSearchBoxConfig to define the vertical you want. For example, if you want users to always land on the Sites vertical, use the value "Site-sites".
+Use the vertical option in bfbSearchBoxConfig to define the vertical you want. For example, if you want users to always land on the Sites vertical, one of the default verticals, use the value "Site-sites".
 
 ![Screenshot of work results page on Microsoft Search in Bing showing the Sites vertical results and URL](media/sites_vertical_esb.png)
 
-For custom verticals, use the hash at the end of the URL. You can find these values by searching from the work page on Bing, clicking a vertical, and copying the value after the number sign (#).
+For custom verticals, use the hash at the end of the URL. You can find these values by searching from the work page on Bing, clicking a vertical label, and copying the value after the number sign (#).
 
 ![Screenshot of work results page on Microsoft Search in Bing showing a custom Presentation vertical results and URL](media/custom_vertical_esb.png)
 
