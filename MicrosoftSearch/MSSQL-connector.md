@@ -1,5 +1,5 @@
 ---
-title: "Azure SQL and Microsoft SQL server Graph connector for Microsoft Search"
+title: "Azure SQL and Microsoft SQL Server Graph connector for Microsoft Search"
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -16,19 +16,19 @@ description: "Set up the Azure SQL and Microsoft SQL Graph connector for Microso
 ---
 <!---Previous ms.author: vivg --->
 
-# Azure SQL and Microsoft SQL server Graph connectors
+# Azure SQL and Microsoft SQL Server Graph connectors
 
-The Microsoft SQL server or Azure SQL Graph connector allows your organization to discover and index data from an on-premises SQL Server database, or a database hosted in your Azure SQL instance in the cloud.
+The Microsoft SQL Server or Azure SQL Graph connector allows your organization to discover and index data from an on-premises SQL Server database, or a database hosted in your Azure SQL instance in the cloud.
 The Graph connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
 > [!NOTE]
 > Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
-This article is for anyone who configures, runs, and monitors a Azure SQL and Microsoft SQL server Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure SQL and Microsoft SQL server Graph connector. This article also includes information about [Limitations](#limitations) for the Microsoft SQL server and Azure SQL connectors.
+This article is for anyone who configures, runs, and monitors a Azure SQL and Microsoft SQL Server Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure SQL and Microsoft SQL Server Graph connector. This article also includes information about [Limitations](#limitations) for the Microsoft SQL Server and Azure SQL connectors.
 
 ## Before you get started
 
-### Install the Graph connector agent (required for on-premises Microsoft SQL server connector only)
+### Install the Graph connector agent (required for on-premises Microsoft SQL Server connector only)
 
 In order to access your on-premises third-party data, you must install and configure the Graph connector agent. See [Install the Graph connector agent](on-prem-agent.md) to learn more.  
 
@@ -66,14 +66,14 @@ To add the registered app to your Azure SQL Database, you need to:
 
 ### Connection settings
 
-To connect your Microsoft SQL server connector to a data source, you must configure the database server you want crawled and the on-prem agent. You can then connect to the database with the required authentication method.
+To connect your Microsoft SQL Server connector to a data source, you must configure the database server you want crawled and the on-prem agent. You can then connect to the database with the required authentication method.
 
 > [!NOTE] 
-> Your database must run SQL server version 2008 or later for the Microsoft SQL server connector to be able to connect.
+> Your database must run SQL Server version 2008 or later for the Microsoft SQL Server connector to be able to connect.
 
 For the Azure SQL connector, you only need to specify the server name or IP address you want to connect to. Azure SQL connector only supports Azure Active Directory Open ID connect (OIDC) authentication to connect to the database.
 
-For added security, you may configure IP firewall rules for your Azure SQL server or database. To learn more about setting up IP firewall rules, refer documentation on [IP firewall rules](/azure/azure-sql/database/firewall-configure). Add the following client IP ranges in the firewall settings.
+For added security, you may configure IP firewall rules for your Azure SQL Server or database. To learn more about setting up IP firewall rules, refer documentation on [IP firewall rules](/azure/azure-sql/database/firewall-configure). Add the following client IP ranges in the firewall settings.
 
 | Region | IP Range |
 | ------------ | ------------ |
@@ -212,7 +212,7 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 
 The SQL connectors have these limitations in the preview release:
 
-- Microsoft SQL server connector: The on-premises database must run SQL server version 2008 or later.
+- Microsoft SQL Server connector: The on-premises database must run SQL Server version 2008 or later.
 - The M365 subscription and Azure subscription (hosting Azure SQL database) must lie within the same Azure Active Directory.
 - ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security.
 - Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
