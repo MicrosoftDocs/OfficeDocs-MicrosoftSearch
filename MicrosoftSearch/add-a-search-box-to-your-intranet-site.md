@@ -86,7 +86,7 @@ To help the search box better fit with the style of your intranet, there are a v
         height: 40,                             // default: 40, min: 40, max: 72
         cornerRadius: 6,                        // default: 6, min: 0, max: 25                                   
         strokeOutline: true,                    // default: true
-        dropShadow: true,                       // default: true
+        dropShadow: true,                       // default: false
         iconColor: "#067FA6",                   // default: #067FA6
         title: "Search box",                    // default: "Search box"
         vertical: "Person-people",              // default: not specified, search box directs to the All vertical on the WORK results page
