@@ -112,7 +112,7 @@ For custom verticals, use the hash at the end of the URL. You can find these val
 
 ## Use an iFrame to embed a search box
 
-If embedding a script isn't an option for the site, use an iFrame to add the search box. You won't be able to customize the appearance of the search box.
+If embedding a script isn't an option for the site, use an iFrame to add the search box. You won't be able to customize the search box.
   
 ```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
