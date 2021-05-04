@@ -3,7 +3,6 @@ title: "Add a search box to your intranet site"
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 10/31/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
