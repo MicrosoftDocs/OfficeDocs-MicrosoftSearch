@@ -2,6 +2,14 @@
 
 
 
+## Week of May 03, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/4/2021 | [Add a search box to your intranet site](/MicrosoftSearch/add-a-search-box-to-your-intranet-site) | modified |
+
+
 ## Week of April 26, 2021
 
 
@@ -38,12 +46,3 @@
 | 4/8/2021 | [Microsoft Graph Connectors Overview](/MicrosoftSearch/connectors-overview) | modified |
 | 4/8/2021 | [Customize the Microsoft Search page](/MicrosoftSearch/customize-search-page) | modified |
 | 4/9/2021 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
-
-
-## Week of March 29, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/29/2021 | [License requirements and pricing](/MicrosoftSearch/licensing) | modified |
-| 3/30/2021 | [Customize the Microsoft Search page](/MicrosoftSearch/customize-search-page) | modified |
