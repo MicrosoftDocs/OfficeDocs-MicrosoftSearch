@@ -1,6 +1,6 @@
 ---
 title: "Manage Microsoft Graph Connectors for Microsoft Search"
-ms.author: monaray
+ms.author: mecampos
 author: monaray97
 manager: mnirkhe
 audience: Admin
@@ -37,7 +37,7 @@ Edit a draft connection | :heavy_check_mark: | :x:
 
 After you create a connection, the number of processed items shows on the **Connectors** tab on the **Microsoft Search** page. After the initial full crawl completes successfully, the progress for periodic incremental crawls displays. This page provides information about the connector's day-to-day operations and an overview of the logs and error history.
 
-Four states show up in the **State** column against each connection:
+Five states show up in the **State** column against each connection:
 
 * **Syncing**. The connector is crawling the data from the source to index the existing items and make any updates.
 
@@ -46,6 +46,8 @@ Four states show up in the **State** column against each connection:
 * **Paused**. The crawls are paused by the admins through the pause option. The next crawl runs only when it's manually resumed. However, the data from this connection continues to be searchable.
 
 * **Failed**. The connection had a critical failure. This error requires manual intervention. The admin needs to take appropriate action based on the error message shown. Data that was indexed until the error occurred is searchable.
+
+* **Delete Failed**. The deletion of connection failed. Depending upon the failure reason, the data might still be indexed, item quota may still be consumed and crawls might still run for the connection. It is recommended to try deleting the connection again in this state.
 
 ## Monitor your index quota utilization
 
