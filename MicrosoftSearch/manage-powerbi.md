@@ -44,6 +44,9 @@ Power BI results are enabled for your organization by default. Your Power BI adm
 
 :::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Screenshot of setting to turn Power BI answers on or off" border="true":::
 
+> [!NOTE]
+> When using Microsoft Search, your search query and the results returned from Power BI may be processed in a region or geography that's different than where your Power BI tenant data is located.
+
 ## Frequently Asked Questions
 
 **Q: Is Power BI search enabled by default?**
