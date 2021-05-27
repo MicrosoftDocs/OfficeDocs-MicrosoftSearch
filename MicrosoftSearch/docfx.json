@@ -41,6 +41,7 @@
     "globalMetadata": {
       "breadcrumb_path": "/MicrosoftSearch/breadcrumb/toc.json",
       "extendBreadcrumb": true,
+      "recommendations": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/OfficeDocs-MicrosoftSearch",
       "feedback_product_url": "https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch/issues",
