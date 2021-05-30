@@ -68,7 +68,7 @@ You can connect to the following data sources using Graph connectors created by 
 * [Enterprise websites](enterprise-web-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [File share](fileshare-connector.md)
-* [Oracle SQL (preview)](OracleSQL-connector.md)
+* [Oracle SQL](OracleSQL-connector.md)
 * [Salesforce (preview)](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
