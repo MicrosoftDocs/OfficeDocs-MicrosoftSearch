@@ -114,7 +114,7 @@ Follow the general [setup instructions](./configure-connector.md).
 
 >[!TIP]
 >**Default Result type**
->* The Azure DevOps connector automatically registers a [result type](./customize-search-page#step-2-create-the-result-types) once the connector is published. The result type uses a dynamically generated [result layout](./customize-results-layout) based on the fields selected in step 3. 
+>* The Azure DevOps connector automatically registers a [result type](./customize-search-page.md#step-2-create-the-result-types) once the connector is published. The result type uses a dynamically generated [result layout](./customize-results-layout.md) based on the fields selected in step 3. 
 >* You can manage the result type by navigating to [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) in the [Microsoft 365 admin center](https://admin.microsoft.com). The default result type will be named as "`ConnectionId`Default". For example, if your connection id is `AzureDevOps`, your result layout will be named: "AzureDevOpsDefault"
 >* Also, you can choose to create your own result type if needed.
 
