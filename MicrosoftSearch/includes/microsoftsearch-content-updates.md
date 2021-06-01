@@ -2,6 +2,16 @@
 
 
 
+## Week of May 10, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/10/2021 | [FAQs](/MicrosoftSearch/faqs) | modified |
+| 5/11/2021 | [Manage Microsoft Graph Connectors for Microsoft Search](/MicrosoftSearch/manage-connector) | modified |
+| 5/13/2021 | [Manage Power BI answers](/MicrosoftSearch/manage-powerbi) | modified |
+
+
 ## Week of May 03, 2021
 
 
@@ -34,15 +44,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 4/13/2021 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
-
-
-## Week of April 05, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/6/2021 | [Customize the Microsoft Search page](/MicrosoftSearch/customize-search-page) | modified |
-| 4/8/2021 | [Connector gallery](/MicrosoftSearch/connectors-gallery) | modified |
-| 4/8/2021 | [Microsoft Graph Connectors Overview](/MicrosoftSearch/connectors-overview) | modified |
-| 4/8/2021 | [Customize the Microsoft Search page](/MicrosoftSearch/customize-search-page) | modified |
-| 4/9/2021 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
