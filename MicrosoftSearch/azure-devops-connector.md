@@ -63,6 +63,9 @@ Mandatory Fields | Description | Recommended Value
 | Authorization callback URL        | A required callback URL that the authorization server redirects to. | https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback|
 | Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), Work Items (read), Variable Groups (read), Project and team (read), Graph (read)|
 
+>[!IMPORTANT]
+>The authorized scopes that you select for the app should match the scopes exactly as listed above. If you omit one of the authorized scopes in the list, or add another scope, the authorization will fail.
+
 On registering the app with the details above, you'll get the **App ID** and **Client Secret** that will be used to configure the connector.
 
 >[!NOTE]
@@ -108,6 +111,13 @@ The recommended schedule is one hour for an incremental crawl and one day for a 
 ## Step 8: Review connection
 
 Follow the general [setup instructions](./configure-connector.md).
+
+>[!TIP]
+>**Default Result type**
+>* The Azure DevOps connector automatically registers a [result type](./customize-search-page.md#step-2-create-the-result-types) once the connector is published. The result type uses a dynamically generated [result layout](./customize-results-layout.md) based on the fields selected in step 3. 
+>* You can manage the result type by navigating to [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) in the [Microsoft 365 admin center](https://admin.microsoft.com). The default result type will be named as "`ConnectionId`Default". For example, if your connection id is `AzureDevOps`, your result layout will be named: "AzureDevOpsDefault"
+>* Also, you can choose to create your own result type if needed.
+
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
