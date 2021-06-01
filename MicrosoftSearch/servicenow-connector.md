@@ -35,22 +35,27 @@ Follow the general setup instructions.
 
 ## Step 3: Connection Settings
 
-To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**, credentials for this account, and the Client ID and Client Secret for OAuth authentication.  
+To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**. Your organization’s **ServiceNow instance URL** typically looks like **https://&lt;your-organization-domain>.service-now.com**. 
 
-Your organization’s **ServiceNow instance URL** typically looks like **https://&lt;your-organization-domain>.service-now.com**. Along with this URL, you will need an account for setting up the connection to ServiceNow as well as for allowing Microsoft Search to periodically update the articles from ServiceNow based on the refresh schedule. The account should at least have <em>knowledge</em> role. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
+Along with this URL, you will need a **service account** for setting up the connection to ServiceNow as well as for allowing Microsoft Search to periodically update the knowledge articles from ServiceNow based on the refresh schedule. The service account will need read access to the following **ServiceNow table records** to successfully crawl various entities.
+
+**Feature** | **Read access required tables** | **Description**
+--- | --- | ---
+Index knowledge articles available to <em>Everyone</em> | kb_knowledge | For crawling knowledge articles
+Index and support user criteria permissions | kb_uc_can_read_mtom | Who can read this knowledge base
+| | kb_uc_can_contribute_mtom | Who can contribute to this knowledge base
+| | kb_uc_cannot_read_mtom | Who cannot read this knowledge base
+| | kb_uc_cannot_contribute_mtom | Who cannot contribute to this knowledge base
+| | sys_user | Read user table
+| | sys_user_grmember | Read group membership of users
+| | user_criteria | Read user criteria permissions
+| | kb_knowledge_base | Read knowledge base information
+
+You can **create and assign a role** for the service account you use to connect with Microsoft Search. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be assigned on that role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls). 
+
 
 >[!NOTE]
->If you want to crawl user and group identities to honor access permissions of knowledge articles in Microsoft Search results, the account should have access to read the following table records in ServiceNow:
->* kb_uc_can_contribute_mtom
->* kb_uc_can_read_mtom
->* kb_uc_cannot_read_mtom
->* kb_uc_cannot_contribute_mtom
->* sys_user
->* sys_user_has_role
->* sys_user_grmember
->* user_criteria
->* kb_knowledge_base  
-> You can create and assign a role for the account you use to connect with Microsoft Search. Read access to the tables can be assigned on that role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls).
+> ServiceNow Graph Connector can index knowledge articles and user criteria permissions without advanced scripts. If a user criteria contains advanced script all the related knowledge articles will be hidden from search results.
 
 To authenticate and sync content from ServiceNow, choose **one of three** supported methods: 
  
@@ -79,7 +84,7 @@ Active | Select the check box to make the application registry active. | Set to 
 Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8640000 seconds). | 31,536,000 (1 year)
 Access token lifespan | The number of seconds that an access token is valid. | 43,200 (12 hours)
 
-Enter the client id and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role.
+Enter the client id and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role. Refer the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for giving read access to additional ServiceNow table records and index user criteria permissions.
 
 ### Azure AD OpenID Connect
 
@@ -166,7 +171,7 @@ All other values can be left to default.
 
 ##### Step 3.6: Enable Knowledge role for the ServiceNow account
 
-Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
+Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Refer the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for giving read access to additional ServiceNow table records and index user criteria permissions.
 
 Use Application ID as Client ID (from step 3.1), and Client secret (from step 3.2) in admin center configuration wizard to authenticate to your ServiceNow instance using Azure AD OpenID Connect.
 
@@ -180,17 +185,23 @@ Use the preview results button to verify the sample values of the selected prope
 
 ## Step 5: Manage search permissions
 
-The ServiceNow connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. Indexed data appears in the search results and is visible to all users in the organization or users who have access to them respectively. ServiceNow Connector supports default user criteria permissions without advanced scripts. When the connector encounters a user criteria with advanced script, all data using that user criteria will not be showed in search results.
+The ServiceNow connector supports search permissions visible to **Everyone** or **Only people with access to this data source** i.e., people who are allowed access via user criteria permissions. Indexed data appears in the search results and is visible to all users in the organization or users who have access to them respectively. 
+
+ServiceNow Graph Connector supports default user criteria permissions without advanced scripts. When the connector encounters a user criteria with advanced script, all data using that user criteria will not be showed in search results.
+
+>[!NOTE]
+>To choose **Only people with access to this data source**, enable targeted release updates on your tenant. To learn about setting up targeted release, see [Setup Targeted release options.](https://docs.microsoft.com/en-us/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)
 
 If you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Azure Active Directory (AAD) provisioned users or Non-AAD users.
 
 >[!NOTE]
->The ServiceNow connector is in **preview** if you choose **Only people with access to this data source**.
+>If you choose AAD as the type of identity source, make sure you are assigning UserPrincipalName (UPN) source property to email targeted property in ServiceNow. To verify or change your mappings, see [Customizing user provisioning attribute-mappings for SaaS applications in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes).
 
->[!NOTE]
->If you choose AAD as the type of identity source, make sure you are assigning UPN source property to email targeted property in ServiceNow. To verify or change your mappings, see [Customizing user provisioning attribute-mappings for SaaS applications in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes).
+If you chose to ingest an ACL from your ServiceNow instance and selected "non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. 
 
-If you chose to ingest an ACL from your ServiceNow instance and selected "non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities.
+You can also refer the following video to learn more about managing search permissions.
+
+[![Managing Search Permissions in Microsoft Graph Connector for ServiceNow](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
 
 ## Step 6: Assign property labels
 
