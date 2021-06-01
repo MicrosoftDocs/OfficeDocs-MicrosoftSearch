@@ -125,7 +125,7 @@ The next step is to customize the search results as recommended in this article 
 
 * When you **publish** a Microsoft-built connector, it can take a few minutes for the connection to be created. During that time, the connection will show its status as pending.
 
-* Ingestion throughput is throttled at approimately four items per second.
+* Ingestion throughput is throttled at approximately four items per second.
 
 * There is no support for schema updates. After you create a connection setup, there's no way to update the schema. You can only delete and re-create the connection.
 
