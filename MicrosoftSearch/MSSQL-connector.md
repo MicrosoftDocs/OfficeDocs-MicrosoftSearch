@@ -204,9 +204,13 @@ Create your own verticals and result types, so end users can view search results
 
 To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).-->
 
-<!---## Troubleshooting-->
+## Troubleshooting
 
-<!---Insert troubleshooting recommendations for this data source-->
+The following is a a common error observed while configuring the connector, and its possible reason.
+
+| Configuration step | Error message | Possible reason(s) |
+| ------------ | ------------ | ------------ |
+| Full crawl | `Error from database server: A transport level error has occurred when receiving results from the server.` | This error arises due to network issues. It is recommended to check network logs using [Microsoft network monitor](https://www.microsoft.com/download/details.aspx?id=4865) and reach out to Microsoft customer support. |
 
 ## Limitations
 

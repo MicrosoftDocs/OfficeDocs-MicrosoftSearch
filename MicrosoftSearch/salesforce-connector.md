@@ -12,7 +12,6 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-
 description: "Set up the Salesforce Graph connector for Microsoft Search"
 ---
 <!---Previous ms.author: rusamai --->
@@ -106,7 +105,7 @@ Check that the connection was successful by searching for a green banner that sa
 
 You'll need to choose which users will see search results from this data source. If you allow only certain Azure Active Directory (Azure AD) or Non-Azure AD users to see the search results, make sure you map the identities.
 
-## Step 4a: Select permissions
+### Step 4.a: Select permissions
 
 You can choose to ingest Access Control Lists (ACLs) from your Salesforce instance, or allow everyone in your organization to see search results from this data source. ACLs can include Azure Active Directory (AAD) identities (users who are federated from Azure AD to Salesforce), non-Azure AD identities (native Salesforce users who have corresponding identities in Azure AD), or both.
 
@@ -118,9 +117,15 @@ You can choose to ingest Access Control Lists (ACLs) from your Salesforce instan
 
 If you chose to ingest an ACL from your Salesforce instance and selected "non-AAD" for the identity type, see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities.
 
-## Step 4b: Map AAD identities
+### Step 4.b: Map AAD identities
 
 If you chose to ingest an ACL from your Salesforce instance and selected "AAD" for the identity type, see [Map your Azure AD Identities](map-aad.md) for instructions on mapping the identities. To learn how to set up Azure AD SSO for Salesforce, see this [tutorial](/azure/active-directory/saas-apps/salesforce-tutorial).
+
+### Apply user mapping to sync your Salesforce identities to Azure AD identities
+
+In this video you can see the process to authenticate to your Salesforce instance, sync your non-Azure Active Directory identities to your Azure Active Directory identities, and apply the proper security trimmings to your Salesforce items.
+
+> [!VIDEO https://www.youtube.com/watch?v=SZYiFxZMKcM]
 
 ## Step 5: Assign property labels
 

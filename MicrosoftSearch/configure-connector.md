@@ -158,7 +158,7 @@ The refresh interval determines how often your data is synced between the data s
 
 There are two types of refresh intervals, which are **Full refresh** and **Incremental refresh**, but incremental refreshes aren't available for some data sources.
 
-With a full refresh, the search engine processes and indexes every item in the content source, regardless of previous crawls. A full refresh works best for these situations:
+With a full refresh, the search engine processes and indexes the items that have changed in the content source, regardless of previous crawls. A full refresh works best for these situations:
 
 * Detecting deletions of data.
 * The incremental refresh found errors, and failed.
