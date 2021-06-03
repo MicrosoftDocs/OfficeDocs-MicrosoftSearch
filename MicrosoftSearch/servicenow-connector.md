@@ -185,7 +185,7 @@ Use the preview results button to verify the sample values of the selected prope
 
 ## Step 5: Manage search permissions
 
-The ServiceNow connector supports search permissions visible to **Everyone** or **Only people with access to this data source** i.e., people who are allowed access via user criteria permissions. Indexed data appears in the search results and is visible to all users in the organization or users who have access to them respectively. 
+The ServiceNow connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. Indexed data appears in the search results and is visible to all users in the organization or users who have access to them via user criteria permission respectively. If a knowledge article is not enabled with a user criteria, it will appear in search results of everyone in the organization.
 
 ServiceNow Graph Connector supports default user criteria permissions without advanced scripts. When the connector encounters a user criteria with advanced script, all data using that user criteria will not be showed in search results.
 
@@ -230,7 +230,21 @@ After publishing the connection, you need to customize the search results page. 
 ServiceNow Graph connector has the following limitations in its latest release:
 - Indexing knowledge articles available to everyone in an organisation is a generally available feature.
 - *Only people with access to this data source* feature under Manage Search permissions step is in preview and processes only [user criteria](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) permissions. Any other type of access permissions will not be applied in the search results.
-- User criteria with advanced scripts are not supported in the current preview version. Any knowledge articles with such an access restriction will be indexed with deny everyone access i.e. they will not appear in search results to any user until we support them.
+- User criteria with advanced scripts are not supported in the current version. Any knowledge articles with such an access restriction will be indexed with deny everyone access i.e. they will not appear in search results to any user until we support them.
 
 ## Troubleshooting
-After publishing your connection, customising the results page, you can review the status under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After publishing your connection, customizing the results page, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+You can find troubleshooting steps for commonly seen issues.
+### 1. Unable to login due to Single Sign-On enabled ServiceNow instance
+
+if your organization has enabled Single Sign-On (SSO) to ServiceNow, you may have trouble logging in with the service account. You can bring up username and password based login by adding <em> `login.do`</em> to the ServiceNow instance URL. Example. `https://<your-organization-domain>.service-now.com./login.do` 
+
+### 2. Unauthorized or forbidden response to API request
+
+#### 2.1. Check table access permissions
+If you see forbidden or unauthorized response in connection status, check if the service account has required access to the tables mentioned in [step 3: connection settings](#step-3-connection-settings).
+
+#### 2.2. Check if ServiceNow instance behind firewall
+Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall.
+
+If you have face any other issues you may need help with, write to us aka.ms/TalkToGraphConnectors
