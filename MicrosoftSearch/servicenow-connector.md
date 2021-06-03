@@ -206,7 +206,7 @@ If you chose to ingest an ACL from your ServiceNow instance and selected "non-AA
 
 In the following video you can see how to use the Servicenow connector to index knowledge articles, define user criteria permissions, and seamlessly synchronize the changes between ServiceNow and Microsoft Search index.
 
-> [!VIDEO https://youtube-nocookie.com/watch?v=TVSkJpk1RiE]
+> [!VIDEO https://www.youtube-nocookie.com/embed/TVSkJpk1RiE]
 
 ## Step 6: Assign property labels
 
