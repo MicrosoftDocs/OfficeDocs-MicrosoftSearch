@@ -16,7 +16,7 @@ description: "Profile Query variables"
 
 # Profile Query variables
 
-Query variables are used in KQL queries of a vertical to provide dynamic data as an input to the query of a vertical. Profile query variables fetch values from the signed-in user’s [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta). This is used by search admins to make the vertical results context to the signed user.  For example, the following query template will narrow down the search results to show only those items, where the author is the signed-in user.
+Query variables are used in KQL queries of a vertical to provide dynamic data as an input to the query of a vertical. Profile query variables fetch values from the signed-in user’s [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta). This is used by search admins to make the vertical results contextual to the signed user.  For example, the following query template will narrow down the search results to show only those items, where the author is the signed-in user.
 
 **Author**: {Profile.accounts.userPrincipalName}
 
