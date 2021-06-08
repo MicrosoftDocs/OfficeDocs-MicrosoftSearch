@@ -199,12 +199,12 @@ The ServiceNow connector supports search permissions visible to **Everyone** or 
 ServiceNow Graph Connector supports default user criteria permissions without advanced scripts. When the connector encounters a user criteria with advanced script, all data using that user criteria will not appear in search results.
 
 >[!NOTE]
->To choose **Only people with access to this data source**, enable targeted release updates on your tenant. To learn about setting up targeted release, see [Setup Targeted release options.](https://docs.microsoft.com/en-us/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)
+>To choose **Only people with access to this data source**, enable targeted release updates on your tenant. To learn about setting up targeted release, see [Setup Targeted release options.](/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)
 
 If you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Azure Active Directory (AAD) provisioned users or Non-AAD users.
 
 >[!NOTE]
->If you choose AAD as the type of identity source, make sure you are assigning UserPrincipalName (UPN) source property to email targeted property in ServiceNow. To verify or change your mappings, see [Customizing user provisioning attribute-mappings for SaaS applications in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes).
+>If you choose AAD as the type of identity source, make sure you are assigning UserPrincipalName (UPN) source property to email targeted property in ServiceNow. To verify or change your mappings, see [Customizing user provisioning attribute-mappings for SaaS applications in Azure Active Directory](/azure/active-directory/app-provisioning/customize-application-attributes).
 
 If you have elected "non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. 
 
@@ -233,11 +233,11 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ServiceNow Graph connector has the following limitations in its latest release:
 
-After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
+After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
 ## Limitations
 ServiceNow Graph connector has the following limitations in its latest release:
-- Indexing knowledge articles available to everyone in an organisation is a generally available feature.
+- Indexing knowledge articles available to everyone in an organization is a generally available feature.
 - *Only people with access to this data source* feature under Manage Search permissions step is in targeted release channel and processes only [user criteria](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) permissions. Any other type of access permissions will not be applied in the search results.
 - User criteria with advanced scripts are not supported in the current version. Any knowledge articles with such an access restriction will be indexed with deny everyone access i.e. they will not appear in search results to any user until we support them.
 
