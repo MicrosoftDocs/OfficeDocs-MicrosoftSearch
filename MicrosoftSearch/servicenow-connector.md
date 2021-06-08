@@ -64,11 +64,11 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
 1. ServiceNow OAuth (recommended)
 1. Azure AD OpenID Connect
 
-### Basic authentication
+### Step 3.a: Basic authentication
 
 Enter the username and password of ServiceNow account with **knowledge** role to authenticate to your instance.
 
-### ServiceNow OAuth
+### Step 3.b: ServiceNow OAuth
 
 To use ServiceNow OAuth for authentication, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance, so that the Microsoft Search app can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
@@ -87,19 +87,19 @@ Access token lifespan | The number of seconds that an access token is valid. | 4
 
 Enter the client id and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role. Refer the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
-### Azure AD OpenID Connect
+### Step 3.c: Azure AD OpenID Connect
 
 To use Azure AD OpenID Connect for authentication, follow the steps below.
 
-## Step 3.a: Register a new application in Azure Active Directory
+#### Step 3.3.1: Register a new application in Azure Active Directory
 
 To learn about registering a new application in Azure Active Directory, see [Register an application](/azure/active-directory/develop/quickstart-register-app#register-an-application). Select single tenant organizational directory. Redirect URI isn't needed. After registration, note down the Application (client) ID and Directory (tenant) ID.
 
-## Step 3.b: Create a client secret
+#### Step 3.3.2: Create a client secret
 
 To learn about creating a client secret, see [Creating a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Take a note of client secret.
 
-## Step 3.c: Retrieve Service Principal Object Identifier
+#### Step 3.3.3: Retrieve Service Principal Object Identifier
 
 Follow the steps to retrieve Service Principal Object Identifier
 
@@ -133,7 +133,7 @@ Application ID (Client ID) | Unique ID of the application registered in step 3.a
 Client Secret | The secret key of the application (from step 3.b). Treat it like a password.
 Service Principal ID | An identity for the application running as a service. (from step 3.c)
 
-## Step 3.d: Register ServiceNow Application
+#### Step 3.3.4: Register ServiceNow Application
 
 The ServiceNow instance needs the following configuration:
 
@@ -165,7 +165,7 @@ The ServiceNow instance needs the following configuration:
 
 5. Select Submit and Update the OAuth OIDC Entity form.
 
-## Step 3.e: Create a ServiceNow account
+#### Step 3.3.5: Create a ServiceNow account
 
 Refer the instructions to create a ServiceNow account, [create a user in ServiceNow](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
 
@@ -178,7 +178,7 @@ Web service access only | Checked
 
 All other values can be left to default.
 
-##### Step 3.6: Enable Knowledge role for the ServiceNow account
+##### Step 3.: Enable Knowledge role for the ServiceNow account
 
 Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Refer the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
