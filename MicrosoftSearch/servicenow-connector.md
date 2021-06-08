@@ -1,8 +1,9 @@
 ---
-title: "ServiceNow connector for Microsoft Search"
-ms.author: kam1
-author: TheKarthikeyan
-manager: harshkum
+title: "ServiceNow Graph connector for Microsoft Search"
+ms.author: mecampos
+author: mecampos
+manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,8 +12,9 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the ServiceNow connector for Microsoft Search"
+description: "Set up the ServiceNow Graph connector for Microsoft Search"
 ---
+<!---Previous ms.author: kam1 --->
 
 
 # ServiceNow Graph Connector
@@ -72,15 +74,15 @@ To use ServiceNow OAuth for authentication, a ServiceNow admin needs to provisio
 
 The following table provides guidance on how to fill out the endpoint creation form:
 
-**Field** | **Description** | **Recommended Value**
+Field | Description | Recommended Value 
 --- | --- | ---
-Name | This unique value identifies the application that you require OAuth access for. | Microsoft Search
-Client ID | A read-only, auto-generated unique ID for the application. The instance uses the client ID when it requests an access token. | NA
-Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each other. | Follow security best-practices by treating this as a password.
+Name | Unique value that identifies the application that you require OAuth access for. | Microsoft Search
+Client ID | A read-only, auto generated unique ID for the application. The instance uses the client ID when it requests an access token. | NA
+Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each other. | Follow security best-practices by treating the secret as a password.
 Redirect URL | A required callback URL that the authorization server redirects to. | https://gcs.office.com/v1.0/admin/oauth/callback
 Logo URL | A URL that contains the image for the application logo. | NA
 Active | Select the check box to make the application registry active. | Set to active
-Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8640000 seconds). | 31,536,000 (1 year)
+Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds). | 31,536,000 (1 year)
 Access token lifespan | The number of seconds that an access token is valid. | 43,200 (12 hours)
 
 Enter the client id and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role. Refer the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
@@ -89,81 +91,89 @@ Enter the client id and client secret to connect to your instance. After connect
 
 To use Azure AD OpenID Connect for authentication, follow the steps below.
 
-##### Step 3.1: Register a new application in Azure Active Directory
+## Step 3.a: Register a new application in Azure Active Directory
 
-To learn about registering a new application in Azure Active Directory, see [Register an application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-an-application). Select single tenant organizational directory. Redirect URI is not needed. After registration, note down the Application (client) ID and Directory (tenant) ID.
+To learn about registering a new application in Azure Active Directory, see [Register an application](/azure/active-directory/develop/quickstart-register-app#register-an-application). Select single tenant organizational directory. Redirect URI isn't needed. After registration, note down the Application (client) ID and Directory (tenant) ID.
 
-##### Step 3.2: Create a client secret
+## Step 3.b: Create a client secret
 
-To learn about creating a client secret, see [Creating a client secret](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Take a note of client secret.
+To learn about creating a client secret, see [Creating a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Take a note of client secret.
 
-##### Step 3.3: Retrieve Service Principal Object Identifier
+## Step 3.c: Retrieve Service Principal Object Identifier
 
 Follow the steps to retrieve Service Principal Object Identifier
 
-1. Run PowerShell
-2. Install Azure PowerShell using the following command
-```<language>
+1. Run PowerShell.
+
+2. Install Azure PowerShell using the following command.
+
+   ```powershell
    Install-Module -Name Az -AllowClobber -Scope CurrentUser
-```
-3. Connect to Azure
-```<language>
-    Connect-AzAccount
-```
-4. Get Service Principal Object Identifier
-```<language>
+   ```
+
+3. Connect to Azure.
+
+   ```powershell
+   Connect-AzAccount
+   ```
+
+4. Get Service Principal Object Identifier.
+
+   ```powershell
    Get-AzADServicePrincipal -ApplicationId "Application-ID"
-```
-Replace "Application-ID" with Application (client) ID (without quotes) of the application you registered in step 3.1. Note the value of ID object from PowerShell output. It is the Service Principal ID.
+   ```
+   Replace "Application-ID" with Application (client) ID (without quotes) of the application you registered in step 3.a. Note the value of ID object from PowerShell output. It's the Service Principal ID.
 
 Now you have all the information required from Azure portal. A quick summary of the information is given in the table below.
 
-**Property** | **Description**
+Property | Description 
 --- | ---
-Directory ID (Tenant ID) | This is a unique ID referring the Azure Active Directory tenant (from step 3.1).
-Application ID (Client ID) | This is a unique ID referring the application registered in step 3.1.
-Client Secret | This is the secret key of the application (from step 3.2). Treat it like a password.
-Service Principal ID | An identity for the application running as a service. (from step 3.3)
+Directory ID (Tenant ID) | Unique ID of the Azure Active Directory tenant, from step 3.a.
+Application ID (Client ID) | Unique ID of the application registered in step 3.a.
+Client Secret | The secret key of the application (from step 3.b). Treat it like a password.
+Service Principal ID | An identity for the application running as a service. (from step 3.c)
 
-##### Step 3.4: Register ServiceNow Application
+## Step 3.d: Register ServiceNow Application
 
-The following configuration need to be done in the ServiceNow instance.
+The ServiceNow instance needs the following configuration:
 
 1. Register a new OAuth OIDC entity. To learn, see [Create an OAuth OIDC provider](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/security/task/add-OIDC-entity.html).
+
 2. The following table provides guidance on how to fill out OIDC provider registration form
 
-**Field** | **Description** | **Recommended Value**
---- | --- | ---
-Name | A unique name that identifies the OAuth OIDC entity. | Azure AD
-Client ID | The client ID of the application registered in the third-party OAuth OIDC server. The instance uses the client ID when requesting an access token. | Application (Client) ID from step 3.1
-Client Secret | The client secret of the application registered in the third-party OAuth OIDC server. | Client Secret from step 3.2
+   Field | Description | Recommended Value
+   --- | --- | ---
+   Name | A unique name that identifies the OAuth OIDC entity. | Azure AD
+   Client ID | The client ID of the application registered in the third-party OAuth OIDC server. The instance uses the client ID when requesting an access token. | Application (Client) ID from step 3.a
+   Client Secret | The client secret of the application registered in the third-party OAuth OIDC server. | Client Secret from step 3.b
 
-All other values can be default.
+   All other values can be default.
 
-3. In the OIDC provider registration form, you need to add a new OIDC provider configuration. Click the search icon against *OAuth OIDC Provider Configuration* field to open the records of OIDC configurations. Click New.
+3. In the OIDC provider registration form, you need to add a new OIDC provider configuration. Select the search icon against *OAuth OIDC Provider Configuration* field to open the records of OIDC configurations. Select New.
+
 4. The following table provides guidance on how to fill out OIDC provider configuration form
 
-**Field** | **Recommended Value**
---- | ---
-OIDC Provider |  Azure AD
-OIDC Metadata URL | This must be in the form https\://login.microsoftonline.com/"tenandId"/.well-known/openid-configuration <br/>Replace "tenantID" with Directory (tenant) ID from step 3.1 (without quotes).
-OIDC Configuration Cache Life Span |  120
-Application | Global
-User Claim | sub
-User Field | User ID
-Enable JTI claim verification | Disabled
+   Field | Recommended Value
+   --- | ---
+   OIDC Provider |  Azure AD
+   OIDC Metadata URL | The URL must be in the form https\://login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>Replace "tenantID" with Directory (tenant) ID from step 3.a.
+   OIDC Configuration Cache Life Span |  120
+   Application | Global
+   User Claim | sub
+   User Field | User ID
+   Enable JTI claim verification | Disabled
 
-5. Click Submit and Update the OAuth OIDC Entity form.
+5. Select Submit and Update the OAuth OIDC Entity form.
 
-##### Step 3.5: Create a ServiceNow account
+## Step 3.e: Create a ServiceNow account
 
 Refer the instructions to create a ServiceNow account, [create a user in ServiceNow](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
 
 The following table provides guidance on how to fill out the ServiceNow user account registration
 
-**Field** | **Recommended Value**
+Field | Recommended Value
 --- | ---
-User ID | Service Principal ID from step 3.3
+User ID | Service Principal ID from step 3.c
 Web service access only | Checked
 
 All other values can be left to default.
@@ -172,7 +182,7 @@ All other values can be left to default.
 
 Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Refer the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
-Use Application ID as Client ID (from step 3.1), and Client secret (from step 3.2) in admin center configuration wizard to authenticate to your ServiceNow instance using Azure AD OpenID Connect.
+Use Application ID as Client ID (from step 3.a), and Client secret (from step 3.b) in admin center configuration wizard to authenticate to your ServiceNow instance using Azure AD OpenID Connect.
 
 ## Step 4: Select properties and filter data
 
@@ -219,9 +229,9 @@ Follow the general setup instructions.
 
 ## Step 9: Review Connection
 
-Follow the general setup instructions.
+Follow the general [setup instructions](./configure-connector.md).
 
-## Next steps
+ServiceNow Graph connector has the following limitations in its latest release:
 
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 

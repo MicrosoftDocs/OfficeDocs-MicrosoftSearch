@@ -1,8 +1,9 @@
 ---
-title: "File share connector"
-ms.author: rusamai
-author: rsamai
-manager: jameslau
+title: "File share Graph connector for Microsoft Search"
+ms.author: mecampos
+author: mecampos
+manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,49 +13,84 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: "Set up the file share connector for Microsoft Search"
+description: "Set up the File share Graph connector for Microsoft Search"
 ---
+<!---Previous ms.author: rusamai --->
 
-# File share connector
+# File share Graph connector
 
-With the File share Graph connector, users in your organization can search on-premise Windows file shares.
+The File share Graph connector allows users in your organization to search on-premise Windows file shares.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a file share connector. It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.
+> [!NOTE]
+> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
 
-## Install Graph connector agent
+## Before you get started
 
-In order to index your Windows file shares, you must install and register [Graph connector agent](on-prem-agent.md) software.
+### Install the Graph connector agent
 
-## Content requirements
+To index your Windows file shares, you must install and register the Graph connector agent. See [Install the Graph connector agent](on-prem-agent.md) to learn more.  
+
+### Content requirements
 
 ### File types
 
-Content of the following formats can be indexed and searched: DOC, DOCM, DOCX, DOT, DOTX, EML, GIF, HTML, JPEG, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS, and ZIP. Only the textual content of these formats is indexed. All multimedia content is ignored. For any file that does not belong to this format, the metadata alone is indexed.
+Content of the following formats can be indexed and searched: DOC, DOCM, DOCX, DOT, DOTX, EML, GIF, HTML, JPEG, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS, and ZIP. Only the textual content of these formats is indexed. All multimedia content is ignored. For any file that doesn't belong to this format, the metadata alone is indexed.
 
 ### File size limits
 
-The maximum supported file size is 100 MB. Files that exceed 100 MB are not indexed. The maximum post-processed size limit is 4 MB. Processing stops when a file's size reaches 4 MB. Therefore, some phrases present in the file might not work for search.
+The maximum supported file size is 100 MB. Files that exceed 100 MB aren't indexed. The maximum post-processed size limit is 4 MB. Processing stops when a file's size reaches 4 MB. Therefore, some phrases present in the file might not work for search.
 
-## Connect to a data source
+## Step 1: Add a Graph connector in the Microsoft 365 admin center
+
+Follow the general [setup instructions](./configure-connector.md).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## Step 2: Name the connection
+
+Follow the general [setup instructions](./configure-connector.md).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## Step 3: Configure the connection settings
 
 On the **Connect to data source** page, select **File share** and provide the name, connection ID, and description. On the next page, provide the path to the file share and select your previously installed Graph connector agent. Enter the credentials for a [Microsoft Windows](https://microsoft.com/windows) user account with read access to all the files in the file share.
 
-## Preserve last access time
+### Preserve last access time
 
-When the connector attempts to crawl a file, the "last access time" field in its metadata is updated. If you depend on that field for any archiving and backup solutions and do not want to update it when the connector accesses it, you can configure this option in the **Advanced settings** page.
+When the connector attempts to crawl a file, the "last access time" field in its metadata is updated. If you depend on that field for any archiving and backup solutions and doesn't want to update it when the connector accesses it, you can configure this option in the **Advanced settings** page.
 
-## Manage search permissions
+## Step 4: Manage search permissions
 
-You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists. If you want to use Share Access Control Lists, select the appropriate option on the **Advanced settings** page. If you want to use NTFS Access Control Lists, select the appropriate option on the **Manage search permissions** page.
+You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists, by selecting the desired option in **Manage search permissions** page. The user accounts and groups provided in these Access Control Lists must be managed by Active Directory (AD). If you are using any other system for user accounts management, you can select 'everyone' option, which lets users search for all the files without any access restrictions. However, when users try to open the file, access controls set at the source apply.
 
-## Assign property labels
+Note that windows by default provides 'Read' permission to 'Everyone' in Share ACLs when a folder is shared on network. By extension, if you are choosing Share ACLs in **Manage search permissions**, users will be able to search for all the files. If you want to restrict access, remove 'Read' access for 'Everyone' in file shares and provide access only to the desired users and groups. The connector then reads these access restrictions and applies them to search.
 
-You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
+You can choose Share ACLs only if the share path you provided follows UNC path format. You can create a path in UNC format by going to 'Advanced Sharing' under 'Sharing' option.
 
-## Manage schema
+![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 
-On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, **retrievable**, and **refinable**) associated with the properties, add optional aliases, and choose the **Content** property.
+## Step 5: Assign property labels
 
-## Set the refresh schedule
+Follow the general [setup instructions](./configure-connector.md).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-The recommended default refresh schedule interval is 15 minutes, but you can change it based on your preferences.
+## Step 6: Manage schema
+
+Follow the general [setup instructions](./configure-connector.md).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## Step 7: Choose refresh settings
+
+Follow the general [setup instructions](./configure-connector.md).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## Step 8: Review connection
+
+Follow the general [setup instructions](./configure-connector.md).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+<!---## Troubleshooting-->
+<!---Insert troubleshooting recommendations for this data source-->
+
+<!---## Limitations-->
+<!---Insert limitations for this data source-->

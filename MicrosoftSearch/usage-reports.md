@@ -3,9 +3,11 @@ title: "Search Usage Reports"
 ms.author: ankmis
 author: jeffkizn
 manager: parulm
-ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
+audience: Admin
+ms.audience: Admin
+ms.date: 04/09/2021
 localization_priority: Normal
 search.appverid:
 - BFB160
@@ -16,10 +18,10 @@ description: "Review Microsoft Search usage reports"
 
 # Microsoft Search Usage Reports
 
-Search usage reports enable you to gain more understanding of how search is functioning in your organization. The insights generated from these reports will help you [make content easy to find](https://docs.microsoft.com/microsoftsearch/make-content-easy-to-find) and take actions that will make search a more useful and delightful experience for your users.
+Search usage reports enable you to gain more understanding of how search is functioning in your organization. The insights generated from these reports will help you [make content easy to find](./make-content-easy-to-find.md) and take actions that will make search a more useful and delightful experience for your users.
 
 > [!IMPORTANT]
-> Microsoft Search usage reports are currently in preview and rolling out to admins in Targeted Release. Ensure your admin account is in the targeted release ring to see these reports.
+> Microsoft Search usage reports are currently in preview
 
 The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from SharePoint Home and Office.com search boxes. You can see data from the past 31 days, per day, or monthly for the previous year. These reports are just rolling out so it will take time to accrue the historical data.
 
@@ -28,15 +30,17 @@ A previous version of this page included data from searches executed for Microso
 > [!div class="mx-imgBorder"]
 > ![Search usage reports dashboard](media/usage-reports/usage_reports_v2.png)
 
-
 ## Overview of search reports
 
 | Report | Description |
 |:-----|:-----|
 |Query Volume|This report shows the number of search queries performed. Use this report to identify search query volume trends and to determine periods of high and low search activity.|
-|Top Queries|This report shows the most popular search queries. Use this report to understand what types of information your users are searching for.|
+|Top Queries|This report shows the most popular search queries. A query is added to this report when it is searched at least three times with a click on a result. Use this report to understand what types of information your users are searching for.|
 |Abandoned Queries|This report shows popular search queries that receive low click-through. Use this report to identify search queries that might create user dissatisfaction and to improve the discoverability of content. You can then determine if creating an answer, like a Bookmark, or ingesting new content through a Graph connector is the right action.|
 |No Results Queries|This report shows popular search queries that returned no results. Use this report to identify search queries that might create user dissatisfaction and to improve the discoverability of content. You can then determine if creating an answer, like a Bookmark, or ingesting new content through a Graph connector is the right action.|
+
+>[!NOTE]
+>There is currently a known issue where queries satisfied by an answer like a Bookmark are counted as an abandoned query.
 
 ## Viewing reports
 
@@ -54,7 +58,7 @@ The calendar view, today, in Microsoft search usage reports is a two-step proces
 
 The top, abandoned, and failed query tables show results from either the day or the month you choose.
 
-**When will I see aggregate data for past 7 days, past 30 days, etc... like Bing’s top queries reports?**
+**When will I see aggregate data for past 7 days, past 30 days, and so on...like Bing’s top queries reports?**
 
 We are considering this type of aggregation and simplifying the data range filtering for future versions of these reports.
 

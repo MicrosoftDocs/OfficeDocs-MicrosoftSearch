@@ -3,6 +3,7 @@ title: "On-Premises Agent"
 ms.author: rusamai 
 author: rsamai 
 manager: jameslau 
+audience: Admin
 ms.audience: Admin 
 ms.topic: article 
 ms.service: mssearch 
@@ -31,9 +32,18 @@ Recommended configuration:
 * 16 GB RAM, 2 GB Disk Space
 * Network access to data source and internet through 443
 
+After you install the agent, if your organization's proxy servers or firewalls block communication to unknown domains, please add below ones to the allow list.
+
+1. *.servicebus.windows.net
+2. *.events.data.microsoft.com
+3. https://<span>login.microsoftonline.</span>com
+4. https://<span>gcs.office.</span>com/
+5. https://<span>graph.microsoft.</span>com/
+
+
 ## Create and configure an App for the agent  
 
-Before using the agent, you must create an app and configure the authentication details.
+First, sign in and note that the minimum required privilege on the account is search administrator. The agent will then ask you to provide authentication details. Use the steps below to create an app and generate the required authentication details.
 
 ### Create an app
 
@@ -50,7 +60,7 @@ Before using the agent, you must create an app and configure the authentication 
 
 ### Configure Authentication
 
-Authentication details can be provided using a client secret or a certificate. Follow the steps for your choice.
+Authentication details can be provided using a client secret or a certificate. Follow the steps of your choice.
 
 #### Configuring the client secret for authentication
 
@@ -107,3 +117,6 @@ If you used the sample script to generate a certificate, the PFX file can be fou
 1. Right click on the cert and select 'All Tasks' -> 'Manage Private Keys…' Option
 1. In the permissions dialog, select add option. In the user selection dialog, write: 'NT Service\GcaHostService' and click 'OK'. Don't click the 'Check Names' button.
 1. Click okay on the permissions dialog. The agent machine is now configured for agent to generate tokens using the certificate.
+
+## Troubleshooting
+1. If a connection fails with the error '1011: The Graph connector agent is not reachable or offline.', log in to the machine where agent is installed and start the agent application if it isn't running already. If the connection continues to fail, verify that the certificate or client secret provided to the agent during registration hasn't expired and has required permissions.

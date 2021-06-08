@@ -41,10 +41,20 @@
     "globalMetadata": {
       "breadcrumb_path": "/MicrosoftSearch/breadcrumb/toc.json",
       "extendBreadcrumb": true,
+      "recommendations": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/OfficeDocs-MicrosoftSearch",
-        "feedback_product_url": "https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch/issues",
-        "searchScope": ["Microsoft Search"]
+      "feedback_product_url": "https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch/issues",
+      "searchScope": ["Microsoft Search"],
+      "contributors_to_exclude": [ 
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ]
     },
     "fileMetadata": {},
     "template": [],
