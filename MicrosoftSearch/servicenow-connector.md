@@ -91,15 +91,15 @@ Enter the client id and client secret to connect to your instance. After connect
 
 To use Azure AD OpenID Connect for authentication, follow the steps below.
 
-#### Step 3.3.1: Register a new application in Azure Active Directory
+### Step 3.3.1: Register a new application in Azure Active Directory
 
 To learn about registering a new application in Azure Active Directory, see [Register an application](/azure/active-directory/develop/quickstart-register-app#register-an-application). Select single tenant organizational directory. Redirect URI isn't needed. After registration, note down the Application (client) ID and Directory (tenant) ID.
 
-#### Step 3.3.2: Create a client secret
+### Step 3.3.2: Create a client secret
 
 To learn about creating a client secret, see [Creating a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Take a note of client secret.
 
-#### Step 3.3.3: Retrieve Service Principal Object Identifier
+### Step 3.3.3: Retrieve Service Principal Object Identifier
 
 Follow the steps to retrieve Service Principal Object Identifier
 
@@ -133,7 +133,7 @@ Application ID (Client ID) | Unique ID of the application registered in step 3.a
 Client Secret | The secret key of the application (from step 3.b). Treat it like a password.
 Service Principal ID | An identity for the application running as a service. (from step 3.c)
 
-#### Step 3.3.4: Register ServiceNow Application
+### Step 3.3.4: Register ServiceNow Application
 
 The ServiceNow instance needs the following configuration:
 
@@ -165,7 +165,7 @@ The ServiceNow instance needs the following configuration:
 
 5. Select Submit and Update the OAuth OIDC Entity form.
 
-#### Step 3.3.5: Create a ServiceNow account
+### Step 3.3.5: Create a ServiceNow account
 
 Refer the instructions to create a ServiceNow account, [create a user in ServiceNow](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
 
@@ -178,7 +178,7 @@ Web service access only | Checked
 
 All other values can be left to default.
 
-##### Step 3.: Enable Knowledge role for the ServiceNow account
+### Step 3.3.6: Enable Knowledge role for the ServiceNow account
 
 Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Refer the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
