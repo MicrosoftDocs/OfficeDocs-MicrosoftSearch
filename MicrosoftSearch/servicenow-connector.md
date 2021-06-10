@@ -263,4 +263,4 @@ PROD | Europe | 20.54.41.208/30, 51.105.159.88/30
 PROD | Asia Pacific | 52.139.188.212/30, 20.43.146.44/30 
 
 
-If you have any other issues or want to provide feedback, write to us [https://aka.ms/TalkToGraphConnectors](aka.ms/TalkToGraphConnectors)
+If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
