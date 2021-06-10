@@ -60,15 +60,15 @@ You can **create and assign a role** for the service account you use to connect 
 
 To authenticate and sync content from ServiceNow, choose **one of three** supported methods: 
  
-1. Basic authentication 
-1. ServiceNow OAuth (recommended)
-1. Azure AD OpenID Connect
+- Basic authentication 
+- ServiceNow OAuth (recommended)
+- Azure AD OpenID Connect
 
-## Step 3.a: Basic authentication
+## Step 3.1: Basic authentication
 
 Enter the username and password of ServiceNow account with **knowledge** role to authenticate to your instance.
 
-## Step 3.b: ServiceNow OAuth
+## Step 3.2: ServiceNow OAuth
 
 To use ServiceNow OAuth for authentication, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance, so that the Microsoft Search app can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
@@ -87,7 +87,7 @@ Access token lifespan | The number of seconds that an access token is valid. | 4
 
 Enter the client id and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role. Refer the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
-## Step 3.c: Azure AD OpenID Connect
+## Step 3.3: Azure AD OpenID Connect
 
 To use Azure AD OpenID Connect for authentication, follow the steps below.
 
