@@ -37,8 +37,8 @@
 # Customize and configure
 ## Verticals
 ### [Overview](overview-verticals.md)
-### [Manage custom filters](custom-filters.md)
 ### [Manage verticals](customize-search-page.md)
+### [Manage custom filters](custom-filters.md)
 ### [Manage query variables](manage-query-variables.md)
 ### [Manage result types](manage-result-types.md)
 ### [Manage result page layouts](customize-results-layout.md)
