@@ -35,8 +35,12 @@
 ## [Licensing](licensing.md)
 ## [Terms of use](terms-of-use.md)
 # Customize and configure
-## [Manage verticals and result types](customize-search-page.md)
-## [Manage search result layouts](customize-results-layout.md)
+## Verticals
+### [Overview](overview-verticals.md)
+### [Manage verticals](customize-search-page.md)
+### [Manage query variables](manage-query-variables.md)
+### [Manage result types](manage-result-types.md)
+### [Manage result page layouts](customize-results-layout.md)
 ## [Manage result clusters](result-cluster.md)
 ## [Manage custom filters](custom-filters.md)
 ## Microsoft Search in SharePoint
