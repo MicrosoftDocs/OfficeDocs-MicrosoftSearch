@@ -37,12 +37,12 @@
 # Customize and configure
 ## Verticals
 ### [Overview](overview-verticals.md)
+### [Manage custom filters](custom-filters.md)
 ### [Manage verticals](customize-search-page.md)
 ### [Manage query variables](manage-query-variables.md)
 ### [Manage result types](manage-result-types.md)
 ### [Manage result page layouts](customize-results-layout.md)
 ## [Manage result clusters](result-cluster.md)
-## [Manage custom filters](custom-filters.md)
 ## Microsoft Search in SharePoint
 ### [Overview](get-started-search-in-sharepoint-online.md)
 ### [Create a custom search results page](create-search-results-pages.md)

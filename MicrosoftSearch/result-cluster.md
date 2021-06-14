@@ -29,9 +29,9 @@ To ensure discovery of content from the search verticals, we recommend providing
 
 How often a result cluster is shown varies on factors such as the number of search verticals that you configure and the type of content. By either interacting or ignoring a result cluster, users will implicitly provide hints that will adjust its triggering over time.
 
-The search result experience for connector items shown in your result cluster uses [result types](./customize-search-page.md#create-your-own-result-type) defined by you. If no result type is configured, a [system generated layout](./customize-search-page.md#default-search-result-layout) is used. 
+The search result experience for connector items shown in your result cluster uses [result types](./customize-search-page.md#create-your-own-result-type) defined by you. If no result type is configured, a [system generated layout](./customize-search-page.md#default-search-result-layout) is used.
 
-We recommend using the “title” property as the search result title and the "content" property as the search description. This will provide the best experience for your users through accurate triggering of the result cluster and most relevant results in the cluster. 
+We recommend using the “title” property as the search result title and the "content" property as the search description. This will provide the best experience for your users through accurate triggering of the result cluster and most relevant results in the cluster.
 
 ## Enable result clusters
   
@@ -40,8 +40,7 @@ The result cluster experience is turned off by default.
 Follow these steps to turn on the experience at the organization level:
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
-2. Select  the **All** vertical, then enable **Show connector results**. 
-
+2. Select  the **All** vertical, then enable **Show connector results**.
 
 Follow these steps to turn on the experience at the SharePoint site level:
 
