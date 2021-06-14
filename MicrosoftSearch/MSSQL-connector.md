@@ -24,7 +24,7 @@ The Graph connector indexes specified content into Microsoft Search. To keep the
 > [!NOTE]
 > Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
-This article is for anyone who configures, runs, and monitors a Azure SQL and Microsoft SQL Server Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure SQL and Microsoft SQL Server Graph connector. This article also includes information about [Limitations](#limitations) for the Microsoft SQL Server and Azure SQL connectors.
+This article is for anyone who configures, runs, and monitors an Azure SQL and Microsoft SQL Server Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure SQL and Microsoft SQL Server Graph connector. This article also includes information about [Limitations](#limitations) for the Microsoft SQL Server and Azure SQL connectors.
 
 ## Before you get started
 
@@ -213,6 +213,6 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 The SQL connectors have these limitations in the preview release:
 
 - Microsoft SQL Server connector: The on-premises database must run SQL Server version 2008 or later.
-- The M365 subscription and Azure subscription (hosting Azure SQL database) must lie within the same Azure Active Directory.
+- The Microsoft 365 subscription and Azure subscription (hosting Azure SQL database) must lie within the same Azure Active Directory.
 - ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security.
 - Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
