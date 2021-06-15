@@ -24,7 +24,6 @@ Profile query variables fetch values from the signed-in user’s [profile](https
 [Profile resource](https://docs.microsoft.com/graph/api/resources/profile?view=graph-rest-beta) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection and so on. All properties available in the user profile as exposed as Query variables.
 **Syntax**: Profile.<Relationship.Property.PropertyName>
 Guidelines to be followed for invoking profile attributes. A typical structure of a profile resource is given below.
-```JSON
     Profile {
         Collection1: {},
         Collection2: {
@@ -34,12 +33,11 @@ Guidelines to be followed for invoking profile attributes. A typical structure o
                 Property2.2:{
                     Property 2.2.1:
                     Property 2.2.2:}}}}
-```
 
 Only single value variables will be expanded and not the entire collection object. For instance, _{Profile.Collection2.Property2}_ will not expand since it's an object. _{Profile.Collection2.Property1}_ will return “abcd1234” since it contains a single value property. The path pointed by the Query variable should resolve to a single value entity.
 
 Multiple instances for a collection will be expanded depending on the syntax used. For example, consider a user who has 3 email addresses available in the email collection.
-```JSON
+
 emails:
     {
         {
@@ -73,7 +71,6 @@ emails:
             type:”personal”  
         }  
     }
-```
 
 {&#124;MyProperty:{Profile.emails.address}} will return -
 ((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty:"meganb@hotmail.com") OR (MyProperty:"meganb.outlook.com"))

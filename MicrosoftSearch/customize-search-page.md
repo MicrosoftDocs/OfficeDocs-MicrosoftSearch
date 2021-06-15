@@ -15,7 +15,7 @@ description: "Add search verticals and customize search results"
 ---
 # Managing verticals
 
-**<Add some text here>**
+d
 
 ## Things to consider
 
