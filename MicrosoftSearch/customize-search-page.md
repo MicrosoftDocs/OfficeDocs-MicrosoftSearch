@@ -99,45 +99,41 @@ Multiple instances for a collection will be expanded depending on the syntax use
 
 emails:
 
-    {
+    [{
 
-        {
-
-            address: [Megan.Bowen@contoso.com](”Megan.Bowen@contoso.com”)
-            id: “xyz”
-            source:{ 
-                CreatedBy:”xyz” 
-                CreatedOn:”2222” 
-                Type:” aad” 
+            address: "Megan.Bowen@contoso.com"
+            id: "xyz"
+            source: { 
+                CreatedBy: "xyz" 
+                CreatedOn: "2222"
+                Type: "aad" 
                     } 
-            type:”main” 
-            }, 
-            { 
-            address:”meganb@hotmail.com” 
-            id: “abc” 
-            source:{ 
-                CreatedBy:”abc” 
-                CreatedOn:”3333” 
-                Type:” non-official” 
+            type: "main" 
+            }, { 
+            address: "meganb@hotmail.com"
+            id: "abc" 
+            source: { 
+                CreatedBy: "abc" 
+                CreatedOn: "3333" 
+                Type: "non-official" 
                     } 
-            type:”work” 
-            }, 
-            { 
-            address:”meganb@outlook.com” 
-            id: “pqr” 
-            source:{ 
-                CreatedBy:”pqr” 
-                CreatedOn:”4444” 
-                Type:” personal”  
+            type: "work"
+            }, {
+            address: "meganb@outlook.com"
+            id: "pqr"
+            source: { 
+                CreatedBy: "pqr" 
+                CreatedOn: "4444" 
+                Type: "personal"  
                     } 
-            type:”personal” 
+            type: "personal"
         } 
-    }
+    ]
     
 
 {&#124;MyProperty:{Profile.emails.address}} will return -
 
-((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty:"meganb@hotmail.com") OR (MyProperty:"meganb.outlook.com"))
+((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty: "meganb@hotmail.com") OR (MyProperty:"meganb.outlook.com"))
 
 MyProperty:{Profile.emails.address} will return -
 
@@ -151,7 +147,7 @@ The “&#124;” operator should be used for expanding multi-value variables. Fo
 | 1    | MyProperty: {Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
 | 2 | MyProperty:{Profile.emails}   |    {Profile.emails} This will not resolve because emails is an object.|
 | 3    | ?MyProperty:{Profile.emails}  |  This will not resolve because emails is an object. The “?” operator ignores query variables that does not resolve. This variable will be removed when passed further down the query stack.   |
-| 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:”aad”) OR (MyProperty:”non-official”) OR (MyProperty:”personal”))    |
+| 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"aad") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
 
 
 ## **Note**:
