@@ -34,7 +34,8 @@ Dynamics 365 answers appear in search results across all Microsoft Search canvas
 From the answer, it's easy to see more Dynamics 365 search results by using the **More Dynamics 365 results** link. It takes users to a dedicated Dynamics 365 results page with more results relevant to their query.
 > ![Screenshot of Dynamics 365 vertical and results on SharePoint, Bing, and Office](media/dynamics365/dynamics365-vertical.png)
 
-Clicking or tapping any result opens Dynamics 365 and shows the detail information.
+Clicking or tapping any result opens Dynamics 365 and shows the detailed information.
+> ![Screenshot of detail page in Dynamics 365](media/dynamics365/dynamics365-detail-page.png)
 
 No matter where your users start their search their experience will be consistent and enable them to quickly find the most relevant Dynamics 365 results. Check out our [Microsoft Build 2021 video](https://youtu.be/TH9QUkQoEJM) for a demonstration.
 
