@@ -59,7 +59,8 @@ There are three basic steps to add a vertical:
 
 After you start the wizard, you're guided through the steps to define the vertical's name, content source, and scope of the content to search. The vertical is created in a disabled state. You'll enable it later.
 
-You can use a limited set of [Keyword Query Language (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) to narrow the scope. This page lists the properties that are available. We recommend that you use free-text keywords and property restrictions with boolean operators for creating the KQL.
+You can use a limited set of [Keyword Query Language (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) to narrow the scope. This page lists the properties that are available. We recommend that you use free-text keywords and property restrictions with boolean operators for creating the KQL. 
+KQL also supports the use of Profile query variables to refine results under the vertical.
 
 ## Profile Query variables
 
