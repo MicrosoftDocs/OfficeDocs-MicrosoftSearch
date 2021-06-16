@@ -134,6 +134,10 @@ emails:
     }
     
 
+{&#124;MyProperty:{Profile.emails.address}} will return -
+
+((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty:"meganb@hotmail.com") OR (MyProperty:"meganb.outlook.com"))
+
 MyProperty:{Profile.emails.address} will return -
 
 MyProperty:Megan.Bowen@contoso.com")
