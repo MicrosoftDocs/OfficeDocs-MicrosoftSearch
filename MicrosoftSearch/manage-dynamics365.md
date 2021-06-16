@@ -12,9 +12,13 @@ description: "Manage how Dynamics 365 content appears in search results"
 ---
 # Manage Dynamics 365 answers and results (preview)
 
-Information has become increasingly distributed, and while often these islands of information are near, they're still out of reach. Microsoft Search federation connectors pull together information and insights from across Microsoft clouds, making it available to search from SharePoint Online, Office.com, and Bing.com.
+## Search federation connectors
 
-Microsoft Dynamics 365 is a line of intelligent business applications designed for enterprise resource planning and customer relationship management. With Dynamics 365 federation, Microsoft Search provides a seamless search experience, enabling users to easily find the most relevant customer and business data stored in Dynamics 365.
+Microsoft Search federation connectors pull together information and insights from across Microsoft clouds, making it available to search from SharePoint Online, Office.com, and Bing.com. Our Dynamics 365 federation connector is now available in preview.
+
+## Dynamics 365 federation connector
+
+Microsoft Dynamics 365 is a line of intelligent business applications designed for enterprise resource planning and customer relationship management. With Dynamics 365 federation, Microsoft Search provides a seamless search experience, enabling users to easily find the most relevant customer and business data stored in Dynamics 365. The Dynamics 365 federation connector provides some key benefits:
 
 * **Easy to administer:** Streamlined process to configure and maintain the search connection to a Dynamics 365 instance.
 * **Easy to use:** Users can easily and quickly find key information stored in Dynamics 365, including accounts, contacts, open opportunities, and more.
@@ -24,17 +28,15 @@ Microsoft Dynamics 365 is a line of intelligent business applications designed f
 
 ## What users experience
 
-The descriptions and images show the Dynamics 365 search experience in Office and Bing, or check out our [Microsoft Build 2021 video](https://youtu.be/TH9QUkQoEJM) for a demonstration.
-
 Dynamics 365 answers appear in search results across all Microsoft Search canvases, including SharePoint Online, Bing, and Office.
 > ![Screenshot of Dynamics 365 answers on SharePoint, Bing, and Office](media/dynamics365/dynamics365-answer.png)
 
 From the answer, it's easy to see more Dynamics 365 search results by using the **More Dynamics 365 results** link. It takes users to a dedicated Dynamics 365 results page with more results relevant to their query.
 > ![Screenshot of Dynamics 365 vertical and results on SharePoint, Bing, and Office](media/dynamics365/dynamics365-vertical.png)
 
-Clicking or tapping any result, in an answer or on a results page, opens Dynamics 365 and shows the detail information.
+Clicking or tapping any result opens Dynamics 365 and shows the detail information.
 
-No matter where your users start their search their experience will be consistent and enable them to quickly find the most relevant Dynamics 365 results.
+No matter where your users start their search their experience will be consistent and enable them to quickly find the most relevant Dynamics 365 results. Check out our [Microsoft Build 2021 video](https://youtu.be/TH9QUkQoEJM) for a demonstration.
 
 ## Supported query patterns
 
@@ -69,17 +71,13 @@ With this simple configuration, you can enable the Dynamics 365 federation searc
 3. Enable the connector for your organization
 4. In the **Endpoints** list, select your Dynamics 365 environment
 5. In the **Connection ID**, enter a unique ID for this connection
-6. Review and, if you agree, select the consent check box
+6. Review and select the consent check box
 7. Select **Save** to finish the connection setup
 
 When the setup is complete, Dynamics 365 answers, results, and vertical will only appear for users with a valid Dynamics 365 license and access to the connected Dynamics 365 environment. At any time, you can return to these settings and change the connection endpoint environment or deactivate the connection.
 
-## Future plans for Microsoft federation connector
-
-Dynamics 365 is the first Microsoft connector built on top of the Federated search platform--but it's only the beginning of the journey. We're planning to add more search federation connectors, such as Azure Cognitive Search, so customers can seamlessly retrieve and display search results from their custom search index in Microsoft Search.
-
 ## Frequently Asked Question
 
-**Q: How can my organization join the Dynamics 365 private preview?**
+**Q: How can my organization join the Dynamics 365 preview?**
 
 **A:** If you're interested in participating, contact us at [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview).
