@@ -24,8 +24,7 @@ Microsoft Dynamics 365 is a line of intelligent business applications designed f
 
 ## What users experience
 
-The descriptions and images show the Dynamics 365 search experience in Office and Bing, or check out our Microsoft Build 2021 video for a demonstration.
-> [!VIDEO https://youtu.be/TH9QUkQoEJM>]
+The descriptions and images show the Dynamics 365 search experience in Office and Bing, or check out our [Microsoft Build 2021 video](https://youtu.be/TH9QUkQoEJM) for a demonstration.
 
 Dynamics 365 answers appear in search results across all Microsoft Search canvases, including SharePoint Online, Bing, and Office.
 > ![Screenshot of Dynamics 365 answers on SharePoint, Bing, and Office](media/dynamics365/dynamics365-answer.png)
@@ -65,7 +64,7 @@ Product name patterns support a range of Dynamics 365 applications and will trig
 
 With this simple configuration, you can enable the Dynamics 365 federation search experience for people in your organization.
 
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Data sources**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors)
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [Data sources](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors)
 2. In the Microsoft apps and services section, under Microsoft Dynamics 365, select **Manage** to open the Microsoft Dynamics 365 panel.
 3. Enable the connector for your organization
 4. In the **Endpoints** list, select your Dynamics 365 environment
