@@ -1,5 +1,5 @@
 ---
-title: "Manage Dynamics 365 answers and results (preview)"
+title: "Dynamics 365 federation search (preview)"
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -10,9 +10,9 @@ localization_priority: Normal
 
 description: "Manage how Dynamics 365 content appears in search results"
 ---
-# Manage Dynamics 365 answers and results (preview)
+# Dynamics 365 federation search (preview)
 
-## Search federation connectors
+## Microsoft Search Federation and connectors
 
 To help make Microsoft Search more useful, we're introducing Microsoft Search Federation. With federated search, organizations can make data in these scenarios accessible in Microsoft Search:
 
@@ -81,4 +81,6 @@ With this simple configuration, you can enable the Dynamics 365 federation searc
 6. Review and select the consent check box
 7. Select **Save** to finish the connection setup
 
-When the setup is complete, Dynamics 365 answers, results, and vertical will only appear for users with a valid Dynamics 365 license and access to the connected Dynamics 365 environment. At any time, you can return to these settings and change the connection endpoint environment or deactivate the connection.
+> ![Screenshot of Dynamics 365 set-up panel in the Microsoft 365 admin center ](media/dynamics365/dynamic365-connection-setup.png)
+
+When the setup is complete, Dynamics 365 answers and vertical will only appear for users with a valid Dynamics 365 license and access to the connected Dynamics 365 environment. At any time, you can return to these settings and change the connection endpoint environment or deactivate the connection.
