@@ -14,7 +14,13 @@ description: "Manage how Dynamics 365 content appears in search results"
 
 ## Search federation connectors
 
-Microsoft Search federation connectors pull together information and insights from across Microsoft clouds, making it available to search from SharePoint Online, Office.com, and Bing.com. Our Dynamics 365 federation connector is now available in preview.
+To help make Microsoft Search more useful, we're introducing Microsoft Search Federation. With federated search, organizations can make data in these scenarios accessible in Microsoft Search:
+
+* Data in systems that are subject to strict compliance requirements
+* Data that can't leave system boundaries
+* Sensitive data stored on-prem that your organization doesn’t want indexed on the cloud
+
+Data accessed through a federated search connection isn't indexed in Microsoft Search. Also, using built-in connectors from Microsoft, it's easy to set up federated search connections. Our Dynamics 365 connector is currently in preview. If you're interested in joining the preview, let us know at [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview).
 
 ## Dynamics 365 federation connector
 
@@ -76,9 +82,3 @@ With this simple configuration, you can enable the Dynamics 365 federation searc
 7. Select **Save** to finish the connection setup
 
 When the setup is complete, Dynamics 365 answers, results, and vertical will only appear for users with a valid Dynamics 365 license and access to the connected Dynamics 365 environment. At any time, you can return to these settings and change the connection endpoint environment or deactivate the connection.
-
-## Frequently Asked Question
-
-**Q: How can my organization join the Dynamics 365 preview?**
-
-**A:** If you're interested in participating, contact us at [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview).
