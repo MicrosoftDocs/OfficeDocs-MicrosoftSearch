@@ -74,78 +74,74 @@ Query variables are used in KQL query section of a vertical to provide dynamic d
 
 Guidelines to be followed for invoking profile attributes. A typical structure of a profile resource is given below.
 
+```json
     Profile {
 
-        Collection1: {},
-
-        Collection2: {
-
-            Property1:”abcd1234”
-
-            Property2: {
-
-                Property2.1:
-
-                Property2.2:{
-
-                    Property 2.2.1:
-
-                    Property 2.2.2:}}}}
+    "Collection1": {},
+    "Collection2": {
+        "Property1": "abcd1234",
+        "Property2": {
+            "Property2.1": "abc",
+            "Property2.2": {
+                "Property2.2.1": "xyz",
+                "Property2.2.2": "1234"
+                            }}}}
+```
  
            
 Only single value variables will be expanded and not the entire collection object. For instance, _{Profile.Collection2.Property2}_ will not expand since it's an object. _{Profile.Collection2.Property1}_ will return “abcd1234” since it contains a single value property. The path pointed by the Query variable should resolve to a single value entity.  
 
 Multiple instances for a collection will be expanded depending on the syntax used. For example, consider a user who has 3 email addresses available in the email collection.
 
-emails:
+```json
+"emails": [{ 
 
-    [{
-
-            address: "Megan.Bowen@contoso.com"
-            id: "xyz"
-            source: { 
-                CreatedBy: "xyz" 
-                CreatedOn: "2222"
-                Type: "aad" 
-                    } 
-            type: "main" 
-            }, { 
-            address: "meganb@hotmail.com"
-            id: "abc" 
-            source: { 
-                CreatedBy: "abc" 
-                CreatedOn: "3333" 
-                Type: "non-official" 
-                    } 
-            type: "work"
-            }, {
-            address: "meganb@outlook.com"
-            id: "pqr"
-            source: { 
-                CreatedBy: "pqr" 
-                CreatedOn: "4444" 
-                Type: "personal"  
-                    } 
-            type: "personal"
-        } 
-    ]  
+        "address": "Megan.Bowen@contoso.com",
+        "id": "xyz", 
+        "source": { 
+            "CreatedBy": "xyz", 
+            "CreatedOn": "2222", 
+            "Type": "aad" 
+        },
+        "type": "main" 
+    }, { 
+        "address": "meganb@hotmail.com",
+        "id": "abc", 
+        "source": { 
+            "CreatedBy": "abc",
+            "CreatedOn": "3333", 
+            "Type": "non-official",
+        },
+        "type": "work"
+    }, { 
+        "address": "meganb@outlook.com",
+        "id": "pqr", 
+        "source": { 
+            "CreatedBy": "pqr", 
+            "CreatedOn": "4444", 
+            "Type": "personal" 
+        },
+        "type": "personal" 
+    } 
+] 
+```
 
 {&#124;MyProperty:{Profile.emails.address}} will return -
 
-((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty: "meganb@hotmail.com") OR (MyProperty:"meganb.outlook.com"))
+((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty:"meganb@hotmail.com") OR (MyProperty:"meganb@outlook.com"))
 
 MyProperty:{Profile.emails.address} will return -
 
-MyProperty:Megan.Bowen@contoso.com")
+MyProperty:"Megan.Bowen@contoso.com"
 
 The “&#124;” operator should be used for expanding multi-value variables. For more examples on Profile expansion, please refer to the table below.
 
 
 | #         | Syntax |  Value returned post   |
 | --------- | ------ | --- |
-| 1    | MyProperty: {Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
+| 1    | MyProperty:{Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
 | 2 | MyProperty:{Profile.emails}   |    {Profile.emails} This will not resolve because emails is an object.|
-| 3    | ?MyProperty:{Profile.emails}  |  This will not resolve because emails is an object. The “?” operator ignores query variables that does not resolve. This variable will be removed when passed further down the query stack.   |
+| 3    | {?MyProperty:{Profile.emails}}  |  This will not resolve because emails is an object. The “?” operator ignores query variables that does not resolve. This variable will be removed when passed further down the query stack.   |
 | 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"aad") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
 
 > [!NOTE]
