@@ -23,10 +23,10 @@ Shortcuts are enabled by default along with two keywords - your organization's n
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [Configurations](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations).
 2. Under Change Microsoft Search in Bing Extension settings, select **Edit**.
-3. In the Microsoft Search in Bing panel, under Microsoft Search in Bing Shortcut, select **Allow users to use Microsoft Search in Bing Shortcut**.
+3. In the Microsoft Search in Bing panel, under Microsoft Search in Bing Shortcut, **Allow users to use Microsoft Search in Bing Shortcut** is selected. To disable these shortcuts, clear the check box.
 4. In **Search Keywords**, you'll see 'work' and your organization name (without spaces). You can remove the default keywords or add new ones. When adding keywords, there are a few things to keep in mind:
-    - Can't include spaces or special characters
-    - Can only have four keywords
+    - Don't include spaces or special characters
+    - You can have a maximum of four keywords
 5. Select **Save**.
 
 ## Frequently asked questions
