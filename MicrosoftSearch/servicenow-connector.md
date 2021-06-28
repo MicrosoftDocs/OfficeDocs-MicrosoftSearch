@@ -204,7 +204,7 @@ If you chose to ingest an ACL from your ServiceNow instance and selected "non-AA
 
 ### Managing Search Permissions in Microsoft Search
 
-In the following video you can see how to use the Servicenow connector to index knowledge articles, define user criteria permissions, and seamlessly synchronize the changes between ServiceNow and Microsoft Search index.
+In the following video you can see how to use the ServiceNow connector to index knowledge articles, define user criteria permissions, and seamlessly synchronize the changes between ServiceNow and Microsoft Search index.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/TVSkJpk1RiE]
 

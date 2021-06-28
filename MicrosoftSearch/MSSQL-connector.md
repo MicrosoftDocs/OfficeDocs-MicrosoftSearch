@@ -18,13 +18,13 @@ description: "Set up the Azure SQL and Microsoft SQL Graph connector for Microso
 
 # Azure SQL and Microsoft SQL server Graph connectors
 
-The Microsoft SQL server or Azure SQL Graph connector allows your organization to discover and index data from an on-premises SQL Server database, or a database hosted in your Azure SQL instance in the cloud.
+The Microsoft SQL Server or Azure SQL Graph connector allows your organization to discover and index data from an on-premises SQL Server database, or a database hosted in your Azure SQL instance in the cloud.
 The Graph connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
 > [!NOTE]
 > Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
-This article is for anyone who configures, runs, and monitors a Azure SQL and Microsoft SQL server Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure SQL and Microsoft SQL server Graph connector. This article also includes information about [Limitations](#limitations) for the Microsoft SQL server and Azure SQL connectors.
+This article is for anyone who configures, runs, and monitors an Azure SQL and Microsoft SQL server Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure SQL and Microsoft SQL server Graph connector. This article also includes information about [Limitations](#limitations) for the Microsoft SQL server and Azure SQL connectors.
 
 ## Before you get started
 
@@ -206,7 +206,7 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 
 ## Troubleshooting
 
-The following is a a common error observed while configuring the connector, and its possible reason.
+The following is a common error observed while configuring the connector, and its possible reason.
 
 | Configuration step | Error message | Possible reason(s) |
 | ------------ | ------------ | ------------ |
@@ -217,6 +217,6 @@ The following is a a common error observed while configuring the connector, and 
 The SQL connectors have these limitations in the preview release:
 
 - Microsoft SQL server connector: The on-premises database must run SQL server version 2008 or later.
-- The M365 subscription and Azure subscription (hosting Azure SQL database) must lie within the same Azure Active Directory.
+- The Microsoft 365 subscription and Azure subscription (hosting Azure SQL database) must lie within the same Azure Active Directory.
 - ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security.
 - Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
