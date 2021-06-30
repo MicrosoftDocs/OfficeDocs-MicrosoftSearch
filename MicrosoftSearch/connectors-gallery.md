@@ -21,7 +21,7 @@ The [Microsoft Graph connectors gallery](http://www.microsoft.com/microsoft-sear
 
 With more than a 100 connectors currently available you can connect to popular Microsoft and non-Microsoft services like Azure services, Box, MediaWiki, ServiceNow, SalesForce, Google services, MediaWiki, and many more.
 
-To learn more about the existing connectors, visit the [Microsoft Graph connectors gallery](http://www.microsoft.com/microsoft-search/connectors) and find all the information you need.
+Visit the [Microsoft Graph connectors gallery](http://www.microsoft.com/microsoft-search/connectors) now, and find all the information you need.
 
 <br>
 
