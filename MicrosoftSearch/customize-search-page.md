@@ -121,34 +121,20 @@ After you enable the vertical, it will take a few hours before you can view it. 
 
 ## Profile Query variables
 
-Query variables are used in KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. Profile query variables fetch values from the search user's [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta). You can use profile query variables to make the search results contextual to the signed-in user. For example, using the following query template in a vertical will show search results where the author of each result matches the user performing the search.
+Query variables are used in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. Profile query variables fetch values from the signed-in user’s [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta). You can use profile query variables to make the search results contextual to the signed-in user.
 
-**Author**: {Profile.accounts.userPrincipalName}
+For example, under the “Tickets” vertical, if you wish to display only tickets that are assigned to the signed-in user, you can specify the following query under the query section of the respective vertical.  
 
-[Profile resource](https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta) API exposes user properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection and so on. All properties available in the user profile are exposed as Query variables. Here is the syntax to be used.
+AssignedTo:{Profile.accounts.userPrincipalName} 
 
-**Syntax**: Profile.<Relationship.Property.PropertyName>
+This will narrow down the search results to show only those items where the assignee is the user performing the search.
 
-Guidelines to be followed for invoking profile attributes. A typical structure of a profile resource is given below.
+[Profile resource] (https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile, which have AAD as the source type, are exposed as Query variables. 
 
-```json
-    Profile {
+Syntax: Profile.<Relationship.Property.PropertyName>  
 
-    "Collection1": {},
-    "Collection2": {
-        "Property1": "abcd1234",
-        "Property2": {
-            "Property2.1": "abc",
-            "Property2.2": {
-                "Property2.2.1": "xyz",
-                "Property2.2.2": "1234"
-                            }}}}
-```
- 
-           
-Only single value variables will be resolved and not the entire collection object. For instance, _{Profile.Collection2.Property2}_ will not resolve since it's an object. _{Profile.Collection2.Property1}_ will return “abcd1234” since it contains a single value property. The value used in the Query variable should resolve to a single value entity.  
-
-Multiple instances for a collection will be resolved depending on the syntax used, and the “&#124;” operator should be used for expanding multi-value variables. For example, consider a user who has 3 email addresses available in the email collection.
+Guidelines to be followed for invoking profile attributes. 
+Consider a user who has 3 email addresses available in the email collection, as shown below. 
 
 ```json
 "emails": [{ 
@@ -158,7 +144,7 @@ Multiple instances for a collection will be resolved depending on the syntax use
         "source": { 
             "CreatedBy": "xyz", 
             "CreatedOn": "2222", 
-            "Type": "aad" 
+            "Type": "official" 
         },
         "type": "main" 
     }, { 
@@ -182,24 +168,24 @@ Multiple instances for a collection will be resolved depending on the syntax use
     } 
 ] 
 ```
+Here, the query  
 
-{&#124;MyProperty:{Profile.emails.address}} will return -
+MyProperty: {Profile.emails.address} will resolve to MyProperty: “Megan.Bowen@contoso.com”.  
 
-((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty:"meganb@hotmail.com") OR (MyProperty:"meganb@outlook.com"))
+If you wish to resolve all the values of the address attribute, you have to use the Multi-value expansion syntax as shown below. Here, the query 
 
-MyProperty:{Profile.emails.address} will return -
+{|MyProperty:{Profile.emails.address}} will resolve to ((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty: "meganb@hotmail.com") OR (MyProperty:"meganb@outlook.com"))  
 
-MyProperty:"Megan.Bowen@contoso.com"
-
+The “|” operator should be used for resolving multi-value variables.  For more examples on Profile expansion, please refer to the table below. 
 For more examples on Profile expansion, please refer to the table below.
 
 
-| #         | Syntax |  Value returned post   |
+| #         | Syntax |  Value returned  |
 | --------- | ------ | --- |
 | 1    | MyProperty:{Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
-| 2 | MyProperty:{Profile.emails}   |    {Profile.emails} This will not resolve because emails is an object.|
-| 3    | {?MyProperty:{Profile.emails}}  |  This will not resolve because emails is an object. The “?” operator ignores query variables that does not resolve. This variable will be removed when passed further down the query stack.   |
-| 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"aad") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
+| 2 | MyProperty:{Profile.emails}   |    {Profile.emails} This will not resolve because emails are an object.|
+| 3    | {?MyProperty:{Profile.emails}}  |  This will not resolve because emails is an object. The “?” operator ignores query variables that do not resolve. This variable will be removed when passed further down the query stack.   |
+| 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
 
 > [!NOTE]
 > - Profile query variables are only supported for custom verticals using a [connector](https://docs.microsoft.com/en-us/microsoftsearch/connectors-overview) as a content source.
