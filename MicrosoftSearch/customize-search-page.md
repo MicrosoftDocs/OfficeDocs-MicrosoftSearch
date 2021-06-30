@@ -168,13 +168,13 @@ Consider a user who has 3 email addresses available in the email collection, as 
     } 
 ] 
 ```
-Here, the query  
+- Here, the query  
 
-MyProperty: {Profile.emails.address} will resolve to MyProperty: “Megan.Bowen@contoso.com”.  
+  MyProperty: {Profile.emails.address} will resolve to MyProperty: “Megan.Bowen@contoso.com”.  
 
-If you wish to resolve all the values of the address attribute, you have to use the Multi-value expansion syntax as shown below. Here, the query 
+- If you wish to resolve all the values of the address attribute, you have to use the Multi-value expansion syntax as shown below. Here, the query 
 
-{|MyProperty:{Profile.emails.address}} will resolve to ((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty: "meganb@hotmail.com") OR (MyProperty:"meganb@outlook.com"))  
+  {|MyProperty:{Profile.emails.address}} will resolve to ((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty: "meganb@hotmail.com") OR (MyProperty:"meganb@outlook.com"))  
 
 The “|” operator should be used for resolving multi-value variables.  For more examples on Profile expansion, please refer to the table below. 
 For more examples on Profile expansion, please refer to the table below.
