@@ -16,13 +16,13 @@ ROBOTS: NoIndex
 description: "On-prem Agent" 
 --- 
 
-# Graph connector agent
+# Microsoft Graph connector agent
 
-Using on-prem Graph connectors require you to install *Graph connector agent* software. It allows for secure data transfer between on-premises data and the Graph connector APIs. This article guides you through the installing and configuring the agent.
+Using on-prem connectors require you to install *Microsoft Graph connector agent* software. It allows for secure data transfer between on-premises data and the connector APIs. This article guides you through the installing and configuring the agent.
 
 ## Installation
 
-Download the latest version of Graph connector agent [here](https://aka.ms/gcadownload) and install the software using the installation wizard. Using the recommended configuration of the machine described below, the software can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
+Download the latest version of the connector agent [here](https://aka.ms/gcadownload) and install the software using the installation wizard. Using the recommended configuration of the machine described below, the software can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
 
 Recommended configuration:
 
