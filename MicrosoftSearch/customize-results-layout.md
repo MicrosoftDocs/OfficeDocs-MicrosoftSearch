@@ -114,7 +114,7 @@ Here's Layout JSON after binding the data:
 				"items": [
 				{
 				"type": "TextBlock",
-				"text": "[{title}]({titleUrl})",
+				"text": "[${title}](${titleUrl})",
 				"color": "Accent",
 				"size": "Medium",
 				"spacing": "None",
@@ -123,14 +123,14 @@ Here's Layout JSON after binding the data:
                  },
 				 {
 				 "type": "TextBlock",
-				 "text": "{link}",
+				 "text": "${link}",
 				 "spacing": "None",
 				 "color": "Dark",
 				 "weight": "Bolder"
 				 },
 				 {
 				 "type": "TextBlock",
-				 "text": "{description}",
+				 "text": "${description}",
 				 "wrap": true,
 				 "maxLines": 2,
 				 "spacing": "Medium"
