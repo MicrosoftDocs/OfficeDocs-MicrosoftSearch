@@ -71,7 +71,7 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
   > [!div class="mx-imgBorder"]
   > ![Select the Refresh Token Policy named "Refresh token is valid until revoked "](media/salesforce-connector/oauthpolicies.png)
 
-You can now use the [M365 Admin Center](https://admin.microsoft.com/) to complete the rest of the setup process for your Graph connector.
+You can now use the [Microsoft 365 Admin Center](https://admin.microsoft.com/) to complete the rest of the setup process for your Graph connector.
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
