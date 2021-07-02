@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: mssearch
 audience: Admin
 ms.audience: Admin
-ms.date: 04/09/2021
+ms.date: 07/02/2021
 localization_priority: Normal
 search.appverid:
 - BFB160
@@ -23,9 +23,9 @@ Search usage reports enable you to gain more understanding of how search is func
 > [!IMPORTANT]
 > Microsoft Search usage reports are currently in preview
 
-The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from SharePoint Home and Office.com search boxes. You can see data from the past 31 days, per day, or monthly for the previous year. These reports are just rolling out so it will take time to accrue the historical data.
+The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from SharePoint Home, Office.com, and Microsoft Search in Bing search boxes. You can see data from the past 31 days, per day, or monthly for the previous year. These reports are just rolling out so it will take time to accrue the historical data.
 
-A previous version of this page included data from searches executed for Microsoft Search in Bing on Bing.com. That data will be integrated into these reports soon, but for now, you can still see those reports by clicking the link at the bottom of the page to **View Bing's top queries and impression distribution**.
+A previous version of this page included data from searches executed only for Microsoft Search in Bing on Bing.com. That data is now integrated into these reports; you can still see the old page by clicking the link at the bottom of the page to **View Bing's top queries and impression distribution**. This link and the old page will be removed soon.
 
 > [!div class="mx-imgBorder"]
 > ![Search usage reports dashboard](media/usage-reports/usage_reports_v2.png)
@@ -69,7 +69,3 @@ Currently, filtering by source is not available. The reports combine searches fr
 **What other filtering for usage reports is coming?**
 
 We are working on additional filters that will help make sense of search usage at a more granular level of your organization. For example, you will be able to see query volume for a specific geography or department.
-
-**Why is the Microsoft Search in Bing reports on a separate page?**
-
-Modernizing search in Office 365 applications to Microsoft Search has required us to join previously disparate systems, including the reports generation. This takes time and we felt it was more important to get these reports out now versus waiting until we could complete the integration of the Bing data. Once we complete the integration, the data from all search endpoints will be included in the same reports.
