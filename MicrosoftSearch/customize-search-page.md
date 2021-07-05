@@ -172,7 +172,7 @@ Consider a user who has 3 email addresses available in the email collection, as 
 
   MyProperty: {Profile.emails.address} will resolve to MyProperty: “Megan.Bowen@contoso.com”.  
 
-- If you wish to resolve all the values of the address attribute, you have to use the Multi-value expansion syntax as shown below. Here, the query 
+- If you wish to resolve all the values of the address attribute, you have to use the multi-value expansion syntax as shown below. Here, the query 
 
   {|MyProperty:{Profile.emails.address}} will resolve to ((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty: "meganb@hotmail.com") OR (MyProperty:"meganb@outlook.com"))  
 
