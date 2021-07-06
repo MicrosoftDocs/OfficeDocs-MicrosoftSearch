@@ -123,7 +123,7 @@ After you enable the vertical, it will take a few hours before you can view it. 
 
 Query variables are used in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. Profile query variables fetch values from the signed-in user’s [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta). You can use profile query variables to make the search results contextual to the signed-in user.
 
-For example, under the “Tickets” vertical, if you wish to display only tickets that are assigned to the signed-in user, you can specify the following query under the query section of the respective vertical.  
+For example, If you want to create a “Tickets” vertical where a signed-in user can search for tickets assigned to them, you can specify the following query under the "Query" section of the respective vertical during the vertical creation in the administration page.  
 
 AssignedTo:{Profile.accounts.userPrincipalName} 
 
