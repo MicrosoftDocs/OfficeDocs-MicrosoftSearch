@@ -121,7 +121,7 @@ After you enable the vertical, it will take a few hours before you can view it. 
 
 ## Profile Query variables
 
-Query variables are used in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. Profile query variables fetch values from the signed-in user’s [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta). You can use profile query variables to make the search results contextual to the signed-in user.
+Query variables are used in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. Profile query variables fetch values from the signed-in user’s [profile](/graph/api/resources/profile?view=graph-rest-beta). You can use profile query variables to make the search results contextual to the signed-in user.
 
 For example, If you want to create a “Tickets” vertical where a signed-in user can search for tickets assigned to them, you can specify the following query under the "Query" section of the respective vertical during the vertical creation in the administration page.  
 
@@ -129,7 +129,7 @@ AssignedTo:{Profile.accounts.userPrincipalName}
 
 This will narrow down the search results to show only those items where the assignee is the user performing the search.
 
-[Profile resource] (https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile, which have AAD as the source type, are exposed as Query variables. 
+[Profile resource] (/graph/api/resources/profile?view=graph-rest-beta) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile, which have AAD as the source type, are exposed as Query variables. 
 
 Syntax: Profile.<Relationship.Property.PropertyName>  
 
@@ -188,9 +188,9 @@ For more examples on Profile expansion, please refer to the table below.
 | 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
 
 > [!NOTE]
-> - Profile query variables are only supported for custom verticals using a [connector](https://docs.microsoft.com/en-us/microsoftsearch/connectors-overview) as a content source.
-> - Profile query variables are defined on the “Query” section of the [vertical set up process](https://docs.microsoft.com/en-us/microsoftsearch/customize-search-page#step-1-create-the-search-vertical).
-> - Profile query variables is currently in preview. For more information about preview, see [Connectors preview features](https://docs.microsoft.com/en-us/microsoftsearch/connectors-overview#what-are-the-preview-features).
+> - Profile query variables are only supported for custom verticals using a [connector](connectors-overview.md) as a content source.
+> - Profile query variables are defined on the “Query” section of the [vertical set up process](customize-search-page.md#step-1-create-the-search-vertical).
+> - Profile query variables is currently in preview. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
 
 ## Troubleshooting
 
