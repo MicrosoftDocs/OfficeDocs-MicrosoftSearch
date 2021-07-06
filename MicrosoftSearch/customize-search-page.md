@@ -59,7 +59,8 @@ There are three basic steps to add a vertical:
 
 After you start the wizard, you're guided through the steps to define the vertical's name, content source, and scope of the content to search. The vertical is created in a disabled state. You'll enable it later.
 
-You can use a limited set of [Keyword Query Language (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) to narrow the scope. This page lists the properties that are available. We recommend that you use free-text keywords and property restrictions with boolean operators for creating the KQL.
+You can use a limited set of [Keyword Query Language (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) to narrow the scope. This page lists the properties that are available. We recommend that you use free-text keywords and property restrictions with boolean operators for creating the KQL. 
+KQL also supports the use of [profile query variables](#profile-query-variables) to fine-tune results under the vertical.
 
 ### Create a vertical at the organization level
 
@@ -117,6 +118,79 @@ After you enable the vertical, it will take a few hours before you can view it. 
 
 > [!NOTE]
 > Added verticals will not be visible on [SharePoint](https://sharepoint.com/) and [Office](https://office.com) when viewed from mobile web browsers.
+
+## Profile Query variables
+
+Query variables are used in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. Profile query variables fetch values from the signed-in user’s [profile](/graph/api/resources/profile?view=graph-rest-beta). You can use profile query variables to make the search results contextual to the signed-in user.
+
+For example, If you want to create a “Tickets” vertical where a signed-in user can search for tickets assigned to them, you can specify the following query under the "Query" section of the respective vertical during the vertical creation in the administration page.  
+
+AssignedTo:{Profile.accounts.userPrincipalName} 
+
+This will narrow down the search results to show only those items where the assignee is the user performing the search.
+
+[Profile resource] (/graph/api/resources/profile?view=graph-rest-beta) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile, which have AAD as the source type, are exposed as Query variables. 
+
+Syntax: Profile.<Relationship.Property.PropertyName>  
+
+Guidelines to be followed for invoking profile attributes. 
+Consider a user who has 3 email addresses available in the email collection, as shown below. 
+
+```json
+"emails": [{ 
+
+        "address": "Megan.Bowen@contoso.com",
+        "id": "xyz", 
+        "source": { 
+            "CreatedBy": "xyz", 
+            "CreatedOn": "2222", 
+            "Type": "official" 
+        },
+        "type": "main" 
+    }, { 
+        "address": "meganb@hotmail.com",
+        "id": "abc", 
+        "source": { 
+            "CreatedBy": "abc",
+            "CreatedOn": "3333", 
+            "Type": "non-official",
+        },
+        "type": "work"
+    }, { 
+        "address": "meganb@outlook.com",
+        "id": "pqr", 
+        "source": { 
+            "CreatedBy": "pqr", 
+            "CreatedOn": "4444", 
+            "Type": "personal" 
+        },
+        "type": "personal" 
+    } 
+] 
+```
+- Here, the query  
+
+  MyProperty: {Profile.emails.address} will resolve to MyProperty: “Megan.Bowen@contoso.com”.  
+
+- If you wish to resolve all the values of the address attribute, you have to use the multi-value expansion syntax as shown below. Here, the query 
+
+  {|MyProperty:{Profile.emails.address}} will resolve to ((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty: "meganb@hotmail.com") OR (MyProperty:"meganb@outlook.com"))  
+
+The “|” operator should be used for resolving multi-value variables.  For more examples on Profile expansion, please refer to the table below. 
+For more examples on Profile expansion, please refer to the table below.
+
+
+| #         | Syntax |  Value returned  |
+| --------- | ------ | --- |
+| 1    | MyProperty:{Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
+| 2 | MyProperty:{Profile.emails}   |    {Profile.emails} This will not resolve because emails are an object.|
+| 3    | {?MyProperty:{Profile.emails}}  |  This will not resolve because emails is an object. The “?” operator ignores query variables that do not resolve. This variable will be removed when passed further down the query stack.   |
+| 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
+
+> [!NOTE]
+> - Profile query variables are only supported for custom verticals using a [connector](connectors-overview.md) as a content source.
+> - Profile query variables are defined on the “Query” section of the [vertical set up process](customize-search-page.md#step-1-create-the-search-vertical).
+> - Profile query variables is currently in preview. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
 
 ## Troubleshooting
 
