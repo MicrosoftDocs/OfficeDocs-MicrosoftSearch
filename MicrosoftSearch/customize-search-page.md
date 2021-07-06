@@ -41,7 +41,7 @@ If you accurately appoint as many semantic labels as possible, this experience w
 ### Things you should know
 
 1. A connection can be added as a content source only under one vertical. Reusing connections under multiple verticals is not allowed.
-2. If you need to setup a query for a search vertical where multiple connection sources have been added, common source properties should be used to create a such a query.
+2. If you need to set up a query for a search vertical where multiple connection sources have been added, common source properties should be used to create a such a query.
 
 ## Things to consider
 
@@ -93,7 +93,7 @@ A default search result layout will be shown for Connector content if **labels**
 You can decide to create your own search result layout and override the default search result layout by creating a **result type**. A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It consists of the following:
 
 - **One or more conditions** to compare each search result against, such as the content source of the search result.  
-- A **result layout** to use for search results that meet the conditions. The result layout controls the way that all results that meet the conditions appear and behave on a search results page.
+- A **result layout** to use for search results that meet the conditions. The resulting layout controls the way that all results that meet the conditions appear and behave on a search results page.
 
 **If appropriate mapping is not done to show default search result layout, You must create at least one result type for results to display on the vertical.** You can create multiple result types for each vertical, which allows you to use different layouts for different type of results. For example, you can customize *Severity 1* incidents to have more prominent colors and a larger font compared to *Severity 3* incidents.
 
