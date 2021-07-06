@@ -125,7 +125,7 @@ Query variables are used in the KQL query section of a vertical to provide dynam
 
 For example, if you want to create a “Tickets” vertical where a signed-in user can search for support tickets assigned to them, you can specify the following query under the "Query" section during the vertical creation in the administration page.  
 
-    **AssignedTo:{Profile.accounts.userPrincipalName}**
+**AssignedTo:{Profile.accounts.userPrincipalName}**
 
 This will narrow down the search results to show only those items where the assignee is the user performing the search.
 
