@@ -188,7 +188,7 @@ For more examples on Profile expansion, please refer to the table below.
 | 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
 
 > [!NOTE]
-> - Profile query variables are only supported for custom verticals using a [connector](microsoftsearch/connectors-overview.md) as a content source.
+> - Profile query variables are only supported for custom verticals using a [connector](connectors-overview.md) as a content source.
 > - Profile query variables are defined on the “Query” section of the [vertical set up process](customize-search-page.md#step-1-create-the-search-vertical).
 > - Profile query variables is currently in preview. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
 
