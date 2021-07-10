@@ -24,7 +24,7 @@ You can create verticals and result types at these levels:
 
 ## Search verticals explained
 
-There's a row of tabs at the top of the Microsoft Search results page, there's a row of tabs. These are the search verticals. A search vertical only shows results of a certain type or from a certain content set. Examples are **Files** or **News**. By default, Microsoft Search shows the verticals **All**, **People**, **Files**, **Sites**, and **News**.  
+There's a row of tabs at the top of the Microsoft Search results page. These are the search verticals. A search vertical only shows results of a certain type or from a certain content set. Examples are **Files** or **News**. By default, Microsoft Search shows the verticals **All**, **People**, **Files**, **Sites**, and **News**.  
 
 You can add search verticals that are relevant to your organization. These will appear on the Microsoft Search results page in [SharePoint](https://sharepoint.com/), [Office](https://Office.com), and [Bing](https://bing.com). For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each group needs. You can add verticals to show results only from content indexed via connectors.  
 
