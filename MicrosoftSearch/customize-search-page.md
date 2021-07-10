@@ -58,6 +58,8 @@ There are three basic steps to add a vertical:
 
 After you start the wizard, you're guided through steps to define the vertical's name, content source, and scope of the content to search.
 
+**TEST**
+
 >[!Note]
 >Verticals are created in a disabled state. You later need to enable them to make them viewable.
 
