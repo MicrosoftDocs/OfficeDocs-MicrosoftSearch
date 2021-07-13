@@ -43,14 +43,18 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 3: Configure the connection settings
 
-To connect to your data source, you need to fill in the root URL of the website, select a crawl source, and the type of authentication you'd like to use: None, Basic Authentication, or OAuth 2.0 with [Azure Active Directory (Azure AD)](/azure/active-directory/). After you complete this information, select Test Connection to verify your settings.
+To connect to your data source, fill in the root URL of the website, select a crawl source, and the type of authentication you'd like to use: None, Basic Authentication, or OAuth 2.0 with [Azure Active Directory (Azure AD)](/azure/active-directory/). After you complete this information, select Test Connection to verify your settings.
 
 ### URL
 
 Use the URL field to specify the root of the website that you'd like to crawl. The enterprise websites connector will use this URL as the starting point and follow all the links from this URL for its crawl.
 
-> [!NOTE]
-> If the site you want to crawl has a sitemap defined, the connector will only crawl the URLs listed in the sitemap. If no sitemap is defined, the connector will do a deep crawl of all the links found on the root URL of the site.
+### Crawl websites listed in the sitemap
+
+When selected the connector will only crawl the URLs listed in the sitemap. If not selected or no site map is found, the connector will do a deep crawl of all the links found on the root URL of the site.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Connection Settings pane for Enterprise Web connector](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-with-sitemap.png)
 
 ### Crawl mode: Cloud or On-premises
 
@@ -58,10 +62,7 @@ The crawl mode determines the type of websites you want to index, either cloud o
 
 Also, the connector now supports crawling of on-premises websites. To access your on-premises data, you must first install and configure the Graph connector agent. To learn more, see [Graph connector agent](./on-prem-agent.md).
 
-For your on-premises websites, select **Agent** as the crawl mode and in the **On-Prem Agent** field, choose the Graph connector agent that you installed and configured earlier.  
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Connection Settings pane for Enterprise Web connector](media/enterprise-web-connector/connectors-enterpriseweb-settings.png)
+For your on-premises websites, select **Agent** as the crawl mode and in the **On-prem Agent** field, choose the Graph connector agent that you installed and configured earlier.  
 
 ### Authentication
 
@@ -92,7 +93,7 @@ You can optionally create an **Exclusion list** to exclude some URLs from gettin
 
 ## Step 4: Assign property labels
 
-You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
+You can assign a source property to each label by choosing from a menu of options. While this step isn't mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
 
 ## Step 5: Manage schema
 
