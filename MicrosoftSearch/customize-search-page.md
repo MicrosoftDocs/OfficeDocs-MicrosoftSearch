@@ -39,7 +39,7 @@ If you accurately appoint as many *semantic labels* as possible, this experience
 > [!NOTE]
 > The multiple connections in a vertical feature is currently in preview. For more information, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
 
-A connection can be added as a content source under under a single vertical. You can't use connections under multiple verticals.
+A connection can be added as a content source under a single vertical. You can't use connections under multiple verticals.
 
 To set up a query for a search vertical where multiple connection sources have been added, use common source properties to create the query.
 
@@ -81,13 +81,13 @@ To create a vertical on Microsoft Search in SharePoint home, Office, or Bing, fo
 4. In the navigation pane, go to **Custom experience**, and then select the **Verticals** tab.
 5. To add a vertical, select **Add**. Or to edit a vertical, select it from the list.
 
-## Steo 2: Create result types
+## Step 2: Create result types
 
 You can use *result types* to define how results are displayed in the vertical. The result layout lets you show important information directly in the search results, so users don't have to select each result to see if they found what they're looking for.
 
 ### Default search result layout
 
-A default search result layout will be shown for connector content if the *labels* and *content* properties were correctly mapped to the source properties when the connector was configured. The *title* lable is the most important label. We *strongly* recommend that you have a property assigned to this label to use the default search result layout.
+A default search result layout will be shown for connector content if the *labels* and *content* properties were correctly mapped to the source properties when the connector was configured. The *title* label is the most important label. We *strongly* recommend that you have a property assigned to this label to use the default search result layout.
 
 ### Create your own result type
 
@@ -195,7 +195,7 @@ Here's a list of common problems you might encounter and actions to fix them.
 |Problem  |Action  |
 |---------|---------|
 | I see a "Something went wrong" error message on the vertical. | Both the vertical and result types are needed to complete the setup. Make sure you created both for the same content source. |
-| I don't see my result layout, although I created one. | There may be a delay of a few minutes because these settings are generally cached. Wait a few minutes and try again.        |
+| I don't see my result layout, although I created one. | There may be a delay of a few minutes because these settings are cached. Wait a few minutes and try again.        |
 | I don't see any content sources on the vertical or result type page. | Make sure you have configured connectors and indexed data.   |
 
 ## Next steps
