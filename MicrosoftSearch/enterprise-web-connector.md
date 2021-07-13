@@ -49,7 +49,7 @@ To connect to your data source, fill in the root URL of the website, select a cr
 
 Use the URL field to specify the root of the website that you'd like to crawl. The enterprise websites connector will use this URL as the starting point and follow all the links from this URL for its crawl.
 
-### Crawl URLs listed in the site map
+### Crawl websites listed in the sitemap
 
 When selected the connector will only crawl the URLs listed in the sitemap. If not selected or no site map is found, the connector will do a deep crawl of all the links found on the root URL of the site.
 
