@@ -33,10 +33,6 @@ This article is intended to help Microsoft 365 administrators locate the resourc
 * [How do I customize search results?](#how-do-i-customize-search-results)
 * [What are the connector limitations](#what-are-the-connector-limitations)
 
-<!---Modify to another note that is more accurate after rollout completion--->
-> [!IMPORTANT]
-> Microsoft Graph connectors and Microsoft Search APIs are now generally available. The first rollouts will be to customers configured for  targeted release. If you want to use a Graph connector in your tenant, users and administrators must opt into [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide).
-
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
 ## Architecture
