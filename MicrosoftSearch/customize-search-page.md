@@ -32,7 +32,7 @@ You can create verticals and result types at two levels:
 
 ### Multiple connections in a vertical
 
-A search vertical can surface results from multiple connector sources. This provides flexibility in designing your search result page. Vertical setup enables admins to select multiple connections in the "Content source" step.
+A search vertical can surface results from multiple connector sources. This option provides flexibility in designing your search result page. The vertical setup process enables admins to select multiple connections in the "Content source" step.
 
 If you accurately appoint as many *semantic labels* as possible, this experience is enhanced. You add semantic labels at the point of schema definition and ingestion. [See more about how to create and manage semantic labels](configure-connector.md#step-5-assign-property-labels).
 
@@ -43,7 +43,7 @@ A connection can be added as a content source under a single vertical. You can't
 
 To set up a query for a search vertical where multiple connection sources have been added, use common source properties to create the query.
 
-### Before you start
+### Before you create verticals and result types
 
 Consider these factors:
 
@@ -64,7 +64,7 @@ After you start the wizard, you're guided through steps to define the vertical's
 >[!Note]
 >Verticals are created in a disabled state. You enable them to make them viewable.
 
-You can use a limited set of [Keyword Query Language (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) to narrow the scope. (The properties that you can use are noted later in this article.) We recommend that you use free-text keywords and property restrictions with boolean operators. KQL also supports [profile query variables](#profile-query-variables) to fine-tune results under the vertical.
+You can use a limited set of [Keyword Query Language (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) to narrow the scope. (The properties that you can use are described later in this article.) We recommend that you use free-text keywords and property restrictions with boolean operators. KQL also supports [profile query variables](#profile-query-variables) to fine-tune results under the vertical.
 
 ### Create a vertical at the organization level
 
@@ -76,7 +76,7 @@ To create a vertical on Microsoft Search in SharePoint home, Office, or Bing, fo
 ### Create a vertical at the site level
 
 1. On the [SharePoint](https://sharepoint.com/) site where you want the vertical, go to **Settings**.
-2. Select **Site information** and then **View all site settings**.
+2. Select **Site information**, and then select **View all site settings**.
 3. Locate the **Microsoft Search** section, and then select **Configure Microsoft Search for this site collection**.
 4. In the navigation pane, go to **Custom experience**, and then select the **Verticals** tab.
 5. To add a vertical, select **Add**. Or to edit a vertical, select it from the list.
@@ -110,23 +110,23 @@ After you start the wizard, you're guided through the steps to define the name, 
 ### Create a result type at the site level
 
 1. On the [SharePoint](https://sharepoint.com/) site where you want the result type, go to **Settings**.
-2. Select **Site information** and then **View all site settings**.
-3. Look for the Microsoft Search section, and then select **Configure Microsoft Search for this site collection**.
-4. In the navigation pane, go to **Custom experience** and select the **Result type** tab.
+2. Select **Site information**, and then select **View all site settings**.
+3. Look for the **Microsoft Search** section, and then select **Configure Microsoft Search for this site collection**.
+4. In the navigation pane, go to **Custom experience**, and select the **Result type** tab.
 5. To add a result type, select **Add**.  Or, to edit a result type, select the result type in the list.
 
 ## Step 3: View the vertical after it's enabled
 
-After you enable the vertical, there's a delay of a few hours before you can view it. To eliminate the delay, you can append `cacheClear=true` to the URL in SharePoint and Office to view the vertical immediately. For Bing, append `&features=uncachedVerticals` to the `Work vertical URL` to view the vertical immediately.
+After you enable the vertical, there's a delay of a few hours before you can view it. But you can append `cacheClear=true` to the URL in SharePoint and Office to view the vertical immediately. For Bing, append `&features=uncachedVerticals` to the `Work vertical URL` to view the vertical immediately.
 
 > [!NOTE]
 > Added verticals aren't visible on SharePoint](https://sharepoint.com/) and [Office](https://office.com) when viewed from mobile web browsers.
 
 ## Profile query variables
 
-Use variables in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. You can use profile query variables to make the search results contextual to the signed-in user. Profile query variables fetch values from the signed-in user’s [profile](/graph/api/resources/profile?view=graph-rest-beta).
+Use variables in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. You can use profile query variables to make the search results contextual to the signed-in user. Profile query variables fetch values from the signed-in user’s [profile](/graph/api/resources/profile).
 
-For example, to create a “Tickets” vertical for the user to find support tickets that are assigned to them, you can specify the following query in the "Query" section during the vertical creation in the administration page:  
+For example, to create a “Tickets” vertical for the user to find support tickets assigned to them, you can specify the following query in the "Query" section during the vertical creation in the administration page:  
 
 `AssignedTo:{Profile.accounts.userPrincipalName}`
 
@@ -185,7 +185,7 @@ Use the “|” operator to resolve multi-value variables. See the following tab
 > [!NOTE]
 >
 > - Profile query variables are only supported for custom verticals that use a [connector](connectors-overview.md) as a content source.
-> - Profile query variables are defined in the “Query” section of the [vertical set up process](customize-search-page.md#step-1-create-the-search-vertical).
+> - Profile query variables are defined in the “Query” section of the [vertical setup process](customize-search-page.md#step-1-create-the-search-vertical).
 > - The profile query variables feature is currently in preview. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
 
 ## Troubleshooting
