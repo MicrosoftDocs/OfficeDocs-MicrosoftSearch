@@ -25,7 +25,7 @@ The Enterprise websites Graph connector allows your organization to index articl
 > [!NOTE]
 > Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
-This article is for anyone who configures, runs, and monitors an Enterprise websites connector. It supplements the general setup process, and shows instructions that apply only for the Enterprise websites connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors an Enterprise websites connector. It supplements the general setup process, and shows instructions that apply only for the Enterprise websites connector. This article also includes information about [Troubleshooting](#troubleshooting).
 
 <!---## Before you get started-->
 
@@ -55,16 +55,16 @@ When selected the connector will only crawl the URLs listed in the sitemap. If n
 
 ### Dynamic site configuration
 
-If your website contains dynamic content, for example, webpages that live in content management systems like [Confluence](https://www.atlassian.com/software/confluence) and [Unily](https://www.unily.com/) or databases that store website content, you can enable a dynamic crawler. To turn it on, select **Enable crawl for dynamic sites**. The crawler will wait for dynamic content to render before it begins crawling. 
+If your website contains dynamic content, for example, webpages that live in content management systems like Confluence or Unily, you can enable a dynamic crawler. To turn it on, select **Enable crawl for dynamic sites**. The crawler will wait for dynamic content to render before it begins crawling.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Connection Settings pane for Enterprise Web connector](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig.png)](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig.png#lightbox)
 
 In addition to the check box, there are three optional fields available:
 
-1. **DOM Ready**: enter the name of the DOM element the crawler should use as the signal that the content is fully rendered and the crawl should begin.
-1. **Headers to Add**: specify which HTTP headers the crawler should include when sending that specific web URL. You can set multiple headers for different websites. We suggest including auth token values.
-1. **Headers to Skip**: specify any unnecessary headers that should be excluded from dynamic crawling requests.
+1. **DOM Ready**: Enter the DOM element the crawler should use as the signal that the content is fully rendered and the crawl should begin.
+1. **Headers to Add**: Specify which HTTP headers the crawler should include when sending that specific web URL. You can set multiple headers for different websites. We suggest including auth token values.
+1. **Headers to Skip**: Specify any unnecessary headers that should be excluded from dynamic crawling requests.
 
 > [!NOTE]
 > Dynamic crawling is only supported for Agent crawl mode.
