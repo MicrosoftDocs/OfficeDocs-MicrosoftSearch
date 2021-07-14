@@ -40,6 +40,8 @@ After you install the agent, if your organization's proxy servers or firewalls b
 4. https://<span>gcs.office.</span>com/
 5. https://<span>graph.microsoft.</span>com/
 
+Proxy authentication is currently not supported.
+
 
 ## Create and configure an App for the agent  
 
