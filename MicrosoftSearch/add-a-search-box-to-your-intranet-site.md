@@ -119,4 +119,4 @@ If embedding a script isn't an option for the site, use an iFrame to add the sea
 
 ## InPrivate mode and Conditional Access
 
-An embedded search box will be disabled if the page or site is opened in an InPrivate window. Also, with Azure AD Conditional Access support in Microsoft Edge, Bing.com doesn't support AAD sign in when using InPrivate mode. For more information about Conditional Access in Edge, see [Microsoft Edge and Conditional Access](https://docs.microsoft.com/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge). 
+An embedded search box will be disabled if the page or site is opened in an InPrivate window. Also, with Azure AD Conditional Access support in Microsoft Edge, Bing.com doesn't support AAD sign in when using InPrivate mode. For more information about Conditional Access in Edge, see [Microsoft Edge and Conditional Access](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge). 
