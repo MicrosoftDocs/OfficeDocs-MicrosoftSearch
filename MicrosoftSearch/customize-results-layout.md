@@ -41,53 +41,44 @@ And here's the layout's associated JSON file:
 ```json
 {
     "type": "AdaptiveCard",
-    "version": "1.0",
-     "body": [
-{
-
+    "version": "1.3",
+    "body": [
+        {
             "type": "ColumnSet",
-             "columns": [
-                 {
-                     "type": "Column",
-                     "width": 8,
-                     "items": [
-                         {
-                             "type": "TextBlock",
-                             "text": "Contoso Marketing Analysis - Q3 FY18",
-                             "color": "Accent",
-                             "size": "Medium",
-                             "spacing": "None",
-                             "$when": "{title != \"\"}",
-                             "weight": "Bolder"
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 8,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Contoso Marketing Analysis - Q3 FY18",
+                            "color": "Accent",
+                            "size": "Medium",
+                            "spacing": "None",
+                            "weight": "Bolder"
                         },
                         {
-						"type": "TextBlock",  
-						"text": "https://contoso.com/hr/link",
-						"spacing": "None",  
-						"color": "Dark",
-						"weight": "Bolder"
-
+                            "type": "TextBlock",
+                            "text": "https://contoso.com/hr/link",
+                            "spacing": "None",
+                            "color": "Dark",
+                            "weight": "Bolder"
                         },
-
-                        {  
-						"type": "TextBlock",
-						"text": "Marketing team at Contoso.., and looking at the Contoso Marketing documents on the team site. This contains the data from FY20 and will taken over to FY21...Marketing Planning is ongoing for FY20..",  
-						"wrap": true,
-						"maxLines": 2,
-						"spacing": "Medium"
-						}
-						],
-
-					"horizontalAlignment": "Center",
-					"spacing": "None"
-
+                        {
+                            "type": "TextBlock",
+                            "text": "Marketing team at Contoso.., and looking at the Contoso Marketing documents on the team site. This contains the data from FY20 and will taken over to FY21...Marketing Planning is ongoing for FY20..",
+                            "wrap": true,
+                            "maxLines": 2,
+                            "spacing": "Medium"
+                        }
+                    ],
+                    "horizontalAlignment": "Center",
+                    "spacing": "None"
                 }
-
             ]
-
         }
-		],
-
+    ],
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
 }
 ```
@@ -100,51 +91,45 @@ Here's Layout JSON after binding the data:
 
 ```json
 {
-
     "type": "AdaptiveCard",
-	"version": "1.0",
-	"body": [
-	{
-	"type": "ColumnSet",
-"columns": [
-
+    "version": "1.3",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
                 {
-				"type": "Column",
-				"width": 8,
-				"items": [
-				{
-				"type": "TextBlock",
-				"text": "[{title}]({titleUrl})",
-				"color": "Accent",
-				"size": "Medium",
-				"spacing": "None",
-				"weight": "Bolder"
-
-                 },
-				 {
-				 "type": "TextBlock",
-				 "text": "{link}",
-				 "spacing": "None",
-				 "color": "Dark",
-				 "weight": "Bolder"
-				 },
-				 {
-				 "type": "TextBlock",
-				 "text": "{description}",
-				 "wrap": true,
-				 "maxLines": 2,
-				 "spacing": "Medium"
-				 }
-				 ],
-				 "horizontalAlignment": "Center",
-				 "spacing": "None"
-				 }
-				 ]
-
+                    "type": "Column",
+                    "width": 8,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "[${title}](${titleUrl})",
+                            "color": "Accent",
+                            "size": "Medium",
+                            "spacing": "None",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${link}",
+                            "spacing": "None",
+                            "color": "Dark",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${description}",
+                            "wrap": true,
+                            "maxLines": 2,
+                            "spacing": "Medium"
+                        }
+                    ],
+                    "horizontalAlignment": "Center",
+                    "spacing": "None"
+                }
+            ]
         }
-
     ],
-
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
 }
 ```
