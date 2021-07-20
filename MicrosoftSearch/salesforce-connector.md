@@ -99,7 +99,7 @@ The first time you've attempted to sign in with these settings, you'll get a pop
 Check that the connection was successful by searching for a green banner that says "Connection successful" as show in the screenshot below.
 
   > [!div class="mx-imgBorder"]
-  > ![Screenshot of successful login. The green banner that says "Connection successful" is located under the field for your Salesforce Instance URL](media/salesforce-connector/sf5.png)
+  > ![Screenshot of successful login. The green banner that says "Connection successful" is located under the field for your Salesforce Instance URL](media/salesforce-connector/salesforce-connector-connection-settings.png)
 
 ## Step 4: Select properties
 
