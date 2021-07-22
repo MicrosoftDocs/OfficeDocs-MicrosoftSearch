@@ -28,7 +28,7 @@
 ##### [File share](fileshare-connector.md)
 ##### [MediaWiki](mediawiki-connector.md)
 ##### [Oracle SQL](OracleSQL-connector.md)
-##### [Salesforce (preview)](salesforce-connector.md)
+##### [Salesforce](salesforce-connector.md)
 ##### [ServiceNow](servicenow-connector.md)
 ### Manage connections
 #### [Monitor connections](manage-connector.md)
