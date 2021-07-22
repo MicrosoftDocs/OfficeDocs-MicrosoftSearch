@@ -18,8 +18,8 @@
 ### Set up connectors by Microsoft
 #### [Setup overview](configure-connector.md)
 #### [Set up the graph connector agent](on-prem-agent.md)
-#### [Map non-Azure AD Identities (preview)](map-non-aad.md)
-#### [Map Azure AD Identities (preview)](map-aad.md)
+#### [Map non-Azure AD Identities](map-non-aad.md)
+#### [Map Azure AD Identities](map-aad.md)
 #### Connector-specific information
 ##### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 ##### [Azure DevOps (preview)](azure-devops-connector.md)
