@@ -86,8 +86,8 @@ Authentication details can be provided using a client secret or a certificate. F
 There are three simple steps for using certificate-based authentication:
 
 1. Create or obtain a certificate
-1. Upload the certificate to the Azure portal
-1. Assign the certificate to the agent
+2. Upload the certificate to the Azure portal
+3. Assign the certificate to the agent
 
 ##### Step 1: Get a certificate
 
@@ -113,9 +113,9 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 1. Open the application and navigate to certificates and secrets section from left pane.
 
-1. Select **Upload certificate** and upload the .cer file.
+2. Select **Upload certificate** and upload the .cer file.
 
-1. Open **App registration** and select **Certificates and secrets** from the navigation pane. Copy the certificate thumbprint.
+3. Open **App registration** and select **Certificates and secrets** from the navigation pane. Copy the certificate thumbprint.
 
 :::image type="content" alt-text="List of thumbrint certificates when Certificates and secrets is selected in the left pane" source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
 
@@ -125,20 +125,33 @@ If you used the sample script to generate a certificate, the PFX file can be fou
 
 1. Download the certificate pfx file onto the Agent machine.
 
-1. Double-click the pfx file to launch the certificate installation dialog.
+2. Double-click the pfx file to launch the certificate installation dialog.
 
-1. Select **Local Machine** for store location while installing the certificate.
+3. Select **Local Machine** for store location while installing the certificate.
 
-1. After installing the certificate, open **Manage computer certificates** through Start menu.
+4. After installing the certificate, open **Manage computer certificates** through Start menu.
 
-1. Select the newly installed certificate under **Personal** > **Certificates**.
+5. Select the newly installed certificate under **Personal** > **Certificates**.
 
-1. Right click on the cert and select **All Tasks** > **Manage Private Keys** Option.
+6. Right click on the cert and select **All Tasks** > **Manage Private Keys** Option.
 
-1. In the permissions dialog, select add option. In the user selection dialog, write: **NT Service\GcaHostService** and click **OK**. Don't click the **Check Names** button.
+7. In the permissions dialog, select add option. In the user selection dialog, write: **NT Service\GcaHostService** and click **OK**. Don't click the **Check Names** button.
 
-1. Click okay on the permissions dialog. The agent machine is now configured for agent to generate tokens using the certificate.
+8. Click okay on the permissions dialog. The agent machine is now configured for agent to generate tokens using the certificate.
 
 ## Troubleshooting
 
-1. If a connection fails with the error "1011: The Graph connector agent is not reachable or offline.", log in to the machine where agent is installed and start the agent application if it isn't running already. If the connection continues to fail, verify that the certificate or client secret provided to the agent during registration hasn't expired and has required permissions.
+### Installation failure
+If the installation fails, check the installation logs by running: msiexec /i "<path to msi>\GcaInstaller.msi" /L*V "<destination path>\install.log". If the errors are not resolvable, reach support on MicrosoftGraphConnectorsFeedback@service.microsoft.com with the logs.
+
+### Registration failure
+
+If sign in to config app fails with error "Sign in failed. Please click on sign in button to try again." even after browser authentication succeeded, open services.msc and check if GcaHostService is running. If it is not, start it manually.
+
+If the service fails to start with the error "The service did not start due to a logon failure", check if virtual account NT Service\GcaHostService has permission to log on as a service on the machine. Check [this link](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) for instructions. If the option to add user or group is greyed out in the Local Policies\User Rights Assignment, it means the user trying to add this account does not have admin privileges on this machine or that there is a group policy overriding this. The group policy needs to be updated to allow host service to logon as a service.
+
+### Connection failure
+
+If 'Test connection' action fails while creating connection with the error 'Please check username/password and the datasource path' even when the provided username and password are correct, ensure that the user account has interactive logon rights to the machine where Graph connector agent is installed. Refer the documentation about [logon policy management](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check logon rights. Also ensure that the data source and the agent machine are on the same network.
+
+If a connection fails with the error "1011: The Graph connector agent is not reachable or offline.", log in to the machine where agent is installed and start the agent application if it isn't running already. If the connection continues to fail, verify that the certificate or client secret provided to the agent during registration hasn't expired and has required permissions.
