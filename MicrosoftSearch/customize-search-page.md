@@ -41,7 +41,7 @@ If you accurately appoint as many semantic labels as possible, this experience w
 ### Things you should know
 
 1. A connection can be added as a content source only under one vertical. Reusing connections under multiple verticals is not allowed.
-2. If you need to setup a query for a search vertical where multiple connection sources have been added, common source properties should be used to create a such a query.
+2. If you need to set up a query for a search vertical where multiple connection sources have been added, common source properties should be used to create a such a query.
 
 ## Things to consider
 
@@ -60,6 +60,7 @@ There are three basic steps to add a vertical:
 After you start the wizard, you're guided through the steps to define the vertical's name, content source, and scope of the content to search. The vertical is created in a disabled state. You'll enable it later.
 
 You can use a limited set of [Keyword Query Language (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) to narrow the scope. This page lists the properties that are available. We recommend that you use free-text keywords and property restrictions with boolean operators for creating the KQL.
+KQL also supports the use of [profile query variables](#profile-query-variables) to fine-tune results under the vertical.
 
 ### Create a vertical at the organization level
 
@@ -92,7 +93,7 @@ A default search result layout will be shown for Connector content if **labels**
 You can decide to create your own search result layout and override the default search result layout by creating a **result type**. A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It consists of the following:
 
 - **One or more conditions** to compare each search result against, such as the content source of the search result.  
-- A **result layout** to use for search results that meet the conditions. The result layout controls the way that all results that meet the conditions appear and behave on a search results page.
+- A **result layout** to use for search results that meet the conditions. The resulting layout controls the way that all results that meet the conditions appear and behave on a search results page.
 
 **If appropriate mapping is not done to show default search result layout, You must create at least one result type for results to display on the vertical.** You can create multiple result types for each vertical, which allows you to use different layouts for different type of results. For example, you can customize *Severity 1* incidents to have more prominent colors and a larger font compared to *Severity 3* incidents.
 
@@ -113,10 +114,76 @@ After you start the wizard, you're guided through the steps to define the name, 
 
 ## STEP 3: View the vertical after it's enabled
 
-After you enable the vertical, it will take a few hours before you can view it. If you don't want to wait after enabling it, you can append **cacheClear=true** to the URL in [SharePoint](https://sharepoint.com/) and [Office](https://office.com) to view the vertical immediately. For [Bing](https://bing.com), append **&features=uncachedVerticals** to the Work vertical URL to view the verticals immediately. 
+After you enable the vertical, it will take a few hours before you can view it. If you don't want to wait after enabling it, you can append **cacheClear=true** to the URL in [SharePoint](https://sharepoint.com/) and [Office](https://office.com) to view the vertical immediately. For [Bing](https://bing.com), append **&features=uncachedVerticals** to the Work vertical URL to view the verticals immediately.
 
 > [!NOTE]
 > Added verticals will not be visible on [SharePoint](https://sharepoint.com/) and [Office](https://office.com) when viewed from mobile web browsers.
+
+## Profile query variables
+
+Query variables are used in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. You can use profile query variables to make the search results contextual to the signed-in user. Profile query variables fetch values from the signed-in user’s [profile](/graph/api/resources/profile?view=graph-rest-beta).
+
+For example, if you want to create a “Tickets” vertical where a signed-in user can search for support tickets assigned to them, you can specify the following query under the "Query" section during the vertical creation in the administration page.  
+
+**AssignedTo:{Profile.accounts.userPrincipalName}**
+
+This will narrow down the search results to show only those items where the assignee is the user performing the search.
+
+[Profile resource](/graph/api/resources/profile?view=graph-rest-beta) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile, which have AAD as the source type, are exposed as Query variables.
+
+Consider a user who has 3 email addresses available in the email collection, as shown below.
+
+```json
+"emails": [{ 
+
+        "address": "Megan.Bowen@contoso.com",
+        "id": "xyz", 
+        "source": { 
+            "CreatedBy": "xyz", 
+            "CreatedOn": "2222", 
+            "Type": "official" 
+        },
+        "type": "main" 
+    }, { 
+        "address": "meganb@hotmail.com",
+        "id": "abc", 
+        "source": { 
+            "CreatedBy": "abc",
+            "CreatedOn": "3333", 
+            "Type": "non-official",
+        },
+        "type": "work"
+    }, { 
+        "address": "meganb@outlook.com",
+        "id": "pqr", 
+        "source": { 
+            "CreatedBy": "pqr", 
+            "CreatedOn": "4444", 
+            "Type": "personal" 
+        },
+        "type": "personal" 
+    } 
+] 
+```
+
+- The query **MyProperty: {Profile.emails.address}** will resolve to MyProperty: “Megan.Bowen@contoso.com”.  
+
+- If you wish to resolve all the values of the address attribute, you have to use the multi-value expansion syntax. The query **{|MyProperty:{Profile.emails.address}}** will resolve to ((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty: "meganb@hotmail.com") OR (MyProperty:"meganb@outlook.com"))  
+
+The “|” operator should be used for resolving multi-value variables. For more examples on profile expansion refer to the table below.
+
+| #         | Syntax |  Value returned  |
+| --------- | ------ | --- |
+| 1    | MyProperty:{Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
+| 2 | MyProperty:{Profile.emails}   |    {Profile.emails} This will not resolve because emails are an object.|
+| 3    | {?MyProperty:{Profile.emails}}  |  This will not resolve because emails is an object. The “?” operator ignores query variables that do not resolve. This variable will be removed when passed further down the query stack.   |
+| 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
+
+> [!NOTE]
+>
+> - Profile query variables are only supported for custom verticals using a [connector](connectors-overview.md) as a content source.
+> - Profile query variables are defined on the “Query” section of the [vertical set up process](customize-search-page.md#step-1-create-the-search-vertical).
+> - Profile query variables is currently in preview. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
 
 ## Troubleshooting
 
