@@ -33,7 +33,7 @@ This article is for anyone who configures, runs, and monitors an Azure SQL and M
 In order to access your on-premises third-party data, you must install and configure the Graph connector agent. See [Install the Graph connector agent](on-prem-agent.md) to learn more.
 
 >[!NOTE]
->If you use Windows authentication while configuring the Microsoft SQL Server Graph connector, the user with which you are trying to sign in needs to have interactive logon rights to the machine where Graph connector agent is installed. Refer the documentation about [logon policy management](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check logon rights.
+>If you use Windows authentication while configuring the Microsoft SQL Server Graph connector, the user with which you are trying to sign in needs to have interactive logon rights to the machine where Graph connector agent is installed. Refer the documentation about [logon policy management](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check logon rights.
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
