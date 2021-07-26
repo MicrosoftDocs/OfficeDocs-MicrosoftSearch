@@ -30,7 +30,10 @@ This article is for anyone who configures, runs, and monitors an Azure SQL and M
 
 ### Install the Graph connector agent (required for on-premises Microsoft SQL Server connector only)
 
-In order to access your on-premises third-party data, you must install and configure the Graph connector agent. See [Install the Graph connector agent](on-prem-agent.md) to learn more.  
+In order to access your on-premises third-party data, you must install and configure the Graph connector agent. See [Install the Graph connector agent](on-prem-agent.md) to learn more.
+
+>[!NOTE]
+>If you use Windows authentication while configuring the Microsoft SQL Server Graph connector, the user with which you are trying to sign in needs to have interactive logon rights to the machine where Graph connector agent is installed. Refer the documentation about [logon policy management](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check logon rights.
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
@@ -217,7 +220,6 @@ The following is a common error observed while configuring the connector, and it
 The SQL connectors have these limitations in the preview release:
 
 - Microsoft SQL Server connector: The on-premises database must run SQL Server version 2008 or later.
-
 - The Microsoft 365 subscription and Azure subscription (hosting Azure SQL database) must lie within the same Azure Active Directory.
 - ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security.
 - Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
