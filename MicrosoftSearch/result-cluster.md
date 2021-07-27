@@ -15,9 +15,9 @@ description: "Details of the Connectors Result Cluster experience"
 ---
 # Graph connectors result cluster
 
-## Overview of the Graph connectors result cluster (Preview)  
+## Overview of the Graph connectors result cluster  
 
-With Graph connectors result clusters, enterprises can search for content from third party data sources in their default view, the **All** tab, in SharePoint, Office.com, and Microsoft Search in Bing.
+With Graph connectors result clusters, enterprises can now search for content from third party data sources in their default view, the **All** tab, in SharePoint, Office.com, and Microsoft Search in Bing.
 
 Result clusters help users discover all third party content in one place. The results shown in a result cluster are grouped together based on the search vertical configuration.
 
@@ -33,24 +33,20 @@ The search result experience for connector items shown in your result cluster us
 
 We recommend using the “title” property as the search result title and the "content" property as the search description. This will provide the best experience for your users through accurate triggering of the result cluster and most relevant results in the cluster. 
 
-## Enable result clusters
+## Result clusters default settings
   
-The result cluster experience is turned off by default.  
+The result cluster experience is turned ON by default.  
 
-Follow these steps to turn on the experience at the organization level:
+If you would like to disable it, follow these steps to turn off the experience at the organization level:
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
-2. Select  the **All** vertical, then enable **Show connector results**. 
+2. Select  the **All** vertical, then select **Hide connector results**. 
 
 
-Follow these steps to turn on the experience at the SharePoint site level:
+Follow these steps to turn off the experience at the SharePoint site level:
 
-1. On the SharePoint site where you want the result cluster experience, go to **Settings**.
+1. Go to **Settings** section on the SharePoint site.
 2. Go to **Site information**>**View all site settings**.
 3. Go to the Microsoft Search section, then select **Configure Microsoft Search for this site collection**.
 4. In the navigation pane, go to **Custom experience**, then select **Verticals**.
-5. Select the **All** vertical, then enable **Show connector results**.
-
-## View the result cluster experience after it is enabled
-
-After you turn on the result cluster experience, it can take up to 12 hours before you can view it. If you want the experience immediately, you can append *cacheClear=true* to the URL in SharePoint and Office.
+5. Select the **All** vertical, then select **Hide connector results**.
