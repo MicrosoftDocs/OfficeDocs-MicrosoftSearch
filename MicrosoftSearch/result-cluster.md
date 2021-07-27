@@ -33,6 +33,10 @@ The search result experience for connector items shown in your result cluster us
 
 We recommend using the “title” property as the search result title and the "content" property as the search description. This will provide the best experience for your users through accurate triggering of the result cluster and most relevant results in the cluster. 
 
+Result clusters are displayed in the middle of page on the All vertical. For example, a result cluster from a 'MediaWiki' vertical is displayed below.
+
+![image](https://user-images.githubusercontent.com/72018014/127195376-ca33386a-2f47-48d7-be76-9a87f89dfb2e.png)
+
 ## Result clusters default settings
   
 The result cluster experience is turned ON by default.  
@@ -42,6 +46,7 @@ If you would like to disable it, follow these steps to turn off the experience a
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 2. Select  the **All** vertical, then select **Hide connector results**. 
 
+![image](https://user-images.githubusercontent.com/72018014/127194756-0b5c21e7-5583-4598-864e-52adde1fb46c.png)
 
 Follow these steps to turn off the experience at the SharePoint site level:
 
