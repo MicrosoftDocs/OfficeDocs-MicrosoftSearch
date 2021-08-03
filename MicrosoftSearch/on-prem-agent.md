@@ -1,5 +1,5 @@
 --- 
-title: "Graph connector agent" 
+title: "On-Premises Agent" 
 ms.author: rusamai 
 author: rsamai 
 manager: jameslau 
@@ -13,7 +13,7 @@ search.appverid:
 - MET150 
 - MOE150 
 ROBOTS: NoIndex
-description: "Graph connector agent" 
+description: "On-prem Agent" 
 --- 
 
 # Microsoft Graph connector agent
