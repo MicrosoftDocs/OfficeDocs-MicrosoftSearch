@@ -30,7 +30,7 @@ This article is for anyone who configures, runs, and monitors an Oracle SQL Grap
 
 ### Install the Graph connector agent
 
-In order to access your on-premises third-party data, you must install and configure the Graph connector agent. See [Install the Graph connector agent](on-prem-agent.md) to learn more.  
+In order to access your on-premises third-party data, you must install and configure the Graph connector agent. See [Install the Graph connector agent](graph-connector-agent.md) to learn more.  
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
