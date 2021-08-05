@@ -28,7 +28,7 @@ The File share Graph connector allows users in your organization to search on-pr
 
 ### Install the Graph connector agent
 
-To index your Windows file shares, you must install and register the Graph connector agent. See [Install the Graph connector agent](on-prem-agent.md) to learn more.  
+To index your Windows file shares, you must install and register the Graph connector agent. See [Install the Graph connector agent](graph-connector-agent.md) to learn more.  
 
 ### Content requirements
 
