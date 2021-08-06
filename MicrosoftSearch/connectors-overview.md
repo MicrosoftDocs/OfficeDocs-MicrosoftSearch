@@ -97,7 +97,7 @@ The set of connectors and features in preview include:
 * [Azure DevOps connector](azure-devops-connector.md)
 * [Salesforce connector](salesforce-connector.md)
 * [ServiceNow connector](servicenow-connector.md) with search permissions that use source ACLs
-* [Manage result cluster](result-cluster.md)
+* [Manage custom filters](custom-filters.md)
 * [Multiple connections in a vertical](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## How do I customize and configure search results?
