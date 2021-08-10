@@ -21,7 +21,7 @@ You can use filters to customize the Microsoft Search experience. Filters let us
 A custom filter can be created inside a vertical based on a connection property. For example, you can create a **Published On** filter for ServiceNow connection inside a vertical.
 
 > [!NOTE]
-> Custom Filters are currently available in the Targeted Release channel. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
+> Custom Filters are currently in preview for admins and end-users in Targeted Release. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
 
 ## Create a filter in an organizational level vertical
 
