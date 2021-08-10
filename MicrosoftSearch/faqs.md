@@ -55,8 +55,8 @@ Details can be found on the [Trust Center pages for Office 365](https://www.micr
 
 Microsoft 365 enables rich collaboration with people outside of your organization through [guest access.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) These users can search for documents, sites, groups, lists, and libraries. However, guest users won't get the full, personalized Microsoft Search experience and may need to use the on-page search box instead of the unified Microsoft Search box in the header.
 
-## Can I disable entry points to Microsoft Search?
+## How do I turn Microsoft Search in Bing on or off?
 
-You can turn off Microsoft Search in Bing on the [Configurations](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations) page in the Microsoft admin center. Choose **Change settings** and turn off **Allow your organization to use Microsoft Search in Bing**. When this setting is off, users won't get internal results when they search from Bing, Windows Search, or Microsoft Edge. They also won't see information from your organization when they go to the Bing homepage. It takes up to 24 hours for this change to take effect.
+To turn on Microsoft Search in Bing, go to the [Configurations](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations) page in the Microsoft 365 admin center. Choose **Change settings** and turn on **Allow your organization to use Microsoft Search in Bing**. It takes up to 24 hours for this change to take effect.
 
-Turning off Microsoft Search in Bing doesn't stop or prevent internal content from being added to your search index. It only disables Bing entry points to Microsoft Search. To find answers and internal results, users will need to use other entry points, for example SharePoint Online or an Office 365 app.
+If this setting is off, users won't get internal results when they search on Bing, Windows Search, or in Microsoft Edge. Turning off Microsoft Search in Bing doesn't stop or prevent internal content from being added to your search index. It only disables Bing entry points to Microsoft Search. To find answers and internal results, users will need to use other entry points, for example SharePoint Online or an Office 365 app.
