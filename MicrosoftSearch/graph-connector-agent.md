@@ -135,9 +135,11 @@ If you used the sample script to generate a certificate, the PFX file can be fou
 
 6. Right click on the cert and select **All Tasks** > **Manage Private Keys** Option.
 
-7. In the permissions dialog, select add option. In the user selection dialog, write: **NT Service\GcaHostService** and click **OK**. Don't click the **Check Names** button.
+7. In the permissions dialog, select add option. It pops up a new window. Select 'Locations' option in it. Select the machine on which agent is installed among the list of locations shown and click **OK**.
 
-8. Click okay on the permissions dialog. The agent machine is now configured for agent to generate tokens using the certificate.
+8. In the user selection dialog, write: **NT Service\GcaHostService** and click **OK**. Don't click the **Check Names** button.
+
+9. Click okay on the permissions dialog. The agent machine is now configured for agent to generate tokens using the certificate.
 
 ## Troubleshooting
 
