@@ -55,7 +55,7 @@ Details can be found on the [Trust Center pages for Office 365](https://www.micr
 
 Microsoft 365 enables rich collaboration with people outside of your organization through [guest access.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) These users can search for documents, sites, groups, lists, and libraries. However, guest users won't get the full, personalized Microsoft Search experience and may need to use the on-page search box instead of the unified Microsoft Search box in the header.
 
-## How do I turn on or off Microsoft Search in Bing?
+## How do I turn Microsoft Search in Bing on or off?
 
 For most organizations, including enterprise and education, Microsoft Search in Bing is on by default. To turn on Microsoft Search in Bing, go to the [Configurations](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations) page in the Microsoft 365 admin center. Under Microsoft Search in Bing settings, choose **Change settings** and turn on **Allow your organization to use Microsoft Search in Bing**. It takes up to 24 hours for this change to take effect.
 
