@@ -132,7 +132,8 @@ For example, to create a “Tickets” vertical for the user to find support tic
 
 This language will narrow down the search results to show only those items for which the assignee is the user who runs the search.
 
-[Profile resource](https://graph.microsoft.com/graph/api/resources/profile?view=graph-rest-beta) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions are exposed through positions collection, and so on. All the properties available in the user profile that have *AAD* as the source type, are exposed as query variables.
+[Profile resource](/graph/api/resources/profile?view=graph-rest-beta) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile, which have AAD as the source type, are exposed as Query variables.
+
 
 Consider a user who has three email addresses available in the email collection, as shown here:
 
