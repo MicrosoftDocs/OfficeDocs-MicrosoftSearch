@@ -48,11 +48,7 @@ Search admins and editors can add bookmarks in the Microsoft 365 admin center an
 - **Draft**: Bookmarks saved as drafts aren't available to your users. Use this status if you or other stakeholders want to review or update bookmarks before publishing them.
 - **Scheduled**: Bookmarks that will be published on the specified date and time.
 
-You can use the Microsoft Search content creator browser extension to easily add bookmarks. To install the browser extension, go to the site you want to add as a bookmark, and click Add in the extension.
-Install the extension for Edge and Chrome:
-
-- For Chromium Edge or Chrome: go to the [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and add the extension.
-- For legacy Edge: go to the [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and add the extension.
+You can use the Microsoft Search content creator browser extension to easily add bookmarks, just go to the site you want to add as a bookmark, and click Add in the extension. To install the extension for Edge or Chrome, go to the [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and add it to your browser.
 
 ### Import SharePoint results
 
