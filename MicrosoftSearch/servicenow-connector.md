@@ -198,9 +198,6 @@ The ServiceNow connector supports search permissions visible to **Everyone** or 
 
 ServiceNow Graph Connector supports default user criteria permissions without advanced scripts. When the connector encounters a user criteria with advanced script, all data using that user criteria will not appear in search results.
 
->[!NOTE]
->To choose **Only people with access to this data source**, enable targeted release updates on your tenant. To learn about setting up targeted release, see [Setup Targeted release options.](/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)
-
 If you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Azure Active Directory (AAD) provisioned users or Non-AAD users.
 
 >[!NOTE]
