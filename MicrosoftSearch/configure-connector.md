@@ -80,15 +80,13 @@ To learn more about connecting to an on-premises data source, see [Install an on
 
 ## Step 4: Select properties
 
-You can index Microsoft Search by choosing your preferred properties. You can add or remove as many properties as you want and filter the data. 
+You can choose the properties that will be indexed by Microsoft Search. 
 
-**ServiceNow query**
-
-The ServiceNow query can be used to filter your data before it is indexed by Microsoft Search, this gives you more control over the data that can be searched, and You can modify this query string. To learn more about ServiceNow queries, see [Learn about ServiceNow queries](https://go.microsoft.com/fwlink/?linkid=2151447). 
+The ServiceNow query can be used to filter your data before it is indexed by Microsoft Search; this gives you more control over the data that can be searched. To learn more about ServiceNow queries, see [Learn about ServiceNow queries](https://go.microsoft.com/fwlink/?linkid=2151447). 
 
 ## Step 5: Manage search permissions
 
-Access Control Lists (ACLs) determine which users in your organization can access each item of data.  
+Access Control Lists (ACLs) determine which users in your organization can access each item.  
 
 Some connectors like [Microsoft SQL](MSSQL-connector.md) and [Azure Data Lake Storage Gen2](azure-data-lake-connector.md) natively support [Azure Active Directory (Azure AD)](/azure/active-directory/) ACLs.
 
