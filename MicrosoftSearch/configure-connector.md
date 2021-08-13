@@ -26,11 +26,12 @@ This article shows the basic process required to set up the Graph connectors **b
 1. [Add a Graph connector in the Microsoft 365 admin center](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [Name the connection](#step-2-name-the-connection)
 3. [Configure the connection settings](#step-3-configure-the-connection-settings)
-4. [Manage search permissions](#step-4-manage-search-permissions)
-5. [Assign property labels](#step-5-assign-property-labels)
-6. [Manage schema](#step-6-manage-schema)
-7. [Refresh settings](#step-7-refresh-settings)
-8. [Review connection](#step-8-review-connection)
+4. [Select properties](#step-4-select-properties)
+5. [Manage search permissions](#step-5-manage-search-permissions)
+6. [Assign property labels](#step-6-assign-property-labels)
+7. [Manage schema](#step-7-manage-schema)
+8. [Refresh settings](#step-8-refresh-settings)
+9. [Review connection](#step-9-review-connection)
 
 This article also includes information about troubleshooting, limitations, and next steps:
 
