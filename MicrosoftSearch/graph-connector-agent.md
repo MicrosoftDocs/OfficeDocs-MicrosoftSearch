@@ -12,7 +12,6 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-ROBOTS: NoIndex
 description: "On-prem Agent" 
 --- 
 
@@ -40,6 +39,8 @@ After you install the agent, if your organization's proxy servers or firewalls b
 4. https://<span>gcs.office.</span>com/
 5. https://<span>graph.microsoft.</span>com/
 
+>[!NOTE]
+>Proxy authentication is not supported. If your environment has a proxy that requires authentication, our recommendation is to allow the connector agent to bypass the proxy.
 
 ## Create and configure an App for the agent  
 
@@ -142,6 +143,7 @@ If you used the sample script to generate a certificate, the PFX file can be fou
 ## Troubleshooting
 
 ### Installation failure
+
 If the installation fails, check the installation logs by running: msiexec /i "<path to msi>\GcaInstaller.msi" /L*V "<destination path>\install.log". If the errors are not resolvable, reach support on MicrosoftGraphConnectorsFeedback@service.microsoft.com with the logs.
 
 ### Registration failure
