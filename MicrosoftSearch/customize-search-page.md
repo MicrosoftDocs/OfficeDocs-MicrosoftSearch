@@ -34,7 +34,8 @@ You can create verticals and result types at two levels:
 
 A search vertical can surface results from multiple connector sources. This option provides flexibility in designing your search result page. The vertical setup process enables admins to select multiple connections in the "Content source" step.
 
-If you accurately appoint as many *semantic labels* as possible, this experience is enhanced. You add semantic labels at the point of schema definition and ingestion. [See more about how to create and manage semantic labels](configure-connector.md#step-5-assign-property-labels).
+If you accurately appoint as many *semantic labels* as possible, this experience is enhanced. You add semantic labels at the point of schema definition and ingestion. [See more about how to create and manage semantic labels](configure-connector.md#step-6-assign-property-labels).
+[Here](configure-connector.md#step-6-assign-property-labels) is additional information on how to create and manage semantic labels.
 
 > [!NOTE]
 > The multiple connections in a vertical feature is currently in preview. For more information, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
