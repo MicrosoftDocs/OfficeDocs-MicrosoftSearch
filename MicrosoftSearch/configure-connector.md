@@ -51,7 +51,7 @@ Complete the following steps to configure any of the Microsoft-built Graph conne
 
 1. Sign into your admin account in the [Microsoft 365 admin center](https://admin.microsoft.com).
 
-2. In the navigation pane, select **Settings**, and then select **Search & intelligence**. Select the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
+2. In the navigation pane, select **Settings**, and then select **Search & intelligence**. Select the [Data sources tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
 
 3. Select **+Add**, and then select the data source of your choice from the menu of available options.
 
@@ -68,16 +68,25 @@ Specify these attributes:
 * Name (required)
 * Connection ID (required)
 * Description (optional)
+* Select check box (required)
 
 The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters.
 
 ## Step 3: Configure the connection settings
 
-The process to configure the connection settings varies based on the type of data source. See the Connector-specific information for the type of data source you want to add to your tenant to complete this step in the setup process.  
+The process to configure the connection settings varies based on the type of data source. See the [Connector-specific information](https://docs.microsoft.com/en-us/microsoftsearch/servicenow-connector#step-31-basic-authentication) for the type of data source you want to add to your tenant to complete this step in the setup process.  
 
 To learn more about connecting to an on-premises data source, see [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
-## Step 4: Manage search permissions
+## Step 4: Select properties
+
+You can index Microsoft Search by choosing your preferred properties. You can add or remove as many properties as you want and filter the data. 
+
+**ServiceNow query**
+
+The ServiceNow query can be used to filter your data before it is indexed by Microsoft Search, this gives you more control over the data that can be searched, and You can modify this query string. To learn more about ServiceNow queries, see [Learn about ServiceNow queries](https://go.microsoft.com/fwlink/?linkid=2151447). 
+
+## Step 5: Manage search permissions
 
 Access Control Lists (ACLs) determine which users in your organization can access each item of data.  
 
@@ -85,7 +94,9 @@ Some connectors like [Microsoft SQL](MSSQL-connector.md) and [Azure Data Lake St
 
 Other connectors like [ServiceNow](servicenow-connector.md), [Azure DevOps](azure-devops-connector.md), and [Salesforce](salesforce-connector.md) support syncing of non-Azure AD users and groups.  
 
-## Step 5: Assign property labels
+Selecting everyone allows everyone in your organization to see search results from this data source.
+
+## Step 6: Assign property labels
 
 You can assign semantic labels to your source properties on the "Assign property labels" page. Labels are well-known tags provided by Microsoft that provide semantic meaning. They allow Microsoft to integrate your connector data into Microsoft 365 experiences such as enhanced search, people cards, intelligent discovery, and more.  
 
@@ -95,13 +106,13 @@ Label | Description
 --- | ---  
 **title** | The title for the item that you want shown in search and other experiences
 **url** | The target url of the item in the source system
-**createdBy** | Name of the person who created the item
-**lastModifiedBy** | Name of the person who most recently edited the item
-**authors** | Name of the people who participated/collaborated on the item
-**createdDateTime** | When was the item created
-**lastModifiedDateTime** | When was the item most recently edited
-**fileName** | Name of the file item
-**fileExtension** | Type of file item such as .pdf or .word
+**Created By** | Name of the person who created the item
+**Last modified by** | Name of the person who most recently edited the item
+**Authors** | Name of the people who participated/collaborated on the item
+**Created date time** | When was the item created
+**Last modified date time** | When was the item most recently edited
+**File name** | Name of the file item
+**File extension** | Type of file item such as .pdf or .word
 
 The properties on this page are pre-selected based on your data source, but you can change this selection if there's a different property that is better suited for a particular label.  
 
@@ -109,7 +120,7 @@ The label **title** is the most important label. It's **strongly recommended** y
 
 Incorrectly mapping labels will cause a deteriorated search experience. It's okay for some labels to not have a property assigned to it.  
 
-## Step 6: Manage schema
+## Step 7: Manage schema
 
 ### Content property
 
@@ -152,7 +163,7 @@ For all connectors except the File share connector, custom types must be set man
 > [!NOTE]
 > After you create a connection, you **can't** modify the schema. To do that, you need to delete your connection and create a new one.
 
-## Step 7: Refresh settings
+## Step 8: Refresh settings
 
 The refresh interval determines how often your data is synced between the data source and Microsoft Search. Each type of data source has a different set of optimal refresh schedules based on how often data is modified and the type of modifications.
 
@@ -175,7 +186,7 @@ Incremental refreshes are much faster than full refreshes because unchanged item
 
 <!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
-## Step 8: Review connection
+## Step 9: Review connection
 
 You can review your entire configuration and edit settings as needed before completing the connection. **Be sure to read the connector-specific information for your data source if you haven't already done so.** Select **Finish updating** when you're ready to complete the connection.
 
