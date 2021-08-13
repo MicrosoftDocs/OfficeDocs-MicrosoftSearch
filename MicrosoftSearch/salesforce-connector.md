@@ -161,7 +161,7 @@ Follow the general [setup instructions](./configure-connector.md).
 
 >[!TIP]
 >**Default Result type**
->* The Salesforce connector automatically registers a [result type](./customize-search-page.md#step-2-create-result-types) once the connector is published. The result type uses a dynamically generated [result layout](./customize-results-layout.md) based on the fields selected in step 3.
+>* The Salesforce connector automatically registers a [result type](./customize-search-page.md#step-2-create-the-result-types) once the connector is published. The result type uses a dynamically generated [result layout](./customize-results-layout.md) based on the fields selected in step 3.
 >* You can manage the result type by navigating to [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) in the [Microsoft 365 admin center](https://admin.microsoft.com). The default result type will be named as "`ConnectionId`Default". For example, if your connection id is `Salesforce`, your result layout will be named: "SalesforceDefault"
 >* Also, you can choose to create your own result type if needed.
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
