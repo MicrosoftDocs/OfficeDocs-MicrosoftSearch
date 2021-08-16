@@ -146,7 +146,7 @@ If you used the sample script to generate a certificate, the PFX file can be fou
 
 ### Installation failure
 
-If the installation fails, check the installation logs by running: msiexec /i "<path to msi>\GcaInstaller.msi" /L*V "<destination path>\install.log". If the errors are not resolvable, reach support on MicrosoftGraphConnectorsFeedback@service.microsoft.com with the logs.
+If the installation fails, check the installation logs by running: msiexec /i "< path to msi >\GcaInstaller.msi" /L*V "< destination path >\install.log". If the errors are not resolvable, reach support on MicrosoftGraphConnectorsFeedback@service.microsoft.com with the logs.
 
 ### Registration failure
 
