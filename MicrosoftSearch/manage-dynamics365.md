@@ -20,7 +20,7 @@ To help make Microsoft Search more useful, we're introducing Microsoft Search Fe
 * Data that can't leave system boundaries
 * Sensitive data stored on-prem that your organization doesn’t want indexed on the cloud
 
-Data accessed through a federated search connection isn't indexed in Microsoft Search. Also, using built-in connectors from Microsoft, it's easy to set up federated search connections. Our Dynamics 365 connector is currently in preview. If you're interested in joining the preview, let us know at [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview). For current status and release time frame, see the [Microsoft Search Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search).
+Data accessed through a federated search connection isn't indexed in Microsoft Search. Also, using built-in connectors from Microsoft, it's easy to set up federated search connections. Our Dynamics 365 connector is currently in preview. If you're interested in joining the preview, let us know at [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview). For release time frame, see the [Microsoft Search Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search).
 
 ## Dynamics 365 federation connector
 
