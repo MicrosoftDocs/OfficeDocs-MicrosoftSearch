@@ -1,6 +1,7 @@
 # Plan for Microsoft Search
 ## [Overview](overview-microsoft-search.md)
 ## [Set up](setup-microsoft-search.md)
+## [Manage access to files and sites](manage-access-files-sites.md)
 ## [Frequently asked questions](faqs.md)
 # [Get insights](usage-reports.md)
 # Provide answers
