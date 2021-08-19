@@ -219,6 +219,11 @@
       "source_path": "MicrosoftSearch/connectors-preview.md",
       "redirect_url": "/MicrosoftSearch/connectors-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/on-prem-agent.md",
+      "redirect_url": "/MicrosoftSearch/graph-connector-agent",
+      "redirect_document_id": false
     }
   ]
 }
