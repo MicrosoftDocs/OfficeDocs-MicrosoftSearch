@@ -52,7 +52,7 @@ Five states show up in the **State** column against each connection:
 
 The available index quota and consumption is displayed on the connectors landing page.
 
-![Index quota utilization bar](media/quota_utilization.png)
+:::image type="content" alt-text="Index quota utilization bar." source="/media/quota_utilization.png" lightbox="media/quota_utilization.png":::
 
 The quota utilization bar will indicate various states based on consumption of quota by your organization:
 
@@ -77,4 +77,4 @@ To fix this, you can do any of the following:
 
 * Identify connections which have too much content being ingested and update them to index fewer items to make room for quota. To update the connection, you must delete and create a new connection with a new ingestion filter which brings in fewer items.
 
-* Permanently delete one or more connections
+* Permanently delete one or more connections.
