@@ -71,15 +71,15 @@ To add the registered app to your Azure SQL Database, you need to:
 
 To connect your Microsoft SQL Server connector to a data source, you must configure the database server you want crawled and the on-prem agent. You can then connect to the database with the required authentication method.
 
-> [!NOTE] 
+> [!NOTE]
 > - Your database must run SQL Server version 2008 or later for the Microsoft SQL Server connector to be able to connect.
-> - The Azure SQL graph connector only allows ingestion from an Azure SQL instance in the same [tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant) as of Microsoft 365. Cross-tenant data flow is not supported.
+> - The Azure SQL graph connector only allows ingestion from an Azure SQL instance in the same [tenant](/azure/active-directory/develop/quickstart-create-new-tenant) as of Microsoft 365. Cross-tenant data flow is not supported.
 
 For the Azure SQL connector, you only need to specify the server name or IP address you want to connect to. Azure SQL connector only supports Azure Active Directory Open ID connect (OIDC) authentication to connect to the database.
 
 For added security, you may configure IP firewall rules for your Azure SQL Server or database. To learn more about setting up IP firewall rules, refer documentation on [IP firewall rules](/azure/azure-sql/database/firewall-configure). Add the following client IP ranges in the firewall settings.
 
-| Region | IP Range |
+| Region | IP range |
 | ------------ | ------------ |
 | NAM | 52.250.92.252/30, 52.224.250.216/30 |
 | EUR | 20.54.41.208/30, 51.105.159.88/30 |
