@@ -14,7 +14,6 @@ search.appverid:
 - MOE150
 description: "Manage Microsoft Graph Connectors for Microsoft Search."
 ---
-<!-- markdownlint-disable no-inline-html -->
 
 # Monitor your connections
 
@@ -53,11 +52,7 @@ Five states show up in the **State** column against each connection:
 
 The available index quota and consumption is displayed on the connectors landing page.
 
-![Index quota utilization bar](media/quota_utilization.png)
- 
->[!NOTE]
->During the preview period, every organization trying out Graph connectors was provided a free fixed quota of up to 2 million items across all connections. With Graph connectors being generally available, the free quota will expire on April 1st, 2021 for those organizations who have been using Graph connectors in preview.
->Microsoft-built Graph connectors labeled as ["Preview"](./connectors-overview.md) will not be included in the total charged index quota for your organization. However, it will count towards the max number of 10 connections you can configure for your organization and the max number of 7 million items your organization can index across connections; each connection is limited 700,000 items. 
+:::image type="content" alt-text="Index quota utilization bar." source="/media/quota_utilization.png" lightbox="media/quota_utilization.png":::
 
 The quota utilization bar will indicate various states based on consumption of quota by your organization:
 
@@ -67,10 +62,6 @@ Normal | 0-79%
 High | 80-89%
 Critical | 90%-99%
 Full | 100%
-
-<!-- 
-![Quota utilization levels](media/connectors-quota-utilization-levels.png)
--->
 
 The number of items indexed will also be displayed with each connection. The number of items indexed by each connection contributes to the total quota available for your organization.
 
@@ -86,4 +77,4 @@ To fix this, you can do any of the following:
 
 * Identify connections which have too much content being ingested and update them to index fewer items to make room for quota. To update the connection, you must delete and create a new connection with a new ingestion filter which brings in fewer items.
 
-* Permanently delete one or more connections
+* Permanently delete one or more connections.
