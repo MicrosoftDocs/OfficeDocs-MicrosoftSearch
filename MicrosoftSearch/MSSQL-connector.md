@@ -72,7 +72,8 @@ To add the registered app to your Azure SQL Database, you need to:
 To connect your Microsoft SQL Server connector to a data source, you must configure the database server you want crawled and the on-prem agent. You can then connect to the database with the required authentication method.
 
 > [!NOTE] 
-> Your database must run SQL Server version 2008 or later for the Microsoft SQL Server connector to be able to connect.
+> - Your database must run SQL Server version 2008 or later for the Microsoft SQL Server connector to be able to connect.
+> - The Azure SQL graph connector only allows ingestion from an Azure SQL instance in the same [tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant) as of Microsoft 365. Cross-tenant data flow is not supported.
 
 For the Azure SQL connector, you only need to specify the server name or IP address you want to connect to. Azure SQL connector only supports Azure Active Directory Open ID connect (OIDC) authentication to connect to the database.
 
@@ -101,6 +102,8 @@ The example demonstrates a selection of five data columns that hold the data for
 
 Select data columns as shown in this example query: 
  `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
+
+Note that the SQL connectors do not allow column names with non-alphanumeric characters  in the SELECT clause. Remove any non-alphanumeric characters from column names using an alias. Example - SELECT *column_name* AS *columnName*
 
 To manage access to the search results, you can specify one or more ACL columns in the query. The SQL connector allows you to control access at per record level. You can choose to have the same access control for all records in a table. If the ACL information is stored in a separate table, you might have to do a join with those tables in your query.
 
@@ -214,6 +217,7 @@ The following is a common error observed while configuring the connector, and it
 | Configuration step | Error message | Possible reason(s) |
 | ------------ | ------------ | ------------ |
 | Full crawl | `Error from database server: A transport level error has occurred when receiving results from the server.` | This error arises due to network issues. It is recommended to check network logs using [Microsoft network monitor](https://www.microsoft.com/download/details.aspx?id=4865) and reach out to Microsoft customer support. |
+| Full crawl | `Column column_name returned from full crawl SQL query contains non-alphanumeric character` | Non-alphanumeric characters (like underscores) are not allowed in column names in SELECT clause. Use aliases to rename columns and remove non-alphanumeric characters (Example - SELECT column_name AS columnName). |
 
 ## Limitations
 
