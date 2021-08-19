@@ -33,7 +33,7 @@ You can add search verticals that are relevant to your organization. These will 
 A search vertical can now surface results from multiple connector sources. This provides greater flexibility in designing your search result page. The existing administrative experience of vertical setup allows you to select multiple connections in the "Content Source" step.
 If you accurately appoint as many semantic labels as possible, this experience will be enhanced. You can add semantic labels upon schema definition and ingestion.
 
-[Here](configure-connector.md#step-5-assign-property-labels) is additional information on how to create and manage semantic labels.
+[Here](configure-connector.md#step-6-assign-property-labels) is additional information on how to create and manage semantic labels.
 
 > [!NOTE]
 > Multiple connections in a vertical is currently in preview. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
@@ -129,7 +129,7 @@ For example, if you want to create a “Tickets” vertical where a signed-in us
 
 This will narrow down the search results to show only those items where the assignee is the user performing the search.
 
-[Profile resource](https://graph.microsoft.com/graph/api/resources/profile?view=graph-rest-beta) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile, which have AAD as the source type, are exposed as Query variables.
+[Profile resource](/graph/api/resources/profile?view=graph-rest-beta) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile, which have AAD as the source type, are exposed as Query variables.
 
 Consider a user who has 3 email addresses available in the email collection, as shown below.
 
