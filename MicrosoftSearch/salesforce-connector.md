@@ -69,7 +69,7 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
     - For refresh token policy, select **Refresh token is valid until revoked**
 
   > [!div class="mx-imgBorder"]
-  > ![Select the Refresh Token Policy named "Refresh token is valid until revoked "](media/salesforce-connector/oauthpolicies.png)
+  > ![Select the Refresh Token Policy named "Refresh token is valid until revoked ".](media/salesforce-connector/oauthpolicies.png)
 
 You can now use the [Microsoft 365 Admin Center](https://admin.microsoft.com/) to complete the rest of the setup process for your Graph connector.
 
@@ -144,7 +144,7 @@ You can select what source properties should be indexed so that they show up in 
 Refine allows you to define the properties that can be later used as custom refiners or filters in the search experience.  
 
 > [!div class="mx-imgBorder"]
-> ![Select the schema for each source property. The options are Query, Search, Retrieve, and Refine](media/salesforce-connector/sf9.png)
+> ![Select the schema for each source property. The options are Query, Search, Retrieve, and Refine.](media/salesforce-connector/sf9.png)
 
 ## Step 8: Set the refresh schedule
 
