@@ -25,7 +25,7 @@ We are now offering tools that will allow you to review and manage the feedback 
 
 As people in your organization use Microsoft Search, they may have feedback on the experience. When they click a feedback link on the results page, they can categorize their feedback and include additional comments.
 
-![Global feedback form](media/feedback/feedback-global-dialog.png)
+![Global feedback form.](media/feedback/feedback-global-dialog.png)
 
 Users also have the option to send their query and other diagnostic info, along with the category and comments, to Microsoft. [Learn more](https://privacy.microsoft.com/en-US/privacystatement) about privacy and how we protect this data. The diagnostic data contains the most critical information that Microsoft needs to use the feedback item for product improvement.
 
