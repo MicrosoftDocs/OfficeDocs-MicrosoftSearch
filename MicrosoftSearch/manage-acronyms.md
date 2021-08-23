@@ -21,7 +21,7 @@ Organizations don't always have a single reference for their standard terminolog
 
 ## What users experience
 
-Microsoft Search users can get definitions with Acronyms in [Bing](https://Bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration), and [Office 365](https://Office.com). In the **Search** box, users enter queries like these examples:
+Microsoft Search users can get definitions with Acronyms in [Bing](https://Bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration), [Office 365](https://Office.com), Outlook on the web, Outlook Mobile (Android), and Teams Mobile (iOS and Android). In the **Search** box, users enter queries like these examples:
 
 - *What is* DNN
 - *Define* DNN
@@ -53,7 +53,7 @@ Search administrators can add acronyms on the [Acronyms tab](https://admin.micro
 **Published state**. Acronyms are available to the organization’s users through Microsoft Search.
 
 > [!NOTE]
-> It might take up to three days for acronyms added to Published state to become available in Microsoft Search.
+> It takes up to a day for acronyms added to Published state to become available in Microsoft Search.
 
 **Draft state**. If you want to review an acronym before making it available in Microsoft Search, you can add the acronym in a Draft state. Acronyms in the Draft state will not appear in search results. You will need to move the acronym to the Published state to make it appear in search results.
 
@@ -100,13 +100,17 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **A:** The ranking of results may vary from person to person as results are personalized for each user. Neither of these categories will always take precedence over the other.
 
-**Q: How long does it take for admin-curated acronyms to be visible in Microsoft Search after they’re published?**
-
-**A:**  It takes up to a day for acronyms added to Published state to become available in Microsoft Search.
-
 **Q: How do users trigger acronyms answers?**
 
-**A**: To get acronyms answers, users must enter specific query patterns in a [Bing](https://bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration), or [Office 365](https://Office.com) **Search** box.
+**A:** To get acronyms answers, users must enter specific query patterns in a [Bing](https://bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration), [Office 365](https://Office.com), Outlook on the web, Outlook Mobile (Android), or Teams Mobile (iOS and Android) **Search** box.
+
+**Q: Can users enter just the acronym when searching?**
+
+**A:** On Bing, users can now find acronym answers just by searching for an acronym, a keyword is no longer needed. This same experience will be enabled for other Microsoft Search entry points in phases.
+
+**Q: How long does it take for admin-curated acronyms to be visible in Microsoft Search after they’re published?**
+
+**A:** It takes up to a day for acronyms added to Published state to become available in Microsoft Search.
 
 **Q: How long does it take for system-curated acronyms to appear after you receive or send a new email or document?**
 
@@ -118,7 +122,7 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **Q: How long does it take for an acronym to be excluded from Microsoft Search results?**
 
-**A**: It takes up to a day for an excluded acronym to stop appearing in search results.
+**A:** It takes up to a day for an excluded acronym to stop appearing in search results.
 
 **Q: For system-curated acronyms, do documents need to be in a specific format?**
 
@@ -126,9 +130,9 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **Q: Will Microsoft discover acronyms from documents in all languages?**
 
-**A**: Microsoft only supports system-curated acronyms from documents in English, Spanish, French, Italian, German, and Portuguese. Support for other languages will be added in phases.
+**A:** Microsoft only supports system-curated acronyms from documents in English, Spanish, French, Italian, German, and Portuguese. Support for other languages will be added in phases.
 
 **Q: What if my organization doesn’t want to show system-curated acronyms? Can I stop showing this type of acronym in my search results?**
 
-**A**: To turn off showing system-curated acronyms in search results, create a customer support ticket by following the instructions at [Contact support for business products](/microsoft-365/admin/contact-support-for-business-products).
+**A:** To turn off showing system-curated acronyms in search results, create a customer support ticket by following the instructions at [Contact support for business products](/microsoft-365/admin/contact-support-for-business-products).
 After you create a support ticket, it takes up to 48 hours for system-curated acronyms to stop appearing in search results.
