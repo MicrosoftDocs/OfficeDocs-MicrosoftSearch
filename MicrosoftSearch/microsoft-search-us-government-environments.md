@@ -39,17 +39,17 @@ The following table outlines whether specified Microsoft Search features are ava
 | --------- | --------- | --------- | ---------- |
 | Organization-wide search across files, sites, groups, and people | Yes | No | No  |
 | Search box in suite navigation header in SharePoint and OneDrive   | Yes | No | No  |
+| Search suggestions | Yes | No | No  |
 | Search admin controls for Microsoft Search in Bing | Yes | No | No  |
+| Enterprise homepage on Bing | Yes | No | No  |
 | Bookmark answers (admin-curated only) | Yes | No | No  |
 | Q&A answers | Yes | No | No  |
 | Acronym answers | No | No | No  |
 | Floor plan answers | No | No | No  |
 | Locations answers | No | No | No  |
 | Power BI answers | No | No | No  |
+| Mobile access | Yes | No | No  |
 | Graph Connectors | No | No | No  |
 | Federation Connectors | No | No | No  |
-| Search suggestions | Yes | No | No  |
-| Mobile access | Yes | No | No  |
-| Enterprise homepage on Bing | Yes | No | No  |
 
 In response to the unique, evolving requirements of the United States public sector, Microsoft has created Office 365 US Government plans (or Office 365 Government). For service descriptions and features overview specific to these environments, see [Office 365 Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
