@@ -75,7 +75,7 @@ On registering the app with the details above, you'll get the **App ID** and **C
 
 After registering the Microsoft Search app with Azure DevOps, you can complete the connection settings step. Enter your organization name, App ID, and Client secret.
 
-![Connection Application Settings](media/ADO_Connection_settings_2.png)
+![Connection Application Settings.](media/ADO_Connection_settings_2.png)
 
 ### Configure data: select projects and fields
 
@@ -85,11 +85,11 @@ If you choose to index the entire organization, items in all projects in the org
 
 If you choose individual projects, only work items in those projects will be indexed.
 
-![Configure data](media/ADO_Configure_data.png)
+![Configure data.](media/ADO_Configure_data.png)
 
 Next, select which fields you want the connection to index and preview data in these fields before proceeding.
 
-![Choose properties](media/ADO_choose_properties.png)
+![Choose properties.](media/ADO_choose_properties.png)
 
 ## Step 4: Manage search permissions
 

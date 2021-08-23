@@ -58,7 +58,7 @@ After you provide your formula, you can optionally click **Preview** to see a pr
 
 See the snapshot below for a sample Azure AD mapping.
 
-![Sample snapshot of how to fill out the Azure AD mapping page](media/aad-mapping.png)
+![Sample snapshot of how to fill out the Azure AD mapping page.](media/aad-mapping.png)
 
 ## Limitations  
 
