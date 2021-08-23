@@ -44,7 +44,7 @@ From the answer, it's easy to see more Dynamics 365 search results by using the 
 
 Clicking or tapping any result opens Dynamics 365 and shows the detailed information.
 
-:::image type="content" alt-text="Screenshot of detail page in Dynamics 365" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
+:::image type="content" alt-text="Screenshot of detail page in Dynamics 365." source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
 
 No matter where your users start their search their experience will be consistent and enable them to quickly find the most relevant Dynamics 365 results. Check out our Microsoft Build 2021 video for a demonstration.
 
@@ -92,6 +92,6 @@ With this simple configuration, you can enable the Dynamics 365 federation searc
 
 7. Select **Save** to finish the connection setup.
 
-:::image type="content" alt-text="Screenshot of Dynamics 365 set-up panel in the Microsoft 365 admin center" source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
+:::image type="content" alt-text="Screenshot of Dynamics 365 set-up panel in the Microsoft 365 admin center." source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
 
 When the setup is complete, Dynamics 365 answers and vertical will only appear for users with a valid Dynamics 365 license and access to the connected Dynamics 365 environment. At any time, you can return to these settings and change the connection endpoint environment or deactivate the connection.

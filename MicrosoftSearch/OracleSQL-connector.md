@@ -60,7 +60,7 @@ In this step, you configure the SQL query that runs a full crawl of the database
 > [!Tip]
 > To get all the columns that you need, you can join multiple tables.
 
-![Script showing the OrderTable and AclTable with example properties](media/MSSQL-fullcrawl.png)
+![Script showing the OrderTable and AclTable with example properties.](media/MSSQL-fullcrawl.png)
 
 ### Select data columns (Required) and ACL columns (Optional)
 
@@ -78,7 +78,7 @@ The use of each of the ACL columns in the above query is described below. The fo
 * **DeniedUsers**: This option specifies the list of users who do **not** have access to the search results. In the following example, users john@contoso.com and keith@contoso.com do not have access to record with OrderId = 13, whereas everyone else has access to this record.
 * **DeniedGroups**: This option specifies the group of users who do **not** have access to the search results. In the following example, groups engg-team@contoso.com and pm-team@contoso.com do not have access to record with OrderId = 15, whereas everyone else has access to this record.  
 
-![Sample data showing the OrderTable and AclTable with example properties](media/MSSQL-ACL1.png)
+![Sample data showing the OrderTable and AclTable with example properties.](media/MSSQL-ACL1.png)
 
 ### Supported data types
 
@@ -106,7 +106,7 @@ Create query snippets for watermarks as shown in these examples:
 
 In the configuration shown in the following image, `CreatedDateTime` is the selected watermark column. To fetch the first batch of rows, specify the data type of the watermark column. In this case, the data type is `DateTime`.
 
-![Watermark column configuration](media/MSSQL-watermark.png)
+![Watermark column configuration.](media/MSSQL-watermark.png)
 
 The first query fetches the first **N** number of rows by using: "CreatedDateTime > January 1, 1753 00:00:00" (min value of DateTime data type). After the first batch is fetched, the highest value of `CreatedDateTime` returned in the batch is saved as the checkpoint if the rows are sorted in ascending order. An example is March 1, 2019 03:00:00. Then the next batch of **N** rows is fetched by using "CreatedDateTime > March 1, 2019 03:00:00" in the query.
 
@@ -114,7 +114,7 @@ The first query fetches the first **N** number of rows by using: "CreatedDateTim
 
 To exclude soft-deleted rows in your database from being indexed, specify the soft-delete column name and value that indicates the row is deleted.
 
-![Soft delete settings: "Soft delete column" and "Value of soft delete column which indicates a deleted row"](media/MSSQL-softdelete.png)
+![Soft delete settings: "Soft delete column" and "Value of soft delete column which indicates a deleted row."](media/MSSQL-softdelete.png)
 
 ### Full crawl: Manage search permissions
 
@@ -128,7 +128,7 @@ The following ID types are supported for using as ACLs:
 * **Azure Active Directory (AAD) ID**: In Azure AD, every user or group has an object ID that looks something like 'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b'
 * **Active Directory (AD) Security ID**: In an on-premises AD setup, every user and group have an immutable, unique security identifier that looks something like 'S-1-5-21-3878594291-2115959936-132693609-65242.'
 
-![Search permission settings to configure access control lists](media/MSSQL-ACL2.png)
+![Search permission settings to configure access control lists.](media/MSSQL-ACL2.png)
 
 ## Step 3b: Incremental crawl (Optional)
 
