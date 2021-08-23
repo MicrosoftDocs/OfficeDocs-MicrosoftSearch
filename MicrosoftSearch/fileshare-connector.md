@@ -28,7 +28,7 @@ The File share Graph connector allows users in your organization to search on-pr
 
 ### Install the Graph connector agent
 
-To index your Windows file shares, you must install and register the Graph connector agent. See [Install the Graph connector agent](on-prem-agent.md) to learn more.  
+To index your Windows file shares, you must install and register the Graph connector agent. See [Install the Graph connector agent](graph-connector-agent.md) to learn more.  
 
 ### Content requirements
 
@@ -58,7 +58,27 @@ On the **Connect to data source** page, select **File share** and provide the na
 
 When the connector attempts to crawl a file, the "last access time" field in its metadata is updated. If you depend on that field for any archiving and backup solutions and doesn't want to update it when the connector accesses it, you can configure this option in the **Advanced settings** page.
 
-## Step 4: Manage search permissions
+## Step 4: Limits for file indexing
+
+While configuring a File Share connection, admin would have ability to limit files and folders from indexing. There would be multiple ways of doing it:
+
+#### Based on File Types
+
+Only the textual content of these formats is indexed: DOC, DOCM, DOCX, DOT, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS. For multimedia files and files that doesn't belong to this format, the only metadata is indexed.
+
+#### Based on last modified date or number of days since last modification
+
+#### Full network path of file/folder or regular expression to limit indexing 
+
+In the network path use escape character (\\) before special characters like \\. Example: For the path \\\\CONTOSO\\FILE\\SHAREDFOLDER, correct way to input is  \\\\\\\\CONTOSO\\\\FILE\\\\SHAREDFOLDER
+
+Rules for writing regular expression can be found [here](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)
+
+Admin would also be having ability to give an exception to the limit rule. Priority of exception rule will supersede Limit rules. In similar fashion, exception could be defined by giving folder/file path for the items we want to include in indexing.
+
+![Limits and Exceptions.](media/file-connector/ExclusionRule.png)
+
+## Step 5: Manage search permissions
 
 You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists, by selecting the desired option in **Manage search permissions** page. The user accounts and groups provided in these Access Control Lists must be managed by Active Directory (AD). If you are using any other system for user accounts management, you can select 'everyone' option, which lets users search for all the files without any access restrictions. However, when users try to open the file, access controls set at the source apply.
 
@@ -66,24 +86,24 @@ Note that windows by default provides 'Read' permission to 'Everyone' in Share A
 
 You can choose Share ACLs only if the share path you provided follows UNC path format. You can create a path in UNC format by going to 'Advanced Sharing' under 'Sharing' option.
 
-![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
+![Advanced_sharing.](media/file-connector/file-advanced-sharing.png)
 
-## Step 5: Assign property labels
-
-Follow the general [setup instructions](./configure-connector.md).
-<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
-
-## Step 6: Manage schema
+## Step 6: Assign property labels
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## Step 7: Choose refresh settings
+## Step 7: Manage schema
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## Step 8: Review connection
+## Step 8: Choose refresh settings
+
+Follow the general [setup instructions](./configure-connector.md).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## Step 9: Review connection
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 

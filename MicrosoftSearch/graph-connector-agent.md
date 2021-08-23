@@ -12,7 +12,6 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-ROBOTS: NoIndex
 description: "On-prem Agent" 
 --- 
 
@@ -40,6 +39,8 @@ After you install the agent, if your organization's proxy servers or firewalls b
 4. https://<span>gcs.office.</span>com/
 5. https://<span>graph.microsoft.</span>com/
 
+>[!NOTE]
+>Proxy authentication is not supported. If your environment has a proxy that requires authentication, our recommendation is to allow the connector agent to bypass the proxy.
 
 ## Create and configure an App for the agent  
 
@@ -65,7 +66,7 @@ First, sign in and note that the minimum required privilege on the account is se
 
 9. Check that the permissions are in the "granted" state.
 
-	:::image type="content" alt-text="Permissions shown as granted in green on right hand column." source="media/onprem-agent/granted-state.png" lightbox="media/onprem-agent/granted-state.png":::
+    :::image type="content" alt-text="Permissions shown as granted in green on right hand column." source="media/onprem-agent/granted-state.png" lightbox="media/onprem-agent/granted-state.png":::
 
 ### Configure Authentication
 
@@ -117,7 +118,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 3. Open **App registration** and select **Certificates and secrets** from the navigation pane. Copy the certificate thumbprint.
 
-:::image type="content" alt-text="List of thumbrint certificates when Certificates and secrets is selected in the left pane" source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
+:::image type="content" alt-text="List of thumbrint certificates when Certificates and secrets is selected in the left pane." source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
 
 ##### Step 3: Assign the certificate to the agent
 
@@ -135,23 +136,26 @@ If you used the sample script to generate a certificate, the PFX file can be fou
 
 6. Right click on the cert and select **All Tasks** > **Manage Private Keys** Option.
 
-7. In the permissions dialog, select add option. In the user selection dialog, write: **NT Service\GcaHostService** and click **OK**. Don't click the **Check Names** button.
+7. In the permissions dialog, select add option. It pops up a new window. Select 'Locations' option in it. Select the machine on which agent is installed among the list of locations shown and click **OK**.
 
-8. Click okay on the permissions dialog. The agent machine is now configured for agent to generate tokens using the certificate.
+8. In the user selection dialog, write: **NT Service\GcaHostService** and click **OK**. Don't click the **Check Names** button.
+
+9. Click okay on the permissions dialog. The agent machine is now configured for agent to generate tokens using the certificate.
 
 ## Troubleshooting
 
 ### Installation failure
-If the installation fails, check the installation logs by running: msiexec /i "<path to msi>\GcaInstaller.msi" /L*V "<destination path>\install.log". If the errors are not resolvable, reach support on MicrosoftGraphConnectorsFeedback@service.microsoft.com with the logs.
+
+If the installation fails, check the installation logs by running: msiexec /i "< path to msi >\GcaInstaller.msi" /L*V "< destination path >\install.log". If the errors are not resolvable, reach support on MicrosoftGraphConnectorsFeedback@service.microsoft.com with the logs.
 
 ### Registration failure
 
 If sign in to config app fails with error "Sign in failed. Please click on sign in button to try again." even after browser authentication succeeded, open services.msc and check if GcaHostService is running. If it is not, start it manually.
 
-If the service fails to start with the error "The service did not start due to a logon failure", check if virtual account NT Service\GcaHostService has permission to log on as a service on the machine. Check [this link](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) for instructions. If the option to add user or group is greyed out in the Local Policies\User Rights Assignment, it means the user trying to add this account does not have admin privileges on this machine or that there is a group policy overriding this. The group policy needs to be updated to allow host service to logon as a service.
+If the service fails to start with the error "The service did not start due to a logon failure", check if virtual account NT Service\GcaHostService has permission to log on as a service on the machine. Check [this link](/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) for instructions. If the option to add user or group is greyed out in the Local Policies\User Rights Assignment, it means the user trying to add this account does not have admin privileges on this machine or that there is a group policy overriding this. The group policy needs to be updated to allow host service to logon as a service.
 
 ### Connection failure
 
-If 'Test connection' action fails while creating connection with the error 'Please check username/password and the datasource path' even when the provided username and password are correct, ensure that the user account has interactive logon rights to the machine where Graph connector agent is installed. Refer the documentation about [logon policy management](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check logon rights. Also ensure that the data source and the agent machine are on the same network.
+If 'Test connection' action fails while creating connection with the error 'Please check username/password and the datasource path' even when the provided username and password are correct, ensure that the user account has interactive logon rights to the machine where Graph connector agent is installed. Refer the documentation about [logon policy management](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check logon rights. Also ensure that the data source and the agent machine are on the same network.
 
 If a connection fails with the error "1011: The Graph connector agent is not reachable or offline.", log in to the machine where agent is installed and start the agent application if it isn't running already. If the connection continues to fail, verify that the certificate or client secret provided to the agent during registration hasn't expired and has required permissions.

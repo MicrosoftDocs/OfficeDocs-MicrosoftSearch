@@ -37,7 +37,7 @@ Floor plans files must be in DWG format; DWG files can contain text labels. When
 
 |**Text labels including room labels**|**Text labels but no room labels**|**No text labels**|
 |:-----:|:-----:|:-----:|
-|![floorplans-textandroomlabels.png](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
+|![floorplans-textandroomlabels.png.](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
 
 See the [FAQ](#frequently-asked-questions) section for information on viewing and updating DWG files.
 
@@ -48,7 +48,7 @@ A user's office location is a combination of a building code and a room label. F
 Add or update office locations for each user in your organization. You can change office location on the user profile in the [Microsoft 365 admin center](https://admin.microsoft.com) or you can change in your on-premises Active Directory to sync into Azure Active Directory. *PhysicalDeliveryOfficeName* is the field that is used for office location. If your room labels do not include floor numbers, see the FAQ for tips.
 
 In this example, Allan's office is in room 1173 on floor 1 of building 2.
-![floorplans-userlestview.png](media/floorplans-userlistview.png)
+![floorplans-userlestview.png.](media/floorplans-userlistview.png)
 
 > [!NOTE]
 > To see updated office locations when searching for floor plans, you must update office locations for **at least 10 people** on each floor.
@@ -57,13 +57,13 @@ In this example, Allan's office is in room 1173 on floor 1 of building 2.
 
 Use **Microsoft Search** to find a user and verify that their office location is appearing correctly. If you have just updated locations, you may need to wait up to **72 hours** for the updates to appear in the search results.
 
-![floorplans-peoplecard.png](media/floorplans-peoplecard.png)
+![floorplans-peoplecard.png.](media/floorplans-peoplecard.png)
 
 ### Step 5: Add building locations
 
 Floor plans uses [Locations](manage-locations.md) to define your buildings. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations), and then select **Add**. Enter the name, address, and keywords for the building. Add as many buildings as you need.
 
-![floorplans-locations.png](media/floorplans-locations.png)
+![floorplans-locations.png.](media/floorplans-locations.png)
 
 For more details about locations, see [Manage Locations](manage-locations.md)
 
@@ -73,7 +73,7 @@ Before you can use floor plans, office locations must be indexed. This is a one-
 
 In [admin center](https://admin.microsoft.com), go to [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), and then select **Get started**. If you don't see this notice, this step has already been completed for your organization
 
-![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
+![floorplans_hydrationstep.png.](media/floorplans_hydrationstep.png)
 
 ### Step 7: Upload floor plans
 
@@ -93,13 +93,13 @@ In [admin center](https://admin.microsoft.com), go to [**Floor plans**](https://
 > [!NOTE]
 > **It takes 48 hours for the floor plans to be published.** After that your users will see a floor plan results similar to the one below when they search for a co-worker's office.
 
-![floorplans-officelocation.png](media/floorplans-officelocation.png)
+![floorplans-officelocation.png.](media/floorplans-officelocation.png)
 
 ### Step 8: (Optional) Specify location patterns
 
 After uploading a floor plan, the text labels will be compared to the office locations in your users' profiles. If there are fewer than 10 matches, the **Specify location patterns** screen appears. Location patterns are used to extract floor, wing, and room information from office locations.
 
-![floorplans-locationpattern.png](media/floorplans-locationpattern.png)
+![floorplans-locationpattern.png.](media/floorplans-locationpattern.png)
 
 Only room is required, floor and wing are optional, and you can skip locations as needed.
 
@@ -160,6 +160,6 @@ To update an existing floor plan, select the floor plan you want to change, and 
 
 For example, a DWG file that includes room numbers, but no floor numbers, may look similar to this:
 
-![floorplans-nofloors.png](media/floorplans-nofloors.png)
+![floorplans-nofloors.png.](media/floorplans-nofloors.png)
 
 The office location in the user's profile should be 2/1175 where '2' is the building code, '1' is the floor number, and '175' is the room number.

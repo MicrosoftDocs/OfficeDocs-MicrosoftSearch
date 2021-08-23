@@ -79,7 +79,7 @@ After you provide your formula, you can optionally click **Preview** to see a pr
 
 See the snapshot below for a sample non-Azure AD mapping.
 
-![Sample snapshot of how to fill out the non-Azure AD mapping page](media/non-aad-mapping.png)
+![Sample snapshot of how to fill out the non-Azure AD mapping page.](media/non-aad-mapping.png)
 
 ## Limitations  
 

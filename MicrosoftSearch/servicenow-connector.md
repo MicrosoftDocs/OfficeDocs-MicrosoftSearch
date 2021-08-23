@@ -1,8 +1,8 @@
 ---
 title: "ServiceNow Graph connector for Microsoft Search"
-ms.author: mecampos
-author: mecampos
-manager: umas
+ms.author: kam1
+author: TheKarthikeyan
+manager: harshkum
 audience: Admin
 ms.audience: Admin
 ms.topic: article
@@ -20,6 +20,10 @@ description: "Set up the ServiceNow Graph connector for Microsoft Search"
 # ServiceNow Graph Connector
 
 With the Microsoft Graph Connector for ServiceNow, your organization can index knowledge-base articles that are visible to all users or restricted with user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, end users can search for those articles from any Microsoft Search client.  
+
+You can also refer [the following video](https://www.youtube.com/watch?v=TVSkJpk1RiE) to learn more about Graph Connector's capability in managing search permissions.
+
+[![Managing Search Permissions in Microsoft Graph Connector for ServiceNow.](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Graph  connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Set up your Graph Connector article to understand the general setup process.
 
@@ -198,9 +202,6 @@ The ServiceNow connector supports search permissions visible to **Everyone** or 
 
 ServiceNow Graph Connector supports default user criteria permissions without advanced scripts. When the connector encounters a user criteria with advanced script, all data using that user criteria will not appear in search results.
 
->[!NOTE]
->To choose **Only people with access to this data source**, enable targeted release updates on your tenant. To learn about setting up targeted release, see [Setup Targeted release options.](/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)
-
 If you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Azure Active Directory (AAD) provisioned users or Non-AAD users.
 
 >[!NOTE]
@@ -208,9 +209,6 @@ If you choose **Only people with access to this data source**, you need to furth
 
 If you have elected "non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. 
 
-You can also refer the following video to learn more about managing search permissions.
-
-[![Managing Search Permissions in Microsoft Graph Connector for ServiceNow](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
 
 ## Step 6: Assign property labels
 
@@ -262,5 +260,7 @@ PROD | North America | 52.250.92.252/30, 52.224.250.216/30
 PROD | Europe | 20.54.41.208/30, 51.105.159.88/30 
 PROD | Asia Pacific | 52.139.188.212/30, 20.43.146.44/30 
 
+#### 2.3. Access permissions not working as expected
+If you observe discrepancies in access permissions applied to search results, verify access flow chart for user criteria in [managing access to knowledge bases and articles](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html).
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
