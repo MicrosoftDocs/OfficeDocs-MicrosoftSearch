@@ -23,7 +23,7 @@ With the Microsoft Graph Connector for ServiceNow, your organization can index k
 
 You can also refer [the following video](https://www.youtube.com/watch?v=TVSkJpk1RiE) to learn more about Graph Connector's capability in managing search permissions.
 
-[![Managing Search Permissions in Microsoft Graph Connector for ServiceNow](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
+[![Managing Search Permissions in Microsoft Graph Connector for ServiceNow.](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Graph  connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Set up your Graph Connector article to understand the general setup process.
 
