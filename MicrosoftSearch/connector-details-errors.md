@@ -64,6 +64,7 @@ Error code | Error message | Solution
 1010 | The total quota utilization for indexing non-Azure AD groups has reached its limit of 100K. | Try deleting a connection to free up some of your quota or adjusting your ingestion filters to bring in less data. If these don't solve the issue, contact Microsoft support.
 1011 | The Graph connector [agent](graph-connector-agent.md) is not reachable or offline. | 
 1012 | Authentication to your connection failed due to an unsupported authentication mode. | Edit the connection to update the authentication settings for your connection.
+1017 | Item cannot be indexed because the network is unavailable. | Restore the network and wait for the next crawl for the item to get indexed.
 2001 | Indexing is throttled because of a large number of updates in the queue. Depending on the queue, it can take some time for the updates to complete. | Please wait until the queue gets cleared.
 2002 | Indexing failed due to unsupported item formatting. | See connector-specific documentation for more information.
 2003 | Indexing failed due to unsupported item content. | See connector-specific documentation for more information.
