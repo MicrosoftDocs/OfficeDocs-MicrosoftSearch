@@ -42,8 +42,8 @@ The following table outlines whether specified Microsoft Search features are ava
 | Search suggestions | Yes | No | No  |
 | Search admin controls for Microsoft Search in Bing | Yes | No | No  |
 | Enterprise homepage on Bing | Yes | No | No  |
-| Bookmark answers (admin-curated only) | Yes | No | No  |
-| Q&A answers | Yes | No | No  |
+| Bookmark answers (admin-curated) | Yes | No | No  |
+| Q&A answers (admin-curated) | Yes | No | No  |
 | Acronym answers | No | No | No  |
 | Floor plan answers | No | No | No  |
 | Locations answers | No | No | No  |
