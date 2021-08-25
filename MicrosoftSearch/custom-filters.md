@@ -74,8 +74,6 @@ Verticals may be created with one or more Content Sources. In the scenario where
 
 - Filters can only be added to custom verticals currently. They are not available in out of box verticals like All, Files, People, Sites, News. 
 - Currently, filters are configurable on Text and DateTime properties.     
-- Numeric filters are not supported.    
-- Hierarchical filters cannot be created.
 - Filters are not supported for OneDrive content. Filter values corresponding to search results from OneDrive content will not appear on filters.    
     - Custom filter values will show options from SharePoint content and not from One Drive content. For example, if you create a custom filter for ‘Author’ and SharePoint content       contains results only from an author, ‘Amy,’ and OneDrive content contains results only from an author called ‘John,’ the Author custom filter will show ‘Amy’ as the only         option.    
     - Filter value shown from SharePoint content will be applicable to OneDrive content also.     
