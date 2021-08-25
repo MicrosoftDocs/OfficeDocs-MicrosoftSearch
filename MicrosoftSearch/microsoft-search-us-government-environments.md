@@ -12,6 +12,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Learn about Microsoft Search feature availability for US government cloud customers"
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 # Microsoft Search for US government environments
 
