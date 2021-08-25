@@ -16,7 +16,7 @@ description: "Manage custom filters"
 
 # Manage custom filters
 
-You can use filters to customize the Microsoft Search experience. Filters let users refine the set of results from their search query and view the refined set of results.
+Filters can be customized on your Microsoft search experience to allow users to refine the results from their search query and display the refined results.
 
 There are two types of filters available on the search page. 
 
