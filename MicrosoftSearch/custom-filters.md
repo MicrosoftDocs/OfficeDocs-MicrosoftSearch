@@ -16,7 +16,7 @@ description: "Manage filters for use on the SERP"
 
 # Manage filters
 
-Filters allow users to refine the results of their queries and diplay the refined results. You can customize the filters available to your users in the Microsoft Search experience.
+Filters allow users to refine the results of their queries and display the refined results. You can customize the filters available to your users in the Microsoft Search experience.
 
 There are two types of filters available on the search page. 
 
@@ -72,4 +72,4 @@ Verticals may be created with one or more content sources. When a vertical is co
 - The order of out of the box filters cannot be adjusted.
 - Filters are not supported for OneDrive content. Filter values corresponding to search results from OneDrive content will not appear on filters.
 - Custom filter values will show options from SharePoint content and not from One Drive content. For example, if you create a custom filter for ‘Author’ and SharePoint content contains results only from an author, ‘Amy,’ and OneDrive content contains results only from an author called ‘John,’ the Author custom filter will show ‘Amy’ as the only      option.
-- A filter value showns for SharePoint content will apply to OneDrive content when used.
+- A filter value shown for SharePoint content will apply to OneDrive content when used.
