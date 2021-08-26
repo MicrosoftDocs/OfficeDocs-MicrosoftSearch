@@ -61,7 +61,7 @@ Mandatory Fields | Description | Recommended Value
 | Application name     | A unique value that identifies the application that you're authorizing.    | Microsoft Search     |
 | Application website  | The URL of the application that will request access to your Azure DevOps instance during connector setup. (Required).  | https://<span>gcs.office.</span>com/
 | Authorization callback URL        | A required callback URL that the authorization server redirects to. | https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback|
-| Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), Work Items (read), Variable Groups (read), Project and team (read), Graph (read)|
+| Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), Work Items (read), Variable Groups (read), Project and team (read), Graph (read), Analytics (read)|
 
 >[!IMPORTANT]
 >The authorized scopes that you select for the app should match the scopes exactly as listed above. If you omit one of the authorized scopes in the list, or add another scope, the authorization will fail.
@@ -75,7 +75,7 @@ On registering the app with the details above, you'll get the **App ID** and **C
 
 After registering the Microsoft Search app with Azure DevOps, you can complete the connection settings step. Enter your organization name, App ID, and Client secret.
 
-![Connection Application Settings](media/ADO_Connection_settings_2.png)
+![Connection Application Settings.](media/ADO_Connection_settings_2.png)
 
 ### Configure data: select projects and fields
 
@@ -85,11 +85,11 @@ If you choose to index the entire organization, items in all projects in the org
 
 If you choose individual projects, only work items in those projects will be indexed.
 
-![Configure data](media/ADO_Configure_data.png)
+![Configure data.](media/ADO_Configure_data.png)
 
 Next, select which fields you want the connection to index and preview data in these fields before proceeding.
 
-![Choose properties](media/ADO_choose_properties.png)
+![Choose properties.](media/ADO_choose_properties.png)
 
 ## Step 4: Manage search permissions
 
@@ -121,8 +121,12 @@ Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-<!---## Troubleshooting-->
-<!---Insert troubleshooting recommendations for this data source-->
+## Troubleshooting
+The following is a common error observed while configuring the connector, and its possible reason.
+
+| Configuration step | Error message | Possible reason(s) |
+| ------------ | ------------ | ------------ |
+|  | `The account associated with the connector doesn't have permission to access the item.` | The registered app does not have any of the required OAuth scopes. (Note - A new OAuth scope requirement 'Analytics:read' was introduced on 8/31/2021)  |
 
 <!---## Limitations-->
 <!---Insert limitations for this data source-->

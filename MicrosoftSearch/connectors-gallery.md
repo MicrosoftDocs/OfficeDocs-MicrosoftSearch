@@ -25,4 +25,4 @@ Visit the [Microsoft Graph connectors gallery](http://www.microsoft.com/microsof
 
 <br>
 
-![Image showing the new connectors gallery](media/connectors-gallery.png)
+![Image showing the new connectors gallery.](media/connectors-gallery.png)

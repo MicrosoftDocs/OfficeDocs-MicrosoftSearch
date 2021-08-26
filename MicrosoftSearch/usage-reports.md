@@ -28,7 +28,7 @@ The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Hom
 A previous version of this page included data from searches executed only for Microsoft Search in Bing on Bing.com. That data is now integrated into these reports; you can still see the old page by clicking the link at the bottom of the page to **View Bing's top queries and impression distribution**. This link and the old page will be removed soon.
 
 > [!div class="mx-imgBorder"]
-> ![Search usage reports dashboard](media/usage-reports/usage_reports_v2.png)
+> ![Search usage reports dashboard.](media/usage-reports/usage_reports_v2.png)
 
 ## Overview of search reports
 
