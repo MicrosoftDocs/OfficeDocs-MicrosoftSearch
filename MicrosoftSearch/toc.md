@@ -43,7 +43,7 @@
 ## [Manage verticals and result types](customize-search-page.md)
 ## [Manage search result layouts](customize-results-layout.md)
 ## [Manage result clusters](result-cluster.md)
-## [Manage custom filters](custom-filters.md)
+## [Manage filters](custom-filters.md)
 ## Microsoft Search in SharePoint
 ### [Overview](get-started-search-in-sharepoint-online.md)
 ### [Create a custom search results page](create-search-results-pages.md)
