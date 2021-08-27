@@ -18,11 +18,11 @@ description: "Manage filters for use on the SERP"
 
 Filters allow users to refine the results of their queries and display the refined results. You can customize the filters available to your users in the Microsoft Search experience.
 
-There are two types of filters available on the search page. 
+There are two types of filters available on the search page.
 
-   - Out of the box filters
-   - Custom filters 
-    
+- Out of the box filters
+- Custom filters
+
 > [!NOTE]
 > Custom Filters are currently in preview for admins and end-users in Targeted Release. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
 
@@ -36,25 +36,25 @@ Filters can be added to custom search verticals at the organization and site lev
 
 Filters configured for verticals in the organization scope will be available at the organization scope. Filters can be configured in the site’s scope as well.  
 
-## To create a filter on Microsoft Search verticals at the organization level, follow these steps:
+## Create organization level filters
 
 1. In [Microsoft 365 admin center](https://admin.microsoft.com/), go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
 2. Select your preferred vertical where you want to create a filter and click **Edit**.  
 3. Navigate to the Filters step in the vertical's wizard.
 4. Click **Add a Filter** to configure filters on refinable managed properties.
-5. After adding filters, you can review and save the vertical.     
+5. After adding filters, you can review and save the vertical.
 
-## To create a filter on Microsoft Search verticals at the site level, follow these steps:
+## Create SharePoint site level filters
 
 1. In [SharePoint admin center](https://sharepoint.com/), go to Settings.
 2. Look for the Microsoft Search section, and then select **Configure Microsoft Search for this site collection**.
-3. In the navigation pane, go to Custom experience and then select  **Verticals**. 
-4. Select your preferred vertical to create the filter and click **Edit**. 
+3. In the navigation pane, go to Custom experience and then select  **Verticals**.
+4. Select your preferred vertical to create the filter and click **Edit**.
 5. Navigate to the Filters step in the vertical's wizard.
 6. Click **Add a Filter** to configure filters on refinable managed properties.
-7. After adding filters, you can review and save the vertical. 
+7. After adding filters, you can review and save the vertical.
 
-## Filter across multiple properties 
+## Filter across multiple properties
 
 Verticals may be created with one or more content sources. When a vertical is configured with multiple content sources, the refiner's properties list shows which content source each refinable property belongs to. The common managed properties will be merged based on the name (or alias) and data type. Filters can also be configured on these common properties. This is done by creating the filter on an common alias which aliases source properties across the different connections. For example you can create an **Author** filter across ServiceNow and a Jira connections by creating aliases as follows:
 
@@ -62,7 +62,6 @@ Verticals may be created with one or more content sources. When a vertical is co
  | --- | --- | --- |
  | Service Now | Owner | Author |
  | Jira | Publisher | Author |
-
 
 ## Important Details
 
