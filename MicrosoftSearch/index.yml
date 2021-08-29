@@ -22,18 +22,26 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview
+          - text: General overview
             url: overview-microsoft-search.md
+          - text: Learn about Microsoft Search
+            url: https://resources.techcommunity.microsoft.com/microsoft-search/
       - linkListType: get-started
         links:
           - text: Set up Microsoft Search
             url: setup-microsoft-search.md
           - text: Frequently asked questions
             url: faqs.md
+
+   # Card
+  - title: Get insight from users
+    linkLists:
       - linkListType: learn
         links:
-          - text: Learn about Microsoft Search
-            url: https://resources.techcommunity.microsoft.com/microsoft-search/
+          - text: Search usage reports
+            url: usage-reports.md
+          - text: View feedback from users
+            url: manage-feedback.md
 
    # Card
   - title: Provide answers
