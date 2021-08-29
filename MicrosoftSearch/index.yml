@@ -1,0 +1,48 @@
+## YamlMime:Landing
+
+title: Microsoft Search documentation # < 60 chars
+summary: Microsoft Search increases productivity and saves time by delivering more relevant search results for your organization. # < 160 chars
+
+metadata:
+  title: Microsoft Search documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Microsoft Search increases productivity and saves time by delivering more relevant search results for your organization. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: mssearch #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: jeffkizn #Required; your GitHub user alias, with correct capitalization.
+  ms.author: jeffkizn #Required; microsoft alias of author; optional team alias.
+  ms.date: 05/29/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Microsoft Search for the Admin
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: overview-microsoft-search.md
+      - linkListType: get-started
+        links:
+          - text: Set up Microsoft Search
+            url: setup-microsoft-search.md
+          - text: Frequently asked questions
+            url: faqs.md
+      - linkListType: learn
+        links:
+          - text: Learn about Microsoft Search
+            url: https://resources.techcommunity.microsoft.com/microsoft-search/
+
+   # Card
+  - title: Provide answers
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Manage bookmarks
+            url: manage-bookmarks.md
+          - text: Manage acronyms
+            url: manage-acronyms.md
+          - text: Manage floor plans
+            url: manage-floorplans.md           
