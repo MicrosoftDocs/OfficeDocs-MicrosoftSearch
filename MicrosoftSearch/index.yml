@@ -22,6 +22,18 @@ highlightedContent:
     - title: Learn about Microsoft Search
       itemType: overview
       url: https://resources.techcommunity.microsoft.com/microsoft-search/   
+    #card
+    - title: Microsoft Search roadmap
+      itemType: reference
+      url: https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=Microsoft%20Search
+    #card
+    - title: Adoption resources
+      itemType: get-started
+      url: https://resources.techcommunity.microsoft.com/microsoft-search/#adoption
+    #card
+    - title: Microsoft Search on YouTube
+      itemType: video
+      url: https://www.youtube.com/channel/UC-d4Q5pvRf6IVJuWY8wpAFw/
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
