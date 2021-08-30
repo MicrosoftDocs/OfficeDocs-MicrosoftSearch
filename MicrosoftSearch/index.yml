@@ -89,7 +89,7 @@ additionalContent:
         - title: Customize the end-user UX
           links:
           - text: Manage verticals and result types
-            url: customize-result-layout.md
+            url: customize-search-page.md
           - text: Customize the SERP layout
             url: customize-results-layout.md
           - text: Manage filters
