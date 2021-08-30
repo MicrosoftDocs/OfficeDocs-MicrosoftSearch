@@ -1,7 +1,7 @@
-## YamlMime:Landing
+## YamlMime:Hub
 
-title: Microsoft Search documentation # < 60 chars
-summary: Microsoft Search increases productivity and saves time by delivering more relevant search results for your organization. # < 160 chars
+title: Microsoft Search admin documentation # < 60 chars
+summary: Manage Microsoft Search to increase productivity by delivering more relevant search results for your organization. # < 160 chars
 
 metadata:
   title: Microsoft Search documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -12,45 +12,47 @@ metadata:
   ms.author: jeffkizn #Required; microsoft alias of author; optional team alias.
   ms.date: 05/29/2020 #Required; mm/dd/yyyy format.
 
+# highlightedContent section (optional)
+# Maximum of 8 items
+
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    #card
+    - title: Learn about Microsoft Search
+      itemType: overview
+      url: https://resources.techcommunity.microsoft.com/microsoft-search/   
+
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
-landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Microsoft Search for the Admin
-    linkLists:
-      - linkListType: overview
-        links:
+additionalContent:
+  sections:
+    - title: Administration
+      items:
+        # Card
+        - title: Microsoft Search for the Admin
+          links:
           - text: General overview
             url: overview-microsoft-search.md
-          - text: Learn about Microsoft Search
-            url: https://resources.techcommunity.microsoft.com/microsoft-search/
-      - linkListType: get-started
-        links:
           - text: Set up Microsoft Search
             url: setup-microsoft-search.md
           - text: Frequently asked questions
             url: faqs.md
 
-   # Card
-  - title: Get insight from users
-    linkLists:
-      - linkListType: learn
-        links:
+        # Card
+        - title: Get insight from users
+          links:
           - text: Search usage reports
             url: usage-reports.md
           - text: View feedback from users
             url: manage-feedback.md
 
-   # Card
-  - title: Provide answers
-    linkLists:
-      - linkListType: how-to-guide
-        links:
+        # Card
+        - title: Provide answers
+          links:
           - text: Manage bookmarks
             url: manage-bookmarks.md
           - text: Manage acronyms
             url: manage-acronyms.md
           - text: Manage floor plans
-            url: manage-floorplans.md           
+            url: manage-floorplans.md
