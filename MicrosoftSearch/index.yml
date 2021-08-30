@@ -68,3 +68,33 @@ additionalContent:
             url: manage-acronyms.md
           - text: Manage floor plans
             url: manage-floorplans.md
+
+        # Card
+        - title: Manage data sources
+          links:
+          - text: Graph Connectors overview
+            url: connectors-overview.md
+          - text: Setup Graph Connectors
+            url: configure-connector.md
+          - text: Federation connectors management
+            url: manage-dynamics365.md
+
+        # Card
+        - title: Customize the end-user UX
+          links:
+          - text: Manage verticals and result types
+            url: customize-result-layout.md
+          - text: Customize the SERP layout
+            url: customize-results-layout.md
+          - text: Manage filters
+            url: custom-filters.md
+          - text: Manage results clusters
+            url: result-cluster.md
+
+        # Card
+        - title: Search Clients
+          links:
+          - text: Understand Microsoft Search in SharePoint
+            url: get-started-search-in-sharepoint-online.md
+          - text: Understand Microsoft Search in Bing
+            url: security-for-search.md
