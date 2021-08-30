@@ -206,6 +206,6 @@ To learn about limitations that apply to all data sources see the [Overview of M
 
 See the connector-specific information for your data source to find out if other limitations apply to that  particular Graph connector.
 
-## Next steps
+## Next steps 
 
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](customize-search-page.md).
