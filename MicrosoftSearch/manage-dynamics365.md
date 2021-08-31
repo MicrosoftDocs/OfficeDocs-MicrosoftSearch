@@ -6,7 +6,7 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 
 description: "Manage how Dynamics 365 content appears in search results"
 ---

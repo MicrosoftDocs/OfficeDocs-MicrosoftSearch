@@ -6,7 +6,7 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Create your own search results page for a SharePoint Online site"
 ---
 # Create a custom search results page in SharePoint Online
