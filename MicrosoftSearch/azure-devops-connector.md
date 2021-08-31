@@ -8,7 +8,7 @@ audience: Admin
 ms.audience: Admin 
 ms.topic: article 
 ms.service: mssearch 
-localization_priority: Normal 
+ms.localizationpriority: medium 
 search.appverid: 
 - BFB160 
 - MET150 
@@ -61,7 +61,7 @@ Mandatory Fields | Description | Recommended Value
 | Application name     | A unique value that identifies the application that you're authorizing.    | Microsoft Search     |
 | Application website  | The URL of the application that will request access to your Azure DevOps instance during connector setup. (Required).  | https://<span>gcs.office.</span>com/
 | Authorization callback URL        | A required callback URL that the authorization server redirects to. | https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback|
-| Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), Work Items (read), Variable Groups (read), Project and team (read), Graph (read)|
+| Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), Work Items (read), Variable Groups (read), Project and team (read), Graph (read), Analytics (read)|
 
 >[!IMPORTANT]
 >The authorized scopes that you select for the app should match the scopes exactly as listed above. If you omit one of the authorized scopes in the list, or add another scope, the authorization will fail.
@@ -114,15 +114,19 @@ Follow the general [setup instructions](./configure-connector.md).
 
 >[!TIP]
 >**Default Result type**
->* The Azure DevOps connector automatically registers a [result type](./customize-search-page.md#step-2-create-the-result-types) once the connector is published. The result type uses a dynamically generated [result layout](./customize-results-layout.md) based on the fields selected in step 3. 
+>* The Azure DevOps connector automatically registers a [result type](./customize-search-page.md#step-2-create-result-types) once the connector is published. The result type uses a dynamically generated [result layout](./customize-results-layout.md) based on the fields selected in step 3. 
 >* You can manage the result type by navigating to [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) in the [Microsoft 365 admin center](https://admin.microsoft.com). The default result type will be named as "`ConnectionId`Default". For example, if your connection id is `AzureDevOps`, your result layout will be named: "AzureDevOpsDefault"
 >* Also, you can choose to create your own result type if needed.
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-<!---## Troubleshooting-->
-<!---Insert troubleshooting recommendations for this data source-->
+## Troubleshooting
+The following is a common error observed while configuring the connector, and its possible reason.
+
+| Configuration step | Error message | Possible reason(s) |
+| ------------ | ------------ | ------------ |
+|  | `The account associated with the connector doesn't have permission to access the item.` | The registered app does not have any of the required OAuth scopes. (Note - A new OAuth scope requirement 'Analytics:read' was introduced on 8/31/2021)  |
 
 <!---## Limitations-->
 <!---Insert limitations for this data source-->

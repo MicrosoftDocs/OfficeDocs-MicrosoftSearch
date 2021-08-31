@@ -3,7 +3,9 @@
 ## [Set up](setup-microsoft-search.md)
 ## [Manage access to files and sites](manage-access-files-sites.md)
 ## [Frequently asked questions](faqs.md)
-# [Get insights](usage-reports.md)
+# Get insights
+## [View usage reports](usage-reports.md)
+## [Manage feedback](manage-feedback.md)
 # Provide answers
 ## [Plan your content](plan-your-content.md)
 ## [Acronyms](manage-acronyms.md)
@@ -42,7 +44,7 @@
 ## [Manage verticals and result types](customize-search-page.md)
 ## [Manage search result layouts](customize-results-layout.md)
 ## [Manage result clusters](result-cluster.md)
-## [Manage custom filters](custom-filters.md)
+## [Manage filters](custom-filters.md)
 ## Microsoft Search in SharePoint
 ### [Overview](get-started-search-in-sharepoint-online.md)
 ### [Create a custom search results page](create-search-results-pages.md)
