@@ -1,0 +1,116 @@
+- name: Plan for Microsoft Search
+  items:
+  - name: Overview
+    href: overview-microsoft-search.md
+  - name: Set up
+    href: setup-microsoft-search.md
+  - name: Frequently asked questions
+    href: faqs.md
+- name: Get insights
+  items:
+  - name: View usage reports
+    href: usage-reports.md
+  - name: Manage feedback
+    href: manage-feedback.md
+- name: Provide answers
+  items:
+  - name: Plan your content
+    href: plan-your-content.md
+  - name: Acronyms
+    href: manage-acronyms.md
+  - name: Bookmarks
+    href: manage-bookmarks.md
+  - name: Floor plans
+    href: manage-floorplans.md
+  - name: Locations
+    href: manage-locations.md
+  - name: Power BI
+    href: manage-powerbi.md
+  - name: Q&As
+    href: manage-qas.md
+- name: Data sources
+  items:
+  - name: Graph Connectors
+    items:
+    - name: Overview
+      href: connectors-overview.md
+    - name: Connectors gallery
+      href: connectors-gallery.md
+    - name: Set up connectors by Microsoft
+      items:
+      - name: Setup overview
+        href: configure-connector.md
+      - name: Set up the graph connector agent
+        href: graph-connector-agent.md
+      - name: Map non-Azure AD Identities
+        href: map-non-aad.md
+      - name: Map Azure AD Identities
+        href: map-aad.md
+      - name: Connector-specific information
+        items:
+        - name: Azure Data Lake Storage Gen2
+          href: azure-data-lake-connector.md
+        - name: Azure DevOps (preview)
+          href: azure-devops-connector.md
+        - name: Azure SQL and Microsoft SQL Server
+          href: MSSQL-connector.md
+        - name: Enterprise websites
+          href: enterprise-web-connector.md
+        - name: File share
+          href: fileshare-connector.md
+        - name: MediaWiki
+          href: mediawiki-connector.md
+        - name: Oracle SQL
+          href: OracleSQL-connector.md
+        - name: Salesforce
+          href: salesforce-connector.md
+        - name: ServiceNow
+          href: servicenow-connector.md
+    - name: Manage connections
+      items:
+      - name: Monitor connections
+        href: manage-connector.md
+      - name: View connection details and errors
+        href: connector-details-errors.md
+    - name: Licensing
+      href: licensing.md
+    - name: Terms of use
+      href: terms-of-use.md
+  - name: Federation Connectors
+    items:
+    - name: Dynamics 365
+      href: manage-dynamics365.md
+- name: Customize and configure
+  items:
+  - name: Manage verticals and result types
+    href: customize-search-page.md
+  - name: Manage search result layouts
+    href: customize-results-layout.md
+  - name: Manage result clusters
+    href: result-cluster.md
+  - name: Manage filters
+    href: custom-filters.md
+  - name: Microsoft Search in SharePoint
+    items:
+    - name: Overview
+      href: get-started-search-in-sharepoint-online.md
+    - name: Create a custom search results page
+      href: create-search-results-pages.md
+    - name: Manage search box settings
+      href: manage-spo-search-box.md
+    - name: Use Microsoft Search on classic pages
+      href: manage-classic-spo-pages.md
+  - name: Microsoft Search in Bing
+    items:
+    - name: Security and Privacy
+      href: security-for-search.md
+    - name: Add a search box to your intranet site
+      href: add-a-search-box-to-your-intranet-site.md
+    - name: Make Microsoft Edge the default browser
+      href: /deployedge/edge-default-browser
+    - name: Make Bing the default search engine
+      href: set-default-search-engine.md
+    - name: Make Bing.com the default home page
+      href: set-default-homepage.md
+    - name: User adoption guide
+      href: user-adoption-guide.md
