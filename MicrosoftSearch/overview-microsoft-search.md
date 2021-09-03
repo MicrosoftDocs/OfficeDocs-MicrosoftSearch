@@ -15,7 +15,7 @@ description: "Get an overview of what Microsoft Search is, its benefits, and whi
 ---
 # Overview of Microsoft Search
 
-Microsoft Search helps you find what you need to complete what you're working on. Whether you're searching for people, files, org charts, sites, or answers to common questions, you can use Microsoft Search throughout your workday to get answers.
+Microsoft Search helps you find what you need to complete what you're working on. Whether you're searching for people, files, organization charts, sites, or answers to common questions, you can use Microsoft Search throughout your workday to get answers.
 
 Microsoft Search helps users find the right answers, people, and content to complete their tasks in the app they're already working in.
 
@@ -64,16 +64,23 @@ As an administrator you can create an amazing Microsoft Search experience for yo
 
 Microsoft Search shows the content that your organization has stored in Microsoft 365 or indexed through connectors. Microsoft Search does not search across tenants or show results from content that's shared by other organizations. If your organization has set up a hybrid SharePoint environment using cloud hybrid search, Microsoft Search returns search results from both online and on-premises SharePoint content, including any external content you've connected to your SharePoint Server environment. [Learn more about hybrid search environments](/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-Users will get the same search results they get from other locations and will also get results from the internet.
+Users will get the same search results they get from other locations and when using Microsoft Search in Bing they will also get results from the internet.
 
 ## How Microsoft Search works
 
 When a user searches, Microsoft Search processes the query and parses search intent from larger phrases, using Artificial Intelligence (AI) to learn common superfluous phrases users add to their queries that don't impact their search intent. For example, when a user searches for "how to change my password" we extract the less important words from the query and trigger based on the relevant ones like "change password".  
 The search results that the user has **permission** to see are presented on the search results page. Microsoft Search uses intelligent ranking algorithms to order results based on relevance.
 
-## How Microsoft Search in Bing protects your company data
+## Privacy
+In Microsoft Search only the content that a user has permission to see can appear in search results. A user might for example have permission to see a file because the user created it, it was shared with the person or with a larger group that includes the user, or it’s stored in a folder or location that the user has permission to access.
+> [!NOTE]
+> Learn how Microsoft Search in Bing protects your company data in [Security and Privacy for Microsoft Search in Bing](security-for-search.md).
 
-[Security and Privacy for Microsoft Search in Bing](security-for-search.md)
+When many people in your organization search for the same thing in Microsoft Search in Outlook, SharePoint, and Office.com, you as an admin can see that the query is popular, but not who searched for it. You can use this information to define which resources are good results for popular queries and make search better for your organization. Learn about providing answers in [Plan your content](plan-your-content.md).
+
+Personal search history in Microsoft Search in Outlook, SharePoint, and Office.com helps users quickly get back to things they've found before. A user’s search history in Microsoft Search isn’t shared with anyone else. There is a combined search history for Outlook, Outlook on the web, and Outlook Android and a combined search history for SharePoint Online and Office.com. Users can download or clear their history at any time from the **Microsoft Search History** section on the **Settings & Privacy** page of their [work or school account](https://myaccount.microsoft.com/settingsandprivacy/privacy?&highlightSection=microsoft-search-history). Outlook users can in addition download or clear their combined Outlook search history on the **Privacy and data settings** page in Outlook on the web and Outlook Android users can download or clear their combined Outlook search history from the Android app.
+
+
 
 ## See also
 
