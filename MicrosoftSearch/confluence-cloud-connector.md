@@ -52,7 +52,7 @@ The following steps provide guidance on how to register the app:
 2. Click on `Create` and select `OAuth 2.0 integration`
 3. Provide an appropriate name for the application and create the new app.
 4. Navigate to `Permissions` from the navigation pane on left. Click `Add` for `Confluence API`. Once added, click on `Configure` and add the following scopes - `Read Confluence space summary`, `Read Confluence content properties`, `Read Confluence detailed content`, `Read Confluence content summary` and `Search Confluence content and space summaries`. <br>
-Optionally, if you want to index page permissions add `Read content permission in Confluence`, `Read user` and `Read user groups` scopes.
+Optionally, if you want to index access permissions along with content, add `Read content permission in Confluence`, `Read user` and `Read user groups` scopes.
 5. Navigate to `Authorization` from the navigation pane on left. Add the callback URL `https://gcs.office.com/v1.0/admin/oauth/callback` and save the changes.
 6. Navigate to `Settings` from the navigation pane on left. You will get the `Client ID` and `Secret` from this page.
 
