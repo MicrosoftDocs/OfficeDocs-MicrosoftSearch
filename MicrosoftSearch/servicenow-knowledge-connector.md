@@ -32,11 +32,10 @@ other instructions that apply to only ServiceNow Graph connector including infor
 and [Limitations](#limitations).  
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center.
-Follow the general setup instructions.
+Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 2: Name the connection.
-Follow the general setup instructions.
-
+Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 3: Connection Settings
 To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**. Your organization’s ServiceNow instance URL typically looks like **https://&lt;your-organization-domain>.service-now.com**. 
@@ -212,15 +211,15 @@ If you have elected "non-AAD" for the identity type see [Map your non-Azure AD I
 
 ## Step 6: Assign property labels
 
-Follow the general setup instructions.
+Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 7: Manage schema
 
-Follow the general setup instructions.
+Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 8: Choose refresh settings
 
-Follow the general setup instructions.
+Follow the general [setup instructions](./configure-connector.md).
 
 >[!NOTE]
 >For identities, only full crawl scheduled will be applied.
