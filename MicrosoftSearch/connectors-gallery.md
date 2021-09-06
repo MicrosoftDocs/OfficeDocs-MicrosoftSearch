@@ -19,7 +19,7 @@ description: "Lists all of the Microsoft Graph connectors for Microsoft Search"
 
 The [Microsoft Graph connectors gallery](http://www.microsoft.com/microsoft-search/connectors) includes a brief description of each of the connectors created by Microsoft and our partners, and a link to each partner's website.
 
-With more than a 100 connectors currently available you can connect to popular Microsoft and non-Microsoft services like Azure services, Box, MediaWiki, ServiceNow, SalesForce, Google services, MediaWiki, and many more.
+With more than a 100 connectors currently available you can connect to popular Microsoft and non-Microsoft services like Azure services, Box, Confluence, MediaWiki, ServiceNow, SalesForce, Google services, MediaWiki, and many more.
 
 Visit the [Microsoft Graph connectors gallery](http://www.microsoft.com/microsoft-search/connectors) now, and find all the information you need.
 
