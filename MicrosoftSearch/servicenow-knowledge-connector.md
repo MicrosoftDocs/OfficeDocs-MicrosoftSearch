@@ -203,10 +203,14 @@ ServiceNow Graph Connector supports default user criteria permissions without ad
 
 If you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Azure Active Directory (AAD) provisioned users or Non-AAD users.
 
->[!NOTE]
->If you choose AAD as the type of identity source, make sure you are assigning UserPrincipalName (UPN) source property to email targeted property in ServiceNow. To verify or change your mappings, see [Customizing user provisioning attribute-mappings for SaaS applications in Azure Active Directory](/azure/active-directory/app-provisioning/customize-application-attributes).
+To identify which option is suitable for your organization:
 
-If you have elected "non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. 
+1. Choose the **AAD** option if the Email ID of ServiceNow users are **same** as the UserPrincipalName (UPN) of users in AAD.
+2. Choose the **Non-AAD** option if the email ID of ServiceNow users is **different** from the UserPrincipalName (UPN) of users in AAD. 
+
+>[!NOTE]
+> * If you choose AAD as the type of identity source, the connector maps the Email IDs of users obtained from ServiceNow directly to UPN property from AAD.
+> * If you chose "Non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
 
 
 ## Step 6: Assign property labels
