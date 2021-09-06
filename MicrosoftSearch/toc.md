@@ -29,7 +29,7 @@
 ##### [MediaWiki](mediawiki-connector.md)
 ##### [Oracle SQL](OracleSQL-connector.md)
 ##### [Salesforce](salesforce-connector.md)
-##### [ServiceNow](servicenow-knowledge-connector.md)
+##### [ServiceNow Knowledge](servicenow-knowledge-connector.md)
 ### Manage connections
 #### [Monitor connections](manage-connector.md)
 #### [View connection details and errors](connector-details-errors.md)
