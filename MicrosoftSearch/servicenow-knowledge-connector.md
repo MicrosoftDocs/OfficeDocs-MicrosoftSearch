@@ -229,8 +229,6 @@ Follow the general setup instructions.
 
 Follow the general [setup instructions](./configure-connector.md).
 
-ServiceNow Knowledge Graph connector has the following limitations in its latest release:
-
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
 ## Limitations
