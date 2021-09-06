@@ -190,7 +190,7 @@ Use Application ID as Client ID (from step 3.a), and Client secret (from step 3.
 
 In this step, you can add or remove available properties from your ServiceNow data source. Microsoft 365 has already selected few properties by default.
 
-With a ServiceNow query string, you can specify conditions for syncing articles. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only items that are published and active. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/rome-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
+With a ServiceNow query string, you can specify conditions for syncing articles. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only items that are active. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/rome-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
 Use the preview results button to verify the sample values of the selected properties and query filter.
 
