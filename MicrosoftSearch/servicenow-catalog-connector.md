@@ -41,7 +41,7 @@ To connect to your ServiceNow data, you need your organization's **ServiceNow in
 
 Along with this URL, you will need a **service account** for setting up the connection to ServiceNow as well as for allowing Microsoft Search to periodically update the catalog items based on the refresh schedule. The service account will need read access to the following **ServiceNow table records** to successfully crawl various entities.
 
-**Feature** | **Read access required tables** | **Description**
+Feature | Read access required tables | Description
 --- | --- | ---
 Index catalog items available to <em>Everyone</em> | sc_cat_item | For crawling catalog items
 Index and support user criteria permissions | sc_cat_item_user_criteria_mtom | Who can access this catalog item
@@ -251,7 +251,7 @@ If you see forbidden or unauthorized response in connection status, check if the
 #### 2.2. Check if ServiceNow instance behind firewall
 Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You will need explicitly allow access to Graph Connector service. You can find public IP address range of Graph Connector Service in the table below. Based on your tenant region, add it to your ServiceNow instance network allow list.
 
-**Environment** | **Region** | **Range**
+ Environment | Region | Range
 --- | --- | ---
 PROD | North America | 52.250.92.252/30, 52.224.250.216/30
 PROD | Europe | 20.54.41.208/30, 51.105.159.88/30 
