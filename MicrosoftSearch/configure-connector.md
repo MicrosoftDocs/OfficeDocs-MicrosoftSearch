@@ -57,7 +57,7 @@ Complete the following steps to configure any of the Microsoft-built Graph conne
 3. Select **+Add**, and then select the data source of your choice from the menu of available options.
 
    > [!div class="mx-imgBorder"]
-   > ![Data sources available include: ADLS Gen2, Enterprise websites, Microsoft SQL server, Azure SQL, Oracle SQL database, ServiceNow, File share, Azure DevOps, and MediaWiki.](media/add-connector.png)
+   > ![Data sources available include: ADLS Gen2, Enterprise websites, Microsoft SQL server, Azure SQL, Oracle SQL database, ServiceNow Knowledge, ServiceNow Catalog, File share, Azure DevOps, and MediaWiki.](media/add-connector.png)
 
 > [!NOTE]
 > You can add a maximum of ten Graph connections to each tenant.
@@ -91,7 +91,7 @@ Access Control Lists (ACLs) determine which users in your organization can acces
 
 Some connectors like [Microsoft SQL](MSSQL-connector.md) and [Azure Data Lake Storage Gen2](azure-data-lake-connector.md) natively support [Azure Active Directory (Azure AD)](/azure/active-directory/) ACLs.
 
-Other connectors like [ServiceNow](servicenow-connector.md), [Azure DevOps](azure-devops-connector.md), and [Salesforce](salesforce-connector.md) support syncing of non-Azure AD users and groups.  
+Other connectors like [ServiceNow Knowledge](servicenow-knowledge-connector.md), [ServiceNow Catalog](servicenow-catalog-connector.md), [Azure DevOps](azure-devops-connector.md), and [Salesforce](salesforce-connector.md) support syncing of non-Azure AD users and groups.  
 
 Selecting everyone allows everyone in your organization to see search results from this data source.
 
