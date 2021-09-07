@@ -224,6 +224,11 @@
       "source_path": "MicrosoftSearch/on-prem-agent.md",
       "redirect_url": "/MicrosoftSearch/graph-connector-agent",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/servicenow-connector.md",
+      "redirect_url": "/MicrosoftSearch/servicenow-knowledge-connector",
+      "redirect_document_id": false
     }
   ]
 }
