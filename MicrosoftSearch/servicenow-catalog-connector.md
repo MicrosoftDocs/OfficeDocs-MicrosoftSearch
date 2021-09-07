@@ -1,5 +1,5 @@
 ---
-title: "ServiceNow Graph connector for Microsoft Search"
+title: "ServiceNow Catalog Graph connector for Microsoft Search"
 ms.author: kam1
 author: TheKarthikeyan
 manager: harshkum
@@ -7,60 +7,55 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the ServiceNow Graph connector for Microsoft Search"
+description: "Set up the ServiceNow Catalog Graph connector for Microsoft Search"
 ---
 <!---Previous ms.author: kam1 --->
 
+# ServiceNow Catalog Graph Connector (Preview)
 
-# ServiceNow Graph Connector
+With the Microsoft Graph Connector for ServiceNow, your organization can [service catalog](https://www.servicenow.com/products/it-service-automation-applications/service-catalog.html) items that are visible to all users or restricted with user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, end users can search for those catalog items from any Microsoft Search client.
 
-With the Microsoft Graph Connector for ServiceNow, your organization can index knowledge-base articles that are visible to all users or restricted with user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, end users can search for those articles from any Microsoft Search client.  
+>[!NOTE]
+>ServiceNow Catalog Graph Connector is in preview. If you wish to get early access to try it, sign up using [<b> this form </b>](https://forms.office.com/r/QyYwQQY2EX).  
 
-You can also refer [the following video](https://www.youtube.com/watch?v=TVSkJpk1RiE) to learn more about Graph Connector's capability in managing search permissions.
-
-[![Managing Search Permissions in Microsoft Graph Connector for ServiceNow.](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
-
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Graph  connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Set up your Graph Connector article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Catalog Graph  connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Set up your Graph Connector article to understand the general setup process.
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR 
 other instructions that apply to only ServiceNow Graph connector including information about [Troubleshooting](#troubleshooting) 
-and [Limitations](#limitations).  
+and [Limitations](#limitations).
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center.
-Follow the general setup instructions.
+Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 2: Name the connection.
-Follow the general setup instructions.
+Follow the general [setup instructions](./configure-connector.md).
 
 
 ## Step 3: Connection Settings
 To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**. Your organization’s ServiceNow instance URL typically looks like **https://&lt;your-organization-domain>.service-now.com**. 
 
-Along with this URL, you will need a **service account** for setting up the connection to ServiceNow as well as for allowing Microsoft Search to periodically update the knowledge articles based on the refresh schedule. The service account will need read access to the following **ServiceNow table records** to successfully crawl various entities.
+Along with this URL, you will need a **service account** for setting up the connection to ServiceNow as well as for allowing Microsoft Search to periodically update the catalog items based on the refresh schedule. The service account will need read access to the following **ServiceNow table records** to successfully crawl various entities.
 
-**Feature** | **Read access required tables** | **Description**
+Feature | Read access required tables | Description
 --- | --- | ---
-Index knowledge articles available to <em>Everyone</em> | kb_knowledge | For crawling knowledge articles
-Index and support user criteria permissions | kb_uc_can_read_mtom | Who can read this knowledge base
-| | kb_uc_can_contribute_mtom | Who can contribute to this knowledge base
-| | kb_uc_cannot_read_mtom | Who cannot read this knowledge base
-| | kb_uc_cannot_contribute_mtom | Who cannot contribute to this knowledge base
+Index catalog items available to <em>Everyone</em> | sc_cat_item | For crawling catalog items
+Index and support user criteria permissions | sc_cat_item_user_criteria_mtom | Who can access this catalog item
+| | sc_cat_item_user_criteria_no_mtom | Who cannot access this catalog item
 | | sys_user | Read user table
 | | sys_user_has_role | Read role information of users
 | | sys_user_grmember | Read group membership of users
 | | user_criteria | Read user criteria permissions
-| | kb_knowledge_base | Read knowledge base information
 
 You can **create and assign a role** for the service account you use to connect with Microsoft Search. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be assigned on the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls). 
 
 
 >[!NOTE]
-> ServiceNow Graph Connector can index knowledge articles and user criteria permissions without advanced scripts. If a user criteria contains advanced script all the related knowledge articles will be hidden from search results.
+> ServiceNow Catalog Graph Connector can index catalog items and user criteria permissions without advanced scripts. If a user criteria contains advanced script all the related catalog items will be hidden from search results.
 
 To authenticate and sync content from ServiceNow, choose **one of three** supported methods: 
  
@@ -70,7 +65,7 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
 
 ## Step 3.1: Basic authentication
 
-Enter the username and password of ServiceNow account with **knowledge** role to authenticate to your instance.
+Enter the username and password of ServiceNow account with **catalog** role to authenticate to your instance.
 
 ## Step 3.2: ServiceNow OAuth
 
@@ -89,7 +84,7 @@ Active | Select the check box to make the application registry active. | Set to 
 Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds). | 31,536,000 (1 year)
 Access token lifespan | The number of seconds that an access token is valid. | 43,200 (12 hours)
 
-Enter the client id and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role. Refer the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
+Enter the client id and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **catalog** role. Refer the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
 ## Step 3.3: Azure AD OpenID Connect
 
@@ -182,9 +177,9 @@ Web service access only | Checked
 
 All other values can be left to default.
 
-### Step 3.3.6: Enable Knowledge role for the ServiceNow account
+### Step 3.3.6: Enable catalog role for the ServiceNow account
 
-Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Refer the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
+Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the catalog role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Refer the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
 Use Application ID as Client ID (from step 3.a), and Client secret (from step 3.b) in admin center configuration wizard to authenticate to your ServiceNow instance using Azure AD OpenID Connect.
 
@@ -192,35 +187,38 @@ Use Application ID as Client ID (from step 3.a), and Client secret (from step 3.
 
 In this step, you can add or remove available properties from your ServiceNow data source. Microsoft 365 has already selected few properties by default.
 
-With a ServiceNow query string, you can specify conditions for syncing articles. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only articles that are published and active. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
+With a ServiceNow query string, you can specify conditions for syncing articles. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only items that are active. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/rome-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
 Use the preview results button to verify the sample values of the selected properties and query filter.
 
 ## Step 5: Manage search permissions
 
-The ServiceNow connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. Indexed data appears in the search results and is visible to all users in the organization or users who have access to them via user criteria permission respectively. If a knowledge article is not enabled with a user criteria, it will appear in search results of everyone in the organization.
+The ServiceNow connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. Indexed data appears in the search results and is visible to all users in the organization or users who have access to them via user criteria permission respectively. If a catalog item is not enabled with a user criteria, it will appear in search results of everyone in the organization.
 
-ServiceNow Graph Connector supports default user criteria permissions without advanced scripts. When the connector encounters a user criteria with advanced script, all data using that user criteria will not appear in search results.
+ServiceNow Catalog Graph Connector supports default user criteria permissions without advanced scripts. When the connector encounters a user criteria with advanced script, all data using that user criteria will not appear in search results.
 
 If you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Azure Active Directory (AAD) provisioned users or Non-AAD users.
 
+To identify which option is suitable for your organization:
+
+1. Choose the **AAD** option if the Email ID of ServiceNow users are **same** as the UserPrincipalName (UPN) of users in AAD.
+2. Choose the **Non-AAD** option if the email ID of ServiceNow users is **different** from the UserPrincipalName (UPN) of users in AAD. 
+
 >[!NOTE]
->If you choose AAD as the type of identity source, make sure you are assigning UserPrincipalName (UPN) source property to email targeted property in ServiceNow. To verify or change your mappings, see [Customizing user provisioning attribute-mappings for SaaS applications in Azure Active Directory](/azure/active-directory/app-provisioning/customize-application-attributes).
-
-If you have elected "non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. 
-
+> * If you choose AAD as the type of identity source, the connector maps the Email IDs of users obtained from ServiceNow directly to UPN property from AAD.
+> * If you chose "Non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
 
 ## Step 6: Assign property labels
 
-Follow the general setup instructions.
+Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 7: Manage schema
 
-Follow the general setup instructions.
+Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 8: Choose refresh settings
 
-Follow the general setup instructions.
+Follow the general [setup instructions](./configure-connector.md).
 
 >[!NOTE]
 >For identities, only full crawl scheduled will be applied.
@@ -229,15 +227,14 @@ Follow the general setup instructions.
 
 Follow the general [setup instructions](./configure-connector.md).
 
-ServiceNow Graph connector has the following limitations in its latest release:
-
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
 ## Limitations
-ServiceNow Graph connector has the following limitations in its latest release:
-- Indexing knowledge articles available to everyone in an organization is a generally available feature.
-- *Only people with access to this data source* feature under Manage Search permissions step is in targeted release channel and processes only [user criteria](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) permissions. Any other type of access permissions will not be applied in the search results.
-- User criteria with advanced scripts are not supported in the current version. Any knowledge articles with such an access restriction will be indexed with deny everyone access i.e. they will not appear in search results to any user until we support them.
+ServiceNow Catalog Graph connector has the following limitations in its latest release:
+
+- *Only people with access to this data source* feature under Manage Search permissions step processes only [user criteria](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) permissions. Any other type of access permissions will not be applied in the search results.
+- User criteria permissions configured at catalog category is not supported. 
+- User criteria with advanced scripts are not supported in the current version. Any catalog items with such an access restriction will be indexed with deny everyone access i.e. they will not appear in search results to any user until we support them.
 
 ## Troubleshooting
 After publishing your connection, customizing the results page, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
@@ -252,15 +249,15 @@ If your organization has enabled Single Sign-On (SSO) to ServiceNow, you may hav
 If you see forbidden or unauthorized response in connection status, check if the service account has required access to the tables mentioned in [step 3: connection settings](#step-3-connection-settings). Please check whether all the columns in the tables have read access.
 
 #### 2.2. Check if ServiceNow instance behind firewall
-Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You will need explicitly allow access to Graph Connector service. You can find public IP address range of Graph Connector Service in the table below. Based on your tenant region, add it to your ServiceNow instance network whitelist.
+Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You will need explicitly allow access to Graph Connector service. You can find public IP address range of Graph Connector Service in the table below. Based on your tenant region, add it to your ServiceNow instance network allow list.
 
-**Environment** | **Region** | **Range**
+ Environment | Region | Range
 --- | --- | ---
 PROD | North America | 52.250.92.252/30, 52.224.250.216/30
 PROD | Europe | 20.54.41.208/30, 51.105.159.88/30 
 PROD | Asia Pacific | 52.139.188.212/30, 20.43.146.44/30 
 
 #### 2.3. Access permissions not working as expected
-If you observe discrepancies in access permissions applied to search results, verify access flow chart for user criteria in [managing access to knowledge bases and articles](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html).
+If you observe discrepancies in access permissions applied to search results, verify user criteria configuration in [applying user criteria to catalog items](https://docs.servicenow.com/bundle/orlando-it-service-management/page/product/service-catalog-management/task/t_AppUserCritItemsCat.html).
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
