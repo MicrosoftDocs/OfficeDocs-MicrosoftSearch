@@ -253,7 +253,7 @@ If your organization has enabled Single Sign-On (SSO) to ServiceNow, you may hav
 If you see forbidden or unauthorized response in connection status, check if the service account has required access to the tables mentioned in [step 3: connection settings](#step-3-connection-settings). Please check whether all the columns in the tables have read access.
 
 #### 2.2. Check if ServiceNow instance behind firewall
-Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You will need explicitly allow access to Graph Connector service. You can find public IP address range of Graph Connector Service in the table below. Based on your tenant region, add it to your ServiceNow instance network whitelist.
+Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You will need explicitly allow access to Graph Connector service. You can find public IP address range of Graph Connector Service in the table below. Based on your tenant region, add it to your ServiceNow instance network allow list.
 
 **Environment** | **Region** | **Range**
 --- | --- | ---
