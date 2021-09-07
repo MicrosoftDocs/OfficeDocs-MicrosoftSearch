@@ -7,7 +7,7 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
@@ -69,7 +69,7 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
     - For refresh token policy, select **Refresh token is valid until revoked**
 
   > [!div class="mx-imgBorder"]
-  > ![Select the Refresh Token Policy named "Refresh token is valid until revoked "](media/salesforce-connector/oauthpolicies.png)
+  > ![Select the Refresh Token Policy named "Refresh token is valid until revoked ".](media/salesforce-connector/oauthpolicies.png)
 
 You can now use the [Microsoft 365 Admin Center](https://admin.microsoft.com/) to complete the rest of the setup process for your Graph connector.
 
@@ -144,7 +144,7 @@ You can select what source properties should be indexed so that they show up in 
 Refine allows you to define the properties that can be later used as custom refiners or filters in the search experience.  
 
 > [!div class="mx-imgBorder"]
-> ![Select the schema for each source property. The options are Query, Search, Retrieve, and Refine](media/salesforce-connector/sf9.png)
+> ![Select the schema for each source property. The options are Query, Search, Retrieve, and Refine.](media/salesforce-connector/sf9.png)
 
 ## Step 8: Set the refresh schedule
 
@@ -161,7 +161,7 @@ Follow the general [setup instructions](./configure-connector.md).
 
 >[!TIP]
 >**Default Result type**
->* The Salesforce connector automatically registers a [result type](./customize-search-page.md#step-2-create-the-result-types) once the connector is published. The result type uses a dynamically generated [result layout](./customize-results-layout.md) based on the fields selected in step 3.
+>* The Salesforce connector automatically registers a [result type](./customize-search-page.md#step-2-create-result-types) once the connector is published. The result type uses a dynamically generated [result layout](./customize-results-layout.md) based on the fields selected in step 3.
 >* You can manage the result type by navigating to [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) in the [Microsoft 365 admin center](https://admin.microsoft.com). The default result type will be named as "`ConnectionId`Default". For example, if your connection id is `Salesforce`, your result layout will be named: "SalesforceDefault"
 >* Also, you can choose to create your own result type if needed.
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->

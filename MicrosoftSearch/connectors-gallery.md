@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: landing-page
 layout: LandingPage
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
@@ -25,4 +25,4 @@ Visit the [Microsoft Graph connectors gallery](http://www.microsoft.com/microsof
 
 <br>
 
-![Image showing the new connectors gallery](media/connectors-gallery.png)
+![Image showing the new connectors gallery.](media/connectors-gallery.png)

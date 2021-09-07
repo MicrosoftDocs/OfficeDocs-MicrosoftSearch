@@ -6,7 +6,7 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
@@ -35,7 +35,7 @@ We recommend using the “title” property as the search result title and the "
 
 Result clusters are displayed in the middle of page on the All vertical. For example, a result cluster from a 'MediaWiki' vertical is displayed below.
 
-![Example of a MediaWiki result cluster](media/result-cluster/result-cluster-example.png)
+![Example of a MediaWiki result cluster.](media/result-cluster/result-cluster-example.png)
 
 ## Result clusters default settings
   
