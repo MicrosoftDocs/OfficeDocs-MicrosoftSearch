@@ -45,7 +45,7 @@ You can select one of the following Azure AD properties:
 
 You can select non-Azure AD properties pulled from your data source to apply regular expressions on. To learn more about where to find these properties in your data source, see the [Confluence Cloud](confluence-cloud-connector.md) , [ServiceNow Knowledge](servicenow-knowledge-connector.md), [ServiceNow Catalog](servicenow-catalog-connector.md) and [Salesforce](salesforce-connector.md) pages.  
 
-You can select a non-Azure AD user property from the dropdown and provide a regular expression to be applied on those user property values. To learn more about regular expressions, see [regular expression reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).  
+You can select a non-Azure AD user property from the dropdown and provide a regular expression to be applied on those user property values. To learn more about regular expressions, see [regular expression reference](dotnet/docs/docs/standard/base-types/regular-expression-language-quick-reference.md).
 
 Below are some examples of regular expressions and their outputs applied to a sample string: 
 
