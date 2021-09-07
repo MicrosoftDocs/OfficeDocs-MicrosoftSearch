@@ -66,9 +66,10 @@ You can connect to the following data sources using connectors created by Micros
 * [MediaWiki](mediawiki-connector.md)
 * [File share](fileshare-connector.md)
 * [Oracle SQL](OracleSQL-connector.md)
-* [Salesforce (preview)](salesforce-connector.md)
+* [Salesforce](salesforce-connector.md)
 * [ServiceNow Knowledge](servicenow-knowledge-connector.md)
 * [ServiceNow Catalog (preview)](servicenow-catalog-connector.md)
+
 
 The [Microsoft Graph connectors gallery](https://www.microsoft.com/microsoft-search/connectors) contains a brief description of each of these connectors. If you're ready to connect one of these data sources to your tenant, be sure to read the [Setup overview](configure-connector.md) and any other articles in the Setup connectors by Microsoft section that apply to your data source.
 
@@ -98,7 +99,6 @@ The set of connectors and features in preview include:
 
 * [Azure DevOps connector](azure-devops-connector.md)
 * [Confluence Cloud connector](confluence-cloud-connector.md)
-* [Salesforce connector](salesforce-connector.md)
 * [ServiceNow Catalog connector](servicenow-catalog-connector.md)
 * [Manage custom filters](custom-filters.md)
 * [Multiple connections in a vertical](customize-search-page.md#multiple-connections-in-a-vertical)
