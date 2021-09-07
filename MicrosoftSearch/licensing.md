@@ -65,3 +65,4 @@ There are two options to explore Graph connectors with Microsoft Viva Topics:
 
 > [!NOTE]
 > Currently, Microsoft Graph connectors only support up to 7 million items of total index quota, which includes any built-in quota bundled into Microsoft 365 or Office 365 E5 licenses. The platform will support higher limits in the future. Please contact Microsoft support or your Microsoft account manager if you have any questions.
+> Preview connectors do not count against quota, after a connector becomes generally available, it starts to count on the total index quota.
