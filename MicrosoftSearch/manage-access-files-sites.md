@@ -26,9 +26,11 @@ Use the tools, policies, and techniques below to restrict or obfuscate access to
 
 ### Public sites or sites with public owners
 
-One way files can be shared with everyone in your organization is through public sites or sites with public owners. Sensitivity labels can prevent users from creating public groups or sites. This is done by configuring all labels to create private groups and requiring a label for groups. For details, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites). You'll need to define a separate process for users to request or create public groups.
+One way files can be shared with everyone in your organization is through public sites or sites with public owners. Sensitivity labels can prevent users from creating public groups or sites. This is done by configuring all labels to create private groups and requiring a label for groups. For details, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
-Another option is to define who can create Microsoft 365 groups in your organization. For more information, see [Create a group for users who need to create Microsoft 365 groups](/microsoft-365/solutions/manage-creation-of-groups#step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups). A Global admin will need to set up a process for users to submit group creation requests. We also suggest you inform users about this change.
+Another option is to define who can create Microsoft 365 groups in your organization. For more information, see [Create a group for users who need to create Microsoft 365 groups](/microsoft-365/solutions/manage-creation-of-groups#step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups).
+
+When implementing either of these solutions, we also suggest you set up a process for requesting new public groups and inform your users about the change.
 
 If restricting the ability to create groups isn't possible for your organization, you can monitor activity, including group creation, through auditing. For details about basic and advanced auditing, see [Auditing solutions in Microsoft 365](/microsoft-365/compliance/auditing-solutions-overview).
 
