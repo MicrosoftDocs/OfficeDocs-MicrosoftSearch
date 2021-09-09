@@ -4,6 +4,8 @@
     href: overview-microsoft-search.md
   - name: Set up
     href: setup-microsoft-search.md
+  - name: Manage access to files and sites
+    href: manage-access-files-sites.md
   - name: Frequently asked questions
     href: faqs.md
 - name: Get insights
