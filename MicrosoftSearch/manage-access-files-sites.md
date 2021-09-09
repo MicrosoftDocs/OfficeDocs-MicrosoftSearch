@@ -22,23 +22,23 @@ Search admins can't resolve these oversharing issues. Files and sites without re
 
 ## Solutions to prevent oversharing
 
-Use the tools, policies, and techniques below to restrict or obfuscate access to info to help prevent oversharing. Implementing these solutions will require likely Global, Compliance, or Security admin access. We also recommend an internal campaign to educate your users about how to properly secure, label, and permission their sites and files.
+Use the tools, policies, and techniques below to restrict or obfuscate access to information to help prevent oversharing. Implementing these solutions will likely require Global, Compliance, or Security admin access. We also recommend an internal campaign to educate your users about how to properly secure, label, and permission their sites and files.
 
-### Public sites or sites with public owners
+### Public sites or sites with public groups as owners
 
-One way files can be shared with everyone in your organization is through public sites or sites with public owners. Sensitivity labels can prevent users from creating public groups or sites. This is done by configuring all labels to create private groups and requiring a label for groups. For details, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+One way files can be shared with everyone in your organization is through public sites or sites with public groups as owners. Sensitivity labels can prevent users from creating public groups or sites. This is done by configuring all labels to create private groups/sites and mandating a label for groups/sites. For details, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
-Another option is to define who can create Microsoft 365 groups in your organization. For more information, see [Create a group for users who need to create Microsoft 365 groups](/microsoft-365/solutions/manage-creation-of-groups#step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups).
+Another option is to control who can create Microsoft 365 groups in your organization. For more information, see [Create a group for users who need to create Microsoft 365 groups](/microsoft-365/solutions/manage-creation-of-groups#step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups).
 
-When implementing either of these solutions, we also suggest you set up a process for requesting new public groups and inform your users about the change.
+When implementing either of these solutions, we also suggest you set up a process for users to request creation of public groups and inform your users about the change.
 
-If restricting the ability to create groups isn't possible for your organization, you can monitor activity, including group creation, through auditing. For details about basic and advanced auditing, see [Auditing solutions in Microsoft 365](/microsoft-365/compliance/auditing-solutions-overview).
+If restricting the ability to create groups isn't possible for your organization, you can monitor activities, including group creation, through auditing. For details about basic and advanced auditing, see [Auditing solutions in Microsoft 365](/microsoft-365/compliance/auditing-solutions-overview).
 
 ### Shared files
 
 To restrict access to all files classified as business sensitive, you can define and apply data classifications for your organization. Sample data will need to be collected to help train new classifiers. For details about prerequisites and permissions, see [Learn about data classification](/microsoft-365/compliance/data-classification-overview).
 
-To restrict file access to members of a specific group, like executives, you can create custom labels scoped to a security group. Then, when a security group member applies the label it automatically restricts access to the group. To learn more about custom labels, see [Create and configure sensitivity labels and their policies](/microsoft-365/compliance/create-sensitivity-labels) and [Restrict access to content by using sensitivity labels to apply encryption](/microsoft-365/compliance/encryption-sensitivity-labels).
+To restrict file access to members of a specific group, like executives, you can create custom labels scoped to a security group. Then, when a security group member applies the label, it automatically restricts access to the group. To learn more about custom labels, see [Create and configure sensitivity labels and their policies](/microsoft-365/compliance/create-sensitivity-labels) and [Restrict access to content by using sensitivity labels to apply encryption](/microsoft-365/compliance/encryption-sensitivity-labels).
 
 To ensure documents and emails are properly labeled, admins can also set a default label policy and require users to label them. For more information, see [Require users to apply a label to their email and documents](/microsoft-365/compliance/sensitivity-labels-office-apps#require-users-to-apply-a-label-to-their-email-and-documents).
 
