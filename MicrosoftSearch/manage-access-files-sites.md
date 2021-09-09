@@ -16,7 +16,7 @@ description: "An overview of how administrators can ensure access to sites and f
 
 # Manage access to files and sites
 
-Not every file or site should be available to everyone in your organization. Administrators and users can manage access to sensitive or confidential info using solutions that best address their specific issues. If adequate access controls aren't consistently applied, it can result in something we refer to as 'oversharing.' By making it easier to find info shared within your organization, files and sites with improper restrictions can be inadvertently accessed using Microsoft Search.
+Not every file or site should be available to everyone in your organization. Administrators and users can manage access to sensitive or confidential info using solutions that best address their specific issues. If adequate access controls aren't consistently applied, it can result in something we refer to as 'oversharing.' By making it easier to find information shared within your organization, files and sites with improper restrictions can be inadvertently accessed using Microsoft Search.
 
 Search admins can't resolve these oversharing issues. Files and sites without restricted access will be surfaced in internal search results and through other avenues of discovery. However, when controls to prevent oversharing are in place, all avenues, including search, will be closed.
 
@@ -26,9 +26,9 @@ Use the tools, policies, and techniques below to restrict or obfuscate access to
 
 ### Public sites or sites with public groups as owners
 
-One way files can be shared with everyone in your organization is through public sites or sites with public groups as owners. Sensitivity labels can prevent users from creating public groups or sites. This is done by configuring all labels to create private groups/sites and mandating a label for groups/sites. For details, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+One way files can be shared with everyone is through public sites or sites with public groups as owners. Sensitivity labels can prevent users from creating public groups or sites. For details about configuring all labels to create private groups/sites and mandating a label for groups/sites, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 Groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
-Another option is to control who can create Microsoft 365 groups in your organization. For more information, see [Create a group for users who need to create Microsoft 365 groups](/microsoft-365/solutions/manage-creation-of-groups#step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups).
+Another option is to control who can create Microsoft 365 Groups in your organization. For more information, see [Create a group for users who need to create Microsoft 365 Groups](/microsoft-365/solutions/manage-creation-of-groups#step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups).
 
 When implementing either of these solutions, we also suggest you set up a process for users to request creation of public groups and inform your users about the change.
 
