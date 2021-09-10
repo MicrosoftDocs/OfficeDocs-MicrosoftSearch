@@ -15,16 +15,14 @@ description: "Add custom Edge shortcuts for Microsoft Search in Bing or turn off
 ---
 # Customize or disable address bar shortcuts for Microsoft Edge
 
-Help your users stay focused and find work results faster when searching from the Microsoft Edge address bar. Shortcuts are enabled by default along with two keywords - your organization's preferred or shortened name and 'work.' When using Edge, users can then type one of the keywords in the address bar, press the Spacebar or Tab key, type their search, and press the Enter key. The work results page will appear with relevant answers and results. Also, you can add your own custom shortcuts.
+Help your users stay focused and find work results faster when searching from the Microsoft Edge address bar. Two shortcuts are enabled by default, 'work' and your organization's preferred or shortened name. In the Edge address bar, users can type a keyword, then press the Tab key. The address bar will indicate they're searching within your organization. When they type their search and press the Enter key, they'll see a search results page with relevant answers and results. You can add two custom shortcuts keywords.
 
 ## To add keywords or turn off shortcuts
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [Configurations](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations).
 2. Under Microsoft Search in Bing settings, select **Change settings**.
 3. In the Microsoft Search in Bing panel, the **Enable the Microsoft Search in Bing shortcut** is selected by default. To disable these shortcuts, clear the check box.
-4. In Search Keywords field, you'll see 'work' and your organization preferred or shortened name (without spaces). When entering another keywords, there are a few things to keep in mind:
-    - Don't include spaces or special characters
-    - You can have a maximum of four keywords
+4. In Search Keywords field, enter one or two more keywords. Don't include spaces or special characters.
 5. Select **Save**.
 
 ## Frequently asked questions
@@ -39,7 +37,7 @@ Help your users stay focused and find work results faster when searching from th
 
 **Q: Can I add shortcuts for my Google Chrome users?**
 
-**A**: Not through the Microsoft 365 admin center. They can create their own shortcuts in Chrome by going to settings for Manage search engines, and, under Other search engines, adding a site name, keyword, and Query URL.
+**A**: Not through the Microsoft 365 admin center. Users can create their own shortcuts in Chrome by going to settings for Manage search engines, and under Other search engines, adding a site name, keyword, and Query URL.
 
 **Q: Can I use these same keywords when using Windows Search?**
 
