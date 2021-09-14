@@ -4,6 +4,8 @@
     href: overview-microsoft-search.md
   - name: Set up
     href: setup-microsoft-search.md
+  - name: Manage access to files and sites
+    href: manage-access-files-sites.md
   - name: Frequently asked questions
     href: faqs.md
 - name: Get insights
@@ -54,6 +56,10 @@
           href: azure-devops-connector.md
         - name: Azure SQL and Microsoft SQL Server
           href: MSSQL-connector.md
+        - name: Confluence Cloud (preview)
+          href: confluence-cloud-connector.md
+        - name: Jira Cloud (preview)
+          href: jira-connector.md
         - name: Enterprise websites
           href: enterprise-web-connector.md
         - name: File share
@@ -64,8 +70,10 @@
           href: OracleSQL-connector.md
         - name: Salesforce
           href: salesforce-connector.md
-        - name: ServiceNow
-          href: servicenow-connector.md
+        - name: ServiceNow Catalog (preview)
+          href: servicenow-catalog-connector.md
+        - name: ServiceNow Knowledge
+          href: servicenow-knowledge-connector.md
     - name: Manage connections
       items:
       - name: Monitor connections

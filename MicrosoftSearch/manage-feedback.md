@@ -61,7 +61,7 @@ If you want to share search feedback with others or retain them for longer than 
 
 ## Send user feedback to Microsoft
 
-By default, all user feedback is sent to Microsoft and addition to you. To stop sending feedback to Microsoft, click **Manage settings**, and clear the **Automatically send user feedback to Microsoft** check box. It can take up to 24 hours for this change to take effect.
+By default, all user feedback is sent to Microsoft in addition to you. To stop sending feedback to Microsoft, click **Manage settings**, and clear the **Automatically send user feedback to Microsoft** check box. It can take up to 24 hours for this change to take effect.
 
 If you've decided to not send feedback to Microsoft automatically, you can still send individual pieces of feedback to Microsoft.
 
