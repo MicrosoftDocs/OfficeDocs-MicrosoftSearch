@@ -32,7 +32,7 @@ IMAGE HERE TBD
 
 Microsoft Search in Bing is enabled by default for everyone in your organization. If a user has already signed in to their work or school account on another service--such as Outlook, Microsoft Teams, or SharePoint--they'll be automatically signed in to the same account when they go Bing. For more information, see [Security and Privacy for Microsoft Search in Bing](security-for-search.md).
 
-If you're unfamiliar with Microsoft Search in Bing, we suggest reviewing the Microsoft Search in Bing [Admin Essentials Guide](https://aka.ms/SearchAdminEssentials) for configuration and deployment information. To help increase user awareness of Microsoft Search, our [adoption kit](https//aka.ms/SearchAdoptionKit) includes training and communication resources.
+If you're unfamiliar with Microsoft Search in Bing, we suggest reviewing the Microsoft Search in Bing [Admin Essentials Guide](https://aka.ms/SearchAdminEssentials) for configuration and deployment information. To help increase user awareness of Microsoft Search, our [adoption kit](https://aka.ms/SearchAdoptionKit) includes training and communication resources.
 
 ## Search experiences for work and school
 
@@ -58,9 +58,9 @@ With a simple script, you can add a customized search box and even direct it to 
 
 To help increase adoption of Microsoft Search in Bing, consider ways to make it a seamless part of your user's day by setting defaults.
 
-**Default browser**: When you make Microsoft Edge your default browser, your users can search your organization, and get relevant search suggestions, right from the address bar. Searching from the address bar is a fast and easy to find information, and they don't need to go to Bing to start a search. For more information, see [Set Microsoft Edge as the default browser](deployedge/edge-default-browser).
+**Default browser**: When you make Microsoft Edge your default browser, your users can search your organization, and get relevant search suggestions, right from the address bar. Searching from the address bar is a fast and easy to find information, and they don't need to go to Bing to start a search. For more information, see [Set Microsoft Edge as the default browser](/deployedge/edge-default-browser).
 
-**Default search engine**: If changing your default browser isn't an option, you can enable work or school search from the address bar by setting Bing as your default search engine. For details, see [Make Bing the default search engine](set-default-search-engine.md). If your organization has a Microsoft 365 Apps for enterprise (formerly Office 365 ProPlus) service plan, you can set Bing as the default search engine for Google Chrome by deploying the Microsoft Search in Bing extension. For more information, see [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](deployoffice/microsoft-search-bing).
+**Default search engine**: If changing your default browser isn't an option, you can enable work or school search from the address bar by setting Bing as your default search engine. For details, see [Make Bing the default search engine](set-default-search-engine.md). If your organization has a Microsoft 365 Apps for enterprise (formerly Office 365 ProPlus) service plan, you can set Bing as the default search engine for Google Chrome by deploying the Microsoft Search in Bing extension. For more information, see [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](/deployoffice/microsoft-search-bing).
 
 **Default homepage**: Setting Bing as your organization's default homepage won't enable searching work or school from the address bar, but it does provide any easy way to access bing.com. For more information, see [Make Bing.com the default home page](set-default-homepage.md).
 
