@@ -106,7 +106,7 @@ In [admin center](https://admin.microsoft.com), go to [**Floor plans**](https://
 
 ### Step 8: (Optional) Specify location patterns
 
-After uploading a floor plan, the room text labels are compared to the office locations in your users' profiles. If the office locations or text labels don't consistently follow the recommended naming patterns in [Step 2](#step-2-review-your-floor-plans) and [Step 3](step-3-update-office-locations-on-user-profiles), use the Specify location patterns screen to add more information to complete the mapping. Location patterns are used to extract floor, wing, and room information from AAD office locations.
+After uploading a floor plan, the room text labels are compared to the office locations in your users' profiles. If the office locations or text labels don't consistently follow the recommended naming patterns in [Step 2](#step-2-review-your-floor-plans) and [Step 3](#step-3-update-office-locations-on-user-profiles), use the Specify location patterns screen to add more information to complete the mapping. Location patterns are used to extract floor, wing, and room information from AAD office locations.
 
 ![Specify locations patterns screenshot](media/floor-plans/floorplans-locationpattern.png)
 
