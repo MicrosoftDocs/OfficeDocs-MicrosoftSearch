@@ -31,6 +31,9 @@ Any valid **Microsoft 365 or Office 365 license** allows you to view data from c
 
 To index content using Graph connectors, you need to have sufficient index quota. Graph connectors index quota is available via:
 
+- Built-in entitlements
+- Purchase of add-on index quota
+
 ## Entitlement built into Microsoft 365 or Office 365 E5 licenses
 
 The following licenses include entitlement to 500 items of index quota, which counts towards your organization's quota for ingesting content from Graph connectors:
