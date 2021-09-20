@@ -2,6 +2,16 @@
 
 
 
+## Week of September 13, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/13/2021 | [Managing User Feedback](/MicrosoftSearch/manage-feedback) | modified |
+| 9/17/2021 | [License requirements and pricing](/MicrosoftSearch/licensing) | modified |
+| 9/17/2021 | [Select a school or work search experience (Preview)](/MicrosoftSearch/select-work-school-search-experience) | added |
+
+
 ## Week of September 06, 2021
 
 
