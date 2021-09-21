@@ -26,7 +26,7 @@ When people in your organization use Microsoft Search in Bing, there are two pla
 
 Users can easily identify work or school results by looking for your organization's logo, name, or their profile image.
 
-IMAGE HERE TBD
+![All and work results pages for Contoso and school results page for Contoso middle school](media/msb-overview/all-work-school-serps.gif)
 
 ## Getting started with Microsoft Search in Bing
 
