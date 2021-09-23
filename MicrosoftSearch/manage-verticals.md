@@ -84,7 +84,7 @@ You can add search verticals that are relevant to your organization. These will 
 You can add verticals to show results from content indexed via connectors or from SharePoint. 
 
 > [!NOTE]
-> You can use a limited set of [Keyword Query Language (KQL)](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) to narrow the scope. (The properties that you can use are described later in this article.) We recommend that you use free-text keywords and property restrictions with Boolean operators. KQL also supports profile query variables to fine-tune results under the vertical.
+> You can use a limited set of [Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) to narrow the scope. (The properties that you can use are described later in this article.) We recommend that you use free-text keywords and property restrictions with Boolean operators. KQL also supports profile query variables to fine-tune results under the vertical.
 
 To create the custom verticals on Microsoft Search in SharePoint home, Office, or Bing.
 
@@ -116,7 +116,7 @@ To create the custom verticals on Microsoft Search in SharePoint home, Off
 - Vertical modification and new verticals are not visible to guest users in an organization   
 
 ## Keyword Query Language (KQL)
-A query can be added to a vertical to narrow down results shown on the search vertical using [Keyword Query Language (KQL)](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) (limited support).   This page lists the available properties. We recommend that you use free-text keywords and property restrictions with Boolean operators for creating the KQL.   
+A query can be added to a vertical to narrow down results shown on the search vertical using [Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) (limited support).   This page lists the available properties. We recommend that you use free-text keywords and property restrictions with Boolean operators for creating the KQL.   
 
 A few examples of queries are:
 - Excluding results from sites    
