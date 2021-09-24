@@ -42,14 +42,10 @@ After you start the wizard, you're guided through the steps to define the name, 
 #### Create a result type at the organization level
 1. In [Microsoft 365 admin center](https://admin.microsoft.com/), go to **Result types**.   
 2. To add a Result type, click **Add**.
-3. Enter a result type name that will help you identify this result type to other Search admins.
->[!Note]
->Users won’t see this information.
+3. Enter a result type name that will help you identify this result type to other Search admins. Users won’t see this information.
 4. Select a **content source**.
 5. Set rules for the result type. If you don’t set rules, the content source is used for the best match.
-6. Select **Launch Layout Designer**.
->[!Note]
->You can use an existing layout or create a custom layout and map available properties to layout elements. Copy the JSON script when you're done.
+6. Select **Launch Layout Designer**. You can use an existing layout or create a custom layout and map available properties to layout elements. Copy the JSON script when you're done.
 7. After adding a result type, you can review and save the result type.
 Or
 8. To edit a result type, select the result type from the list.
