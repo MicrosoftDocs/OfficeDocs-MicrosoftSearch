@@ -70,5 +70,5 @@ Microsoft Search in Bing uses enhanced security and privacy measures to help pro
 
 ## See also
 
-[Overview of Microsoft Search](overview-microsoft-search.md)
-[Plan your content](plan-your-content.md)
+- [Overview of Microsoft Search](overview-microsoft-search.md)
+- [Plan your content](plan-your-content.md)
