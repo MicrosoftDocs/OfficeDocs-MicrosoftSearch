@@ -21,7 +21,6 @@ Floor plans in Microsoft Search help users find people, rooms, and spaces within
 - Where is Daisy's office?
 - Building 2 floor 3
 - Workspace-1
-- Find 2/11173
 - B1/1.20
 
 ## What users experience
@@ -63,7 +62,7 @@ Add or update office locations for users with an assigned work location. You can
 In this example, Allan's office is in room 1173 on floor 1 of building 2.
 ![User list with building and office location](media/floor-plans/floorplans-userlistview.png)
 
-To set up floor plans for meeting rooms or flexible workspaces, add office locations for them in the [Rooms & equipment](https://admin.microsoft.com/Adminportal/Home#/ResourceMailbox) section of the Microsoft 365 admin center. For more information, see [Set up room and equipment mailboxes](/microsoft-365/admin/manage/room-and-equipment-mailboxes#set-up-room-and-equipment-mailboxes). If people in your organization can schedule the room or resource for a meeting or event, see [Change how a room mailbox handles meeting requests](/Exchange/recipients/room-mailboxes#change-how-a-room-mailbox-handles-meeting-requests).
+To set up floor plans for meeting rooms, add office locations for them in the [Rooms & equipment](https://admin.microsoft.com/Adminportal/Home#/ResourceMailbox) section of the Microsoft 365 admin center. For more information, see [Set up room and equipment mailboxes](/microsoft-365/admin/manage/room-and-equipment-mailboxes#set-up-room-and-equipment-mailboxes). If people in your organization can schedule the room or resource for a meeting or event, see [Change how a room mailbox handles meeting requests](/Exchange/recipients/room-mailboxes#change-how-a-room-mailbox-handles-meeting-requests). For information about configuring workspaces, including setting up room mailboxes, see the post about [Book a workspace in Outlook](https://techcommunity.microsoft.com/t5/exchange-team-blog/book-a-workspace-in-outlook/ba-p/1524560).
 
 ### Step 4: Verify office location
 
@@ -97,7 +96,7 @@ In [admin center](https://admin.microsoft.com), go to [**Floor plans**](https://
     - To publish, select **Skip and publish**.
 1. Enter the building code for this floor plan. The building code can be found on users' office location property. For example, if a user's office location is **2/1173**, then the building code is **2**.
 1. On the review screen, repeat step 6 to ensure the mapping is correct. If you're satisfied with the mapping, select **Continue mapping** and **Skip and publish**. If not, select **Continue mapping** and go to the Specify location patterns screen.
-1. (Optional) Review and identify the naming logic for all unique location patterns within your Azure directory, then select **Next**.
+1. (Optional) Review and identify the naming logic for all unique location patterns for this building within your Azure directory, then select **Next**.
 1. On the review screen, repeat step 6 to ensure the mapping is correct.
 1. When you're ready, select **Publish** to make the floor plan available in Microsoft Search.
 
