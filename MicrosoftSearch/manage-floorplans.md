@@ -205,7 +205,7 @@ If the DWG file contains data for multiple wings, leave the wing field blank whe
 
 **Q:** Can I upload two DWG files for the same floor, one with just the floor defined and the other with floor and wing defined?
 
-**A:** You can upload more than one DWG file for the same floor, but you'll need to indicate a wing or zone for each file. In the example below, you would need to enter a Wing or zone value for the FloorPlan1.dwg file before you can go to the next screen.
+**A:** You can upload more than one DWG file for the same floor, but you'll need to indicate a wing or zone for each file. In the example below, you would need to enter a Wing or zone value for the FloorPlan1.dwg file before you can go to the next screen. If the floor plan file doesn't have a wing or has multiple wings, enter a value like 0 or X in the Wing or zone field to continue.
 
 ![Uploading multiple plans for the same floor](media/floor-plans/upload-files-with-without-wings.png)
 
@@ -217,11 +217,11 @@ If the DWG file contains data for multiple wings, leave the wing field blank whe
 
 **A:** No. If you followed the formatting recommendations for labels and office locations in [Step 2](#step-2-review-your-floor-plans) and [Step 3](#step-3-update-office-locations-on-user-profiles), and completed items 1-8 in [Step 7](#step-7-upload-floor-plans), you shouldn't need to specify locations patterns.
 
-But, if your users still aren't mapped or you're not satisfied with the mapping, complete the optional [Step 8](#step-8-optional-specify-location-patterns). In Step 8, you only need to define each *unique* location pattern for the floor plan you're uploading. For example, you're uploading floor plans for building A, which has 1,000 offices. Five different location patterns are used across the 1,000 offices. When specifying location patterns, you'll need to define the five patterns used.
+But, if your users still aren't mapped or you're not satisfied with the mapping, complete the optional [Step 8](#step-8-optional-specify-location-patterns). In Step 8, you need to define each *unique* location pattern found in your Azure AD for the building code associated with the floor plan you're uploading. For example, you're a uploading floor plan for building A, which has 1,000 offices. Five different location patterns are used for the offices in Building A. When specifying location patterns, you'll need to define the five patterns that appear in your Azure AD for the building.
 
 **Q:** Can I create floor plan answers for conference rooms, meeting rooms, or spaces that don't have a person assigned to them?
 
-**A:** Yes, you can. Just add the space to your list of rooms and equipment. For more information, see [Set up room and equipment mailboxes](/microsoft-365/admin/manage/room-and-equipment-mailboxes#set-up-room-and-equipment-mailboxes). If people in your organization can schedule the room or resource for a meeting or event, see [Change how a room mailbox handles meeting requests](/Exchange/recipients/room-mailboxes#change-how-a-room-mailbox-handles-meeting-requests). For floor plans, follow the recommendations for the DWG room labels in [Step 2](#step-2-review-your-floor-plans) and profile location in [Step 3](#step-3-update-office-locations-on-user-profiles). After adding a room or workspace, you'll need to wait 72 hours for the index to be updated before uploading the floor plan.
+**A:** Yes, you can. Just add the meeting room to your list of rooms and equipment. For more information, see [Set up room and equipment mailboxes](/microsoft-365/admin/manage/room-and-equipment-mailboxes#set-up-room-and-equipment-mailboxes). If people in your organization can schedule the room or resource for a meeting or event, see [Change how a room mailbox handles meeting requests](/Exchange/recipients/room-mailboxes#change-how-a-room-mailbox-handles-meeting-requests). To configure workspaces, including setting up room mailboxes, see the post about [Book a workspace in Outlook](https://techcommunity.microsoft.com/t5/exchange-team-blog/book-a-workspace-in-outlook/ba-p/1524560). For floor plans, follow the recommendations for the DWG room labels in [Step 2](#step-2-review-your-floor-plans) and profile location in [Step 3](#step-3-update-office-locations-on-user-profiles). After adding a room or workspace, you'll need to wait 72 hours for the index to be updated before uploading the floor plan.
 
 **Q:** I've completed all of the steps to add a floor plan. Why don't they appear in Microsoft Search results?
 
@@ -237,7 +237,7 @@ But, if your users still aren't mapped or you're not satisfied with the mapping,
 
 **Q:** Can you describe a scenario where I would need to specify location patterns?
 
-**A:** Let's say you have a building with the code 'Design B' and you're trying to add a plan for the first floor, 'F1.' Your user's office location have these values indicating their cubicle numbers on the floor:
+**A:** Let's say you have a building with the code 'Design B' and you're trying to add a plan for the first floor, 'F1.' The office locations on the users' profiles have these values indicating their cubicle numbers on the floor:
 
 - User 1: DesignB/F121
 - User 2: DesignB/F122
@@ -255,11 +255,11 @@ The DWG file for the floor has these text labels for the same cubicles:
 - 25
 - 26
 
-Because of the differences between the user's office locations and the corresponding text labels (F121 and 21, F1-25 and 25), Microsoft Search won't be able to automatically match them. After uploading the file, the initial review will show zero locations have been mapped. Continue mapping and in the Link office locations stage, enter the building code.
+Because of the differences between the office locations that appear on the users' profiles and the corresponding text labels (F121 and 21, F1-25 and 25), Microsoft Search won't be able to automatically match them. After uploading the file, the initial review will show zero locations have been mapped. Continue mapping and in the Link office locations stage, enter the building code, DesignB.
 
-In the second review stage, Microsoft Search will ignore the building code value in the user's office locations and try again to automatically match the office locations and text labels. In this scenario, the second review will again show zero locations have been mapped. You'll need to again continue mapping. At this point you'll be prompted to specify location patterns.
+In the second review stage, Microsoft Search will ignore the building code value in the user's office locations and try again to automatically match the office locations and text labels (F121 and 21, F1-25 and 25). In this scenario, the second review will again show zero locations have been mapped. You'll need to again continue mapping. At this point you'll be prompted to specify location patterns.
 
-When you specify location patterns, you don't need to add info for every office, only for *unique patterns*. In this stage, Microsoft Search determines all unique location patterns for the building, it isn't limited to the floor plan you've uploaded. For the users in this scenario, there are two unique location patterns. You'll see a randomly picked location for each pattern. Enter the corresponding floor and room values:
+When you specify location patterns, you don't need to add info for every office, only for the *unique patterns* that appear in your Azure AD. In this stage, Microsoft Search determines all unique location patterns for the building, it isn't limited to the floor plan you've uploaded. For the users in this scenario, there are two unique location patterns. You'll see a randomly picked location for each pattern. Enter the corresponding floor and room values:
 
 |Location| |Floor|Wing or zone|Room|
 |:-----|:-----|:-----|:-----|:-----|
@@ -271,4 +271,4 @@ When you specify location patterns, you don't need to add info for every office,
 1. For Rooms, do the values match any of the text labels in the DWG file?
 1. When concatenated, do the Floor, Wing, and Room values match any of the text labels in the DWG file?
 
-If either check returns a match, the location pattern mapping is successful and you move to the final stage. In the Ready to go stage, you'll see the number of users mapped to the floor plan locations. You can verify this in the Details pane.
+If either check returns a match, the location mapping for that pattern is successful and you move to the final stage. In the Ready to go stage, you'll see the number of users mapped to the floor plan locations. You can verify this in the Details pane. In this scenario, only users 1-4 would be mapped. The preferred method to map users 5 and 6, is to update their user profile to follow the specified pattern, DesignB/F125. You can also edit the text labels in the DWG file to match the unique pattern, -25 instead of 25.
