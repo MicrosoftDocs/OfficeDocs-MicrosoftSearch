@@ -110,8 +110,10 @@
       href: manage-classic-spo-pages.md
   - name: Microsoft Search in Bing
     items:
+    - name: Overview
+      href: overview-microsoft-search-bing.md
     - name: Security and Privacy
-      href: security-for-search.md
+      href: security-for-search.md      
     - name: Add a search box to your intranet site
       href: add-a-search-box-to-your-intranet-site.md
     - name: Make Microsoft Edge the default browser
