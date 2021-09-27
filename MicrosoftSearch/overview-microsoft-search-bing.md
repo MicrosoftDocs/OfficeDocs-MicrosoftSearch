@@ -21,12 +21,12 @@ Microsoft Search in Bing brings together the capabilities of Microsoft Search an
 
 When people in your organization use Microsoft Search in Bing, there are two places they can see work or school results:
 
-- ALL results page: if there's a relevant work or school result, it will appear at the top of the search results page, followed by public web results
+- ALL results page: if there's a relevant work or school result, it will appear at the top of the search results page, followed by public web results.
 - WORK or SCHOOL results page: Only results from your organization appear on this page. It never includes public web results.
 
-Users can easily identify work or school results by looking for your organization's logo, name, or their profile image.
-
 ![All and work results pages for Contoso and school results page for Contoso middle school](media/msb-overview/all-work-school-serps.gif)
+
+Users can easily identify work or school results by looking for your organization's logo, name, or their profile image.
 
 ## Getting started with Microsoft Search in Bing
 
