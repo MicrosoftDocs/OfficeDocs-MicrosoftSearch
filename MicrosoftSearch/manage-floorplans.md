@@ -255,7 +255,7 @@ The DWG file for the floor has these text labels for the same cubicles:
 - 25
 - 26
 
-Because of the differences between the office locations that appear on the users' profiles and the corresponding text labels (F121 and 21, F1-25 and 25), Microsoft Search can't match them. After uploading the file, the initial review shows zero locations have been mapped. Continue mapping and in the Link office locations stage, enter the building code, DesignB.
+Because of the differences between the office locations that appear on the users' profiles and the corresponding text labels (DesignB/F121 and 21, DesignB/F1-25 and 25), Microsoft Search can't match them. After uploading the file, the initial review shows zero locations have been mapped. Continue mapping and in the Link office locations stage, enter the building code, DesignB.
 
 In the second review stage, Microsoft Search ignores the building code value in the user's office locations and tries again to match the office locations and text labels (F121 and 21, F1-25 and 25). The second review again shows zero locations have been mapped. You'll need to again continue mapping. At this point, you'll be prompted to specify location patterns.
 
