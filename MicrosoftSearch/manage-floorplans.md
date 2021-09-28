@@ -261,7 +261,7 @@ In the second review stage, Microsoft Search ignores the building code value in 
 
 When you specify location patterns, you don't need to add info for every office, only for the *unique patterns* that appear in your Azure AD. In this stage, Microsoft Search determines all unique location patterns for the building, it isn't limited to the floor plan you've uploaded. For the users in this scenario, there are two unique location patterns. You'll see a randomly picked location for each pattern. Enter the corresponding floor and room values:
 
-|Location| |Floor|Wing or zone|Room|
+|Location|&nbsp;|Floor|Wing or zone|Room|
 |:-----|:-----|:-----|:-----|:-----|
 |DesignB/F123| |F1 | |23|
 |DesignB/F1-26| |F1| |-26|
