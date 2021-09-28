@@ -257,7 +257,7 @@ The DWG file for the floor has these text labels for the same cubicles:
 
 Because of the differences between the office locations that appear on the users' profiles and the corresponding text labels (DesignB/F121 and 21, DesignB/F1-25 and 25), Microsoft Search can't match them. After uploading the file, the initial review shows zero locations have been mapped. Continue mapping and in the Link office locations stage, enter the building code, DesignB.
 
-In the second review stage, Microsoft Search ignores the building code value in the user's office locations and tries again to match the office locations and text labels (F121 and 21, F1-25 and 25). The second review again shows zero locations have been mapped. You'll need to again continue mapping. At this point, you'll be prompted to specify location patterns.
+In the second review stage, Microsoft Search ignores the building code value in the users' office locations and tries again to match the office locations and text labels (F121 and 21, F1-25 and 25). The second review shows zero locations have been mapped. You'll need to continue mapping again. At this point, you'll be prompted to specify location patterns.
 
 When you specify location patterns, you don't need to add info for every office, only for the *unique patterns* that appear in your Azure AD. In this stage, Microsoft Search determines all unique location patterns for the building, it isn't limited to the floor plan you've uploaded. For the users in this scenario, there are two unique location patterns. You'll see a randomly picked location for each pattern. Enter the corresponding floor and room values:
 
@@ -266,7 +266,7 @@ When you specify location patterns, you don't need to add info for every office,
 |DesignB/F123| |F1 | |23|
 |DesignB/F1-26| |F1| |-26|
 
- Next, Microsoft Search applies the matching logic to all locations in the building that use those patterns and does two checks:
+Next, Microsoft Search applies the matching logic to all locations in the building that use those patterns and does two checks:
 
 1. For Rooms, do the values match any of the text labels in the DWG file?
 1. When concatenated, do the Floor, Wing, and Room values match any of the text labels in the DWG file?
