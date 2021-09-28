@@ -64,7 +64,7 @@ Following are the steps to modify the out of box verticals or create the custom 
 
 ### Site level navigation
 1. On the [SharePoint admin center](https://sharepoint.com/), go to Site Settings.  
-2. Look for the Microsoft Search section, and then **select Configure Microsoft Search for this site collection**.
+2. Look for the Microsoft Search section, and then select **Configure search settings**.
 3. In the navigation pane, go to Custom experience and then select **Verticals**.    
 
 **Modify an Out of box vertical**
