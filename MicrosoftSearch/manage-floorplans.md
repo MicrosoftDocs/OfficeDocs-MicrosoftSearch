@@ -217,7 +217,7 @@ If the DWG file contains data for multiple wings, leave the wing field blank whe
 
 **A:** No. If you followed the formatting recommendations for labels and office locations in [Step 2](#step-2-review-your-floor-plans) and [Step 3](#step-3-update-office-locations-on-user-profiles), and completed items 1-8 in [Step 7](#step-7-upload-floor-plans), you shouldn't need to specify locations patterns.
 
-But, if your users still aren't mapped or you're not satisfied with the mapping, complete the optional [Step 8](#step-8-optional-specify-location-patterns). In Step 8, you need to define each *unique* location pattern found in your Azure AD for the building code associated with the floor plan you're uploading. For example, you're a uploading floor plan for building A, which has 1,000 offices. Five different location patterns are used for the offices in Building A. When specifying location patterns, you'll need to define the five patterns that appear in your Azure AD for the building.
+But, if your users still aren't mapped or you're not satisfied with the mapping, complete the optional [Step 8](#step-8-optional-specify-location-patterns). In Step 8, you need to define each *unique* location pattern found in your Azure AD for that building code. For example, you're uploading a floor plan for building A, which has 1,000 offices. Five different location patterns are used for the offices in Building A. When specifying location patterns, you'll need to define the five patterns that appear in your Azure AD for the building.
 
 **Q:** Can I create floor plan answers for conference rooms, meeting rooms, or spaces that don't have a person assigned to them?
 
@@ -255,9 +255,9 @@ The DWG file for the floor has these text labels for the same cubicles:
 - 25
 - 26
 
-Because of the differences between the office locations that appear on the users' profiles and the corresponding text labels (F121 and 21, F1-25 and 25), Microsoft Search won't be able to automatically match them. After uploading the file, the initial review will show zero locations have been mapped. Continue mapping and in the Link office locations stage, enter the building code, DesignB.
+Because of the differences between the office locations that appear on the users' profiles and the corresponding text labels (F121 and 21, F1-25 and 25), Microsoft Search can't match them. After uploading the file, the initial review shows zero locations have been mapped. Continue mapping and in the Link office locations stage, enter the building code, DesignB.
 
-In the second review stage, Microsoft Search will ignore the building code value in the user's office locations and try again to automatically match the office locations and text labels (F121 and 21, F1-25 and 25). In this scenario, the second review will again show zero locations have been mapped. You'll need to again continue mapping. At this point you'll be prompted to specify location patterns.
+In the second review stage, Microsoft Search ignores the building code value in the user's office locations and tries again to match the office locations and text labels (F121 and 21, F1-25 and 25). The second review again shows zero locations have been mapped. You'll need to again continue mapping. At this point, you'll be prompted to specify location patterns.
 
 When you specify location patterns, you don't need to add info for every office, only for the *unique patterns* that appear in your Azure AD. In this stage, Microsoft Search determines all unique location patterns for the building, it isn't limited to the floor plan you've uploaded. For the users in this scenario, there are two unique location patterns. You'll see a randomly picked location for each pattern. Enter the corresponding floor and room values:
 
@@ -266,9 +266,9 @@ When you specify location patterns, you don't need to add info for every office,
 |DesignB/F123| |F1 | |23|
 |DesignB/F1-26| |F1| |-26|
 
- After you've specified the patterns used in the building, Microsoft Search applies the matching logic to all locations in the building that use those patterns and performs two checks:
+ Next, Microsoft Search applies the matching logic to all locations in the building that use those patterns and does two checks:
 
 1. For Rooms, do the values match any of the text labels in the DWG file?
 1. When concatenated, do the Floor, Wing, and Room values match any of the text labels in the DWG file?
 
-If either check returns a match, the location mapping for that pattern is successful and you move to the final stage. In the Ready to go stage, you'll see the number of users mapped to the floor plan locations. You can verify this in the Details pane. In this scenario, only users 1-4 would be mapped. The preferred method to map users 5 and 6, is to update their user profile to follow the specified pattern, DesignB/F125. You can also edit the text labels in the DWG file to match the unique pattern, -25 instead of 25.
+If either check returns a match, the location mapping for that pattern is successful and you move to the final stage. In the Ready to go stage, you'll see the number of users mapped to the floor plan locations. To verify, go to the Details pane. In this scenario, only users 1-4 would be mapped. The preferred method to map users 5 and 6 is to update their user profile to follow the specified pattern, DesignB/F125. You can also edit the text labels in the DWG file to match the unique pattern, -25 instead of 25.
