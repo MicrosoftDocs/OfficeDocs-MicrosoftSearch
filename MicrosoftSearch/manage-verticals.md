@@ -23,7 +23,8 @@ Search verticals are tabs on the search result page that show results for specif
 
 Microsoft Search has two types of verticals, out of the box and custom. Each type offers different customization options and can be used together to create the best experience for your users
 
-### Out of box verticals
+### Out of the box verticals
+
 By default, Microsoft Search shows verticals for All, People, Files, Sites, News, and Images These verticals are present at the organization level in experiences like SharePoint Home, Office.com, and Microsoft Search in Bing or at the site level in each site's search result page.
 
 Here is a summary of customization capabilities on out of the box verticals.
@@ -49,7 +50,7 @@ You can create verticals at two levels:
 
 The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can also use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-(KQL)) to narrow the scope.
 
-Following are the steps to modify the out of box verticals or create the custom verticals on Microsoft Search in [SharePoint home](https://sharepoint.com/), [Office](https://office.com/), or [Bing](https://bing.com/).  
+Follow the steps to modify the out of box verticals or create the custom verticals on Microsoft Search in [SharePoint home](https://sharepoint.com/), [Office](https://office.com/), or [Bing](https://bing.com/).  
 
 ### Manage organization-level verticals
 
