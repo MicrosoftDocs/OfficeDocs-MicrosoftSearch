@@ -17,40 +17,40 @@ description: "Manage the search verticals on the results page"
 
 # Manage search verticals
 
-Search verticals are tabs on the search result page that show results for specific types or sources. For example, the Files vertical shows results classified as files and makes it easy for users who are looking to find documents. You can customize verticals in Microsoft Search to meet the needs of your organization or individual departments.
+Search verticals are tabs on the search result page that show results of a specific type or from select sources. For example, the Files vertical shows results classified as files and makes it easy for users who are looking to find documents. You can customize verticals in Microsoft Search to meet the needs of your organization or individual departments.
 
-## Understanding search verticals
+You can manage verticals at two levels:
+
+- **Organization level** – A vertical at the organization level appears on the search results page when users search from their [SharePoint](https://sharepoint.com/) start page, [Microsoft Office](https://office.com), and Microsoft Search in [Bing](https://bing.com)
+- **Site level** – A vertical at the site level appears on the search results page when users search on a SharePoint site. For example, you might want to enable your customer service employees to search for Severity 1 incidents directly from their department’s SharePoint site.
 
 Microsoft Search has two types of verticals, out of the box and custom. Each type offers different customization options and can be used together to create the best experience for your users
 
 ### Out of the box verticals
 
-By default, Microsoft Search shows verticals for All, People, Files, Sites, News, and Images These verticals are present at the organization level in experiences like SharePoint Home, Office.com, and Microsoft Search in Bing or at the site level in each site's search result page.
+By default, Microsoft Search shows verticals for All, People, Files, Sites etc. Default verticals are present at the organization level in experiences like [SharePoint](https://sharepoint.com/), [Microsoft Office](https://office.com), and Microsoft Search in [Bing](https://bing.com) or at the site level in each site's search result page.
 
 Here is a summary of customization capabilities on out of the box verticals.
 |Customization  type          | Organization level    |  Site level    |
 | --------- | ------ | --- |
 |Rename vertical      |Yes     |   Yes     |
-| Disable vertical  | Partial (Only for Site, News)     |    Yes|
+| Disable vertical  | Partial      |    Yes|
 |Adding a query       | Partial    |  Yes     |
 
 ### Custom verticals
 
-You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. You can add verticals to show results from content indexed by connectors or from SharePoint.
+You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. You can add verticals to show results from content indexed by [Graph connectors](connectors-overview.md) or from SharePoint.
 
 > [!NOTE]
-> Adding verticals for a SharePoint content source is available to Targeted release customers.
+> Adding verticals for SharePoint content source is only available to Targeted release customers.
 
-You can create verticals at two levels:
 
-- **Organization level** – A vertical that you create at the organization level appears on the search results page when users search from their SharePoint start page, on Office.com, or with Microsoft Search in Bing.
-- **Site level** – For example, you might want to enable your customer service employees to search for Severity 1 incidents directly from their department’s SharePoint site.
 
-## Create or update search verticals
+## Create or modify search verticals
 
-The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can also use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-(KQL)) to narrow the scope.
+The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-(KQL)) to define the scope of vertical search for a given content source. 
 
-Follow the steps to modify the out of box verticals or create the custom verticals on Microsoft Search in [SharePoint home](https://sharepoint.com/), [Office](https://office.com/), or [Bing](https://bing.com/).  
+Following are the steps to modify the out of box verticals or create the custom verticals on Microsoft Search in [SharePoint home](https://sharepoint.com/), [Office](https://office.com/), or [Bing](https://bing.com/).  
 
 ### Manage organization-level verticals
 
@@ -88,22 +88,15 @@ To set up a query for a search vertical where multiple connection sources have b
 
 ### Keyword Query Language (KQL)
 
-A query can be added to a vertical to narrow down results shown on the search vertical using [Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) (limited support). This page lists the available properties. We recommend that you use free-text keywords and property restrictions with Boolean operators for creating the KQL.
+A query can be added to a vertical to narrow down results shown on the search vertical using [Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) (limited support). This page lists the available properties. We recommend that you use free-text keywords and property restrictions with  boolean operators for creating the KQL. Dynamic ranking operators like XRANK, proximity operators and words are not supported. 
 
 A few examples of queries are:
 
-- Excluding results from sites
-- The following query will filter out data from the Archive site
-  - NOT (path:http//contoso.sharepoint.com/archive OR path:http//contoso.sharepoint.com/CompanyArchive)
-  - Excluding results based on certain properties.
-- The following query removes results with file type ‘htm’ from search results page NOT(FileType:htm)
+|Scenario         | Query   |  
+| --------- | ------ | 
+|Excluding results from archive sites           |NOT (path:http//contoso.sharepoint.com/archive OR path:http//contoso.sharepoint.com/CompanyArchive)|   
+| Excluding results based on file type property | NOT(FileType:htm)|  
 
-The following aspects of KQL are not supported at present:
-
-- Dynamic ranking operator:
-  - XRANK
-  - Proximity operator and words
-- Query variables
 
 #### Profile query variables
 
@@ -168,17 +161,16 @@ Use the “|” operator to resolve multi-value variables. See the following tab
 > [!NOTE]
 >
 > - Profile query variables are only supported for custom verticals that use a [connector](connectors-overview.md) as a content source.
-> - Profile query variables are defined in the “Query” section of the [vertical setup process](customize-search-page.md#step-1-create-the-search-vertical).
 > - The profile query variables feature is currently in preview. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
 
 ## Limitations
 
-- Out of the box and new verticals order cannot be changed.
-- If the name of an out of the box vertical is edited, language localization will no longer apply to vertical names.
+- Language localization is not applicable to names of out of box verticals once modified. 
 - KQL does not apply to content surfaced from user OneDrive.
 - Custom verticals do not appear on the mobile view of Microsoft search.
 - Adding query is not supported on the People vertical.
 - Vertical modification and new verticals are not visible to guest users in an organization.
+- Vertical re-ordering is not supported
 
 ## Troubleshooting
 
