@@ -24,6 +24,8 @@ You can manage verticals at two levels:
 - **Organization level** – A vertical at the organization level appears on the search results page when users search from their [SharePoint](https://sharepoint.com/) start page, [Microsoft Office](https://office.com), and Microsoft Search in [Bing](https://bing.com)
 - **Site level** – A vertical at the site level appears on the search results page when users search on a SharePoint site. For example, you might want to enable your customer service employees to search for Severity 1 incidents directly from their department’s SharePoint site.
 
+## Understanding search verticals
+
 Microsoft Search has two types of verticals, out of the box and custom. Each type offers different customization options and can be used together to create the best experience for your users
 
 ### Out of the box verticals
