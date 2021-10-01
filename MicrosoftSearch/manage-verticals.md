@@ -180,6 +180,5 @@ Here's a list of common problems you might encounter and actions to fix them.
 
 |Problem  |Action  |
 |---------|---------|
-| I see a "Something went wrong" error message on the vertical. | Both the vertical and result types are needed to complete the setup. Make sure you created both for the same content source. |
-| I don't see my result layout, although I created one. | There may be a delay of a few minutes because these settings are cached. Wait a few minutes and try again.        |
-| I don't see any content sources on the vertical or result type page. | Make sure you have configured connectors and indexed data.   |
+| I see a "Something went wrong" error message on the vertical. | Both the vertical and result types are needed to complete the setup. Make sure both are setup for the content source. |
+| I don't see any content sources on the vertical page. | Make sure you have configured connectors and indexed data.   |
