@@ -55,7 +55,7 @@ Following are the steps to create the custom verticals on Microsoft Search in 
 
 ## View the vertical in search results
 
-After you enable a vertical, there's a delay of a few hours before you can view it. You can append cacheClear=true to the URL in SharePoint and Office to view the vertical immediately. In Bing, append &features=uncachedVerticals to the work vertical URL to view the vertical immediately.
+A [search result layout](manage-result-types.md) is needed for Graph connector results to render on the search vertical page. On ensuring that appropriate result layout is present, you can enable the search vertical. After you enable a vertical, there's a delay of a few hours before you can view it. You can append cacheClear=true to the URL in SharePoint and Office to view the vertical immediately. In Bing, append &features=uncachedVerticals to the work vertical URL to view the vertical immediately.
 
 > [!NOTE]
 > Added verticals aren't visible on SharePoint](https://sharepoint.com/) and [Office](https://office.com) when viewed from mobile web browsers.
