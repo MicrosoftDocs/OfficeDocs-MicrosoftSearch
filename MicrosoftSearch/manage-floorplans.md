@@ -27,11 +27,13 @@ Floor plans in Microsoft Search help users find people, rooms, and spaces within
 
 Users can see floor plan answers on [Bing](https://bing.com), [SharePoint](http://sharepoint.com/), and [Office 365](https://office.com). Other entry points that return Bing results, including Windows Search and the Microsoft Edge address bar, are also supported. When users search for a room name or location, they'll see the point of interest marked on the floor plan answer.
 
-![Floor plan with point of interest marker showing room location](media/floor-plans/floor-plan-answer.png)
+> [!div class="mx-imgBorder"]
+> ![Floor plan with point of interest marker showing room location.](media/floor-plans/floor-plan-answer.png)
 
 When they search for a person's office, they'll see a similar answer, with the person's profile image on the marker.
 
-![Floor plan with point of interest marker showing office location](media/floor-plans/floorplans-officelocation.png)
+> [!div class="mx-imgBorder"]
+> ![Floor plan with point of interest marker showing office location.](media/floor-plans/floorplans-officelocation.png)
 
 ## Add floor plans
 
@@ -47,9 +49,9 @@ Here are some good examples for the building's code: 2, B2, Building2, Building 
 
 Floor plans files must be in DWG format, which supports text labels. When a text label marks a room, it's called a room label. Here are some examples DWG files with different types of labels:
 
-|**Text labels including room labels**|**Text labels but no room labels**|**No text labels**|
+| Text labels including room labels | Text labels but no room labels | No text labels |
 |:-----:|:-----:|:-----:|
-|![Floor plan with room labels](media/floor-plans/floorplans-textandroomlabels.png)|![Floor plan with text labels but no room labels](media/floor-plans/floorplans-textnoroomlabels.png)|![Floor plan with no text labels](media/floor-plans/floorplans-nolabels.png)|
+|![Floor plan with room labels.](media/floor-plans/floorplans-textandroomlabels.png)|![Floor plan with text labels but no room labels.](media/floor-plans/floorplans-textnoroomlabels.png)|![Floor plan with no text labels.](media/floor-plans/floorplans-nolabels.png)|
 
 As a best practice, DWG text labels should contain floor numbers, wing numbers (if relevant), and room numbers, in that order. See the [FAQs](#frequently-asked-questions) for more examples of text label formats, and information about viewing and updating DWG files.
 
@@ -60,7 +62,9 @@ A user's office location is a combination of a building code and a room label. F
 Add or update office locations for users with an assigned work location. You can do this from their user profile in the [Microsoft 365](https://admin.microsoft.com) or [Azure Active Directory](https://portal.azure.com/) admin centers, or your on-premises Active Directory (will sync to Azure Active Directory). *PhysicalDeliveryOfficeName* is the field used for office location. If your room labels don't include floor numbers, see the [FAQs](#frequently-asked-questions) for tips.
 
 In this example, Allan's office is in room 1173 on floor 1 of building 2.
-![User list with building and office location](media/floor-plans/floorplans-userlistview.png)
+
+> [!div class="mx-imgBorder"]
+> ![User list with building and office location.](media/floor-plans/floorplans-userlistview.png)
 
 To set up floor plans for meeting rooms, add office locations for them in the [Rooms & equipment](https://admin.microsoft.com/Adminportal/Home#/ResourceMailbox) section of the Microsoft 365 admin center. For more information, see [Set up room and equipment mailboxes](/microsoft-365/admin/manage/room-and-equipment-mailboxes#set-up-room-and-equipment-mailboxes). If people in your organization can schedule the room or resource for a meeting or event, see [Change how a room mailbox handles meeting requests](/Exchange/recipients/room-mailboxes#change-how-a-room-mailbox-handles-meeting-requests). For information about configuring workspaces, including setting up room mailboxes, see the post about [Book a workspace in Outlook](https://techcommunity.microsoft.com/t5/exchange-team-blog/book-a-workspace-in-outlook/ba-p/1524560).
 
@@ -68,13 +72,15 @@ To set up floor plans for meeting rooms, add office locations for them in the [R
 
 Use Microsoft Search to find a user and verify that their office location is appearing correctly. You may need to wait up to **72 hours** for the updates to appear in the search results.
 
-![User overview with building and office location](media/floor-plans/floorplans-peoplecard.png)
+> [!div class="mx-imgBorder"]
+> ![User overview with building and office location.](media/floor-plans/floorplans-peoplecard.png)
 
 ### Step 5: Add building locations
 
 Floor plans use [Locations](manage-locations.md) to define your buildings. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations), and then select **Add**. Enter the name, address, and keywords for the building. Add as many buildings as you need.
 
-![Location panel showing fields needed to create answer](media/floor-plans/floorplans-locations.png)
+> [!div class="mx-imgBorder"]
+> ![Location panel showing fields needed to create answer.](media/floor-plans/floorplans-locations.png)
 
 For more information about locations, see [Manage Locations](manage-locations.md)
 
@@ -87,29 +93,41 @@ In [admin center](https://admin.microsoft.com), go to [**Floor plans**](https://
 ### Step 7: Upload floor plans
 
 1. In the [admin center](https://admin.microsoft.com), go to [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans).
+
 2. Select a building in the drop-down list and select **Next**. If the building isn't listed, go back and [add building locations](#step-5-add-building-locations).
+
 3. Select **Upload files**, and then choose the floor plan you want to upload.
+
 4. When the upload is complete, you must enter floor number that is represented in the floor plan file. Then select **Next**.
+
 5. (Optional) If your floor has wings or zones, enter that detail.
+
 6. You'll see a review screen listing how many office locations were mapped to the floor plans. Select **Details** to ensure the mapping is correct.
     - If no users are mapped or you're not satisfied with the mapping, select **Continue mapping**.
     - To publish, select **Skip and publish**.
+
 1. Enter the building code for this floor plan. The building code can be found on users' office location property. For example, if a user's office location is **2/1173**, then the building code is **2**.
+
 1. On the review screen, repeat step 6 to ensure the mapping is correct. If you're satisfied with the mapping, select **Continue mapping** and **Skip and publish**. If not, select **Continue mapping** and go to the Specify location patterns screen.
+
 1. (Optional) Review and identify the naming logic for all unique location patterns for this building within your Azure directory, then select **Next**.
+
 1. On the review screen, repeat step 6 to ensure the mapping is correct.
+
 1. When you're ready, select **Publish** to make the floor plan available in Microsoft Search.
 
 > [!NOTE]
 > **It takes 48 hours for the floor plans to be published.** After that your users will see a floor plan results similar to the one below when they search for a co-worker's office.
 
-![Floor plan with point of interest marker showing office location](media/floor-plans/floorplans-officelocation.png)
+> [!div class="mx-imgBorder"]
+> ![Floor plan with point of interest marker showing office location.](media/floor-plans/floorplans-officelocation.png)
 
 ### Step 8: (Optional) Specify location patterns
 
 After uploading a floor plan, the room text labels are compared to the office locations in your users' profiles. If the office locations or text labels don't consistently follow the recommended naming patterns in [Step 2](#step-2-review-your-floor-plans) and [Step 3](#step-3-update-office-locations-on-user-profiles), use the **Specify location patterns** screen to add more information to complete the mapping. Location patterns are used to extract floor, wing, and room information from AAD office locations.
 
-![Specify locations patterns screenshot](media/floor-plans/floorplans-locationpattern.png)
+> [!div class="mx-imgBorder"]
+> ![Specify locations patterns screenshot.](media/floor-plans/floorplans-locationpattern.png)
 
 Floor and wing are optional, only room is required, and you can skip locations as needed.
 
@@ -130,7 +148,7 @@ To delete a single floor plan, go to [Floor plans](https://admin.microsoft.com/A
 
 ## Troubleshooting
 
-|**Step**|**Error message**|**Type**|**Action**|
+| Step | Error message | Type | Action |
 |:-----|:-----|:-----|:-----|
 |Upload floor plans|Unable to read CC_1.dwg. Please re-upload or delete the floor plan.|Error|Try uploading the file again. If that doesn't work, delete the file and try again.|
 |Upload floor plans|There are two files named CC_1.dwg. Please delete one of them or re-upload with another name.|Error|If the file name is incorrect, add the floor or wing number to create a unique file name and upload it again. If you accidentally added the same file twice, just delete one of them.|
@@ -181,7 +199,8 @@ Also, in the DWG file don't include any extra text labels, like room dimensions 
 
 For example, a DWG file that includes room numbers, but no floor numbers, may look similar to this:
 
-![Floor plan with room numbers but no floor numbers](media/floor-plans/floorplans-nofloors.png)
+> [!div class="mx-imgBorder"]
+> ![Floor plan with room numbers but no floor numbers.](media/floor-plans/floorplans-nofloors.png)
 
 The office location in the user's profile would be 2/1175 where '2' is the building code, '1' is the floor number, and '175' is the room number.
 
@@ -207,7 +226,8 @@ If the DWG file contains data for multiple wings, leave the wing field blank whe
 
 **A:** You can upload more than one DWG file for the same floor, but you'll need to indicate a wing or zone for each file. In the example below, you would need to enter a Wing or zone value for the FloorPlan1.dwg file before you can go to the next screen. If the floor plan file doesn't have a wing or has multiple wings, enter a value like 0 or X in the Wing or zone field to continue.
 
-![Uploading multiple plans for the same floor](media/floor-plans/upload-files-with-without-wings.png)
+> [!div class="mx-imgBorder"]
+> ![Uploading multiple plans for the same floor](media/floor-plans/upload-files-with-without-wings.png)
 
 **Q:** Can I upload and update multiple floor plans at the same time?
 
