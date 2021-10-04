@@ -2,6 +2,14 @@
 
 
 
+## Week of September 27, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/27/2021 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
+
+
 ## Week of September 13, 2021
 
 
@@ -26,13 +34,3 @@
 | 9/7/2021 | [ServiceNow Catalog Graph connector for Microsoft Search](/MicrosoftSearch/servicenow-catalog-connector) | added |
 | 9/7/2021 | [ServiceNow Knowledge Graph connector for Microsoft Search](/MicrosoftSearch/servicenow-knowledge-connector) | renamed |
 | 9/9/2021 | [Manage access to files and sites](/MicrosoftSearch/manage-access-files-sites) | modified |
-
-
-## Week of August 23, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 8/26/2021 | [Azure DevOps Graph connector for Microsoft Search](/MicrosoftSearch/azure-devops-connector) | modified |
-| 8/26/2021 | [Customize the Microsoft Search page](/MicrosoftSearch/customize-search-page) | modified |
-| 8/26/2021 | [Salesforce Graph connector for Microsoft Search](/MicrosoftSearch/salesforce-connector) | modified |
