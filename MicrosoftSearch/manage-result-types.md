@@ -1,6 +1,6 @@
 ---
 title: "Manage result types"
-ms.author: jeffkizn
+ms.author: jypal6
 author: jypal
 manager: jeffkizn
 ms.audience: Admin
@@ -17,7 +17,7 @@ description: "Manage result types on the search results page"
 
 # Manage result types
 
-You can define how search results are displayed on the search results page by [designing the layout](customize-results-layout.md) using result types. The result layout lets you show useful information directly in the search results so users can quick find the right information and result. 
+You can define how search results are displayed on the search results page by [designing the layout](customize-results-layout.md) using result types. The result layout lets you show useful information directly in the search results so users can quickly find the information they need.
 
 Built-in content types like files and people have a standard layout that can't be modified. Result types are used for [Graph Connectors](connectors-overview.md) content. When you configure a connector and map labels and content properties to source properties, Microsoft Search will use a default search result layout for the connector search results. The label *title* is the most important; you should always have a property assigned to this label to use the default result layout. However, creating a custom result type for your connector content can make those results more impactful for your users.
 
@@ -50,7 +50,6 @@ The result type management experience is wizard driven, you're guided through st
 4. In the navigation pane, go to Custom experience, and select the **Result type**.
 5. To add a result type, click **Add**. Or, to edit a result type, select the result type in the list.
 6. After modifying a result type, you can review and save the result type.
-
 
 ## Troubleshooting
 

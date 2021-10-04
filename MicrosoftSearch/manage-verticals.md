@@ -1,6 +1,6 @@
 ---
 title: "Manage search verticals"
-ms.author: jeffkizn
+ms.author: jypal6
 author: jypal
 manager: jeffkizn
 ms.audience: Admin
@@ -26,15 +26,15 @@ You can manage verticals at two levels:
 
 ## Understanding search verticals
 
-Microsoft Search has two types of verticals, out of the box and custom verticals. Customization is offered on addition of Custom verticals and can be used  to create the best experience for your users.
+Microsoft Search has two types of verticals, out of the box and custom verticals. Out of the box verticals like All, Files, and  People create easy access to the most commonly used search results.
 
-### Custom verticals
+Additional configuration options are offered on custom verticals and can be used to create the best experience for your users.
 
 You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. You can add verticals to show results from content indexed by [Graph connectors](connectors-overview.md). You can’t create a vertical for content that resides in SharePoint.
 
 ## Create search verticals
 
-The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-(KQL)) to define the scope of vertical search for a given content source. 
+The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-KQL) to define the scope of vertical search for a given content source.
 
 Following are the steps to create the custom verticals on Microsoft Search in [SharePoint home](https://sharepoint.com/), [Office](https://office.com/), or [Bing](https://bing.com/).  
 
@@ -58,7 +58,7 @@ Following are the steps to create the custom verticals on Microsoft Search in 
 A [search result layout](manage-result-types.md) is needed for Graph connector results to render on the search vertical page. On ensuring that appropriate result layout is present, you can enable the search vertical. After you enable a vertical, there's a delay of a few hours before you can view it. You can append cacheClear=true to the URL in SharePoint and Office to view the vertical immediately. In Bing, append &features=uncachedVerticals to the work vertical URL to view the vertical immediately.
 
 > [!NOTE]
-> Added verticals aren't visible on SharePoint](https://sharepoint.com/) and [Office](https://office.com) when viewed from mobile web browsers.
+> Added verticals aren't visible on [SharePoint](https://sharepoint.com/) and [Office](https://office.com) when viewed from mobile web browsers.
 
 ## Advanced configuration options
 
@@ -77,15 +77,14 @@ To set up a query for a search vertical where multiple connection sources have b
 
 ### Keyword Query Language (KQL)
 
-A query can be added to a vertical to narrow down results shown on the search vertical using [Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) (limited support). This page lists the available properties. We recommend that you use free-text keywords and property restrictions with  boolean operators for creating the KQL. Dynamic ranking operators like XRANK, proximity operators and words are not supported. 
+A query can be added to a vertical to narrow down results shown on the search vertical using [Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) (limited support). This page lists the available properties. We recommend that you use free-text keywords and property restrictions with  boolean operators for creating the KQL. Dynamic ranking operators like XRANK, proximity operators and words are not supported.
 
-A few examples of queries are:
+Here are some example queries.
 
 |Scenario         | Query   |  
-| --------- | ------ | 
-|Excluding results from archive sites           |NOT (path:http//contoso.sharepoint.com/archive OR path:http//contoso.sharepoint.com/CompanyArchive)|   
+| --------- | ------ |
+|Excluding results from archive sites           |NOT (path:http//contoso.sharepoint.com/archive OR path:http//contoso.sharepoint.com/CompanyArchive)|
 | Excluding results based on file type property | NOT(FileType:htm)|  
-
 
 #### Profile query variables
 
@@ -151,7 +150,6 @@ Use the “|” operator to resolve multi-value variables. See the following tab
 >
 > - Profile query variables are only supported for custom verticals that use a [connector](connectors-overview.md) as a content source.
 > - The profile query variables feature is currently in preview. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
-
 
 ## Troubleshooting
 
