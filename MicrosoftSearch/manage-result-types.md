@@ -1,7 +1,7 @@
 ---
 title: "Manage result types"
-ms.author: jypal6
-author: jypal
+ms.author: jypal
+author: jypal6
 manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
