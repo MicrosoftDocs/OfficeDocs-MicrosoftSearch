@@ -26,11 +26,11 @@ You can manage verticals at two levels:
 
 ## Understanding search verticals
 
-Microsoft Search has two types of verticals, out of the box and custom verticals. Each type offers different customization options and can be used together to create the best experience for your users.
+Microsoft Search has two types of verticals, out of the box and custom verticals. Customization is offered on addition of Custom verticals and can be used  to create the best experience for your users.
 
 ### Custom verticals
 
-You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. You can add verticals to show results from content indexed by [Graph connectors](connectors-overview.md).
+You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. You can add verticals to show results from content indexed by [Graph connectors](connectors-overview.md). You can’t create a vertical for content that resides in SharePoint.
 
 ## Create search verticals
 
@@ -56,6 +56,9 @@ Following are the steps to create the custom verticals on Microsoft Search in 
 ## View the vertical in search results
 
 After you enable a vertical, there's a delay of a few hours before you can view it. You can append cacheClear=true to the URL in SharePoint and Office to view the vertical immediately. In Bing, append &features=uncachedVerticals to the work vertical URL to view the vertical immediately.
+
+> [!NOTE]
+> Added verticals aren't visible on SharePoint](https://sharepoint.com/) and [Office](https://office.com) when viewed from mobile web browsers.
 
 ## Advanced configuration options
 
