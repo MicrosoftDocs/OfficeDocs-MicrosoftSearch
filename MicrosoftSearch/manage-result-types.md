@@ -19,9 +19,9 @@ description: "Manage result types on the search results page"
 
 You can define how search results are displayed on the search results page by [designing the layout](customize-results-layout.md) using result types. The result layout lets you show useful information directly in the search results so users can quickly find the information they need.
 
-Built-in content types like files and people have a standard layout that can't be modified. Result types are used for [Graph Connectors](connectors-overview.md) content. When you configure a connector and map labels and content properties to source properties, Microsoft Search will use a default search result layout for the connector search results. The label *title* is the most important; you should always have a property assigned to this label to use the default result layout. However, creating a custom result type for your connector content can make those results more impactful for your users.
+Built-in content types like files and people have a standard layout that can't be modified. Result types are used for [Graph Connectors](connectors-overview.md) content. When you configure a connector with property mappings, Microsoft Search will use a default search result layout for the connector search results. The label *title* is the most important; you should always have a property assigned to this label to use the default result layout. However, creating a custom result type for your connector content can make those results more impactful for your users.
 
-When using verticals and connector content, there must be at least one result type for results to display on the vertical. If you don't do the appropriate mapping for default search result layout you must create a result type for the connector.
+When using verticals and connector content, you must create a result type or do the mappings for a default layout. If you do not do either, the vertical will not display any search results.
 
 ## Understanding result types
 
@@ -30,11 +30,11 @@ Create your own [search result layout](customize-results-layout.md) and override
 - **One or more conditions** to compare each search result against. Examples of conditions are content source and title.
 - A **result layout** to use for search results that meet the conditions. The resulting layout controls how the results that meet the conditions appear on the search results page.
 
-You can use multiple result types for content displayed in a vertical. This may be important when you combine multiple content sources into a single vertical. It can also be used for a more impactful layout even when there is only one content type. For example, in a vertical that displays incident details, you can customize "high severity" incidents to have more prominent colors than "low severity" incidents. This can be done by defining conditions on the 'serverity'  property in the **Rules** section.
+You can use multiple result types for content displayed in a vertical. This may be important when you combine multiple content sources into a single vertical. It can also be used for a more impactful layout even when there is only one content type. For example, in a vertical that displays incident details, you can customize "high severity" incidents to have more prominent colors than "low severity" incidents. This can be done by defining conditions on the 'severity' property in the **Rules** section.
 
 ## Create or update result types
 
-The result type management experience is wizard driven, you're guided through steps to define the name, content source, rules and layout. Result types can be customized at both the organization-level and SharePoint site level.
+The result type management experience is wizard driven, you're guided through steps to define the name, content source, rules, and layout. Result types can be customized at both the organization-level and SharePoint site level.
 
 ### Manage organization-level result types
 
@@ -53,7 +53,7 @@ The result type management experience is wizard driven, you're guided through st
 
 ## Troubleshooting
 
-Here's a list of common problems you might encounter and actions to fix them.
+Here's a list of common problems you might see and actions to fix them.
 
 |Problem  |Action  |
 |---------|---------|

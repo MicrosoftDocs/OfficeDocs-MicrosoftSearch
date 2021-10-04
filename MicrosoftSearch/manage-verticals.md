@@ -30,7 +30,7 @@ Microsoft Search has two types of verticals, out of the box and custom verticals
 
 Additional configuration options are offered on custom verticals and can be used to create the best experience for your users.
 
-You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. You can add verticals to show results from content indexed by [Graph connectors](connectors-overview.md). You can’t create a vertical for content that resides in SharePoint.
+You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. Verticals can be added to show results from content indexed by [Graph connectors](connectors-overview.md), but you can’t create a vertical for content that resides in SharePoint.
 
 ## Create search verticals
 
@@ -157,5 +157,5 @@ Here's a list of common problems you might encounter and actions to fix them.
 
 |Problem  |Action  |
 |---------|---------|
-| I see a "Something went wrong" error message on the vertical. | Both the vertical and result types are needed to complete the setup. Make sure both are setup for the content source. |
+| I see a "Something went wrong" error message on the vertical. | Both the vertical and result types are needed to complete the setup. Make sure both are set up for the content source. |
 | I don't see any content sources on the vertical page. | Make sure you have configured connectors and indexed data.   |
