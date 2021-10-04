@@ -24,7 +24,7 @@ When people in your organization use Microsoft Search in Bing, there are two pla
 - ALL results page: if there's a relevant work or school result, it will appear at the top of the search results page, followed by public web results.
 - WORK or SCHOOL results page: Only results from your organization appear on this page. It never includes public web results.
 
-![All and work results pages for Contoso and school results page for Contoso middle school](media/msb-overview/all-work-school-serps.gif)
+:::image type="content" alt-text="All and work results pages for Contoso and school results page for Contoso middle school." source="media/msb-overview/all-work-school-serps.gif" lightbox="media/msb-overview/all-work-school-serps.gif":::
 
 Users can easily identify work or school results by looking for your organization's logo, name, or their profile image.
 
@@ -38,19 +38,19 @@ If you're unfamiliar with Microsoft Search in Bing, we suggest reviewing the Mic
 
 Microsoft Search in Bing provides search experiences tailored to the needs of work and school users. In organizations with enterprise service plans, users will get a search experience designed for work, including organizational charts and Power BI answers.
 
-ORG CHART IMAGE HERE
+![Screenshot of organizational chart with three different levels.](media/work-school-search/organizational-chart.png)
 
 Users in organizations with education service plans will get an experience designed for searching school, including answers about classes and upcoming assignments.
 
-ASSIGNMENT ANSWER IMAGE HERE
+![Screenshot of assignments answer with homework listed by due date.](media/work-school-search/school-assignment-answer.png)
 
-If your organization has education and enterprise service plans, you can select a Microsoft Search in Bing experience for your users, either school or work. For more information, see Select a school or work search experienceLINKTBD.
+If your organization has education and enterprise service plans, you can select a Microsoft Search in Bing experience for your users, either school or work. For more information, see [Select a school or work search experience](/microsoftsearch/select-work-school-search-experience).
 
 ## Add Microsoft Search in Bing to your intranet
 
 Microsoft Search is designed to make internal information easy to access everywhere your users are searching. If people in your organization use your intranet site to start a work or school search, consider adding an embedded search box to your site.
 
-![Internet portal with embedded search box and search suggestions](media/msb-overview/embedded-search-box-intranet.png)
+![Internet portal with embedded search box and search suggestions.](media/msb-overview/embedded-search-box-intranet.png)
 
 With a simple script, you can add a customized search box and even direct it to a custom vertical. To learn more, see [Add a search box to your intranet site](add-a-search-box-to-your-intranet-site.md).
 
