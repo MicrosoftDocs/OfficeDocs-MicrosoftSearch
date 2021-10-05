@@ -77,7 +77,7 @@ To set up a query for a search vertical where multiple connection sources have b
 
 ### Keyword Query Language (KQL)
 
-A query can be added to a vertical to narrow down results shown on the search vertical using [Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) (limited support). This page lists the available properties. We recommend that you use free-text keywords and property restrictions with  boolean operators for creating the KQL. Dynamic ranking operators like XRANK, proximity operators and words are not supported.
+A query can be added to a vertical to narrow down results shown on the search vertical using [Keyword Query Language (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) (limited support). This page lists the available properties. We recommend that you use free-text keywords and property restrictions with  boolean operators for creating the KQL. Dynamic ranking operators like XRANK, proximity operators and words are not supported.
 
 Here are some example queries.
 
