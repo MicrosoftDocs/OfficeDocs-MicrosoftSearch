@@ -168,12 +168,12 @@
     {
       "source_path": "MicrosoftSearch/import-sharepoint-promoted-results-and-top-queries.md",
       "redirect_url": "/MicrosoftSearch/manage-bookmarks#import-sharepoint-results",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "MicrosoftSearch/integrate-powerapps.md",
       "redirect_url": "/MicrosoftSearch/manage-bookmarks",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },    
     {
       "source_path": "MicrosoftSearch/bulk-create-qas.md",
