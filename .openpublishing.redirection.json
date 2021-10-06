@@ -81,6 +81,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "MicrosoftSearch/user-adoption-guide.md",
+      "redirect_url": "https://resources.techcommunity.microsoft.com/microsoft-search/#adoption",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "MicrosoftSearch/add-users.md",
       "redirect_url": "/microsoftsearch/setup-microsoft-search#step-1-assign-search-admin-and-search-editor",
       "redirect_document_id": false
@@ -136,6 +141,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "MicrosoftSearch/make-content-easy-to-find.md",
+      "redirect_url": "/MicrosoftSearch/plan-your-content",
+      "redirect_document_id": true
+    },    
+    {
       "source_path": "MicrosoftSearch/bulk-create-bookmarks.md",
       "redirect_url": "/MicrosoftSearch/manage-bookmarks",
       "redirect_document_id": true
@@ -155,6 +165,16 @@
       "redirect_url": "/MicrosoftSearch/manage-bookmarks",
       "redirect_document_id": false
     },
+    {
+      "source_path": "MicrosoftSearch/import-sharepoint-promoted-results-and-top-queries.md",
+      "redirect_url": "/MicrosoftSearch/manage-bookmarks#import-sharepoint-results",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/integrate-powerapps.md",
+      "redirect_url": "/MicrosoftSearch/manage-bookmarks",
+      "redirect_document_id": false
+    },    
     {
       "source_path": "MicrosoftSearch/bulk-create-qas.md",
       "redirect_url": "/MicrosoftSearch/manage-qas",
@@ -180,6 +200,11 @@
       "redirect_url": "/MicrosoftSearch/setup-microsoft-search",
       "redirect_document_id": false
     },
+    {
+      "source_path": "MicrosoftSearch/test-single-sign-on.md",
+      "redirect_url": "index",
+      "redirect_document_id": true
+    },    
     {
       "source_path": "MicrosoftSearch/microsoft-search.md",
       "redirect_url": "index",
