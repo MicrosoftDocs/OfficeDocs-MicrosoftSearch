@@ -18,7 +18,7 @@ description: "Setup overview for Graph connectors by Microsoft"
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# Setup overview for Graph connectors by Microsoft 
+# Setup overview for Graph connectors by Microsoft
 
 This article shows the basic process required to set up the Graph connectors **by Microsoft** in the [Microsoft 365 admin center](https://admin.microsoft.com). The basic process includes the following steps:  
 <!---Add links to each section in the doc--->
@@ -81,9 +81,9 @@ To learn more about connecting to an on-premises data source, see [Install an on
 
 ## Step 4: Select properties
 
-You can choose the properties that will be indexed by Microsoft Search. 
+You can choose the properties that will be indexed by Microsoft Search.
 
-The ServiceNow query can be used to filter your data before it is indexed by Microsoft Search; this gives you more control over the data that can be searched. To learn more about ServiceNow queries, see [Learn about ServiceNow queries](https://go.microsoft.com/fwlink/?linkid=2151447). 
+The ServiceNow query can be used to filter your data before it is indexed by Microsoft Search; this gives you more control over the data that can be searched. To learn more about ServiceNow queries, see [Learn about ServiceNow queries](https://go.microsoft.com/fwlink/?linkid=2151447).
 
 ## Step 5: Manage search permissions
 
@@ -146,8 +146,7 @@ REFINE | The refine option can be used as in the Microsoft Search results page. 
 
 For all connectors except the File share connector, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute in the search schema page.
 
-> [!div class="mx-imgBorder"]
-> ![Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions.](media/manageschema.png)
+:::image type="content" alt-text="Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions." source="media/manageschema.png" lightbox="media/manageschema.png":::
 
 ### Restrictions and recommendations for search schema settings
 
@@ -195,7 +194,7 @@ Go to the list of your published connections under the **Connectors** tab in the
 
 ## Troubleshooting
 <!---Insert troubleshooting recommendations for this data source-->
-Read the connector-specific information for your data source. 
+Read the connector-specific information for your data source.
 
 > [!NOTE]
 > Not all connector-specific articles include troubleshooting recommendations at this point.
@@ -208,4 +207,4 @@ See the connector-specific information for your data source to find out if other
 
 ## Next steps
 
-After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](customize-search-page.md).
+After publishing the connection, you need to customize the search results page with verticals and result types. To learn about customizing search results, you can review how to [manage verticals](manage-verticals.md) and [result types](manage-result-types.md).

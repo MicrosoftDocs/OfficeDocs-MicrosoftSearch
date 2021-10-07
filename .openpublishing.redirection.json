@@ -254,6 +254,11 @@
       "source_path": "MicrosoftSearch/servicenow-connector.md",
       "redirect_url": "/MicrosoftSearch/servicenow-knowledge-connector",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/customize-search-page.md",
+      "redirect_url": "/MicrosoftSearch/manage-verticals",
+      "redirect_document_id": false
     }
   ]
 }
