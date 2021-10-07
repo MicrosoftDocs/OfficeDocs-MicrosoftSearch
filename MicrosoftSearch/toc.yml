@@ -90,8 +90,10 @@
       href: manage-dynamics365.md
 - name: Customize and configure
   items:
-  - name: Manage verticals and result types
-    href: customize-search-page.md
+  - name: Manage verticals
+    href: manage-verticals.md
+  - name: Manage result types
+    href: manage-result-types.md
   - name: Manage search result layouts
     href: customize-results-layout.md
   - name: Manage result clusters

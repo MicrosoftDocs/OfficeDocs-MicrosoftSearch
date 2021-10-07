@@ -90,6 +90,10 @@ additionalContent:
           links:
           - text: Manage verticals and result types
             url: customize-search-page.md
+          - text: Manage verticals
+            url: manage-verticals.md
+          - text: Manage result types
+            url: manage-result-types.md
           - text: Customize the SERP layout
             url: customize-results-layout.md
           - text: Manage filters

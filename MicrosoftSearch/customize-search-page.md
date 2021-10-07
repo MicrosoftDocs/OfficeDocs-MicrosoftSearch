@@ -11,6 +11,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
+- ROBOTS: NOINDEX
 description: "Add search verticals and customize search results"
 ---
 # Customize the search results page
@@ -97,7 +98,7 @@ To create your own search result layout and override the default search result l
 - **One or more conditions** to compare each search result against, such as the content source of the search result.  
 - A **result layout** to use for search results that meet the conditions. The resulting layout controls how the results that meet the conditions appear and behave on a search results page.
 
-*If you don't do appropriate mapping to show default search result layout, you must create at least one result type for results to display on the vertical.* 
+*If you don't do appropriate mapping to show default search result layout, you must create at least one result type for results to display on the vertical.*
 
 You can create multiple result types for each vertical, which allows you to use different layouts for different type of results. For example, you might customize *Severity 1* incidents to have more prominent colors and a larger font than *Severity 3* incidents.
 
@@ -121,7 +122,7 @@ After you start the wizard, you're guided through the steps to define the name, 
 After you enable the vertical, there's a delay of a few hours before you can view it. But you can append `cacheClear=true` to the URL in SharePoint and Office to view the vertical immediately. For Bing, append `&features=uncachedVerticals` to the `Work vertical URL` to view the vertical immediately.
 
 > [!NOTE]
-> Added verticals aren't visible on SharePoint](https://sharepoint.com/) and [Office](https://office.com) when viewed from mobile web browsers.
+> Added verticals aren't visible on [SharePoint](https://sharepoint.com/) and [Office](https://office.com) when viewed from mobile web browsers.
 
 ## Profile query variables
 
@@ -134,7 +135,6 @@ For example, to create a “Tickets” vertical for the user to find support tic
 This language will narrow down the search results to show only those items for which the assignee is the user who runs the search.
 
 [Profile resource](/graph/api/resources/profile) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile, which have AAD as the source type, are exposed as Query variables.
-
 
 Consider a user who has three email addresses available in the email collection, as shown here:
 

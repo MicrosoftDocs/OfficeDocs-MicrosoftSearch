@@ -11,7 +11,6 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX
 description: "Manage result types on the search results page"
 ---
 
