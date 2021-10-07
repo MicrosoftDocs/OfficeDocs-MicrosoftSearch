@@ -146,8 +146,7 @@ REFINE | The refine option can be used as in the Microsoft Search results page. 
 
 For all connectors except the File share connector, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection wizard automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute in the search schema page.
 
-> [!div class="mx-imgBorder"]
-> ![Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions.](media/manageschema.png)
+:::image type="content" alt-text="Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions." source="media/manageschema.png" lightbox="media/manageschema.png":::
 
 ### Restrictions and recommendations for search schema settings
 
