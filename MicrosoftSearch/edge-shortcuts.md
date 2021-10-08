@@ -11,11 +11,11 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Add custom Edge shortcuts for Microsoft Search in Bing or turn off these shortcuts for your organization"
+description: "Add custom Microsoft Edge shortcuts for Microsoft Search in Bing or turn off these shortcuts for your organization"
 ---
 # Customize or disable address bar shortcuts for Microsoft Edge
 
-Help your users stay focused and find work results faster when searching from the Microsoft Edge address bar. Two shortcuts are enabled by default, 'work' and your organization's preferred or shortened name. In the Edge address bar, users can type a keyword, then press the Tab key. The address bar will indicate they're searching within your organization. When they type their search and press the Enter key, they'll see a search results page with relevant answers and results. You can add two custom shortcuts keywords.
+Help your users stay focused and find work results faster when searching from the Microsoft Edge address bar. Two shortcuts are enabled by default, 'work' and your organization's preferred or shortened name. In the Microsoft Edge address bar, users can type a keyword, then press the Tab key. The address bar will indicate they're searching within your organization. When they type their search and press the Enter key, they'll see a search results page with relevant answers and results. You can add two custom shortcuts keywords.
 
 > [!NOTE]
 > This article applies to Microsoft Edge Beta Channel, version 96 or later.
@@ -36,7 +36,7 @@ Help your users stay focused and find work results faster when searching from th
 
 **Q: How long does it take for new keywords to be recognized as shortcuts?**
 
-**A:**  It takes up to two days for Edge to recognize custom keywords as a shortcut.
+**A:**  It takes up to two days for Microsoft Edge to recognize custom keywords as a shortcut.
 
 **Q: Can I add shortcuts for my Google Chrome users?**
 
