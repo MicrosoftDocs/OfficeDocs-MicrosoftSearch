@@ -6,7 +6,7 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
@@ -103,11 +103,11 @@ To provide easy integration between your line-of-business apps or intranet sites
 
 Use the vertical option in bfbSearchBoxConfig to define the vertical you want. For example, if you want users to always land on the Sites vertical, one of the default verticals, use the value "Site-sites".
 
-![Screenshot of work results page on Microsoft Search in Bing showing the Sites vertical results and URL](media/sites-vertical-esb.png)
+:::image type="content" alt-text="Screenshot of work results page on Microsoft Search in Bing showing the Sites vertical results and URL." source="media/sites-vertical-esb.png" lightbox="media/sites-vertical-esb.png":::
 
 For custom verticals, use the hash at the end of the URL. You can find these values by searching from the work page on Bing, clicking a vertical label, and copying the value after the number sign (#).
 
-![Screenshot of work results page on Microsoft Search in Bing showing a custom Presentation vertical results and URL](media/custom-vertical-esb.png)
+:::image type="content" alt-text="Screenshot of work results page on Microsoft Search in Bing showing a custom Presentation vertical results and URL." source="media/custom-vertical-esb.png" lightbox="media/custom-vertical-esb.png":::
 
 ## Use an iFrame to embed a search box
 
@@ -119,4 +119,4 @@ If embedding a script isn't an option for the site, use an iFrame to add the sea
 
 ## InPrivate mode and Conditional Access
 
-An embedded search box will be disabled if the page or site is opened in an InPrivate window. Also, with Azure AD Conditional Access support in Microsoft Edge, Bing.com doesn't support AAD sign in when using InPrivate mode. For more information about Conditional Access in Edge, see [Microsoft Edge and Conditional Access](https://docs.microsoft.com/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge). 
+An embedded search box will be disabled if the page or site is opened in an InPrivate window. Also, with Azure AD Conditional Access support in Microsoft Edge, Bing.com doesn't support AAD sign in when using InPrivate mode. For more information about Conditional Access in Edge, see [Microsoft Edge and Conditional Access](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge). 

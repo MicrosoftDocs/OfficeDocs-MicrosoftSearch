@@ -7,7 +7,7 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
@@ -24,13 +24,16 @@ The Graph connector indexes specified content into Microsoft Search. To keep the
 > [!NOTE]
 > Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
-This article is for anyone who configures, runs, and monitors an Azure SQL and Microsoft SQL Server Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure SQL and Microsoft SQL Server Graph connector. This article also includes information about [Limitations](#limitations) for the Microsoft SQL Server and Azure SQL connectors.
+This article is for anyone who configures, runs, and monitors an Azure SQL and Microsoft SQL server Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure SQL and Microsoft SQL server Graph connector. This article also includes information about [Limitations](#limitations) for the Microsoft SQL server and Azure SQL connectors.
 
 ## Before you get started
 
 ### Install the Graph connector agent (required for on-premises Microsoft SQL Server connector only)
 
-In order to access your on-premises third-party data, you must install and configure the Graph connector agent. See [Install the Graph connector agent](on-prem-agent.md) to learn more.  
+In order to access your on-premises third-party data, you must install and configure the Graph connector agent. See [Install the Graph connector agent](graph-connector-agent.md) to learn more.
+
+>[!NOTE]
+>If you use Windows authentication while configuring the Microsoft SQL Server Graph connector, the user with which you are trying to sign in needs to have interactive logon rights to the machine where Graph connector agent is installed. Refer the documentation about [logon policy management](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check logon rights.
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
@@ -68,14 +71,15 @@ To add the registered app to your Azure SQL Database, you need to:
 
 To connect your Microsoft SQL Server connector to a data source, you must configure the database server you want crawled and the on-prem agent. You can then connect to the database with the required authentication method.
 
-> [!NOTE] 
-> Your database must run SQL Server version 2008 or later for the Microsoft SQL Server connector to be able to connect.
+> [!NOTE]
+> - Your database must run SQL Server version 2008 or later for the Microsoft SQL Server connector to be able to connect.
+> - The Azure SQL graph connector only allows ingestion from an Azure SQL instance in the same [tenant](/azure/active-directory/develop/quickstart-create-new-tenant) as of Microsoft 365. Cross-tenant data flow is not supported.
 
 For the Azure SQL connector, you only need to specify the server name or IP address you want to connect to. Azure SQL connector only supports Azure Active Directory Open ID connect (OIDC) authentication to connect to the database.
 
 For added security, you may configure IP firewall rules for your Azure SQL Server or database. To learn more about setting up IP firewall rules, refer documentation on [IP firewall rules](/azure/azure-sql/database/firewall-configure). Add the following client IP ranges in the firewall settings.
 
-| Region | IP Range |
+| Region | IP range |
 | ------------ | ------------ |
 | NAM | 52.250.92.252/30, 52.224.250.216/30 |
 | EUR | 20.54.41.208/30, 51.105.159.88/30 |
@@ -90,7 +94,7 @@ In this step, you configure the SQL query that runs a full crawl of the database
 > [!Tip]
 > To get all the columns that you need, you can join multiple tables.
 
-![Script showing the OrderTable and AclTable with example properties](media/MSSQL-fullcrawl.png)
+![Script showing the OrderTable and AclTable with example properties.](media/MSSQL-fullcrawl.png)
 
 ### Select data columns (Required) and ACL columns (Optional)
 
@@ -98,6 +102,8 @@ The example demonstrates a selection of five data columns that hold the data for
 
 Select data columns as shown in this example query: 
  `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
+
+Note that the SQL connectors do not allow column names with non-alphanumeric characters  in the SELECT clause. Remove any non-alphanumeric characters from column names using an alias. Example - SELECT *column_name* AS *columnName*
 
 To manage access to the search results, you can specify one or more ACL columns in the query. The SQL connector allows you to control access at per record level. You can choose to have the same access control for all records in a table. If the ACL information is stored in a separate table, you might have to do a join with those tables in your query.
 
@@ -108,7 +114,7 @@ The use of each of the ACL columns in the above query is described below. The fo
 - **DeniedUsers**: This column specifies the list of users who do **not** have access to the search results. In the following example, users john@contoso.com and keith@contoso.com do not have access to record with OrderId = 13, whereas everyone else has access to this record.
 - **DeniedGroups**: This column specifies the group of users who do **not** have access to the search results. In the following example, groups engg-team@contoso.com and pm-team@contoso.com do not have access to record with OrderId = 15, whereas everyone else has access to this record.  
 
-![Sample data showing the OrderTable and AclTable with example properties](media/MSSQL-ACL1.png)
+![Sample data showing the OrderTable and AclTable with example properties.](media/MSSQL-ACL1.png)
 
 ### Supported data types
 
@@ -137,7 +143,7 @@ Create query snippets for watermarks as shown in these examples:
 
 In the configuration shown in the following image, `CreatedDateTime` is the selected watermark column. To fetch the first batch of rows, specify the data type of the watermark column. In this case, the data type is `DateTime`.
 
-![Watermark column configuration](media/MSSQL-watermark.png)
+![Watermark column configuration.](media/MSSQL-watermark.png)
 
 The first query fetches the first **N** number of rows by using: "CreatedDateTime > January 1, 1753 00:00:00" (min value of DateTime data type). After the first batch is fetched, the highest value of `CreatedDateTime` returned in the batch is saved as the checkpoint if the rows are sorted in ascending order. An example is March 1, 2019 03:00:00. Then the next batch of **N** rows is fetched by using "CreatedDateTime > March 1, 2019 03:00:00" in the query.
 
@@ -145,7 +151,7 @@ The first query fetches the first **N** number of rows by using: "CreatedDateTim
 
 To exclude soft-deleted rows in your database from being indexed, specify the soft-delete column name and value that indicates the row is deleted.
 
-![Soft delete settings: "Soft delete column" and "Value of soft delete column which indicates a deleted row"](media/MSSQL-softdelete.png)
+![Soft delete settings: "Soft delete column" and "Value of soft delete column which indicates a deleted row."](media/MSSQL-softdelete.png)
 
 ### Full crawl: Manage search permissions
 
@@ -159,7 +165,7 @@ The following ID types are supported for using as ACLs:
 - **Azure Active Directory (AAD) ID**: In Azure AD, every user or group has an object ID that looks something like 'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b'.
 - **Active Directory (AD) Security ID**: In an on-premises AD setup, every user and group have an immutable, unique security identifier that looks something like 'S-1-5-21-3878594291-2115959936-132693609-65242.'
 
-![Search permission settings to configure access control lists](media/MSSQL-ACL2.png)
+![Search permission settings to configure access control lists.](media/MSSQL-ACL2.png)
 
 ## Step 3b: Incremental crawl (Optional)
 
@@ -206,11 +212,12 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 
 ## Troubleshooting
 
-The following is a a common error observed while configuring the connector, and its possible reason.
+The following is a common error observed while configuring the connector, and its possible reason.
 
 | Configuration step | Error message | Possible reason(s) |
 | ------------ | ------------ | ------------ |
 | Full crawl | `Error from database server: A transport level error has occurred when receiving results from the server.` | This error arises due to network issues. It is recommended to check network logs using [Microsoft network monitor](https://www.microsoft.com/download/details.aspx?id=4865) and reach out to Microsoft customer support. |
+| Full crawl | `Column column_name returned from full crawl SQL query contains non-alphanumeric character` | Non-alphanumeric characters (like underscores) are not allowed in column names in SELECT clause. Use aliases to rename columns and remove non-alphanumeric characters (Example - SELECT column_name AS columnName). |
 
 ## Limitations
 

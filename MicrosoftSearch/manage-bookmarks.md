@@ -6,7 +6,7 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
@@ -48,11 +48,7 @@ Search admins and editors can add bookmarks in the Microsoft 365 admin center an
 - **Draft**: Bookmarks saved as drafts aren't available to your users. Use this status if you or other stakeholders want to review or update bookmarks before publishing them.
 - **Scheduled**: Bookmarks that will be published on the specified date and time.
 
-You can use the Microsoft Search content creator browser extension to easily add bookmarks. To install the browser extension, go to the site you want to add as a bookmark, and click Add in the extension.
-Install the extension for Edge and Chrome:
-
-- For Chromium Edge or Chrome: go to the [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and add the extension.
-- For legacy Edge: go to the [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and add the extension.
+You can use the Microsoft Search content creator browser extension to easily add bookmarks. Just go to the site you want to add as a bookmark, and click Add in the extension. To install the extension for Microsoft Edge or Google Chrome, go to the [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and add it to your browser.
 
 ### Import SharePoint results
 
@@ -102,7 +98,7 @@ To prevent bookmark-to-bookmark duplication errors:
 
 To reduce the manual effort required to add bookmarks, Microsoft Search can evaluate your organization's SharePoint links and recommend bookmarks. You can review them before publishing or set them to automatically publish. No setup is needed for recommended bookmarks, they're enabled and set to autopublish by default. To change these settings at any time, select **Manage bookmarks** to open the Bookmark settings panel.
 
-![Screenshot of Recommended bookmark settings in the Microsoft 365 admin portal](media/bookmarks-recommendedsettings.png)
+![Screenshot of Recommended bookmark settings in the Microsoft 365 admin portal.](media/bookmarks-recommendedsettings.png)
 
 If recommended bookmarks are enabled, the recommendation engine will evaluate SharePoint sites in your organization to identify high-traffic links. After an initial evaluation period, the recommended bookmarks will either be autopublished or added to the list of suggested bookmarks. The next cycle—a 30-day evaluation period followed by autopublishing or adding suggested bookmarks—will then begin.
 

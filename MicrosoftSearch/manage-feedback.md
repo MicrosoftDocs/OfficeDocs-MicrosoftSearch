@@ -6,12 +6,11 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NoIndex
 description: "Review and act on user feedback in Microsoft Search"
 ---
 
@@ -25,7 +24,7 @@ We are now offering tools that will allow you to review and manage the feedback 
 
 As people in your organization use Microsoft Search, they may have feedback on the experience. When they click a feedback link on the results page, they can categorize their feedback and include additional comments.
 
-![Global feedback form](media/feedback/feedback-global-dialog.png)
+![Global feedback form.](media/feedback/feedback-global-dialog.png)
 
 Users also have the option to send their query and other diagnostic info, along with the category and comments, to Microsoft. [Learn more](https://privacy.microsoft.com/en-US/privacystatement) about privacy and how we protect this data. The diagnostic data contains the most critical information that Microsoft needs to use the feedback item for product improvement.
 
@@ -40,6 +39,9 @@ By using a filter, you can see feedback for specific answer types. You can also 
 You can use the search box above the feedback list to search for feedback on a specific query.
 
 In the feedback list, the Verbatim column indicates what user's feedback also includes a comment or suggestion. To read it, click the query to open the **Detail** panel.
+
+>[!NOTE]
+>During the initial rollout across the admin and end-user search experiences, it may take up to two weeks for feedback items to appear in the admin portal.
 
 ## Update feedback state
 
@@ -59,7 +61,7 @@ If you want to share search feedback with others or retain them for longer than 
 
 ## Send user feedback to Microsoft
 
-By default, all user feedback is sent to Microsoft and addition to you. To stop sending feedback to Microsoft, click **Manage settings**, and clear the **Automatically send user feedback to Microsoft** check box. It can take up to 24 hours for this change to take effect.
+By default, all user feedback is sent to Microsoft in addition to you. To stop sending feedback to Microsoft, click **Manage settings**, and clear the **Automatically send user feedback to Microsoft** check box. It can take up to 24 hours for this change to take effect.
 
 If you've decided to not send feedback to Microsoft automatically, you can still send individual pieces of feedback to Microsoft.
 
