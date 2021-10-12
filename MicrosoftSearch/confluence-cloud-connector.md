@@ -38,12 +38,14 @@ Follow the general [setup instructions](./configure-connector.md).
 Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 3: Configure the connection settings
-To connect to your Confluence site, use your site URL. A Confluence cloud site URL typically looks like *https://<organization_name>.atlassian.net/*. You can choose either Basic Authentication or OAuth 2.0 (recommended) to authenticate to your Confluence site.
+To connect to your Confluence site, use your site URL. A Confluence cloud site URL typically looks like *https://<organization_name>.atlassian.net/*. You can choose either Basic Authentication or OAuth 2.0 (recommended) to authenticate to your Confluence site. 
 
+>[!TIP]
+>Make sure the service **account has view access** to the Confluence content you want to index.
 ### Basic Auth
 Enter your account's username (usually email ID) and API token to authenticate using basic auth. To learn more about generating an API token, refer Atlassian's documentation on how to [manage API tokens for your Atlassian account](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/).
 
-### OAuth 2.0
+### OAuth 2.0 (recommended)
 Register an app in Confluence Cloud so that the Microsoft Search app can access the instance. To learn more, see Atlassian Support documentation on how to [Enable OAuth 2.0](https://developer.atlassian.com/cloud/confluence/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-).
 
 The following steps provide guidance on how to register the app:
