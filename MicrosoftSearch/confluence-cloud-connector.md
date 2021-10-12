@@ -65,6 +65,9 @@ In this step, you can add or remove available properties from your Confluence da
 
 With a Confluence Query Language (CQL) string, you can specify conditions for syncing pages. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only the pages that are modified in the last two years. To learn about creating your own query string, see [Advanced Searching using CQL](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/). By default, all blogs and pages will be indexed by the connector.
 
+>[!TIP]
+>You may use the CQL filter to index **content modified after a certain time** using, *lastModified >= "2018/12/31"*
+
 Use the preview results button to verify the sample values of the selected properties and CQL string.
 
 ## Step 5: Manage search permissions
