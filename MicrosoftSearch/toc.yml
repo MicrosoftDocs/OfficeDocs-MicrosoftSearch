@@ -1,3 +1,4 @@
+items:
 - name: Plan for Microsoft Search
   items:
   - name: Overview
@@ -90,8 +91,10 @@
       href: manage-dynamics365.md
 - name: Customize and configure
   items:
-  - name: Manage verticals and result types
-    href: customize-search-page.md
+  - name: Manage verticals
+    href: manage-verticals.md
+  - name: Manage result types
+    href: manage-result-types.md
   - name: Manage search result layouts
     href: customize-results-layout.md
   - name: Manage result clusters
@@ -110,10 +113,14 @@
       href: manage-classic-spo-pages.md
   - name: Microsoft Search in Bing
     items:
+    - name: Overview
+      href: overview-microsoft-search-bing.md
     - name: Security and Privacy
-      href: security-for-search.md
+      href: security-for-search.md      
     - name: Add a search box to your intranet site
       href: add-a-search-box-to-your-intranet-site.md
+    - name: Select a school or work search experience (preview)
+      href: select-work-school-search-experience.md
     - name: Make Microsoft Edge the default browser
       href: /deployedge/edge-default-browser
     - name: Make Bing the default search engine
