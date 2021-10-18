@@ -119,6 +119,8 @@ items:
       href: overview-microsoft-search-bing.md
     - name: Security and Privacy
       href: security-for-search.md      
+    - name: Customize address bar shortcuts for Microsoft Edge
+      href: edge-shortcuts.md
     - name: Add a search box to your intranet site
       href: add-a-search-box-to-your-intranet-site.md
     - name: Select a school or work search experience (preview)
