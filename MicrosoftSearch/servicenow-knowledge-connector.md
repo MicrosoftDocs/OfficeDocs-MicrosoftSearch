@@ -252,7 +252,10 @@ If your organization has enabled Single Sign-On (SSO) to ServiceNow, you may hav
 #### 2.1. Check table access permissions
 If you see forbidden or unauthorized response in connection status, check if the service account has required access to the tables mentioned in [step 3: connection settings](#step-3-connection-settings). Please check whether all the columns in the tables have read access.
 
-#### 2.2. Check if ServiceNow instance behind firewall
+#### 2.2. Change in account password
+The Graph Connector uses access token fetched on behalf of service account for crawl. The access token refreshes every 12 hours. Ensure that service account password is not changed after publishing the connection. You may need to re-authenticate the connection if there is a change in password.
+
+#### 2.3. Check if ServiceNow instance behind firewall
 Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You will need explicitly allow access to Graph Connector service. You can find public IP address range of Graph Connector Service in the table below. Based on your tenant region, add it to your ServiceNow instance network allow list.
 
 **Environment** | **Region** | **Range**
@@ -261,7 +264,7 @@ PROD | North America | 52.250.92.252/30, 52.224.250.216/30
 PROD | Europe | 20.54.41.208/30, 51.105.159.88/30 
 PROD | Asia Pacific | 52.139.188.212/30, 20.43.146.44/30 
 
-#### 2.3. Access permissions not working as expected
+#### 2.4. Access permissions not working as expected
 If you observe discrepancies in access permissions applied to search results, verify access flow chart for user criteria in [managing access to knowledge bases and articles](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html).
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
