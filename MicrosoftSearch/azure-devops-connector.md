@@ -30,8 +30,20 @@ This article is for anyone who configures, runs, and monitors an Azure DevOps Gr
 >The Azure DevOps connector supports only the Azure DevOps cloud service. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015, and TFS 2013 are not supported by this connector.
 
 <!---## Before you get started-->
+## Before you get started
+You must be the admin for your organization's M365 tenant as well as the admin for your organization's Azure DevOps instance.
 
-<!---Insert "Before you get started" recommendations for this data source-->
+To allow the connector to connect to your Azure DevOps Organization, you must enable **Third-party application access via OAuth**. Refer Azure DevOps documentation to [manage security policies](https://docs.microsoft.com/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops#manage-a-policy) to learn more.
+
+![Third-party application access via OAuth](media/ado-workitems-connector-security-policies.png)
+
+You will need the following permissions granted to the user account whose credentials are used during connector configuration:
+
+| Permission name | Permission type | Required for |
+| ------------ | ------------ | ------------ |
+| View project-level information | [Project permission](https://docs.microsoft.com/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions) | Crawling Azure DevOps Work Items. This permission is **mandatory** for the projects that need to be indexed. |
+| _View analytics_ | [Project permission](https://docs.microsoft.com/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions) | Crawling Azure DevOps Work Items. This permission is **mandatory** for the projects that need to be indexed. |
+| _View work items in this node_ | [Area path](https://docs.microsoft.com/en-us/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#area-path-object-level) | Crawling Work Items in an area path. This permission is **optional**. Only those area paths will be crawled for which the user account has permissions. |
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
@@ -85,6 +97,9 @@ If you choose to index the entire organization, items in all projects in the org
 
 If you choose individual projects, only work items in those projects will be indexed.
 
+> [!NOTE]
+> Azure DevOps projects can be crawled after granting them the _View project-level information_ and _View analytics_ permissions.
+
 ![Configure data.](media/ADO_Configure_data.png)
 
 Next, select which fields you want the connection to index and preview data in these fields before proceeding.
@@ -122,11 +137,17 @@ Follow the general [setup instructions](./configure-connector.md).
 instructions.-->
 
 ## Troubleshooting
-The following is a common error observed while configuring the connector, and its possible reason.
+The following are common errors observed while configuring the connector, or during crawling, and its possible reasons.
 
-| Configuration step | Error message | Possible reason(s) |
+| Step | Error message | Possible reason(s) |
 | ------------ | ------------ | ------------ |
-|  | `The account associated with the connector doesn't have permission to access the item.` | The registered app does not have any of the required OAuth scopes. (Note - A new OAuth scope requirement 'Analytics:read' was introduced on 8/31/2021)  |
+| Connection settings | `Invalid Credentials detected. Try signing in with a different account or check the permissions for your account` | *Third-party application access via OAuth* may be disabled. Follow steps to [manage security policies](https://docs.microsoft.com/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops#manage-a-policy) to enable OAuth. |
+| Connection settings | `Bad state` message in OAuth pop-up window with URL stating `error=InvalidScope` | Wrong scopes provided to the registered app. |
+| Connection settings | `400 - Bad request` message in OAuth pop-up window | Incorrect App ID |
+| Connection settings | `BadRequest: Bad Request on api request` message in OAuth pop-up window | Incorrect Client secret |
+| Crawl time (post connector configuration) | `The account associated with the connector doesn't have permission to access the item.` | The registered app does not have any of the required OAuth scopes. (Note - A new OAuth scope requirement 'Analytics:read' was introduced on 8/31/2021) |
+| Crawl time (post connector configuration) | `You don't have permission to access this data source. You can contact the owner of this data source to request permission.` | *Third-party application access via OAuth* is disabled. Follow steps to [manage security policies](https://docs.microsoft.com/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops#manage-a-policy) to enable OAuth. |
+| Crawl time (post connector configuration) | `Credentials associated with this data source have expired. Renew the credentials and then update the connection` | The registered app may have been deleted or expired. |
 
 <!---## Limitations-->
 <!---Insert limitations for this data source-->
