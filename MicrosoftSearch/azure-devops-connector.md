@@ -33,7 +33,7 @@ This article is for anyone who configures, runs, and monitors an Azure DevOps Gr
 ## Before you get started
 You must be the admin for your organization's M365 tenant as well as the admin for your organization's Azure DevOps instance.
 
-To allow the connector to connect to your Azure DevOps Organization, you must enable **Third-party application access via OAuth**. Refer Azure DevOps documentation to [manage security policies](https://docs.microsoft.com/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops#manage-a-policy) to learn more.
+To allow the connector to connect to your Azure DevOps Organization, you must enable **Third-party application access via OAuth**. Refer Azure DevOps documentation to [manage security policies](/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops#manage-a-policy&preserve-view=true) to learn more.
 
 ![Third-party application access via OAuth](media/ado-workitems-connector-security-policies.png)
 
@@ -41,9 +41,9 @@ You will need the following permissions granted to the user account whose creden
 
 | Permission name | Permission type | Required for |
 | ------------ | ------------ | ------------ |
-| View project-level information | [Project permission](https://docs.microsoft.com/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions) | Crawling Azure DevOps Work Items. This permission is **mandatory** for the projects that need to be indexed. |
-| _View analytics_ | [Project permission](https://docs.microsoft.com/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions) | Crawling Azure DevOps Work Items. This permission is **mandatory** for the projects that need to be indexed. |
-| _View work items in this node_ | [Area path](https://docs.microsoft.com/en-us/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#area-path-object-level) | Crawling Work Items in an area path. This permission is **optional**. Only those area paths will be crawled for which the user account has permissions. |
+| View project-level information | [Project permission](https://docs.microsoft.com/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | Crawling Azure DevOps Work Items. This permission is **mandatory** for the projects that need to be indexed. |
+| _View analytics_ | [Project permission](https://docs.microsoft.com/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | Crawling Azure DevOps Work Items. This permission is **mandatory** for the projects that need to be indexed. |
+| _View work items in this node_ | [Area path](https://docs.microsoft.com/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#area-path-object-level&preserve-view=true) | Crawling Work Items in an area path. This permission is **optional**. Only those area paths will be crawled for which the user account has permissions. |
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
