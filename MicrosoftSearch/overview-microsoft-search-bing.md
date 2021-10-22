@@ -41,7 +41,7 @@ To make finding work or school results easier, Microsoft Search in Bing support 
 |[Microsoft Edge work shortcut](/microsoftsearch/edge-shortcuts)|Work or School results page|
 |Microsoft Edge new tab page|All results page|
 |[Embedded search box](/microsoftsearch/add-a-search-box-to-your-intranet-site) on your intranet or an internal app|Work or School results page|
-|Microsoft Search in Bing extension|Work or School results page|
+|[Microsoft Search in Bing extension](/overview-microsoft-search-bing#add-the-microsoft-search-extension-to-google-chrome)|Work or School results page|
 
 ## Getting started with Microsoft Search in Bing
 
