@@ -35,7 +35,7 @@ To make finding work or school results easier, Microsoft Search in Bing support 
 |Search entry point|Takes users to|
 |:-----|:-----|
 |Bing homepage|All results page|
-|[Work](https://www.bing.com/work) or [School](https://www.bing.com/school) search start page|Work or School results page|
+|[Work](https://www.bing.com/work) search start page|Work results page|
 |[Windows Search](https://support.microsoft.com/windows/search-for-anything-anywhere-b14cc5bf-c92a-1e73-ea18-2845891e6cc8)|An internal site, file, All results, or Work or School results page, depending on the match they select|
 |Microsoft Edge address bar|All results page|
 |[Microsoft Edge work shortcut](/microsoftsearch/edge-shortcuts)|Work or School results page|
@@ -71,7 +71,7 @@ With a simple script, you can add a customized search box and even direct it to 
 
 ## Add the Microsoft Search extension to Google Chrome
 
-If your organization uses Google Chrome, the Microsoft Search extension gives users easy access to work results from their browser. You don't need to change any search or browser defaults. For information about using group policy or the Microsoft 365 admin center to deploy the extension, see [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/microsoft-search-bing).
+If your organization uses Google Chrome, the Microsoft Search extension gives users easy access to work results from their browser. You don't need to change any search or browser defaults. For information about using group policy or the Microsoft 365 admin center to deploy the extension, see [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](/deployoffice/microsoft-search-bing).
 
 Users can also add the Microsoft Search extension from the [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-in-bing/obdappnhkfoejojnmcohppfnoeagadna).
 
