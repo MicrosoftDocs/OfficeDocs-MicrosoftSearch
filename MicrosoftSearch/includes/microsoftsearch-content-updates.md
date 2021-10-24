@@ -2,6 +2,16 @@
 
 
 
+## Week of October 18, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/18/2021 | [Customize address bar shortcuts for Microsoft Edge](/MicrosoftSearch/edge-shortcuts) | added |
+| 10/20/2021 | [Azure DevOps Graph connector for Microsoft Search](/MicrosoftSearch/azure-devops-connector) | modified |
+| 10/20/2021 | [Atlassian Jira Graph connector for Microsoft Search](/MicrosoftSearch/jira-connector) | modified |
+
+
 ## Week of October 11, 2021
 
 
@@ -43,13 +53,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 9/27/2021 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
-
-
-## Week of September 13, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/13/2021 | [Managing User Feedback](/MicrosoftSearch/manage-feedback) | modified |
-| 9/17/2021 | [License requirements and pricing](/MicrosoftSearch/licensing) | modified |
-| 9/17/2021 | [Select a school or work search experience (Preview)](/MicrosoftSearch/select-work-school-search-experience) | added |
