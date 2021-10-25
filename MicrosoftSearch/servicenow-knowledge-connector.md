@@ -54,8 +54,12 @@ Index and support user criteria permissions | kb_uc_can_read_mtom | Who can read
 | | sys_user_grmember | Read group membership of users
 | | user_criteria | Read user criteria permissions
 | | kb_knowledge_base | Read knowledge base information
+Index extended table properties (optional) | sys_db_object | Read extended table details
+| | sys_dictionary | Read extended table properties
 
 You can **create and assign a role** for the service account you use to connect with Microsoft Search. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be assigned on the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls). 
+
+If you want to index properties from [extended tables](https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/table-administration/concept/table-extension-and-classes.html_) of *kb_knowledge*, provide read access to sys_dictionary and sys_db_object. This is an optional feature. You will be able to index *kb_knowledge* table properties without access to the two additional tables.
 
 
 >[!NOTE]
