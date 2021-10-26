@@ -25,7 +25,7 @@ You can manage verticals at two levels:
 
 ## Understanding search verticals
 
-Microsoft Search has two types of verticals, out of the box and custom verticals. Out of the box verticals like All, Files, and  People create easy access to the most commonly used search results.
+Microsoft Search has two types of verticals, out of the box or default verticals and custom verticals. The Out of the box or default verticals, such as All, Files, and People, create easy access to the most commonly used search results.
 
 Additional configuration options are offered on custom verticals and can be used to create the best experience for your users.
 
