@@ -42,14 +42,14 @@ Here is a summary of customization capabilities on out of the box verticals.
 | Adding a query      | Partial       |Yes  |
 
 ## Custom verticals
-You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. Verticals can be added to show results from content indexed by [Graph connectors](connectors-overview.md), but you can’t create a vertical for content that resides in SharePoint.
+You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. You can add verticals to show results from content indexed by Graph connectors or from SharePoint.
 
 > [!NOTE]
 > Adding verticals for SharePoint content source is in preview and available to Targeted release customers.  
 > 
 ## Create or modify search verticals
 
-The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-kql) to define the scope of vertical search for a given content source.
+The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-kql) to define the scope of vertical search for a given content source. Filters can also be added to out of box and custom verticals at the organization and site level. For more information about filters, see [Manage filters](https://docs.microsoft.com/en-us/microsoftsearch/custom-filters).
 
 Following are the steps to modify the out of box verticals or create the custom verticals on Microsoft Search in [SharePoint home](https://sharepoint.com/), [Office](https://office.com/), or [Bing](https://bing.com/).  
 
@@ -68,7 +68,7 @@ Following are the steps to modify the out of box verticals or create the custom 
 1. Select an existing vertical and click **edit** or click **add** to create a new vertical.
 1. After setting your configuration, you can review and save the vertical.  
 
-## View the vertical in search results
+## View the vertical in search result page
 
 A [search result layout](manage-result-types.md) is needed for Graph connector results to render on the search vertical page. On ensuring that appropriate result layout is present, you can enable the search vertical. After you enable a vertical, there's a delay of a few hours before you can view it. You can append cacheClear=true to the URL in SharePoint and Office to view the vertical immediately. In Bing, append &features=uncachedVerticals to the work vertical URL to view the vertical immediately.
 
@@ -164,8 +164,7 @@ Use the “|” operator to resolve multi-value variables. See the following tab
 > [!NOTE]
 >
 > - Profile query variables are only supported for custom verticals that use a [connector](connectors-overview.md) as a content source.
-> - The profile query variables feature is currently in preview. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
-
+> 
 ## Limitations
 - Language localization is not applicable to names of out of box verticals once modified. 
 - KQL does not apply to content surfaced from user OneDrive. 
@@ -182,3 +181,5 @@ Here's a list of common problems you might encounter and actions to fix them.
 |---------|---------|
 | I see a "Something went wrong" error message on the vertical. | Both the vertical and result types are needed to complete the setup. Make sure both are set up for the content source. |
 | I don't see any content sources on the vertical page. | Make sure you have configured connectors and indexed data.   |
+
+
