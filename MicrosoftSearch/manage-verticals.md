@@ -68,7 +68,7 @@ Following are the steps to modify the out of box verticals or create the custom 
 1. Select an existing vertical and click **edit** or click **add** to create a new vertical.
 1. After setting your configuration, you can review and save the vertical.  
 
-## View the vertical in search result page
+## View the vertical in the search result page
 
 A [search result layout](manage-result-types.md) is needed for Graph connector results to render on the search vertical page. On ensuring that appropriate result layout is present, you can enable the search vertical. After you enable a vertical, there's a delay of a few hours before you can view it. You can append cacheClear=true to the URL in SharePoint and Office to view the vertical immediately. In Bing, append &features=uncachedVerticals to the work vertical URL to view the vertical immediately.
 
