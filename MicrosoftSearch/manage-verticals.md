@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
+ms.date: 10/27/2021
 search.appverid:
 - BFB160
 - MET150
@@ -16,22 +17,16 @@ description: "Manage the search verticals on the results page"
 
 # Manage search verticals
 
-Search verticals are tabs on the search result page that show results of a specific type or from select sources. For example, the Files vertical shows results classified as files and makes it easy for users who are looking to find documents. You can customize verticals in Microsoft Search to meet the needs of your organization or individual departments.
+Search verticals are tabs on the search result page that show results of a specific type or from select sources. For example, the Files vertical shows results classified as files and makes it easy for users who are looking to find documents. You can customize verticals in Microsoft Search to meet the needs of your organization or individual departments. Microsoft Search has two types of verticals, out of the box or default and custom verticals. The default verticals, such as All, Files, and People, create easy access to the most commonly used search results.
 
 You can manage verticals at two levels:
 
 - **Organization level** – A vertical at the organization level appears on the search results page when users search from their [SharePoint](https://sharepoint.com/) start page, [Microsoft Office](https://office.com), and Microsoft Search in [Bing](https://bing.com)
 - **Site level** – A vertical at the site level appears on the search results page when users search on a SharePoint site. For example, you might want to enable your customer service employees to search for Severity 1 incidents directly from their department’s SharePoint site.
 
-## Understanding search verticals
-
-Microsoft Search has two types of verticals, out of the box or default verticals and custom verticals. The Out of the box or default verticals, such as All, Files, and People, create easy access to the most commonly used search results.
-
-Additional configuration options are offered on custom verticals and can be used to create the best experience for your users.
-
 ## Out of the box verticals
 
-By default, Microsoft Search shows verticals for All, People, Files, Sites etc. Default verticals are present at the organization level in experiences like [SharePoint](https://sharepoint.com/), [Microsoft Office](https://office.com/), and Microsoft Search in [Bing](https://bing.com/) or at the site level in each site's search result page. 
+Default verticals are present at the organization level in experiences like [SharePoint](https://sharepoint.com/), [Microsoft Office](https://office.com/), and Microsoft Search in [Bing](https://bing.com/) or at the SharePoint site level in each site's search result page. 
 
 Here is a summary of customization capabilities on out of the box verticals.
 
@@ -45,13 +40,11 @@ Here is a summary of customization capabilities on out of the box verticals.
 You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. You can add verticals to show results from content indexed by Graph connectors or from SharePoint.
 
 > [!NOTE]
-> Adding verticals for SharePoint content source is in preview and available to Targeted release customers.  
+> Adding verticals for a SharePoint content source is in preview and available only to Targeted Release users.  
 > 
 ## Create or modify search verticals
 
 The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-kql) to define the scope of vertical search for a given content source. Filters can also be added to out of box and custom verticals at the organization and site level. For more information about filters, see [Manage filters](https://docs.microsoft.com/en-us/microsoftsearch/custom-filters).
-
-Following are the steps to modify the out of box verticals or create the custom verticals on Microsoft Search in [SharePoint home](https://sharepoint.com/), [Office](https://office.com/), or [Bing](https://bing.com/).  
 
 ### Manage organization-level verticals
 
