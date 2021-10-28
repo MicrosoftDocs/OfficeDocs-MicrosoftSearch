@@ -25,7 +25,7 @@ The Microsoft Federated Search Platform enables you to surface data in Microsoft
 
 ## Create search apps
 
-A developer in your organization can build a search app and submit  for Search admin’s approval. To see how to create a search app, see: [Connect a Bot Framework bot to Search](/azure/bot-service/bot-service-channel-connect-search?view=azure-bot-service-4.0). Once the developer creates a search app and links to the third-party data source, it will be ready for the Search Admin’s approval. Note: This step of approval is dependent on the developer creating a search app and submitting it. Once submitted the search app appears in the Search and Intelligence portal.
+A developer in your organization can build a search app and submit  for Search admin’s approval. To learn how to create a search app, see: [Connect a Bot Framework bot to Search](/azure/bot-service/bot-service-channel-connect-search). Once the developer creates a search app and links to the data source, it will be ready for the your approval. After the developer submits the app, it will appear in the Search & Intelligence admin center.
 
 ## Publish search apps
 
@@ -35,7 +35,7 @@ Search admins and editors can either publish or disable a search app. Publishing
 - **Disabled state**: Search apps saved as disabled state aren't available to your users. Use this status if you or other stakeholders want to review search apps before publishing them.
 - **Needs review state**: Search apps when submitted by a developer in your organization is shown in this state until published or disabled.
 
-A search app can be deleted by a developer at any time. To learn more, see [Connect a Bot Framework bot to Search](/azure/bot-service/bot-service-channel-connect-search?view=azure-bot-service-4.0).
+A search app can be deleted by a developer at any time. To learn more, see [Connect a Bot Framework bot to Search](/azure/bot-service/bot-service-channel-connect-search).
 
 > [!NOTE]
 > The developer documentation also refers to search apps as search provider.
