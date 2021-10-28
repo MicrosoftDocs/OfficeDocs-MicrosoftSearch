@@ -25,7 +25,7 @@ The Microsoft Federated Search Platform enables you to surface data in Microsoft
 
 ## Create search apps
 
-A developer in your organization can build a search app and submit  for Search admin’s approval. To learn how to create a search app, see: [Connect a Bot Framework bot to Search](/azure/bot-service/bot-service-channel-connect-search). Once the developer creates a search app and links to the data source, it will be ready for the your approval. After the developer submits the app, it will appear in the Search & Intelligence admin center.
+A developer in your organization can build a search app and submit  for Search admin’s approval. To learn how to create a search app, see: [Connect a Bot Framework bot to Search](/azure/bot-service/bot-service-channel-connect-search). Once the developer creates a search app and links to the data source, it will be ready for your approval. After the developer submits the app, it will appear in the Search & Intelligence admin center.
 
 ## Publish search apps
 
