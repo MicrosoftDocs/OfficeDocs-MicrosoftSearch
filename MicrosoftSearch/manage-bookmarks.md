@@ -98,7 +98,7 @@ To prevent bookmark-to-bookmark duplication errors:
 
 To reduce the manual effort required to add bookmarks, Microsoft Search can evaluate your organization's SharePoint links and recommend bookmarks. You can review them before publishing or set them to automatically publish. No setup is needed for recommended bookmarks, they're enabled and set to autopublish by default. To change these settings at any time, select **Manage bookmarks** to open the Bookmark settings panel.
 
-![Screenshot of Recommended bookmark settings in the Microsoft 365 admin portal.](media/bookmarks-recommendedsettings.png)
+:::image type="content" alt-text="Screenshot of Recommended bookmark settings in the Microsoft 365 admin portal." source="media/bookmarks-recommendedsettings.png":::
 
 If recommended bookmarks are enabled, the recommendation engine will evaluate SharePoint sites in your organization to identify high-traffic links. After an initial evaluation period, the recommended bookmarks will either be autopublished or added to the list of suggested bookmarks. The next cycle—a 30-day evaluation period followed by autopublishing or adding suggested bookmarks—will then begin.
 
