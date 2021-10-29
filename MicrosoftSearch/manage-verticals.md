@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
+ms.date: 10/27/2021
 search.appverid:
 - BFB160
 - MET150
@@ -16,31 +17,39 @@ description: "Manage the search verticals on the results page"
 
 # Manage search verticals
 
-Search verticals are tabs on the search result page that show results of a specific type or from select sources. For example, the Files vertical shows results classified as files and makes it easy for users who are looking to find documents. You can customize verticals in Microsoft Search to meet the needs of your organization or individual departments.
+Search verticals are tabs on the search result page that show results of a specific type or from select sources. For example, the Files vertical shows results classified as files and makes it easy for users who are looking to find documents. You can customize verticals in Microsoft Search to meet the needs of your organization or individual departments. Microsoft Search has two types of verticals, out of the box or default and custom verticals. The default verticals, such as All, Files, and People, create easy access to the most commonly used search results.
 
 You can manage verticals at two levels:
 
 - **Organization level** – A vertical at the organization level appears on the search results page when users search from their [SharePoint](https://sharepoint.com/) start page, [Microsoft Office](https://office.com), and Microsoft Search in [Bing](https://bing.com)
 - **Site level** – A vertical at the site level appears on the search results page when users search on a SharePoint site. For example, you might want to enable your customer service employees to search for Severity 1 incidents directly from their department’s SharePoint site.
 
-## Understanding search verticals
+## Default verticals
 
-Microsoft Search has two types of verticals, out of the box and custom verticals. Out of the box verticals like All, Files, and  People create easy access to the most commonly used search results.
+Default verticals are present at the organization level in experiences like [SharePoint](https://sharepoint.com/), [Microsoft Office](https://office.com/), and Microsoft Search in [Bing](https://bing.com/) or at the SharePoint site level in each site's search result page. 
 
-Additional configuration options are offered on custom verticals and can be used to create the best experience for your users.
+Here is a summary of customization capabilities on out of the box verticals.
 
-You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. Verticals can be added to show results from content indexed by [Graph connectors](connectors-overview.md), but you can’t create a vertical for content that resides in SharePoint.
+|Customization type   |Organization level     |Site level   |
+|---------|---------|---------|
+| Rename vertical    | Yes |Yes  |
+| Disable vertical   | Partial       |Yes  |
+| Adding a query      | Partial       |Yes  |
 
-## Create search verticals
+## Custom verticals
+You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. You can add verticals to show results from content indexed by Graph connectors or from SharePoint.
 
-The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-kql) to define the scope of vertical search for a given content source.
+> [!NOTE]
+> Adding verticals for a SharePoint content source is in preview and available only to Targeted Release users.  
+> 
+## Create or modify search verticals
 
-Following are the steps to create the custom verticals on Microsoft Search in [SharePoint home](https://sharepoint.com/), [Office](https://office.com/), or [Bing](https://bing.com/).  
+The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-kql) to define the scope of the vertical search for a given content source. Filters can also be added to out of box and custom verticals at the organization and site level. For more information about filters, see [Manage filters](https://docs.microsoft.com/en-us/microsoftsearch/custom-filters).
 
 ### Manage organization-level verticals
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to the [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals) page in the **Customization** section.
-1. Click **add** to create a new vertical.
+1. Select an existing vertical and click **edit** or click **add** to create a new vertical.
 1. After moving through the configuration steps, you can review and save the vertical.  
 
 ### Manage site-level verticals
@@ -49,10 +58,10 @@ Following are the steps to create the custom verticals on Microsoft Search in 
 1. Select **Site information**, and then select **View all site settings**.  
 1. Look for the Microsoft Search section, and then select **Configure search settings**.
 1. In the navigation pane, go to Custom experience and then select **Verticals**.
-1. Click **add** to create a new vertical.
+1. Select an existing vertical and click **edit** or click **add** to create a new vertical.
 1. After setting your configuration, you can review and save the vertical.  
 
-## View the vertical in search results
+## View the vertical in the search result page
 
 A [search result layout](manage-result-types.md) is needed for Graph connector results to render on the search vertical page. On ensuring that appropriate result layout is present, you can enable the search vertical. After you enable a vertical, there's a delay of a few hours before you can view it. You can append cacheClear=true to the URL in SharePoint and Office to view the vertical immediately. In Bing, append &features=uncachedVerticals to the work vertical URL to view the vertical immediately.
 
@@ -95,7 +104,7 @@ For example, to create a “Tickets” vertical for the user to find support tic
 
 This language will narrow down the search results to show only those items for which the assignee is the user who runs the search.
 
-[Profile resource](/graph/api/resources/profile) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile, which have AAD as the source type, are exposed as Query variables.
+[Profile resource](/graph/api/resources/profile) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile are exposed as Query variables.
 
 Consider a user who has three email addresses available in the email collection, as shown here:
 
@@ -145,10 +154,13 @@ Use the “|” operator to resolve multi-value variables. See the following tab
 | 3    | {?MyProperty:{Profile.emails}}  |  This won't resolve because *emails* is an object. The “?” operator ignores query variables that don't resolve. This variable will be removed when passed further down the query stack.   |
 | 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") or (MyProperty:"non-official") or (MyProperty:"personal"))    |
 
-> [!NOTE]
->
-> - Profile query variables are only supported for custom verticals that use a [connector](connectors-overview.md) as a content source.
-> - The profile query variables feature is currently in preview. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
+## Limitations
+- Language localization is not applicable to names of out of box verticals once modified. 
+- KQL does not apply to content surfaced from user OneDrive. 
+- Custom verticals do not appear on the mobile view of Microsoft search. 
+- Adding query is not supported on the People vertical. 
+- Vertical modification and new verticals are not visible to guest users in an organization. 
+- Vertical re-ordering is not supported 
 
 ## Troubleshooting
 
@@ -158,3 +170,5 @@ Here's a list of common problems you might encounter and actions to fix them.
 |---------|---------|
 | I see a "Something went wrong" error message on the vertical. | Both the vertical and result types are needed to complete the setup. Make sure both are set up for the content source. |
 | I don't see any content sources on the vertical page. | Make sure you have configured connectors and indexed data.   |
+
+
