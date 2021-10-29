@@ -44,7 +44,7 @@ You can add search verticals that are relevant to your organization. For example
 > 
 ## Create or modify search verticals
 
-The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-kql) to define the scope of the vertical search for a given content source. Filters can also be added to out of box and custom verticals at the organization and site level. For more information about filters, see [Manage filters](https://docs.microsoft.com/en-us/microsoftsearch/custom-filters).
+The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-kql) to define the scope of the vertical search for a given content source. Filters can also be added to out of box and custom verticals at the organization and site level. For more information about filters, see [Manage filters](/microsoftsearch/custom-filters).
 
 ### Manage organization-level verticals
 
