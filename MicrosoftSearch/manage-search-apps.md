@@ -12,7 +12,6 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX
 description: "Manage search apps published by your organization's bot developers"
 ---
 
