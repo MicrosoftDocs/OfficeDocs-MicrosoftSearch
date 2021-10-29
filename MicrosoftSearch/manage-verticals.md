@@ -44,7 +44,7 @@ You can add search verticals that are relevant to your organization. For example
 > 
 ## Create or modify search verticals
 
-The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-kql) to define the scope of vertical search for a given content source. Filters can also be added to out of box and custom verticals at the organization and site level. For more information about filters, see [Manage filters](https://docs.microsoft.com/en-us/microsoftsearch/custom-filters).
+The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-kql) to define the scope of the vertical search for a given content source. Filters can also be added to out of box and custom verticals at the organization and site level. For more information about filters, see [Manage filters](https://docs.microsoft.com/en-us/microsoftsearch/custom-filters).
 
 ### Manage organization-level verticals
 
@@ -104,7 +104,7 @@ For example, to create a “Tickets” vertical for the user to find support tic
 
 This language will narrow down the search results to show only those items for which the assignee is the user who runs the search.
 
-[Profile resource](/graph/api/resources/profile) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile, which have AAD as the source type, are exposed as Query variables.
+[Profile resource](/graph/api/resources/profile) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile are exposed as Query variables.
 
 Consider a user who has three email addresses available in the email collection, as shown here:
 
@@ -154,10 +154,6 @@ Use the “|” operator to resolve multi-value variables. See the following tab
 | 3    | {?MyProperty:{Profile.emails}}  |  This won't resolve because *emails* is an object. The “?” operator ignores query variables that don't resolve. This variable will be removed when passed further down the query stack.   |
 | 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") or (MyProperty:"non-official") or (MyProperty:"personal"))    |
 
-> [!NOTE]
->
-> - Profile query variables are only supported for custom verticals that use a [connector](connectors-overview.md) as a content source.
-> 
 ## Limitations
 - Language localization is not applicable to names of out of box verticals once modified. 
 - KQL does not apply to content surfaced from user OneDrive. 
