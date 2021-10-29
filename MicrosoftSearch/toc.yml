@@ -31,6 +31,8 @@ items:
     href: manage-powerbi.md
   - name: Q&As
     href: manage-qas.md
+  - name: Search apps
+    href: manage-search-apps.md
 - name: Data sources
   items:
   - name: Graph Connectors
