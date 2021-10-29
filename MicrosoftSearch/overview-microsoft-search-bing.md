@@ -41,7 +41,6 @@ To make finding work or school results easier, Microsoft Search in Bing support 
 |[Microsoft Edge work shortcut](/microsoftsearch/edge-shortcuts)|Work results page|
 |Microsoft Edge new tab page|All results page|
 |[Embedded search box](/microsoftsearch/add-a-search-box-to-your-intranet-site) on your intranet or an internal app|Work or School results page|
-|[Microsoft Search in Bing extension](/overview-microsoft-search-bing#add-the-microsoft-search-extension-to-google-chrome)|Work or School results page|
 
 ## Getting started with Microsoft Search in Bing
 
@@ -68,12 +67,6 @@ Microsoft Search is designed to make internal information easy to access everywh
 ![Internet portal with embedded search box and search suggestions.](media/msb-overview/embedded-search-box-intranet.png)
 
 With a simple script, you can add a customized search box and even direct it to a custom vertical. To learn more, see [Add a search box to your intranet site](add-a-search-box-to-your-intranet-site.md).
-
-## Add the Microsoft Search extension to Google Chrome
-
-If your organization uses Google Chrome, the Microsoft Search extension gives users easy access to work results from their browser. You don't need to change any search or browser defaults. For information about using group policy or the Microsoft 365 admin center to deploy the extension, see [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](/deployoffice/microsoft-search-bing).
-
-Users can also add the Microsoft Search extension from the [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-in-bing/obdappnhkfoejojnmcohppfnoeagadna).
 
 ## Set defaults to make searching work or school easier
 
