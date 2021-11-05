@@ -79,18 +79,60 @@ For your on-premises websites, select **Agent** as the crawl mode and in the **O
 
 ### Authentication
 
-Basic Authentication requires a username and password. Create this bot account by using the [Microsoft 365 admin center](https://admin.microsoft.com).
+**Basic Authentication** requires a username and password.
 
-OAuth 2.0 with [Azure AD](/azure/active-directory/) requires a resource ID, Client ID, and Client Secret. OAuth 2.0 only works with Cloud mode.
+**OAuth 2.0** with [Azure AD](/azure/active-directory/) requires a resource ID, Client ID, and Client Secret. OAuth 2.0 only works with Cloud mode.
 
-For more information, see [Authorize access to Azure Active Directory web applications using OAuth 2.0 code grant flow](/azure/active-directory/develop/v1-protocols-oauth-code). Register with the following values:
+The resource ID, client ID and client Secret values will depend on how you have done the setup for AAD based authentication for your website:
+1. If you are using an application both as an identity provider and the client app to access the website, the Client ID and Resource ID will be the Application ID of the app and the Client Secret will be the Secret that you generated in the app. See [Quickstart: Register an application with the Microsoft identity platform and Configure your App Service or Azure Functions app to use Azure AD login](https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad) for steps to configure a client application as an Identity provider. After the client app is configured, make sure to create a new client secret by going to the Certificates & Secrets section of the app. Also, copy the client secret value shown in the page as it won't be shown again. See the screenshots below to know how to obtain Client ID and Client Secret and do setup required in the app if you are creating the app on your own.
 
-**Name:** Microsoft Search <br/>
-**Redirect_URI:** `https://gcs.office.com/v1.0/admin/oauth/callback`
+Settings on branding page:
+> ![branding](https://user-images.githubusercontent.com/92116746/140576543-eaf3df66-168d-49e2-bee6-696ea638744f.png)
 
-To get the values for the resource, client_id, and client_secret, go to **Use the authorization code to request an access token** on the redirect URL webpage.
 
-For even more information, see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
+Settings on authentication page:
+> ![authentication](https://user-images.githubusercontent.com/92116746/140581216-00dcc775-6c96-4d66-9a03-bec21bcec57d.png)
+Please note, it is not required for you to have the above specified route for Redirect URI in your website. If you will be using the user token sent by Azure in your website for authentication, only then you will need to have the route.
+
+
+Client ID:
+> ![clientAppClientIdResourceId](https://user-images.githubusercontent.com/92116746/140582329-964f87bf-36f7-442f-b2f4-d97220e1a709.png)
+
+
+Client Secret:
+> ![ClientSecret](https://user-images.githubusercontent.com/92116746/140582557-e6504b69-268e-4106-93cb-b23e72bc4a6a.png)
+
+
+2. If you are using an application as an identity provider for your website, which will represent the resource, and a different application to access the website, the Client ID will be the application ID of your second app and the Client Secret will be the secret configured in the second app. However, the resource ID will be the ID of your first app. See [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app) and [Configure your App Service or Azure Functions app to use Azure AD login](https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad) for steps to configure a client application as an Identity provider. You don’t need to configure a client secret in this application. See the screenshots below to know how to complete the setup required in the app if you are creating the app on your own and how to obtain the client ID.
+
+Settings on branding page:
+> ![branding](https://user-images.githubusercontent.com/92116746/140576543-eaf3df66-168d-49e2-bee6-696ea638744f.png)
+
+Settings on authentication page:
+> ![authentication](https://user-images.githubusercontent.com/92116746/140581216-00dcc775-6c96-4d66-9a03-bec21bcec57d.png)
+Please note, it is not required for you to have the above specified route for Redirect URI in your website. If you will be using the user token sent by Azure in your website for authentication, only then you will need to have the route.
+
+Client ID:
+> ![clientAppClientIdResourceId](https://user-images.githubusercontent.com/92116746/140582329-964f87bf-36f7-442f-b2f4-d97220e1a709.png)
+
+You will also need to add an app role in the App roles section of the app which will later be assigned to your client application. See screenshots below on how to add an app role.
+> ![newAppRole](https://user-images.githubusercontent.com/92116746/140583082-fe71762b-9501-4014-92c6-a73e16849077.png)
+
+> ![newAppRole2](https://user-images.githubusercontent.com/92116746/140583088-d620e0f1-e642-442b-968e-de3060e7c22f.png)
+
+
+After configuring the resource app, you need to create the client app and give it permissions to access the resource app by adding the app role configured above in the API permissions of the client app. See [Quickstart: Configure a client application to access a web API](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis) and screenshots below to see how to grant permissions to the client app.
+> ![AddingPermission](https://user-images.githubusercontent.com/92116746/140583143-1d897ce4-b6e1-4591-8115-62e07b39fb7d.png)
+
+> ![AddingPermission2](https://user-images.githubusercontent.com/92116746/140583149-6c70c1f9-ffa8-4d2d-ac2f-171e77f37815.png)
+
+> ![AddingPermission3](https://user-images.githubusercontent.com/92116746/140583154-6875d439-f523-40b1-829a-6328b5d5fc55.png)
+
+
+Once the permissions are assigned, you will need to create a new client secret for this application by going to the Certificates & secrets section. Copy the client secret value shown in the page as it won't be shown again. Later use, the Application ID from this app as the Client ID, the secret from this app as the Client Secret and Application ID of the first app as the Resource ID in the admin center.
+
+
+**Windows authentication** is only available in agent mode. It requires Username, Domain and Password. You need to provide the username and domain in the Username field in the format of either domain\username or username@domain. Password must be entered in the Password field. For Windows authentication, the username provided must also be an administrator in the server where the agent is installed.
 
 ## Step 3a: Add URLs to exclude (Optional crawl restrictions)
 
