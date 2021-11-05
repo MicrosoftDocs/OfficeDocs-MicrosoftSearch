@@ -82,8 +82,8 @@ Product name patterns support a range of Dynamics 365 applications and will trig
 
 With this simple configuration, you can enable the Dynamics 365 federation search experience for people in your organization. To successfully set up this connection, we recommend you confirm these settings before you begin:
 
-* Dataverse search is enabled. For more information, see [Configure Dataverse search for your environment](/power-platform/admin/configure-relevance-search-organization).
-* The Search admin configuring the connector has user access to Dynamics 365. For information, see [Assign licenses](/power-platform/admin/assign-licenses).
+* Dataverse search is enabled for the Dynamics 365 environment you want to connect to. For details, see [Configure Dataverse search for your environment](/power-platform/admin/configure-relevance-search-organization).
+* The Search admin configuring the connector has valid access to Dynamics 365. For more information, see [Assign licenses](/power-platform/admin/assign-licenses).
 
 After verifying these settings, follow these steps to set up the connector:
 
@@ -91,7 +91,7 @@ After verifying these settings, follow these steps to set up the connector:
 
 2. In the Microsoft apps and services section, under Microsoft Dynamics 365, select **Manage** to open the Microsoft Dynamics 365 panel.
 
-3. Enable the connector for your organization.
+3. Activate the connector for your organization.
 
 4. In the **Endpoints** list, select your Dynamics 365 environment.
 
@@ -101,9 +101,9 @@ After verifying these settings, follow these steps to set up the connector:
 
 7. Select **Save** to finish the connection setup.
 
-> [!TIP]
-> To customize the name of your Dynamics 365 vertical, click **Edit vertical**. For more information, see [Manage search verticals](/microsoftsearch/manage-verticals).
+:::image type="content" alt-text="Screenshot of Dynamics 365 setup panel in the Microsoft 365 admin center." source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
 
-:::image type="content" alt-text="Screenshot of Dynamics 365 set-up panel in the Microsoft 365 admin center." source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
+> [!TIP]
+> To clarify the type of content users can find in the search vertical, we recommend updating the vertical name. To customize the name of your Dynamics 365 vertical, click **Edit vertical**. For more information, see [Manage search verticals](/microsoftsearch/manage-verticals).
 
 When the setup is complete, Dynamics 365 answers and vertical will only appear for users with a valid Dynamics 365 license and access to the connected Dynamics 365 environment. At any time, you can change the connection endpoint environment or deactivate the connection.
