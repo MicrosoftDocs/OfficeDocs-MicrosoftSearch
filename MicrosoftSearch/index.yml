@@ -74,7 +74,9 @@ additionalContent:
             url: manage-powerbi.md
           - text: Manage Q&A
             url: manage-qas.md
-
+          - text: Manage search apps
+            url: manage-search-apps.md
+              
         # Card
         - title: Manage data sources
           links:

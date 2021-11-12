@@ -21,9 +21,7 @@ description: "Set up the ServiceNow Knowledge Graph connector for Microsoft Sear
 
 With the Microsoft Graph Connector for ServiceNow, your organization can index knowledge-base articles that are visible to all users or restricted with user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, end users can search for those articles from any Microsoft Search client.  
 
-You can also refer [the following video](https://www.youtube.com/watch?v=TVSkJpk1RiE) to learn more about Graph Connector's capability in managing search permissions.
-
-[![Managing Search Permissions in Microsoft Graph Connector for ServiceNow.](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
+You can also refer [this video](https://www.youtube.com/watch?v=TVSkJpk1RiE) to learn more about Graph Connector's capability in managing search permissions.
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Knowledge Graph  connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Set up your Graph Connector article to understand the general setup process.
 
@@ -54,8 +52,12 @@ Index and support user criteria permissions | kb_uc_can_read_mtom | Who can read
 | | sys_user_grmember | Read group membership of users
 | | user_criteria | Read user criteria permissions
 | | kb_knowledge_base | Read knowledge base information
+Index extended table properties (optional) | sys_db_object | Read extended table details
+| | sys_dictionary | Read extended table properties
 
 You can **create and assign a role** for the service account you use to connect with Microsoft Search. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be assigned on the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls). 
+
+If you want to index properties from [extended tables](https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/table-administration/concept/table-extension-and-classes.html_) of *kb_knowledge*, provide read access to sys_dictionary and sys_db_object. This is an optional feature. You will be able to index *kb_knowledge* table properties without access to the two additional tables.
 
 
 >[!NOTE]
