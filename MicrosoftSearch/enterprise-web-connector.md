@@ -96,22 +96,22 @@ The resource ID, client ID and client secret values will depend on how you did t
     
     * View of the settings on the branding section:
     
-    ![Image showing the settings section on the branding page.](media/enterprise-web-connector//connectors-enterpriseweb-branding.png)
+      ![Image showing the settings section on the branding page.](media/enterprise-web-connector//connectors-enterpriseweb-branding.png)
     
     * View of the settings on authentication section:
     
-    ![Image showing the settings section on the authentication page.](media/enterprise-web-connector/connectors-enterpriseweb-authentication.png)
+      ![Image showing the settings section on the authentication page.](media/enterprise-web-connector/connectors-enterpriseweb-authentication.png)
     
-    > [!NOTE]
-    > It is not required to have the above specified route for Redirect URI in your website. Only if you use the user token sent by Azure in your website for authentication you will need to have the route.
+      > [!NOTE]
+      > It is not required to have the above specified route for Redirect URI in your website. Only if you use the user token sent by Azure in your website for authentication you will need to have the route.
     
     * View of the client ID on the **Essentials** section:
     
-    ![Image showing the client ID on the essentials section.](media/enterprise-web-connector/connectors-enterpriseweb-clientapp-clientidresource-Id.png)
+      ![Image showing the client ID on the essentials section.](media/enterprise-web-connector/connectors-enterpriseweb-clientapp-clientidresource-Id.png)
     
     * View of the client secret on the **Certificates & secrets** section:
     
-    ![Image showing the client secret.](media/enterprise-web-connector/connectors-enterpriseweb-client-secret.png)
+      ![Image showing the client secret.](media/enterprise-web-connector/connectors-enterpriseweb-client-secret.png)
     
 2. If you are using an application as an identity provider for your website as the resource, and a different application to access the website, the client ID will be the application ID of your second app and the client secret will be the secret configured in the second app. However, the resource ID will be the ID of your first app.
 
@@ -122,30 +122,30 @@ The resource ID, client ID and client secret values will depend on how you did t
 
     * Creating a new app role:
     
-    ![Image showing the option to create an app role.](media/enterprise-web-connector/connectors-enterpriseweb-new-app-role.png)
+      ![Image showing the option to create an app role.](media/enterprise-web-connector/connectors-enterpriseweb-new-app-role.png)
     
     * Editing the new app role:
     
-    ![Image showing the section to edit an app role.](media/enterprise-web-connector/connectors-enterpriseweb-new-app-role2.png)
+      ![Image showing the section to edit an app role.](media/enterprise-web-connector/connectors-enterpriseweb-new-app-role2.png)
     
-    After configuring the resource app, you need to create the client app and give it permissions to access the resource app by adding the app role configured above in the API permissions of the client app. 
+      After configuring the resource app, you need to create the client app and give it permissions to access the resource app by adding the app role configured above in the API permissions of the client app. 
     
-    > [!NOTE]
-    > To see how to grant permissions to the client app see [Quickstart: Configure a client application to access a web API](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
+      > [!NOTE]
+      > To see how to grant permissions to the client app see [Quickstart: Configure a client application to access a web API](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
     
     The following screenshots show the section to grant permissions to the client app.
     
     * Adding a permission:
     
-    ![Image showing the option to add a permission.](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions.png)
+      ![Image showing the option to add a permission.](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions.png)
     
     * Selecting the permissions:
     
-    ![Image showing the section to select an API.](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions2.png)
+      ![Image showing the section to select an API.](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions2.png)
     
     * Adding the permissions:
-    
-    ![Image showing the selected permissions.](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions3.png)
+ 
+      ![Image showing the selected permissions.](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions3.png)
     
     Once the permissions are assigned, you will need to create a new client secret for this application by going to the Certificates & secrets section.
     Copy the client secret value shown in the page as it won't be displayed again. Later use, the application ID from this app as the client ID, the secret from this app as the client secret and application ID of the first app as the resource ID in the admin center.
