@@ -83,59 +83,74 @@ For your on-premises websites, select **Agent** as the crawl mode and in the **O
 
 **OAuth 2.0** with [Azure AD](/azure/active-directory/) requires a resource ID, Client ID, and a client Secret. OAuth 2.0 only works with Cloud mode.
 
-The resource ID, client ID and client secret values will depend on how you have done the setup for AAD based authentication for your website:
+The resource ID, client ID and client secret values will depend on how you did the setup for AAD based authentication for your website:
 
-1. If you are using an application both as an identity provider and the client app to access the website, the client ID and the resource ID will be the application ID of the app, and the client secret will be the secret that you generated in the app. For detailed steps to configure a client application as an Identity provider, see [Quickstart: Register an application with the Microsoft identity platform and Configure your App Service or Azure Functions app to use Azure AD login](/azure/app-service/configure-authentication-provider-aad). After the client app is configured, make sure you create a new client secret by going to the **Certificates & Secrets** section of the app. Also, copy the client secret value shown in the page because it won't be displayed again. In the following screenshots you can see how to obtain the client ID, and client secret, and setup the app if you are creating the app on your own.
+1. If you are using an application both as an identity provider and the client app to access the website, the client ID and the resource ID will be the application ID of the app, and the client secret will be the secret that you generated in the app.
+    
+    > [!NOTE]
+    > For detailed steps to configure a client application as an Identity provider, see [Quickstart: Register an application with the Microsoft identity platform and Configure your App Service or Azure Functions app to use Azure AD login](/azure/app-service/configure-authentication-provider-aad). 
 
-* View of the settings on the branding section:
+    After the client app is configured, make sure you create a new client secret by going to the **Certificates & Secrets** section of the app. Copy the client secret value shown in the page because it won't be displayed again.
 
-![Image showing the settings section on the branding page.](media/enterprise-web-connector//connectors-enterpriseweb-branding.png)
-
-* View of the settings on authentication section:
-
-![Image showing the settings section on the authentication page.](media/enterprise-web-connector/connectors-enterpriseweb-authentication.png)
-
-> [!NOTE]
-> It is not required to have the above specified route for Redirect URI in your website. Only if you use the user token sent by Azure in your website for authentication you will need to have the route.
-
-* View of the client ID on the **Essentials** section:
-
-![Image showing the client ID on the essentials section.](media/enterprise-web-connector/connectors-enterpriseweb-clientapp-clientidresource-Id.png)
-
-* View of the client secret on the **Certificates & secrets** section:
-
-![Image showing the client secret.](media/enterprise-web-connector/connectors-enterpriseweb-client-secret.png)
-
+    In the following screenshots you can see the steps to obtain the client ID, and client secret, and setup the app if you are creating the app on your own.
+    
+    * View of the settings on the branding section:
+    
+    ![Image showing the settings section on the branding page.](media/enterprise-web-connector//connectors-enterpriseweb-branding.png)
+    
+    * View of the settings on authentication section:
+    
+    ![Image showing the settings section on the authentication page.](media/enterprise-web-connector/connectors-enterpriseweb-authentication.png)
+    
+    > [!NOTE]
+    > It is not required to have the above specified route for Redirect URI in your website. Only if you use the user token sent by Azure in your website for authentication you will need to have the route.
+    
+    * View of the client ID on the **Essentials** section:
+    
+    ![Image showing the client ID on the essentials section.](media/enterprise-web-connector/connectors-enterpriseweb-clientapp-clientidresource-Id.png)
+    
+    * View of the client secret on the **Certificates & secrets** section:
+    
+    ![Image showing the client secret.](media/enterprise-web-connector/connectors-enterpriseweb-client-secret.png)
+    
 2. If you are using an application as an identity provider for your website as the resource, and a different application to access the website, the client ID will be the application ID of your second app and the client secret will be the secret configured in the second app. However, the resource ID will be the ID of your first app.
-For steps to configure a client application as an identity provider see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) and [Configure your App Service or Azure Functions app to use Azure AD login](/azure/app-service/configure-authentication-provider-aad). You don't need to configure a client secret in this application, but wou will need to add an app role in the App roles section of the app which will later be assigned to your client application. In the following screenshots you can see how to add an app role.
 
-* Creating a new app role:
+    > [!NOTE]
+    > For steps to configure a client application as an identity provider see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) and [Configure your App Service or Azure Functions app to use Azure AD login](/azure/app-service/configure-authentication-provider-aad). 
 
-![Image showing the option to create an app role.](media/enterprise-web-connector/connectors-enterpriseweb-new-app-role.png)
+    You don't need to configure a client secret in this application, but wou will need to add an app role in the **App roles** section of the app which will later be assigned to your client application. In the following screenshots you can see how to add an app role.
 
-* Editing the new app role:
-
-![Image showing the section to edit an app role.](media/enterprise-web-connector/connectors-enterpriseweb-new-app-role2.png)
-
-After configuring the resource app, you need to create the client app and give it permissions to access the resource app by adding the app role configured above in the API permissions of the client app. To see how to grant permissions to the client app see [Quickstart: Configure a client application to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
-The following screenshots show the section to grant permissions to the client app.
-
-* Adding a permission:
-
-![Image showing the option to add a permission.](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions.png)
-
-* Selecting the permissions:
-
-![Image showing the section to select an API.](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions2.png)
-
-* Adding the permissions:
-
-![Image showing the selected permissions.](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions3.png)
-
-Once the permissions are assigned, you will need to create a new client secret for this application by going to the Certificates & secrets section.
-Copy the client secret value shown in the page as it won't be displayed again. Later use, the application ID from this app as the client ID, the secret from this app as the client secret and application ID of the first app as the resource ID in the admin center.
-
-**Windows authentication** is only available in agent mode. It requires username, domain and password. You need to provide the username and domain in the **Username** field, in any of the following formats: domain\username, or username@domain. A password must be entered in the **Password** field. For Windows authentication, the username provided must also be an administrator in the server where the agent is installed.
+    * Creating a new app role:
+    
+    ![Image showing the option to create an app role.](media/enterprise-web-connector/connectors-enterpriseweb-new-app-role.png)
+    
+    * Editing the new app role:
+    
+    ![Image showing the section to edit an app role.](media/enterprise-web-connector/connectors-enterpriseweb-new-app-role2.png)
+    
+    After configuring the resource app, you need to create the client app and give it permissions to access the resource app by adding the app role configured above in the API permissions of the client app. 
+    
+    > [!NOTE]
+    > To see how to grant permissions to the client app see [Quickstart: Configure a client application to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
+    
+    The following screenshots show the section to grant permissions to the client app.
+    
+    * Adding a permission:
+    
+    ![Image showing the option to add a permission.](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions.png)
+    
+    * Selecting the permissions:
+    
+    ![Image showing the section to select an API.](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions2.png)
+    
+    * Adding the permissions:
+    
+    ![Image showing the selected permissions.](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions3.png)
+    
+    Once the permissions are assigned, you will need to create a new client secret for this application by going to the Certificates & secrets section.
+    Copy the client secret value shown in the page as it won't be displayed again. Later use, the application ID from this app as the client ID, the secret from this app as the client secret and application ID of the first app as the resource ID in the admin center.
+    
+    **Windows authentication** is only available in agent mode. It requires username, domain and password. You need to provide the username and domain in the **Username** field, in any of the following formats: domain\username, or username@domain. A password must be entered in the **Password** field. For Windows authentication, the username provided must also be an administrator in the server where the agent is installed.
 
 ## Step 3a: Add URLs to exclude (Optional crawl restrictions)
 
