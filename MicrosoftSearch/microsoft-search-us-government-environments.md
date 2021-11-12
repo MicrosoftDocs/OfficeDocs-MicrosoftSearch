@@ -12,8 +12,8 @@ search.appverid:
 - MET150
 - MOE150
 description: "Learn about Microsoft Search feature availability for US government cloud customers"
-ROBOTS: NOINDEX, NOFOLLOW
 ---
+
 # Microsoft Search for US government environments
 
 This article provides an overview of feature differences between the US government clouds and the commercial cloud for Microsoft Search. Microsoft Search availability for US government clouds is outlined below.
