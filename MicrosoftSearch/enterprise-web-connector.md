@@ -85,7 +85,7 @@ For your on-premises websites, select **Agent** as the crawl mode and in the **O
 
 The resource ID, client ID and client Secret values will depend on how you have done the setup for AAD based authentication for your website:
 
-1. If you are using an application both as an identity provider, and the client app to access the website, the client ID and resource ID will be the application ID of the app, and the Client Secret will be the Secret that you generated in the app. For detailed steps to configure a client application as an Identity provider, see [Quickstart: Register an application with the Microsoft identity platform and Configure your App Service or Azure Functions app to use Azure AD login](azure/app-service/configure-authentication-provider-aad). After the client app is configured, make sure you create a new client secret by going to the **Certificates & Secrets** section of the app. Also, copy the client secret value shown in the page because it won't be displayed again. In the following screenshots you can see how to obtain the client ID, and client secret, and setup the app if you are creating the app on your own.
+1. If you are using an application both as an identity provider, and the client app to access the website, the client ID and resource ID will be the application ID of the app, and the Client Secret will be the Secret that you generated in the app. For detailed steps to configure a client application as an Identity provider, see [Quickstart: Register an application with the Microsoft identity platform and Configure your App Service or Azure Functions app to use Azure AD login](/azure/app-service/configure-authentication-provider-aad). After the client app is configured, make sure you create a new client secret by going to the **Certificates & Secrets** section of the app. Also, copy the client secret value shown in the page because it won't be displayed again. In the following screenshots you can see how to obtain the client ID, and client secret, and setup the app if you are creating the app on your own.
 
 * View of the settings on the branding page:
 
@@ -117,7 +117,7 @@ For steps to configure a client application as an Identity provider see [Quickst
 
 ![Image showing the section to edit an app role.](media/newapprole2.png)
 
-After configuring the resource app, you need to create the client app and give it permissions to access the resource app by adding the app role configured above in the API permissions of the client app. To see how to grant permissions to the client app see [Quickstart: Configure a client application to access a web API](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
+After configuring the resource app, you need to create the client app and give it permissions to access the resource app by adding the app role configured above in the API permissions of the client app. To see how to grant permissions to the client app see [Quickstart: Configure a client application to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
 The following screenshots show the section to grant permissions to the client app.
 
 * Adding a permission:
