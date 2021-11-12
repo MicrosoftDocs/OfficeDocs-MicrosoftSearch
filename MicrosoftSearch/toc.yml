@@ -7,6 +7,8 @@ items:
     href: setup-microsoft-search.md
   - name: Manage access to files and sites
     href: manage-access-files-sites.md
+  - name: US government environments
+    href: microsoft-search-us-government-environments.md
   - name: Frequently asked questions
     href: faqs.md
 - name: Get insights
@@ -31,6 +33,8 @@ items:
     href: manage-powerbi.md
   - name: Q&As
     href: manage-qas.md
+  - name: Search apps
+    href: manage-search-apps.md
 - name: Data sources
   items:
   - name: Graph Connectors
