@@ -52,8 +52,7 @@ You can use the Microsoft Search content creator browser extension to easily add
 
 ### Import SharePoint results
 
-If your organization set up Promoted Results in SharePoint, you can import the titles, URLs, and descriptions from the Promoted Results for your tenant into Microsoft Search and make the imported content available to your users. In most cases, importing SharePoint results takes just a few minutes. If you're importing a large number of results, it may take up to 48 hours. This is an easy way to quickly populate search results and make it more effective for your users. We recommend using promoted results from SharePoint as a reference to understand how to name and create relevant search results.
-NOTE: Imported SharePoint Results will appear in Search & Intelligence > Bookmarks > Status:Suggested
+If your organization set up Promoted Results in SharePoint, you can import the titles, URLs, and descriptions from the Promoted Results for your tenant into Microsoft Search and make the imported content available to your users. This is an easy way to quickly populate search results and make it more effective for your users. We recommend using promoted results from SharePoint as a reference to understand how to name and create relevant search results. In most cases, importing SharePoint results takes just a few minutes, but if you're importing a large number of results, it may take up to 48 hours. When the import is finished, the new bookmarks will have a "Suggested" status; you can then review the bookmarks and publish or edit them as needed.
 
 ### Add default and suggested bookmarks
 
