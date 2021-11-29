@@ -40,7 +40,7 @@ Here is a summary of customization capabilities on out of the box verticals.
 You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. You can add verticals to show results from content indexed by Graph connectors or from SharePoint.
 
 > [!NOTE]
-> Making changes to deafult verticals and adding verticals for a SharePoint content source are in preview and available only to Targeted Release users.  
+> Making changes to default verticals and adding verticals for a SharePoint content source are in preview and available only to Targeted Release users.  
 > 
 ## Create or modify search verticals
 
