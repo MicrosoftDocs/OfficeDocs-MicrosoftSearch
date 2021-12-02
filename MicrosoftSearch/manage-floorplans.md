@@ -37,7 +37,9 @@ When they search for a person's office, they'll see a similar answer, with the p
 
 ## Add floor plans
 
-Follow these steps to set up floor plans answers in Microsoft Search.
+Watch the video to get an overview of adding floor plan answers and follow the steps below.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPJt7]
 
 ### Step 1: Determine your building codes
 
