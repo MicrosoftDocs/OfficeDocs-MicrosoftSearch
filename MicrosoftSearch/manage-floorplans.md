@@ -15,7 +15,13 @@ description: "The floor plans feature in Microsoft Search helps users find peopl
 ---
 # Manage floor plans
 
-Floor plans in Microsoft Search help users find people, rooms, and spaces within a building. Query patterns that include a person's full name, first name, room name, or room location, like these examples, will return a floor plan:
+Floor plans in Microsoft Search help users find people, rooms, and spaces within a building. Watch the video for an overview of floor plan answers and a walkthrough of the steps to add them.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPJt7]
+
+## What users experience
+
+Users can see floor plan answers on [Bing](https://bing.com), [SharePoint](http://sharepoint.com/), and [Office 365](https://office.com). Other entry points that return Bing results, including Windows Search and the Microsoft Edge address bar, are also supported. Query patterns that include a person's full name, first name, room name, or room location, like these examples, will return a floor plan answer:
 
 - Where is Allan Deyoung's office?
 - Where is Daisy's office?
@@ -23,23 +29,19 @@ Floor plans in Microsoft Search help users find people, rooms, and spaces within
 - Workspace-1
 - B1/1.20
 
-## What users experience
+When users search for a room name or location, they'll see the point of interest marked on the floor plan answer.
 
-Users can see floor plan answers on [Bing](https://bing.com), [SharePoint](http://sharepoint.com/), and [Office 365](https://office.com). Other entry points that return Bing results, including Windows Search and the Microsoft Edge address bar, are also supported. When users search for a room name or location, they'll see the point of interest marked on the floor plan answer.
-
-> [!div class="mx-imgBorder"]
-> ![Floor plan with point of interest marker showing room location.](media/floor-plans/floor-plan-answer.png)
+[!div class="mx-imgBorder"]
+> ![Floor plan with point of interest marker showing room location.](media/floor-plans/floor-plan-answer.png)> 
 
 When they search for a person's office, they'll see a similar answer, with the person's profile image on the marker.
 
-> [!div class="mx-imgBorder"]
-> ![Floor plan with point of interest marker showing office location.](media/floor-plans/floorplans-officelocation.png)
+[!div class="mx-imgBorder"]
+> ![Floor plan with point of interest marker showing office location.](media/floor-plans/floorplans-officelocation.png)> 
 
 ## Add floor plans
 
-Watch the video to get an overview of adding floor plan answers and follow the steps below.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPJt7]
+Follow these steps to set up floor plans answers for your organization.
 
 ### Step 1: Determine your building codes
 
