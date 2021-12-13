@@ -2,6 +2,16 @@
 
 
 
+## Week of December 06, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/6/2021 | [Customize address bar shortcuts for Microsoft Edge](/MicrosoftSearch/edge-shortcuts) | modified |
+| 12/6/2021 | [Microsoft Search for US government environments](/MicrosoftSearch/microsoft-search-us-government-environments) | modified |
+| 12/8/2021 | [Manage search result layouts](/MicrosoftSearch/customize-results-layout) | modified |
+
+
 ## Week of November 29, 2021
 
 
