@@ -60,7 +60,7 @@ First, sign in and note that the minimum required privilege on the account is se
 
 6. Select **Microsoft Graph** and then **Application permissions**.
 
-7. Search for "ExternalItem.ReadWrite.All" and "Directory.Read.All" from the permissions and select **Add permissions**.
+7. Search for "ExternalItem.ReadWrite.All", "Directory.Read.All" and "ExternalConnection.ReadWrite.OwnedBy" from the permissions and select **Add permissions**.
 
 8. Select **Grant admin consent for [TenantName]** and confirm by selecting **Yes**.
 
@@ -118,7 +118,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 3. Open **App registration** and select **Certificates and secrets** from the navigation pane. Copy the certificate thumbprint.
 
-:::image type="content" alt-text="List of thumbrint certificates when Certificates and secrets is selected in the left pane." source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
+:::image type="content" alt-text="List of thumbprint certificates when Certificates and secrets is selected in the left pane." source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
 
 ##### Step 3: Assign the certificate to the agent
 

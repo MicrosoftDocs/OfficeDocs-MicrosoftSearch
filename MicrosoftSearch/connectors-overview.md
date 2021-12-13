@@ -61,12 +61,14 @@ You can connect to the following data sources using connectors created by Micros
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 * [Azure DevOps](azure-devops-connector.md)
 * [Azure SQL and Microsoft SQL Server](MSSQL-connector.md)
+* [Confluence Cloud (preview)](confluence-cloud-connector.md)
 * [Enterprise websites](enterprise-web-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [File share](fileshare-connector.md)
 * [Oracle SQL](OracleSQL-connector.md)
-* [Salesforce (preview)](salesforce-connector.md)
-* [ServiceNow](servicenow-connector.md)
+* [Salesforce](salesforce-connector.md)
+* [ServiceNow Knowledge](servicenow-knowledge-connector.md)
+* [ServiceNow Catalog (preview)](servicenow-catalog-connector.md)
 
 The [Microsoft Graph connectors gallery](https://www.microsoft.com/microsoft-search/connectors) contains a brief description of each of these connectors. If you're ready to connect one of these data sources to your tenant, be sure to read the [Setup overview](configure-connector.md) and any other articles in the Setup connectors by Microsoft section that apply to your data source.
 
@@ -95,8 +97,8 @@ Although Microsoft Graph connectors and Microsoft Search APIs are now generally 
 The set of connectors and features in preview include:
 
 * [Azure DevOps connector](azure-devops-connector.md)
-* [Salesforce connector](salesforce-connector.md)
-* [ServiceNow connector](servicenow-connector.md) with search permissions that use source ACLs
+* [Confluence Cloud connector](confluence-cloud-connector.md)
+* [ServiceNow Catalog connector](servicenow-catalog-connector.md)
 * [Manage custom filters](custom-filters.md)
 * [Multiple connections in a vertical](customize-search-page.md#multiple-connections-in-a-vertical)
 
@@ -104,7 +106,7 @@ The set of connectors and features in preview include:
 
 There are many ways to customize and configure search results. See the following articles to learn more:
 
-* [Manage verticals and result types](customize-search-page.md)
+* [Manage verticals](manage-verticals.md) and [result types](manage-result-types.md)
 * [Manage search result layouts](customize-results-layout.md)
 * [Manage result cluster](result-cluster.md)
 * [Manage custom filters](custom-filters.md)

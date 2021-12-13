@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
+ms.date: 11/22/2021
 search.appverid:
 - BFB160
 - MET150
@@ -39,20 +40,21 @@ Filters configured for verticals in the organization scope will be available at 
 ## Create organization level filters
 
 1. In [Microsoft 365 admin center](https://admin.microsoft.com/), go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
-2. Select your preferred vertical where you want to create a filter and click **Edit**.  
-3. Navigate to the Filters step in the vertical's wizard.
-4. Click **Add a Filter** to configure filters on refinable managed properties.
-5. After adding filters, you can review and save the vertical.
+1. Select your preferred vertical where you want to create a filter and click **Edit**.  
+1. Navigate to the Filters step in the vertical's wizard.
+1. Click **Add a Filter** to configure filters on refinable managed properties.
+1. After adding filters, you can review and save the vertical.
 
 ## Create SharePoint site level filters
 
-1. In [SharePoint admin center](https://sharepoint.com/), go to Settings.
-2. Look for the Microsoft Search section, and then select **Configure Microsoft Search for this site collection**.
-3. In the navigation pane, go to Custom experience and then select  **Verticals**.
-4. Select your preferred vertical to create the filter and click **Edit**.
-5. Navigate to the Filters step in the vertical's wizard.
-6. Click **Add a Filter** to configure filters on refinable managed properties.
-7. After adding filters, you can review and save the vertical.
+1. In the SharePoint site where you want to manage verticals, open the settings panel by clicking the gear.
+1. Select **Site information**, and then select **View all site settings**.  
+1. Look for the Microsoft Search section, and then select **Configure search settings**.
+1. In the navigation pane, go to Custom experience under Microsoft Search and then select  **Verticals**.
+1. Select your preferred vertical to create the filter and click **Edit**.
+1. Navigate to the Filters step in the vertical's wizard.
+1. Click **Add a Filter** to configure filters on refinable managed properties.
+1. After adding filters, you can review and save the vertical.
 
 ## Filter across multiple properties
 

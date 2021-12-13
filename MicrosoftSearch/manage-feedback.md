@@ -1,6 +1,6 @@
 ---
 title: "Managing User Feedback"
-ms.author: lebhansa
+ms.author: jeffkizn
 author: jeffkizn
 manager: parulm
 ms.audience: Admin
@@ -30,7 +30,7 @@ Users also have the option to send their query and other diagnostic info, along 
 
 Most feedback submissions appear in the [Feedback](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) section of the Microsoft Search admin center. Feedback sent with the **I want to suggest an internal link** category appears as a suggested bookmark in the [Bookmarks](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) section and can be seen by filtering on **Suggested** status.
 
-## Review Feedback
+## Review feedback
 
 On the [Feedback](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) page, you can review and export feedback that people in your organization have sent during the past 30 days. Once a user submits feedback it will appear in this list within 20 minutes. You can use the refresh button to ensure you are looking at the most current data
 
@@ -61,7 +61,7 @@ If you want to share search feedback with others or retain them for longer than 
 
 ## Send user feedback to Microsoft
 
-By default, all user feedback is sent to Microsoft and addition to you. To stop sending feedback to Microsoft, click **Manage settings**, and clear the **Automatically send user feedback to Microsoft** check box. It can take up to 24 hours for this change to take effect.
+By default, all user feedback is sent to Microsoft in addition to you. To stop sending feedback to Microsoft, click **Manage settings**, and clear the **Automatically send user feedback to Microsoft** check box. It can take up to 24 hours for this change to take effect.
 
 If you've decided to not send feedback to Microsoft automatically, you can still send individual pieces of feedback to Microsoft.
 
