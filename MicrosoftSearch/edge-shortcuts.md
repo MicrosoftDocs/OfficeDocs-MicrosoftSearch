@@ -18,7 +18,7 @@ description: "Add custom Microsoft Edge shortcuts for Microsoft Search in Bing o
 Help your users stay focused and find work results faster when searching from the Microsoft Edge address bar. Two shortcuts are enabled by default, 'work' and your organization's preferred or shortened name. In the Microsoft Edge address bar, users can type a keyword, then press the Tab key. The address bar will indicate they're searching within your organization. When they type their search and press the Enter key, they'll see a search results page with relevant answers and results. You can add two custom shortcuts keywords.
 
 > [!NOTE]
-> This article applies to Microsoft Edge Beta Channel, version 96 or later.
+> This article applies to Microsoft Edge version 96 or later.
 
 ## Manage shortcuts and keywords
 
