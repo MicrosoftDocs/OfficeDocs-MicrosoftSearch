@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: mssearch
 audience: Admin
 ms.audience: Admin
-ms.date: 09/24/2021
+ms.date: 12/15/2021
 ms.localizationpriority: medium
 search.appverid:
 - BFB160
@@ -20,13 +20,9 @@ description: "Review Microsoft Search usage reports"
 
 Search usage reports enable you to gain more understanding of how search is functioning in your organization. The insights generated from these reports will help you take actions that will make search a more useful and delightful experience for your users.
 
-> [!IMPORTANT]
-> Microsoft Search usage reports are currently in preview
+The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from SharePoint Home (the site with URL ending in /SharePoint.aspx), Office.com, and Microsoft Search in Bing work tab search boxes. You can see data from the past 31 days, per day, or monthly for the previous year.
 
-The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from SharePoint Home (the site with URL ending in /SharePoint.aspx), Office.com, and Microsoft Search in Bing work tab search boxes. You can see data from the past 31 days, per day, or monthly for the previous year. These reports are just rolling out so it will take time to accrue the historical data.
-
-> [!div class="mx-imgBorder"]
-> ![Search usage reports dashboard.](media/usage-reports/usage_reports_v2.png)
+:::image type="content" source="media/usage-reports/usage_reports_v2.png" alt-text="Search usage reports dashboard." lightbox="media/usage-reports/usage_reports_v2.png":::
 
 ## Overview of search reports
 
