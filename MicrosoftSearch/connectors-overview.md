@@ -78,7 +78,7 @@ The [Microsoft Graph connectors gallery](https://www.microsoft.com/microsoft-sea
 
 ### Build your own Microsoft Graph connector
 
-You can build your own connector if you prefer. For more information on building connectors, see  [Build your first custom Microsoft Graph connector](/graph/connecting-external-content-build-quickstart).
+You can build your own connector if you prefer. For developer documentation on building connectors, see [Microsoft Graph connectors overview](/graph/connecting-external-content-connectors-overview). For a quick start on building connectors, see [Build your first custom Microsoft Graph connector](/graph/connecting-external-content-build-quickstart).
 
 ## How do I manage my connections?
 
