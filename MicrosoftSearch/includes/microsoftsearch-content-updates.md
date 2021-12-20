@@ -2,6 +2,16 @@
 
 
 
+## Week of December 13, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/14/2021 | [Microsoft Search Overview](/MicrosoftSearch/overview-microsoft-search) | modified |
+| 12/15/2021 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
+| 12/17/2021 | [Microsoft Graph Connectors Overview](/MicrosoftSearch/connectors-overview) | modified |
+
+
 ## Week of December 06, 2021
 
 
