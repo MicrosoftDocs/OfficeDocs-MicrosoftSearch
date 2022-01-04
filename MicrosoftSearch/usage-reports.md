@@ -22,7 +22,7 @@ Search usage reports enable you to gain more understanding of how search is func
 
 The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from SharePoint Home (the site with URL ending in /SharePoint.aspx), Office.com, and Microsoft Search in Bing work tab search boxes. You can see data from the past 7 days, 14 days, 31 days, or monthly for the previous year.
 
-:::image type="content" source="media/usage-reports/usage_reports_v2.png" alt-text="Search usage reports dashboard." lightbox="media/usage-reports/usage_reports_v2.png":::
+:::image type="content" source="media/usage-reports/usage_reports_v3.png" alt-text="A report dashboard that shows graphs and tables of search usage." lightbox="media/usage-reports/usage_reports_v3.png":::
 
 ## Overview of search reports
 
