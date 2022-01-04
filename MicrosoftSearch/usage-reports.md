@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: mssearch
 audience: Admin
 ms.audience: Admin
-ms.date: 12/15/2021
+ms.date: 01/04/2022
 ms.localizationpriority: medium
 search.appverid:
 - BFB160
@@ -20,7 +20,7 @@ description: "Review Microsoft Search usage reports"
 
 Search usage reports enable you to gain more understanding of how search is functioning in your organization. The insights generated from these reports will help you take actions that will make search a more useful and delightful experience for your users.
 
-The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from SharePoint Home (the site with URL ending in /SharePoint.aspx), Office.com, and Microsoft Search in Bing work tab search boxes. You can see data from the past 31 days, per day, or monthly for the previous year.
+The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from SharePoint Home (the site with URL ending in /SharePoint.aspx), Office.com, and Microsoft Search in Bing work tab search boxes. You can see data from the past 7 days, 14 days, 31 days, or monthly for the previous year.
 
 :::image type="content" source="media/usage-reports/usage_reports_v2.png" alt-text="Search usage reports dashboard." lightbox="media/usage-reports/usage_reports_v2.png":::
 
@@ -40,24 +40,4 @@ The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Hom
 
 When you navigate to the usage reports page, all the reports are available to view. You can use the date filter to pick a specific day or month to view.
 
-Downloading a report will allow you to see reports from a broader range of time. Click on the download arrow and select **past 31 days** or **past 12 months**. The report downloads as an Excel spreadsheet. If you selected past 31 days, the spreadsheet will have an individual tab for each day. The past 12 months download will have a tab for each month.
-
-## Frequently asked questions
-
-**When I select past 31 days or past 12 months, why do I then have to choose a specific day or specific month.**
-
-The calendar view, today, in Microsoft search usage reports is a two-step process. First select the date range from the dropdown (past 31 days or past 12 months) and then select the start day or month.
-
-The top, abandoned, and failed query tables show results from either the day or the month you choose.
-
-**When will I see aggregate data for past 7 days, past 30 days, and so on...?**
-
-We are considering this type of aggregation and simplifying the data range filtering for future versions of these reports.
-
-**Why can’t I see a breakdown of usage reports by different apps (sources)?**
-
-Currently, filtering by source is not available. The reports combine searches from SharePoint Home and Office.com. Our next release will include source filtering so you can see metrics specific to each application.
-
-**What other filtering for usage reports is coming?**
-
-We're working on more filters that will help make sense of search usage at a more granular level of your organization. For example, you will be able to see query volume for a specific geography or department.
+Downloading a report will allow you to see reports from a broader range of time. The report downloads as an Excel spreadsheet based on the selected date filter. If you chose past 7, 14, or 31 days, the spreadsheet will have an individual tab for each day. The past 12 months download will have a tab for each month.
