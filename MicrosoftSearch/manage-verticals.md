@@ -39,9 +39,6 @@ Here is a summary of customization capabilities on out of the box verticals.
 ## Custom verticals
 You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. You can add verticals to show results from content indexed by Graph connectors or from SharePoint.
 
-> [!NOTE]
-> Making changes to default verticals and adding verticals for a SharePoint content source are in preview and available only to Targeted Release users.  
-> 
 ## Create or modify search verticals
 
 The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-kql) to define the scope of the vertical search for a given content source. Filters can also be added to out of box and custom verticals at the organization and site level. For more information about filters, see [Manage filters](/microsoftsearch/custom-filters).
