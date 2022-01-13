@@ -273,4 +273,8 @@ You may not be able to choose *Only people with access to this data source* opti
 
  ServiceNow user accounts that do not have an M365 user in Azure Active Directory will not map. Non-user, service accounts are expected to fail user mapping. Number of user mapping failures can be accessed in identity stats area in connection detail window. Log of failed user mappings can be downloaded from Error tab.
 
+### 4. Issues with user criteria access flow
+
+If you see differences in the user criteria validation between ServiceNow and Microsoft Search, set `glide.knowman.block_access_with_no_user_criteria` system property to `no`.
+
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
