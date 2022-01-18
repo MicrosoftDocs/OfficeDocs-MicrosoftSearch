@@ -32,7 +32,7 @@ Help your users stay focused and find work results faster when searching from th
 
 **Q: The keywords don't work. What's wrong?**
 
-**A:** In your Microsoft Edge search settings, verify that **Show me search and site suggestions using my typed characters** is enabled (edge://settings/search). You can also use Microsoft Edge group policy to enable search suggestions. To learn more, see [SearchSuggestEnabled](/deployedge/microsoft-edge-policies#searchsuggestenabled).
+**A:** In the Microsoft Edge address bar, enter edge://settings/search to go to your search settings. Verify that **Show me search and site suggestions using my typed characters** is enabled. You can also use Microsoft Edge group policy to enable search suggestions. To learn more, see [SearchSuggestEnabled](/deployedge/microsoft-edge-policies#searchsuggestenabled).
 
 **Q: Do these shortcuts only support English keywords?**
 
