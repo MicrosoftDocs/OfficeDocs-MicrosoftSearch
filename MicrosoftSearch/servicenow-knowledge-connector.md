@@ -269,4 +269,18 @@ PROD | Asia Pacific | 52.139.188.212/30, 20.43.146.44/30
 #### 2.4. Access permissions not working as expected
 If you observe discrepancies in access permissions applied to search results, verify access flow chart for user criteria in [managing access to knowledge bases and articles](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html).
 
+### 3. Issues with *Only people with access to this data source* permission
+
+#### 3.1 Unable to choose *Only people with access to this data source*
+
+You may not be able to choose *Only people with access to this data source* option if the service account do not have read permissions to the required tables in [step 3: connection settings](#step-3-connection-settings). Check whether the service account can read tables mentioned under *Index and support user criteria permissions* feature.
+
+#### 3.2 User mapping failures
+
+ ServiceNow user accounts that do not have an M365 user in Azure Active Directory will not map. Non-user, service accounts are expected to fail user mapping. Number of user mapping failures can be accessed in identity stats area in connection detail window. Log of failed user mappings can be downloaded from Error tab.
+
+### 4. Issues with user criteria access flow
+
+If you see differences in the user criteria validation between ServiceNow and Microsoft Search, set `glide.knowman.block_access_with_no_user_criteria` system property to `no`.
+
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
