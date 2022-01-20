@@ -90,3 +90,21 @@ Important template file tips:
 > You can't import Q&As if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted, and include all the required information.
 
 For more information about avoiding errors, see [Prevent import errors](manage-bookmarks.md#prevent-import-errors).
+
+## About keywords and reserved keywords
+
+A Q&A can have several keywords and share the same keyword with other answers, but reserved keyword can't be shared. A reserved keyword is a unique term or phrase that triggers one specific answer. A reserved keyword can be associated with one answer only. Use reserved keywords sparingly.
+
+## Frequently asked questions
+
+**Q: How long does it take for a Q&A to be visible in Microsoft Search after it's published?**
+
+**A:**  A Q&A is available in Microsoft Search immediately after publishing.
+
+**Q: How long does it take for a deleted Q&A to be removed from Microsoft Search results?**
+
+**A**: Deleted Q&As are immediately removed from results.
+
+**Q: When searching, does keyword matching for Q&As work the same as for bookmarks?**
+
+**A:**  For Q&As, only a basic level of keyword matching is supported and predominantly for keywords in English. Bookmarks support a more robust level of keyword matching. It uses a deep learning model to determine the similarity of different search keywords.
