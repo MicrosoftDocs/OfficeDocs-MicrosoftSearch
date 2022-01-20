@@ -107,4 +107,4 @@ A Q&A can have several keywords and share the same keyword with other answers, b
 
 **Q: When searching, does keyword matching for Q&As work the same as for bookmarks?**
 
-**A:**  For Q&As, only a basic level of keyword matching is supported and predominantly for keywords in English. Bookmarks support a more robust level of keyword matching. They use a deep learning model to determine the similarity of different search keywords.
+**A:**  For Q&As, only a basic level of keyword matching is supported and predominantly for keywords in English. Bookmarks support a more robust level of keyword matching. For bookmarks, a deep learning model is used to determine the similarity of different search keywords.
