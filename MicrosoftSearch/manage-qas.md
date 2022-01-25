@@ -17,7 +17,7 @@ description: "Find and update answers individually or use available Microsoft Se
 
 # Manage Q&As
 
-Creating a Q&A is similar to creating bookmarks. Q&As allow you to answer the user's questions instead of just providing a link to a webpage. You can also format the answer in rich text. If a bookmark and a Q&A share the same keyword, the bookmark result is shown first. Like bookmarks, the Q&A index is refreshed immediately after a Q&A is added or changed.
+Creating a Q&A is similar to creating bookmarks. Q&As allow you to answer the user's questions instead of just providing a link to a webpage. You can also format the answer in rich text. If a bookmark and a Q&A share the same keyword, the bookmark result appears first. Like bookmarks, the Q&A index is refreshed immediately after a Q&A is added or changed.
 
 ## Add or edit a single Q&A
 
@@ -78,7 +78,7 @@ Important template file tips:
 - If you include the **Id** of an existing Q&A, it will be replaced with the information in the import file.
 - If there's an existing Q&A with the same title or URL, the Q&A will be updated with information in the import file.
 - Not all fields in the template file are required, and the required fields vary depending on the Q&A state.
-- The **State** field determines if Q&As are saved as *draft*, *suggested*, or *scheduled*, or they are published automatically.
+- The **State** field determines if Q&As are saved as *draft*, *suggested*, or *scheduled*, or are published automatically.
 - For partners who manage multiple organizations: You can export your Q&As from one org and import them into another. But you must remove the data in the **Id** column before you import.
 
 > [!NOTE]
@@ -102,4 +102,4 @@ A Q&A can have several keywords and share the same keyword with other answers, b
 
 **Q: When searching, does keyword matching for Q&As work the same as for bookmarks?**
 
-**A:**  For Q&As, only a basic level of keyword matching is supported and predominantly for keywords in English. Bookmarks support a more robust level of keyword matching. For bookmarks, a deep learning model is used to determine the similarity of different search keywords.
+**A:**  For Q&As, the **Automatically match similar keywords** feature is based on a dictionary of alternative keywords derived from Bing search logs. The dictionary mainly supports English. For bookmark answers, this feature uses a deep learning model to determine the similarity of different search keywords and provides a more robust level of keyword matching.
