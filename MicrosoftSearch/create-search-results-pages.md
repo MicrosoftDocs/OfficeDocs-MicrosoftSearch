@@ -47,10 +47,6 @@ Custom search results pages can also make use of the [SharePoint Framework Query
 
 ## Additional resources
 
-To learn more about custom results page, check out our [Ignite 2019
-Search Customization and Development
-session](https://myignite.techcommunity.microsoft.com/sessions/85238?source=sessions).
-
 For open source projects, getting started with our Microsoft Search
 APIs, and more customization and extensibility samples, visit [Microsoft
 Search on GitHub](https://github.com/microsoft-search).
