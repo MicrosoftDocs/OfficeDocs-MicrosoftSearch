@@ -17,7 +17,7 @@ description: "Find and update answers individually or use available Microsoft Se
 
 # Manage Q&As
 
-Creating a Q&A is similar to creating bookmarks. Q&As allow you to answer the user's questions instead of just providing a link to a webpage. You can also format the answer in rich text. If a bookmark and a Q&A share the same keyword, the bookmark result is shown first. Like bookmarks, the Q&A index is refreshed immediately after a Q&A is added or changed.
+Creating a Q&A is similar to creating bookmarks. Q&As allow you to answer the user's questions instead of just providing a link to a webpage. You can also format the answer in rich text. If a bookmark and a Q&A share the same keyword, the bookmark result appears first. Like bookmarks, the Q&A index is refreshed immediately after a Q&A is added or changed.
 
 ## Add or edit a single Q&A
 
@@ -51,12 +51,7 @@ The following HTML tags are supported:
 
 ## Add or edit Q&As using browser extensions
 
-Search administrators can create search content easily by using browser extensions. Install the browser extension, and then go to the site from which you want to generate a Q&A. You can then create the Q&A and include a link to the source site.
-
-Currently, browser extensions are available for Microsoft Edge and Chrome.
-
-- To download extensions for Edge (Legacy), go to [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab).
-- To download extensions Chrome or Edge (Chromium), go to the [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm).
+Search administrators can easily create Q&A and bookmark answers using the [Microsoft Search content creator extension](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm). Add the extension to Microsoft Edge or Google Chrome, sign in with your admin account, then go to a page or site. The extension will suggest bookmark and Q&A answers based on the page content. You can publish or save them as drafts.
 
 ## Bulk add or edit Q&As
 
@@ -80,13 +75,31 @@ Select **Export** to download all the existing Q&As in a .csv file.
 Important template file tips:
 
 - Never edit data in these fields: **Id**, **Last Modified**, and **Last Modified By**
-- If you include the **Id** of an existing bookmark, it will be replaced with the information in the import file.
-- If there's an existing bookmark that has the same title or URL, the bookmark will be updated with information in the import file.
-- Not all fields in the template file are required, and the required fields vary depending on the bookmark state.
-- Based on the **State** field, bookmarks are saved as *draft*, *suggested*, or *scheduled*, or they are published automatically.
-- For partners who manage multiple organizations: You can export your bookmarks from one org and import them into another. But you must remove the data in the **Id** column before you import.
+- If you include the **Id** of an existing Q&A, it will be replaced with the information in the import file.
+- If there's an existing Q&A with the same title or URL, the Q&A will be updated with information in the import file.
+- Not all fields in the template file are required, and the required fields vary depending on the Q&A state.
+- The **State** field determines if Q&As are saved as *draft*, *suggested*, or *scheduled*, or are published automatically.
+- For partners who manage multiple organizations: You can export your Q&As from one org and import them into another. But you must remove the data in the **Id** column before you import.
 
 > [!NOTE]
 > You can't import Q&As if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted, and include all the required information.
 
 For more information about avoiding errors, see [Prevent import errors](manage-bookmarks.md#prevent-import-errors).
+
+## About keywords and reserved keywords
+
+A Q&A can have several keywords and share the same keyword with other answers, but reserved keyword can't be shared. A reserved keyword is a unique term or phrase that triggers one specific answer. A reserved keyword can be associated with one answer only. Use reserved keywords sparingly.
+
+## Frequently asked questions
+
+**Q: How long does it take for a Q&A to be visible in Microsoft Search after it's published?**
+
+**A:**  A Q&A is available in Microsoft Search immediately after publishing.
+
+**Q: How long does it take for a deleted Q&A to be removed from Microsoft Search results?**
+
+**A**: Deleted Q&As are immediately removed from results.
+
+**Q: When searching, does keyword matching for Q&As work the same as for bookmarks?**
+
+**A:**  For Q&As, the **Automatically match similar keywords** feature is based on a dictionary of alternative keywords derived from Bing search logs. The dictionary mainly supports English. For bookmark answers, this feature uses a deep learning model to determine the similarity of different search keywords and provides a more robust level of keyword matching.
