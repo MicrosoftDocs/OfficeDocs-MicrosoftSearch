@@ -72,7 +72,7 @@ When a user searches, Microsoft Search processes the query and parses search int
 The search results that the user has **permission** to see are presented on the search results page. Microsoft Search uses intelligent ranking algorithms to order results based on relevance.
 
 ## Privacy
-In Microsoft Search only the content that a user has permission to see can appear in search results. A user might, for example,  have permission to see a file because the user created it, it was shared with the user or with a larger group that includes the user, or it’s stored in a folder or location that the user has permission to access.
+In Microsoft Search only the content that a user has permission to see can appear in search results. A user might, for example, have permission to see a file because the user created it, it was shared with the user or with a larger group that includes the user, or it’s stored in a folder or location that the user has permission to access.
 > [!NOTE]
 > Learn how Microsoft Search in Bing protects your company data in [Security and Privacy for Microsoft Search in Bing](security-for-search.md).
 
