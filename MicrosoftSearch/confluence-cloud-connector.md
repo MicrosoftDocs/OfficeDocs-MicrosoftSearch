@@ -21,7 +21,7 @@ description: "Set up the Confluence Cloud Graph connector for Microsoft Search"
 Confluence Cloud Graph connector allows your organization to index Confluence content. After you configure the connector and index data from the Confluence site, end users can search for those content in Microsoft Search.
 
 >[!NOTE]
->Confluence Cloud Graph Connector is in preview. If you wish to get early access to try it, sign up using [<b> this form </b>](https://forms.office.com/r/duLxv8Nf8U).  
+>Confluence Cloud Graph Connector will be generally available by February 14, 2022.  
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence Cloud Graph connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Set up your Graph Connector article to understand the general setup process.
 
