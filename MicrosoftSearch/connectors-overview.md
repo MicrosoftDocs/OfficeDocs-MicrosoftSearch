@@ -62,6 +62,7 @@ You can connect to the following data sources using connectors created by Micros
 * [Azure DevOps](azure-devops-connector.md)
 * [Azure SQL and Microsoft SQL Server](MSSQL-connector.md)
 * [Confluence Cloud](confluence-cloud-connector.md)
+* [Confluence On-premises](confluence-onpremises-connector.md)
 * [Enterprise websites](enterprise-web-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [File share](fileshare-connector.md)
@@ -97,6 +98,7 @@ Although Microsoft Graph connectors and Microsoft Search APIs are now generally 
 The set of connectors and features in preview include:
 
 * [Azure DevOps connector](azure-devops-connector.md)
+* [Confluence On-premises connector](confluence-onpremises-connector.md)
 * [ServiceNow Catalog connector](servicenow-catalog-connector.md)
 * [Manage custom filters](custom-filters.md)
 * [Multiple connections in a vertical](customize-search-page.md#multiple-connections-in-a-vertical)

@@ -61,8 +61,10 @@ items:
           href: azure-devops-connector.md
         - name: Azure SQL and Microsoft SQL Server
           href: MSSQL-connector.md
-        - name: Confluence Cloud (preview)
+        - name: Confluence Cloud
           href: confluence-cloud-connector.md
+        - name: Confluence On-premises (preview)
+          href: confluence-onpremises-connector.md
         - name: Jira Cloud (preview)
           href: jira-connector.md
         - name: Enterprise websites
