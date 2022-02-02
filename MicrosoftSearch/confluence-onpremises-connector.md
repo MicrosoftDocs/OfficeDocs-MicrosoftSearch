@@ -62,7 +62,7 @@ Select the Graph Connector Agent from the drop down list. The agent will securel
 You can choose either Basic Authentication or OAuth 1.0a (recommended) to authenticate to your Confluence site.
 
 >[!TIP]
->Make sure the service **account has view access** to the Confluence content you want to index.
+>Make sure the **service account has view access** to the Confluence content you want to index.
 
 #### Basic Authentication
 
@@ -70,7 +70,7 @@ Enter a service account's username (usually email ID) and password to authentica
 
 #### OAuth 1.0a (recommended)
 
-Generate  a a public/private key pair and create an application link in Confluence On-premises site so that the Microsoft Search app can access the instance. To learn more, see Step 1 in Atlassian developer documentation on how to [configure OAuth 1.0a](https://developer.atlassian.com/server/jira/platform/oauth/#step-1--configure-jira).
+Generate  a a public/private key pair and create an application link in Confluence On-premises site so that the Microsoft Search app can access the instance. To learn more, see [step 1 in Atlassian developer documentation](https://developer.atlassian.com/server/jira/platform/oauth/#step-1--configure-jira) on how to configure OAuth 1.0a.
 
 #### Step 3.4.1 Generate an RSA public/private key pair
 
@@ -106,8 +106,8 @@ Run the following openssl commands in your terminal.
 
 Field | Recommended Value
 --- | ---
-**Consumer key** | OAuthkey
-**Consumer name** | Microsoft Graph Connector App
+**Consumer key** | `OAuthkey`
+**Consumer name** | `Microsoft Graph Connector App`
 **Public key** | Copy the public key from `confluence_publickey.pem` file generated from *Step 3.4.1* and paste it into this field.
 
 5. Click **Continue**. After successful creation, the application link will be displayed like the following screen.
@@ -116,7 +116,7 @@ Field | Recommended Value
 
 #### Step 3.4.3 Enter consumer key and private key to sign in
 
-In the connection creation wizard, enter the **Consumer key** created during *Step 3.4.2* and **Private key** from *Step 3.4.1*. Enable Pop-up in the browser for M365 admin center and click **Sign in**.
+In the connection creation wizard, enter the **Consumer key** created during *Step 3.4.2* and **Private key** from *Step 3.4.1*. Enable pop-up in the browser for M365 admin center and click **Sign in**.
 
 #### Step 3.4.4 Enter verification code to Finish Sign in
 
