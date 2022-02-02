@@ -141,7 +141,7 @@ Use the preview results button to verify the sample values of the selected prope
 
 Confluence On-premises Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them.
 
-In Confluence On-premises, security permissions for users and groups are defined using space permissions and page restrictions. Confluence On-premises Graph Connector applies space permissions if there are no page restrictions. Page level restrictions, if present, will take precedence over space permissions.
+In Confluence On-premises, security permissions for users and groups are defined using space permissions and page restrictions. Confluence On-premises Graph Connector applies *effective permissions* provided by [content restrictions API](https://docs.atlassian.com/ConfluenceServer/rest/7.15.0/#api/content/{id}/restriction).
 
 If you choose **Only people with access to this data source**, you need to further choose whether your Confluence site has Azure Active Directory (AAD) provisioned users or Non-AAD users.
 
