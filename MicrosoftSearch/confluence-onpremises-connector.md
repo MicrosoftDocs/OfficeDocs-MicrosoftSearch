@@ -23,7 +23,7 @@ Confluence On-premises Graph connector allows your organization to index Conflue
 >[!NOTE]
 >Confluence On-premises Graph Connector is in preview. If you wish to get early access to try it, sign up using [<b> this form </b>](https://forms.office.com/r/JniPmK5bzm).
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence On-premises Graph connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Set up your Graph Connector article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence On-premises Graph connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire article to understand the general setup process.
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence On-premises Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
@@ -55,7 +55,7 @@ To connect to your Confluence site, use your site URL.
 
 ### Step 3.3: Select the Graph Connector Agent
 
-Select the Graph Connector Agent from the drop down list. The agent will securely sends Confluence On-premises content into Microsoft Graph index.
+Select the Graph Connector Agent from the drop down list. The agent will securely send Confluence On-premises content into Microsoft Graph index.
 
 ### Step 3.4: Select authentication type
 
@@ -74,7 +74,7 @@ Generate  a a public/private key pair and create an application link in Confluen
 
 #### Step 3.4.1 Generate an RSA public/private key pair
 
-Run the following openssl commands in your terminal.
+Run the following openssl commands in your on-premises machine terminal.
 
 Step | Command
 --- | ---
@@ -121,7 +121,7 @@ Enter the **Verification Code** in connection creation wizard and click **Finish
 
 In this step, you can add or remove available properties from your Confluence data source. Microsoft 365 has already selected few properties by default.
 
-With a Confluence Query Language (CQL) string, you can specify conditions for syncing pages. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only the pages that are modified in the last two years. To learn about creating your own query string, see [Advanced Searching using CQL](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/). By default, all blogs and pages will be indexed by the connector.
+With a Confluence Query Language (CQL) string, you can specify conditions for syncing pages. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only the pages that are modified in the last two years. To learn about creating your own query string, see [Advanced Searching using CQL](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/). By default, all pages will be indexed by the connector.
 
 >[!TIP]
 >You may use the CQL filter to index **content modified after a certain time** using, *lastModified >= "2018/12/31"*
@@ -176,10 +176,10 @@ The common errors that can be seen while configuring the connector and their pos
 | Connection settings | The request is malformed or incorrect. | Incorrect Confluence site URL |
 | Connection settings | Unable to reach the Confluence On-premises service for your Confluence site. | Incorrect Confluence site URL |
 | Connection settings | The client doesn't have permission to perform the action. | Invalid password provided for Basic auth |
-| Select properties | No error message and no preview results | Check your CQL query whether it is valid |
+| Select properties | No preview results | Check your CQL query whether it is valid and matches the content to crawl |
 
 ## Limitations
 
 Confluence On-premises Graph connector has the following known limitations in its latest release:
 
-* Confluence On-premises Connector does not index attachment files and comments.
+* Confluence On-premises Connector does not index blogs, attachment files and comments.
