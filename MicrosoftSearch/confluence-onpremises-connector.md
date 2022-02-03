@@ -76,21 +76,12 @@ Generate  a a public/private key pair and create an application link in Confluen
 
 Run the following openssl commands in your terminal.
 
-1. Generate a 1024-bit private key:
-
-        openssl genrsa -out confluence_privatekey.pem 1024
-
-2. Create an X509 certificate:
-
-        openssl req -newkey rsa:1024 -x509 -key confluence_privatekey.pem -out confluence_publickey.cer -days 365
-
-3. Extract the private key (PKCS8 format) to the `confluence_privatekey.pcks8` file:
-
-        openssl pkcs8 -topk8 -nocrypt -in confluence_privatekey.pem -out confluence_privatekey.pcks8
-
-4. Extract the public key from the certificate to the `confluence_publickey.pem` file:
-
-        openssl x509 -pubkey -noout -in confluence_publickey.cer > confluence_publickey.pem
+Step | Command
+--- | ---
+Generate a 1024-bit private key |```openssl genrsa -out confluence_privatekey.pem 1024```
+Create an X509 certificate |```openssl req -newkey rsa:1024 -x509 -key confluence_privatekey.pem -out confluence_publickey.cer -days 365```
+Extract the private key (PKCS8 format) to the `confluence_privatekey.pcks8` file |```openssl pkcs8 -topk8 -nocrypt -in confluence_privatekey.pem -out confluence_privatekey.pcks8```
+Extract the public key from the certificate to the `confluence_publickey.pem` file |```openssl x509 -pubkey -noout -in confluence_publickey.cer > confluence_publickey.pem```
 
 #### Step 3.4.2 Create an application link
 
@@ -116,7 +107,7 @@ Field | Recommended Value
 
 #### Step 3.4.3 Enter consumer key and private key to sign in
 
-In the connection creation wizard, enter the **Consumer key** created during *Step 3.4.2* and **Private key** from *Step 3.4.1*. Enable pop-up in the browser for M365 admin center and click **Sign in**.
+In the connection creation wizard, enter the **Consumer key** created during *Step 3.4.2* and **Private key** from `confluence_privatekey.pcks8` file in *Step 3.4.1*. Enable pop-up in the browser for M365 admin center and click **Sign in**.
 
 #### Step 3.4.4 Enter verification code to Finish Sign in
 
@@ -139,7 +130,7 @@ Use the preview results button to verify the sample values of the selected prope
 
 ## Step 5: Manage search permissions
 
-Confluence On-premises Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them.
+Confluence On-premises Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them.
 
 In Confluence On-premises, security permissions for users and groups are defined using space permissions and page restrictions. Confluence On-premises Graph Connector applies *effective permissions* provided by [content restrictions API](https://docs.atlassian.com/ConfluenceServer/rest/7.15.0/#api/content/{id}/restriction).
 
@@ -177,6 +168,7 @@ Follow the general [setup instructions](./configure-connector.md).
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
 ## Troubleshooting
+
 The common errors that can be seen while configuring the connector and their possible reasons are listed below.
 
 | Configuration step | Error message | Possible reason(s) |
@@ -187,6 +179,7 @@ The common errors that can be seen while configuring the connector and their pos
 | Select properties | No error message and no preview results | Check your CQL query whether it is valid |
 
 ## Limitations
+
 Confluence On-premises Graph connector has the following known limitations in its latest release:
 
-- Confluence On-premises Connector does not index attachment files and comments.
+* Confluence On-premises Connector does not index attachment files and comments.
