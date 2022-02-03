@@ -91,7 +91,7 @@ Extract the public key from the certificate to the `confluence_publickey.pem` fi
 
 3. On the first screen of **Link applications** dialog, provide an **Application Name** and select **Generic Application** type. Select the **Create incoming link** checkbox. All other fields are optional. Click **Continue**.
 
-![Link Applications dialog](media/confluence-onpremises-applications-link-1.png)
+![Link Applications dialog](media/confluence-connector/confluence-onpremises-applications-link-1.png)
 
 4. On the second screen of **Link applications** dialog, enter consumer details for sample client:
 
@@ -103,7 +103,7 @@ Field | Recommended Value
 
 5. Click **Continue**. After successful creation, the application link will be displayed like the following screen.
 
-![Link Applications post creation](media/confluence-onpremises-applications-link-2.png)
+![Link Applications post creation](media/confluence-connector/confluence-onpremises-applications-link-2.png)
 
 #### Step 3.4.3 Enter consumer key and private key to sign in
 
@@ -113,7 +113,7 @@ In the connection creation wizard in M365 admin center, enter the **Consumer key
 
 In the Confluence login screen, enter service account credentials. After successful login, you will get a verification code like the following screen.
 
-![Verification code](media/confluence-onpremises-applications-link-3.png)
+![Verification code](media/confluence-connector/confluence-onpremises-applications-link-3.png)
 
 Enter the **Verification Code** in connection creation wizard and click **Finish Sign in**. After successful sign in, click **Next**.
 
