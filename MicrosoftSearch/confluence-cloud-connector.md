@@ -23,13 +23,13 @@ Confluence Cloud Graph connector allows your organization to index Confluence co
 >[!NOTE]
 >Confluence Cloud Graph Connector will be generally available by February 14, 2022.  
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence Cloud Graph connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Set up your Graph Connector article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence Cloud Graph connector. It supplements the general instructions provided in the [Setup your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Setup your Graph Connector article to understand the general setup process.
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence Cloud Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
 ## Before you get started
 
-You must be the admin for your organization's M365 tenant as well as the admin for your organization's Confluence site.
+You must be the admin for your organization's Microsoft 365 tenant and the admin for your organization's Confluence site.
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
@@ -86,8 +86,8 @@ If you choose **Only people with access to this data source**, you need to furth
 
 To identify which option is suitable for your organization:
 
-1. Choose the **AAD** option if the email ID of Confluence users are **same** as the UserPrincipalName (UPN) of users in AAD.
-2. Choose the **Non-AAD** option if the email ID of Confluence users are **different** from the UserPrincipalName (UPN) of users in AAD.
+1. Choose the **AAD** option if the email ID of Confluence users is **same** as the UserPrincipalName (UPN) of users in AAD.
+2. Choose the **Non-AAD** option if the email ID of Confluence users is **different** from the UserPrincipalName (UPN) of users in AAD.
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ After publishing the connection, you need to customize the search results page. 
 
 ## Troubleshooting
 
-Underneath is a list of common errors observed while configuring the connector and their possible reasons.
+Common errors observed while configuring the connector and their possible reasons are listed below.
 
 | Configuration step | Error message | Possible reason(s) |
 | ------------ | ------------ | ------------ |

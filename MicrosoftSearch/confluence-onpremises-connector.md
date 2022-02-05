@@ -33,7 +33,7 @@ Each step in the setup process is listed below along with either a note that ind
 
 To index your Confluence server or data center content, you must install and register Graph Connector Agent. See [install the Graph Connector Agent](./graph-connector-agent.md) for details.
 
-You must be the admin for your organization's M365 tenant as well as the admin for your organization's Confluence site.
+You must be the admin for your organization's Microsoft 365 tenant and the admin for your organization's Confluence site.
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
@@ -55,7 +55,7 @@ To connect to your Confluence site, use your site URL.
 
 ### Step 3.3: Select the Graph Connector Agent
 
-Select the Graph Connector Agent from the drop down list. The agent will securely send Confluence On-premises content into Microsoft Graph index.
+Select the Graph Connector Agent from the drop-down list. The agent will securely send Confluence On-premises content into Microsoft Graph index.
 
 ### Step 3.4: Select authentication type
 
@@ -107,7 +107,7 @@ Field | Recommended Value
 
 #### Step 3.4.3 Enter consumer key and private key to sign in
 
-In the connection creation wizard in M365 admin center, enter the **Consumer key** created during *Step 3.4.2* and **Private key** from `confluence_privatekey.pcks8` file in *Step 3.4.1*. Enable pop-up in the browser for M365 admin center and click **Sign in**.
+In the connection creation wizard in Microsoft 365 admin center, enter the **Consumer key** created during *Step 3.4.2* and **Private key** from `confluence_privatekey.pcks8` file in *Step 3.4.1*. Enable pop-up in the browser for Microsoft 365 admin center and click **Sign in**.
 
 #### Step 3.4.4 Enter verification code to Finish Sign in
 
@@ -115,7 +115,7 @@ In the Confluence login screen, enter service account credentials. After success
 
 ![Verification code](media/confluence-connector/confluence-onpremises-applications-link-3.png)
 
-Enter the **Verification Code** in connection creation wizard and click **Finish Sign in**. After successful sign in, click **Next**.
+Enter the **Verification Code** in connection creation wizard and click **Finish Sign in**. After successful sign-in, click **Next**.
 
 ## Step 4: Select properties
 
@@ -138,8 +138,8 @@ If you choose **Only people with access to this data source**, you need to furth
 
 To identify which option is suitable for your organization:
 
-1. Choose the **AAD** option if the email ID of Confluence users are **same** as the UserPrincipalName (UPN) of users in AAD.
-2. Choose the **Non-AAD** option if the email ID of Confluence users are **different** from the UserPrincipalName (UPN) of users in AAD. 
+1. Choose the **AAD** option if the email ID of Confluence users is **same** as the UserPrincipalName (UPN) of users in AAD.
+2. Choose the **Non-AAD** option if the email ID of Confluence users is **different** from the UserPrincipalName (UPN) of users in AAD. 
 
 >[!NOTE]
 >
