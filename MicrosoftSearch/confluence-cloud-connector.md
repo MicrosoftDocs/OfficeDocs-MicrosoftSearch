@@ -86,8 +86,8 @@ If you choose **Only people with access to this data source**, you need to furth
 
 To identify which option is suitable for your organization:
 
-1. Choose the **AAD** option if the Email ID of Confluence users are **same** as the UserPrincipalName (UPN) of users in AAD.
-2. Choose the **Non-AAD** option if the Email ID of Confluence users are **different** from the UserPrincipalName (UPN) of users in AAD.
+1. Choose the **AAD** option if the email ID of Confluence users are **same** as the UserPrincipalName (UPN) of users in AAD.
+2. Choose the **Non-AAD** option if the email ID of Confluence users are **different** from the UserPrincipalName (UPN) of users in AAD.
 
 >[!NOTE]
 >

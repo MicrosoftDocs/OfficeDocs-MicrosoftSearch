@@ -18,7 +18,7 @@ description: "Set up the Confluence On-premises Graph connector for Microsoft Se
 
 # Confluence On-premises Graph Connector (Preview)
 
-Confluence On-premises Graph connector allows your organization to index Confluence server or data center content. After you configure the connector and index data from the Confluence site, end users can search for those content in Microsoft Search.
+Confluence On-premises Graph connector allows your organization to index Confluence server or data center content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search.
 
 >[!NOTE]
 >Confluence On-premises Graph Connector is in preview. If you wish to get early access to try it, sign up using [<b> this form </b>](https://forms.office.com/r/JniPmK5bzm).
@@ -70,7 +70,7 @@ Enter a service account's username (usually email ID) and password to authentica
 
 #### OAuth 1.0a (recommended)
 
-Generate  a a public/private key pair and create an application link in Confluence On-premises site so that the Graph Connector Agent can access the instance. To learn more, see [step 1 in Atlassian developer documentation](https://developer.atlassian.com/server/jira/platform/oauth/#step-1--configure-jira) on how to configure OAuth 1.0a.
+Generate  a public/private key pair and create an application link in Confluence On-premises site so that the Graph Connector Agent can access the instance. To learn more, see [step 1 in Atlassian developer documentation](https://developer.atlassian.com/server/jira/platform/oauth/#step-1--configure-jira) on how to configure OAuth 1.0a.
 
 #### Step 3.4.1 Generate an RSA public/private key pair
 
@@ -138,8 +138,8 @@ If you choose **Only people with access to this data source**, you need to furth
 
 To identify which option is suitable for your organization:
 
-1. Choose the **AAD** option if the Email ID of Confluence users are **same** as the UserPrincipalName (UPN) of users in AAD.
-2. Choose the **Non-AAD** option if the email ID of Confluence users is **different** from the UserPrincipalName (UPN) of users in AAD. 
+1. Choose the **AAD** option if the email ID of Confluence users are **same** as the UserPrincipalName (UPN) of users in AAD.
+2. Choose the **Non-AAD** option if the email ID of Confluence users are **different** from the UserPrincipalName (UPN) of users in AAD. 
 
 >[!NOTE]
 >
