@@ -24,9 +24,6 @@ There are two types of filters available on the search page.
 - Out of the box filters
 - Custom filters
 
-> [!NOTE]
-> Custom Filters are currently in preview for admins and end-users in Targeted Release. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
-
 ## Out of the box filters
 
 Out of the box filters are available by default in search verticals such as All, Files, Images, and News. On the ‘All' and ‘File' verticals, you can see the "File type" filter on the FileType property and the "Last modified" filter on the LastModifiedTime property. These filters are available in SharePoint Home, Office.com, SharePoint Sites, and Work vertical in Bing.
