@@ -36,10 +36,12 @@ To make finding work or school results easier, Microsoft Search in Bing support 
 |:-----|:-----|
 |Bing homepage|All results page|
 |[Work](https://www.bing.com/work) search start page|Work results page|
+|[School](https://www.bing.com/school) search start page|School results page|
 |[Windows Search](https://support.microsoft.com/windows/search-for-anything-anywhere-b14cc5bf-c92a-1e73-ea18-2845891e6cc8)|An internal site, file, All results, or Work or School results page, depending on the match they select|
 |Microsoft Edge address bar|All results page|
 |[Microsoft Edge work shortcut](/microsoftsearch/edge-shortcuts)|Work results page|
 |Microsoft Edge new tab page|All results page|
+|[Microsoft Edge extension](/microsoftsearch/edge-shortcuts)|Work results page|
 |[Embedded search box](/microsoftsearch/add-a-search-box-to-your-intranet-site) on your intranet or an internal app|Work or School results page|
 
 ## Getting started with Microsoft Search in Bing
@@ -67,6 +69,12 @@ Microsoft Search is designed to make internal information easy to access everywh
 ![Internet portal with embedded search box and search suggestions.](media/msb-overview/embedded-search-box-intranet.png)
 
 With a simple script, you can add a customized search box and even direct it to a custom vertical. To learn more, see [Add a search box to your intranet site](add-a-search-box-to-your-intranet-site.md).
+
+## Add the Microsoft Search extension to Google Chrome
+
+If your organization uses Google Chrome, the Microsoft Search extension gives users easy access to work results from their browser. You don't need to change any search or browser defaults. For information about using group policy to deploy the extension, see [Set Chrome app and extension policies (Windows)](https://support.google.com/chrome/a/answer/7532015) on the Chrome Enterprise and Education Help site.
+
+Users can also add the Microsoft Search extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search/fahnnnailfccbjpdjeafekniiaflekca).
 
 ## Set defaults to make searching work or school easier
 

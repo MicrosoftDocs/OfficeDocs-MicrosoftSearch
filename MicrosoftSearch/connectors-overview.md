@@ -100,7 +100,6 @@ The set of connectors and features in preview include:
 * [Azure DevOps connector](azure-devops-connector.md)
 * [Confluence On-premises connector](confluence-onpremises-connector.md)
 * [ServiceNow Catalog connector](servicenow-catalog-connector.md)
-* [Manage custom filters](custom-filters.md)
 * [Multiple connections in a vertical](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## How do I customize and configure search results?
