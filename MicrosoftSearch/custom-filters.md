@@ -64,9 +64,8 @@ Verticals may be created with one or more content sources. When a vertical is co
 
 ## Important Details
 
-- Filters can only be added to custom verticals. New filters cannot be added to out of the box verticals like All, Files, People, Sites, News.
 - Filters are configurable on Text and DateTime properties.
-- You are limited to a total of 50 filters.
+- You are limited to a total of 50 filter values.
 - The order of out of the box filters cannot be adjusted.
 - Filters are not supported for OneDrive content. Filter values corresponding to search results from OneDrive content will not appear on filters.
 - Custom filter values will show options from SharePoint content and not from One Drive content. For example, if you create a custom filter for ‘Author’ and SharePoint content contains results only from an author, ‘Amy,’ and OneDrive content contains results only from an author called ‘John,’ the Author custom filter will show ‘Amy’ as the only      option.
