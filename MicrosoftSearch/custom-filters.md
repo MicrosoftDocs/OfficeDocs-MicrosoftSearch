@@ -65,7 +65,7 @@ Verticals may be created with one or more content sources. When a vertical is co
 ## Important Details
 
 - Filters are configurable on Text and DateTime properties.
-- You are limited to a total of 50 filter values.
+- A filter will show a maximum of 50 values in the drop-down. For text properties, you can use the search box in the filter to find other values. On DateTime filters, you can use the custom date range fields, if the range you want is not already in the list.
 - The order of out of the box filters cannot be adjusted.
 - Filters are not supported for OneDrive content. Filter values corresponding to search results from OneDrive content will not appear on filters.
 - Custom filter values will show options from SharePoint content and not from One Drive content. For example, if you create a custom filter for ‘Author’ and SharePoint content contains results only from an author, ‘Amy,’ and OneDrive content contains results only from an author called ‘John,’ the Author custom filter will show ‘Amy’ as the only      option.
