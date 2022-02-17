@@ -55,7 +55,7 @@ Filters configured for verticals in the organization scope will be available at 
 
 ## Filter across multiple properties
 
-Verticals may be created with one or more content sources. When a vertical is configured with multiple content sources, the refiner's properties list shows which content source each refinable property belongs to. The common managed properties will be merged based on the name (or alias) and data type. Filters can also be configured on these common properties. This is done by creating the filter on an common alias which aliases source properties across the different connections. For example you can create an **Author** filter across ServiceNow and a Jira connections by creating aliases as follows:
+Verticals may be created with one or more content sources. When a vertical is configured with multiple content sources, the refiner's properties list shows which content source each refinable property belongs to. The common managed properties will be merged based on the name (or alias) and data type. Filters can also be configured on these common properties. This is done by creating the filter on a common alias which aliases source properties across the different connections. For example you can create an **Author** filter across ServiceNow and Jira connections by creating aliases as follows:
 
  | Connection | Property | Alias |
  | --- | --- | --- |
