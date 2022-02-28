@@ -54,7 +54,7 @@ Register an app in Confluence Cloud so that the Microsoft Search app can access 
 The following steps provide guidance on how to register the app:
 
 1. Sign in to [Atlassian Developer console](https://developer.atlassian.com/console/myapps/) with your Atlassian Confluence admin account.
-2. Click on **Create** and select `OAuth 2.0 integration`
+2. Click on **Create** and select `OAuth 2.0 integration`.
 3. Provide an appropriate name for the application and create the new app.
 4. Navigate to `Permissions` from the navigation pane on left. Click **Add** for `Confluence API`. Once added, click on **Configure**, **Edit Scopes** and select the following scopes.
 
@@ -64,9 +64,9 @@ The following steps provide guidance on how to register the app:
 | View groups | `read:group:confluence` | To access group permissions of content
 | View user details | `read:user:confluence` | To access individual user details to support permissions
 
-5. Click **Save** 
-1. Navigate to `Authorization` from the navigation pane on left. Add the callback URL `https://gcs.office.com/v1.0/admin/oauth/callback` and save the changes.
-1. Navigate to `Settings` from the navigation pane on left. You will get the `Client ID` and `Secret` from this page.
+5. Click **Save**.
+6. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL `https://gcs.office.com/v1.0/admin/oauth/callback` and save the changes.
+7. Navigate to `Settings` from the navigation pane on left. You will get the `Client ID` and `Secret` from this page.
 
 On registering the app with the details above, you'll get the **Client ID** and **Secret**. Complete the connection settings step using these.
 
