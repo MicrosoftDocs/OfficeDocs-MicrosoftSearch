@@ -60,9 +60,9 @@ The following steps provide guidance on how to register the app:
 
 | **Scope Name** | **Code** | **Description** |
 | ------------ | ------------ | ------------ |
-| View content details | read:content-details:confluence | Crawl content satisfying criteria
-| View groups | read:group:confluence | To access group permissions of content
-| View user details | read:user:confluence | To access individual user details to support permissions
+| View content details | `read:content-details:confluence` | Crawl content satisfying criteria
+| View groups | `read:group:confluence` | To access group permissions of content
+| View user details | `read:user:confluence` | To access individual user details to support permissions
 
 5. Click **Save** 
 1. Navigate to `Authorization` from the navigation pane on left. Add the callback URL `https://gcs.office.com/v1.0/admin/oauth/callback` and save the changes.
