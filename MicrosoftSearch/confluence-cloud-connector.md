@@ -20,9 +20,6 @@ description: "Set up the Confluence Cloud Graph connector for Microsoft Search"
 
 Confluence Cloud Graph connector allows your organization to index Confluence content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search.
 
->[!NOTE]
->Confluence Cloud Graph Connector will be generally available by February 14, 2022.  
-
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence Cloud Graph connector. It supplements the general instructions provided in the [Setup your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Setup your Graph Connector article to understand the general setup process.
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence Cloud Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
@@ -57,11 +54,19 @@ Register an app in Confluence Cloud so that the Microsoft Search app can access 
 The following steps provide guidance on how to register the app:
 
 1. Sign in to [Atlassian Developer console](https://developer.atlassian.com/console/myapps/) with your Atlassian Confluence admin account.
-2. Click on `Create` and select `OAuth 2.0 integration`
+2. Click on **Create** and select `OAuth 2.0 integration`.
 3. Provide an appropriate name for the application and create the new app.
-4. Navigate to `Permissions` from the navigation pane on left. Click `Add` for `Confluence API`. Once added, click on `Configure` and add the following scopes - `Read Confluence space summary`, `Read Confluence content properties`, `Read Confluence detailed content`, `Read Confluence content summary`, `Read content permission in Confluence`, `Read user`, `Read user groups` and `Search Confluence content and space summaries`.
-5. Navigate to `Authorization` from the navigation pane on left. Add the callback URL `https://gcs.office.com/v1.0/admin/oauth/callback` and save the changes.
-6. Navigate to `Settings` from the navigation pane on left. You will get the `Client ID` and `Secret` from this page.
+4. Navigate to `Permissions` from the navigation pane on left. Click **Add** for `Confluence API`. Once added, click on **Configure**, **Edit Scopes** and select the following scopes.
+
+| **Scope Name** | **Code** | **Description** |
+| ------------ | ------------ | ------------ |
+| View content details | `read:content-details:confluence` | Crawl content satisfying criteria
+| View groups | `read:group:confluence` | To access group permissions of content
+| View user details | `read:user:confluence` | To access individual user details to support permissions
+
+5. Click **Save**.
+6. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL `https://gcs.office.com/v1.0/admin/oauth/callback` and save the changes.
+7. Navigate to `Settings` from the navigation pane on the left. You will get the `Client ID` and `Secret` from this page.
 
 On registering the app with the details above, you'll get the **Client ID** and **Secret**. Complete the connection settings step using these.
 
