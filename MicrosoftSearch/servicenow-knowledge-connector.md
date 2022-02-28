@@ -267,19 +267,47 @@ PROD | Europe | 20.54.41.208/30, 51.105.159.88/30
 PROD | Asia Pacific | 52.139.188.212/30, 20.43.146.44/30 
 
 #### 2.4. Access permissions not working as expected
+
 If you observe discrepancies in access permissions applied to search results, verify access flow chart for user criteria in [managing access to knowledge bases and articles](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html).
 
-### 3. Issues with *Only people with access to this data source* permission
+### 3. Change the Url of knowledge article to view in the support potal
 
-#### 3.1 Unable to choose *Only people with access to this data source*
+ServiceNow Knowledge Graph Connector computes the AccessUrl property using sys_id in the `<instance_url>/kb_view.do?sys_kb_id<sysId>` format. It will open the knowledge article in the backend system view. If you prefer redirecting the article to a different Url, follow the instructions below.
+#### 3.1 Edit your result type
+In customization tab in *Search & Intelligence* section of Microsoft 365 admin center, navigate to edit the result type configured for your ServiceNow Knowledge connection.
+![Editing Result Type](media/servicenow-knowledge-connector/edit-result-type.png)
+
+When edit result type dialog opens, click on **Edit** next to result layout section. 
+![Editing Result Layout](media/servicenow-knowledge-connector/edit-result-type-2.png)
+
+#### 3.2 Find the items block
+Find the items block containing text property with `shortDescription` and `AccessUrl` values.
+
+![Editing items block in result type](media/servicenow-knowledge-connector/edit-result-type-3.png)
+
+#### 3.3 Edit AccessUrl property
+
+To change the destination Url, edit the `AccessUrl` part of the text property in the items block. For example, if a ServiceNow Knowledge article should be redirected to https://contoso.service-now.com/sp where `sp` is the service Url portal prefix, follow the steps below.
+
+**Original value** | **New value**
+--- | ---
+`"[{shortdescription}]({AccessUrl})"` | `"[{shortdescription}](https://contoso.service-now.com/sp?id=kb_article_view&sysparm_article={number})"`
+
+where `number` is the knowledge article number property. It should be marked as *retrieve* in Manage Schema screen during connection creation.
+
+Finish reviewing your result type updates and hit **Submit**. Give it a minute or two pick up the changes. Your search results should now redirect to the desired URLs.
+
+### 4. Issues with *Only people with access to this data source* permission
+
+#### 4.1 Unable to choose *Only people with access to this data source*
 
 You may not be able to choose *Only people with access to this data source* option if the service account do not have read permissions to the required tables in [step 3: connection settings](#step-3-connection-settings). Check whether the service account can read tables mentioned under *Index and support user criteria permissions* feature.
 
-#### 3.2 User mapping failures
+#### 4.2 User mapping failures
 
  ServiceNow user accounts that do not have an M365 user in Azure Active Directory will not map. Non-user, service accounts are expected to fail user mapping. Number of user mapping failures can be accessed in identity stats area in connection detail window. Log of failed user mappings can be downloaded from Error tab.
 
-### 4. Issues with user criteria access flow
+### 5. Issues with user criteria access flow
 
 If you see differences in the user criteria validation between ServiceNow and Microsoft Search, set `glide.knowman.block_access_with_no_user_criteria` system property to `no`.
 
