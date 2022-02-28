@@ -12,7 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the ServiceNow Knowledge Graph connector for Microsoft Search"
+description: "Setup the ServiceNow Knowledge Graph connector for Microsoft Search"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -23,7 +23,7 @@ With the Microsoft Graph Connector for ServiceNow, your organization can index k
 
 You can also refer [this video](https://www.youtube.com/watch?v=TVSkJpk1RiE) to learn more about Graph Connector's capability in managing search permissions.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Knowledge Graph  connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Set up your Graph Connector article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Knowledge Graph  connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Setup your Graph Connector article to understand the general setup process.
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR 
 other instructions that apply to only ServiceNow Graph connector including information about [Troubleshooting](#troubleshooting) 
@@ -87,7 +87,7 @@ Client secret | With this shared secret string, the ServiceNow instance and Micr
 Redirect URL | A required callback URL that the authorization server redirects to. | https://gcs.office.com/v1.0/admin/oauth/callback
 Logo URL | A URL that contains the image for the application logo. | NA
 Active | Select the check box to make the application registry active. | Set to active
-Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds). | 31,536,000 (1 year)
+Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds). | 31,536,000 (one year)
 Access token lifespan | The number of seconds that an access token is valid. | 43,200 (12 hours)
 
 Enter the client id and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role. Refer to the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
@@ -207,7 +207,7 @@ If you choose **Only people with access to this data source**, you need to furth
 
 To identify which option is suitable for your organization:
 
-1. Choose the **AAD** option if the Email ID of ServiceNow users are **same** as the UserPrincipalName (UPN) of users in AAD.
+1. Choose the **AAD** option if the Email ID of ServiceNow users is **same** as the UserPrincipalName (UPN) of users in AAD.
 2. Choose the **Non-AAD** option if the email ID of ServiceNow users is **different** from the UserPrincipalName (UPN) of users in AAD. 
 
 >[!NOTE]
@@ -255,7 +255,7 @@ If your organization has enabled Single Sign-On (SSO) to ServiceNow, you may hav
 If you see forbidden or unauthorized response in connection status, check if the service account has required access to the tables mentioned in [step 3: connection settings](#step-3-connection-settings). Please check whether all the columns in the tables have read access.
 
 #### 2.2. Change in account password
-The Graph Connector uses access token fetched on behalf of service account for crawl. The access token refreshes every 12 hours. Ensure that service account password is not changed after publishing the connection. You may need to re-authenticate the connection if there is a change in password.
+The Graph Connector uses access token fetched on behalf of service account for crawl. The access token refreshes every 12 hours. Ensure that service account password is not changed after publishing the connection. You may need to reauthenticate the connection if there is a change in password.
 
 #### 2.3. Check if ServiceNow instance behind firewall
 Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You will need to explicitly allow access to Graph Connector service. You can find public IP address range of Graph Connector Service in the table below. Based on your tenant region, add it to your ServiceNow instance network allow list.
@@ -270,7 +270,7 @@ PROD | Asia Pacific | 52.139.188.212/30, 20.43.146.44/30
 
 If you observe discrepancies in access permissions applied to search results, verify access flow chart for user criteria in [managing access to knowledge bases and articles](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html).
 
-### 3. Change the URL of the knowledge article to view it in the support potal
+### 3. Change the URL of the knowledge article to view it in the support portal
 
 ServiceNow Knowledge Graph Connector computes the AccessUrl property using sys_id in the `<instance_url>/kb_view.do?sys_kb_id<sysId>` format. It will open the knowledge article in the backend system view. If you prefer redirecting the article to a different URL, follow the instructions below.
 #### 3.1 Edit your result type
@@ -295,7 +295,7 @@ To change the destination URL, edit the `AccessUrl` part of the text property in
 
 Where `number` is the knowledge article number property. It should be marked as *retrieve* in Manage Schema screen during connection creation.
 
-Finish reviewing your result type updates and hit **Submit**. Give it a minute or two pick up the changes. Your search results should now redirect to the desired URLs.
+Finish reviewing your result type updates and hit **Submit**. Give it a minute or two pickup the changes. Your search results should now redirect to the desired URLs.
 
 ### 4. Issues with *Only people with access to this data source* permission
 
