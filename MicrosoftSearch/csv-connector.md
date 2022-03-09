@@ -139,7 +139,7 @@ Follow the general [setup instructions](./configure-connector.md).
 ## Step 9: Manage search permissions
 
 - For File Level ACL, select **ACL**.
-- For Item Level ACL, select **Everyone**. Also, your .csv file should include two columns, AllowedUsers and AllowedGroups, in the .csv file. Each row should contain the Azure AD IDs.
+- For Item Level ACL, select **Everyone**. Also, you should include two columns, AllowedUsers and AllowedGroups, in the .csv file. Each row should contain the Azure AD IDs.
 
 ## Step 10: Choose refresh settings
 
