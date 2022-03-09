@@ -57,7 +57,7 @@ Floor plans files must be in DWG format, which supports text labels. When a text
 |:-----:|:-----:|:-----:|
 |![Floor plan with room labels.](media/floor-plans/floorplans-textandroomlabels.png)|![Floor plan with text labels but no room labels.](media/floor-plans/floorplans-textnoroomlabels.png)|![Floor plan with no text labels.](media/floor-plans/floorplans-nolabels.png)|
 
-As a best practice, DWG text labels should contain floor numbers, wing numbers (if relevant), and room numbers, in that order. See the [FAQs](#frequently-asked-questions) for more examples of text label formats, and information about viewing and updating DWG files.
+As a best practice, DWG text labels should contain floor numbers, wing numbers (if relevant), and room numbers, in that order. For the best results, they shouldn't be grouped with other elements like lines, boxes, or arrows. See the [FAQs](#frequently-asked-questions) for more examples of text label formats, and information about viewing and updating DWG files.
 
 ### Step 3: Update office locations on user profiles
 
@@ -92,7 +92,7 @@ For more information about locations, see [Manage Locations](manage-locations.md
 
 Before you can upload floor plans, office locations must be indexed. This one-time operation that can take up to 48 hours to complete. The total time will depend on the size of your organization.
 
-In [admin center](https://admin.microsoft.com), go to [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), and then select **Begin indexing**. If you don't see this notice, this step has already been completed for your organization
+In [admin center](https://admin.microsoft.com), go to [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), and then select **Begin indexing**. If you don't see the button, the step has already been completed for your organization
 
 ### Step 7: Upload floor plans
 
@@ -128,7 +128,7 @@ In [admin center](https://admin.microsoft.com), go to [**Floor plans**](https://
 
 ### Step 8: (Optional) Specify location patterns
 
-After uploading a floor plan, the room text labels are compared to the office locations in your users' profiles. If the office locations or text labels don't consistently follow the recommended naming patterns in [Step 2](#step-2-review-your-floor-plans) and [Step 3](#step-3-update-office-locations-on-user-profiles), use the **Specify location patterns** screen to add more information to complete the mapping. Location patterns are used to extract floor, wing, and room information from AAD office locations.
+When a floor plan is uploaded, the DWG text labels are compared to the office locations in your users' profiles. If the office locations or text labels don't consistently follow the recommended naming patterns in [Step 2](#step-2-review-your-floor-plans) and [Step 3](#step-3-update-office-locations-on-user-profiles), use the **Specify location patterns** screen to add more information to complete the mapping. Location patterns are used to extract floor, wing, and room information from Azure AD office locations.
 
 > [!div class="mx-imgBorder"]
 > ![Specify locations patterns screenshot.](media/floor-plans/floorplans-locationpattern.png)
@@ -137,7 +137,7 @@ Floor and wing are optional, only room is required, and you can skip locations a
 
 ## Update floor plans
 
-Before you update an existing floor plan, make sure your AAD office locations are current and you've waited for 48 hours for any AAD updates to process. To update a floor plan, go to Floor plans, select the building for the floor plan, and select **Edit**. If the floor plan has changed structurally, because of remodeling for example, remove the old file, then upload and publish the new DWG file.
+Before you update an existing floor plan, make sure your Azure AD office locations are current and you've waited for 48 hours for any Azure AD updates to process. To update a floor plan, go to Floor plans, select the building for the floor plan, and select **Edit**. If the floor plan has changed structurally, because of remodeling for example, remove the old file, then upload and publish the new DWG file.
 
 > [!NOTE]
 > You don't need to update floor plans when users move to a floor that's already been mapped. Just update their user profile to reflect the new office location:
@@ -179,7 +179,7 @@ You can create or edit a DWG file in any DWG editor, including Visio or Autodesk
 
 **Q:** What's the best format for text labels in DWG files?
 
-**A:** For the best results, DWG text labels should be a single line that contains floor numbers, wing numbers (if relevant), and room numbers, in that order. The examples below use 2 or CITY CENTER for the building code.
+**A:** For the best results, DWG text labels should be a single line that contains floor numbers, wing numbers (if relevant), and room numbers, in that order. For the best results, they shouldn't be grouped with other elements like lines, boxes, or arrows. The examples below use 2 or CITY CENTER for the building code.
 <!-- markdownlint-disable no-inline-html -->
 |Room label types|Floor|Wing/Zone|Room|Sample text label|Office location (building code/text label)|
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -201,7 +201,7 @@ Also, in the DWG file don't include any extra text labels, like room dimensions 
 
 **A:** We recommend the DWG text labels include floor numbers, but they aren't required, see naming patterns in [Step 2](#step-2-review-your-floor-plans). Also, you should still include the floor number as part of the office location in the user's contact information. After you upload the DWG file, you'll need to use the optional **Specify location patterns** screen to complete the mapping process for these non-standard labels.
 
-For example, a DWG file that includes room numbers, but no floor numbers, may look similar to this:
+For example, a DWG file that includes room numbers, but no floor numbers, may look similar to this image:
 
 > [!div class="mx-imgBorder"]
 > ![Floor plan with room numbers but no floor numbers.](media/floor-plans/floorplans-nofloors.png)
@@ -249,7 +249,7 @@ But, if your users still aren't mapped or you're not satisfied with the mapping,
 
 **Q:** I've completed all of the steps to add a floor plan. Why don't they appear in Microsoft Search results?
 
-**A:** A link to the floor plan answer may be appearing in the middle of the search results page. This type of ranking can happen when there's lower confidence that the answer matches the search intent. If no information is appearing on the results page, verify the searches follow a supported query pattern: an office name, a user name, or an office location as it appears in AAD. Partial or fuzzy word matches aren't supported for floor plan searches.
+**A:** A link to the floor plan answer may be appearing in the middle of the search results page. This type of ranking can happen when there's lower confidence that the answer matches the search intent. If no information is appearing on the results page, verify the searches follow a supported query pattern: an office name, a user name, or an office location as it appears in Azure AD. Partial or fuzzy word matches aren't supported for floor plan searches.
 
 **Q:** I've added floor plans for my organization's workspaces. Why don't they appear when booking a workspace in Outlook?
 
@@ -279,7 +279,7 @@ The DWG file for the floor has these text labels for the same cubicles:
 - 25
 - 26
 
-Because of the differences between the office locations that appear on the users' profiles and the corresponding text labels (DesignB/F121 and 21, DesignB/F1-25 and 25), Microsoft Search can't match them. After uploading the file, the initial review shows zero locations have been mapped. Continue mapping and in the Link office locations stage, enter the building code, DesignB.
+Because of the differences between the office locations that appear on the users' profiles and the corresponding text labels (DesignB/F121 and 21, DesignB/F1-25 and 25), Microsoft Search can't match them. When the file is uploaded, the initial review shows zero locations have been mapped. Continue mapping and in the Link office locations stage, enter the building code, DesignB.
 
 In the second review stage, Microsoft Search ignores the building code value in the users' office locations and tries again to match the office locations and text labels (F121 and 21, F1-25 and 25). The second review shows zero locations have been mapped. You'll need to continue mapping again. At this point, you'll be prompted to specify location patterns.
 
