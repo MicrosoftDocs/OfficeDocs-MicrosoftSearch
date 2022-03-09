@@ -71,7 +71,7 @@ Set-spotenant –DisableCustomAppAuthentication $false
 
 ### Create an ADLS storage account
 
-For step-by-step guidance, see [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create#create-a-storage-account-1). To allow file storage capabilities, on the Advanced tab, select **Enable hierarchical namespace** and **Create a Container for this site**.
+For step-by-step guidance, see [Create a storage account](/azure/storage/common/storage-account-create#create-a-storage-account-1). To allow file storage capabilities, on the Advanced tab, select **Enable hierarchical namespace** and **Create a Container for this site**.
 
 When you set up the CSV connector, you'll need to provide a primary storage connection string. To find it, open the storage account you created and select **Access Keys**. Select **Show Keys** and copy the connection string for Key1.
 
