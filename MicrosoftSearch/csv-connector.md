@@ -39,8 +39,8 @@ Verify the .csv files you want to index have been uploaded to a SharePoint docum
 1. Go to  `https://Org-Name.sharepoint.com/Site-Name/_layouts/15/appregnew.aspx`.
 2. On the Client Id and Client Secret fields, select **Generate**.
 1. For Title, enter an app name.
-1. In the App Domain field, enter www.gcs.com.
-1. In the Redirect URL field, enter https://www.gcs.com.
+1. In the App Domain field, enter `www.gcs.com`.
+1. In the Redirect URL field, enter `https://www.gcs.com`.
 1. Select **Create**.
 1. Copy the app configuration information, including the Client ID and Client Secret. You'll need it when you set up the CSV connector.
 
