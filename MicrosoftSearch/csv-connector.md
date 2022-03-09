@@ -95,7 +95,7 @@ The data source settings are different for SharePoint and ADLS.
 
 1. To control access on a file level, in **ACL setting**, enter the email addresses of the allowed users or groups.
 1. In the Data Source settings, select **SharePoint** as your datasource.
-1. In **SharePoint site**, enter the site URL, for example https://contoso.sharepoint.com/Site-Name.
+1. In **SharePoint site**, enter the site URL, `https://Org-Name.sharepoint.com/Site-Name`, for example.
 1. In **Document Library**, enter the name of the library where the .csv files are stored.
 1. In **Authentication Type**, select **Oauth2.0 (client credential)**” for Authentication Type.
 1. Enter the Client ID and Client Secret you copied when you created the SharePoint app.
