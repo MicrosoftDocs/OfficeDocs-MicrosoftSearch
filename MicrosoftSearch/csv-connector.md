@@ -97,7 +97,7 @@ The data source settings are different for SharePoint and ADLS.
 1. In the Data Source settings, select **SharePoint** as your datasource.
 1. In **SharePoint site**, enter the site URL, `https://Org-Name.sharepoint.com/Site-Name`, for example.
 1. In **Document Library**, enter the name of the library where the .csv files are stored.
-1. In **Authentication Type**, select **Oauth2.0(client credentials)** for Authentication Type.
+1. In **Authentication Type**, select **Oauth2.0(client credentials)**.
 1. Enter the Client ID and Client Secret you copied when you created the SharePoint app.
 1. Select **Test Connection**. You should get a **The connection is successful** message.
 
@@ -106,7 +106,7 @@ The data source settings are different for SharePoint and ADLS.
 ### For an ADLS source
 
 1. To control access on a file level, in **ACL setting**, enter the email addresses of the allowed users or groups.
-1. In the Data Source settings, select **ADLS** as your datasource.
+1. In the Data Source settings, select **Azure Data Lake Storage(ADLS)** as your datasource.
 1. In **Primary storage connection string**, enter the connection string you copied.
 1. Enter the **Container name** and **Filename**.
 1. Select **Test Connection**. You should get a **The connection is successful** message.
