@@ -13,7 +13,7 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: NOINDEX
 description: "Set up the Microsoft Search CSV connector for SharePoint or Azure Data Lake Storage sources." 
 ---
 
