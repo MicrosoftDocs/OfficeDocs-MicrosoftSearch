@@ -51,7 +51,7 @@ In PowerShell, run these commands in administrative mode. Use the email address 
 Install-Module -Name Microsoft.Online.SharePoint.PowerShell
 $adminUPN=”<admin@contoso.onmicrosoft.com>”
 $orgName=“<contoso>”
-$userCredential = Get-Credential -UserName $adminUPN -Message "Enter your password.“
+$userCredential = Get-Credential -UserName $adminUPN -Message "Enter your password."
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
 Set-spotenant –DisableCustomAppAuthentication $false
 ```
@@ -97,7 +97,7 @@ The data source settings are different for SharePoint and ADLS.
 1. In the Data Source settings, select **SharePoint** as your datasource.
 1. In **SharePoint site**, enter the site URL, `https://Org-Name.sharepoint.com/Site-Name`, for example.
 1. In **Document Library**, enter the name of the library where the .csv files are stored.
-1. In **Authentication Type**, select **Oauth2.0 (client credential)**” for Authentication Type.
+1. In **Authentication Type**, select **Oauth2.0 (client credential)** for Authentication Type.
 1. Enter the Client ID and Client Secret you copied when you created the SharePoint app.
 1. Select **Test Connection**. You should get a **The connection is successful** message.
 
