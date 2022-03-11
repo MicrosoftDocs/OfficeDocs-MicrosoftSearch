@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
 ms.localizationpriority: medium
-ms.date: 3/11/22
+ms.date: 03/11/2022
 search.appverid:
 - BFB160
 - MET150
