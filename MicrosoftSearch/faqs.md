@@ -52,9 +52,9 @@ No.
 
 Details can be found on the [Trust Center pages for Office 365](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx).
 
-## Can guest users access Microsoft Search in my organization?
+## Can guests access Microsoft Search in my organization?
 
-Microsoft 365 enables rich collaboration with people outside of your organization through [guest access.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) These users can search for documents, sites, groups, lists, and libraries. However, guest users won't get the full, personalized Microsoft Search experience and may need to use the on-page search box instead of the unified Microsoft Search box in the header.
+Microsoft 365 enables rich collaboration with people outside of your organization through [guest access.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) These users can search for documents, sites, groups, lists, and libraries. However, guests won't get the full, personalized Microsoft Search experience and may need to use the on-page search box instead of the unified Microsoft Search box in the header.
 
 ## How do I turn Microsoft Search in Bing on or off?
 
