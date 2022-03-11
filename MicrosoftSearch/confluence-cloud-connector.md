@@ -66,7 +66,7 @@ The following steps provide guidance on how to register the app:
 
 5. Click **Save**.
 6. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL `https://gcs.office.com/v1.0/admin/oauth/callback` and save the changes.
-7. Navigate to `Settings` from the navigation pane on left. You will get the `Client ID` and `Secret` from this page.
+7. Navigate to `Settings` from the navigation pane on the left. You will get the `Client ID` and `Secret` from this page.
 
 On registering the app with the details above, you'll get the **Client ID** and **Secret**. Complete the connection settings step using these.
 
