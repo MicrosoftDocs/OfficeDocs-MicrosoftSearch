@@ -17,7 +17,7 @@ description: "Setup the ServiceNow Knowledge Graph connector for Microsoft Searc
 <!---Previous ms.author: kam1 --->
 
 
-# ServiceNow Knowledge Graph Connector
+# ServiceNow Knowledge Graph
 
 With the Microsoft Graph Connector for ServiceNow, your organization can index knowledge-base articles that are visible to all users or restricted with user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, end users can search for those articles from any Microsoft Search client.  
 
