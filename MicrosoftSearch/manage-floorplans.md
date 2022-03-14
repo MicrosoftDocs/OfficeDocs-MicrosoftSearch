@@ -29,12 +29,7 @@ Users can see floor plan answers on [Bing](https://bing.com), [SharePoint](http:
 - Workspace-1
 - B1/1.20
 
-When users search for a room name or location, they'll see the point of interest marked on the floor plan answer.
-
-> [!div class="mx-imgBorder"]
-> ![Floor plan with point of interest marker showing room location.](media/floor-plans/floor-plan-answer.png)> 
-
-When they search for a person's office, they'll see a similar answer, with the person's profile image on the marker.
+When users search for someone's office, they'll see a marker with the person's profile image on the location. When they search for a room or workspace, they'll see a similar answer.
 
 > [!div class="mx-imgBorder"]
 > ![Floor plan with point of interest marker showing office location.](media/floor-plans/floorplans-officelocation.png)> 
