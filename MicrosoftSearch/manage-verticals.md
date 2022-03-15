@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
-ms.date: 10/27/2021
+ms.date: 03/15/2022
 search.appverid:
 - BFB160
 - MET150
@@ -91,19 +91,15 @@ Here are some example queries.
 |Excluding results from archive sites           |NOT (path:http//contoso.sharepoint.com/archive OR path:http//contoso.sharepoint.com/CompanyArchive)|
 | Excluding results based on file type property | NOT(FileType:htm)|  
 
-### Profile query variables
+Use variables in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. "Profile" and "query string" are the types of query variables that can be used.
 
-Use variables in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. There are two types of query variables that are supported today.
-- Profile
-- Query string
+#### Profile variables
 
-### Profile variables
-You can use profile query variables to contextualize the search results to the signed-in user. 
-Profile query variables fetch values from the signed-in user’s [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile).
-For example, to create a “Tickets” vertical for the user to find support tickets assigned to them, you can specify the following query in the “Query” section during the vertical creation in the administration page: <br /><br />
+You can use profile query variables to contextualize the search results to the signed-in user. Profile query variables fetch values from the signed-in user’s [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile). For example, to create a “Tickets” vertical for the user to find support tickets assigned to them, you can specify the following query in the “Query” section during the vertical creation in the administration page.
+
 `AssignedTo:{Profile.accounts.userPrincipalName}`
 
-This language will narrow down the search results to show only those items for which the assignee is the user who runs the search.
+This will trim the search results to show only items that are assigned to the person doing the search.
 
 [Profile resource](/graph/api/resources/profile) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile are exposed as Query variables.
 
@@ -144,7 +140,7 @@ Consider a user who has three email addresses available in the email collection,
 
 - The query `MyProperty: {Profile.emails.address}` will resolve to *MyProperty: “Megan.Bowen@contoso.com”*.  
 
-- To resolve all the values of the address attribute, use the multi-value expansion syntax. <br /> The query `{|MyProperty:{Profile.emails.address}}` will resolve to *((MyProperty:"Megan.Bowen@contoso\.com")* OR *(MyProperty: "meganb@hotmail\.com")* OR  *(MyProperty:"meganb@outlook\.com"))*.
+- To resolve all the values of the address attribute, use the multi-value expansion syntax. The query `{|MyProperty:{Profile.emails.address}}` will resolve to *((MyProperty:"Megan.Bowen@contoso\.com")* OR *(MyProperty: "meganb@hotmail\.com")* OR  *(MyProperty:"meganb@outlook\.com"))*.
 
 Use the “|” operator to resolve multi-value variables. See the following table for more examples of profile expansion.
 
@@ -155,17 +151,17 @@ Use the “|” operator to resolve multi-value variables. See the following tab
 | 3    | {?MyProperty:{Profile.emails}}  |  This won't resolve because *emails* is an object. The “?” operator ignores query variables that don't resolve. This variable will be removed when passed further down the query stack.   |
 | 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
 
-### Query String variables
-You can contextualize search results based on user interaction with SharePoint sites by using Query String variables. Query String variables allows you to pass key-value pairs in the search URL to ensure the search results are customized based on the values passed in the URL.
+#### Query String variables
 
-Let’s understand this feature by exploring a use case. Adam is a Product Manager and uses a SharePoint site to keep his team informed on project updates. As the SharePoint site admin, he wishes to create two button web parts on the site’s home page that allow users to view in-progress tasks and completed tasks. Clicking on the In-Progress web part, deep links users to the ‘Work items’ search vertical, where the results are refined to show only items tagged as **InProgress**.
+You can filter search results based on user interaction with SharePoint sites by using query string variables. Query string variables allows you to pass key-value pairs in the search URL to ensure the search results are customized based on those values. For example, suppose you have a SharePoint site that provides information on a project with a simple web part that shows in-progress tasks. Clicking on the "In-progress" web part, links users to the "Work items" search vertical, where the results are refined to show only items tagged as **InProgress**.
 
-This can be achieved by specifying the following query in the “Query” section during vertical creation in the administration page.<br />
-`Status:{QueryString.status}` <br /> 
+This can be done by specifying the following query in the “Query” section during vertical creation in the administration page.
+
+`Status:{QueryString.status}`
 
 The URL on the SharePoint site widget needs to be updated to pass the following key value pair https://microsoft.sharepoint-df.com/_layouts/15/sharepoint.aspx?v={verticalID}&status=InProgress
 
-See the following table for more examples of Query String expansion.
+Here are more examples of query string expansion.
 | #         | Query Syntax |  URL Syntax   |  Value returned  |
 | --------- | ------ | --- |--- |
 | 1    | MyProperty:{QueryString.state}  |   https://microsoft.sharepoint.com/_layouts/15/sharepoint.aspx?v={verticalID}&state=InProgress  |   MyProperty:InProgress  |
