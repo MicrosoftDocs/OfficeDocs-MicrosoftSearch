@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
+ms.date: 03/15/2022
 search.appverid:
 - BFB160
 - MET150
@@ -23,7 +24,7 @@ Help your users stay focused and find work results faster when searching from th
 ## Manage shortcuts and keywords
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [Configurations](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations).
-2. Under Microsoft Search in Bing settings, select **Change settings**.
+2. Under Microsoft Search in Bing settings, select **Change**.
 3. In the Microsoft Search in Bing panel, the **Enable the Microsoft Search in Bing shortcut** is selected by default. To disable these shortcuts, clear the check box.
 4. In Search Keywords field, enter one or two more keywords. You can include spaces and special characters.
 5. Select **Save**.
