@@ -91,12 +91,16 @@ Here are some example queries.
 |Excluding results from archive sites           |NOT (path:http//contoso.sharepoint.com/archive OR path:http//contoso.sharepoint.com/CompanyArchive)|
 | Excluding results based on file type property | NOT(FileType:htm)|  
 
-#### Profile query variables
+### Profile query variables
 
-Use variables in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. You can use profile query variables to make the search results contextual to the signed-in user. Profile query variables fetch values from the signed-in user’s [profile](/graph/api/resources/profile).
+Use variables in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. There are two types of query variables that are supported today.
+- Profile
+- Query string
 
-For example, to create a “Tickets” vertical for the user to find support tickets assigned to them, you can specify the following query in the "Query" section during the vertical creation in the administration page:  
-
+### Profile variables
+You can use profile query variables to contextualize the search results to the signed-in user. 
+Profile query variables fetch values from the signed-in user’s [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile).
+For example, to create a “Tickets” vertical for the user to find support tickets assigned to them, you can specify the following query in the “Query” section during the vertical creation in the administration page: <br /><br />
 `AssignedTo:{Profile.accounts.userPrincipalName}`
 
 This language will narrow down the search results to show only those items for which the assignee is the user who runs the search.
@@ -140,7 +144,7 @@ Consider a user who has three email addresses available in the email collection,
 
 - The query `MyProperty: {Profile.emails.address}` will resolve to *MyProperty: “Megan.Bowen@contoso.com”*.  
 
-- To resolve all the values of the address attribute, use the multi-value expansion syntax. The query `{|MyProperty:{Profile.emails.address}}` will resolve to *((MyProperty:"Megan.Bowen@contoso\.com")* or *(MyProperty: "meganb@hotmail\.com")* or  *(MyProperty:"meganb@outlook\.com"))*.
+- To resolve all the values of the address attribute, use the multi-value expansion syntax. <br /> The query `{|MyProperty:{Profile.emails.address}}` will resolve to *((MyProperty:"Megan.Bowen@contoso\.com")* OR *(MyProperty: "meganb@hotmail\.com")* OR  *(MyProperty:"meganb@outlook\.com"))*.
 
 Use the “|” operator to resolve multi-value variables. See the following table for more examples of profile expansion.
 
@@ -149,7 +153,27 @@ Use the “|” operator to resolve multi-value variables. See the following tab
 | 1    | MyProperty:{Profile.emails.address}  |   "Megan\.Bowen@contoso.com"  |
 | 2 | MyProperty:{Profile.emails}   |    {Profile.emails} This won't resolve because *emails* is an object.|
 | 3    | {?MyProperty:{Profile.emails}}  |  This won't resolve because *emails* is an object. The “?” operator ignores query variables that don't resolve. This variable will be removed when passed further down the query stack.   |
-| 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") or (MyProperty:"non-official") or (MyProperty:"personal"))    |
+| 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
+
+### Query String variables
+You can contextualize search results based on user interaction with SharePoint sites by using Query String variables. Query String variables allows you to pass key-value pairs in the search URL to ensure the search results are customized based on the values passed in the URL.
+
+Let’s understand this feature by exploring a use case. Adam is a Product Manager and uses a SharePoint site to keep his team informed on project updates. As the SharePoint site admin, he wishes to create two button web parts on the site’s home page that allow users to view in-progress tasks and completed tasks. Clicking on the In-Progress web part, deep links users to the ‘Work items’ search vertical, where the results are refined to show only items tagged as **InProgress**.
+
+This can be achieved by specifying the following query in the “Query” section during vertical creation in the administration page.<br />
+`Status:{QueryString.status}` <br /> 
+
+The URL on the SharePoint site widget needs to be updated to pass the following key value pair https://microsoft.sharepoint-df.com/_layouts/15/sharepoint.aspx?v={verticalID}&status=InProgress
+
+See the following table for more examples of Query String expansion.
+| #         | Query Syntax |  URL Syntax   |  Value returned  |
+| --------- | ------ | --- |--- |
+| 1    | MyProperty:{QueryString.state}  |   https://microsoft.sharepoint.com/_layouts/15/sharepoint.aspx?v={verticalID}&state=InProgress  |   MyProperty:InProgress  |
+| 2 | MyProperty:{QueryString.state} OR MyProperty:{QueryString.priority}   |    https://microsoft.sharepoint.com/_layouts/15/sharepoint.aspx?v={verticalID}&state=InProgress&priority=1 |   MyProperty:InProgress OR MyProperty:1  |
+| 3    | {?MyProperty:{QueryString.state}}  |  https://microsoft.sharepoint.com/_layouts/15/sharepoint.aspx?v={verticalID}&State=InProgress   |   Here state won't resolve because QueryStrings are case sensitive.  The “?” operator ignores query variables that don't resolve. This variable will be removed when passed further down the query stack.  |
+| 4 | {&#124;MyProperty: {QueryString.state}}    |  https://microsoft.sharepoint.com/_layouts/15/sharepoint.aspx?v={verticalID}&state=InProgress,Closed    |   (MyProperty:InProgress) OR (MyProperty:Closed)  <br /> The "&#124;" operator is used to resolve muti-value variables. The values for the variables should be passed using the comma separator as shown in the URL syntax. |
+| 5 | {MyProperty: {QueryString.state}}    |  https://microsoft.sharepoint.com/_layouts/15/sharepoint.aspx?v={verticalID}&state=InProgress,Closed    |   MyProperty:InProgress <br /> Here only the first value of state gets picked up from the URL since the query syntax does not define it as a multi-value variable. |
+
 
 ## Limitations
 - Language localization is not applicable to names of out of box verticals once modified. 
@@ -159,6 +183,7 @@ Use the “|” operator to resolve multi-value variables. See the following tab
 - Vertical modification and new verticals are not visible to guest users in an organization. 
 - Vertical re-ordering is not supported.
 - Vertical renaming for All tab is not supported in Microsoft search in Bing.
+- Query string variables is not supported in Microsoft Search in Bing.
 
 ## Troubleshooting
 
