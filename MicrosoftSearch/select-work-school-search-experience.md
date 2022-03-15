@@ -20,7 +20,7 @@ If your organization has education and enterprise service plans, you can select 
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [Configurations](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations).
 1. Under Microsoft Search in Bing for work or school, select **Change**.
-1. In the panel, select a search experience, either School search or Work search. It may take up to 72 hours for this change to appear in Bing.
+1. In the panel, select a search experience, either **School search** or **Work search**. It may take up to 72 hours for this change to appear in Bing.
 
 ## Differences between school and work search
 
