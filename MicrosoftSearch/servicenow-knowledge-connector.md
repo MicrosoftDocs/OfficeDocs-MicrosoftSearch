@@ -295,7 +295,7 @@ To change the destination URL, edit the `AccessUrl` part of the text property in
 
 Where `number` is the knowledge article number property. It should be marked as *retrieve* in Manage Schema screen during connection creation.
 
-Finish reviewing your result type updates and hit **Submit**. Give it a minute or two to pick up the changes. Your search results should now redirect to the desired URLs.
+Finish reviewing your result type updates and hit **Submit**. Give it a minute or two pickup the changes. Your search results should now redirect to the desired URLs.
 
 ### 4. Issues with *Only people with access to this data source* permission
 
