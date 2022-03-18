@@ -2,29 +2,22 @@
 
 
 
-## Week of January 10, 2022
+## Week of March 14, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 1/11/2022 | [Manage search verticals](/MicrosoftSearch/manage-verticals) | modified |
-| 1/13/2022 | [ServiceNow Catalog Graph connector for Microsoft Search](/MicrosoftSearch/servicenow-catalog-connector) | modified |
-| 1/13/2022 | [ServiceNow Knowledge Graph connector for Microsoft Search](/MicrosoftSearch/servicenow-knowledge-connector) | modified |
+| 3/14/2022 | [Manage floor plans](/MicrosoftSearch/manage-floorplans) | modified |
+| 3/15/2022 | [Customize address bar shortcuts for Microsoft Edge](/MicrosoftSearch/edge-shortcuts) | modified |
+| 3/15/2022 | [FAQs](/MicrosoftSearch/faqs) | modified |
+| 3/15/2022 | [Select a school or work search experience](/MicrosoftSearch/select-work-school-search-experience) | modified |
 
 
-## Week of January 03, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/5/2022 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
-
-
-## Week of December 13, 2021
+## Week of March 07, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 12/14/2021 | [Microsoft Search Overview](/MicrosoftSearch/overview-microsoft-search) | modified |
-| 12/15/2021 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
-| 12/17/2021 | [Microsoft Graph Connectors Overview](/MicrosoftSearch/connectors-overview) | modified |
+| 3/11/2022 | [FAQs](/MicrosoftSearch/faqs) | modified |
+| 3/11/2022 | [Microsoft Search Overview](/MicrosoftSearch/overview-microsoft-search) | modified |
+| 3/11/2022 | [Configure your Microsoft-built Graph connector for Microsoft Search](/MicrosoftSearch/configure-connector) | modified |
