@@ -58,6 +58,13 @@ Support to process changes in real time in the Graph Connectors Service might be
 
 After you create a queue, go to the **Events** tab on the queue page to configure **Event Subscription**. Choose all the Blob events that the queue will receive, and connect the queue to the Azure Storage account.
 
+### Test the connection
+
+Test the connection by clicking the **Test Connection** button
+
+> [!NOTE]
+> The **Test Connection** must succeed before you can move to the next configuration section. The ADLS gen 2 enabled storage account **MUST** have a Container **AND** at least one file within it as a minimum for the **Test Connection** to succeed. A connection error will be raised if the content does not exist.
+
 ## Step 4: Assign property labels
 
 You can assign a source property to each label by choosing from a menu of options. While this step isn't mandatory, having some property labels will improve the search relevance and ensure better search results for end users.
