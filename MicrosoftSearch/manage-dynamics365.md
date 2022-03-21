@@ -7,17 +7,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
+ms.date: 03/21/2022
 
 description: "Manage how Dynamics 365 content appears in search results"
 ---
 # Dynamics 365 results in Microsoft Search (Preview)
 
-Microsoft Dynamics 365 is a line of intelligent business applications designed for enterprise resource planning and customer relationship management. With Dynamics 365 results in Microsoft Search, users are able to easily find the most relevant customer and business data stored in Dynamics 365, right from Microsoft Search endpoints like Bing.com, Office.com, and SharePoint.com (and soon the Windows Search Box). The Dynamics 365 connector provides some key benefits:
+Microsoft Dynamics 365 is a line of intelligent business applications designed for enterprise resource planning and customer relationship management. With Dynamics 365 results in Microsoft Search, users are able to easily find the most relevant customer and business data stored in Dynamics 365. The Dynamics 365 connector provides some key benefits:
 
 *	**Easy to use:** Users can easily and quickly find key information stored in Dynamics 365, without needing to navigate to a new app or page.
-* **Easy to find:** Dynamics 365 content is visible to users in Bing.com, Office.com and SharePoint.
+* **Easy to find:** Dynamics 365 content is visible to users in Bing.com, Office.com, and SharePoint.
 * **Built-in data protection:** Dynamics 365 results will only appear for users that have access to the connected instance. 
-* **Quick setup:** Quick setup to configure and easy to maintain the search connection to a Dynamics 365 instance.
+* **Quick setup:** Easy to configure and maintain the search connection to a Dynamics 365 instance.
 * **Unified search experience:** To maintain a cohesive experience, Dynamics 365 results are consistent across all search entry points. Wherever you search, you'll get the same results with the same look and feel.
 
 
