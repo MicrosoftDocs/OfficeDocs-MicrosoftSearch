@@ -92,7 +92,7 @@ To prevent errors, make sure your import file is properly formatted and:
 
 To prevent bookmark-to-bookmark duplication errors:
 
-- Don't use duplicate URLS for different bookmarks. If a URL is assigned to another bookmark and you try to add it again from an import file, you'll get an error. This also applies to duplicate URLs for other types of answers.
+- Don't use duplicate URLs for different bookmarks. If a URL is assigned to another bookmark and you try to add it again from an import file, you'll get an error. This also applies to duplicate URLs for other types of answers.
 - When updating existing bookmarks, use the *bookmark ID* column. You can update any other property of an existing bookmark, such as keyword or description, but you should make sure the *bookmark ID* is in the appropriate column of the import file. If the *bookmark ID* is present, it won't be treated as new addition and won't be processed as an error.
 
 ### Publish or review recommended bookmarks
