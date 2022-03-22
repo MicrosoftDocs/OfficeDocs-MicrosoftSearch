@@ -18,7 +18,7 @@ Indexing on-prem data sources require you to install *Microsoft Graph connector 
 
 [Download latest Graph Connector Agent](https://aka.ms/gcadownload)
 
-## [Version 1.5.0] (https://aka.ms/gcadownload)
+## [Version 1.5.0](https://aka.ms/gcadownload)
   16th Feb 2022
 
 * Ability to update client-secret & certificate and used for authentication 
