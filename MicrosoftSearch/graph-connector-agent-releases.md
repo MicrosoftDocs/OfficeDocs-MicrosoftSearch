@@ -1,6 +1,6 @@
 --- 
 title: "Graph Connector Agent release history" 
-ms.author: msharshkum 
+ms.author: harshkum 
 author: harshkum
 manager: Siva
 audience: Admin
@@ -17,8 +17,6 @@ description: "Release history of Graph Connector Agent which is used to index th
 Indexing on-prem data sources require you to install *Microsoft Graph connector agent* software. It allows for secure data transfer between on-premises data and the connector APIs.
 
 [Download latest Graph Connector Agent](https://aka.ms/gcadownload)
-
-# Releases
 
 ## [Version 1.5.0] (https://aka.ms/gcadownload)
   16th Feb 2022
