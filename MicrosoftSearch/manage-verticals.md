@@ -96,7 +96,7 @@ Use variables in the KQL query section of a vertical to provide dynamic data as 
 
 #### Profile variables
 
-You can use profile query variables to contextualize the search results to the signed-in user. Profile query variables fetch values from the signed-in user’s [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile). For example, to create a “Tickets” vertical for the user to find support tickets assigned to them, you can specify the following query in the “Query” section during the vertical creation in the administration page.
+You can use profile query variables to contextualize the search results to the signed-in user. Profile query variables fetch values from the signed-in user’s [profile](https://docs.microsoft.com/graph/api/resources/profile). For example, to create a “Tickets” vertical for the user to find support tickets assigned to them, you can specify the following query in the “Query” section during the vertical creation in the administration page.
 
 `AssignedTo:{Profile.accounts.userPrincipalName}`
 
