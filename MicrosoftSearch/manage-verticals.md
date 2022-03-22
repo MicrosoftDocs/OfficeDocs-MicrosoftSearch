@@ -96,7 +96,7 @@ Use variables in the KQL query section of a vertical to provide dynamic data as 
 
 #### Profile variables
 
-You can use profile query variables to contextualize the search results to the signed-in user. Profile query variables fetch values from the signed-in user’s [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile). For example, to create a “Tickets” vertical for the user to find support tickets assigned to them, you can specify the following query in the “Query” section during the vertical creation in the administration page.
+You can use profile query variables to contextualize the search results to the signed-in user. Profile query variables fetch values from the signed-in user’s [profile](/graph/api/resources/profile). For example, to create a “Tickets” vertical for the user to find support tickets assigned to them, you can specify the following query in the “Query” section during the vertical creation in the administration page.
 
 `AssignedTo:{Profile.accounts.userPrincipalName}`
 
@@ -163,13 +163,14 @@ This can be done by specifying the following query in the “Query” section du
 The URL on the SharePoint site button web part needs to be updated to pass the following key value pair https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress
 
 Here are more examples of query string expansion.
-| #         | Query Syntax |  URL Syntax   |  Value returned  |
-| --------- | ------ | --- |--- |
+
+| #         | Query Syntax | URL Syntax | Value returned |
+| --------- | --------- | --------- | --------- |
 | 1    | MyProperty:{QueryString.state}  |   https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress  |   MyProperty:InProgress  |
 | 2 | MyProperty:{QueryString.state} OR MyProperty:{QueryString.priority}   |    https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress&priority=1 |   MyProperty:InProgress OR MyProperty:1  |
 | 3    | {?MyProperty:{QueryString.state}}  |  https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?State=InProgress   |   Here state won't resolve because QueryStrings are case sensitive.  The “?” operator ignores query variables that don't resolve. This variable will be removed when passed further down the query stack.  |
-| 4 | {&#124;MyProperty: {QueryString.state}}    |  https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress,Closed    |   (MyProperty:InProgress) OR (MyProperty:Closed)  <br /> The "&#124;" operator is used to resolve muti-value variables. The values for the variables should be passed using the comma separator as shown in the URL syntax. |
-| 5 | {MyProperty: {QueryString.state}}    |  https://microsoft.sharepoin https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress,Closed   |   MyProperty:InProgress <br /> Here only the first value of state gets picked up from the URL since the query syntax does not define it as a multi-value variable. |
+| 4 | {\|MyProperty: {QueryString.state}}    |  https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress,Closed    |   (MyProperty:InProgress) OR (MyProperty:Closed)  <br /> The \| operator is used to resolve muti-value variables. The values for the variables should be passed using the comma separator as shown in the URL syntax. |
+| 5 | {MyProperty: {QueryString.state}}    |  https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress,Closed   |   MyProperty:InProgress <br /> Here only the first value of state gets picked up from the URL since the query syntax does not define it as a multi-value variable. |
 
 
 ## Limitations
