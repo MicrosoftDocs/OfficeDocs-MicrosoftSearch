@@ -159,7 +159,7 @@ This can be done by specifying the following query in the “Query” section du
 
 `Status:{QueryString.status}`
 
-The URL on the SharePoint site widget needs to be updated to pass the following key value pair https://microsoft.sharepoint-df.com/_layouts/15/sharepoint.aspx?v={verticalID}&status=InProgress
+The URL on the SharePoint site button web part needs to be updated to pass the following key value pair https://microsoft.sharepoint-df.com/_layouts/15/sharepoint.aspx?v={verticalID}&status=InProgress
 
 Here are more examples of query string expansion.
 | #         | Query Syntax |  URL Syntax   |  Value returned  |
