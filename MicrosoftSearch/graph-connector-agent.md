@@ -1,5 +1,5 @@
 --- 
-title: "On-Premises Agent" 
+title: "Graph Connector Agent" 
 ms.author: rusamai 
 author: rsamai 
 manager: jameslau 
@@ -12,7 +12,7 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "On-prem Agent" 
+description: "Graph Connector Agent to index on-premises content using Microsoft built connectors for File-shares, SQL, Confluence etc." 
 --- 
 
 # Microsoft Graph connector agent
