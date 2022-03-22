@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 federation search (preview)"
+title: "Dynamics 365 results in Microsoft Search (Preview)"
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,30 +7,22 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
+ms.date: 03/21/2022
 
 description: "Manage how Dynamics 365 content appears in search results"
 ---
-# Dynamics 365 federation search (preview)
+# Dynamics 365 results in Microsoft Search (Preview)
 
-## Microsoft Search Federation and connectors
+Microsoft Dynamics 365 is a line of intelligent business applications designed for enterprise resource planning and customer relationship management. With Dynamics 365 results in Microsoft Search, users are able to easily find the most relevant customer and business data stored in Dynamics 365. The Dynamics 365 connector provides some key benefits:
 
-To help make Microsoft Search more useful, we're introducing Microsoft Search Federation. With federated search, organizations can make data in these scenarios accessible in Microsoft Search:
-
-* Data in systems that are subject to strict compliance requirements
-* Data that can't leave system boundaries
-* Sensitive data stored on-prem that your organization doesn’t want indexed on the cloud
-
-Data accessed through a federated search connection isn't indexed in Microsoft Search. Also, using built-in connectors from Microsoft, it's easy to set up federated search connections. Our Dynamics 365 connector is currently in preview. If you're interested in joining the preview, let us know at [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview). For release time frame, see the [Microsoft Search Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search).
-
-## Dynamics 365 federation connector
-
-Microsoft Dynamics 365 is a line of intelligent business applications designed for enterprise resource planning and customer relationship management. With Dynamics 365 federation, Microsoft Search provides a seamless search experience, enabling users to easily find the most relevant customer and business data stored in Dynamics 365. The Dynamics 365 federation connector provides some key benefits:
-
-* **Easy to administer:** Streamlined process to configure and maintain the search connection to a Dynamics 365 instance.
-* **Easy to use:** Users can easily and quickly find key information stored in Dynamics 365, including accounts, contacts, open opportunities, and more.
-* **Richer content:** To make Dynamics 365 search results more useful, they include key information like leads, contacts, and account details.
-* **Built-in data protection:** Dynamics 365 results will only appear for users that have access to the connected instance.
+*	**Easy to use:** Users can easily and quickly find key information stored in Dynamics 365, without needing to navigate to a new app or page.
+* **Easy to find:** Dynamics 365 content is visible to users in Bing.com, Office.com, and SharePoint.
+* **Built-in data protection:** Dynamics 365 results will only appear for users that have access to the connected instance. 
+* **Quick setup:** Easy to configure and maintain the search connection to a Dynamics 365 instance.
 * **Unified search experience:** To maintain a cohesive experience, Dynamics 365 results are consistent across all search entry points. Wherever you search, you'll get the same results with the same look and feel.
+
+
+Our Dynamics 365 connector is currently in preview. If you're interested in joining the preview, let us know at [aka.ms/D365-ACS-Preview-MicrosoftSearch](https://aka.ms/D365-ACS-Preview-MicrosoftSearch).
 
 ## What users experience
 
@@ -80,10 +72,10 @@ Product name patterns support a range of Dynamics 365 applications and will trig
 
 ## Configure the Dynamics 365 connector
 
-With this simple configuration, you can enable the Dynamics 365 federation search experience for people in your organization. To successfully set up this connection, we recommend you confirm these settings before you begin:
+With this simple configuration, you can enable Dynamics 365 results in Microsoft Search for people in your organization. To successfully set up this connection, we recommend you confirm these settings before you begin:
 
 * Dataverse search is enabled for the Dynamics 365 environment you want to connect to. For details, see [Configure Dataverse search for your environment](/power-platform/admin/configure-relevance-search-organization).
-* The Search admin configuring the connector has valid access to Dynamics 365. For more information, see [Assign licenses](/power-platform/admin/assign-licenses).
+* The Search admin configuring the connector has administrator access to the Dynamics 365 environment. For more information, see [Assign licenses](/power-platform/admin/assign-licenses).
 
 After verifying these settings, follow these steps to set up the connector:
 
