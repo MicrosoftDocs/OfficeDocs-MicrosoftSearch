@@ -15,12 +15,12 @@ description: "Release history of Graph Connector Agent which is used to index th
 
 Indexing on-prem data sources require you to install *Microsoft Graph connector agent* software. It allows for secure data transfer between on-premises data and the connector APIs.
 
-Download latest Graph Connector Agent
+[Download latest Graph Connector Agent](https://aka.ms/gcadownload)
 
 ## Releases
 
 16th Feb 2022
-Version 1.5.0
+[Version 1.5.0] (https://aka.ms/gcadownload)
 
 *Ability to update client-secret & certificate and used for authentication 
 *OAuth 2.0 support for Intranet On-prem connector 
