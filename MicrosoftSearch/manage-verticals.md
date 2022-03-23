@@ -91,7 +91,7 @@ Here are some example queries.
 |Excluding results from archive sites           |NOT (path:http//contoso.sharepoint.com/archive OR path:http//contoso.sharepoint.com/CompanyArchive)|
 | Excluding results based on file type property | NOT(FileType:htm)|  
 
-Query variables
+### Query variables
 Use variables in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. "Profile" and "query string" are the types of query variables that can be used.
 
 #### Profile variables
