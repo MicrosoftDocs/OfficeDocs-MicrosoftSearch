@@ -40,12 +40,12 @@ Indexing on-prem data sources require you to install *Microsoft Graph connector 
 ### Version 1.2.1.0 (*not supported*) (*3 Sept, 2021*)
 * Bug fixes
 
-### Version 1.2.0.0 (*not supported*) *16 Aug, 2021*
+### Version 1.2.0.0 (*not supported*) (*16 Aug, 2021*)
 * Support for localized strings in 14 languages
 * Resumption of full crawl if there was an agent crash
 * Bug fixes
 
-### Version 1.1.0.0 (*not supported*) *9 July, 2021*
+### Version 1.1.0.0 (*not supported*) (*9 July, 2021*)
 * Support for Exclusions rules for file-share connector
 * Performance improvements
 * Bug fixes
