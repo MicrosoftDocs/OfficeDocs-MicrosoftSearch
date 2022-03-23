@@ -49,6 +49,8 @@ items:
         href: configure-connector.md
       - name: Set up the graph connector agent
         href: graph-connector-agent.md
+      - name: Graph connector agent release history
+        href: graph-connector-agent-releases.md
       - name: Map non-Azure AD Identities
         href: map-non-aad.md
       - name: Map Azure AD Identities
