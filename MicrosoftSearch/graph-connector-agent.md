@@ -154,7 +154,7 @@ In case of installation failures, check the installation logs by running: msiexe
 
 If sign-in to config app fails with error "Sign-in failed, please click on sign-in button to try again.". Even after browser authentication succeeded, open services.msc and check if GcaHostService is running. If it isn't, start it manually.
 
-When the service fails to start with the error "The service didn't start due to a logon failure", check if virtual account: NT Service\GcaHostService has permission to log on as a service on the machine. Check [this link](/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) for instructions. If the option to add user or group is greyed out in the Local Policies\User Rights Assignment, it means the user trying to add this account doesn't have admin privileges on this machine or that there is a group policy overriding this. The group policy needs to be updated to allow host service to logon as a service.
+When the service fails to start with the error "The service didn't start due to a logon failure", check if virtual account: NT Service\GcaHostService has permission to log on as a service on the machine. Check [this link](/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) for instructions. If the option to add user or group is greyed out in the Local Policies\User Rights Assignment, it means the user trying to add this account doesn't have admin privileges on this machine or that there is a group policy overriding this. The group policy needs to be updated to allow host service to log on as a service.
 
 ### Connection failure
 
