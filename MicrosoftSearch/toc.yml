@@ -43,14 +43,12 @@ items:
       href: connectors-overview.md
     - name: Connectors gallery
       href: connectors-gallery.md
-    - name: Set up connectors by Microsoft
+    - name: Set up Microsoft built connectors
       items:
       - name: Setup overview
         href: configure-connector.md
-      - name: Set up the graph connector agent
+      - name: Set up Graph connector agent
         href: graph-connector-agent.md
-      - name: Graph connector agent release history
-        href: graph-connector-agent-releases.md
       - name: Map non-Azure AD Identities
         href: map-non-aad.md
       - name: Map Azure AD Identities
