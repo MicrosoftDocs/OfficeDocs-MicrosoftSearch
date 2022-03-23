@@ -15,13 +15,15 @@ search.appverid:
 description: "Graph Connector Agent to index on-premises content using Microsoft built connectors for File-shares, SQL, Confluence etc." 
 --- 
 
-# Microsoft Graph connector agent
+# Microsoft Graph Connector Agent
 
 Using on-prem connectors require you to install *Microsoft Graph connector agent* software. It allows for secure data transfer between on-premises data and the connector APIs. This article guides you through the installing and configuring the agent.
 
 ## Installation
 
-Download the latest version of the Graph connector agent from [https://aka.ms/GCAdownload](https://aka.ms/gcadownload) and install the software by using the installation wizard. Using the recommended configuration of the machine described below, the software can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
+Download the latest version of the Graph connector agent (GCA) from [https://aka.ms/GCAdownload](https://aka.ms/gcadownload) and install the software by using the installation wizard. Release notes of GCA software are available [here](./graph-connector-agent-releases.md)
+
+Using the recommended configuration of the machine described below, Graph Connector Agent instance can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
 
 Recommended configuration:
 
