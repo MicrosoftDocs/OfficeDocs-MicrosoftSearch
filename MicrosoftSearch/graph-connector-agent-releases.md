@@ -26,23 +26,23 @@ Indexing on-prem data sources require you to install *Microsoft Graph connector 
 * Support for parsing of OneNote (.one) file 
 * Fixed issues in parsing word files (.doc*) & last modified date for PowerPoint files (.ppt*) 
 
-### Version 1.4.0.0 *13 Jan, 2022*
+### Version 1.4.0.0 (*13 Jan, 2022*)
 
 * Bug fixes
 * General reliability improvements
 
-### Version 1.3.1.0 *28 Oct, 2021*
+### Version 1.3.1.0 (*28 Oct, 2021*)
 
 * File-share connectors documents per second improvements
 * Other performance improvements
 * Bug fixes
 
-### Version 1.3.0.0 *8 Oct, 2021*
+### Version 1.3.0.0 (*8 Oct, 2021*)
 
 * General reliability improvements
 * Bug fixes
 
-### Version 1.2.1.0 (*not supported*) *3 Sept, 2021*
+### Version 1.2.1.0 (*not supported*) (*3 Sept, 2021*)
 
 * Bug fixes
 
