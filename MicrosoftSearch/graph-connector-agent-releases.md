@@ -41,7 +41,7 @@ Indexing on-prem data sources require you to install *Microsoft Graph connector 
 * Bug fixes
 
 ### Version 1.2.0.0 (*not supported*) (*16 Aug, 2021*)
-* Support for localized strings in 14 languages
+* Support for localized strings in 33 languages: English US, Arabic, Bulgarian, Catalan, Czech, Danish, German, Greek, Spanish, Estonian, Finnish, Hebrew, Croatian, Hungarian, Italian, Japanese, Korean, Lithuanian, Latvian, Dutch, Norwegian, Polish, Portuguese, Russian, Slovak, Slovenian, Serbian (Latin), Swedish, Thai, Turkish, Ukrainian, Chinese - China, Chinese - Taiwan
 * Resumption of full crawl if there was an agent crash
 * Bug fixes
 
