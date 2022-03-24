@@ -69,7 +69,7 @@ items:
           href: confluence-cloud-connector.md
         - name: Confluence On-premises (preview)
           href: confluence-onpremises-connector.md
-        - name: Jira Cloud (preview)
+        - name: Jira Cloud
           href: jira-connector.md
         - name: Enterprise websites
           href: enterprise-web-connector.md
