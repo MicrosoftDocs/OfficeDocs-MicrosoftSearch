@@ -20,8 +20,12 @@ For help on installation, please refer to this [page](graph-connector-agent.md#i
 
 [Download latest Graph Connector Agent](https://aka.ms/gcadownload)
 
-### [Version 1.5.0.0](https://aka.ms/gcadownload) (*16 Feb 2022*)
-* Ability to update client-secret & certificate and used for authentication 
+### [Version 1.5.1.0](https://aka.ms/gcadownload) (*21 Mar 2022*)
+* Bug fixes and reliability improvements
+* Change in default property labels assignment for 'Enterprise websites' connector
+
+### Version 1.5.0.0 (*16 Feb 2022*)
+* Ability to update client-secret & certificate used for authentication 
 * OAuth 2.0 support for Intranet On-premises connector 
 * Support for parsing of OneNote (.one) file 
 * Fixed issues in parsing word files (.doc*) & last modified date for PowerPoint files (.ppt*) 
