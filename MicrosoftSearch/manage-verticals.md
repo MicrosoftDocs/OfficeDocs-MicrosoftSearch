@@ -91,10 +91,9 @@ Here are some example queries.
 |Excluding results from archive sites           |NOT (path:http//contoso.sharepoint.com/archive OR path:http//contoso.sharepoint.com/CompanyArchive)|
 | Excluding results based on file type property | NOT(FileType:htm)|  
 
-Query variables
 Use variables in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. "Profile" and "query string" are the types of query variables that can be used.
 
-#### Profile variables
+#### Profile query variables
 
 You can use profile query variables to contextualize the search results to the signed-in user. Profile query variables fetch values from the signed-in user’s [profile](/graph/api/resources/profile). For example, to create a “Tickets” vertical for the user to find support tickets assigned to them, you can specify the following query in the “Query” section during the vertical creation in the administration page.
 
@@ -158,9 +157,11 @@ You can filter search results based on user interaction with SharePoint sites by
 
 This can be done by specifying the following query in the “Query” section during vertical creation in the administration page.
 
-`Status:{QueryString.status}`
+`Status:{QueryString.state}`
 
 The URL on the SharePoint site button web part needs to be updated to pass the following key value pair https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress
+
+The query status:{QueryString.state} will resolve to status:InProgress.
 
 Here are more examples of query string expansion.
 
