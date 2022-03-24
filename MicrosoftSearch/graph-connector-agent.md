@@ -64,7 +64,6 @@ First, sign-in and note that the minimum required privilege on the account is se
 6. Select **Microsoft Graph** and then **Application permissions**.
 
 7. Search for "ExternalItem.ReadWrite.All", "Directory.Read.All" and "ExternalItem.ReadWrite.OwnedBy" from the permissions and select **Add permissions**.
-**Note**: "Directory.Read.All" permission is required only if you plan to use File-share connector
 
 8. Select **Grant admin consent for [TenantName]** and confirm by selecting **Yes**.
 
