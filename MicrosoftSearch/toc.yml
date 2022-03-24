@@ -47,7 +47,7 @@ items:
       items:
       - name: Setup overview
         href: configure-connector.md
-      - name: On-prem connectors setup
+      - name: On-prem connectors
         items:
         - name: Graph connector agent setup
           href: graph-connector-agent.md
