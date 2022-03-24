@@ -47,8 +47,12 @@ items:
       items:
       - name: Setup overview
         href: configure-connector.md
-      - name: Set up Graph connector agent
-        href: graph-connector-agent.md
+      - name: On-prem connectors
+        items:
+        - name: Graph connector agent setup
+          href: graph-connector-agent.md
+        - name: Graph connector agent release history
+          href: graph-connector-agent-releases.md
       - name: Map non-Azure AD Identities
         href: map-non-aad.md
       - name: Map Azure AD Identities
@@ -65,7 +69,7 @@ items:
           href: confluence-cloud-connector.md
         - name: Confluence On-premises (preview)
           href: confluence-onpremises-connector.md
-        - name: Jira Cloud (preview)
+        - name: Jira Cloud
           href: jira-connector.md
         - name: Enterprise websites
           href: enterprise-web-connector.md

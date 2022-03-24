@@ -28,6 +28,7 @@ Using the recommended configuration of the machine described below, Graph Connec
 Recommended configuration:
 
 * Windows 10, Windows Server 2016 R2 and above
+* [.Net Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
 * [.NET Core Desktop Runtime 3.1 (x64)](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * 8 cores, 3 GHz
 * 16 GB RAM, 2 GB Disk Space
@@ -62,7 +63,7 @@ First, sign-in and note that the minimum required privilege on the account is se
 
 6. Select **Microsoft Graph** and then **Application permissions**.
 
-7. Search for "ExternalItem.ReadWrite.All", "Directory.Read.All" and "ExternalConnection.ReadWrite.OwnedBy" from the permissions and select **Add permissions**.
+7. Search for "ExternalItem.ReadWrite.All", "Directory.Read.All" and "ExternalItem.ReadWrite.OwnedBy" from the permissions and select **Add permissions**.
 
 8. Select **Grant admin consent for [TenantName]** and confirm by selecting **Yes**.
 
