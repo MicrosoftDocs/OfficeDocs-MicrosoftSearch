@@ -47,11 +47,11 @@ items:
       items:
       - name: Setup overview
         href: configure-connector.md
-      - name: Graph connector agent for on-prem connectors
+      - name: On-prem connectors setup
         items:
-        - name: Setup
+        - name: Graph connector agent setup
           href: graph-connector-agent.md
-        - name: Release history
+        - name: Graph connector agent release history
           href: graph-connector-agent-releases.md
       - name: Map non-Azure AD Identities
         href: map-non-aad.md
