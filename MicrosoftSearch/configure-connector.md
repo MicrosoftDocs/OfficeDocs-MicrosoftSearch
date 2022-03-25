@@ -77,7 +77,7 @@ The connection ID creates implicit properties for your connector. It must contai
 
 The process to configure the connection settings varies based on the type of data source. See the [Connector-specific information](/microsoftsearch/servicenow-connector#step-31-basic-authentication) for the type of data source you want to add to your tenant to complete this step in the setup process.  
 
-To learn more about connecting to an on-premises data source, see [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
+To learn more about connecting to an on-premises data source, see [Setup Graph Connector Agent](/microsoftsearch/graph-connector-agent).
 
 ## Step 4: Select properties
 
