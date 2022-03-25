@@ -12,7 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Setup the ServiceNow Knowledge Graph connector for Microsoft Search"
+description: "Set up the ServiceNow Knowledge Graph connector for Microsoft Search"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -295,13 +295,13 @@ To change the destination URL, edit the `AccessUrl` part of the text property in
 
 Where `number` is the knowledge article number property. It should be marked as *retrieve* in Manage Schema screen during connection creation.
 
-Finish reviewing your result type updates and hit **Submit**. Give it a minute or two pickup the changes. Your search results should now redirect to the desired URLs.
+Finish reviewing your result type updates and hit **Submit**. Give it a minute or two to pick up the changes. Your search results should now redirect to the desired URLs.
 
 ### 4. Issues with *Only people with access to this data source* permission
 
 #### 4.1 Unable to choose *Only people with access to this data source*
 
-You may not be able to choose *Only people with access to this data source* option if the service account do not have read permissions to the required tables in [step 3: connection settings](#step-3-connection-settings). Check whether the service account can read tables mentioned under *Index and support user criteria permissions* feature.
+You may not be able to choose *Only people with access to this data source* option if the service account doesn't have read permissions to the required tables in [step 3: connection settings](#step-3-connection-settings). Check whether the service account can read tables mentioned under *Index and support user criteria permissions* feature.
 
 #### 4.2 User mapping failures
 
