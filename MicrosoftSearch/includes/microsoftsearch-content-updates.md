@@ -2,6 +2,26 @@
 
 
 
+## Week of March 21, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/21/2022 | [Azure Data Lake Graph connector for Microsoft Search](/MicrosoftSearch/azure-data-lake-connector) | modified |
+| 3/21/2022 | [Manage bookmarks](/MicrosoftSearch/manage-bookmarks) | modified |
+| 3/22/2022 | [Graph Connector Agent](/MicrosoftSearch/graph-connector-agent) | modified |
+| 3/22/2022 | [Dynamics 365 results in Microsoft Search (Preview)](/MicrosoftSearch/manage-dynamics365) | modified |
+| 3/22/2022 | [Manage search verticals](/MicrosoftSearch/manage-verticals) | modified |
+| 3/23/2022 | [Graph Connector Agent release history](/MicrosoftSearch/graph-connector-agent-releases) | added |
+| 3/23/2022 | [Graph Connector Agent](/MicrosoftSearch/graph-connector-agent) | modified |
+| 3/24/2022 | [Graph Connector Agent release history](/MicrosoftSearch/graph-connector-agent-releases) | modified |
+| 3/24/2022 | [Manage search verticals](/MicrosoftSearch/manage-verticals) | modified |
+| 3/24/2022 | [Graph Connector Agent](/MicrosoftSearch/graph-connector-agent) | modified |
+| 3/25/2022 | [Confluence Cloud Graph connector for Microsoft Search](/MicrosoftSearch/confluence-cloud-connector) | modified |
+| 3/25/2022 | [License requirements and pricing](/MicrosoftSearch/licensing) | modified |
+| 3/25/2022 | [ServiceNow Knowledge Graph connector for Microsoft Search](/MicrosoftSearch/servicenow-knowledge-connector) | modified |
+
+
 ## Week of March 14, 2022
 
 
