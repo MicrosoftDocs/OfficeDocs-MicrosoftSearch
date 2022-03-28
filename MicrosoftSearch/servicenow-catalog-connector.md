@@ -20,9 +20,6 @@ description: "Set up the ServiceNow Catalog Graph connector for Microsoft Search
 
 With the Microsoft Graph Connector for ServiceNow, your organization can [service catalog](https://www.servicenow.com/products/it-service-automation-applications/service-catalog.html) items that are visible to all users or restricted with user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, end users can search for those catalog items from any Microsoft Search client.
 
->[!NOTE]
->ServiceNow Catalog Graph Connector is in preview. If you wish to get early access to try it, sign up using [<b> this form </b>](https://forms.office.com/r/QyYwQQY2EX).  
-
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Catalog Graph  connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Set up your Graph Connector article to understand the general setup process.
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR 
