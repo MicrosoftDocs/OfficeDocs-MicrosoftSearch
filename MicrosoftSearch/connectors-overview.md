@@ -20,6 +20,9 @@ description: "Overview of Microsoft Graph connectors for Microsoft Search"
 
 [Microsoft Search](./overview-microsoft-search.md) indexes all your [Microsoft 365](https://www.microsoft.com/microsoft-365) data to make it searchable for users. With Microsoft Graph connectors, your organization can index third-party data so it appears in Microsoft Search results. This feature expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem. The third-party data can be hosted on-premises or in the public or private clouds.
 
+The Graph Connector setup process for Microsoft Search experience is explained in the video below.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4SjFa]
+
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
 This article is intended to help Microsoft 365 administrators locate the resources that are available to answer the following questions:
@@ -64,12 +67,13 @@ You can connect to the following data sources using connectors created by Micros
 * [Confluence Cloud](confluence-cloud-connector.md)
 * [Confluence On-premises](confluence-onpremises-connector.md)
 * [Enterprise websites](enterprise-web-connector.md)
+* [Jira Cloud](jira-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [File share](fileshare-connector.md)
 * [Oracle SQL](OracleSQL-connector.md)
 * [Salesforce](salesforce-connector.md)
 * [ServiceNow Knowledge](servicenow-knowledge-connector.md)
-* [ServiceNow Catalog (preview)](servicenow-catalog-connector.md)
+* [ServiceNow Catalog](servicenow-catalog-connector.md)
 
 The [Microsoft Graph connectors gallery](https://www.microsoft.com/microsoft-search/connectors) contains a brief description of each of these connectors. If you're ready to connect one of these data sources to your tenant, be sure to read the [Setup overview](configure-connector.md) and any other articles in the Setup connectors by Microsoft section that apply to your data source.
 
@@ -99,7 +103,6 @@ The set of connectors and features in preview include:
 
 * [Azure DevOps connector](azure-devops-connector.md)
 * [Confluence On-premises connector](confluence-onpremises-connector.md)
-* [ServiceNow Catalog connector](servicenow-catalog-connector.md)
 * [Multiple connections in a vertical](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## How do I customize and configure search results?
