@@ -67,6 +67,7 @@ You can connect to the following data sources using connectors created by Micros
 * [Confluence Cloud](confluence-cloud-connector.md)
 * [Confluence On-premises](confluence-onpremises-connector.md)
 * [Enterprise websites](enterprise-web-connector.md)
+* [Jira Cloud](jira-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [File share](fileshare-connector.md)
 * [Oracle SQL](OracleSQL-connector.md)
