@@ -177,6 +177,9 @@ With a full refresh, the search engine processes and indexes the items that have
 
 With an **Incremental refresh**, the search engine can process and index only the items that were created or modified since the last successful crawl. As a result, not all the data in the content source is reindexed. Incremental refreshes work best to detect content, metadata, permission, and other updates.
 
+> [!NOTE]
+> Incremental crawls do not support processing of updates to **permissions** currently.
+
 Incremental refreshes are much faster than full refreshes because unchanged items aren't processed. However, if you choose to run incremental refreshes, you still need to run full refreshes periodically to maintain correct data sync between the content source and the search index.
 
 > [!div class="mx-imgBorder"]
