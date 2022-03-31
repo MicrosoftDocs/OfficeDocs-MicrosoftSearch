@@ -43,7 +43,7 @@ Search administrators directly influence the search experience for end users. Th
 
 ## Step 2: Create answers
 
-Microsoft Search provides administrators with tools that they can use to build a robust search experience for their users. You can curate answers of different types to provide high-confidence results for users' searches.
+Microsoft Search provides administrators with tools that they can use to build a robust search experience for their users. You can create answers of different types to provide high-confidence results for users' searches.
 
 Bookmarks are the most commonly used answer type. They promote the best possible results for your users’ queries to the top of the search results and make it easy for your users to find what they are looking for.
 Informational content that is available for everyone; for example, information about the company, help for Windows and Office apps, etc.
