@@ -50,7 +50,7 @@ Ask users to suggest resources to bookmark. In addition to suggesting content, a
 
 ## Step 3: Improve findability of content
 
-In **Microsoft Search**, Search administrator creates Bookmarks, Q&A, Locations, and PowerApps to improve the findability of content. Each of these search components includes a title, a URL, and a set of keywords that trigger it.
+In **Microsoft Search**, Search administrator creates Bookmarks, Q&A, Locations, and Floor Plans to improve the findability of content. Each of these search components includes a title, a URL, and a set of keywords that trigger it.
 
 ### Titles and descriptions
 
