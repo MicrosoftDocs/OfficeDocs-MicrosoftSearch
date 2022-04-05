@@ -70,7 +70,7 @@ items:
         - name: Confluence On-premises (preview)
           href: confluence-onpremises-connector.md
         - name: Jira Cloud
-          href: jira-cloud-connector.md
+          href: jira-connector.md
         - name: Enterprise websites
           href: enterprise-web-connector.md
         - name: File share
