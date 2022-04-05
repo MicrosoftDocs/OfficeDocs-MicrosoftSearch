@@ -6,6 +6,7 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
+ms.date: 04/05/2022
 ms.localizationpriority: medium
 search.appverid:
 - BFB160
@@ -39,9 +40,6 @@ By using a filter, you can see feedback for specific answer types. You can also 
 You can use the search box above the feedback list to search for feedback on a specific query.
 
 In the feedback list, the Verbatim column indicates what user's feedback also includes a comment or suggestion. To read it, click the query to open the **Detail** panel.
-
->[!NOTE]
->During the initial rollout across the admin and end-user search experiences, it may take up to two weeks for feedback items to appear in the admin portal.
 
 ## Update feedback state
 
