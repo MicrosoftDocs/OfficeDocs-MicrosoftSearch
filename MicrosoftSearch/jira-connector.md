@@ -63,29 +63,29 @@ The following steps provide guidance on how to register the app:
 3. Provide an appropriate name for the application and create the new app.
 4. Navigate to `Permissions` from the navigation pane on left. Under the 'Granular Permissions' header, click `Add` for `Jira API`. Once added, click on `Configure` and add the following scopes listed below.
 
-| **#** | **Scope name** | **Code** |
-| ------------ | ------------ | ------------ |
-| 1 | View fields | `read:field:jira` |
-| 2 | View avatars | `read:avatar:jira` |
-| 3 | View project categories | `read:project-category:jira` |
-| 4 | View projects | `read:project:jira` |
-| 5 | Read field configurations | `read:field-configuration:jira` |
-| 6 | View issue types | `read:issue-type:jira` |
-| 7 | View project properties | `read:project.property:jira` |
-| 8 | View users | `read:user:jira` |
-| 9 | View application roles | `read:application-role:jira` |
-| 10 | View groups | `read:group:jira` |
-| 11 | Read issue type hierarchies | `read:issue-type-hierarchy:jira` |
-| 12 | View project versions | `read:project-version:jira` |
-| 13 | View project components | `read:project.component:jira` |
-| 14 | View issue details | `read:issue-details:jira` |
-| 15 | View audit logs | `read:audit-log:jira` |
-| 16 | View issue meta | `read:issue-meta:jira` |
-| 17 | View project roles | `read:project-role:jira` |
-| 18 | View issue security levels | `read:issue-security-level:jira` |
-| 19 | View issue security schemes | `read:issue-security-scheme:jira` |
-| 20 | View permission schemes | `read:permission-scheme:jira` |
-| 21 | View permissions | `read:permission:jira` |
+   | **#** | **Scope name** | **Code** |
+   | ------------ | ------------ | ------------ |
+   | 1 | View fields | `read:field:jira` |
+   | 2 | View avatars | `read:avatar:jira` |
+   | 3 | View project categories | `read:project-category:jira` |
+   | 4 | View projects | `read:project:jira` |
+   | 5 | Read field configurations | `read:field-configuration:jira` |
+   | 6 | View issue types | `read:issue-type:jira` |
+   | 7 | View project properties | `read:project.property:jira` |
+   | 8 | View users | `read:user:jira` |
+   | 9 | View application roles | `read:application-role:jira` |
+   | 10 | View groups | `read:group:jira` |
+   | 11 | Read issue type hierarchies | `read:issue-type-hierarchy:jira` |
+   | 12 | View project versions | `read:project-version:jira` |
+   | 13 | View project components | `read:project.component:jira` |
+   | 14 | View issue details | `read:issue-details:jira` |
+   | 15 | View audit logs | `read:audit-log:jira` |
+   | 16 | View issue meta | `read:issue-meta:jira` |
+   | 17 | View project roles | `read:project-role:jira` |
+   | 18 | View issue security levels | `read:issue-security-level:jira` |
+   | 19 | View issue security schemes | `read:issue-security-scheme:jira` |
+   | 20 | View permission schemes | `read:permission-scheme:jira` |
+   | 21 | View permissions | `read:permission:jira` |
 
 5. Navigate to `Authorization` from the navigation pane on left. Add the callback URL `https://gcs.office.com/v1.0/admin/oauth/callback` and save the changes.
 6. Navigate to `Settings` from the navigation pane on left. You will get the `Client ID` and `Secret` from this page.
