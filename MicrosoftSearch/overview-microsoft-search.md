@@ -77,7 +77,7 @@ In Microsoft Search only the content that a user has permission to see can appea
 > [!NOTE]
 > Learn how Microsoft Search in Bing protects your company data in [Security and Privacy for Microsoft Search in Bing](security-for-search.md).
 
-When people filter on a person in SharePoint, they see results from content that the filtered person has worked on and that they have permission to see. If the filtered person or their organization have turned off item insights in Microsoft Graph, people only see results from content the filtered person has shared with them or from content that they both have worked on. Learn about item insights.
+When people filter on a person in SharePoint, they see results from content that the filtered person has worked on and that they have permission to see. If the filtered person or their organization have turned off item insights in Microsoft Graph, people only see results from content the filtered person has shared with them or from content that they both have worked on. [Learn about item insights](/graph/item-insights-overview).
 
 When users get results for a search in Outlook, SharePoint Online, and Office.com, the issued query is recorded in their search history. A user’s search history is personal, it isn’t shared with your organization or with Microsoft. Their search history helps them quickly get back to things they’ve found before. As they type a query, matches in their search history are suggested back to them in the search box.  
 
