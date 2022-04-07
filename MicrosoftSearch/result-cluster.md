@@ -26,7 +26,7 @@ Result clusters help users discover all content in one place. The results shown 
 
 Connected content needs to meet the following two criteria to be able to show up in a result cluster: 
 1.	The external items need to have adequate data ingested into the [“content” property](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta#properties) of the item.
-1.	One of the source properties must be mapped to the [semantic label “title”](/configure-connector?#step-6-assign-property-labels).
+1.	One of the source properties must be mapped to the [semantic label “title”](configure-connector.md?#step-6-assign-property-labels).
 
 Connector results provided in the result cluster come from individual search verticals with connector content. Each search vertical provides a set of relevant results which becomes a candidate result cluster. Relevant results are chosen based on query terms that overlap with the "title" and "content" properties of each item. 
 
