@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
+ms.date: 04/07/2022
 search.appverid:
 - BFB160
 - MET150
@@ -17,17 +18,21 @@ description: "Details of the Connectors Result Cluster experience"
 
 ## Overview of the Graph connectors result cluster  
 
-With Graph connectors result clusters, enterprises can search for content from third party data sources in their default view, the **All** tab, in SharePoint, Office.com, and Microsoft Search in Bing.
+With Graph connectors result clusters, you can search for content from third-party data sources in the **All** tab, in SharePoint, Office.com, and Microsoft Search in Bing.
 
-Result clusters help users discover all third party content in one place. The results shown in a result cluster are grouped together based on the search vertical configuration.
+Result clusters help users discover all content in one place. The results shown in a result cluster are grouped together based on the search vertical configuration.
 
 ## How connector results are selected and displayed
 
-Connector results provided in the result cluster are derived from individual search verticals with connector content. Each search vertical provides a set of relevant results which becomes a candidate result cluster. Relevant results are chosen based on the "title" property and "content" property of each item. The content property is marked as *isContent=true* on the schema.
+Connected content needs to meet the following two criteria to be able to show up in a result cluster: 
+1.	The external items need to have adequate data ingested into the [“content” property](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta#properties) of the item.
+1.	One of the source properties must be mapped to the [semantic label “title”](/configure-connector?#step-6-assign-property-labels).
+
+Connector results provided in the result cluster come from individual search verticals with connector content. Each search vertical provides a set of relevant results which becomes a candidate result cluster. Relevant results are chosen based on query terms that overlap with the "title" and "content" properties of each item. 
 
 To ensure discovery of content from the search verticals, we recommend providing meaningful titles for your items. This positively impacts the arbitration of result cluster candidates and the likelihood of your content showing up in a result cluster. For example, avoid the use of IDs as values for the property "title" unless your users are using IDs to look for content.
 
-How often a result cluster is shown varies on factors such as the number of search verticals that you configure and the type of content. By either interacting or ignoring a result cluster, users will implicitly provide hints that will adjust its triggering over time.
+How often a result cluster is shown depends on factors such as the number of search verticals that you configure and the type of content. By either interacting or ignoring a result cluster, users are implicitly provide hints that will adjust its triggering over time.
 
 The search result experience for connector items shown in your result cluster uses [result types](./customize-search-page.md#create-your-own-result-type) defined by you. If no result type is configured, a [system generated layout](./customize-search-page.md#default-search-result-layout) is used.
 
