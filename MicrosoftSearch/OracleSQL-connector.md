@@ -179,6 +179,7 @@ Underneath is a list of common errors observed while configuring the connector a
 | Database settings | Error from database server: ORA-12541: TNS: No listener | Invalid Port |
 | Database settings | Error from database server: ORA-12514: TNS: listener does not currently know of service requested in connector descriptor | Invalid service (database) name |
 | Database settings | Error from database server: Login failed for user '`user`'. | Invalid username or password |
+| Full crawl | Column column_name returned from full crawl SQL query contains non-alphanumeric character | Non-alphanumeric characters (like underscores) are not allowed in column names in SELECT clause. Use aliases to rename columns and remove non-alphanumeric characters (Example - SELECT column_name AS columnName). |
 
 ## Limitations
 

@@ -2,6 +2,16 @@
 
 
 
+## Week of April 04, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/5/2022 | [Managing User Feedback](/MicrosoftSearch/manage-feedback) | modified |
+| 4/7/2022 | [Connectors result cluster](/MicrosoftSearch/result-cluster) | modified |
+| 4/8/2022 | [Atlassian Jira Cloud Graph connector for Microsoft Search](/MicrosoftSearch/jira-connector) | modified |
+
+
 ## Week of March 21, 2022
 
 
