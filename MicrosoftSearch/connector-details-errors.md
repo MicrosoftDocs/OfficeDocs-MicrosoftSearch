@@ -59,7 +59,7 @@ Error code | Error message | Solution
 1008 | The total quota utilization of your tenant has reached its limit. | Try deleting a connection to free up some of your quota or adjusting your ingestion filters to bring in less data. If these steps don't solve the issue, contact Microsoft support.
 1009 | The total quota utilization for your connection has reached its limit. | Try adjusting your ingestion filters to bring in less data. If this step doesn't solve the issue, contact Microsoft support.
 1010 | The total quota utilization for indexing non-Azure AD groups has reached its limit of 100K. | Try deleting a connection to free up some of your quota or adjusting your ingestion filters to bring in less data. If these steps don't solve the issue, contact Microsoft support.
-1011 | The Graph connector [agent](graph-connector-agent.md) is not reachable or offline. | 
+1011 | The Microsoft Graph connector [agent](graph-connector-agent.md) is not reachable or offline. | 
 1012 | Authentication to your connection failed due to an unsupported authentication mode. | Edit the connection to update the authentication settings for your connection.
 1017 | Item cannot be indexed because the network is unavailable. | Restore the network and wait for the next crawl for the item to get indexed.
 2001 | Indexing is throttled because of a large number of updates in the queue. Depending on the queue, it can take some time for the updates to complete. | Wait until the queue gets cleared.
