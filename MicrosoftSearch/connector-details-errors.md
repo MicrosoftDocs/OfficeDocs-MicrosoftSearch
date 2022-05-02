@@ -1,5 +1,5 @@
 ---
-title: "Connectors Details and Errors"
+title: "Microsoft Graph connectors details and errors"
 ms.author: monaray
 author: monaray97
 manager: mnirkhe
@@ -11,31 +11,31 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Connectors Details and Errors"
+description: "Access and manage your Microsoft Graph connectors as a search administrator for your tenant."
 ---
 <!-- markdownlint-disable no-inline-html -->
 
 # View connection details and errors
 
-To access and manage your connectors, you must be designated as a search administrator for your tenant. Contact your tenant administrator to provision you for the search administrator role.
+To access and manage your Microsoft Graph connectors, you must be designated as a search administrator for your tenant. Contact your tenant administrator to provision you for the search administrator role.
 
-Navigate to the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in the [Microsoft 365 admin center](https://admin.microsoft.com).
+In the [Microsoft 365 admin center](https://admin.microsoft.com), go to the [**Connectors** tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
 
-You can view connection details and errors when you click on the connection on the [Connectors tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).  
+You can view connection details and errors when you select the connection on the **Connectors** tab.  
 
 ## View your last crawl info
 
-After the first initial incremental or full crawl completes successfully, the last crawl data values are displayed under the last crawl header in the detail pane. If there was no last crawl that ran, you will not see any information under the last crawl header. This information about last crawl will help you gain insights into how the crawl performed and take necessary steps wherever required.
+After the first initial incremental or full crawl completes successfully, the last crawl data values are displayed under the last crawl header in the detail pane. If there was no last crawl that ran, you do not see any information under the last crawl header. This information about last crawl helps you gain insights into how the crawl performed to help you take necessary steps wherever required.
 
-The following last crawl values will be available for each connection:
+The following last crawl values are available for each connection:
 
 Value | Description
 --- | ---
 **Completed at** | Date and time the last crawl got completed
 **Type** | Incremental or full crawl
-**Duration** | how much time did the last crawl take to complete
+**Duration** | How much time the last crawl took to complete
 **Successes** | Number of items that have been successfully ingested in the last crawl
-**Errors** | Number of items that errored in the last crawl
+**Errors** | Number of items that produced an error in the last crawl
 
 ## Monitor errors
 
@@ -47,12 +47,12 @@ To view an error's specific details, select its error code. A screen appears wit
 
 ![Connector list with a connector selected and details pane showing the list of errors for the connector.](media/errormonitoring2.png)
 
-Below is the list of different errors that can appear against any connection.
+Following is the list of different errors that can appear against any connection.
 
 Error code | Error message | Solution
 --- | --- | ---
 1000 | The data source isn't available. Check your internet connection or make sure the data source is still accessible by the connector. | This error occurs when the data source is not reachable due to a network issue or when the data source itself is deleted, moved, or renamed. Check if the data source details provided are still valid.
-1001 | Can't update the data, because the data source is throttling the connector. | To unthrottle the data source, check if its scale limits can be increased or wait until a less traffic-heavy time of the day.
+1001 | Can't update the data because the data source is throttling the connector. | To unthrottle the data source, check if its scale limits can be increased or wait until a less traffic-heavy time of the day.
 1002 | Can't authenticate with the data source. Verify that the credentials associated with this data source are correct. | Click **Edit** to update the authentication credentials.
 1003 | The account associated with the connector doesn't have permission to access the item. |  Ensure the proper account has access to the item you want indexed.
 1005 | Credentials associated with this data source have expired. Renew the credentials and update the connection. | Click **Edit** to update the authentication credentials.
@@ -71,5 +71,5 @@ Error code | Error message | Solution
 2007 | This item will not be displayed in Microsoft Search because some users or groups without permission to view this item could not be indexed. | 
 2008 | Connections can't have non-Azure AD groups with more than 50,000 members. | Try removing users from a group or try removing items ACLed with that group from ingestion and recreate the connection.
 2009 | Non-Azure AD group indexing is temporarily paused due to a large number of requests. Indexing will resume when the system finishes processing these requests. Check back later. | 
-2010 | This connection is no longer valid because of an update made by Microsoft | Delete the connection and create a new one.
+2010 | This connection is no longer valid because of an update made by Microsoft. | Delete the connection and create a new one.
 5000 | Something went wrong. If this issue continues, contact support. |
