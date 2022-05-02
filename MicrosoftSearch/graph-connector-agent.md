@@ -63,7 +63,15 @@ First, sign-in and note that the minimum required privilege on the account is se
 
 6. Select **Microsoft Graph** and then **Application permissions**.
 
-7. Search for "ExternalItem.ReadWrite.All", "Directory.Read.All" and "ExternalConnection.ReadWrite.OwnedBy" from the permissions and select **Add permissions**.
+7. Search for the following permissions and select **Add permissions**.
+
+   | **Permission** | **When is the permission required** |
+   | ------------- | -------------|
+   | [ExternalItem.ReadWrite.OwnedBy](/graph/permissions-reference#application-permissions-52) | Always |
+   | [ExternalItem.ReadWrite.All](/graph/permissions-reference#application-permissions-52) | Optional |
+   | [Directory.Read.All](/graph/permissions-reference#application-permissions-23) | Required for File share, MS SQL and Oracle SQL connectors |
+  
+  <!--- | [ExternalConnection.ReadWrite.OwnedBy](/graph/permissions-reference#application-permissions-52) | Required for Graph connector SDK | --->
 
 8. Select **Grant admin consent for [TenantName]** and confirm by selecting **Yes**.
 
