@@ -48,9 +48,9 @@ For example, if your organization has 100 Microsoft 365 E5 licenses, then your o
 > Microsoft 365 A5 and Office 365 A5 do not include this entitlement.
 
 ## Purchase of add-on index quota
-To purchase more Microsoft Graph connectors quota, get in touch with your Microsoft account manager, or complete the following steps:
+To purchase more Microsoft Graph connectors quota, contact your Microsoft account manager or complete the following steps:
 
-1. In the **[Microsoft 365 admin center](https://admin.microsoft.com)** navigation menu, go to **Billing > Purchase services**.
+1. In the **[Microsoft 365 admin center](https://admin.microsoft.com)**, go to **Billing > Purchase services**.
 2. At the bottom of the Purchase services page, select **Add-ons**.
 3. Select **Extra Graph Connector Capacity**.
 4. Select **Buy**, and then complete your order preferences.

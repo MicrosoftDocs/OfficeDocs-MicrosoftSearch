@@ -46,7 +46,7 @@ Five states show up in the **State** column against each connection:
 
 * **Failed**. The connection had a critical failure. This error requires manual intervention. The admin needs to take appropriate action based on the error message shown. Data that was indexed until the error occurred is searchable.
 
-* **Delete Failed**. The deletion of the connection failed. Depending upon the failure reason, the data might still be indexed, item quota might still be consumed, and crawls might still run for the connection. We recommend to try deleting the connection again in this state.
+* **Delete Failed**. The deletion of the connection failed. Depending upon the failure reason, the data might still be indexed, item quota might still be consumed, and crawls might still run for the connection. We recommend that you try deleting the connection again in this state.
 
 ## Monitor your index quota utilization
 

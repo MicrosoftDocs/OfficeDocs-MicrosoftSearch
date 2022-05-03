@@ -107,8 +107,8 @@ Label | Description
 **Created By** | Name of the person who created the item
 **Last modified by** | Name of the person who most recently edited the item
 **Authors** | Name of the people who participated/collaborated on the item
-**Created date time** | When was the item created
-**Last modified date time** | When was the item most recently edited
+**Created date time** | Time when the item was created
+**Last modified date time** | Time when the item was most recently edited
 **File name** | Name of the file item
 **File extension** | Type of file item such as .pdf or .word
 
@@ -128,11 +128,11 @@ If you select a content property, you have the option of using the system-genera
 
 ### Aliases for source properties
 
-You can add aliases to your properties under the "Alias" column on the "Manage schema" page. Aliases are friendly names for your properties, and also used in queries and in the creation of filters. They're also used to normalize source properties from multiple connections such that they have the same name. That way you can create a single filter for a vertical with multiple connections. For more information, see [Customize the search results page](customize-search-page.md).  
+You can add aliases to your properties under the "Alias" column on the "Manage schema" page. Aliases are friendly names for your properties. They are used in queries and in the creation of filters. They're also used to normalize source properties from multiple connections such that they have the same name. That way you can create a single filter for a vertical with multiple connections. For more information, see [Customize the search results page](customize-search-page.md).  
 
 ### Search schema attributes
 
-You can set the search schema attributes to control search functionality of each source property. A search schema helps determine what results display on the search results page and what information end users can view and access.
+You can set the search schema attributes to control the search functionality of each source property. A search schema helps determine what results display on the search results page and what information end users can view and access.
 
 Search schema attributes include options to **Query**, **Search**, **Retrieve**, and **Refine**. The following table lists each of the attributes that Microsoft Graph connectors support and explains their functions.
 

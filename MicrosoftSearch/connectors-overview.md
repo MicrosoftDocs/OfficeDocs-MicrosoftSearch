@@ -35,7 +35,7 @@ This article is intended to help Microsoft 365 administrators locate the resourc
 * [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results)
 * [How do I search my connector data from a custom application?](#how-do-i-search-my-connector-data-from-a-custom-application)
 * [How do I customize search results?](#how-do-i-customize-search-results)
-* [What are the connector limitations](#what-are-the-connector-limitations)
+* [What are the connector limitations?](#what-are-the-connector-limitations)
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
@@ -110,7 +110,7 @@ The set of connectors and features in preview include:
 
 There are many ways to customize and configure search results. To learn more, see the following articles:
 
-* [Manage verticals](manage-verticals.md) and [result types](manage-result-types.md)
+* [Manage search verticals](manage-verticals.md) and [result types](manage-result-types.md)
 * [Manage search result layouts](customize-results-layout.md)
 * [Manage result cluster](result-cluster.md)
 * [Manage custom filters](custom-filters.md)
