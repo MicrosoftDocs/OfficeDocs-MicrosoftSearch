@@ -68,10 +68,7 @@ First, sign-in and note that the minimum required privilege on the account is se
    | **Permission** | **When is the permission required** |
    | ------------- | -------------|
    | [ExternalItem.ReadWrite.OwnedBy](/graph/permissions-reference#application-permissions-52) | Always |
-   | [ExternalItem.ReadWrite.All](/graph/permissions-reference#application-permissions-52) | Optional |
    | [Directory.Read.All](/graph/permissions-reference#application-permissions-23) | Required for File share, MS SQL and Oracle SQL connectors |
-  
-  <!--- | [ExternalConnection.ReadWrite.OwnedBy](/graph/permissions-reference#application-permissions-52) | Required for Graph connector SDK | --->
 
 8. Select **Grant admin consent for [TenantName]** and confirm by selecting **Yes**.
 
