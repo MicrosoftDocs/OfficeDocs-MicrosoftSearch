@@ -98,6 +98,6 @@ Through Dataverse Search Quick Find Views, you can modify which entities and fie
 ### Edit
 
 After enabling the connection, you can modify the endpoint and connection name. In [Data sources](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors), below the configured connection, select **Edit** to make changes.
-:::image type="content" alt-text="Screenshot of Dynamics 365 connector Edit button and panel in the Microsoft 365 admin center." source="media/dynamics365/dynamics365-edit-connector.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
+:::image type="content" alt-text="Screenshot of Dynamics 365 connector Edit button and panel in the Microsoft 365 admin center." source="media/dynamics365/dynamics365-edit-connector.png" lightbox="media/dynamics365/dynamics365-edit-connector.png":::
 
 To deactivate the connection, clear the **Activate this connection for your organization** check box and **Save**.
