@@ -38,18 +38,14 @@ Once set, the custom search results page is displayed when you search using the 
 
 A page layout named **HeaderlessSearchResults** can be used to make the search results page appear closer to our out of box search results experience. This new layout can only be active for the pages that are set to be the custom search results page.
 
-To set the page layout, you can use the [Set-PnPClientSidePageSharePoint PnP PowerShell
-command](/powershell/module/sharepoint-pnp/set-pnpclientsidepage?view=sharepoint-ps) with -LayoutType HeaderlessSearchResults.
+To set the page layout, you can use the [Set-PnPPage PnP PowerShell
+command](/powershell/module/sharepoint-pnp/set-pnppage?view=sharepoint-ps) with -LayoutType HeaderlessSearchResults.
 
 ## Use SharePoint Framework Query extensions
 
 Custom search results pages can also make use of the [SharePoint Framework Query Extension](/sharepoint/dev/spfx/building-search-extensions) to modify the query before it gets sent to the search engine.
 
 ## Additional resources
-
-To learn more about custom results page, check out our [Ignite 2019
-Search Customization and Development
-session](https://myignite.techcommunity.microsoft.com/sessions/85238?source=sessions).
 
 For open source projects, getting started with our Microsoft Search
 APIs, and more customization and extensibility samples, visit [Microsoft

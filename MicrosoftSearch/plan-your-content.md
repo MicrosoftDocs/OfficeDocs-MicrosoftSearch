@@ -50,7 +50,7 @@ Ask users to suggest resources to bookmark. In addition to suggesting content, a
 
 ## Step 3: Improve findability of content
 
-In **Microsoft Search**, Search administrator creates Bookmarks, Q&A, Locations, and PowerApps to improve the findability of content. Each of these search components includes a title, a URL, and a set of keywords that trigger it.
+In **Microsoft Search**, Search administrator creates Bookmarks, Q&A, Locations, and Floor Plans to improve the findability of content. Each of these search components includes a title, a URL, and a set of keywords that trigger it.
 
 ### Titles and descriptions
 
@@ -125,9 +125,3 @@ Suggested Bookmarks, Q&A, and Locations are a good indicator of gaps in your con
 Find out which searches have generated the most impressions over the last 90 days. Impression refers to how many times a page was viewed in search result. The **Top Queries** card shows the top 25 user searches for each result type with the total number of searches and their click-through rate (CTR). Use this report to identify search query volume and to determine queries with high and low search activity.
 
 Low search count may indicate user dissatisfaction either because users are not looking for those search content or are using different keywords to find that content. CTR shows how often users select the promoted results and how useful your query rules and results are to users. A low CTR indicates that users are finding the content but are making the determination that the content does not meet their search. In such cases, administrators may decide to review the content and ensure that it corresponds with the user’s search and update titles, descriptions, and keywords to align them with the user search queries.
-
-### Analyze impressions by result type
-
-Easy-to-read graphs in the **Impression Distribution by Result Type** card show impressions over various timeframes. The timeline shows the daily number of impressions for a result type. Determine which result type is most frequently, or infrequently, used. Infrequent use of particular result type does not necessarily mean that the result types are not good. It just shows how users are using the search result.
-
-Use this report to understand what result types users are using and any changes in user behavior over a period of time. If a particular result type is preferred by users, administrators may decide to create more search results of the same types or  to review the keywords of results types not used by users to ensure that keywords are appropriate.

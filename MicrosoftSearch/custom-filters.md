@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
+ms.date: 11/22/2021
 search.appverid:
 - BFB160
 - MET150
@@ -23,9 +24,6 @@ There are two types of filters available on the search page.
 - Out of the box filters
 - Custom filters
 
-> [!NOTE]
-> Custom Filters are currently in preview for admins and end-users in Targeted Release. For more information about preview, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
-
 ## Out of the box filters
 
 Out of the box filters are available by default in search verticals such as All, Files, Images, and News. On the ‘All' and ‘File' verticals, you can see the "File type" filter on the FileType property and the "Last modified" filter on the LastModifiedTime property. These filters are available in SharePoint Home, Office.com, SharePoint Sites, and Work vertical in Bing.
@@ -39,24 +37,25 @@ Filters configured for verticals in the organization scope will be available at 
 ## Create organization level filters
 
 1. In [Microsoft 365 admin center](https://admin.microsoft.com/), go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
-2. Select your preferred vertical where you want to create a filter and click **Edit**.  
-3. Navigate to the Filters step in the vertical's wizard.
-4. Click **Add a Filter** to configure filters on refinable managed properties.
-5. After adding filters, you can review and save the vertical.
+1. Select your preferred vertical where you want to create a filter and click **Edit**.  
+1. Navigate to the Filters step in the vertical's wizard.
+1. Click **Add a Filter** to configure filters on refinable managed properties.
+1. After adding filters, you can review and save the vertical.
 
 ## Create SharePoint site level filters
 
-1. In [SharePoint admin center](https://sharepoint.com/), go to Settings.
-2. Look for the Microsoft Search section, and then select **Configure Microsoft Search for this site collection**.
-3. In the navigation pane, go to Custom experience and then select  **Verticals**.
-4. Select your preferred vertical to create the filter and click **Edit**.
-5. Navigate to the Filters step in the vertical's wizard.
-6. Click **Add a Filter** to configure filters on refinable managed properties.
-7. After adding filters, you can review and save the vertical.
+1. In the SharePoint site where you want to manage verticals, open the settings panel by clicking the gear.
+1. Select **Site information**, and then select **View all site settings**.  
+1. Look for the Microsoft Search section, and then select **Configure search settings**.
+1. In the navigation pane, go to Custom experience under Microsoft Search and then select  **Verticals**.
+1. Select your preferred vertical to create the filter and click **Edit**.
+1. Navigate to the Filters step in the vertical's wizard.
+1. Click **Add a Filter** to configure filters on refinable managed properties.
+1. After adding filters, you can review and save the vertical.
 
 ## Filter across multiple properties
 
-Verticals may be created with one or more content sources. When a vertical is configured with multiple content sources, the refiner's properties list shows which content source each refinable property belongs to. The common managed properties will be merged based on the name (or alias) and data type. Filters can also be configured on these common properties. This is done by creating the filter on an common alias which aliases source properties across the different connections. For example you can create an **Author** filter across ServiceNow and a Jira connections by creating aliases as follows:
+Verticals may be created with one or more content sources. When a vertical is configured with multiple content sources, the refiner's properties list shows which content source each refinable property belongs to. The common managed properties will be merged based on the name (or alias) and data type. Filters can also be configured on these common properties. This is done by creating the filter on a common alias which aliases source properties across the different connections. For example you can create an **Author** filter across ServiceNow and Jira connections by creating aliases as follows:
 
  | Connection | Property | Alias |
  | --- | --- | --- |
@@ -65,9 +64,8 @@ Verticals may be created with one or more content sources. When a vertical is co
 
 ## Important Details
 
-- Filters can only be added to custom verticals. New filters cannot be added to out of the box verticals like All, Files, People, Sites, News.
 - Filters are configurable on Text and DateTime properties.
-- You are limited to a total of 50 filters.
+- A filter will show a maximum of 50 values in the drop-down.
 - The order of out of the box filters cannot be adjusted.
 - Filters are not supported for OneDrive content. Filter values corresponding to search results from OneDrive content will not appear on filters.
 - Custom filter values will show options from SharePoint content and not from One Drive content. For example, if you create a custom filter for ‘Author’ and SharePoint content contains results only from an author, ‘Amy,’ and OneDrive content contains results only from an author called ‘John,’ the Author custom filter will show ‘Amy’ as the only      option.

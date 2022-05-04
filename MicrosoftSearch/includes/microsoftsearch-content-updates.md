@@ -2,63 +2,52 @@
 
 
 
-## Week of October 25, 2021
+## Week of April 04, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 10/25/2021 | [ServiceNow Knowledge Graph connector for Microsoft Search](/MicrosoftSearch/servicenow-knowledge-connector) | modified |
-| 10/28/2021 | [Manage bookmarks](/MicrosoftSearch/manage-bookmarks) | modified |
+| 4/5/2022 | [Managing User Feedback](/MicrosoftSearch/manage-feedback) | modified |
+| 4/7/2022 | [Connectors result cluster](/MicrosoftSearch/result-cluster) | modified |
+| 4/8/2022 | [Atlassian Jira Cloud Graph connector for Microsoft Search](/MicrosoftSearch/jira-connector) | modified |
 
 
-## Week of October 18, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/18/2021 | [Customize address bar shortcuts for Microsoft Edge](/MicrosoftSearch/edge-shortcuts) | added |
-| 10/20/2021 | [Azure DevOps Graph connector for Microsoft Search](/MicrosoftSearch/azure-devops-connector) | modified |
-| 10/20/2021 | [Atlassian Jira Graph connector for Microsoft Search](/MicrosoftSearch/jira-connector) | modified |
-
-
-## Week of October 11, 2021
+## Week of March 21, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 10/12/2021 | [Confluence Cloud Graph connector for Microsoft Search](/MicrosoftSearch/confluence-cloud-connector) | modified |
-| 10/12/2021 | [Connectors Details and Errors](/MicrosoftSearch/connector-details-errors) | modified |
-| 10/13/2021 | [ServiceNow Catalog Graph connector for Microsoft Search](/MicrosoftSearch/servicenow-catalog-connector) | modified |
-| 10/13/2021 | [ServiceNow Knowledge Graph connector for Microsoft Search](/MicrosoftSearch/servicenow-knowledge-connector) | modified |
+| 3/21/2022 | [Azure Data Lake Graph connector for Microsoft Search](/MicrosoftSearch/azure-data-lake-connector) | modified |
+| 3/21/2022 | [Manage bookmarks](/MicrosoftSearch/manage-bookmarks) | modified |
+| 3/22/2022 | [Graph Connector Agent](/MicrosoftSearch/graph-connector-agent) | modified |
+| 3/22/2022 | [Dynamics 365 results in Microsoft Search (Preview)](/MicrosoftSearch/manage-dynamics365) | modified |
+| 3/22/2022 | [Manage search verticals](/MicrosoftSearch/manage-verticals) | modified |
+| 3/23/2022 | [Graph Connector Agent release history](/MicrosoftSearch/graph-connector-agent-releases) | added |
+| 3/23/2022 | [Graph Connector Agent](/MicrosoftSearch/graph-connector-agent) | modified |
+| 3/24/2022 | [Graph Connector Agent release history](/MicrosoftSearch/graph-connector-agent-releases) | modified |
+| 3/24/2022 | [Manage search verticals](/MicrosoftSearch/manage-verticals) | modified |
+| 3/24/2022 | [Graph Connector Agent](/MicrosoftSearch/graph-connector-agent) | modified |
+| 3/25/2022 | [Confluence Cloud Graph connector for Microsoft Search](/MicrosoftSearch/confluence-cloud-connector) | modified |
+| 3/25/2022 | [License requirements and pricing](/MicrosoftSearch/licensing) | modified |
+| 3/25/2022 | [ServiceNow Knowledge Graph connector for Microsoft Search](/MicrosoftSearch/servicenow-knowledge-connector) | modified |
 
 
-## Week of October 04, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/4/2021 | [Manage floor plans](/MicrosoftSearch/manage-floorplans) | modified |
-| 10/4/2021 | [Manage result types](/MicrosoftSearch/manage-result-types) | added |
-| 10/4/2021 | [Manage search verticals](/MicrosoftSearch/manage-verticals) | added |
-| 10/4/2021 | [Overview of Microsoft Search in Bing](/MicrosoftSearch/overview-microsoft-search-bing) | added |
-| 10/6/2021 | Import SharePoint promoted results and top queries | removed |
-| 10/6/2021 | [Microsoft Search admin documentation # < 60 chars](/MicrosoftSearch/index) | modified |
-| 10/6/2021 | Integrate Power Apps | removed |
-| 10/6/2021 | Make content easy to find with Microsoft Search | removed |
-| 10/6/2021 | Test single sign-on | removed |
-| 10/6/2021 | User adoption guide | removed |
-| 10/7/2021 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
-| 10/7/2021 | [Configure your Microsoft-built Graph connector for Microsoft Search](/MicrosoftSearch/configure-connector) | modified |
-| 10/7/2021 | [Microsoft Graph Connectors Overview](/MicrosoftSearch/connectors-overview) | modified |
-| 10/7/2021 | Customize the Microsoft Search page | removed |
-| 10/7/2021 | [Microsoft Search admin documentation # < 60 chars](/MicrosoftSearch/index) | modified |
-| 10/7/2021 | [Manage result types](/MicrosoftSearch/manage-result-types) | modified |
-| 10/7/2021 | [Manage search verticals](/MicrosoftSearch/manage-verticals) | modified |
-
-
-## Week of September 27, 2021
+## Week of March 14, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 9/27/2021 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
+| 3/14/2022 | [Manage floor plans](/MicrosoftSearch/manage-floorplans) | modified |
+| 3/15/2022 | [Customize address bar shortcuts for Microsoft Edge](/MicrosoftSearch/edge-shortcuts) | modified |
+| 3/15/2022 | [FAQs](/MicrosoftSearch/faqs) | modified |
+| 3/15/2022 | [Select a school or work search experience](/MicrosoftSearch/select-work-school-search-experience) | modified |
+
+
+## Week of March 07, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/11/2022 | [FAQs](/MicrosoftSearch/faqs) | modified |
+| 3/11/2022 | [Microsoft Search Overview](/MicrosoftSearch/overview-microsoft-search) | modified |
+| 3/11/2022 | [Configure your Microsoft-built Graph connector for Microsoft Search](/MicrosoftSearch/configure-connector) | modified |

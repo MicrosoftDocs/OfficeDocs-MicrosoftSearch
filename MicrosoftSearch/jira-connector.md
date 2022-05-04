@@ -1,6 +1,6 @@
 --- 
 
-title: "Atlassian Jira Graph connector for Microsoft Search" 
+title: "Atlassian Jira Cloud Graph connector for Microsoft Search" 
 ms.author: mecampos 
 author: mecampos 
 manager: umas 
@@ -13,21 +13,20 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Atlassian Jira Graph connector for Microsoft Search" 
+description: "Set up the Atlassian Jira Cloud Graph connector for Microsoft Search" 
 ---
 
-# Atlassian Jira Graph connector (preview)
+# Atlassian Jira Cloud Graph connector
 
-The Atlassian Jira Graph connector allows your organization to index Jira issues. After you configure the connector and index content from the Jira site, end users can search for those items in Microsoft Search.
+The Atlassian Jira Cloud Graph connector allows your organization to index Jira issues. After you configure the connector and index content from the Jira site, end users can search for those items in Microsoft Search.
 
 > [!NOTE]
-> * Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
-> * Atlassian Jira Graph connector is in preview. If you wish to get early access to try it, sign up using [<b> this form </b>](https://forms.office.com/r/kVZAvpn6YP).
+> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
-This article is for anyone who configures, runs, and monitors an Atlassian Jira Graph connector. It supplements the general setup process, and shows instructions that apply only for the Atlassian Jira Graph connector.
+This article is for anyone who configures, runs, and monitors an Atlassian Jira Cloud Graph connector. It supplements the general setup process, and shows instructions that apply only for the Atlassian Jira Cloud Graph connector.
 
 >[!IMPORTANT]
->The Atlassian Jira Graph connector supports only Jira cloud hosted instances. Jira Server and Jira Data Center versions are not supported by this connector.
+>The Atlassian Jira Cloud Graph connector supports only Jira cloud hosted instances. Jira Server and Jira Data Center versions are not supported by this connector.
 
 ## Before you get started
 
@@ -62,11 +61,40 @@ The following steps provide guidance on how to register the app:
 1. Sign in to [Atlassian Developer console](https://developer.atlassian.com/console/myapps/) with your Atlassian Jira admin account.
 2. Click on `Create` and select `OAuth 2.0 integration`
 3. Provide an appropriate name for the application and create the new app.
-4. Navigate to `Permissions` from the navigation pane on left. Click `Add` for `Jira platform REST API`. Once added, click on `Configure` and add the following scopes - `View Jira issue data`, `Manage Jira global settings` and `View user profiles`.
+4. Navigate to `Permissions` from the navigation pane on left. Under the 'Granular Permissions' header, click `Add` for `Jira API`. Once added, click on `Configure` and add the following scopes listed below.
+
+   | **#** | **Scope name** | **Code** |
+   | ------------ | ------------ | ------------ |
+   | 1 | View fields | `read:field:jira` |
+   | 2 | View avatars | `read:avatar:jira` |
+   | 3 | View project categories | `read:project-category:jira` |
+   | 4 | View projects | `read:project:jira` |
+   | 5 | Read field configurations | `read:field-configuration:jira` |
+   | 6 | View issue types | `read:issue-type:jira` |
+   | 7 | View project properties | `read:project.property:jira` |
+   | 8 | View users | `read:user:jira` |
+   | 9 | View application roles | `read:application-role:jira` |
+   | 10 | View groups | `read:group:jira` |
+   | 11 | Read issue type hierarchies | `read:issue-type-hierarchy:jira` |
+   | 12 | View project versions | `read:project-version:jira` |
+   | 13 | View project components | `read:project.component:jira` |
+   | 14 | View issue details | `read:issue-details:jira` |
+   | 15 | View audit logs | `read:audit-log:jira` |
+   | 16 | View issue meta | `read:issue-meta:jira` |
+   | 17 | View project roles | `read:project-role:jira` |
+   | 18 | View issue security levels | `read:issue-security-level:jira` |
+   | 19 | View issue security schemes | `read:issue-security-scheme:jira` |
+   | 20 | View permission schemes | `read:permission-scheme:jira` |
+   | 21 | View permissions | `read:permission:jira` |
+
 5. Navigate to `Authorization` from the navigation pane on left. Add the callback URL `https://gcs.office.com/v1.0/admin/oauth/callback` and save the changes.
 6. Navigate to `Settings` from the navigation pane on left. You will get the `Client ID` and `Secret` from this page.
 
 On registering the app with the details above, you'll get the **Client ID** and **Secret**. Complete the connection settings step using these.
+
+> [!NOTE]
+> * Refer the [list of scopes](https://developer.atlassian.com/cloud/jira/platform/scopes-for-oauth-2-3LO-and-forge-apps/#list-of-scopes) for OAuth 2.0 apps to learn more about Jira permissions.
+> * The original (Classic) OAuth permissions are being deprecated for Jira cloud. Refer the [changelog announcement](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-517) to learn more.
 
 ### Step 3a: Configure data: Select projects
 
@@ -126,6 +154,8 @@ The recommended schedule is one hour for an incremental crawl and one day for a 
 ## Step 8: Review connection
 
 Follow the general [setup instructions](./configure-connector.md).
+
+After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
 ## Troubleshooting
 Below is a list of common errors observed while configuring the connector or during crawls, and their possible reasons.
