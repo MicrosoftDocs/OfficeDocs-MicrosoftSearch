@@ -34,8 +34,8 @@ This article is intended to help Microsoft 365 administrators locate the resourc
 * [What are the preview features?](#what-are-the-preview-features)
 * [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results)
 * [How do I search my connector data from a custom application?](#how-do-i-search-my-connector-data-from-a-custom-application)
-* [How do I customize search results?](#how-do-i-customize-search-results)
-* [What are the connector limitations?](#what-are-the-connector-limitations)
+* [How do I customize search results?](#how-do-i-customize-and-configure-search-results)
+* [What are the connector limitations?](#what-are-the-limitations-of-Microsoft-Graph-connectors?) What are the limitations of Microsoft Graph connectors?
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
