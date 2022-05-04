@@ -43,12 +43,16 @@ items:
       href: connectors-overview.md
     - name: Connectors gallery
       href: connectors-gallery.md
-    - name: Set up connectors by Microsoft
+    - name: Set up Microsoft built connectors
       items:
       - name: Setup overview
         href: configure-connector.md
-      - name: Set up the graph connector agent
-        href: graph-connector-agent.md
+      - name: On-prem connectors
+        items:
+        - name: Graph connector agent setup
+          href: graph-connector-agent.md
+        - name: Graph connector agent release history
+          href: graph-connector-agent-releases.md
       - name: Map non-Azure AD Identities
         href: map-non-aad.md
       - name: Map Azure AD Identities
@@ -61,9 +65,11 @@ items:
           href: azure-devops-connector.md
         - name: Azure SQL and Microsoft SQL Server
           href: MSSQL-connector.md
-        - name: Confluence Cloud (preview)
+        - name: Confluence Cloud
           href: confluence-cloud-connector.md
-        - name: Jira Cloud (preview)
+        - name: Confluence On-premises (preview)
+          href: confluence-onpremises-connector.md
+        - name: Jira Cloud
           href: jira-connector.md
         - name: Enterprise websites
           href: enterprise-web-connector.md
@@ -89,10 +95,8 @@ items:
       href: licensing.md
     - name: Terms of use
       href: terms-of-use.md
-  - name: Federation Connectors
-    items:
-    - name: Dynamics 365
-      href: manage-dynamics365.md
+  - name: Dynamics 365
+    href: manage-dynamics365.md
 - name: Customize and configure
   items:
   - name: Manage verticals
@@ -125,7 +129,7 @@ items:
       href: edge-shortcuts.md
     - name: Add a search box to your intranet site
       href: add-a-search-box-to-your-intranet-site.md
-    - name: Select a school or work search experience (preview)
+    - name: Select a school or work search experience
       href: select-work-school-search-experience.md
     - name: Make Microsoft Edge the default browser
       href: /deployedge/edge-default-browser

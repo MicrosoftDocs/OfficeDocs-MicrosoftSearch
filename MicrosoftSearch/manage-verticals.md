@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
-ms.date: 10/27/2021
+ms.date: 03/15/2022
 search.appverid:
 - BFB160
 - MET150
@@ -39,9 +39,6 @@ Here is a summary of customization capabilities on out of the box verticals.
 ## Custom verticals
 You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. You can add verticals to show results from content indexed by Graph connectors or from SharePoint.
 
-> [!NOTE]
-> Adding verticals for a SharePoint content source is in preview and available only to Targeted Release users.  
-> 
 ## Create or modify search verticals
 
 The vertical management experience is wizard driven, you're guided through steps to define the vertical's name, content source, and scope of the content to search. You can use a limited set of [Keyword Query Language (KQL)](#keyword-query-language-kql) to define the scope of the vertical search for a given content source. Filters can also be added to out of box and custom verticals at the organization and site level. For more information about filters, see [Manage filters](/microsoftsearch/custom-filters).
@@ -63,7 +60,7 @@ The vertical management experience is wizard driven, you're guided through steps
 
 ## View the vertical in the search result page
 
-A [search result layout](manage-result-types.md) is needed for Graph connector results to render on the search vertical page. On ensuring that appropriate result layout is present, you can enable the search vertical. After you enable a vertical, there's a delay of a few hours before you can view it. You can append cacheClear=true to the URL in SharePoint and Office to view the vertical immediately. In Bing, append &features=uncachedVerticals to the work vertical URL to view the vertical immediately.
+A [search result layout](manage-result-types.md) is needed for Graph connector results to render on the search vertical page. On ensuring that appropriate result layout is present, you can enable the search vertical. After you enable or update a vertical, there's a delay of a few hours before you can view the changes on the search page. You can append cacheClear=true to the URL in SharePoint and Office to view the changes immediately. In Bing, append &features=uncachedVerticals to the work vertical URL to view the changes immediately.
 
 > [!NOTE]
 > Added verticals aren't visible on [SharePoint](https://sharepoint.com/) and [Office](https://office.com) when viewed from mobile web browsers.
@@ -94,15 +91,15 @@ Here are some example queries.
 |Excluding results from archive sites           |NOT (path:http//contoso.sharepoint.com/archive OR path:http//contoso.sharepoint.com/CompanyArchive)|
 | Excluding results based on file type property | NOT(FileType:htm)|  
 
+Use variables in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. "Profile" and "query string" are the types of query variables that can be used.
+
 #### Profile query variables
 
-Use variables in the KQL query section of a vertical to provide dynamic data as an input to the query of a vertical. You can use profile query variables to make the search results contextual to the signed-in user. Profile query variables fetch values from the signed-in user’s [profile](/graph/api/resources/profile).
-
-For example, to create a “Tickets” vertical for the user to find support tickets assigned to them, you can specify the following query in the "Query" section during the vertical creation in the administration page:  
+You can use profile query variables to contextualize the search results to the signed-in user. Profile query variables fetch values from the signed-in user’s [profile](/graph/api/resources/profile). For example, to create a “Tickets” vertical for the user to find support tickets assigned to them, you can specify the following query in the “Query” section during the vertical creation in the administration page.
 
 `AssignedTo:{Profile.accounts.userPrincipalName}`
 
-This language will narrow down the search results to show only those items for which the assignee is the user who runs the search.
+This will trim the search results to show only items that are assigned to the person doing the search.
 
 [Profile resource](/graph/api/resources/profile) exposes properties as collections. For example, information related to email addresses is exposed through email collection, work positions as positions collection, and so on. All properties available in the user profile are exposed as Query variables.
 
@@ -143,7 +140,7 @@ Consider a user who has three email addresses available in the email collection,
 
 - The query `MyProperty: {Profile.emails.address}` will resolve to *MyProperty: “Megan.Bowen@contoso.com”*.  
 
-- To resolve all the values of the address attribute, use the multi-value expansion syntax. The query `{|MyProperty:{Profile.emails.address}}` will resolve to *((MyProperty:"Megan.Bowen@contoso\.com")* or *(MyProperty: "meganb@hotmail\.com")* or  *(MyProperty:"meganb@outlook\.com"))*.
+- To resolve all the values of the address attribute, use the multi-value expansion syntax. The query `{|MyProperty:{Profile.emails.address}}` will resolve to *((MyProperty:"Megan.Bowen@contoso\.com")* OR *(MyProperty: "meganb@hotmail\.com")* OR  *(MyProperty:"meganb@outlook\.com"))*.
 
 Use the “|” operator to resolve multi-value variables. See the following table for more examples of profile expansion.
 
@@ -152,15 +149,40 @@ Use the “|” operator to resolve multi-value variables. See the following tab
 | 1    | MyProperty:{Profile.emails.address}  |   "Megan\.Bowen@contoso.com"  |
 | 2 | MyProperty:{Profile.emails}   |    {Profile.emails} This won't resolve because *emails* is an object.|
 | 3    | {?MyProperty:{Profile.emails}}  |  This won't resolve because *emails* is an object. The “?” operator ignores query variables that don't resolve. This variable will be removed when passed further down the query stack.   |
-| 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") or (MyProperty:"non-official") or (MyProperty:"personal"))    |
+| 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
+
+#### Query String variables
+
+You can filter search results based on user interaction with SharePoint sites by using query string variables. Query string variables allows you to pass key-value pairs in the search URL to ensure the search results are customized based on those values. For example, suppose you have a SharePoint site that provides information on a project with a simple web part that shows in-progress tasks. Clicking on the "In-progress" web part, links users to the "Work items" search vertical, where the results are refined to show only items tagged as **InProgress**.
+
+This can be done by specifying the following query in the “Query” section during vertical creation in the administration page.
+
+`Status:{QueryString.state}`
+
+The URL on the SharePoint site button web part needs to be updated to pass the following key value pair https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress
+
+The query status:{QueryString.state} will resolve to status:InProgress.
+
+Here are more examples of query string expansion.
+
+| #         | Query Syntax | URL Syntax | Value returned |
+| --------- | --------- | --------- | --------- |
+| 1    | MyProperty:{QueryString.state}  |   https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress  |   MyProperty:InProgress  |
+| 2 | MyProperty:{QueryString.state} OR MyProperty:{QueryString.priority}   |    https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress&priority=1 |   MyProperty:InProgress OR MyProperty:1  |
+| 3    | {?MyProperty:{QueryString.state}}  |  https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?State=InProgress   |   Here state won't resolve because QueryStrings are case sensitive.  The “?” operator ignores query variables that don't resolve. This variable will be removed when passed further down the query stack.  |
+| 4 | {\|MyProperty: {QueryString.state}}    |  https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress,Closed    |   (MyProperty:InProgress) OR (MyProperty:Closed)  <br /> The \| operator is used to resolve muti-value variables. The values for the variables should be passed using the comma separator as shown in the URL syntax. |
+| 5 | {MyProperty: {QueryString.state}}    |  https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress,Closed   |   MyProperty:InProgress <br /> Here only the first value of state gets picked up from the URL since the query syntax does not define it as a multi-value variable. |
+
 
 ## Limitations
 - Language localization is not applicable to names of out of box verticals once modified. 
 - KQL does not apply to content surfaced from user OneDrive. 
-- Custom verticals do not appear on the mobile view of Microsoft search. 
+- Custom verticals do not appear on the mobile view of Microsoft Search. 
 - Adding query is not supported on the People vertical. 
 - Vertical modification and new verticals are not visible to guest users in an organization. 
-- Vertical re-ordering is not supported 
+- Vertical re-ordering is not supported.
+- Vertical renaming for All tab is not supported in Microsoft Search in Bing.
+- Query string variables is not supported in Microsoft Search in Bing.
 
 ## Troubleshooting
 

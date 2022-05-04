@@ -43,6 +43,7 @@ The following table outlines whether specified Microsoft Search features are ava
 | Search suggestions | Yes | No | No  |
 | Search admin controls for Microsoft Search in Bing | Yes | No | No  |
 | Enterprise homepage on Bing | Yes | No | No  |
+| Insights | No | No | No  |
 | Bookmark answers (admin-curated) | Yes | No | No  |
 | Q&A answers (admin-curated) | Yes | No | No  |
 | Acronym answers | No | No | No  |
@@ -52,5 +53,6 @@ The following table outlines whether specified Microsoft Search features are ava
 | Mobile access | Yes | No | No  |
 | Graph Connectors | No | No | No  |
 | Federation Connectors | No | No | No  |
+
 
 In response to the unique, evolving requirements of the United States public sector, Microsoft has created Office 365 US Government plans (or Office 365 Government). For service descriptions and features overview specific to these environments, see [Office 365 Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).

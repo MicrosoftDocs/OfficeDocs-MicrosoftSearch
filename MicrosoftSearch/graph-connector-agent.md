@@ -1,5 +1,5 @@
 --- 
-title: "On-Premises Agent" 
+title: "Graph Connector Agent" 
 ms.author: rusamai 
 author: rsamai 
 manager: jameslau 
@@ -12,26 +12,29 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "On-prem Agent" 
+description: "Graph Connector Agent to index on-premises content using Microsoft built connectors for File-shares, SQL, Confluence etc." 
 --- 
 
-# Microsoft Graph connector agent
+# Microsoft Graph Connector Agent
 
 Using on-prem connectors require you to install *Microsoft Graph connector agent* software. It allows for secure data transfer between on-premises data and the connector APIs. This article guides you through the installing and configuring the agent.
 
 ## Installation
 
-Download the latest version of the Graph connector agent from [https://aka.ms/GCAdownload](https://aka.ms/gcadownload) and install the software by using the installation wizard. Using the recommended configuration of the machine described below, the software can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
+Download the latest version of the Graph connector agent (GCA) from [https://aka.ms/GCAdownload](https://aka.ms/gcadownload) and install the software by using the installation wizard. Release notes of GCA software are available [here](./graph-connector-agent-releases.md)
+
+Using the recommended configuration of the machine described below, Graph Connector Agent instance can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
 
 Recommended configuration:
 
 * Windows 10, Windows Server 2016 R2 and above
+* [.Net Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
 * [.NET Core Desktop Runtime 3.1 (x64)](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * 8 cores, 3 GHz
 * 16 GB RAM, 2 GB Disk Space
 * Network access to data source and internet through 443
 
-After you install the agent, if your organization's proxy servers or firewalls block communication to unknown domains, please add below ones to the allow list.
+If your organization's proxy servers or firewalls block communication to unknown domains, please add below rules to the 'allow' list.
 
 1. *.servicebus.windows.net
 2. *.events.data.microsoft.com
@@ -44,11 +47,11 @@ After you install the agent, if your organization's proxy servers or firewalls b
 
 ## Create and configure an App for the agent  
 
-First, sign in and note that the minimum required privilege on the account is search administrator. The agent will then ask you to provide authentication details. Use the steps below to create an app and generate the required authentication details.
+First, sign-in and note that the minimum required privilege on the account is search administrator. The agent will then ask you to provide authentication details. Use the steps below to create an app and generate the required authentication details.
 
 ### Create an app
 
-1. Go to the [Azure portal](https://portal.azure.com) and sign in with admin credentials for the tenant.
+1. Go to the [Azure portal](https://portal.azure.com) and sign-in with admin credentials for the tenant.
 
 2. Navigate to **Azure Active Directory** -> **App registrations** from the navigation pane and select **New registration**.
 
@@ -60,7 +63,12 @@ First, sign in and note that the minimum required privilege on the account is se
 
 6. Select **Microsoft Graph** and then **Application permissions**.
 
-7. Search for "ExternalItem.ReadWrite.All" and "Directory.Read.All" from the permissions and select **Add permissions**.
+7. Search for the following permissions and select **Add permissions**.
+
+   | **Permission** | **When is the permission required** |
+   | ------------- | -------------|
+   | [ExternalItem.ReadWrite.OwnedBy](/graph/permissions-reference#application-permissions-52) | Always |
+   | [Directory.Read.All](/graph/permissions-reference#application-permissions-23) | Required for File share, MS SQL and Oracle SQL connectors |
 
 8. Select **Grant admin consent for [TenantName]** and confirm by selecting **Yes**.
 
@@ -74,13 +82,13 @@ Authentication details can be provided using a client secret or a certificate. F
 
 #### Configuring the client secret for authentication
 
-1. Go to the [Azure portal](https://portal.azure.com) and sign in with admin credentials for the tenant.
+1. Go to the [Azure portal](https://portal.azure.com) and sign-in with admin credentials for the tenant.
 
 2. Open **App Registration** from the navigation pane and go to the appropriate App. Under **Manage**, select **Certificates and secrets**.
 
 3. Select **New Client secret** and select an expiry period for the secret. Copy the generated secret and save it because it won't be shown again.
 
-4. Use this Client secret along with the Application ID to configure the agent. You cannot use blank spaces in the **Name** field of the agent. Alpha numeric characters are accepted.
+4. Use this Client secret along with the Application ID to configure the agent. You can't use blank spaces in the **Name** field of the agent. Alpha numeric characters are accepted.
 
 #### Using a certificate for authentication
 
@@ -118,7 +126,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 3. Open **App registration** and select **Certificates and secrets** from the navigation pane. Copy the certificate thumbprint.
 
-:::image type="content" alt-text="List of thumbrint certificates when Certificates and secrets is selected in the left pane." source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
+:::image type="content" alt-text="List of thumbprint certificates when Certificates and secrets is selected in the left pane." source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
 
 ##### Step 3: Assign the certificate to the agent
 
@@ -146,16 +154,16 @@ If you used the sample script to generate a certificate, the PFX file can be fou
 
 ### Installation failure
 
-If the installation fails, check the installation logs by running: msiexec /i "< path to msi >\GcaInstaller.msi" /L*V "< destination path >\install.log". If the errors are not resolvable, reach support on MicrosoftGraphConnectorsFeedback@service.microsoft.com with the logs.
+In case of installation failures, check the installation logs by running: msiexec /i "< path to msi >\GcaInstaller.msi" /L*V "< destination path >\install.log". If the errors aren't resolvable, reach support on MicrosoftGraphConnectorsFeedback@service.microsoft.com with the logs.
 
 ### Registration failure
 
-If sign in to config app fails with error "Sign in failed. Please click on sign in button to try again." even after browser authentication succeeded, open services.msc and check if GcaHostService is running. If it is not, start it manually.
+If sign-in to config app fails with error "Sign-in failed, please click on sign-in button to try again.". Even after browser authentication succeeded, open services.msc and check if GcaHostService is running. If it isn't, start it manually.
 
-If the service fails to start with the error "The service did not start due to a logon failure", check if virtual account NT Service\GcaHostService has permission to log on as a service on the machine. Check [this link](/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) for instructions. If the option to add user or group is greyed out in the Local Policies\User Rights Assignment, it means the user trying to add this account does not have admin privileges on this machine or that there is a group policy overriding this. The group policy needs to be updated to allow host service to logon as a service.
+When the service fails to start with the error "The service didn't start due to a logon failure", check if virtual account: NT Service\GcaHostService has permission to log on as a service on the machine. Check [this link](/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) for instructions. If the option to add user or group is greyed out in the Local Policies\User Rights Assignment, it means the user trying to add this account doesn't have admin privileges on this machine or that there is a group policy overriding this. The group policy needs to be updated to allow host service to log on as a service.
 
 ### Connection failure
 
-If 'Test connection' action fails while creating connection with the error 'Please check username/password and the datasource path' even when the provided username and password are correct, ensure that the user account has interactive logon rights to the machine where Graph connector agent is installed. Refer the documentation about [logon policy management](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check logon rights. Also ensure that the data source and the agent machine are on the same network.
+In case the 'Test connection' action fails while creating connection with the error 'Please check username/password and the datasource path' even when the provided username and password are correct, ensure that the user account has interactive logon rights to the machine where Graph connector agent is installed. Refer the documentation about [logon policy management](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check logon rights. Also ensure that the data source and the agent machine are on the same network.
 
-If a connection fails with the error "1011: The Graph connector agent is not reachable or offline.", log in to the machine where agent is installed and start the agent application if it isn't running already. If the connection continues to fail, verify that the certificate or client secret provided to the agent during registration hasn't expired and has required permissions.
+When creating a connection if there is a failure: "1011: The Graph connector agent is not reachable or offline.", log in to the machine where agent is installed and start the agent application if it isn't running already. If the connection continues to fail, verify that the certificate or client secret provided to the agent during registration hasn't expired and has required permissions.
