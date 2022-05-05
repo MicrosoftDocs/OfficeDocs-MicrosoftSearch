@@ -38,7 +38,7 @@ This article is intended to help Microsoft 365 administrators locate the resourc
 * [How do I customize and configure search results?](#how-do-i-customize-and-configure-search-results)
 * [How do I search my connector data from a custom application?](#how-do-i-search-my-connector-data-from-a-custom-application)
 * [How do I customize search results?](#how-do-i-customize-and-configure-search-results)
-* [What are the connector limitations?](#what-are-the-limitations-of-microsoft-graph-connectors?)
+* [What are the connector limitations?](#what-are-the-limitations-of-microsoft-graph-connectors)
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
