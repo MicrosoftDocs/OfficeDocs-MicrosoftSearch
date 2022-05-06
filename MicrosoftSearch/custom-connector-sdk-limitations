@@ -1,0 +1,11 @@
+# Graph connectors SDK Known limitations
+
+Known limitations: 
+1.	Auth mechanisms: Currently we only support 3 types of data source authentication mechanisms:
+a.	Basic authentication
+b.	Windows authentication 
+c.	Anonymous
+OAuth support is currently unavailable.
+2.	Crawl mechanisms: Currently we only support full crawls for list-based traversal. Incremental crawls and graph-based traversals are not supported. 
+3.	Search permissions: Currently we support ACL trimming only based on AAD through the SDK. ACLing based on data source groups is not yet available.
+

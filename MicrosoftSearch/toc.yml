@@ -79,6 +79,18 @@ items:
           href: servicenow-catalog-connector.md
         - name: ServiceNow Knowledge
           href: servicenow-knowledge-connector.md
+    - name: Graph connectors SDK
+      items:
+      - name: Overview
+        href: custom-connector-sdk-overview.md
+      - name: Contracts
+        href: custom-connector-sdk-contracts.md
+      - name: Best practices
+        href: custom-connector-sdk-best-practices.md
+      - name: Limitations
+        href: custom-connector-sdk-limitations.md
+      - name: Troubleshooting
+        href: custom-connector-sdk-troubleshooting.md
     - name: Manage connections
       items:
       - name: Monitor connections
