@@ -24,9 +24,6 @@ The Microsoft Graph connectors setup process for the Microsoft Search experience
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4SjFa]
 
-The Graph Connector setup process for Microsoft Search experience is explained in the video below.
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4SjFa]
-
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
 This article is intended to help Microsoft 365 administrators locate the resources that are available to answer the following questions:
