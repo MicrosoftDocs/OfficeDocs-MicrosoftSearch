@@ -19,7 +19,7 @@ The Microsoft Graph connectors SDK comes with the following components:
 
 ## Graph connector agent capabilities
 
-The Graph connector agent is built on the same robust Graph connector platform used for running Microsoft’s [built-in connectors](https://www.microsoft.com/microsoft-search/connectors/?publisher=Microsoft&category=). 
+The Graph connector agent is built on the same robust Graph connector platform used for running Microsoft’s [built-in connectors](https://www.microsoft.com/microsoft-search/connectors/?publisher=Microsoft&category=).
 
 The Graph connector agent comes with the following capabilities:
 
