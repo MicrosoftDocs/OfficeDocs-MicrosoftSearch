@@ -1,3 +1,14 @@
+---
+title: "Graph connectors SDK Limitations"
+ms.author: rchanda
+author: rchanda
+manager: harshkum
+ms.audience: Admin
+ms.topic: article
+ms.service: mssearch
+description: "Graph connectors SDK Limitations"
+---
+
 # Graph connectors SDK Known limitations
 
 Known limitations:

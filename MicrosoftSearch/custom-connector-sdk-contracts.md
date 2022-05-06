@@ -1,3 +1,14 @@
+---
+title: "Graph connectors SDK Contracts"
+ms.author: rchanda
+author: rchanda
+manager: harshkum
+ms.audience: Admin
+ms.topic: article
+ms.service: mssearch
+description: "Graph connectors SDK Contracts"
+---
+
 # Contracts
 
 The contract protocol buffer files have the following three services which connector developer needs to implement:
@@ -39,7 +50,7 @@ The contract protocol buffer files have the following three services which conne
 |:----------|:-------------|:----------|:-------------|
 |ValidateAuthentication |ValidateAuthenticationRequest |ValidateAuthenticationResponse |This API is called during custom connector connection creation on M365 admin center. The API is used to validate the credentials and data source path provided by the admin in the connection settings step. |
 |ValidateCustomConfiguration |ValidateCustomConfigurationRequest |ValidateCustomConfigurationResponse |This API is called during custom connector connection creation on M365 admin center. The API is used to validate the optional configuration provided by the admin in connection configuration step. If no configuration is required for the connector, this API can simply return a success response. |
-|GetDataSourceSchema |GetDataSourceSchemaRequest |GetDataSourceSchemaResponse |This API is called during custom connector connection creation on M365 admin center. The API is used to get the data source schema in the format which can be understood by Microsoft Graph. More details are present [here](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-beta) |
+|GetDataSourceSchema |GetDataSourceSchemaRequest |GetDataSourceSchemaResponse |This API is called during custom connector connection creation on M365 admin center. The API is used to get the data source schema in the format which can be understood by Microsoft Graph. More details are present [here](https://docs.microsoft.com/graph/api/resources/externalconnectors-schema?view=graph-rest-beta) |
 
 ### Connection management API Models
 
@@ -80,7 +91,7 @@ The contract protocol buffer files have the following three services which conne
 |Property |Type |Description |
 |:----------|:-------------|:----------|
 |status |OperationStatus |Status of operation and error details in case of error. |
-|dataSourceSchema |DataSourceSchema |Data source schema. More details about schema are present [here](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-beta). |
+|dataSourceSchema |DataSourceSchema |Data source schema. More details about schema are present [here](https://docs.microsoft.com/graph/api/resources/externalconnectors-schema?view=graph-rest-beta). |
 
 ### Connector Crawler APIs
 
@@ -182,7 +193,7 @@ IdentityType enum members:
 |:----------|:-------------|:----------|
 |IT_None |0 |Default. This will be assumed to be AadId |
 |ActiveDirectorySId |1 |SID (On premise security identifier) provided by Active Directory (AD) |
-|UserPrincipalName |2 |User principal name ([UPN](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname))  |
+|UserPrincipalName |2 |User principal name ([UPN](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname))  |
 |AadId |3 |Azure Active Directory ID |
 
 **Principal**: Structure to store attributes of the principal (user/group) to whom access is defined.
@@ -351,7 +362,7 @@ RetryType enum members: This enum is used to define strategy for retrying in cas
 |backoffCoefficient |float |Gets coefficient used in the calculation of Exponential Backoff. |
 |backoffRate |float |Gets backoff Rate used in the calculation of Exponential Backoff. |
 
-**DataSourceSchema**: Represents schema of properties that represent a data entity in data source. More details on schema can be found [here](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-beta)
+**DataSourceSchema**: Represents schema of properties that represent a data entity in data source. More details on schema can be found [here](https://docs.microsoft.com/graph/api/resources/externalconnectors-schema?view=graph-rest-beta)
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -383,10 +394,10 @@ SearchAnnotations enum members:
 |IsSearchable |1 |If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its content. Eg., If property is "Author", searching "Smith" returns items whose Author property contains "Smith". |
 |IsQueryable |2 |If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of 1 or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(\*) Eg., If property is "Author", search query can be "Author: Smith" |
 |IsRetrievable |4 |If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable will increase search latency. Be selective and choose relevant properties. |
-|IsContent |8 |Content property is to identify a property that can be full text indexed. Admins will choose among the available properties as to which should be the property to be treated as content for that specific connection. More on the content property [here](https://docs.microsoft.com/en-us/graph/connecting-external-content-manage-items#content) |
+|IsContent |8 |Content property is to identify a property that can be full text indexed. Admins will choose among the available properties as to which should be the property to be treated as content for that specific connection. More on the content property [here](https://docs.microsoft.com/graph/connecting-external-content-manage-items#content) |
 |IsRefinable |16 |If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. A refinable property cannot be searchable. |
 
-**SearchPropertyLabel**: These are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. Read more [here](https://docs.microsoft.com/en-us/graph/connecting-external-content-manage-schema#semantic-labels)
+**SearchPropertyLabel**: These are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. Read more [here](https://docs.microsoft.com/graph/connecting-external-content-manage-schema#semantic-labels)
 
 SearchPropertyLabel enum members:
 
@@ -401,15 +412,15 @@ SearchPropertyLabel enum members:
 |LastModifiedDateTime |6 |Date and time the item was last modified in the data source. |
 |FileName |7 |In case of a file, the name of the file in the data source. |
 |FileExtension |8 |In case of a file, the extension of the file in the data source . |
-|LastModifiedByUpn |9 |[UPN](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the person who most recently edited the item in the data source. |
-|CreatedByUpn |10 |[UPN](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the person who created the item in the data source. |
-|AuthorsUpn |11 |[UPNs](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of all the people who participated/collaborated on the item in the data source. |
+|LastModifiedByUpn |9 |[UPN](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the person who most recently edited the item in the data source. |
+|CreatedByUpn |10 |[UPN](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the person who created the item in the data source. |
+|AuthorsUpn |11 |[UPNs](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of all the people who participated/collaborated on the item in the data source. |
 |UnknownFutureValue |12 |For future-proofing, following MSGraph evolvable enums.All new enums should be added below this one until major API version change. |
 |ContainerName |13 |Name of the container. |
 |ContainerUrl |14 | The URL of the container. |
 |IconUrl | 15 |The URL of an icon. |
 
-**SourcePropertyDefinition**: Defines a single source property for an item in data source. Read more about schema property definitions [here](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-property?view=graph-rest-1.0)
+**SourcePropertyDefinition**: Defines a single source property for an item in data source. Read more about schema property definitions [here](https://docs.microsoft.com/graph/api/resources/externalconnectors-property?view=graph-rest-1.0)
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|

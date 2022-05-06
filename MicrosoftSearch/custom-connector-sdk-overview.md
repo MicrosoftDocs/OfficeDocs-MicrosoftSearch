@@ -1,4 +1,15 @@
-# Graph connectors SDK
+---
+title: "Graph connectors SDK Overview"
+ms.author: rchanda
+author: rchanda
+manager: harshkum
+ms.audience: Admin
+ms.topic: article
+ms.service: mssearch
+description: "Graph connectors SDK Overview"
+---
+
+# Graph connectors SDK Overview
 
 ## Overview
 
@@ -13,7 +24,7 @@ The Microsoft Graph connectors SDK comes with the following components:
 
 2. Contracts: These are [gRPC](https://grpc.io/docs/what-is-grpc/) protocol buffer files that contain the contracts for interaction between the Graph connector agent and your custom connector code.
 
-3. Graph connector agent: Graph connector agent is a lightweight software that takes care of connector orchestration capabilities and coordinating between Microsoft 365 Admin Center and your custom connector code. Download the latest version of the Graph connector agent (GCA) from [here](https://aka.ms/gcadownload/) and install the software by using the installation wizard. Learn more about Graph Connector Agent [here](https://docs.microsoft.com/en-us/MicrosoftSearch/graph-connector-agent/).
+3. Graph connector agent: Graph connector agent is a lightweight software that takes care of connector orchestration capabilities and coordinating between Microsoft 365 Admin Center and your custom connector code. Download the latest version of the Graph connector agent (GCA) from [here](https://aka.ms/gcadownload/) and install the software by using the installation wizard. Learn more about Graph Connector Agent [here](https://docs.microsoft.com/MicrosoftSearch/graph-connector-agent/).
 
 4. Graph connectors SDK test utility: This includes pre-built test scenarios that you can use to test your custom connector code and communication with the Graph connector agent platform.
 
