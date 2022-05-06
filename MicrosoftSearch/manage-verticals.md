@@ -153,7 +153,7 @@ Use the “|” operator to resolve multi-value variables. See the following tab
 
 #### Query String variables
 
-You can filter search results based on user interaction with SharePoint sites by using query string variables. Query string variables allows you to pass key-value pairs in the search URL to ensure the search results are customized based on those values. For example, suppose you have a SharePoint site that provides information on a project with a simple web part that shows in-progress tasks. Clicking on the "In-progress" web part, links users to the "Work items" search vertical, where the results are refined to show only items tagged as **InProgress**.
+Query String variables enable you to personalize search results based on how users interact with SharePoint sites. This is done by adding key-value pairs to the search URL. For example, suppose you have a SharePoint site that provides information on a project with a simple web part that shows in-progress tasks. Clicking on the "In-progress" web part, links users to the "Work items" search vertical, where the results are refined to show only items tagged as **InProgress**.
 
 This can be done by specifying the following query in the “Query” section during vertical creation in the administration page.
 
@@ -182,7 +182,7 @@ Here are more examples of query string expansion.
 - Vertical modification and new verticals are not visible to guest users in an organization. 
 - Vertical re-ordering is not supported.
 - Vertical renaming for All tab is not supported in Microsoft Search in Bing.
-- Query string variables is not supported in Microsoft Search in Bing.
+- Query string variables can only be used in SharePoint sites.
 
 ## Troubleshooting
 
