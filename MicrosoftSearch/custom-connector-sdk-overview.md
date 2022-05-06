@@ -20,13 +20,13 @@ The Microsoft Graph connectors SDK enables you to create custom Graph connectors
 
 The Microsoft Graph connectors SDK comes with the following components:
 
-1. Custom connector template: If you wish to develop your custom connector in C#, you can download our template (Link) and get started quickly. You may also choose to develop your custom connector in any of the languages in this list [here](https://grpc.io/docs/languages/).
+1. **Custom connector template**: If you wish to develop your custom connector in C#, you can download our template (Link) and get started quickly. You may also choose to develop your custom connector in any of the languages in this list [here](https://grpc.io/docs/languages/).
 
-2. Contracts: These are [gRPC](https://grpc.io/docs/what-is-grpc/) protocol buffer files that contain the contracts for interaction between the Graph connector agent and your custom connector code.
+2. **Contracts**: These are [gRPC](https://grpc.io/docs/what-is-grpc/) protocol buffer files that contain the contracts for interaction between the Graph connector agent and your custom connector code.
 
-3. Graph connector agent: Graph connector agent is a lightweight software that takes care of connector orchestration capabilities and coordinating between Microsoft 365 Admin Center and your custom connector code. Download the latest version of the Graph connector agent (GCA) from [here](https://aka.ms/gcadownload/) and install the software by using the installation wizard. Learn more about Graph Connector Agent [here](https://docs.microsoft.com/MicrosoftSearch/graph-connector-agent/).
+3. **Graph connector agent**: Graph connector agent is a lightweight software that takes care of connector orchestration capabilities and coordinating between Microsoft 365 Admin Center and your custom connector code. Download the latest version of the Graph connector agent (GCA) from [here](https://aka.ms/gcadownload/) and install the software by using the installation wizard. Learn more about Graph Connector Agent [here](/graph-connector-agent/).
 
-4. Graph connectors SDK test utility: This includes pre-built test scenarios that you can use to test your custom connector code and communication with the Graph connector agent platform.
+4. **Graph connectors SDK test utility**: This includes pre-built test scenarios that you can use to test your custom connector code and communication with the Graph connector agent platform.
 
 ## Graph connector agent capabilities
 
@@ -34,16 +34,16 @@ The Graph connector agent is built on the same robust Graph connector platform u
 
 The Graph connector agent comes with the following capabilities:
 
-1. Get data from connector: The agent brings the capability of getting data from your custom connector using the logic implemented by your connector to connect to the data source.
+1. **Get data from connector**: The agent brings the capability of getting data from your custom connector using the logic implemented by your connector to connect to the data source.
 
-2. M365 Admin Center integration: The agent brings the capability of managing, monitoring errors & statistics, and configuring your custom connectors through the M365 Admin Center.
+2. **M365 Admin Center integration**: The agent brings the capability of managing, monitoring errors & statistics, and configuring your custom connectors through the M365 Admin Center.
 
-3. Crawl Scheduling & Management: The agent brings the capability of crawling the data source through full crawls and incremental crawls. Full crawls traverse (list based or graph based) through your entire data periodically at an interval defined by you. Incremental crawls are more frequent and crawls the data source from the previous timestamp/checkpoint at an interval defined by you.
+3. **Crawl Scheduling & Management**: The agent brings the capability of crawling the data source through full crawls and incremental crawls. Full crawls traverse (list based or graph based) through your entire data periodically at an interval defined by you. Incremental crawls are more frequent and crawls the data source from the previous timestamp/checkpoint at an interval defined by you.
 Note: Incremental crawls and graph-based data source traversal (eg: traversing through folder structures) capabilities are not available in beta stage.
 
-4. Delete, difference and cycle detection: The agent is capable of detecting items deleted from your data source based on the items sent by the custom connector during periodic full crawl and the agent takes care of deleting the item from the Microsoft index as well. The agent has the functionality to detect only items that have changed since the last crawl by computing a hash of the item and comparing with the hash of the item seen previously. To make crawls faster, the agent sends the data to be indexed only when the item has changed. The agent also detects duplicate items that arise from data sources that have items linked by graph structure (like websites) and skips crawling these items.
+4. **Delete, difference and cycle detection**: The agent is capable of detecting items deleted from your data source based on the items sent by the custom connector during periodic full crawl and the agent takes care of deleting the item from the Microsoft index as well. The agent has the functionality to detect only items that have changed since the last crawl by computing a hash of the item and comparing with the hash of the item seen previously. To make crawls faster, the agent sends the data to be indexed only when the item has changed. The agent also detects duplicate items that arise from data sources that have items linked by graph structure (like websites) and skips crawling these items.
 
-5. Identity mapping: The agent brings the capability of stamping the Access Control Lists (ACLs) on your data for enabling security trimming. You can enable security trimming based on AAD or ACLs from your data source.
+5. **Identity mapping**: The agent brings the capability of stamping the Access Control Lists (ACLs) on your data for enabling security trimming. You can enable security trimming based on AAD or ACLs from your data source.
 Note: Search permissions based on access control from your data source is not available in beta stage.
 
-6. Graph ingestion: The agent takes care of ingesting the data into graph after receiving it from your custom connector.
+6. **Graph ingestion**: The agent takes care of ingesting the data into graph after receiving it from your custom connector.
