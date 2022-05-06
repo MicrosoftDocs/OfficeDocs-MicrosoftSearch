@@ -182,7 +182,7 @@ Here are more examples of query string expansion.
 - Vertical modification and new verticals are not visible to guest users in an organization. 
 - Vertical re-ordering is not supported.
 - Vertical renaming for All tab is not supported in Microsoft Search in Bing.
-- Query string variables is not supported in Microsoft Search in Bing and Microsoft Search in Office.
+- Query string variables can only be used in SharePoint sites.
 
 ## Troubleshooting
 
