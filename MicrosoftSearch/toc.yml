@@ -85,6 +85,8 @@ items:
         href: custom-connector-sdk-overview.md
       - name: Contracts
         href: custom-connector-sdk-contracts.md
+      - name: Test Application
+        href: custom-connector-sdk-testapp.md
       - name: Best practices
         href: custom-connector-sdk-best-practices.md
       - name: Limitations
