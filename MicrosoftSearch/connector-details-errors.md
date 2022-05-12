@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Graph connectors details and errors"
+title: "Microsoft Graph connectors view details and errors"
 ms.author: monaray
 author: monaray97
 manager: mnirkhe
@@ -15,17 +15,19 @@ description: "Access and manage your Microsoft Graph connectors as a search admi
 ---
 <!-- markdownlint-disable no-inline-html -->
 
-# View connection details and errors
+# View your connection details and errors
 
-To access and manage your Microsoft Graph connectors, you must be designated as a search administrator for your tenant. Contact your tenant administrator to provision you for the search administrator role.
+To access and manage your Microsoft Graph connectors, you must be designated as a search administrator for your tenant. Contact your tenant administrator to provision your account for the search administrator role.
 
-In the [Microsoft 365 admin center](https://admin.microsoft.com), go to the [**Connectors** tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
+To see your connections in the [Microsoft 365 admin center](https://admin.microsoft.com), go to the [Data sources tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors).
 
-You can view connection details and errors when you select the connection on the **Connectors** tab.  
+You can view the connection details and errors by selecting the connection.  
+
+![Connectors list with a connector selected and details pane showing information about this connector.](media/datasourcestab.png)
 
 ## View your last crawl info
 
-After the first initial incremental or full crawl completes successfully, the last crawl data values are displayed under the last crawl header in the detail pane. If there was no last crawl that ran, you don't see any information under the last crawl header. This information about last crawl helps you gain insights into how the crawl performed to help you take necessary steps wherever required.
+After the first initial incremental or full crawl completes successfully, the last crawl data values are displayed under the last crawl header in the detail pane. If there was no last crawl that ran, you don't see any information under the last crawl header. This information about the last crawl helps you gain insights into how the crawl performed, and allows you to take necessary steps wherever required.
 
 The following last crawl values are available for each connection:
 
@@ -39,15 +41,13 @@ Value | Description
 
 ## Monitor errors
 
-For each **Active Connector** on the **Connectors** tab, any existing crawl errors show under the **Error** tab. The tab lists error codes, the count of each, and error log download options. See the example in the following image. Select an **error code** to view the error's details.
+For each **Active Connector** on the **Data sources** tab, any existing crawl errors show under the **Current crawl** header, in the **Errors** section. It lists error codes, the count of each, and error log download options. You can select an **error code** to view the error's details.
 
-![Connectors list with a connector selected and details pane showing 3 errors for this connector.](media/errormonitoring1.png)
+![Details pane showing the current crawl, and errors section for the selected connector.](media/errormonitoring1.png)
 
-To view an error's specific details, select its error code. A screen appears with error details and a link. The most recent errors appear at the top. See the example in the following table.
+To view an error's specific details, select its error code. A screen appears with error details and a link. The most recent errors appear at the top.
 
-![Connector list with a connector selected and details pane showing the list of errors for the connector.](media/errormonitoring2.png)
-
-Following is the list of different errors that can appear against any connection.
+The following list shows the different errors that can appear against any connection.
 
 Error code | Error message | Solution
 --- | --- | ---
