@@ -23,7 +23,7 @@ To see your connections in the [Microsoft 365 admin center](https://admin.micros
 
 You can view the connection details and errors by selecting the connection.  
 
-![Connectors list with a connector selected and details pane showing information about this connector.](media/datasourcestab.png)
+:::image type="content" source="media/datasourcestab.png" alt-text="Connectors list with a connector selected and details pane showing information about this connector.":::
 
 ## View your last crawl info
 
@@ -43,7 +43,7 @@ Value | Description
 
 For each **Active Connector** on the **Data sources** tab, any existing crawl errors show under the **Current crawl** header, in the **Errors** section. It lists error codes, the count of each, and error log download options. You can select an **error code** to view the error's details.
 
-![Details pane showing the current crawl, and errors section for the selected connector.](media/errormonitoring1.png)
+:::image type="content" source="media/errormonitoring1.png" alt-text="Details pane showing the current crawl, and errors section for the selected connector.":::
 
 To view an error's specific details, select its error code. A screen appears with error details and a link. The most recent errors appear at the top.
 
