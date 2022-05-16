@@ -2,6 +2,14 @@
 
 
 
+## Week of May 09, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/12/2022 | [Microsoft Graph connectors view details and errors](/MicrosoftSearch/connector-details-errors) | modified |
+
+
 ## Week of May 02, 2022
 
 
