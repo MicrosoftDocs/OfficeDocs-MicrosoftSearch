@@ -102,7 +102,6 @@ Although Microsoft Graph connectors and Microsoft Search APIs are now generally 
 
 The set of connectors and features in preview include:
 
-* [Azure DevOps connector](azure-devops-connector.md)
 * [Confluence On-premises connector](confluence-onpremises-connector.md)
 * [Multiple connections in a vertical](customize-search-page.md#multiple-connections-in-a-vertical)
 
