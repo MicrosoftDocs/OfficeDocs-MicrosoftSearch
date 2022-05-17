@@ -1,9 +1,9 @@
 --- 
 
-title: "Azure DevOps Graph connector for Microsoft Search" 
+title: "Azure DevOps Microsoft Graph connector for Microsoft Search" 
 ms.author: mecampos 
 author: mecampos 
-manager: umas 
+manager: lsheppard 
 audience: Admin
 ms.audience: Admin 
 ms.topic: article 
@@ -17,14 +17,14 @@ description: "Set up the Azure DevOps Graph connector for Microsoft Search"
 ---
 <!---Previous ms.author: shgrover --->
 
-# Azure DevOps Graph connector (preview)
+# Azure DevOps Microsoft Graph connector (preview)
 
 The Azure DevOps Graph connector allows your organization to index work items in its instance of the Azure DevOps service. After you configure the connector and index content from Azure DevOps, end users can search for those items in Microsoft Search.
 
 > [!NOTE]
-> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
+> Read the [**Setup for your Microsoft Graph connector**](configure-connector.md) article to understand the general connectors setup instructions.
 
-This article is for anyone who configures, runs, and monitors an Azure DevOps Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure DevOps Graph connector.
+This article is for anyone who configures, runs, and monitors an Azure DevOps connector. It supplements the general setup process, and shows instructions that apply only for this connector.
 
 >[!IMPORTANT]
 >The Azure DevOps connector supports only the Azure DevOps cloud service. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015, and TFS 2013 are not supported by this connector.
@@ -37,7 +37,7 @@ To allow the connector to connect to your Azure DevOps Organization, you must en
 
 ![Third-party application access via OAuth](media/ado-workitems-connector-security-policies.png)
 
-You will need the following permissions granted to the user account whose credentials are used during connector configuration:
+You will need the following permissions granted to the user account whose credentials are used during the connector configuration:
 
 | Permission name | Permission type | Required for |
 | ------------ | ------------ | ------------ |
@@ -45,7 +45,7 @@ You will need the following permissions granted to the user account whose creden
 | _View analytics_ | [Project permission](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | Crawling Azure DevOps Work Items. This permission is **mandatory** for the projects that need to be indexed. |
 | _View work items in this node_ | [Area path](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#area-path-object-level&preserve-view=true) | Crawling Work Items in an area path. This permission is **optional**. Only those area paths will be crawled for which the user account has permissions. |
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center
+## Step 1: Add a connector in the Microsoft 365 admin center
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 

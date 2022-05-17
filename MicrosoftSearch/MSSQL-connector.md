@@ -1,5 +1,5 @@
 ---
-title: "Azure SQL and Microsoft SQL Server Graph connector for Microsoft Search"
+title: "Azure SQL and Microsoft SQL Server Microsoft Graph connector for Microsoft Search"
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,30 +12,30 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Azure SQL and Microsoft SQL Graph connector for Microsoft Search."
+description: "Set up the Azure SQL and Microsoft SQL Microsoft Graph connector for Microsoft Search."
 ---
 <!---Previous ms.author: vivg --->
 
-# Azure SQL and Microsoft SQL Server Graph connectors
+# Azure SQL and Microsoft SQL Server Microsoft Graph connectors
 
-The Microsoft SQL Server or Azure SQL Graph connector allows your organization to discover and index data from an on-premises SQL Server database, or a database hosted in your Azure SQL instance in the cloud.
-The Graph connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
+The Microsoft SQL Server or Azure SQL Microsoft Graph connector allows your organization to discover and index data from an on-premises SQL Server database, or a database hosted in your Azure SQL instance in the cloud.
+The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
 > [!NOTE]
-> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
+> Read the [**Setup your Microsoft Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
-This article is for anyone who configures, runs, and monitors an Azure SQL and Microsoft SQL server Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure SQL and Microsoft SQL server Graph connector. This article also includes information about [Limitations](#limitations) for the Microsoft SQL server and Azure SQL connectors.
+This article is for anyone who configures, runs, and monitors an Azure SQL or a Microsoft SQL server connector. It supplements the general setup process, and shows instructions that apply only for the Azure SQL and Microsoft SQL server connectors. This article also includes information about [Limitations](#limitations) for both connectors.
 
 ## Before you get started
 
-### Install the Graph connector agent (required for on-premises Microsoft SQL Server connector only)
+### Install the Microsoft Graph connector agent (required for on-premises Microsoft SQL Server connector only)
 
-In order to access your on-premises third-party data, you must install and configure the Graph connector agent. See [Install the Graph connector agent](graph-connector-agent.md) to learn more.
+In order to access your on-premises third-party data, you must install and configure the connector agent. See [Install the Microsoft Graph connector agent](graph-connector-agent.md) to learn more.
 
 >[!NOTE]
->If you use Windows authentication while configuring the Microsoft SQL Server Graph connector, the user with which you are trying to sign in needs to have interactive logon rights to the machine where Graph connector agent is installed. Refer the documentation about [logon policy management](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check logon rights.
+>If you use Windows authentication while configuring the Microsoft SQL Server connector, the user with which you are trying to sign in needs to have interactive logon rights to the machine where the connector agent is installed. Refer the documentation about [logon policy management](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check logon rights.
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center
+## Step 1: Add a connector in the Microsoft 365 admin center
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -51,7 +51,7 @@ instructions.-->
 
 ### Register an app (for Azure SQL connector only)
 
-For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer Microsoft Graph documentation on how to [register an app](/graph/auth-register-app-v2).
+For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer to the Microsoft Graph documentation on how to [register an app](/graph/auth-register-app-v2).
 
 After completing the app registration and taking note of the app name, application (client) ID and tenant ID, you need to [generate a new client secret](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client secret will only be displayed once. Remember to note & store the client secret securely. Use the client ID and client secret while configuring a new connection in Microsoft Search.
 
@@ -73,7 +73,7 @@ To connect your Microsoft SQL Server connector to a data source, you must config
 
 > [!NOTE]
 > - Your database must run SQL Server version 2008 or later for the Microsoft SQL Server connector to be able to connect.
-> - The Azure SQL graph connector only allows ingestion from an Azure SQL instance in the same [tenant](/azure/active-directory/develop/quickstart-create-new-tenant) as of Microsoft 365. Cross-tenant data flow is not supported.
+> - The Azure SQL connector only allows ingestion from an Azure SQL instance in the same [tenant](/azure/active-directory/develop/quickstart-create-new-tenant) as of Microsoft 365. Cross-tenant data flow is not supported.
 
 For the Azure SQL connector, you only need to specify the server name or IP address you want to connect to. Azure SQL connector only supports Azure Active Directory Open ID connect (OIDC) authentication to connect to the database.
 

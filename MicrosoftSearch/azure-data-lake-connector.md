@@ -1,5 +1,5 @@
 ---
-title: "Azure Data Lake Graph connector for Microsoft Search"
+title: "Azure Data Lake Microsoft Graph connector for Microsoft Search"
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,22 +12,22 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Azure Data Lake Storage Gen2 Graph connector for Microsoft Search"
+description: "Set up the Azure Data Lake Storage Gen2 Microsoft Graph connector for Microsoft Search"
 ---
 <!---Previous ms.author: monaray --->
 
-# Azure Data Lake Storage Gen2 Graph connector
+# Azure Data Lake Storage Gen2 Microsoft Graph connector
 
-The Azure Data Lake Storage Gen2 Graph connector allows users in your organization to search for files stored in [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction) and [Azure Data Lake Gen 2 Storage](/azure/storage/blobs/data-lake-storage-introduction) accounts.
+The Azure Data Lake Storage Gen2 Microsoft Graph connector allows users in your organization to search for files stored in [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction) and [Azure Data Lake Gen 2 Storage](/azure/storage/blobs/data-lake-storage-introduction) accounts.
 
 > [!NOTE]
-> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
+> Read the [**Setup your Microsoft Graph connector**](configure-connector.md) article to understand the general connectors setup instructions.
 
 This article is for anyone who configures, runs, and monitors an Azure Data Lake Storage Gen2 connector. It supplements the general setup process, and shows instructions that apply only for the Azure Data Lake Storage Gen2 connector. This article also includes information about [Limitations](#limitations).
 
 In the article, we use *Azure Storage* as a generic term for [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction) and [Azure Data Lake Gen 2 Storage](/azure/storage/blobs/data-lake-storage-introduction).
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center
+## Step 1: Add a connector in the Microsoft 365 admin center
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -39,9 +39,9 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 3: Configure the connection settings
 
-Enter your Primary storage connection String. This string is required to allow access to your storage account. To find your connection string, go to the [Azure portal](https://ms.portal.azure.com/#home) and navigate to the **Keys** section of your relevant Azure Storage account.
+Enter your primary storage connection string. This string is required to allow access to your storage account. To find your connection string, go to the [Azure portal](https://ms.portal.azure.com/#home) and navigate to the **Keys** section of your relevant Azure Storage account.
 
-If you prefer not to provide the **AccountKey** (a parameter in the primary storage connection string), grant access to our Graph Connectors Service for the following roles:
+If you prefer not to provide the **AccountKey** (a parameter in the primary storage connection string), grant access to the Microsoft Graph connectors service for the following roles:
 
 * Storage Blob Data Reader
 * Storage Queue Data Contributor
@@ -79,7 +79,7 @@ On the **Manage Schema** screen, you can change the schema attributes associated
 
 You can choose to ingest the Access Control Lists (ACLs) from your [Azure Data Lake Gen 2 Storage](/azure/storage/blobs/data-lake-storage-introduction) account. When these search permissions are set, search content is trimmed based on the permissions of the user signed in [Azure Active Directory](/azure/active-directory/). Alternatively, you can choose to make all the content indexed from your storage account visible to everyone in your organization. In this case, everyone in your organization will have access to all the data in your storage account.
 
-The Azure Data Lake Storage Gen2 Graph connector supports search permissions visible to **Everyone**, or **Only people with access to this data source**. Indexed data that appears in the search results could be visible to users in the organization who have access to each item.
+The Azure Data Lake Storage Gen2 connector supports search permissions visible to **Everyone**, or **Only people with access to this data source**. Indexed data that appears in the search results could be visible to users in the organization who have access to each item.
 
 ### Azure Blob Storage
 
