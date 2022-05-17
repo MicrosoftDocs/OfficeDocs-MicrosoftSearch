@@ -30,7 +30,7 @@ To configure a custom results page in SharePoint Online follow the steps below:
 >[!NOTE]
 > The custom results page needs to be on the same domain as your site, but it does not have to be in the same site collection.  
 
-Alternatively, you can use the [Set-PnPSearchSettings SharePoint PnP PowerShell command](/powershell/module/sharepoint-pnp/set-pnpsearchsettings?view=sharepoint-ps) to set the value instead of using the Site Settings page.
+Alternatively, you can use the [Set-PnPSearchSettings SharePoint PnP PowerShell command](https://pnp.github.io/powershell/cmdlets/Set-PnPSearchSettings.html) to set the value instead of using the Site Settings page.
 
 Once set, the custom search results page is displayed when you search using the Microsoft Search box that appears in the navigation bar on top of the page and is used when you enter search from site pages or the home page of the site. It is not used when you are searching within a list, library, or the site contents page. You may use the link to expand your search from search results in lists and libraries to get to the custom results page.
 
@@ -39,7 +39,7 @@ Once set, the custom search results page is displayed when you search using the 
 A page layout named **HeaderlessSearchResults** can be used to make the search results page appear closer to our out of box search results experience. This new layout can only be active for the pages that are set to be the custom search results page.
 
 To set the page layout, you can use the [Set-PnPPage PnP PowerShell
-command](/powershell/module/sharepoint-pnp/set-pnppage?view=sharepoint-ps) with -LayoutType HeaderlessSearchResults.
+command](https://pnp.github.io/powershell/cmdlets/Set-PnPPage.html) with -LayoutType HeaderlessSearchResults.
 
 ## Use SharePoint Framework Query extensions
 
