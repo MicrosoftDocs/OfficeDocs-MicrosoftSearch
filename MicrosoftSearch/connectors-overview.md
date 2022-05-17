@@ -2,7 +2,7 @@
 title: "Microsoft Graph connectors overview for Microsoft Search"
 ms.author: mecampos
 author: mecampos
-manager: umas
+manager: lsheppard
 audience: Admin
 ms.audience: Admin
 ms.topic: article
