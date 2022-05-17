@@ -14,9 +14,9 @@ description: "Release history of Microsoft Graph connector agent, which is used 
 
 # Release history for Microsoft Graph connector agent
 
-Indexing on-prem data sources require you to install *Microsoft Graph connector agent* software. It allows for secure data transfer between on-premises data and the connector APIs.
+Indexing on-premises data sources require you to install *Microsoft Graph connector agent* software. It allows for secure data transfer between on-premises data and the connector APIs.
 
-For help on installation, please refer to this [page](graph-connector-agent.md#installation)
+For help on installation, refer to this [page](graph-connector-agent.md#installation)
 
 [Download latest Graph Connector Agent](https://aka.ms/gcadownload)
 
