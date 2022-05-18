@@ -1,5 +1,5 @@
 ---
-title: "Enterprise websites Graph connector for Microsoft Search"
+title: "Enterprise websites Microsoft Graph connector"
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -18,12 +18,12 @@ description: "Set up the Enterprise websites Graph connector for Microsoft Searc
 
 <!-- markdownlint-disable no-inline-html -->
 
-# Enterprise websites Graph connector
+# Enterprise websites Microsoft Graph connector
 
-The Enterprise websites Graph connector allows your organization to index articles and **content from its internal-facing websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
+The Enterprise websites Microsoft Graph connector allows your organization to index articles and **content from its internal-facing websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
 
 > [!NOTE]
-> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
+> Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general connectors setup instructions.
 
 This article is for anyone who configures, runs, and monitors an Enterprise websites connector. It supplements the general setup process, and shows instructions that apply only for the Enterprise websites connector. This article also includes information about [Troubleshooting](#troubleshooting).
 
@@ -31,7 +31,7 @@ This article is for anyone who configures, runs, and monitors an Enterprise webs
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center
+## Step 1: Add a connector in the Microsoft 365 admin center
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -73,7 +73,7 @@ In addition to the check box, there are three optional fields available:
 
 The crawl mode determines the type of websites you want to index, either cloud or on-premises. For your cloud websites, select **Cloud** as the crawl mode.
 
-Also, the connector now supports crawling of on-premises websites. To access your on-premises data, you must first install and configure the Graph connector agent. To learn more, see [Graph connector agent](./graph-connector-agent.md).
+Also, the connector now supports crawling of on-premises websites. To access your on-premises data, you must first install and configure the connector agent. To learn more, see [Microsoft Graph connector agent](./graph-connector-agent.md).
 
 For your on-premises websites, select **Agent** as the crawl mode and in the **On-prem Agent** field, choose the Graph connector agent that you installed and configured earlier.  
 
@@ -196,7 +196,7 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ## Troubleshooting
 
-When reading the website's content, the crawl may encounter some source errors, which are represented by the detailed error codes below. To get more information on the types of errors, go to the **error details** page after selecting the connection. Select the **error code** to see more detailed errors. Also refer to [Manage your connector](./manage-connector.md) to learn more.
+When reading the website's content, the crawl may encounter some source errors, which are represented by the detailed error codes below. To get more information on the types of errors, go to the **error details** page after selecting the connection. Select the **error code** to see more detailed errors. Also refer to [Monitor your connections](./manage-connector.md) to learn more.
 
  Detailed Error code | Error message
  --- | ---

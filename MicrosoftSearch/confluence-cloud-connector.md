@@ -1,5 +1,5 @@
 ---
-title: "Confluence Cloud Graph connector for Microsoft Search"
+title: "Confluence Cloud Microsoft Graph connector"
 ms.author: kam1
 author: TheKarthikeyan
 manager: harshkum
@@ -16,19 +16,19 @@ description: "Set up the Confluence Cloud Graph connector for Microsoft Search"
 ---
 <!---Previous ms.author: kam1 --->
 
-# Confluence Cloud Graph Connector
+# Confluence Cloud Microsoft Graph connector
 
-Confluence Cloud Graph connector allows your organization to index Confluence content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search.
+Confluence Cloud Microsoft Graph connector allows your organization to index Confluence content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence Cloud Graph connector. It supplements the general instructions provided in the [Setup your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Setup your Graph Connector article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence Cloud connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. If you have not already done so, read the entire article to understand the general setup process.
 
-Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence Cloud Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
+Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence Cloud connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
 ## Before you get started
 
 You must be the admin for your organization's Microsoft 365 tenant and the admin for your organization's Confluence site.
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center
+## Step 1: Add a connector in the Microsoft 365 admin center
 
 Follow the general [setup instructions](./configure-connector.md).
 
@@ -83,9 +83,9 @@ Use the preview results button to verify the sample values of the selected prope
 
 ## Step 5: Manage search permissions
 
-Confluence Cloud Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them.
+Confluence Cloud Microsoft Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them.
 
-In Confluence Cloud, security permissions for users and groups are defined using space permissions and page restrictions. Confluence Cloud Graph Connector applies space permissions if there are no page restrictions. Page level restrictions, if present, will take precedence over space permissions.
+In Confluence Cloud, security permissions for users and groups are defined using space permissions and page restrictions. Confluence Cloud connector applies space permissions if there are no page restrictions. Page level restrictions, if present, will take precedence over space permissions.
 
 If you choose **Only people with access to this data source**, you need to further choose whether your Confluence site has Azure Active Directory (AAD) provisioned users or Non-AAD users.
 
@@ -133,7 +133,7 @@ Common errors observed while configuring the connector and their possible reason
 
 ## Limitations
 
-Confluence Cloud Graph connector has the following known limitations in its latest release:
+The Confluence Cloud connector has the following known limitations in its latest release:
 
-* Confluence Cloud Connector does not index attachment files and comments.
+* Confluence Cloud connector does not index attachment files and comments.
 * Indexing Server and Data Center deployments will be released as a separate connector.

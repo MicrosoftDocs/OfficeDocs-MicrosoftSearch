@@ -1,5 +1,5 @@
 ---
-title: "Salesforce Graph connector for Microsoft Search"
+title: "Salesforce Microsoft Graph connector"
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,21 +12,21 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Salesforce Graph connector for Microsoft Search"
+description: "Set up the Salesforce Microsoft Graph connector for Microsoft Search"
 ---
 <!---Previous ms.author: rusamai --->
 
-# Salesforce Graph connector
+# Salesforce Microsoft Graph connector
 
-The Salesforce Graph connector, allows your organization to index Contacts, Opportunities, Leads, Cases, and Accounts objects in your Salesforce instance. After you configure the connector and index content from Salesforce, end users can search for those items from any Microsoft Search client.
+The Salesforce Microsoft Graph connector, allows your organization to index Contacts, Opportunities, Leads, Cases, and Accounts objects in your Salesforce instance. After you configure the connector and index content from Salesforce, end users can search for those items from any Microsoft Search client.
 
 > [!NOTE]
-> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
+> Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general Microsoft Graph connectors setup instructions.
 
-This article is for anyone who configures, runs, and monitors a Salesforce Graph connector. It supplements the general setup process, and shows instructions that apply only for the Salesforce Graph connector. This article also includes information about [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors a Salesforce connector. It supplements the general setup process, and shows instructions that apply only for the Salesforce connector. This article also includes information about [Limitations](#limitations).
 
 >[!IMPORTANT]
->The Salesforce Graph connector currently supports Summer '19 or later.
+>The Salesforce connector currently supports Summer '19 or later.
 
 ## Before you get started
 
@@ -73,7 +73,7 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
 
 You can now use the [Microsoft 365 Admin Center](https://admin.microsoft.com/) to complete the rest of the setup process for your Graph connector.
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center
+## Step 1: Add a connector in the Microsoft 365 admin center
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -171,9 +171,9 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ## Limitations
 
-- The Graph connector doesn't currently support Apex based, territory-based sharing and sharing using personal groups from Salesforce.
-- There's a known bug in the Salesforce API the Graph connector uses, where the private org-wide defaults for leads aren't honored currently.  
-- If a field has field level security (FLS) set for a profile, the Graph connector won't ingest that field for any profiles in that Salesforce org. As a result, users won't be able to search on values for those fields, nor will it show up in the results.  
+- The Salesforce Microsoft Graph connector doesn't currently support Apex based, territory-based sharing and sharing using personal groups from Salesforce.
+- There's a known bug in the Salesforce API the connector uses, where the private org-wide defaults for leads aren't honored currently.  
+- If a field has field level security (FLS) set for a profile, the connector won't ingest that field for any profiles in that Salesforce org. As a result, users won't be able to search on values for those fields, nor will it show up in the results.  
 - In the Manage Schema screen these common standard property names are listed once, the options are **Query**, **Search**, **Retrieve**, and **Refine**, and apply to all or none.
     - Name
     - Url

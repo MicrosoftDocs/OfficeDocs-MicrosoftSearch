@@ -1,5 +1,5 @@
 ---
-title: "File share Graph connector for Microsoft Search"
+title: "File share Microsoft Graph connector"
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -17,18 +17,18 @@ description: "Set up the File share Graph connector for Microsoft Search"
 ---
 <!---Previous ms.author: rusamai --->
 
-# File share Graph connector
+# File share Microsoft Graph connector
 
-The File share Graph connector allows users in your organization to search on-premise Windows file shares.
+The File share Microsoft Graph connector allows users in your organization to search on-premise Windows file shares.
 
 > [!NOTE]
-> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup process.
+> Read the [**Setup for your Microsoft Graph connector**](configure-connector.md) article to understand the general connectors setup process.
 
 ## Before you get started
 
-### Install the Graph connector agent
+### Install the Microsoft Graph connector agent
 
-To index your Windows file shares, you must install and register the Graph connector agent. See [Install the Graph connector agent](graph-connector-agent.md) to learn more.  
+To index your Windows file shares, you must install and register the connector agent. See [Install the Microsoft Microsoft Graph connector agent](graph-connector-agent.md) to learn more.  
 
 ### Content requirements
 
@@ -40,7 +40,7 @@ Content of the following formats can be indexed and searched: DOC, DOCM, DOCX, D
 
 The maximum supported file size is 100 MB. Files that exceed 100 MB aren't indexed. The maximum post-processed size limit is 4 MB. Processing stops when a file's size reaches 4 MB. Therefore, some phrases present in the file might not work for search.
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center
+## Step 1: Add a connector in the Microsoft 365 admin center
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->

@@ -1,5 +1,5 @@
 ---
-title: "MediaWiki Graph connector for Microsoft Search"
+title: "MediaWiki Microsoft Graph connector"
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,24 +12,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the MediaWiki Graph connector for Microsoft Search"
+description: "Set up the MediaWiki Microsoft Graph connector for Microsoft Search"
 ---
 <!---Previous ms.author: monaray --->
 
-# MediaWiki Graph connector
+# MediaWiki Microsoft Graph connector
 
-The MediaWiki Graph connector allows your organization to discover and index data from a wiki created by using MediaWiki software. This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.
+The MediaWiki Microsoft Graph connector allows your organization to discover and index data from a wiki created by using MediaWiki software. This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.
 
 > [!NOTE]
-> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
+> Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general Microsoft Graph connectors setup instructions.
 
-This article is for anyone who configures, runs, and monitors a MediaWiki Graph connector. It supplements the general setup process, and shows instructions that apply only for the MediaWiki Graph connector. This article also includes information about [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors a MediaWiki connector. It supplements the general setup process, and shows instructions that apply only for the MediaWiki connector. This article also includes information about [Limitations](#limitations).
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center
+## Step 1: Add a connector in the Microsoft 365 admin center
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->

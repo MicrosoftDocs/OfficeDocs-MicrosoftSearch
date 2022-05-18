@@ -1,5 +1,5 @@
 ---
-title: "Confluence On-premises Graph connector for Microsoft Search"
+title: "Confluence On-premises Microsoft Graph connector"
 ms.author: kam1
 author: TheKarthikeyan
 manager: harshkum
@@ -12,30 +12,30 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Confluence On-premises Graph connector for Microsoft Search"
+description: "Set up the Confluence On-premises Graph Microsoft connector for Microsoft Search"
 ---
 <!---Previous ms.author: kam1 --->
 
-# Confluence On-premises Graph Connector (Preview)
+# Confluence On-premises Microsoft Graph connector (Preview)
 
-Confluence On-premises Graph connector allows your organization to index Confluence server or data center content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search.
+Confluence On-premises Microsoft Graph connector allows your organization to index Confluence server or data center content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search.
 
 >[!NOTE]
->Confluence On-premises Graph Connector is in preview. If you wish to get early access to try it, sign up using [<b> this form </b>](https://forms.office.com/r/JniPmK5bzm).
+>Confluence On-premises Connector is in preview. If you wish to get early access to try it, sign up using [<b> this form </b>](https://forms.office.com/r/JniPmK5bzm).
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence On-premises Graph connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence On-premises connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence On-premises Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
 ## Before you get started
 
-### Install the Graph Connector Agent
+### Install the Microsoft Graph connector agent
 
-To index your Confluence server or data center content, you must install and register Graph Connector Agent. See [install the Graph Connector Agent](./graph-connector-agent.md) for details.
+To index your Confluence server or data center content, you must install and register the connector agent. See [install the Microsoft Graph connector agent](./graph-connector-agent.md) for details.
 
 You must be the admin for your organization's Microsoft 365 tenant and the admin for your organization's Confluence site.
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center
+## Step 1: Add a connector in the Microsoft 365 admin center
 
 Follow the general [setup instructions](./configure-connector.md).
 
@@ -53,9 +53,9 @@ Select *Server or Data center* option to index Confluence On-premises content an
 
 To connect to your Confluence site, use your site URL.
 
-### Step 3.3: Select the Graph Connector Agent
+### Step 3.3: Select the Microsoft Graph connector agent
 
-Select the Graph Connector Agent from the drop-down list. The agent will securely send Confluence On-premises content into Microsoft Graph index.
+Select the connector agent from the drop-down list. The agent will securely send Confluence On-premises content into Microsoft Graph index.
 
 ### Step 3.4: Select authentication type
 
@@ -70,7 +70,7 @@ Enter a service account's username (usually email ID) and password to authentica
 
 #### OAuth 1.0a (recommended)
 
-Generate  a public/private key pair and create an application link in Confluence On-premises site so that the Graph Connector Agent can access the instance. To learn more, see [step 1 in Atlassian developer documentation](https://developer.atlassian.com/server/jira/platform/oauth/#step-1--configure-jira) on how to configure OAuth 1.0a.
+Generate  a public/private key pair and create an application link in Confluence On-premises site so that the connector agent can access the instance. To learn more, see [step 1 in Atlassian developer documentation](https://developer.atlassian.com/server/jira/platform/oauth/#step-1--configure-jira) on how to configure OAuth 1.0a.
 
 #### Step 3.4.1 Generate an RSA public/private key pair
 
@@ -130,9 +130,9 @@ Use the preview results button to verify the sample values of the selected prope
 
 ## Step 5: Manage search permissions
 
-Confluence On-premises Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them.
+Confluence On-premises connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them.
 
-In Confluence On-premises, security permissions for users and groups are defined using space permissions and page restrictions. Confluence On-premises Graph Connector applies *effective permissions* provided by [content restrictions API](https://docs.atlassian.com/ConfluenceServer/rest/7.15.0/#api/content/{id}/restriction).
+In Confluence On-premises, security permissions for users and groups are defined using space permissions and page restrictions. Confluence On-premises connector applies *effective permissions* provided by [content restrictions API](https://docs.atlassian.com/ConfluenceServer/rest/7.15.0/#api/content/{id}/restriction).
 
 If you choose **Only people with access to this data source**, you need to further choose whether your Confluence site has Azure Active Directory (AAD) provisioned users or Non-AAD users.
 
@@ -180,6 +180,6 @@ The common errors that can be seen while configuring the connector and their pos
 
 ## Limitations
 
-Confluence On-premises Graph connector has the following known limitations in its latest release:
+The confluence On-premises connector has the following known limitations in its latest release:
 
-* Confluence On-premises Connector does not index blogs, attachment files and comments.
+* Confluence On-premises connector does not index blogs, attachment files and comments.
