@@ -61,7 +61,7 @@ items:
         items:
         - name: Azure Data Lake Storage Gen2
           href: azure-data-lake-connector.md
-        - name: Azure DevOps (preview)
+        - name: Azure DevOps Work Items
           href: azure-devops-connector.md
         - name: Azure SQL and Microsoft SQL Server
           href: MSSQL-connector.md
