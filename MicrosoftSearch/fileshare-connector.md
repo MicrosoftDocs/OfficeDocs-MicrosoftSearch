@@ -72,7 +72,7 @@ Only the textual content of these formats is indexed: DOC, DOCM, DOCX, DOT, DOTX
 
 In the network path use escape character (\\) before special characters like \\. Example: For the path \\\\CONTOSO\\FILE\\SHAREDFOLDER, correct way to input is  \\\\\\\\CONTOSO\\\\FILE\\\\SHAREDFOLDER
 
-Rules for writing regular expression can be found [here](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)
+Rules for writing regular expression can be found [here](/dotnet/standard/base-types/regular-expression-language-quick-reference)
 
 Admin would also be having ability to give an exception to the limit rule. Priority of exception rule will supersede Limit rules. In similar fashion, exception could be defined by giving folder/file path for the items we want to include in indexing.
 
