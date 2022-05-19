@@ -53,7 +53,7 @@ Follow the general [setup instructions](./configure-connector.md).
 ## Step 3: Configure the connection settings
 
 > [!NOTE]
-> You can index up to twenty different file shares in a single connection.
+> You can index up to twenty different file shares in a single connection. Enter one file share per line in the file shares text box area.
 
 On the **Connect to data source** page, select **File share** and provide the name, connection ID, and description. On the next page, provide the path to the file share and select your previously installed Graph connector agent. Enter the credentials for a [Microsoft Windows](https://microsoft.com/windows) user account with read access to all the files in the file share.
 
