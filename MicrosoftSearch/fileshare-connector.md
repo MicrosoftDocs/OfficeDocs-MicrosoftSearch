@@ -89,7 +89,7 @@ Note that windows by default provides 'Read' permission to 'Everyone' in Share A
 
 You can choose Share ACLs only if the share path you provided follows UNC path format. You can create a path in UNC format by going to 'Advanced Sharing' under 'Sharing' option.
 
-![Advanced_sharing.](media/file-connector/file-advanced-sharing.png)
+:::image type="content" source="media/file-connector/file-advanced-sharing.png" alt-text="Advanced sharing." lightbox="media/file-connector/file-advanced-sharing.png":::
 
 ## Step 6: Assign property labels
 
