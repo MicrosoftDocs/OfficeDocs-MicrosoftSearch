@@ -37,7 +37,7 @@ items:
     href: manage-search-apps.md
 - name: Data sources
   items:
-  - name: Graph Connectors
+  - name: Microsoft Graph connectors
     items:
     - name: Overview
       href: connectors-overview.md
@@ -49,9 +49,9 @@ items:
         href: configure-connector.md
       - name: On-prem connectors
         items:
-        - name: Graph connector agent setup
+        - name: Connector agent setup
           href: graph-connector-agent.md
-        - name: Graph connector agent release history
+        - name: Connector agent release history
           href: graph-connector-agent-releases.md
       - name: Map non-Azure AD Identities
         href: map-non-aad.md
@@ -61,7 +61,7 @@ items:
         items:
         - name: Azure Data Lake Storage Gen2
           href: azure-data-lake-connector.md
-        - name: Azure DevOps (preview)
+        - name: Azure DevOps Work Items
           href: azure-devops-connector.md
         - name: Azure SQL and Microsoft SQL Server
           href: MSSQL-connector.md
