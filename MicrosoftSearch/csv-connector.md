@@ -113,7 +113,6 @@ The data source settings are different for SharePoint and ADLS.
 1. Enter the **Container name** and **Filename**.
 1. Select **Test Connection**. You should get a **The connection is successful** message.
 
-![Image of CSV connector with Data Source Settings for an ADLS source.](media/csv-connector/csv-connector-adls-data-source-settings.png)
 :::image type="content" source="media/csv-connector/csv-connector-adls-data-source-settings.png" alt-text="CSV connector with Data Source Settings for an Azure Data Lake Storage source." lightbox="media/csv-connector/csv-connector-adls-data-source-settings.png":::
 
 > [!NOTE]
