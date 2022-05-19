@@ -52,11 +52,14 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 3: Configure the connection settings
 
+> [!NOTE]
+> You can index up to twenty different file shares in a single connection. Enter one file share per line in the file shares text box area.
+
 On the **Connect to data source** page, select **File share** and provide the name, connection ID, and description. On the next page, provide the path to the file share and select your previously installed Graph connector agent. Enter the credentials for a [Microsoft Windows](https://microsoft.com/windows) user account with read access to all the files in the file share.
 
 ### Preserve last access time
 
-When the connector attempts to crawl a file, the "last access time" field in its metadata is updated. If you depend on that field for any archiving and backup solutions and doesn't want to update it when the connector accesses it, you can configure this option in the **Advanced settings** page.
+When the connector attempts to crawl a file, the "last access time" field in its metadata is updated. If you depend on that field for any archiving and backup solutions and don't want to update it when the connector accesses it, you can configure this option in the **Advanced settings** page.
 
 ## Step 4: Limits for file indexing
 
@@ -64,15 +67,15 @@ While configuring a File Share connection, admin would have ability to limit fil
 
 #### Based on File Types
 
-Only the textual content of these formats is indexed: DOC, DOCM, DOCX, DOT, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS. For multimedia files and files that doesn't belong to this format, the only metadata is indexed.
+Only the textual content of these formats is indexed: DOC, DOCM, DOCX, DOT, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS. For multimedia files and files that don't belong to this format, the only metadata is indexed.
 
 #### Based on last modified date or number of days since last modification
 
 #### Full network path of file/folder or regular expression to limit indexing 
 
-In the network path use escape character (\\) before special characters like \\. Example: For the path \\\\CONTOSO\\FILE\\SHAREDFOLDER, correct way to input is  \\\\\\\\CONTOSO\\\\FILE\\\\SHAREDFOLDER
+In the network path use the escape character (\\) before special characters like \\. Example: For the path \\\\CONTOSO\\FILE\\SHAREDFOLDER, correct way to input is  \\\\\\\\CONTOSO\\\\FILE\\\\SHAREDFOLDER
 
-Rules for writing regular expression can be found [here](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)
+Rules for writing regular expression can be found [here](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 Admin would also be having ability to give an exception to the limit rule. Priority of exception rule will supersede Limit rules. In similar fashion, exception could be defined by giving folder/file path for the items we want to include in indexing.
 
@@ -86,7 +89,7 @@ Note that windows by default provides 'Read' permission to 'Everyone' in Share A
 
 You can choose Share ACLs only if the share path you provided follows UNC path format. You can create a path in UNC format by going to 'Advanced Sharing' under 'Sharing' option.
 
-![Advanced_sharing.](media/file-connector/file-advanced-sharing.png)
+:::image type="content" source="media/file-connector/file-advanced-sharing.png" alt-text="Advanced sharing." lightbox="media/file-connector/file-advanced-sharing.png":::
 
 ## Step 6: Assign property labels
 
