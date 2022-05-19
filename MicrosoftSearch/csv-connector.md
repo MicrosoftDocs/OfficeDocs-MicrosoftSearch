@@ -13,7 +13,6 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-ROBOTS: NOINDEX
 description: "Set up the Microsoft Search CSV connector for SharePoint or Azure Data Lake Storage sources." 
 ---
 
@@ -33,9 +32,10 @@ For a SharePoint data source, you'll need to create a SharePoint app with Oauth 
 
 ### Create a SharePoint app with Oauth configuration
 
-Verify the .csv files you want to index have been uploaded to a SharePoint document library. You can use an existing SharePoint site or create a new one. 
+Verify the .csv files you want to index have been uploaded to a SharePoint document library. You can use an existing SharePoint site or create a new one.
 
 #### Create a SharePoint app
+
 1. Go to  `https://Org-Name.sharepoint.com/Site-Name/_layouts/15/appregnew.aspx`.
 2. On the Client Id and Client Secret fields, select **Generate**.
 1. For Title, enter an app name.
@@ -45,6 +45,7 @@ Verify the .csv files you want to index have been uploaded to a SharePoint docum
 1. Copy the app configuration information, including the Client ID and Client Secret. You'll need it when you set up the CSV connector.
 
 #### Enable app permissions to allow CustomAppAuthentication
+
 In PowerShell, run these commands in administrative mode. Use the email address of the admin configuring the connector and your organization name. When the password pop-up appears, the admin should enter their password.
 
 ```powershell
@@ -57,6 +58,7 @@ Set-spotenant –DisableCustomAppAuthentication $false
 ```
 
 #### Complete the app configuration
+
 1. Go to `https://Org-Name.sharepoint.com/Site-Name/_layouts/15/appinv.aspx`.
 2. In the App Id field, paste the Client Id of the SharePoint app and select **Lookup**.
 3. In Permission Request XML field, paste this code and select **Create**.
@@ -101,7 +103,7 @@ The data source settings are different for SharePoint and ADLS.
 1. Enter the Client ID and Client Secret you copied when you created the SharePoint app.
 1. Select **Test Connection**. You should get a **The connection is successful** message.
 
-![Image of CSV connector with Data Source Settings for a SharePoint site. ](media/csv-connector/csv-connector-data-source-settings.png)
+:::image type="content" source="media/csv-connector/csv-connector-data-source-settings.png" alt-text="CSV connector with Data Source Settings for a SharePoint site." lightbox="media/csv-connector/csv-connector-data-source-settings.png":::
 
 ### For an ADLS source
 
@@ -112,6 +114,7 @@ The data source settings are different for SharePoint and ADLS.
 1. Select **Test Connection**. You should get a **The connection is successful** message.
 
 ![Image of CSV connector with Data Source Settings for an ADLS source.](media/csv-connector/csv-connector-adls-data-source-settings.png)
+:::image type="content" source="media/csv-connector/csv-connector-adls-data-source-settings.png" alt-text="CSV connector with Data Source Settings for an Azure Data Lake Storage source." lightbox="media/csv-connector/csv-connector-adls-data-source-settings.png":::
 
 > [!NOTE]
 > If your datasource contains multiple .csv files with the same headers, select **include all CSV files in location**.
@@ -150,4 +153,7 @@ Follow the general [setup instructions](./configure-connector.md).
 Follow the general [setup instructions](./configure-connector.md).
 
 <!---## Limitations-->
-<!---Insert limitations for this data source-->
+## Limitations
+
+The following are known limitations of the CSV connector:
+* Profile enrichments scenarios aren't supported at this time.
