@@ -83,19 +83,24 @@ Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-## Step 2: Name the connection
+## Step 2: Select experiences
+
+Currently, the CSV connector only supports search experiences.
+
+:::image type="content" source="media/csv-connector/csv-connector-search-experiences.png" alt-text="CSV connector with Microsoft Search experience selected." lightbox="media/csv-connector/csv-connector-search-experiences.png":::
+
+## Step 3: Name the connection
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-## Step 3: Configure connection settings
+## Step 4: Configure connection settings
 
 The data source settings are different for SharePoint and ADLS.
 
 ### For a SharePoint source
 
-1. To control access on a file level, in **ACL setting**, enter the email addresses of the allowed users or groups.
 1. In the Data Source settings, select **SharePoint** as your datasource.
 1. In **SharePoint site**, enter the site URL, `https://Org-Name.sharepoint.com/Site-Name`, for example.
 1. In **Document Library**, enter the name of the library where the .csv files are stored.
@@ -105,9 +110,12 @@ The data source settings are different for SharePoint and ADLS.
 
 :::image type="content" source="media/csv-connector/csv-connector-data-source-settings.png" alt-text="CSV connector with Data Source Settings for a SharePoint site." lightbox="media/csv-connector/csv-connector-data-source-settings.png":::
 
+To control access on a file level, enter Azure AD users or groups.
+
+:::image type="content" source="media/csv-connector/csv-connector-acl.png" alt-text="Access control list with user and group included." lightbox="media/csv-connector/csv-connector-acl.png":::
+
 ### For an ADLS source
 
-1. To control access on a file level, in **ACL setting**, enter the email addresses of the allowed users or groups.
 1. In the Data Source settings, select **Azure Data Lake Storage(ADLS)** as your datasource.
 1. In **Primary storage connection string**, enter the connection string you copied.
 1. Enter the **Container name** and **Filename**.
@@ -118,17 +126,25 @@ The data source settings are different for SharePoint and ADLS.
 > [!NOTE]
 > If your datasource contains multiple .csv files with the same headers, select **include all CSV files in location**.
 
-## Step 4: Multi-items delimiter (Optional)
+To control access on a file level, enter Azure AD users or groups.
+
+:::image type="content" source="media/csv-connector/csv-connector-acl.png" alt-text="Access control list with user and group included." lightbox="media/csv-connector/csv-connector-acl.png":::
+
+## Step 5: Multi-items delimiter (Optional)
 
 If your source columns can take multiple values, enter a multi-items delimiter, a semicolon (;) for example.
 
-## Step 5: Parsed properties settings
+## Step 6: Parsed properties settings
 
 This page returns the first row from your .csv file as Source Properties. To modify the Datatype, in the **Unique Identifier** list select at least one option.
 
-## Step 6: Select experiences
+To control access on an item level, select columns mapped to Allowed Users and Allowed Groups. You should include two columns, AllowedUsers and AllowedGroups, in the .csv file. Each row should contain the Azure AD IDs.
 
-The CSV connector supports search and profile experiences. Select an experience for your organization.
+:::image type="content" source="media/csv-connector/csv-connector-acl-item-level.png" alt-text="Item level access control settings." lightbox="media/
+csv-connector/csv-connector-acl-item-level.png":::
+
+> [!NOTE]
+> The CSV connector supports file- or item-level access control. If both are enabled, only the file-level access control is applied.
 
 ## Step 7: Assign property labels
 
@@ -140,8 +156,10 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 9: Manage search permissions
 
-- For File Level ACL, select **ACL**.
-- For Item Level ACL, select **Everyone**. Also, you should include two columns, AllowedUsers and AllowedGroups, in the .csv file. Each row should contain the Azure AD IDs.
+- For file- or item-level access control, select **Only people with access to this data source**.
+- Selecting **Everyone** allows everyone in your organization to see search results from this data source.
+
+:::image type="content" source="media/csv-connector/csv-connector-search-permissions.png" alt-text="Search permission settings with only people with access to this data source selected." lightbox="media/csv-connector/csv-connector-search-permissions.png":::
 
 ## Step 10: Choose refresh settings
 
