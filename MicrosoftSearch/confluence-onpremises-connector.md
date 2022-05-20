@@ -1,5 +1,5 @@
 ---
-title: "Confluence On-premises Microsoft Graph connector"
+title: "Confluence On-premises Microsoft Graph connector (Preview)"
 ms.author: kam1
 author: TheKarthikeyan
 manager: harshkum
@@ -23,7 +23,7 @@ Confluence On-premises Microsoft Graph connector allows your organization to ind
 >[!NOTE]
 >Confluence On-premises Connector is in preview. If you wish to get early access to try it, sign up using [<b> this form </b>](https://forms.office.com/r/JniPmK5bzm).
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence On-premises connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence On-premises connector. It supplements the general instructions provided in the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md).
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence On-premises Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
@@ -47,7 +47,7 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ### Step 3.1: Select deployment type
 
-Select *Server or Data center* option to index Confluence On-premises content and click next
+Select *Server or Data center* option to index Confluence On-premises content and select next
 
 ### Step 3.2: Enter Confluence instance URL
 
@@ -87,9 +87,9 @@ Extract the public key from the certificate to the `confluence_publickey.pem` fi
 
 1. In Confluence, navigate to **Administration** (cog icon) > **General configuration** > **Application Links** in the side pane.
 
-2. In the **Enter URL of the application you want to link** text box, enter any URL. For example, <https://example.com> and then click **Create new link**. Ignore *No response was received from the URL you entered* warning and click **Continue**.
+2. In the **Enter URL of the application you want to link** text box, enter any URL. For example, <https://example.com> and then select **Create new link**. Ignore *No response was received from the URL you entered* warning and select **Continue**.
 
-3. On the first screen of **Link applications** dialog, provide an **Application Name** and select **Generic Application** type. Select the **Create incoming link** checkbox. All other fields are optional. Click **Continue**.
+3. On the first screen of **Link applications** dialog, provide an **Application Name** and select **Generic Application** type. Select the **Create incoming link** checkbox. All other fields are optional. Select **Continue**.
 
 ![Link Applications dialog](media/confluence-connector/confluence-onpremises-applications-link-1.png)
 
@@ -101,21 +101,21 @@ Field | Recommended Value
 **Consumer name** | `Microsoft Graph Connector App`
 **Public key** | Copy the public key from `confluence_publickey.pem` file generated from *Step 3.4.1* and paste it into this field (for example, `iuasge87awegrq3...`).
 
-5. Click **Continue**. After successful creation, the application link will be displayed like the following screen.
+5. Select **Continue**. After successful creation, the application link will be displayed like the following screen.
 
 ![Link Applications post creation](media/confluence-connector/confluence-onpremises-applications-link-2.png)
 
 #### Step 3.4.3 Enter consumer key and private key to sign in
 
-In the connection creation wizard in Microsoft 365 admin center, enter the **Consumer key** created during *Step 3.4.2* and **Private key** from `confluence_privatekey.pcks8` file in *Step 3.4.1*. Enable pop-up in the browser for Microsoft 365 admin center and click **Sign in**.
+In the connection creation configuration assistant in Microsoft 365 admin center, enter the **Consumer key** created during *Step 3.4.2* and **Private key** from `confluence_privatekey.pcks8` file in *Step 3.4.1*. Enable pop-up in the browser for Microsoft 365 admin center and select **Sign in**.
 
 #### Step 3.4.4 Enter verification code to Finish Sign in
 
-In the Confluence login screen, enter service account credentials. After successful login, you will get a verification code like the following screen.
+In the Confluence sign in screen, enter service account credentials. After successful sign-in, you'll get a verification code like the following screen.
 
 ![Verification code](media/confluence-connector/confluence-onpremises-applications-link-3.png)
 
-Enter the **Verification Code** in connection creation wizard and click **Finish Sign in**. After successful sign-in, click **Next**.
+Enter the **Verification Code** in connection creation configuration assistant and select **Finish Sign in**. After successful sign-in, select **Next**.
 
 ## Step 4: Select properties
 
@@ -176,10 +176,10 @@ The common errors that can be seen while configuring the connector and their pos
 | Connection settings | The request is malformed or incorrect. | Incorrect Confluence site URL |
 | Connection settings | Unable to reach the Confluence On-premises service for your Confluence site. | Incorrect Confluence site URL |
 | Connection settings | The client doesn't have permission to perform the action. | Invalid password provided for Basic auth |
-| Select properties | No preview results | Check your CQL query whether it is valid and matches the content to crawl |
+| Select properties | No preview results | Check your CQL query whether it's valid and matches the content to crawl |
 
 ## Limitations
 
 The confluence On-premises connector has the following known limitations in its latest release:
 
-* Confluence On-premises connector does not index blogs, attachment files and comments.
+* Confluence On-premises connector doesn't index blogs, attachment files and comments.

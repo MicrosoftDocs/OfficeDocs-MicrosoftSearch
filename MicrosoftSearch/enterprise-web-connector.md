@@ -83,16 +83,16 @@ For your on-premises websites, select **Agent** as the crawl mode and in the **O
 
 **OAuth 2.0** with [Azure AD](/azure/active-directory/) requires a resource ID, Client ID, and a client Secret. OAuth 2.0 only works with Cloud mode.
 
-The resource ID, client ID and client secret values will depend on how you did the setup for AAD based authentication for your website:
+The resource ID, client ID and client secret values will depend on how you did the setup for Azure Active Directory (Azure AD) based authentication for your website:
 
-1. If you are using an application both as an identity provider and the client app to access the website, the client ID and the resource ID will be the application ID of the app, and the client secret will be the secret that you generated in the app.
+1. If you're using an application both as an identity provider and the client app to access the website, the client ID and the resource ID will be the application ID of the app, and the client secret will be the secret that you generated in the app.
     
     > [!NOTE]
     > For detailed steps to configure a client application as an Identity provider, see [Quickstart: Register an application with the Microsoft identity platform and Configure your App Service or Azure Functions app to use Azure AD login](/azure/app-service/configure-authentication-provider-aad).
 
     After the client app is configured, make sure you create a new client secret by going to the **Certificates & Secrets** section of the app. Copy the client secret value shown in the page because it won't be displayed again.
 
-    In the following screenshots you can see the steps to obtain the client ID, client secret, and setup the app if you are creating the app on your own.
+    In the following screenshots you can see the steps to obtain the client ID, client secret, and set up the app if you're creating the app on your own.
     
     * View of the settings on the branding section:
     
@@ -117,12 +117,12 @@ The resource ID, client ID and client secret values will depend on how you did t
       > [!div class="mx-imgBorder"]
       > [ ![Image showing the client secret.](media/enterprise-web-connector/connectors-enterpriseweb-client-secret.png) ](media/enterprise-web-connector/connectors-enterpriseweb-client-secret.png#lightbox)
     
-2. If you are using an application as an identity provider for your website as the resource, and a different application to access the website, the client ID will be the application ID of your second app and the client secret will be the secret configured in the second app. However, the resource ID will be the ID of your first app.
+2. If you're using an application as an identity provider for your website as the resource, and a different application to access the website, the client ID will be the application ID of your second app and the client secret will be the secret configured in the second app. However, the resource ID will be the ID of your first app.
 
     > [!NOTE]
     > For steps to configure a client application as an identity provider see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) and [Configure your App Service or Azure Functions app to use Azure AD login](/azure/app-service/configure-authentication-provider-aad).
 
-    You don't need to configure a client secret in this application, but wou will need to add an app role in the **App roles** section of the app which will later be assigned to your client application. In the following screenshots you can see how to add an app role.
+    You don't need to configure a client secret in this application, but you'll need to add an app role in the **App roles** section of the app which will later be assigned to your client application. In the following screenshots you can see how to add an app role.
 
     * Creating a new app role:
     
@@ -156,7 +156,7 @@ The resource ID, client ID and client secret values will depend on how you did t
       > [!div class="mx-imgBorder"]
       > [ ![Image showing the selected permissions.](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions3.png) ](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions3.png#lightbox)
     
-    Once the permissions are assigned, you will need to create a new client secret for this application by going to the Certificates & secrets section.
+    Once the permissions are assigned, you'll need to create a new client secret for this application by going to the Certificates & secrets section.
     Copy the client secret value shown in the page as it won't be displayed again. Later use, the application ID from this app as the client ID, the secret from this app as the client secret and application ID of the first app as the resource ID in the admin center.
     
     **Windows authentication** is only available in agent mode. It requires username, domain and password. You need to provide the username and domain in the **Username** field, in any of the following formats: domain\username, or username@domain. A password must be entered in the **Password** field. For Windows authentication, the username provided must also be an administrator in the server where the agent is installed.
@@ -167,7 +167,7 @@ There are two ways to prevent pages from being crawled: disallow them in your ro
 
 ### Support for robots.txt
 
-The connector checks to see if there is a robots.txt file for your root site and, if one exists, it will follow and respect the directions found within that file. If you do not want the connector to crawl certain pages or directories on your site, you can call out those pages or directories in the "Disallow" declarations in your robots.txt file.
+The connector checks to see if there's a robots.txt file for your root site and, if one exists, it will follow and respect the directions found within that file. If you don't want the connector to crawl certain pages or directories on your site, you can call out those pages or directories in the "Disallow" declarations in your robots.txt file.
 
 ### Add URLs to exclude
 
@@ -200,15 +200,15 @@ When reading the website's content, the crawl may encounter some source errors, 
 
  Detailed Error code | Error message
  --- | ---
- 6001 | The site that is being tried to index is not reachable
+ 6001 | The site that is being tried to index isn't reachable
  6005 | The source page that is being tried to index has been blocked by as per robots.txt configuration.
  6008 | Unable to resolve the DNS
  6009 | For all client-side errors (Except HTTP 404, 408), refer to HTTP 4xx error codes for details.
- 6013 | The source page that is being tried to index could not be found. (HTTP 404 error)
- 6018 | The source page is not responding, and the request has timed out. (HTTP 408 error)
+ 6013 | The source page that is being tried to index couldn't be found. (HTTP 404 error)
+ 6018 | The source page isn't responding, and the request has timed out. (HTTP 408 error)
  6021 | The source page that is being tried to index has no textual content on the page.
  6023 | The source page that is being tried to index is unsupported (not an HTML page)
  6024 | The source page that is being tried to index has unsupported content.
 
-* Errors 6001-6013 occur when the data source is not reachable due to a network issue or when the data source itself is deleted, moved, or renamed. Check if the data source details provided are still valid.
-* Errors 6021-6024 occur when the data source contains non-textual content on the page or when the page is not an HTML. Check the data source and add this page in exclusion list or ignore the error.
+* Errors 6001-6013 occur when the data source isn't reachable due to a network issue or when the data source itself is deleted, moved, or renamed. Check if the data source details provided are still valid.
+* Errors 6021-6024 occur when the data source contains non-textual content on the page or when the page isn't an HTML. Check the data source and add this page in exclusion list or ignore the error.

@@ -56,7 +56,7 @@ On the **Connect to data source** page, select **File share** and provide the na
 
 ### Preserve last access time
 
-When the connector attempts to crawl a file, the "last access time" field in its metadata is updated. If you depend on that field for any archiving and backup solutions and doesn't want to update it when the connector accesses it, you can configure this option in the **Advanced settings** page.
+When the connector attempts to crawl a file, the "last access time" field in its metadata is updated. If you depend on that field for any archiving and backup solutions and you don't want to update it when the connector accesses it, you can configure this option in the **Advanced settings** page.
 
 ## Step 4: Limits for file indexing
 
@@ -64,13 +64,13 @@ While configuring a File Share connection, admin would have ability to limit fil
 
 #### Based on File Types
 
-Only the textual content of these formats is indexed: DOC, DOCM, DOCX, DOT, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS. For multimedia files and files that doesn't belong to this format, the only metadata is indexed.
+Only the textual content of these formats is indexed: DOC, DOCM, DOCX, DOT, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS. For multimedia files and files that don't belong to this format, the only metadata is indexed.
 
 #### Based on last modified date or number of days since last modification
 
-#### Full network path of file/folder or regular expression to limit indexing 
+#### Full network path of file/folder or regular expression to limit indexing
 
-In the network path use escape character (\\) before special characters like \\. Example: For the path \\\\CONTOSO\\FILE\\SHAREDFOLDER, correct way to input is  \\\\\\\\CONTOSO\\\\FILE\\\\SHAREDFOLDER
+In the network path, use an escape character (\\) before special characters like \\. Example: For the path \\\\CONTOSO\\FILE\\SHAREDFOLDER, correct way to input is  \\\\\\\\CONTOSO\\\\FILE\\\\SHAREDFOLDER
 
 Rules for writing regular expression can be found [here](/dotnet/standard/base-types/regular-expression-language-quick-reference)
 
@@ -80,9 +80,9 @@ Admin would also be having ability to give an exception to the limit rule. Prior
 
 ## Step 5: Manage search permissions
 
-You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists, by selecting the desired option in **Manage search permissions** page. The user accounts and groups provided in these Access Control Lists must be managed by Active Directory (AD). If you are using any other system for user accounts management, you can select 'everyone' option, which lets users search for all the files without any access restrictions. However, when users try to open the file, access controls set at the source apply.
+You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists, by selecting the desired option in **Manage search permissions** page. The user accounts and groups provided in these Access Control Lists must be managed by Active Directory (AD). If you're using any other system for user accounts management, you can select 'everyone' option, which lets users search for all the files without any access restrictions. However, when users try to open the file, access controls set at the source apply.
 
-Note that windows by default provides 'Read' permission to 'Everyone' in Share ACLs when a folder is shared on network. By extension, if you are choosing Share ACLs in **Manage search permissions**, users will be able to search for all the files. If you want to restrict access, remove 'Read' access for 'Everyone' in file shares and provide access only to the desired users and groups. The connector then reads these access restrictions and applies them to search.
+Windows by default provides 'Read' permission to 'Everyone' in Share ACLs when a folder is shared on network. By extension, if you're choosing Share ACLs in **Manage search permissions**, users will be able to search for all the files. If you want to restrict access, remove 'Read' access for 'Everyone' in file shares and provide access only to the desired users and groups. The connector then reads these access restrictions and applies them to search.
 
 You can choose Share ACLs only if the share path you provided follows UNC path format. You can create a path in UNC format by going to 'Advanced Sharing' under 'Sharing' option.
 
