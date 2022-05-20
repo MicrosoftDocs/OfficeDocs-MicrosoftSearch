@@ -20,7 +20,11 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gcadownload)
 
-### [Version 1.5.1.0](https://aka.ms/gcadownload) (*21 Mar 2022*)
+### Version 1.6.0.0 (*09 May 2022*)
+* Dashboard changes to enable monitoring of multiple instances of a connector
+* Bug fixes and reliability improvements
+
+### Version 1.5.1.0 (*21 Mar 2022*)
 * Bug fixes and reliability improvements
 * Change in default property labels assignment for 'Enterprise websites' connector
 
@@ -31,8 +35,8 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 * Fixed issues in parsing word files (.doc*) & last modified date for PowerPoint files (.ppt*) 
 
 ### Version 1.4.0.0 (*13 Jan 2022*)
-* Bug fixes
-* General reliability improvements
+* Support for multiple instances of a connector
+* Bug fixes and reliability improvements
 
 ### Version 1.3.1.0 (*28 Oct 2021*)
 * File-share connectors documents per second improvements
