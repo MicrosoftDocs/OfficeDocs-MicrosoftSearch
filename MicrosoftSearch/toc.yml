@@ -81,7 +81,7 @@ items:
           href: OracleSQL-connector.md
         - name: Salesforce
           href: salesforce-connector.md
-        - name: ServiceNow Catalog (preview)
+        - name: ServiceNow Catalog
           href: servicenow-catalog-connector.md
         - name: ServiceNow Knowledge
           href: servicenow-knowledge-connector.md
