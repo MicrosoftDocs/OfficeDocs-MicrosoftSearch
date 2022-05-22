@@ -2,6 +2,19 @@
 
 
 
+## Week of May 16, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/17/2022 | [Azure SQL and Microsoft SQL Server Microsoft Graph connector for Microsoft Search](/MicrosoftSearch/mssql-connector) | modified |
+| 5/17/2022 | [Azure Data Lake Microsoft Graph connector for Microsoft Search](/MicrosoftSearch/azure-data-lake-connector) | modified |
+| 5/17/2022 | [Azure DevOps Work Items Microsoft Graph connector for Microsoft Search](/MicrosoftSearch/azure-devops-connector) | modified |
+| 5/17/2022 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
+| 5/19/2022 | [File share Graph connector for Microsoft Search](/MicrosoftSearch/fileshare-connector) | modified |
+| 5/20/2022 | [Release history for Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent-releases) | modified |
+
+
 ## Week of May 09, 2022
 
 
