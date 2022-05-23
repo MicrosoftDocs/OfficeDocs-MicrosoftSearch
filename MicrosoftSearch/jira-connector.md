@@ -59,7 +59,7 @@ Register an app in Atlassian Jira so that the Microsoft Search app can access th
 The following steps provide guidance on how to register the app:
 
 1. Sign in to [Atlassian Developer console](https://developer.atlassian.com/console/myapps/) with your Atlassian Jira admin account.
-2. Select on `Create` and select `OAuth 2.0 integration`
+2. Select on `Create` and select `OAuth 2.0 integration`.
 3. Provide an appropriate name for the application and create the new app.
 4. Navigate to `Permissions` from the navigation pane on left. Under the 'Granular Permissions' header, select `Add` for `Jira API`. Once added, select on `Configure` and add the following scopes listed below.
 

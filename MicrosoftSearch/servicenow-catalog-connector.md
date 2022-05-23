@@ -204,7 +204,7 @@ To identify which option is suitable for your organization:
 >[!NOTE]
 >
 > - If you choose Azure AD as the type of identity source, the connector maps the Email IDs of users obtained from ServiceNow directly to UPN property from Azure AD.
-> - If you chose "Non-Azure AD" for the identity type see [Map your non-Azure AD Identities](map-non-Azure AD.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
+> - If you chose "Non-Azure AD" for the identity type see [Map your non-Azure AD Identities](./map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
 
 ## Step 6: Assign property labels
 
@@ -242,7 +242,7 @@ You can find troubleshooting steps for commonly seen issues below.
 
 ### 1. Unable to sign in due to Single Sign-on enabled ServiceNow instance
 
-If your organization has enabled Single Sign-on (SSO) to ServiceNow, you may have trouble logging in with the service account. You can bring up username and password based sign-in by adding <em> `login.do`</em> to the ServiceNow instance URL. Example. `https://<your-organization-domain>.service-now.com./login.do`
+If your organization has enabled Single Sign-on (SSO) to ServiceNow, you may have trouble logging in with the service account. You can bring up username and password based sign-in by adding <em> `login.do`</em> to the ServiceNow instance URL. Example: `https://<your-organization-domain>.service-now.com./login.do`.
 
 ### 2. Unauthorized or forbidden response to API request
 

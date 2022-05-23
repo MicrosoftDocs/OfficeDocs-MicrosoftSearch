@@ -47,7 +47,7 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ### Step 3.1: Select deployment type
 
-Select *Server or Data center* option to index Confluence On-premises content and select next
+Select *Server or Data center* option to index Confluence On-premises content and select next.
 
 ### Step 3.2: Enter Confluence instance URL
 
@@ -87,7 +87,7 @@ Extract the public key from the certificate to the `confluence_publickey.pem` fi
 
 1. In Confluence, navigate to **Administration** (cog icon) > **General configuration** > **Application Links** in the side pane.
 
-2. In the **Enter URL of the application you want to link** text box, enter any URL. For example, <https://example.com> and then select **Create new link**. Ignore *No response was received from the URL you entered* warning and select **Continue**.
+2. In the **Enter URL of the application you want to link** text box, enter any URL. For example, `https://example.com` and then select **Create new link**. Ignore *No response was received from the URL you entered* warning and select **Continue**.
 
 3. On the first screen of **Link applications** dialog, provide an **Application Name** and select **Generic Application** type. Select the **Create incoming link** checkbox. All other fields are optional. Select **Continue**.
 
