@@ -45,6 +45,9 @@ Follow the general [setup instructions](./configure-connector.md).
 
 To connect to your data source, fill in the root URL of the website, select a crawl source, and the type of authentication you'd like to use: None, Basic Authentication, or OAuth 2.0 with [Azure Active Directory (Azure AD)](/azure/active-directory/). After you complete this information, select Test Connection to verify your settings.
 
+> [!NOTE]
+> You can index up to 20 different site URLs in a single connection. In the URLs field, enter the site URLs separated by commas (,). For example, `https://www.contoso.com,https://www.contosoelectronics.com`.
+
 ### URL
 
 Use the URL field to specify the root of the website that you'd like to crawl. The enterprise websites connector will use this URL as the starting point and follow all the links from this URL for its crawl.
@@ -161,7 +164,15 @@ The resource ID, client ID and client secret values will depend on how you did t
     
     **Windows authentication** is only available in agent mode. It requires username, domain and password. You need to provide the username and domain in the **Username** field, in any of the following formats: domain\username, or username@domain. A password must be entered in the **Password** field. For Windows authentication, the username provided must also be an administrator in the server where the agent is installed.
 
-## Step 3a: Add URLs to exclude (Optional crawl restrictions)
+## Step 3a: Meta tag settings
+
+The connector fetches any meta tags your root URLs may have and shows them. You can select which tags to include for crawling. 
+
+:::image type="content" source="media/enterprise-web-connector/connectors-enterpriseweb-meta-tags-settings.png" alt-text="Meta tag settings with author, locale, and other tags selected.":::
+
+Selected meta tags will also show up on the Schema page, where you can manage them further (Queryable, Searchable, Retrievable, Refinable).
+
+## Step 3b: Add URLs to exclude (Optional crawl restrictions)
 
 There are two ways to prevent pages from being crawled: disallow them in your robots.txt file or add them to the Exclusion list.
 
