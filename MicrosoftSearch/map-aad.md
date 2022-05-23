@@ -1,5 +1,5 @@
 ---
-title: "Mapping AAD identities" 
+title: "Map your Azure AD Identities" 
 ms.author: monaray 
 author: monaray97 
 manager: jameslau 
