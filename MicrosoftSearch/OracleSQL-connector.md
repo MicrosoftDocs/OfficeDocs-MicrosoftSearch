@@ -1,5 +1,5 @@
 ---
-title: "Oracle SQL Graph connector for Microsoft Search"
+title: "Oracle SQL Microsoft Graph connector"
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,26 +13,26 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: "Set up the Oracle SQL Graph connector for Microsoft Search."
+description: "Set up the Oracle SQL Microsoft Graph connector for Microsoft Search."
 ---
 <!---Previous ms.author:vivg --->
 
-# Oracle SQL Graph connector
+# Oracle SQL Microsoft Graph connector
 
 The Oracle SQL Graph connector allows your organization to discover and index data from an on-premises Oracle database. The connector indexes specified content into Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With the Oracle SQL connector, you can also restrict access to search results for certain users.
 
 > [!NOTE]
-> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
+> Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general Microsoft Graph connectors setup instructions.
 
 This article is for anyone who configures, runs, and monitors an Oracle SQL Graph connector. It supplements the general setup process, and shows instructions that apply only for the Oracle SQL Graph connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
 ## Before you get started
 
-### Install the Graph connector agent
+### Install the connector agent
 
 In order to access your on-premises third-party data, you must install and configure the Graph connector agent. See [Install the Graph connector agent](graph-connector-agent.md) to learn more.  
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center
+## Step 1: Add a connector in the Microsoft 365 admin center
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
