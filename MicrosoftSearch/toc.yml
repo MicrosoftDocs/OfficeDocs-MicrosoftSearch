@@ -69,6 +69,8 @@ items:
           href: confluence-cloud-connector.md
         - name: Confluence On-premises (preview)
           href: confluence-onpremises-connector.md
+        - name: CSV (preview)
+          href: csv-connector.md          
         - name: Jira Cloud
           href: jira-connector.md
         - name: Enterprise websites
