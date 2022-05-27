@@ -190,6 +190,11 @@ Incremental refreshes are much faster than full refreshes because unchanged item
 
 You can review your entire configuration and edit settings as needed before completing the connection. *Be sure to read the connector-specific information for your data source if you haven't already done so.* When you're ready to complete the connection, select **Finish updating**.
 
+
+## Step 10: Set up search result page
+
+After publishing the connection, you need to customize the search results page with verticals and result types. To learn about customizing search results, review how to [manage verticals](manage-verticals.md) and [result types](manage-result-types.md).
+
 ### Confirm if the connection setup worked
 
 Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Monitor your connections](manage-connector.md).
@@ -206,7 +211,3 @@ Read the connector-specific information for your data source.
 To learn about limitations that apply to all data sources, see the [Overview of Microsoft Graph connectors](connectors-overview.md) article.
 
 See the connector-specific information for your data source to find out if other limitations apply to that particular Microsoft Graph connector.
-
-## Next steps
-
-After publishing the connection, you need to customize the search results page with verticals and result types. To learn about customizing search results, review how to [manage verticals](manage-verticals.md) and [result types](manage-result-types.md).
