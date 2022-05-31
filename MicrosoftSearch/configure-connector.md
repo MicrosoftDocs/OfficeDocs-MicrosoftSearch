@@ -31,7 +31,7 @@ This article shows the basic process required to set up Microsoft Graph connecto
 7. [Manage schema](#step-7-manage-schema)
 8. [Refresh settings](#step-8-refresh-settings)
 9. [Review connection](#step-9-review-connection)
-10. [Set up search result page](#step-10-set-up-search-result-page)
+10. [Customize the search results page](#step-10-customize-the-search-results-page)
 
 This article also includes the following information:
 
@@ -190,11 +190,11 @@ Incremental refreshes are much faster than full refreshes because unchanged item
 
 You can review your entire configuration and edit settings as needed before completing the connection. *Be sure to read the connector-specific information for your data source if you haven't already done so.* When you're ready to complete the connection, select **Finish updating**.
 
-## Step 10: Set up search result page
+## Step 10: Customize the search results page
 
 After publishing the connection, you need to customize the search results page with verticals and result types. To learn about customizing search results, review how to [manage verticals](manage-verticals.md) and [result types](manage-result-types.md).
 
-### Confirm if the connection setup worked
+## Step 11: Confirm if the connection setup worked
 
 Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Monitor your connections](manage-connector.md).
 
