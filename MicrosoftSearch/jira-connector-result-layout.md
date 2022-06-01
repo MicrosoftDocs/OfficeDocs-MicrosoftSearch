@@ -28,7 +28,7 @@ In this document, we have provided a sample result layout JSON required for sett
 
 ## Before you get started
 
-You must have configured the Jira graph connector. To consume the sample result layout JSON as is, you must select the below properties for indexing with mentioned [search schema](configure-connector#search-schema-attributes.md).
+You must have configured the Jira graph connector. To consume the sample result layout JSON as is, you must select the below properties for indexing with mentioned [search schema](configure-connector.md).
 
 > [!NOTE]
 > * Some of the below listed properties will be selected by default
