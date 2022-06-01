@@ -52,7 +52,7 @@ You must have configured the Jira graph connector. To consume the sample result 
 
 With this sample, your search results will look like as follows.
 
-![Example of a layout for Jira connector.](media/jira-connector-ExampleLayout.png)
+![Example of a layout for Jira connector.](media/jira-connector-example-layout.png)
 
 And here's the layout's associated JSON file:
 
