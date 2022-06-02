@@ -20,9 +20,9 @@ description: "Result layout JSON for Jira connector for Microsoft Search"
 
 The [Atlassian Jira Graph connector](jira-connector.md) allows your organization to index Jira issues. After you configure the connector and index content from the Jira site, you need to set up a search result page.
 
-To set up the search result page, you need to -
-1. Set up [search vertical](manage-verticals.md)
-2. Set up [search result type](manage-result-types.md)
+To set up the search result page, you need to:
+1. Set up [search vertical](manage-verticals.md).
+2. Set up [search result type](manage-result-types.md).
 
 In this document, we have provided a sample result layout JSON required for setting up your result layout for Jira connector.
 
@@ -50,7 +50,7 @@ You must have configured the Jira graph connector. To consume the sample result 
 
 ## Result layout
 
-With this sample, your search results will look like as follows.
+With this sample, your search results will look like:
 
 ![Example of a layout for Jira connector.](media/jira-connector-example-layout.png)
 
