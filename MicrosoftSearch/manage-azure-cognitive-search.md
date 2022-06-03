@@ -34,7 +34,7 @@ ACS results will appear in a dedicated vertical, or tab, in the search experienc
 
 Check out our Microsoft Build 2022 video for a demonstration.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4P83t]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Ybrw]
 
 ## Setup
 
@@ -48,14 +48,14 @@ Check out our Microsoft Build 2022 video for a demonstration.
     - Add your Admin and Query API keys. For information about finding or creating API keys, see [Find existing keys](/azure/search/search-security-api-keys#find-existing-keys).
     - Select the authorization check box, then **Next**.
 
-5. On the Search permissions page, choose to enable the connection for everyone in your organization or restrict the results to certain Access Control Lists.
-6. In the Add semantic property labels pane:
+5. On the **Search permissions** page, choose to enable the connection for everyone in your organization or restrict the results to certain Access Control Lists.
+6. In the **Add semantic property labels** pane:
 
     - If these labels are sufficient to display the results, select the source properties you’d like to display for each of the listed labels. The selected properties will be used to create a default Modern Result Type (MRT) for the results. You must select a property for the Title. The others are optional but recommended, since they make the results more informative.
     - If these labels aren't adequate to display your results, you can leave them blank and create a custom MRT later. For information about creating a custom MRT, see [Manage result types](/microsoftsearch/manage-result-types).
 
 7. Verify the information entered is correct and select **Finish**.
-1. When the connection has been created, you'll be redirected to the Data Sources tab again. If you want to change the display name that appears on the ACS vertical, select **Edit vertical** below the newly created ACS connection. :::image type="content" alt-text="Azure Cognitive Search connection with link to Edit vertical name." source="media/azure-cognitive-search/acs-custom-vertical.png" lightbox="media/azure-cognitive-search/acs-custom-vertical.png":::
+1. When the connection has been created, you'll be redirected to the Data Sources page again. If you want to change the display name that appears on the ACS vertical, select **Edit vertical** below the newly created ACS connection. :::image type="content" alt-text="Azure Cognitive Search connection with link to Edit vertical name." source="media/azure-cognitive-search/acs-custom-vertical.png" lightbox="media/azure-cognitive-search/acs-custom-vertical.png":::
 
 For more information about verticals, see [Manage search verticals](/microsoftsearch/manage-verticals). After successfully configuring an ACS connection, you should see the connection state Ready.
 
