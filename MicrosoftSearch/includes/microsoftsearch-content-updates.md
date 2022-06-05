@@ -2,6 +2,19 @@
 
 
 
+## Week of May 30, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/31/2022 | [Set up Microsoft Graph connectors in the Microsoft 365 admin center](/MicrosoftSearch/configure-connector) | modified |
+| 6/2/2022 | [Result Layout for Jira Graph connector](/MicrosoftSearch/jira-connector-result-layout) | added |
+| 6/2/2022 | [Atlassian Jira Cloud Microsoft Graph connector](/MicrosoftSearch/jira-connector) | modified |
+| 6/3/2022 | [Result Layout for Azure DevOps Wiki Graph connector](/MicrosoftSearch/azure-devops-wiki-connector-result-layout) | added |
+| 6/3/2022 | [Azure DevOps Wiki Graph connector for Microsoft Search](/MicrosoftSearch/azure-devops-wiki-connector) | added |
+| 6/3/2022 | [Azure Cognitive Search results in Microsoft Search (Preview)](/MicrosoftSearch/manage-azure-cognitive-search) | added |
+
+
 ## Week of May 23, 2022
 
 
