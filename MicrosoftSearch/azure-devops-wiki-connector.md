@@ -37,11 +37,17 @@ To allow the connector to connect to your Azure DevOps Organization, you must en
 
 ![Third-party application access via OAuth](media/ado-workitems-connector-security-policies.png)
 
-You will need the following permissions granted to the user account whose credentials are used during the connector configuration:
+The Azure DevOps Wiki Connector crawls documents using an [OAuth Client App](/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops) with the [on-behalf-of OAuth flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow). You will need the following permissions granted to the user account whose credentials are used during the connector configuration for each Azure DevOps organization to be crawled:
 
-| Permission name | Permission type | Required for |
-| ------------ | ------------ | ------------ |
-| View project-level information | [Project permission](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | Crawling Azure DevOps Work Items. This permission is **mandatory** for the projects that need to be indexed. |
+| Permission name | OAuth Scope | Description | Required for |
+| ------------ | ------------ | ------------ | ------------ |
+| Project and team (read) | vso.project | Grants the ability to read projects and teams. | Enumerating the list of projects to be crawled. |
+| Wiki (read) | vso.wiki | Grants the ability to read wikis, wiki pages and wiki attachments. Also grants the ability to search wiki pages. | Enumerating the list of wikis and wiki pages to be crawled. | 
+| Code (read) | vso.code | Grants the ability to read source code and metadata about commits, changesets, branches, and other version control artifacts. Also grants the ability to search code and get notified about version control events via service hooks. | Reading a list of changes to wiki pages, which are stored in git repositories, for incremental crawls. |
+| Entitlements (read) | vso.entitlements | Provides read only access to licensing entitlements endpoint to get account entitlements. | Enumerating user licenses for creating access control lists |
+| Member Entitlement Management (read) | vso.memberentitlementmanagement | Grants the ability to read users, their licenses as well as projects and extensions they can access. | Enumerating user licenses for creating access control lists |
+| Graph (read) | vso.graph | Grants the ability to read user, group, scope, and group membership information. | Enumerating user group memeberships for creating access control lists. |
+| Identity (read) | vso.identity | Grants the ability to read identities and groups. | Enumerating a list of users and groups for creating access control lists |
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
@@ -71,7 +77,7 @@ Mandatory Fields | Description | Recommended Value
 | Application name     | A unique value that identifies the application that you're authorizing.    | Microsoft Search     |
 | Application website  | The URL of the application that will request access to your Azure DevOps instance during connector setup. (Required).  | https://<span>gcs.office.</span>com/
 | Authorization callback URL        | A required callback URL that the authorization server redirects to. | https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback|
-| Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), Code (read), Entitlements (Read), Project and team (read), Graph (read), MemberEntitlement Management (read), Wiki (read) |
+| Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), Code (read), Entitlements (read), Project and team (read), Graph (read), MemberEntitlement Management (read), Wiki (read) |
 
 >[!IMPORTANT]
 >The authorized scopes selected for the app should exactly match the scopes listed above. If either more or less scopes are selected, authorization will fail.
