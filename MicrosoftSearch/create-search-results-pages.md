@@ -25,7 +25,7 @@ To configure a custom results page in SharePoint Online follow the steps below:
 
 1. Browse to the site where you would like to configure a custom results page and go to **Site Settings > Site Collection Settings > Search Settings**.
 
-2. In Search Settings, clear selection from **Use the same results page settings as my parent**, choose **Send queries to a custom results page**, and provide a value for **Results page URL:**. Then, save your changes. The URL you use here should be for the page that you created to use as your custom results page.
+2. In Search Settings, clear selection from **Use the same results page settings as my parent**, choose **Send queries to a custom results page**, and provide a value for **Results page URL:**. Then, save your changes. The URL you use here should be for the page that you created to use as your custom results page (e.g. https://contoso.sharepoint.com/sites/search/SitePages/results.aspx). See [this Microsoft Ignite session](https://youtu.be/jKpIDBalLW0?t=1508) for a demo of this feature.
 
 >[!NOTE]
 > The custom results page needs to be on the same domain as your site, but it does not have to be in the same site collection.  
