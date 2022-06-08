@@ -16,7 +16,7 @@ search.appverid:
 description: "Set up the Microsoft Search CSV connector for SharePoint or Azure Data Lake Storage sources." 
 ---
 
-# CSV connector (preview)
+# CSV connector
 
 The CSV Graph connector allows your organization to ingest content from CSV files stored in SharePoint libraries and Azure Data Lake Storage (ADLS). After you configure the connector and index content from these sources, end users can find CSV files in Microsoft Search.
 
