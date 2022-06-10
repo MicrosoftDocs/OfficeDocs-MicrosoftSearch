@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 results in Microsoft Search (Preview)"
+title: "Dynamics 365 results in Microsoft Search"
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -11,7 +11,7 @@ ms.date: 05/03/2022
 
 description: "Manage how Dynamics 365 content appears in search results"
 ---
-# Dynamics 365 results in Microsoft Search (Preview)
+# Dynamics 365 results in Microsoft Search
 
 Microsoft Dynamics 365 is a line of intelligent business applications designed for enterprise resource planning and customer relationship management. With Dynamics 365 results in Microsoft Search, users are able to easily find the most relevant customer and business data stored in Dynamics 365. The Dynamics 365 connector provides some key benefits:
 
@@ -20,8 +20,6 @@ Microsoft Dynamics 365 is a line of intelligent business applications designed f
 * **Built-in data protection:** Dynamics 365 results will only appear for users that have access to the connected instance. 
 * **Quick setup:** Easy to configure and maintain the search connection to a Dynamics 365 instance.
 * **Unified search experience:** To maintain a cohesive experience, Dynamics 365 results are consistent across all search entry points. Wherever you search, you'll get the same results with the same look and feel.
-
-Our Dynamics 365 connector is currently in preview. If you're interested in joining the preview, let us know at [aka.ms/D365-ACS-Preview-MicrosoftSearch](https://aka.ms/D365-ACS-Preview-MicrosoftSearch).
 
 ## User experience
 
@@ -58,7 +56,7 @@ On the All vertical, when there's a high confidence the user is searching for Dy
 
 ## Admin experience
 
-In the Dynamics 365 connector is easy to configure, customize, and edit. If you have feedback or questions when using the preview connector [contact us](https://aka.ms/Dynamics365ConnectorFeedback).
+In the Dynamics 365 connector is easy to configure, customize, and edit. If you have feedback or questions when using the connector [contact us](https://aka.ms/Dynamics365ConnectorFeedback).
 
 ### Configure
 
@@ -72,19 +70,17 @@ After verifying these settings, follow these steps to set up the connector:
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [Data sources](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors).
 
-2. In the Microsoft apps and services section, under Microsoft Dynamics 365, select **Manage** to open the Microsoft Dynamics 365 panel.
+2. In the Microsoft apps and services section, select **Add a new app or service**, then **Connect to Dynamics 365**. Select **Next** to open the connection details pane.
 
-3. Activate the connector for your organization.
+3. Enter a connection name and description. In the **Dynamics 365 environment** dropdown list, select the environment you want to connect to.
 
-4. In the **Endpoints** list, select your Dynamics 365 environment.
+4. Review and select the consent check box. Select **Next** and review the connection details.
 
-5. In **Connection Name**, enter a descriptive name for this connection.
+5. Select **Finish**, then **Done** to complete the connection setup.
 
-6. Review and select the consent check box.
+6. After a successful setup, your Dynamics 365 connection should show a Connection state of Ready.
 
-7. Select **Save** to finish the connection setup.
-
-:::image type="content" alt-text="Screenshot of Dynamics 365 setup panel in the Microsoft 365 admin center." source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
+:::image type="content" alt-text="Screenshot of a Dynamics 365 connection successfully set up and showing a Ready connection state in the Microsoft 365 admin center." source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
 
 > [!TIP]
 > To clarify the type of content users can find in the search vertical, we recommend updating the vertical name. To customize the name of your Dynamics 365 vertical, click **Edit vertical**. For more information, see [Manage search verticals](/microsoftsearch/manage-verticals).
@@ -97,7 +93,7 @@ Through Dataverse Search Quick Find Views, you can modify which entities and fie
 
 ### Edit
 
-After enabling the connection, you can modify the endpoint and connection name. In [Data sources](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors), below the configured connection, select **Edit** to make changes.
+After enabling the connection, you can modify the connection details, including the name, description, and environment. In [Data sources](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors), below the configured connection, select **Edit** to make changes.
 :::image type="content" alt-text="Screenshot of Dynamics 365 connector Edit button and panel in the Microsoft 365 admin center." source="media/dynamics365/dynamics365-edit-connector.png" lightbox="media/dynamics365/dynamics365-edit-connector.png":::
 
 To deactivate the connection, clear the **Activate this connection for your organization** check box and **Save**.
