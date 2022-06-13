@@ -170,13 +170,20 @@ Schema has certain restrictions as listed below:
 
 **Property name**: The name of the property can have a maximum of 32 characters. Only alphanumeric characters are allowed. For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, \, ~, ', ", <, >, `, ^.
 
-**Search annotations**
+**Search annotations**: Following are the set of rules to follow for search annotations:
+
 • Only properties of type String or StringCollection can be searchable.
+
 • Only properties of type String can be a content property.
+
 • Content properties must be searchable.
+
 • Content properties cannot be queryable or retrievable.
+
 • Refinable property should not be searchable.
+
 • Refinable property should be queryable and retrievable.
+
 • Boolean properties cannot be refinable.
 
 **Aliases**: A set of aliases or a friendly name for the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, \, ~, ', ", <, >, `, ^.
