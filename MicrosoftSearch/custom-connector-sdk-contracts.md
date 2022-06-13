@@ -379,10 +379,6 @@ SourcePropertyType enum members:
 |Int64Collection |6 |Property of type of array or collection of long type |
 |DoubleCollection |7 |Property of type of array or collection of double type |
 |DateTimeCollection |8 |Property of type of array or collection of DateTime type |
-|CollectionOfString |9 |Property of type of array or collection of string type |
-|CollectionOfInt64 |10 |Property of type of array or collection of long type |
-|CollectionOfDouble |11 |Property of type of array or collection of double type |
-|CollectionOfDateTime |12 |Property of type of array or collection of DateTime type |
 
 SearchAnnotations enum members:
 
