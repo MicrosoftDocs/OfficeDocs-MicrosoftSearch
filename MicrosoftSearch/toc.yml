@@ -89,8 +89,6 @@ items:
         href: custom-connector-sdk-testapp.md
       - name: Best practices
         href: custom-connector-sdk-best-practices.md
-      - name: Limitations
-        href: custom-connector-sdk-limitations.md
       - name: Troubleshooting
         href: custom-connector-sdk-troubleshooting.md
     - name: Manage connections

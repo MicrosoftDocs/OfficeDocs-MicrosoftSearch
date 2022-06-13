@@ -9,12 +9,32 @@ ms.service: mssearch
 description: "Graph connectors SDK Test Application"
 ---
 
-# Test Application
+# About GraphConnectorAgentTest executable
 
-You can use the test application that comes with your Graph Connector Agent to test the following use cases:
+The GraphConnectorAgentTest executable is a test utility to test the functionalities of the custom connector.
+It does not create any connection or index any data into Microsoft’s index. This test utility runs only on the machine on which the agent is installed and does not make any connections to any external resource except the datasource being tested.
+You can find the test application inside the "TestApp" folder present in your Graph connector agent installation folder.
 
-## Test case 1
+You need to update the following config files to use this test utility:
 
-## Test case 2
+**ConnectionInfo.json**: This file holds all information pertaining to the connection – the connector id identifying the custom connector for which this connection is being created, the datasource URL, credentials to access the datasource, the schema associated with the connection, additional parameters for the connection.
+You can find this config file inside the "Config" folder of the test application.
 
-## Test case 3
+**CustomConnectorPortMap.json**: After creating the custom connector, add the mapping of the connector id and the port on which it is running in this file.
+You can find this file in your Graph connector agent installation folder.
+
+## Test scenarios
+
+This test utility has 3 options:
+
+**1. Testing the connectivity to the connector service**: This option is to verify that the connector specified in ConnectionInfo.json can be connected to, over the port specified for that connector id in CustomConnectorPortMap.json.
+
+**2. Test connection creation flow** (ValidateAuthentication, ValidateCustomConfiguration, GetDataSourceSchema APIs): This option is to validate the methods specified in ConnectionManagementService. Each of the mentioned methods are invoked and their results are displayed on the console.
+
+**3. Test full crawl with mocked connection**: This option is to test the methods in ConnectorCrawlerService. The crawl is invoked with the schedule specified in ConnectionInfo.json and the status of the ongoing or last completed crawl gets printed every minute. Once the first crawl finishes successfully, the message that crawl has completed will get displayed, and the platform keeps running to trigger further crawls specified at the interval in ConnectionInfo.json. To stop the platform from crawling, the GraphConnectorAgentTest executable should be closed and restarted to enable testing of other options or retesting this option after making any changes to the connector code or to the config files after selecting this option.  
+
+## Working of the GraphConnectorAgentTest executable
+
+The ConnectionInfo file is read when the executable is opened. After selecting any of the test options, the platform tries to connect to the connector specified in the ConnectionInfo config file over the port specified for that connector in the CustomConnectorPortMap config file and then call the respective methods pertaining to the test option.
+
+To use test option 2 or 3, the credentials to access the data source has to be specified in the ConnectionInfo.json config. These credentials are read by the platform and passed down to the connector which uses the credentials to access the data source. As long as no external person gets access to the ConnectionInfo.json config file itself, these credentials are secure.

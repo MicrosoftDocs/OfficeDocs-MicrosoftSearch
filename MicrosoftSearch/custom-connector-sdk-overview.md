@@ -39,11 +39,12 @@ The Graph connector agent comes with the following capabilities:
 2. **M365 Admin Center integration**: The agent brings the capability of managing, monitoring errors & statistics, and configuring your custom connectors through the M365 Admin Center.
 
 3. **Crawl Scheduling & Management**: The agent brings the capability of crawling the data source through full crawls and incremental crawls. Full crawls traverse (list based or graph based) through your entire data periodically at an interval defined by you. Incremental crawls are more frequent and crawls the data source from the previous timestamp/checkpoint at an interval defined by you.
-Note: Incremental crawls and graph-based data source traversal (eg: traversing through folder structures) capabilities are not available in beta stage.
 
 4. **Delete, difference and cycle detection**: The agent is capable of detecting items deleted from your data source based on the items sent by the custom connector during periodic full crawl and the agent takes care of deleting the item from the Microsoft index as well. The agent has the functionality to detect only items that have changed since the last crawl by computing a hash of the item and comparing with the hash of the item seen previously. To make crawls faster, the agent sends the data to be indexed only when the item has changed. The agent also detects duplicate items that arise from data sources that have items linked by graph structure (like websites) and skips crawling these items.
 
 5. **Identity mapping**: The agent brings the capability of stamping the Access Control Lists (ACLs) on your data for enabling security trimming. You can enable security trimming based on AAD or ACLs from your data source.
-Note: Search permissions based on access control from your data source is not available in beta stage.
 
 6. **Graph ingestion**: The agent takes care of ingesting the data into graph after receiving it from your custom connector.
+
+>[!Note]
+>Graph-based data source traversal (eg: traversing through folder structures) capabilities and managing search permissions based on access control from your data source is not available in beta stage.
