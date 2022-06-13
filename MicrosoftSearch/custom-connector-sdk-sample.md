@@ -44,7 +44,7 @@ Before beginning to build the connector follow the steps given below to install 
 
 #### Download the datasource files
 
-1. Download the ApplianceParts.csv file from <TBD>
+1. Download the ApplianceParts.csv file from \<TBD>
 
 #### Install nuget packages
 
