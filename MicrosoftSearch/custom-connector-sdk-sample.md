@@ -92,8 +92,7 @@ namespace CustomConnector.Models
 
 ConnectionManagementServiceImpl.cs has 3 methods to be implemented:
 
-**ValidateAuthentication**
-This method is used to validate the credentials and the datasource URL provided. We need to connect to the datasource URL using the credentials provided and return success if the connection succeeds or auth failure status if the connection fails.
+**ValidateAuthentication**: This method is used to validate the credentials and the datasource URL provided. We need to connect to the datasource URL using the credentials provided and return success if the connection succeeds or auth failure status if the connection fails.
 
 1. Create a folder called "**Data**" under “CustomConnector” and create a file CsvDataLoader.cs in the folder.
 
@@ -178,8 +177,7 @@ This method is used to validate the credentials and the datasource URL provided.
     
     ```
 
-**ValidateCustomConfiguration**
-This method is used to validate any additional parameters required for the connection. This connector we are writing does not require any additional parameters, hence the validation is that the additional parameters should be empty.
+**ValidateCustomConfiguration**: This method is used to validate any additional parameters required for the connection. This connector we are writing does not require any additional parameters, hence the validation is that the additional parameters should be empty.
 
 1. Update ValidateCustomConfiguration method in ConnectionManagementServiceImpl.cs with the following code
 
@@ -216,8 +214,7 @@ This method is used to validate any additional parameters required for the conne
 
     ```
 
-**GetDataSourceSchema**
-This method is used to fetch the schema for the connector:
+**GetDataSourceSchema**: This method is used to fetch the schema for the connector:
 
 1. Add the following using directives in AppliancePart.cs
 
