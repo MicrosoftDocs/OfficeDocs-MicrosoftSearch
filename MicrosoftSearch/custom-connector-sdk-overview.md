@@ -47,4 +47,4 @@ The Graph connector agent comes with the following capabilities:
 6. **Graph ingestion**: The agent takes care of ingesting the data into graph after receiving it from your custom connector.
 
 >[!Note]
->Graph-based data source traversal (eg: traversing through folder structures) capabilities and managing search permissions based on access control from your data source is not available in beta stage.
+>Graph-based data source traversal (eg: traversing through folder structures) capability and ability to manage search permissions based on access control from your data source is not available in beta stage.
