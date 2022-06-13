@@ -87,6 +87,8 @@ items:
         href: custom-connector-sdk-contracts.md
       - name: Test Application
         href: custom-connector-sdk-testapp.md
+      - name: Build your first custom connector
+        href: custom-connector-sdk-sample.md
       - name: Best practices
         href: custom-connector-sdk-best-practices.md
       - name: Troubleshooting
