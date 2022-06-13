@@ -146,7 +146,7 @@ ItemType enum members:
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|metadata |map<\string, GenericType> |This is a dictionary containing the additional metadata needed by the connector to recrawl the item. |
+|metadata |map< string, GenericType> |This is a dictionary containing the additional metadata needed by the connector to recrawl the item. |
 
 **AccessControlList**: Holds the access control list which restricts the users to whom the search results are visible.
 
@@ -204,14 +204,13 @@ IdentityType enum members:
 |value |string |Principal value – the value of the SID or UPN or AAD id etc |
 |identitySource |IdentitySource |Source of identity |
 |identityType |IdentityType |Identity representation type |
-|identitySourceProperties |map<\string, string> |Any additional metadata about the Identity source |
+|identitySourceProperties |map< string, string> |Any additional metadata about the Identity source |
 
 **SourcePropertyValueMap**: Map of source property key and its value as present in the data source. Stores the property values of each item.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|values |map<\string, GenericType> |Add key and values of the properties of the item. Key will be property name and value will be property value.
-Example: For a file content – title, modifiedDate etc can be property keys and their values will be the title of the file and file modified date respectively. |
+|values |map< string, GenericType> |Add key and values of the properties of the item. Key will be property name and value will be property value. Example: For a file content – title, modifiedDate etc can be property keys and their values will be the title of the file and file modified date respectively. |
 
 ContentType enum members:
 
@@ -226,8 +225,7 @@ ContentType enum members:
 |Pdf |6 |Pdf content type |
 |Png |7 |Png content type |
 |Tif |8 |Tif content type |
-|UnknownFutureValue |9 |For future-proofing, following MSGraph evolvable enums.
-All new enums will be added below this one until major API version change. |
+|UnknownFutureValue |9 |For future-proofing, following MSGraph evolvable enums. All new enums will be added below this one until major API version change. |
 
 **Content**: Value of the content property of the item. This will be used to render search results.
 
