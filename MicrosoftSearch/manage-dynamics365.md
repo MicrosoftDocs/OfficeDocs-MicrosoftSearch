@@ -35,9 +35,9 @@ Clicking or tapping any result opens Dynamics 365 and shows the detailed informa
 
 :::image type="content" alt-text="Screenshot of detail page in Dynamics 365." source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
 
-No matter where your users start their search their experience will be consistent and enable them to quickly find the most relevant Dynamics 365 results. Check out our Microsoft Build 2021 video for a demonstration.
+No matter where your users start their search their experience will be consistent and enable them to quickly find the most relevant Dynamics 365 results. Check out our Microsoft Build 2022 video for a demonstration.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4P83t]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Zf9u]
 
 ### Supported query patterns
 
