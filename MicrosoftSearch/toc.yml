@@ -85,7 +85,7 @@ items:
         href: custom-connector-sdk-overview.md
       - name: Contracts
         href: custom-connector-sdk-contracts.md
-      - name: Test Application
+      - name: Test Utility
         href: custom-connector-sdk-testapp.md
       - name: Build your first custom connector
         href: custom-connector-sdk-sample.md
