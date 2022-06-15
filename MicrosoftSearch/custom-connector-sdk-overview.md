@@ -22,7 +22,7 @@ The Microsoft Graph connectors SDK comes with the following components:
 
 1. **Custom connector template**: If you wish to develop your custom connector in C#, you can download our template (Link) and get started quickly. You may also choose to develop your custom connector in any of the languages in this list [here](https://grpc.io/docs/languages/).
 
-2. **Contracts**: These are [gRPC](https://grpc.io/docs/what-is-grpc/) protocol buffer files that contain the contracts for interaction between the Graph connector agent and your custom connector code.
+2. **Contracts**: These are [gRPC](https://grpc.io/docs/what-is-grpc/) protocol buffer files that contain the contracts for interaction between the Microsoft platform (Graph connector agent) and your custom connector code.
 
 3. **Graph connector agent**: Graph connector agent is a lightweight software that takes care of connector orchestration capabilities and coordinating between Microsoft 365 Admin Center and your custom connector code. Download the latest version of the Graph connector agent (GCA) from [here](https://aka.ms/gcadownload/) and install the software by using the installation wizard. Learn more about Graph Connector Agent [here](/MicrosoftSearch/graph-connector-agent/).
 
