@@ -95,6 +95,8 @@ items:
           href: custom-connector-sdk-contracts-connectorcrawler.md
         - name: Connector OAuth API
           href: custom-connector-sdk-contracts-connectoroauth.md
+        - name: Common Models
+          href: custom-connector-sdk-contracts-common.md
       - name: Test Utility
         href: custom-connector-sdk-testapp.md
       - name: Build your first custom connector
