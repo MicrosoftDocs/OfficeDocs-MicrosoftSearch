@@ -56,7 +56,7 @@ The connector can be tested using the TestApp utility. This is a console applica
     ```
 
     >[!Note]
-    >You can add multiple connector Ids and their port information with \<Connector Id>:\<Port> format in this file. Each unique connector should be running on a different port.
+    >You can add multiple connector IDs and their corresponding port information with \<Connector Id>:\<Port> format in this file. Each unique connector should be running on a different port.
 
 3. Run the GraphConnectorAgentTest.exe present in C:\Program Files\Graph connector agent\TestApp
 
