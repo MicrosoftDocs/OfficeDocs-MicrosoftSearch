@@ -91,11 +91,11 @@ items:
         items:
           - name: Overview
             href: custom-connector-sdk-sample-overview.md
-          - name: Create custom connector
+          - name: Develop your connector
             href: custom-connector-sdk-sample-create.md
-          - name: Test custom connector
+          - name: Test your connector
             href: custom-connector-sdk-sample-test.md
-          - name: Host your connector
+          - name: Deploy your connector
             href: custom-connector-sdk-sample-hosting.md
       - name: Best practices
         href: custom-connector-sdk-best-practices.md
