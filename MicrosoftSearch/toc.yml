@@ -84,7 +84,17 @@ items:
       - name: Overview
         href: custom-connector-sdk-overview.md
       - name: Contracts
-        href: custom-connector-sdk-contracts.md
+        items:
+        - name: Services
+          href: custom-connector-sdk-contracts-services.md
+        - name: Connector Info API
+          href: custom-connector-sdk-contracts-connectorinfo.md
+        - name: Connection Management API
+          href: custom-connector-sdk-contracts-connectionmanagement.md
+        - name: Connector Crawler API
+          href: custom-connector-sdk-contracts-connectorcrawler.md
+        - name: Connector OAuth API
+          href: custom-connector-sdk-contracts-connectoroauth.md
       - name: Test Utility
         href: custom-connector-sdk-testapp.md
       - name: Build your first custom connector
