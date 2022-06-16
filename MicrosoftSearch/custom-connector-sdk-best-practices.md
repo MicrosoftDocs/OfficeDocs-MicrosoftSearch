@@ -190,7 +190,7 @@ Schema has certain restrictions as listed below:
 
 ## Fetching items during crawl
 
-The GetCrawlStream method is a server streaming method. Each item crawled from the datasource is converted into a CrawlStreamBit and sent over the response stream. To get a good throughput, it is best if the connector retrieves a batch of items from the data source and converts each item to the CrawlStreamBit and sends them over the response stream. The batch size depends on the datasource, we recommend 25 as an optimal batch size to maintain continuous flow of items over the stream.
+The GetCrawlStream method is a [server streaming method](https://grpc.io/docs/what-is-grpc/core-concepts/#server-streaming-rpc). Each item crawled from the datasource is converted into a CrawlStreamBit and sent over the response stream. To get a good throughput, it is best if the connector retrieves a batch of items from the data source and converts each item to the CrawlStreamBit and sends them over the response stream. The batch size depends on the datasource, we recommend 25 as an optimal batch size to maintain continuous flow of items over the stream.
 
 ## Exception handling in connector code
   
@@ -199,3 +199,30 @@ All responses from the gRPC calls have an OperationStatus which indicates if the
 ## Timeouts
 
 All methods in ConnectionManagementService should complete and return within 30 seconds, otherwise the platform will timeout the requests.
+
+## Sending back errors from connector to platform
+
+All responses have the OperationStatus set in the response structure. In case of any errors, connectors are expected to use this OperationStatus to send the failure reason and retry information back to platform. It is recommended to use this to set the errors during crawls in case of connection level errors like expired credentials to access datasource.
+OperationStatus structure has 3 fields that can be used to represent any errors:
+
+### OperationResult
+
+This is an enum that can hold the failure reason.
+
+### StatusMessage
+
+This is a custom message to show the failure reason. This message will be displayed to admins during connection setup. For example if the provided credentials are incorrect during ValidateAuthentication, the OperationStatus can be set to AuthenticationIssue and statusMessage can be set to “Incorrect credentials provided.”. During ValidateAuthentication this statusMessage will be shown to the search admin and during crawls this will move the connection to failed state and display the authentication error to the admin and prompt the admin to update the credentials to access the datasource.
+
+### RetryDetails
+
+In case of transient and retriable errors that occur during crawls, the retry details can be sent for the platform to retry. The retry can be standard or exponential backoff and the pause time, backoff rate and backoff coefficient can be set by the connector and sent back. For example, if the datasource is throttled during the crawl, the connector can set the OperationResult to DatasourceError and send the retry details according to the retry-header in the response headers from datasource.
+
+## Error mapping for OperationResult
+
+The following errors move the connection to failed state:
+
+•OperationResult.AuthenticationIssue
+
+•OperationResult.ValidationFailure
+
+The other operation codes will be treated as transient failures and will be retried in subsequent crawls.

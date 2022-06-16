@@ -20,6 +20,7 @@ The contract protocol buffer files have the following three services which conne
 |ConnectorInfo |Service containing APIs to get information about the connector. If you are using the visual studio extension, this has default implementation and you do not have to make any change. |
 |ConnectionManagement |Service containing APIs which are called during the process of custom connector connection creation on M365 admin center. |
 |ConnectorCrawl |Service containing APIs which are called during a crawl. |
+|ConnectorOAuth |Service for OAuth flows like refreshing access token during crawls. |
 
 ## APIs
 
@@ -65,6 +66,7 @@ The contract protocol buffer files have the following three services which conne
 |Property |Type |Description |
 |:----------|:-------------|:----------|
 |status |OperationStatus |Status of operation and error details in case of error. |
+|oAuth2ClientCredentialsResponse |OAuth2ClientCredentialsResponse |Credential information to be sent to the connector during the crawl in case of OAuth flow (Access token, refresh token etc., which is sent by the auth server). This need not be set for non-OAuth flows. |
 
 **ValidateCustomConfigurationRequest**: Request model to validate custom configuration information
 
@@ -97,7 +99,8 @@ The contract protocol buffer files have the following three services which conne
 
 |Method |Parameters |Return Type |Description |
 |:----------|:-------------|:----------|:----------|
-|GetCrawlStream |GetCrawlStreamRequest |CrawlStreamBit as a stream |This API is used to read data from the data source. This will be called by platform during crawl. |
+|GetCrawlStream |GetCrawlStreamRequest |CrawlStreamBit as a stream |This API is used to read data from the data source. This will be called by platform during during full and periodic full crawls where all items should be read from the datasource and returned to the platform. |
+|GetIncrementalCrawlStream |GetIncrementalCrawlStreamRequest |IncrementalCrawlStreamBit as a stream |This API is used to read data from the data source. This will be called by platform during incremental crawls where only the incremental changes in items since last incremental crawl needs to be returned to the platform. This is optional to implement. |
 
 ### Connector Crawler Models
 
@@ -110,7 +113,7 @@ The contract protocol buffer files have the following three services which conne
 |crawlProgressMarker |CrawlCheckpoint |Holds data to identify what items were processed the last time crawl ran. This information is returned by the connector along with the items. This can be used by the connector in case of crashes happening on the platform during the crawl. |
 |Schema |DataSourceSchema |Schema of connection. This can be used by the connector to identify the property which is content and set it. |
 
-**CrawlStreamBit**: Response model containing the item, status indicating success/failures if any and the indicator/checkpoint for the item being crawled.
+**CrawlStreamBit**: Response model containing the item, status indicating success/failures if any and the indicator/checkpoint for the item being crawled during full/periodic full crawl.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -118,7 +121,25 @@ The contract protocol buffer files have the following three services which conne
 |crawlItem |CrawlItem |Single item crawled from data source |
 |crawlProgressMarker |CrawlCheckpoint |Indicator to identify the item crawled from the data source |
 
-ItemType enum members:
+**GetIncrementalCrawlStreamRequest**: Request model for getting items during incremental crawl.
+
+|Property |Type |Description |
+|:----------|:-------------|:----------|
+|customConfiguration |CustomConfiguration |Configuration data provided for the connector |
+|authenticationData |AuthenticationData |Holds data source access URL and credential to access it |
+|crawlProgressMarker |CrawlCheckpoint |Holds data to identify what items were processed the last time crawl ran. This information is returned by the connector along with the items. This can be used by the connector in case of crashes happening on the platform during the crawl. |
+|schema |DataSourceSchema |Schema of connection. This can be used by the connector to identify the property which is content and set it. |
+|previousCrawlStartTimeInUtc |Timestamp |DateTime value of previous crawl start time in UTC. This value can be used in first incremental crawl. For subsequent calls checkpoint value should be used. |
+
+**IncrementalCrawlStreamBit**: Response model containing the item, status indicating success/failures if any and the indicator/checkpoint for the item being crawled during incremental crawl.
+
+|Property |Type |Description |
+|:----------|:-------------|:----------|
+|status |OperationStatus |Status of operation and error details in case of error |
+|crawlItem |IncrementalCrawlItem |Single item crawled from datasource during incremental crawl |
+|crawlProgressMarker |CrawlCheckpoint |Indicator to identify the last item crawled from the datasource during last incremental crawl |
+
+ItemType enum members for CrawlItem:
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
@@ -134,6 +155,24 @@ ItemType enum members:
 |contentItem |ContentItem |Item with content to ingest. These are the actual data items. Example: website content. If contentItem is set, linkItem cannot be set. |
 |linkItem |LinkItem |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. If linkItem is set, contentItem cannot be set. |
 
+ItemType enum members for IncrementalCrawlItem:
+
+|Member |Value |Description |
+|:----------|:-------------|:----------|
+|ContentItem |0 |Item with content to ingest. These are the actual data items. Example: website content |
+|LinkItem |1 |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. |
+|DeletedItem |2 |Item that is deleted from datasource and should be deleted from index. |
+
+**IncrementalCrawlItem**: Represents an entity in the data source. For example: a file, a folder or a record in a table. The max size allowed is 4Mb.
+
+|Property |Type |Description |
+|:----------|:-------------|:----------|
+|itemType |ItemType |The type of item being sent. This model should have one of contentItem or linkItem or deletedItem set and this enum field should correspond to the item being set – either contentItem or linkItem or deletedItem. |
+|itemId |string |Unique ID representing the item in the data source |
+|contentItem |ContentItem |Item with content to ingest. These are the actual data items. Example website content. If contentItem is set, linkItem or deletedItem cannot be set. |
+|linkItem |LinkItem |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. If linkItem is set, contentItem or deletedItem cannot be set. |
+|deletedItem |DeletedItem |Item that is deleted from the datasource and should be removed from the index. If deletedItem is set, contentItem or linkItem cannot be set. |
+
 **ContentItem**: Item that holds the content of the data source entity. This is the with actual content to ingest. Example: website content
 
 |Property |Type |Description |
@@ -147,6 +186,8 @@ ItemType enum members:
 |Property |Type |Description |
 |:----------|:-------------|:----------|
 |metadata |map< string, GenericType> |This is a dictionary containing the additional metadata needed by the connector to recrawl the item. |
+
+**DeletedItem**: Represents an item that is deleted from the datasource and has to be removed from the index.
 
 **AccessControlList**: Holds the access control list which restricts the users to whom the search results are visible.
 
@@ -280,6 +321,27 @@ ContentType enum members:
 |:----------|:-------------|:----------|
 |values |repeated google.protobuf.Timestamp |Collection or array of dateTime values |
 
+### Connector OAuth APIs
+
+|Method |Parameters |Return Type |Description |
+|:----------|:-------------|:----------|:----------|
+|RefreshAccessToken |RefreshAccessTokenRequest |RefreshAccessTokenResponse |This API is used to generate a refreshed token from the auth server of the datasource and send the token details to the platform. |
+
+### Connector OAuth API Models
+
+**RefreshAccessTokenRequest**: Request model for refreshing the OAuth token.
+
+|Property |Type |Description |
+|:----------|:-------------|:----------|
+|authenticationData |AuthenticationData |Holds data source access URL and credential to access the datasource along with current token information. |
+
+**RefreshAccessTokenResponse**: Response model for Refresh OAuth token request.
+
+|Property |Type |Description |
+|:----------|:-------------|:----------|
+|status |OperationStatus |Status of operation and error details in case of error |
+|refreshedCredentialData |OAuth2ClientCredentialsResponse |Credential data containing refreshed token information |
+
 ### Common Models
 
 **CustomConfiguration**: Connector specific custom configuration info provided by Search Admin during connection creation. The structure and format of the configuration is not managed by the platform. Connector developers can use format of their choice.
@@ -295,6 +357,7 @@ AuthenticationType enum members:
 |Anonymous |0 |No authentication required to access the data source |
 |Basic |1 |Basic Authentication in the form of username and password to access the data source |
 |Windows |2 |Windows AD based authentication that supports username, password and domain info |
+|OAuth2ClientCredentials |3 |OAuth2 based authentication with client credentials - supports app id and app secret |
 
 **AuthenticationData**: Holds credential provided by admin to access data source. It contains authentication type, data source url and credentials data.
 
@@ -304,6 +367,7 @@ AuthenticationType enum members:
 |DatasourceUrl |string |Url or path to access data source - path to the resource that needs to be crawled. Example: Connection string for a database |
 |basicCredential |BasicCredential |Credentials in the form of username and password to access the data source. This will be set exclusive to windowsCredential and the authType will be set to Basic when this is set. |
 |windowsCredential |WindowsCredential |Credentials in the form of windows AD username, password and domain to access the data source. This will be set exclusive to basicCredential and the authType will be set to Windows when this is set. |
+|oAuth2ClientCredentials |OAuth2ClientCredentials |Credentials in the form of app id and app secret for OAuth client credentials based authentication for accessing the datasource. This will be set exclusive to oAuth2ClientCredentials and the authType will be set to OAuth2ClientCredentials when this is set. |
 
 **BasicCredential**: Represents basic credentials model
 
@@ -320,6 +384,25 @@ AuthenticationType enum members:
 |secret |string | Secret to use with username for accessing data source |
 |domain |string | AD Domain that the account belongs to. If not provided by the admin explicitly, this holds the value of machine name. |
 
+**OAuth2ClientCredentials**: Represents credential model for oauth2 client credentials
+
+|Property |Type |Description |
+|:----------|:-------------|:----------|
+|appId |string |Application id/client id for the OAuth2 application |
+|appSecret |String |Application secret/client secret for the OAuth2 application |
+|oAuth2ClientCredentialsResponse |OAuth2ClientCredentIalsResponse |Contains OAuth token related details. This will be set to the response which connector sends after the first validate authentication call succeeds. |
+
+**OAuth2ClientCredentIalsResponse**: Represents response model from auth server for OAuth2 token request. The fields present in this model are the common response fields specified in OAuth2 documentation. Additionally idToken can be set when OpenIDConnect is supported by the auth servers.
+
+|Property |Type |Description |
+|:----------|:-------------|:----------|
+|accessToken |string |The access token from auth server |
+|refreshToken |string |The refresh token if auth server sends it |
+tokenType |string |Type of the token – usually Bearer token for OAuth |
+expiresIn |uint64 |The expiry time of the token in unix timestamp |
+scope |string |Scopes supported by the token if auth server sends it |
+idToken |string  |The id token if auth server supports open ID connect |
+
 **OperationResult**: Enum containing possible values for the result of operations.
 
 OperationResult enum members:
@@ -333,6 +416,7 @@ OperationResult enum members:
 |DatasourceError |4 |Data source read error |
 |NetworkError |5 |Network operation error |
 |Cancelled |6 |If operation was cancelled by Cancellation Token |
+|TokenExpired |7 |To be used in OAuth flow when the token sent to the connector by the platform has expired. During crawl, on receiving this status, the platform will trigger the refresh token flow and call RefreshAccessToken method in ConnectorOAuthService. |
 
 **OperationStatus**: Represents the status of an operation including error/warnings and retry details. This is part of the response of all APIs in ConnectionManagementService and ConnectorCrawlerService.
 
