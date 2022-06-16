@@ -1,39 +1,22 @@
 ---
-title: "Graph connectors SDK sample"
+title: "Graph connectors SDK Sample Create Connector"
 ms.author: rchanda
 author: rchanda
 manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-description: "Graph connectors SDK sample"
+description: "Graph connectors SDK Create Connector"
 ---
 
-# Build your first custom Microsoft Graph connector
+# Develop your custom connector in C# using a template
 
-Microsoft Graph connectors allow you to add your own data into Microsoft Graph and have it power various Microsoft 365 experiences.
-This tutorial shows you how to use the Microsoft Graph connectors SDK to create a custom connector in C# and use it to power Microsoft Search. This tutorial uses a sample data appliance parts inventory for the Contoso Appliance Repair organization.
-
-## How does the sample work?
-
-### Dataflow
-
-diagram
-
-### Components and Architecture
-
-diagram
-
-The sample creates a gRPC server running your custom connector code on a virtual machine. A gRPC client from the Graph connector agent (Graph Connector Agent | Microsoft Docs) running on the same machine makes HTTP requests to the server for fetching the required response. The Graph connector agent takes care of ingesting the content into Microsoft Graph and other platform tasks.
-
-## Develop your custom connector in C# using a template
-
-### Prerequisites
+## Prerequisites
 
 1. [Visual Studio](https://visualstudio.microsoft.com/) 2019 or higher
 2. .Net core SDK and runtime version 3.1
 
-### Install the extension
+## Install the extension
 
 1. Open visual studio and go to Extensions-> Manage extensions
 2. Search for “GraphConnectorsTemplate” extension and download it
@@ -43,52 +26,52 @@ The sample creates a gRPC server running your custom connector code on a virtual
 6. Choose .Net Core 3.1, give a name to the connector as “CustomConnector” and click Create.
 7. The custom connector template project is created with skeleton code
 
-### Create the custom connector
+## Create the custom connector
 
 Before beginning to build the connector follow the steps given below to install nuget packages and create the data models that will be used in this connector.
 
-#### Download the datasource files
+### Download the datasource files
 
 1. Download the ApplianceParts.csv file from \<TBD>
 
-#### Install nuget packages
+### Install nuget packages
 
 1. Right click on the project and select “Open in Terminal”
 
 2. Run the below command
 
-```dotnetcli
-dotnet add package CsvHelper --version 27.2.1
-```
+    ```dotnetcli
+    dotnet add package CsvHelper --version 27.2.1
+    ```
 
-#### Create Data models
+### Create Data models
 
 1. Create a folder called "**Models**" under “CustomConnector” and create a file AppliancePart.cs under the folder.
 2. Paste the following code in AppliancePart.cs
 
-```csharp
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
-
-namespace CustomConnector.Models
-{
-    public class AppliancePart
+    ```csharp
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.Text;
+    
+    namespace CustomConnector.Models
     {
-        [Key]
-        public int PartNumber { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public double Price { get; set; }
-        public int Inventory { get; set; }
-        public List<string> Appliances { get; set; }
+        public class AppliancePart
+        {
+            [Key]
+            public int PartNumber { get; set; }
+            public string Name { get; set; }
+            public string Description { get; set; }
+            public double Price { get; set; }
+            public int Inventory { get; set; }
+            public List<string> Appliances { get; set; }
+        }
     }
-}
+    
+    ```
 
-```
-
-#### Update ConnectionManagementServiceImpl.cs
+### Update ConnectionManagementServiceImpl.cs
 
 ConnectionManagementServiceImpl.cs has 3 methods to be implemented:
 
@@ -319,4 +302,206 @@ ConnectionManagementServiceImpl.cs has 3 methods to be implemented:
 
     ```
 
-#### Update ConnectorCrawlerServiceImpl.cs
+### Update ConnectorCrawlerServiceImpl.cs
+
+This class has the methods that will be called by the platform during the crawls.
+
+**GetCrawlStream**: This method will be called during the full or periodic full crawls.
+
+1. Add the following using directive in AppliancePart.cs
+
+    ```csharp
+    using System.Globalization;
+    ```
+
+2. Add the following methods in AppliancePart.cs for converting the AppliancePart record to CrawlItem
+
+    ```csharp
+    public CrawlItem ToCrawlItem()
+        {
+            return new CrawlItem
+            {
+                ItemType = CrawlItem.Types.ItemType.ContentItem,
+                ItemId = this.PartNumber.ToString(CultureInfo.InvariantCulture),
+                ContentItem = this.GetContentItem(),
+            };
+        }
+
+        private ContentItem GetContentItem()
+        {
+            return new ContentItem
+            {
+                AccessList = this.GetAccessControlList(),
+                PropertyValues = this.GetSourcePropertyValueMap(),
+                Content = this.GetContent()
+            };
+        }
+
+        private AccessControlList GetAccessControlList()
+        {
+            AccessControlList accessControlList = new AccessControlList();
+            accessControlList.Entries.Add(this.GetAllowEveryoneAccessControlEntry());
+            return accessControlList;
+        }
+
+        private AccessControlEntry GetAllowEveryoneAccessControlEntry()
+        {
+            return new AccessControlEntry
+            {
+                AccessType = AccessControlEntry.Types.AclAccessType.Grant,
+                Principal = new Principal
+                {
+                    Type = Principal.Types.PrincipalType.Everyone,
+                    IdentitySource = Principal.Types.IdentitySource.AzureActiveDirectory,
+                    IdentityType = Principal.Types.IdentityType.AadId,
+                    Value = "EVERYONE",
+                }
+            };
+        }
+
+        private SourcePropertyValueMap GetSourcePropertyValueMap()
+        {
+            SourcePropertyValueMap sourcePropertyValueMap = new SourcePropertyValueMap();
+
+            sourcePropertyValueMap.Values.Add(
+                nameof(this.PartNumber),
+                new GenericType
+                {
+                    IntValue = this.PartNumber,
+                });
+            
+            sourcePropertyValueMap.Values.Add(
+                nameof(this.Name),
+                new GenericType
+                {
+                    StringValue = this.Name,
+                });
+            
+            sourcePropertyValueMap.Values.Add(
+                nameof(this.Price),
+                new GenericType
+                {
+                    DoubleValue = this.Price,
+                });
+            
+            sourcePropertyValueMap.Values.Add(
+                nameof(this.Inventory),
+                new GenericType
+                {
+                    IntValue = this.Inventory,
+                });
+            
+            var appliancesPropertyValue = new StringCollectionType();
+            foreach(var property in this.Appliances)
+            {
+                appliancesPropertyValue.Values.Add(property);
+            }
+            sourcePropertyValueMap.Values.Add(
+                nameof(this.Appliances),
+                new GenericType
+                {
+                    StringCollectionValue = appliancesPropertyValue,
+                });
+            return sourcePropertyValueMap;
+        }
+
+        private Content GetContent()
+        {
+            return new Content()
+            {
+                ContentType = Content.Types.ContentType.Text,
+                ContentValue = this.Description,
+            };
+        }
+
+    ```
+
+3. Add the following using directive in CsvDataLoader.cs
+
+    ```csharp
+    using Microsoft.Graph.Connectors.Contracts.Grpc;
+    ```
+
+4. Add the following method in CsvDataLoader.cs
+
+    ```csharp
+    public static IEnumerable<CrawlItem> GetCrawlItemsFromCsv(string filePath)
+        {
+            using (var reader = new StreamReader(filePath))
+            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+            {
+                csv.Context.RegisterClassMap<AppliancePartMap>();
+
+                // The GetRecords<T> method will return an IEnumerable<T> that will yield records. What this means is that only a single record is returned at a time as you iterate the records.
+                foreach (var record in csv.GetRecords<AppliancePart>())
+                {
+                    yield return record.ToCrawlItem();
+                }
+            }
+        }
+
+    ```
+
+5. Add the following using directive in ConnectorCrawlerServiceImpl.cs
+
+    ```csharp
+    using CustomConnector.Data;
+    ```
+
+6. Add the following method in ConnectorCrawlerServiceImpl.cs
+
+    ```csharp
+    private CrawlStreamBit GetCrawlStreamBit(CrawlItem crawlItem)
+        {
+            return new CrawlStreamBit
+            {
+                Status = new OperationStatus
+                {
+                    Result = OperationResult.Success,
+                },
+                CrawlItem = crawlItem,
+                CrawlProgressMarker = new CrawlCheckpoint
+                {
+                    CustomMarkerData = crawlItem.ItemId,
+                },
+            };
+        }
+
+    ```
+
+7. Update the GetCrawlStream method to the following
+
+    ```csharp
+    public override async Task GetCrawlStream(GetCrawlStreamRequest request, IServerStreamWriter<CrawlStreamBit> responseStream, ServerCallContext context)
+        {
+            try
+            {
+                Log.Information("GetCrawlStream Entry");
+                var crawlItems = CsvDataLoader.GetCrawlItemsFromCsv(request.AuthenticationData.DatasourceUrl);
+                foreach (var crawlItem in crawlItems)
+                {
+                    CrawlStreamBit crawlStreamBit = this.GetCrawlStreamBit(crawlItem);
+                    await responseStream.WriteAsync(crawlStreamBit).ConfigureAwait(false);
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex.ToString());
+                CrawlStreamBit crawlStreamBit = new CrawlStreamBit
+                {
+                    Status = new OperationStatus
+                    {
+                        Result = OperationResult.DatasourceError,
+                        StatusMessage = "Fetching items from datasource failed",
+                        RetryInfo = new RetryDetails
+                        {
+                            Type = RetryDetails.Types.RetryType.Standard,
+                        },
+                    },
+                };
+                await responseStream.WriteAsync(crawlStreamBit).ConfigureAwait(false);
+            }
+
+        }
+
+    ```

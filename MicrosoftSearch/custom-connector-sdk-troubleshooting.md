@@ -19,7 +19,7 @@ If items present previously are missing from the index, it could be due to the d
 
 ## Updating port mapping configuration file
 
-When the connector needs to be run on a different port, the port map config file has to be updated with the new values. Whenever port map config file is edited the GCA service must be restarted for the changes to take effect. To restart this, open services.msc and restart GcaHostService: 
+When the connector needs to be run on a different port, the port map config file has to be updated with the new values. Whenever port map config file is edited the GCA service must be restarted for the changes to take effect. To restart this, open services.msc and restart GcaHostService:
 
 Insert image
 
