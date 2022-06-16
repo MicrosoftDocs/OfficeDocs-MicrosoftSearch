@@ -14,9 +14,12 @@ description: "Graph connectors SDK Sample Testing"
 The connector can be tested using the TestApp utility. This is a console application for testing the connector before taking it to production. It will not create any connections or ingest any data.
 
 1. Update the ConnectionInfo.json file with the connector id, data source path and set AuthenticationKind as null. This file is found under C:\Program Files\Graph connector agent\TestApp\Config
+
     a. The provider id is generated uniquely for each project and can be found in the ConnectorInfoServiceImpl.cs file
     \<Image>
+
     b. The datasource path is the path where you downloaded the ApplianceParts.csv file.
+
     c. AuthenticationKind can be set to null as the connector is using anonymous auth
 
     ```json
