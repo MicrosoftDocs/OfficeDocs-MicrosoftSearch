@@ -69,3 +69,7 @@ In this step, you will search for parts in SharePoint.
 3. When the search completes with 0 results, select the **Appliance Parts** tab. Results from the connector are displayed.
 
    ![Example of search results for the word hinge with results showing on the Appliance Parts tab.](/media/connectors-sdk/build20.png)
+
+## Summary
+
+You have successfully completed the custom Microsoft Graph connector tutorial. Now you have created a custom connector and used it to power Microsoft Search.
