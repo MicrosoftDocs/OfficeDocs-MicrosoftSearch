@@ -99,7 +99,7 @@ items:
           href: custom-connector-sdk-contracts-common.md
       - name: Test Utility
         href: custom-connector-sdk-testapp.md
-      - name: Publishing on M365 Admin Center
+      - name: Publishing a connection
         href: custom-connector-sdk-publish.md
       - name: Build your first custom connector
         items:
