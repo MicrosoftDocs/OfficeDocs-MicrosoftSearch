@@ -99,6 +99,8 @@ items:
           href: custom-connector-sdk-contracts-common.md
       - name: Test Utility
         href: custom-connector-sdk-testapp.md
+      - name: Publishing on M365 Admin Center
+        href: custom-connector-sdk-publish.md
       - name: Build your first custom connector
         items:
           - name: Overview
@@ -109,6 +111,10 @@ items:
             href: custom-connector-sdk-sample-test.md
           - name: Deploy your connector
             href: custom-connector-sdk-sample-hosting.md
+          - name: Publish a connection
+            href: custom-connector-sdk-sample-publish.md
+          - name: Search for results
+            href: custom-connector-sdk-sample-search.md
       - name: Best practices
         href: custom-connector-sdk-best-practices.md
       - name: Troubleshooting
