@@ -49,6 +49,9 @@ To connect to your data source, fill in the root URL of the website, select a cr
 
 Use the URL field to specify the root of the website that you'd like to crawl. The enterprise websites connector will use this URL as the starting point and follow all the links from this URL for its crawl.
 
+> [!NOTE]
+> You can index up to 20 different site URLs in a single connection. In the URLs field, enter the site URLs separated by commas (,). For example, `https://www.contoso.com,https://www.contosoelectronics.com`.
+
 ### Crawl websites listed in the sitemap
 
 When selected the connector will only crawl the URLs listed in the sitemap. If not selected or no site map is found, the connector will do a deep crawl of all the links found on the root URL of the site.
@@ -161,7 +164,15 @@ The resource ID, client ID and client secret values will depend on how you did t
     
     **Windows authentication** is only available in agent mode. It requires username, domain and password. You need to provide the username and domain in the **Username** field, in any of the following formats: domain\username, or username@domain. A password must be entered in the **Password** field. For Windows authentication, the username provided must also be an administrator in the server where the agent is installed.
 
-## Step 3a: Add URLs to exclude (Optional crawl restrictions)
+## Step 3a: Meta tag settings
+
+The connector fetches any meta tags your root URLs may have and shows them. You can select which tags to include for crawling. 
+
+:::image type="content" source="media/enterprise-web-connector/connectors-enterpriseweb-meta-tags-settings.png" alt-text="Meta tag settings with author, locale, and other tags selected.":::
+
+Selected meta tags will also show up on the Schema page, where you can manage them further (Queryable, Searchable, Retrievable, Refinable).
+
+## Step 3b: Add URLs to exclude (Optional crawl restrictions)
 
 There are two ways to prevent pages from being crawled: disallow them in your robots.txt file or add them to the Exclusion list.
 

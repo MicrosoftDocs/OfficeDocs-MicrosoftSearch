@@ -101,6 +101,9 @@ To reduce the manual effort required to add bookmarks, Microsoft Search can eval
 
 :::image type="content" alt-text="Screenshot of Recommended bookmark settings in the Microsoft 365 admin portal." source="media/bookmarks-recommendedsettings.png":::
 
+> [!NOTE]
+> Manually published bookmarks will appear in Bing and SharePoint results. Autopublished bookmarks will only appear in Bing results.
+
 If recommended bookmarks are enabled, the recommendation engine will evaluate SharePoint sites in your organization to identify high-traffic links. After an initial evaluation period, the recommended bookmarks will either be autopublished or added to the list of suggested bookmarks. The next cycle—a 30-day evaluation period followed by autopublishing or adding suggested bookmarks—will then begin.
 
 We suggest Search admins or editors review these autopublished or suggested bookmarks regularly. Also, recommended bookmarks will never include URLs found in existing Published, Suggested, Scheduled, or Excluded bookmarks.
