@@ -63,4 +63,5 @@ The connector can be tested using the TestApp utility. This is a console applica
 4. Make sure the connector is running
 
 5. Test the connector using options 1, 2 and 3 from the GraphConnectorAgentTest.exe
-\<Image>
+
+![Test using test app](media/connectors-sdk/test.png)

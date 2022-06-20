@@ -18,13 +18,15 @@ description: "Graph connectors SDK Create Connector"
 
 ## Install the extension
 
-1. Open visual studio and go to Extensions-> Manage extensions
-2. Search for “GraphConnectorsTemplate” extension and download it
+1. Open visual studio and go to **Extensions** > **Manage extensions**
+2. Search for “**GraphConnectorsTemplate**” extension and download it
 3. Close and relaunch Visual Studio to install the template
-4. Go to File > New > Project and search for “GraphConnectorsTemplate”. Select the template and click Next.
+4. Go to **File** > **New** > **Project** and search for “GraphConnectorsTemplate”. Select the template and click Next.
+    ![Create project from template](media/connectors-sdk/create.png)
 5. Give a name to the project and click Next.
 6. Choose .Net Core 3.1, give a name to the connector as “CustomConnector” and click Create.
 7. The custom connector template project is created with skeleton code
+    ![Project structure from template](media/connectors-sdk/templateproject.png)
 
 ## Create the custom connector
 
@@ -33,6 +35,8 @@ Before beginning to build the connector follow the steps given below to install 
 ### Install nuget packages
 
 1. Right click on the project and select “Open in Terminal”
+
+    ![Open in Terminal](media/connectors-sdk/terminal.png)
 
 2. Run the below command
 
@@ -501,3 +505,6 @@ This class has the methods that will be called by the platform during the crawls
         }
 
     ```
+
+Now the connector is created and you can build and run the project.
+![Project run output](media/connectors-sdk/run.png)

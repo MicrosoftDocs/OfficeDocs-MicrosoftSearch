@@ -16,20 +16,20 @@ One possible way to make the connector executable run always is to host it as a 
 
 Follow the instructions below for hosting the connector as a windows service:
 
-1. Right click on the solution containing the custom connector project and select Add > New project
-<\image>
+1. Right click on the solution containing the custom connector project and select **Add** > **New project**
+    ![Screenshot1](media/connectors-sdk/service1.png)
 
 2. Search for “Worker service” template, select the Worker Service template and click Next
-<\image>
+    ![Screenshot2](media/connectors-sdk/service2.png)
 
 3. Name the project as CustomConnectorWorkerService and click Next
-<\image>
+    ![Screenshot3](media/connectors-sdk/service3.png)
 
 4. Choose .Net core 3.1 as target framework and click on Create
-<\image>
+    ![Screenshot4](media/connectors-sdk/service4.png)
 
 5. Right click on the project and select “Open in Terminal”
-<\image>
+    ![Screenshot5](media/connectors-sdk/service5.png)
 
 6. Run the following commands in the terminal
 
@@ -39,9 +39,11 @@ Follow the instructions below for hosting the connector as a windows service:
 
     ```
 
-7. Right click on the worker service project and select Add -> Project Reference
+7. Right click on the worker service project and select **Add** > **Project Reference**
+     ![Screenshot6](media/connectors-sdk/service6.png)
 
 8. Select the CustomConnector project and click Ok
+    ![Screenshot7](media/connectors-sdk/service7.png)
 
 9. Replace the code in Worker.cs file with the following code
 
@@ -104,6 +106,7 @@ Follow the instructions below for hosting the connector as a windows service:
     ```
 
 11. Select Release configuration for build and build the CustomConnectorWorkerService project
+    ![Screenshot8](media/connectors-sdk/service8.png)
 
 12. Run the following script to register and start the custom connector as windows service
 
@@ -122,6 +125,7 @@ Follow the instructions below for hosting the connector as a windows service:
     ```
 
 13. Open services.msc and check that the service is in running state
+    ![Screenshot9](media/connectors-sdk/service9.png)
 
 ## Troubleshooting
 
@@ -133,12 +137,20 @@ Make sure the path of the executable is accessible to Local System account.
 
 2. Open Security tab and click on Edit under Group or user names
 
+    ![Screenshot10](media/connectors-sdk/troubleshoot1.png)
+
 3. Click on Add
 
+   ![Screenshot11](media/connectors-sdk/troubleshoot2.png)
+
 4. Enter LOCAL SERVICE as the object name and click on Check Names
+
+    ![Screenshot12](media/connectors-sdk/troubleshoot3.png)
 
 5. Click OK in all the dialog boxes.
 
 ### Starting service fails with any error
 
 Check the error logs from event viewer. Search for event viewer app and open it. Check for error logs under **Windows logs > Application** and **Windows logs > System**
+
+    ![Screenshot13](media/connectors-sdk/troubleshoot4.png)

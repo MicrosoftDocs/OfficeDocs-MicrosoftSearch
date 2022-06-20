@@ -20,6 +20,8 @@ The Microsoft Graph connectors SDK enables you to create custom Graph connectors
 
 The Microsoft Graph connectors SDK comes with the following components:
 
+![Microsoft Graph connectors SDK components](media/connectors-sdk/components.png)
+
 1. **Custom connector template**: If you wish to develop your custom connector in C#, you can download our template (Link) and get started quickly. You may also choose to develop your custom connector in any of the languages in this list [here](https://grpc.io/docs/languages/).
 
 2. **Contracts**: These are [gRPC](https://grpc.io/docs/what-is-grpc/) protocol buffer files that contain the contracts for interaction between the Microsoft platform (Graph connector agent) and your custom connector code.
