@@ -176,7 +176,6 @@ Here are more examples of query string expansion.
 
 ## Limitations
 - Language localization is not applicable to names of out of box verticals once modified. 
-- KQL does not apply to content surfaced from user OneDrive. 
 - Custom verticals do not appear on the mobile view of Microsoft Search. 
 - Adding query is not supported on the People vertical. 
 - Vertical modification and new verticals are not visible to guest users in an organization. 
