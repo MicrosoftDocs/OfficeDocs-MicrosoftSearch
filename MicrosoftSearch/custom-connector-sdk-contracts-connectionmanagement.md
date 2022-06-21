@@ -29,7 +29,7 @@ Request model to validate authentication to data source
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|authenticationData |[AuthenticationData](/custom-connector-sdk-contracts-common#authenticationdata) |Holds data source access URL and credential to access it. |
+|authenticationData |[AuthenticationData](/microsoftsearch/custom-connector-sdk-contracts-common#authenticationdata) |Holds data source access URL and credential to access it. |
 
 #### ValidateAuthenticationResponse
 
