@@ -23,6 +23,10 @@ You can find this config file inside the "Config" folder of the test application
 **CustomConnectorPortMap.json**: After creating the custom connector, add the mapping of the connector id and the port on which it is running in this file. You can add multiple connector IDs and their corresponding port information in this file. Each unique connector should be running on a different port.
 You can find this file in your Graph connector agent installation folder.
 
+After creating the custom connector, add the mapping of the connector id and the port on which it is running in the CustomConnectorPortMap.json.
+
+![Port mapping graphics](media/connectors-sdk/port.png)
+
 ## Test scenarios
 
 This test utility has 3 options:
@@ -31,7 +35,9 @@ This test utility has 3 options:
 
 **2. Test connection creation flow** (ValidateAuthentication, ValidateCustomConfiguration, GetDataSourceSchema APIs): This option is to validate the methods specified in ConnectionManagementService. Each of the mentioned methods are invoked and their results are displayed on the console.
 
-**3. Test full crawl with mocked connection**: This option is to test the methods in ConnectorCrawlerService. The crawl is invoked with the schedule specified in ConnectionInfo.json and the status of the ongoing or last completed crawl gets printed every minute. Once the first crawl finishes successfully, the message that crawl has completed will get displayed, and the platform keeps running to trigger further crawls specified at the interval in ConnectionInfo.json. To stop the platform from crawling, the GraphConnectorAgentTest executable should be closed and restarted to enable testing of other options or retesting this option after making any changes to the connector code or to the config files after selecting this option.  
+**3. Test full crawl with mocked connection**: This option is to test the methods in ConnectorCrawlerService. The crawl is invoked with the schedule specified in ConnectionInfo.json and the status of the ongoing or last completed crawl gets printed every minute. Once the first crawl finishes successfully, the message that crawl has completed will get displayed, and the platform keeps running to trigger further crawls specified at the interval in ConnectionInfo.json. To stop the platform from crawling, the GraphConnectorAgentTest executable should be closed and restarted to enable testing of other options or retesting this option after making any changes to the connector code or to the config files after selecting this option.
+
+![Crawl testing](media/connectors-sdk/testcomplete.png)
 
 ## Working of the GraphConnectorAgentTest executable
 

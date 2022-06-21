@@ -13,7 +13,7 @@ description: "Graph connectors SDK Overview"
 
 ## Overview
 
-The Microsoft Graph connectors SDK is designed to simplify building high-quality, efficient, and resilient connectors that access Microsoft Graph. The SDK includes the following components: framework and libraries to help you write your connector code and tools to test the connector code
+The Microsoft Graph connectors SDK is designed to simplify building high-quality, efficient, and resilient connectors that access Microsoft Graph. The SDK includes the following components: framework and contracts to help you write your connector code and tools to test the connector code.
 The Microsoft Graph connectors SDK enables you to create custom Graph connectors directly within the Visual Studio integrated development environment (IDE). The Microsoft Graph connector SDK guides you through the process and provides everything you need to build, debug, and deploy your custom connector.
 
 ## Components
@@ -38,7 +38,7 @@ The Graph connector agent comes with the following capabilities:
 
 1. **Get data from connector**: The agent brings the capability of getting data from your custom connector using the logic implemented by your connector to connect to the data source.
 
-2. **M365 Admin Center integration**: The agent brings the capability of managing, monitoring errors & statistics, and configuring your custom connectors through the M365 Admin Center.
+2. **M365 Admin Center integration**: The agent brings the capability of managing, monitoring errors & statistics, and configuring your custom connectors through the [M365 Admin Center](https://admin.microsoft.com/).
 
 3. **Crawl Scheduling & Management**: The agent brings the capability of crawling the data source through full crawls and incremental crawls. Full crawls traverse (list based or graph based) through your entire data periodically at an interval defined by you. Incremental crawls are more frequent and crawls the data source from the previous timestamp/checkpoint at an interval defined by you.
 
@@ -50,3 +50,5 @@ The Graph connector agent comes with the following capabilities:
 
 >[!Note]
 >Graph-based data source traversal (eg: traversing through folder structures) capability and ability to manage search permissions based on access control from your data source is not available in beta stage.
+
+You can get started quickly with our C# sample or with the contracts from [here](https://github.com/microsoftgraph/msgraph-connectors-sdk).

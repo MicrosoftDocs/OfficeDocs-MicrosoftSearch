@@ -14,7 +14,7 @@ description: "Graph connectors SDK Create Connector"
 ## Prerequisites
 
 1. Install [Visual Studio](https://visualstudio.microsoft.com/) 2019 or higher with [.NET Core 3.1 SDK](https://dotnet.microsoft.com/en-us/download)
-2. Download the ApplianceParts.csv file from the [Search connector sample repo](https://github.com/microsoftgraph/msgraph-connectors-sdk).
+2. Download the ApplianceParts.csv file from the [Search connector sample repo](https://github.com/microsoftgraph/msgraph-connectors-sdk/blob/main/C%23%20sample/ApplianceParts.csv).
 
 ## Install the extension
 

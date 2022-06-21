@@ -153,4 +153,4 @@ Make sure the path of the executable is accessible to Local System account.
 
 Check the error logs from event viewer. Search for event viewer app and open it. Check for error logs under **Windows logs > Application** and **Windows logs > System**
 
-    ![Screenshot13](media/connectors-sdk/troubleshoot4.png)
+![Screenshot13](media/connectors-sdk/troubleshoot4.png)
