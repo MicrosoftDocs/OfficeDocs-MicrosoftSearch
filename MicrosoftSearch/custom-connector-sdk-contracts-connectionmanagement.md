@@ -46,8 +46,8 @@ Request model to validate custom configuration information
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|customConfiguration |CustomConfiguration |Configuration data provided for the connector. |
-|authenticationData |AuthenticationData |Holds data source access URL and credential to access it. |
+|customConfiguration |[CustomConfiguration](/microsoftsearch/custom-connector-sdk-contracts-common#customconfiguration) |Configuration data provided for the connector. |
+|authenticationData |[AuthenticationData](/microsoftsearch/custom-connector-sdk-contracts-common#authenticationdata) |Holds data source access URL and credential to access it. |
 
 #### ValidateCustomConfigurationResponse
 
@@ -55,7 +55,7 @@ Response model of validation of custom configuration information
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|status |OperationStatus |Status of operation and error details in case of error. |
+|status |[OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) |Status of operation and error details in case of error. |
 
 #### GetDataSourceSchemaRequest
 
@@ -63,8 +63,8 @@ Request model to get schema information of data source
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|customConfiguration |CustomConfiguration |Configuration data provided for the connector. |
-|authenticationData |AuthenticationData |Holds data source access URL and credential to access it. |
+|customConfiguration |[CustomConfiguration](/microsoftsearch/custom-connector-sdk-contracts-common#customconfiguration) |Configuration data provided for the connector. |
+|authenticationData |[AuthenticationData](/microsoftsearch/custom-connector-sdk-contracts-common#authenticationdata) |Holds data source access URL and credential to access it. |
 
 #### GetDataSourceSchemaResponse
 
@@ -72,5 +72,5 @@ Response model of data source schema request
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|status |OperationStatus |Status of operation and error details in case of error. |
-|dataSourceSchema |DataSourceSchema |Data source schema. More details about schema are present [here](/graph/api/resources/externalconnectors-schema?view=graph-rest-beta). |
+|status |[OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) |Status of operation and error details in case of error. |
+|dataSourceSchema |[DataSourceSchema](/microsoftsearch/custom-connector-sdk-contracts-common#datasourceschema) |Data source schema. More details about schema are present [here](/graph/api/resources/externalconnectors-schema?view=graph-rest-beta). |
