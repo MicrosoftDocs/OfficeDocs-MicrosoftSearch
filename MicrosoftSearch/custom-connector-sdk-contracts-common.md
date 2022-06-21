@@ -11,7 +11,9 @@ description: "Graph connectors SDK Contracts Common Models"
 
 # Common Models
 
-**CustomConfiguration**: Connector specific custom configuration info provided by Search Admin during connection creation. The structure and format of the configuration is not managed by the platform. Connector developers can use format of their choice.
+## CustomConfiguration
+
+Connector specific custom configuration info provided by Search Admin during connection creation. The structure and format of the configuration is not managed by the platform. Connector developers can use format of their choice.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -24,9 +26,11 @@ AuthenticationType enum members:
 |Anonymous |0 |No authentication required to access the data source |
 |Basic |1 |Basic Authentication in the form of username and password to access the data source |
 |Windows |2 |Windows AD based authentication that supports username, password and domain info |
-|OAuth2ClientCredentials |3 |OAuth2 based authentication with client credentials - supports app id and app secret |
+|oAuth2ClientCredential |3 |OAuth2 based authentication with client credentials - supports app id and app secret |
 
-**AuthenticationData**: Holds credential provided by admin to access data source. It contains authentication type, data source url and credentials data.
+## AuthenticationData
+
+Holds credential provided by admin to access data source. It contains authentication type, data source url and credentials data.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -34,16 +38,20 @@ AuthenticationType enum members:
 |DatasourceUrl |string |Url or path to access data source - path to the resource that needs to be crawled. Example: Connection string for a database |
 |basicCredential |BasicCredential |Credentials in the form of username and password to access the data source. This will be set exclusive to windowsCredential and the authType will be set to Basic when this is set. |
 |windowsCredential |WindowsCredential |Credentials in the form of windows AD username, password and domain to access the data source. This will be set exclusive to basicCredential and the authType will be set to Windows when this is set. |
-|oAuth2ClientCredentials |OAuth2ClientCredentials |Credentials in the form of app id and app secret for OAuth client credentials based authentication for accessing the datasource. This will be set exclusive to oAuth2ClientCredentials and the authType will be set to OAuth2ClientCredentials when this is set. |
+|oAuth2ClientCredential |oAuth2ClientCredential |Credentials in the form of app id and app secret for OAuth client credentials based authentication for accessing the datasource. This will be set exclusive to oAuth2ClientCredential and the authType will be set to oAuth2ClientCredential when this is set. |
 
-**BasicCredential**: Represents basic credentials model
+## BasicCredential
+
+Represents basic credentials model
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
 |username |string |Username for accessing the data source |
 |secret |string |Secret to use with username for accessing data source |
 
-**WindowsCredential**: Represents windows credentials model
+## WindowsCredential
+
+Represents windows credentials model
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -51,15 +59,19 @@ AuthenticationType enum members:
 |secret |string | Secret to use with username for accessing data source |
 |domain |string | AD Domain that the account belongs to. If not provided by the admin explicitly, this holds the value of machine name. |
 
-**OAuth2ClientCredentials**: Represents credential model for oauth2 client credentials
+## oAuth2ClientCredential
+
+Represents credential model for oauth2 client credentials
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
 |appId |string |Application id/client id for the OAuth2 application |
 |appSecret |String |Application secret/client secret for the OAuth2 application |
-|oAuth2ClientCredentialsResponse |OAuth2ClientCredentIalsResponse |Contains OAuth token related details. This will be set to the response which connector sends after the first validate authentication call succeeds. |
+|oAuth2ClientCredentialResponse |oAuth2ClientCredentialResponse |Contains OAuth token related details. This will be set to the response which connector sends after the first validate authentication call succeeds. |
 
-**OAuth2ClientCredentIalsResponse**: Represents response model from auth server for OAuth2 token request. The fields present in this model are the common response fields specified in OAuth2 documentation. Additionally idToken can be set when OpenIDConnect is supported by the auth servers.
+## oAuth2ClientCredentialResponse
+
+Represents response model from auth server for OAuth2 token request. The fields present in this model are the common response fields specified in OAuth2 documentation. Additionally idToken can be set when OpenIDConnect is supported by the auth servers.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -70,7 +82,9 @@ expiresIn |uint64 |The expiry time of the token in unix timestamp |
 scope |string |Scopes supported by the token if auth server sends it |
 idToken |string  |The id token if auth server supports open ID connect |
 
-**OperationResult**: Enum containing possible values for the result of operations.
+## OperationResult
+
+Enum containing possible values for the result of operations.
 
 OperationResult enum members:
 
@@ -85,7 +99,9 @@ OperationResult enum members:
 |Cancelled |6 |If operation was cancelled by Cancellation Token |
 |TokenExpired |7 |To be used in OAuth flow when the token sent to the connector by the platform has expired. During crawl, on receiving this status, the platform will trigger the refresh token flow and call RefreshAccessToken method in ConnectorOAuthService. |
 
-**OperationStatus**: Represents the status of an operation including error/warnings and retry details. This is part of the response of all APIs in ConnectionManagementService and ConnectorCrawlerService.
+## OperationStatus
+
+Represents the status of an operation including error/warnings and retry details. This is part of the response of all APIs in ConnectionManagementService and ConnectorCrawlerService.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -101,7 +117,9 @@ RetryType enum members: This enum is used to define strategy for retrying in cas
 |Standard |1 | Standard retry with linear wait time will be made |
 |ExponentialBackOff |2 | Retry by exponential backoff will be made |
 
-**RetryDetails**: The is used for communicating the retry policy where retry is required.
+## RetryDetails
+
+This is used for communicating the retry policy where retry is required.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -111,7 +129,9 @@ RetryType enum members: This enum is used to define strategy for retrying in cas
 |backoffCoefficient |float |Gets coefficient used in the calculation of Exponential Backoff. |
 |backoffRate |float |Gets backoff Rate used in the calculation of Exponential Backoff. |
 
-**DataSourceSchema**: Represents schema of properties that represent a data entity in data source. More details on schema can be found [here](/graph/api/resources/externalconnectors-schema?view=graph-rest-beta)
+## DataSourceSchema
+
+Represents schema of properties that represent a data entity in data source. More details on schema can be found [here](/graph/api/resources/externalconnectors-schema?view=graph-rest-beta)
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -142,7 +162,9 @@ SearchAnnotations enum members:
 |IsContent |8 |Content property is to identify a property that can be full text indexed. Admins will choose among the available properties as to which should be the property to be treated as content for that specific connection. More on the content property [here](/graph/connecting-external-content-manage-items#content) |
 |IsRefinable |16 |If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. A refinable property cannot be searchable. |
 
-**SearchPropertyLabel**: These are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. Read more [here](/graph/connecting-external-content-manage-schema#semantic-labels)
+## SearchPropertyLabel
+
+These are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. Read more [here](/graph/connecting-external-content-manage-schema#semantic-labels)
 
 SearchPropertyLabel enum members:
 
@@ -165,7 +187,9 @@ SearchPropertyLabel enum members:
 |ContainerUrl |14 | The URL of the container. |
 |IconUrl | 15 |The URL of an icon. |
 
-**SourcePropertyDefinition**: Defines a single source property for an item in data source. Read more about schema property definitions [here](/graph/api/resources/externalconnectors-property?view=graph-rest-1.0)
+## SourcePropertyDefinition
+
+Defines a single source property for an item in data source. Read more about schema property definitions [here](/graph/api/resources/externalconnectors-property?view=graph-rest-1.0)
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|

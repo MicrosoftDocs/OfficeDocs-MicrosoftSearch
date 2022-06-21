@@ -9,16 +9,16 @@ ms.service: mssearch
 description: "Graph connectors SDK Contracts Connector Crawler API"
 ---
 
-## Connector Crawler APIs and Models
+# Connector Crawler APIs and Models
 
 These APIs are called during a crawl
 
-### Connector Crawler APIs
+## Connector Crawler APIs
 
 |Method |Parameters |Return Type |Description |
 |:----------|:-------------|:----------|:----------|
-|GetCrawlStream |GetCrawlStreamRequest |CrawlStreamBit as a stream |This API is used to read data from the data source. This will be called by platform during during full and periodic full crawls where all items should be read from the datasource and returned to the platform. |
-|GetIncrementalCrawlStream |GetIncrementalCrawlStreamRequest |IncrementalCrawlStreamBit as a stream |This API is used to read data from the data source. This will be called by platform during incremental crawls where only the incremental changes in items since last incremental crawl needs to be returned to the platform. This is optional to implement. |
+|GetCrawlStream |[GetCrawlStreamRequest](#getcrawlstreamrequest) |[CrawlStreamBit](#crawlstreambit) as a stream |This API is used to read data from the data source. This will be called by platform during during full and periodic full crawls where all items should be read from the datasource and returned to the platform. |
+|GetIncrementalCrawlStream |[GetIncrementalCrawlStreamRequest](#getincrementalcrawlstreamrequest) |[IncrementalCrawlStreamBit](#incrementalcrawlstreambit) as a stream |This API is used to read data from the data source. This will be called by platform during incremental crawls where only the incremental changes in items since last incremental crawl needs to be returned to the platform. This is optional to implement. |
 
 ### Connector Crawler Models
 
