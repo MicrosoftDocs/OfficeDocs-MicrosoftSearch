@@ -37,8 +37,8 @@ Response model of validate authentication request to data source
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|status |OperationStatus |Status of operation and error details in case of error. |
-|oAuth2ClientCredentialsResponse |OAuth2ClientCredentialsResponse |Credential information to be sent to the connector during the crawl in case of OAuth flow (Access token, refresh token etc., which is sent by the auth server). This need not be set for non-OAuth flows. |
+|status |[OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) |Status of operation and error details in case of error. |
+|oAuth2ClientCredentialResponse |[OAuth2ClientCredentialResponse](/microsoftsearch/custom-connector-sdk-contracts-common#oAuth2ClientCredentialResponse) |Credential information to be sent to the connector during the crawl in case of OAuth flow (Access token, refresh token etc., which is sent by the auth server). This need not be set for non-OAuth flows. |
 
 #### ValidateCustomConfigurationRequest
 
