@@ -63,7 +63,8 @@ You can connect to the following data sources by using connectors created by Mic
 
 <!---Add links below when new docs are created--->
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
-* [Azure DevOps](azure-devops-connector.md)
+* [Azure DevOps Work Items](azure-devops-connector.md)
+* [Azure DevOps Wiki](azure-devops-wiki-connector.md)
 * [Azure SQL and Microsoft SQL Server](MSSQL-connector.md)
 * [Confluence Cloud](confluence-cloud-connector.md)
 * [Confluence On-premises](confluence-onpremises-connector.md)
@@ -103,6 +104,7 @@ Although Microsoft Graph connectors and Microsoft Search APIs are now generally 
 The set of connectors and features in preview include:
 
 * [Confluence On-premises connector](confluence-onpremises-connector.md)
+* [Azure DevOps Wiki connector](azure-devops-wiki-connector.md)
 * [Multiple connections in a vertical](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## How do I customize and configure search results?
