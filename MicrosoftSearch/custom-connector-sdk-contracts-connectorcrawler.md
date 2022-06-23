@@ -69,8 +69,8 @@ Response model containing the item, status indicating success/failures if any an
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-|ContentItem |0 |Item with content to ingest. These are the actual data items. Example: website content. |
-|LinkItem |1 |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. |
+|[ContentItem](#contentitem) |0 |Item with content to ingest. These are the actual data items. Example: website content. |
+|[LinkItem](#linkitem) |1 |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. |
 
 #### CrawlItem
 
@@ -87,9 +87,9 @@ Represents an entity in the data source. For example: a file, a folder or a reco
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-|ContentItem|0 |Item with content to ingest. These are the actual data items. Example: website content |
-|LinkItem |1 |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. |
-|DeletedItem |2 |Item that is deleted from datasource and should be deleted from index. |
+|[ContentItem](#contentitem) |0 |Item with content to ingest. These are the actual data items. Example: website content |
+|[LinkItem](#linkitem) |1 |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. |
+|[DeletedItem](#deleteditem) |2 |Item that is deleted from datasource and should be deleted from index. |
 
 #### IncrementalCrawlItem
 
@@ -242,10 +242,10 @@ This is a model to hold any of the supported types of values by the platform in 
 |doubleValue |double |Represents a double value |
 |dateTimeValue |google.protobuf.Timestamp |Represents a dateTime value |
 |boolValue |bool |Represents a boolean value |
-|stingCollectionValue |StringCollectionType |Represents value which is a collection of strings |
-|intCollectionValue |IntCollectionType |Represents value which is a collection of int64 (long) |
-|doubleCollectionValue |DoubleCollectionType |Represents value which is a collection of double |
-|dateTimeCollectionValue |TimestampCollectionType |Represents value which is a collection of dateTime |
+|stingCollectionValue |[StringCollectionType](#stringcollectiontype) |Represents value which is a collection of strings |
+|intCollectionValue |[IntCollectionType](#intcollectiontype) |Represents value which is a collection of int64 (long) |
+|doubleCollectionValue |[DoubleCollectionType](#doublecollectiontype) |Represents value which is a collection of double |
+|dateTimeCollectionValue |[TimestampCollectionType](#timestampcollectiontype) |Represents value which is a collection of dateTime |
 
 #### StringCollectionType
 

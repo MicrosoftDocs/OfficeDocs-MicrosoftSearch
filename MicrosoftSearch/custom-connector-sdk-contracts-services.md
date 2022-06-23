@@ -19,3 +19,5 @@ The contract protocol buffer files have the following services which connector d
 |ConnectionManagement |Service containing APIs which are called during the process of custom connector connection creation on M365 admin center. |
 |ConnectorCrawl |Service containing APIs which are called during a crawl. |
 |ConnectorOAuth |Service for OAuth flows like refreshing access token during crawls. |
+
+You can download these contract protocol buffer files from [here](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/Contracts).

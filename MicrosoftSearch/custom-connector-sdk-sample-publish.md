@@ -15,7 +15,7 @@ description: "Graph connectors SDK sample publish"
 
 2. Navigate to **Search & intelligence** > **Data Sources** and click on “**Add**”.
 
-3. Choose "**Custom Connector**" option and paste the following manifest details for your sample connector implementation with your updated connectorId:
+3. Choose "**Custom Connector**" option and paste the following manifest details for your sample connector implementation with your updated **connectorId**:
 
     ```json
      {
@@ -23,17 +23,13 @@ description: "Graph connectors SDK sample publish"
       "connectorId": "<ConnectorGuid>",
     
       // This is list of all supported auth types. Remove the ones that the connector does not support.
-      "authTypes": [ "Anonymous" ],
-      
-      // The crawl configuration. The frequencies can be Small (starts with 15 mins), Medium (starts with 4 hours) or Large (starts with 1 day).
-      "crawlConfiguration": {    
-        "periodicFull": {   
-          "supportedFrequency": "Small"  
-        }  
-      }   
+      "authTypes": [ "Anonymous" ]   
     }
 
     ```
+
+    >[!Note]
+    >You can also find the manifest file auto generated in the output directory of your project.
 
 4. Provide connection name, connection ID, description (optional) select the checkbox and click Next.
 

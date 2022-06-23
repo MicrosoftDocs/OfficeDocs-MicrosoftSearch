@@ -23,29 +23,20 @@ description: "Graph connectors SDK publish"
       // This is list of all supported auth types. Remove the ones that the connector does not support.
       "authTypes": [ "Windows, Basic, Anonymous, OAuth2ClientCredentials" ],
       
-      // The crawl configuration. The frequencies can be Small (starts with 15 mins), Medium (starts with 4 hours) or Large (starts with 1 day).   
-      "crawlConfiguration": {    
-        "periodicFull": {   
-          "supportedFrequency": "Large"  
-        },  
-        "incremental": {  
-          "supportedFrequency": "Small"  
-        }   
-      }   
+      // The list of additional crawl types that the connector supports in addition to full and periodic full crawl. This is an optional field.
+      "additionalCrawlsSupported": [ "Incremental" ]
     }
 
     ```
 
     a. connectorId should be a GUID. This is the same as ConnectorUniqueId in the Connector Info Service implementation file or the GUID defined by you.
 
-    b. AuthTypes must be a non-empty array with one or more of Anonymous/Basic/Windows/OAuth type
+    b. AuthTypes must be a non-empty array with one or more of Anonymous/Basic/Windows/OAuth type.
 
-    c. supportedFrequency can be Small/Medium/Large.
-            Small: Starts with 15 minutes
-            Medium: Starts with 1 hour
-            Large: Starts with 1 day up to 4 weeks
+    c. Defining crawl types in addition to full and period full crawl is optional depending on the implementation and data source support.
 
-    d. Incremental crawl frequency setting is optional depending on the data source support
+    >[!Note]
+    > The manifest file is generated automatically in the output directory of your project if you're using the C# project template. You may edit/update the manifest file as required.
 
 3. [Name the connection](/microsoftsearch/configure-connector#step-2-name-the-connection)
 
