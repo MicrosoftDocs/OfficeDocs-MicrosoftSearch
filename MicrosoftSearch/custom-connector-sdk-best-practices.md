@@ -18,7 +18,7 @@ The following section contains the best practices to follow while implementing a
 The crawl progress marker acts as an identifier for the particular item sent by the connector that was last processed by the connector platform. There are two types of crawls which happen: Periodic full and incremental crawls.
 Periodic full crawls are meant to get all items in the data source. The items which are modified nor not present in the index  are only ingested and items not found in data source are deleted from the index.
 Incremental crawls are meant for only getting items added/modified since the last incremental crawl. The connector can send items to be deleted as well as a part of this. For the first incremental crawl, the start time of last full crawl is sent as well. The connector can optionally use this to fetch items changed only after that.
-Both these crawls have their own crawl progress markers:
+Both these crawls have their own crawl progress markers.
 
 ### Usage of crawl progress marker during periodic full crawls
 
@@ -97,70 +97,70 @@ GenericType can have one of the types of string/int64/double/DateTime/Boolean or
 
 ```csharp
 // Setting string value in generic type
-            GenericType stringType = new GenericType
-            {
-                StringValue = "Hello"
-            };
+    GenericType stringType = new GenericType
+    {
+        StringValue = "Hello"
+    };
 
-            // Setting int64 value in generic type
-            GenericType int64Type = new GenericType
-            {
-                IntValue = 1000
-            };
+    // Setting int64 value in generic type
+    GenericType int64Type = new GenericType
+    {
+        IntValue = 1000
+    };
 
-            // Setting double value in generic type
-            GenericType doubleType = new GenericType
-            {
-                DoubleValue = 12.54
-            };
+    // Setting double value in generic type
+    GenericType doubleType = new GenericType
+    {
+        DoubleValue = 12.54
+    };
 
-            // Setting dateTime value in generic type
-            GenericType dateTimeType = new GenericType
-            {
-                DateTimeValue = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.UtcNow)
-            };
+    // Setting dateTime value in generic type
+    GenericType dateTimeType = new GenericType
+    {
+        DateTimeValue = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.UtcNow)
+    };
 
-            // Setting boolean value in generic type
-            GenericType boolType = new GenericType
-            {
-                BoolValue = true
-            };
+    // Setting boolean value in generic type
+    GenericType boolType = new GenericType
+    {
+        BoolValue = true
+    };
 
-            // Setting string collection value in generic type - Initialize the string collection first, add the values to the string collection and then set it in the generic type
-            StringCollectionType stringCollection = new StringCollectionType();
-            stringCollection.Values.Add("Value1");
-            stringCollection.Values.Add("Value2");
-            GenericType stringCollectionType = new GenericType
-            {
-                StringCollectionValue = stringCollection
-            };
+    // Setting string collection value in generic type - Initialize the string collection first, add the values to the string collection and then set it in the generic type
+    StringCollectionType stringCollection = new StringCollectionType();
+    stringCollection.Values.Add("Value1");
+    stringCollection.Values.Add("Value2");
+    GenericType stringCollectionType = new GenericType
+    {
+        StringCollectionValue = stringCollection
+    };
 
-            // Setting int64 collection value in generic type - Initialize the int64 collection first, add the values to the int64 collection and then set it in the generic type
-            IntCollectionType intCollection = new IntCollectionType();
-            intCollection.Values.Add(1234);
-            intCollection.Values.Add(5436);
-            GenericType intCollectionType = new GenericType
-            {
-                IntCollectionValue = intCollection
-            };
+    // Setting int64 collection value in generic type - Initialize the int64 collection first, add the values to the int64 collection and then set it in the generic type
+    IntCollectionType intCollection = new IntCollectionType();
+    intCollection.Values.Add(1234);
+    intCollection.Values.Add(5436);
+    GenericType intCollectionType = new GenericType
+    {
+        IntCollectionValue = intCollection
+    };
 
-            // Setting double collection value in generic type - Initialize the double collection first, add the values to the double collection and then set it in the generic type
-            DoubleCollectionType doubleCollection = new DoubleCollectionType();
-            doubleCollection.Values.Add(12.54);
-            doubleCollection.Values.Add(34.213);
-            GenericType doubleCollectionType = new GenericType
-            {
-                DoubleCollectionValue = doubleCollection
-            };
+    // Setting double collection value in generic type - Initialize the double collection first, add the values to the double collection and then set it in the generic type
+    DoubleCollectionType doubleCollection = new DoubleCollectionType();
+    doubleCollection.Values.Add(12.54);
+    doubleCollection.Values.Add(34.213);
+    GenericType doubleCollectionType = new GenericType
+    {
+        DoubleCollectionValue = doubleCollection
+    };
 
-            // Setting datetime collection value in generic type - Initialize the datetime collection first, add the values to the datetime collection and then set it in the generic type
-            TimestampCollectionType dateTimeCollection = new TimestampCollectionType();
-            dateTimeCollection.Values.Add(Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.UtcNow));
-            dateTimeCollection.Values.Add(Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.UtcNow.AddDays(-1)));
-            GenericType dateTimeCollectionType = new GenericType
-            {
-                DateTimeCollectionValue = dateTimeCollection
-            };
+    // Setting datetime collection value in generic type - Initialize the datetime collection first, add the values to the datetime collection and then set it in the generic type
+    TimestampCollectionType dateTimeCollection = new TimestampCollectionType();
+    dateTimeCollection.Values.Add(Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.UtcNow));
+    dateTimeCollection.Values.Add(Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.UtcNow.AddDays(-1)));
+    GenericType dateTimeCollectionType = new GenericType
+    {
+        DateTimeCollectionValue = dateTimeCollection
+    };
 
 ```
 
@@ -221,8 +221,8 @@ In case of transient and retriable errors that occur during crawls, the retry de
 
 The following errors move the connection to failed state:
 
-•OperationResult.AuthenticationIssue
+* OperationResult.AuthenticationIssue
 
-•OperationResult.ValidationFailure
+* OperationResult.ValidationFailure
 
 The other operation codes will be treated as transient failures and will be retried in subsequent crawls.

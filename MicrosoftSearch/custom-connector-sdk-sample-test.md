@@ -11,12 +11,12 @@ description: "Graph connectors SDK Sample Testing"
 
 # Test the connector
 
-The connector can be tested using the TestApp utility. This is a console application for testing the connector before taking it to production. It will not create any connections or ingest any data.
+The connector can be tested using the [TestApp utility](/microsoftsearch/custom-connector-sdk-testapp.md). This is a console application for testing the connector before taking it to production. It will not create any connections or ingest any data.
 
 1. Update the ConnectionInfo.json file with the connector id, data source path and set AuthenticationKind as null. This file is found under C:\Program Files\Graph connector agent\TestApp\Config
 
     a. The provider id is generated uniquely for each project and can be found in the ConnectorInfoServiceImpl.cs file
-    \<Image>
+    ![Provider id location in file](media/connectors-sdk/providerid.png)
 
     b. The datasource path is the path where you downloaded the ApplianceParts.csv file.
 
@@ -46,7 +46,7 @@ The connector can be tested using the TestApp utility. This is a console applica
     ```
 
 2. Update CustomConnectorPortMap.json file with the port mapping of the connector. This file is found under C:\Program Files\Graph connector agent. Update this file with an entry for the connector id (obtained in step above from ConnectorInfoServiceImpl.cs file) and the port which is defined under ConnectorServer.cs file
-\<Image>
+![Port location in file](media/connectors-sdk/portmap.png)
 
     ```json
     {

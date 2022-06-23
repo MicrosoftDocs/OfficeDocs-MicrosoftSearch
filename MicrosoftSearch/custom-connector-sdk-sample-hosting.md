@@ -124,6 +124,9 @@ Follow the instructions below for hosting the connector as a windows service:
 
     ```
 
+    >[!Note]
+    >The service name must be unique for each unique connector.
+
 13. Open services.msc and check that the service is in running state
     ![Screenshot9](media/connectors-sdk/service9.png)
 

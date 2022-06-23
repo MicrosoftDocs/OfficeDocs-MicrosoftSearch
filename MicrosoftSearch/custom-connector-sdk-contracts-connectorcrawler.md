@@ -69,8 +69,8 @@ Response model containing the item, status indicating success/failures if any an
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-|[ContentItem](#contentitem) |0 |Item with content to ingest. These are the actual data items. Example: website content. |
-|[LinkItem](#linkitem) |1 |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. |
+|ContentItem |0 |Item with content to ingest. These are the actual data items. Example: website content. |
+|LinkItem |1 |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. |
 
 #### CrawlItem
 
@@ -87,9 +87,9 @@ Represents an entity in the data source. For example: a file, a folder or a reco
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-|[ContentItem](#contentitem) |0 |Item with content to ingest. These are the actual data items. Example: website content |
-|[LinkItem](#linkitem) |1 |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. |
-|[DeletedItem](#deleteditem) |2 |Item that is deleted from datasource and should be deleted from index. |
+|ContentItem|0 |Item with content to ingest. These are the actual data items. Example: website content |
+|LinkItem |1 |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. |
+|DeletedItem |2 |Item that is deleted from datasource and should be deleted from index. |
 
 #### IncrementalCrawlItem
 

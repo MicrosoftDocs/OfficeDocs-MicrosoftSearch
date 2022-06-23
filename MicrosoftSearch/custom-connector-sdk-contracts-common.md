@@ -19,7 +19,7 @@ Connector specific custom configuration info provided by Search Admin during con
 |:----------|:-------------|:----------|
 |configuration |string |Holds the configuration information as a string. Connector should have the capability to interpret the content of the string. |
 
-AuthenticationType enum members:
+## AuthenticationType enum members
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
@@ -34,11 +34,11 @@ Holds credential provided by admin to access data source. It contains authentica
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|authType |AuthenticationType |Type of authentication information held in this object |
+|authType |[AuthenticationType](#authenticationtype-enum-members) |Type of authentication information held in this object |
 |DatasourceUrl |string |Url or path to access data source - path to the resource that needs to be crawled. Example: Connection string for a database |
-|basicCredential |BasicCredential |Credentials in the form of username and password to access the data source. This will be set exclusive to windowsCredential and the authType will be set to Basic when this is set. |
-|windowsCredential |WindowsCredential |Credentials in the form of windows AD username, password and domain to access the data source. This will be set exclusive to basicCredential and the authType will be set to Windows when this is set. |
-|oAuth2ClientCredential |oAuth2ClientCredential |Credentials in the form of app id and app secret for OAuth client credentials based authentication for accessing the datasource. This will be set exclusive to oAuth2ClientCredential and the authType will be set to oAuth2ClientCredential when this is set. |
+|basicCredential |[BasicCredential](#basiccredential) |Credentials in the form of username and password to access the data source. This will be set exclusive to windowsCredential and the authType will be set to Basic when this is set. |
+|windowsCredential |[WindowsCredential](#windowscredential) |Credentials in the form of windows AD username, password and domain to access the data source. This will be set exclusive to basicCredential and the authType will be set to Windows when this is set. |
+|oAuth2ClientCredential |[oAuth2ClientCredential](#oauth2clientcredential) |Credentials in the form of app id and app secret for OAuth client credentials based authentication for accessing the datasource. This will be set exclusive to oAuth2ClientCredential and the authType will be set to oAuth2ClientCredential when this is set. |
 
 ## BasicCredential
 
@@ -67,7 +67,7 @@ Represents credential model for oauth2 client credentials
 |:----------|:-------------|:----------|
 |appId |string |Application id/client id for the OAuth2 application |
 |appSecret |String |Application secret/client secret for the OAuth2 application |
-|oAuth2ClientCredentialResponse |oAuth2ClientCredentialResponse |Contains OAuth token related details. This will be set to the response which connector sends after the first validate authentication call succeeds. |
+|oAuth2ClientCredentialResponse |[oAuth2ClientCredentialResponse](#oauth2clientcredentialresponse) |Contains OAuth token related details. This will be set to the response which connector sends after the first validate authentication call succeeds. |
 
 ## oAuth2ClientCredentialResponse
 
@@ -105,11 +105,13 @@ Represents the status of an operation including error/warnings and retry details
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|result |OperationResult |Result of the operation |
+|result |[OperationResult](#operationresult) |Result of the operation |
 |statusMessage |string |Custom message that can be used for logging and monitoring purposes |
-|retryInfo |RetryDetails |Retry information to be used by framework to retry the same operation for a failed operation. Will be ignored in case of success and partial success operations. |
+|retryInfo |[RetryDetails](#retrydetails) |Retry information to be used by framework to retry the same operation for a failed operation. Will be ignored in case of success and partial success operations. |
 
-RetryType enum members: This enum is used to define strategy for retrying in case of errors.
+## RetryType enum members
+
+This enum is used to define strategy for retrying in case of errors.
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
@@ -123,7 +125,7 @@ This is used for communicating the retry policy where retry is required.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|type |RetryType |Retry type defines the type of retry strategy required for the error |
+|type |[RetryType](#retrytype-enum-members) |Retry type defines the type of retry strategy required for the error |
 |numberOfRetries |uint32 |Number of retries to be done for the exception |
 |pauseBetweenRetriesInMilliseconds |uint64 |Gets pause between retries in case of standard retries |
 |backoffCoefficient |float |Gets coefficient used in the calculation of Exponential Backoff. |
@@ -135,9 +137,9 @@ Represents schema of properties that represent a data entity in data source. Mor
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|PropertyList |repeated SourcePropertyDefinition |Represents list of properties that define an item in data source. |
+|PropertyList |repeated [SourcePropertyDefinition](#sourcepropertydefinition) |Represents list of properties that define an item in data source. |
 
-SourcePropertyType enum members:
+## SourcePropertyType enum members
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
@@ -151,7 +153,7 @@ SourcePropertyType enum members:
 |DoubleCollection |7 |Property of type of array or collection of double type |
 |DateTimeCollection |8 |Property of type of array or collection of DateTime type |
 
-SearchAnnotations enum members:
+## SearchAnnotations enum members
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
@@ -166,7 +168,7 @@ SearchAnnotations enum members:
 
 These are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. Read more [here](/graph/connecting-external-content-manage-schema#semantic-labels)
 
-SearchPropertyLabel enum members:
+### SearchPropertyLabel enum members
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|

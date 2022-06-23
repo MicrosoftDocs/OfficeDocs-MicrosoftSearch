@@ -31,7 +31,7 @@ If the crawls are failing with connector unavailable on specified port, check th
 
 2. The port specified in the port map configuration file is correct.
 
-3. If the port map configuration file has been edited, make sure that the GcaHostService was restarted as mentioned in the "Updating port mapping configuration" section.
+3. If the port map configuration file has been edited, make sure that the GcaHostService was restarted as mentioned in [Updating port mapping configuration](#updating-port-mapping-configuration-file).
 
 ## Handling RPC errors
 
