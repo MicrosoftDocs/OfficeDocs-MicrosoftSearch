@@ -17,7 +17,7 @@ These APIs are used for OAuth flows like refreshing access token during crawls.
 
 |Method |Parameters |Return Type |Description |
 |:----------|:-------------|:----------|:----------|
-|RefreshAccessToken |RefreshAccessTokenRequest |RefreshAccessTokenResponse |This API is used to generate a refreshed token from the auth server of the datasource and send the token details to the platform. |
+|RefreshAccessToken |[RefreshAccessTokenRequest](#refreshaccesstokenrequest) |[RefreshAccessTokenResponse](#refreshaccesstokenresponse) |This API is used to generate a refreshed token from the auth server of the datasource and send the token details to the platform. |
 
 ### Connector OAuth API Models
 
@@ -27,7 +27,7 @@ Request model for refreshing the OAuth token.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|authenticationData |AuthenticationData |Holds data source access URL and credential to access the datasource along with current token information. |
+|authenticationData |[AuthenticationData](/microsoftsearch/custom-connector-sdk-contracts-common#authenticationdata) |Holds data source access URL and credential to access the datasource along with current token information. |
 
 #### RefreshAccessTokenResponse
 
@@ -35,5 +35,5 @@ Response model for Refresh OAuth token request.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|status |OperationStatus |Status of operation and error details in case of error |
-|refreshedCredentialData |OAuth2ClientCredentialsResponse |Credential data containing refreshed token information |
+|status |[OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) |Status of operation and error details in case of error |
+|refreshedCredentialData |[OAuth2ClientCredentialsResponse](/microsoftsearch/custom-connector-sdk-contracts-common#oauth2clientcredentialsresponse) |Credential data containing refreshed token information |

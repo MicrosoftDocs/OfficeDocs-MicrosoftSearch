@@ -17,8 +17,8 @@ These APIs are used to get information about the connector.
 
 |Method |Parameters |Return Type |Description |
 |:----------|:-------------|:----------|:-------------|
-|GetBasicConnectorInfo |GetBasicConnectorInfoRequest |GetBasicConnectorInfoResponse |This API is used to get basic information of the connector. Currently it will be used by the platform to fetch the unique Connector ID. |
-|HealthCheck |HealthCheckRequest |HealthCheckResponse |API to check if platform can communicate with the connector server. |
+|GetBasicConnectorInfo |[GetBasicConnectorInfoRequest](#getbasicconnectorinforequest) |[GetBasicConnectorInfoResponse](#getbasicconnectorinforesponse) |This API is used to get basic information of the connector. Currently it will be used by the platform to fetch the unique Connector ID. |
+|HealthCheck |[HealthCheckRequest](#healthcheckrequest) |[HealthCheckResponse](#healthcheckresponse) |API to check if platform can communicate with the connector server. |
 
 ### Connector Info API Models
 

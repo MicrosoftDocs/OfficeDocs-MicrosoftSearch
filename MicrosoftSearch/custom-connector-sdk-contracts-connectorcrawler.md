@@ -28,10 +28,10 @@ Request model for getting items during crawl
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|customConfiguration |CustomConfiguration |Configuration data provided for the connector |
-|authenticationData |AuthenticationData |Holds data source access URL and credential to access it |
-|crawlProgressMarker |CrawlCheckpoint |Holds data to identify what items were processed the last time crawl ran. This information is returned by the connector along with the items. This can be used by the connector in case of crashes happening on the platform during the crawl. |
-|Schema |DataSourceSchema |Schema of connection. This can be used by the connector to identify the property which is content and set it. |
+|customConfiguration |[CustomConfiguration](/microsoftsearch/custom-connector-sdk-contracts-common#customconfiguration) |Configuration data provided for the connector |
+|authenticationData |[AuthenticationData](/microsoftsearch/custom-connector-sdk-contracts-common#authenticationdata) |Holds data source access URL and credential to access it |
+|crawlProgressMarker |[CrawlCheckpoint](#crawlcheckpoint) |Holds data to identify what items were processed the last time crawl ran. This information is returned by the connector along with the items. This can be used by the connector in case of crashes happening on the platform during the crawl. |
+|Schema |[DataSourceSchema](/microsoftsearch/custom-connector-sdk-contracts-common#datasourceschema) |Schema of connection. This can be used by the connector to identify the property which is content and set it. |
 
 #### CrawlStreamBit
 
@@ -39,9 +39,9 @@ Response model containing the item, status indicating success/failures if any an
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|status |OperationStatus |Status of operation and error details in case of error |
-|crawlItem |CrawlItem |Single item crawled from data source |
-|crawlProgressMarker |CrawlCheckpoint |Indicator to identify the item crawled from the data source |
+|status |[OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) |Status of operation and error details in case of error |
+|crawlItem |[CrawlItem](#crawlitem) |Single item crawled from data source |
+|crawlProgressMarker |[CrawlCheckpoint](#crawlcheckpoint) |Indicator to identify the item crawled from the data source |
 
 #### GetIncrementalCrawlStreamRequest
 
@@ -49,10 +49,10 @@ Request model for getting items during incremental crawl.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|customConfiguration |CustomConfiguration |Configuration data provided for the connector |
-|authenticationData |AuthenticationData |Holds data source access URL and credential to access it |
-|crawlProgressMarker |CrawlCheckpoint |Holds data to identify what items were processed the last time crawl ran. This information is returned by the connector along with the items. This can be used by the connector in case of crashes happening on the platform during the crawl. |
-|schema |DataSourceSchema |Schema of connection. This can be used by the connector to identify the property which is content and set it. |
+|customConfiguration |[CustomConfiguration](/microsoftsearch/custom-connector-sdk-contracts-common#customconfiguration) |Configuration data provided for the connector |
+|authenticationData |[AuthenticationData](/microsoftsearch/custom-connector-sdk-contracts-common#authenticationdata) |Holds data source access URL and credential to access it |
+|crawlProgressMarker |[CrawlCheckpoint](#crawlcheckpoint) |Holds data to identify what items were processed the last time crawl ran. This information is returned by the connector along with the items. This can be used by the connector in case of crashes happening on the platform during the crawl. |
+|schema |[DataSourceSchema](/microsoftsearch/custom-connector-sdk-contracts-common#datasourceschema) |Schema of connection. This can be used by the connector to identify the property which is content and set it. |
 |previousCrawlStartTimeInUtc |Timestamp |DateTime value of previous crawl start time in UTC. This value can be used in first incremental crawl. For subsequent calls checkpoint value should be used. |
 
 #### IncrementalCrawlStreamBit
@@ -61,16 +61,16 @@ Response model containing the item, status indicating success/failures if any an
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|status |OperationStatus |Status of operation and error details in case of error |
-|crawlItem |IncrementalCrawlItem |Single item crawled from datasource during incremental crawl |
-|crawlProgressMarker |CrawlCheckpoint |Indicator to identify the last item crawled from the datasource during last incremental crawl |
+|status |[OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) |Status of operation and error details in case of error |
+|crawlItem |[IncrementalCrawlItem](#incrementalcrawlitem) |Single item crawled from datasource during incremental crawl |
+|crawlProgressMarker |[CrawlCheckpoint](#crawlcheckpoint) |Indicator to identify the last item crawled from the datasource during last incremental crawl |
 
-ItemType enum members for CrawlItem:
+#### ItemType enum members for CrawlItem
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-|ContentItem |0 |Item with content to ingest. These are the actual data items. Example: website content. |
-|LinkItem |1 |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. |
+|[ContentItem](#contentitem) |0 |Item with content to ingest. These are the actual data items. Example: website content. |
+|[LinkItem](#linkitem) |1 |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. |
 
 #### CrawlItem
 
@@ -78,18 +78,18 @@ Represents an entity in the data source. For example: a file, a folder or a reco
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|itemType |ItemType |The type of item being sent. This model should have one of contentItem or linkItem set and this enum field should correspond to the item being set – either contentItem or linkItem.
+|itemType |[ItemType](#itemtype-enum-members-for-crawlitem) |The type of item being sent. This model should have one of contentItem or linkItem set and this enum field should correspond to the item being set – either contentItem or linkItem.
 |itemId |string |Unique ID representing the item in the data source |
-|contentItem |ContentItem |Item with content to ingest. These are the actual data items. Example: website content. If contentItem is set, linkItem cannot be set. |
-|linkItem |LinkItem |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. If linkItem is set, contentItem cannot be set. |
+|contentItem |[ContentItem](#contentitem) |Item with content to ingest. These are the actual data items. Example: website content. If contentItem is set, linkItem cannot be set. |
+|linkItem |[LinkItem](#linkitem) |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. If linkItem is set, contentItem cannot be set. |
 
-ItemType enum members for IncrementalCrawlItem:
+#### ItemType enum members for IncrementalCrawlItem
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-|ContentItem |0 |Item with content to ingest. These are the actual data items. Example: website content |
-|LinkItem |1 |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. |
-|DeletedItem |2 |Item that is deleted from datasource and should be deleted from index. |
+|[ContentItem](#contentitem) |0 |Item with content to ingest. These are the actual data items. Example: website content |
+|[LinkItem](#linkitem) |1 |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. |
+|[DeletedItem](#deleteditem) |2 |Item that is deleted from datasource and should be deleted from index. |
 
 #### IncrementalCrawlItem
 
@@ -97,11 +97,11 @@ Represents an entity in the data source. For example: a file, a folder or a reco
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|itemType |ItemType |The type of item being sent. This model should have one of contentItem or linkItem or deletedItem set and this enum field should correspond to the item being set – either contentItem or linkItem or deletedItem. |
+|itemType |[ItemType](#itemtype-enum-members-for-incrementalcrawlitem) |The type of item being sent. This model should have one of contentItem or linkItem or deletedItem set and this enum field should correspond to the item being set – either contentItem or linkItem or deletedItem. |
 |itemId |string |Unique ID representing the item in the data source |
-|contentItem |ContentItem |Item with content to ingest. These are the actual data items. Example website content. If contentItem is set, linkItem or deletedItem cannot be set. |
-|linkItem |LinkItem |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. If linkItem is set, contentItem or deletedItem cannot be set. |
-|deletedItem |DeletedItem |Item that is deleted from the datasource and should be removed from the index. If deletedItem is set, contentItem or linkItem cannot be set. |
+|contentItem |[ContentItem](#contentitem) |Item with content to ingest. These are the actual data items. Example website content. If contentItem is set, linkItem or deletedItem cannot be set. |
+|linkItem |[LinkItem](#linkitem) |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. If linkItem is set, contentItem or deletedItem cannot be set. |
+|deletedItem |[DeletedItem](#deleteditem) |Item that is deleted from the datasource and should be removed from the index. If deletedItem is set, contentItem or linkItem cannot be set. |
 
 #### ContentItem
 
@@ -109,9 +109,9 @@ Item that holds the content of the data source entity. This is the with actual c
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|propertyValues |SourcePropertyValueMap| Has the key and values of each property in the item |
-|accessList |AccessControlList |Access control list to restrict access to the item to specific users/groups |
-|content |Content |Content property of the item. The content value can be used when displaying search results. |
+|propertyValues |[SourcePropertyValueMap](#sourcepropertyvaluemap) |Has the key and values of each property in the item |
+|accessList |[AccessControlList](#accesscontrollist) |Access control list to restrict access to the item to specific users/groups |
+|content |[Content](#content) |Content property of the item. The content value can be used when displaying search results. |
 
 #### LinkItem
 
@@ -119,7 +119,7 @@ Item that acts as a link to another item. These link items will be sent again to
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|metadata |map< string, GenericType> |This is a dictionary containing the additional metadata needed by the connector to recrawl the item. |
+|metadata |map<string, [GenericType](#generictype)> |This is a dictionary containing the additional metadata needed by the connector to recrawl the item. |
 
 #### DeletedItem
 
@@ -131,9 +131,9 @@ Holds the access control list which restricts the users to whom the search resul
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|Entries |repeated AccessControlEntry |List of access control entries. This is of type array or collection. |
+|Entries |repeated [AccessControlEntry](#accesscontrolentry) |List of access control entries. This is of type array or collection. |
 
-AclAccessType enum members:
+#### AclAccessType enum members
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
@@ -147,10 +147,10 @@ Holds individual access control entries.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|accessType |AclAccessType |Access type of the entity – grant or deny |
-|principal |Principal |Represents group or user to whom the access is defined |
+|accessType |[AclAccessType](#aclaccesstype-enum-members) |Access type of the entity – grant or deny |
+|principal |[Principal](#principal) |Represents group or user to whom the access is defined |
 
-PrincipalType enum members:
+#### PrincipalType enum members
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
@@ -160,7 +160,7 @@ PrincipalType enum members:
 |Everyone |3 |Special group to specify access to everyone |
 |EveryoneExceptGuests |4 |Special group to specify access to everyone except guests |
 
-IdentitySource enum members:
+#### IdentitySource enum members
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
@@ -168,7 +168,7 @@ IS_None |0 |Default. This will be assumed to be AAD |
 AzureActiveDirectory |1 |Source of identity is AAD |
 External |2 |Source of identity is anything other than AAD |
 
-IdentityType enum members:
+#### IdentityType enum members
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
@@ -183,11 +183,11 @@ Structure to store attributes of the principal (user/group) to whom access is de
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|type |PrincipalType |Type of principal |
+|type |[PrincipalType](#principaltype-enum-members) |Type of principal |
 |value |string |Principal value – the value of the SID or UPN or AAD id etc |
-|identitySource |IdentitySource |Source of identity |
-|identityType |IdentityType |Identity representation type |
-|identitySourceProperties |map< string, string> |Any additional metadata about the Identity source |
+|identitySource |[IdentitySource](#identitysource-enum-members) |Source of identity |
+|identityType |[IdentityType](#identitytype-enum-members) |Identity representation type |
+|identitySourceProperties |map<string, string> |Any additional metadata about the Identity source |
 
 #### SourcePropertyValueMap
 
@@ -195,9 +195,9 @@ Map of source property key and its value as present in the data source. Stores t
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|values |map< string, GenericType> |Add key and values of the properties of the item. Key will be property name and value will be property value. Example: For a file content – title, modifiedDate etc can be property keys and their values will be the title of the file and file modified date respectively. |
+|values |map<string, [GenericType](#generictype)> |Add key and values of the properties of the item. Key will be property name and value will be property value. Example: For a file content – title, modifiedDate etc can be property keys and their values will be the title of the file and file modified date respectively. |
 
-ContentType enum members:
+#### ContentType enum members
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
@@ -218,7 +218,7 @@ Value of the content property of the item. This will be used to render search re
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|contentType |ContentType |Type of the content |
+|contentType |[ContentType](#contenttype-enum-members) |Type of the content |
 |contentValue |string |Value of the content property |
 
 #### CrawlCheckpoint
