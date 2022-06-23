@@ -9,11 +9,11 @@ ms.service: mssearch
 description: "Graph connectors SDK Contracts Connector OAuth API"
 ---
 
-## Connector OAuth APIs and Models
+# Connector OAuth APIs and Models
 
 These APIs are used for OAuth flows like refreshing access token during crawls.
 
-### Connector OAuth APIs
+## Connector OAuth APIs
 
 |Method |Parameters |Return Type |Description |
 |:----------|:-------------|:----------|:----------|

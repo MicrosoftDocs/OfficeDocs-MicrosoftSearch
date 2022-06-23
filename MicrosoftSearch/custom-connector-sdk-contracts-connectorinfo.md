@@ -9,11 +9,11 @@ ms.service: mssearch
 description: "Graph connectors SDK Contracts ConnectorInfo API"
 ---
 
-## Connector Info APIs and Models
+# Connector Info APIs and Models
 
 These APIs are used to get information about the connector.
 
-### Connector Info APIs
+## Connector Info APIs
 
 |Method |Parameters |Return Type |Description |
 |:----------|:-------------|:----------|:-------------|
