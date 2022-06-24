@@ -1,5 +1,5 @@
 ---
-title: "ServiceNow Knowledge Graph connector for Microsoft Search"
+title: "ServiceNow Knowledge Microsoft Graph connector"
 ms.author: kam1
 author: TheKarthikeyan
 manager: harshkum
@@ -16,27 +16,26 @@ description: "Set up the ServiceNow Knowledge Graph connector for Microsoft Sear
 ---
 <!---Previous ms.author: kam1 --->
 
+# ServiceNow Knowledge Microsoft Graph connector
 
-# ServiceNow Knowledge Graph Connector
-
-With the Microsoft Graph Connector for ServiceNow, your organization can index knowledge-base articles that are visible to all users or restricted with user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, end users can search for those articles from any Microsoft Search client.  
+With the Microsoft Graph connector for ServiceNow, your organization can index knowledge-base articles that are visible to all users or restricted with user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, end users can search for those articles from any Microsoft Search client.  
 
 You can also refer [this video](https://www.youtube.com/watch?v=TVSkJpk1RiE) to learn more about Graph Connector's capability in managing search permissions.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Knowledge Graph  connector. It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article. If you have not already done so, read the entire Set up your Graph Connector article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Knowledge Graph  connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. If you have not already done so, read the entire Setup your Graph Connector article to understand the general setup process.
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR 
-other instructions that apply to only ServiceNow Graph connector including information about [Troubleshooting](#troubleshooting) 
+other instructions that apply to only ServiceNow connector including information about [Troubleshooting](#troubleshooting) 
 and [Limitations](#limitations).  
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center.
+## Step 1: Add a connector in the Microsoft 365 admin center.
 Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 2: Name the connection.
 Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 3: Connection Settings
-To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**. Your organization’s ServiceNow instance URL typically looks like **https://&lt;your-organization-domain>.service-now.com**. 
+To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**. Your organization's ServiceNow instance URL typically looks like **https://&lt;your-organization-domain>.service-now.com**. 
 
 Along with this URL, you will need a **service account** for setting up the connection to ServiceNow as well as for allowing Microsoft Search to periodically update the knowledge articles based on the refresh schedule. The service account will need read access to the following **ServiceNow table records** to successfully crawl various entities.
 
@@ -61,11 +60,11 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
 
 
 >[!NOTE]
-> ServiceNow Graph Connector can index knowledge articles and user criteria permissions without advanced scripts. If a user criteria contains advanced script all the related knowledge articles will be hidden from search results.
+> ServiceNow Microsoft Graph connector can index knowledge articles and user criteria permissions without advanced scripts. If a user criteria contains advanced script all the related knowledge articles will be hidden from search results.
 
-To authenticate and sync content from ServiceNow, choose **one of three** supported methods: 
- 
-- Basic authentication 
+To authenticate and sync content from ServiceNow, choose **one of three** supported methods:
+
+- Basic authentication
 - ServiceNow OAuth (recommended)
 - Azure AD OpenID Connect
 
@@ -79,18 +78,18 @@ To use ServiceNow OAuth for authentication, a ServiceNow admin needs to provisio
 
 The following table provides guidance on how to fill out the endpoint creation form:
 
-Field | Description | Recommended Value 
+Field | Description | Recommended Value
 --- | --- | ---
 Name | Unique value that identifies the application that you require OAuth access for. | Microsoft Search
 Client ID | A read-only, auto generated unique ID for the application. The instance uses the client ID when it requests an access token. | NA
 Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each other. | Follow security best-practices by treating the secret as a password.
-Redirect URL | A required callback URL that the authorization server redirects to. | https://gcs.office.com/v1.0/admin/oauth/callback
+Redirect URL | A required callback URL that the authorization server redirects to. | `https://gcs.office.com/v1.0/admin/oauth/callback`
 Logo URL | A URL that contains the image for the application logo. | NA
 Active | Select the check box to make the application registry active. | Set to active
-Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds). | 31,536,000 (1 year)
+Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds). | 31,536,000 (one year)
 Access token lifespan | The number of seconds that an access token is valid. | 43,200 (12 hours)
 
-Enter the client id and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role. Refer the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
+Enter the client id and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role. Refer to the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
 ## Step 3.3: Azure AD OpenID Connect
 
@@ -131,7 +130,7 @@ Follow the steps to retrieve Service Principal Object Identifier
 
 Now you have all the information required from Azure portal. A quick summary of the information is given in the table below.
 
-Property | Description 
+Property | Description
 --- | ---
 Directory ID (Tenant ID) | Unique ID of the Azure Active Directory tenant, from step 3.a.
 Application ID (Client ID) | Unique ID of the application registered in step 3.a.
@@ -185,7 +184,7 @@ All other values can be left to default.
 
 ### Step 3.3.6: Enable Knowledge role for the ServiceNow account
 
-Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Refer the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
+Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Refer to the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
 Use Application ID as Client ID (from step 3.a), and Client secret (from step 3.b) in admin center configuration wizard to authenticate to your ServiceNow instance using Azure AD OpenID Connect.
 
@@ -201,13 +200,13 @@ Use the preview results button to verify the sample values of the selected prope
 
 The ServiceNow connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. Indexed data appears in the search results and is visible to all users in the organization or users who have access to them via user criteria permission respectively. If a knowledge article is not enabled with a user criteria, it will appear in search results of everyone in the organization.
 
-ServiceNow Graph Connector supports default user criteria permissions without advanced scripts. When the connector encounters a user criteria with advanced script, all data using that user criteria will not appear in search results.
+The connector supports default user criteria permissions without advanced scripts. When the connector encounters a user criteria with advanced script, all data using that user criteria will not appear in search results.
 
 If you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Azure Active Directory (AAD) provisioned users or Non-AAD users.
 
 To identify which option is suitable for your organization:
 
-1. Choose the **AAD** option if the Email ID of ServiceNow users are **same** as the UserPrincipalName (UPN) of users in AAD.
+1. Choose the **AAD** option if the Email ID of ServiceNow users is **same** as the UserPrincipalName (UPN) of users in AAD.
 2. Choose the **Non-AAD** option if the email ID of ServiceNow users is **different** from the UserPrincipalName (UPN) of users in AAD. 
 
 >[!NOTE]
@@ -237,7 +236,7 @@ Follow the general [setup instructions](./configure-connector.md).
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
 ## Limitations
-ServiceNow Knowledge Graph connector has the following limitations in its latest release:
+The ServiceNow Knowledge Microsoft Graph connector has the following limitations in its latest release:
 
 - *Only people with access to this data source* feature under Manage Search permissions step processes only [user criteria](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) permissions. Any other type of access permissions will not be applied in the search results.
 - User criteria with advanced scripts are not supported in the current version. Any knowledge articles with such an access restriction will be indexed with deny everyone access i.e. they will not appear in search results to any user until we support them.
@@ -245,9 +244,9 @@ ServiceNow Knowledge Graph connector has the following limitations in its latest
 ## Troubleshooting
 After publishing your connection, customizing the results page, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 You can find troubleshooting steps for commonly seen issues below.
-### 1. Unable to login due to Single Sign-On enabled ServiceNow instance
+### 1. Unable to log in due to Single Sign-On enabled ServiceNow instance
 
-If your organization has enabled Single Sign-On (SSO) to ServiceNow, you may have trouble logging in with the service account. You can bring up username and password based login by adding <em> `login.do`</em> to the ServiceNow instance URL. Example. `https://<your-organization-domain>.service-now.com./login.do` 
+If your organization has enabled Single Sign-On (SSO) to ServiceNow, you may have trouble logging in with the service account. You can bring up username and password based login by adding <em> `login.do`</em> to the ServiceNow instance URL. Example. `https://<your-organization-domain>.service-now.com./login.do`
 
 ### 2. Unauthorized or forbidden response to API request
 
@@ -255,28 +254,60 @@ If your organization has enabled Single Sign-On (SSO) to ServiceNow, you may hav
 If you see forbidden or unauthorized response in connection status, check if the service account has required access to the tables mentioned in [step 3: connection settings](#step-3-connection-settings). Please check whether all the columns in the tables have read access.
 
 #### 2.2. Change in account password
-The Graph Connector uses access token fetched on behalf of service account for crawl. The access token refreshes every 12 hours. Ensure that service account password is not changed after publishing the connection. You may need to re-authenticate the connection if there is a change in password.
+The Microsoft Graph connector uses access token fetched on behalf of service account for crawl. The access token refreshes every 12 hours. Ensure that service account password is not changed after publishing the connection. You may need to reauthenticate the connection if there is a change in password.
 
 #### 2.3. Check if ServiceNow instance behind firewall
-Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You will need explicitly allow access to Graph Connector service. You can find public IP address range of Graph Connector Service in the table below. Based on your tenant region, add it to your ServiceNow instance network allow list.
+The Microsoft Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You will need to explicitly allow access to connector service. You can find public IP address range of connector service in the table below. Based on your tenant region, add it to your ServiceNow instance network allow list.
 
 **Environment** | **Region** | **Range**
 --- | --- | ---
 PROD | North America | 52.250.92.252/30, 52.224.250.216/30
-PROD | Europe | 20.54.41.208/30, 51.105.159.88/30 
-PROD | Asia Pacific | 52.139.188.212/30, 20.43.146.44/30 
+PROD | Europe | 20.54.41.208/30, 51.105.159.88/30
+PROD | Asia Pacific | 52.139.188.212/30, 20.43.146.44/30
 
 #### 2.4. Access permissions not working as expected
+
 If you observe discrepancies in access permissions applied to search results, verify access flow chart for user criteria in [managing access to knowledge bases and articles](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html).
 
-### 3. Issues with *Only people with access to this data source* permission
+### 3. Change the URL of the knowledge article to view it in the support portal
 
-#### 3.1 Unable to choose *Only people with access to this data source*
+ServiceNow Knowledge connector computes the AccessUrl property using sys_id in the `<instance_url>/kb_view.do?sys_kb_id<sysId>` format. It will open the knowledge article in the backend system view. If you prefer redirecting the article to a different URL, follow the instructions below.
+#### 3.1 Edit your result type
+In customization tab in *Search & Intelligence* section of Microsoft 365 admin center, navigate to edit the result type configured for your ServiceNow Knowledge connection.
+![Editing Result Type](media/servicenow-knowledge-connector/edit-result-type.png)
 
-You may not be able to choose *Only people with access to this data source* option if the service account do not have read permissions to the required tables in [step 3: connection settings](#step-3-connection-settings). Check whether the service account can read tables mentioned under *Index and support user criteria permissions* feature.
+When the edit result type dialog opens, click on **Edit** next to the result layout section. 
+![Editing Result Layout](media/servicenow-knowledge-connector/edit-result-type-2.png)
 
-#### 3.2 User mapping failures
+#### 3.2 Find the items block
+Find the items block containing text property with `shortDescription` and `AccessUrl` values.
+
+![Editing items block in result type](media/servicenow-knowledge-connector/edit-result-type-3.png)
+
+#### 3.3 Edit AccessUrl property
+
+To change the destination URL, edit the `AccessUrl` part of the text property in the items block. For example, if a ServiceNow Knowledge article should be redirected to `https://contoso.service-now.com/sp` where `sp` is the service URL portal prefix, follow the steps below.
+
+**Original value** | **New value**
+--- | ---
+`"[{shortdescription}]({AccessUrl})"` | `"[{shortdescription}](https://contoso.service-now.com/sp?id=kb_article_view&sysparm_article={number})"`
+
+Where `number` is the knowledge article number property. It should be marked as *retrieve* in Manage Schema screen during connection creation.
+
+Finish reviewing your result type updates and hit **Submit**. Give it a minute or two to pick up the changes. Your search results should now redirect to the desired URLs.
+
+### 4. Issues with *Only people with access to this data source* permission
+
+#### 4.1 Unable to choose *Only people with access to this data source*
+
+You may not be able to choose *Only people with access to this data source* option if the service account doesn't have read permissions to the required tables in [step 3: connection settings](#step-3-connection-settings). Check whether the service account can read tables mentioned under *Index and support user criteria permissions* feature.
+
+#### 4.2 User mapping failures
 
  ServiceNow user accounts that do not have an M365 user in Azure Active Directory will not map. Non-user, service accounts are expected to fail user mapping. Number of user mapping failures can be accessed in identity stats area in connection detail window. Log of failed user mappings can be downloaded from Error tab.
+
+### 5. Issues with user criteria access flow
+
+If you see differences in the user criteria validation between ServiceNow and Microsoft Search, set `glide.knowman.block_access_with_no_user_criteria` system property to `no`.
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)

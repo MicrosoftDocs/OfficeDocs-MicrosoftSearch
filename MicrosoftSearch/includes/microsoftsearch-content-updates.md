@@ -2,45 +2,53 @@
 
 
 
-## Week of December 13, 2021
+## Week of June 13, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 12/14/2021 | [Microsoft Search Overview](/MicrosoftSearch/overview-microsoft-search) | modified |
-| 12/15/2021 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
-| 12/17/2021 | [Microsoft Graph Connectors Overview](/MicrosoftSearch/connectors-overview) | modified |
+| 6/14/2022 | [Dynamics 365 results in Microsoft Search](/MicrosoftSearch/manage-dynamics365) | modified |
+| 6/15/2022 | [Result Layout for Jira Graph connector](/MicrosoftSearch/jira-connector-result-layout) | modified |
 
 
-## Week of December 06, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 12/6/2021 | [Customize address bar shortcuts for Microsoft Edge](/MicrosoftSearch/edge-shortcuts) | modified |
-| 12/6/2021 | [Microsoft Search for US government environments](/MicrosoftSearch/microsoft-search-us-government-environments) | modified |
-| 12/8/2021 | [Manage search result layouts](/MicrosoftSearch/customize-results-layout) | modified |
-
-
-## Week of November 29, 2021
+## Week of May 30, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 11/29/2021 | [Manage search verticals](/MicrosoftSearch/manage-verticals) | modified |
-| 11/30/2021 | [Create a custom search results page in SharePoint Online](/MicrosoftSearch/create-search-results-pages) | modified |
-| 11/30/2021 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
-| 12/2/2021 | [On-Premises Agent](/MicrosoftSearch/graph-connector-agent) | modified |
-| 12/2/2021 | [Manage floor plans](/MicrosoftSearch/manage-floorplans) | modified |
-| 12/3/2021 | [Customize address bar shortcuts for Microsoft Edge](/MicrosoftSearch/edge-shortcuts) | modified |
-| 12/3/2021 | [Manage floor plans](/MicrosoftSearch/manage-floorplans) | modified |
+| 5/31/2022 | [Set up Microsoft Graph connectors in the Microsoft 365 admin center](/MicrosoftSearch/configure-connector) | modified |
+| 6/2/2022 | [Result Layout for Jira Graph connector](/MicrosoftSearch/jira-connector-result-layout) | added |
+| 6/2/2022 | [Atlassian Jira Cloud Microsoft Graph connector](/MicrosoftSearch/jira-connector) | modified |
+| 6/3/2022 | [Result Layout for Azure DevOps Wiki Graph connector](/MicrosoftSearch/azure-devops-wiki-connector-result-layout) | added |
+| 6/3/2022 | [Azure DevOps Wiki Graph connector for Microsoft Search](/MicrosoftSearch/azure-devops-wiki-connector) | added |
+| 6/3/2022 | [Azure Cognitive Search results in Microsoft Search (Preview)](/MicrosoftSearch/manage-azure-cognitive-search) | added |
 
 
-## Week of November 22, 2021
+## Week of May 23, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 11/22/2021 | [Manage  filters](/MicrosoftSearch/custom-filters) | modified |
-| 11/23/2021 | [Manage bookmarks](/MicrosoftSearch/manage-bookmarks) | modified |
-| 11/23/2021 | [Manage search verticals](/MicrosoftSearch/manage-verticals) | modified |
+| 5/23/2022 | [CSV connector for Microsoft Search](/MicrosoftSearch/csv-connector) | added |
+| 5/23/2022 | [Confluence Cloud Microsoft Graph connector](/MicrosoftSearch/confluence-cloud-connector) | modified |
+| 5/23/2022 | [Confluence On-premises Microsoft Graph connector (Preview)](/MicrosoftSearch/confluence-onpremises-connector) | modified |
+| 5/23/2022 | [Enterprise websites Microsoft Graph connector](/MicrosoftSearch/enterprise-web-connector) | modified |
+| 5/23/2022 | [File share Microsoft Graph connector](/MicrosoftSearch/fileshare-connector) | modified |
+| 5/23/2022 | [Atlassian Jira Cloud Microsoft Graph connector](/MicrosoftSearch/jira-connector) | modified |
+| 5/23/2022 | [MediaWiki Microsoft Graph connector](/MicrosoftSearch/mediawiki-connector) | modified |
+| 5/23/2022 | [Salesforce Microsoft Graph connector](/MicrosoftSearch/salesforce-connector) | modified |
+| 5/23/2022 | [ServiceNow Catalog Microsoft Graph connector](/MicrosoftSearch/servicenow-catalog-connector) | modified |
+| 5/23/2022 | [ServiceNow Knowledge Microsoft Graph connector](/MicrosoftSearch/servicenow-knowledge-connector) | modified |
+
+
+## Week of May 16, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/17/2022 | [Azure SQL and Microsoft SQL Server Microsoft Graph connector for Microsoft Search](/MicrosoftSearch/mssql-connector) | modified |
+| 5/17/2022 | [Azure Data Lake Microsoft Graph connector for Microsoft Search](/MicrosoftSearch/azure-data-lake-connector) | modified |
+| 5/17/2022 | [Azure DevOps Work Items Microsoft Graph connector for Microsoft Search](/MicrosoftSearch/azure-devops-connector) | modified |
+| 5/17/2022 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
+| 5/19/2022 | [File share Graph connector for Microsoft Search](/MicrosoftSearch/fileshare-connector) | modified |
+| 5/20/2022 | [Release history for Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent-releases) | modified |
