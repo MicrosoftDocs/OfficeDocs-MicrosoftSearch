@@ -43,7 +43,8 @@ description: "Graph connectors SDK publish"
 4. Provide the URL to the data source you're connecting to and credentials to access it. Choose the Graph connector Agent available, and validate the information provided. Click Next on success.
 
 5. Provide any additional configuration if required by your connector. You can pass any information specific to the connection to the datasource. For example, if you are building a connector for Azure DevOps, the projects which need to be indexed can be the additional parameters. For a Wiki connector, the sub-sections which need to be indexed can be the additional parameters. The API to query the wiki can take these filters specified in the additional parameters and get the items from datasource.
-The data in the parameter is opaque to the platform. It is serialized and stored as a string and passed to the connector. The connector can deserialize this as required and use it.
+
+    The data in the parameter is opaque to the platform. It is serialized and stored as a string and passed to the connector. The connector can deserialize this as required and use it.
 
 6. [Assign property labels](/microsoftsearch/configure-connector#step-6-assign-property-labels)
 
