@@ -73,3 +73,5 @@ In this step, you will search for parts in SharePoint.
 ## Summary
 
 You have successfully completed the custom Microsoft Graph connector tutorial. Now you have created a custom connector and used it to power Microsoft Search.
+
+The sample project is available [here](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/C%23%20sample) for your reference.

@@ -18,9 +18,11 @@ You can find the test application inside the "TestApp" folder present in your Gr
 You need to update the following config files to use this test utility:
 
 **ConnectionInfo.json**: This file holds all information pertaining to the connection – the connector id identifying the custom connector for which this connection is being created, the datasource URL, credentials to access the datasource, the schema associated with the connection, additional parameters for the connection.
+
 You can find this config file inside the "Config" folder of the test application.
 
 **CustomConnectorPortMap.json**: After creating the custom connector, add the mapping of the connector id and the port on which it is running in this file. You can add multiple connector IDs and their corresponding port information in this file. Each unique connector should be running on a different port.
+
 You can find this file in your Graph connector agent installation folder.
 
 After creating the custom connector, add the mapping of the connector id and the port on which it is running in the CustomConnectorPortMap.json.
