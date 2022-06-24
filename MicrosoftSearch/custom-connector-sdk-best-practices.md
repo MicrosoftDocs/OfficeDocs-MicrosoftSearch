@@ -30,7 +30,7 @@ For incremental crawls, the crawl progress marker sent by the connector to the c
 
 ## Constructing generic types
 
-The property values of the content item can have a range of data types. Since GRPC does not have a construct for generic objects, we have created a GenericType structure that can hold any of the supported data types. GenericType has the following structure:
+The property values of the content item can have a range of data types. Since gRPC does not have a construct for generic objects, we have created a [GenericType](/microsoftsearch/custom-connector-sdk-contracts-connectorcrawler#generictype) structure that can hold any of the supported data types. GenericType has the following structure:
 
 ```csharp
 // Represents a generic type that can hold any supported value
@@ -190,19 +190,19 @@ Schema has certain restrictions as listed below:
 
 ## Fetching items during crawl
 
-The GetCrawlStream method is a [server streaming method](https://grpc.io/docs/what-is-grpc/core-concepts/#server-streaming-rpc). Each item crawled from the datasource is converted into a CrawlStreamBit and sent over the response stream. To get a good throughput, it is best if the connector retrieves a batch of items from the data source and converts each item to the CrawlStreamBit and sends them over the response stream. The batch size depends on the datasource, we recommend 25 as an optimal batch size to maintain continuous flow of items over the stream.
+The GetCrawlStream method is a [server streaming method](https://grpc.io/docs/what-is-grpc/core-concepts/#server-streaming-rpc). Each item crawled from the datasource is converted into a [CrawlStreamBit](/microsoftsearch/custom-connector-sdk-contracts-connectorcrawler#crawlstreambit) and sent over the response stream. To get a good throughput, it is best if the connector retrieves a batch of items from the data source and converts each item to the CrawlStreamBit and sends them over the response stream. The batch size depends on the datasource, we recommend 25 as an optimal batch size to maintain continuous flow of items over the stream.
 
 ## Exception handling in connector code
   
-All responses from the gRPC calls have an OperationStatus which indicates if the operation succeeded or failed and the failure reason and retry details in case of failures. We recommend that all code should be wrapped in a try-catch block and all exceptions be logged by the connector and a proper operation status be sent to the platform. In the case of connection management flows, the StatusMessage that is sent as part of the response is displayed in the M365 Admin Center. So, sending meaningful messages will be helpful for debugging errors on the connector. Unhandled exceptions will result in Unknown or generic error messages on the UI, which won’t be helpful in debugging.
+All responses from the gRPC calls have an [OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) which indicates if the operation succeeded or failed and the failure reason and retry details in case of failures. We recommend that all code should be wrapped in a try-catch block and all exceptions be logged by the connector and a proper operation status be sent to the platform. In the case of connection management flows, the StatusMessage that is sent as part of the response is displayed in the M365 Admin Center. So, sending meaningful messages will be helpful for debugging errors on the connector. Unhandled exceptions will result in Unknown or generic error messages on the UI, which won’t be helpful in debugging.
 
 ## Timeouts
 
-All methods in ConnectionManagementService should complete and return within 30 seconds, otherwise the platform will timeout the requests.
+All methods in [ConnectionManagementService](/MicrosoftSearch/custom-connector-sdk-contracts-connectionmanagement) should complete and return within 30 seconds, otherwise the platform will timeout the requests.
 
 ## Sending back errors from connector to platform
 
-All responses have the OperationStatus set in the response structure. In case of any errors, connectors are expected to use this OperationStatus to send the failure reason and retry information back to platform. It is recommended to use this to set the errors during crawls in case of connection level errors like expired credentials to access datasource.
+All responses have the [OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) set in the response structure. In case of any errors, connectors are expected to use this OperationStatus to send the failure reason and retry information back to platform. It is recommended to use this to set the errors during crawls in case of connection level errors like expired credentials to access datasource.
 OperationStatus structure has 3 fields that can be used to represent any errors:
 
 ### OperationResult
