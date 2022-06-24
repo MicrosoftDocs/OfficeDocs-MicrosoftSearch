@@ -13,7 +13,7 @@ description: "Graph connectors SDK Contracts Common Models"
 
 ## CustomConfiguration
 
-Connector specific custom configuration info provided by Search Admin during connection creation. The structure and format of the configuration is not managed by the platform. Connector developers can use format of their choice.
+Connector specific custom configuration info provided by Search Admin during connection creation. The structure and format of the configuration isn't managed by the platform. Connector developers can use format of their choice.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -26,7 +26,7 @@ Connector specific custom configuration info provided by Search Admin during con
 |Anonymous |0 |No authentication required to access the data source |
 |Basic |1 |Basic Authentication in the form of username and password to access the data source |
 |Windows |2 |Windows AD based authentication that supports username, password and domain info |
-|oAuth2ClientCredential |3 |OAuth2 based authentication with client credentials - supports app id and app secret |
+|oAuth2ClientCredential |3 |OAuth2 based authentication with client credentials - supports app ID and app secret |
 
 ## AuthenticationData
 
@@ -36,9 +36,9 @@ Holds credential provided by admin to access data source. It contains authentica
 |:----------|:-------------|:----------|
 |authType |[AuthenticationType](#authenticationtype-enum-members) |Type of authentication information held in this object |
 |DatasourceUrl |string |Url or path to access data source - path to the resource that needs to be crawled. Example: Connection string for a database |
-|basicCredential |[BasicCredential](#basiccredential) |Credentials in the form of username and password to access the data source. This will be set exclusive to windowsCredential and the authType will be set to Basic when this is set. |
-|windowsCredential |[WindowsCredential](#windowscredential) |Credentials in the form of windows AD username, password and domain to access the data source. This will be set exclusive to basicCredential and the authType will be set to Windows when this is set. |
-|oAuth2ClientCredential |[oAuth2ClientCredential](#oauth2clientcredential) |Credentials in the form of app id and app secret for OAuth client credentials based authentication for accessing the datasource. This will be set exclusive to oAuth2ClientCredential and the authType will be set to oAuth2ClientCredential when this is set. |
+|basicCredential |[BasicCredential](#basiccredential) |Credentials in the form of username and password to access the data source. This property will be set exclusive to windowsCredential and the authType will be set to Basic when this property is set. |
+|windowsCredential |[WindowsCredential](#windowscredential) |Credentials in the form of windows AD username, password and domain to access the data source. This property will be set exclusive to basicCredential and the authType will be set to Windows when this property is set. |
+|oAuth2ClientCredential |[oAuth2ClientCredential](#oauth2clientcredential) |Credentials in the form of app ID and app secret for OAuth client credentials based authentication for accessing the datasource. This property will be set exclusive to oAuth2ClientCredential and the authType will be set to oAuth2ClientCredential when this property is set. |
 
 ## BasicCredential
 
@@ -57,7 +57,7 @@ Represents windows credentials model
 |:----------|:-------------|:----------|
 |username |string | Username for accessing the data source |
 |secret |string | Secret to use with username for accessing data source |
-|domain |string | AD Domain that the account belongs to. If not provided by the admin explicitly, this holds the value of machine name. |
+|domain |string | AD Domain that the account belongs to. If not provided by the admin explicitly, this property holds the value of machine name. |
 
 ## oAuth2ClientCredential
 
@@ -65,9 +65,9 @@ Represents credential model for oauth2 client credentials
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|appId |string |Application id/client id for the OAuth2 application |
+|appId |string |Application ID/client ID for the OAuth2 application |
 |appSecret |String |Application secret/client secret for the OAuth2 application |
-|oAuth2ClientCredentialResponse |[oAuth2ClientCredentialResponse](#oauth2clientcredentialresponse) |Contains OAuth token related details. This will be set to the response which connector sends after the first validate authentication call succeeds. |
+|oAuth2ClientCredentialResponse |[oAuth2ClientCredentialResponse](#oauth2clientcredentialresponse) |Contains OAuth token related details. This property will be set to the response which connector sends after the first validate authentication call succeeds. |
 
 ## oAuth2ClientCredentialResponse
 
@@ -80,7 +80,7 @@ Represents response model from auth server for OAuth2 token request. The fields 
 tokenType |string |Type of the token – usually Bearer token for OAuth |
 expiresIn |uint64 |The expiry time of the token in unix timestamp |
 scope |string |Scopes supported by the token if auth server sends it |
-idToken |string  |The id token if auth server supports open ID connect |
+idToken |string  |The ID token if auth server supports open ID connect |
 
 ## OperationResult
 
@@ -91,9 +91,9 @@ OperationResult enum members:
 |Member |Value |Description |
 |:----------|:-------------|:----------|
 |Success |0 |If operation succeeded without any error |
-|PartialSuccess |1 |Operation is a success, but there is a warning message to be processed |
+|PartialSuccess |1 |Operation is a success, but there's a warning message to be processed |
 |ValidationFailure |2 |One or more validations failed |
-|AuthenticationIssue |3 |Credentials provided did not work |
+|AuthenticationIssue |3 |Credentials provided didn't work |
 |DatasourceError |4 |Data source read error |
 |NetworkError |5 |Network operation error |
 |Cancelled |6 |If operation was cancelled by Cancellation Token |
@@ -101,7 +101,7 @@ OperationResult enum members:
 
 ## OperationStatus
 
-Represents the status of an operation including error/warnings and retry details. This is part of the response of all APIs in ConnectionManagementService and ConnectorCrawlerService.
+Represents the status of an operation including error/warnings and retry details. This model is part of the response of all APIs in [ConnectionManagementService](/MicrosoftSearch/custom-connector-sdk-contracts-connectionmanagement.md) and [ConnectorCrawlerService](/MicrosoftSearch/custom-connector-sdk-contracts-connectorcrawler.md).
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -121,7 +121,7 @@ This enum is used to define strategy for retrying in case of errors.
 
 ## RetryDetails
 
-This is used for communicating the retry policy where retry is required.
+This model is used for communicating the retry policy where retry is required.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -158,15 +158,15 @@ Represents schema of properties that represent a data entity in data source. Mor
 |Member |Value |Description |
 |:----------|:-------------|:----------|
 |None |0 |None |
-|IsSearchable |1 |If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its content. Eg., If property is "Author", searching "Smith" returns items whose Author property contains "Smith". |
-|IsQueryable |2 |If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of 1 or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(\*) Eg., If property is "Author", search query can be "Author: Smith" |
-|IsRetrievable |4 |If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable will increase search latency. Be selective and choose relevant properties. |
+|IsSearchable |1 |If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there's a search hit in one of the searchable fields or its content. For example, if property is "Author", searching "Smith" returns items whose Author property contains "Smith". |
+|IsQueryable |2 |If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of one or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(\*) For example, if property is "Author", search query can be "Author: Smith" |
+|IsRetrievable |4 |If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or to be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable will increase search latency. Be selective and choose relevant properties. |
 |IsContent |8 |Content property is to identify a property that can be full text indexed. Admins will choose among the available properties as to which should be the property to be treated as content for that specific connection. More on the content property [here](https://docs.microsoft.com/graph/connecting-external-content-manage-items#content). |
-|IsRefinable |16 |If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. A refinable property cannot be searchable. |
+|IsRefinable |16 |If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. A refinable property can't be searchable. |
 
 ## SearchPropertyLabel
 
-These are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. Read more [here](https://docs.microsoft.com/graph/connecting-external-content-manage-schema#semantic-labels).
+Search property labels are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. Read more [here](https://docs.microsoft.com/graph/connecting-external-content-manage-schema#semantic-labels).
 
 ### SearchPropertyLabel enum members
 
@@ -180,11 +180,11 @@ These are well-known tags published by Microsoft that you can add against a prop
 |CreatedDateTime |5 |Date and time that the item was created in the data source. |
 |LastModifiedDateTime |6 |Date and time the item was last modified in the data source. |
 |FileName |7 |In case of a file, the name of the file in the data source. |
-|FileExtension |8 |In case of a file, the extension of the file in the data source . |
+|FileExtension |8 |In case of a file, the extension of the file in the data source. |
 |LastModifiedByUpn |9 |[UPN](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the person who most recently edited the item in the data source. |
 |CreatedByUpn |10 |[UPN](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the person who created the item in the data source. |
 |AuthorsUpn |11 |[UPNs](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of all the people who participated/collaborated on the item in the data source. |
-|UnknownFutureValue |12 |For future-proofing, following MSGraph evolvable enums.All new enums should be added below this one until major API version change. |
+|UnknownFutureValue |12 |For future-proofing, following MSGraph evolvable enums. All new enums should be added below this one until major API version change. |
 |ContainerName |13 |Name of the container. |
 |ContainerUrl |14 | The URL of the container. |
 |IconUrl | 15 |The URL of an icon. |
@@ -198,7 +198,7 @@ Defines a single source property for an item in data source. Read more about sch
 |name |string | Name of the property |
 |type |SourcePropertyType | Data type of the property |
 |defaultSearchAnnotations |uint32 | Default search annotations for the property |
-|requiredSearchAnnotations |uint32 | Required search annotations.Certain properties like "id" is always set isQueryable true and isRetrievable true. |
+|requiredSearchAnnotations |uint32 | Required search annotations. Certain properties like "ID" is always set isQueryable true and isRetrievable true. |
 |defaultSemanticLabels |repeated SearchPropertyLabel | List of semantic labels for the source property |
 |order |int32 |\[Optional\]Order of this source property. Used by UI for sorting the search results. |
 |label |string |\[Optional\]Label of this source property. Used by search results UI to display the label (human readable name). |

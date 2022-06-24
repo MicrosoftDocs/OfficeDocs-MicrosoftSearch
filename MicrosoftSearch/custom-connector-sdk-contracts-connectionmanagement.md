@@ -11,15 +11,15 @@ description: "Graph connectors SDK Contracts Connection Management API"
 
 # Connection management APIs and Models
 
-These APIs are called during the process of custom connector connection creation on M365 admin center.
+These APIs are called during the process of custom connector connection creation on Microsoft 365 admin center.
 
 ## Connection management APIs
 
 |Method |Parameters |Return Type |Description |
 |:----------|:-------------|:----------|:-------------|
-|ValidateAuthentication |[ValidateAuthenticationRequest](#validateauthenticationrequest) |[ValidateAuthenticationResponse](#validateauthenticationresponse) |This API is called during custom connector connection creation on M365 admin center. The API is used to validate the credentials and data source path provided by the admin in the connection settings step. |
-|ValidateCustomConfiguration |[ValidateCustomConfigurationRequest](#validatecustomconfigurationrequest) |[ValidateCustomConfigurationResponse](#validatecustomconfigurationresponse) |This API is called during custom connector connection creation on M365 admin center. The API is used to validate the optional configuration provided by the admin in connection configuration step. If no configuration is required for the connector, this API can simply return a success response. |
-|GetDataSourceSchema |[GetDataSourceSchemaRequest](#getdatasourceschemarequest) |[GetDataSourceSchemaResponse](#getdatasourceschemaresponse) |This API is called during custom connector connection creation on M365 admin center. The API is used to get the data source schema in the format which can be understood by Microsoft Graph. More details are present [here](https://docs.microsoft.com/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0). |
+|ValidateAuthentication |[ValidateAuthenticationRequest](#validateauthenticationrequest) |[ValidateAuthenticationResponse](#validateauthenticationresponse) |This API is called during custom connector connection creation on Microsoft 365 admin center. The API is used to validate the credentials and data source path provided by the admin in the connection settings step. |
+|ValidateCustomConfiguration |[ValidateCustomConfigurationRequest](#validatecustomconfigurationrequest) |[ValidateCustomConfigurationResponse](#validatecustomconfigurationresponse) |This API is called during custom connector connection creation on Microsoft 365 admin center. The API is used to validate the optional configuration provided by the admin in connection configuration step. If no configuration is required for the connector, this API can just return a success response. |
+|GetDataSourceSchema |[GetDataSourceSchemaRequest](#getdatasourceschemarequest) |[GetDataSourceSchemaResponse](#getdatasourceschemaresponse) |This API is called during custom connector connection creation on Microsoft 365 admin center. The API is used to get the data source schema in the format that can be understood by Microsoft Graph. More details are present [here](https://docs.microsoft.com/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0). |
 
 ### Connection management API Models
 
@@ -38,7 +38,7 @@ Response model of validate authentication request to data source
 |Property |Type |Description |
 |:----------|:-------------|:----------|
 |status |[OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) |Status of operation and error details in case of error. |
-|oAuth2ClientCredentialResponse |[OAuth2ClientCredentialResponse](/microsoftsearch/custom-connector-sdk-contracts-common#oauth2clientcredentialresponse) |Credential information to be sent to the connector during the crawl in case of OAuth flow (Access token, refresh token etc., which is sent by the auth server). This need not be set for non-OAuth flows. |
+|oAuth2ClientCredentialResponse |[OAuth2ClientCredentialResponse](/microsoftsearch/custom-connector-sdk-contracts-common#oauth2clientcredentialresponse) |Credential information to be sent to the connector during the crawl in case of OAuth flow (Access token, refresh token etc., which is sent by the auth server). This property need not be set for non-OAuth flows. |
 
 #### ValidateCustomConfigurationRequest
 

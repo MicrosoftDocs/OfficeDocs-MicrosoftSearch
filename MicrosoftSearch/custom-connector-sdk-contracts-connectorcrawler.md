@@ -17,8 +17,8 @@ These APIs are called during a crawl
 
 |Method |Parameters |Return Type |Description |
 |:----------|:-------------|:----------|:----------|
-|GetCrawlStream |[GetCrawlStreamRequest](#getcrawlstreamrequest) |[CrawlStreamBit](#crawlstreambit) as a stream |This API is used to read data from the data source. This will be called by platform during during full and periodic full crawls where all items should be read from the datasource and returned to the platform. |
-|GetIncrementalCrawlStream |[GetIncrementalCrawlStreamRequest](#getincrementalcrawlstreamrequest) |[IncrementalCrawlStreamBit](#incrementalcrawlstreambit) as a stream |This API is used to read data from the data source. This will be called by platform during incremental crawls where only the incremental changes in items since last incremental crawl needs to be returned to the platform. This is optional to implement. |
+|GetCrawlStream |[GetCrawlStreamRequest](#getcrawlstreamrequest) |[CrawlStreamBit](#crawlstreambit) as a stream |This API is used to read data from the data source. This method will be called by platform during full and periodic full crawls where all items should be read from the datasource and returned to the platform. |
+|GetIncrementalCrawlStream |[GetIncrementalCrawlStreamRequest](#getincrementalcrawlstreamrequest) |[IncrementalCrawlStreamBit](#incrementalcrawlstreambit) as a stream |This API is used to read data from the data source. This method will be called by platform during incremental crawls where only the incremental changes in items since last incremental crawl needs to be returned to the platform. This method is optional to implement. |
 
 ### Connector Crawler Models
 
@@ -30,8 +30,8 @@ Request model for getting items during crawl
 |:----------|:-------------|:----------|
 |customConfiguration |[CustomConfiguration](/microsoftsearch/custom-connector-sdk-contracts-common#customconfiguration) |Configuration data provided for the connector |
 |authenticationData |[AuthenticationData](/microsoftsearch/custom-connector-sdk-contracts-common#authenticationdata) |Holds data source access URL and credential to access it |
-|crawlProgressMarker |[CrawlCheckpoint](#crawlcheckpoint) |Holds data to identify what items were processed the last time crawl ran. This information is returned by the connector along with the items. This can be used by the connector in case of crashes happening on the platform during the crawl. |
-|Schema |[DataSourceSchema](/microsoftsearch/custom-connector-sdk-contracts-common#datasourceschema) |Schema of connection. This can be used by the connector to identify the property which is content and set it. |
+|crawlProgressMarker |[CrawlCheckpoint](#crawlcheckpoint) |Holds data to identify what items were processed the last time crawl ran. This information is returned by the connector along with the items. This property can be used by the connector in case of crashes happening on the platform during the crawl. |
+|Schema |[DataSourceSchema](/microsoftsearch/custom-connector-sdk-contracts-common#datasourceschema) |Schema of connection. This property can be used by the connector to identify the property that is content and set it. |
 
 #### CrawlStreamBit
 
@@ -51,8 +51,8 @@ Request model for getting items during incremental crawl.
 |:----------|:-------------|:----------|
 |customConfiguration |[CustomConfiguration](/microsoftsearch/custom-connector-sdk-contracts-common#customconfiguration) |Configuration data provided for the connector |
 |authenticationData |[AuthenticationData](/microsoftsearch/custom-connector-sdk-contracts-common#authenticationdata) |Holds data source access URL and credential to access it |
-|crawlProgressMarker |[CrawlCheckpoint](#crawlcheckpoint) |Holds data to identify what items were processed the last time crawl ran. This information is returned by the connector along with the items. This can be used by the connector in case of crashes happening on the platform during the crawl. |
-|schema |[DataSourceSchema](/microsoftsearch/custom-connector-sdk-contracts-common#datasourceschema) |Schema of connection. This can be used by the connector to identify the property which is content and set it. |
+|crawlProgressMarker |[CrawlCheckpoint](#crawlcheckpoint) |Holds data to identify what items were processed the last time crawl ran. This information is returned by the connector along with the items. This property can be used by the connector in case of crashes happening on the platform during the crawl. |
+|schema |[DataSourceSchema](/microsoftsearch/custom-connector-sdk-contracts-common#datasourceschema) |Schema of connection. This property can be used by the connector to identify the property that is content and set it. |
 |previousCrawlStartTimeInUtc |Timestamp |DateTime value of previous crawl start time in UTC. This value can be used in first incremental crawl. For subsequent calls checkpoint value should be used. |
 
 #### IncrementalCrawlStreamBit
@@ -74,14 +74,14 @@ Response model containing the item, status indicating success/failures if any an
 
 #### CrawlItem
 
-Represents an entity in the data source. For example: a file, a folder or a record in a table. The max size allowed is 4Mb.
+Represents an entity in the data source. For example: a file, a folder or a record in a table. The max size allowed is 4 Mb.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
 |itemType |[ItemType](#itemtype-enum-members-for-crawlitem) |The type of item being sent. This model should have one of contentItem or linkItem set and this enum field should correspond to the item being set – either contentItem or linkItem.
 |itemId |string |Unique ID representing the item in the data source |
-|contentItem |[ContentItem](#contentitem) |Item with content to ingest. These are the actual data items. Example: website content. If contentItem is set, linkItem cannot be set. |
-|linkItem |[LinkItem](#linkitem) |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. If linkItem is set, contentItem cannot be set. |
+|contentItem |[ContentItem](#contentitem) |Item with content to ingest. These are the actual data items. Example: website content. If contentItem is set, linkItem can't be set. |
+|linkItem |[LinkItem](#linkitem) |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. If linkItem is set, contentItem can't be set. |
 
 #### ItemType enum members for IncrementalCrawlItem
 
@@ -93,19 +93,19 @@ Represents an entity in the data source. For example: a file, a folder or a reco
 
 #### IncrementalCrawlItem
 
-Represents an entity in the data source. For example: a file, a folder or a record in a table. The max size allowed is 4Mb.
+Represents an entity in the data source. For example: a file, a folder or a record in a table. The max size allowed is 4 Mb.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
 |itemType |[ItemType](#itemtype-enum-members-for-incrementalcrawlitem) |The type of item being sent. This model should have one of contentItem or linkItem or deletedItem set and this enum field should correspond to the item being set – either contentItem or linkItem or deletedItem. |
 |itemId |string |Unique ID representing the item in the data source |
-|contentItem |[ContentItem](#contentitem) |Item with content to ingest. These are the actual data items. Example website content. If contentItem is set, linkItem or deletedItem cannot be set. |
-|linkItem |[LinkItem](#linkitem) |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. If linkItem is set, contentItem or deletedItem cannot be set. |
-|deletedItem |[DeletedItem](#deleteditem) |Item that is deleted from the datasource and should be removed from the index. If deletedItem is set, contentItem or linkItem cannot be set. |
+|contentItem |[ContentItem](#contentitem) |Item with content to ingest. These are the actual data items. Example website content. If contentItem is set, linkItem or deletedItem can't be set. |
+|linkItem |[LinkItem](#linkitem) |Item that acts as a link to a content item. This item info will be used in subsequent crawl to crawl further for that item. Example: Link to website or a folder. If linkItem is set, contentItem or deletedItem can't be set. |
+|deletedItem |[DeletedItem](#deleteditem) |Item that is deleted from the datasource and should be removed from the index. If deletedItem is set, contentItem or linkItem can't be set. |
 
 #### ContentItem
 
-Item that holds the content of the data source entity. This is the with actual content to ingest. Example: website content
+Item that holds the content of the data source entity. This is the property with actual content to ingest. Example: website content
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -119,7 +119,7 @@ Item that acts as a link to another item. These link items will be sent again to
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|metadata |map<string, [GenericType](#generictype)> |This is a dictionary containing the additional metadata needed by the connector to recrawl the item. |
+|metadata |map<string, [GenericType](#generictype)> |This property is a dictionary containing the additional metadata needed by the connector to recrawl the item. |
 
 #### DeletedItem
 
@@ -127,11 +127,11 @@ Represents an item that is deleted from the datasource and has to be removed fro
 
 #### AccessControlList
 
-Holds the access control list which restricts the users to whom the search results are visible.
+Holds the access control list that restricts the users to whom the search results are visible.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|Entries |repeated [AccessControlEntry](#accesscontrolentry) |List of access control entries. This is of type array or collection. |
+|Entries |repeated [AccessControlEntry](#accesscontrolentry) |List of access control entries. This property is of type array or collection. |
 
 #### AclAccessType enum members
 
@@ -184,7 +184,7 @@ Structure to store attributes of the principal (user/group) to whom access is de
 |Property |Type |Description |
 |:----------|:-------------|:----------|
 |type |[PrincipalType](#principaltype-enum-members) |Type of principal |
-|value |string |Principal value – the value of the SID or UPN or AAD id etc |
+|value |string |Principal value – the value of the SID or UPN or AAD ID etc. |
 |identitySource |[IdentitySource](#identitysource-enum-members) |Source of identity |
 |identityType |[IdentityType](#identitytype-enum-members) |Identity representation type |
 |identitySourceProperties |map<string, string> |Any additional metadata about the Identity source |
@@ -195,7 +195,7 @@ Map of source property key and its value as present in the data source. Stores t
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|values |map<string, [GenericType](#generictype)> |Add key and values of the properties of the item. Key will be property name and value will be property value. Example: For a file content – title, modifiedDate etc can be property keys and their values will be the title of the file and file modified date respectively. |
+|values |map<string, [GenericType](#generictype)> |Add key and values of the properties of the item. Key will be property name and value will be property value. Example: For a file content – title, modifiedDate etc. can be property keys and their values will be the title of the file and file modified date respectively. |
 
 #### ContentType enum members
 
@@ -214,7 +214,7 @@ Map of source property key and its value as present in the data source. Stores t
 
 #### Content
 
-Value of the content property of the item. This will be used to render search results.
+Value of the content property of the item. This model will be used to render search results.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -223,17 +223,17 @@ Value of the content property of the item. This will be used to render search re
 
 #### CrawlCheckpoint
 
-Checkpoint to mark the crawl progress. It is an identifier to mark which item was crawled last. This will be saved by the platform and checkpoint from last successful item batch will be used for resuming crawl in case of failures or crash. The platform will send the checkpoint in GetCrawlStream API.
+Checkpoint to mark the crawl progress. It's an identifier to mark which item was crawled last. This checkpoint will be saved by the platform and checkpoint from last successful item batch will be used for resuming crawl in case of failures or crash. The platform will send the checkpoint in GetCrawlStream API.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
 |pagenumber |uint32 |Page number to mark crawl progress |
-|batchSize |uint32 |Number of items being returned in every batch. Currently this will be 1 as each item is being streamed individually. |
+|batchSize |uint32 |Number of items being returned in every batch. Currently this property will be 1 as each item is being streamed individually. |
 |customMarkerData |string |Any other custom data needed to identify the last item crawled from the data source. |
 
 #### GenericType
 
-This is a model to hold any of the supported types of values by the platform in certain fields like source property values. Only one of the below fields must be set in this:
+GenericType is a model to hold any of the supported types of values by the platform in certain fields like source property values. Only one of the below fields must be set in this:
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -242,10 +242,10 @@ This is a model to hold any of the supported types of values by the platform in 
 |doubleValue |double |Represents a double value |
 |dateTimeValue |google.protobuf.Timestamp |Represents a dateTime value |
 |boolValue |bool |Represents a boolean value |
-|stingCollectionValue |[StringCollectionType](#stringcollectiontype) |Represents value which is a collection of strings |
-|intCollectionValue |[IntCollectionType](#intcollectiontype) |Represents value which is a collection of int64 (long) |
-|doubleCollectionValue |[DoubleCollectionType](#doublecollectiontype) |Represents value which is a collection of double |
-|dateTimeCollectionValue |[TimestampCollectionType](#timestampcollectiontype) |Represents value which is a collection of dateTime |
+|stingCollectionValue |[StringCollectionType](#stringcollectiontype) |Represents value that is a collection of strings |
+|intCollectionValue |[IntCollectionType](#intcollectiontype) |Represents value that is a collection of int64 (long) |
+|doubleCollectionValue |[DoubleCollectionType](#doublecollectiontype) |Represents value that is a collection of double |
+|dateTimeCollectionValue |[TimestampCollectionType](#timestampcollectiontype) |Represents value that is a collection of dateTime |
 
 #### StringCollectionType
 

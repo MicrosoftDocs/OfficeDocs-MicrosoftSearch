@@ -17,11 +17,11 @@ The following section contains the best practices to follow while implementing a
 
 The crawl progress marker acts as an identifier for the particular item sent by the connector that was last processed by the connector platform. There are two types of crawls which happen: Periodic full and incremental crawls.
 
-Periodic full crawls are meant to get all items in the data source. Only items that are modified or are not present in the index are ingested. Items which are not found in the data source are deleted from the index.
+Periodic full crawls are meant to get all items in the data source. Only items that are modified or are not present in the index are ingested. Items that are not found in the data source are deleted from the index.
 
-Incremental crawls are meant for only getting items added/modified since the last incremental crawl. The connector can send items to be deleted as well as a part of this crawl. For the first incremental crawl, the start time of last full crawl is sent as well. The connector can optionally use this crawl to fetch items changed only after that.
+Incremental crawls are meant for only getting items added or modified since the last incremental crawl. The connector can send items to be deleted as well as a part of this crawl. For the first incremental crawl, the start time of last full crawl is sent as well. The connector can optionally use this crawl to fetch items changed only after the last full crawl.
 
-Both these crawl have their own crawl progress markers.
+Both these crawls have their own crawl progress markers.
 
 ### Usage of crawl progress marker during periodic full crawls
 

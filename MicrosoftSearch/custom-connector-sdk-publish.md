@@ -1,15 +1,15 @@
 ---
-title: "Graph connectors SDK publish"
+title: "Graph connectors SDK publishing steps"
 ms.author: rchanda
 author: rchanda
 manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-description: "Graph connectors SDK publish"
+description: "Graph connectors SDK publishing steps"
 ---
 
-# Publish your custom connector on M365 Admin Center
+# Publish your custom connector on Microsoft 365 Admin Center
 
 1. [Add a Microsoft Graph connector in the Microsoft 365 admin center](/microsoftsearch/configure-connector#step-1-add-a-microsoft-graph-connector-in-the-microsoft-365-admin-center)
 
@@ -29,7 +29,7 @@ description: "Graph connectors SDK publish"
 
     ```
 
-    a. connectorId should be a GUID. This is the same as ConnectorUniqueId in the Connector Info Service implementation file or the GUID defined by you.
+    a. connectorId should be a GUID. This field is the same as ConnectorUniqueId in the Connector Info Service implementation file or the GUID defined by you.
 
     b. AuthTypes must be a non-empty array with one or more of Anonymous/Basic/Windows/OAuth type.
 
@@ -42,9 +42,9 @@ description: "Graph connectors SDK publish"
 
 4. Provide the URL to the data source you're connecting to and credentials to access it. Choose the Graph connector Agent available, and validate the information provided. Click Next on success.
 
-5. Provide any additional configuration if required by your connector. You can pass any information specific to the connection to the datasource. For example, if you are building a connector for Azure DevOps, the projects which need to be indexed can be the additional parameters. For a Wiki connector, the sub-sections which need to be indexed can be the additional parameters. The API to query the wiki can take these filters specified in the additional parameters and get the items from datasource.
+5. Provide any additional configuration if required by your connector. You can pass any information specific to the connection to the datasource. For example, if you are building a connector for Azure DevOps, the projects that need to be indexed can be the additional parameters. For a Wiki connector, the subsections that need to be indexed can be the additional parameters. The API to query the wiki can take these filters specified in the additional parameters and get the items from datasource.
 
-    The data in the parameter is opaque to the platform. It is serialized and stored as a string and passed to the connector. The connector can deserialize this as required and use it.
+    The data in the parameter is opaque to the platform. It is serialized and stored as a string and passed to the connector. The connector can deserialize this data as required and use it.
 
 6. [Assign property labels](/microsoftsearch/configure-connector#step-6-assign-property-labels)
 
