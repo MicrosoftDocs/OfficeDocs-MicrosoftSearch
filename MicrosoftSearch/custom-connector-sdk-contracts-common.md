@@ -133,7 +133,7 @@ This is used for communicating the retry policy where retry is required.
 
 ## DataSourceSchema
 
-Represents schema of properties that represent a data entity in data source. More details on schema can be found [here](/graph/api/resources/externalconnectors-schema?view=graph-rest-beta)
+Represents schema of properties that represent a data entity in data source. More details on schema can be found [here](https://docs.microsoft.com/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0).
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -161,12 +161,12 @@ Represents schema of properties that represent a data entity in data source. Mor
 |IsSearchable |1 |If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its content. Eg., If property is "Author", searching "Smith" returns items whose Author property contains "Smith". |
 |IsQueryable |2 |If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of 1 or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(\*) Eg., If property is "Author", search query can be "Author: Smith" |
 |IsRetrievable |4 |If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable will increase search latency. Be selective and choose relevant properties. |
-|IsContent |8 |Content property is to identify a property that can be full text indexed. Admins will choose among the available properties as to which should be the property to be treated as content for that specific connection. More on the content property [here](/graph/connecting-external-content-manage-items#content) |
+|IsContent |8 |Content property is to identify a property that can be full text indexed. Admins will choose among the available properties as to which should be the property to be treated as content for that specific connection. More on the content property [here](https://docs.microsoft.com/graph/connecting-external-content-manage-items#content). |
 |IsRefinable |16 |If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. A refinable property cannot be searchable. |
 
 ## SearchPropertyLabel
 
-These are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. Read more [here](/graph/connecting-external-content-manage-schema#semantic-labels)
+These are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. Read more [here](https://docs.microsoft.com/graph/connecting-external-content-manage-schema#semantic-labels).
 
 ### SearchPropertyLabel enum members
 
@@ -181,9 +181,9 @@ These are well-known tags published by Microsoft that you can add against a prop
 |LastModifiedDateTime |6 |Date and time the item was last modified in the data source. |
 |FileName |7 |In case of a file, the name of the file in the data source. |
 |FileExtension |8 |In case of a file, the extension of the file in the data source . |
-|LastModifiedByUpn |9 |[UPN](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the person who most recently edited the item in the data source. |
-|CreatedByUpn |10 |[UPN](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the person who created the item in the data source. |
-|AuthorsUpn |11 |[UPNs](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of all the people who participated/collaborated on the item in the data source. |
+|LastModifiedByUpn |9 |[UPN](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the person who most recently edited the item in the data source. |
+|CreatedByUpn |10 |[UPN](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the person who created the item in the data source. |
+|AuthorsUpn |11 |[UPNs](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of all the people who participated/collaborated on the item in the data source. |
 |UnknownFutureValue |12 |For future-proofing, following MSGraph evolvable enums.All new enums should be added below this one until major API version change. |
 |ContainerName |13 |Name of the container. |
 |ContainerUrl |14 | The URL of the container. |
@@ -191,7 +191,7 @@ These are well-known tags published by Microsoft that you can add against a prop
 
 ## SourcePropertyDefinition
 
-Defines a single source property for an item in data source. Read more about schema property definitions [here](/graph/api/resources/externalconnectors-property?view=graph-rest-1.0)
+Defines a single source property for an item in data source. Read more about schema property definitions [here](https://docs.microsoft.com/graph/api/resources/externalconnectors-property?view=graph-rest-1.0).
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|

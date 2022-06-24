@@ -174,7 +174,7 @@ External |2 |Source of identity is anything other than AAD |
 |:----------|:-------------|:----------|
 |IT_None |0 |Default. This will be assumed to be AadId |
 |ActiveDirectorySId |1 |SID (On premise security identifier) provided by Active Directory (AD) |
-|UserPrincipalName |2 |User principal name ([UPN](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname))  |
+|UserPrincipalName |2 |User principal name ([UPN](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname))  |
 |AadId |3 |Azure Active Directory ID |
 
 #### Principal
