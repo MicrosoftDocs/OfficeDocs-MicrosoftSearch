@@ -24,15 +24,15 @@ description: "Graph connectors SDK Create Connector"
 4. Go to **File** > **New** > **Project** and search for “GraphConnectorsTemplate”. Select the template and click Next.
     ![Create project from template](media/connectors-sdk/create.png)
 5. Give a name to the project and click Next.
-6. Choose .Net Core 3.1, give a name to the connector as “CustomConnector” and click Create.
+6. Choose .NET Core 3.1, give a name to the connector as “CustomConnector” and click Create.
 7. The custom connector template project is created with skeleton code
     ![Project structure from template](media/connectors-sdk/templateproject.png)
 
 ## Create the custom connector
 
-Before beginning to build the connector follow the steps given below to install nuget packages and create the data models that will be used in this connector.
+Before beginning to build the connector, follow the steps given below to install NuGet packages and create the data models that will be used in this connector.
 
-### Install nuget packages
+### Install NuGet packages
 
 1. Right click on the project and select “Open in Terminal”
 
@@ -73,7 +73,7 @@ Before beginning to build the connector follow the steps given below to install 
 
 ### Update ConnectionManagementServiceImpl.cs
 
-ConnectionManagementServiceImpl.cs has 3 methods to be implemented:
+ConnectionManagementServiceImpl.cs has three methods to be implemented:
 
 **ValidateAuthentication**: This method is used to validate the credentials and the datasource URL provided. We need to connect to the datasource URL using the credentials provided and return success if the connection succeeds or auth failure status if the connection fails.
 
@@ -132,7 +132,7 @@ ConnectionManagementServiceImpl.cs has 3 methods to be implemented:
     
     ```
 
-    The ReadRecordFromCsv method will just open the CSV file and read the first record from the file. We can use this to validate if the provided datasource URL (path of the CSV file) is valid. This connector is using anonymous auth, hence there is no validation of credentials here. If it is using any other auth type, the connection to datasource must be made using the provided credentials to validate the authentication.
+    The ReadRecordFromCsv method will just open the CSV file and read the first record from the file. We can use this method to validate if the provided datasource URL (path of the CSV file) is valid. This connector is using anonymous auth, hence there's no validation of credentials here. If it's using any other auth type, the connection to datasource must be made using the provided credentials to validate the authentication.
 
 3. Add the following using directive in ConnectionManagementServiceImpl.cs
 
@@ -160,7 +160,7 @@ ConnectionManagementServiceImpl.cs has 3 methods to be implemented:
     
     ```
 
-**ValidateCustomConfiguration**: This method is used to validate any additional parameters required for the connection. This connector we are writing does not require any additional parameters, hence the validation is that the additional parameters should be empty.
+**ValidateCustomConfiguration**: This method is used to validate any additional parameters required for the connection. This connector we're writing doesn't require any additional parameters, hence the validation is that the additional parameters should be empty.
 
 1. Update ValidateCustomConfiguration method in ConnectionManagementServiceImpl.cs with the following code
 
