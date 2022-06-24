@@ -38,7 +38,7 @@ The Graph connector agent comes with the following capabilities:
 
 1. **Get data from connector**: The agent brings the capability of getting data from your custom connector using the logic implemented by your connector to connect to the data source.
 
-2. **M365 Admin Center integration**: The agent brings the capability of managing, monitoring errors & statistics, and configuring your custom connectors through the [M365 Admin Center](https://admin.microsoft.com/).
+2. **Microsoft 365 Admin Center integration**: The agent brings the capability of managing, monitoring errors & statistics, and configuring your custom connectors through the [Microsoft 365 Admin Center](https://admin.microsoft.com/).
 
 3. **Crawl Scheduling & Management**: The agent brings the capability of crawling the data source through full crawls and incremental crawls. Full crawls traverse (list based or graph based) through your entire data periodically at an interval defined by you. Incremental crawls are more frequent and crawls the data source from the previous timestamp/checkpoint at an interval defined by you.
 
