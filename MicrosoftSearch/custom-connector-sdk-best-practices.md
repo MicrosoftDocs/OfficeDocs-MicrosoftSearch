@@ -17,23 +17,23 @@ The following section contains the best practices to follow while implementing a
 
 The crawl progress marker acts as an identifier for the particular item sent by the connector that was last processed by the connector platform. There are two types of crawls which happen: Periodic full and incremental crawls.
 
-Periodic full crawls are meant to get all items in the data source. The items which are modified nor not present in the index  are only ingested and items not found in data source are deleted from the index.
+Periodic full crawls are meant to get all items in the data source. Only items that are modified or are not present in the index are ingested. Items which are not found in the data source are deleted from the index.
 
-Incremental crawls are meant for only getting items added/modified since the last incremental crawl. The connector can send items to be deleted as well as a part of this. For the first incremental crawl, the start time of last full crawl is sent as well. The connector can optionally use this to fetch items changed only after that.
+Incremental crawls are meant for only getting items added/modified since the last incremental crawl. The connector can send items to be deleted as well as a part of this crawl. For the first incremental crawl, the start time of last full crawl is sent as well. The connector can optionally use this crawl to fetch items changed only after that.
 
-Both these crawls have their own crawl progress markers.
+Both these crawl have their own crawl progress markers.
 
 ### Usage of crawl progress marker during periodic full crawls
 
-For periodic full crawls, the crawl progress marker is sent only in case the previous crawl crashed or if the Graph connector agent was offline for a period of time causing a scheduled crawl to be missed. In case of scheduled crawl without any previous crawl crashes, the crawl progress marker is not sent. In these cases, the data source has to be crawled from the beginning.
+For periodic full crawls, the crawl progress marker is sent only in case the previous crawl crashed or if the Graph connector agent was offline for a period of time causing a scheduled crawl to be missed. In case of scheduled crawl without any previous crawl crashes, the crawl progress marker isn't sent. In these cases, the data source has to be crawled from the beginning.
 
 ### Usage of crawl progress marker during incremental crawls
 
-For incremental crawls, the crawl progress marker sent by the connector to the connector platform during the previous incremental crawl is sent to the connector. This can be used by the connector to fetch the items added or modified after this marker.
+For incremental crawls, the crawl progress marker sent by the connector to the connector platform during the previous incremental crawl is sent to the connector. This crawl can be used by the connector to fetch the items added or modified after this marker.
 
 ## Constructing generic types
 
-The property values of the content item can have a range of data types. Since gRPC does not have a construct for generic objects, we have created a [GenericType](/microsoftsearch/custom-connector-sdk-contracts-connectorcrawler#generictype) structure that can hold any of the supported data types. GenericType has the following structure:
+The property values of the content item can have a range of data types. Since gRPC doesn't have a construct for generic objects, we've created a [GenericType](/microsoftsearch/custom-connector-sdk-contracts-connectorcrawler#generictype) structure that can hold any of the supported data types. GenericType has the following structure:
 
 ```csharp
 // Represents a generic type that can hold any supported value
@@ -171,7 +171,7 @@ GenericType can have one of the types of string/int64/double/DateTime/Boolean or
 
 Schema has certain restrictions as listed below:
 
-**Property name**: The name of the property can have a maximum of 32 characters. Only alphanumeric characters are allowed. For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, \\, ~, ', ", <, >, `, ^.
+**Property name**: The name of the property can have a maximum of 32 characters. Only alphanumeric characters are allowed. For example, each string may not contain control characters, whitespace, or any of the following characters: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, \\, ~, ', ", <, >, `, ^.
 
 **Search annotations**: Following are the set of rules to follow for search annotations:
 
@@ -181,31 +181,32 @@ Schema has certain restrictions as listed below:
 
    • Content properties must be searchable.
 
-   • Content properties cannot be queryable or retrievable.
+   • Content properties can't be queryable or retrievable.
 
-   • Refinable property should not be searchable.
+   • Refinable property shouldn't be searchable.
 
    • Refinable property should be queryable and retrievable.
 
-   • Boolean properties cannot be refinable.
+   • Boolean properties can't be refinable.
 
-**Aliases**: A set of aliases or a friendly name for the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, \\, ~, ', ", <, >, `, ^.
+**Aliases**: A set of aliases or a friendly name for the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string may not contain control characters, whitespace, or any of the following characters: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, \\, ~, ', ", <, >, `, ^.
 
 ## Fetching items during crawl
 
-The GetCrawlStream method is a [server streaming method](https://grpc.io/docs/what-is-grpc/core-concepts/#server-streaming-rpc). Each item crawled from the datasource is converted into a [CrawlStreamBit](/microsoftsearch/custom-connector-sdk-contracts-connectorcrawler#crawlstreambit) and sent over the response stream. To get a good throughput, it is best if the connector retrieves a batch of items from the data source and converts each item to the CrawlStreamBit and sends them over the response stream. The batch size depends on the datasource, we recommend 25 as an optimal batch size to maintain continuous flow of items over the stream.
+The GetCrawlStream method is a [server streaming method](https://grpc.io/docs/what-is-grpc/core-concepts/#server-streaming-rpc). Each item crawled from the datasource is converted into a [CrawlStreamBit](/microsoftsearch/custom-connector-sdk-contracts-connectorcrawler#crawlstreambit) and sent over the response stream. To get a good throughput, it's best if the connector retrieves a batch of items from the data source and converts each item to the CrawlStreamBit and sends them over the response stream. The batch size depends on the data source. We recommend 25 as an optimal batch size to maintain continuous flow of items over the stream.
 
 ## Exception handling in connector code
   
-All responses from the gRPC calls have an [OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) which indicates if the operation succeeded or failed and the failure reason and retry details in case of failures. We recommend that all code should be wrapped in a try-catch block and all exceptions be logged by the connector and a proper operation status be sent to the platform. In the case of connection management flows, the StatusMessage that is sent as part of the response is displayed in the M365 Admin Center. So, sending meaningful messages will be helpful for debugging errors on the connector. Unhandled exceptions will result in Unknown or generic error messages on the UI, which won’t be helpful in debugging.
+All responses from the gRPC calls have an [OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) that indicates if the operation succeeded or failed, the failure reason, and retry details if there are failures. We recommend that the entire code should be wrapped in a try-catch block. All exceptions should be logged by the connector and a proper operation status should be sent to the platform. In the case of connection management flows, the StatusMessage that is sent as part of the response is displayed in the Microsoft 365 Admin Center. So, sending meaningful messages will be helpful for debugging errors on the connector. Unhandled exceptions will result in Unknown or generic error messages on the UI, which won’t be helpful in debugging.
 
 ## Timeouts
 
-All methods in [ConnectionManagementService](/MicrosoftSearch/custom-connector-sdk-contracts-connectionmanagement) should complete and return within 30 seconds, otherwise the platform will timeout the requests.
+All methods in [ConnectionManagementService](/MicrosoftSearch/custom-connector-sdk-contracts-connectionmanagement) should complete and return within 30 seconds, otherwise the platform will time out the requests.
 
 ## Sending back errors from connector to platform
 
-All responses have the [OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) set in the response structure. In case of any errors, connectors are expected to use this OperationStatus to send the failure reason and retry information back to platform. It is recommended to use this to set the errors during crawls in case of connection level errors like expired credentials to access datasource.
+All responses have the [OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) set in the response structure. In case of any errors, connectors are expected to use this OperationStatus to send the failure reason and retry information back to platform. it's recommended to use this OperationStatus to set the errors during crawls in case of connection level errors like expired credentials to access datasource.
+
 OperationStatus structure has 3 fields that can be used to represent any errors:
 
 ### OperationResult
@@ -214,7 +215,7 @@ This is an enum that can hold the failure reason.
 
 ### StatusMessage
 
-This is a custom message to show the failure reason. This message will be displayed to admins during connection setup. For example if the provided credentials are incorrect during ValidateAuthentication, the OperationStatus can be set to AuthenticationIssue and statusMessage can be set to “Incorrect credentials provided.”. During ValidateAuthentication this statusMessage will be shown to the search admin and during crawls this will move the connection to failed state and display the authentication error to the admin and prompt the admin to update the credentials to access the datasource.
+This is a custom message to show the failure reason. This message will be displayed to admins during connection setup. For example if the provided credentials are incorrect during ValidateAuthentication, the OperationStatus can be set to AuthenticationIssue and statusMessage can be set to “Incorrect credentials provided.”. During ValidateAuthentication, this statusMessage will be shown to the search admin. During crawls, this will move the connection to failed state and display the authentication error to the admin and prompt the admin to update the credentials to access the datasource.
 
 ### RetryDetails
 
