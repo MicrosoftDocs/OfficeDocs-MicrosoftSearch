@@ -15,7 +15,7 @@ The following section explains some of the most common issues faced and how to t
 
 ## Troubleshooting items missing from index
 
-If items present previously are missing from the index, it could be due to the delete detection logic in the platform. When the connector sends success response in OperationStatus, the items missing from the connector response but already present in index are considered to be deleted and will be removed from the index. In case connector sends transient failure responses as well, if more than 10% of the items have resulted in crawl failures, the items which are not seen in the last 2 crawls will get deleted.
+If items present previously are missing from the index, it could be due to the delete detection logic in the platform. When the connector sends success response in [OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus), the items missing from the connector response but already present in index are considered to be deleted and will be removed from the index. In case connector sends transient failure responses as well, if more than 10% of the items have resulted in crawl failures, the items which are not seen in the last 2 crawls will get deleted.
 
 ## Updating port mapping configuration file
 
