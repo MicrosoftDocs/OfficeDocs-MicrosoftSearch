@@ -25,12 +25,12 @@ To configure a custom results page in SharePoint Online follow the steps below:
 
 1. Browse to the site where you would like to configure a custom results page and go to **Site Settings > Site Collection Settings > Search Settings**.
 
-2. In Search Settings, clear selection from **Use the same results page settings as my parent**, choose **Send queries to a custom results page**, and provide a value for **Results page URL:**. Then, save your changes. The URL you use here should be for the page that you created to use as your custom results page.
+2. In Search Settings, clear selection from **Use the same results page settings as my parent**, choose **Send queries to a custom results page**, and provide a value for **Results page URL:**. Then, save your changes. The URL you use here should be for the page that you created to use as your custom results page, for example `https://contoso.sharepoint.com/sites/search/SitePages/results.aspx`. See [this Microsoft Ignite session](https://youtu.be/jKpIDBalLW0?t=1508) for a demo of this feature.
 
 >[!NOTE]
 > The custom results page needs to be on the same domain as your site, but it does not have to be in the same site collection.  
 
-Alternatively, you can use the [Set-PnPSearchSettings SharePoint PnP PowerShell command](/powershell/module/sharepoint-pnp/set-pnpsearchsettings?view=sharepoint-ps) to set the value instead of using the Site Settings page.
+Alternatively, you can use the [Set-PnPSearchSettings SharePoint PnP PowerShell command](https://pnp.github.io/powershell/cmdlets/Set-PnPSearchSettings.html) to set the value instead of using the Site Settings page.
 
 Once set, the custom search results page is displayed when you search using the Microsoft Search box that appears in the navigation bar on top of the page and is used when you enter search from site pages or the home page of the site. It is not used when you are searching within a list, library, or the site contents page. You may use the link to expand your search from search results in lists and libraries to get to the custom results page.
 
@@ -39,17 +39,13 @@ Once set, the custom search results page is displayed when you search using the 
 A page layout named **HeaderlessSearchResults** can be used to make the search results page appear closer to our out of box search results experience. This new layout can only be active for the pages that are set to be the custom search results page.
 
 To set the page layout, you can use the [Set-PnPPage PnP PowerShell
-command](/powershell/module/sharepoint-pnp/set-pnppage?view=sharepoint-ps) with -LayoutType HeaderlessSearchResults.
+command](https://pnp.github.io/powershell/cmdlets/Set-PnPPage.html) with -LayoutType HeaderlessSearchResults.
 
 ## Use SharePoint Framework Query extensions
 
 Custom search results pages can also make use of the [SharePoint Framework Query Extension](/sharepoint/dev/spfx/building-search-extensions) to modify the query before it gets sent to the search engine.
 
 ## Additional resources
-
-To learn more about custom results page, check out our [Ignite 2019
-Search Customization and Development
-session](https://myignite.techcommunity.microsoft.com/sessions/85238?source=sessions).
 
 For open source projects, getting started with our Microsoft Search
 APIs, and more customization and extensibility samples, visit [Microsoft
