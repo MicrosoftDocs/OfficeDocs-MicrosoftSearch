@@ -51,4 +51,4 @@ The Graph connector agent comes with the following capabilities:
 >[!Note]
 >Graph-based data source traversal (eg: traversing through folder structures) capability and ability to manage search permissions based on access control from your data source is not available currently.
 
-You can get started quickly with in C# with our sample connector or in other supported languages with the contracts from [here](https://github.com/microsoftgraph/msgraph-connectors-sdk).
+You can quickly get started in C# with our sample connector or in other supported languages with the contracts from [here](https://github.com/microsoftgraph/msgraph-connectors-sdk).
