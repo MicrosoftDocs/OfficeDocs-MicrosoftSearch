@@ -48,7 +48,7 @@ Leverage SMEs in the organization including experts from HR, support, sales, tec
 
 Ask users to suggest resources to bookmark. In addition to suggesting content, ask users to report errors, like broken or invalid links.
 
-## Step 3: Improve findability of content
+## Step 3: Improve findability of content with Answers
 
 In **Microsoft Search**, Search administrator creates Bookmarks, Q&A, Locations, and Floor Plans to improve the findability of content. Each of these search components includes a title, a URL, and a set of keywords that trigger it.
 
