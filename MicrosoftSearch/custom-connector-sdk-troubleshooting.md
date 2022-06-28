@@ -38,3 +38,31 @@ If the crawls are failing with connector unavailable on specified port, check th
 If you see any RPC errors during the communication between the Graph connector Agent platform and the connector, check [this](https://grpc.github.io/grpc/core/md_doc_statuscodes.html) page to see the explanation of RPC error codes.
 
 If the error code is Unknown, the most likely reason is that there's some unhandled exception in your connector code. Make sure there's no unhandled exception and that a proper response is sent with success/failure operation status in all cases.
+
+## Troubleshooting errors while hosting the connector as a windows service
+
+### Starting service failed due to Access denied error
+
+Make sure the path of the executable is accessible to Local System account.
+
+1. Right click on the folder containing the executable and choose Properties.
+
+2. Open Security tab and click on Edit under Group or user names
+
+    ![Screenshot10](media/connectors-sdk/troubleshoot1.png)
+
+3. Click on Add
+
+   ![Screenshot11](media/connectors-sdk/troubleshoot2.png)
+
+4. Enter LOCAL SERVICE as the object name and click on Check Names
+
+    ![Screenshot12](media/connectors-sdk/troubleshoot3.png)
+
+5. Click OK in all the dialog boxes.
+
+### Starting service fails with any error
+
+Check the error logs from event viewer. Search for event viewer app and open it. Check for error logs under **Windows logs > Application** and **Windows logs > System**
+
+![Screenshot13](media/connectors-sdk/troubleshoot4.png)
