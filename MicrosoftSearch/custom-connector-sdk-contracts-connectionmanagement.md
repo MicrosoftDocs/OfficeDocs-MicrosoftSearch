@@ -19,7 +19,7 @@ These APIs are called during the process of custom connector connection creation
 |:----------|:-------------|:----------|:-------------|
 |ValidateAuthentication |[ValidateAuthenticationRequest](#validateauthenticationrequest) |[ValidateAuthenticationResponse](#validateauthenticationresponse) |This API is called during custom connector connection creation on Microsoft 365 admin center. The API is used to validate the credentials and data source path provided by the admin in the connection settings step. |
 |ValidateCustomConfiguration |[ValidateCustomConfigurationRequest](#validatecustomconfigurationrequest) |[ValidateCustomConfigurationResponse](#validatecustomconfigurationresponse) |This API is called during custom connector connection creation on Microsoft 365 admin center. The API is used to validate the optional configuration provided by the admin in connection configuration step. If no configuration is required for the connector, this API can just return a success response. |
-|GetDataSourceSchema |[GetDataSourceSchemaRequest](#getdatasourceschemarequest) |[GetDataSourceSchemaResponse](#getdatasourceschemaresponse) |This API is called during custom connector connection creation on Microsoft 365 admin center. The API is used to get the data source schema in the format that can be understood by Microsoft Graph. More details are present [here](https://docs.microsoft.com/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0). |
+|GetDataSourceSchema |[GetDataSourceSchemaRequest](#getdatasourceschemarequest) |[GetDataSourceSchemaResponse](#getdatasourceschemaresponse) |This API is called during custom connector connection creation on Microsoft 365 admin center. The API is used to get the data source schema in the format that can be understood by Microsoft Graph. More details are present [here](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0). |
 
 ### Connection management API Models
 
@@ -73,4 +73,4 @@ Response model of data source schema request
 |Property |Type |Description |
 |:----------|:-------------|:----------|
 |status |[OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) |Status of operation and error details in case of error. |
-|dataSourceSchema |[DataSourceSchema](/microsoftsearch/custom-connector-sdk-contracts-common#datasourceschema) |Data source schema. More details about schema are present [here](https://docs.microsoft.com/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0). |
+|dataSourceSchema |[DataSourceSchema](/microsoftsearch/custom-connector-sdk-contracts-common#datasourceschema) |Data source schema. More details about schema are present [here](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0). |
