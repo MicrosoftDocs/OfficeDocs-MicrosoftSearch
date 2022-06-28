@@ -101,7 +101,7 @@ OperationResult enum members:
 
 ## OperationStatus
 
-Represents the status of an operation including error/warnings and retry details. This model is part of the response of all APIs in [ConnectionManagementService](/MicrosoftSearch/custom-connector-sdk-contracts-connectionmanagement.md) and [ConnectorCrawlerService](/MicrosoftSearch/custom-connector-sdk-contracts-connectorcrawler.md).
+Represents the status of an operation including error/warnings and retry details. This model is part of the response of all APIs in [ConnectionManagementService](/MicrosoftSearch/custom-connector-sdk-contracts-connectionmanagement) and [ConnectorCrawlerService](/MicrosoftSearch/custom-connector-sdk-contracts-connectorcrawler).
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
