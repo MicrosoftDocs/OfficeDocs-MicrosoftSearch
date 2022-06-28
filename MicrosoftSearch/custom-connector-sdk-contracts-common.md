@@ -133,7 +133,7 @@ This model is used for communicating the retry policy where retry is required.
 
 ## DataSourceSchema
 
-Represents schema of properties that represent a data entity in data source. More details on schema can be found [here](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0).
+Represents schema of properties that represent a data entity in data source. More details on schema can be found [here](/graph/api/resources/externalconnectors-schema).
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -191,7 +191,7 @@ Search property labels are well-known tags published by Microsoft that you can a
 
 ## SourcePropertyDefinition
 
-Defines a single source property for an item in data source. Read more about schema property definitions [here](/graph/api/resources/externalconnectors-property?view=graph-rest-1.0).
+Defines a single source property for an item in data source. Read more about schema property definitions [here](/graph/api/resources/externalconnectors-property).
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
