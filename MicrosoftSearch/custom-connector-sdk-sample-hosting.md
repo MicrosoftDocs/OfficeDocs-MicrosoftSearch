@@ -25,7 +25,7 @@ Follow the instructions below for hosting the connector as a windows service:
 3. Name the project as CustomConnectorWorkerService and click Next
     ![Screenshot3](media/connectors-sdk/service3.png)
 
-4. Choose .Net core 3.1 as target framework and click on Create
+4. Choose .NET core 3.1 as target framework and click on Create
     ![Screenshot4](media/connectors-sdk/service4.png)
 
 5. Right click on the project and select “Open in Terminal”
