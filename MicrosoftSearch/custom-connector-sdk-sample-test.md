@@ -1,17 +1,18 @@
 ---
 title: "Graph connectors SDK Sample Testing"
 ms.author: rchanda
-author: rchanda
+author: rchanda1392
 manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
+ms.date: 06/29/2022
 description: "Graph connectors SDK Sample Testing"
 ---
 
 # Test the connector
 
-The connector can be tested using the [TestApp utility](/microsoftsearch/custom-connector-sdk-testapp.md). This is a console application for testing the connector before taking it to production. It will not create any connections or ingest any data.
+The connector can be tested using the [TestApp utility](/microsoftsearch/custom-connector-sdk-testapp). This is a console application for testing the connector before taking it to production. It will not create any connections or ingest any data.
 
 1. Update the ConnectionInfo.json file with the connector id, data source path and set AuthenticationKind as null. This file is found under C:\Program Files\Graph connector agent\TestApp\Config
 

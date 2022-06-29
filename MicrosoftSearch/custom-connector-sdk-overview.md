@@ -1,11 +1,12 @@
 ---
 title: "Graph connectors SDK Overview"
 ms.author: rchanda
-author: rchanda
+author: rchanda1392
 manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
+ms.date: 06/29/2022
 description: "Graph connectors SDK Overview"
 ---
 
