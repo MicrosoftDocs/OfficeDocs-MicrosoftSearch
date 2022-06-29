@@ -30,6 +30,9 @@ After creating the custom connector, add the mapping of the connector ID and the
 
 ![Port mapping graphics](media/connectors-sdk/port.png)
 
+>[!Note]
+>You can add multiple connector IDs and their corresponding port information with \<Connector Id>:\<Port> format in this file. Each unique connector should be running on a different port.
+
 ## Test scenarios
 
 This test utility has three options:

@@ -56,9 +56,6 @@ The connector can be tested using the [TestApp utility](/microsoftsearch/custom-
 
     ```
 
-    >[!Note]
-    >You can add multiple connector IDs and their corresponding port information with \<Connector Id>:\<Port> format in this file. Each unique connector should be running on a different port.
-
 3. Run the GraphConnectorAgentTest.exe present in C:\Program Files\Graph connector agent\TestApp
 
 4. Make sure the connector is running
