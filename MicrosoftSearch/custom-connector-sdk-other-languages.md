@@ -21,8 +21,9 @@ description: "Graph connectors SDK Other Languages"
     * Update the environment path with bin folder in extracted root.
     * Compile contracts to create **server-side stubs** in the language of your choice. More information can be found [here](https://grpc.io/docs/languages/).
 
-4. Create a project in your IDE and place all the proto files in a folder named "**Contracts**"
-    Sample project structure here:
+4. Create a project in your IDE and place all the proto files in a folder named "**Contracts**".
+
+    You may create a project with the sample structure given below:
 
     ![Sample project structure](media/connectors-sdk/templateproject.png)
 
