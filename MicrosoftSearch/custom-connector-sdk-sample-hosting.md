@@ -131,4 +131,4 @@ Follow the instructions below for hosting the connector as a windows service:
 13. Open services.msc and check that the service is in running state
     ![Screenshot9](media/connectors-sdk/service9.png)
 
-Refer documentation for troubleshooting errors with hosting the connector [here](/MicrosoftSearch/custom-connector-sdk-troubleshooting#troubleshooting-errors-while-hosting-the-connector-as-a-windows-service).
+You can refer documentation for **troubleshooting** issues with hosting the connector [here](/MicrosoftSearch/custom-connector-sdk-troubleshooting#troubleshooting-errors-while-hosting-the-connector-as-a-windows-service).
