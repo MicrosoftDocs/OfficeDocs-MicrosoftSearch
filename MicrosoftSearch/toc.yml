@@ -125,6 +125,8 @@ items:
             href: custom-connector-sdk-sample-publish.md
           - name: Search for results
             href: custom-connector-sdk-sample-search.md
+      - name: Develop connectors in multiple languages 
+        href: custom-connector-sdk-other-languages.md
       - name: Best practices
         href: custom-connector-sdk-best-practices.md
       - name: Troubleshooting
