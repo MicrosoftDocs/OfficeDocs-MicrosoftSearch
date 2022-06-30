@@ -6,7 +6,7 @@ manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.date: 06/29/2022
+ms.date: 06/30/2022
 description: "Graph connectors SDK Create Connector"
 ---
 
@@ -509,3 +509,7 @@ This class has the methods that will be called by the platform during the crawls
 
 Now the connector is created and you can build and run the project.
 ![Project run output](media/connectors-sdk/run.png)
+
+## Next steps
+
+* [Test your connector](/MicrosoftSearch/custom-connector-sdk-sample-test)

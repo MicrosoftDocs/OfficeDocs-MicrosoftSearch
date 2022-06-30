@@ -6,7 +6,7 @@ manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.date: 06/29/2022
+ms.date: 06/30/2022
 description: "Graph connectors SDK Sample Hosting"
 ---
 
@@ -132,3 +132,7 @@ Follow the instructions below for hosting the connector as a windows service:
     ![Screenshot9](media/connectors-sdk/service9.png)
 
 You can refer documentation for **troubleshooting** issues with hosting the connector [here](/MicrosoftSearch/custom-connector-sdk-troubleshooting#troubleshooting-errors-while-hosting-the-connector-as-a-windows-service).
+
+## Next steps
+
+* [Publish a connection for your custom connector](/MicrosoftSearch/custom-connector-sdk-sample-publish)

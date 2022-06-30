@@ -6,7 +6,7 @@ manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.date: 06/29/2022
+ms.date: 06/30/2022
 description: "Graph connectors SDK sample publish"
 ---
 
@@ -47,3 +47,7 @@ description: "Graph connectors SDK sample publish"
 10. Select the **Full refresh frequency** as 15 minutes
 
 11. Review the details provided and click Finish
+
+## Next steps
+
+* [Surface the data in search](/MicrosoftSearch/custom-connector-sdk-sample-search)

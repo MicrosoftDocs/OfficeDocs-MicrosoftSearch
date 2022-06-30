@@ -6,7 +6,7 @@ manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.date: 06/29/2022
+ms.date: 06/30/2022
 description: "Graph connectors SDK sample search"
 ---
 
@@ -74,3 +74,9 @@ In this step, you will search for parts in SharePoint.
 ## Summary
 
 You have successfully completed the custom Microsoft Graph connector tutorial. Now you have created a custom connector and used it to power Microsoft Search.
+
+## See also
+
+* [Best practices to follow while developing your connector](/MicrosoftSearch/custom-connector-sdk-best-practices)
+
+* [Troubleshooting issues with your connector](/MicrosoftSearch/custom-connector-sdk-troubleshooting)

@@ -6,7 +6,7 @@ manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.date: 06/29/2022
+ms.date: 06/30/2022
 description: "Graph connectors SDK Overview"
 ---
 
@@ -52,4 +52,12 @@ The Graph connector agent comes with the following capabilities:
 >[!Note]
 >Graph-based data source traversal (eg: traversing through folder structures) capability and ability to manage search permissions based on access control from your data source is not available currently.
 
-You can quickly get started in C# with our sample connector or in other supported languages with the contracts from [here](https://github.com/microsoftgraph/msgraph-connectors-sdk).
+## See also
+
+* [Learn more about the contracts](/MicrosoftSearch/custom-connector-sdk-contracts-services)
+
+* [Develop your first custom connector in C#](/MicrosoftSearch/custom-connector-sdk-sample-overview)
+
+* [Develop your custom connector in other languages](/MicrosoftSearch/custom-connector-sdk-other-languages)
+
+You can quickly get started in C# with our sample connector or in other supported languages using the contracts from [here](https://github.com/microsoftgraph/msgraph-connectors-sdk).

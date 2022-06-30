@@ -6,7 +6,7 @@ manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.date: 06/29/2022
+ms.date: 06/30/2022
 description: "Graph connectors SDK sample overview"
 ---
 
@@ -24,4 +24,6 @@ This tutorial shows you how to use the Microsoft Graph connectors SDK to create 
 
 The sample creates a gRPC server running the custom connector code on your virtual machine. A gRPC client from the [Graph connector agent](/microsoftsearch/graph-connector-agent) running on the same machine makes requests over gRPC to the server for fetching the required response. The Graph connector agent takes care of ingesting the content into Microsoft Graph and other platform tasks.
 
-Follow the steps mentioned in the upcoming section to understand how to build your first custom connector.
+## Next steps
+
+* [Develop your connector](/MicrosoftSearch/custom-connector-sdk-sample-create)

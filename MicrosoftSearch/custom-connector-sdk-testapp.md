@@ -6,7 +6,7 @@ manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.date: 06/29/2022
+ms.date: 06/30/2022
 description: "Graph connectors SDK Test Application"
 ---
 
@@ -50,3 +50,9 @@ This test utility has three options:
 The ConnectionInfo file is read when the executable is opened. After selecting any of the test options, the platform tries to connect to the connector specified in the ConnectionInfo config file over the port specified for that connector in the CustomConnectorPortMap config file. After successful connection, the platform calls the respective methods pertaining to the test option.
 
 To use test option 2 or 3, the credentials to access the data source has to be specified in the ConnectionInfo.json config. These credentials are read by the platform and passed down to the connector which uses the credentials to access the data source. As long as no external person gets access to the ConnectionInfo.json config file itself, these credentials are secure.
+
+## See also
+
+* [Best practices to follow while developing your connector](/MicrosoftSearch/custom-connector-sdk-best-practices)
+
+* [Troubleshooting issues with your connector](/MicrosoftSearch/custom-connector-sdk-troubleshooting)

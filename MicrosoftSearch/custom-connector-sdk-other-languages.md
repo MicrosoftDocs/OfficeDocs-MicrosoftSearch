@@ -6,7 +6,7 @@ manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.date: 06/29/2022
+ms.date: 06/30/2022
 description: "Graph connectors SDK Other Languages"
 ---
 
@@ -34,3 +34,9 @@ description: "Graph connectors SDK Other Languages"
 7. Test the connector code using the [TestApp utility](/MicrosoftSearch/custom-connector-sdk-testapp).
 
 8. [Publish a connection](/MicrosoftSearch/custom-connector-sdk-publish) for your custom connector on Microsoft 365 Admin Center.
+
+## See also
+
+* [Best practices to follow while developing your connector](/MicrosoftSearch/custom-connector-sdk-best-practices)
+
+* [Troubleshooting issues with your connector](/MicrosoftSearch/custom-connector-sdk-troubleshooting)

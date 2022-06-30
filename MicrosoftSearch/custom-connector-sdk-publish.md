@@ -6,7 +6,7 @@ manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.date: 06/29/2022
+ms.date: 06/30/2022
 description: "Graph connectors SDK publishing steps"
 ---
 
@@ -60,3 +60,9 @@ description: "Graph connectors SDK publishing steps"
 11. [Customize the search results page](/microsoftsearch/configure-connector#step-10-customize-the-search-results-page)
 
 12. [Confirm if the connection setup worked](/microsoftsearch/configure-connector#step-11-confirm-if-the-connection-setup-worked)
+
+## See also
+
+* [Best practices to follow while developing your connector](/MicrosoftSearch/custom-connector-sdk-best-practices)
+
+* [Troubleshooting issues with your connector](/MicrosoftSearch/custom-connector-sdk-troubleshooting)

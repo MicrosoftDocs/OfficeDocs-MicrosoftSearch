@@ -6,7 +6,7 @@ manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.date: 06/29/2022
+ms.date: 06/30/2022
 description: "Graph connectors SDK Sample Testing"
 ---
 
@@ -63,3 +63,7 @@ The connector can be tested using the [TestApp utility](/microsoftsearch/custom-
 5. Test the connector using options 1, 2 and 3 from the GraphConnectorAgentTest.exe
 
 ![Test using test app](media/connectors-sdk/test.png)
+
+## Next steps
+
+* [Deploy your connector](/MicrosoftSearch/custom-connector-sdk-sample-hosting)
