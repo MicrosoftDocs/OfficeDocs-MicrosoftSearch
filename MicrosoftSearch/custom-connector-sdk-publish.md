@@ -12,6 +12,10 @@ description: "Graph connectors SDK publishing steps"
 
 # Publish your custom connector on Microsoft 365 Admin Center
 
+Custom connectors built using the Microsoft Graph connectors SDK can be published through the Microsoft 265 admin center in the same way as Microsoft's built-in connectors.
+
+Follow the steps mentioned below to publish a connection for your custom connector:
+
 1. [Add a Microsoft Graph connector in the Microsoft 365 admin center](/microsoftsearch/configure-connector#step-1-add-a-microsoft-graph-connector-in-the-microsoft-365-admin-center)
 
 2. Choose "Custom Connector" option and provide manifest details in the format below:
