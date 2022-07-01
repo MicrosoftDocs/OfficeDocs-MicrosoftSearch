@@ -6,7 +6,7 @@ manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.date: 06/30/2022
+ms.date: 07/01/2022
 description: "Graph connectors SDK Overview"
 ---
 

@@ -6,7 +6,7 @@ manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.date: 06/30/2022
+ms.date: 07/01/2022
 description: "Graph connectors SDK Create Connector"
 ---
 
@@ -265,8 +265,8 @@ ConnectionManagementServiceImpl.cs has three methods to be implemented:
                 {
                     Name = nameof(Description),
                     Type = SourcePropertyType.String,
-                    DefaultSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsContent),
-                    RequiredSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsContent),
+                    DefaultSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsRetrievable),
+                    RequiredSearchAnnotations = (uint)(SearchAnnotations.IsSearchable | SearchAnnotations.IsRetrievable),
                 });
 
             return schema;
@@ -333,8 +333,7 @@ This class has the methods that will be called by the platform during the crawls
             return new ContentItem
             {
                 AccessList = this.GetAccessControlList(),
-                PropertyValues = this.GetSourcePropertyValueMap(),
-                Content = this.GetContent()
+                PropertyValues = this.GetSourcePropertyValueMap()
             };
         }
 
@@ -403,16 +402,15 @@ This class has the methods that will be called by the platform during the crawls
                 {
                     StringCollectionValue = appliancesPropertyValue,
                 });
-            return sourcePropertyValueMap;
-        }
+            
+            sourcePropertyValueMap.Values.Add(
+                nameof(this.Description),
+                new GenericType
+                {
+                    StringValue = Description,
+                });
 
-        private Content GetContent()
-        {
-            return new Content()
-            {
-                ContentType = Content.Types.ContentType.Text,
-                ContentValue = this.Description,
-            };
+            return sourcePropertyValueMap;
         }
 
     ```

@@ -6,13 +6,14 @@ manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.date: 06/30/2022
+ms.date: 07/01/2022
 description: "Graph connectors SDK Sample Hosting"
 ---
 
 # Host the connector as a windows service
 
 The connector executable must be always running so that the connector platform can make requests to it during the crawls or to perform any connection management operations. The executable won’t be actively consuming any resources except for the times when the connector is being crawled. The rest of the time, the connector executable will just be idle.
+
 One possible way to make the connector executable run always is to host it as a windows service. If the executable is registered as a windows service, the OS will take care of starting the process and re-spawning it in case of crashes.
 
 Follow the instructions below for hosting the connector as a windows service:
