@@ -56,8 +56,8 @@ The Graph connector agent comes with the following capabilities:
 
 >[!Note]
 > Following capabilities are not available currently:
->Graph-based data source traversal during crawls, for example: traversing through folder structures.
->Ability to manage search permissions based on access control from your data source is not available currently.
+> a. Graph-based data source traversal during crawls, for example: traversing through folder structures.
+> b. Ability to manage search permissions based on access control from your data source is not available currently.
 
 ## See also
 

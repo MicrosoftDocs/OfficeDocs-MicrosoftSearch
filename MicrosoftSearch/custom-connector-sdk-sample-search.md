@@ -54,7 +54,7 @@ To create a result type:
 
      ![Screenshot of the "Set rules" section](media/connectors-sdk/build17.png)
 
-   * Paste contents of [result-type.json](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/result-type.json) into the layout designer textbox.
+   * Paste contents of [result-type.json](https://github.com/microsoftgraph/msgraph-connectors-sdk/blob/main/C%23%20sample/ResultType.json) into the layout designer textbox.
 
      ![Screenshot of the "Design layout" section](media/connectors-sdk/build18.png)
 
