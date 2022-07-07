@@ -15,6 +15,12 @@ items:
   items:
   - name: View usage reports
     href: usage-reports.md
+    - name: Queries
+    - href: queries-usage-reports.md
+    - name: Users
+    - href: users-search-reports.md
+    - name: Connection analytics
+    - href: connection-analytics-reports.md
   - name: Manage feedback
     href: manage-feedback.md
 - name: Provide answers
