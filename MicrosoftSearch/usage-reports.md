@@ -37,10 +37,10 @@ The search usage reports are available to users with the **search admin**, **sea
 
 The Microsoft Search Usage Reports page provides you with search data through the following four reports:
 
-- **Recent Search Activity** - This chart gives a quick view of how people are using search in your organization. 
+- **Recent Search Activity** – This chart gives a quick view of how people are using search in your organization. 
 - **Queries** – This section shows a breakdown of the query activity by user action, country, occupation, and department or division. It also allows you to go to a query details page to view and analyze the queries in more detail. 
-- **Users** - This section shows the total number of unique users and engaged users who have performed searches for the search application and date range selected with the filters on the top of the page. It also allows you to go to a user details page to view and analyze the users data in more detail.
-- **Connection Analytics** –This section provides an analysis of your connections. Review queries and clicks that use search results from your connections. It also allows you to go to a connection analytics details page to view view and analyze the connection data in more detail. 
+- **Users** – This section shows the total number of unique users and engaged users who have performed searches for the search application and date range selected with the filters on the top of the page. It also allows you to go to a user details page to view and analyze the users data in more detail.
+- **Connection Analytics** – This section provides an analysis of your connections. Review queries and clicks that use search results from your connections. It also allows you to go to a connection analytics details page to view view and analyze the connection data in more detail. 
 
 You can view more details about the [Queries](queries-usage-reports.md), [Users](users-search-reports.md), and [Connection analytics](connection-analytics-reports.md) sections by clicking the links. 
 
