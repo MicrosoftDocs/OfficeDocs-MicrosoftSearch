@@ -22,7 +22,7 @@ Search usage reports enable you to gain more understanding of how people in your
 
 The **Microsoft Search usage reports** include graphs and tables generated from searches that are executed from the SharePoint Start Page (the site with URL ending in /SharePoint.aspx), Office.com, and the work tab search boxes at Microsoft Search in Bing. You can see data from the last 7 days, last 14 days, last 31 days, or last 12 months.   
 
-Currently you can filter these reports by country, occupation, department, or division. To protect privacy, if any filters show data for five or less individuals, those results will not be included in the search usage reports. In addition, these filters can be toggled on or off for the entire organization on the Org settings page.  
+Currently you can filter these reports by country, occupation, department, or division. To protect privacy, if any filters show data for five or less individuals, those results will not be included in the search usage reports. In addition, these filters can be toggled on or off for the entire organization on the Org settings page, in case your organization has specific privacy requirements.  
 
 :::image type="content" source="media/usage-reports/usage-analytics.png" alt-text="A dashboard containing pie charts, graphs, and search analytics report data." lightbox="media/usage-reports/usage-analytics.png":::
 
@@ -31,16 +31,18 @@ Currently you can filter these reports by country, occupation, department, or di
 1. In the Microsoft 365 admin center, select **Settings**, then select **Search and Intelligence**.  
 2. On the **Search and Intelligence** page, select the **Insights** tab, and then select **Usage Analytics**. 
 
+The search usage reports are available to users with the **search admin**, **search editor** or **global administrator** roles.
+
 ## What reports are available to me? 
 
 The Microsoft Search Usage Reports page provides you with search data through the following four reports:
 
 - **Recent Search Activity** - This chart gives a quick view of how people are using search in your organization. 
-- **Queries** – This section compares the number of search queries clicked, abandoned, or returning no results. It also allows you to go to a query details page to view more detailed information. 
-- **Users** - Total number of unique users and engaged users who have performed searches for the search application and date range selected with the filters on the top of the page. It also allows you to go to a user details page to view more detailed information.
-- **Connection Analytics** – Provides an analysis of your connections. Review queries and clicks that use search results from your connections. It also allows you to go to a connection analytics details page to view more detailed information. 
+- **Queries** – This section shows a breakdown of the query activity by user action, country, occupation, and department or division. It also allows you to go to a query details page to view and analyze the queries in more detail. 
+- **Users** - This section shows the total number of unique users and engaged users who have performed searches for the search application and date range selected with the filters on the top of the page. It also allows you to go to a user details page to view and analyze the users data in more detail.
+- **Connection Analytics** –This section provides an analysis of your connections. Review queries and clicks that use search results from your connections. It also allows you to go to a connection analytics details page to view view and analyze the connection data in more detail. 
 
-You can view more details about the [Queries](queries-usage-reports.md), [Users](users-search-reports.md), and [Connection analytics](connection-analytics-reports.md) sections by selecting the links. 
+You can view more details about the [Queries](queries-usage-reports.md), [Users](users-search-reports.md), and [Connection analytics](connection-analytics-reports.md) sections by clicking the links. 
 
 ## Recent Search Activity Report
 
@@ -57,7 +59,7 @@ The data above the chart shows changes over the selected time period for the fol
 |Average result position |Represents the average position of clicked items in a search result list where the number one represents the top position (the lower the value, the better).|
 |Click-through rate |The percentage of queries where the user has clicked on one or more of the answers or search results (the higher the value, the better). |
 
-The Recent Search Activity chart shows trending over time for the query count and click-through query rate. For example, if the 7-day filter is selected this will compare the current 7-day period data to the previous 7-day period data. In case of downward trend, the arrow and the line are shown in red, in case of upward trend, it is shown green. For 12 months there will not be any trend. 
+The Recent Search Activity chart shows trending activity over time for the query count and click-through query rate. For example, if the 7-day filter is selected this will compare the current 7-day period data to the previous 7-day period data. In the case of downward trend, the arrow and the line are shown in red. In the case of upward trend, it is shown in green. Trend data is not available for a 12 month view. 
 
 ## Filters
 At the top of the Recent Search Activity chart, you can use the following metrics to filter your data. Note that these filters will also apply to not only the Recent Search Activity chart, but also the other reports on the Microsoft Search usage reports page. 
@@ -67,9 +69,9 @@ At the top of the Recent Search Activity chart, you can use the following metric
 |Date Range |The date range for the analytics shown on the page: Last 7 days, Last 14 days, Last 31 days and Last 12 months.  |
 |Search application |The search application where the user has performed the queries: SharePoint start page, Office, Bing, or all of those three search applications.  |
 
-### Accessing search data prior to 6/28/2022 
+### Accessing search data prior to the start of new generation reports 
 
-The new search usage reports were available on 6/28/2022. If you select a date range prior to this date, you will see a message stating **Data not available for entire time period selected**. To view data prior to this date, you need to use the previous usage analytics reports. 
+Processing of the new search usage reports vary for different tenants. If you select a date range prior to the date processing started, you will see a message stating **Data not available for entire time period selected**. To view data prior to this date, you need to use the previous usage analytics reports. 
 
 :::image type="content" source="media/usage-reports/data-not-available.png" alt-text="Data not available message." lightbox="media/usage-reports/data-not-available.png":::
 
