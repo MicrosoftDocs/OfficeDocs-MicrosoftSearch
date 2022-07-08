@@ -91,7 +91,7 @@ This report shows popular search terms that receive low click-through. Use this 
 
 ## Prevent filtering by country, occupation, department, or division 
 
-By default, users with global administrator, search administrators, and search editor roles can filter search data by country, occupation, or department/division. If you do not want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators will not be able to filter the **Query details** reports by these filters.  
+By default, users with global administrator, search administrator, and search editor roles can filter search data by country, occupation, or department/division. If you do not want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators will not be able to filter the **Query details** reports by these filters.  
 
 Only global administrators can configure this setting. 
 

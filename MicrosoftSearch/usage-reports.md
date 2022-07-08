@@ -88,7 +88,7 @@ Each report and table in the Microsoft Search Usage Reports page has a download 
 Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 7, 14, or 31 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month
 
 ## Prevent filtering by country, occupation, department, or division
-By default, users with global administrator, search administrators, and search editor roles can filter search data by country, occupation, or department/division. If you do not want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators will not be able to filter the **Query details** or **Connection analytics details** reports by these filters.  
+By default, users with global administrator, search administrator, and search editor roles can filter search data by country, occupation, or department/division. If you do not want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators will not be able to filter the **Query details** or **Connection analytics details** reports by these filters.  
 
 Only global administrators can configure this setting.
 
