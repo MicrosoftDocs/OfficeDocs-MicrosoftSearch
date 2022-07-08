@@ -26,7 +26,7 @@ Currently you can filter these reports by country, occupation, department, or di
 
 :::image type="content" source="media/usage-reports/usage-analytics.png" alt-text="A dashboard containing pie charts, graphs, and search analytics report data." lightbox="media/usage-reports/usage-analytics.png":::
 
-## How to get to the Microsoft Search usage reports 
+## How to get to the Microsoft Search usage reports? 
 
 1. In the Microsoft 365 admin center, select **Settings**, then select **Search and Intelligence**.  
 2. On the **Search and Intelligence** page, select the **Insights** tab, and then select **Usage Analytics**. 
