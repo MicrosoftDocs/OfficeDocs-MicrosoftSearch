@@ -24,12 +24,12 @@ In the [Microsoft Search Usage Report](usage-reports.md), the **Queries** sectio
 
 The total queries data is provided in four pie charts: 
 
-- **Total Queries by user action** - Compares the number of queries with no-result with the number of queries where a user clicked on a result or performed no action (abandoned).  
-- **Total queries by country** - Compares search queries by users in different countries based on a user’s “country” Azure Active Directory attribute. 
+- **Total Queries by user action** - Compares the number of queries with no results with the number of queries where a user clicked on a result or performed no action (abandoned).  
+- **Total queries by country** - Compares search queries by users in different countries based on a user’s **country** Azure Active Directory attribute. 
 - **Total queries by occupation** - Compares the number of search queries by users in different occupations.
 - **Total queries by department or division** – Compares the number of search queries by users in different departments or divisions in your organization. 
 
-Each pie charts shows the top five values, and the remaining values are summarized in the **Others** category. You can click the **Download report** link to download the report as an Excel file and see more details. 
+Each pie chart shows the top five values, and the remaining values are summarized in the **Others** category. You can click the **Download report** link to download the report as an Excel file and see more details. 
 
 ## Filters
 
@@ -44,22 +44,22 @@ Use the **Filters** menu at the top of the **Usage Analytics** page to filter yo
 
 The Query details page shows the top search queries by people in your organization who use search regularly, along with queries that returned no results or were abandoned by the user without selecting any search results.   
 
-You can view the Query details page by selecting **View Details** button at the bottom of the **Queries** charts. 
+You can view the Query details page by selecting **View Details** button at the bottom of the **Queries** section of the main usage analytics page. 
 
 :::image type="content" source="media/usage-reports/query-details.png" alt-text="A dashboard page showing three graph charts." lightbox="media/usage-reports/query-details.png":::
 
 The three reports available to you on the query details page include: 
 
 - Most popular search terms 
-- Top-10 no result queries
+- Top-10 no-result queries
 - Top abandoned search terms 
 
-In the Filters menu, use one or more of the following to filter the data in the reports: 
+In the **Filters** menu, use one or more of the following to filter the data in the reports: 
 
 | Filter | Description |
 |:-----|:-----|
 |Date range |The date range for the analytics shown on the page. Available options are 7 days, 14 days, 31 days,  and last 12 months.|
-|Search application  |The search application used to perform the queries.  Available options are SharePoint start page, Office.com, Bing.com (work tab), or all three applications combined.  |
+|Search application  |The search application that was used to perform the queries.  Available options are SharePoint start page, Office.com, Bing.com (work tab), or all three applications combined.  |
 |Top results clicked |Link to each of the top three results selected for this query.</br> **Note** Links are not available for bookmarks and other answer features.|
 |Country  |The country of the user performing query based on their **country** attribute in Azure Active Directory. |
 |Occupation    |The occupation of the user performing the query based on their **title** attribute in Azure Active Directory (AAD).  |
@@ -80,17 +80,20 @@ Each top search item provides the following data.
 |Result click-through|The percentage of times someone clicked on this search result out of the total number of clicks for this query.  |
 |Average position of result  |The average relative position of this search result on the search results page. |
 
-### Top-10 no result queries
+### Top-10 no-result queries
 This report shows popular search terms that have returned no results. Use this report to identify search queries that might create user dissatisfaction and to improve content discoverability. You can then determine if creating an answer, like a bookmark, or ingesting new content through a Graph connector is the right action.  
 
-Note: There are cases where a search term can be represented in the no-result report, even if it has bookmarks or is listed as one of the most popular queries. One example is if a query is performed in a vertical where the bookmark is not displayed (for example, the “Sites” vertical).
+> [!NOTE]
+> There are cases where a search term can be represented in the no-result report, even if it has bookmarks or is listed as one of the most popular queries. One example is if a query is performed in a vertical where the bookmark is not displayed (for example, the “Sites” vertical).
 
 ### Top abandoned search terms 
 This report shows popular search terms that receive low click-through. Use this report to identify search queries that might create user dissatisfaction and to improve content discoverability. You can then determine if creating an answer, like a bookmark, or ingesting new content through a Graph connector is the right action.  
 
 ## Prevent filtering by country, occupation, department, or division 
 
-By default, tenant administrators can filter search data by country, occupation, or department/division. If you do not want search admins to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, users with **search administrator** and **search editor** roles will not be able to filter the **Query details** reports by these filters.  
+By default, users in global administrator, search administrators, and search editor roles can filter search data by country, occupation, or department/division. If you do not want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators will not be able to filter the **Query details** reports by these filters.  
+
+Only global administrators can configure this setting. 
 
 To configure this setting: 
 1. In the Microsoft 365 admin center, select **Settings**, then select **Org Settings**.
@@ -105,7 +108,7 @@ Downloading a report will allow you to see reports from a broader range of time.
 
 ###  Special note for the Most popular search items download report 
 
-In the Most popular search items report, notice that in the report you are allowed to expand up to three top results for each popular search term.  When you download the report and view it in Excel, this will be represented as rows with some duplicated values which means that you might see up to three copies of the first columns in the Excel report.
+In the Most popular search items report, notice that in the user interface of the report you are allowed to expand up to three top results for each popular search term.  When you download the report and view it in Excel, this will be represented as rows with some duplicated values which means that you might see up to three copies of the first columns in the Excel report.
 
 :::image type="content" source="media/usage-reports/excel-report.png" alt-text="A Top queries report Excel spreadsheet showing multiple rows." lightbox="media/usage-reports/excel-report.png":::
 
@@ -128,3 +131,4 @@ Here is an overview of the columns in this report where it’s specified if the 
 [Microsoft Search Usage Report](usage-reports.md)</br>
 [Microsoft Search Usage Report-Users](users-search-reports.md)</br>
 [Microsoft Search Usage Report-Connection analytics](connection-analytics-reports.md)</br>
+[View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites.md)

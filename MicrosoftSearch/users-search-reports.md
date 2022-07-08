@@ -25,9 +25,9 @@ In the [Microsoft Search Usage Report](usage-reports.md), the Users section show
 
 :::image type="content" source="media/usage-reports/users-reports.png" alt-text="A dashboard page showing a bar chart and a graph chart." lightbox="media/usage-reports/users-reports.png":::
 
-The users search data is provided in the following reports: 
+The users' search data is provided in the following reports: 
 
-- **User engagements by application** – This bar chart shows the total number of active and engaged users by search application (Office.com, SharePoint start page, or Bing.com). 
+- **User engagements by application** – This bar chart shows the total number of active and engaged users by search application (Office.com, SharePoint start page, or Bing.com). This graph is only displayed when a 12 month view is selected in the filter.
 - **Active users over time** – This graph shows the number of active users who searched using search applications over the specified time period.  
 
 You can click the **Download report** link to download the report as an Excel file and see more details. 
@@ -38,7 +38,7 @@ The User details page shows how many people in your organization are active or e
 
 | Filter | Description |
 |:-----|:-----|
-|Date range |The date range for the analytics shown on the page. Available options are 7 days, 14 days, 31 days,  and last 12 months.|
+|Date range |The date range for the analytics shown on the page. Available options are 7 days, 14 days, 31 days, and last 12 months.|
 |Search application  |The search application used to perform the queries.  Available options are SharePoint start page, Office.com, Bing.com (work tab), or all three applications combined.  |
 |Country  |The country of the user performing query based on their **country** attribute in Azure Active Directory. |
 |Occupation    |The occupation of the user performing the query based on their **title** attribute in Azure Active Directory.  |
@@ -56,7 +56,7 @@ The Active users chart shows you the total number of active users by search appl
 :::image type="content" source="media/usage-reports/active-users-chart.png" alt-text="A graph chart showing active users by search application." lightbox="media/usage-reports/active-users-chart.png":::
 
 ### Engaged Users chart
-The Engaged users chart shows you the total number of engaged users by search application. 
+The Engaged users chart shows you the total number of engaged users by search application. This graph is only displayed for a 12-month view since the value is in seeing changes on a monthly basis.
 
 :::image type="content" source="media/usage-reports/engaged-users-chart.png" alt-text="A graph chart showing engaged users by search application." lightbox="media/usage-reports/engaged-users-chart.png":::
 
@@ -70,3 +70,4 @@ Downloading a report will allow you to see reports from a broader range of time.
 [Microsoft Search Usage Report](usage-reports.md)</br>
 [Microsoft Search Usage Report-Queries](queries-usage-reports.md)</br>
 [Microsoft Search Usage Report-Connection analytics](connection-analytics-reports.md)</br>
+[View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites.md)
