@@ -114,7 +114,7 @@ In the **Most popular search items** report, notice that in the user interface o
 
 Here is an overview of the columns in the downloadable report. The **Applies to** column specifies if the column value pertains to the **query** or to the **result**.
 
-| Column | Applies to | Description |
+| Column | Applies&nbsp to | Description |
 |:-----|:--------|:-----|
 |Query text |Query  |The top search term performed. |
 |Count |Query |Total queries for this search term. |
