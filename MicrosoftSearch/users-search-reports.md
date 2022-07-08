@@ -20,7 +20,7 @@ description: "Review Microsoft Search Users usage reports"
 
 In the [Microsoft Search Usage Report](usage-reports.md), the Users section shows the total number of active and engaged users who have performed searches for the search application and date range selected by with the filters at the top of the page.  
 
-- **Engaged users** - Users that have searched at least five days during a month and are only shown when a 12 month date range is selected.
+- **Engaged users** – Users that have searched at least five days during a month. They are only shown when a 12 month date range is selected.
 - **Active users** – Users that search at least one day per month.
 
 :::image type="content" source="media/usage-reports/users-reports.png" alt-text="A dashboard page showing a bar chart and a graph chart." lightbox="media/usage-reports/users-reports.png":::
