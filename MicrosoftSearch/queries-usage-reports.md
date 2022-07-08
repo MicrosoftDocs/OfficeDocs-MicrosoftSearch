@@ -26,8 +26,8 @@ The total queries data is provided in four pie charts:
 
 - **Total Queries by user action** - Compares the number of queries with no results with the number of queries where a user clicked on a result or performed no action (abandoned).  
 - **Total queries by country** - Compares search queries by users in different countries based on a user’s **country** Azure Active Directory attribute. 
-- **Total queries by occupation** - Compares the number of search queries by users in different occupations.
-- **Total queries by department or division** – Compares the number of search queries by users in different departments or divisions in your organization. 
+- **Total queries by occupation** - Compares the number of search queries by users in different occupations based on their **title** attribute in Azure Active Directory.
+- **Total queries by department or division** – Compares the number of search queries by users in different departments or divisions in your organization. This is based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory. 
 
 Each pie chart shows the top five values, and the remaining values are summarized in the **Others** category. You can click the **Download report** link to download the report as an Excel file and see more details. 
 
@@ -108,11 +108,11 @@ Downloading a report will allow you to see reports from a broader range of time.
 
 ###  Special note for the Most popular search items download report 
 
-In the Most popular search items report, notice that in the user interface of the report you are allowed to expand up to three top results for each popular search term.  When you download the report and view it in Excel, this will be represented as rows with some duplicated values which means that you might see up to three copies of the first columns in the Excel report.
+In the **Most popular search items** report, notice that in the user interface of the report you, a query can have up to to three top results for each popular search term. When you download the report and view it in Excel, a search term with more than one top result will display with a row for each result. The first three columns will pertain to the query (for example, (query text, count, and clicks), and will be the same. The remaining columns in the rows for the search item will pertain to the specific results, and will vary.
 
 :::image type="content" source="media/usage-reports/excel-report.png" alt-text="A Top queries report Excel spreadsheet showing multiple rows." lightbox="media/usage-reports/excel-report.png":::
 
-Here is an overview of the columns in this report where it’s specified if the specific column value refers to the **query** or the **result**:
+Here is an overview of the columns in the downloadable report. The **Applies to** column specifies if the column value pertains to the **query** or to the **result**.
 
 | Column | Applies to | Description |
 |:-----|:-----|:-----|
