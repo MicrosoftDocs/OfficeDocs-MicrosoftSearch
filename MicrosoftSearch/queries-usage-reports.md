@@ -22,11 +22,11 @@ In the [Microsoft Search Usage Report](usage-reports.md), the **Queries** sectio
 
 :::image type="content" source="media/usage-reports/queries-report.png" alt-text="A dashboard page containing four pie charts with query report data." lightbox="media/usage-reports/queries-report.png":::
 
-The total queries data is provided in four pie charts: 
+The query data is provided in four pie charts: 
 
-- **Total Queries by user action** - Compares the number of queries with no results with the number of queries where a user clicked on a result or performed no action (abandoned).  
-- **Total queries by country** - Compares search queries by users in different countries based on a user’s **country** Azure Active Directory attribute. 
-- **Total queries by occupation** - Compares the number of search queries by users in different occupations based on their **title** attribute in Azure Active Directory.
+- **Total queries by user action** – Compares the number of queries with no results with the number of queries where a user clicked on a result or performed no action (abandoned).  
+- **Total queries by country** – Compares search queries by users in different countries based on a user’s **country** Azure Active Directory attribute. 
+- **Total queries by occupation** – Compares the number of search queries by users in different occupations based on their **title** attribute in Azure Active Directory.
 - **Total queries by department or division** – Compares the number of search queries by users in different departments or divisions in your organization. This is based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory. 
 
 Each pie chart shows the top five values, and the remaining values are summarized in the **Others** category. You can click the **Download report** link to download the report as an Excel file and see more details. 
@@ -91,7 +91,7 @@ This report shows popular search terms that receive low click-through. Use this 
 
 ## Prevent filtering by country, occupation, department, or division 
 
-By default, users in global administrator, search administrators, and search editor roles can filter search data by country, occupation, or department/division. If you do not want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators will not be able to filter the **Query details** reports by these filters.  
+By default, users with global administrator, search administrators, and search editor roles can filter search data by country, occupation, or department/division. If you do not want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators will not be able to filter the **Query details** reports by these filters.  
 
 Only global administrators can configure this setting. 
 
@@ -129,6 +129,6 @@ Here is an overview of the columns in the downloadable report. The **Applies to*
 ## Related Topics
 
 [Microsoft Search Usage Report](usage-reports.md)</br>
-[Microsoft Search Usage Report-Users](users-search-reports.md)</br>
-[Microsoft Search Usage Report-Connection analytics](connection-analytics-reports.md)</br>
+[Microsoft Search Usage Report - Users](users-search-reports.md)</br>
+[Microsoft Search Usage Report - Connection analytics](connection-analytics-reports.md)</br>
 [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites.md)

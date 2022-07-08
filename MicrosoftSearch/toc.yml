@@ -16,9 +16,9 @@ items:
   - name: View usage reports 
     href: usage-reports.md
     items:
-    - name: Queries reports
+    - name: Query reports
       href: queries-usage-reports.md
-    - name: Users reports
+    - name: User reports
       href: users-search-reports.md
     - name: Connection analytics reports
       href: connection-analytics-reports.md

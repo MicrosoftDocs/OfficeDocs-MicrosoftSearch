@@ -45,9 +45,7 @@ The Microsoft Search Usage Reports page provides you with search data through th
 You can view more details about the [Queries](queries-usage-reports.md), [Users](users-search-reports.md), and [Connection analytics](connection-analytics-reports.md) sections by clicking the links. 
 
 > [!NOTE]
-> While these search usage reports show collective search data throughout your environment, you can also view and analyze search usage reports for individual modern SharePoint sites, through their respective site collection settings. For more information, see [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites.md).
-
-Note: 
+> These search usage reports show collective search data based on search traffic from Bing (work vertical), Office.com and the SharePoint start page. You can also view and analyze search usage reports for individual modern SharePoint sites through their respective site collection usage reports. For more information, see [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites.md).
 
 ## Recent Search Activity Report
 
@@ -80,7 +78,7 @@ Processing of the new search usage reports vary for different tenants. If you se
 
 :::image type="content" source="media/usage-reports/data-not-available.png" alt-text="Data not available message." lightbox="media/usage-reports/data-not-available.png":::
 
-To use the previous search analytics reports, select the **New Usage Reports** toggle on the top right corner of the page. 
+To view the previous search analytics reports, select the **New usage reports** toggle on the top right corner of the page. 
 
 :::image type="content" source="media/usage-reports/new-usage-toggle.png" alt-text="A toggle button." lightbox="media/usage-reports/new-usage-toggle.png":::
 
@@ -90,7 +88,7 @@ Each report and table in the Microsoft Search Usage Reports page has a download 
 Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 7, 14, or 31 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month
 
 ## Prevent filtering by country, occupation, department, or division
-By default, users in global administrator, search administrators, and search editor roles can filter search data by country, occupation, or department/division. If you do not want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators will not be able to filter the**Query details** or **Connection analytics details** reports by these filters.  
+By default, users with global administrator, search administrators, and search editor roles can filter search data by country, occupation, or department/division. If you do not want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators will not be able to filter the **Query details** or **Connection analytics details** reports by these filters.  
 
 Only global administrators can configure this setting.
 
@@ -102,9 +100,9 @@ To configure the setting:
 
 ## Related articles
 
-[Microsoft Search Usage Report-Queries](queries-usage-reports.md)</br>
-[Microsoft Search Usage Report-Users](users-search-reports.md)</br>
-[Microsoft Search Usage Report-Connection analytics](connection-analytics-reports.md)</br>
+[Microsoft Search Usage Report - Queries](queries-usage-reports.md)</br>
+[Microsoft Search Usage Report - Users](users-search-reports.md)</br>
+[Microsoft Search Usage Report - Connection analytics](connection-analytics-reports.md)</br>
 [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites.md)
 
 

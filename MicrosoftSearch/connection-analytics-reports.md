@@ -35,9 +35,9 @@ The **Queries and click-throughs over time** graph shows trends over the selecte
 
 You can click the **Download report** link to download the report as an Excel file and see more details.  
 
-You can view the**Connection Analytics details** page by selecting **View Details** button at the bottom of the Connection Analytics section of the Usage analytics main page.  
+You can view the **Connection Analytics details** page by selecting **View Details** button at the bottom of the Connection analytics section of the Usage analytics main page.  
 
-## Connection Analytics details page
+## Connection analytics details page
 The Connection analytics details page allows you to analyze queries with search results from your connections.   
 
 :::image type="content" source="media/usage-reports/connection-analytics-details.png" alt-text="A report dashboard that shows graphs and tables of search usage for connection analytics." lightbox="media/usage-reports/connection-analytics-details.png":::
@@ -47,7 +47,7 @@ In the **Filters** menu, use one or more of the following to filter the data in 
 | Filter | Description |
 |:-----|:-----|
 |Date range |The date range for the analytics shown on the page. Available options are 7 days, 14 days, 31 days, and last 12 months.|
-|Search application  |The search application that was used to perform the queries.  Available options are SharePoint start page, Office.com, Bing.com (work tab), or all three applications combined.  |
+|Search application  |The search application that was used to perform the queries. Available options are SharePoint start page, Office.com, Bing.com (work tab), or all three applications combined.  |
 |Country  |The country of the user performing query based on their **country** attribute in Azure Active Directory. |
 |Occupation    |The occupation of the user performing the query based on their **title** attribute in Azure Active Directory.  |
 |Department or division    |The department or division of the user performing the query, based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory. |
@@ -68,7 +68,7 @@ This report shows a comparison of total indexed items used by each of the data c
 :::image type="content" source="media/usage-reports/index-by-connection.png" alt-text="A bar chart graph that shows indexed items by data connection." lightbox="media/usage-reports/index-by-connection.png":::
 
 ### Connections 
-This report shows the details (connection type, queries with connection results, click through queries and indexed items) for all the connections that have been created. It analyzes queries with search results from the connections, which helps to identify which connections are valuable to the organization. These critical metrics are useful to adopt graph connectors, identify potential areas for tuning, and justify the investments and connection. quota. 
+This report shows the details (connection type, queries with connection results, click through queries and indexed items) for all the connections that have been created. It analyzes queries with search results from the connections, which helps to identify which connections are valuable to the organization. These critical metrics are useful to adopt graph connectors, identify potential areas for tuning, and justify the investments and connection quota. 
 
 :::image type="content" source="media/usage-reports/connections.png" alt-text="A table that shows details about your connections." lightbox="media/usage-reports/connections.png":::
 
@@ -78,7 +78,7 @@ Each report and table have a download option that allows you to download the bac
 Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 7, 14, or 31 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month.
 
 ## Prevent filtering by country, occupation, department, or division 
-By default, users in global administrator, search administrators, and search editor roles can filter search data by country, occupation, or department/division. If you do not want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators will not be able to filter the **Connection analytics details** reports by these filters.  
+By default, users with global administrator, search administrators, and search editor roles can filter search data by country, occupation, or department/division. If you do not want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators will not be able to filter the **Connection analytics details** reports by these filters.  
 
 Only global administrators can configure this setting. 
 
@@ -90,8 +90,8 @@ To configure this setting:
 
 ## Related Topics
 [Microsoft Search Usage Report](usage-reports.md)</br>
-[Microsoft Search Usage Report-Queries](queries-usage-reports.md)</br>
-[Microsoft Search Usage Report-Users](users-search-reports.md)</br>
+[Microsoft Search Usage Report - Queries](queries-usage-reports.md)</br>
+[Microsoft Search Usage Report - Users](users-search-reports.md)</br>
 [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites.md)
 
 
