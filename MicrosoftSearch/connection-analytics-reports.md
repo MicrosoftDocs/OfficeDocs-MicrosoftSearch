@@ -40,7 +40,7 @@ You can view the **Connection Analytics details** page by selecting **View Detai
 ## Connection analytics details page
 The Connection analytics details page allows you to analyze queries with search results from your connections.   
 
-:::image type="content" source="media/usage-reports/connection-analytics-details.png" alt-text="A report dashboard that shows graphs and tables of search usage for connection analytics." lightbox="media/usage-reports/connection-analytics-details.png":::
+:::image type="content" source="media/usage-reports/connection-analytics-details.png" alt-text="A report dashboard that shows graphs and tables of search usage for connection analytics details reports." lightbox="media/usage-reports/connection-analytics-details.png":::
 
 In the **Filters** menu, use one or more of the following to filter the data in the reports: 
 
