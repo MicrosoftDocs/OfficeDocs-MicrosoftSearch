@@ -47,7 +47,7 @@ For example, the following table presents sample crawled properties for a work t
 | resolved       | Boolean          |
 
 > [!NOTE]
-> * For Microsoft built connectors, the crawled properties are selected in step 4 of [**Setup your Graph connector**](configure-connector#step-4-select-properties) article.
+> * For Microsoft built connectors, the crawled properties are selected in step 4 of [**Setup your Graph connector**](configure-connector.md) article.
 
 ## Search attributes
 
@@ -97,7 +97,7 @@ If a property is refinable, an admin can configure it as a custom filter in the 
 *Refine results by `tags`, a refinable property.*
 
 > [!NOTE]
-> * For Microsoft built connectors, the search attributes are selected in step 7 of [**Setup your Graph connector**](configure-connector#step-7-manage-schema) article.
+> * For Microsoft built connectors, the search attributes are selected in step 7 of [**Setup your Graph connector**](configure-connector.md) article.
 
 ## Semantic labels
 
@@ -132,14 +132,14 @@ For example, the crawled property **lastEditedBy** has the same meaning as the M
 The label **title** is the most important label. Make sure that you assign a property to this label to allow your connection to participate in the result cluster experience. Incorrectly mapping labels degrades the search experience. It's okay for some labels to not have a property assigned to them.
 
 > [!NOTE]
-> * For Microsoft built connectors, the semantic labels are selected in step 6 of [**Setup your Graph connector**](configure-connector#step-6-assign-property-labels) article.
+> * For Microsoft built connectors, the semantic labels are selected in step 6 of [**Setup your Graph connector**](configure-connector.md) article.
 
 ## Aliases
 
 Aliases are friendly names for properties that you assign. These are used in queries and selections in refinable property filters.
 
 > [!NOTE]
-> * For Microsoft built connectors, aliases are defined in step 7 of [**Setup your Graph connector**](configure-connector#step-7-manage-schema) article.
+> * For Microsoft built connectors, aliases are defined in step 7 of [**Setup your Graph connector**](configure-connector.md) article.
 
 ## Schema update capabilities
 
