@@ -10,7 +10,7 @@ metadata:
   ms.topic: landing-page # Required
   author: jeffkizn #Required; your GitHub user alias, with correct capitalization.
   ms.author: jeffkizn #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/29/2020 #Required; mm/dd/yyyy format.
+  ms.date: 07/05/2022 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -29,7 +29,7 @@ highlightedContent:
     #card
     - title: Adoption resources
       itemType: get-started
-      url: https://resources.techcommunity.microsoft.com/microsoft-search/#adoption
+      url: https://adoption.microsoft.com/microsoft-search/
     #card
     - title: Microsoft Search on YouTube
       itemType: video
