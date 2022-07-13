@@ -57,6 +57,9 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userC
 Set-spotenant –DisableCustomAppAuthentication $false
 ```
 
+> [!NOTE]
+> If you're using multifactor authentication, use `Connect-SPOService -Url https://$orgName-admin.sharepoint.com`.
+
 #### Complete the app configuration
 
 1. Go to `https://Org-Name.sharepoint.com/Site-Name/_layouts/15/appinv.aspx`.
