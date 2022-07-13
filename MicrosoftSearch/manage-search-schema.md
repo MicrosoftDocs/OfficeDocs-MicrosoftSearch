@@ -61,7 +61,7 @@ If you select a content property, you have the option of using the system-genera
 
 If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its content.
 
-![A search for "design" displaying results for hits against the property title and content.](./media/manage-schema-images/connecting-external-content-manage-items-schema-1.png)
+![Diagram that showsaA search for "design" displaying results for hits against the property title and content.](./media/manage-schema-images/connecting-external-content-manage-items-schema-1.png)
 
 *A search for "design" displaying results for hits against the property (`title`) and content.*
 
@@ -72,11 +72,11 @@ If a property is queryable, you can query against it using knowledge query langu
 > [!NOTE]
 > Suffix matching is not supported.
 
-![A search for "search ba*" displaying results that match this prefix.](./media/manage-schema-images/connecting-external-content-manage-items-schema-2.svg)
+![Diagram that shows a search for "search ba*" displaying results that match this prefix.](./media/manage-schema-images/connecting-external-content-manage-items-schema-2.svg)
 
 *A search for "search ba\*" displaying results that match this prefix.*
 
-![A search for "tags:design" scoping down results to items with "design" in the tags property.](./media/manage-schema-images/connecting-external-content-manage-items-schema-3.svg)
+![Diagram that shows a search for "tags:design" scoping down results to items with "design" in the tags property.](./media/manage-schema-images/connecting-external-content-manage-items-schema-3.svg)
 
 *A search for "tags:design" scoping down results to items with "design" in the `tags` property.*
 
@@ -84,7 +84,7 @@ If a property is queryable, you can query against it using knowledge query langu
 
 If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable increases search latency. Be selective and choose relevant properties.
 
-![A set of retrievable properties rendered as a result.](./media/manage-schema-images/connecting-external-content-manage-schema-4.svg)
+![Diagram that shows a set of retrievable properties rendered as a result.](./media/manage-schema-images/connecting-external-content-manage-schema-4.svg)
 
 *A set of retrievable properties (`title` and `lastEditedBy`) rendered as a result.*
 
@@ -92,7 +92,7 @@ If a property is retrievable, its value can be returned in search results. Any p
 
 If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. A `refinable` property cannot be `searchable`.
 
-![Refine results by tags, a refinable property.](./media/manage-schema-images/connecting-external-content-manage-schema-5.svg)
+![Diagram that shows refine results by tags, a refinable property.](./media/manage-schema-images/connecting-external-content-manage-schema-5.svg)
 
 *Refine results by `tags`, a refinable property.*
 
@@ -159,7 +159,7 @@ This section includes information about the update capabilities for the search s
 
 You can add a property to your schema. When you add a property, you can include all the search attributes that you need.
 
-![Add a new source property](./media/manage-schema-images/schema-update-add-source-properties.png)
+![Screenshot of option to add a new source property](./media/manage-schema-images/schema-update-add-source-properties.png)
 
 *Add a new source property from list of supported properties by connector*
 
@@ -171,7 +171,7 @@ You can add a property to your schema. When you add a property, you can include 
 
 You can add or remove specific search attributes to a property. Adding a search capability requires a full crawl.
 
-![Update the search annotations](./media/manage-schema-images/schema-update-update-search-annotations.png)
+![Screenshot of option to update the search annotations](./media/manage-schema-images/schema-update-update-search-annotations.png)
 
 *Update the search annotations for crawled properties*
 
@@ -183,7 +183,7 @@ You can add or remove specific search attributes to a property. Adding a search 
 
 You can add or update semantic label mapping of your crawled properties.
 
-![Update semantic labels](./media/manage-schema-images/schema-update-update-semantic-labels.png)
+![Screenshot of option to update semantic labels](./media/manage-schema-images/schema-update-update-semantic-labels.png)
 
 *Update semantic labels for crawled properties*
 
@@ -191,7 +191,7 @@ You can add or update semantic label mapping of your crawled properties.
 
 You can add or remove aliases, and use them for your search queries.
 
-![Add or remove an alias](./media/manage-schema-images/schema-update-update-alias.png)
+![Screenshot of option to add or remove an alias](./media/manage-schema-images/schema-update-update-alias.png)
 
 *Add or remove an alias for crawled properties*
 
