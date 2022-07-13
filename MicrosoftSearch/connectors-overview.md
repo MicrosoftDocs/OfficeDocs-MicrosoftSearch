@@ -68,6 +68,7 @@ You can connect to the following data sources by using connectors created by Mic
 * [Azure SQL and Microsoft SQL Server](MSSQL-connector.md)
 * [Confluence Cloud](confluence-cloud-connector.md)
 * [Confluence On-premises](confluence-onpremises-connector.md)
+* [CSV](csv-connector.md)
 * [Enterprise websites](enterprise-web-connector.md)
 * [Jira Cloud](jira-connector.md)
 * [MediaWiki](mediawiki-connector.md)
