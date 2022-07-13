@@ -82,7 +82,8 @@ To learn more about connecting to an on-premises data source, see [Set up the Mi
 
 You can choose the properties that are indexed by Microsoft Search.
 
-The ServiceNow query can be used to filter your data before it's indexed by Microsoft Search; this query gives you more control over the data that can be searched. For more information, see [Learn about ServiceNow queries](https://go.microsoft.com/fwlink/?linkid=2151447).
+> [!NOTE]
+> To update the crawled properties after creating a connection, refer [manage search schema](manage-search-schema.md) article.
 
 ## Step 5: Manage search permissions
 
@@ -90,7 +91,7 @@ Access control lists (ACLs) determine which users in your organization can acces
 
 Some connectors such as [Microsoft SQL](MSSQL-connector.md) and [Azure Data Lake Storage Gen2](azure-data-lake-connector.md) natively support [Azure Active Directory (Azure AD)](/azure/active-directory/) ACLs.
 
-Other connectors such as [ServiceNow Knowledge](servicenow-knowledge-connector.md), [ServiceNow Catalog](servicenow-catalog-connector.md), [Azure DevOps](azure-devops-connector.md), and [Salesforce](salesforce-connector.md) support syncing of non-Azure AD users and groups.  
+Other connectors such as [ServiceNow Knowledge](servicenow-knowledge-connector.md), [ServiceNow Catalog](servicenow-catalog-connector.md), [Azure DevOps Work Items](azure-devops-connector.md), and [Salesforce](salesforce-connector.md) support syncing of non-Azure AD users and groups.  
 
 Selecting everyone allows everyone in your organization to see search results from this data source.
 
@@ -158,7 +159,7 @@ For all connectors except the File share connector, custom types must be set man
 * Only string properties can be marked searchable.
 
 > [!NOTE]
-> After you create a connection, you *can't* modify the schema. To do that, you need to delete your connection and create a new one.
+> To update the schema after creating a connection, refer [manage search schema](manage-search-schema.md) article.
 
 ## Step 8: Refresh settings
 
@@ -172,7 +173,7 @@ With a full refresh, the search engine processes and indexes the items that have
 * The incremental refresh found errors, and failed.
 * ACLs were modified.
 * Crawl rules were modified.
-* The schema for the connection has been updated (schema updates aren't yet supported).
+* The schema for the connection has been updated.
 
 With an **Incremental refresh**, the search engine can process and index only the items that were created or modified since the last successful crawl. As a result, not all the data in the content source is reindexed. Incremental refreshes work best to detect content, metadata, permission, and other updates.
 
