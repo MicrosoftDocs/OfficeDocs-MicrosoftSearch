@@ -20,6 +20,11 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gcadownload)
 
+### Version 1.7.0.0 (*16 Jun 2022*)
+* Ability to stop crawls and ingestion of data
+* Security enhancements
+* Bug fixes and reliability improvements
+
 ### Version 1.6.0.0 (*09 May 2022*)
 * Dashboard changes to enable monitoring of multiple instances of a connector
 * Bug fixes and reliability improvements
