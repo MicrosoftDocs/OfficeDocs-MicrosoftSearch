@@ -45,7 +45,7 @@ The Microsoft Search Usage Reports page provides you with search data through th
 You can view more details about the [Queries](queries-usage-reports.md), [Users](users-search-reports.md), and [Connection analytics](connection-analytics-reports.md) sections by clicking the links. 
 
 > [!NOTE]
-> These search usage reports show collective search data based on search traffic from Bing (work vertical), Office.com and the SharePoint start page. You can also view and analyze search usage reports for individual modern SharePoint sites through their respective site collection usage reports. For more information, see [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites.md).
+> These search usage reports show collective search data based on search traffic from Bing (work vertical), Office.com and the SharePoint start page. You can also view and analyze search usage reports for individual modern SharePoint sites through their respective site collection usage reports. For more information, see [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites).
 
 ## Recent Search Activity Report
 
@@ -103,6 +103,6 @@ To configure the setting:
 [Microsoft Search Usage Report - Queries](queries-usage-reports.md)</br>
 [Microsoft Search Usage Report - Users](users-search-reports.md)</br>
 [Microsoft Search Usage Report - Connection analytics](connection-analytics-reports.md)</br>
-[View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites.md)
+[View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites)
 
 
