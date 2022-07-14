@@ -37,7 +37,7 @@ To connect to your ServiceNow data, you need your organization's **ServiceNow in
 
 Along with this URL, you will need a **service account** for setting up the connection to ServiceNow as well as for allowing Microsoft Search to periodically update the tickets details based on the refresh schedule. 
 
-In ServiceNow, Task table is a base class for case management. It can be extended to create applications such as incident, problem and change Management. Learn more about [ServiceNow Task tables](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/task-table/concept/c_TaskTable.html).
+In ServiceNow, Task table is the base class for ticket management. It can be extended to create ticket applications such as incident, problem and change Management. Learn more about [ServiceNow Task tables](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/task-table/concept/c_TaskTable.html).
 
 The service account you use to configure a connection **must have** read access to the following ServiceNow table records to successfully crawl default ticket fields.
 
@@ -47,7 +47,7 @@ Index base [Task table fields](https://docs.servicenow.com/bundle/sandiego-platf
 Sync user tables | `sys_user` | To index user access details for tickets
 
 
-If you want to index custom properties from [extended tables](https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/table-administration/concept/table-extension-and-classes.html_) of base *task* table , provide read access to sys_dictionary and sys_db_object. 
+If you want to index custom properties from [extended tables](https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/table-administration/concept/table-extension-and-classes.html_) of *task* table , provide read access to sys_dictionary and sys_db_object. 
 This is an **optional** feature. You will be able to index *task* table properties without access to the two additional tables.
 
 **Feature** | **Read access required tables** | **Description**
