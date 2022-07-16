@@ -1,5 +1,5 @@
 ---
-title: "Graph connectors SDK best practices"
+title: "Microsoft Graph connectors SDK best practices"
 ms.author: rchanda
 author: rchanda1392
 manager: harshkum
@@ -7,30 +7,31 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.date: 06/29/2022
-description: "Graph connectors SDK best practices"
+description: "Microsoft Graph connectors SDK best practices"
 ---
 
-# Graph connectors SDK Best practices
+# Microsoft Graph connectors SDK best practices
 
-The following section contains the best practices to follow while implementing a custom connector using the Graph connectors SDK
+The following section contains the best practices to follow while implementing a custom connector using the Microsoft Graph connectors SDK.
 
-## Using crawl progress marker
+## Using the crawl progress marker
 
-The crawl progress marker acts as an identifier for the particular item sent by the connector that was last processed by the connector platform. There are two types of crawls which happen: Periodic full and incremental crawls.
+The crawl progress marker acts as an identifier for the particular item sent by the connector that was last processed by the platform. There are two types of crawls: periodic full and incremental.
 
-Periodic full crawls are meant to get all items in the data source. Only items that are modified or aren't present in the index are ingested. Items that aren't found in the data source are deleted from the index.
+Periodic full crawls get all items in the data source and ingest only the items that are modified or not present in the index. If it doesn't find an item, it deletes it from the index.
 
-Incremental crawls are meant for only getting items added or modified since the last incremental crawl. The connector can send items to be deleted as well as a part of this crawl. For the first incremental crawl, the start time of last full crawl is sent as well. The connector can optionally use this crawl to fetch items changed only after the last full crawl.
+Incremental crawls get items added or modified since the last incremental crawl. The connector can send items to be deleted as well as a part of this crawl. For the first incremental crawl, the last full crawl's start time is also sent. The connector can optionally use this crawl to fetch items changed only after the last full crawl.
 
-Both periodic full and incremental crawls have their own crawl progress markers.
+Both periodic full and incremental crawls have their crawl progress markers.
 
-### Usage of crawl progress marker during periodic full crawls
+### Usage of the crawl progress marker during periodic full crawls
 
-For periodic full crawls, the crawl progress marker is sent only in case the previous crawl crashed or a scheduled crawl was missed due to the Graph connector Agent being offline for a period of time. In case of scheduled crawl without any previous crawl crashes, the crawl progress marker isn't sent. In these cases, the data source has to be crawled from the beginning.
+The SDK sends the crawl progress marker if the previous crawl crashed or a scheduled crawl was missed due to the Microsoft Graph connector agent being offline during periodic full crawls.
+If no previous crawl crashed occurred, you have to crawl the data source from the beginning.
 
-### Usage of crawl progress marker during incremental crawls
+### Usage of the crawl progress marker during incremental crawls
 
-For incremental crawls, the crawl progress marker sent by the connector to the connector platform during the previous incremental crawl is sent to the connector. This crawl can be used by the connector to fetch the items added or modified after this marker.
+During one incremental crawl the connector sends the crawl progress marker to the connector platform, and it will continue to do so for the next incremental crawls. The connector can use this crawl to fetch added or modified items after this marker.
 
 ## Constructing generic types
 
@@ -97,7 +98,8 @@ message TimestampCollectionType {
 
 ```
 
-GenericType can have one of the types of string/int64/double/DateTime/Boolean or a collection of string/int64/double/DateTime. Some samples to set these types:
+GenericType can have one of the following types: string, int64, double, DateTime and Boolean or a collection of strings, int64, double and DateTime.
+The following are examples of how to set these types:
 
 ```csharp
 // Setting string value in generic type
@@ -170,57 +172,66 @@ GenericType can have one of the types of string/int64/double/DateTime/Boolean or
 
 ## Building search schema
 
-Schema has certain restrictions as listed below:
+The connectors schema has certain restrictions as listed next:
 
-**Property name**: The name of the property can have a maximum of 32 characters. Only alphanumeric characters are allowed. For example, each string may not contain control characters, whitespace, or any of the following characters: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, \\, ~, ', ", <, >, `, ^.
+**Property name**: the name of the property can have a maximum of 32 characters and only alphanumeric characters are allowed.
 
-**Search annotations**: Following are the set of rules to follow for search annotations:
+**Search annotations**:
 
-   • Only properties of type String or StringCollection can be searchable.
+   * Only properties of type String or StringCollection can be searchable.
 
-   • Only properties of type String can be a content property.
+   * Only properties of type String can be a content property.
 
-   • Content properties must be searchable.
+   * Content properties must be searchable.
 
-   • Content properties can't be queryable or retrievable.
+   * Content properties can't be queryable or retrievable.
 
-   • Refinable property shouldn't be searchable.
+   * Refinable property shouldn't be searchable.
 
-   • Refinable property should be queryable and retrievable.
+   * Refinable property should be queryable and retrievable.
 
-   • Boolean properties can't be refinable.
+   * Boolean properties can't be refinable.
 
-**Aliases**: A set of aliases or a friendly name for the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string may not contain control characters, whitespace, or any of the following characters: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, \\, ~, ', ", <, >, `, ^.
+**Aliases**: a set of aliases or a friendly name for the property can have a maximum 32 characters and only alphanumeric characters allowed.
 
-## Fetching items during crawl
+## Fetching items during a crawl
 
-The GetCrawlStream method is a [server streaming method](https://grpc.io/docs/what-is-grpc/core-concepts/#server-streaming-rpc). Each item crawled from the datasource is converted into a [CrawlStreamBit](/microsoftsearch/custom-connector-sdk-contracts-connectorcrawler#crawlstreambit) and sent over the response stream. To get a good throughput, it's best if the connector retrieves a batch of items from the data source, converts each item to the CrawlStreamBit and sends them over the response stream. The batch size depends on the data source. We recommend 25 as an optimal batch size to maintain continuous flow of items over the stream.
+The GetCrawlStream method is a [server streaming method](https://grpc.io/docs/what-is-grpc/core-concepts/#server-streaming-rpc). It converts each item from the data source into a [CrawlStreamBit](/microsoftsearch/custom-connector-sdk-contracts-connectorcrawler#crawlstreambit) during the crawl and sends it over the response stream.
+
+To get a good throughput, the connector should retrieve a batch of items from the data source, convert each item to the CrawlStreamBit and send them over the response stream. 
+The batch size depends on the data source but we recommend 25 as an optimal size to maintain continuous flow of items over the stream.
 
 ## Exception handling in connector code
   
-All responses from the gRPC calls have an [OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) that indicates if the operation succeeded or failed, the failure reason, and retry details if there are failures. We recommend that the entire code should be wrapped in a try-catch block. All exceptions should be logged by the connector and a proper operation status should be sent to the platform. In the case of connection management flows, the StatusMessage that is sent as part of the response is displayed in the Microsoft 365 Admin Center. So, sending meaningful messages will be helpful for debugging errors on the connector. Unhandled exceptions will result in Unknown or generic error messages on the UI, which won’t be helpful in debugging.
+All responses from the gRPC calls have: an [OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) that indicates if the operation succeeded or failed, the failure reason, and retry details if there are failures. We recommend wrapping the entire code in a try-catch block. The connector should log all exceptions and send a proper operation status to the platform.
+
+Connection management flows send a response with the StatusMessage that appears in the Microsoft 365 admin center, sending meaningful messages makes it easier to debug the errors on the user interface, and avoiding to leave unhandled exceptions.
 
 ## Timeouts
 
-All methods in [ConnectionManagementService](/MicrosoftSearch/custom-connector-sdk-contracts-connectionmanagement) should complete and return within 30 seconds, otherwise the platform will time out the requests.
+All methods in [ConnectionManagementService](/MicrosoftSearch/custom-connector-sdk-contracts-connectionmanagement) should complete and return within 30 seconds, otherwise the platform will return a time-out error message for the request.
 
 ## Sending back errors from connector to platform
 
-All responses have the [OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) set in the response structure. If there are any errors, connectors are expected to use OperationStatus to send the failure reason and retry information back to platform. it's recommended to use this OperationStatus to set the errors during crawls in case of connection level errors like expired credentials to access datasource.
+All responses use the [OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) in the response structure. If there are any errors, the connectors should use OperationStatus to send the failure reason and retry information back to the platform. Use the OperationStatus to set the errors during crawls if there's connection level errors like expired credentials to access data source.
 
-OperationStatus structure has three fields that can be used to represent any errors:
+The OperationStatus structure has three fields that can be used to represent any errors:
 
 ### OperationResult
 
-OperationResult is an enum that can hold the failure reason.
+OperationResult is an enumeration that can hold the failure reason.
 
 ### StatusMessage
 
-StatusMessage is a custom message to show the failure reason. This message will be displayed to admins during connection setup. For example, if the provided credentials are incorrect during ValidateAuthentication, the OperationStatus can be set to AuthenticationIssue and statusMessage can be set to “Incorrect credentials provided.”. During ValidateAuthentication, this statusMessage will be shown to the search admin. During crawls, this scenario will move the connection to failed state and display the authentication error to the admin and prompt the admin to update the credentials to access the datasource.
+StatusMessage is a custom message to show the failure reason that will appear to the admin during the connection setup.
+<!--For example: if the credentials are incorrect during the validation with ValidateAuthentication, the OperationStatus can be set to AuthenticationIssue and statusMessage can be set to "Incorrect credentials provided".
+During ValidateAuthentication, this statusMessage will be shown to the search admin. During crawls, this scenario will move the connection to failed state and display the authentication error to the admin and prompt the admin to update the credentials to access the data source. // This example needs a little work, it will be better with code to illustrate it and the description in prose without the variable names for clarity-->
 
 ### RetryDetails
 
-In case of errors occurring during crawls, that are transient and can be retried, the retry details can be sent for the platform to retry. The retry can be standard or exponential backoff. The pause time, backoff rate and backoff coefficient can be set by the connector and sent back. For example, if the datasource is throttled during the crawl, the connector can set the OperationResult to DatasourceError and send the retry details according to the retry-header in the response headers from datasource.
+RetryDetails allows the connector to resend information to the platform about transient errors during the crawls and use it to repeat the operation.
+
+The retry can be a standard or exponential back-off. The connector can set the pause time, back-off rate and back-off coefficient and send them back. For example, if the data source is throttled during the crawl, the connector can set the OperationResult to DatasourceError and send the retry details according to the retry-header in the response headers from the data source.
 
 ## Error mapping for OperationResult
 

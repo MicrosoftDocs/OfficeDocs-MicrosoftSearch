@@ -1,5 +1,5 @@
 ---
-title: "Graph connectors SDK Sample Create Connector"
+title: "Develop your custom Microsoft Graph connector in C# using a template"
 ms.author: rchanda
 author: rchanda1392
 manager: harshkum
@@ -7,10 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.date: 07/01/2022
-description: "Graph connectors SDK Create Connector"
+description: "Microsoft Graph connectors SDK sample create connector"
 ---
 
-# Develop your custom connector in C# using a template
+# Develop your custom Microsoft Graph connector in C# using a template
 
 ## Prerequisites
 
@@ -20,12 +20,12 @@ description: "Graph connectors SDK Create Connector"
 ## Install the extension
 
 1. Open visual studio and go to **Extensions** > **Manage extensions**
-2. Search for “**GraphConnectorsTemplate**” extension and download it
+2. Search for "**GraphConnectorsTemplate**" extension and download it
 3. Close and relaunch Visual Studio to install the template
-4. Go to **File** > **New** > **Project** and search for “GraphConnectorsTemplate”. Select the template and click Next.
+4. Go to **File** > **New** > **Project** and search for "GraphConnectorsTemplate". Select the template and select Next.
     ![Create project from template](media/connectors-sdk/create.png)
-5. Give a name to the project and click Next.
-6. Choose .NET Core 3.1, give a name to the connector as “CustomConnector” and click Create.
+5. Give a name to the project and select Next.
+6. Choose .NET Core 3.1, give a name to the connector as "CustomConnector" and select Create.
 7. The custom connector template project is created with skeleton code
     ![Project structure from template](media/connectors-sdk/templateproject.png)
 
@@ -35,7 +35,7 @@ Before beginning to build the connector, follow the steps given below to install
 
 ### Install NuGet packages
 
-1. Right click on the project and select “Open in Terminal”
+1. Use the right mouse button on the project and select "Open in Terminal"
 
     ![Open in Terminal](media/connectors-sdk/terminal.png)
 
@@ -47,7 +47,7 @@ Before beginning to build the connector, follow the steps given below to install
 
 ### Create Data models
 
-1. Create a folder called "**Models**" under “CustomConnector” and create a file AppliancePart.cs under the folder.
+1. Create a folder called "**Models**" under "CustomConnector" and create a file AppliancePart.cs under the folder.
 2. Paste the following code in AppliancePart.cs
 
     ```csharp
@@ -78,7 +78,7 @@ ConnectionManagementServiceImpl.cs has three methods to be implemented:
 
 **ValidateAuthentication**: This method is used to validate the credentials and the datasource URL provided. We need to connect to the datasource URL using the credentials provided and return success if the connection succeeds or auth failure status if the connection fails.
 
-1. Create a folder called "**Data**" under “CustomConnector” and create a file CsvDataLoader.cs in the folder.
+1. Create a folder called "**Data**" under "CustomConnector" and create a file CsvDataLoader.cs in the folder.
 
 2. Copy the following code to CsvDataLoader.cs:
 
@@ -133,7 +133,7 @@ ConnectionManagementServiceImpl.cs has three methods to be implemented:
     
     ```
 
-    The ReadRecordFromCsv method will just open the CSV file and read the first record from the file. We can use this method to validate if the provided datasource URL (path of the CSV file) is valid. This connector is using anonymous auth, hence there's no validation of credentials here. If it's using any other auth type, the connection to datasource must be made using the provided credentials to validate the authentication.
+    The ReadRecordFromCsv method will just open the CSV file and read the first record from the file. We can use this method to validate if the provided data source URL (path of the CSV file) is valid. This connector is using anonymous auth, hence there's no validation of credentials here. If it's using any other auth type, the connection to data source must be made using the provided credentials to validate the authentication.
 
 3. Add the following using directive in ConnectionManagementServiceImpl.cs
 
@@ -161,7 +161,7 @@ ConnectionManagementServiceImpl.cs has three methods to be implemented:
     
     ```
 
-**ValidateCustomConfiguration**: This method is used to validate any additional parameters required for the connection. This connector we're writing doesn't require any additional parameters, hence the validation is that the additional parameters should be empty.
+**ValidateCustomConfiguration**: This method is used to validate any other parameters required for the connection. This connector we're writing doesn't require any extra parameters, hence the validation is that the extra parameters should be empty.
 
 1. Update ValidateCustomConfiguration method in ConnectionManagementServiceImpl.cs with the following code
 

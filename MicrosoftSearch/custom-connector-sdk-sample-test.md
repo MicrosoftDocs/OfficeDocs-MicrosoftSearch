@@ -1,5 +1,5 @@
 ---
-title: "Graph connectors SDK Sample Testing"
+title: "Test the Microsoft Graph connector"
 ms.author: rchanda
 author: rchanda1392
 manager: harshkum
@@ -7,10 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.date: 06/30/2022
-description: "Graph connectors SDK Sample Testing"
+description: "Microsoft Graph connectors SDK sample testing"
 ---
 
-# Test the connector
+# Test the Microsoft Graph connector
 
 The connector can be tested using the [TestApp utility](/microsoftsearch/custom-connector-sdk-testapp). This is a console application for testing the connector before taking it to production. It will not create any connections or ingest any data.
 

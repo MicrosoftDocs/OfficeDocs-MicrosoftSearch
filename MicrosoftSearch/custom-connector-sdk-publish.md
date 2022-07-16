@@ -1,5 +1,5 @@
 ---
-title: "Graph connectors SDK publishing steps"
+title: "Microsoft Graph connectors SDK publishing steps for custom connectors in the Microsoft 365 admin center"
 ms.author: rchanda
 author: rchanda1392
 manager: harshkum
@@ -7,14 +7,14 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.date: 07/01/2022
-description: "Graph connectors SDK publishing steps"
+description: "Microsoft Graph connectors SDK publishing steps for custom connectors in the Microsoft 365 admin center"
 ---
 
-# Publish your custom connector on Microsoft 365 Admin Center
+# Microsoft Graph connectors SDK publishing steps for custom connectors in the Microsoft 365 admin center
 
-Custom connectors built using the Microsoft Graph connectors SDK can be published through the Microsoft 265 admin center in the same way as Microsoft's built-in connectors.
+When you use the Microsoft Graph connectors SDK you can publish your custom connectors through the Microsoft 265 admin center, the same way as a Microsoft's built-in connectors.
 
-Follow the steps mentioned below to publish a connection for your custom connector:
+The following steps show how to publish a connection for your custom connector:
 
 1. [Add a Microsoft Graph connector in the Microsoft 365 admin center](/microsoftsearch/configure-connector#step-1-add-a-microsoft-graph-connector-in-the-microsoft-365-admin-center)
 
@@ -34,9 +34,9 @@ Follow the steps mentioned below to publish a connection for your custom connect
 
     ```
 
-    a. connectorId should be a GUID. This field is the same as ConnectorUniqueId in the Connector Info Service implementation file or the GUID defined by you.
+    a. connectorId should be a GUID. This field is the same as ConnectorUniqueId in the Connector Info Service implementation file or the GUID that you define.
 
-    b. AuthTypes must be a non-empty array with one or more of Anonymous/Basic/Windows/OAuth type.
+    b. AuthTypes must be a non-empty array with one or more of the following types: Anonymous/Basic/Windows/OAuth.
 
     c. Defining crawl types in addition to full and period full crawl is optional depending on the implementation and data source support.
 
@@ -45,21 +45,21 @@ Follow the steps mentioned below to publish a connection for your custom connect
 
 3. [Name the connection](/microsoftsearch/configure-connector#step-2-name-the-connection)
 
-4. Provide the URL to the data source you're connecting to and credentials to access it. Choose the Graph connector Agent available, and validate the information provided. Click Next on success.
+4. Provide the URL to the data source you're connecting to and credentials to access it. Choose the Graph connector Agent available, and validate the information provided. Select Next on success.
 
-5. Provide any additional configuration if required by your connector. You can pass any information specific to the connection to the datasource. For example, if you are building a connector for Azure DevOps, the projects that need to be indexed can be the additional parameters. For a Wiki connector, the subsections that need to be indexed can be the additional parameters. The API to query the wiki can take these filters specified in the additional parameters and get the items from datasource.
+5. Provide any extra configuration if required by your connector. You can pass any information specific to the connection to the datasource. For example, if you're building a connector for Azure DevOps Services, the projects that need to be indexed can be the extra parameters. For a Wiki connector, the subsections that need to be indexed can be the more parameters. The API to query the wiki can take these filters specified in the extra parameters and get the items from data source.
 
-    The data in the parameter is opaque to the platform. It is serialized and stored as a string and passed to the connector. The connector can deserialize this data as required and use it.
+    The data in the parameter is opaque to the platform. It's serialized and stored as a string and passed to the connector. The connector can deserialize this data as required and use it.
 
 6. [Assign property labels](/microsoftsearch/configure-connector#step-6-assign-property-labels)
 
 7. [Manage Schema](/microsoftsearch/configure-connector#step-7-manage-schema)
 
-8. [Manage Search permissions](/microsoftsearch/configure-connector#step-5-manage-search-permissions) Only AAD based access control lists are supported for only people with access to the data source.
+8. [Manage Search permissions](/microsoftsearch/configure-connector#step-5-manage-search-permissions) Only Azure AD based access control lists are supported for only people with access to the data source.
 
 9. Select [refresh frequencies](/microsoftsearch/configure-connector#step-8-refresh-settings) of crawls
 
-10. [Review](/microsoftsearch/configure-connector#step-9-review-connection) the details provided and click Finish
+10. [Review](/microsoftsearch/configure-connector#step-9-review-connection) the details provided and select Finish
 
 11. [Customize the search results page](/microsoftsearch/configure-connector#step-10-customize-the-search-results-page)
 

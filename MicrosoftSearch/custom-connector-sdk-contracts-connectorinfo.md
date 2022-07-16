@@ -1,5 +1,5 @@
 ---
-title: "Graph connectors SDK Contracts ConnectorInfo API"
+title: "Microsoft Graph connectors SDK contracts ConnectorInfo API and models"
 ms.author: rchanda
 author: rchanda1392
 manager: harshkum
@@ -7,38 +7,40 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.date: 06/29/2022
-description: "Graph connectors SDK Contracts ConnectorInfo API"
+description: "Microsoft Graph connectors SDK contracts ConnectorInfo API and models"
 ---
 
-# Connector Info APIs and Models
+# Microsoft Graph connectors SDK contracts ConnectorInfo API and models
 
-These APIs are used to get information about the connector.
+The Microsoft Graph connectors SDK contracts **ConnectorInfo API** allows you to get information about the connector.
 
-## Connector Info APIs
+## ConnectorInfo API
 
 |Method |Parameters |Return Type |Description |
 |:----------|:-------------|:----------|:-------------|
-|GetBasicConnectorInfo |[GetBasicConnectorInfoRequest](#getbasicconnectorinforequest) |[GetBasicConnectorInfoResponse](#getbasicconnectorinforesponse) |This API is used to get basic information of the connector. Currently it will be used by the platform to fetch the unique Connector ID. |
-|HealthCheck |[HealthCheckRequest](#healthcheckrequest) |[HealthCheckResponse](#healthcheckresponse) |API to check if platform can communicate with the connector server. |
+|GetBasicConnectorInfo |[GetBasicConnectorInfoRequest](#getbasicconnectorinforequest) |[GetBasicConnectorInfoResponse](#getbasicconnectorinforesponse) |Gets basic information of the connector. It's used by the platform to fetch the unique Connector ID. |
+|HealthCheck |[HealthCheckRequest](#healthcheckrequest) |[HealthCheckResponse](#healthcheckresponse) |Checks communication from the platform to the connector server. |
 
-### Connector Info API Models
+### ConnectorInfo API models
+
+The following are the ConnectorInfo API models:
 
 #### GetBasicConnectorInfoResponse
 
-Response model holding basic connector information
+Response model that holds basic connector information.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|connectorId |String  |Unique identifier for the connector. This should be the unique guid of the connector. |
+|connectorId |String  |Unique identifier and guid for the connector. |
 
 #### GetBasicConnectorInfoRequest
 
-Request model to retrieve basic connector information. It does not have any properties currently; it will be added in future as required.
+Request model to retrieve basic connector information. This model doesn't have any properties but might be added in the future as required.
 
 #### HealthCheckRequest
 
-Request model for HealthCheck API. It does not have any properties currently, it will be added in future as required.
+Request model for HealthCheck API. This model doesn't have any properties but might be added in the future as required.
 
 #### HealthCheckResponse
 
-Response model for HealthCheck API. It does not have any properties currently, it will be added in future as required.
+Response model for HealthCheck API. This model doesn't have any properties but might be added in the future as required.

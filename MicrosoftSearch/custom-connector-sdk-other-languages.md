@@ -1,5 +1,5 @@
 ---
-title: "Graph connectors SDK Other Languages"
+title: "Microsoft Graph connectors SDK other languages"
 ms.author: rchanda
 author: rchanda1392
 manager: harshkum
@@ -7,21 +7,23 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.date: 06/30/2022
-description: "Graph connectors SDK Other Languages"
+description: "Microsoft Graph connectors SDK other languages"
 ---
 
-# Develop your custom connector in languages other than C\#
+# Microsoft Graph connectors SDK other languages
 
-1. Install Graph Connector Agent and follow the instructions to register the agent [here](/MicrosoftSearch/graph-connector-agent).
+You can develop your custom connector in languages other than C\#, following the steps indicated here:
+
+1. Install the Microsoft Graph connector agent and follow the instructions to register it [here](/MicrosoftSearch/graph-connector-agent).
 
 2. Download the protocol buffer files with gRPC contracts from [here](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/Contracts).
 
-3. Download the protobuf compiler from [here](https://github.com/protocolbuffers/protobuf/releases)and extract it .
+3. Download the protobuf compiler from [here](https://github.com/protocolbuffers/protobuf/releases)and extract it.
 
-    * Update the environment path with bin folder in extracted root.
-    * Compile contracts to create **server-side stubs** in the language of your choice. More information can be found [here](https://grpc.io/docs/languages/).
+    * Update the environment path with the bin folder in the extracted root.
+    * Compile "contracts" to create **server-side stubs** in the language of your choice. More information can be found [here](https://grpc.io/docs/languages/).
 
-4. Create a project in your IDE and place all the proto files in a folder named "**Contracts**".
+4. Create a project in your integrated development environment (IDE) and place all the protocol files in a folder named "Contracts".
 
     You may create a project with the sample structure given below:
 
@@ -33,7 +35,7 @@ description: "Graph connectors SDK Other Languages"
 
 7. Test the connector code using the [TestApp utility](/MicrosoftSearch/custom-connector-sdk-testapp).
 
-8. [Publish a connection](/MicrosoftSearch/custom-connector-sdk-publish) for your custom connector on Microsoft 365 Admin Center.
+8. [Publish a connection](/MicrosoftSearch/custom-connector-sdk-publish) for your custom connector on the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add).
 
 ## See also
 

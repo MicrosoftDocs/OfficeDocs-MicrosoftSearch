@@ -1,5 +1,5 @@
 ---
-title: "Graph connectors SDK sample overview"
+title: "Build your first custom Microsoft Graph connector"
 ms.author: rchanda
 author: rchanda1392
 manager: harshkum
@@ -7,13 +7,13 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.date: 06/30/2022
-description: "Graph connectors SDK sample overview"
+description: "Microsoft Graph connectors SDK sample overview"
 ---
 
 # Build your first custom Microsoft Graph connector
 
 Microsoft Graph connectors allow you to add your own data into Microsoft Graph and have it power various Microsoft 365 experiences.
-This tutorial shows you how to use the Microsoft Graph connectors SDK to create a custom connector in C# and use it to power Microsoft Search. This tutorial uses a sample data- appliance parts inventory in a CSV file for the Contoso Appliance Repair organization.
+This tutorial shows you how to use the Microsoft Graph connectors SDK to create a custom connector in C# and use it to power Microsoft Search. This tutorial uses a sample data appliance parts inventory in a CSV file for the Contoso Appliance Repair organization.
 
 >[!Note]
 >Follow the steps mentioned [here](/MicrosoftSearch/custom-connector-sdk-other-languages) if you wish to develop your connector in languages other then C#.

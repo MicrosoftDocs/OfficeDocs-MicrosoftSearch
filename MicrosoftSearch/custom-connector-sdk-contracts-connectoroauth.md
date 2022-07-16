@@ -1,5 +1,5 @@
 ---
-title: "Graph connectors SDK Contracts Connector OAuth API"
+title: "Microsoft Graph connectors SDK contracts connector OAuth API"
 ms.author: rchanda
 author: rchanda1392
 manager: harshkum
@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.date: 06/29/2022
-description: "Graph connectors SDK Contracts Connector OAuth API"
+description: "Microsoft Graph connectors SDK contracts connector OAuth API"
 ---
 
-# Connector OAuth APIs and Models
+# Microsoft Graph connectors SDK contracts connector OAuth API
 
-These APIs are used for OAuth flows like refreshing access token during crawls.
+The Microsoft Graph connectors SDK contracts connector OAuth API is used for OAuth flows like refreshing access tokens during crawls.
 
 ## Connector OAuth APIs
 
+This API is used to generate a refreshed token from the auth server of the data source and send the token details to the platform.
+
 |Method |Parameters |Return Type |Description |
 |:----------|:-------------|:----------|:----------|
-|RefreshAccessToken |[RefreshAccessTokenRequest](#refreshaccesstokenrequest) |[RefreshAccessTokenResponse](#refreshaccesstokenresponse) |This API is used to generate a refreshed token from the auth server of the datasource and send the token details to the platform. |
+|RefreshAccessToken |[RefreshAccessTokenRequest](#refreshaccesstokenrequest) |[RefreshAccessTokenResponse](#refreshaccesstokenresponse) | Shows the refreshed access token. |
 
 ### Connector OAuth API Models
 
@@ -28,7 +30,7 @@ Request model for refreshing the OAuth token.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|authenticationData |[AuthenticationData](/microsoftsearch/custom-connector-sdk-contracts-common#authenticationdata) |Holds data source access URL and credential to access the datasource along with current token information. |
+|authenticationData |[AuthenticationData](/microsoftsearch/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL, the credentials to access the data source and current token information. |
 
 #### RefreshAccessTokenResponse
 
@@ -36,5 +38,5 @@ Response model for Refresh OAuth token request.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|status |[OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) |Status of operation and error details in case of error |
-|refreshedCredentialData |[OAuth2ClientCredentialsResponse](/microsoftsearch/custom-connector-sdk-contracts-common#oauth2clientcredentialsresponse) |Credential data containing refreshed token information |
+|status |[OperationStatus](/microsoftsearch/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and details like error messages. |
+|refreshedCredentialData |[OAuth2ClientCredentialsResponse](/microsoftsearch/custom-connector-sdk-contracts-common#oauth2clientcredentialsresponse) |Holds the refreshed token information. |

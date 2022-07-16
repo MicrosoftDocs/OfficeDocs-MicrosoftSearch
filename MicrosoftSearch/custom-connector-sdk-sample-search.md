@@ -1,5 +1,5 @@
 ---
-title: "Graph connectors SDK sample search"
+title: "Surface the data in Microsoft Search"
 ms.author: rchanda
 author: rchanda1392
 manager: harshkum
@@ -7,10 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.date: 06/30/2022
-description: "Graph connectors SDK sample search"
+description: "Microsoft Graph connectors SDK sample search"
 ---
 
-# Surface the data in search
+# Surface the data in Microsoft Search
 
 To make it easier for users to find the information that they have permission to see, create search verticals and result types to customize the search results in Microsoft SharePoint, Microsoft Office, and Microsoft Search in Bing.
 
@@ -60,7 +60,7 @@ To create a result type:
 
 ## Search for results
 
-In this step, you will search for parts in SharePoint.
+In this step, you'll search for parts in SharePoint.
 
 1. Go to the root SharePoint site for your tenant.
 2. Using the search box at the top of the page, search for **hinge**.
@@ -73,7 +73,7 @@ In this step, you will search for parts in SharePoint.
 
 ## Summary
 
-You have successfully completed the custom Microsoft Graph connector tutorial. Now you have created a custom connector and used it to power Microsoft Search.
+You've successfully completed the custom Microsoft Graph connector tutorial. Now you've created a custom connector and used it to power Microsoft Search.
 
 ## See also
 

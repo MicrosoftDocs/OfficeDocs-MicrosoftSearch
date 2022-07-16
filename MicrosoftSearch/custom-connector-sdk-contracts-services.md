@@ -1,5 +1,5 @@
 ---
-title: "Graph connectors SDK Contract Services"
+title: "Microsoft Graph connectors SDK contract services"
 ms.author: rchanda
 author: rchanda1392
 manager: harshkum
@@ -7,18 +7,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.date: 06/29/2022
-description: "Graph connectors SDK Contract Services"
+description: Microsoft Graph connectors SDK contract services
 ---
 
-# Services
+# Microsoft Graph connectors SDK contract services
 
-The contract protocol buffer files have the following services which connector developer needs to implement:
+In this article, you can see the services that are part of the contract protocol buffer files. These services should be implemented as part of the connector.
 
 |Services |Description |
 |:----------|:-------------|
-|[ConnectorInfo](/microsoftsearch/custom-connector-sdk-contracts-connectorinfo) |Service containing APIs to get information about the connector. If you're using our visual studio extension, this service has a default implementation and you don't have to make any change. |
-|[ConnectionManagement](/MicrosoftSearch/custom-connector-sdk-contracts-connectionmanagement) |Service containing APIs that are called during the process of custom connector connection creation on Microsoft 365 admin center. |
-|[ConnectorCrawl](/MicrosoftSearch/custom-connector-sdk-contracts-connectorcrawler) |Service containing APIs that are called during a crawl. |
+|[ConnectorInfo](/microsoftsearch/custom-connector-sdk-contracts-connectorinfo) |Includes APIs to get information about the connector. If you're using the Visual Studio extension, you can use the default implementation for this service without changes. |
+|[ConnectionManagement](/MicrosoftSearch/custom-connector-sdk-contracts-connectionmanagement) |Contains APIs that are called during the process of **custom connector connection creation** on the Microsoft 365 admin center. |
+|[ConnectorCrawl](/MicrosoftSearch/custom-connector-sdk-contracts-connectorcrawler) |Includes APIs that are called during a crawl. |
 |[ConnectorOAuth](/MicrosoftSearch/custom-connector-sdk-contracts-connectoroauth) |Service for OAuth flows like refreshing access token during crawls. |
 
-You can download these contract protocol buffer files from [here](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/Contracts).
+You can download the contract protocol buffer files from the Microsoft Graph connectors SDK [contracts](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/Contracts) page in GitHub.
