@@ -68,6 +68,7 @@ You can connect to the following data sources by using connectors created by Mic
 * [Azure SQL and Microsoft SQL Server](MSSQL-connector.md)
 * [Confluence Cloud](confluence-cloud-connector.md)
 * [Confluence On-premises](confluence-onpremises-connector.md)
+* [CSV](csv-connector.md)
 * [Enterprise websites](enterprise-web-connector.md)
 * [Jira Cloud](jira-connector.md)
 * [MediaWiki](mediawiki-connector.md)
@@ -122,12 +123,8 @@ After custom data is indexed, developers can [query this data](/graph/search-con
 
 ## What are the limitations of Microsoft Graph connectors?
 
-* When you **publish** a Microsoft Graph connector, it can take a few minutes for the connection to be created. During that time, the connection shows its status as pending.
-
-* Ingestion throughput is throttled at approximately four items per second.
-
-* There's no support for schema updates. After you create a connection setup, there's no way to update the schema. You can only delete and re-create the connection.
+* When you **publish** a Microsoft Graph connector, it can take a few minutes for the connection to be created. During that time, the connection shows its status as 'Publishing'.
 
 * There's a connection limit. Each tenant can create up to 10 connections.
 
-* You can't edit or change a connection after it has been created. If you need to change any details, you must delete and recreate the connection.
+* There are limited edit capabilities supported after publishing a connection. If you need to change any details other than ones enabled, you must delete and recreate the connection.
