@@ -39,7 +39,7 @@ Credentials provided by the admin to access the data source. It contains the aut
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|authType |[AuthenticationType](#authenticationtype-enum-members) |Type of authentication information held in this object |
+|authType |[AuthenticationType](#authenticationtype-enumeration-members) |Type of authentication information held in this object |
 |DatasourceUrl |string |Url or path to access data source - path to the resource that needs to be crawled. Example: Connection string for a database |
 |basicCredential |[BasicCredential](#basiccredential) |Credentials in the form of username and password to access the data source. This property will be set exclusive to windowsCredential, and the authType will be set to Basic when this property is set. |
 |windowsCredential |[WindowsCredential](#windowscredential) |Credentials in the form of windows AD username, password, and domain to access the data source. This property will be set exclusive to basicCredential, and the authType will be set to Windows when this property is set. |
@@ -89,9 +89,9 @@ idToken |string  |The ID token if auth server supports open ID connect |
 
 ## OperationResult
 
-Enum containing possible values for the result of operations.
+Enumeration containing possible values for the result of operations.
 
-OperationResult enum members:
+OperationResult enumeration members:
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
@@ -130,7 +130,7 @@ This model is used for communicating the retry policy where retry is required.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|type |[RetryType](#retrytype-enum-members) |Retry type defines the type of retry strategy required for the error |
+|type |[RetryType](#retrytype-enumeration-members) |Retry type defines the type of retry strategy required for the error |
 |numberOfRetries |uint32 |Number of retries to be done for the exception |
 |pauseBetweenRetriesInMilliseconds |uint64 |Gets pause between retries in case of standard retries |
 |backoffCoefficient |float |Gets coefficient used in the calculation of Exponential Backoff. |
@@ -144,7 +144,7 @@ Represents schema of properties that represent a data entity in the data source.
 |:----------|:-------------|:----------|
 |PropertyList |repeated [SourcePropertyDefinition](#sourcepropertydefinition) |Represents list of properties that define an item in data source. |
 
-## SourcePropertyType enum members
+## SourcePropertyType enumeration members
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
@@ -158,7 +158,7 @@ Represents schema of properties that represent a data entity in the data source.
 |DoubleCollection |7 |Property of type of array or collection of double type |
 |DateTimeCollection |8 |Property of type of array or collection of DateTime type |
 
-## SearchAnnotations enum members
+## SearchAnnotations enumeration members
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
@@ -173,7 +173,7 @@ Represents schema of properties that represent a data entity in the data source.
 
 Search property labels are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. Read more [here](/graph/connecting-external-content-manage-schema#semantic-labels).
 
-### SearchPropertyLabel enum members
+### SearchPropertyLabel enumeration members
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|

@@ -86,14 +86,14 @@ Represents an entity in the data source. For example: a file, a folder or a reco
 |itemId |string |Shows the unique ID that represents the item in the data source. |
 |contentItem |[ContentItem](#contentitem) |Shows a data item with content to ingest. For example: the content of a website. |
 |linkItem |[LinkItem](#linkitem) |Link to a content item that will be used in subsequent crawls. For example: a link to a website or a folder. |
-|itemType |[ItemType](#itemtype-enum-members-for-crawlitem) |Shows the type of item being sent. This model should have a contentItem **or** a linkItem set and this enumeration field should correspond to that item. |
+|itemType |[ItemType](#itemtype-enumeration-members-for-crawlitem) |Shows the type of item being sent. This model should have a contentItem **or** a linkItem set and this enumeration field should correspond to that item. |
 
 > [!NOTE]
 >
 > * The properties linkItem and contentItem are mutually exclusive.
 
 
-#### ItemType enum members for IncrementalCrawlItem
+#### ItemType enumeration members for IncrementalCrawlItem
 
 Enumeration fields for incremental crawl items.
 
@@ -113,7 +113,7 @@ Represents an entity in the data source. For example: a file, a folder or a reco
 |contentItem |[ContentItem](#contentitem) |Shows a data item with content to ingest. For example: the content of a website. |
 |linkItem |[LinkItem](#linkitem) |Link to a content item that will be used in subsequent crawls. For example: a link to a website or a folder. |
 |deletedItem |[DeletedItem](#deleteditem) |Item that is deleted from the datasource and should be removed from the index. If deletedItem is set, contentItem or linkItem can't be set. |
-|itemType |[ItemType](#itemtype-enum-members-for-incrementalcrawlitem) |Shows the type of item being sent. This model should have a contentItem **or** a linkItem set and this enumeration field should correspond to that item. |
+|itemType |[ItemType](#itemtype-enumeration-members-for-incrementalcrawlitem) |Shows the type of item being sent. This model should have a contentItem **or** a linkItem set and this enumeration field should correspond to that item. |
 
 > [!NOTE]
 >
@@ -165,7 +165,7 @@ Holds individual access control entries.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|accessType |[AclAccessType](#aclaccesstype-enum-members) |Shows the access type of the entity either grant or deny. |
+|accessType |[AclAccessType](#aclaccesstype-enumeration-members) |Shows the access type of the entity either grant or deny. |
 |principal |[Principal](#principal) |Represents a group or user with defined access. |
 
 #### PrincipalType enumeration members
@@ -207,10 +207,10 @@ Structure to store attributes of the principal (user/group).
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|type |[PrincipalType](#principaltype-enum-members) |Type of principal |
+|type |[PrincipalType](#principaltype-enumeration-members) |Type of principal |
 |value |string |Principal value: the value of the SID, UPN, Azure ADId, etc. |
-|identitySource |[IdentitySource](#identitysource-enum-members) |The source of identity. |
-|identityType |[IdentityType](#identitytype-enum-members) |Identity representation type. |
+|identitySource |[IdentitySource](#identitysource-enumeration-members) |The source of identity. |
+|identityType |[IdentityType](#identitytype-enumeration-members) |Identity representation type. |
 |identitySourceProperties |map<string, string> |Metadata about the identity source. |
 
 #### SourcePropertyValueMap
@@ -244,7 +244,7 @@ Value of the content property of the item, used to render search results.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|contentType |[ContentType](#contenttype-enum-members) |Type of the content |
+|contentType |[ContentType](#contenttype-enumeration-members) |Type of the content |
 |contentValue |string |Value of the content property |
 
 #### CrawlCheckpoint
