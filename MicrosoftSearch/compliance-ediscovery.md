@@ -1,6 +1,7 @@
 --- 
 
-title: "Compliance solutions with Graph connectors" 
+title: "Compliance solutions with Microsoft Graph connectors" 
+
 ms.author: vivg 
 author: vivg 
 manager: harshkum 
@@ -39,7 +40,8 @@ You can connect to the following data sources by using connectors created by Mic
 ## Graph connector configuration steps for eDiscovery
 Complete the following steps to configure any of the Microsoft Graph connectors:
 
-1. Sign into your admin account in the [Microsoft 365 admin center](https://admin.microsoft.com).
+1. Sign in to your admin account in the [Microsoft 365 admin center](https://admin.microsoft.com).
+
 
 2. In the navigation pane, select **Settings**, and then select **Search & intelligence**. Select the [Data sources tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
 
@@ -97,7 +99,8 @@ Complete the following steps to create a case:
 > 
 > For detailed guidance to create and manage a Microsoft Purview eDiscovery (Premium) case, refer documentation to [create and manage eDiscovery (Premium) cases in Microsoft 365](/microsoft-365/compliance/create-and-manage-advanced-ediscoveryv2-case.md)
 
-### Collect Graph connectors content 
+### Collect Graph Connectors content 
+
 
 Upon adding Graph Connectors content as a data source, this content is then available for search and collection. Within the collection wizard, select the Graph Connector content as a **non-custodial data source**, use conditions such as date range, keywords and more to search across the connected content to collect only the content of interest. Upon completion of the wizard get estimates for the amount of content that contains hits to your search criteria, and commit the collection to the review set.
 
@@ -107,7 +110,8 @@ Upon adding Graph Connectors content as a data source, this content is then avai
 
 Once collected to a review set, eDiscovery managers can review content from Graph Connectors to understand more about the content, and work to assess if the information is critical and relevant to the case.
 
-![A screenshot of review of content added using Graph connectors.](./media/compliance-ediscovery/compliance-ediscovery-review-content.png)
+![A screenshot of review of content added using Graph Connectors.](./media/compliance-ediscovery/compliance-ediscovery-review-content.png)
+
 
 ### Export content 
 
