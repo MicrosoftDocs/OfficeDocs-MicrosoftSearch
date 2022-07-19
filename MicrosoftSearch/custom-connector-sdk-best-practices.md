@@ -178,19 +178,19 @@ The connectors schema has certain restrictions as listed next:
 
 **Search annotations**:
 
-   * Only properties of type String or StringCollection can be searchable.
+* Only properties of type String or StringCollection can be searchable.
 
-   * Only properties of type String can be a content property.
+* Only properties of type String can be a content property.
 
-   * Content properties must be searchable.
+* Content properties must be searchable.
 
-   * Content properties can't be queryable or retrievable.
+* Content properties can't be queryable or retrievable.
 
-   * Refinable property shouldn't be searchable.
+* Refinable property shouldn't be searchable.
 
-   * Refinable property should be queryable and retrievable.
+* Refinable property should be queryable and retrievable.
 
-   * Boolean properties can't be refinable.
+* Boolean properties can't be refinable.
 
 **Aliases**: a set of aliases or a friendly name for the property can have a maximum 32 characters and only alphanumeric characters allowed.
 
@@ -198,7 +198,7 @@ The connectors schema has certain restrictions as listed next:
 
 The GetCrawlStream method is a [server streaming method](https://grpc.io/docs/what-is-grpc/core-concepts/#server-streaming-rpc). It converts each item from the data source into a [CrawlStreamBit](/microsoftsearch/custom-connector-sdk-contracts-connectorcrawler#crawlstreambit) during the crawl and sends it over the response stream.
 
-To get a good throughput, the connector should retrieve a batch of items from the data source, convert each item to the CrawlStreamBit and send them over the response stream. 
+To get a good throughput, the connector should retrieve a batch of items from the data source, convert each item to the CrawlStreamBit and send them over the response stream.
 The batch size depends on the data source but we recommend 25 as an optimal size to maintain continuous flow of items over the stream.
 
 ## Exception handling in connector code
