@@ -77,6 +77,7 @@ You can connect to the following data sources by using connectors created by Mic
 * [Salesforce](salesforce-connector.md)
 * [ServiceNow Knowledge](servicenow-knowledge-connector.md)
 * [ServiceNow Catalog](servicenow-catalog-connector.md)
+* [ServiceNow Tickets](servicenow-tickets-connector.md)
 
 The [Microsoft Graph connectors gallery](https://www.microsoft.com/microsoft-search/connectors) contains a brief description of each of these connectors. If you're ready to connect one of these data sources to your tenant, be sure to read the [Setup overview](configure-connector.md) and any other articles in the Setup connectors by Microsoft section that apply to your data source.
 
@@ -106,7 +107,7 @@ The set of connectors and features in preview include:
 
 * [Confluence On-premises connector](confluence-onpremises-connector.md)
 * [Azure DevOps Wiki connector](azure-devops-wiki-connector.md)
-* [Multiple connections in a vertical](customize-search-page.md#multiple-connections-in-a-vertical)
+* [ServiceNow Tickets connector](servicenow-tickets-connector.md)
 
 ## How do I customize and configure search results?
 
