@@ -232,7 +232,7 @@ After publishing the connection, you need to customize the search results page. 
 ## Limitations
 The ServiceNow Knowledge Microsoft Graph connector has the following limitations in its latest release:
 
-- *Everyone* feature under Manage Search permissions step does not process any permissions. Do not select this option unless you want to test the connection between selected team members in a isolated environment.
+- *Everyone* feature under Manage Search permissions step does not process any permissions. Do not select this option unless you want to test the connection between selected team members in an isolated environment.
 
 ## Troubleshooting
 After publishing your connection, customizing the results page, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
