@@ -13,8 +13,15 @@ items:
     href: faqs.md
 - name: Get insights
   items:
-  - name: View usage reports
+  - name: Search usage reports 
     href: usage-reports.md
+    items:
+    - name: Query reports
+      href: queries-usage-reports.md
+    - name: User reports
+      href: users-search-reports.md
+    - name: Connection analytics reports
+      href: connection-analytics-reports.md
   - name: Manage feedback
     href: manage-feedback.md
 - name: Provide answers
@@ -145,5 +152,4 @@ items:
       href: set-default-search-engine.md
     - name: Make Bing.com the default home page
       href: set-default-homepage.md
-    - name: User adoption guide
-      href: user-adoption-guide.md
+
