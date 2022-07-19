@@ -50,7 +50,7 @@ Index base [Task table fields](https://docs.servicenow.com/bundle/sandiego-platf
 Sync user tables | `sys_user` | To index user access details for tickets
 
 
-If you want to index custom properties from [extended tables](https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/table-administration/concept/table-extension-and-classes.html_) of *task* table, provide read access to sys_dictionary and sys_db_object. 
+If you want to index custom properties from [extended tables](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/table-administration/concept/table-extension-and-classes.html) of *task* table, provide read access to sys_dictionary and sys_db_object. 
 It is an **optional** feature. You'll be able to index *task* table properties without access to the two extra tables.
 
 **Feature** | **Read access required tables** | **Description**
@@ -58,7 +58,7 @@ It is an **optional** feature. You'll be able to index *task* table properties w
 Select custom table from your organization| `sys_db_object` | Find the list of extended task tables including custom tables
 Index custom fields from a specific <table_name> | `sys_dictionary` | Crawling custom fields from a specific table like incident, problem or change_management
 
-You can **create and assign a role** for the service account you use to connect with Microsoft Search. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be provided to the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls). 
+You can **create and assign a role** for the service account you use to connect with Microsoft Search. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be provided to the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/sandiego/new_to_servicenow/app_store_learnv2_securingapps_sandiego_securing_table_records). 
 
 
 To authenticate and sync content from ServiceNow, choose **one of three** supported methods:
@@ -73,7 +73,7 @@ Enter the username and password of ServiceNow account with read access to `task`
 
 ## Step 3.2: ServiceNow OAuth
 
-To use ServiceNow OAuth, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance. After that Microsoft Search app will be able to access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
+To use ServiceNow OAuth, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance. After that Microsoft Search app will be able to access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
 The following table provides guidance on how to fill out the endpoint creation form:
 
@@ -140,7 +140,7 @@ Service Principal ID | An identity for the application running as a service. (fr
 
 The ServiceNow instance needs the following configuration:
 
-1. Register a new OAuth OIDC entity. To learn, see [Create an OAuth OIDC provider](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/security/task/add-OIDC-entity.html).
+1. Register a new OAuth OIDC entity. To learn, see [Create an OAuth OIDC provider](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/security/task/add-OIDC-entity.html).
 
 2. The following table provides guidance on how to fill out OIDC provider registration form
 
@@ -170,7 +170,7 @@ The ServiceNow instance needs the following configuration:
 
 ### Step 3.3.5: Create a ServiceNow account
 
-Refer the instructions to create a ServiceNow account, [create a user in ServiceNow](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
+Refer the instructions to create a ServiceNow account, [create a user in ServiceNow](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
 
 The following table provides guidance on how to fill out the ServiceNow user account registration
 
@@ -191,13 +191,13 @@ Use Application ID as Client ID (from step 3.a), and Client secret (from step 3.
 
 In this step, you can add or remove available tables and properties from your ServiceNow data source. Microsoft 365 has already selected few tables and properties by default.
 
-With a ServiceNow query string, you can specify conditions for syncing tickets. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only tickets that are created in the last six months and are in open state. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
+With a ServiceNow query string, you can specify conditions for syncing tickets. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only tickets that are created in the last six months and are in open state. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/en-US/bundle/sandiego-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
 Use the preview results button to verify the sample values of the selected properties and query filter.
 
 ## Step 5: Manage search permissions
 
-The ServiceNow Tickets Graph Connector supports search permissions visible to **Only people with access to this data source**. Indexed tickets appear in the search results and is visible to  users who have access to them via `assigned_to` and `opened_by` fields.
+The ServiceNow Tickets Graph Connector supports search permissions visible to **Only people with access to this data source**. Indexed tickets appear in the search results and are visible to users who have access to them via `assigned_to` and `opened_by` fields.
 
 When you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Azure Active Directory (Azure AD) provisioned users or Non-Azure AD users.
 
@@ -270,4 +270,4 @@ If you observe discrepancies in access permissions applied to search results, ve
 
 #### 3.1 User mapping failures
 
- ServiceNow user accounts that don't have an Microsoft 365 user in Azure Active Directory won't map. Non-user, service accounts are expected to fail user mapping. Number of user mapping failures can be accessed in identity stats area in connection detail window. Log of failed user mappings can be downloaded from Error tab.
+ ServiceNow user accounts that don't have a Microsoft 365 user in Azure Active Directory won't map. Non-user, service accounts are expected to fail user mapping. Number of user mapping failures can be accessed in identity stats area in connection detail window. Log of failed user mappings can be downloaded from Error tab.
