@@ -53,6 +53,7 @@ The following table outlines whether specified Microsoft Search features are ava
 | Mobile access | Yes | No | No  |
 | Graph Connectors | No | No | No  |
 | Federation Connectors | No | No | No  |
+|Search customizations (verticals, filters and result types) | No | No| No|
 
 
 In response to the unique, evolving requirements of the United States public sector, Microsoft has created Office 365 US Government plans (or Office 365 Government). For service descriptions and features overview specific to these environments, see [Office 365 Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
