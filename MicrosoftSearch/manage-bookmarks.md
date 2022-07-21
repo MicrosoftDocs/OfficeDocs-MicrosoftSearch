@@ -134,7 +134,7 @@ A bookmark can have several keywords and share the same keyword, but reserved ke
 
 **Q: Is there a limit on the number of bookmarks that can be created?**
 
-**A**: We suggest limiting your total number of bookmarks to 5,000.
+**A**: We suggest limiting the number of bookmarks to fewer than 5,000 for your tenant.
 
 **Q: Will Microsoft Search recommend bookmarks from sites in all languages?**
 
