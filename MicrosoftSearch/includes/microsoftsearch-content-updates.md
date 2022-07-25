@@ -2,6 +2,15 @@
 
 
 
+## Week of July 18, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 7/18/2022 | [Compliance solutions with Microsoft Graph connectors](/MicrosoftSearch/compliance-ediscovery) | added |
+| 7/19/2022 | [ServiceNow Tickets Microsoft Graph connector](/MicrosoftSearch/servicenow-tickets-connector) | added |
+
+
 ## Week of July 11, 2022
 
 
@@ -13,12 +22,3 @@
 | 7/11/2022 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
 | 7/13/2022 | [Manage search schema](/MicrosoftSearch/manage-search-schema) | added |
 | 7/14/2022 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
-
-
-## Week of June 13, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 6/14/2022 | [Dynamics 365 results in Microsoft Search](/MicrosoftSearch/manage-dynamics365) | modified |
-| 6/15/2022 | [Result Layout for Jira Graph connector](/MicrosoftSearch/jira-connector-result-layout) | modified |
