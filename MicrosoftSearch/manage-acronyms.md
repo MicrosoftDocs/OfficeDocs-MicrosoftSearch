@@ -15,7 +15,7 @@ description: "Create and update Acronyms answers in Microsoft Search"
 ---
 # Manage Acronyms answers in Microsoft Search
 
-Users often run into unfamiliar acronyms and abbreviations used by their organization or team. Terms that are specific to organizations or teams might be new to people who move from one team to another, work with internal partner teams, or are new to the organization.
+Users often run into unfamiliar acronyms and abbreviations used by their organization or team. Terms specific to organizations or teams might be new to people who move from one team to another, work with internal partner teams, or are new to the organization.
 
 Organizations don't always have a single reference for their standard terminology. Lack of a single reference makes it hard to find definitions for these acronyms. Microsoft Search solves that problem with Acronyms.
 
@@ -55,9 +55,9 @@ Search administrators can add acronyms on the [Acronyms tab](https://admin.micro
 > [!NOTE]
 > It takes up to a day for acronyms added to Published state to become available in Microsoft Search.
 
-**Draft state**. If you want to review an acronym before making it available in Microsoft Search, you can add the acronym in a Draft state. Acronyms in the Draft state will not appear in search results. You will need to move the acronym to the Published state to make it appear in search results.
+**Draft state**. If you want to review an acronym before making it available in Microsoft Search, you can add the acronym in a Draft state. Acronyms in the Draft state don't appear in search results. You'll need to move the acronym to the Published state to make it appear in search results.
 
-**Excluded state**. If you want to prevent an acronym from appearing in Microsoft Search, use **Exclude an acronym** to add it. To stop an acronym from being excluded, you'll need to delete the excluded acronym and add it or verify it's in your published list.
+**Excluded state**. If you want to prevent an acronym from appearing in Microsoft Search, use **Exclude an acronym** to do so. To stop an acronym from being excluded, you'll need to delete the excluded acronym and add it or verify it's in your published list.
 
 You can add acronyms individually or bulk import them in a CSV file. Upload a CSV file with the fields shown in the following table:
 
@@ -80,6 +80,12 @@ You can add acronyms individually or bulk import them in a CSV file. Upload a CS
 - **Draft**. Adds the acronym to the Draft state.
 - **Published**. Adds the acronym to the Published state and makes it available in Microsoft Search.
 - **Excluded**. Adds the acronym to the Excluded state and prevents it from appearing in Microsoft Search.
+
+**Last Modified**. The date the acronym was last changed. Don't edit the data in this field.
+
+**Last Modified By**. The user who made the last change to the acronym. Don't edit the data in this field.
+
+**Id**. The unique identifier for the acronym. Don't edit the data in this field. If you include the ID of an existing acronym, it will be replaced with the information in the import file.
 
 ### System-curated acronyms
 
