@@ -58,7 +58,7 @@ If web search is enabled on your local device, you should see the Web tab in the
 
 If web search is disabled in Windows, your users won't see search suggestions or results from your organization. To allow work or school suggestions and results, enable web search using group policy and a registry key:
 
-- Group policy path and setting: ```Computer Configuration/Administrative Templates/Windows Components/Search/Don’t search the web or display web results in Search``` This policy should be set to Disabled. Learn more about [DoNotUseWebResults MDM policy CSP](windows/client-management/mdm/policy-csp-search#search-donotusewebresults).
+- Group policy path and setting: ```Computer Configuration/Administrative Templates/Windows Components/Search/Don’t search the web or display web results in Search``` This policy should be set to Disabled. Learn more about [DoNotUseWebResults MDM policy CSP](/windows/client-management/mdm/policy-csp-search#search-donotusewebresults).
 - Registry key path and setting: ```HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search\BingSearchEnabled``` This registry key value should be 1.
 
 ### Enable cloud content
@@ -69,7 +69,7 @@ If you turn on the Work or School account setting for Cloud content search, Wind
 
 You can use group policy and registry keys to validate if Cloud content search permissions are enabled in your local device:
 
-- Group policy path and setting: ```Computer Configuration/Administrative Templates/Windows Components/Search/Allow Cloud Search``` This policy should be set to Enabled. Learn more about [Allow Cloud Search MDM policy CSP](windows/client-management/mdm/policy-csp-search#search-allowcloudsearch).
+- Group policy path and setting: ```Computer Configuration/Administrative Templates/Windows Components/Search/Allow Cloud Search``` This policy should be set to Enabled. Learn more about [Allow Cloud Search MDM policy CSP](/windows/client-management/mdm/policy-csp-search#search-allowcloudsearch).
 - Registry key paths and settings: ```HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SearchSettings\IsAADCloudSearchEnabled``` and ```HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows SearchAllowCloudSearch``` Both registry key values should be 1.
 
 ### Connect work or school account (Azure AD) to Windows Search
@@ -94,7 +94,7 @@ Search Highlights in [Windows 10](https://blogs.windows.com/windows-insider/2022
 
 Users have the ability to show or hide Search Highlights. To turn it off or back on, right-click the taskbar, select **Search**, and then select or clear **Show search highlights**.
 
-Windows and Microsoft 365 IT admins can also control how Search Highlights on the taskbar are configured for Windows 10 and Windows 11 managed devices. Learn more about [Allow Search Highlights MDM policy CSP](windows/client-management/mdm/policy-csp-search#search-allowsearchhighlights). 
+Windows and Microsoft 365 IT admins can also control how Search Highlights on the taskbar are configured for Windows 10 and Windows 11 managed devices. Learn more about [Allow Search Highlights MDM policy CSP](/windows/client-management/mdm/policy-csp-search#search-allowsearchhighlights). 
 
 To manage Search Highlights with group policy go to the policy setting ```Computer Configuration/Administrative Templates/Windows Components/Search/Allow search highlights```. Use the setting to disable or enable the search highlights experience. If you leave the setting as **Not Configured** the experience is enabled by default.
 The supported settings values in Windows 10:
