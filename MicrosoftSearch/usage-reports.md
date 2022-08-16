@@ -14,6 +14,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Review Microsoft Search usage reports"
+recommendations: false
 ---
 
 # Microsoft Search Usage Reports
