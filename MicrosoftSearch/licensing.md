@@ -22,10 +22,6 @@ This article is for global or billing admins who want to learn about how to purc
 
 Any valid **Microsoft 365 or Office 365 license** allows you to view data from connectors in your search results.
 
-> [!TIP]
-> **Microsoft Graph connectors promo code**:
-> If you don't have index quota available and want to try Microsoft Graph connectors, now you can request a **Promo code** from your Microsoft account manager. With the promo code, you get a six-month trial.
-
 >[!IMPORTANT]
 >All of the connectors by Microsoft are free. However, you need to have sufficient index quota to ingest content from those connectors.
 
