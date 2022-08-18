@@ -28,10 +28,6 @@ Windows Search is a desktop search experience that helps users find relevant res
 
 Windows Search brings Microsoft Search results to every PC. Just start typing in the integrated Windows Search box to find relevant answers and results from your organization, including people, bookmarks, locations, Q&As, files, and more.
 
-:::image type="content" alt-text="Screenshot of of Microsoft Search people answer in Windows Search." source="media/windows-search/windows-search-people-answer.png":::
-
-:::image type="content" alt-text="Screenshot of of Microsoft Search bookmark answer in Windows Search." source="media/windows-search/windows-search-bookmark-answer.png":::
-
 ## Prepare for Microsoft Search in Windows
 
 To provide work or school results in Windows Search, a few requirements must be met:

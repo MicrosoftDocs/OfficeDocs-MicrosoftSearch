@@ -143,7 +143,9 @@ items:
     - name: Overview
       href: overview-microsoft-search-bing.md
     - name: Security and Privacy
-      href: security-for-search.md      
+      href: security-for-search.md
+    - name: Use Windows Search to find work or school results
+      href: use-windows-search-find-work-school-results.md             
     - name: Customize address bar shortcuts for Microsoft Edge
       href: edge-shortcuts.md
     - name: Add a search box to your intranet site
