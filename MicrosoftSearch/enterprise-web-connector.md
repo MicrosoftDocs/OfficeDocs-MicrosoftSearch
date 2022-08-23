@@ -43,18 +43,26 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 3: Configure the connection settings
 
-To connect to your data source, fill in the root URL of the website, select a crawl source, and the type of authentication you'd like to use: None, Basic Authentication, or OAuth 2.0 with [Azure Active Directory (Azure AD)](/azure/active-directory/). After you complete this information, select Test Connection to verify your settings.
+To connect to your data source, fill in the root URL of the website and select a custom vertical for the results. After you complete this information, select Test Connection to verify your settings.
 
-### URL
+### Connection ID
 
-Use the URL field to specify the root of the website that you'd like to crawl. The enterprise websites connector will use this URL as the starting point and follow all the links from this URL for its crawl.
+Enter a unique Connection ID name for this data source.
+
+### Website URL
+
+Specify the root of the website that you'd like to crawl. The enterprise websites connector will use this URL as the starting point and follow all the links from this URL for its crawl.
 
 > [!NOTE]
 > You can index up to 20 different site URLs in a single connection. In the URLs field, enter the site URLs separated by commas (,). For example, `https://www.contoso.com,https://www.contosoelectronics.com`.
 
-### Crawl websites listed in the sitemap
+### Use sitemap for crawling
 
 When selected the connector will only crawl the URLs listed in the sitemap. If not selected or no site map is found, the connector will do a deep crawl of all the links found on the root URL of the site.
+
+## Step 3: Advanced settings
+
+Use Advanced settings to enable a dynamic crawler, select a crawl mode, and the type of authentication you'd like to use: None, Basic Authentication, Site Minder, or OAuth 2.0 with [Azure Active Directory (Azure AD)](/azure/active-directory/)
 
 ### Dynamic site configuration
 
@@ -83,6 +91,8 @@ For your on-premises websites, select **Agent** as the crawl mode and in the **O
 ### Authentication
 
 **Basic Authentication** requires a username and password.
+
+**SiteMinder** requires a properly formatted URL, ```https://custom_siteminder_hostname/smapi/rest/createsmsession```, a username, and a password. 
 
 **OAuth 2.0** with [Azure AD](/azure/active-directory/) requires a resource ID, Client ID, and a client Secret. OAuth 2.0 only works with Cloud mode.
 
