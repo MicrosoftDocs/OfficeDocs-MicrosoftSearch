@@ -20,7 +20,7 @@ description: "Set up the Enterprise websites Graph connector for Microsoft Searc
 
 # Enterprise websites Microsoft Graph connector
 
-The Enterprise websites Microsoft Graph connector allows your organization to index articles and **content from its internal-facing websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
+The Enterprise websites Microsoft Graph connector allows your organization to index articles and **content from your company-owned websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
 
 > [!NOTE]
 > Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general connectors setup instructions.
