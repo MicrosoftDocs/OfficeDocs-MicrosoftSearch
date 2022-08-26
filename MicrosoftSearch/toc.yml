@@ -96,6 +96,8 @@ items:
           href: servicenow-catalog-connector.md
         - name: ServiceNow Knowledge
           href: servicenow-knowledge-connector.md
+        - name: ServiceNow Tickets (preview)
+          href: servicenow-tickets-connector.md
     - name: Manage connections
       items:
       - name: Monitor connections
@@ -124,6 +126,8 @@ items:
     href: result-cluster.md
   - name: Manage filters
     href: custom-filters.md
+  - name: Manage schema (preview)
+    href: manage-search-schema.md
   - name: Microsoft Search in SharePoint
     items:
     - name: Overview
@@ -152,4 +156,3 @@ items:
       href: set-default-search-engine.md
     - name: Make Bing.com the default home page
       href: set-default-homepage.md
-
