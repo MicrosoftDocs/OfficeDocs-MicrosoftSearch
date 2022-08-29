@@ -57,7 +57,7 @@ When selected the connector will only crawl the URLs listed in the sitemap. If n
 
 ## Step 2: Advanced settings
 
-Use Advanced settings to enable a dynamic crawler, select a crawl mode, and the type of authentication you'd like to use: None, Basic Authentication, Site Minder, or OAuth 2.0 with [Azure Active Directory (Azure AD)](/azure/active-directory/)
+Use Advanced settings to enable a dynamic crawler, select a crawl mode, and the type of authentication you'd like to use: None, Basic Authentication, Site Minder, or OAuth 2.0 with [Azure Active Directory (Azure AD)](/azure/active-directory/).
 
 ### Dynamic site configuration
 
