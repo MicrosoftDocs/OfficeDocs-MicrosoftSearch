@@ -69,6 +69,7 @@ You can connect to the following data sources by using connectors created by Mic
 * [Confluence Cloud](confluence-cloud-connector.md)
 * [Confluence On-premises](confluence-onpremises-connector.md)
 * [CSV](csv-connector.md)
+* [Custom connector](/graph/custom-connector-sdk-sample-overview)
 * [Enterprise websites](enterprise-web-connector.md)
 * [Jira Cloud](jira-connector.md)
 * [MediaWiki](mediawiki-connector.md)
