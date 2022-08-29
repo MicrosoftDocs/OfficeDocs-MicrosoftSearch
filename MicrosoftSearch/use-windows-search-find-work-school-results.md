@@ -51,7 +51,7 @@ For most organizations, including enterprise and education, Microsoft Search in 
 
 If this setting is off, users won't get internal results when they search on Windows Search, in Microsoft Edge, or on Bing. Turning off Microsoft Search in Bing doesn't stop or prevent internal content from being added to your search index. It only disables these entry points to Microsoft Search.
 
-:::image type="content" alt-text="Screenshot of Microsoft Search in Bing toggle in the Microsoft 365 admin center." source="media/windows-search/admin-center-microsoft-search-bing-setting.png":::
+:::image type="content" alt-text="Screenshot of Microsoft Search in Bing toggle in the Microsoft 365 admin center." source="media/windows-search/admin-center-microsoft-search-bing-setting.png" lightbox="media/windows-search/admin-center-microsoft-search-bing-setting.png":::
 
 ### Enable web search in Windows
 
