@@ -99,7 +99,7 @@ Users have the ability to show or hide Search Highlights. To turn it off or back
 
 Windows and Microsoft 365 IT admins can also control how Search Highlights on the taskbar are configured for Windows 10 and Windows 11 managed devices. Learn more about [Allow Search Highlights MDM policy CSP](/windows/client-management/mdm/policy-csp-search#search-allowsearchhighlights).
 
-To manage Search Highlights with group policy go to the policy setting ```Computer Configuration/Administrative Templates/Windows Components/Search/Allow search highlights```. Use the setting to disable or enable the search highlights experience. If you leave the setting as **Not Configured** the experience is enabled by default.
+To manage Search Highlights with group policy, go to the policy setting ```Computer Configuration/Administrative Templates/Windows Components/Search/Allow search highlights```. Use the setting to disable or enable the search highlights experience. If you leave the setting as **Not Configured**, the experience is enabled by default.
 The supported settings values in Windows 10:
 
 - Enabled (default) or Not Configured: Enabling or not configuring this setting turns on search highlights in the taskbar search box and in Windows Search home.
