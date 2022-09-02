@@ -1,6 +1,6 @@
 --- 
 title: "Microsoft Graph connector agent" 
-ms.author: rusamai 
+ms.author: kam1 
 author: kam1 
 manager: jameslau 
 audience: Admin
