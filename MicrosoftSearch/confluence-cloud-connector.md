@@ -65,7 +65,7 @@ The following steps provide guidance on how to register the app:
 | View user details | `read:user:confluence` | To access individual user details to support permissions
 
 5. Click **Save**.
-6. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL `https://gcs.office.com/v1.0/admin/oauth/callback` and save the changes.
+6. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL, for **M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`, for **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback` and save the changes.
 7. Navigate to `Settings` from the navigation pane on left. You will get the `Client ID` and `Secret` from this page.
 
 On registering the app with the details above, you'll get the **Client ID** and **Secret**. Complete the connection settings step using these.

@@ -36,11 +36,13 @@ Recommended configuration:
 
 If your organization's proxy servers or firewalls block communication to unknown domains, add the following rules to the 'allow' list:
 
-1. *.servicebus.windows.net
-2. *.events.data.microsoft.com
-3. https://<span>login.microsoftonline.</span>com
-4. https://<span>gcs.office.</span>com/
-5. https://<span>graph.microsoft.</span>com/
+| **M365 Enterprise** | **M365 Government** |
+| ------------- | -------------|
+| 1. `*.servicebus.windows.net` | 1. `*.servicebus.usgovcloudapi.net`
+| 2. `*.events.data.microsoft.com` | 2. `*.events.data.microsoft.com`
+| 3. `https://login.microsoftonline.com` | 3. `https://login.microsoftonline.com`
+| 4. `https://gcs.office.com/` | 4. `https://gcsgcc.office.com/`
+| 5. `https://graph.microsoft.com/` | 5. `https://graph.microsoft.com/`
 
 >[!NOTE]
 >Proxy authentication is not supported. If your environment has a proxy that requires authentication, we recommend allowing the connector agent to bypass the proxy.
