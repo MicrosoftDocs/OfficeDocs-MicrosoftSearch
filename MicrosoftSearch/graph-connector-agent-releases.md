@@ -20,6 +20,10 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gcadownload)
 
+### Version 1.8.0.0 (*25 Jul 2022*)
+* Support for incremental crawls and OAuth for Microsoft Graph connectors SDK
+* Bug fixes and reliability improvements
+
 ### Version 1.7.0.0 (*16 Jun 2022*)
 * Ability to stop crawls and ingestion of data
 * Security enhancements
