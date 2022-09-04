@@ -44,6 +44,9 @@ You will need the following permissions granted to the user account whose creden
 | _View analytics_ | [Project permission](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | Crawling Azure DevOps Work Items. This permission is **mandatory** for the projects that need to be indexed. |
 | _View work items in this node_ | [Area path](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#area-path-object-level&preserve-view=true) | Crawling Work Items in an area path. This permission is **optional**. Only those area paths will be crawled for which the user account has permissions. |
 
+>[!IMPORTANT]
+>The user account must have **Basic** access level. To learn more about access levels in Azure DevOps, read [supported access levels](/azure/devops/organizations/security/access-levels?view=azure-devops#supported-access-levels).
+
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
 Follow the general [setup instructions](./configure-connector.md).
