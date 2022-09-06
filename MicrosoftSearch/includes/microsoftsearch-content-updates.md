@@ -2,6 +2,16 @@
 
 
 
+## Week of August 29, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/29/2022 | [Use Windows Search to find work or school results](/MicrosoftSearch/use-windows-search-find-work-school-results) | added |
+| 8/29/2022 | [Enterprise websites Microsoft Graph connector](/MicrosoftSearch/enterprise-web-connector) | modified |
+| 9/2/2022 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
+
+
 ## Week of August 15, 2022
 
 
@@ -10,12 +20,3 @@
 | 8/20/2022 | [Manage search result layouts](/MicrosoftSearch/customize-results-layout) | modified |
 | 8/20/2022 | [Enterprise websites Graph connector for Microsoft Search](/MicrosoftSearch/enterprise-web-connector) | modified |
 | 8/20/2022 | [Manage access to files and sites](/MicrosoftSearch/manage-access-files-sites) | modified |
-
-
-## Week of July 18, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 7/18/2022 | [Compliance solutions with Microsoft Graph connectors](/MicrosoftSearch/compliance-ediscovery) | added |
-| 7/19/2022 | [ServiceNow Tickets Microsoft Graph connector](/MicrosoftSearch/servicenow-tickets-connector) | added |
