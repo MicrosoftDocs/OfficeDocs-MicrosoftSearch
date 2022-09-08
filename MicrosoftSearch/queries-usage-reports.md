@@ -131,4 +131,4 @@ Here is an overview of the columns in the downloadable report. The **Applies to*
 [Microsoft Search Usage Report](usage-reports.md)</br>
 [Microsoft Search Usage Report - Users](users-search-reports.md)</br>
 [Microsoft Search Usage Report - Connection analytics](connection-analytics-reports.md)</br>
-[View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites.md)
+[View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites)
