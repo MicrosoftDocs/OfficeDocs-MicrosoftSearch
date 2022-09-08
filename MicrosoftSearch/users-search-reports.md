@@ -70,4 +70,4 @@ Downloading a report will allow you to see reports from a broader range of time.
 [Microsoft Search Usage Report](usage-reports.md)</br>
 [Microsoft Search Usage Report - Queries](queries-usage-reports.md)</br>
 [Microsoft Search Usage Report - Connection analytics](connection-analytics-reports.md)</br>
-[View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites.md)
+[View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites)
