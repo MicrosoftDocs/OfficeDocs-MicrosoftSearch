@@ -42,22 +42,21 @@ The following table outlines whether specified Microsoft Search features are ava
 | Search box in suite navigation header in SharePoint, OneDrive, and Office.com | Yes | Yes | No | No  |
 | Search suggestions | Yes | Yes | No | No  |
 | Search admin controls for Microsoft Search in Bing | Yes | Yes | No | No  |
-| Mobile access | Yes | Yes | No | No  |
 | Enterprise homepage on Bing | Yes | Yes | No | No  |
 | **Answers** | | | | |
-| Calendar answers | Yes | Yes | No | No  |
-| File answers  | Yes | Yes | No | No  |
-| People answers  | Yes | Yes | No | No  |
-| Bookmark answers (admin-curated) | Yes | Yes | No | No  |
-| Bookmark answers (system-curated) | Yes | No | No | No  |
-| Q&A answers (admin-curated) | Yes | Yes | No | No  |
-| Acronym answers (admin-curated) | Yes | Yes | No | No  |
-| Acronym answers (system-curated) | Yes | Yes | No | No  |
-| Floor plan answers | Yes | No | No | No  |
-| Location answers | Yes | No | No | No  |
-| Topic answers | Yes | Yes | No | No  |
-| Power BI answers | Yes | No | No | No  |
-| Dynamics 365 answers | Yes | No | No | No  |
+| Calendar | Yes | Yes | No | No  |
+| Files  | Yes | Yes | No | No  |
+| People  | Yes | Yes | No | No  |
+| Bookmarks (admin-curated) | Yes | Yes | No | No  |
+| Bookmarks (system-curated) | Yes | No | No | No  |
+| Q&As (admin-curated) | Yes | Yes | No | No  |
+| Acronyms (admin-curated) | Yes | Yes | No | No  |
+| Acronyms (system-curated) | Yes | Yes | No | No  |
+| Floor plans | Yes | No | No | No  |
+| Locations | Yes | No | No | No  |
+| Topics | Yes | Yes | No | No  |
+| Power BI | Yes | No | No | No  |
+| Dynamics 365 | Yes | No | No | No  |
 | **Data sources** | | | | |
 | Graph Connectors | Yes | No (October 2022) | No | No  |
 | Federation Connectors | Yes | Yes | No | No  |
