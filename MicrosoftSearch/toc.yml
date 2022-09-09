@@ -110,7 +110,7 @@ items:
       href: terms-of-use.md
   - name: Federated Search connectors
     items:
-    - name: Dynamics 365
+    - name: Dataverse and Dynamics 365
       href: manage-dynamics365.md
     - name: Azure Cognitive Search
       href: manage-azure-cognitive-search.md      
