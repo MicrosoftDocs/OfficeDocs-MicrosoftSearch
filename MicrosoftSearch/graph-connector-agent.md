@@ -1,7 +1,7 @@
 --- 
 title: "Microsoft Graph connector agent" 
-ms.author: rusamai 
-author: rsamai 
+ms.author: kam1 
+author: kam1 
 manager: jameslau 
 audience: Admin
 ms.audience: Admin 
@@ -36,11 +36,13 @@ Recommended configuration:
 
 If your organization's proxy servers or firewalls block communication to unknown domains, add the following rules to the 'allow' list:
 
-1. *.servicebus.windows.net
-2. *.events.data.microsoft.com
-3. https://<span>login.microsoftonline.</span>com
-4. https://<span>gcs.office.</span>com/
-5. https://<span>graph.microsoft.</span>com/
+| **M365 Enterprise** | **M365 Government** |
+| ------------- | -------------|
+| 1. `*.servicebus.windows.net` | 1. `*.servicebus.usgovcloudapi.net`
+| 2. `*.events.data.microsoft.com` | 2. `*.events.data.microsoft.com`
+| 3. `https://login.microsoftonline.com` | 3. `https://login.microsoftonline.com`
+| 4. `https://gcs.office.com/` | 4. `https://gcsgcc.office.com/`
+| 5. `https://graph.microsoft.com/` | 5. `https://graph.microsoft.com/`
 
 >[!NOTE]
 >Proxy authentication is not supported. If your environment has a proxy that requires authentication, we recommend allowing the connector agent to bypass the proxy.
@@ -165,6 +167,6 @@ When the service fails to start with the error "The service didn't start due to 
 
 ### Connection failure
 
-If the 'Test connection' action fails while creating a connection and shows the error: 'Please check username/password and the data source path', even when the provided username and password are correct, then ensure that the user account has interactive sign in rights to the machine where the connector agent is installed. You can review the documentation about [logon policy management](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check sign in rights. Also, ensure that the data source and the agent machine are on the same network.
+If the 'Test connection' action fails while creating a connection and shows the error: 'Please check username/password and the data source path', even when the provided username and password are correct, then ensure that the user account has interactive sign-in rights to the machine where the connector agent is installed. You can review the documentation about [logon policy management](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check sign in rights. Also, ensure that the data source and the agent machine are on the same network.
 
 If the following failure message appears when creating a connection: "1011: The Graph connector agent isn't reachable or offline.", sign in to the machine where the agent is installed and check if it's running. If the agent isn't running, start the agent application. If the connection continues to fail, verify that the certificate or client secret provided to the agent during registration hasn't expired and has required permissions.

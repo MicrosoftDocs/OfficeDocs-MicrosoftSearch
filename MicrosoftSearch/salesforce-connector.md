@@ -42,7 +42,7 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
 
     - Select the checkbox for **Enable Oauth Settings**.
 
-    - Specify the Callback URL as: [https://gcs.office.com/v1.0/admin/oauth/callback](https://gcs.office.com/v1.0/admin/oauth/callback)
+    - Specify the Callback URL as: For **M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`, for **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
 
     - Select these required OAuth scopes.
 

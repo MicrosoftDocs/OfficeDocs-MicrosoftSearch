@@ -32,21 +32,21 @@ You must have configured the Jira graph connector. To consume the sample result 
 
 > [!NOTE]
 > * Some of the below listed properties will be selected by default
-> * **Refine** search attribute is required for displaying a property in search result template. A property can have other search attributes also.  
+> * **Retrieve** search attribute is required for displaying a property in search result template. A property can have other search attributes also.  
 
 | Property | Search schema attribute required |
 | -------- | -------- |
-| Title | Refine |
-| Updated | Refine |
-| IssueLink | Refine |
+| Title | Retrieve |
+| Updated | Retrieve |
+| IssueLink | Retrieve |
 | Issue Description | Content property |
-| IssueStatus | Refine |
-| IssueIconUrl | Refine |
-| IssueType | Refine |
-| ProjectName | Refine | 
-| Created | Refine |
-| AssigneeName | Refine |
-| IssuePriority | Refine |
+| IssueStatus | Retrieve |
+| IssueIconUrl | Retrieve |
+| IssueType | Retrieve |
+| ProjectName | Retrieve | 
+| Created | Retrieve |
+| AssigneeName | Retrieve |
+| IssuePriority | Retrieve |
 
 ## Result layout
 

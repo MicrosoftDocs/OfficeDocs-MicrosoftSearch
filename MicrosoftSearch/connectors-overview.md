@@ -63,10 +63,13 @@ You can connect to the following data sources by using connectors created by Mic
 
 <!---Add links below when new docs are created--->
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
-* [Azure DevOps](azure-devops-connector.md)
+* [Azure DevOps Work Items](azure-devops-connector.md)
+* [Azure DevOps Wiki](azure-devops-wiki-connector.md)
 * [Azure SQL and Microsoft SQL Server](MSSQL-connector.md)
 * [Confluence Cloud](confluence-cloud-connector.md)
 * [Confluence On-premises](confluence-onpremises-connector.md)
+* [CSV](csv-connector.md)
+* [Custom connector](/graph/custom-connector-sdk-sample-overview)
 * [Enterprise websites](enterprise-web-connector.md)
 * [Jira Cloud](jira-connector.md)
 * [MediaWiki](mediawiki-connector.md)
@@ -75,6 +78,7 @@ You can connect to the following data sources by using connectors created by Mic
 * [Salesforce](salesforce-connector.md)
 * [ServiceNow Knowledge](servicenow-knowledge-connector.md)
 * [ServiceNow Catalog](servicenow-catalog-connector.md)
+* [ServiceNow Tickets](servicenow-tickets-connector.md)
 
 The [Microsoft Graph connectors gallery](https://www.microsoft.com/microsoft-search/connectors) contains a brief description of each of these connectors. If you're ready to connect one of these data sources to your tenant, be sure to read the [Setup overview](configure-connector.md) and any other articles in the Setup connectors by Microsoft section that apply to your data source.
 
@@ -103,7 +107,8 @@ Although Microsoft Graph connectors and Microsoft Search APIs are now generally 
 The set of connectors and features in preview include:
 
 * [Confluence On-premises connector](confluence-onpremises-connector.md)
-* [Multiple connections in a vertical](customize-search-page.md#multiple-connections-in-a-vertical)
+* [Azure DevOps Wiki connector](azure-devops-wiki-connector.md)
+* [ServiceNow Tickets connector](servicenow-tickets-connector.md)
 
 ## How do I customize and configure search results?
 
@@ -120,12 +125,8 @@ After custom data is indexed, developers can [query this data](/graph/search-con
 
 ## What are the limitations of Microsoft Graph connectors?
 
-* When you **publish** a Microsoft Graph connector, it can take a few minutes for the connection to be created. During that time, the connection shows its status as pending.
-
-* Ingestion throughput is throttled at approximately four items per second.
-
-* There's no support for schema updates. After you create a connection setup, there's no way to update the schema. You can only delete and re-create the connection.
+* When you **publish** a Microsoft Graph connector, it can take a few minutes for the connection to be created. During that time, the connection shows its status as 'Publishing'.
 
 * There's a connection limit. Each tenant can create up to 10 connections.
 
-* You can't edit or change a connection after it has been created. If you need to change any details, you must delete and recreate the connection.
+* There are limited edit capabilities supported after publishing a connection. If you need to change any details other than ones enabled, you must delete and recreate the connection.
