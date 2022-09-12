@@ -2,6 +2,14 @@
 
 
 
+## Week of September 05, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/9/2022 | [Dataverse and Dynamics 365 results in Microsoft Search](/MicrosoftSearch/manage-dynamics365) | modified |
+
+
 ## Week of August 29, 2022
 
 
