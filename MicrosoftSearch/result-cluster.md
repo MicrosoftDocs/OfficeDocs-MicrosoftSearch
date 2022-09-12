@@ -20,8 +20,7 @@ With Graph connectors result clusters, you can search for content from third-par
 
 Results in a cluster are grouped together based on the search vertical configuration. Also, each cluster only contains results from a single custom search vertical. To ensure discovery of content in result cluster, the system expects meaningful titles on your items.
 
-Result clusters are displayed on the All vertical and can include maximum two results from a custom vertical. The result cluster experience is turned on by default. 
-These SharePoint results for the query bing wiki include a result cluster from the ContosoWiki vertical with two relevant results, BingWiki Main page and OSG Wiki. 
+Result clusters are displayed on the All vertical and can include maximum two results from a custom vertical. These SharePoint results for the query bing wiki include a result cluster from the ContosoWiki vertical with two relevant results, BingWiki Main page and OSG Wiki. 
 
 ![Example of a MediaWiki result cluster.](media/result-cluster/result-cluster-example.png)
 
@@ -63,3 +62,20 @@ To ensure discovery of content from the search verticals, we recommend attributi
 > If your content does not have meaningful titles, you can create a Custom field that describes better what the content is about and can function as “title”. 
 >
 > Please also ensure that the body “content” of your items is a meaningful, representative summary or description of the item. Concatenating incoherent or disjoint pieces of text can have a detrimental effect on the result cluster triggering.
+
+## Result clusters default settings
+  
+The result cluster experience is turned on by default.  
+
+If you would like to disable it, follow these steps to turn off the experience at the organization level:
+
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
+1. Select  the **All** vertical, then enable **Hide connector results**.
+
+Follow these steps to turn off the experience at the SharePoint site level:
+
+1. Go to **Settings** in the SharePoint site
+2. Go to **Site information**>**View all site settings**.
+3. Go to the Microsoft Search section, then select **Configure Microsoft Search for this site collection**.
+4. In the navigation pane, go to **Custom experience**, then select **Verticals**.
+5. Select the **All** vertical, then enable **Hide connector results**.
