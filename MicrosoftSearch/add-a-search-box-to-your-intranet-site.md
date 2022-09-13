@@ -49,14 +49,14 @@ You need to add two elements to the page: a container for the search box and the
 
 ## Add a search box to your SalesForce Home page
 
-In your VisualForce Pages, create a new view and add the code in the Markup section.
+In your Visualforce Pages, create a new view and add the code in the Markup section.
 
 1. Log in to your SalesForce account as an admin and select **Setup** in the upper-right corner to open a Setup page.
-1. On the left side panel, select **Platform Tools** > **Custom Code** > **VisualForce Pages**.
+1. On the left side panel, select **Platform Tools** > **Custom Code** > **Visualforce Pages**.
 1. Create a new View and enter a name for it. In the Restrict Visibility section, set **Visible to all users**.
 1. Save your view.
 1. In the middle of your view, select **New** to open Page Edit. Enter a label, a name, and select the **Available for Lightning Experience, Experience Builder sites, and the mobile app** check box.
-1. In the VisualForce Markup section, add this code and **Save**.
+1. In the Visualforce Markup section, add this code and **Save**.
 
 ```html
 <apex:page >
@@ -82,11 +82,11 @@ You can also customize the height and width of the search box with this code
 </apex:page>
 ```
 
-To add the VisualForce component to your SalesForce homepage:
+To add the Visualforce component to your SalesForce homepage:
 1. Go to your SalesForce homepage, `https://Instance-Name.lightning.force.com/lightning/page/home`.
-1. Select the Gear icon, then Edit Page.
-1. Select the + (plus) icon anywhere on the Homepage to add the VisualForce component there.
-1. On the left side, select VisualForce. On the right side, select the VisualForce Page Name you created earlier.
+1. Select the Gear icon, then **Edit Page**.
+1. Select the + (plus) icon anywhere on the Homepage to add the Visualforce component there.
+1. On the left side, select Visualforce. On the right side, select the Visualforce Page Name you created earlier.
 1. Add a label and **Save**.
 On your SalesForce Homepage, the search box you created should appear.
   
