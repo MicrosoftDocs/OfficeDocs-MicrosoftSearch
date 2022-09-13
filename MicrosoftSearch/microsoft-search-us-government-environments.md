@@ -36,24 +36,35 @@ Search admins can also customize bookmarks and Q&A answers in the Microsoft 365 
 
 The following table outlines whether specified Microsoft Search features are available within the GCC, GCC High, and DoD environments. 
 
-| Feature | GCC | GCC High | DoD  |
-| --------- | --------- | --------- | ---------- |
-| Organization-wide search across files, sites, groups, and people | Yes | No | No  |
-| Search box in suite navigation header in SharePoint and OneDrive   | Yes | No | No  |
-| Search suggestions | Yes | No | No  |
-| Search admin controls for Microsoft Search in Bing | Yes | No | No  |
-| Enterprise homepage on Bing | Yes | No | No  |
-| Insights | No | No | No  |
-| Bookmark answers (admin-curated) | Yes | No | No  |
-| Q&A answers (admin-curated) | Yes | No | No  |
-| Acronym answers | No | No | No  |
-| Floor plan answers | No | No | No  |
-| Locations answers | No | No | No  |
-| Power BI answers | No | No | No  |
-| Mobile access | Yes | No | No  |
-| Graph Connectors | No | No | No  |
-| Federation Connectors | No | No | No  |
-|Search customizations (verticals, filters and result types) | No | No| No|
-
+| Feature | WW | GCC | GCC High | DoD  |
+| --------- |--------- | --------- | --------- | ---------- |
+| Organization-wide search across files, sites, groups, and people |Yes | Yes | No | No  |
+| Search box in suite navigation header in SharePoint, OneDrive, and Office.com | Yes | Yes | No | No  |
+| Search suggestions | Yes | Yes | No | No  |
+| Search admin controls for Microsoft Search in Bing | Yes | Yes | No | No  |
+| Enterprise homepage on Bing | Yes | Yes | No | No  |
+| **Answers** | | | | |
+| Calendar | Yes | Yes | No | No  |
+| Files  | Yes | Yes | No | No  |
+| People  | Yes | Yes | No | No  |
+| Bookmarks (admin-curated) | Yes | Yes | No | No  |
+| Bookmarks (system-curated) | Yes | No | No | No  |
+| Q&As (admin-curated) | Yes | Yes | No | No  |
+| Acronyms (admin-curated) | Yes | Yes | No | No  |
+| Acronyms (system-curated) | Yes | Yes | No | No  |
+| Floor plans | Yes | No | No | No  |
+| Locations | Yes | No | No | No  |
+| Topics | Yes | Yes | No | No  |
+| Power BI | Yes | No | No | No  |
+| Dynamics 365 | Yes | No | No | No  |
+| **Data sources** | | | | |
+| Graph Connectors | Yes | No (October 2022) | No | No  |
+| Federation Connectors | Yes | Yes | No | No  |
+| **Insights** | | | | |
+| Usage analytics | Yes | Yes | No | No  |
+| Feedback | Yes | No | No | No  |
+| **Customizations** | | | | |
+| Result types | Yes | No (October 2022) | No | No  |
+| Verticals | Yes | No (October 2022) | No | No  |
 
 In response to the unique, evolving requirements of the United States public sector, Microsoft has created Office 365 US Government plans (or Office 365 Government). For service descriptions and features overview specific to these environments, see [Office 365 Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
