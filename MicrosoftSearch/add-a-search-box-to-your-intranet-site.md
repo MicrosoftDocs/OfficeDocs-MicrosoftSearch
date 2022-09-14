@@ -21,7 +21,7 @@ description: "Get relevant search suggestions and find work results faster by ad
 To provide your users with easy access to results from your organization, add a Microsoft Search in Bing search box to any intranet site or page. These are some of the benefits:
 
 - A search box on your intranet portal provides a familiar, trusted entry point to start searching
-- Can be added to your SharePoint sites (classic and modern), WordPress sites, SalesForce Home page, and other intranet sites
+- Can be added to your SharePoint (classic and modern), WordPress, SalesForce, Confluence, and other intranet pages and sites
 - Supports all major web browsers, including Google Chrome and Microsoft Edge
 - Only search suggestions from your organization appear, web suggestions are never included
 - Takes users to a Microsoft Search in Bing work results page, which excludes ads and web results
@@ -46,6 +46,14 @@ You need to add two elements to the page: a container for the search box and the
 
 - For SharePoint classic or modern pages, download bing-search-box.sppkg from the [Microsoft Search public repro](https://github.com/microsoft-search/bing-search-box/releases/tag/v1), deploy it to your SharePoint app catalog, then add the app to your SharePoint sites. For details, see [Deploy your client-side web part to a SharePoint page](/sharepoint/dev/spfx/web-parts/get-started/serve-your-web-part-in-a-sharepoint-page#deploy-the-helloworld-package-to-app-catalog).
 - For WordPress pages, open edit mode, add the Custom HTML widget, and add the script.
+
+## Add a search box to your Confluence page
+
+On the Confluence page, select **Edit**, add an iframe widget with these parameters, and Publish. 
+- URL: `https://www.bing.com/business/searchbox`
+- Title: `Org-Name search` or `Workplace search`
+- Width: `560`
+- Height: `200`
 
 ## Add a search box to your SalesForce Home page
 
