@@ -44,7 +44,7 @@ When you search, the system identifies which custom vertical has the most releva
 
 In this example, the query term bing wiki occurs in both titles and the displayed body content of the results. Because of the overlap, they are included in a result cluster.
 
-![Highlighted overlapping terms in title and display properties of result clusters](https://user-images.githubusercontent.com/72018014/183807100-64aa10c7-449a-4fcb-bbff-e2c35170ebcc.png)
+![Highlighted overlapping terms in title and display properties of result clusters](media/result-cluster/ResultClusterHighlight.png)
 
 > [!NOTE]
 > For single term-queries the likelihood is low that a result cluster is shown with an item whose title or body content does not contain the single query term. Of course, for longer queries where only one query term matches the item’s title or body content, the likelihood that a result cluster is shown is higher. 
