@@ -2,6 +2,16 @@
 
 
 
+## Week of September 12, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/13/2022 | [Microsoft Search for US government environments](/MicrosoftSearch/microsoft-search-us-government-environments) | modified |
+| 9/14/2022 | [Azure SQL and Microsoft SQL Server Microsoft Graph connector for Microsoft Search](/MicrosoftSearch/mssql-connector) | modified |
+| 9/15/2022 | [Add a search box to your intranet site](/MicrosoftSearch/add-a-search-box-to-your-intranet-site) | modified |
+
+
 ## Week of September 05, 2022
 
 
