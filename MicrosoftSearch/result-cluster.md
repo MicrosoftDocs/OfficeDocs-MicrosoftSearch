@@ -37,7 +37,9 @@ You control how the results appear in the cluster by defining a [result type](/m
 
 ### Step 3: Verify a result cluster appears on the All results page
 
-Each cluster includes a heading with the name of the custom vertical and a link to the custom vertical (‘more _CustomVerticalName_ results’). Note that you can see updates related to result clusters e.g. schema updates or experience modifications via result cluster, after some time (~10 minutes). 
+Each cluster includes a heading with the name of the custom vertical and a link to the custom vertical (‘more _CustomVerticalName_ results’). 
+> [!NOTE] 
+> Note that you can see updates related to result clusters e.g. schema updates or experience modifications via result cluster, after some time (~10 minutes). 
 
 ### How connector results are selected and displayed
 When you search, the system identifies which custom vertical has the most relevant content results for the query. For each item in the custom vertical, system looks at the title and displayed content properties and extent of query overlap with them. Based on the overlap, the top two ranked results from that vertical appear in a result cluster.
