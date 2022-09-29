@@ -48,6 +48,10 @@ To connect your Oracle SQL connector to a data source, you must configure the da
 
 For Oracle SQL connector, you need to specify the Hostname, Port and Service (database) name along with the preferred authentication method, username, and password.
 
+If Service Name is not available and you connect using SID, the Service Name can be derived using one of the following commands (to be executed as sys admin) - 
+* select SERVICE_NAME from gv$session where sid in (select sid from v$MYSTAT);
+* select sys_context('userenv','service_name') from dual;
+
 > [!NOTE]
 > Your database must run Oracle database version 11g or later for the connector to be able to connect. The connector supports Oracle database hosted on Windows, Linux and Azure VM platforms.
 
