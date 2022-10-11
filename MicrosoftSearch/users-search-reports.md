@@ -9,6 +9,8 @@ audience: Admin
 ms.audience: Admin
 ms.date: 
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 search.appverid:
 - BFB160
 - MET150
