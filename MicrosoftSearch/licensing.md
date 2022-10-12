@@ -41,7 +41,8 @@ For example, if your organization has 100 Microsoft 365 E5 licenses, then your o
 
 <!---Comment requested in PR#143--->
 > [!NOTE]
-> Microsoft 365 A5 and Office 365 A5 do not include this entitlement.
+> * Microsoft 365 A5 and Office 365 A5 do not include this entitlement.
+> * Microsoft 365 E5 or Office 365 E5 license is not required for using Microsoft Graph connectors.
 
 ## Purchase of add-on index quota
 To purchase more Microsoft Graph connectors quota, contact your Microsoft account manager or complete the following steps:
