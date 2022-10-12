@@ -48,6 +48,8 @@ items:
     items:
     - name: Overview
       href: connectors-overview.md
+    - name: eDiscovery overview
+      href: compliance-ediscovery.md
     - name: Connectors gallery
       href: connectors-gallery.md
     - name: Set up Microsoft built connectors
@@ -110,7 +112,7 @@ items:
       href: terms-of-use.md
   - name: Federated Search connectors
     items:
-    - name: Dynamics 365
+    - name: Dataverse and Dynamics 365
       href: manage-dynamics365.md
     - name: Azure Cognitive Search
       href: manage-azure-cognitive-search.md      
@@ -143,7 +145,9 @@ items:
     - name: Overview
       href: overview-microsoft-search-bing.md
     - name: Security and Privacy
-      href: security-for-search.md      
+      href: security-for-search.md
+    - name: Use Windows Search to find work or school results
+      href: use-windows-search-find-work-school-results.md             
     - name: Customize address bar shortcuts for Microsoft Edge
       href: edge-shortcuts.md
     - name: Add a search box to your intranet site
