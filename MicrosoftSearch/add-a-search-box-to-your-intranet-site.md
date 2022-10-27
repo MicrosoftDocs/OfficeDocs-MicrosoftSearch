@@ -29,6 +29,8 @@ To provide your users with easy access to results from your organization, add a 
 
 > [!NOTE]
 >To see search suggestions, users must be signed in to their Azure AD account. Users that aren't signed in will be prompted to do so after they enter a query.
+
+If you have questions or comments about adding or using an embedded search box, share them with us at [aka.ms/ESB](https://aka.ms/ESB).
   
 ## Add a search box to a SharePoint, WordPress, or intranet page
 
@@ -176,5 +178,3 @@ If embedding a script isn't an option for the site, use an iFrame to add the sea
 ## InPrivate mode and Conditional Access
 
 An embedded search box will be disabled if the page or site is opened in an InPrivate window. Also, with Azure AD Conditional Access support in Microsoft Edge, Bing.com doesn't support Azure AD sign in when using InPrivate mode. For more information about Conditional Access in Microsoft Edge, see [Microsoft Edge and Conditional Access](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge).
-
-If you have questions or comments about adding or using an embedded search box, share them with us at [aka.ms/ESB](https://aka.ms/ESB).
