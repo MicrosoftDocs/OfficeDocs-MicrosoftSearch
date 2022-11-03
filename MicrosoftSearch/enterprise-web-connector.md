@@ -182,7 +182,7 @@ The connector fetches any meta tags your root URLs may have and shows them. You 
 
 Selected meta tags can be used to create custom properties. Also, on the Schema page you can manage them further (Queryable, Searchable, Retrievable, Refinable).
 
-## Step 4: Custom property settings
+## Step 5: Custom property settings
 
 You can create custom properties for your selected meta tags or the connector's default properties. To add a custom property:
 
@@ -196,7 +196,7 @@ You can create custom properties for your selected meta tags or the connector's 
       * For **Expression**, enter a regex expression to define the portion of the property value that should appear in search results. You can add up to three expressions. To learn more about regex expressions, see [.NET regular expressions](/dotnet/standard/base-types/regular-expressions) or search the web for a regex expression reference guide.
       * In the **Create formula** section, enter a formula to combine the values extracted from the expressions. 
 
-## Step 5: Add URLs to exclude (Optional crawl restrictions)
+## Step 6: Add URLs to exclude (Optional crawl restrictions)
 
 There are two ways to prevent pages from being crawled: disallow them in your robots.txt file or add them to the Exclusion list.
 
@@ -208,23 +208,23 @@ The connector checks to see if there's a robots.txt file for your root site. If 
 
 You can optionally create an **Exclusion list** to exclude some URLs from getting crawled if that content is sensitive or not worth crawling. To create an exclusion list, browse through the root URL. You can add the excluded URLs to the list during the configuration process.
 
-## Step 6: Assign property labels
+## Step 7: Assign property labels
 
 You can assign a source property to each label by choosing from a menu of options. While this step isn't mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
 
-## Step 7: Manage schema
+## Step 8: Manage schema
 
 On the **Manage Schema** screen, you can change the schema attributes (the options are **Query**, **Search**, **Retrieve**, and **Refine**) associated with the default or custom properties, add optional aliases, and choose the **Content** property.
 
-## Step 8: Manage search permissions
+## Step 9: Manage search permissions
 
 The Enterprise websites connector only supports search permissions visible to **Everyone**. Indexed data appears in the search results and is visible to all users in the organization.
 
-## Step 9: Set the refresh schedule
+## Step 10: Set the refresh schedule
 
 The Enterprise websites connector supports full and incremental crawling. During an incremental refresh interval, only URLs that have been modified since the last incremental refresh are crawled. In a full refresh interval, the connector will recrawl all the website's content. For a full refresh, we recommend you set a large refresh schedule interval, between one and two weeks, to ensure the connector have enough time to complete the crawl. We recommend a scheduled refresh.
 
-## Step 10: Review connection
+## Step 11: Review connection
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
