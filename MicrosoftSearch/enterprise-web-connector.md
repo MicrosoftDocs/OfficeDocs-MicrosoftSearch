@@ -184,7 +184,7 @@ Selected meta tags can be used to create custom properties. Also, on the Schema 
 
 ## Step 5: Custom property settings
 
-You can create custom properties for your selected meta tags or the connector's default properties. To add a custom property:
+You can enrich your indexed data by creating custom properties for your selected meta tags or the connector's default properties. To add a custom property:
 
   1. Enter a property name. This name will appear in search results from this connector.
   1. For the value, select Static or String/Regex Mapping. A static value will be included in all search results from this connector. A string/regex value will vary based on the rules you add.
