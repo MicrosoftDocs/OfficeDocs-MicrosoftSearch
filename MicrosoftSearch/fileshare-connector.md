@@ -55,58 +55,74 @@ Follow the general [setup instructions](./configure-connector.md).
 > [!NOTE]
 > You can index up to twenty different file shares in a single connection. Enter one file share per line in the file shares text box area.
 
-On the **Connect to data source** page, select **File share** and provide the name, connection ID, and description. On the next page, provide the path to the file share and select your previously installed Graph connector agent. Enter the credentials for a [Microsoft Windows](https://microsoft.com/windows) user account with read access to all the files in the file share.
+Enter the path to the file share and select your previously installed Graph connector agent. Enter the credentials for a [Microsoft Windows](https://microsoft.com/windows) user account with read access to all the files in the file share.
 
-### Preserve last access time
+## Step 4: Preserve last access time
 
-When the connector attempts to crawl a file, the "last access time" field in its metadata is updated. If you depend on that field for any archiving and backup solutions and you don't want to update it when the connector accesses it, you can configure this option in the **Advanced settings** page.
+When the connector attempts to crawl a file, the "last access time" field in its metadata is updated. If you depend on that field for archiving and backup solutions and you don't want to update it when the connector accesses it, select this option.
 
-## Step 4: Limits for file indexing
+## Step 5: Limits for file indexing
 
-While configuring a File Share connection, admin would have ability to limit files and folders from indexing. There would be multiple ways of doing it:
+You have the ability to limit files and folders from indexing based on file type, modified date, and location.
 
-#### Based on File Types
+### Based on File Types
 
-Only the textual content of these formats is indexed: DOC, DOCM, DOCX, DOT, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS. For multimedia files and files that don't belong to this format, the only metadata is indexed.
+For these file formats, only the text is indexed: DOC, DOCM, DOCX, DOT, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS. For multimedia and other file types, only metadata is indexed.
 
-#### Based on last modified date or number of days since last modification
+### Based on last modified date or number of days since last modification
 
-#### Full network path of file/folder or regular expression to limit indexing
+Use these selections to only index files modified within a specified number of days or since a specific date.
 
-In the network path use the escape character (\\) before special characters like \\. Example: For the path \\\\CONTOSO\\FILE\\SHAREDFOLDER, correct way to input is  \\\\\\\\CONTOSO\\\\FILE\\\\SHAREDFOLDER
+### Full network path or regular expression
 
-Rules for writing regular expression can be found [here](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+In the network path, use the escape character (\\) before special characters like \\. Example: For the path \\\\CONTOSO\\FILE\\SHAREDFOLDER, correct way to input is  \\\\\\\\CONTOSO\\\\FILE\\\\SHAREDFOLDER
 
-Admin would also be having ability to give an exception to the limit rule. Priority of exception rule will supersede Limit rules. In similar fashion, exception could be defined by giving folder/file path for the items we want to include in indexing.
+For information about writing regular expressions, see [Regular Expression Language Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
-![Limits and Exceptions.](media/file-connector/ExclusionRule.png)
+You also have the ability to create an exception to the limit rule. The priority of the exception rule will supersede limit rules. Exception rules can be defined by entering folder or file paths for the items you want to include in indexing.
 
-## Step 5: Manage search permissions
+:::image type="content" source="media/file-connector/ExclusionRule.png" alt-text="Graphic showing a subset of files excluded from indexing with exceptions.":::
 
-You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists, by selecting the desired option in **Manage search permissions** page. The user accounts and groups provided in these Access Control Lists must be managed by Active Directory (AD). If you're using any other system for user accounts management, you can select 'everyone' option, which lets users search for all the files without any access restrictions. However, when users try to open the file, access controls set at the source apply.
+## Step 6: Custom property settings
+
+You can create custom properties for the connector's default properties. To add a custom property:
+
+  1. Enter a property name. This name will appear in search results from this connector.
+  1. For the value, select Static or String/Regex Mapping. A static value will be included in all search results from this connector. A string/regex value will vary based on the rules you add.
+  1. Select **Edit Value**.
+  1. If you selected a static value, enter the string you want to appear.
+  1. If you selected a string/regex value:
+      * In the **Add expressions** section, in the **Property** list, select a default property from the list.
+      * For **Sample value**, enter a string to represent the type of values that could appear. This sample is used when you preview your rule.
+      * For **Expression**, enter a regex expression to define the portion of the property value that should appear in search results. You can add up to three expressions. To learn more about regex expressions, see [Regular Expression Language Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) or search the web for a regex expression reference guide.
+      * In the **Create formula** section, enter a formula to combine the values extracted from the expressions. 
+
+## Step 7: Assign property labels
+
+Follow the general [setup instructions](./configure-connector.md).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## Step 8: Manage schema
+
+Follow the general [setup instructions](./configure-connector.md).
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## Step 9: Manage search permissions
+
+You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists, by selecting the desired option in **Manage search permissions** page. The user accounts and groups provided in the Access Control Lists must be managed by Active Directory (AD). If you're using any other system for user accounts management, you can select 'everyone' option, which lets users search for all the files without any access restrictions. However, when users try to open the file, access controls set at the source apply.
 
 Windows by default provides 'Read' permission to 'Everyone' in Share ACLs when a folder is shared on network. By extension, if you're choosing Share ACLs in **Manage search permissions**, users will be able to search for all the files. If you want to restrict access, remove 'Read' access for 'Everyone' in file shares and provide access only to the desired users and groups. The connector then reads these access restrictions and applies them to search.
 
 You can choose Share ACLs only if the share path you provided follows UNC path format. You can create a path in UNC format by going to 'Advanced Sharing' under 'Sharing' option.
 
-:::image type="content" source="media/file-connector/file-advanced-sharing.png" alt-text="Advanced sharing." lightbox="media/file-connector/file-advanced-sharing.png":::
+:::image type="content" source="media/file-connector/file-advanced-sharing.png" alt-text="Screenshot of the Advanced settings dialog box.":::
 
-## Step 6: Assign property labels
-
-Follow the general [setup instructions](./configure-connector.md).
-<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
-
-## Step 7: Manage schema
+## Step 10: Choose refresh settings
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## Step 8: Choose refresh settings
-
-Follow the general [setup instructions](./configure-connector.md).
-<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
-
-## Step 9: Review connection
+## Step 11: Review connection
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
