@@ -184,13 +184,17 @@ Selected meta tags can be used to create custom properties. Also, on the Schema 
 
 ## Step 5: Custom property settings
 
-You can enrich your indexed data by creating custom properties for your selected meta tags or the connector's default properties. To add a custom property:
+You can enrich your indexed data by creating custom properties for your selected meta tags or the connector's default properties. 
+
+:::image type="content" source="media/enterprise-web-connector/connectors-custom-property-setup.png" alt-text="Custom property set up with a rule for Team meta data.":::
+
+To add a custom property:
 
   1. Enter a property name. This name will appear in search results from this connector.
   1. For the value, select Static or String/Regex Mapping. A static value will be included in all search results from this connector. A string/regex value will vary based on the rules you add.
   1. Select **Edit Value**.
   1. If you selected a static value, enter the string you want to appear.
-  1. If you selected a string/regex value:      
+  1. If you selected a string/regex value:
       * In the **Add expressions** section, in the **Property** list, select a default property or meta tag from the list.
       * For **Sample value**, enter a string to represent the type of values that could appear. This sample is used when you preview your rule.
       * For **Expression**, enter a regex expression to define the portion of the property value that should appear in search results. You can add up to three expressions. To learn more about regex expressions, see [.NET regular expressions](/dotnet/standard/base-types/regular-expressions) or search the web for a regex expression reference guide.
