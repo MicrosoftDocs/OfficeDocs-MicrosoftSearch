@@ -16,9 +16,9 @@ description: "The floor plans feature in Microsoft Search helps users find peopl
 # Manage floor plans
 
 > [!IMPORTANT]
-> One Dec 15, 2022 new tenant onboarding on Microsoft Search floor plans feature will pause as Microsoft explores integration with the recently announced [Microsoft Places](https://www.microsoft.com/microsoft-365/blog/2022/10/12/introducing-microsoft-places-turn-your-spaces-into-places/).
+> On Dec 15, 2022 new onboarding for Microsoft Search floor plans will stop as Microsoft explores integration with the recently announced [Microsoft Places](https://www.microsoft.com/microsoft-365/blog/2022/10/12/introducing-microsoft-places-turn-your-spaces-into-places/).
 >
-> For organizations with no published floor plan answers, floor plans configuration will be disabled or not visible. Organizations with at least one published floor plan answer will not be impacted by this change. Your admin and end-user experiences for floor plans will continue to be accessible.
+> For organizations with no published floor plan answers, floor plan configuration will be disabled or not available. Organizations with at least one published floor plan answer won't be impacted by this change. Your admin and end-user experiences for floor plans will continue to be accessible.
 >
 > Microsoft Places is available in 2023. To learn more, see [Introducing Microsoft Places](https://www.microsoft.com/microsoft-365/blog/2022/10/12/introducing-microsoft-places-turn-your-spaces-into-places/).
 
