@@ -65,9 +65,9 @@ Full | 100%
 
 The number of items indexed is also displayed with each connection. The number of items indexed by each connection contributes to the total quota available for your organization.
 
-When index quota is exceeded for your organization, all active connections are impacted, and those connections operate in a **limit exceeded** state. In this state, your active connections:  
+When index quota is exceeded for your organization, all active connections are impacted, and those connections operate in **limit exceeded** state. In this state, your active connections:  
 
-* Aren't able to add new items.
+* Will **not** be able to add new items.
 
 * Are able to update or delete existing items.
 
@@ -75,6 +75,6 @@ To fix this, you can do any of the following actions:
 
 * Purchase index quota for your organization, to learn more see: [Licensing requirements and pricing](licensing.md).
 
-* Identify connections that have too much content being ingested and update them to index fewer items to make room for quota. To update the connection, you must delete and create a new connection with a new ingestion filter that brings in fewer items.
+* Identify connections that have some items which you did not want to index. To update this connection, you must delete and create a new connection with a data source exclusion filter to exclude the items you do not want to index anymore.
 
 * Permanently delete one or more connections.
