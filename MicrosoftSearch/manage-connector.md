@@ -65,7 +65,7 @@ Full | 100%
 
 The number of items indexed is also displayed with each connection. The number of items indexed by each connection contributes to the total quota available for your organization.
 
-When index quota is exceeded for your organization, all active connections are impacted, and those connections operate in **limit exceeded** state. In this state, your active connections:  
+When index quota is exceeded for your organization, all active connections are impacted, and those connections operate in a **limit exceeded** state. In this state, your active connections:  
 
 * Will **not** be able to add new items.
 
