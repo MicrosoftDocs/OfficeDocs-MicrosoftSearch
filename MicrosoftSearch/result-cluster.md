@@ -28,12 +28,12 @@ Result clusters are displayed on the All vertical and can include a maximum of t
 ### Step 1: Check connection schema property settings
 Ensure that the connected content meets the following two criteria, to show up in a result cluster:
 
-1.	The external connection and its items must have the (body) [“content” property](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta#properties&preserve-view=true) populated with textual content. The content property should be a meaningful and plain-text representation of the item.
+1.	The external connection and its items must have the (body) [“content” property](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta#properties&preserve-view=true) populated with textual content. The content property should be a meaningful and plain-text representation of the item.
 2.	One of the source properties must be mapped to the [semantic label “title”](configure-connector.md?#step-6-assign-property-labels).
 
 ### Step 2: Check result type definition to adjust the user experience
 
-You control how the results appear in the result cluster by defining a [result type](/manage-result-types). If no result type is configured, a  [system generated layout](/customize-search-page#default-search-result-layout) is used.
+You control how the results appear in the result cluster by defining a [result type](/MicrosoftSearch/manage-result-types.md). If no result type is configured, a  system generated layout is used.
 
 ### Step 3: Verify a result cluster appears on the All results page
 
