@@ -18,14 +18,23 @@ Indexing on-premises data sources require you to install *Microsoft Graph connec
 
 For help on installation, refer to this [page](graph-connector-agent.md#installation)
 
-[Download latest Graph Connector Agent](https://aka.ms/gcadownload)
+[Download latest Graph Connector Agent](https://aka.ms/gca)
+
+ ### Version 1.8.2.0 (*06 Oct 2022*)
+* Upgrade Graph Connector Agent with just one click in the UI. For future builds, if there are any upgrades available for Graph Connector Agent, the one-click upgrade feature will be available in the connection details pane. For older builds, there will be an option to download and install the GCA build.
+![Sample snapshot of how to upgrade GCA with one-click from the connection pane.](media/gca-releases/one-click-upgrade.png)
+
+* Bug fixes and reliability improvements
+
+### Version 1.8.1.0 (*29 Aug 2022*)
+* Security Enhancements
+* Bug fixes and reliability improvements
 
 ### Version 1.8.0.0 (*25 Jul 2022*)
 * Support for incremental crawls and OAuth for Microsoft Graph connectors SDK
 * Bug fixes and reliability improvements
 
 ### Version 1.7.0.0 (*16 Jun 2022*)
-* Ability to stop crawls and ingestion of data
 * Security enhancements
 * Bug fixes and reliability improvements
 
