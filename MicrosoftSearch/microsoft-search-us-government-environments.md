@@ -38,18 +38,19 @@ The following table outlines whether specified Microsoft Search features are ava
 
 | Feature | WW | GCC | GCC High | DoD  |
 | --------- |--------- | --------- | --------- | ---------- |
-| Organization-wide search across files, sites, groups, and people |Yes | Yes | No | No  |
-| Search box in suite navigation header in SharePoint, OneDrive, and Office.com | Yes | Yes | No | No  |
-| Search suggestions | Yes | Yes | No | No  |
-| Search admin controls for Microsoft Search in Bing | Yes | Yes | No | No  |
-| Enterprise homepage on Bing | Yes | Yes | No | No  |
+| Organization-wide search across files, sites, groups, and people |Yes | Yes | Yes | Yes  |
+| Search box in suite navigation header in SharePoint, OneDrive, and Office.com | Yes | Yes | November 2022 | No  |
+| Search suggestions | Yes | Yes | November 2022 | No  |
+| Search & intelligence admin center | Yes | Yes | November 2022 | No  |
+| Search admin controls for Microsoft Search in Bing | Yes | Yes | November 2022 | No  |
+| Enterprise homepage on Bing | Yes | Yes | November 2022 | No  |
 | **Answers** | | | | |
 | Calendar | Yes | Yes | No | No  |
 | Files  | Yes | Yes | No | No  |
-| People  | Yes | Yes | No | No  |
-| Bookmarks (admin-curated) | Yes | Yes | No | No  |
+| People  | Yes | Yes | November 2022 | No  |
+| Bookmarks (admin-curated) | Yes | Yes | November 2022 | No  |
 | Bookmarks (system-curated) | Yes | No | No | No  |
-| Q&As (admin-curated) | Yes | Yes | No | No  |
+| Q&As (admin-curated) | Yes | Yes | November 2022 | No  |
 | Acronyms (admin-curated) | Yes | Yes | No | No  |
 | Acronyms (system-curated) | Yes | Yes | No | No  |
 | Floor plans | Yes | No | No | No  |
@@ -58,13 +59,13 @@ The following table outlines whether specified Microsoft Search features are ava
 | Power BI | Yes | No | No | No  |
 | Dynamics 365 | Yes | No | No | No  |
 | **Data sources** | | | | |
-| Graph Connectors | Yes | No (October 2022) | No | No  |
+| Graph Connectors | Yes | November 2022 | No | No  |
 | Federation Connectors | Yes | Yes | No | No  |
 | **Insights** | | | | |
-| Usage analytics | Yes | Yes | No | No  |
+| Usage analytics | Yes | Yes | November 2022 | No  |
 | Feedback | Yes | No | No | No  |
 | **Customizations** | | | | |
-| Result types | Yes | No (October 2022) | No | No  |
-| Verticals | Yes | No (October 2022) | No | No  |
+| Result types | Yes | November 2022 | No | No  |
+| Verticals | Yes | November 2022 | No | No  |
 
 In response to the unique, evolving requirements of the United States public sector, Microsoft has created Office 365 US Government plans (or Office 365 Government). For service descriptions and features overview specific to these environments, see [Office 365 Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
