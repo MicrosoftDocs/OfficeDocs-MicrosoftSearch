@@ -58,7 +58,7 @@ Set-spotenant –DisableCustomAppAuthentication $false
 ```
 
 > [!NOTE]
-> PowerShell 7 users, use this command first `Import-Module microsoft.online.sharepoint.powershell -UseWindowsPowerShell`
+> If you're using PowerShell 7, use this command first `Import-Module microsoft.online.sharepoint.powershell -UseWindowsPowerShell`
 
 > [!NOTE]
 > If you're using multifactor authentication, use `Connect-SPOService -Url https://$orgName-admin.sharepoint.com`.
