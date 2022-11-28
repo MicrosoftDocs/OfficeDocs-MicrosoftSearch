@@ -36,7 +36,7 @@ Verify the .csv files you want to index have been uploaded to a SharePoint docum
 
 #### Create a SharePoint app
 
-1. Go to  `https://Org-Name.sharepoint.com/Site-Name/_layouts/15/appregnew.aspx`.
+1. Go to  `https://Org-Name.sharepoint.com/sites/mysite/_layouts/15/appregnew.asp`.
 2. On the Client Id and Client Secret fields, select **Generate**.
 1. For Title, enter an app name.
 1. In the App Domain field, enter `www.gcs.com`.
@@ -57,12 +57,24 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userC
 Set-spotenant –DisableCustomAppAuthentication $false
 ```
 
+```powershell 7
+Import-Module microsoft.online.sharepoint.powershell -UseWindowsPowerShell
+$adminUPN=”<admin@contoso.onmicrosoft.com>”
+$orgName=“<contoso>”
+$userCredential = Get-Credential -UserName $adminUPN -Message "Enter your password."
+Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
+Set-spotenant –DisableCustomAppAuthentication $false
+```
+
+> [!NOTE]
+> PowerShell 7 users, use this command first `Import-Module microsoft.online.sharepoint.powershell -UseWindowsPowerShell`
+
 > [!NOTE]
 > If you're using multifactor authentication, use `Connect-SPOService -Url https://$orgName-admin.sharepoint.com`.
 
 #### Complete the app configuration
 
-1. Go to `https://Org-Name.sharepoint.com/Site-Name/_layouts/15/appinv.aspx`.
+1. Go to `https://Org-Name.sharepoint.com/sites/mysite/_layouts/15/appregnew.asp`.
 2. In the App Id field, paste the Client Id of the SharePoint app and select **Lookup**.
 3. In Permission Request XML field, paste this code and select **Create**.
 
