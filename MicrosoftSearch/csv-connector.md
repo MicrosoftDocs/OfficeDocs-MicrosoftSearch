@@ -57,15 +57,6 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userC
 Set-spotenant –DisableCustomAppAuthentication $false
 ```
 
-```powershell 7
-Import-Module microsoft.online.sharepoint.powershell -UseWindowsPowerShell
-$adminUPN=”<admin@contoso.onmicrosoft.com>”
-$orgName=“<contoso>”
-$userCredential = Get-Credential -UserName $adminUPN -Message "Enter your password."
-Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
-Set-spotenant –DisableCustomAppAuthentication $false
-```
-
 > [!NOTE]
 > PowerShell 7 users, use this command first `Import-Module microsoft.online.sharepoint.powershell -UseWindowsPowerShell`
 
