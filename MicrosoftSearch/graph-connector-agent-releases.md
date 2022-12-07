@@ -20,6 +20,10 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
+ ### Version 1.8.5.0 (*06 Dec 2022*)
+* Security Enhancements
+* Bug fixes and reliability improvements
+
  ### Version 1.8.2.0 (*06 Oct 2022*)
 * Upgrade Graph Connector Agent with just one click in the UI. For future builds, if there are any upgrades available for Graph Connector Agent, the one-click upgrade feature will be available in the connection details pane. For older builds, there will be an option to download and install the GCA build.
 ![Sample snapshot of how to upgrade GCA with one-click from the connection pane.](media/gca-releases/one-click-upgrade.png)
