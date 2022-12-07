@@ -23,6 +23,7 @@ Organizations don't always have a single reference for their standard terminolog
 
 Microsoft Search users can get definitions with Acronyms in [Bing](https://Bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration), [Office 365](https://Office.com), Outlook on the web, Outlook Mobile (Android), and Teams Mobile (iOS and Android). In the **Search** box, users enter queries like these examples:
 
+- DNN
 - *What is* DNN
 - *Define* DNN
 - DNN *definition*
@@ -35,7 +36,7 @@ Microsoft Search users can get definitions with Acronyms in [Bing](https://Bing.
 The result includes all the meanings of DNN that are present within the user’s organization.
 
 > [!NOTE]
-> Users must enter a query that includes the acronym’s specified *keywords* to trigger its corresponding answers. Acronym queries are not case sensitive.
+> In Outlook on the web, Outlook Mobile, and Teams Mobile, users must enter a query that includes the acronym’s specified *keywords* to trigger its corresponding answers. Acronym queries are not case sensitive.
 
 ## Set up acronyms answers
 
@@ -112,7 +113,7 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **Q: Can users enter just the acronym when searching?**
 
-**A:** On Bing, users can now find acronym answers just by searching for an acronym, a keyword is no longer needed. This same experience will be enabled for other Microsoft Search entry points in phases.
+**A:** On Bing, SharePoint, and Office 365 users can now find acronym answers just by searching for an acronym, a keyword is no longer needed. This same experience will be enabled for other Microsoft Search entry points in phases.
 
 **Q: How long does it take for admin-curated acronyms to be visible in Microsoft Search after they’re published?**
 
