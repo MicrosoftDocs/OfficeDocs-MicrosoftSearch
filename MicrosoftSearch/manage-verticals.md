@@ -75,7 +75,6 @@ If you accurately appoint as many *semantic labels* as possible, this experience
 [Here](configure-connector.md#step-6-assign-property-labels) is additional information on how to create and manage semantic labels.
 
 > [!NOTE]
-> - The multiple connections in a vertical feature is currently in preview. For more information, see [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
 > - A connection can be added as a content source under a single vertical. You can't use connections under multiple verticals.
 
 To set up a query for a search vertical where multiple connection sources have been added, use common source properties to create the query.
