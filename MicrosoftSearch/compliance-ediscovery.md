@@ -17,7 +17,7 @@ search.appverid:
 description: "Microsoft Graph connectors overview for eDiscovery" 
 ---
 
-# Microsoft Graph connectors overview for eDiscovery
+# Microsoft Graph connectors overview for eDiscovery (Preview)
 
 Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery tools in Microsoft Purview to search for content in [Microsoft 365](https://www.microsoft.com/microsoft-365). With Microsoft Graph connectors, your organization can index third-party data and include it in an eDiscovery premium case for Collection, Review and Export.
 
@@ -97,7 +97,7 @@ Complete the following steps to create a case:
 
 > [!NOTE]
 > 
-> For detailed guidance to create and manage a Microsoft Purview eDiscovery (Premium) case, refer documentation to [create and manage eDiscovery (Premium) cases in Microsoft 365](/microsoft-365/compliance/create-and-manage-advanced-ediscoveryv2-case.md)
+> For detailed guidance to create and manage a Microsoft Purview eDiscovery (Premium) case, refer documentation to [create and manage eDiscovery (Premium) cases in Microsoft 365](/microsoft-365/compliance/create-and-manage-advanced-ediscoveryv2-case)
 
 ### Collect Graph Connectors content 
 
@@ -125,3 +125,7 @@ Once validated that the content collected into review is the correct content, th
 1. Reviewing sample of graph connectors content is not supported.
 
 2. Placing graph connectors content on legal hold as part of eDiscovery case is not supported.
+
+## Resources
+
+[Use Graph connectors with eDiscovery (Premium)](/microsoft-365/compliance/ediscovery-graph-connector)

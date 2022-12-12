@@ -43,6 +43,9 @@ You will need the following permissions granted to the user account whose creden
 | ------------ | ------------ | ------------ |
 | View project-level information | [Project permission](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | Crawling Azure DevOps Work Items. This permission is **mandatory** for the projects that need to be indexed. |
 
+>[!IMPORTANT]
+>The user account must have **Basic** access level. To learn more about access levels in Azure DevOps, read [supported access levels](/azure/devops/organizations/security/access-levels?view=azure-devops#supported-access-levels).
+
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
 Follow the general [setup instructions](./configure-connector.md).
@@ -69,8 +72,8 @@ Mandatory Fields | Description | Recommended Value
 --- | --- | ---
 | Company Name         | The name of your company. | Use an appropriate value   |
 | Application name     | A unique value that identifies the application that you're authorizing.    | Microsoft Search     |
-| Application website  | The URL of the application that will request access to your Azure DevOps instance during connector setup. (Required).  | https://<span>gcs.office.</span>com/
-| Authorization callback URL        | A required callback URL that the authorization server redirects to. | https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback|
+| Application website  | The URL of the application that will request access to your Azure DevOps instance during connector setup. (Required).  | For **M365 Enterprise**: https://<span>gcs.office.</span>com/,</br> For **M365 Government**: https://<span>gcsgcc.<span>office.com/
+| Authorization callback URL        | A required callback URL that the authorization server redirects to. | For **M365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback,</br> For **M365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback |
 | Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), Code (read), Entitlements (Read), Project and team (read), Graph (read), MemberEntitlement Management (read), Wiki (read) |
 
 >[!IMPORTANT]

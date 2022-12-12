@@ -90,7 +90,7 @@ There are several points to consider:
 You can change the hint the search box shows for a given site or site collection. This is the text that appears in the search box before they start typing into it. This may help guide your users about what to expect from search if you’ve configured a custom results page or changed behavior of search in other ways.
 
 > [!NOTE]
-> To be able to make this change, you need to allow running custom scripts on the site in question as a tenant administrator, which is disallowed by default. Please see https://docs.microsoft.com/sharepoint/allow-or-prevent-custom-script for details. You can allow running custom scripts, make the change, and then revert to disallowing scripts for the site if necessary.
+> To be able to make this change, you need to allow running custom scripts on the site in question as a tenant administrator, which is disallowed by default. Please see [Allow or prevent custom script](/sharepoint/allow-or-prevent-custom-script) for details. You can allow running custom scripts, make the change, and then revert to disallowing scripts for the site if necessary.
 
 To change this setting for a given site run the following command:
 
