@@ -133,3 +133,30 @@ The supported values in Windows 11:
 - Disabled: Disabling this setting turns off search highlights in the Start menu search box and in Windows Search home.
 
 To access the policy for search highlights, on a device with the March 2022 Cumulative Update Preview or April 2022 monthly quality update, go to **C:\Windows\PolicyDefinitions** and locate **Search.admx**. If needed, the Microsoft Download Center has an updated version of the [Administrative Templates](https://www.microsoft.com/download/details.aspx?id=104042) (.admx) and [Group Policy Settings Reference](https://www.microsoft.com/download/details.aspx?id=104043) for Windows 10, version 20H2. Microsoft Endpoint Manager offers the same policy configuration options.
+
+## Work vertical in Windows
+
+The Work vertical is **a dedicated canvas** for quick and reliable organization-wide search in Windows Search. It’s **tailored for workplace search** and work results are a click away and always visible. It provides a coherent, complete, and consistent search experience, **bringing together Microsoft 365 and third-party data**. It simplifies the overall workplace search experience and **improves the discoverability of relevant work results** with easy and reliable navigation by providing a quick and transient way for users to complete the task.
+
+:::image type="content" alt-text="Screenshot of workplace search results in Windows Search." source="media/windows-search/work-vertical-windows-search.png":::
+
+To help keep the focus on work, web results never appear when searching in the Work vertical. Also, the results are personalized and all content adheres to the same access controls and permissions that are applied across all Microsoft Search experiences. 
+
+When users search in the Work vertical, they'll find all the results they expect in workplace search:
+
+- Answers, including bookmarks, Q&As, acronyms, and more
+- People
+- Files
+- Messages (Outlook emails and Teams chats)
+- Groups
+- Sites
+- Yammer
+- Connected data
+
+Users can also easily narrow their search results by selecting a filter when they search.
+
+:::image type="content" alt-text="Screenshot Windows Search work search suggestions and results with filter options highlighted." source="media/windows-search/work-vertical-filters-windows-search.png":::
+
+Workplace search in Windows not only helps users find the information they need, it also helps them get to it even faster by opening files, messages, chats, and other results in the associated app.
+
+Similar to other verticals in Windows Search, workplace search also supports a keyword that allows users to start their search by scoping it to work results only. Just enter *Work:* followed by your search term to only see work results.
