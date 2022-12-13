@@ -51,7 +51,7 @@ The following table outlines whether specified Microsoft Search features are ava
 | Bookmarks (admin-curated) | Yes | Yes | Yes | No  |
 | Bookmarks (system-curated) | Yes | No | No | No  |
 | Q&As (admin-curated) | Yes | Yes | Yes | No  |
-| Acronyms (admin-curated) | Yes | Yes | No | No  |
+| Acronyms (admin-curated) | Yes | No | No | No  |
 | Acronyms (system-curated) | Yes | Yes | No | No  |
 | Floor plans | Yes | No | No | No  |
 | Locations | Yes | No | No | No  |
