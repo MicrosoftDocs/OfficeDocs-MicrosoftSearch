@@ -62,6 +62,7 @@ Normal | 0&ndash;79%
 High | 80&ndash;89%
 Critical | 90%&ndash;99%
 Full | 100%
+Limited Exceeded | 100%
 
 The number of items indexed is also displayed with each connection. The number of items indexed by each connection contributes to the total quota available for your organization.
 
