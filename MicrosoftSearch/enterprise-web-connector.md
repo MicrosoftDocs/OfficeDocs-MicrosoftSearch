@@ -182,7 +182,7 @@ The connector fetches any meta tags your root URLs may have and shows them. You 
 
 Selected meta tags can be used to create custom properties. Also, on the Schema page you can manage them further (Queryable, Searchable, Retrievable, Refinable).
 
-## Step 5: Custom property settings
+## Step 5: Custom property settings (Preview)
 
 You can enrich your indexed data by creating custom properties for your selected meta tags or the connector's default properties. 
 
