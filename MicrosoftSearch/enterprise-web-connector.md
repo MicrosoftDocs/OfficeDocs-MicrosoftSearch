@@ -36,13 +36,20 @@ This article is for anyone who configures, runs, and monitors an Enterprise webs
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## Step 2: Configure the connection settings
+## Step 2: Name the connection
+
+Specify these attributes:
+
+* Name (required)
+* Connection ID (required)
+* Description (optional)
+* Select check box (required)
+
+The connection ID creates implicit properties for your connector. It must be unique and can only contain a maximum of 32 alphanumeric characters. To change the ID, go to Advanced settings.
+
+## Step 3: Configure the connection settings
 
 To connect to your data source, fill in the root URL of the website and select a custom vertical for the results. After you complete this information, select Test Connection to verify your settings.
-
-### Connection ID
-
-A unique Connection ID name for this data source. To change this name, go to Advanced settings
 
 ### Website URL
 
@@ -53,11 +60,7 @@ Specify the root of the website that you'd like to crawl. The enterprise website
 
 ### Use sitemap for crawling
 
-When selected the connector will only crawl the URLs listed in the sitemap. If not selected or no site map is found, the connector will do a deep crawl of all the links found on the root URL of the site.
-
-## Step 2: Advanced settings
-
-Use Advanced settings to enable a dynamic crawler, select a crawl mode, and the type of authentication you'd like to use: None, Basic Authentication, Site Minder, or OAuth 2.0 with [Azure Active Directory (Azure AD)](/azure/active-directory/).
+When selected the connector will only crawl the URLs listed in the sitemap. This also allows you to configure incremental crawling during a later step. If not selected or no site map is found, the connector will do a deep crawl of all the links found on the root URL of the site.
 
 ### Dynamic site configuration
 
@@ -130,7 +133,7 @@ The resource ID, client ID and client secret values will depend on how you did t
     > [!NOTE]
     > For steps to configure a client application as an identity provider see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) and [Configure your App Service or Azure Functions app to use Azure AD login](/azure/app-service/configure-authentication-provider-aad).
 
-    You don't need to configure a client secret in this application, but you'll need to add an app role in the **App roles** section of the app which will later be assigned to your client application. Refer to the images to see how to add an app role.
+    You don't need to configure a client secret in this application, but you'll need to add an app role in the **App roles** section, which will later be assigned to your client application. Refer to the images to see how to add an app role.
 
     * Creating a new app role:
     
@@ -171,15 +174,33 @@ The resource ID, client ID and client secret values will depend on how you did t
 
 **Windows** authentication is only available in agent mode. It requires username, domain and password. You need to provide the username and domain in the **Username** field, in any of the following formats: domain\username, or username@domain. A password must be entered in the **Password** field. For Windows authentication, the username provided must also be an administrator in the server where the agent is installed.
 
-## Step 2a: Meta tag settings
+## Step 4: Meta tag settings
 
-The connector fetches any meta tags your root URLs may have and shows them. You can select which tags to include for crawling. 
+The connector fetches any meta tags your root URLs may have and shows them. You can select which tags to include for crawling.
 
 :::image type="content" source="media/enterprise-web-connector/connectors-enterpriseweb-meta-tags-settings.png" alt-text="Meta tag settings with author, locale, and other tags selected.":::
 
-Selected meta tags will also show up on the Schema page, where you can manage them further (Queryable, Searchable, Retrievable, Refinable).
+Selected meta tags can be used to create custom properties. Also, on the Schema page you can manage them further (Queryable, Searchable, Retrievable, Refinable).
 
-## Step 2b: Add URLs to exclude (Optional crawl restrictions)
+## Step 5: Custom property settings (Preview)
+
+You can enrich your indexed data by creating custom properties for your selected meta tags or the connector's default properties. 
+
+:::image type="content" source="media/enterprise-web-connector/connectors-custom-property-setup.png" alt-text="Custom property set up with a rule for Team meta data.":::
+
+To add a custom property:
+
+  1. Enter a property name. This name will appear in search results from this connector.
+  1. For the value, select Static or String/Regex Mapping. A static value will be included in all search results from this connector. A string/regex value will vary based on the rules you add.
+  1. Select **Edit Value**.
+  1. If you selected a static value, enter the string you want to appear.
+  1. If you selected a string/regex value:
+      * In the **Add expressions** section, in the **Property** list, select a default property or meta tag from the list.
+      * For **Sample value**, enter a string to represent the type of values that could appear. This sample is used when you preview your rule.
+      * For **Expression**, enter a regex expression to define the portion of the property value that should appear in search results. You can add up to three expressions. To learn more about regex expressions, see [.NET regular expressions](/dotnet/standard/base-types/regular-expressions) or search the web for a regex expression reference guide.
+      * In the **Create formula** section, enter a formula to combine the values extracted from the expressions. 
+
+## Step 6: Add URLs to exclude (Optional crawl restrictions)
 
 There are two ways to prevent pages from being crawled: disallow them in your robots.txt file or add them to the Exclusion list.
 
@@ -191,23 +212,23 @@ The connector checks to see if there's a robots.txt file for your root site. If 
 
 You can optionally create an **Exclusion list** to exclude some URLs from getting crawled if that content is sensitive or not worth crawling. To create an exclusion list, browse through the root URL. You can add the excluded URLs to the list during the configuration process.
 
-## Step 3: Assign property labels
+## Step 7: Assign property labels
 
 You can assign a source property to each label by choosing from a menu of options. While this step isn't mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
 
-## Step 4: Manage schema
+## Step 8: Manage schema
 
-On the **Manage Schema** screen, you can change the schema attributes (the options are **Query**, **Search**, **Retrieve**, and **Refine**) associated with the properties, add optional aliases, and choose the **Content** property.
+On the **Manage Schema** screen, you can change the schema attributes (the options are **Query**, **Search**, **Retrieve**, and **Refine**) associated with the default or custom properties, add optional aliases, and choose the **Content** property.
 
-## Step 5: Manage search permissions
+## Step 9: Manage search permissions
 
 The Enterprise websites connector only supports search permissions visible to **Everyone**. Indexed data appears in the search results and is visible to all users in the organization.
 
-## Step 6: Set the refresh schedule
+## Step 10: Set the refresh schedule
 
-The Enterprise websites connector only supports a full refresh. This means that the connector will recrawl all the website's content during every refresh. To make sure the connector gets enough time to crawl the content, we recommend that you set a large refresh schedule interval. We recommend a scheduled refresh between one and two weeks.
+The Enterprise websites connector supports full and incremental crawling. During an incremental refresh interval, only URLs that have been modified since the last incremental refresh are crawled. In a full refresh interval, the connector will recrawl all the website's content. For a full refresh, we recommend you set a large refresh schedule interval, between one and two weeks, to ensure the connector have enough time to complete the crawl. We recommend a scheduled refresh.
 
-## Step 7: Review connection
+## Step 11: Review connection
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
