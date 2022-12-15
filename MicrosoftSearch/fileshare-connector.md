@@ -83,7 +83,7 @@ You also have the ability to create an exception to the limit rule. The priority
 
 :::image type="content" source="media/file-connector/ExclusionRule.png" alt-text="Graphic showing a subset of files excluded from indexing with exceptions.":::
 
-## Step 6: Custom property settings
+## Step 6: Custom property settings (Preview)
 
 You can enrich your indexed data by creating custom properties based on the connector's default properties.
 
