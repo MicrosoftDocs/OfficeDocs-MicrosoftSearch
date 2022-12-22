@@ -62,10 +62,14 @@ The following table outlines whether specified Microsoft Search features are ava
 | Graph Connectors | Yes | Yes | No | No  |
 | Federation Connectors | Yes | No | No | No  |
 | **Insights** | | | | |
-| Usage analytics | Yes | Yes | Yes | No  |
+| Usage analytics (Organization level) | Yes | Yes | Yes | No  |
 | Feedback | Yes | No | No | No  |
 | **Customizations** | | | | |
 | Result types | Yes | Yes | No | No  |
 | Verticals | Yes | Yes | No | No  |
+| **Site Search settings** | | | | |
+| Insights | Yes | No | No | No  |
+| Result types | Yes | No | No | No  |
+| Verticals | Yes | No | No | No  |
 
 In response to the unique, evolving requirements of the United States public sector, Microsoft has created Office 365 US Government plans (or Office 365 Government). For service descriptions and features overview specific to these environments, see [Office 365 Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
