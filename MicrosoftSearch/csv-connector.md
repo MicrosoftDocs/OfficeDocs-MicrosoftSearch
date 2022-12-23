@@ -28,7 +28,7 @@ This article is for anyone who configures, runs, and monitors a CSV connector. I
 <!---## Before you get started-->
 ## Before you get started
 
-For a SharePoint data source, you'll need to create a SharePoint app with Oauth configuration. For an ADLS data source, you'll need to create an ADLS storage account.
+Make sure there's no whitespace in the CSV headers. For a SharePoint data source, you'll need to create a SharePoint app with Oauth configuration. For an ADLS data source, you'll need to create an ADLS storage account.
 
 ### Create a SharePoint app with Oauth configuration
 
