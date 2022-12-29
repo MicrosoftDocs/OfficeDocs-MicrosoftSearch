@@ -54,7 +54,7 @@ The execution policy has to be set to allow the execution of remote signed scrip
 Get-ExecutionPolicy -List
 ```
 
-To know more and set the right execution policy, refer [Execution Policy](/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.3).
+To know more and set the right execution policy, refer [Execution Policy](/powershell/module/microsoft.powershell.core/about/about_execution_policies?).
 
 ## Create and configure an app for the agent  
 
