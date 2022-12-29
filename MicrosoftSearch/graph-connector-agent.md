@@ -47,6 +47,15 @@ If your organization's proxy servers or firewalls block communication to unknown
 >[!NOTE]
 >Proxy authentication is not supported. If your environment has a proxy that requires authentication, we recommend allowing the connector agent to bypass the proxy.
 
+### Check Execution Policy
+The execution policy has to be set to allow the execution of remote signed scripts. If any machine or group level policy is restricting this, the installation of GCA will fail. Run the following command to get the execution policy:
+
+```powershell
+Get-ExecutionPolicy -List
+```
+
+To know more and set the right execution policy, refer to [Execution Policy](/powershell/module/microsoft.powershell.core/about/about_execution_policies?).
+
 ## Create and configure an app for the agent  
 
 First, sign-in and note that the minimum required privilege on the account is search administrator. The agent will then ask you to provide authentication details.
