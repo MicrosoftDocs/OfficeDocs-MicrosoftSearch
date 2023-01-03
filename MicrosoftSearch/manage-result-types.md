@@ -20,7 +20,7 @@ Microsoft search provides a default search result layout experience for the diff
 
 Result types can be used for select SharePoint content and [Graph Connectors](connectors-overview.md) content . Search results for SharePoint list items, SharePoint sites, SharePoint pages and Portable document format(PDFs) can be changed using result types. Content types like files(non-PDF) and people have a standard layout that can't be modified.
 
-For Graph connector search results, when you configure a connector with property mappings, Microsoft Search will use a default search result layout for the connector search results. The label *title* is the most important; you should always have a property assigned to this label to use the default result layout. However, creating a custom result type for your connector content can make those results more impactful for your users. When using verticals and connector content, you must create a result type or do the mappings for a default layout. If you do not do either, the vertical will not display any search results.
+For Graph connector search results, when you configure a connector with property mappings, Microsoft Search will use a default search result layout for the connector search results. The label *title* is the most important; you should always have a property assigned to this label to use the default result layout. However, creating a custom result type for your connector content can make those results more impactful for your users. When using verticals and connector content, you must create a result type or do the mappings for a default layout. If you don't do either, the vertical won't display any search results.
 
 
 ## Understanding result types
@@ -28,11 +28,11 @@ For Graph connector search results, when you configure a connector with property
 A result type is a configuration that causes search result layout to be changed as per the design in configuration. It consists of the following parameters:
 
 - **One or more conditions** to compare and match each search result with the configuration. Examples of conditions are content source and rules.
-- A **result layout** to use for search results that meet the conditions. The resulting layout controls how the results that meet the conditions appear on the search results page.
+- A **result layout** to use for search results that meet the conditions. The resulting layout controls how the results that meets the conditions appear on the search results page.
 
 You can use multiple result types for content displayed in a vertical. This may be important when you combine multiple content sources into a single vertical. It can also be used for a more impactful layout even when there is only one content type. For example, in a vertical that displays incident details, you can customize "high severity" incidents to have more prominent colors than "low severity" incidents. This can be done by defining conditions on the 'severity' property in the **Rules** section.
 
-Each result type has a priority which determines the order of match evaluation. This is significant if multiple matching result types are found for a given search result. In such cases, the result type with higher priority is applied to the search result. Hence, it is important to ensure that a generic result type has lower priority and result types with multiple conditions have higher priority.
+Each result type has a priority that determines the order of match evaluation. If multiple matching result types are found for a given search result, the result type with higher priority is applied to the search result. When defining multiple result type for the same content source , assign lower priority to a generic result type and higher to result type with multiple conditions.
 
 ## Create or update result types
 
@@ -59,9 +59,9 @@ The result type management experience is wizard driven, you're guided through st
 
 ## Limitations
 
-1. Custom SharePoint managed properties cannot be used in the ‘Rules’ section of result type  
-2. Result types created for "SharePoint and OneDrive" content source does not apply to search results on Microsoft Search in Bing canvases. 
-3. If the search scope in a SharePoint site has been changed to hub or Organization scope, the result type created at site level will be applied to search results instead of honoring the result types at hub or Organization scope. In such cases, do not create site level result types to ensure search experience consistency with the change in scope. 
+1. Custom SharePoint managed properties can't be used in the ‘Rules’ section of result type  
+2. Result types created for "SharePoint and OneDrive" content source doesn't apply to search results on Microsoft Search in Bing canvases. 
+3. If the search scope in a SharePoint site has been changed to hub or Organization scope, the result type created at site level will be applied to search results instead of honoring the result types at hub or Organization scope. In such cases, don't create site level result types to ensure search experience consistency with the change in scope. 
 
 ## Troubleshooting
 
@@ -70,4 +70,4 @@ Here's a list of common problems you might see and actions to fix them.
 |Problem  |Action  |
 |---------|---------|
 | I don't see my result layout on the search page, although I created one. | There may be a delay of a few minutes because these settings are cached. Wait a few minutes and try again.        |
-| I don't see any content sources on the result type page. | Make sure you have configured connectors and indexed data .   |
+| I don't see any content sources on the result type page. | Make sure you have configured connectors and indexed data.   |
