@@ -44,7 +44,7 @@ Use the **Filters** menu at the top of the **Usage Analytics** page to filter yo
  
 ## Query Details page
 
-The Query details page shows the top search queries by people in your organization who use search regularly, along with queries that returned no results or were abandoned by the user without selecting any search results.   
+The Query details page shows the top search queries by people in your organization who use search regularly, along with queries that returned no results or were abandoned by the user without selecting any search results.
 
 You can view the Query details page by selecting **View Details** button at the bottom of the **Queries** section of the main usage analytics page. 
 
@@ -61,14 +61,17 @@ In the **Filters** menu, use one or more of the following to filter the data in 
 | Filter | Description |
 |:-----|:-----|
 |Date range |The date range for the analytics shown on the page. Available options are 7 days, 14 days, 31 days,  and last 12 months.|
-|Search application  |The search application that was used to perform the queries.  Available options are SharePoint start page, Office.com, Bing.com (work tab), or all three applications combined.  |
+|Search application  |The search application used to perform the queries. Available options are SharePoint start page, SharePoint sites, Office.com, Bing.com (work tab), or all three applications combined.  |
 |Top results clicked |Link to each of the top three results selected for this query.</br> **Note** Links are not available for bookmarks and other answer features.|
 |Country  |The country of the user performing query based on their **country** attribute in Azure Active Directory. |
 |Occupation    |The occupation of the user performing the query based on their **title** attribute in Azure Active Directory (AAD).  |
 |Department or division    |The department or division of the user performing the query, based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory (AAD). |
 
+>[!NOTE]
+> To protect privacy, if the selected filter combination results in queries that are performed by only five or fewer individuals, those results will not be included in any report.
 
 ### Most popular search terms 
+
 This report shows the top 10 most popular search queries. It shows the top queries along with the top three clicked results for each query. Use this report to understand what types of information your users are searching for and the performance of the top three results. 
 
 Each top search item provides the following data. 
@@ -83,15 +86,17 @@ Each top search item provides the following data.
 |Average position of result  |The average relative position of this search result on the search results page. |
 
 ### Top-10 no-result queries
+
 This report shows popular search terms that have returned no results. Use this report to identify search queries that might create user dissatisfaction and to improve content discoverability. You can then determine if creating an answer, like a bookmark, or ingesting new content through a Graph connector is the right action.  
 
 > [!NOTE]
 > There are cases where a search term can be represented in the no-result report, even if it has bookmarks or is listed as one of the most popular queries. One example is if a query is performed in a vertical where the bookmark is not displayed (for example, the “Sites” vertical).
 
-### Top abandoned search terms 
+### Top abandoned search terms
+
 This report shows popular search terms that receive low click-through. Use this report to identify search queries that might create user dissatisfaction and to improve content discoverability. You can then determine if creating an answer, like a bookmark, or ingesting new content through a Graph connector is the right action.  
 
-## Prevent filtering by country, occupation, department, or division 
+## Prevent filtering by country, occupation, department, or division
 
 By default, users with global administrator, search administrator, and search editor roles can filter search data by country, occupation, or department/division. If you do not want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators will not be able to filter the **Query details** reports by these filters.  
 
@@ -104,11 +109,12 @@ To configure this setting:
 4. Select **Save**. 
 
 ## Download reports
-Each report and table have a download option that allows you to download the background data for the report that you see on the screen in an Excel format. Where the displayed report is limited to the top five to ten rows, the downloaded report will have up to 2000 top records.   
+
+Each report and table have a download option that allows you to download the background data for the report that you see on the screen in an Excel format. Where the displayed report is limited to the top five to ten rows, the downloaded report will have up to 2000 top records.
 
 Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 7, 14, or 31 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month. 
 
-###  Special note for the Most popular search items download report 
+### Special note for the Most popular search items download report 
 
 In the **Most popular search items** report, notice that in the user interface of the report you, a query can have up to to three top results for each popular search term. When you download the report and view it in Excel, a search term with more than one top result will display with a row for each result. The first three columns will pertain to the query (for example, (query text, count, and clicks), and will be the same. The remaining columns in the rows for the search item will pertain to the specific results, and will vary.
 

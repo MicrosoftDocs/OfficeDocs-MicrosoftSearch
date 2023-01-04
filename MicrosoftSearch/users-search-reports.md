@@ -41,7 +41,7 @@ The User details page shows how many people in your organization are active or e
 | Filter | Description |
 |:-----|:-----|
 |Date range |The date range for the analytics shown on the page. Available options are 7 days, 14 days, 31 days, and last 12 months.|
-|Search application  |The search application used to perform the queries.  Available options are SharePoint start page, Office.com, Bing.com (work tab), or all three applications combined.  |
+|Search application  |The search application used to perform the queries. Available options are SharePoint start page, SharePoint sites, Office.com, Bing.com (work tab), or all three applications combined.  |
 |Country  |The country of the user performing query based on their **country** attribute in Azure Active Directory. |
 |Occupation    |The occupation of the user performing the query based on their **title** attribute in Azure Active Directory.  |
 |Department or division    |The department or division of the user performing the query, based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory. |
@@ -49,21 +49,32 @@ The User details page shows how many people in your organization are active or e
 You can view the User details page by selecting **View Details** button at the bottom of the **Users** section of the Usage analytics main page. 
 
 The user details page contains the following two charts:
-- Active Users 
-- Engaged Users   
+
+- Active Users
+- Engaged Users
+
+The reports on this page can be filtered along one or more of the following dimensions:
+
+ Filter | Description |
+|:-----|:-----|
+|Date range |The date range for the analytics shown on the page: 7 days, 14 days, 31 days and last 12 months.  |
+|Search application |The search application where the user has performed the queries: SharePoint start page, SharePoint sites, Office.com, Bing.com (work tab), or all  three search applications.  |
 
 ### Active Users chart
-The Active users chart shows you the total number of active users by search application. 
+
+The Active users chart shows you the total number of active users by search application.
 
 :::image type="content" source="media/usage-reports/active-users-chart.png" alt-text="A graph chart showing active users by search application." lightbox="media/usage-reports/active-users-chart.png":::
 
 ### Engaged Users chart
+
 The Engaged users chart shows you the total number of engaged users by search application. This graph is only displayed for a 12-month view since the **engaged users** metric is only available on a monthly basis.
 
 :::image type="content" source="media/usage-reports/engaged-users-chart.png" alt-text="A graph chart showing engaged users by search application." lightbox="media/usage-reports/engaged-users-chart.png":::
 
 ## Download reports
-Each report and table have a download option that allows you to download the background data for the report that you see on the screen in an Excel format. Where the displayed report is limited to the top five to ten rows, the downloaded report will have up to 2000 top records.   
+
+Each report and table have a download option that allows you to download the background data for the report that you see on the screen in an Excel format. Where the displayed report is limited to the top five to ten rows, the downloaded report will have up to 2000 top records.
 
 Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 7, 14, or 31 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month.
 
