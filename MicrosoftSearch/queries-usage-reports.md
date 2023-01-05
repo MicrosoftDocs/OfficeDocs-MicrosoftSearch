@@ -114,7 +114,7 @@ Each report and table have a download option that allows you to download the bac
 
 Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 7, 14, or 31 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month. 
 
-### Special note for the Most popular search items download report 
+### Special note for the Most popular search items download report
 
 In the **Most popular search items** report, notice that in the user interface of the report you, a query can have up to to three top results for each popular search term. When you download the report and view it in Excel, a search term with more than one top result will display with a row for each result. The first three columns will pertain to the query (for example, (query text, count, and clicks), and will be the same. The remaining columns in the rows for the search item will pertain to the specific results, and will vary.
 

@@ -85,26 +85,6 @@ Each report and table have a download option that allows you to download the bac
 
 Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 7, 14, or 31 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month.
 
-### Special note for the Most popular search terms download report
-
-Notice that the report presented on the screen allows an expansion of up to three top results for each popular search term. In Excel, this will be represented as rows with some duplicated values, which means that you might see up to three copies of the first columns in the Excel report.
-
-:::image type="content" source="media/usage-reports/excel-report.png" alt-text="Excel report showing top queries" lightbox="media/usage-reports/excel-report.png":::
-
-Here's an overview of the columns in this report where it’s specified if the specific column value refers to the “query” or the “result”:
-
-Column | Applies to | Description |
-|:-----|:-----|:-----|
-|Query text |Query |The top search term performed |
-|Count |Query |Total queries for this search term |
-|Clicks |Query |Total queries that have one or more clicks for this search term |
-|URL |Result |URL of each of the top three search results. URL isn't available for bookmarks, external content, and other answer features. |
-|Display name |Result |Will currently be empty. For future use to show the file name and caption of the answer item. |
-|Type |Result |Result type, e.g., File, bookmark, acronym, etc.|
-|Impressions |Result |The number of times this particular result has been displayed for this query. |
-|Click through |Result |The number of times a result has been clicked for this query. |
-|Average position of result |Result |The average position a result has been displayed at for this query.|
-
 ## Prevent filtering by country, occupation, department, or division
 
 By default, users with global administrator, search administrator, and search editor roles can filter search data by country, occupation, or department/division. If you do not want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators will not be able to filter the **Connection analytics details** reports by these filters.  
