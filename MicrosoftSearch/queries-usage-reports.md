@@ -40,13 +40,13 @@ Use the **Filters** menu at the top of the **Usage Analytics** page to filter yo
 | Filter | Description |
 |:-----|:-----|
 |Date Range |The date range for the analytics shown on the page: Last 7 days, Last 14 days, Last 31 days and Last 12 months.  |
-|Search application |The search application where the user has performed the queries: SharePoint start page, Office, Bing, or all of those three search applications.  |
- 
+|Search application |The search application where the user has performed the queries: SharePoint start page, SharePoint sites, Office (Microsoft 365 app), Bing, or all four applications combined.  |
+
 ## Query Details page
 
 The Query details page shows the top search queries by people in your organization who use search regularly, along with queries that returned no results or were abandoned by the user without selecting any search results.
 
-You can view the Query details page by selecting **View Details** button at the bottom of the **Queries** section of the main usage analytics page. 
+You can view the Query details page by selecting **View Details** button at the bottom of the **Queries** section of the main usage analytics page.
 
 :::image type="content" source="media/usage-reports/query-details.png" alt-text="A dashboard page showing three graph charts." lightbox="media/usage-reports/query-details.png":::
 
@@ -61,7 +61,7 @@ In the **Filters** menu, use one or more of the following to filter the data in 
 | Filter | Description |
 |:-----|:-----|
 |Date range |The date range for the analytics shown on the page. Available options are 7 days, 14 days, 31 days,  and last 12 months.|
-|Search application  |The search application used to perform the queries. Available options are SharePoint start page, SharePoint sites, Office.com, Bing.com (work tab), or all three applications combined.  |
+|Search application  |The search application where the user has performed the queries: SharePoint start page, SharePoint sites, Office (Microsoft 365 app), Bing, or all four applications combined.  |
 |Top results clicked |Link to each of the top three results selected for this query.</br> **Note** Links are not available for bookmarks and other answer features.|
 |Country  |The country of the user performing query based on their **country** attribute in Azure Active Directory. |
 |Occupation    |The occupation of the user performing the query based on their **title** attribute in Azure Active Directory (AAD).  |

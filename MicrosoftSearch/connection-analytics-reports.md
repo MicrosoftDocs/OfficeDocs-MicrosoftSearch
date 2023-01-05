@@ -50,7 +50,7 @@ In the **Filters** menu, use one or more of the following to filter the data in 
 | Filter | Description |
 |:-----|:-----|
 |Date range |The date range for the analytics shown on the page. Available options are 7 days, 14 days, 31 days, and last 12 months.|
-|Search application  |The search application where the user has performed the queries: SharePoint start page, SharePoint sites, Office.com, Bing.com (work tab), or all of those 3 search applications.  |
+|Search application  |The search application where the user has performed the queries: SharePoint start page, SharePoint sites, Office (Microsoft 365 app), Bing, or all four applications combined. |
 |Country  |The country of the user performing query based on their **country** attribute in Azure Active Directory. |
 |Occupation    |The occupation of the user performing the query based on their **title** attribute in Azure Active Directory.  |
 |Department or division    |The department or division of the user performing the query, based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory. |

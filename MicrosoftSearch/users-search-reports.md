@@ -58,7 +58,7 @@ The reports on this page can be filtered along one or more of the following dime
  Filter | Description |
 |:-----|:-----|
 |Date range |The date range for the analytics shown on the page: 7 days, 14 days, 31 days and last 12 months.  |
-|Search application |The search application where the user has performed the queries: SharePoint start page, SharePoint sites, Office.com, Bing.com (work tab), or all  three search applications.  |
+|Search application |The search application where the user has performed the queries: SharePoint start page, SharePoint sites, Office (Microsoft 365 app), Bing, or all four applications combined.  |
 
 ### Active Users chart
 
