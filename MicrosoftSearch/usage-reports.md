@@ -23,11 +23,11 @@ recommendations: false
 
 Search usage reports enable you to gain more understanding of how people in your organization are using Microsoft Search. The insights generated from these reports will help you take actions that will make search a more useful and delightful experience for all your users.
 
-The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from the SharePoint Start Page, SharePoint Sites, Microsoft 365 app (formerly known as the Office app) at office.com, and Bing. You can see data from the last seven days, last 14 days, last 31 days, or monthly for the previous year.
+:::image type="content" source="media/usage-reports/usage-analytics.png" alt-text="A dashboard containing pie charts, graphs, and search analytics report data." lightbox="media/usage-reports/usage-analytics.png":::
+
+The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from the SharePoint Start Page, SharePoint Sites, Microsoft 365 app (formerly known as the Office app) at office.com, and Bing. You can see data from the last 7 days, last 14 days, last 31 days, or monthly for the previous year.
 
 You can filter reports by country, occupation, department, or division. To protect privacy, if any filters show data for five or less individuals, those results won't be included in the search usage reports. In addition, these filters can be toggled on or off for the entire organization on the Org settings page, in case your organization has specific privacy requirements.  
-
-:::image type="content" source="media/usage-reports/usage-analytics.png" alt-text="A dashboard containing pie charts, graphs, and search analytics report data." lightbox="media/usage-reports/usage-analytics.png":::
 
 ## Search Application Coverage
 
@@ -35,8 +35,8 @@ These are the search applications that are currently included in tenant level us
 
 | Search application | Description |
 |:-----|:-----|
-|Bing |The work tab in Microsoft Search in Bing is included.   |
-|Office |The Microsoft 365 App (formerly known as the Office app) at office.com are included.  |
+|Bing |The work tab in Microsoft Search in Bing.   |
+|Office |The Microsoft 365 App (formerly known as the Office app) at office.com.  |
 |SharePoint Sites |SharePoint Online, including both classic (enterprise/site/basic search center) and modern (hub, communication, and team) site searches. |
 |SharePoint Start Page |The site available when selecting SharePoint in the Microsoft 365 app launcher with the URL ending in /SharePoint.aspx. |
 
@@ -59,7 +59,7 @@ The Microsoft Search Usage Reports page provides you with search data through th
 You can view more details about the [Queries](queries-usage-reports.md), [Users](users-search-reports.md), and [Connection analytics](connection-analytics-reports.md) sections by selecting the links.
 
 > [!NOTE]
-> These search usage reports show collective search data based on search traffic from Bing (work vertical), Office (Microsoft 365 app).com, SharePoint sites, and the SharePoint start page. You can also view and analyze search usage reports for individual modern SharePoint sites through their respective site collection usage reports. For more information, see [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites).
+> These search usage reports show collective search data based on search traffic from Bing (work vertical), Office (Microsoft 365 app), SharePoint sites, and the SharePoint start page. You can also view and analyze search usage reports for individual modern SharePoint sites through their respective site collection usage reports. For more information, see [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites).
 
 ## Recent Search Activity Report
 
@@ -76,7 +76,7 @@ The data above the chart shows changes over the selected time period for the fol
 |Average result position |Represents the average position of clicked items in a search result list where the number one represents the top position (the lower the value, the better).|
 |Click-through rate |The percentage of queries where the user has clicked on one or more of the answers or search results (the higher the value, the better). |
 
-The Recent Search Activity chart shows trending activity over time for the query count and click-through query rate. For example, if the 7-day filter is selected, this will compare the current 7-day period data to the previous 7-day period data. In the case of downward trend, the arrow and the line are shown in red. In the case of upward trend, it's shown in green. Trend data isn't available for a 12 month view.
+The Recent Search Activity chart shows trending activity over time for the query count and click-through query rate. For example, if the 7-day filter is selected, this will compare the current 7-day period data to the previous 7-day period data. In the case of downward trend, the arrow and the line are shown in red. In the case of upward trend, it's shown in green. Trend data isn't available for a 12-month view.
 
 ## Filters
 
