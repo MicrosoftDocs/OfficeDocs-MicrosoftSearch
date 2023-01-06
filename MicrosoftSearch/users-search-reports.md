@@ -53,13 +53,6 @@ The user details page contains the following two charts:
 - Active Users
 - Engaged Users
 
-The reports on this page can be filtered along one or more of the following dimensions:
-
- Filter | Description |
-|:-----|:-----|
-|Date range |The date range for the analytics shown on the page: 7 days, 14 days, 31 days and last 12 months.  |
-|Search application |The search application where the user has performed the queries: SharePoint start page, SharePoint sites, Office (Microsoft 365 app), Bing, or all four applications combined.  |
-
 ### Active Users chart
 
 The Active users chart shows you the total number of active users by search application.

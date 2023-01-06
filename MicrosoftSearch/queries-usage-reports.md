@@ -24,14 +24,14 @@ In the [Microsoft Search Usage Report](usage-reports.md), the **Queries** sectio
 
 :::image type="content" source="media/usage-reports/queries-report.png" alt-text="A dashboard page containing four pie charts with query report data." lightbox="media/usage-reports/queries-report.png":::
 
-The query data is provided in four pie charts: 
+The query data is provided in four charts:
 
 - **Total queries by user action** – Compares the number of queries with no results with the number of queries where a user clicked on a result or performed no action (abandoned).  
 - **Total queries by country** – Compares search queries by users in different countries based on a user’s **country** Azure Active Directory attribute. 
 - **Total queries by occupation** – Compares the number of search queries by users in different occupations based on their **title** attribute in Azure Active Directory.
 - **Total queries by department or division** – Compares the number of search queries by users in different departments or divisions in your organization. This is based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory. 
 
-Each pie chart shows the top five values, and the remaining values are summarized in the **Others** category. You can click the **Download report** link to download the report as an Excel file and see more details. 
+Each chart shows the top five values, and the remaining values are summarized in the **Others** category. You can click the **Download report** link to download the report as an Excel file and see more details. 
 
 ## Filters
 
