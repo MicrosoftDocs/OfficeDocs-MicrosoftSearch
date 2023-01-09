@@ -47,9 +47,18 @@ If your organization's proxy servers or firewalls block communication to unknown
 >[!NOTE]
 >Proxy authentication is not supported. If your environment has a proxy that requires authentication, we recommend allowing the connector agent to bypass the proxy.
 
+### Check Execution Policy
+The execution policy has to be set to allow the execution of remote signed scripts. If any machine or group level policy is restricting this, the installation of GCA will fail. Run the following command to get the execution policy:
+
+```powershell
+Get-ExecutionPolicy -List
+```
+
+To know more and set the right execution policy, refer to [Execution Policy](/powershell/module/microsoft.powershell.core/about/about_execution_policies?).
+
 ## Create and configure an app for the agent  
 
-First, sign-in and note that the minimum required privilege on the account is search administrator. The agent will then ask you to provide authentication details. 
+First, sign-in and note that the minimum required privilege on the account is search administrator. The agent will then ask you to provide authentication details.
 Use the steps below to create an app and generate the required authentication details.
 
 ### Create an app
@@ -70,7 +79,8 @@ Use the steps below to create an app and generate the required authentication de
 
    | **Permission** | **When is the permission required** |
    | ------------- | -------------|
-   | [ExternalItem.ReadWrite.OwnedBy](/graph/permissions-reference#application-permissions-52) | Always |
+   | [ExternalItem.ReadWrite.OwnedBy](/graph/permissions-reference#application-permissions-52) or [ExternalItem.ReadWrite.All](/graph/permissions-reference#application-permissions-52) | Always |
+   | [ExternalConnection.ReadWrite.OwnedBy](/graph/permissions-reference#application-permissions-58) | Always |
    | [Directory.Read.All](/graph/permissions-reference#application-permissions-23) | Required for File share, MS SQL and Oracle SQL connectors |
 
 8. Select **Grant admin consent for [TenantName]** and confirm by selecting **Yes**.
