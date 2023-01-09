@@ -2,6 +2,14 @@
 
 
 
+## Week of January 02, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/3/2023 | [Manage result types](/MicrosoftSearch/manage-result-types) | modified |
+
+
 ## Week of December 19, 2022
 
 
