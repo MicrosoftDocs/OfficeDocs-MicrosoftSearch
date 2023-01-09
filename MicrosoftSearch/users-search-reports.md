@@ -46,7 +46,7 @@ The User details page shows how many people in your organization are active or e
 |Occupation    |The occupation of the user performing the query based on their **title** attribute in Azure Active Directory.  |
 |Department or division    |The department or division of the user performing the query, based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory. |
 
-You can view the User details page by selecting **View Details** button at the bottom of the **Users** section of the Usage analytics main page. 
+You can view the User details page by selecting the **User analytics** tab or selecting the **View user analytics** button at the bottom of the **Users** section of the Usage analytics main page.  
 
 The user details page contains the following two charts:
 

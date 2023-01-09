@@ -37,7 +37,7 @@ The **Queries and click-throughs over time** graph shows trends over the selecte
 
 You can click the **Download report** link to download the report as an Excel file and see more details.  
 
-You can view the **Connection Analytics details** page by selecting **View Details** button at the bottom of the Connection analytics section of the Usage analytics main page.  
+You can view the **Connection Analytics details** page by selecting the **Connection analytics tab** or selecting the **View connection analytics** button at the bottom of the Connection analytics section of the Usage analytics main page.  
 
 ## Connection analytics details page
 
