@@ -46,15 +46,15 @@ Use the **Filters** menu at the top of the **Usage Analytics** page to filter yo
 
 The Query details page shows the top search queries by people in your organization who use search regularly, along with queries that returned no results or were abandoned by the user without selecting any search results.
 
-You can view the Query details page by selecting **View Details** button at the bottom of the **Queries** section of the main usage analytics page.
+You can view the Query details page by selecting the **View Details** button at the bottom of the **Queries** section of the main usage analytics page.
 
 :::image type="content" source="media/usage-reports/query-details.png" alt-text="A dashboard page showing three graph charts." lightbox="media/usage-reports/query-details.png":::
 
-The three reports available to you on the query details page include: 
+The three reports available to you on the query details page include:
 
-- Most popular search terms 
+- Most popular search terms
 - Top-10 no-result queries
-- Top abandoned search terms 
+- Top abandoned search terms
 
 In the **Filters** menu, use one or more of the following to filter the data in the reports: 
 
