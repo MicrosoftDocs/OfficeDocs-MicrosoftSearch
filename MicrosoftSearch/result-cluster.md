@@ -33,7 +33,7 @@ Ensure that the connected content meets the following two criteria, to show up i
 
 ### Step 2: Check result type definition to adjust the user experience
 
-You control how the results appear in the result cluster by defining a [result type](/MicrosoftSearch/manage-result-types.md). If no result type is configured, a  system generated layout is used.
+You control how the results appear in the result cluster by defining a [result type](/microsoftsearch/manage-result-types). If no result type is configured, a  system generated layout is used.
 
 ### Step 3: Verify a result cluster appears on the All results page
 
