@@ -173,7 +173,6 @@ If there's an installation failure, check the installation logs by running: msie
 
 If signing in to configure the application fails and shows the error: "Sign-in failed, please select the sign-in button to try again," even after browser authentication succeeded, then open services.msc and check if GcaHostService is running. If it doesn't start, start it manually. In Task Manager, go to Services tab, check if GcaHostService is in the running state (below screenshot in Windows 11). If not, right click and start the service.
 
-[!div class="mx-imgBorder"]
 ![Screenshot of services in Task Manager.](media/onprem-agent/GcaHostService_GcaUpdateService.png)
 
 When the service fails to start with the error "The service didn't start due to a logon failure," check if the virtual account: "NT Service\GcaHostService" has permission to sign in as a service on the machine. Check [this link](/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) for instructions. If the option to add a user or group is greyed out in the Local Policies\User Rights Assignment, it means that the user trying to add this account doesn't have admin privileges on this machine, or there's a group policy overriding it. The group policy needs to be updated to allow the host service to log on as a service.
@@ -197,9 +196,9 @@ The agent is considered offline if it is not able to contact graph connector ser
 
     The response should contain the output “TcpTestSucceeded: True” as the screenshot below:
 
-    ![Screenshot of tnc.](media/onprem-agent/tnc_gcs.png)
+    ![Screenshot of tnc.](media/onprem-agent/tnc_gcs_1.png)
 
-    If it is false, verify that the domain is whitelisted in your proxy/firewall and requests are going through the proxy.
+    If it is false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
 
     * If you cannot run tnc because ICMP ping is blocked in your network, run the following command:
 
@@ -209,9 +208,9 @@ The agent is considered offline if it is not able to contact graph connector ser
 
     The output should contain  “StatusCode: 200”.
 
-    ![Screenshot of wget 200.](media/onprem-agent/wget_gcs.png)
+    ![Screenshot of wget 200.](media/onprem-agent/wget_gcs_1.png)
 
-    If it is not 200, verify that the domain is whitelisted in your proxy/firewall and requests are going through the proxy.
+    If it is not 200, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
 3. If the above steps have passed successfully and the agent is still offline, check the GCA logs for any network proxy issues.
     * GcaHostService logs can be found in below location (you might need to manually navigate to this path - copy paste in file explorer may not work):
         1. For Windows Server 2016 OS: C:\Users\GcaHostService\AppData\Local\Microsoft\GraphConnectorAgent\HostService\logs
@@ -240,9 +239,9 @@ Using the service bus namespace provided in the error details, follow the below 
 
    The response should contain the output “TcpTestSucceeded: True” as the below screenshot:
 
-   ![Screenshot of tnc 2.](media/onprem-agent/tnc_gcs.png)
+   ![Screenshot of tnc 2.](media/onprem-agent/tnc_gcs_namespace.png)
 
-   If it is false, verify that the domain is whitelisted in your proxy/firewall and requests are going through the proxy.
+   If it is false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
 2. If you cannot run tnc because ICMP Ping is blocked in your network, run the following command in powershell:
 
     ```powershell
@@ -251,9 +250,9 @@ Using the service bus namespace provided in the error details, follow the below 
 
    The output should contain “StatusCode: 200” as the below screenshot:
 
-   ![Screenshot of wget 2.](media/onprem-agent/wget_gcs.png)
+   ![Screenshot of wget 2.](media/onprem-agent/wget_gcs_namespace.png)
 
-   If it is false, verify that the domain is whitelisted in your proxy/firewall and requests are going through the proxy.
+   If it is false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
 3. If none of the above steps fix your issue, please contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the above-mentioned location.
 
 #### Update in progress
