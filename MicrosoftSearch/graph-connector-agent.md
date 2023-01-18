@@ -171,12 +171,103 @@ If there's an installation failure, check the installation logs by running: msie
 
 ### Registration failure
 
-If signing in to configure the application fails and shows the error: "Sign-in failed, please select the sign-in button to try again," even after browser authentication succeeded, then open services.msc and check if GcaHostService is running. If it doesn't start, start it manually.
+If signing in to configure the application fails and shows the error: "Sign-in failed, please select the sign-in button to try again," even after browser authentication succeeded, then open services.msc and check if GcaHostService is running. If it doesn't start, start it manually. In Task Manager, go to Services tab, check if GcaHostService is in the running state (below screenshot in Windows 11). If not, right click and start the service.
+
+![Screenshot of services in Task Manager.](media/onprem-agent/GcaHostService_GcaUpdateService.png)
 
 When the service fails to start with the error "The service didn't start due to a logon failure," check if the virtual account: "NT Service\GcaHostService" has permission to sign in as a service on the machine. Check [this link](/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) for instructions. If the option to add a user or group is greyed out in the Local Policies\User Rights Assignment, it means that the user trying to add this account doesn't have admin privileges on this machine, or there's a group policy overriding it. The group policy needs to be updated to allow the host service to log on as a service.
+
+### Post Registration Failure
+
+Post registration, some local settings may affect the connectivity of the agent.
+
+#### Agent is offline
+
+The agent is considered offline if it is not able to contact graph connector services. In such cases, please follow the below steps:
+
+1. Check if the agent is running - Sign-in to the machine where the agent is installed and check if it is running. In Task Manager, go to Services tab, check if GcaHostService is in the running state (below screenshot in Windows 11). If not, right click and start the service.
+![Screenshot of services in Task Manager.](media/onprem-agent/GcaHostService_GcaUpdateService.png)
+2. Check if domain gcs.office.com is reachable. Follow the below steps:
+    * From PowerShell, run the following command:
+
+    ```powershell
+    tnc gcs.office.com -Port 443
+    ```
+
+    The response should contain the output “TcpTestSucceeded: True” as the screenshot below:
+
+    ![Screenshot of tnc.](media/onprem-agent/tnc_gcs_1.png)
+
+    If it is false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
+
+    * If you cannot run tnc because ICMP ping is blocked in your network, run the following command:
+
+    ```powershell
+    wget https://gcs.office.com/v1.0/admin/AdminDataSetCrawl/healthcheck
+    ```
+
+    The output should contain  “StatusCode: 200”.
+
+    ![Screenshot of wget 200.](media/onprem-agent/wget_gcs_1.png)
+
+    If it is not 200, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
+3. If the above steps have passed successfully and the agent is still offline, check the GCA logs for any network proxy issues.
+    * GcaHostService logs can be found in below location (you might need to manually navigate to this path - copy paste in file explorer may not work):
+        1. For Windows Server 2016 OS: C:\Users\GcaHostService\AppData\Local\Microsoft\GraphConnectorAgent\HostService\logs
+        2. For all other supported Windows OS Version: C:\Windows\ServiceProfiles\GcaHostService\AppData\Local\Microsoft\GraphConnectorAgent\HostService\logs
+    * Sort the log files in the folder in reverse order of “Modified Time” and open the latest two files.
+    * Check for any error messages with following text: “No connection could be made because the target machine actively refused it.”
+        1. This indicates that there is an issue with the network settings that is preventing the GcaHostService virtual account from contacting "https://gcs.office.com" endpoint.
+        2. Please check with your network/proxy team to allow the virtual account (NT Service\GcaHostService), to send traffic to this domain.
+        3. You can verify that the issue is resolved if the log file no longer contains these errors.
+
+4. If none of the above steps fixes your issue, please contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the above-mentioned location.
+
+#### Agent is unreachable
+
+While setting up the connection if the agent is unreachable, you will see the below screen:
+
+![Screenshot of Agent unreachable](media/onprem-agent/AgentUnreachableError_AdminUX.png)
+
+Using the service bus namespace provided in the error details, follow the below steps to troubleshoot:
+
+1. From PowerShell, run the following command:
+
+    ```powershell
+    tnc <yournamespacename>.servicebus.windows.net -port 443
+    ```
+
+   The response should contain the output “TcpTestSucceeded: True” as the below screenshot:
+
+   ![Screenshot of tnc 2.](media/onprem-agent/tnc_gcs_namespace.png)
+
+   If it is false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
+2. If you cannot run tnc because ICMP Ping is blocked in your network, run the following command in powershell:
+
+    ```powershell
+    wget https://<yournamespacename>.servicebus.windows.net/
+    ```
+
+   The output should contain “StatusCode: 200” as the below screenshot:
+
+   ![Screenshot of wget 2.](media/onprem-agent/wget_gcs_namespace.png)
+
+   If it is false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
+3. If none of the above steps fix your issue, please contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the above-mentioned location.
+
+#### Update in progress
+
+This error appears when there is an update already in progress and the error should go away after a maximum of 30 minutes.
+
+![Screenshot of update in progress.](media/onprem-agent/AgentUpgradingError_AdminUX.png)
+
+If the error persists after 30 minutes, follow the steps below:
+
+1. Check if the agent is running - Sign-in to the machine where the agent is installed and check if it is running. In Task Manager, go to Services tab, check if GcaHostService is in the running state (below screenshot in Windows 11). If not, right click and start the service.
+![Screenshot of services in Task Manager 2.](media/onprem-agent/GcaHostService_GcaUpdateService.png)
+2. If the issue is still seen, contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files. Manually traverse to the location below to access the logs and share the same with the team.
+C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\GraphConnectorAgent\AgentUpdateApp\logs
 
 ### Connection failure
 
 If the 'Test connection' action fails while creating a connection and shows the error: 'Please check username/password and the data source path', even when the provided username and password are correct, then ensure that the user account has interactive sign-in rights to the machine where the connector agent is installed. You can review the documentation about [logon policy management](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check sign in rights. Also, ensure that the data source and the agent machine are on the same network.
-
-If the following failure message appears when creating a connection: "1011: The Graph connector agent isn't reachable or offline.", sign in to the machine where the agent is installed and check if it's running. If the agent isn't running, start the agent application. If the connection continues to fail, verify that the certificate or client secret provided to the agent during registration hasn't expired and has required permissions.
