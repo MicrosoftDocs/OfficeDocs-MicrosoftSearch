@@ -8,6 +8,7 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 1/18/2023 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
+| 1/18/2023 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
 
 
 ## Week of January 09, 2023
