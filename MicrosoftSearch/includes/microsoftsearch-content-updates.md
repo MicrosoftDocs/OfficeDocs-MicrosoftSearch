@@ -2,6 +2,14 @@
 
 
 
+## Week of January 16, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/18/2023 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
+
+
 ## Week of January 09, 2023
 
 
@@ -28,14 +36,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 12/21/2022 | [Manage result types](/MicrosoftSearch/manage-result-types) | modified |
-
-
-## Week of December 12, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 12/12/2022 | [Manage Acronym answers in Microsoft Search](https://learn.microsoft.com/en-us/MicrosoftSearch/manage-acronyms) | modified |
-| 12/14/2022 | [Enterprise websites Microsoft Graph connector](/MicrosoftSearch/enterprise-web-connector) | modified |
-| 12/14/2022 | [File share Microsoft Graph connector](/MicrosoftSearch/fileshare-connector) | modified |
-| 12/15/2022 | [Use Windows Search to find work or school results](/MicrosoftSearch/use-windows-search-find-work-school-results) | modified |
