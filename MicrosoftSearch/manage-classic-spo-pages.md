@@ -40,7 +40,7 @@ If your site meets the criteria listed above, but you do not want it to switch t
 
 You can use this command at any time, before or after the switch happens, so it is easy to go back to the search experience you had previously.
 
-To run the commands below, you will use PowerShell with SharePoint PnP PowerShell extensions. You can install and learn more about how to get started [here](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps). You will sign in to your site or site collection using this command:
+To run the commands below, you will use PowerShell with SharePoint PnP PowerShell extensions. You can install and learn more about how to get started [here](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets). You will sign in to your site or site collection using this command:
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
