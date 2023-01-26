@@ -12,6 +12,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Using Microsoft Search on classic SharePoint pages"
+ms.date: 12/14/2020
 ---
 
 # Classic pages and Microsoft Search

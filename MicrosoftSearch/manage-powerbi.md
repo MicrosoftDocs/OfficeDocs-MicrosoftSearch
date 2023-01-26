@@ -13,7 +13,9 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: "Manage how Power BI reports and data appear in search results"
+ms.date: 01/04/2021
 ---
+
 # Manage Power BI answers
 
 To make it easier for your users to find the data and analytics they need to make informed decisions, Microsoft Search has added support for Power BI dashboards and reports. Here are a few of the benefits of Power BI search:

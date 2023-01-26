@@ -14,6 +14,7 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Set up the Azure DevOps Wiki Microsoft Graph connector for Microsoft Search" 
+ms.date: 06/03/2022
 ---
 
 # Azure DevOps Wiki Microsoft Graph connector (preview)

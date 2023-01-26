@@ -14,6 +14,7 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: "Get relevant search suggestions and find work results faster by adding a Microsoft Search search box to your intranet site or page."
+ms.date: 01/08/2019
 ---
 
 # Add a search box to your intranet site

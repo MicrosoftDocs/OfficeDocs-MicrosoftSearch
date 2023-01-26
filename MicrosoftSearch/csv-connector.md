@@ -14,6 +14,7 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Set up the Microsoft Search CSV connector for SharePoint or Azure Data Lake Storage sources." 
+ms.date: 03/08/2022
 ---
 
 # CSV connector
