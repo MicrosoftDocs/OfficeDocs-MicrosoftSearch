@@ -12,6 +12,7 @@ search.appverid:
   - MET150
   - MOE150
 description: "Set up Microsoft Search for the first time."
+ms.date: 04/23/2019
 ---
 
 # Set up Microsoft Search

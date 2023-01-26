@@ -13,7 +13,9 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: "Renaming Microsoft Search in the admin navigation to Search & intelligence"
+ms.date: 08/21/2020
 ---
+
 # Search & intelligence
 
 Microsoft Search administration is currently found in the  [Microsoft 365 admin center](https://admin.microsoft.com) under **Settings** > **[Microsoft Search](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).** We are renaming the navigation to **[Search & intelligence](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).**

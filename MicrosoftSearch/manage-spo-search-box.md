@@ -12,6 +12,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "How to customize the search box experience on SharePoint sites"
+ms.date: 12/14/2020
 ---
 
 # Search box settings on SharePoint sites
