@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Monitor your connection state and index quota utilization."
+ms.date: 10/08/2019
 ---
 
 # Monitor your connections

@@ -12,6 +12,7 @@ search.appverid:
   - MET150
   - MOE150
 description: "An overview of how administrators can ensure access to sites and files are properly restricted within their organization."
+ms.date: 08/05/2021
 ---
 
 # Manage access to files and sites
