@@ -12,7 +12,9 @@ search.appverid:
 - MET150
 - MOE150
 description: "The floor plans feature in Microsoft Search helps users find people, offices, and other amenities within a building."
+ms.date: 09/10/2019
 ---
+
 # Manage floor plans
 
 > [!IMPORTANT]

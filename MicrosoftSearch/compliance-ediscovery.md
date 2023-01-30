@@ -15,6 +15,7 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Microsoft Graph connectors overview for eDiscovery" 
+ms.date: 07/18/2022
 ---
 
 # Microsoft Graph connectors overview for eDiscovery (Preview)
