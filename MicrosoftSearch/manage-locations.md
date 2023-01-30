@@ -13,6 +13,7 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: "Over time, you may need to update a location's status and content to keep it relevant."
+ms.date: 01/08/2019
 ---
 
 # Manage locations

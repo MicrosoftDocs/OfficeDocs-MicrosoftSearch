@@ -14,6 +14,7 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Result layout JSON for Jira connector for Microsoft Search" 
+ms.date: 05/28/2022
 ---
 
 # Result layout for Jira Graph connector
