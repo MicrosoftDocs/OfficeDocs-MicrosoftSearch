@@ -12,7 +12,9 @@ search.appverid:
 - MET150
 - MOE150
 description: "Protect your company's data and end users while providing information to authorized users with Microsoft Search in Bing"
+ms.date: 12/10/2019
 ---
+
 # Security and Privacy for Microsoft Search in Bing
 
 With enhanced privacy and security measures, Microsoft Search in Bing helps protect your users and workplace data.

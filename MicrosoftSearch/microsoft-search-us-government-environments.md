@@ -12,6 +12,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Learn about Microsoft Search feature availability for US government cloud customers"
+ms.date: 08/17/2021
 ---
 
 # Microsoft Search for US government environments
