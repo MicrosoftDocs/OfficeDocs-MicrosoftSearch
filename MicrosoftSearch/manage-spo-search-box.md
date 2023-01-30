@@ -12,6 +12,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "How to customize the search box experience on SharePoint sites"
+ms.date: 12/14/2020
 ---
 
 # Search box settings on SharePoint sites
@@ -23,7 +24,7 @@ For other customization options, see [Changing the Microsoft Search results page
 > [!NOTE]
 > The suite navigation bar search box is not available for all customers at this time, but these options can still be set now and they will take effect when it becomes available.
 
-For the tasks listed below, you will use PowerShell with SharePoint PnP PowerShell extensions. You can install and learn more about how to get started [here](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps). You will sign into your site or site collection using this command:
+For the tasks listed below, you will use PowerShell with SharePoint PnP PowerShell extensions. You can install and learn more about how to get started [here](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets). You will sign into your site or site collection using this command:
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin

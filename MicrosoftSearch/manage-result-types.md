@@ -12,6 +12,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Manage result types on the search results page"
+ms.date: 06/14/2021
 ---
 
 # Manage result types
