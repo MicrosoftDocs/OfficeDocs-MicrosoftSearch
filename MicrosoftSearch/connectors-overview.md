@@ -127,6 +127,6 @@ After custom data is indexed, developers can [query this data](/graph/search-con
 
 * When you **publish** a Microsoft Graph connector, it can take a few minutes for the connection to be created. During that time, the connection shows its status as 'Publishing'.
 
-* There's a connection limit. Each tenant can create up to 10 connections.
+* There's a connection limit. Each tenant can create up to 30 connections. If you need more connections reach out to us by filling this [form](https://aka.ms/GraphConnectorsHigherCapacity).
 
 * There are limited edit capabilities supported after publishing a connection. If you need to change any details other than ones enabled, you must delete and recreate the connection.
