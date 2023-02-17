@@ -29,7 +29,7 @@ Using the recommended configuration of the machine described below, the connecto
 Recommended configuration:
 
 * Windows 10, Windows Server 2016 R2 and above
-* [.Net Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
+* [.NET Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
 * [.NET Core Desktop Runtime 3.1 (x64)](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * 8 cores, 3 GHz
 * 16 GB RAM, 2 GB Disk Space
@@ -243,7 +243,7 @@ Using the service bus namespace provided in the error details, follow the below 
    ![Screenshot of tnc 2.](media/onprem-agent/tnc_gcs_namespace.png)
 
    If it is false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
-2. If you cannot run tnc because ICMP Ping is blocked in your network, run the following command in powershell:
+2. If you cannot run tnc because ICMP Ping is blocked in your network, run the following command in PowerShell:
 
     ```powershell
     wget https://<yournamespacename>.servicebus.windows.net/
