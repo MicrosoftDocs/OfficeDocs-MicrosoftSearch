@@ -222,7 +222,7 @@ The agent is considered offline if it is not able to contact graph connector ser
         2. Please check with your network/proxy team to allow the virtual account (NT Service\GcaHostService), to send traffic to this domain.
         3. You can verify that the issue is resolved if the log file no longer contains these errors.
 
-4. If none of the above steps fixes your issue, please contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the above-mentioned location.
+4. If none of the above steps fix your issue, please contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the above-mentioned location.
 
 #### Agent is unreachable
 
