@@ -21,7 +21,7 @@ Using on-premises connectors requires installing *Microsoft Graph connector agen
 
 ## Installation
 
-Download the latest version of the Microsoft Graph connector agent from [https://aka.ms/GCAdownload](https://aka.ms/gcadownload) and install the software by using the installation configuration assistant. Release notes of the connector agent software are available [here](./graph-connector-agent-releases.md)
+[Download](https://aka.ms/gca) the latest version of the Microsoft Graph connector agent and install the software by using the installation configuration assistant. Release notes of the connector agent software are available [here](./graph-connector-agent-releases.md)
 
 Using the recommended configuration of the machine described below, the connector agent instance can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
 
