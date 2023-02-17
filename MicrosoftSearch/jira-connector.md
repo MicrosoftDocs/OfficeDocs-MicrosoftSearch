@@ -14,6 +14,7 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Set up the Atlassian Jira Cloud Graph connector for Microsoft Search" 
+ms.date: 07/22/2021
 ---
 
 # Atlassian Jira Cloud Microsoft Graph connector

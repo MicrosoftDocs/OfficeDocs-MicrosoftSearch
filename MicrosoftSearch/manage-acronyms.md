@@ -12,7 +12,9 @@ search.appverid:
 - MET150
 - MOE150
 description: "Create and update Acronyms answers in Microsoft Search"
+ms.date: 10/02/2019
 ---
+
 # Manage Acronyms answers in Microsoft Search
 
 Users often run into unfamiliar acronyms and abbreviations used by their organization or team. Terms specific to organizations or teams might be new to people who move from one team to another, work with internal partner teams, or are new to the organization.

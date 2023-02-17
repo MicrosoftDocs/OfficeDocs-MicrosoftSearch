@@ -13,7 +13,8 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Overview of the Microsoft graph connector agent to index on-premises content using Microsoft built connectors for File-shares, SQL, Confluence etc." 
---- 
+ms.date: 08/02/2021
+---
 
 # Microsoft Graph connector agent
 

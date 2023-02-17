@@ -14,6 +14,7 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: "Use Windows Search to find work or school files, sites, people, and more right from your desktop."
+ms.date: 08/12/2022
 ---
 
 # Use Windows Search to find work or school results

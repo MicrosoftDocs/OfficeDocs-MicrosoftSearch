@@ -15,8 +15,8 @@ search.appverid:
 - MOE150 
 
 description: "Steps on how to map non-AAD identities" 
---- 
-
+ms.date: 11/05/2020
+---
 
 # Map your non-Azure AD Identities  
 
