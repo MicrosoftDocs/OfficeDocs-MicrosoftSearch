@@ -22,14 +22,14 @@ Using on-premises connectors requires installing *Microsoft Graph connector agen
 
 ## Installation
 
-Download the latest version of the Microsoft Graph connector agent from [https://aka.ms/GCAdownload](https://aka.ms/gcadownload) and install the software by using the installation configuration assistant. Release notes of the connector agent software are available [here](./graph-connector-agent-releases.md)
+[Download](https://aka.ms/gca) the latest version of the Microsoft Graph connector agent and install the software by using the installation configuration assistant. Release notes of the connector agent software are available [here](./graph-connector-agent-releases.md)
 
 Using the recommended configuration of the machine described below, the connector agent instance can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
 
 Recommended configuration:
 
 * Windows 10, Windows Server 2016 R2 and above
-* [.Net Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
+* [.NET Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
 * [.NET Core Desktop Runtime 3.1 (x64)](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * 8 cores, 3 GHz
 * 16 GB RAM, 2 GB Disk Space
@@ -222,7 +222,7 @@ The agent is considered offline if it is not able to contact graph connector ser
         2. Please check with your network/proxy team to allow the virtual account (NT Service\GcaHostService), to send traffic to this domain.
         3. You can verify that the issue is resolved if the log file no longer contains these errors.
 
-4. If none of the above steps fixes your issue, please contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the above-mentioned location.
+4. If none of the above steps fix your issue, please contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the above-mentioned location.
 
 #### Agent is unreachable
 
@@ -243,7 +243,7 @@ Using the service bus namespace provided in the error details, follow the below 
    ![Screenshot of tnc 2.](media/onprem-agent/tnc_gcs_namespace.png)
 
    If it is false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
-2. If you cannot run tnc because ICMP Ping is blocked in your network, run the following command in powershell:
+2. If you cannot run tnc because ICMP Ping is blocked in your network, run the following command in PowerShell:
 
     ```powershell
     wget https://<yournamespacename>.servicebus.windows.net/
