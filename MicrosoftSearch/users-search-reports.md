@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: mssearch
 audience: Admin
 ms.audience: Admin
-ms.date: 
+ms.date: 07/07/2022 
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg

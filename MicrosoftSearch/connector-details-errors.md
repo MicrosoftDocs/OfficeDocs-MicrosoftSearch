@@ -1,4 +1,5 @@
 ---
+ms.date: 10/08/2019
 title: "Microsoft Graph connectors view details and errors"
 ms.author: monaray
 author: monaray97
@@ -80,3 +81,4 @@ Error code | Error message | Solution
 2009 | Non-Azure AD group indexing is temporarily paused due to a large number of requests. Indexing will resume when the system finishes processing these requests. Check back later. | 
 2010 | This connection is no longer valid because of an update made by Microsoft. | Delete the connection and create a new one.
 5000 | Something went wrong. If this issue continues, contact support. |
+
