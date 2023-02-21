@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: mssearch
 audience: Admin
 ms.audience: Admin
-ms.date: 
+ms.date: 07/07/2022 
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
@@ -104,3 +104,4 @@ To configure this setting:
 [Microsoft Search Usage Report - Queries](queries-usage-reports.md)</br>
 [Microsoft Search Usage Report - Users](users-search-reports.md)</br>
 [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites)
+

@@ -1,4 +1,5 @@
 ---
+ms.date: 09/06/2021
 title: "Confluence Cloud Microsoft Graph connector"
 ms.author: kam1
 author: TheKarthikeyan
@@ -137,3 +138,4 @@ The Confluence Cloud connector has the following known limitations in its latest
 
 * Confluence Cloud connector does not index attachment files and comments.
 * Indexing Server and Data Center deployments will be released as a separate connector.
+

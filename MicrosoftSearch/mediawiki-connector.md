@@ -1,4 +1,5 @@
 ---
+ms.date: 10/08/2019
 title: "MediaWiki Microsoft Graph connector"
 ms.author: mecampos
 author: mecampos

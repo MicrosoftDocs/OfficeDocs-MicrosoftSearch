@@ -1,4 +1,5 @@
 ---
+ms.date: 10/21/2019
 title: "Manage search result layouts"
 ms.author: jypal
 author: jypal6
@@ -213,3 +214,4 @@ Before you get started, there are a few things that you should do and a few thin
 [Adaptive Cards Template language](/adaptive-cards/templating/language)
 
 [Adaptive card schema](https://adaptivecards.io/explorer/)
+

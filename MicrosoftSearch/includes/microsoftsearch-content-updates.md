@@ -37,3 +37,4 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 1/3/2023 | [Manage result types](/MicrosoftSearch/manage-result-types) | modified |
+
