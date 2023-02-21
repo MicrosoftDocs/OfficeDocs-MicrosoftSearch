@@ -1,4 +1,5 @@
 ---
+ms.date: 10/08/2019
 title: "Azure Data Lake Microsoft Graph connector for Microsoft Search"
 ms.author: mecampos
 author: mecampos
@@ -112,3 +113,4 @@ Also, the size of the files needs to be 4 MB or less for it to be crawled. File 
 * PDF
 
 Binary files like images (.jpg, .bmp, etc.) are not supported. For example, if a .docx file contains only images, it might be skipped because it didn't return any content.
+

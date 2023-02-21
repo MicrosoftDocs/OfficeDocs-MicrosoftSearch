@@ -1,4 +1,5 @@
 ---
+ms.date: 02/02/2022
 title: "Confluence On-premises Microsoft Graph connector (Preview)"
 ms.author: kam1
 author: TheKarthikeyan
@@ -183,3 +184,4 @@ The common errors that can be seen while configuring the connector and their pos
 The confluence On-premises connector has the following known limitations in its latest release:
 
 * Confluence On-premises connector doesn't index blogs, attachment files and comments.
+

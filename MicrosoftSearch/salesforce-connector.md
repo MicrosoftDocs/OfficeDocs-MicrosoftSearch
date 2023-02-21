@@ -1,4 +1,5 @@
 ---
+ms.date: 11/03/2020
 title: "Salesforce Microsoft Graph connector"
 ms.author: mecampos
 author: mecampos
@@ -197,3 +198,4 @@ Follow the general [setup instructions](./configure-connector.md).
     - LastModifiedByUrl
     - LastModifiedDate
     - ObjectName
+
