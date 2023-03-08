@@ -17,12 +17,11 @@ description: "Set up the Azure DevOps Wiki Microsoft Graph connector for Microso
 ms.date: 06/03/2022
 ---
 
-# Azure DevOps Wiki Microsoft Graph connector (preview)
+# Azure DevOps Wiki Microsoft Graph connector
 
 The Azure DevOps Wiki Graph connector allows your organization to index wikis in its instance of the Azure DevOps service. After you configure the connector, end users can search for project wikis and code wikis from Azure DevOps in Microsoft Search.
 
 > [!NOTE]
-> * The Azure DevOps Wiki Graph connector is in preview. If you wish to get early access to try it, sign up using [this form](https://forms.office.com/r/JniPmK5bzm).
 > * Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
 
 This article is for anyone who configures, runs, and monitors an Azure DevOps Wiki Graph connector. It supplements the general setup process, and shows instructions that apply only for the Azure DevOps Wiki Graph connector.
@@ -102,7 +101,7 @@ If you choose to index individual projects, only wikis in the selected projects 
 
 ## Step 4: Manage search permissions
 
-The Azure DevOps connector supports search permissions visible to **Only people with access to this data source** or **Everyone**. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them based on permissions to users or groups at the Organization, Project, or Wiki level in Azure DevOps. If you choose **Everyone**, indexed data will appear in the search results for all users.
+The Azure DevOps connector supports search permissions visible to **Everyone**. With the **Everyone** option, indexed data will appear in the search results for all users.
 
 ## Step 5: Assign property labels
 
