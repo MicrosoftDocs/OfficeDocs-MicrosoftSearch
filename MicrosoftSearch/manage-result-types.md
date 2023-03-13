@@ -43,7 +43,7 @@ The result type management experience is wizard driven, you're guided through st
 
 ### Manage site-level result types
 
-1. In the Sharepoint site where you want to manage result types, open the settings panel by clicking the gear.
+1. In the SharePoint site where you want to manage result types, open the settings panel by clicking the gear.
 2. Select **Site information**, and then select **View all site settings**.  
 3. Look for the Microsoft Search section, and then select **Configure search settings**.
 4. In the navigation pane, go to Custom experience, and select the **Result type**.
