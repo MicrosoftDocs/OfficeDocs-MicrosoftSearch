@@ -52,7 +52,7 @@ Five states show up in the **State** column against each connection:
 
 The available index quota and consumption is displayed on the connectors landing page.
 
-:::image type="content" alt-text="Index quota utilization bar." source="media/quota_utilization.png" lightbox="media/quota_utilization.png":::
+:::image type="content" alt-text="Index quota utilization bar." source="media/quota-exceeded.png" lightbox="media/quota-exceeded.png":::
 
 The quota utilization bar indicates various states based on consumption of quota by your organization:
 
@@ -61,8 +61,7 @@ State | Quota utilization levels
 Normal | 0&ndash;79%
 High | 80&ndash;89%
 Critical | 90%&ndash;99%
-Full | 100%
-Limited Exceeded | 100%
+Quota Exceeded | >=100%
 
 The number of items indexed is also displayed with each connection. The number of items indexed by each connection contributes to the total quota available for your organization.
 
