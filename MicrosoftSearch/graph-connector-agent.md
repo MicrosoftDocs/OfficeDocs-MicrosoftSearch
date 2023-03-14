@@ -41,9 +41,10 @@ If your organization's proxy servers or firewalls block communication to unknown
 | ------------- | -------------|
 | 1. `*.servicebus.windows.net` | 1. `*.servicebus.usgovcloudapi.net`
 | 2. `*.events.data.microsoft.com` | 2. `*.events.data.microsoft.com`
-| 3. `https://login.microsoftonline.com` | 3. `https://login.microsoftonline.com`
-| 4. `https://gcs.office.com/` | 4. `https://gcsgcc.office.com/`
-| 5. `https://graph.microsoft.com/` | 5. `https://graph.microsoft.com/`
+| 3. `*.office.com` | 3. `*.office.com`
+| 4. `https://login.microsoftonline.com` | 4. `https://login.microsoftonline.com`
+| 5. `https://gcs.office.com/` | 5. `https://gcsgcc.office.com/`
+| 6. `https://graph.microsoft.com/` | 6. `https://graph.microsoft.com/`
 
 >[!NOTE]
 >Proxy authentication is not supported. If your environment has a proxy that requires authentication, we recommend allowing the connector agent to bypass the proxy.
@@ -56,6 +57,35 @@ Get-ExecutionPolicy -List
 ```
 
 To know more and set the right execution policy, refer to [Execution Policy](/powershell/module/microsoft.powershell.core/about/about_execution_policies?).
+
+## Upgrade
+
+Graph Connector Agent can be upgraded in two ways:
+
+1. Downloading and installing Graph Connector Agent manually from the link provided in the installation section.
+
+2. Clicking on the "Upgrade" button available in the connection pane as shown in the image below:
+   ![Sample snapshot of how to upgrade GCA with one-click from the connection pane.](media/gca-releases/one-click-upgrade.png)
+
+The above upgrade button is not available for agents upgrading from 1.x version to 2.x version. Please follow the below steps if the agent is upgrading from 1.x to 2.x version:
+
+1. Download the installer from the link provided in the installation section.
+
+2. The installer will ask you to install .NET 7 Desktop runtime, if not already installed.
+
+3. Allow communication to the endpoint *.office.com
+
+4. Post installation, GCA configuration app will restart. If GCA is not registered, sign in and proceed with the registration.
+
+5. If GCA is already registered, the GCA configuration app will show the following success message:
+   ![Sample snapshot of Health check success on GCA sign-in page.](media/onprem-agent/Health_check_sign_in.jpg)
+
+6. If you observe any errors, follow the suggested mitigation steps in the error message and close & re-open the GCA configuration app.
+
+7. If the error message says, ""Cannot determine the health of the agent. If the error persists, contact support.", restart GcaHostService(steps mentioned in the troubleshooting section), and open the GCA configuration app again.
+
+8. You can run the checks any time by closing and opening the GCA Config app or by using the "Health Check" button next to the "Edit" button in the registration details screen.
+   ![Sample snapshot of Health check success on GCA sign-in page.](media/onprem-agent/Health_check_Registration.jpg)
 
 ## Create and configure an app for the agent  
 
