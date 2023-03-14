@@ -1,4 +1,5 @@
 ---
+ms.date: 10/08/2019
 title: "Enterprise websites Microsoft Graph connector"
 ms.author: mecampos
 author: mecampos
@@ -251,3 +252,4 @@ When reading the website's content, the crawl may encounter some source errors, 
 
 * Errors 6001-6013 occur when the data source isn't reachable due to a network issue or when the data source itself is deleted, moved, or renamed. Check if the data source details provided are still valid.
 * Errors 6021-6024 occur when the data source contains non-textual content on the page or when the page isn't an HTML. Check the data source and add this page in exclusion list or ignore the error.
+

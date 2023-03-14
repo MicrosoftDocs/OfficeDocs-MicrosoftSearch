@@ -1,4 +1,5 @@
 ---
+ms.date: 11/02/2020
 title: "Microsoft Graph connectors license requirements and pricing"
 ms.author: mecampos
 author: mecampos
@@ -56,3 +57,4 @@ For example, if your organization has 100 Microsoft 365 E5 licenses, then your o
 > Currently, Microsoft Graph connectors only support up to 50 million items of total index quota, which includes any built-in quota bundled into Microsoft 365 or Office 365 E5 licenses. The platform supports higher limits in the future. If you have any questions, contact Microsoft support or your Microsoft account manager.
 >
 > Preview connectors do not count against quota; after a connector becomes generally available, it starts to count on the total index quota.
+
