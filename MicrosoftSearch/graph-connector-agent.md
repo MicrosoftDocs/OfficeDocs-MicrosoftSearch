@@ -85,7 +85,7 @@ The above upgrade button is not available for agents upgrading from 1.x version 
 7. If the error message says, ""Cannot determine the health of the agent. If the error persists, contact support.", restart GcaHostService(steps mentioned in the troubleshooting section), and open the GCA configuration app again.
 
 8. You can run the checks any time by closing and opening the GCA Config app or by using the "Health Check" button next to the "Edit" button in the registration details screen.
-   :::image type="content" source="media/onprem-agent/health-check-registration.jpg" alt-text="Sample snapshot of Health check success on GCA registration page":::
+   :::image type="content" source="media/onprem-agent/health-check-registration.jpg" alt-text="Sample snapshot of Health check success on GCA registration page.":::
 
 ## Create and configure an app for the agent  
 
