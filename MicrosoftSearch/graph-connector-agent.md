@@ -73,7 +73,7 @@ The above upgrade button is not available for agents upgrading from 1.x version 
 
 2. The installer will ask you to install .NET 7 Desktop runtime, if not already installed.
 
-3. Allow communication to the endpoint *.office.com
+3. Allow communication to the endpoint *.office.com.
 
 4. Post installation, GCA configuration app will restart. If GCA is not registered, sign in and proceed with the registration.
 
@@ -85,7 +85,7 @@ The above upgrade button is not available for agents upgrading from 1.x version 
 7. If the error message says, ""Cannot determine the health of the agent. If the error persists, contact support.", restart GcaHostService(steps mentioned in the troubleshooting section), and open the GCA configuration app again.
 
 8. You can run the checks any time by closing and opening the GCA Config app or by using the "Health Check" button next to the "Edit" button in the registration details screen.
-   ![Sample snapshot of Health check success on GCA sign-in page.](media/onprem-agent/Health_check_Registration.jpg)
+   ![Sample snapshot of Health check success on GCA registration page.](media/onprem-agent/Health_check_Registration.jpg)
 
 ## Create and configure an app for the agent  
 
