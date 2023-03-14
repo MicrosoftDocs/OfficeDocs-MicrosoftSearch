@@ -1,4 +1,5 @@
 ---
+ms.date: 11/12/2020
 title: "File share Microsoft Graph connector"
 ms.author: mecampos
 author: mecampos
@@ -137,3 +138,4 @@ instructions.-->
 
 <!---## Limitations-->
 <!---Insert limitations for this data source-->
+

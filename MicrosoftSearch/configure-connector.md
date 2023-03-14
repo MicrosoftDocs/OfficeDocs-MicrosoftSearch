@@ -1,4 +1,5 @@
 ---
+ms.date: 10/08/2019
 title: "Set up Microsoft Graph connectors in the Microsoft 365 admin center"
 ms.author: mecampos
 author: mecampos
@@ -211,3 +212,4 @@ Read the connector-specific information for your data source.
 To learn about limitations that apply to all data sources, see the [Overview of Microsoft Graph connectors](connectors-overview.md) article.
 
 See the connector-specific information for your data source to find out if other limitations apply to that particular Microsoft Graph connector.
+

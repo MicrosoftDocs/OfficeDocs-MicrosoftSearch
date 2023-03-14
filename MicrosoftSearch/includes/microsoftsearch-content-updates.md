@@ -2,38 +2,10 @@
 
 
 
-## Week of January 30, 2023
+## Week of March 06, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 1/30/2023 | [Introducing Search & Intelligence](/MicrosoftSearch/search-intelligence-rename) | modified |
-
-
-## Week of January 16, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/18/2023 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
-| 1/18/2023 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
-
-
-## Week of January 09, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/9/2023 | [Microsoft Search Usage Report – Connection analytics](/MicrosoftSearch/connection-analytics-reports) | modified |
-| 1/9/2023 | [Microsoft Search Usage Report – Queries ](/MicrosoftSearch/queries-usage-reports) | modified |
-| 1/9/2023 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
-| 1/9/2023 | [Microsoft Search Usage Report – Users](/MicrosoftSearch/users-search-reports) | modified |
-| 1/12/2023 | [Connectors result cluster](/MicrosoftSearch/result-cluster) | modified |
-
-
-## Week of January 02, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/3/2023 | [Manage result types](/MicrosoftSearch/manage-result-types) | modified |
+| 3/8/2023 | [Result Layout for Confluence cloud Graph connector](/MicrosoftSearch/confluence-cloud-connector-result-layout) | added |
+| 3/8/2023 | [Result Layout for Jira Graph connector](/MicrosoftSearch/jira-connector-result-layout) | modified |
