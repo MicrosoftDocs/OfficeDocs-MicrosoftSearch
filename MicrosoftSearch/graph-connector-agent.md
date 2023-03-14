@@ -65,7 +65,7 @@ Graph Connector Agent can be upgraded in two ways:
 1. Downloading and installing Graph Connector Agent manually from the link provided in the installation section.
 
 2. Clicking on the "Upgrade" button available in the connection pane as shown in the image below:
-   :::image type="content" source="media/gca-releases/one-click-upgrade.png" alt-text="Sample snapshot of how to upgrade GCA with one-click from the connection pane":::
+   :::image type="content" source="media/gca-releases/one-click-upgrade.png" alt-text="Sample snapshot of how to upgrade GCA with one-click from the connection pane.":::
    
 The above upgrade button is not available for agents upgrading from 1.x version to 2.x version. Please follow the below steps if the agent is upgrading from 1.x to 2.x version:
 
@@ -78,7 +78,7 @@ The above upgrade button is not available for agents upgrading from 1.x version 
 4. Post installation, GCA configuration app will restart. If GCA is not registered, sign in and proceed with the registration.
 
 5. If GCA is already registered, the GCA configuration app will show the following success message:
-   :::image type="content" source="media/onprem-agent/health-check-sign-in.jpg" alt-text="Sample snapshot of Health check success on GCA sign-in page":::
+   :::image type="content" source="media/onprem-agent/health-check-sign-in.jpg" alt-text="Sample snapshot of Health check success on GCA sign-in page.":::
 
 6. If you observe any errors, follow the suggested mitigation steps in the error message and close & re-open the GCA configuration app.
 
