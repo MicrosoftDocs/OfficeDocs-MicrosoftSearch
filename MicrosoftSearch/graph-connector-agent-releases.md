@@ -23,9 +23,9 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 ### Version 2.0.0.0 (*15 Mar 2023*)
 
 * Microsoft Graph connectors SDK GA: Updated SDK test utility with more test cases. [Learn more about Graph Connectors SDK](/graph/custom-connector-sdk-overview).
-* Support for .NET 7. This requires a manual installation of the GCA and the “Upgrade” feature will not be available until this version is installed. If you are upgrading from GCA 1.x to 2.x, refer to this [page](graph-connector-agent.md).
+* Support for .NET 7. This requires a manual installation of the GCA and the “Upgrade” feature won't be available until this version is installed. If you're upgrading from GCA 1.x to 2.x, refer to this [page](graph-connector-agent.md).
 * Improved troubleshooting of common GCA issues through "Health Check" feature in Registration details page. Now, you can click on the "Health check" button, as in the image below, to check GCA health.
-:::image type="content" source="media/onprem-agent/health-check-registration.jpg" alt-text="Sample snapshot of Health check success on GCA registration page":::
+:::image type="content" source="media/onprem-agent/health-check-registration.jpg" alt-text="Sample snapshot of Health check success on GCA registration page.":::
 
 * Bug fixes and performance improvements
 
