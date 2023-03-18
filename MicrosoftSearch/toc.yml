@@ -93,6 +93,8 @@ items:
         href: manage-connector.md
       - name: View connection details and errors
         href: connector-details-errors.md
+      - name: Item Delete Notification
+        href: connectors-vivatopics-item-delete-notification.md
     - name: Licensing
       href: licensing.md
     - name: Terms of use
