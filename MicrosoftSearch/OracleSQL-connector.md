@@ -1,4 +1,5 @@
 ---
+ms.date: 10/08/2019
 title: "Oracle SQL Microsoft Graph connector"
 ms.author: mecampos
 author: mecampos
@@ -47,6 +48,10 @@ Follow the general [setup instructions](./configure-connector.md).
 To connect your Oracle SQL connector to a data source, you must configure the database server you want crawled and the on-premises Graph connector agent. You can then connect to the database with the required authentication method.
 
 For Oracle SQL connector, you need to specify the Hostname, Port and Service (database) name along with the preferred authentication method, username, and password.
+
+If Service Name is not available and you connect using SID, the Service Name can be derived using one of the following commands (to be executed as sys admin) - 
+* select SERVICE_NAME from gv$session where sid in (select sid from v$MYSTAT);
+* select sys_context('userenv','service_name') from dual;
 
 > [!NOTE]
 > Your database must run Oracle database version 11g or later for the connector to be able to connect. The connector supports Oracle database hosted on Windows, Linux and Azure VM platforms.
@@ -188,3 +193,4 @@ The Oracle SQL connector has these limitations in the preview release:
 * The on-premises database must run Oracle Database version 11g or later.
 * ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security.
 * Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
+

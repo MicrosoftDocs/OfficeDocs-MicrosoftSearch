@@ -14,6 +14,7 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Set up the Atlassian Jira Cloud Graph connector for Microsoft Search" 
+ms.date: 07/22/2021
 ---
 
 # Atlassian Jira Cloud Microsoft Graph connector
@@ -87,7 +88,7 @@ The following steps provide guidance on how to register the app:
    | 20 | View permission schemes | `read:permission-scheme:jira` |
    | 21 | View permissions | `read:permission:jira` |
 
-5. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL `https://gcs.office.com/v1.0/admin/oauth/callback` and save the changes.
+5. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL for **M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`, for **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback` and save the changes.
 6. Navigate to `Settings` from the navigation pane on the left. You'll get the `Client ID` and `Secret` from this page.
 
 Complete the connection settings step using the **Client ID** and **Secret**.

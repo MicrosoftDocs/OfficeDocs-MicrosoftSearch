@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Lists all of the Microsoft Graph connectors for Microsoft Search."
+ms.date: 10/29/2019
 ---
 
 # Microsoft Graph connectors gallery

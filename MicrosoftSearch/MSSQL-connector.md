@@ -1,4 +1,5 @@
 ---
+ms.date: 10/08/2019
 title: "Azure SQL and Microsoft SQL Server Microsoft Graph connector for Microsoft Search"
 ms.author: mecampos
 author: mecampos
@@ -79,11 +80,11 @@ For the Azure SQL connector, you only need to specify the server name or IP addr
 
 For added security, you may configure IP firewall rules for your Azure SQL Server or database. To learn more about setting up IP firewall rules, refer documentation on [IP firewall rules](/azure/azure-sql/database/firewall-configure). Add the following client IP ranges in the firewall settings.
 
-| Region | IP range |
-| ------------ | ------------ |
-| NAM | 52.250.92.252/30, 52.224.250.216/30 |
-| EUR | 20.54.41.208/30, 51.105.159.88/30 |
-| APC | 52.139.188.212/30, 20.43.146.44/30 |
+| Region | M365 Enterprise | M365 Government
+| ------------ | ------------ | ------------ |
+| NAM | 52.250.92.252/30, 52.224.250.216/30 | 52.245.230.216/30, 20.141.117.64/30
+| EUR | 20.54.41.208/30, 51.105.159.88/30 | NA
+| APC | 52.139.188.212/30, 20.43.146.44/30 | NA
 
 To search your database content, you must specify SQL queries when you configure the connector. These SQL queries need to name all the database columns that you want to index (that is, source properties), including any SQL joins that need to be performed to get all the columns. To restrict access to search results, you must specify Access Control Lists (ACLs) within SQL queries when you configure the connector.
 
@@ -227,3 +228,4 @@ The SQL connectors have these limitations in the preview release:
 - The Microsoft 365 subscription and Azure subscription (hosting Azure SQL database) must lie within the same Azure Active Directory.
 - ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security.
 - Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
+

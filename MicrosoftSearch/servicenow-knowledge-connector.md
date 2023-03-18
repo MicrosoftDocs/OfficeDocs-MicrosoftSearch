@@ -1,4 +1,5 @@
 ---
+ms.date: 10/08/2019
 title: "ServiceNow Knowledge Microsoft Graph connector"
 ms.author: kam1
 author: TheKarthikeyan
@@ -83,7 +84,7 @@ Field | Description | Recommended Value
 Name | Unique value that identifies the application that you require OAuth access for. | Microsoft Search
 Client ID | A read-only, auto generated unique ID for the application. The instance uses the client ID when it requests an access token. | NA
 Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each other. | Follow security best-practices by treating the secret as a password.
-Redirect URL | A required callback URL that the authorization server redirects to. | `https://gcs.office.com/v1.0/admin/oauth/callback`
+Redirect URL | A required callback URL that the authorization server redirects to. | For **M365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback,</br> For **M365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback
 Logo URL | A URL that contains the image for the application logo. | NA
 Active | Select the check box to make the application registry active. | Set to active
 Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds). | 31,536,000 (one year)
@@ -311,3 +312,4 @@ You may not be able to choose *Only people with access to this data source* opti
 If you see differences in the user criteria validation between ServiceNow and Microsoft Search, set `glide.knowman.block_access_with_no_user_criteria` system property to `no`.
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
+

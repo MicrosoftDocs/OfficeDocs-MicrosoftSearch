@@ -13,6 +13,7 @@ search.appverid:
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 description: "Learn how to set Bing as the default homepage for your company with Microsoft Search."
+ms.date: 01/08/2019
 ---
 
 # Make Bing.com the default home page

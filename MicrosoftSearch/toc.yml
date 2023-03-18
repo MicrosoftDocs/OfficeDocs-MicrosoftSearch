@@ -13,8 +13,15 @@ items:
     href: faqs.md
 - name: Get insights
   items:
-  - name: View usage reports
+  - name: Search usage reports 
     href: usage-reports.md
+    items:
+    - name: Query reports
+      href: queries-usage-reports.md
+    - name: User reports
+      href: users-search-reports.md
+    - name: Connection analytics reports
+      href: connection-analytics-reports.md
   - name: Manage feedback
     href: manage-feedback.md
 - name: Provide answers
@@ -41,6 +48,8 @@ items:
     items:
     - name: Overview
       href: connectors-overview.md
+    - name: eDiscovery overview
+      href: compliance-ediscovery.md
     - name: Connectors gallery
       href: connectors-gallery.md
     - name: Set up Microsoft built connectors
@@ -63,6 +72,8 @@ items:
           href: azure-data-lake-connector.md
         - name: Azure DevOps Work Items
           href: azure-devops-connector.md
+        - name: Azure DevOps Wiki
+          href: azure-devops-wiki-connector.md          
         - name: Azure SQL and Microsoft SQL Server
           href: MSSQL-connector.md
         - name: Confluence Cloud
@@ -87,6 +98,8 @@ items:
           href: servicenow-catalog-connector.md
         - name: ServiceNow Knowledge
           href: servicenow-knowledge-connector.md
+        - name: ServiceNow Tickets (preview)
+          href: servicenow-tickets-connector.md
     - name: Manage connections
       items:
       - name: Monitor connections
@@ -101,7 +114,7 @@ items:
       href: terms-of-use.md
   - name: Federated Search connectors
     items:
-    - name: Dynamics 365
+    - name: Dataverse and Dynamics 365
       href: manage-dynamics365.md
     - name: Azure Cognitive Search
       href: manage-azure-cognitive-search.md      
@@ -117,6 +130,8 @@ items:
     href: result-cluster.md
   - name: Manage filters
     href: custom-filters.md
+  - name: Manage schema (preview)
+    href: manage-search-schema.md
   - name: Microsoft Search in SharePoint
     items:
     - name: Overview
@@ -132,7 +147,9 @@ items:
     - name: Overview
       href: overview-microsoft-search-bing.md
     - name: Security and Privacy
-      href: security-for-search.md      
+      href: security-for-search.md
+    - name: Use Windows Search to find work or school results
+      href: use-windows-search-find-work-school-results.md             
     - name: Customize address bar shortcuts for Microsoft Edge
       href: edge-shortcuts.md
     - name: Add a search box to your intranet site
@@ -145,5 +162,3 @@ items:
       href: set-default-search-engine.md
     - name: Make Bing.com the default home page
       href: set-default-homepage.md
-    - name: User adoption guide
-      href: user-adoption-guide.md

@@ -14,6 +14,7 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Result layout JSON for Azure DevOps Wiki connector for Microsoft Search" 
+ms.date: 06/03/2022
 ---
 
 # Result layout for Azure DevOps Wiki Graph connector

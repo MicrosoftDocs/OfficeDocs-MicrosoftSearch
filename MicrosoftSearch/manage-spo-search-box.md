@@ -12,6 +12,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "How to customize the search box experience on SharePoint sites"
+ms.date: 12/14/2020
 ---
 
 # Search box settings on SharePoint sites
@@ -23,7 +24,7 @@ For other customization options, see [Changing the Microsoft Search results page
 > [!NOTE]
 > The suite navigation bar search box is not available for all customers at this time, but these options can still be set now and they will take effect when it becomes available.
 
-For the tasks listed below, you will use PowerShell with SharePoint PnP PowerShell extensions. You can install and learn more about how to get started [here](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps). You will sign into your site or site collection using this command:
+For the tasks listed below, you will use PowerShell with SharePoint PnP PowerShell extensions. You can install and learn more about how to get started [here](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets). You will sign into your site or site collection using this command:
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
@@ -90,7 +91,7 @@ There are several points to consider:
 You can change the hint the search box shows for a given site or site collection. This is the text that appears in the search box before they start typing into it. This may help guide your users about what to expect from search if you’ve configured a custom results page or changed behavior of search in other ways.
 
 > [!NOTE]
-> To be able to make this change, you need to allow running custom scripts on the site in question as a tenant administrator, which is disallowed by default. Please see https://docs.microsoft.com/sharepoint/allow-or-prevent-custom-script for details. You can allow running custom scripts, make the change, and then revert to disallowing scripts for the site if necessary.
+> To be able to make this change, you need to allow running custom scripts on the site in question as a tenant administrator, which is disallowed by default. Please see [Allow or prevent custom script](/sharepoint/allow-or-prevent-custom-script) for details. You can allow running custom scripts, make the change, and then revert to disallowing scripts for the site if necessary.
 
 To change this setting for a given site run the following command:
 

@@ -15,14 +15,15 @@ search.appverid:
 - MOE150 
 
 description: "Steps on how to map non-AAD identities" 
---- 
-
+ms.date: 11/05/2020
+---
 
 # Map your non-Azure AD Identities  
 
 This article walks you through the steps of mapping your non-Azure AD identities to your Azure AD identities so that people in your Access Control List (ACL) with non-Azure AD identities can see connector search results scoped to them.
 
-These steps are only relevant to search administrators who are setting up a [Confluence Cloud](confluence-cloud-connector.md), [Confluence On-premises](confluence-onpremises-connector.md), [ServiceNow Knowledge](servicenow-knowledge-connector.md), [ServiceNow Catalog](servicenow-catalog-connector.md) or [Salesforce](salesforce-connector.md) connectors by Microsoft with search permissions for "Only people with access to this data source" and identity type "Non-AAD."
+These steps are only relevant to search administrators who are setting up a [Confluence Cloud](confluence-cloud-connector.md), [Confluence On-premises](confluence-onpremises-connector.md), [ServiceNow Knowledge](servicenow-knowledge-connector.md), [ServiceNow Catalog](servicenow-catalog-connector.md),
+[ServiceNow Tickets](servicenow-tickets-connector.md) or [Salesforce](salesforce-connector.md) connectors by Microsoft with search permissions for "Only people with access to this data source" and identity type "Non-AAD."
 
 >[!NOTE]
 >If you are setting up a Salesforce connector and select **Only people with access to this data source** and identity type **AAD** on the search permissions screen, refer to the [Map your Azure AD Identities](map-aad.md) article for steps on how to map Azure AD identities.  
@@ -43,7 +44,7 @@ You can select one of the following Azure AD properties:
 
 ### 2. Select non-Azure AD user properties to map
 
-You can select non-Azure AD properties pulled from your data source to apply regular expressions on. To learn more about where to find these properties in your data source, see the [Confluence Cloud](confluence-cloud-connector.md), [Confluence On-premises](confluence-onpremises-connector.md), [ServiceNow Knowledge](servicenow-knowledge-connector.md), [ServiceNow Catalog](servicenow-catalog-connector.md) and [Salesforce](salesforce-connector.md) pages.  
+You can select non-Azure AD properties pulled from your data source to apply regular expressions on. To learn more about where to find these properties in your data source, see the [Confluence Cloud](confluence-cloud-connector.md), [Confluence On-premises](confluence-onpremises-connector.md), [ServiceNow Knowledge](servicenow-knowledge-connector.md), [ServiceNow Catalog](servicenow-catalog-connector.md), [ServiceNow Tickets](servicenow-tickets-connector.md) and [Salesforce](salesforce-connector.md) pages.  
 
 You can select a non-Azure AD user property from the dropdown and provide a regular expression to be applied on those user property values.
 

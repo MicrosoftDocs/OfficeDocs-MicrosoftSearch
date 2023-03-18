@@ -1,4 +1,5 @@
 ---
+ms.date: 09/06/2021
 title: "Confluence Cloud Microsoft Graph connector"
 ms.author: kam1
 author: TheKarthikeyan
@@ -65,7 +66,7 @@ The following steps provide guidance on how to register the app:
 | View user details | `read:user:confluence` | To access individual user details to support permissions
 
 5. Click **Save**.
-6. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL `https://gcs.office.com/v1.0/admin/oauth/callback` and save the changes.
+6. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL, for **M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`, for **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback` and save the changes.
 7. Navigate to `Settings` from the navigation pane on left. You will get the `Client ID` and `Secret` from this page.
 
 On registering the app with the details above, you'll get the **Client ID** and **Secret**. Complete the connection settings step using these.
@@ -120,6 +121,11 @@ Follow the general [setup instructions](./configure-connector.md).
 
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
+## Step 10: Set up search result page
+
+After publishing the connection, you need to customize the search results page with verticals and result types. To learn about customizing search results, review how to [manage verticals](manage-verticals.md) and [result types](manage-result-types.md).
+You may also use the [sample result layout](confluence-cloud-connector-result-layout.md) for the Confluence cloud connector. Simply copy-paste the result layout JSON to get started.
+
 ## Troubleshooting
 
 Common errors observed while configuring the connector and their possible reasons are listed below.
@@ -137,3 +143,4 @@ The Confluence Cloud connector has the following known limitations in its latest
 
 * Confluence Cloud connector does not index attachment files and comments.
 * Indexing Server and Data Center deployments will be released as a separate connector.
+
