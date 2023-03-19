@@ -2,6 +2,15 @@
 
 
 
+## Week of March 13, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/14/2023 | [Release history for Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent-releases) | modified |
+| 3/14/2023 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
+
+
 ## Week of March 06, 2023
 
 
