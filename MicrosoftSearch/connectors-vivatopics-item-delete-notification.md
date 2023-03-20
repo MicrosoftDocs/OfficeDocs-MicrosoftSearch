@@ -27,4 +27,4 @@ Given this, there may be delays between when an item is deleted or changed from 
 
 We encourage the IT Administrator to schedule either the “Incremental crawl” or “Full crawl” setting to under 14 days to improve detection, as illustrated in the following image:
 
-![Recommended refresh settings](media/refreshsettings.png)
+![Screenshot that shows recommended refresh settings.](media/refreshsettings.png)
