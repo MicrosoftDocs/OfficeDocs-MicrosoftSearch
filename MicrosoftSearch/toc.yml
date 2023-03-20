@@ -107,7 +107,7 @@ items:
       - name: View connection details and errors
         href: connector-details-errors.md
       - name: Item delete notification
-        href: connectors-vivatopics-item-delete-notification.md
+        href: connectors-viva-topics-item-delete-notification.md
     - name: Licensing
       href: licensing.md
     - name: Terms of use
