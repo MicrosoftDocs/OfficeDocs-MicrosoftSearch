@@ -52,6 +52,11 @@ Index and support user criteria permissions | kb_uc_can_read_mtom | Who can read
 | | sys_user_grmember | Read group membership of users
 | | user_criteria | Read user criteria permissions
 | | kb_knowledge_base | Read knowledge base information
+| | sys_user_group | Read user group segments
+| | sys_user_role | Read user roles
+| | cmn_location | Read location information
+| | cmn_department | Read department information
+| | core_company | Read company attributes
 Index extended table properties (optional) | sys_db_object | Read extended table details
 | | sys_dictionary | Read extended table properties
 
@@ -75,7 +80,7 @@ Enter the username and password of ServiceNow account with **knowledge** role to
 
 ## Step 3.2: ServiceNow OAuth
 
-To use ServiceNow OAuth for authentication, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance, so that the Microsoft Search app can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
+To use ServiceNow OAuth for authentication, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance, so that the Microsoft Search app can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
 The following table provides guidance on how to fill out the endpoint creation form:
 
