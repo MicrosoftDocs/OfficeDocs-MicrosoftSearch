@@ -48,6 +48,11 @@ Index and support user criteria permissions | sc_cat_item_user_criteria_mtom | W
 | | sys_user_has_role | Read role information of users
 | | sys_user_grmember | Read group membership of users
 | | user_criteria | Read user criteria permissions
+| | sys_user_group | Read user group segments
+| | sys_user_role | Read user roles
+| | cmn_location | Read location information
+| | cmn_department | Read department information
+| | core_company | Read company attributes
 
 You can **create and assign a role** for the service account you use to connect with Microsoft Search. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be assigned on the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls).
 
