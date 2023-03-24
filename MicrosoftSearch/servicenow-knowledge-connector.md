@@ -52,6 +52,11 @@ Index and support user criteria permissions | kb_uc_can_read_mtom | Who can read
 | | sys_user_grmember | Read group membership of users
 | | user_criteria | Read user criteria permissions
 | | kb_knowledge_base | Read knowledge base information
+| | sys_user_group | Read user group segments
+| | sys_user_role | Read user roles
+| | cmn_location | Read location information
+| | cmn_department | Read department information
+| | core_company | Read company attributes
 Index extended table properties (optional) | sys_db_object | Read extended table details
 | | sys_dictionary | Read extended table properties
 
