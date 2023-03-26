@@ -2,6 +2,14 @@
 
 
 
+## Week of March 20, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/20/2023 | [Microsoft Viva Topics – Item Delete Notification](/MicrosoftSearch/connectors-viva-topics-item-delete-notification) | added |
+
+
 ## Week of March 13, 2023
 
 
