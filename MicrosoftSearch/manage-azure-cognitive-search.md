@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
-ms.date: 06/03/2022
+ms.date: 03/27/2023
 
 description: "Manage how Azure Cognitive Search content appears in search results"
 ---
@@ -17,7 +17,7 @@ description: "Manage how Azure Cognitive Search content appears in search result
 
 * **Easy to use:** Users can easily and quickly find key information stored in Azure Cognitive Search (ACS), without needing to navigate to a new app or page.
 * **Easy to find:** ACS content is visible to users in Bing.com, Office.com, and SharePoint.
-* **Customizable permissions:** ACS results can be configured to appear for everyone in the organization or specific Azure AD access control lists.
+* **Customizable permissions:** ACS results can be configured to appear for everyone in the organization or refined to certain people using Azure Role-Based Access Control.
 * **Adaptable result layouts:** ACS results can be formatted with a default layout, based on your data’s schema, or can be customized using Modern Result Types.
 * **Quick setup:** Simple to configure and easy to maintain the search connection to an ACS index.
 * **Unified search experience:** To maintain a cohesive experience, ACS results are consistent across all search entry points. Wherever you search, you'll get the same results with the same look and feel.
@@ -38,33 +38,45 @@ Check out our Microsoft Build 2022 video for a demonstration.
 
 ## Setup
 
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [Data sources](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors).
-2. In the Microsoft apps and services section, select **Add a new app or service**. :::image type="content" alt-text="Data sources page with link to Add new app or service highlighted." source="media/azure-cognitive-search/acs-data-source.png" lightbox="media/azure-cognitive-search/acs-data-source.png":::
+1. Grant Reader permissions for the Bing app in the Azure Portal - this gives us permission to view the Azure Cognitive Search resource from Microsoft Search in Bing:
+    - Navigate to the [Azure Portal](https://portal.azure.com) and open your Azure Cognitive Search resource.
+    - Select **Access control (IAM) on the left sidebar**, then navigate to the **Role assignments** tab.
+    - Click **Add** in the top left corner, then **Add role assignment** from the dropdown.
+    - Choose the **Reader** role from the list, and click **Next**.
+    - On the following page, click on **Select members**, then in the search box which opens to the right, search for **Bing**.
+    - Click on **Bing** in the search results, and hit **Select**.
+    - Select **Review + assign**, then **Review + assign** again.
+2. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [Data sources](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors). In the Microsoft apps and services section, select **Add a new app or service**. :::image type="content" alt-text="Data sources page with link to Add new app or service highlighted." source="media/azure-cognitive-search/acs-data-source.png" lightbox="media/azure-cognitive-search/acs-data-source.png":::
 3. Select **Azure Cognitive Search**, then **Next**.
-4. In the **Connection details** pane:
-
-    - Enter the connection name and description. The name will be used as the display name for the ACS vertical on Bing, Office.com, and SharePoint.
-    - In the Data source field, enter the URL for your ACS index, using the format `<your-service>.search.windows.net/indexes/<your-index>`. Replace `<your-service>` with the name of the search service resource, and `<your-index>` with the name of the index.
-    - Add your Admin and Query API keys. For information about finding or creating API keys, see [Find existing keys](/azure/search/search-security-api-keys#find-existing-keys).
-    - Select the authorization check box, then **Next**.
-
-5. On the **Search permissions** page, choose to enable the connection for everyone in your organization or restrict the results to certain Access Control Lists.
-6. In the **Add semantic property labels** pane:
-
+4. In the **Connection details** pane, enter the connection name and description. The name will be used as the display name for the ACS vertical on Bing, Office.com, and SharePoint.
+5. In the Data source field, enter the URL for your ACS index, using the format `<your-service>.search.windows.net/indexes/<your-index>`. Replace `<your-service>` with the name of the search service resource, and `<your-index>` with the name of the index.
+6. In the Azure resource ID field, add the Resource ID for your ACS index. This can be found in the Azure Portal with the following steps:
+    - Open your ACS resource in the [Azure Portal](https://portal.azure.com)
+    - Select the **Properties** tab, and copy the Id under the **Essentials** heading
+7. Choose whether you want to connect to your ACS index using API key authentication or Azure Role-Based Access control. **Note:** if you select API Keys, the connected index will be visible to all Microsoft Search users in your organization. For more information on Role-Based Access control, see: [RBAC Search Security](/azure/search/search-security-rbac).
+    - If you select API Key authentication, enter your Admin and Query API keys. For information about finding or creating API keys, see [Find existing keys](/azure/search/search-security-api-keys#find-existing-keys).
+8. Choose whether you want queries on your ACS content from Microsoft Search to use Semantic Search or Simple Search. If you want to use Semantic Seach, you will need to have it enabled for your ACS service. These queries will use your ACS semantic query quota and could incur additional costs through Azure Billing. For more details on Semantic Search, see [Semantic Search Overview](/azure/search/semantic-search-overview).
+9. Read and select the authorization check boxes, then test your setup with the **Test connection** button. Fix any errors, then select **Next**.
+10. In the **Add semantic property labels** pane:
     - If these labels are sufficient to display the results, select the source properties you’d like to display for each of the listed labels. The selected properties will be used to create a default Modern Result Type (MRT) for the results. You must select a property for the Title. The others are optional but recommended, since they make the results more informative.
     - If these labels aren't adequate to display your results, you can leave them blank and create a custom MRT later. For information about creating a custom MRT, see [Manage result types](/microsoftsearch/manage-result-types).
+11. Verify the information entered is correct and select **Finish**.
+12. When the connection has been created, you'll be redirected to the Data Sources page again. You should see your newly created connection with the status **Ready**. :::image type="content" alt-text="Azure Cognitive Search connection successfully created" source="media/azure-cognitive-search/acs-custom-vertical.png" lightbox="media/azure-cognitive-search/acs-custom-vertical.png":::
+13. You can create up to three ACS connections per tenant - repeat the above steps for additional connections you want to create. 
 
-7. Verify the information entered is correct and select **Finish**.
-1. When the connection has been created, you'll be redirected to the Data Sources page again. If you want to change the display name that appears on the ACS vertical, select **Edit vertical** below the newly created ACS connection. :::image type="content" alt-text="Azure Cognitive Search connection with link to Edit vertical name." source="media/azure-cognitive-search/acs-custom-vertical.png" lightbox="media/azure-cognitive-search/acs-custom-vertical.png":::
-
-For more information about verticals, see [Manage search verticals](/microsoftsearch/manage-verticals). After successfully configuring an ACS connection, you should see the connection state Ready.
+> [!TIP]
+> To clarify the type of content users can find in the search vertical, we recommend updating the vertical name.To customize the name of your vertical, navigate to the **Customizations** tab, select **Verticals** in the left sidebar and choose your newly created vertical. For more information, see [Manage search verticals](/microsoftsearch/manage-verticals).
 
 > [!NOTE]
 > After the connection is enabled, it may take up to 24 hours for your new vertical and ACS results to appear in your Microsoft Search endpoints because of caching at various layers of the system.
 
 ## Query patterns
 
-Searching ACS results in Microsoft Search supports simple query syntax. This includes Keyword Query Language, AND, OR, and NOT operators. For more information, see [Simple query syntax in Azure Cognitive Search](/azure/search/query-simple-syntax). To adjust which data fields are searchable, you can [modify the field attributes for your ACS index](/azure/search/search-what-is-an-index#field-attributes).
+Two forms of query syntax are supported for ACS results in Microsoft Search: simple search and semantic search. You can select the query mode for your connection during setup.
+
+Simple Query Syntax includes Keyword Query Language, AND, OR, and NOT operators. For more information, see [Simple query syntax in Azure Cognitive Search](/azure/search/query-simple-syntax). To adjust which data fields are searchable, you can [modify the field attributes for your ACS index](/azure/search/search-what-is-an-index#field-attributes).
+
+Semantic search uses semantic ranking to find context and relatedness among terms, as well as language understanding to create summarizations within your content. For more details, see [Semantic Search Overview](https://learn.microsoft.com/en-us/azure/search/semantic-search-overview).
 
 ## Customize result types
 
@@ -72,16 +84,14 @@ To alter the way your ACS results are formatted, for example, layout or the fiel
 
 ## Edit the connection
 
-After enabling the connection, you can modify the endpoint and connection name. In [Data sources](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors), below the configured connection, select Edit to make changes.  :::image type="content" alt-text="Azure Cognitive Search connection and pane with connection details." source="media/azure-cognitive-search/acs-edit-settings.png" lightbox="media/azure-cognitive-search/acs-edit-settings.png":::
+After enabling the connection, you can modify the endpoint and connection name. In [Data sources](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors), select the configured connection to make changes.  :::image type="content" alt-text="Azure Cognitive Search connection and pane with connection details." source="media/azure-cognitive-search/acs-edit-settings.png" lightbox="media/azure-cognitive-search/acs-edit-settings.png":::
 
 To deactivate the connection, clear the **Activate this connection for your organization** check box and **Save**.
 
 ## Troubleshooting
 
-If any of the fields in your Modern Result Type for a particular result are blank, the field name will appear in curly braces.
+ - <TODO> You try to do RBAC but the search admin doesn't have permissions
 
-:::image type="content" alt-text="ACS vertical with example fields 1 and 2 in curly braces." source="media/azure-cognitive-search/acs-result-troubleshooting.png" lightbox="media/azure-cognitive-search/acs-result-troubleshooting.png":::
 
-To mitigate this issue, create a custom MRT and add this line: `"$when": "${exampleFieldName != null && exampleFieldName != ''}"` and replace `exampleFieldName` with the proper field name. Do this for any of the fields in the MRT that can be empty.
 
 If you have feedback or questions when using the preview connector, [contact us](https://aka.ms/ACSConnectorFeedback).
