@@ -20,6 +20,10 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
+### Version 2.0.1.0 (*27 Mar 2023*)
+
+* Bug fixes and reliability improvements
+
 ### Version 2.0.0.0 (*15 Mar 2023*)
 
 * Microsoft Graph connectors SDK GA: Updated SDK test utility with more test cases. [Learn more about Graph Connectors SDK](/graph/custom-connector-sdk-overview).
