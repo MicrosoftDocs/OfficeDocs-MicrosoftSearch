@@ -41,7 +41,7 @@ Check out our Microsoft Build 2022 video for a demonstration.
 
 * To connect Azure Cognitive Search with Microsoft Search, you will first need to create an ACS service with at least one index. Follow the instructions here to get set up: [Create a Search Service](/azure/search/search-create-service-portal).
 * The search administrator configuring the connection with Microsoft Search must have Search Administrator permissions to set up the connection in the Microsoft Admin Center.
-* <TODO> The search administrator configuring the connection must have _____________ permissions for the search service to set up the connection - only if using RBAC though.
+* If you plan to connect to your ACS service using Role-Based Access Contol, the Search Administrator configuring the connection in the Microsoft Admin Center must have Search Index Data Reader permissions for your ACS service. See instructions here on how to assign roles here: [Assign roles](/azure/search/search-security-rbac?tabs=config-svc-portal%2Croles-portal%2Ctest-portal%2Ccustom-role-portal%2Cdisable-keys-portal#assign-roles).
 
 ## Setup
 
@@ -62,9 +62,9 @@ Check out our Microsoft Build 2022 video for a demonstration.
 6. In the Azure resource ID field, add the Resource ID for your ACS index. This can be found in the Azure Portal with the following steps:
     * Open your ACS resource in the [Azure Portal](https://portal.azure.com)
     * Select the **Properties** tab, and copy the Id under the **Essentials** heading
-7. Choose whether you want to connect to your ACS index using API key authentication or Azure Role-Based Access Control (RBAC). **Note:** if you select API Keys, the connected ACS index will be searchable by all Microsoft Search users in your organization. In order to scope permissions to a subset of users, configure Azure RBAC for your ACS index, and select Azure Role-Based Access Control here. For more information on Role-Based Access control, see: [RBAC Search Security](/azure/search/search-security-rbac).
-    * If you select API Key authentication, enter your Admin and Query API keys. For information about finding or creating API keys, see [Find existing keys](/azure/search/search-security-api-keys#find-existing-keys).
-8. Choose whether you want queries on your ACS content from Microsoft Search to use Semantic Search or Simple Search. If you want to use Semantic Seach, you will need to have it enabled for your ACS service. These queries will use your ACS semantic query quota and could incur additional costs through Azure Billing. For more details on Semantic Search, see [Semantic Search Overview](/azure/search/semantic-search-overview).
+7. Choose whether you want to connect to your ACS index using API key authentication or Azure Role-Based Access Control (RBAC). **Note:** if you select API Keys, the connected ACS index will be searchable by all Microsoft Search users in your organization. In order to limit permissions to a subset of users, configure Azure RBAC for your ACS index, and select Azure Role-Based Access Control here. For more information on Role-Based Access control, see: [RBAC Search Security](/azure/search/search-security-rbac).
+    * If you selected API Key authentication, enter your Admin and Query API keys. For information about finding or creating API keys, see [Find existing keys](/azure/search/search-security-api-keys#find-existing-keys).
+8. Choose whether you want queries on your ACS content to use Semantic Search or Simple Search. If you want to use Semantic Seach, you will need to have it enabled for your ACS service. These queries will use your ACS semantic query quota and could incur additional costs through Azure Billing. For more details on Semantic Search, see [Semantic Search Overview](/azure/search/semantic-search-overview).
 9. Read and select the authorization check boxes, then test your setup with the **Test connection** button. Fix any errors, then select **Next**.
 10. In the **Add semantic property labels** pane:
     * If these labels are sufficient to display the results, select the source properties you’d like to display for each of the listed labels. The selected properties will be used to create a default Modern Result Type (MRT) for the results. You must select a property for the Title. The others are optional but recommended, since they make the results more informative.
@@ -74,7 +74,7 @@ Check out our Microsoft Build 2022 video for a demonstration.
 13. You can create up to three ACS connections per tenant - repeat the above steps for additional connections you want to create.
 
 > [!TIP]
-> To clarify the type of content users can find in the search vertical, we recommend updating the vertical name.To customize the name of your vertical, navigate to the **Customizations** tab, select **Verticals** in the left sidebar and choose your newly created vertical. For more information, see [Manage search verticals](/microsoftsearch/manage-verticals).
+> To clarify the type of content users can find in the search vertical, we recommend updating the vertical name. To customize the name of your vertical, navigate to the **Customizations** tab, select **Verticals** in the left sidebar and choose your newly created vertical. For more information, see [Manage search verticals](/microsoftsearch/manage-verticals).
 
 > [!NOTE]
 > After the connection is enabled, it may take up to 24 hours for your new vertical and ACS results to appear in your Microsoft Search endpoints because of caching at various layers of the system.
@@ -99,9 +99,11 @@ To deactivate the connection, clear the **Activate this connection for your orga
 
 ## Troubleshooting
 
-* **I'm getting a setup error but all the values I entered are correct!** Please ensure that you've completed all the prerequisites listed in the setup instructions above.
+* **I'm getting a setup error but all the values I entered are correct!** Please ensure that you've completed all the prerequisites listed above the setup instructions.
 
 * **I have a private ACS endpoint, can I use this integration?** At this time, we do not support connecting to private ACS endpoints. 
+
+* **The ACS index I want to connect is part of a different M365 tenant, can I still connect it in Microsoft Search?** At this time, we do not support cross-tenant connection. The ACS service must be part of the same M365 tenant in which you want to make the content available in Micosoft Search.
 
 * **End users aren't seeing any results, why?** There are a few reasons why your end users may not be seeing ACS content in Microsoft Search, please verify the following:
 
