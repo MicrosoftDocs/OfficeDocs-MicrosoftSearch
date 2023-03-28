@@ -40,7 +40,8 @@ Check out our Microsoft Build 2022 video for a demonstration.
 ## Prerequisites
 
 * To connect Azure Cognitive Search with Microsoft Search, you will first need to create an ACS service with at least one index. Follow the instructions here to get set up: [Create a Search Service](/azure/search/search-create-service-portal).
-* The search administrator configuring the connection with Microsoft Search must have Search Administrator permissions to set up the connection.
+* The search administrator configuring the connection with Microsoft Search must have Search Administrator permissions to set up the connection in the Microsoft Admin Center.
+* <TODO> The search administrator configuring the connection must have _____________ permissions for the search service to set up the connection - only if using RBAC though.
 
 ## Setup
 
@@ -98,9 +99,14 @@ To deactivate the connection, clear the **Activate this connection for your orga
 
 ## Troubleshooting
 
-* <TODO> You try to do RBAC but the search admin doesn't have permissions ??
-* <TODO> You want to set up with a private endpoint
-* <TODO> End users aren't seeing results, what do I do? Could be all the diff admin config settings
+* **I'm getting a setup error but all the values I entered are correct!** Please ensure that you've completed all the prerequisites listed in the setup instructions above.
 
+* **I have a private ACS endpoint, can I use this integration?** At this time, we do not support connecting to private ACS endpoints. 
+
+* **End users aren't seeing any results, why?** There are a few reasons why your end users may not be seeing ACS content in Microsoft Search, please verify the following:
+
+    * You've waited more than 24 hours after configuring the connection before checking for results in Microsoft Search endpoints.
+    * If you set up the connection to Microsoft Search using the Role-Based Access Control Authorization option, make sure that you have assigned the desired users or groups Search Index Data Reader permissions through the Azure portal.
+    * Double check that the authorization settings for your ACS service match those in your Microsoft Admin Center (ie, if API key authentication is selected in the Microsoft Admin Center, ensure that this is still the correct setting for your search service in the Azure Portal).
 
 If you have feedback or questions when using the preview connector, [contact us](https://aka.ms/ACSConnectorFeedback).
