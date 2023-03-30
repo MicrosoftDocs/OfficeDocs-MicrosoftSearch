@@ -1,7 +1,7 @@
 ---
 title: "Manage bookmarks"
-ms.author: dawholl
-author: dawholl
+ms.author: jeffkizn
+author: jeffkizn
 manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
