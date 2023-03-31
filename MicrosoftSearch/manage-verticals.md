@@ -37,7 +37,7 @@ Here is a summary of customization capabilities on out of the box verticals.
 | Adding a query      | Partial       |Yes  |
 
 ## Custom verticals
-You can add search verticals that are relevant to your organization. For example, you could create a vertical for marketing-related content and another for sales, based on the type of information that each department needs. You can add verticals to show results from content indexed by Graph connectors or from SharePoint.
+You can add search verticals in search experience at Organization or site level search for content from Graph connectors or SharePoint. Custom verticals for SharePoint content will show results from the respective scope, similar to the other verticals at that scope. For example, a custom vertical at the Organization scope will show all results, while a custom vertical with SharePoint content in the Marketing site will show data from that site. The same is true for hub sites where the same hub scope will be applied. 
 
 ## Create or modify search verticals
 
