@@ -1,4 +1,5 @@
 ---
+ms.date: 10/08/2019
 title: "ServiceNow Catalog Microsoft Graph connector"
 ms.author: kam1
 author: TheKarthikeyan
@@ -47,6 +48,11 @@ Index and support user criteria permissions | sc_cat_item_user_criteria_mtom | W
 | | sys_user_has_role | Read role information of users
 | | sys_user_grmember | Read group membership of users
 | | user_criteria | Read user criteria permissions
+| | sys_user_group | Read user group segments
+| | sys_user_role | Read user roles
+| | cmn_location | Read location information
+| | cmn_department | Read department information
+| | core_company | Read company attributes
 
 You can **create and assign a role** for the service account you use to connect with Microsoft Search. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be assigned on the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls).
 
@@ -65,7 +71,7 @@ Enter the username and password of ServiceNow account with **catalog** role to a
 
 ## Step 3.2: ServiceNow OAuth
 
-To use ServiceNow OAuth for authentication, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance, so that the Microsoft Search app can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
+To use ServiceNow OAuth for authentication, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance, so that the Microsoft Search app can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
 The following table provides guidance on how to fill out the endpoint creation form:
 
@@ -283,3 +289,4 @@ You may not be able to choose *Only people with access to this data source* opti
 If you see differences in the user criteria validation between ServiceNow and Microsoft Search, set `glide.knowman.block_access_with_no_user_criteria` system property to `no`.
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
+

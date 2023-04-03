@@ -14,6 +14,7 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: "Get relevant search suggestions and find work results faster by adding a Microsoft Search search box to your intranet site or page."
+ms.date: 01/08/2019
 ---
 
 # Add a search box to your intranet site
@@ -29,6 +30,8 @@ To provide your users with easy access to results from your organization, add a 
 
 > [!NOTE]
 >To see search suggestions, users must be signed in to their Azure AD account. Users that aren't signed in will be prompted to do so after they enter a query.
+
+If you have questions or comments about adding or using an embedded search box, share them with us at [aka.ms/ESB](https://aka.ms/ESB).
   
 ## Add a search box to a SharePoint, WordPress, or intranet page
 
@@ -49,7 +52,7 @@ You need to add two elements to the page: a container for the search box and the
 
 ## Add a search box to your Confluence page
 
-On the Confluence page, select **Edit**, add an iframe widget with these parameters, and Publish. 
+On the Confluence page, select **Edit**, add an iFrame widget with these parameters, and Publish. 
 - URL: `https://www.bing.com/business/searchbox`
 - Title: `Org-Name search` or `Workplace search`
 - Width: `560`
@@ -175,4 +178,4 @@ If embedding a script isn't an option for the site, use an iFrame to add the sea
 
 ## InPrivate mode and Conditional Access
 
-An embedded search box will be disabled if the page or site is opened in an InPrivate window. Also, with Azure AD Conditional Access support in Microsoft Edge, Bing.com doesn't support Azure AD sign in when using InPrivate mode. For more information about Conditional Access in Edge, see [Microsoft Edge and Conditional Access](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge).
+An embedded search box will be disabled if the page or site is opened in an InPrivate window. Also, with Azure AD Conditional Access support in Microsoft Edge, Bing.com doesn't support Azure AD sign in when using InPrivate mode. For more information about Conditional Access in Microsoft Edge, see [Microsoft Edge and Conditional Access](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge).

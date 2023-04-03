@@ -13,6 +13,7 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: "Provide quality content without needing additional resources when you use Microsoft Search"
+ms.date: 01/08/2019
 ---
 
 # Plan your content

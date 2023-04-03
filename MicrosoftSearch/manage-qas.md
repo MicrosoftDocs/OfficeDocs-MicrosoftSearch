@@ -13,6 +13,7 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: "Find and update answers individually or use available Microsoft Search tools to edit Q&As all at once."
+ms.date: 01/08/2019
 ---
 
 # Manage Q&As

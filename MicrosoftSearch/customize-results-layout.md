@@ -1,4 +1,5 @@
 ---
+ms.date: 10/21/2019
 title: "Manage search result layouts"
 ms.author: jypal
 author: jypal6
@@ -187,13 +188,15 @@ Before you get started, there are a few things that you should do and a few thin
 
 ### Do
 
-- Edit a template to provide the logo link in the layout if you're using static links for logos and not result properties.
+- While designing the layouts think of the layout structure as row and column and create those by adding column set elements 
+- Provide a logo/icon for every result layout as this maintains consistency and easy scanning with other results. Edit a template to provide the logo link in the layout if you're using static links for logos and not result properties.
 - It is recommended to use a square logo to ensure proper alignment of results. To avoid pixelation, use a logo with a minimum size of 32px by 32px.
+- Think of theme requirements when designing a result layout, your result icon should be visible in dark theme as well.
 - Validate the result layout for scenarios where no data is returned for a result property used in the result JSON. Use the `$when` condition to hide an element if the property doesn't contain data.  
 - Make sure that data types of the `$when` condition and the result property match. For example, don't compare `Number` with `Text` in the `$when` condition.  
-- Think of theme requirements when designing a result layout.  
 - Make sure that the `Textblock` element can handle dynamic content. You can use the `wrap` and `maxLines` element properties for this purpose.
 - Properly format the date when using `{DATE()}` in Markdown.  
+- Ensure properties of type StringCollection are wrapped in a join method as: ```json ${propertyName} -> ${join(propertyName, ‘,’)} ``` . If you want to show a single value (say, the ith item) from a StringCollection, you can specify it as follows:  ```json ${propertyName} -> ${propertyName[i]}  ``` (Note: indexing in StringCollection types start from 0 )
 
 ### Don't
 
@@ -211,3 +214,4 @@ Before you get started, there are a few things that you should do and a few thin
 [Adaptive Cards Template language](/adaptive-cards/templating/language)
 
 [Adaptive card schema](https://adaptivecards.io/explorer/)
+

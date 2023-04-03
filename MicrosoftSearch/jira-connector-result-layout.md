@@ -14,6 +14,7 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Result layout JSON for Jira connector for Microsoft Search" 
+ms.date: 05/28/2022
 ---
 
 # Result layout for Jira Graph connector
@@ -74,7 +75,7 @@ And here's the layout's associated JSON file:
                             "horizontalAlignment": "Center",
                             "size": "Small",
                             "url": "${IssueIconUrl}",
-                            "altText": "${IssueType}"
+                            "altText": "${join(IssueType, ',')}"
                         }
                     ],
                     "horizontalAlignment": "Center"
@@ -93,7 +94,7 @@ And here's the layout's associated JSON file:
                                     "items": [
                                         {
                                             "type": "TextBlock",
-                                            "text": "[${Title} | ${IssueType}](${IssueLink})",
+                                            "text": "[${Title} | ${join(IssueType, ',')}](${IssueLink})",
                                             "wrap": true,
                                             "maxLines": 1,
                                             "size": "Medium",
@@ -118,7 +119,8 @@ And here's the layout's associated JSON file:
                                                     "type": "TextBlock",
                                                     "wrap": true,
                                                     "maxLines": 1,
-                                                    "text": "Project : __${ProjectName}__"
+                                                    "text": "Project : __${join(ProjectName, ',')}__",
+                                                    "$when": "${ProjectName!=''}"
                                                 }
                                             ]
                                         },
@@ -128,7 +130,8 @@ And here's the layout's associated JSON file:
                                             "items": [
                                                 {
                                                     "type": "TextBlock",
-                                                    "text": "Status : __${IssueStatus}__",
+                                                    "text": "Status : __${join(IssueStatus, ',')}__",
+                                                    "$when": "${IssueStatus!=''}",
                                                     "wrap": true,
                                                     "maxLines": 1
                                                 }
@@ -158,6 +161,7 @@ And here's the layout's associated JSON file:
                                                 {
                                                     "type": "TextBlock",
                                                     "text": "Assigned To : __${AssigneeName}__",
+                                                    "$when": "${AssigneeName!=''}",
                                                     "wrap": true,
                                                     "maxLines": 1
                                                 }

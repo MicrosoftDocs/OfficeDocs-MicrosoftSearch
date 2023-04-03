@@ -14,6 +14,7 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: "Use Windows Search to find work or school files, sites, people, and more right from your desktop."
+ms.date: 08/12/2022
 ---
 
 # Use Windows Search to find work or school results
@@ -41,9 +42,7 @@ To provide work or school results in Windows Search, a few requirements must be 
 - Web search in Windows is enabled
 - Cloud Content enabled for work or school account
 - Windows Search connected to work or school account (Azure AD)
-
-> [!NOTE]
->When Windows Search is connected to your users' work or school accounts, your organization's logo will appear in Windows Search. The ability to show your logo in the search box on the Windows taskbar is in preview. To ensure your users see the appropriate branding, verify your logo and theme in Org settings. To learn more, see [Customize the Microsoft 365 theme for your organization](/microsoft-365/admin/setup/customize-your-organization-theme). Only global admins can change your organization's theme or logo.
+- Customize your logo (optional)
 
 ### Turn on Microsoft Search in Bing
 
@@ -85,7 +84,31 @@ To verify a user's identity and determine the information and files they can acc
 4. Check for your account. If it's not listed, select the **Connect** button to add it.
 5. Sign in with your work or school credentials.
 6. Follow the onscreen prompts to finish connecting.  
-7. When complete, your account will be added as a connection. You'll have access to search suggestions, results, and other resources your organization makes available.  
+7. When complete, your account will be added as a connection. You'll have access to search suggestions, results, and other resources your organization makes available.
+  
+### Customize your logo
+
+When Windows Search is connected to your users' work or school accounts, your organization's logo will appear in Windows Search. The ability to show your logo in the search box on the Windows taskbar is in preview. To ensure your users see the appropriate branding, verify your logo and theme in Org settings. To learn more, see [Customize the Microsoft 365 theme for your organization](/microsoft-365/admin/setup/customize-your-organization-theme). Only global admins can change your organization's theme or logo.
+
+#### Default logo requirements
+
+If you use a URL to Make sure that the URL uses HTTPS. Add an HTTPS image url that allows anonymous access and doesn't require authentication. For default theme, you can also upload a logo image that is less than 10 kb. Your default logo can be in the JPG, PNG, GIF, or SVG format. SVG images will be resized to fit 24 pixels vertically. JPG, PNG, GIF images will be scaled to fit 200 x 48 pixels. Logo aspect ratio will always be preserved.
+
+#### Add a logo
+
+It will take 24 hours for your logo to propagate across all of your experiences.
+
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Custom themes**](https://admin.microsoft.com/Adminportal/Home#/Settings/OrganizationProfile/:/Settings/L1/CustomThemes)
+1. Select **Default theme**.
+1. Select **Logos**.
+1. Upload a logo image. A transparent PNG or SVG with minimal padding or margins is recommended.
+1. Select **Save**.
+
+#### Limitations
+
+- Currently, if URL of the logo is specified in the default theme, it won't be used as the logo in Microsoft Search in Bing and Windows Search Box experiences.
+- There's no way to have separate company logos in Windows and the SharePoint default header.
+- The company logo in the taskbar search box is limited to about 80x40 with some padding and margin. Wider logos may not be legible.
 
 ## Search highlights in Windows
 
@@ -111,3 +134,30 @@ The supported values in Windows 11:
 - Disabled: Disabling this setting turns off search highlights in the Start menu search box and in Windows Search home.
 
 To access the policy for search highlights, on a device with the March 2022 Cumulative Update Preview or April 2022 monthly quality update, go to **C:\Windows\PolicyDefinitions** and locate **Search.admx**. If needed, the Microsoft Download Center has an updated version of the [Administrative Templates](https://www.microsoft.com/download/details.aspx?id=104042) (.admx) and [Group Policy Settings Reference](https://www.microsoft.com/download/details.aspx?id=104043) for Windows 10, version 20H2. Microsoft Endpoint Manager offers the same policy configuration options.
+
+## Work vertical in Windows
+
+The Work vertical is **a dedicated canvas** for quick and reliable organization-wide search in Windows Search. It’s **tailored for workplace search** and work results are a click away and always visible. It provides a coherent, complete, and consistent search experience, **bringing together Microsoft 365 and third-party data**. It simplifies the overall workplace search experience and **improves the discoverability of relevant work results** with easy and reliable navigation by providing a quick and transient way for users to complete the task.
+
+:::image type="content" alt-text="Screenshot of workplace search results in Windows Search." source="media/windows-search/work-vertical-windows-search.png":::
+
+To help keep the focus on work, web results never appear when searching in the Work vertical. Also, the results are personalized and all content adheres to the same access controls and permissions that are applied across all Microsoft Search experiences. 
+
+When users search in the Work vertical, they'll find all the results they expect in workplace search:
+
+- Answers, including bookmarks, Q&As, acronyms, and more
+- People
+- Files
+- Messages (Outlook emails and Teams chats)
+- Groups
+- Sites
+- Yammer
+- Connected data
+
+Users can also easily narrow their search results by selecting a filter when they search.
+
+:::image type="content" alt-text="Screenshot Windows Search work search suggestions and results with filter options highlighted." source="media/windows-search/work-vertical-filters-windows-search.png":::
+
+Workplace search in Windows not only helps users find the information they need, it also helps them get to it even faster by opening files, messages, chats, and other results in the associated app.
+
+Similar to other verticals in Windows Search, workplace search also supports a keyword that allows users to start their search by scoping it to work results only. Just enter *Work:* followed by your search term to only see work results.

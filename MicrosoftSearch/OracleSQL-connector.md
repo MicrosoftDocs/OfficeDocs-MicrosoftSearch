@@ -1,4 +1,5 @@
 ---
+ms.date: 10/08/2019
 title: "Oracle SQL Microsoft Graph connector"
 ms.author: mecampos
 author: mecampos
@@ -192,3 +193,4 @@ The Oracle SQL connector has these limitations in the preview release:
 * The on-premises database must run Oracle Database version 11g or later.
 * ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security.
 * Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
+

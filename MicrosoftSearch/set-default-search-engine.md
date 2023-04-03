@@ -13,6 +13,7 @@ search.appverid:
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: "Learn how to set Bing as your company's default search engine using Microsoft Search."
+ms.date: 01/08/2019
 ---
 
 # Make Bing the default search engine
