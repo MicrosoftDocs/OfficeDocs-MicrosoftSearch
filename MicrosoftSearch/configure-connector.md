@@ -175,7 +175,7 @@ With a full refresh, the search engine processes and indexes the items that have
 * Crawl rules were modified.
 * The schema for the connection has been updated.
 
-With an **Incremental refresh**, the search engine can process and index only the items that were created or modified since the last successful crawl. As a result, not all the data in the content source is reindexed. Incremental refreshes work best to detect content, metadata, permission, and other updates.
+With an **Incremental refresh**, the search engine can process and index only the items that were created or modified since the last successful crawl. As a result, not all the data in the content source is reindexed. Incremental refreshes work best to detect content, metadata, and other updates.
 
 > [!NOTE]
 > Incremental crawls do not currently support processing of updates to **permissions**.
