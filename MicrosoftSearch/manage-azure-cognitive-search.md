@@ -41,7 +41,7 @@ Check out our Microsoft Build 2022 video for a demonstration.
 
 * To connect Azure Cognitive Search with Microsoft Search, you will first need to create an ACS service with at least one index. Follow the instructions here to get set up: [Create a Search Service](/azure/search/search-create-service-portal).
 * The search administrator configuring the connection with Microsoft Search must have Search Administrator permissions to set up the connection in the Microsoft Admin Center.
-* If you plan to connect to your ACS service using Role-Based Access Contol, the Search Administrator configuring the connection in the Microsoft Admin Center must have Search Index Data Reader permissions for your ACS service. See instructions here on how to assign roles here: [Assign roles](/azure/search/search-security-rbac?tabs=config-svc-portal%2Croles-portal%2Ctest-portal%2Ccustom-role-portal%2Cdisable-keys-portal#assign-roles).
+* If you plan to connect to your ACS service using Role-Based Access Contol, the Search Administrator configuring the connection in the Microsoft Admin Center must have either the **Search Index Contributor** RBAC role assigned, or both **Contributor** and **Search Index Data Reader** roles for your ACS service. See instructions here on how to assign roles here: [Assign roles](/azure/search/search-security-rbac?tabs=config-svc-portal%2Croles-portal%2Ctest-portal%2Ccustom-role-portal%2Cdisable-keys-portal#assign-roles).
 
 ## Setup
 
@@ -63,7 +63,7 @@ Check out our Microsoft Build 2022 video for a demonstration.
     * Open your ACS resource in the [Azure Portal](https://portal.azure.com)
     * Select the **Properties** tab, and copy the Id under the **Essentials** heading
 7. Choose whether you want to connect to your ACS index using API key authentication or Azure Role-Based Access Control (RBAC). **Note:** if you select API Keys, the connected ACS index will be searchable by all Microsoft Search users in your organization. In order to limit permissions to a subset of users, configure Azure RBAC for your ACS index, and select Azure Role-Based Access Control here. For more information on Role-Based Access control, see: [RBAC Search Security](/azure/search/search-security-rbac).
-    * If you selected API Key authentication, enter your Admin and Query API keys. For information about finding or creating API keys, see [Find existing keys](/azure/search/search-security-api-keys#find-existing-keys).
+    * If you selected API Key authentication, enter your Admin API key and, optionally, a Query API key. The Admin API key will only be used to fetch the data schema and the Query key will be used at query time. For information about finding or creating API keys, see [Find existing keys](/azure/search/search-security-api-keys#find-existing-keys).
 8. Choose whether you want queries on your ACS content to use Semantic Search or Simple Search. If you want to use Semantic Seach, you will need to have it enabled for your ACS service. These queries will use your ACS semantic query quota and could incur additional costs through Azure Billing. For more details on Semantic Search, see [Semantic Search Overview](/azure/search/semantic-search-overview).
 9. Read and select the authorization check boxes, then test your setup with the **Test connection** button. Fix any errors, then select **Next**.
 10. In the **Add semantic property labels** pane:
