@@ -2,6 +2,14 @@
 
 
 
+## Week of April 03, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/6/2023 | [Azure DevOps Wiki Graph connector for Microsoft Search](/MicrosoftSearch/azure-devops-wiki-connector) | modified |
+
+
 ## Week of March 20, 2023
 
 
