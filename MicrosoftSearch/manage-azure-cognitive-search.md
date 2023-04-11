@@ -1,7 +1,7 @@
 ---
 title: "Azure Cognitive Search results in Microsoft Search (Preview)"
-ms.author: dawholl
-author: dawholl
+ms.author: kellis
+author: kellis
 manager: kellis
 ms.audience: Admin
 ms.topic: article
@@ -85,7 +85,7 @@ Two forms of query syntax are supported for ACS results in Microsoft Search: sim
 
 Simple Query Syntax includes Keyword Query Language, AND, OR, and NOT operators. For more information, see [Simple query syntax in Azure Cognitive Search](/azure/search/query-simple-syntax). To adjust which data fields are searchable, you can [modify the field attributes for your ACS index](/azure/search/search-what-is-an-index#field-attributes).
 
-Semantic search uses semantic ranking to find context and relatedness among terms, as well as language understanding to create summarizations within your content. For more details, see [Semantic Search Overview](https://learn.microsoft.com/en-us/azure/search/semantic-search-overview).
+Semantic search uses semantic ranking to find context and relatedness among terms, as well as language understanding to create summarizations within your content. For more details, see [Semantic Search Overview](/azure/search/semantic-search-overview).
 
 ## Customize result types
 
