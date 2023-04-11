@@ -70,7 +70,7 @@ Check out our Microsoft Build 2022 video for a demonstration.
     * If these labels are sufficient to display the results, select the source properties you’d like to display for each of the listed labels. The selected properties are used to create a default Modern Result Type (MRT) for the results. You must select a property for the Title. The others are optional but recommended, since they make the results more informative.
     * If these labels aren't adequate to display your results, you can leave them blank and create a custom MRT later. For information about creating a custom MRT, see [Manage result types](/microsoftsearch/manage-result-types).
 11. Verify the information entered is correct and select **Finish**.
-12. When the connection has been created, you'll be redirected to the Data Sources page again. You should see your newly created connection with the status **Ready**. :::image type="content" alt-text="Azure Cognitive Search connection successfully created" source="media/azure-cognitive-search/acs-custom-vertical.png" lightbox="media/azure-cognitive-search/acs-custom-vertical.png":::
+12. When the connection has been created, you'll be redirected to the Data Sources page again. You should see your newly created connection with the status **Ready**. :::image type="content" alt-text="Azure Cognitive Search connection successfully created." source="media/azure-cognitive-search/acs-custom-vertical.png" lightbox="media/azure-cognitive-search/acs-custom-vertical.png":::
 13. You can create up to three ACS connections per tenant - repeat the above steps for other connections you want to create.
 
 > [!TIP]
