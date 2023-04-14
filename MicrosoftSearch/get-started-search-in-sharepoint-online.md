@@ -13,7 +13,9 @@ search.appverid:
 - MOE150
 description: "Get your organization started by using Microsoft Search in SharePoint Online"
 
+ms.date: 04/23/2019
 ---
+
 # Get started with Microsoft Search in SharePoint
 
 Microsoft Search in SharePoint is the modern search experience in [SharePoint Online](https://products.office.com/sharepoint/collaboration). SharePoint Online also offers a classic search experience. As a search administrator, you can’t turn either of these search experiences on or off. They're both on by default. Which search experience your users get depends on where they search from:

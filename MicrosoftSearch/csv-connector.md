@@ -14,6 +14,7 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Set up the Microsoft Search CSV connector for SharePoint or Azure Data Lake Storage sources." 
+ms.date: 03/08/2022
 ---
 
 # CSV connector
@@ -28,7 +29,7 @@ This article is for anyone who configures, runs, and monitors a CSV connector. I
 <!---## Before you get started-->
 ## Before you get started
 
-For a SharePoint data source, you'll need to create a SharePoint app with Oauth configuration. For an ADLS data source, you'll need to create an ADLS storage account.
+Make sure there's no whitespace in the CSV headers. For a SharePoint data source, you'll need to create a SharePoint app with Oauth configuration. For an ADLS data source, you'll need to create an ADLS storage account.
 
 ### Create a SharePoint app with Oauth configuration
 
@@ -36,7 +37,7 @@ Verify the .csv files you want to index have been uploaded to a SharePoint docum
 
 #### Create a SharePoint app
 
-1. Go to  `https://Org-Name.sharepoint.com/Site-Name/_layouts/15/appregnew.aspx`.
+1. Go to  `https://Org-Name.sharepoint.com/sites/mysite/_layouts/15/appregnew.asp`.
 2. On the Client Id and Client Secret fields, select **Generate**.
 1. For Title, enter an app name.
 1. In the App Domain field, enter `www.gcs.com`.
@@ -58,11 +59,14 @@ Set-spotenant –DisableCustomAppAuthentication $false
 ```
 
 > [!NOTE]
+> If you're using PowerShell 7, use this command first `Import-Module microsoft.online.sharepoint.powershell -UseWindowsPowerShell`
+
+> [!NOTE]
 > If you're using multifactor authentication, use `Connect-SPOService -Url https://$orgName-admin.sharepoint.com`.
 
 #### Complete the app configuration
 
-1. Go to `https://Org-Name.sharepoint.com/Site-Name/_layouts/15/appinv.aspx`.
+1. Go to `https://Org-Name.sharepoint.com/sites/mysite/_layouts/15/appregnew.asp`.
 2. In the App Id field, paste the Client Id of the SharePoint app and select **Lookup**.
 3. In Permission Request XML field, paste this code and select **Create**.
 

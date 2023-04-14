@@ -14,6 +14,7 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Manage the search schema for Microsoft built Graph connectors" 
+ms.date: 07/12/2022
 ---
 
 # Manage search schema (preview)
