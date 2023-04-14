@@ -20,7 +20,7 @@ description: "Set up the File share Graph connector for Microsoft Search"
 
 # File share Microsoft Graph connector
 
-The File share Microsoft Graph connector allows users in your organization to search on-premise Windows file shares.
+The File share Microsoft Graph connector allows users in your organization to search on-premises Windows file shares.
 
 > [!NOTE]
 > Read the [**Setup for your Microsoft Graph connector**](configure-connector.md) article to understand the general connectors setup process.
@@ -84,7 +84,7 @@ You also have the ability to create an exception to the limit rule. The priority
 
 :::image type="content" source="media/file-connector/ExclusionRule.png" alt-text="Graphic showing a subset of files excluded from indexing with exceptions.":::
 
-## Step 6: Custom property settings (Preview)
+## Step 6: Custom property settings
 
 You can enrich your indexed data by creating custom properties based on the connector's default properties.
 
