@@ -1,7 +1,7 @@
 ---
 title: "Add a search box to your intranet site"
-ms.author: dawholl
-author: dawholl
+ms.author: kellis
+author: kellis
 manager: kellis
 ms.audience: Admin
 ms.topic: article
