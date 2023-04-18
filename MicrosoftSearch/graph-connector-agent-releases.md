@@ -20,6 +20,12 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
+### Version 2.1.0.0 (*10 April 2023*)
+
+* Fix for slow crawl by optimizing local file logging
+* Semantic search for Intranet connector - Parsing of HTML content to store annotations for each item to power future intelligent search capabilities
+* Bug fixes and reliability improvements
+
 ### Version 2.0.1.0 (*27 Mar 2023*)
 
 * Bug fixes and reliability improvements
@@ -61,50 +67,50 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 * Bug fixes and reliability improvements
 
-### Version 1.8.1.0 (*29 Aug 2022*)
+### Version 1.8.1.0 (*not supported*) (*29 Aug 2022*)
 
 * Security Enhancements
 * Bug fixes and reliability improvements
 
-### Version 1.8.0.0 (*25 Jul 2022*)
+### Version 1.8.0.0 (*not supported*) (*25 Jul 2022*)
 
 * Support for incremental crawls and OAuth for Microsoft Graph connectors SDK
 * Bug fixes and reliability improvements
 
-### Version 1.7.0.0 (*16 Jun 2022*)
+### Version 1.7.0.0 (*not supported*) (*16 Jun 2022*)
 
 * Security enhancements
 * Bug fixes and reliability improvements
 
-### Version 1.6.0.0 (*09 May 2022*)
+### Version 1.6.0.0 (*not supported*) (*09 May 2022*)
 
 * Dashboard changes to enable monitoring of multiple instances of a connector
 * Bug fixes and reliability improvements
 
-### Version 1.5.1.0 (*21 Mar 2022*)
+### Version 1.5.1.0 (*not supported*) (*21 Mar 2022*)
 
 * Bug fixes and reliability improvements
 * Change in default property labels assignment for 'Enterprise websites' connector
 
-### Version 1.5.0.0 (*16 Feb 2022*)
+### Version 1.5.0.0 (*not supported*) (*16 Feb 2022*)
 
 * Ability to update client-secret & certificate used for authentication 
 * OAuth 2.0 support for Intranet On-premises connector 
 * Support for parsing of OneNote (.one) file 
 * Fixed issues in parsing word files (.doc*) & last modified date for PowerPoint files (.ppt*) 
 
-### Version 1.4.0.0 (*13 Jan 2022*)
+### Version 1.4.0.0 (*not supported*) (*13 Jan 2022*)
 
 * Support for multiple instances of a connector
 * Bug fixes and reliability improvements
 
-### Version 1.3.1.0 (*28 Oct 2021*)
+### Version 1.3.1.0 (*not supported*) (*28 Oct 2021*)
 
 * File-share connectors documents per second improvements
 * Other performance improvements
 * Bug fixes
 
-### Version 1.3.0.0 (*8 Oct 2021*)
+### Version 1.3.0.0 (*not supported*) (*8 Oct 2021*)
 
 * General reliability improvements
 * Bug fixes
