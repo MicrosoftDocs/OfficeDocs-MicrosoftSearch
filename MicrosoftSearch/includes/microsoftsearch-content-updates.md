@@ -2,6 +2,14 @@
 
 
 
+## Week of April 17, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/18/2023 | [Confluence Cloud Microsoft Graph connector](/MicrosoftSearch/confluence-cloud-connector) | modified |
+
+
 ## Week of April 10, 2023
 
 
@@ -24,12 +32,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 3/20/2023 | [Microsoft Viva Topics – Item Delete Notification](/MicrosoftSearch/connectors-viva-topics-item-delete-notification) | added |
-
-
-## Week of March 13, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/14/2023 | [Release history for Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent-releases) | modified |
-| 3/14/2023 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
