@@ -2,6 +2,14 @@
 
 
 
+## Week of April 24, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/26/2023 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
+
+
 ## Week of April 17, 2023
 
 
@@ -24,11 +32,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 4/6/2023 | [Azure DevOps Wiki Graph connector for Microsoft Search](/MicrosoftSearch/azure-devops-wiki-connector) | modified |
-
-
-## Week of March 20, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/20/2023 | [Microsoft Viva Topics – Item Delete Notification](/MicrosoftSearch/connectors-viva-topics-item-delete-notification) | added |
