@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Search for US government environments"
-ms.author: dawholl
-author: dawholl
+ms.author: kellis
+author: kellis
 manager: kellis
 ms.audience: Admin
 ms.topic: article
@@ -23,7 +23,7 @@ It is our general intent to deliver Microsoft Search commercial features and fun
 
 Microsoft Search provides an easy-to-use, familiar experience to help users find files and documents, internal sites, people, groups, and answers. It does this by securely accessing multiple data sources, including Outlook, SharePoint, OneDrive, and other shared Microsoft 365 resources. With Microsoft Search in Bing users can get search results from the internet as well.
 
-To get personalized, organization-wide results, users enter a search query in a search box on [SharePoint](http://sharepoint.com/), [Microsoft OneDrive for Business](https://onedrive.live.com/about/business/), or any Office 365 app. When enabled, users who go to [Bing](https://bing.com), and sign in with a valid work account, can easily and securely find work results with Microsoft Search in Bing. To learn more about Microsoft Search features, see [Microsoft Search Overview](/microsoftsearch/overview-microsoft-search).
+To get personalized, organization-wide results, users enter a search query in a search box on [SharePoint](https://sharepoint.com/), [Microsoft OneDrive for Business](https://onedrive.live.com/about/business/), or any Office 365 app. When enabled, users who go to [Bing](https://bing.com), and sign in with a valid work account, can easily and securely find work results with Microsoft Search in Bing. To learn more about Microsoft Search features, see [Microsoft Search Overview](/microsoftsearch/overview-microsoft-search).
 
 For GCC customers, Microsoft Search in Bing is off by default. Search admins can turn on Microsoft Search in Bing:
 
