@@ -58,7 +58,7 @@ You can use the Microsoft Search content creator browser extension to easily add
 
 Promoted Results in SharePoint can be included in Microsoft Search. It’s an easy way to quickly populate results and make search more effective for your users. There are two ways you can import results into the Search & intelligence portal in the [Microsoft 365 admin center](https://admin.microsoft.com/): 
 1.	You can export the CSV file from SharePoint and import through the CSV bookmark import tool in the Answers tab in the Search & intelligence portal. 
-2.	You can export the bookmarks from SharePoint and create the API queries needed. See [Create bookmark](https://learn.microsoft.com/en-us/graph/api/search-searchentity-post-bookmarks?view=graph-rest-beta&tabs=http) for more info. 
+2.	You can export the bookmarks from SharePoint and create the API queries needed. Go to [Create bookmark](graph/api/search-searchentity-post-bookmarks?view=graph-rest-beta&tabs=http) for more info. 
 When the import is finished, the new bookmarks will have a “Suggested” status; you can then review the bookmarks and publish or edit them as needed. 
 
 ### Add default and suggested bookmarks
