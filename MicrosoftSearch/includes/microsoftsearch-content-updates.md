@@ -2,6 +2,14 @@
 
 
 
+## Week of May 15, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/17/2023 | [Manage bookmarks](/MicrosoftSearch/manage-bookmarks) | modified |
+
+
 ## Week of April 24, 2023
 
 
@@ -16,19 +24,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 4/18/2023 | [Confluence Cloud Microsoft Graph connector](/MicrosoftSearch/confluence-cloud-connector) | modified |
-
-
-## Week of April 10, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/11/2023 | [Release history for Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent-releases) | modified |
-
-
-## Week of April 03, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/6/2023 | [Azure DevOps Wiki Graph connector for Microsoft Search](/MicrosoftSearch/azure-devops-wiki-connector) | modified |
