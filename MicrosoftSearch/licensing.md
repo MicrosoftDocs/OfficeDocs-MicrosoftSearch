@@ -40,6 +40,8 @@ To purchase more Microsoft Graph connectors quota, contact your Microsoft accou
 4. Select **Buy**, and then complete your order preferences.
 5. Select **Check out now**.
 
+Cost of indexing connector content is $1000/month for each million items. This is assessed for items exceeding the entitled quota for each tenant (see below).
+
 ## Entitlement built into Microsoft 365 or Office 365 E5 licenses
 
 The following licenses include entitlement to 500 items of index quota, which counts towards your organization's quota for ingesting content from Microsoft Graph connectors:
