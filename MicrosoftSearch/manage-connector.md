@@ -49,11 +49,27 @@ Five states show up in the **State** column against each connection:
 
 * **Delete Failed**. The deletion of the connection failed. Depending upon the failure reason, the data might still be indexed, item quota might still be consumed, and crawls might still run for the connection. We recommend that you try deleting the connection again in this state.
 
+## Manage crawls in your connections
+
+During connection creation or edit connection flow, you can configure the crawl schedule through "Refresh Settings". To learn more about different types of crawls available see: [Setup Overview](configure-connector.md).
+
+Apart from the scheduled crawls, you can run on-demand crawls for your connection through the connection pane. Please refer to the image below:
+
+:::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/ondemand_crawl.png" lightbox="media/manage-connector/ondemand_crawl.png":::
+
+On-demand crawl helps you start a crawl irrespective of the crawl schedule. You can choose to run a full or incremental crawl using the drop down as shown below:
+
+:::image type="content" alt-text="On-demand crawl drop down." source="media/manage-connector/ondemand_dropdown.png" lightbox="media/manage-connector/ondemand_dropdown.png":::
+
+There can be only one category of crawl, scheduled or on-demand, running on a connection. If a connection is in "Syncing" state, on-demand crawls are disabled. Scheduled crawls are auto triggered.
+
+If a scheduled or an on-demand crawl continues beyond the time of the schedule of the next full or incremental crawl, the ongoing crawl will not be stopped, and the next scheduled crawl is skipped and queued. After the ongoing crawl completes, the crawl of the opposite type (full or incremental) will be picked from the skipped queue and triggered. For example, if the previous crawl was of the type full crawl, only the incremental crawl, if present in the skipped queue, will be triggered and vice versa.
+
 ## Monitor your index quota utilization
 
 The available index quota and consumption is displayed on the connectors landing page.
 
-:::image type="content" alt-text="Index quota utilization bar." source="media/quota_utilization.png" lightbox="media/quota_utilization.png":::
+:::image type="content" alt-text="Index quota utilization bar." source="media/manage-connector/quota_utilization.png" lightbox="media/manage-connector/quota_utilization.png":::
 
 The quota utilization bar indicates various states based on consumption of quota by your organization:
 
