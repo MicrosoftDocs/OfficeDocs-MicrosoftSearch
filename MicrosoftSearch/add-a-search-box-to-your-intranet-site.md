@@ -1,7 +1,7 @@
 ---
 title: "Add a search box to your intranet site"
-ms.author: dawholl
-author: dawholl
+ms.author: kellis
+author: kellis
 manager: kellis
 ms.audience: Admin
 ms.topic: article
@@ -47,7 +47,7 @@ You need to add two elements to the page: a container for the search box and the
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-- For SharePoint classic or modern pages, download bing-search-box.sppkg from the [Microsoft Search public repro](https://github.com/microsoft-search/bing-search-box/releases/tag/v1), deploy it to your SharePoint app catalog, then add the app to your SharePoint sites. For details, see [Deploy your client-side web part to a SharePoint page](/sharepoint/dev/spfx/web-parts/get-started/serve-your-web-part-in-a-sharepoint-page#deploy-the-helloworld-package-to-app-catalog).
+- For SharePoint classic or modern pages, download bing-search-box.sppkg from the [Microsoft Search public repro](https://github.com/microsoft-search/bing-search-box/releases), deploy it to your SharePoint app catalog, then add the app to your SharePoint sites. For details, see [Deploy your client-side web part to a SharePoint page](/sharepoint/dev/spfx/web-parts/get-started/serve-your-web-part-in-a-sharepoint-page#deploy-the-helloworld-package-to-app-catalog).
 - For WordPress pages, open edit mode, add the Custom HTML widget, and add the script.
 
 ## Add a search box to your Confluence page
