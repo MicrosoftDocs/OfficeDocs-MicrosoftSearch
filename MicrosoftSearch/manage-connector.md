@@ -59,7 +59,7 @@ Apart from the scheduled crawls, you can run on-demand crawls for your connectio
 
 On-demand crawl helps you start a crawl irrespective of the crawl schedule. You can choose to run a full or incremental crawl using the drop down as shown below:
 
-:::image type="content" alt-text="On-demand crawl drop down." source="media/manage-connector/ondemand_dropdown.png" lightbox="media/manage-connector/on-demand-dropdown.png":::
+:::image type="content" alt-text="On-demand crawl drop down." source="media/manage-connector/on-demand-dropdown.png" lightbox="media/manage-connector/on-demand-dropdown.png":::
 
 > [!NOTE]
 > Graph Connector Agent, only from version 2.1.0.0 onwards, supports on-demand crawl.
