@@ -2,35 +2,25 @@
 
 
 
-## Week of April 03, 2023
+## Week of May 15, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 4/6/2023 | [Azure DevOps Wiki Graph connector for Microsoft Search](/MicrosoftSearch/azure-devops-wiki-connector) | modified |
+| 5/17/2023 | [Manage bookmarks](/MicrosoftSearch/manage-bookmarks) | modified |
 
 
-## Week of March 20, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/20/2023 | [Microsoft Viva Topics – Item Delete Notification](/MicrosoftSearch/connectors-viva-topics-item-delete-notification) | added |
-
-
-## Week of March 13, 2023
+## Week of April 24, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 3/14/2023 | [Release history for Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent-releases) | modified |
-| 3/14/2023 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
+| 4/26/2023 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
 
 
-## Week of March 06, 2023
+## Week of April 17, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 3/8/2023 | [Result Layout for Confluence cloud Graph connector](/MicrosoftSearch/confluence-cloud-connector-result-layout) | added |
-| 3/8/2023 | [Result Layout for Jira Graph connector](/MicrosoftSearch/jira-connector-result-layout) | modified |
+| 4/18/2023 | [Confluence Cloud Microsoft Graph connector](/MicrosoftSearch/confluence-cloud-connector) | modified |
