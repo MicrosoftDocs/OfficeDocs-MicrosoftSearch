@@ -55,11 +55,11 @@ During connection creation or edit connection flow, you can configure the crawl 
 
 Apart from the scheduled crawls, you can run on-demand crawls for your connection through the connection pane. Please refer to the image below:
 
-:::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/ondemand_crawl.png" lightbox="media/manage-connector/ondemand_crawl.png":::
+:::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/on-demand-crawl.png" lightbox="media/manage-connector/on-demand-crawl.png":::
 
 On-demand crawl helps you start a crawl irrespective of the crawl schedule. You can choose to run a full or incremental crawl using the drop down as shown below:
 
-:::image type="content" alt-text="On-demand crawl drop down." source="media/manage-connector/ondemand_dropdown.png" lightbox="media/manage-connector/ondemand_dropdown.png":::
+:::image type="content" alt-text="On-demand crawl drop down." source="media/manage-connector/ondemand_dropdown.png" lightbox="media/manage-connector/on-demand-dropdown.png":::
 
 > [!NOTE]
 > Graph Connector Agent, only from version 2.1.0.0 onwards, supports on-demand crawl.
@@ -72,7 +72,7 @@ If a scheduled or an on-demand crawl continues beyond the time of the schedule o
 
 The available index quota and consumption is displayed on the connectors landing page.
 
-:::image type="content" alt-text="Index quota utilization bar." source="media/manage-connector/quota_utilization.png" lightbox="media/manage-connector/quota_utilization.png":::
+:::image type="content" alt-text="Index quota utilization bar." source="media/manage-connector/quota-utilization.png" lightbox="media/manage-connector/quota-utilization.png":::
 
 The quota utilization bar indicates various states based on consumption of quota by your organization:
 
