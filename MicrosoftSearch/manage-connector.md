@@ -61,7 +61,10 @@ On-demand crawl helps you start a crawl irrespective of the crawl schedule. You 
 
 :::image type="content" alt-text="On-demand crawl drop down." source="media/manage-connector/ondemand_dropdown.png" lightbox="media/manage-connector/ondemand_dropdown.png":::
 
-There can be only one category of crawl, scheduled or on-demand, running on a connection. If a connection is in "Syncing" state, on-demand crawls are disabled. Scheduled crawls are auto triggered.
+> [!NOTE]
+> Graph Connector Agent, only from version 2.1.0.0 onwards, supports on-demand crawl.
+
+There can be only one category of crawl, scheduled or on-demand, running on a connection at any time. If a connection is in "Syncing" state, on-demand crawls are disabled. Scheduled crawls are auto triggered.
 
 If a scheduled or an on-demand crawl continues beyond the time of the schedule of the next full or incremental crawl, the ongoing crawl will not be stopped, and the next scheduled crawl is skipped and queued. After the ongoing crawl completes, the crawl of the opposite type (full or incremental) will be picked from the skipped queue and triggered. For example, if the previous crawl was of the type full crawl, only the incremental crawl, if present in the skipped queue, will be triggered and vice versa.
 
