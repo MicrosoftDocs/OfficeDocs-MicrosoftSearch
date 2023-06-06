@@ -1,8 +1,8 @@
 ---
 title: "Security and Privacy for Microsoft Search in Bing"
-ms.author: jeffkizn
-author: jeffkizn
-manager: parulm
+ms.author: kellis
+author: kellis
+manager: makers
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
