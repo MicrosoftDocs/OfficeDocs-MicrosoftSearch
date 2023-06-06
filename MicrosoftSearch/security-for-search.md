@@ -60,7 +60,7 @@ Because workplace searches might be sensitive, Microsoft Search has implemented 
 
 When using Bing Chat while signed in with an AAD account, prompts and chat responses aren't logged except for some conversation data that is retained for a short period of time to enable Microsoft to secure and maintain service quality and then deleted. This data isn't used to update or train the model and will only be used to generate responses for you. For people who have linked their AAD and MSA accounts, their AAD account must be the currently active account for these principles to apply.
 
-In cases where Bing Chat is accessed while signed in with an MSA account or anonymously, Microsoft’s consumer privacy and data handling practices apply
+In cases where Bing Chat is accessed while signed in with an MSA account or anonymously, Microsoft’s consumer privacy and data handling practices apply.
 
 ### Advertising
 
