@@ -20,11 +20,11 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
-### Version 2.2.0.0 (*02 May 2023*)
+### Version 2.1.1.0 (*07 Jun 2023*)
 
 * Bug fixes and reliability improvements
 
-### Version 2.1.0.0 (*10 April 2023*)
+### Version 2.1.0.0 (*10 Apr 2023*)
 
 * Fix for slow crawl by optimizing local file logging
 * Semantic search for Intranet connector - Parsing of HTML content to store annotations for each item to power future intelligent search capabilities
