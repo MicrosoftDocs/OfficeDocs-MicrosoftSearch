@@ -79,7 +79,7 @@ In this example, the query “Presentation templates” shows results only from 
     * Add an icon to your custom result types – it makes the source of the content transparent to users. 
     * Verify that all results are correctly indented and are vertically aligned.  
 
-:::image type="content" alt-text="This screenshot shows an example of merged search results in the All tab." source="media/TBD.png":::
+:::image type="content" alt-text="This screenshot shows an example of merged search results in the All tab." source="media/results-with-without-icon.png":::
 
 ## Default setting
 
