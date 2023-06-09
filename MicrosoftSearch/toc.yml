@@ -124,6 +124,8 @@ items:
     href: manage-verticals.md
   - name: Manage result types
     href: manage-result-types.md
+  - name: Manage connectors in All vertical
+    href: connectors-in-all-vertical.md
   - name: Manage search result layouts
     href: customize-results-layout.md
   - name: Manage result clusters
