@@ -32,7 +32,8 @@ This article shows the basic process required to set up Microsoft Graph connecto
 7. [Manage schema](#step-7-manage-schema)
 8. [Refresh settings](#step-8-refresh-settings)
 9. [Review connection](#step-9-review-connection)
-10. [Customize the search results page](#step-10-customize-the-search-results-page)
+10. [Manage connection results](#step-10-manage-connection-results)
+11. [Customize the search results page](#step-11-customize-the-search-results-page)
 
 This article also includes the following information:
 
