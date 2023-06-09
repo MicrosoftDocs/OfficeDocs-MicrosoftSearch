@@ -66,11 +66,11 @@ In this example, the query “Sahara project” shows results from Confluence, S
 
 In this example, the query “Change security settings” shows results only from Confluence to the user, as there are relevant matching items only in that source: 
 
-:::image type="content" alt-text="This screenshot shows an example of merged search results in the All tab." source="media/TBD.png":::
+:::image type="content" alt-text="This screenshot shows an example of merged search results in the All tab." source="media/all-tab-confluence-results.png":::
 
 In this example, the query “Presentation templates” shows results only from SharePoint, as there are no relevant matching items from any connector data source: 
 
-:::image type="content" alt-text="This screenshot shows an example of merged search results in the All tab." source="media/TBD.png":::
+:::image type="content" alt-text="This screenshot shows an example of merged search results in the All tab." source="media/all-tab-no-connector-results.png":::
 
 ## Recommendations
 
