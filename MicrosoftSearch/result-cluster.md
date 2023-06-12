@@ -16,6 +16,9 @@ description: "Details of the Connectors Result Cluster experience"
 ---
 # Manage result clusters
 
+> [!TIP]
+> Inline results for Graph Connector content in All vertical have replaced result clusters as the default experience ([**Learn more about inline results**](connectors-in-all vertical.md))
+
 With Graph connectors result clusters, you can search for content from third-party data sources in the All tab, in SharePoint, Office.com, and Microsoft Search in Bing. 
 
 Results in a result cluster are grouped together based on the search vertical configuration. Each result cluster only contains results from a single custom search vertical. To ensure discovery of content in a result cluster, the system expects meaningful titles on your items.
@@ -71,17 +74,14 @@ To ensure discovery of content from the search verticals, we recommend attributi
 
 ## Result clusters default settings
   
-The result cluster experience is turned on by default.  
+The result cluster experience is turned **off** by default.  Inline results for Graph Connector content in All vertical is turned **on** by default. 
 
-If you would like to disable it, follow these steps to turn off the experience at the organization level:
+If you would like to continue using the previous result cluster experience, follow these steps at the organization level: 
 
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
-1. Select the **All** vertical, then enable **Hide connector results**.
+1. In the Microsoft 365 admin center, go to **Verticals**. 
+2. Select the All vertical, then in the “Manage connection results” panel, select “Show results in a cluster.” 
 
-Follow these steps to turn off the experience at the SharePoint site level:
+If you would like to disable connector results from All vertical completely, follow these steps at the organization level: 
 
-1. Go to **Settings** in the SharePoint site.
-2. Go to **Site information** > **View all site settings**.
-3. Go to the Microsoft Search section, then select **Configure Microsoft Search for this site collection**.
-4. In the navigation pane, go to **Custom experience**, then select **Verticals**.
-5. Select the **All** vertical, then enable **Hide connector results**.
+1. In the Microsoft 365 admin center, go to **Verticals**. 
+2. Select the All vertical, then in the “Manage connection results” panel, turn the “Include connector results” toggle off. 
