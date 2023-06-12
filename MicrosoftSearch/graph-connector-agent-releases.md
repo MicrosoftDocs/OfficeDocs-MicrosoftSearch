@@ -20,8 +20,13 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
-## Version 2.1.1.0 (*June 07, 2023*)
+## Version 2.2.1.0 (*June 07, 2023*)
 
+* Bug fixes and reliability improvements
+
+## Version 2.2.0.0 (*May 31, 2023*)
+
+* Added surfacing of errors when the endpoint "graph.microsoft.com" is not allowed in the customer network. Refer to this [page](graph-connector-agent.md) to learn more about the domains that need to be unblocked in the customer network.
 * Bug fixes and reliability improvements
 
 ## Version 2.1.0.0 (*April 10, 2023*)
