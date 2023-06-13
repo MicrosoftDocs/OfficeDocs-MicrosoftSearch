@@ -251,11 +251,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "MicrosoftSearch/connectors-in-all-vertical.md",
-      "redirect_url": "/MicrosoftSearch/connectors-in-all-vertical.md",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "MicrosoftSearch/servicenow-connector.md",
       "redirect_url": "/MicrosoftSearch/servicenow-knowledge-connector",
       "redirect_document_id": false
