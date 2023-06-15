@@ -17,7 +17,7 @@ description: "Details of the Connectors Result Cluster experience"
 # Manage result clusters
 
 > [!TIP]
-> Inline results for Graph Connector content in All vertical have replaced result clusters as the default experience ([**Learn more about inline results**](connectors-in-all vertical.md))
+> Inline results for Graph Connector content in All vertical have replaced result clusters as the default experience ([**Learn more about inline results**](connectors-in-all-vertical.md))
 
 With Graph connectors result clusters, you can search for content from third-party data sources in the All tab, in SharePoint, Office.com, and Microsoft Search in Bing. 
 
