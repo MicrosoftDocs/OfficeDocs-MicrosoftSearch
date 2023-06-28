@@ -56,12 +56,6 @@ Because workplace searches might be sensitive, Microsoft Search has implemented 
 - If a set of restrictions or frequency thresholds are met which give us confidence that the query isn't specific to a particular organization, the query is treated as described in the Search and artificial intelligence section of the [Privacy Statement](https://privacy.microsoft.com/privacystatement). For example, such queries are used to model and train public features, such as autosuggest or related searches.
 - Queries that don't meet the set of restrictions or frequency thresholds are stored separately from public, non-Microsoft Search traffic.
 
-### Bing Consumer Chat with AAD
-
-When using Bing Chat while signed in with an AAD account, prompts and chat responses aren't logged except for some conversation data that is retained for a short period of time to enable Microsoft to secure and maintain service quality and then deleted. This data isn't used to update or train the model and will only be used to generate responses for you. For people who have linked their AAD and MSA accounts, their AAD account must be the currently active account for these principles to apply.
-
-In cases where Bing Chat is accessed while signed in with an MSA account or anonymously, Microsoft’s consumer privacy and data handling practices apply.
-
 ### Advertising
 
 Advertising shown on Bing.com with workplace searches is solely related to the content of the search queries. Ads are never targeted to users based on their workplace identity.
