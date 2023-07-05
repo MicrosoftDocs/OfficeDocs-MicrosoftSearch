@@ -30,7 +30,10 @@ other instructions that apply to only ServiceNow connector including information
 and [Limitations](#limitations).  
 
 ## Step 1: Add a connector in the Microsoft 365 admin center.
-Follow the general [setup instructions](./configure-connector.md).
+
+[Add ServiceNow Knowledge Connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowKB&type=ServiceNowKB)
+
+(See general [setup instructions](./configure-connector.md) for more details)
 
 ## Step 2: Name the connection.
 Follow the general [setup instructions](./configure-connector.md).
