@@ -49,13 +49,13 @@ This article also includes the following information:
 
 ## Step 1: Add a Microsoft Graph connector in the Microsoft 365 admin center
 
-Complete the following steps to configure any of the Microsoft Graph connectors:
+Complete the following steps to configure any of the Microsoft Graph connectors (or [click here](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Configure_Connector) to directly access the Connector Catalog):
 
 1. Sign into your admin account in the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 2. In the navigation pane, select **Settings**, and then select **Search & intelligence**. Select the [Data sources tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
 
-3. Select **+Add**, and then select the data source of your choice from the menu of available options.
+3. Select [**+Add**](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Configure_Connector), and then select the data source of your choice from the menu of available options.
 
    > [!div class="mx-imgBorder"]
    > ![Data sources available include: ADLS Gen2, Enterprise websites, Microsoft SQL server, Azure SQL, Oracle SQL database, ServiceNow Knowledge, ServiceNow Catalog, File share, Azure DevOps, and MediaWiki.](media/add-connector.png)
