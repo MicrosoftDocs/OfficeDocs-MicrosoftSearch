@@ -1,3 +1,4 @@
+---
 ms.date: 10/08/2019
 title: "Azure Data Lake Microsoft Graph connector for Microsoft Search"
 ms.author: mecampos
