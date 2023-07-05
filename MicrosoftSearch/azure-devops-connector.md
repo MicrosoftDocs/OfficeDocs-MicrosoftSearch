@@ -50,7 +50,9 @@ You will need the following permissions granted to the user account whose creden
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
-Follow the general [setup instructions](./configure-connector.md).
+[Add Azure DevOps connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_AzureDevOps&type=AzureDevOps)
+
+(See general [setup instructions](./configure-connector.md) for more details)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 

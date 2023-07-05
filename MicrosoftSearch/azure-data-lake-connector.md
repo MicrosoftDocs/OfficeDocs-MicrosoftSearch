@@ -1,4 +1,3 @@
----
 ms.date: 10/08/2019
 title: "Azure Data Lake Microsoft Graph connector for Microsoft Search"
 ms.author: mecampos
@@ -30,7 +29,9 @@ In the article, we use *Azure Storage* as a generic term for [Azure Blob Storage
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
-Follow the general [setup instructions](./configure-connector.md).
+[Add Azure Data Lake Storage Gen2 connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ADLSGen2&type=ADLSGen2)
+
+(See general [setup instructions](./configure-connector.md) for more details)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 2: Name the connection
