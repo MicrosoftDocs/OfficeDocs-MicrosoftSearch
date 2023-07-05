@@ -1,4 +1,3 @@
-![image](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/118478951/9784efe9-9a36-4682-a037-5c6c30a4b423)---
 ms.date: 10/08/2019
 title: "Azure Data Lake Microsoft Graph connector for Microsoft Search"
 ms.author: mecampos
