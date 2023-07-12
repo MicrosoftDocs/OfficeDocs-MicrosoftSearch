@@ -2,25 +2,20 @@
 
 
 
-## Week of May 15, 2023
+## Week of July 03, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 5/17/2023 | [Manage bookmarks](/MicrosoftSearch/manage-bookmarks) | modified |
+| 7/5/2023 | Compliance solutions with Microsoft Graph connectors | removed |
 
 
-## Week of April 24, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/26/2023 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | modified |
-
-
-## Week of April 17, 2023
+## Week of June 05, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 4/18/2023 | [Confluence Cloud Microsoft Graph connector](/MicrosoftSearch/confluence-cloud-connector) | modified |
+| 6/7/2023 | [Security and Privacy for Microsoft Search in Bing](/MicrosoftSearch/security-for-search) | modified |
+| 6/8/2023 | [Release history for Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent-releases) | modified |
+| 6/9/2023 | [Connectors in all tab](/MicrosoftSearch/connectors-in-all-vertical) | added |
+| 6/9/2023 | [Connectors result cluster](/MicrosoftSearch/result-cluster) | modified |
