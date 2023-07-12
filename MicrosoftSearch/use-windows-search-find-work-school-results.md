@@ -151,7 +151,7 @@ When users search in the Work vertical, they'll find all the results they expect
 - Messages (Outlook emails and Teams chats)
 - Groups
 - Sites
-- Yammer
+- Viva Engage
 - Connected data
 
 Users can also easily narrow their search results by selecting a filter when they search.
