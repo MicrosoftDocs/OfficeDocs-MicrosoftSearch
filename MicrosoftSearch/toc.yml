@@ -48,8 +48,6 @@ items:
     items:
     - name: Overview
       href: connectors-overview.md
-    - name: eDiscovery overview
-      href: compliance-ediscovery.md
     - name: Connectors gallery
       href: connectors-gallery.md
     - name: Set up Microsoft built connectors

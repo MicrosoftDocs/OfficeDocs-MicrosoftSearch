@@ -34,7 +34,9 @@ This article is for anyone who configures, runs, and monitors an Enterprise webs
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
-Follow the general [setup instructions](./configure-connector.md).
+[Add Enterprise website connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Intranet&type=IntranetSites)
+
+(See general [setup instructions](./configure-connector.md) for more details)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Step 2: Name the connection
