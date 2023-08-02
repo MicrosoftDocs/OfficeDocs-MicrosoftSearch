@@ -20,7 +20,7 @@ ms.date: 07/31/2023
 
 Microsoft Search is a powerful and intuitive service that helps users find relevant information across Microsoft 365 apps and the web. It offers consistent and personalized search experience that respects data security and compliance. However, depending on the cloud environment, some features and functionality of Microsoft Search may vary. This article provides an overview of the main differences between the US government clouds and the commercial cloud for Microsoft Search, and how to enable and customize Microsoft Search for your organization.
 
-# Microsoft Search Availability for US Government Clouds
+**Microsoft Search Availability for US Government Clouds**
 
 Microsoft Search is available for US government cloud customers in the following environments: Government Community Cloud (GCC), Government Community Cloud High (GCC-High), and Department of Defense (DoD). However, not all features and functionality of Microsoft Search are currently supported in these environments. The table below summarizes the current feature availability for each cloud environment. For the latest updates, see the Microsoft Search Roadmap.
 
@@ -31,7 +31,7 @@ To get personalized, organization-wide results, users enter a search query in a 
 For GCC and GCC-High customers, Microsoft Search in Bing is off by default. Search admins can turn on Microsoft Search in Bing:
 1.	In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to [Configurations](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations) 
 2.	Under Microsoft Search in Bing settings, choose Change settings and turn on Allow your organization to use Microsoft Search in Bing. It takes up to 24 hours for this change to take effect.
-Search admins can also customize bookmarks, Q&A answers and Acronyms answers (admin-curated) in the Microsoft 365 admin center. For more information, see [Plan your content](https://learn.microsoft.com/en-us/microsoftsearch/plan-your-content)
+Search admins can also customize bookmarks, Q&A answers and Acronyms answers (admin-curated) in the Microsoft 365 admin center. For more information, see [Plan your content](https://learn.microsoft.com/microsoftsearch/plan-your-content)
 
 ## Microsoft Search features
 
