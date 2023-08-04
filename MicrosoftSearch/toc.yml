@@ -24,8 +24,6 @@ titems:
       href: answer-analytics-usage-reports.md
     - name: Connection analytics reports
       href: connection-analytics-reports.md
-    - name: Answer analytics reports
-      href: answer-analytics-usage-report.md
   - name: Manage feedback
     href: manage-feedback.md
 - name: Provide answers
