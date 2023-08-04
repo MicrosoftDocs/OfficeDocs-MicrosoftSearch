@@ -22,6 +22,8 @@ items:
       href: users-search-reports.md
     - name: Connection analytics reports
       href: connection-analytics-reports.md
+    - name: Answer analytics
+      href: answer-analytics.md
   - name: Manage feedback
     href: manage-feedback.md
 - name: Provide answers
