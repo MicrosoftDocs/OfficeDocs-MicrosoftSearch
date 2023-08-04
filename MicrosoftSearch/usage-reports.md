@@ -43,9 +43,9 @@ These are the search applications that are currently included in tenant level us
 ## How to get to the Microsoft Search usage reports?
 
 1. In the Microsoft 365 admin center, select **Settings**, then select **Search and Intelligence**.  
-2. On the **Search and Intelligence** page, select the **Insights** tab, and then select **Usage Analytics**.
+2. On the **Search and Intelligence** page, select the **Insights** tab, and then select **Overview**.
 
-The search usage reports are available to users with the **search admin**, **search editor** or **global administrator** roles.
+The search usage reports are available to users with the **search admin**, **search editor**, **global reader** or **global administrator** roles.
 
 ## What reports are available to me?
 
@@ -55,6 +55,7 @@ The Microsoft Search Usage Reports page provides you with search data through th
 - **Queries** – This section shows a breakdown of the query activity by user action, country, occupation, and department or division. It also allows you to go to a query details page to view and analyze the queries in more detail. 
 - **Users** – This section shows the total number of unique users and engaged users who have performed searches for the search application and date range selected with the filters on the top of the page. It also allows you to go to a user details page to view and analyze the user's data in more detail.
 - **Connection Analytics** – This section provides an analysis of your connections. Review queries and clicks that use search results from your connections. It also allows you to go to a connection analytics details page to view and analyze the connection data in more detail. 
+- **Answer Analytics** - This section provides you with impressions and click data for your editorial Bookmarks, Acronyms and Q&A's. It also gives information on impressions and clicks for individual Bookmark, Acronym and Q&A items.
 
 You can view more details about the [Queries](queries-usage-reports.md), [Users](users-search-reports.md), and [Connection analytics](connection-analytics-reports.md) sections by selecting the links.
 
