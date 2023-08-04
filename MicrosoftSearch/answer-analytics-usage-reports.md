@@ -1,7 +1,7 @@
 ---
 title: "Search Usage Reports- Analytics"
-ms.author: nkagole
-author: nkagole
+ms.author: nataliekagole
+author: nataliekagole
 manager: scotv
 ms.topic: article
 ms.service: mssearch
@@ -15,7 +15,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Review Microsoft Search usage reports"
+description: "Review Microsoft Search Answer Analytics Reports"
 recommendations: false
 ---
 
@@ -135,7 +135,7 @@ Use this graph to understand the acronym impression trends within your organizat
 |Admin curated impressions  |Number of times admin curated acronyms were shown to users represented as a line chart.  |
 |System curated impressions   |Number of times system curated acronyms were shown to users represented as a line chart. 
 
-## Average Impressions 
+### Average Impressions 
 Use Average impressions to segregate acronyms that are performing well and acronyms that need improvements to improve the impression. The Average impressions and Acronym item insights apply only to admin curated acronyms. 
 
 :::image type="content" source="media/usage-reports/answer-analytics-average-impressions-insights.png" alt-text="A dashboard showing avergae impressions." lightbox="media/usage-reports/answer-analytics-average-impressions-insights.png":::
@@ -146,7 +146,7 @@ Use Average impressions to segregate acronyms that are performing well and acron
 |Acronyms above average   |Number of admin curated acronyms that are above the Average impressions number. 
 |Acronyms below average     |Number of admin curated acronyms that are below the Average impressions number. 
 
-## Acronym Item Insights 
+### Acronym Item Insights 
 The Acronym item insights table provides information on how individual admin curated acronyms are performing. This table lists all admin curated acronyms that have impressed in the selected time-period for the selected search application. 
 
 :::image type="content" source="media/usage-reports/answer-analytics-acronym-item-insights.png" alt-text="A dashboard showing acronym item insights." lightbox="media/usage-reports/answer-analytics-acronym-item-insights.png":::
