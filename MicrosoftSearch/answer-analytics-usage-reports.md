@@ -126,7 +126,7 @@ The Acronyms section provides information on impressions trends for acronyms as 
 |System curated  |Number of times system curated acronyms were shown to users
 
 ### Acronyms Impressions Trends
-Use this graph to understand the acronym impression trends within your organization. The graph shows trends for both admin curated and system curated acronyms.  
+Use this graph to understand the acronym impression trends within your organization. The graph shows trends for both admin curated and system curated acronyms. [Learn more about acronym curation](https://learn.microsoft.com/microsoftsearch/manage-acronyms#set-up-acronyms-answers)
 
 :::image type="content" source="media/usage-reports/answer-analytics-acronyms-impressions-trends.png" alt-text="A dashboard showing acronyms impressions trends over time." lightbox="media/usage-reports/answer-analytics-acronyms-impressions-trends.png":::
 
