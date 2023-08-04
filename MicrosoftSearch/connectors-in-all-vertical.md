@@ -16,7 +16,7 @@ description: "Details of the Connectors Result Cluster experience"
 ---
 # Manage connector results in All vertical
 
-When you use Graph Connectors to add data sources, your users will be able to search for them in the All vertical by default. They can see the results from Graph Connector data sources merged inline with all the other results from Microsoft apps (for example, SharePoint, OneDrive for Business, or PowerBI) in SharePoint, Office.com, and Microsoft Search in Bing. 
+When you use Graph Connectors to add data sources, your users will be able to search for them in the All vertical by default. They can see the results from Graph Connector data sources merged inline with all the other results from Microsoft apps (for example, SharePoint, OneDrive for Business, or Power BI) in SharePoint, Office.com, and Microsoft Search in Bing. 
 Results in a result cluster are grouped together based on the search vertical configuration. Each result cluster only contains results from a single custom search vertical. To ensure discovery of content in a result cluster, the system expects meaningful titles on your items.
 
 In this example, you can see how Graph Connectors have merged results from Confluence and ServiceNow data sources inline with SharePoint results:  
@@ -37,7 +37,9 @@ Deselecting a Graph Connector source from being shown in All vertical | No | Yes
 
 ## Limitations
 
-Connector inline results experience is not available in Microsoft Search in Bing and at SharePoint site search scope. 
+* Connector inline results experience is not available in Microsoft Search in Bing and at SharePoint site search scope.
+* The admin setting for Manage connection results can only be used to enable/disable Search Admin added connections. Microsoft-managed sources (such as Power BI and Viva Learning) cannot be disabled from here and are included by default in Search. Only Fabric administrators can turn off Power BI from Search (Learn more here).
+* All vertical KQLs do not apply to Connector content. Example: The All-tab KQL "FIleType:xlsx" can be used to filter out Excel files from SharePoint and OneDrive, but will not apply to content indexed using Graph Connectors.
 
 ## How to view Graph Connector results in All vertical 
 

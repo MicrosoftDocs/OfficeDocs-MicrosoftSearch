@@ -1,4 +1,4 @@
-items:
+titems:
 - name: Plan for Microsoft Search
   items:
   - name: Overview
@@ -20,6 +20,8 @@ items:
       href: queries-usage-reports.md
     - name: User reports
       href: users-search-reports.md
+    - name: Answer analytics reports
+      href: answer-analytics-usage-reports.md
     - name: Connection analytics reports
       href: connection-analytics-reports.md
   - name: Manage feedback
