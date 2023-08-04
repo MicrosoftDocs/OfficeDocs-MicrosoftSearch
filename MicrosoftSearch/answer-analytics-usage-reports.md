@@ -75,7 +75,7 @@ The **Answer Analytics** details page contains the following three reports for e
 The Bookmarks section provides information on average impressions, click through rate trends for bookmarks as a whole and for individual bookmark items that have impressed in the selected time period for the selected search application.  
 
 
-## Bookmarks impressions and click through trends 
+### Bookmarks impressions and click through trends 
 
 Use this graph to understand the bookmark impressions and click trends within your organization. 
 
@@ -87,7 +87,7 @@ Use this graph to understand the bookmark impressions and click trends within yo
 |Bookmark clicks  |Number of searches where the user has clicked on a bookmark when it was shown to the user.  |
 |Average Click Through  |Average Click Through = [Total clicks in the selected time period/Time period in days] For example, in a selected time period of 7 days, it is [Total clicks in 7 days/7] |
 
-## Average click rate
+### Average click rate
 Use the Average click rate to segregate the bookmarks that are performing well and bookmarks that need improvements to improve the click rate.  
 
 :::image type="content" source="media/usage-reports/answer-analytics-bookmark-insights.png" alt-text="A dashboard showing bookmark insights." lightbox="media/usage-reports/answer-analytics-bookmark-insights.png":::
@@ -97,7 +97,7 @@ Use the Average click rate to segregate the bookmarks that are performing well a
 |Average click rate  |Average click rate = [Bookmark clicks]/[Bookmark impressions]. For example, in a selected time period of 7 days, Average click rate is the [total bookmark clicks in 7 days]/[total bookmark impressions in 7 days]. This is represented as a percentage. |
 |Bookmarks above average  |Number of Bookmarks that are above the Average click rate. These Bookmarks are performing well.
 |Bookmarks below average   |Number of Bookmarks that are below the Average click rate. These Bookmarks have potential for improvement.  |
-## Bookmark Item Insights
+### Bookmark Item Insights
 
 The Bookmark item insights table provides information on how individual bookmarks are performing. This table lists all the bookmarks that have impressed in the selected time period for the selected search application.
 
@@ -114,7 +114,7 @@ A detailed list of user queries for a bookmark is available in the details panel
 
 :::image type="content" source="media/usage-reports/answer-analytics-bookmark-queries.png" alt-text="A dashboard showing a detailed list of bookmark user queries." lightbox="media/usage-reports/answer-analytics-bookmark-queries.png":::
 
-## Acronyms usage report  
+## Acronyms Usage Report  
 
 The Acronyms section provides information on impressions trends for acronyms as whole and for individual acronyms that have impressed in the selected time period. Acronyms can include both admin curated and system curated acronyms. Learn more about acronym curation.  
 
@@ -125,7 +125,7 @@ The Acronyms section provides information on impressions trends for acronyms as 
 |Admin curated  |Number of times admin curated acronyms were shown to users |
 |System curated  |Number of times system curated acronyms were shown to users
 
-## Acronyms Impressions Trends
+### Acronyms Impressions Trends
 Use this graph to understand the acronym impression trends within your organization. The graph shows trends for both admin curated and system curated acronyms.  
 
 :::image type="content" source="media/usage-reports/answer-analytics-acronyms-impressions-trends.png" alt-text="A dashboard showing acronyms impressions trends over time." lightbox="media/usage-reports/answer-analytics-acronyms-impressions-trends.png":::
@@ -164,7 +164,7 @@ Detailed list of user queries is available in the details panel for each acronym
 
 ## Q&A Usage Report 
 The Q&A section provides information on impressions trends for Q&As as a whole and for individual Q&A items that have impressed in the selected time period and for the search application.  
-## Q&A Impressions Trends 
+### Q&A Impressions Trends 
 Use this graph to understand the Q&A impression trends within your organization. 
 
 :::image type="content" source="media/usage-reports/answer-analytics-q&a-impression-trends.png" alt-text="A dashboard showing q&a impression trends over time ." lightbox="media/usage-reports/answer-analytics-q&a-impression-trends.png":::
@@ -173,7 +173,7 @@ Use this graph to understand the Q&A impression trends within your organization.
 |:-----|:-----|
 |Q&A impressions   |Number of times Q&As were shown to users    |
 
-## Average Impressions 
+### Average Impressions 
 Use Average impressions to segregate Q&As that are performing well and Q&As that need improvements to improve the impression.  
 
 :::image type="content" source="media/usage-reports/answer-analytics-average-impressions-q&a-insights.png" alt-text="A dashboard showing average impressions based on q&a usage ." lightbox="media/usage-reports/answer-analytics-average-impressions-q&a-insights.png":::
@@ -184,7 +184,7 @@ Use Average impressions to segregate Q&As that are performing well and Q&As that
 |Q&As above average   |Number of Q&As that are above the Average impressions number.  |
 |Q&As below average   |Number of Q&As that are below the Average impressions number. |
 
-## Q&A Item Insights 
+### Q&A Item Insights 
 
 The Q&A item insights table provides information on how individual Q&As are performing. This table lists all the Q&As that have impressed in the selected time period for the selected search application. 
 
