@@ -21,7 +21,7 @@ recommendations: false
 
 # Answer Analytics
 
-In the [Microsoft Search Usage Report](https://learn.microsoft.com/microsoftsearch/usage-reports), the Answer analytics section gives you information on how the editorial Bookmarks, Acronyms and Q&A are performing within the organization.  
+In the [Microsoft Search Usage Report](/microsoftsearch/usage-reports), the Answer analytics section gives you information on how the editorial Bookmarks, Acronyms and Q&A are performing within the organization.  
 
 :::image type="content" source="media/usage-reports/answer-analytics.png" alt-text="A dashboard showing usage reports for answer analytics." lightbox="media/usage-reports/answer-analytics.png":::
 
