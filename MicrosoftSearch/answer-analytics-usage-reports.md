@@ -23,7 +23,8 @@ recommendations: false
 
 In the [Microsoft Search Usage Report](https://learn.microsoft.com/microsoftsearch/usage-reports), the Answer analytics section gives you information on how the editorial Bookmarks, Acronyms and Q&A are performing within the organization.  
 
-:::image type="content" source="media/usage-reports/usage-analytics.png" alt-text="A dashboard containing pie charts, graphs, and search analytics report data." lightbox="media/usage-reports/usage-analytics.png":::
+:::image type="content" source="media/usage-reports/answer-analytics.png" alt-text="A dashboard showing usage reports for answer analytics." lightbox="media/usage-reports/answer-analytics.png":::
+
 
 The data above the chart shows changes over the selected time period for the following metrics:   
 
@@ -73,10 +74,12 @@ The **Answer Analytics** details page contains the following three reports for e
 
 The Bookmarks section provides information on average impressions, click through rate trends for bookmarks as a whole and for individual bookmark items that have impressed in the selected time period for the selected search application.  
 
-## Image
+
 ## Bookmarks impressions and click through trends 
 
 Use this graph to understand the bookmark impressions and click trends within your organization. 
+
+:::image type="content" source="media/usage-reports/answer-analytics-bookmarks-usage.png" alt-text="A dashboard showing usage reports for bookmark impressions and click through trends." lightbox="media/usage-reports/answer-analytics-bookmarks-usage.png":::
 
 | Metric| Description |
 |:-----|:-----|
@@ -87,7 +90,7 @@ Use this graph to understand the bookmark impressions and click trends within yo
 ## Average click rate
 Use the Average click rate to segregate the bookmarks that are performing well and bookmarks that need improvements to improve the click rate.  
 
-## Image
+:::image type="content" source="media/usage-reports/answer-analytics-bookmark-insights.png" alt-text="A dashboard showing bookmark insights." lightbox="media/usage-reports/answer-analytics-bookmark-insights.png":::
 
 | Metric| Description |
 |:-----|:-----|
@@ -98,7 +101,7 @@ Use the Average click rate to segregate the bookmarks that are performing well a
 
 The Bookmark item insights table provides information on how individual bookmarks are performing. This table lists all the bookmarks that have impressed in the selected time period for the selected search application.
 
-## Image
+:::image type="content" source="media/usage-reports/answer-analytics-bookmark-item-insights.png" alt-text="A dashboard showing bookmark item insights." lightbox="media/usage-reports/answer-analytics-bookmark-item-insights.png":::
 
 | Metric| Description |
 |:-----|:-----|
@@ -107,15 +110,15 @@ The Bookmark item insights table provides information on how individual bookmark
 |Impressions Clicks  |Number of times the bookmark was shown to users                                    Number of times the bookmark received a click when it was shown to users 
 |Top user query (s)  |List of user queries that triggered the bookmark to show up for the user    |
 
-**A detailed list of user queries for a bookmark is available in the details panel page for each bookmark item.**
+A detailed list of user queries for a bookmark is available in the details panel page for each bookmark item.
 
-## Image
+:::image type="content" source="media/usage-reports/answer-analytics-bookmark-queries.png" alt-text="A dashboard showing a detailed list of bookmark user queries." lightbox="media/usage-reports/answer-analytics-bookmark-queries.png":::
 
 ## Acronyms usage report  
 
 The Acronyms section provides information on impressions trends for acronyms as whole and for individual acronyms that have impressed in the selected time period. Acronyms can include both admin curated and system curated acronyms. Learn more about acronym curation.  
 
-## Image
+:::image type="content" source="media/usage-reports/answer-analytics-acronyms-usage-reports.png" alt-text="A dashboard showing acronyms usage reports." lightbox="media\usage-reports\answer-analytics-acronyms-usage-reports.png":::
 
 | Metric| Description |
 |:-----|:-----|
@@ -125,7 +128,7 @@ The Acronyms section provides information on impressions trends for acronyms as 
 ## Acronyms Impressions Trends
 Use this graph to understand the acronym impression trends within your organization. The graph shows trends for both admin curated and system curated acronyms.  
 
-## Image
+:::image type="content" source="media/usage-reports/answer-analytics-acronyms-impressions-trends.png" alt-text="A dashboard showing acronyms impressions trends over time." lightbox="media/usage-reports/answer-analytics-acronyms-impressions-trends.png":::
 
 | Metric| Description |
 |:-----|:-----|
@@ -135,7 +138,7 @@ Use this graph to understand the acronym impression trends within your organizat
 ## Average Impressions 
 Use Average impressions to segregate acronyms that are performing well and acronyms that need improvements to improve the impression. The Average impressions and Acronym item insights apply only to admin curated acronyms. 
 
-## Image
+:::image type="content" source="media/usage-reports/answer-analytics-average-impressions-insights.png" alt-text="A dashboard showing avergae impressions." lightbox="media/usage-reports/answer-analytics-average-impressions-insights.png":::
 
 | Metric| Description |
 |:-----|:-----|
@@ -146,7 +149,7 @@ Use Average impressions to segregate acronyms that are performing well and acron
 ## Acronym Item Insights 
 The Acronym item insights table provides information on how individual admin curated acronyms are performing. This table lists all admin curated acronyms that have impressed in the selected time-period for the selected search application. 
 
-## Image 
+:::image type="content" source="media/usage-reports/answer-analytics-acronym-item-insights.png" alt-text="A dashboard showing acronym item insights." lightbox="media/usage-reports/answer-analytics-acronym-item-insights.png":::
 
 | Metric | Description |
 |:-----|:-----|
@@ -155,11 +158,17 @@ The Acronym item insights table provides information on how individual admin cur
 |Impressions  |Number of times the acronym was shown to users.|
 |Top user query(s) |List of user queries that triggered the acronym to show up for the user.  |
 
+Detailed list of user queries is available in the details panel for each acronym item.
+
+:::image type="content" source="media/usage-reports/answer-analytics-acronym-usage-user-queries.png" alt-text="A dashboard showing acronym usage-user-queries ." lightbox="media/usage-reports/answer-analytics-acronym-usage-user-queries.png":::
+
 ## Q&A Usage Report 
 The Q&A section provides information on impressions trends for Q&As as a whole and for individual Q&A items that have impressed in the selected time period and for the search application.  
-
 ## Q&A Impressions Trends 
 Use this graph to understand the Q&A impression trends within your organization. 
+
+:::image type="content" source="media/usage-reports/answer-analytics-q&a-impression-trends.png" alt-text="A dashboard showing q&a impression trends over time ." lightbox="media/usage-reports/answer-analytics-q&a-impression-trends.png":::
+
 | Metric | Description |
 |:-----|:-----|
 |Q&A impressions   |Number of times Q&As were shown to users    |
@@ -167,7 +176,7 @@ Use this graph to understand the Q&A impression trends within your organization.
 ## Average Impressions 
 Use Average impressions to segregate Q&As that are performing well and Q&As that need improvements to improve the impression.  
 
-## Image
+:::image type="content" source="media/usage-reports/answer-analytics-average-impressions-q&a-insights.png" alt-text="A dashboard showing average impressions based on q&a usage ." lightbox="media/usage-reports/answer-analytics-average-impressions-q&a-insights.png":::
 
 | Metric | Description |
 |:-----|:-----|
@@ -179,7 +188,7 @@ Use Average impressions to segregate Q&As that are performing well and Q&As that
 
 The Q&A item insights table provides information on how individual Q&As are performing. This table lists all the Q&As that have impressed in the selected time period for the selected search application. 
 
-## Image
+:::image type="content" source="media/usage-reports/answer-analytics-q&a-item-insights.png" alt-text="A dashboard showing q&a item insights ." lightbox="media/usage-reports/answer-analytics-q&a-item-insights.png":::
 
 | Metric | Description |
 |:-----|:-----|
@@ -190,6 +199,10 @@ The Q&A item insights table provides information on how individual Q&As are perf
 
 Detailed list of user queries for which the Q&A impressed is available in the details panel page for each Q&A item. 
 
+:::image type="content" source="media/usage-reports/answer-analytics-q&a-usage-user-queries.png" alt-text="A dashboard showing q&a usage for the last 31 days ." lightbox="media/usage-reports/answer-analytics-q&a-usage-user-queries.png":::
+
+**Note**: Answer Analytics is currently not supported for the 12-month filter range and for certain types of tenants. In case you do not see Answer Analytics feature on your test tenant drop us an email at searchadminxteam@service.microsoft.com and we will reach out to you for further investigation.  
+
 
 ## Related articles
 
@@ -198,3 +211,6 @@ Detailed list of user queries for which the Q&A impressed is available in the de
 [Microsoft Search Usage Report - Connection analytics](connection-analytics-reports.md)</br>
 [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites)
 
+
+
+[def]: media/usage-reports/answer-analytics.png
