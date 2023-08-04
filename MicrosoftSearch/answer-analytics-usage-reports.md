@@ -19,7 +19,7 @@ description: "Review Microsoft Search usage reports"
 recommendations: false
 ---
 
-# Microsoft Search Usage Reports- Answer Analytics
+# Answer Analytics
 
 In the [Microsoft Search Usage Report](https://learn.microsoft.com/microsoftsearch/usage-reports), the Answer analytics section gives you information on how the editorial Bookmarks, Acronyms and Q&A are performing within the organization.  
 
@@ -83,9 +83,9 @@ Use this graph to understand the bookmark impressions and click trends within yo
 
 | Metric| Description |
 |:-----|:-----|
-|Bookmark Impressions |Number of times bookmarks were shown|
-|Average Click Through |Average Click Through = [Total clicks in the selected time period/Time period in days] For example, in a selected time period of 7 days, it is [Total clicks in 7 days/7] 
-  |
+|Bookmark Impressions |Number of searches where a bookmark was shown to users. |
+|Bookmark clicks  |Number of searches where the user has clicked on a bookmark when it was shown to the user.  |
+|Average Click Through  |Average Click Through = [Total clicks in the selected time period/Time period in days] For example, in a selected time period of 7 days, it is [Total clicks in 7 days/7] |
 
 ## Average click rate
 Use the Average click rate to segregate the bookmarks that are performing well and bookmarks that need improvements to improve the click rate.  
@@ -201,8 +201,8 @@ Detailed list of user queries for which the Q&A impressed is available in the de
 
 :::image type="content" source="media/usage-reports/answer-analytics-q&a-usage-user-queries.png" alt-text="A dashboard showing q&a usage for the last 31 days ." lightbox="media/usage-reports/answer-analytics-q&a-usage-user-queries.png":::
 
-**Note**: Answer Analytics is currently not supported for the 12-month filter range and for certain types of tenants. In case you do not see Answer Analytics feature on your test tenant drop us an email at searchadminxteam@service.microsoft.com and we will reach out to you for further investigation.  
-
+> [!NOTE]
+> Answer Analytics is currently not supported for the 12-month filter range and for certain types of tenants. In case you do not see Answer Analytics feature on your test tenant drop us an email at searchadminxteam@service.microsoft.com and we will reach out to you for further investigation.
 
 ## Related articles
 
