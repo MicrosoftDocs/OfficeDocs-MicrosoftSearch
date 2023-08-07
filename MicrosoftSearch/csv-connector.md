@@ -1,9 +1,9 @@
 --- 
 
 title: "CSV connector for Microsoft Search" 
-ms.author: rchanda 
-author: rchanda 
-manager: harshkum 
+ms.author: dawholl 
+author: dawholl 
+manager: kellis 
 audience: Admin
 ms.audience: Admin 
 ms.topic: article 
