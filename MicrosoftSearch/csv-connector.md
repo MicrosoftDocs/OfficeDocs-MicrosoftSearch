@@ -66,7 +66,7 @@ Set-spotenant –DisableCustomAppAuthentication $false
 
 #### Complete the app configuration
 
-1. Go to `https://Org-Name.sharepoint.com/sites/mysite/_layouts/15/appregnew.asp`.
+1. Go to `https://Org-Name.sharepoint.com/sites/mysite/_layouts/15/appinv.aspx`.
 2. In the App Id field, paste the Client Id of the SharePoint app and select **Lookup**.
 3. In Permission Request XML field, paste this code and select **Create**.
 
