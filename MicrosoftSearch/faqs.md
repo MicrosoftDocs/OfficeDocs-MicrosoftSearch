@@ -30,7 +30,7 @@ This feature won't override keywords set in the [Microsoft 365 admin center](htt
   
 ## Can you search for files on-premises?
 
-Yes. You can search on-premises [SharePoint](http://sharepoint.com/) files if you have a hybrid deployment of SharePoint.
+Yes. You can search on-premises [SharePoint](https://sharepoint.com/) files if you have a hybrid deployment of SharePoint.
   
 ## How do I make Bing the default search engine for people in my org?
 

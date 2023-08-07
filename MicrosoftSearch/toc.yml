@@ -1,4 +1,4 @@
-items:
+titems:
 - name: Plan for Microsoft Search
   items:
   - name: Overview
@@ -20,6 +20,8 @@ items:
       href: queries-usage-reports.md
     - name: User reports
       href: users-search-reports.md
+    - name: Answer analytics reports
+      href: answer-analytics-usage-reports.md
     - name: Connection analytics reports
       href: connection-analytics-reports.md
   - name: Manage feedback
@@ -48,8 +50,6 @@ items:
     items:
     - name: Overview
       href: connectors-overview.md
-    - name: eDiscovery overview
-      href: compliance-ediscovery.md
     - name: Connectors gallery
       href: connectors-gallery.md
     - name: Set up Microsoft built connectors
@@ -124,6 +124,8 @@ items:
     href: manage-verticals.md
   - name: Manage result types
     href: manage-result-types.md
+  - name: Manage connectors in All vertical
+    href: connectors-in-all-vertical.md
   - name: Manage search result layouts
     href: customize-results-layout.md
   - name: Manage result clusters

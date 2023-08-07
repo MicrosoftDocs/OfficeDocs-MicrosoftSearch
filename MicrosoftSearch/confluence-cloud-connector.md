@@ -86,7 +86,15 @@ Use the preview results button to verify the sample values of the selected prope
 
 Confluence Cloud Microsoft Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them.
 
-In Confluence Cloud, security permissions for users and groups are defined using space permissions and page restrictions. Confluence Cloud connector applies space permissions if there are no page restrictions. Page level restrictions, if present, will take precedence over space permissions.
+In Confluence Cloud, security permissions for users and groups are defined using space permissions and page restrictions. Page level restrictions, if present, will take precedence over space permissions.
+
+If there are no page restrictions, the connector will check for space level permissions - 
+* In case space has 'anonymous users' access enabled, the content will be visible to all users within your tenant.
+* In case 'anonymous access' is not enabled, the space level permissions will be honored.
+* In case space level permissions are not defined, the content will not be visible to any user in your tenant.
+
+>[!IMPORTANT]
+>Permissions are managed at the space and page level only, and parent page permissions will not be taken into consideration.
 
 If you choose **Only people with access to this data source**, you need to further choose whether your Confluence site has Azure Active Directory (AAD) provisioned users or Non-AAD users.
 
