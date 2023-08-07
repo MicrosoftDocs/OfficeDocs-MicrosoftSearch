@@ -20,7 +20,7 @@ Microsoft Search helps you find what you need to complete what you're working on
 
 Microsoft Search helps users find the right answers, people, and content to complete their tasks in the app they're already working in.
 
-- Users get results that are relevant in the **context** of the app they search from. For example, when they search in [Microsoft Outlook](https://www.microsoft.com/outlook), they find emails, and not [SharePoint](http://sharepoint.com/) sites. When they search in SharePoint, they find sites, pages, and files.
+- Users get results that are relevant in the **context** of the app they search from. For example, when they search in [Microsoft Outlook](https://www.microsoft.com/outlook), they find emails, and not [SharePoint](https://sharepoint.com/) sites. When they search in SharePoint, they find sites, pages, and files.
 - Whichever app users are working in; Microsoft Search is **personal**. Microsoft Search uses insights from the [Microsoft Graph](https://developer.microsoft.com/graph/) to show results that are relevant to each user. Each user might see different results, even if they search for the same words. They only see results that they already have access to, Microsoft Search doesn't change permissions.
 - When in [Bing](https://bing.com), users get results from within their organization in addition to the public web results.
 
@@ -30,7 +30,7 @@ In [Bing](https://bing.com), users use the same search box as for web searches. 
 
 ![Screenshots of app windows with Microsoft Search box in the header bar.](media/Headings_520.png)
 
-When users click in the **Search** box, search suggests results based on their previous activity in Office 365 and based on content that's trending in your organization. Search considers activities such as files they were working on recently, commands they've used recently, and people they collaborate with. As users start typing in the **Search** box, the suggested results update. Users can open search results right from the **Search** box. Here's an example of a search in [SharePoint](http://sharepoint.com/).
+When users click in the **Search** box, search suggests results based on their previous activity in Office 365 and based on content that's trending in your organization. Search considers activities such as files they were working on recently, commands they've used recently, and people they collaborate with. As users start typing in the **Search** box, the suggested results update. Users can open search results right from the **Search** box. Here's an example of a search in [SharePoint](https://sharepoint.com/).
 
 ![Screenshots of the Microsoft Search box with a query and suggested results.](media/SERP_text_520.png)
 
@@ -40,7 +40,7 @@ If the suggestions in the search box aren't what users are looking for, **Enter*
 
 ## Benefits of Microsoft Search
 
-**Search across Microsoft 365 from any Microsoft Search box** – Users can search from any Microsoft Search box and get quickly back to what they were doing. Microsoft Search brings together results from data sources in Office 365, including [SharePoint](http://sharepoint.com/), [Microsoft OneDrive for Business](https://onedrive.live.com/about/business/), and [Microsoft Exchange](https://products.office.com/exchange/microsoft-exchange-server).
+**Search across Microsoft 365 from any Microsoft Search box** – Users can search from any Microsoft Search box and get quickly back to what they were doing. Microsoft Search brings together results from data sources in Office 365, including [SharePoint](https://sharepoint.com/), [Microsoft OneDrive for Business](https://onedrive.live.com/about/business/), and [Microsoft Exchange](https://products.office.com/exchange/microsoft-exchange-server).
 
 **Easy to search** – Microsoft Search suggests results based on users' previous activity in Office 365, right in the **Search** box.
 

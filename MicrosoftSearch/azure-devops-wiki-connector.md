@@ -64,7 +64,7 @@ To connect to your Azure DevOps instance, you need your Azure DevOps account App
 
 ### Register an app
 
-Register an app in Azure DevOps so that the Microsoft Search app can access the instance. To learn more, see Azure DevOps documentation on how to [register an app](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app).
+Register an app in Azure DevOps so that the Microsoft Search app can access the instance. To register the app, visit the link to [register application]( https://app.vsaex.visualstudio.com/app/register). To learn more, see Azure DevOps documentation on how to [register an app](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app).
 
 The following table provides guidance on how to fill out the app registration form:
 
@@ -128,8 +128,19 @@ instructions.-->
 After publishing the connection, you need to customize the search results page with verticals and result types. To learn about customizing search results, review how to [manage verticals](manage-verticals.md) and [result types](manage-result-types.md).
 You may also use the [sample result layout](azure-devops-wiki-connector-result-layout.md) for the Azure DevOps Wiki connector. Simply copy-paste the result layout JSON to get started.
 
-<!---## Troubleshooting-->
-<!---Insert troubleshooting recommendations for this data source-->
+## Troubleshooting
+The following are common errors observed while configuring the connector, or during crawling, and its possible reasons.
+
+| Step | Error message | Possible reason(s) |
+| ------------ | ------------ | ------------ |
+| Connection settings | `Invalid Credentials detected. Try signing in with a different account or check the permissions for your account` | *Third-party application access via OAuth* may be disabled. Follow steps to [manage security policies](/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops#manage-a-policy&preserve-view=true) to enable OAuth. |
+| Connection settings | `Bad state` message in OAuth pop-up window with URL stating `error=InvalidScope` | Wrong scopes provided to the registered app. |
+| Connection settings | `400 - Bad request` message in OAuth pop-up window | Incorrect App ID |
+| Connection settings | `BadRequest: Bad Request on api request` message in OAuth pop-up window | Incorrect Client secret |
+| Crawl time (post connector configuration) | `The account associated with the connector doesn't have permission to access the item.` | The registered app does not have any of the required OAuth scopes. |
+| Crawl time (post connector configuration) | `You don't have permission to access this data source. You can contact the owner of this data source to request permission.` | *Third-party application access via OAuth* is disabled. Follow steps to [manage security policies](/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops#manage-a-policy&preserve-view=true) to enable OAuth. |
+| Crawl time (post connector configuration) | `Credentials associated with this data source have expired. Renew the credentials and then update the connection` | The registered app may have been deleted or expired. |
+| Crawl time (post connector configuration) | `Item listed but no longer accessible or no longer exists` | The crawling account may be missing 'Basic' access level. Crawls fail with 'Stakeholder' access. |
 
 <!---## Limitations-->
 <!---Insert limitations for this data source-->
