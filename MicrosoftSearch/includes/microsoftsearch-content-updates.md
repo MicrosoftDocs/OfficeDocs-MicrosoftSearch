@@ -2,6 +2,14 @@
 
 
 
+## Week of July 31, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/4/2023 | [Search Usage Reports- Analytics](/MicrosoftSearch/answer-analytics-usage-reports) | added |
+
+
 ## Week of July 10, 2023
 
 
