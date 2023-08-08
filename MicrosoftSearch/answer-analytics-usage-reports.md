@@ -96,7 +96,7 @@ Use the Average click rate to segregate the bookmarks that are performing well a
 |:-----|:-----|
 |Average click rate  |Average click rate = [Bookmark clicks]/[Bookmark impressions]. For example, in a selected time period of 7 days, Average click rate is the [total bookmark clicks in 7 days]/[total bookmark impressions in 7 days]. This is represented as a percentage. |
 |Bookmarks above average  |Number of Bookmarks that are above the Average click rate. These Bookmarks are performing well.
-|Bookmarks below average   |Number of Bookmarks that are below the Average click rate. These Bookmarks have potential for improvement.  |
+|Bookmarks below average   |Number of Bookmarks that are below or equal to the Average click rate. These Bookmarks have potential for improvement.  |
 ### Bookmark Item Insights
 
 The Bookmark item insights table provides information on how individual bookmarks are performing. This table lists all the bookmarks that have impressed in the selected time period for the selected search application.
@@ -107,7 +107,8 @@ The Bookmark item insights table provides information on how individual bookmark
 |:-----|:-----|
 |Usage status   |This label indicates if the bookmark is above or below the Average click rate.   |
 |Usage (click through)   |Click through or Average click rate here is calculated as [Clicks]/[Impressions] for the bookmark in the selected period   |
-|Impressions Clicks  |Number of times the bookmark was shown to users                                    Number of times the bookmark received a click when it was shown to users 
+|Impressions |Number of times the bookmark was shown to users
+|Clicks | Number of times the bookmark received a click when it was shown to users    |
 |Top user query (s)  |List of user queries that triggered the bookmark to show up for the user    |
 
 A detailed list of user queries for a bookmark is available in the details panel page for each bookmark item.
@@ -122,8 +123,8 @@ The Acronyms section provides information on impressions trends for acronyms as 
 
 | Metric| Description |
 |:-----|:-----|
-|Admin curated  |Number of times admin curated acronyms were shown to users |
-|System curated  |Number of times system curated acronyms were shown to users
+|Admin curated  |Number of searches where admin curated acronyms were shown to users  |
+|System curated  |Number of searches where system curated acronyms were shown to users 
 
 ### Acronyms Impressions Trends
 Use this graph to understand the acronym impression trends within your organization. The graph shows trends for both admin curated and system curated acronyms. [Learn more about acronym curation](/microsoftsearch/manage-acronyms#set-up-acronyms-answers)
@@ -132,8 +133,8 @@ Use this graph to understand the acronym impression trends within your organizat
 
 | Metric| Description |
 |:-----|:-----|
-|Admin curated impressions  |Number of times admin curated acronyms were shown to users represented as a line chart.  |
-|System curated impressions   |Number of times system curated acronyms were shown to users represented as a line chart. 
+|Admin curated impressions  |Number of searches where admin curated acronyms were shown to users, represented as a line chart. |
+|System curated impressions   |Number of searches where system curated acronyms were shown to users, represented as a line chart. 
 
 ### Average Impressions 
 Use Average impressions to segregate acronyms that are performing well and acronyms that need improvements to improve the impression. The Average impressions and Acronym item insights apply only to admin curated acronyms. 
@@ -144,7 +145,7 @@ Use Average impressions to segregate acronyms that are performing well and acron
 |:-----|:-----|
 |Average impressions   |Average Impressions= [sum of all admin curated acronym impressions]/[sum of all unique admin curated acronyms that have impressed]. For example, in a selected time period of 7 days, Average impressions is the [total admin curated acronym impressions in 7 days]/[sum of all unique admin curated acronyms that have impressed in 7 days].  |
 |Acronyms above average   |Number of admin curated acronyms that are above the Average impressions number. 
-|Acronyms below average     |Number of admin curated acronyms that are below the Average impressions number. 
+|Acronyms below average     |Number of admin curated acronyms that are below or equal to the Average impressions number. 
 
 ### Acronym Item Insights 
 The Acronym item insights table provides information on how individual admin curated acronyms are performing. This table lists all admin curated acronyms that have impressed in the selected time-period for the selected search application. 
@@ -155,7 +156,7 @@ The Acronym item insights table provides information on how individual admin cur
 |:-----|:-----|
 |Usage status  |This label indicates if the acronym is above or below the Average impression number.    |
 |Usage (impressions)  |Usage here is the number of acronym impressions.  |
-|Impressions  |Number of times the acronym was shown to users.|
+|Impressions  |Number of searches where the acronym was shown to users.|
 |Top user query(s) |List of user queries that triggered the acronym to show up for the user.  |
 
 Detailed list of user queries is available in the details panel for each acronym item.
@@ -171,7 +172,7 @@ Use this graph to understand the Q&A impression trends within your organization.
 
 | Metric | Description |
 |:-----|:-----|
-|Q&A impressions   |Number of times Q&As were shown to users    |
+|Q&A impressions   |Number of searches where Q&As were shown to users    |
 
 ### Average Impressions 
 Use Average impressions to segregate Q&As that are performing well and Q&As that need improvements to improve the impression.  
@@ -182,7 +183,7 @@ Use Average impressions to segregate Q&As that are performing well and Q&As that
 |:-----|:-----|
 |Average impressions   |Average Impressions= [sum of all Q&A impressions]/[sum of all unique Q&As that have impressed]. For example, in a selected time period of 7 days, Average impressions is the [total Q&A impressions in 7 days]/[sum of all unique Q&As that have impressed in 7 days]    |
 |Q&As above average   |Number of Q&As that are above the Average impressions number.  |
-|Q&As below average   |Number of Q&As that are below the Average impressions number. |
+|Q&As below average   |Number of Q&As that are below or equal to the Average impressions number. |
 
 ### Q&A Item Insights 
 
@@ -194,7 +195,7 @@ The Q&A item insights table provides information on how individual Q&As are perf
 |:-----|:-----|
 |Usage status    |This label indicates if the Q&A is above or below the Average impression number.  |
 |Usage (impressions)    |Usage is here number of Q&A impressions.   |
-|Impressions    |Number of times the Q&A was shown to users.  |
+|Impressions    |Number of searches where the Q&A was shown to users.  |
 |Top user query (s)     |List of user queries that triggered the Q&A to show up for the user.   |
 
 Detailed list of user queries for which the Q&A impressed is available in the details panel page for each Q&A item. 
