@@ -31,7 +31,7 @@ To get personalized, organization-wide results, users enter a search query in a 
 For GCC and GCC-High customers, Microsoft Search in Bing is off by default. Search admins can turn on Microsoft Search in Bing:
 1.	In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to [Configurations](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations) 
 2.	Under Microsoft Search in Bing settings, choose Change settings and turn on Allow your organization to use Microsoft Search in Bing. It takes up to 24 hours for this change to take effect.
-Search admins can also customize bookmarks, Q&A answers and Acronyms answers (admin-curated) in the Microsoft 365 admin center. For more information, see [Plan your content](https://learn.microsoft.com/microsoftsearch/plan-your-content)
+Search admins can also customize bookmarks, Q&A answers and Acronyms answers (admin-curated) in the Microsoft 365 admin center. For more information, see [Plan your content](/microsoftsearch/plan-your-content).
 
 ## Microsoft Search features
 
