@@ -19,7 +19,7 @@ description: "Review Microsoft Search Answer Analytics Reports"
 recommendations: false
 ---
 
-# Answer Analytics
+# Microsoft Search Usage Reports - Answer Analytics
 
 In the [Microsoft Search Usage Report](/microsoftsearch/usage-reports), the Answer analytics section gives you information on how the editorial Bookmarks, Acronyms and Q&A are performing within the organization.  
 
@@ -33,7 +33,7 @@ The data above the chart shows changes over the selected time period for the fol
 | Metric | Description |
 |:-----|:-----|
 |Queries with Answer Impressions |Number of queries that included one or more editorial answer impressions namely Bookmarks, Acronyms or Q&As.   |
-|Bookmark Clicks |Number of queries where the user has clicked on a bookmarked result.  |
+|Bookmark Clicks |Number of queries where the user has clicked on a bookmark result.  |
 
 The **Answer usage bar** graph shows the split of Answer impressions by Answer Type. Use this graph to understand the popular Answer category in your organization.  
 
@@ -43,7 +43,7 @@ You can view the **Answer Analytics details** page by selecting the **View
 
 The Answer analytics details page provides you with details on Bookmark, Acronym and Q&A impressions trends, average impressions and number of items that are above and below the average impressions. These metrics are also available at an individual answer level. For example, you can use these reports to know how a particular Bookmark like “Outlook web” is performing.  
 
-In the **Filters** menu, use one or more the following to filter the data in the reports:
+In the **Filters** menu, use one or more of the following to filter the data in the reports:
 
 | Filter| Description |
 |:-----|:-----|
@@ -56,19 +56,19 @@ The **Answer Analytics** details page contains the following three reports for e
 
 - Bookmark impressions and click through rate trends. 
 - Average click rate and number of items that are above and below the average click rate. 
-- Item level metrics for individual bookmarks namely Impressions, click rate and user queries list.  
+- Impressions, click rate and user queries list of individual bookmarks.  
 
  **Acronym Analytics** 
 
 - Acronym impressions and Acronym impressions trend for Admin curated and System curated acronyms. 
 - Average impressions and number of items that are above and below the average impression number. 
-- Item level metrics for individual admin curated acronyms namely Impressions and user queries list. 
+- Impressions and user queries list of individual admin curated acronyms. 
 
  **Q&A Analytics** 
 
 - Q&A impressions and Q&A impressions trend. 
 - Average impressions and number of items that are above and below the average impression number. 
-- Item level metrics for individual Q&As namely Impressions and user queries list. 
+- Impressions and user queries list of individual Q&As. 
 
 ## Bookmarks Usage Report
 
@@ -88,7 +88,7 @@ Use this graph to understand the bookmark impressions and click trends within yo
 |Average Click Through  |Average Click Through = [Total clicks in the selected time period/Time period in days] For example, in a selected time period of 7 days, it is [Total clicks in 7 days/7] |
 
 ### Average click rate
-Use the Average click rate to segregate the bookmarks that are performing well and bookmarks that need improvements to improve the click rate.  
+Use the Average click rate to segregate the bookmarks that are performing well and bookmarks that need updates to improve the click rate.  
 
 :::image type="content" source="media/usage-reports/answer-analytics-bookmark-insights.png" alt-text="A dashboard showing bookmark insights." lightbox="media/usage-reports/answer-analytics-bookmark-insights.png":::
 
@@ -107,8 +107,8 @@ The Bookmark item insights table provides information on how individual bookmark
 |:-----|:-----|
 |Usage status   |This label indicates if the bookmark is above or below the Average click rate.   |
 |Usage (click through)   |Click through or Average click rate here is calculated as [Clicks]/[Impressions] for the bookmark in the selected period   |
-|Impressions |Number of times the bookmark was shown to users
-|Clicks | Number of times the bookmark received a click when it was shown to users    |
+|Impressions |Number of searches where the bookmark was shown to users 
+|Clicks | Number of searches where users clicked on the bookmark when it was shown to the users    |
 |Top user query (s)  |List of user queries that triggered the bookmark to show up for the user    |
 
 A detailed list of user queries for a bookmark is available in the details panel page for each bookmark item.
@@ -117,7 +117,7 @@ A detailed list of user queries for a bookmark is available in the details panel
 
 ## Acronyms Usage Report  
 
-The Acronyms section provides information on impressions trends for acronyms as whole and for individual acronyms that have impressed in the selected time period. Acronyms can include both admin curated and system curated acronyms. Learn more about acronym curation.  
+The Acronyms section provides information on impressions trends for acronyms as whole and for individual acronyms that have impressed in the selected time period. Acronyms can include both admin curated and system curated acronyms. [Learn more about acronym curation](/microsoftsearch/manage-acronyms#set-up-acronyms-answers)
 
 :::image type="content" source="media/usage-reports/answer-analytics-acronyms-usage-reports.png" alt-text="A dashboard showing acronyms usage reports." lightbox="media\usage-reports\answer-analytics-acronyms-usage-reports.png":::
 
@@ -127,7 +127,7 @@ The Acronyms section provides information on impressions trends for acronyms as 
 |System curated  |Number of searches where system curated acronyms were shown to users 
 
 ### Acronyms Impressions Trends
-Use this graph to understand the acronym impression trends within your organization. The graph shows trends for both admin curated and system curated acronyms. [Learn more about acronym curation](/microsoftsearch/manage-acronyms#set-up-acronyms-answers)
+Use this graph to understand the acronym impression trends within your organization. The graph shows trends for both admin curated and system curated acronyms. 
 
 :::image type="content" source="media/usage-reports/answer-analytics-acronyms-impressions-trends.png" alt-text="A dashboard showing acronyms impressions trends over time." lightbox="media/usage-reports/answer-analytics-acronyms-impressions-trends.png":::
 
