@@ -47,7 +47,7 @@ In the **Filters** menu, use one or more the following to filter the data in the
 
 | Filter| Description |
 |:-----|:-----|
-|Date Range |The date range for the analytics shown on the page. Available options are 7 days, 14 days, 31 days and last 12 months   |
+|Date Range |The date range for the analytics shown on the page. Available options are seven days, 14 days, 31 days and last 12 months   |
 |Search Application |The search application where the user has performed the queries: SharePoint start page, SharePoint sites, Office (Microsoft 365 app), Bing, or all four applications combined.   |
 
 The **Answer Analytics** details page contains the following three reports for each Bookmarks, Acronyms and Q&As. 
@@ -68,7 +68,7 @@ The **Answer Analytics** details page contains the following three reports for e
 
 - Q&A impressions and Q&A impressions trend. 
 - Average impressions and number of items that are above and below the average impression number. 
-- Item level metrics for individual Q&As namely Impressions and user queries list. 
+- Item level metrics for individual Q&As namely impressions and user queries list. 
 
 ## Bookmarks Usage Report
 
@@ -85,7 +85,7 @@ Use this graph to understand the bookmark impressions and click trends within yo
 |:-----|:-----|
 |Bookmark Impressions |Number of searches where a bookmark was shown to users. |
 |Bookmark clicks  |Number of searches where the user has clicked on a bookmark when it was shown to the user.  |
-|Average Click Through  |Average Click Through = [Total clicks in the selected time period/Time period in days] For example, in a selected time period of 7 days, it is [Total clicks in 7 days/7] |
+|Average Click Through  |Average Click Through = [Total clicks in the selected time period/Time period in days] For example, in a selected time period of seven days, it's [Total clicks in seven days/seven] |
 
 ### Average click rate
 Use the Average click rate to segregate the bookmarks that are performing well and bookmarks that need improvements to improve the click rate.  
@@ -94,9 +94,9 @@ Use the Average click rate to segregate the bookmarks that are performing well a
 
 | Metric| Description |
 |:-----|:-----|
-|Average click rate  |Average click rate = [Bookmark clicks]/[Bookmark impressions]. For example, in a selected time period of 7 days, Average click rate is the [total bookmark clicks in 7 days]/[total bookmark impressions in 7 days]. This is represented as a percentage. |
-|Bookmarks above average  |Number of Bookmarks that are above the Average click rate. These Bookmarks are performing well.
-|Bookmarks below average   |Number of Bookmarks that are below or equal to the Average click rate. These Bookmarks have potential for improvement.  |
+|Average click rate  |Average click rate = [Bookmark clicks]/[Bookmark impressions]. For example, in a selected time period of seven days, Average click rate is the [total bookmark clicks in seven days]/[total bookmark impressions in seven days]. This is represented as a percentage. |
+|Bookmarks above average  |Number of Bookmarks that have a click rate that is above the Average click rate. These Bookmarks are performing well.
+|Bookmarks below average   |Number of Bookmarks that have a click rate that is below or equal to the Average click rate. These Bookmarks have potential for improvement.  |
 ### Bookmark Item Insights
 
 The Bookmark item insights table provides information on how individual bookmarks are performing. This table lists all the bookmarks that have impressed in the selected time period for the selected search application.
@@ -106,7 +106,7 @@ The Bookmark item insights table provides information on how individual bookmark
 | Metric| Description |
 |:-----|:-----|
 |Usage status   |This label indicates if the bookmark is above or below the Average click rate.   |
-|Usage (click through)   |Click through or Average click rate here is calculated as [Clicks]/[Impressions] for the bookmark in the selected period   |
+|Usage (click through)   |Click through or Average click rate here's calculated as [Clicks]/[Impressions] for the bookmark in the selected period   |
 |Impressions |Number of times the bookmark was shown to users
 |Clicks | Number of times the bookmark received a click when it was shown to users    |
 |Top user query (s)  |List of user queries that triggered the bookmark to show up for the user    |
@@ -143,7 +143,7 @@ Use Average impressions to segregate acronyms that are performing well and acron
 
 | Metric| Description |
 |:-----|:-----|
-|Average impressions   |Average Impressions= [sum of all admin curated acronym impressions]/[sum of all unique admin curated acronyms that have impressed]. For example, in a selected time period of 7 days, Average impressions is the [total admin curated acronym impressions in 7 days]/[sum of all unique admin curated acronyms that have impressed in 7 days].  |
+|Average impressions   |Average Impressions= [sum of all admin curated acronym impressions]/[sum of all unique admin curated acronyms that have impressed]. For example, in a selected time period of seven days, Average impressions is the [total admin curated acronym impressions in seven days]/[sum of all unique admin curated acronyms that have impressed in seven days].  |
 |Acronyms above average   |Number of admin curated acronyms that are above the Average impressions number. 
 |Acronyms below average     |Number of admin curated acronyms that are below or equal to the Average impressions number. 
 
@@ -155,7 +155,7 @@ The Acronym item insights table provides information on how individual admin cur
 | Metric | Description |
 |:-----|:-----|
 |Usage status  |This label indicates if the acronym is above or below the Average impression number.    |
-|Usage (impressions)  |Usage here is the number of acronym impressions.  |
+|Usage (impressions)  |Usage here's the number of acronym impressions.  |
 |Impressions  |Number of searches where the acronym was shown to users.|
 |Top user query(s) |List of user queries that triggered the acronym to show up for the user.  |
 
@@ -181,9 +181,9 @@ Use Average impressions to segregate Q&As that are performing well and Q&As that
 
 | Metric | Description |
 |:-----|:-----|
-|Average impressions   |Average Impressions= [sum of all Q&A impressions]/[sum of all unique Q&As that have impressed]. For example, in a selected time period of 7 days, Average impressions is the [total Q&A impressions in 7 days]/[sum of all unique Q&As that have impressed in 7 days]    |
-|Q&As above average   |Number of Q&As that are above the Average impressions number.  |
-|Q&As below average   |Number of Q&As that are below or equal to the Average impressions number. |
+|Average impressions   |Average Impressions= [sum of all Q&A impressions]/[sum of all unique Q&As that have impressed]. For example, in a selected time period of seven days, Average impressions is the [total Q&A impressions in seven days]/[sum of all unique Q&As that have impressed in seven days]    |
+|Q&As above average   |Number of Q&As that have an impressions count that is above the Average impressions number.  |
+|Q&As below average   |Number of Q&As that have an impressions count that is below or equal to the Average impressions number. |
 
 ### Q&A Item Insights 
 
@@ -194,13 +194,14 @@ The Q&A item insights table provides information on how individual Q&As are perf
 | Metric | Description |
 |:-----|:-----|
 |Usage status    |This label indicates if the Q&A is above or below the Average impression number.  |
-|Usage (impressions)    |Usage is here number of Q&A impressions.   |
+|Usage (impressions)    |Usage here's the number of Q&A impressions.   |
 |Impressions    |Number of searches where the Q&A was shown to users.  |
 |Top user query (s)     |List of user queries that triggered the Q&A to show up for the user.   |
 
 Detailed list of user queries for which the Q&A impressed is available in the details panel page for each Q&A item. 
 
-:::image type="content" source="media/usage-reports/answer-analytics-q&a-usage-user-queries.png" alt-text="A dashboard showing q&a usage for the last 31 days ." lightbox="media/usage-reports/answer-analytics-q&a-usage-user-queries.png":::
+:::image type="content" source="media/usage-reports/answer-analytics-q&a-usage-user-queries.png" alt-text="A dashboard showing q&a usage for the last 31 days." lightbox="media/usage-reports/answer-analytics-q&a-usage-user-queries.png":::
+
 
 > [!NOTE]
 > Answer Analytics is currently not supported for the 12-month filter range and for certain types of tenants. In case you do not see Answer Analytics feature on your test tenant drop us an email at searchadminxteam@service.microsoft.com and we will reach out to you for further investigation.
