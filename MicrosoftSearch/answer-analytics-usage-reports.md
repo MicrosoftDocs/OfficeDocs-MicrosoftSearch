@@ -214,5 +214,4 @@ Detailed list of user queries for which the Q&A impressed is available in the de
 [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites)
 
 
-
 [def]: media/usage-reports/answer-analytics.png
