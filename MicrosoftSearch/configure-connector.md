@@ -32,7 +32,8 @@ This article shows the basic process required to set up Microsoft Graph connecto
 7. [Manage schema](#step-7-manage-schema)
 8. [Refresh settings](#step-8-refresh-settings)
 9. [Review connection](#step-9-review-connection)
-10. [Customize the search results page](#step-10-customize-the-search-results-page)
+10. [Manage connection results](#step-10-manage-connection-results)
+11. [Customize the search results page](#step-11-customize-the-search-results-page)
 
 This article also includes the following information:
 
@@ -48,13 +49,13 @@ This article also includes the following information:
 
 ## Step 1: Add a Microsoft Graph connector in the Microsoft 365 admin center
 
-Complete the following steps to configure any of the Microsoft Graph connectors:
+Complete the following steps to configure any of the Microsoft Graph connectors (or [click here](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Configure_Connector) to directly access the Connector Catalog):
 
 1. Sign into your admin account in the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 2. In the navigation pane, select **Settings**, and then select **Search & intelligence**. Select the [Data sources tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
 
-3. Select **+Add**, and then select the data source of your choice from the menu of available options.
+3. Select [**+Add**](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Configure_Connector), and then select the data source of your choice from the menu of available options.
 
    > [!div class="mx-imgBorder"]
    > ![Data sources available include: ADLS Gen2, Enterprise websites, Microsoft SQL server, Azure SQL, Oracle SQL database, ServiceNow Knowledge, ServiceNow Catalog, File share, Azure DevOps, and MediaWiki.](media/add-connector.png)
@@ -190,13 +191,17 @@ Incremental refreshes are much faster than full refreshes because unchanged item
 
 ## Step 9: Review connection
 
-You can review your entire configuration and edit settings as needed before completing the connection. *Be sure to read the connector-specific information for your data source if you haven't already done so.* When you're ready to complete the connection, select **Finish updating**.
+You can review your entire configuration and edit settings as needed before completing the connection. *Be sure to read the connector-specific information for your data source if you haven't already done so.* When you're ready to complete the connection, select **Publish**.
 
-## Step 10: Customize the search results page
+## Step 10: Manage connection results
 
-After publishing the connection, you need to customize the search results page with verticals and result types. To learn about customizing search results, review how to [manage verticals](manage-verticals.md) and [result types](manage-result-types.md).
+Results from your connection will be included in the All vertical by default after it’s published. If you do not want the connection results to be immediately available in All after it has been published, you can opt it out in this step.  
 
-## Step 11: Confirm if the connection setup worked
+## Step 11: Customize the search results page
+
+After publishing the connection, you may want to customize the search results page with verticals and result types. To learn about customizing search results, review how to [manage verticals](manage-verticals.md) and [result types](manage-result-types.md).
+
+## Step 12: Confirm if the connection setup worked
 
 Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Monitor your connections](manage-connector.md).
 

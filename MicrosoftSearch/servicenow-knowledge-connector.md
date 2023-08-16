@@ -30,7 +30,10 @@ other instructions that apply to only ServiceNow connector including information
 and [Limitations](#limitations).  
 
 ## Step 1: Add a connector in the Microsoft 365 admin center.
-Follow the general [setup instructions](./configure-connector.md).
+
+[Add ServiceNow Knowledge Connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowKB&type=ServiceNowKB)
+
+(See general [setup instructions](./configure-connector.md) for more details)
 
 ## Step 2: Name the connection.
 Follow the general [setup instructions](./configure-connector.md).
@@ -206,7 +209,12 @@ Use the preview results button to verify the sample values of the selected prope
 
 The ServiceNow connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. Indexed data appears in the search results and is visible to all users in the organization or users who have access to them via user criteria permission respectively. If a knowledge article is not enabled with a user criteria, it will appear in search results of everyone in the organization.
 
-The connector supports default user criteria permissions without advanced scripts. When the connector encounters a user criteria with advanced script, all data using that user criteria will not appear in search results.
+To access the Knowledge base articles in ServiceNow, users need both Article-level permissions and KB-level permissions. When using the ServiceNow Knowledge Base connector, if there are no Article-level restrictions, it will apply the Knowledge Base-level permissions. However, if there are Article-level restrictions, those will take priority over the Knowledge Base-level restrictions.
+
+>[!IMPORTANT]
+>* The connector supports default user criteria permissions without advanced scripts. When the connector encounters a user criteria with advanced script, all data using that user criteria will not appear in search results.
+>* The connector does not apply intersection of Knowledge base-level and Article-level permissions, instead honors Article-level permissions directly.
+
 
 If you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Azure Active Directory (AAD) provisioned users or Non-AAD users.
 

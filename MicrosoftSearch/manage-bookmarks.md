@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
-ms.date: 03/28/2022
+ms.date: 05/25/2023
 search.appverid:
 - BFB160
 - MET150
@@ -16,6 +16,9 @@ ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: "Create and update bookmarks and ways to bulk edit bookmark results for Microsoft Search"
 ---
 # Manage bookmarks
+
+> [!IMPORTANT]
+> On July 15, 2023, support for importing Promoted Results from SharePoint will discontinue. To learn about alternatives, refer to the section “Including SharePoint results in Microsoft Search” below. 
 
 Bookmarks help people quickly find important sites and tools with just a search. Each bookmark includes a title, URL, a set of user-friendly keywords to trigger the bookmark, and a category.
 
@@ -51,9 +54,12 @@ Search admins and editors can add bookmarks in the Microsoft 365 admin center an
 
 You can use the Microsoft Search content creator browser extension to easily add bookmarks. Just go to the site you want to add as a bookmark, and select Add in the extension. To install the extension for Microsoft Edge or Google Chrome, go to the [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and add it to your browser.
 
-### Import SharePoint results
+### Including SharePoint results in Microsoft Search
 
-If your organization set up Promoted Results in SharePoint, you can import the titles, URLs, and descriptions from the Promoted Results for your tenant to make them available in Microsoft Search. It's an easy way to quickly populate results and make search more effective for your users. We recommend using promoted results from SharePoint as a reference to understand how to name and create relevant search results. In most cases, it takes just a few minutes, but if you're importing a large number of results, it may take up to 48 hours. When the import is finished, the new bookmarks will have a "Suggested" status; you can then review the bookmarks and publish or edit them as needed.
+Promoted Results in SharePoint can be included in Microsoft Search. It’s an easy way to quickly populate results and make search more effective for your users. There are two ways you can import results into the Search & intelligence portal in the [Microsoft 365 admin center](https://admin.microsoft.com/): 
+1.	You can export the [CSV file from SharePoint](https://pnp.github.io/powershell/cmdlets/Get-PnPSearchConfiguration.html#example-8) and [import through the CSV bookmark import tool](#import-bookmarks) in the Answers tab in the Search & intelligence portal. 
+2.	You can export the bookmarks from SharePoint and create the API queries needed. Go to [Create bookmark](/graph/api/search-searchentity-post-bookmarks?view=graph-rest-beta&tabs=http) for more info. 
+When the import is finished, the new bookmarks will have a “Suggested” status; you can then review the bookmarks and publish or edit them as needed. 
 
 ### Add default and suggested bookmarks
 
