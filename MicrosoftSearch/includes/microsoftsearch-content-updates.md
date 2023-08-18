@@ -2,6 +2,15 @@
 
 
 
+## Week of August 07, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/8/2023 | [Microsoft Search for US government environments](/MicrosoftSearch/microsoft-search-us-government-environments) | modified |
+| 8/10/2023 | [Search Usage Reports- Analytics](/MicrosoftSearch/answer-analytics-usage-reports) | modified |
+
+
 ## Week of July 31, 2023
 
 
@@ -41,11 +50,3 @@
 | 7/14/2023 | [Dataverse and Dynamics 365 results in Microsoft Search](/MicrosoftSearch/manage-dynamics365) | modified |
 | 7/14/2023 | [Introducing Search & Intelligence](/MicrosoftSearch/search-intelligence-rename) | modified |
 | 7/14/2023 | [Manage Q&As](/MicrosoftSearch/manage-qas) | modified |
-
-
-## Week of July 03, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 7/5/2023 | Compliance solutions with Microsoft Graph connectors | removed |
