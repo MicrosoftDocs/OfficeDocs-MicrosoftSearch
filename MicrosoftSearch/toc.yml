@@ -115,9 +115,7 @@ items:
   - name: Federated Search connectors
     items:
     - name: Dataverse and Dynamics 365
-      href: manage-dynamics365.md
-    - name: Azure Cognitive Search
-      href: manage-azure-cognitive-search.md      
+      href: manage-dynamics365.md  
 - name: Customize and configure
   items:
   - name: Manage verticals
