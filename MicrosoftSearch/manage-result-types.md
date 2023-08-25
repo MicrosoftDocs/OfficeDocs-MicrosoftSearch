@@ -58,3 +58,4 @@ Here's a list of common problems you might see and actions to fix them.
 |---------|---------|
 | I don't see my result layout on the search page, although I created one. | There may be a delay of a few minutes because these settings are cached. Wait a few minutes and try again.        |
 | I don't see any content sources on the result type page. | Make sure you have configured connectors and indexed data.   |
+| StringCollection properties do not bind to the result type and render as “${propertyName}”  | Ensure properties of type StringCollection are wrapped in a join method as:  **${join(propertyName, ‘,’)}**. If you want to show a single value (say, the ith item) from a StringCollection, you can specify it as follows: **${propertyName[i]}**  (Note: indexing in StringCollection types start from 0)    |
