@@ -20,6 +20,8 @@ items:
       href: queries-usage-reports.md
     - name: User reports
       href: users-search-reports.md
+    - name: Answer analytics reports
+      href: answer-analytics-usage-reports.md
     - name: Connection analytics reports
       href: connection-analytics-reports.md
   - name: Manage feedback
@@ -113,9 +115,7 @@ items:
   - name: Federated Search connectors
     items:
     - name: Dataverse and Dynamics 365
-      href: manage-dynamics365.md
-    - name: Azure Cognitive Search
-      href: manage-azure-cognitive-search.md      
+      href: manage-dynamics365.md  
 - name: Customize and configure
   items:
   - name: Manage verticals

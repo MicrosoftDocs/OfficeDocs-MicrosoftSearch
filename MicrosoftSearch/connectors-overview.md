@@ -120,7 +120,7 @@ The set of connectors and features in preview include:
 There are many ways to customize and configure search results. To learn more, see the following articles:
 
 * [Manage search verticals](manage-verticals.md) and [result types](manage-result-types.md)
-* [Manage connector results in All vertical](connectors-in-all vertical.md)
+* [Manage connector results in All vertical](connectors-in-all-vertical.md)
 * [Manage search result layouts](customize-results-layout.md)
 * [Manage result cluster](result-cluster.md)
 * [Manage custom filters](custom-filters.md)
