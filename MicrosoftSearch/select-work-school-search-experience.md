@@ -1,7 +1,7 @@
 ---
 title: "Select a school or work search experience"
-ms.author: dawholl
-author: dawholl
+ms.author: bstucker
+author: bstuck
 manager: bstucker
 ms.audience: Admin
 ms.topic: article
