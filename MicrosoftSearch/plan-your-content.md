@@ -1,8 +1,8 @@
 ---
 title: "Plan your content"
-ms.author: jeffkizn
-author: jeffkizn
-manager: parulm
+ms.author: bstucker
+author: bstuck
+manager: bstucker
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch

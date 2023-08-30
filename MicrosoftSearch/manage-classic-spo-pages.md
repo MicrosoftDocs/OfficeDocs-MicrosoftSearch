@@ -1,8 +1,8 @@
 ---
 title: "Classic pages in SharePoint Online and Microsoft Search"
 ms.author: keremy
-author: jeffkizn
-manager: parulm
+author: bstuck
+manager: bstucker
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

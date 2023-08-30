@@ -2,7 +2,7 @@
 title: "Select a school or work search experience"
 ms.author: dawholl
 author: dawholl
-manager: jeffkizn
+manager: bstucker
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

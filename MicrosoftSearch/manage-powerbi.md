@@ -2,7 +2,7 @@
 title: "Manage Power BI answers"
 ms.author: dawholl
 author: dawholl
-manager: jeffkizn
+manager: bstucker
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

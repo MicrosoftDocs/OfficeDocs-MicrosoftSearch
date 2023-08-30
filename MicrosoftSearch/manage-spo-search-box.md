@@ -1,8 +1,8 @@
 ---
 title: "Managing the search box in SharePoint sites"
 ms.author: keremy
-author: jeffkizn
-manager: parulm
+author: bstuck
+manager: bstucker
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
