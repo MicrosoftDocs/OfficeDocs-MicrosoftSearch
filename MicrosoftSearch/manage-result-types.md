@@ -2,7 +2,7 @@
 title: "Manage result types"
 ms.author: jypal
 author: jypal6
-manager: jeffkizn
+manager: bstucker
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
