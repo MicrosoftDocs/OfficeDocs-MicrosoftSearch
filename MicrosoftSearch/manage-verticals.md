@@ -28,7 +28,7 @@ You can manage verticals at two levels:
 
 Default verticals are present at the organization level in experiences like [SharePoint](https://sharepoint.com/), [Microsoft Office](https://office.com/), and Microsoft Search in [Bing](https://bing.com/) or at the SharePoint site level in each site's search result page. 
 
-Here is a summary of customization capabilities on out of the box verticals.
+Here's a summary of customization capabilities on out of the box verticals.
 
 |Customization type   |Organization level     |Site level   |
 |---------|---------|---------|
@@ -81,7 +81,7 @@ To set up a query for a search vertical where multiple connection sources have b
 
 ### Keyword Query Language (KQL)
 
-A query can be added to a vertical to narrow down results shown on the search vertical using [Keyword Query Language (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) (limited support). This page lists the available properties. We recommend that you use free-text keywords and property restrictions with  boolean operators for creating the KQL. Dynamic ranking operators like XRANK, proximity operators and words are not supported.
+A query can be added to a vertical to narrow down results shown on the search vertical using [Keyword Query Language (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) (limited support). This page lists the available properties. We recommend that you use free-text keywords and property restrictions with  boolean operators for creating the KQL. Dynamic ranking operators like XRANK, proximity operators and words aren't supported.
 
 Here are some example queries.
 
@@ -148,7 +148,7 @@ Use the “|” operator to resolve multi-value variables. See the following tab
 | 1    | MyProperty:{Profile.emails.address}  |   "Megan\.Bowen@contoso.com"  |
 | 2 | MyProperty:{Profile.emails}   |    {Profile.emails} This won't resolve because *emails* is an object.|
 | 3    | {?MyProperty:{Profile.emails}}  |  This won't resolve because *emails* is an object. The “?” operator ignores query variables that don't resolve. This variable will be removed when passed further down the query stack.   |
-| 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
+| 4 | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"nonofficial") OR (MyProperty:"personal"))    |
 
 #### Query String variables
 
@@ -170,16 +170,16 @@ Here are more examples of query string expansion.
 | 2 | MyProperty:{QueryString.state} OR MyProperty:{QueryString.priority}   |    https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress&priority=1 |   MyProperty:InProgress OR MyProperty:1  |
 | 3    | {?MyProperty:{QueryString.state}}  |  https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?State=InProgress   |   Here state won't resolve because QueryStrings are case sensitive.  The “?” operator ignores query variables that don't resolve. This variable will be removed when passed further down the query stack.  |
 | 4 | {\|MyProperty: {QueryString.state}}    |  https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress,Closed    |   (MyProperty:InProgress) OR (MyProperty:Closed)  <br /> The \| operator is used to resolve muti-value variables. The values for the variables should be passed using the comma separator as shown in the URL syntax. |
-| 5 | {MyProperty: {QueryString.state}}    |  https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress,Closed   |   MyProperty:InProgress <br /> Here only the first value of state gets picked up from the URL since the query syntax does not define it as a multi-value variable. |
+| 5 | {MyProperty: {QueryString.state}}    |  https://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}?state=InProgress,Closed   |   MyProperty:InProgress <br /> Here only the first value of state gets picked up from the URL since the query syntax doesn't define it as a multi-value variable. |
 
 
 ## Limitations
-- Language localization is not applicable to names of out of box verticals once modified. 
-- Custom verticals do not appear on the mobile view of Microsoft Search. 
-- Adding query is not supported on the People vertical. 
-- Vertical modification and new verticals are not visible to guest users in an organization. 
-- Vertical re-ordering is not supported.
-- Vertical renaming for All tab is not supported in Microsoft Search in Bing.
+- Language localization isn't applicable to names of out of box verticals once modified. 
+- Custom verticals don't appear on the mobile view of Microsoft Search. 
+- Adding query isn't supported on the People vertical. 
+- Vertical modification and new verticals aren't visible to guest users in an organization. 
+- Vertical re-ordering isn't supported.
+- Vertical renaming for All tab isn't supported in Microsoft Search in Bing.
 - Query string variables can only be used in SharePoint sites.
 
 ## Troubleshooting

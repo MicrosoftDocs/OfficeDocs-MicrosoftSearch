@@ -24,7 +24,7 @@ For other customization options, see [Changing the Microsoft Search results page
 > [!NOTE]
 > The suite navigation bar search box is not available for all customers at this time, but these options can still be set now and they will take effect when it becomes available.
 
-For the tasks listed below, you will use PowerShell with SharePoint PnP PowerShell extensions. You can install and learn more about how to get started [here](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets). You will sign into your site or site collection using this command:
+For the tasks listed below, you'll use PowerShell with SharePoint PnP PowerShell extensions. You can install and learn more about how to get started [here](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets). You'll sign into your site or site collection using this command:
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
@@ -33,7 +33,7 @@ Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
 
 ## Changing the scope of search
 
-When you create a new site in SharePoint Online today, and type into the search box, you are taken to the Microsoft Search results page. This page shows results from your current site by default and allows you to expand the scope of your search to the hub that the current site is associated with (if there is one), or to the whole organization.
+When you create a new site in SharePoint Online today, and type into the search box, you're taken to the Microsoft Search results page. This page shows results from your current site by default and allows you to expand the scope of your search to the hub that the current site is associated with (if there's one), or to the whole organization.
 
 The scope the search box uses, by default, depends on type of site.
 
@@ -54,7 +54,7 @@ After running this command, the site that was previously showing results from th
 
 To go back to the default setting, run the command again with the value “DefaultScope". To search across the Hub, use “Hub” as the SearchScope value.
 
-This setting applies at the individual site level. There is no equivalent setting for site collections.
+This setting applies at the individual site level. There's no equivalent setting for site collections.
 
 ## Show or hide the search box
 
@@ -78,9 +78,9 @@ After running these commands, the search box will no longer show up in the navig
 
 There are several points to consider:
 
-* This setting only applies to the search box in the suite navigation bar. It does not apply to search boxes that are in the page, or to search boxes on classic pages.
+* This setting only applies to the search box in the suite navigation bar. It doesn't apply to search boxes that are in the page, or to search boxes on classic pages.
 
-* Once you’ve disabled the search box in the navigation bar, if you want search functionality in your site, you will have to provide it yourself using a custom web part or a SharePoint Framework extension.
+* Once you’ve disabled the search box in the navigation bar, if you want search functionality in your site, you'll have to provide it yourself using a custom web part or a SharePoint Framework extension.
 
 * This solution will remove the search box from lists and libraries for your site as well. Your custom search solution will need to consider contextual searches for SharePoint lists and libraries, in addition to site-wide search.
 

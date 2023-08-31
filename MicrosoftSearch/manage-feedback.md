@@ -19,7 +19,7 @@ description: "Review and act on user feedback in Microsoft Search"
 
 Creating a great search experience for your users is a partnership between Microsoft and the search administrator. Feedback from your users allows us to continuously evaluate the product and tune it for the best experience. Some feedback, however, is best addressed by you.
 
-We are now offering tools that will allow you to review and manage the feedback your users are providing on the search experience.
+We're now offering tools that will allow you to review and manage the feedback your users are providing on the search experience.
 
 ## How users submit feedback
 
@@ -33,7 +33,7 @@ Most feedback submissions appear in the [Feedback](https://admin.microsoft.com/A
 
 ## Review feedback
 
-On the [Feedback](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) page, you can review and export feedback that people in your organization have sent during the past 30 days. Once a user submits feedback it will appear in this list within 20 minutes. You can use the refresh button to ensure you are looking at the most current data
+On the [Feedback](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) page, you can review and export feedback that people in your organization have sent during the past 30 days. Once a user submits feedback it will appear in this list within 20 minutes. You can use the refresh button to ensure you're looking at the most current data
 
 By using a filter, you can see feedback for specific answer types. You can also filter by source and date range.
 
@@ -74,9 +74,9 @@ If you share feedback automatically or manually, it never includes queries and o
 
 As a search administrator you should understand the major personas in your organization and what types of content those people typically interact with and search for. With this understanding, you can use feedback to make targeted improvements to your users' search experience.
 
-1. “I did not find what I was looking for” and similar feedback can be used to identify content users want, but is not currently included in the search index. Determining this often takes investigation and inference based on understanding your users. Once found, decide which methods of including that content would be most appropriate:
-    1. Bookmarks are useful for content sources having a high-quality landing page and a limited variety of search terms, so that the user community gets a high-quality result from the bookmark and can then efficiently find what they are looking for.
-    1. Q&A are useful for individual answers that are fairly frequent, yet do not change.
+1. “I didn't find what I was looking for” and similar feedback can be used to identify content users want, but isn't currently included in the search index. Determining this often takes investigation and inference based on understanding your users. Once found, decide which methods of including that content would be most appropriate:
+    1. Bookmarks are useful for content sources having a high-quality landing page and a limited variety of search terms, so that the user community gets a high-quality result from the bookmark and can then efficiently find what they're looking for.
+    1. Q&A are useful for individual answers that are fairly frequent, yet don't change.
     1. Connectors are useful for content sources with a wide variety of content and wide variety of search terms.
 1. “The results took too long to load” & “I found a problem” may be indicators of a broader problem. Looking for this feedback daily may help and if multiple cases appear, you can verify the search experience for yourself and open a support case with Microsoft if needed. This type of feedback is also important to Microsoft and is an excellent reason to flow all feedback to us.
 1. “I want to suggest an internal link” can be evaluated for being added as bookmarks or connected content. Your first thought should be a bookmark; if the bookmark gets high usage, you can consider bringing in content through a connector to enable an even richer search experience.
