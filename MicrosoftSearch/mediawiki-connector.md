@@ -32,6 +32,8 @@ This article is for anyone who configures, runs, and monitors a MediaWiki connec
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
+[Add MediaWiki connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_MediaWiki&type=MediaWiki)
+
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
