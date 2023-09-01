@@ -76,6 +76,8 @@ You can now use the [Microsoft 365 Admin Center](https://admin.microsoft.com/) t
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
+[Add Salesforce connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Salesforce&type=Salesforce)
+
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 

@@ -48,6 +48,8 @@ You will need the following permissions granted to the user account whose creden
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
+[Add Azure DevOps Wiki connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_AzureDevOpsWiki&type=AzureDevOpsWiki)
+
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->

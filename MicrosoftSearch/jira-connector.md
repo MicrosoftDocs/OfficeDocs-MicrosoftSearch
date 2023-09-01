@@ -43,6 +43,9 @@ You'll need the following permissions granted to the user account whose credenti
 | Administer Jira | [Global permission](https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/) | ACL trimming of search results. This permission is **optional** and is required to select `Only people with access to this data source` option in step 4 below. |
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
+
+[Add Jira connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Jira&type=Jira)
+
 Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 2: Name the connection
