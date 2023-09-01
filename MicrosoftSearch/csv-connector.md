@@ -86,6 +86,8 @@ When you set up the CSV connector, you'll need to provide a primary storage conn
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
+[Add CSV connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_CSV&type=CSV)
+
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->

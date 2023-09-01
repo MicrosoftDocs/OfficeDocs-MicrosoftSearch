@@ -31,6 +31,8 @@ You must be the admin for your organization's Microsoft 365 tenant and the admin
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
+[Add Confluence cloud connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Confluence&type=Confluence)
+
 Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 2: Name the connection
