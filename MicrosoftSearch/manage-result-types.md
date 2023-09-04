@@ -40,7 +40,7 @@ Each result type has a priority that determines the order of match evaluation. I
 The result type management experience is wizard driven, you're guided through steps to define the name, content source, rules, and layout. Result types can be customized at both the organization-level and SharePoint site level.
 
 > [!NOTE]
-> Result types for "SharePoint and OneDrive" content source is available in Targeted release ring at Organization level for SharePoint and Office.com canvases only. 
+> Result types for "SharePoint and OneDrive" content source is available in Targeted release ring at Site level for SharePoint canvas only. 
 
 ### Manage organization-level result types
 
