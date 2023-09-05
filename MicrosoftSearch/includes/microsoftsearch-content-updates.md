@@ -2,6 +2,17 @@
 
 
 
+## Week of August 28, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/31/2023 | [Classic pages in SharePoint Online and Microsoft Search](/MicrosoftSearch/manage-classic-spo-pages) | modified |
+| 8/31/2023 | [Managing User Feedback](/MicrosoftSearch/manage-feedback) | modified |
+| 8/31/2023 | [Managing the search box in SharePoint sites](/MicrosoftSearch/manage-spo-search-box) | modified |
+| 8/31/2023 | [Manage search verticals](/MicrosoftSearch/manage-verticals) | modified |
+
+
 ## Week of August 21, 2023
 
 

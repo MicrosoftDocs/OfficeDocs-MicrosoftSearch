@@ -1,8 +1,8 @@
 ---
 title: "Create a custom search results page in SharePoint Online"
-ms.author: jeffkizn
-author: jeffkizn
-manager: jeffkizn
+ms.author: bstucker
+author: bstuck
+manager: bstuck
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
