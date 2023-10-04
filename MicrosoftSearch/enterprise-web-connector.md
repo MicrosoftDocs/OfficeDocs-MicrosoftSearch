@@ -75,8 +75,12 @@ If your website contains dynamic content, for example, webpages that live in con
 In addition to the check box, there are three optional fields available:
 
 1. **DOM Ready**: Enter the DOM element the crawler should use as the signal that the content is fully rendered and the crawl should begin.
-1. **Headers to Add**: Specify which HTTP headers the crawler should include when sending that specific web URL. You can set multiple headers for different websites. We suggest including auth token values.
-1. **Headers to Skip**: Specify any unnecessary headers that should be excluded from dynamic crawling requests.
+2. **Headers to Add**: Specify which HTTP headers the crawler should include when sending that specific web URL. You can set multiple headers for different websites. We suggest including auth token values.
+3. **Headers to Skip**: Specify any unnecessary headers that should be excluded from dynamic crawling requests.
+
+Headers should be added in the following syntax: `{"Root-URL":["TKey=TValue"]}`
+
+Example: `{"https://www.contoso.com":["Token=Value","Type=Value2"]}`
 
 > [!NOTE]
 > Dynamic crawling is only supported for Agent crawl mode.
