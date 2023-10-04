@@ -27,6 +27,8 @@ Each step in the setup process is listed below along with either a note that ind
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
+[Add ServiceNow Catalog connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowCatalog&type=ServiceNowCatalog​)
+
 Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 2: Name the connection
