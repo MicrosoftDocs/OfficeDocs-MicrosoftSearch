@@ -35,6 +35,9 @@ In order to access your on-premises third-party data, you must install and confi
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
+
+[Add Oracle SQL connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_OracleSqlConnector&type=OracleSqlConnector​)
+
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
