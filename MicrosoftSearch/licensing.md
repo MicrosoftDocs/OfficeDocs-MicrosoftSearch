@@ -32,13 +32,13 @@ To index content by using Microsoft Graph connectors, you need to have sufficien
 - Built-in entitlements
 
 ## What is an item of index quota?
-An item is 1 unit of index quota. An item can be considered as 1 search result. Every unique search result which you see can be considered as 1 item. Depending on the type of data source, 1 item will be – 
--	1 document (word, excel, ppt, pdf, etc.) in case of file share
--	1 wiki page in case of Confluence
--	1 webpage in case of website
--	1 ticket/issue in case of Jira
+An item is 1 unit of index quota. An item can be considered as 1 search result. Every unique search result that you see can be considered as 1 item. Depending on the type of data source, 1 item is – 
+-	1 document (word, excel, ppt, pdf, etc.) in file share
+-	1 wiki page in Confluence
+-	1 webpage in a website
+-	1 ticket/issue in Jira
 
-Total quota utilized is calculated in terms of total items stored in the index. The number of updates/changes to an item are not counted in any manner. There are no cost implications of updating an item once in a month vs. a hundred times in a day. It still will count as 1 item only.
+Total quota utilized is calculated in terms of total items stored in the index. The number of updates/changes to an item are not counted in any manner. There are no cost implications of updating an item once in a month vs. a hundred times in a day. It still counts as 1 item only.
 
 ## Purchase of add-on index quota
 To purchase more Microsoft Graph connectors quota, contact your Microsoft account manager or complete the following steps:
@@ -49,7 +49,7 @@ To purchase more Microsoft Graph connectors quota, contact your Microsoft accou
 4. Select **Buy**, and then complete your order preferences.
 5. Select **Check out now**.
 
-Cost of indexing connector content is $1000/month for each million items. This is assessed for items exceeding the entitled quota for each tenant (see below).
+Cost of indexing connector content is $1000/month for every million items. This is assessed for items exceeding the entitled quota for each tenant (refer next section).
 
 ## Entitlement built into Microsoft 365 or Office 365 E5 licenses
 
