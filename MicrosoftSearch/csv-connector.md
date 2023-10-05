@@ -36,7 +36,7 @@ Verify the .csv files you want to index have been uploaded to a SharePoint docum
 
 #### Create a SharePoint app
 
-1. Go to  `https://Org-Name.sharepoint.com/Site-Name/_layouts/15/appregnew.aspx`.
+1. Go to  `https://Org-Name.sharepoint.com/_layouts/15/AppRegNew.aspx`.
 2. On the Client Id and Client Secret fields, select **Generate**.
 1. For Title, enter an app name.
 1. In the App Domain field, enter `www.gcs.com`.
