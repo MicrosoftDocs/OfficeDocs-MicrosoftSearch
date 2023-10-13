@@ -35,6 +35,8 @@ Search admins can also customize bookmarks and Q&A answers in the Microsoft 365 
 ## Microsoft Search features
 
 The following table outlines whether specified Microsoft Search features are available within the GCC, GCC High, and DoD environments. 
+- Next = The next wave of features currently being worked on and will be shipping soon.
+- Next+ = The wave of features that are planned to release after Next. 
 
 | Feature | WW | GCC | GCC High | DoD  |
 | --------- |--------- | --------- | --------- | ---------- |
