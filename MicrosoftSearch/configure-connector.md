@@ -148,7 +148,7 @@ REFINE | The refine option can be used as on the Microsoft Search results page. 
 
 For all connectors except the File share connector, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection configuration assistant automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute on the search schema page.
 
-:::image type="content" alt-text="Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions." source="media/manageschema.png" lightbox="media/manageschema.png":::
+:::image type="content" alt-text="Screenshot that shows schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions." source="media/manageschema.png" lightbox="media/manageschema.png":::
 
 ### Restrictions and recommendations for search schema settings
 
@@ -193,7 +193,7 @@ You can configure full and incremental crawls based on the advanced scheduling o
 * **Starting Time**: Select the time when you want the crawl to start.
 * **Reset**: This will reset the schedule to the connector's default schedule.
 
-:::image type="content" alt-text="Sample configuration setting." source="media/refresh-settings/incremental-week-view.png":::
+:::image type="content" alt-text="Screenshot that shows sample configuration setting." source="media/refresh-settings/incremental-week-view.png":::
 
 Here are certain points to note while configuring the crawl schedule:
 
@@ -205,23 +205,23 @@ These are some of the scenarios:
 
 * Run incremental crawl daily after every 15 minutes
 
-:::image type="content" alt-text="Run incremental crawl daily after every 15 minutes." source="media/refresh-settings/incremental-daily-view.png":::
+:::image type="content" alt-text="Screenshot that shows run incremental crawl daily after every 15 minutes." source="media/refresh-settings/incremental-daily-view.png":::
 
 Here selecting the "Run once in a day" checkbox will let you choose the "Start time" to run incremental crawl only once in a day starting at the specified time. However, unselecting it will let you choose the frequency of crawl repetitions in a day. If you want your data to be continuously refreshed, you can choose to run increment crawls frequently in a day. But if the number of items in data source is large and the crawls tend to be longer, or if frequent updates are not needed for the content, you can choose the incremental crawl to run once in a day.
 
-:::image type="content" alt-text="Run incremental crawl daily at 2:00 PM" source="media/refresh-settings/incremental-run-once.png":::
+:::image type="content" alt-text="Screenshot that shows run incremental crawl daily at 2:00 PM" source="media/refresh-settings/incremental-run-once.png":::
 
 * Run incremental crawl every week on Wednesday, Saturday and Sunday repeating every 15 minutes and starting at 1:00 AM
 
-:::image type="content" alt-text="Run incremental crawl every week on Wednesday, Saturday and Sunday repeating every 15 minutes and starting at 1:00 AM." source="media/refresh-settings/incremental-week-view.png":::
+:::image type="content" alt-text="Screenshot that shows run incremental crawl every week on Wednesday, Saturday and Sunday repeating every 15 minutes and starting at 1:00 AM." source="media/refresh-settings/incremental-week-view.png":::
 
 * Run full crawl every day at 1:00 AM
 
-:::image type="content" alt-text="Run full crawl every day at 1:00 AM." source="media/refresh-settings/full-day-view.png":::
+:::image type="content" alt-text="Screenshot that shows run full crawl every day at 1:00 AM." source="media/refresh-settings/full-day-view.png":::
 
 * Run full crawl every week on Friday at 8:00 PM
 
-:::image type="content" alt-text="Run full crawl every week on Friday at 8:00 PM." source="media/refresh-settings/full-week-view.png":::
+:::image type="content" alt-text="Screenshot that shows run full crawl every week on Friday at 8:00 PM." source="media/refresh-settings/full-week-view.png":::
 
 ## Step 9: Review connection
 
