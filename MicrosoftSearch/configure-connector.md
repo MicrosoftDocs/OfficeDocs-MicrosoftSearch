@@ -184,6 +184,8 @@ With an **Incremental refresh**, the search engine can process and index only th
 
 Incremental refreshes are much faster than full refreshes because unchanged items aren't processed. However, if you choose to run incremental refreshes, you still need to run full refreshes periodically to maintain correct data sync between the content source and the search index.
 
+### Crawl Scheduling
+
 You can configure full and incremental crawls based on the advanced scheduling options present on the Refresh Settings page. Some connectors do not support incremental crawls and the option to configure incremental crawls will not be available for those connectors. For others, the incremental crawl is an optional crawl and enabled by default. A crawl schedule is selected by default for you based on the connector type. This default setting can be changed during connection creation or edited after a connection is published from the "Edit" flow of a connection. You can choose from these fields:
 
 * **Recurrence**: You can choose to run the crawls every day, week, 2nd week or 4th week.
@@ -207,7 +209,7 @@ These are some of the scenarios:
 
 :::image type="content" alt-text="Screenshot that shows run incremental crawl daily after every 15 minutes." source="media/refresh-settings/incremental-daily-view.png":::
 
-Here selecting the "Run once in a day" checkbox will let you choose the "Start time" to run incremental crawl only once in a day starting at the specified time. However, unselecting it will let you choose the frequency of crawl repetitions in a day. If you want your data to be continuously refreshed, you can choose to run increment crawls frequently in a day. But if the number of items in data source is large and the crawls tend to be longer, or if frequent updates are not needed for the content, you can choose the incremental crawl to run once in a day.
+Here selecting the "Run once in a day" checkbox will let you choose the "Start time" to run incremental crawl only once in a day starting at the specified time. However, unselecting it will let you choose the frequency of crawl repetitions in a day. If you want your data to be continuously refreshed, you can choose to run incremental crawls frequently in a day. But if the number of items in data source is large and the crawls tend to be longer, or if frequent updates are not needed for the content, you can choose the incremental crawl to run once in a day.
 
 :::image type="content" alt-text="Screenshot that shows run incremental crawl daily at 2:00 PM" source="media/refresh-settings/incremental-run-once.png":::
 
