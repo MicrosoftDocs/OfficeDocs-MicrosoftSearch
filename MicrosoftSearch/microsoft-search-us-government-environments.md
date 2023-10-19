@@ -81,7 +81,7 @@ The following table outlines whether specified Microsoft Search features are ava
 |Result types|	Yes|	Next+|	Next+|	Next+|
 |Verticals|	Yes|	Next+|	Next+|	Next+|
 
-"Next" = the next wave of features we are currently working on and will be shipping soon
+"Next" = the next wave of features we are currently working on and will be shipping soon<br/>
 "Next+" = the wave after that
 
 In response to the unique, evolving requirements of the United States public sector, Microsoft has created Office 365 US Government plans (or Office 365 Government). For service descriptions and features overview specific to these environments, see [Office 365 Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
