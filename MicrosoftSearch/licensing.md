@@ -34,6 +34,7 @@ To index content by using Microsoft Graph connectors, you need to have sufficien
 
 The following licenses include entitlement to 500 items of index quota, which counts towards your organization's quota for ingesting content from Microsoft Graph connectors:
 
+*  Microsoft 365 Copilot
 * The Microsoft 365 E5 or Office 365 E5
 * [Microsoft Viva Topics](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
