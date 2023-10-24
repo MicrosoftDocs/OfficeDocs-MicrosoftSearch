@@ -80,7 +80,7 @@ On the **Manage Schema** screen, you can change the schema attributes associated
 
 ### Azure Data Lake Gen 2
 
-You can choose to ingest the Access Control Lists (ACLs) from your [Azure Data Lake Gen 2 Storage](/azure/storage/blobs/data-lake-storage-introduction) account. When these search permissions are set, search content is trimmed based on the permissions of the user signed in [Azure Active Directory](/azure/active-directory/). Alternatively, you can choose to make all the content indexed from your storage account visible to everyone in your organization. In this case, everyone in your organization will have access to all the data in your storage account.
+You can choose to ingest the Access Control Lists (ACLs) from your [Azure Data Lake Gen 2 Storage](/azure/storage/blobs/data-lake-storage-introduction) account. When these search permissions are set, search content is trimmed based on the permissions of the user signed in [Microsoft Entra ID](/azure/active-directory/). Alternatively, you can choose to make all the content indexed from your storage account visible to everyone in your organization. In this case, everyone in your organization will have access to all the data in your storage account.
 
 The Azure Data Lake Storage Gen2 connector supports search permissions visible to **Everyone**, or **Only people with access to this data source**. Indexed data that appears in the search results could be visible to users in the organization who have access to each item.
 
@@ -115,4 +115,3 @@ Also, the size of the files needs to be 4 MB or less for it to be crawled. File 
 * PDF
 
 Binary files like images (.jpg, .bmp, etc.) are not supported. For example, if a .docx file contains only images, it might be skipped because it didn't return any content.
-
