@@ -96,7 +96,7 @@ Use the steps below to create an app and generate the required authentication de
 
 1. Go to the [Azure portal](https://portal.azure.com) and sign in with admin credentials for the tenant.
 
-2. Navigate to **Azure Active Directory** -> **App registrations** from the navigation pane and select **New registration**.
+2. Navigate to **Microsoft Entra ID** -> **App registrations** from the navigation pane and select **New registration**.
 
 3. Provide a name for the app and select **Register**.
 
