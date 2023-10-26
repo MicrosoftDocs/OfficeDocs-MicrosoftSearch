@@ -1,6 +1,6 @@
 ---
 title: "Use Windows Search to find work or school results"
-ms.author: dawholl
+ms.author: davidedwards
 author: dawholl
 manager: kellis
 ms.audience: Admin
