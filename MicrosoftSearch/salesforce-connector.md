@@ -113,11 +113,11 @@ Select the Salesforce objects that you want the connector to crawl and include i
 
 ## Step 5: Manage search permissions
 
-You'll need to choose which users will see search results from this data source. If you allow only certain Azure Active Directory (Azure AD) or Non-Azure AD users to see the search results, make sure you map the identities.
+You'll need to choose which users will see search results from this data source. If you allow only certain Microsoft Entra ID or Non-Azure AD users to see the search results, make sure you map the identities.
 
 ### Step 5.a: Select permissions
 
-You can choose to ingest Access Control Lists (ACLs) from your Salesforce instance, or allow everyone in your organization to see search results from this data source. ACLs can include Azure Active Directory (AAD) identities (users who are federated from Azure AD to Salesforce), non-Azure AD identities (native Salesforce users who have corresponding identities in Azure AD), or both.
+You can choose to ingest Access Control Lists (ACLs) from your Salesforce instance, or allow everyone in your organization to see search results from this data source. ACLs can include Microsoft Entra identities (users who are federated from Microsoft Entra ID to Salesforce), non-Azure AD identities (native Salesforce users who have corresponding identities in Microsoft Entra ID), or both.
 
 >[!NOTE]
 >If you use a third-party Identity Provider like Ping ID or secureAuth, you should select "non-AAD" as the identity type.
@@ -127,13 +127,17 @@ You can choose to ingest Access Control Lists (ACLs) from your Salesforce instan
 
 If you chose to ingest an ACL from your Salesforce instance and selected "non-AAD" for the identity type, see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities.
 
-### Step 5.b: Map AAD identities
+<a name='step-5b-map-aad-identities'></a>
 
-If you chose to ingest an ACL from your Salesforce instance and selected "AAD" for the identity type, see [Map your Azure AD Identities](map-aad.md) for instructions on mapping the identities. To learn how to set up Azure AD SSO for Salesforce, see this [tutorial](/azure/active-directory/saas-apps/salesforce-tutorial).
+### Step 5.b: Map Microsoft Entra identities
 
-### Apply user mapping to sync your Salesforce identities to Azure AD identities
+If you chose to ingest an ACL from your Salesforce instance and selected "AAD" for the identity type, see [Map your Microsoft Entra identities](map-aad.md) for instructions on mapping the identities. To learn how to set up Microsoft Entra SSO for Salesforce, see this [tutorial](/azure/active-directory/saas-apps/salesforce-tutorial).
 
-In this video you can see the process to authenticate to your Salesforce instance, sync your non-Azure Active Directory identities to your Azure Active Directory identities, and apply the proper security trimmings to your Salesforce items.
+<a name='apply-user-mapping-to-sync-your-salesforce-identities-to-azure-ad-identities'></a>
+
+### Apply user mapping to sync your Salesforce identities to Microsoft Entra identities
+
+In this video you can see the process to authenticate to your Salesforce instance, sync your non-Microsoft Entra identities to your Microsoft Entra identities, and apply the proper security trimmings to your Salesforce items.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
@@ -200,4 +204,3 @@ Follow the general [setup instructions](./configure-connector.md).
     - LastModifiedByUrl
     - LastModifiedDate
     - ObjectName
-

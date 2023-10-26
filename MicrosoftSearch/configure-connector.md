@@ -91,7 +91,7 @@ You can choose the properties that are indexed by Microsoft Search.
 
 Access control lists (ACLs) determine which users in your organization can access each item.  
 
-Some connectors such as [Microsoft SQL](MSSQL-connector.md) and [Azure Data Lake Storage Gen2](azure-data-lake-connector.md) natively support [Azure Active Directory (Azure AD)](/azure/active-directory/) ACLs.
+Some connectors such as [Microsoft SQL](MSSQL-connector.md) and [Azure Data Lake Storage Gen2](azure-data-lake-connector.md) natively support [Microsoft Entra ID](/azure/active-directory/) ACLs.
 
 Other connectors such as [ServiceNow Knowledge](servicenow-knowledge-connector.md), [ServiceNow Catalog](servicenow-catalog-connector.md), [Azure DevOps Work Items](azure-devops-connector.md), and [Salesforce](salesforce-connector.md) support syncing of non-Azure AD users and groups.  
 
@@ -253,4 +253,3 @@ Read the connector-specific information for your data source.
 To learn about limitations that apply to all data sources, see the [Overview of Microsoft Graph connectors](connectors-overview.md) article.
 
 See the connector-specific information for your data source to find out if other limitations apply to that particular Microsoft Graph connector.
-
