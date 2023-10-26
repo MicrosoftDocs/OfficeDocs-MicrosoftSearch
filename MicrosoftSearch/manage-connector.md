@@ -18,7 +18,7 @@ ms.date: 10/08/2019
 
 # Monitor your connections
 
-To access and manage your Microsoft Graph connectors, you must be designated as a search administrator for your tenant. Contact your tenant administrator to provision you for the search administrator role.
+To access and manage your Microsoft Graph connectors, you must be designated as a search administrator for your organization. Contact your administrator to assign you the search administrator role.
 
 ## Connection operations
 
@@ -51,7 +51,7 @@ Five states show up in the **State** column against each connection:
 
 ## Notifications for permanent crawl failures in your connections
 
-The connection crawls are scheduled to run at specific times. These crawls may fail because of certain issues in the connections. Some times these issues are temporary and the crawls resume automatically and some times these failures are permanent where admin intervention is needed to start the crawls. In such cases of permanent failures we mark the connection as "Failed" and send notifications to the Service Health Dashboard under the section "Issues for your organization to act on". Here is a sample notification:
+The connection crawls are scheduled to run at specific times. These crawls may fail because of certain issues in the connections. Some times these issues are temporary and the crawls resume automatically and some times these failures are permanent where admin intervention is needed to start the crawls. In such cases of permanent failures we mark the connection as "Failed" and send notifications to the Service Health Dashboard under the section "Issues for your organization to act on".
 
 :::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/shd-notification-home.png" lightbox="media/manage-connector/shd-notification-home.png":::
 
@@ -59,20 +59,20 @@ The same can also be seen in the form of Advisory in the "Service Status" sectio
 
 :::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/notification-service-status.png" lightbox="media/manage-connector/notification-bar-mac.png":::
 
-If the tenant has an active notification, admins will get an alert in the form of a notification bar in the Microsoft admin centre home page. The notification contains the connection Id of the connection for which the crawls have failed. Admins can navigate to see more details of the notification or remove the notification bar by clicking on the "X".
+If there are active notifications, admins get alerts in the form of notification bars in the Microsoft admin centre home page. Notification bars contain the connection Id of the connection for which the crawls have failed. Admins can navigate to see more details of the notifications or remove the notification bars by clicking on the "X".
 
 :::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/notification-bar-mac.png" lightbox="media/manage-connector/notification-bar-mac.png":::
 
-Admins can check the notification details by clicking the notification. Here is a sample notification:
+Admins can check the notification details by clicking the notification.
 
 :::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/sample-notification.png" lightbox="media/manage-connector/sample-notification.png":::
 
 Some points to note:
 
-* The notification is live in the Service Health Dashboard for 6 days. After that it is automatically moved to the "Issue History" section where it is stored for a maximum of 30 days.
-* If the connection resumes the crawl, the notification will be automatically moved to the "Issue History" section.
+* The notification is live in the Service Health Dashboard for 6 days. After that the notification is automatically moved to the "Issue History" section where the same is stored for a maximum of 30 days.
+* If the connection resumes the crawl, the notification is automatically moved to the "Issue History" section.
 * No new notification is sent for the same connection until the crawls on that connection restart. Once the crawls are restarted and if a failure happens again, a new notification is sent.
-* If there are crawl failures in multiple connections, each connection will have a separate notification bar in the admin centre home page and service health dashboard landing page.
+* If there are crawl failures in multiple connections, each connection has a separate notification bar in the admin centre home page and service health dashboard landing page.
 
 ### Subscribing for getting notifications in e-mail
 
@@ -80,8 +80,8 @@ To get these failure notifications and updates on the e-mail, admins can add up 
 
 * Go to Customize section in Service Health page and open the Email tab.
 * Select the check box for "Issues in your environment that require action".
-* In the "Include these services" section, select Microsoft 365 suite. You will get all notifications for Microsoft 365 suite, including Graph connector notifications, after you are subscribed to the service health notifications.
-* Click Save
+* In the "Include these services" section, select Microsoft 365 suite. Admins get all notifications for Microsoft 365 suite, including Graph connector notifications, after they are subscribed to the service health notifications.
+* Save
 
 :::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/notification-mail.png" lightbox="media/manage-connector/on-demand-crawl.png":::
 
@@ -102,7 +102,7 @@ On-demand crawl helps you start a crawl irrespective of the crawl schedule. You 
 
 There can be only one category of crawl, scheduled or on-demand, running on a connection at any time. If a connection is in "Syncing" state, on-demand crawls are disabled. Scheduled crawls are auto triggered.
 
-If a scheduled or an on-demand crawl continues beyond the time of the schedule of the next full or incremental crawl, the ongoing crawl will not be stopped, and the next scheduled crawl is skipped and queued. After the ongoing crawl completes, the crawl of the opposite type (full or incremental) will be picked from the skipped queue and triggered. For example, if the previous crawl was of the type full crawl, only the incremental crawl, if present in the skipped queue, will be triggered and vice versa.
+If a scheduled or an on-demand crawl continues beyond the time of the schedule of the next full or incremental crawl, the ongoing crawl is stopped, and the next scheduled crawl is skipped and queued. After the ongoing crawl completes, the crawl of the opposite type (full or incremental) is picked from the skipped queue and triggered. For example, if the previous crawl was of the type full crawl, only the incremental crawl, if present in the skipped queue, is triggered and vice versa.
 
 ## Monitor your index quota utilization
 
@@ -113,7 +113,7 @@ The available index quota and consumption is displayed on the connectors landing
 The quota utilization bar indicates various states based on consumption of quota by your organization:
 
 State | Quota utilization levels
---- | --- 
+--- | ---
 Normal | 0&ndash;79%
 High | 80&ndash;89%
 Critical | 90%&ndash;99%
@@ -131,6 +131,6 @@ To fix this, you can do any of the following actions:
 
 * Purchase index quota for your organization, to learn more see: [Licensing requirements and pricing](licensing.md).
 
-* Identify connections that have some items which you did not want to index. To update this connection, you must delete and create a new connection with a data source exclusion filter to exclude the items you do not want to index anymore.
+* Identify connections that have some items which you didn't want to index. To update this connection, you must delete and create a new connection with a data source exclusion filter to exclude the items you don't want to index anymore.
 
 * Permanently delete one or more connections.
