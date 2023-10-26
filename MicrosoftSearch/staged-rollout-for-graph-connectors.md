@@ -55,7 +55,7 @@ Once you have configured all the connection settings, on the **Review & Publish*
 
 ## Step 4: Add users or M365 groups
 
-Add the users or security groups who you’d like to give access to the connector. Currently, you can add up to 100 users and 15 M365 groups. Learn more about M365 groups [here](https://learn.microsoft.com/en-us/microsoft-365/admin/create-groups/office-365-groups?view=o365-worldwide).
+Add the users or security groups who you’d like to give access to the connector. Currently, you can add up to 100 users and 15 M365 groups. Learn more about M365 groups [here](https://learn.microsoft.com/microsoft-365/admin/create-groups/office-365-groups?view=o365-worldwide).
 
 ![Add user or M365 groups.](media/Staged_Rollout_add_users.png)
 
@@ -99,7 +99,7 @@ If you want to stop the staged rollout and are ready to deploy the connection to
 
 ![End staging option.](media/Staged_Rollout_end_staging.png)
 
-In the confirmation modal, click on **End** to confirm the action. Please note that on ending staging, the connection results will start ***appearing to everyone in the organization or those who have access to the items*** (this will depend on the option you have chosen in the ‘Manage search permissions’ section in the [connection creation flow](https://learn.microsoft.com/en-us/microsoftsearch/configure-connector).
+In the confirmation modal, click on **End** to confirm the action. Please note that on ending staging, the connection results will start ***appearing to everyone in the organization or those who have access to the items*** (this will depend on the option you have chosen in the ‘Manage search permissions’ section in the [connection creation flow](https://learn.microsoft.com/microsoftsearch/configure-connector).
 
 
 ## Limitations
