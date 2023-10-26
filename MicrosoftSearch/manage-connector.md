@@ -51,51 +51,51 @@ Five states show up in the **State** column against each connection:
 
 ## Notifications for permanent crawl failures in your connections
 
-The connection crawls are scheduled to run at specific times. These crawls may fail because of certain issues in the connections. Some times these issues are temporary and the crawls resume automatically and some times these failures are permanent where admin intervention is needed to start the crawls. In such cases of permanent failures we mark the connection as "Failed" and send notifications to the Service Health Dashboard under the section "Issues for your organization to act on".
+The connection crawls are scheduled to run at specific times. The crawls can fail because of certain issues in the connections. Some times these issues are temporary and the crawls resume automatically and some times these failures are permanent where admin intervention is needed to start the crawls. In such cases of permanent failures, we mark the connection as "Failed" and send notifications to the Service Health Dashboard under the section: Issues for your organization to act on.
 
-:::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/shd-notification-home.png" lightbox="media/manage-connector/shd-notification-home.png":::
+:::image type="content" alt-text="Issues in your environment section of Service health." source="media/manage-connector/shd-notification-home.png" lightbox="media/manage-connector/shd-notification-home.png":::
 
 The same can also be seen in the form of Advisory in the "Service Status" section of Service Health page, under Microsoft 365 suite category.
 
-:::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/notification-service-status.png" lightbox="media/manage-connector/notification-bar-mac.png":::
+:::image type="content" alt-text="Service status section" source="media/manage-connector/notification-service-status.png" lightbox="media/manage-connector/notification-bar-mac.png":::
 
-If there are active notifications, admins get alerts in the form of notification bars in the Microsoft admin centre home page. Notification bars contain the connection Id of the connection for which the crawls have failed. Admins can navigate to see more details of the notifications or remove the notification bars by clicking on the "X".
+If there are active notifications, admins get alerts in the form of notification bars in the Microsoft admin center home page. Notification bars contain the connectionId of the connection for which the crawls have failed. Admins can navigate to see more details of the notifications or remove the notification bars from the page.
 
-:::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/notification-bar-mac.png" lightbox="media/manage-connector/notification-bar-mac.png":::
+:::image type="content" alt-text="Sample notification bar" source="media/manage-connector/notification-bar-mac.png" lightbox="media/manage-connector/notification-bar-mac.png":::
 
 Admins can check the notification details by clicking the notification.
 
-:::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/sample-notification.png" lightbox="media/manage-connector/sample-notification.png":::
+:::image type="content" alt-text="Sample notification" source="media/manage-connector/sample-notification.png" lightbox="media/manage-connector/sample-notification.png":::
 
 Some points to note:
 
-* The notification is live in the Service Health Dashboard for 6 days. After that the notification is automatically moved to the "Issue History" section where the same is stored for a maximum of 30 days.
+* The notification is live in the Service Health Dashboard for six days. After that the notification is automatically moved to the "Issue History" section where the same is stored for a maximum of 30 days.
 * If the connection resumes the crawl, the notification is automatically moved to the "Issue History" section.
 * No new notification is sent for the same connection until the crawls on that connection restart. Once the crawls are restarted and if a failure happens again, a new notification is sent.
-* If there are crawl failures in multiple connections, each connection has a separate notification bar in the admin centre home page and service health dashboard landing page.
+* If there are crawl failures in multiple connections, each connection has a separate notification bar in the admin center home page and service health dashboard landing page.
 
 ### Subscribing for getting notifications in e-mail
 
-To get these failure notifications and updates on the e-mail, admins can add up to two e-mail ids for the same.
+To get these failure notifications and updates on the e-mail, admins can add up to two e-mail addresses for the same.
 
 * Go to Customize section in Service Health page and open the Email tab.
-* Select the check box for "Issues in your environment that require action".
-* In the "Include these services" section, select Microsoft 365 suite. Admins get all notifications for Microsoft 365 suite, including Graph connector notifications, after they are subscribed to the service health notifications.
+* Select the check box for - Issues in your environment that require action.
+* In the "Include these services" section, select Microsoft 365 suite. Admins get all notifications for Microsoft 365 suite, including Graph connector notifications, after they subscribe to the service health notifications.
 * Save
 
-:::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/notification-mail.png" lightbox="media/manage-connector/on-demand-crawl.png":::
+:::image type="content" alt-text="E-mail subscription for notifications" source="media/manage-connector/notification-mail.png" lightbox="media/manage-connector/on-demand-crawl.png":::
 
 ## Manage crawls in your connections
 
-During connection creation or edit connection flow, you can configure the crawl schedule through "Refresh Settings". To learn more about different types of crawls available see: [Setup Overview](configure-connector.md).
+During connection creation or edit connection flow, you can configure the crawl schedule through Refresh Settings. To learn more about different types of crawls available see: [Setup Overview](configure-connector.md).
 
-Apart from the scheduled crawls, you can run on-demand crawls for your connection through the connection pane. Please refer to the image below:
+Apart from the scheduled crawls, you can run on-demand crawls for your connection through the connection pane.
 
 :::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/on-demand-crawl.png" lightbox="media/manage-connector/on-demand-crawl.png":::
 
-On-demand crawl helps you start a crawl irrespective of the crawl schedule. You can choose to run a full or incremental crawl using the drop down as shown below:
+On-demand crawl helps you start a crawl irrespective of the crawl schedule. You can choose to run a full or incremental crawl using the drop-down as shown in the image:
 
-:::image type="content" alt-text="On-demand crawl drop down." source="media/manage-connector/on-demand-dropdown.png" lightbox="media/manage-connector/on-demand-dropdown.png":::
+:::image type="content" alt-text="On-demand crawl drop-down." source="media/manage-connector/on-demand-dropdown.png" lightbox="media/manage-connector/on-demand-dropdown.png":::
 
 > [!NOTE]
 > Graph Connector Agent, only from version 2.1.0.0 onwards, supports on-demand crawl.
@@ -131,6 +131,6 @@ To fix this, you can do any of the following actions:
 
 * Purchase index quota for your organization, to learn more see: [Licensing requirements and pricing](licensing.md).
 
-* Identify connections that have some items which you didn't want to index. To update this connection, you must delete and create a new connection with a data source exclusion filter to exclude the items you don't want to index anymore.
+* Identify connections that have some items that you didn't want to index. To update this connection, you must delete and create a new connection with a data source exclusion filter to exclude the items you don't want to index anymore.
 
 * Permanently delete one or more connections.
