@@ -27,9 +27,9 @@ In the [Microsoft Search Usage Report](usage-reports.md), the **Queries** sectio
 The query data is provided in four charts:
 
 - **Total queries by user action** – Compares the number of queries with no results with the number of queries where a user clicked on a result or performed no action (abandoned).  
-- **Total queries by country** – Compares search queries by users in different countries based on a user’s **country** Azure Active Directory attribute. 
-- **Total queries by occupation** – Compares the number of search queries by users in different occupations based on their **title** attribute in Azure Active Directory.
-- **Total queries by department or division** – Compares the number of search queries by users in different departments or divisions in your organization. This is based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory. 
+- **Total queries by country** – Compares search queries by users in different countries based on a user’s **country** Microsoft Entra attribute. 
+- **Total queries by occupation** – Compares the number of search queries by users in different occupations based on their **title** attribute in Microsoft Entra ID.
+- **Total queries by department or division** – Compares the number of search queries by users in different departments or divisions in your organization. This is based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Microsoft Entra ID. 
 
 Each chart shows the top five values, and the remaining values are summarized in the **Others** category. You can click the **Download report** link to download the report as an Excel file and see more details. 
 
@@ -62,9 +62,9 @@ In the **Filters** menu, use one or more of the following to filter the data in 
 |:-----|:-----|
 |Date range |The date range for the analytics shown on the page. Available options are 7 days, 14 days, 31 days,  and last 12 months.|
 |Search application  |The search application where the user has performed the queries: SharePoint start page, SharePoint sites, Office (Microsoft 365 app), Bing, or all four applications combined.  |
-|Country  |The country of the user performing query based on their **country** attribute in Azure Active Directory. |
-|Occupation    |The occupation of the user performing the query based on their **title** attribute in Azure Active Directory (AAD).  |
-|Department or division    |The department or division of the user performing the query, based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory (AAD). |
+|Country  |The country of the user performing query based on their **country** attribute in Microsoft Entra ID. |
+|Occupation    |The occupation of the user performing the query based on their **title** attribute in Microsoft Entra ID.  |
+|Department or division    |The department or division of the user performing the query, based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Microsoft Entra ID. |
 
 >[!NOTE]
 > To protect privacy, if the selected filter combination results in queries that are performed by only five or fewer individuals, those results will not be included in any report.

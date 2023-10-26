@@ -42,7 +42,7 @@ Here's the instructions for setting the default search engine, default homepage,
 
 ## How are my search results protected?
 
-We require [Azure Active Directory](/azure/active-directory/) authentication to access results from the Trusted Cloud. Authenticated users only see content they have access to. When using Microsoft Search in Bing, search queries are de-identified and logs are separated from public [Bing](https://Bing.com) search traffic.
+We require [Microsoft Entra ID](/azure/active-directory/) authentication to access results from the Trusted Cloud. Authenticated users only see content they have access to. When using Microsoft Search in Bing, search queries are de-identified and logs are separated from public [Bing](https://Bing.com) search traffic.
 
 ## Can I search across federated organizations?
 
