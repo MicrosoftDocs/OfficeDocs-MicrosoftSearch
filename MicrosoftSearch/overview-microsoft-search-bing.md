@@ -1,6 +1,6 @@
 ---
 title: "Overview of Microsoft Search in Bing"
-ms.author: dawholl
+ms.author: davidedwards
 author: dawholl
 manager: kellis
 ms.audience: Admin
