@@ -53,19 +53,19 @@ Five states show up in the **State** column against each connection:
 
 The connection crawls are scheduled to run at specific times. The crawls can fail because of certain issues in the connections. Some times these issues are temporary and the crawls resume automatically and some times these failures are permanent where admin intervention is needed to start the crawls. In such cases of permanent failures, we mark the connection as "Failed" and send notifications to the Service Health Dashboard under the section: Issues for your organization to act on.
 
-:::image type="content" alt-text="Issues in your environment section of Service health." source="media/manage-connector/shd-notification-home.png" lightbox="media/manage-connector/shd-notification-home.png":::
+:::image type="content" alt-text="Screenshot that shows issues in your environment section of Service health." source="media/manage-connector/shd-notification-home.png" lightbox="media/manage-connector/shd-notification-home.png":::
 
 The same can also be seen in the form of Advisory in the "Service Status" section of Service Health page, under Microsoft 365 suite category.
 
-:::image type="content" alt-text="Service status section" source="media/manage-connector/notification-service-status.png" lightbox="media/manage-connector/notification-bar-mac.png":::
+:::image type="content" alt-text="Screenshot that shows service status section" source="media/manage-connector/notification-service-status.png" lightbox="media/manage-connector/notification-bar-mac.png":::
 
 If there are active notifications, admins get alerts in the form of notification bars in the Microsoft admin center home page. Notification bars contain the connectionId of the connection for which the crawls have failed. Admins can navigate to see more details of the notifications or remove the notification bars from the page.
 
-:::image type="content" alt-text="Sample notification bar" source="media/manage-connector/notification-bar-mac.png" lightbox="media/manage-connector/notification-bar-mac.png":::
+:::image type="content" alt-text="Screenshot that shows sample notification bar" source="media/manage-connector/notification-bar-mac.png" lightbox="media/manage-connector/notification-bar-mac.png":::
 
 Admins can check the notification details by clicking the notification.
 
-:::image type="content" alt-text="Sample notification" source="media/manage-connector/sample-notification.png" lightbox="media/manage-connector/sample-notification.png":::
+:::image type="content" alt-text="Screenshot that shows sample notification" source="media/manage-connector/sample-notification.png" lightbox="media/manage-connector/sample-notification.png":::
 
 Some points to note:
 
@@ -83,7 +83,7 @@ To get these failure notifications and updates on the e-mail, admins can add up 
 * In the "Include these services" section, select Microsoft 365 suite. Admins get all notifications for Microsoft 365 suite, including Graph connector notifications, after they subscribe to the service health notifications.
 * Save
 
-:::image type="content" alt-text="E-mail subscription for notifications" source="media/manage-connector/notification-mail.png" lightbox="media/manage-connector/on-demand-crawl.png":::
+:::image type="content" alt-text="Screenshot that shows e-mail subscription for notifications" source="media/manage-connector/notification-mail.png" lightbox="media/manage-connector/on-demand-crawl.png":::
 
 ## Manage crawls in your connections
 
@@ -91,11 +91,11 @@ During connection creation or edit connection flow, you can configure the crawl 
 
 Apart from the scheduled crawls, you can run on-demand crawls for your connection through the connection pane.
 
-:::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/on-demand-crawl.png" lightbox="media/manage-connector/on-demand-crawl.png":::
+:::image type="content" alt-text="Screenshot that shows on-demand crawl connection pane." source="media/manage-connector/on-demand-crawl.png" lightbox="media/manage-connector/on-demand-crawl.png":::
 
 On-demand crawl helps you start a crawl irrespective of the crawl schedule. You can choose to run a full or incremental crawl using the drop-down as shown in the image:
 
-:::image type="content" alt-text="On-demand crawl drop-down." source="media/manage-connector/on-demand-dropdown.png" lightbox="media/manage-connector/on-demand-dropdown.png":::
+:::image type="content" alt-text="Screenshot that shows on-demand crawl drop-down." source="media/manage-connector/on-demand-dropdown.png" lightbox="media/manage-connector/on-demand-dropdown.png":::
 
 > [!NOTE]
 > Graph Connector Agent, only from version 2.1.0.0 onwards, supports on-demand crawl.
@@ -108,7 +108,7 @@ If a scheduled or an on-demand crawl continues beyond the time of the schedule o
 
 The available index quota and consumption is displayed on the connectors landing page.
 
-:::image type="content" alt-text="Index quota utilization bar." source="media/manage-connector/quota-utilization.png" lightbox="media/manage-connector/quota-utilization.png":::
+:::image type="content" alt-text="Screenshot that shows index quota utilization bar." source="media/manage-connector/quota-utilization.png" lightbox="media/manage-connector/quota-utilization.png":::
 
 The quota utilization bar indicates various states based on consumption of quota by your organization:
 
