@@ -75,10 +75,9 @@ Error code | Error message | Solution
 2003 | Indexing failed due to unsupported item content. | For more information, see connector-specific documentation.
 2004 | Indexing failed due to unsupported item or file size. | For more information, see connector-specific documentation.
 2005 | Indexing failed because the URI is too long. | For more information, see connector-specific documentation.
-2006 | User mapping failed due to an invalid mapping formula or no Azure AD user with this property. | Try deleting and recreating the connection with a different mapping formula. 
+2006 | User mapping failed due to an invalid mapping formula or no Microsoft Entra user with this property. | Try deleting and recreating the connection with a different mapping formula. 
 2007 | This item won't be displayed in Microsoft Search because some users or groups without permission to view this item couldn't be indexed. | 
 2008 | Connections can't have non-Azure AD groups with more than 50,000 members. | Try removing users from a group or try removing items ACLed with that group from ingestion and recreate the connection.
 2009 | Non-Azure AD group indexing is temporarily paused due to a large number of requests. Indexing will resume when the system finishes processing these requests. Check back later. | 
 2010 | This connection is no longer valid because of an update made by Microsoft. | Delete the connection and create a new one.
 5000 | Something went wrong. If this issue continues, contact support. |
-

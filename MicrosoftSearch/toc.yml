@@ -64,7 +64,7 @@ items:
           href: graph-connector-agent-releases.md
       - name: Map non-Azure AD Identities
         href: map-non-aad.md
-      - name: Map Azure AD Identities
+      - name: Map Microsoft Entra identities
         href: map-aad.md
       - name: Connector-specific information
         items:
