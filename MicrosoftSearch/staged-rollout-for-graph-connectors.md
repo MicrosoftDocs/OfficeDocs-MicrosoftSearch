@@ -3,7 +3,7 @@ ms.date: 10/26/2023
 title: "Staged Rollout for Graph Connectors" 
 ms.author: souravpoddar 
 author: souravpoddar 
-manager:srramam
+manager: srramam
 audience: Admin
 ms.audience: Admin 
 ms.topic: article 
