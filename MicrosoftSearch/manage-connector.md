@@ -45,9 +45,45 @@ Five states show up in the **State** column against each connection:
 
 * **Paused**. The crawls are paused by the admins through the pause option. The next crawl runs only when it's manually resumed. However, the data from this connection continues to be searchable.
 
-* **Failed**. The connection had a critical failure. This error requires manual intervention. The admin needs to take appropriate action based on the error message shown. Data that was indexed until the error occurred is searchable.
+* **Failed**. The connection had a critical failure. This error requires manual intervention. The admin needs to take appropriate action based on the error message shown. Data that was indexed until the error occurred is searchable. Next section talks about getting notified if such failures happen in a connection.
 
 * **Delete Failed**. The deletion of the connection failed. Depending upon the failure reason, the data might still be indexed, item quota might still be consumed, and crawls might still run for the connection. We recommend that you try deleting the connection again in this state.
+
+## Notifications for permanent crawl failures in your connections
+
+The connection crawls are scheduled to run at specific times. These crawls may fail because of certain issues in the connections. Some times these issues are temporary and the crawls resume automatically and some times these failures are permanent where admin intervention is needed to start the crawls. In such cases of permanent failures we mark the connection as "Failed" and send notifications to the Service Health Dashboard under the section "Issues for your organization to act on". Here is a sample notification:
+
+:::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/shd-notification-home.png" lightbox="media/manage-connector/shd-notification-home.png":::
+
+The same can also be seen in the form of Advisory in the "Service Status" section of Service Health page, under Microsoft 365 suite category.
+
+:::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/notification-service-status.png" lightbox="media/manage-connector/notification-bar-mac.png":::
+
+If the tenant has an active notification, admins will get an alert in the form of a notification bar in the Microsoft admin centre home page. The notification contains the connection Id of the connection for which the crawls have failed. Admins can navigate to see more details of the notification or remove the notification bar by clicking on the "X".
+
+:::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/notification-bar-mac.png" lightbox="media/manage-connector/notification-bar-mac.png":::
+
+Admins can check the notification details by clicking the notification. Here is a sample notification:
+
+:::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/sample-notification.png" lightbox="media/manage-connector/sample-notification.png":::
+
+Some points to note:
+
+* The notification is live in the Service Health Dashboard for 6 days. After that it is automatically moved to the "Issue History" section where it is stored for a maximum of 30 days.
+* If the connection resumes the crawl, the notification will be automatically moved to the "Issue History" section.
+* No new notification is sent for the same connection until the crawls on that connection restart. Once the crawls are restarted and if a failure happens again, a new notification is sent.
+* If there are crawl failures in multiple connections, each connection will have a separate notification bar in the admin centre home page and service health dashboard landing page.
+
+### Subscribing for getting notifications in e-mail
+
+To get these failure notifications and updates on the e-mail, admins can add up to two e-mail ids for the same.
+
+* Go to Customize section in Service Health page and open the Email tab.
+* Select the check box for "Issues in your environment that require action".
+* In the "Include these services" section, select Microsoft 365 suite. You will get all notifications for Microsoft 365 suite, including Graph connector notifications, after you are subscribed to the service health notifications.
+* Click Save
+
+:::image type="content" alt-text="On-demand crawl connection pane." source="media/manage-connector/notification-mail.png" lightbox="media/manage-connector/on-demand-crawl.png":::
 
 ## Manage crawls in your connections
 
