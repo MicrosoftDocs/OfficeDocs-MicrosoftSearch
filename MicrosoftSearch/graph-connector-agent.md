@@ -41,10 +41,10 @@ If your organization's proxy servers or firewalls block communication to unknown
 | ------------- | -------------|
 | 1. `*.servicebus.windows.net` | 1. `*.servicebus.usgovcloudapi.net`
 | 2. `*.events.data.microsoft.com` | 2. `*.events.data.microsoft.com`
-| 3. `*.office.com` | 3. `*.office.com`
-| 4. `https://login.microsoftonline.com` | 4. `https://login.microsoftonline.com`
-| 5. `https://gcs.office.com/` | 5. `https://gcsgcc.office.com/`
-| 6. `https://graph.microsoft.com/` | 6. `https://graph.microsoft.com/`
+| 3. `*.office.com` | 3. `*.office.com`, `*.office.us`
+| 4. `https://login.microsoftonline.com` | 4. `https://login.microsoftonline.com`, `https://login.microsoftonline.us`
+| 5. `https://gcs.office.com/` | 5. `https://gcs.office.us/`
+| 6. `https://graph.microsoft.com/` | 6. `https://graph.microsoft.com/`, `https://graph.microsoft.us/`
 
 >[!NOTE]
 >Proxy authentication is not supported. If your environment has a proxy that requires authentication, we recommend allowing the connector agent to bypass the proxy.
