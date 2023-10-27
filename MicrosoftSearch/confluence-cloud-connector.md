@@ -31,6 +31,8 @@ You must be the admin for your organization's Microsoft 365 tenant and the admin
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
+[Add Confluence cloud connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Confluence&type=Confluence)
+
 Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 2: Name the connection
@@ -96,16 +98,16 @@ If there are no page restrictions, the connector will check for space level perm
 >[!IMPORTANT]
 >Permissions are managed at the space and page level only, and parent page permissions will not be taken into consideration.
 
-If you choose **Only people with access to this data source**, you need to further choose whether your Confluence site has Azure Active Directory (AAD) provisioned users or Non-AAD users.
+If you choose **Only people with access to this data source**, you need to further choose whether your Confluence site has Microsoft Entra ID provisioned users or Non-AAD users.
 
 To identify which option is suitable for your organization:
 
-1. Choose the **AAD** option if the email ID of Confluence users is **same** as the UserPrincipalName (UPN) of users in AAD.
-2. Choose the **Non-AAD** option if the email ID of Confluence users is **different** from the UserPrincipalName (UPN) of users in AAD.
+1. Choose the **Microsoft Entra ID** option if the email ID of Confluence users is **same** as the UserPrincipalName (UPN) of users in Microsoft Entra ID.
+2. Choose the **Non-AAD** option if the email ID of Confluence users is **different** from the UserPrincipalName (UPN) of users in Microsoft Entra ID.
 
 >[!NOTE]
 >
-> * If you choose AAD as the type of identity source, the connector maps the Email IDs of users obtained from Confluence directly to UPN property from AAD.
+> * If you choose Microsoft Entra ID as the type of identity source, the connector maps the Email IDs of users obtained from Confluence directly to UPN property from Microsoft Entra ID.
 > * If you chose "Non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
 
 ## Step 6: Assign property labels
@@ -151,4 +153,3 @@ The Confluence Cloud connector has the following known limitations in its latest
 
 * Confluence Cloud connector does not index attachment files and comments.
 * Indexing Server and Data Center deployments will be released as a separate connector.
-

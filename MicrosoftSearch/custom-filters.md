@@ -1,6 +1,6 @@
 ---
 title: "Manage  filters"
-ms.author: v-revathib
+ms.author: jeffkizn
 author: revathi-b
 manager: jeffkizn
 ms.audience: Admin

@@ -1,4 +1,4 @@
-titems:
+items:
 - name: Plan for Microsoft Search
   items:
   - name: Overview
@@ -64,7 +64,7 @@ titems:
           href: graph-connector-agent-releases.md
       - name: Map non-Azure AD Identities
         href: map-non-aad.md
-      - name: Map Azure AD Identities
+      - name: Map Microsoft Entra identities
         href: map-aad.md
       - name: Connector-specific information
         items:
@@ -115,9 +115,7 @@ titems:
   - name: Federated Search connectors
     items:
     - name: Dataverse and Dynamics 365
-      href: manage-dynamics365.md
-    - name: Azure Cognitive Search
-      href: manage-azure-cognitive-search.md      
+      href: manage-dynamics365.md  
 - name: Customize and configure
   items:
   - name: Manage verticals

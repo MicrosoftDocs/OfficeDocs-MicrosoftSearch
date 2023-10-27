@@ -27,6 +27,8 @@ Each step in the setup process is listed below along with either a note that ind
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
+[Add ServiceNow Catalog connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowCatalog&type=ServiceNowCatalog​)
+
 Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 2: Name the connection
@@ -63,7 +65,7 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
 
 - Basic authentication
 - ServiceNow OAuth (recommended)
-- Azure Active Directory (Azure AD) OpenID Connect
+- Microsoft Entra ID OpenID Connect
 
 ## Step 3.1: Basic authentication
 
@@ -88,13 +90,17 @@ Access token lifespan | The number of seconds that an access token is valid. | 4
 
 Enter the client ID and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **catalog** role. Refer to the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
-## Step 3.3: Azure AD OpenID Connect
+<a name='step-33-azure-ad-openid-connect'></a>
 
-To use Azure AD OpenID Connect for authentication, follow the steps below.
+## Step 3.3: Microsoft Entra ID OpenID Connect
 
-### Step 3.3.1: Register a new application in Azure Active Directory
+To use Microsoft Entra ID OpenID Connect for authentication, follow the steps below.
 
-To learn about registering a new application in Azure Active Directory, see [Register an application](/azure/active-directory/develop/quickstart-register-app#register-an-application). Select single tenant organizational directory. Redirect URI isn't needed. After registration, note down the Application (client) ID and Directory (tenant) ID.
+<a name='step-331-register-a-new-application-in-azure-active-directory'></a>
+
+### Step 3.3.1: Register a new application in Microsoft Entra ID
+
+To learn about registering a new application in Microsoft Entra ID, see [Register an application](/azure/active-directory/develop/quickstart-register-app#register-an-application). Select single tenant organizational directory. Redirect URI isn't needed. After registration, note down the Application (client) ID and Directory (tenant) ID.
 
 ### Step 3.3.2: Create a client secret
 
@@ -130,7 +136,7 @@ Now you have all the information required from Azure portal. A quick summary of 
 
 Property | Description
 --- | ---
-Directory ID (Tenant ID) | Unique ID of the Azure Active Directory tenant, from step 3.a.
+Directory ID (Tenant ID) | Unique ID of the Microsoft Entra tenant, from step 3.a.
 Application ID (Client ID) | Unique ID of the application registered in step 3.a.
 Client Secret | The secret key of the application (from step 3.b). Treat it like a password.
 Service Principal ID | An identity for the application running as a service. (from step 3.c)
@@ -145,7 +151,7 @@ The ServiceNow instance needs the following configuration:
 
    Field | Description | Recommended Value
    --- | --- | ---
-   Name | A unique name that identifies the OAuth OIDC entity. | Azure AD
+   Name | A unique name that identifies the OAuth OIDC entity. | Microsoft Entra ID
    Client ID | The client ID of the application registered in the third-party OAuth OIDC server. The instance uses the client ID when requesting an access token. | Application (Client) ID from step 3.a
    Client Secret | The client secret of the application registered in the third-party OAuth OIDC server. | Client Secret from step 3.b
 
@@ -157,7 +163,7 @@ The ServiceNow instance needs the following configuration:
 
    Field | Recommended Value
    --- | ---
-   OIDC Provider |  Azure AD
+   OIDC Provider |  Microsoft Entra ID
    OIDC Metadata URL | The URL must be in the form https\://login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>Replace "tenantID" with Directory (tenant) ID from step 3.a.
    OIDC Configuration Cache Life Span |  120
    Application | Global
@@ -184,7 +190,7 @@ All other values can be left to default.
 
 Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the catalog role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Refer to the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
-Use Application ID as Client ID (from step 3.a), and Client secret (from step 3.b) in admin center configuration assistant to authenticate to your ServiceNow instance using Azure AD OpenID Connect.
+Use Application ID as Client ID (from step 3.a), and Client secret (from step 3.b) in admin center configuration assistant to authenticate to your ServiceNow instance using Microsoft Entra ID OpenID Connect.
 
 ## Step 4: Select properties and filter data
 
@@ -200,16 +206,16 @@ The ServiceNow connector supports search permissions visible to **Everyone** or 
 
 The connector supports default user criteria permissions without advanced scripts. When the connector encounters a user criteria with advanced script, all data using that user criteria won't appear in search results.
 
-If you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Azure Active Directory (Azure AD) provisioned users or Non-Azure AD users.
+If you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Microsoft Entra ID provisioned users or Non-Azure AD users.
 
 To identify which option is suitable for your organization:
 
-1. Choose the **Azure AD** option if the Email ID of ServiceNow users is **same** as the UserPrincipalName (UPN) of users in Azure AD.
-2. Choose the **Non-Azure AD** option if the email ID of ServiceNow users is **different** from the UserPrincipalName (UPN) of users in Azure AD.
+1. Choose the **Microsoft Entra ID** option if the Email ID of ServiceNow users is **same** as the UserPrincipalName (UPN) of users in Microsoft Entra ID.
+2. Choose the **Non-Azure AD** option if the email ID of ServiceNow users is **different** from the UserPrincipalName (UPN) of users in Microsoft Entra ID.
 
 >[!NOTE]
 >
-> - If you choose Azure AD as the type of identity source, the connector maps the Email IDs of users obtained from ServiceNow directly to UPN property from Azure AD.
+> - If you choose Microsoft Entra ID as the type of identity source, the connector maps the Email IDs of users obtained from ServiceNow directly to UPN property from Microsoft Entra ID.
 > - If you chose "Non-Azure AD" for the identity type see [Map your non-Azure AD Identities](./map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
 
 ## Step 6: Assign property labels
@@ -282,11 +288,10 @@ You may not be able to choose *Only people with access to this data source* opti
 
 #### 3.2 User mapping failures
 
- ServiceNow user accounts that don't have a Microsoft 365 user in Azure Active Directory won't map. Non-user, service accounts are expected to fail user mapping. Number of user mapping failures can be accessed in identity stats area in connection detail window. Log of failed user mappings can be downloaded from Error tab.
+ ServiceNow user accounts that don't have a Microsoft 365 user in Microsoft Entra ID won't map. Non-user, service accounts are expected to fail user mapping. Number of user mapping failures can be accessed in identity stats area in connection detail window. Log of failed user mappings can be downloaded from Error tab.
 
 ### 4. Issues with user criteria access flow
 
 If you see differences in the user criteria validation between ServiceNow and Microsoft Search, set `glide.knowman.block_access_with_no_user_criteria` system property to `no`.
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
-

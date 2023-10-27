@@ -2,7 +2,7 @@
 title: "Manage Acronym answers in Microsoft Search"
 ms.author: rakkum
 author: rakeshMSFT
-manager: jeffkizn
+manager: bstucker
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

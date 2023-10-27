@@ -20,6 +20,23 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
+## Version 2.2.7.0 (*October 17, 2023*)
+
+* Bug fixes and reliability improvements: Fixed an issue discovered in the last version due to which the crawls were failing for some connections.
+
+## Version 2.2.6.0 (*October 10, 2023*)
+
+* Bug fixes and reliability improvements
+
+## Version 2.2.5.0 (*August 30, 2023*)
+
+* Added functionality to keep trying the multiple instances if they are unreachable in the first crawl. Before this if the connectivity with one of the instances was interrupted, Graph connector agent did not retry the path in the subsequent crawl and threw a warning for the instance path.
+* Bug fixes and reliability improvements
+
+## Version 2.2.4.0 (*August 28, 2023*)
+
+* Bug fixes and reliability improvements
+
 ## Version 2.2.3.0 (*July 21, 2023*)
 
 * Bug fixes and reliability improvements
