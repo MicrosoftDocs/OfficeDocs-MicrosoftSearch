@@ -37,7 +37,7 @@ Verify the .csv files you want to index have been uploaded to a SharePoint docum
 
 #### Create a SharePoint app
 
-1. Go to  `https://Org-Name.sharepoint.com/sites/mysite/_layouts/15/appregnew.asp`.
+1. Go to  `https://Org-Name.sharepoint.com/sites/mysite/_layouts/15/appregnew.aspx`.
 2. On the Client Id and Client Secret fields, select **Generate**.
 1. For Title, enter an app name.
 1. In the App Domain field, enter `www.gcs.com`.
@@ -47,7 +47,7 @@ Verify the .csv files you want to index have been uploaded to a SharePoint docum
 
 #### Enable app permissions to allow CustomAppAuthentication
 
-In PowerShell, run these commands in administrative mode. Use the email address of the admin configuring the connector and your organization name. When the password pop-up appears, the admin should enter their password.
+In PowerShell ([SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)), run these commands in administrative mode. Use the email address of the admin configuring the connector and your organization name. When the password pop-up appears, the admin should enter their password.
 
 ```powershell
 Install-Module -Name Microsoft.Online.SharePoint.PowerShell
@@ -105,6 +105,9 @@ instructions.-->
 ## Step 4: Configure connection settings
 
 The data source settings are different for SharePoint and ADLS.
+
+> [!NOTE]
+> Ensure that your csv file does not have any formatting or spaces (‘ ‘) present in header rows.
 
 ### For a SharePoint source
 
