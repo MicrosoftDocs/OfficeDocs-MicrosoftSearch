@@ -1,6 +1,6 @@
 ---
 title: "Search Usage Reports- Analytics"
-ms.author: nataliekagole
+ms.author: nkagole
 author: nataliekagole
 manager: scotv
 ms.topic: article
