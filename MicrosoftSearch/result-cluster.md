@@ -2,7 +2,7 @@
 title: "Connectors result cluster"
 ms.author: masingh
 author: maheshsinghania
-manager: jeffkizn
+manager: bstucker
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

@@ -35,6 +35,9 @@ In order to access your on-premises third-party data, you must install and confi
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
+
+[Add Oracle SQL connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_OracleSqlConnector&type=OracleSqlConnector​)
+
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
@@ -130,7 +133,7 @@ Each of the ACL columns is expected to be a multi-valued column. These multiple 
 The following ID types are supported for using as ACLs:
 
 * **User Principal Name (UPN)**: A User Principal Name (UPN) is the name of a system user in an email address format. A UPN (for example: john.doe@domain.com) consists of the username (logon name), separator (the @ symbol), and domain name (UPN suffix).
-* **Azure Active Directory (AAD) ID**: In Azure AD, every user or group has an object ID that looks something like 'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b'
+* **Microsoft Entra ID**: In Microsoft Entra ID, every user or group has an object ID that looks something like 'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b'
 * **Active Directory (AD) Security ID**: In an on-premises AD setup, every user and group have an immutable, unique security identifier that looks something like 'S-1-5-21-3878594291-2115959936-132693609-65242.'
 
 ![Search permission settings to configure access control lists.](media/MSSQL-ACL2.png)
@@ -191,6 +194,5 @@ Underneath is a list of common errors observed while configuring the connector a
 The Oracle SQL connector has these limitations in the preview release:
 
 * The on-premises database must run Oracle Database version 11g or later.
-* ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security.
+* ACLs are only supported by using a User Principal Name (UPN), Microsoft Entra ID, or Active Directory Security.
 * Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
-
