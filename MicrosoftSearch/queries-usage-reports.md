@@ -20,27 +20,34 @@ description: "Review the Microsoft Search usage - Queries reports"
 
 # Microsoft Search Usage Report – Queries
 
-In the [Microsoft Search Usage Report](usage-reports.md), the **Queries** section compares the number of search queries that had been clicked, abandoned, or had returned no results. It also compares queries by other factors, such as occupation, department, or division. The charts are presented for the filters selected on the top of the page.  
+In the [Microsoft Search Usage Report](usage-reports.md), the **Query analytics** section compares the number of search queries that had been clicked, abandoned, or had returned no results. It also compares queries by other factors, such as occupation, department, or division. The charts are presented for the filters selected on the top of the page.  
 
 :::image type="content" source="media/usage-reports/queries-report.png" alt-text="A dashboard page containing four pie charts with query report data." lightbox="media/usage-reports/queries-report.png":::
+
+The data above the chart shows changes over the selected time period for the following metrics: 
+
+|Metric | Description |
+|:-----|:-----|
+|Total queries  |The total number of search queries performed. |
+|Average result position   |Represents the average position of clicked items in a search result list where the number one represents the top position (the lower the value, the better).|
+|Click-through rate |The percentage of queries where the user has clicked on one or more of the answers or search results (the higher the value, the better)  |
+
+The Recent Search Activity chart shows trending activity over time for the query count and click-through query rate. For example, if the 28-day filter is selected, this will compare the current 28-day period data to the previous 28-day period data. In the case of downward trend, the arrow and the line are shown in red. In the case of upward trend, it's shown in green. Trend data isn't available for a 12-month view. 
+
+## Query Distribution
+
+# IMAGE
+
+
 
 The query data is provided in four charts:
 
 - **Total queries by user action** – Compares the number of queries with no results with the number of queries where a user clicked on a result or performed no action (abandoned).  
-- **Total queries by country** – Compares search queries by users in different countries based on a user’s **country** Microsoft Entra attribute. 
-- **Total queries by occupation** – Compares the number of search queries by users in different occupations based on their **title** attribute in Microsoft Entra ID.
-- **Total queries by department or division** – Compares the number of search queries by users in different departments or divisions in your organization. This is based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Microsoft Entra ID. 
+- **Total queries by country** – Compares search queries by users in different countries based on a user’s **country** Azure Active Directory attribute. 
+- **Total queries by occupation** – Compares the number of search queries by users in different occupations based on their **title** attribute in Azure Active Directory.
+- **Total queries by department or division** – Compares the number of search queries by users in different departments or divisions in your organization. This is based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory. 
 
 Each chart shows the top five values, and the remaining values are summarized in the **Others** category. You can click the **Download report** link to download the report as an Excel file and see more details. 
-
-## Filters
-
-Use the **Filters** menu at the top of the **Usage Analytics** page to filter your total queries data by the following: 
-
-| Filter | Description |
-|:-----|:-----|
-|Date Range |The date range for the analytics shown on the page: Last 7 days, Last 14 days, Last 31 days and Last 12 months.  |
-|Search application |The search application where the user has performed the queries: SharePoint start page, SharePoint sites, Office (Microsoft 365 app), Bing, or all four applications combined.  |
 
 ## Query Details page
 
@@ -60,11 +67,11 @@ In the **Filters** menu, use one or more of the following to filter the data in 
 
 | Filter | Description |
 |:-----|:-----|
-|Date range |The date range for the analytics shown on the page. Available options are 7 days, 14 days, 31 days,  and last 12 months.|
+|Date range |The date range for the analytics shown on the page. Available options are Last 28 days, and Last 12 months.|
 |Search application  |The search application where the user has performed the queries: SharePoint start page, SharePoint sites, Office (Microsoft 365 app), Bing, or all four applications combined.  |
-|Country  |The country of the user performing query based on their **country** attribute in Microsoft Entra ID. |
-|Occupation    |The occupation of the user performing the query based on their **title** attribute in Microsoft Entra ID.  |
-|Department or division    |The department or division of the user performing the query, based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Microsoft Entra ID. |
+|Country  |The country of the user performing query based on their **country** attribute in Azure Active Directory. |
+|Occupation    |The occupation of the user performing the query based on their **title** attribute in Azure Active Directory (AAD).  |
+|Department or division    |The department or division of the user performing the query, based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory (AAD). |
 
 >[!NOTE]
 > To protect privacy, if the selected filter combination results in queries that are performed by only five or fewer individuals, those results will not be included in any report.
@@ -112,7 +119,7 @@ To configure this setting:
 
 Each report and table have a download option that allows you to download the background data for the report that you see on the screen in an Excel format. Where the displayed report is limited to the top five to ten rows, the downloaded report will have up to 2000 top records.
 
-Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 7, 14, or 31 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month. 
+Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 28 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month. 
 
 ### Special note for the Most popular search items download report
 
