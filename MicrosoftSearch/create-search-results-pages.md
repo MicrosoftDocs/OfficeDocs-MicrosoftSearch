@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
 description: "Create your own search results page for a SharePoint Online site"
-ms.date: 07/27/2020
+ms.date: 11/01/2023
 ---
 
 # Create a custom search results page in SharePoint Online
@@ -46,6 +46,10 @@ command](https://pnp.github.io/powershell/cmdlets/Set-PnPPage.html) with -Layout
 ## Use SharePoint Framework Query extensions
 
 Custom search results pages can also make use of the [SharePoint Framework Query Extension](/sharepoint/dev/spfx/building-search-extensions) to modify the query before it gets sent to the search engine.
+
+## Guest user limitations
+
+Invitation of a guest to a SharePoint site or hub site from a scenario point of view is intended to share content from those scopes to the guest. A custom redirect to the organization wide search result page provided by Microsoft Search at `_layouts/15/search.aspx` without the `/siteall` parameter is an unsupported product scenario which can lead to unintended oversharing of content.
 
 ## Additional resources
 

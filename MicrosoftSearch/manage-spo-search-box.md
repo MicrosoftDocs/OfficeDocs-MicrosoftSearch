@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "How to customize the search box experience on SharePoint sites"
-ms.date: 12/14/2020
+ms.date: 11/01/2023
 ---
 
 # Search box settings on SharePoint sites
@@ -106,3 +106,7 @@ Set-PnPSearchSettings -Scope Site -SearchBoxPlaceholderText "my placeholder"
 ```
 
 To go back to the default placeholder text, set the value to be blank ("").
+
+## Guest user limitations
+
+Invitation of a guest to a SharePoint site or hub site from a scenario point of view is intended to share content from those scopes to the guest. Setting the `SearchScope` to `Tenant` will be overridden for a guest user, and the experience will revert to the default behavior for the site. Reason is organization scope of results can lead to unintended oversharing of content.
