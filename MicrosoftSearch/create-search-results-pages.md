@@ -51,6 +51,8 @@ Custom search results pages can also make use of the [SharePoint Framework Query
 
 Invitation of a guest to a SharePoint site or hub site from a scenario point of view is intended to share content from those scopes to the guest. A custom redirect to the organization wide search result page provided by Microsoft Search at `_layouts/15/search.aspx` without the `/siteall` parameter is an unsupported product scenario which can lead to unintended oversharing of content.
 
+Also see [Guest user limitations for Search box settings on SharePoint sites](./manage-spo-search-box.md).
+
 ## Additional resources
 
 For open source projects, getting started with our Microsoft Search

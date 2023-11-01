@@ -109,4 +109,6 @@ To go back to the default placeholder text, set the value to be blank ("").
 
 ## Guest user limitations
 
-Invitation of a guest to a SharePoint site or hub site from a scenario point of view is intended to share content from those scopes to the guest. Setting the `SearchScope` to `Tenant` will be overridden for a guest user, and the experience will revert to the default behavior for the site. Reason is organization scope of results can lead to unintended oversharing of content.
+Invitation of a guest to a SharePoint site or hub site from a scenario point of view is intended to share content from those scopes to the guest. Setting the `SearchScope` to `Tenant` will be overridden for a guest user, and the experience will revert to the default behavior for the site. Reason is organization scope of results can lead to unintended oversharing of content. 
+
+Also see [Guest user limitations for Create a custom search results page in SharePoint Online](./create-search-results-pages.md).
