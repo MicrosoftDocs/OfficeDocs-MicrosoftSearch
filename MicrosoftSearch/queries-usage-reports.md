@@ -22,7 +22,7 @@ description: "Review the Microsoft Search usage - Queries reports"
 
 In the [Microsoft Search Usage Report](usage-reports.md), the **Query analytics** section compares the number of search queries that had been clicked, abandoned, or had returned no results. It also compares queries by other factors, such as occupation, department, or division. The charts are presented for the filters selected on the top of the page.  
 
-:::image type="content" source="media/usage-reports/queries-report.png" alt-text="A dashboard page containing four pie charts with query report data." lightbox="media/usage-reports/queries-report.png":::
+:::image type="content" source="media/usage-reports/query-analytics-key-metrics.png" alt-text="A dashboard showing key metrics for queries." lightbox="media/usage-reports/query-analytics-key-metrics.png":::
 
 The data above the chart shows changes over the selected time period for the following metrics: 
 
@@ -36,9 +36,7 @@ The Recent Search Activity chart shows trending activity over time for the query
 
 ## Query Distribution
 
-# IMAGE
-
-
+:::image type="content" source="media/usage-reports/queries-report.png" alt-text="A dashboard page containing four pie charts with query report data." lightbox="media/usage-reports/queries-report.png":::
 
 The query data is provided in four charts:
 

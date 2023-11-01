@@ -23,10 +23,33 @@ description: "Review Microsoft Search Users usage reports"
 In the [Microsoft Search Usage Report](usage-reports.md), the **User analytics** section shows how people in your organization use Microsoft Search and allows you to compare user engagement and adoption across the search applications and time periods. The charts are presented for the filters selected on the top of the page.
 
 
-:::image type="content" source="media/usage-reports/users-reports.png" alt-text="A dashboard page showing a bar chart and a graph chart." lightbox="media/usage-reports/users-reports.png":::
+:::image type="content" source="media/usage-reports/user-analytics-key-metrics.png" alt-text="A dashboard page showing two bar charts and a graph chart." lightbox="media/usage-reports/user-analytics-key-metrics.png":::
 
-The key metrics show you a quick summary of how people are using search in your organization. The data shows metrics and changes from the previous period for the following metrics.
+The key metrics show you a quick summary of how people are using search in your organization. The data shows metrics and changes from the previous period for the following metrics:
 
+
+| Filter | Description |
+|:-----|:-----|
+|Users who searched |The total number of users who have searched at least once in the selected period.|
+|Users who searched weekly |he average of users who have searched at least once in a 7-day period and searched at least once in the previous 7-day period.|
+|Users not searching  |The total number of users who have visited an application that offers Microsoft Search without performing any searches in the selected period. |
+
+The color of the bar and the trend indicator show the trend compared to the previous period. For example, if the 28-day filter is selected, this will compare the current 28-day period data to the previous 28-day period data. In the case of a downward trend, the arrow and the line are shown in red. In the case of an upward trend, it's shown in green. Trend data isn't available for a 12-month view. 
+
+The trend graph shows trending activity over time for Users who searched, Users who searched weekly and Users not searching. Notice that this graph might be represented by weekly bar graphs instead of line graphs based on the search activity in the tenant. 
+
+Note that the 12-month view will show average metrics for all graphs except the trend graph which can represent a good baseline to compare with the current metrics and identify areas with better or worse usage than average. 
+
+## User engagement  
+The user engagement graph shows how many unique days people have performed searches for the selected set of filters. The two bars compare the number of users in this period with the previous period. A high number of users in the 9+ days category represents a higher search engagement in the organization. Use the Search application filter to analyze user engagement for different search applications. 
+
+:::image type="content" source="media/usage-reports/user-analytics-engagement.png" alt-text="A dashboard page showing a bar chart." lightbox="media/usage-reports/user-analytics-engagement.png":::
+
+## Search users by application
+
+The search users by application graph shows how many users have searched one or more times for each search application. The two bars compare the number of users that used search in this period with the previous period. Use the Search application filter to understand the user engagement for each search application.  
+
+:::image type="content" source="media/usage-reports/user-analytics-applications.png" alt-text="A dashboard page showing a bar chart." lightbox="media/usage-reports/user-analytics-applications.png":::
 
 ## User analytics detail pages
 
@@ -52,16 +75,18 @@ In addition to the user analytics graphs shown on the summary page (covered abov
 
 The Search users by geography chart shows you a distribution of search users based on their country attribute in Azure Active Directory and for the selected set of filters.
 
-:::image type="content" source="media/usage-reports/active-users-chart.png" alt-text="A graph chart showing active users by search application." lightbox="media/usage-reports/active-users-chart.png":::
+:::image type="content" source="media/usage-reports/user-analytics-country graph.png" alt-text="A dashboard page showing a bar chart." lightbox="media/usage-reports/user-analytics-country graph.png":::
 
 ### Top 10 search users by occupation
 
 The Top 10 search users by occupation chart shows top you a distribution of search users based on their **title** attribute in Azure Active Directory and for the selected set of filters. Note that due to computational complexity, only the top 100 occupations are included in this list which means that some filter combinations might produce an empty list of occupations. 
 
-:::image type="content" source="media/usage-reports/engaged-users-chart.png" alt-text="A graph chart showing engaged users by search application." lightbox="media/usage-reports/engaged-users-chart.png":::
+:::image type="content" source="media/usage-reports/user-analytics-by-occupation.png" alt-text="A  page showing a list of users." lightbox="media/usage-reports/user-analytics-by-occupation.png":::
 
 ## Top 10 search users by department or division  
 The Top 10 search users by department or division chart shows top you a distribution of search users based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory and for the selected set of filters.
+
+:::image type="content" source="media/usage-reports/user-analytics-by-department.png" alt-text="A  page showing a list of users." lightbox="media/usage-reports/user-analytics-by-department.png":::
 
 ## User analytics – See what actions you can take 
 The **User analytics** section shows how people in your organization use Microsoft Search and allows you to compare user engagement and adoption across the search applications and time periods. Use the graphs to: 
@@ -81,7 +106,7 @@ Processing of the new search user reports varies for different tenants. If you s
 
 To view the previous search analytics reports, select the **New user analytics** toggle on the top right corner of the page.
 
-# IMAGE 
+:::image type="content" source="media/usage-reports/user-analytics-toggle.png" alt-text="A picture of a toggle." lightbox="media/usage-reports/user-analytics-toggle.png":::
 
 ## Prevent filtering by country, occupation, department, or division 
 

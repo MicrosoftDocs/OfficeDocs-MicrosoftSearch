@@ -47,7 +47,7 @@ In the **Filters** menu, use one or more of the following to filter the data in 
 
 | Filter| Description |
 |:-----|:-----|
-|Date Range |The date range for the analytics shown on the page. Available options are seven days, 14 days, 31 days and last 12 months   |
+|Date Range |The date range for the analytics shown on the page. Available options are Last 28 days and Last 12 months   |
 |Search Application |The search application where the user has performed the queries: SharePoint start page, SharePoint sites, Office (Microsoft 365 app), Bing, or all four applications combined.   |
 
 The **Answer Analytics** details page contains the following three reports for each Bookmarks, Acronyms and Q&As. 
