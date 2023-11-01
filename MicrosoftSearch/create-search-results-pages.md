@@ -13,17 +13,17 @@ ms.date: 11/01/2023
 
 # Create a custom search results page in SharePoint Online
 
-One way to customize the search experience in SharePoint is to create a custom search results page for a site. This allows you to use a page that you created, rather than the default in Microsoft Search results page. This gives you more flexibility on how the search results experience looks for your users.
+One way to customize the search experience in SharePoint is to create a custom search results page for a site. A custom page allows you to use a page that you created, rather than the default in Microsoft Search results page. A custom page gives you more flexibility on how the search results experience looks for your users.
 
 >[!NOTE]
 > To make changes to the default Microsoft Search results page that is
 available by default, please see [Customize the search results page](customize-search-page.md).
 
-With a custom results page you can create a new page that can be used to control the layout and design of search results to support your organization's needs. You can use any built-in web parts, open-source search web parts from SharePoint Patterns and Practices community, as well as any custom web parts that you may have developed using SharePoint Framework.
+With a custom results page, you can create a new page that can be used to control the layout and design of search results to support your organization's needs. You can use any built-in web parts, open-source search web parts from SharePoint Patterns and Practices community, and any custom web parts that you have developed using SharePoint Framework.
 
 ## Configure a results page
 
-To configure a custom results page in SharePoint Online follow the steps below:
+Follow the steps below to configure a custom results page in SharePoint:
 
 1. Browse to the site where you would like to configure a custom results page and go to **Site Settings > Site Collection Settings > Search Settings**.
 
@@ -49,7 +49,7 @@ Custom search results pages can also make use of the [SharePoint Framework Query
 
 ## Guest user limitations
 
-Invitation of a guest to a SharePoint site or hub site from a scenario point of view is intended to share content from those scopes to the guest. A custom redirect to the organization wide search result page provided by Microsoft Search at `_layouts/15/search.aspx` without the `/siteall` parameter is an unsupported product scenario which can lead to unintended oversharing of content.
+Invitation of a guest to a SharePoint site or hub site from a scenario point of view is intended to share content from those scopes to the guest. A custom redirect to the organization wide search result page provided by Microsoft Search at `_layouts/15/search.aspx` without the `/siteall` parameter is an unsupported product scenario. Exposing guests to organization wide results can lead to unintended oversharing of content.
 
 Also see [Guest user limitations for Search box settings on SharePoint sites](./manage-spo-search-box.md).
 
