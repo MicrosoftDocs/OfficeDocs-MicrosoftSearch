@@ -30,6 +30,10 @@ To index content by using Microsoft Graph connectors, you need to have sufficien
 - Built-in entitlements
 - Purchase of add-on index quota
 
+Each item added to Microsoft Graph shows up as a unique citation in Microsoft 365 Copilot in response to a relevant prompt. Similarly, each item shows up as a unique search result to a relevant search query in Microsoft Search.
+
+Each entity (or record) from the source system that you add to Microsoft Graph can be considered an item. For example, a webpage, file, or ServiceNow KB article would all be considered an item. Total quota utilized is calculated in terms of total items stored in the index. Updates/changes to an item are not counted in any manner.
+
 ## Entitlement built into Microsoft 365 or Office 365 E5 licenses
 
 The following licenses include entitlement to 500 items of index quota, which counts towards your organization's quota for ingesting content from Microsoft Graph connectors:
