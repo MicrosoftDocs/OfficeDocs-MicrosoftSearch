@@ -23,7 +23,7 @@ recommendations: false
 
 Search usage reports enable you to gain more understanding of how people in your organization are using Microsoft Search. The insights generated from these reports will help you take actions that will make search a more useful and delightful experience for all your users.
 
-:::image type="content" source="media/usage-reports/usage-reports-key-metrics.png" alt-text="A dashboard showing key metrics for search and intelligence." lightbox="media/usage-reports/usage-reports-key-metrics.png":::
+:::image type="content" source="media/usage-reports/usage reports-key-metrics.png" alt-text="A dashboard showing key metrics for search and intelligence." lightbox="media/usage-reports/usage reports-key-metrics.png":::
 
 The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from the SharePoint Start Page, SharePoint Sites, Microsoft 365 app (formerly known as the Office app) at office.com, and Bing. User analytics is also available for Windows Search, Outlook, Teams, OneDrive and application search in Word, Excel and Powerpoint. You can see data from the last 28 days or for the previous year.
 
@@ -114,5 +114,6 @@ To configure the setting:
 [Microsoft Search Usage Report - Queries](queries-usage-reports.md)</br>
 [Microsoft Search Usage Report - Users](users-search-reports.md)</br>
 [Microsoft Search Usage Report - Connection analytics](connection-analytics-reports.md)</br>
+[Microsoft Search Usage Report - Answer analytics](answer-analytics-usage-reports.md)</br>
 [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites)
 

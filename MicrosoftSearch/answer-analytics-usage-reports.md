@@ -208,6 +208,7 @@ Detailed list of user queries for which the Q&A impressed is available in the de
 
 ## Related articles
 
+[Microsoft Search Usage Report](usage-reports.md)</br>
 [Microsoft Search Usage Report - Queries](queries-usage-reports.md)</br>
 [Microsoft Search Usage Report - Users](users-search-reports.md)</br>
 [Microsoft Search Usage Report - Connection analytics](connection-analytics-reports.md)</br>

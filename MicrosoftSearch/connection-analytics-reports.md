@@ -103,4 +103,5 @@ To configure this setting:
 [Microsoft Search Usage Report](usage-reports.md)</br>
 [Microsoft Search Usage Report - Queries](queries-usage-reports.md)</br>
 [Microsoft Search Usage Report - Users](users-search-reports.md)</br>
+[Microsoft Search Usage Report - Answer analytics](answer-analytics-usage-reports.md)</br>
 [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites)

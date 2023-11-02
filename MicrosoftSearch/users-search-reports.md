@@ -31,25 +31,28 @@ The key metrics show you a quick summary of how people are using search in your 
 | Filter | Description |
 |:-----|:-----|
 |Users who searched |The total number of users who have searched at least once in the selected period.|
-|Users who searched weekly |he average of users who have searched at least once in a 7-day period and searched at least once in the previous 7-day period.|
+|Users who searched weekly |The average of users who have searched at least once in a 7-day period and searched at least once in the previous 7-day period.|
 |Users not searching  |The total number of users who have visited an application that offers Microsoft Search without performing any searches in the selected period. |
 
 The color of the bar and the trend indicator show the trend compared to the previous period. For example, if the 28-day filter is selected, this will compare the current 28-day period data to the previous 28-day period data. In the case of a downward trend, the arrow and the line are shown in red. In the case of an upward trend, it's shown in green. Trend data isn't available for a 12-month view. 
 
-The trend graph shows trending activity over time for Users who searched, Users who searched weekly and Users not searching. Notice that this graph might be represented by weekly bar graphs instead of line graphs based on the search activity in the tenant. 
+The **users who searched**, **users who searched weekly**, and **users not searching trend graph** shows activity over time for the key metrics in the table above. Notice that this graph might be represented by weekly bar graphs instead of line graphs based on the search activity in the tenant.  
 
-Note that the 12-month view will show average metrics for all graphs except the trend graph which can represent a good baseline to compare with the current metrics and identify areas with better or worse usage than average. 
+> [!NOTE]
+> The 12-month view will show average metrics for all graphs except the trend graph which can represent a good baseline to compare with the current metrics and identify areas with better or worse usage than average. 
 
-## User engagement  
+# User engagement  
 The user engagement graph shows how many unique days people have performed searches for the selected set of filters. The two bars compare the number of users in this period with the previous period. A high number of users in the 9+ days category represents a higher search engagement in the organization. Use the Search application filter to analyze user engagement for different search applications. 
 
-:::image type="content" source="media/usage-reports/user-analytics-engagement.png" alt-text="A dashboard page showing a bar chart." lightbox="media/usage-reports/user-analytics-engagement.png":::
+:::image type="content" source="media/usage-reports/user-analytics-engagement.png" alt-text="A dashboard page showing a bar chart for user engagement." lightbox="media/usage-reports/user-analytics-engagement.png":::
 
-## Search users by application
+# Search users by application
 
 The search users by application graph shows how many users have searched one or more times for each search application. The two bars compare the number of users that used search in this period with the previous period. Use the Search application filter to understand the user engagement for each search application.  
 
 :::image type="content" source="media/usage-reports/user-analytics-applications.png" alt-text="A dashboard page showing a bar chart." lightbox="media/usage-reports/user-analytics-applications.png":::
+
+For details on the search applications that are included in these usage reports, see ![Search Application Coverage](https://review.learn.microsoft.com/microsoftsearch/usage-reports?branch=pr-1260#search-application-coverage).
 
 ## User analytics detail pages
 
@@ -59,9 +62,9 @@ The User analytics details page shows how  people in your organization use Micro
 |:-----|:-----|
 |Date range |The date range for the analytics shown on the page. The available options are Last 28 days, and Last 12 months.|
 |Search application  |The search application where the user has performed the queries: Windows Search Work results, Microsoft Search for Bing, Outlook, Teams, OneDrive, Word/Excel/Powerpoint, SharePoint start page, SharePoint sites, Microsoft365.com, Bing, or all applications combined. |
-|Country  |The country of the user performing query based on their **country** attribute in Azure Active Directory. |
-|Occupation    |The occupation of the user performing the query based on their **title** attribute in Azure Active Directory.  |
-|Department or division    |The department or division of the user performing the query, based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory. |
+|Country  |The country of the user performing query based on their **country** attribute in Microsoft Entra ID. |
+|Occupation    |The occupation of the user performing the query based on their **title** attribute in Microsoft Entra ID.  |
+|Department or division    |The department or division of the user performing the query, based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Microsoft Entra ID. |
 
 You can view the User details page by selecting the **User analytics** tab or selecting the **View user analytics** button at the bottom of the **User analytics** section of the Usage analytics main page.  
 
@@ -73,22 +76,22 @@ In addition to the user analytics graphs shown on the summary page (covered abov
 
 ### Search users by geography 
 
-The Search users by geography chart shows you a distribution of search users based on their country attribute in Azure Active Directory and for the selected set of filters.
+The Search users by geography chart shows you a distribution of search users based on their country attribute in Microsoft Entra ID and for the selected set of filters.
 
 :::image type="content" source="media/usage-reports/user-analytics-country graph.png" alt-text="A dashboard page showing a bar chart." lightbox="media/usage-reports/user-analytics-country graph.png":::
 
 ### Top 10 search users by occupation
 
-The Top 10 search users by occupation chart shows top you a distribution of search users based on their **title** attribute in Azure Active Directory and for the selected set of filters. Note that due to computational complexity, only the top 100 occupations are included in this list which means that some filter combinations might produce an empty list of occupations. 
+The Top 10 search users by occupation chart shows top you a distribution of search users based on their **title** attribute in Microsoft Entra ID and for the selected set of filters. Note that due to computational complexity, only the top 100 occupations are included in this list which means that some filter combinations might produce an empty list of occupations. 
 
-:::image type="content" source="media/usage-reports/user-analytics-by-occupation.png" alt-text="A  page showing a list of users." lightbox="media/usage-reports/user-analytics-by-occupation.png":::
+:::image type="content" source="media/usage-reports/user-analytics-by-occupation.png" alt-text="A  page showing a list of users by occupation." lightbox="media/usage-reports/user-analytics-by-occupation.png":::
 
-## Top 10 search users by department or division  
-The Top 10 search users by department or division chart shows top you a distribution of search users based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Azure Active Directory and for the selected set of filters.
+# Top 10 search users by department or division  
+The Top 10 search users by department or division chart shows top you a distribution of search users based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Microsoft Entra ID and for the selected set of filters.
 
-:::image type="content" source="media/usage-reports/user-analytics-by-department.png" alt-text="A  page showing a list of users." lightbox="media/usage-reports/user-analytics-by-department.png":::
+:::image type="content" source="media/usage-reports/user-analytics-by-department.png" alt-text="A  page showing a list of users by department." lightbox="media/usage-reports/user-analytics-by-department.png":::
 
-## User analytics – See what actions you can take 
+# User analytics – See what actions you can take 
 The **User analytics** section shows how people in your organization use Microsoft Search and allows you to compare user engagement and adoption across the search applications and time periods. Use the graphs to: 
 
 - Validate key metrics for users who searched, users searching weekly and users with no search activity. What is the potential in increasing users searching weekly and addressing users with no search activity? 
@@ -132,4 +135,5 @@ To configure this setting:
 [Microsoft Search Usage Report](usage-reports.md)</br>
 [Microsoft Search Usage Report - Queries](queries-usage-reports.md)</br>
 [Microsoft Search Usage Report - Connection analytics](connection-analytics-reports.md)</br>
+[Microsoft Search Usage Report - Answer analytics](answer-analytics-usage-reports.md)</br>
 [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites)
