@@ -23,11 +23,11 @@ recommendations: false
 
 Search usage reports enable you to gain more understanding of how people in your organization are using Microsoft Search. The insights generated from these reports will help you take actions that will make search a more useful and delightful experience for all your users.
 
-:::image type="content" source="media/usage-reports/usage-analytics.png" alt-text="A dashboard containing pie charts, graphs, and search analytics report data." lightbox="media/usage-reports/usage-analytics.png":::
+:::image type="content" source="media/usage-reports/usage-reports-key-metrics.png" alt-text="A dashboard showing key metrics for search and intelligence." lightbox="media/usage-reports/usage-reports-key-metrics.png":::
 
-The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from the SharePoint Start Page, SharePoint Sites, Microsoft 365 app (formerly known as the Office app) at office.com, and Bing. User analytics is also available for Windows Search, Outlook, Teams, OneDrive and application search in Word, Excel and Powerpoint. You can see data from the last 7 days, last 14 days, last 31 days, or monthly for the previous year.
+The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from the SharePoint Start Page, SharePoint Sites, Microsoft 365 app (formerly known as the Office app) at office.com, and Bing. User analytics is also available for Windows Search, Outlook, Teams, OneDrive and application search in Word, Excel and Powerpoint. You can see data from the last 28 days or for the previous year.
 
-You can filter reports by country, occupation, department, or division. To protect privacy, if any filters show data for five or less individuals, those results won't be included in the search usage reports. In addition, these filters can be toggled on or off for the entire organization on the Org settings page, in case your organization has specific privacy requirements.  
+On some detail pages, you can filter reports by country, occupation, department, or division. To protect privacy, if any filters show data for five or less individuals, those results won't be included in the search usage reports. In addition, these filters can be toggled on or off for the entire organization on the Org settings page, in case your organization has specific privacy requirements.  
 
 ## Search Application Coverage
 
@@ -35,15 +35,15 @@ These are the search applications that are currently included in tenant level us
 
 | Search application | Description |
 |:-----|:-----|
-|Microsoft Search for Bing |The work tab in Microsoft Search in Bing.   |
+|Microsoft Search for Bing |A Bing search where the user is authenticated with organization credentials and the user navigated to the work tab in Microsoft Search in Bing.      |
 |Microsoft365.com |The Microsoft 365 App at microsoft365.com (formerly known as the Office app) at office.com.  |
 |SharePoint Sites |SharePoint Online, including both classic (enterprise/site/basic search center) and modern (hub, communication, and team) site searches. |
 |SharePoint Start page |The site available when selecting SharePoint in the Microsoft 365 app launcher with the URL ending in /SharePoint.aspx. |
-|Windows Search Work results |Queries with work results from the Windows Search Bar.   |
-|Outlook |Queries in Outlook.|
-|Teams |Queries in Teams|
-|OneDrive |Queries in OneDrive |
-|Word, Excel, PowerPoint |Aggregate of queries in Word, Excel and PowerPoint.    |
+|Windows Search Work results |Queries from the search box in the Start menu or taskbar for users authenticated with organization credentials and which produced work results.   |
+|Outlook |Queries from Outlook for any device and platform. |
+|Teams |Queries from Teams for any device and platform. |
+|OneDrive |Queries in the OneDrive app that are used to search a user’s OneDrive for work or school.  |
+|Word, Excel, PowerPoint |Aggregate of all queries in Word, Excel and PowerPoint.    |
 
 ## How to get to the Microsoft Search usage reports?
 
@@ -59,7 +59,7 @@ The Microsoft Search Usage Reports page provides you with search data through th
 - **User Analytics** – This section shows how people in your organization use Microsoft Search and allows you to compare user engagement and adoption across the search applications and time periods. It also allows you to go to a user's details page to view and analyze the user's data in more detail.  
 - **Query Analytics** – This section shows key query metrics and a trend graph of queries and click-through queries over time. It also provides a breakdown of the query activity by user action, country, occupation and department or division. It also allows you to go to a query details page to view and analyze the queries in more detail.
 
-- **Connection Analytics** – This section provides an analysis of your connections. Review queries and clicks that use search results from your connections. It also allows you to go to a connection analytics details page to view and analyze the connection data in more detail. 
+- **Connection Analytics** – This section provides an analysis of your connections. Review queries and clicks for search results from your connections. It also allows you to go to a connection analytics details page to view and analyze the connection data in more detail. 
 - **Answer Analytics** - This section provides you with impressions and click data for your editorial Bookmarks, Acronyms and Q&A's. It also gives information on impressions and clicks for individual Bookmark, Acronym and Q&A items.
 
 You can view more details about the [User analytics](users-search-reports.md), [Query analytics](queries-usage-reports.md), [Answer analytics](answer-analytics-usage-reports.md) and [Connection analytics](connection-analytics-reports.md) sections by selecting the links.
@@ -68,8 +68,6 @@ You can view more details about the [User analytics](users-search-reports.md), [
 > These search usage reports show collective search data based on search traffic from the search applications listed above. You can also view and analyze search usage reports for individual modern SharePoint sites through their respective site collection usage reports. For more information, see [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites).
 
 
-
-:::image type="content" source="media/usage-reports/recent-search-activity.png" alt-text="A graph chart showing recent search activity data." lightbox="media/usage-reports/recent-search-activity.png":::
 
 
 
@@ -96,7 +94,7 @@ To view the previous search analytics reports, select the **New usage reports** 
 
 Most reports and tables in the Microsoft Search Usage Reports page have a download option that allows you to download the background data for the report that you see on the screen in an Excel format. While in the displayed report you're limited to the top five to 10 rows, the downloaded report will have up to 2000 top records.  
 
-Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 7, 14, or 28 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month.
+Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 28 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month.
 
 ## Prevent filtering by country, occupation, department, or division
 
