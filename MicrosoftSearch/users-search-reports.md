@@ -86,7 +86,7 @@ In addition to the user analytics graphs shown on the summary page (covered abov
 
 The Search users by geography chart shows you a distribution of search users based on their country attribute in Microsoft Entra ID and for the selected set of filters.
 
-:::image type="content" source="media/usage-reports/user-analytics-country graph.png" alt-text="A dashboard page showing a bar chart." lightbox="media/usage-reports/user-analytics-country graph.png":::
+:::image type="content" source="media/usage-reports/user-analytics-country graph.png" alt-text="A dashboard page that shows a map of the distribution of users geographically." lightbox="media/usage-reports/user-analytics-country graph.png":::
 
 ### Top 10 search users by occupation
 
