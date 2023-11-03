@@ -88,7 +88,7 @@ Processing of the new search usage reports varies for different tenants. If you 
 
 To view the previous search analytics reports, select the **New usage reports** toggle on the top right corner of the page. 
 
-:::image type="content" source="media/usage-reports/new-usage-toggle.png" alt-text="A toggle button." lightbox="media/usage-reports/new-usage-toggle.png":::
+:::image type="content" source="media/usage-reports/new-usage-toggle.png" alt-text="A toggle button.":::
 
 ## You can download reports
 
