@@ -56,7 +56,9 @@ The search users by application graph shows how many users have searched one or 
 
 :::image type="content" source="media/usage-reports/user-analytics-applications.png" alt-text="A dashboard page showing a bar chart." lightbox="media/usage-reports/user-analytics-applications.png":::
 
-For details on the search applications that are included in these usage reports, see [Search Application Coverage](https://review.learn.microsoft.com/microsoftsearch/usage-reports?branch=pr-1260#search-application-coverage).
+For details on the search applications that are included in these usage reports, see [Search Application Coverage](https://review.learn.microsoft.com/microsoftsearch/usage-reports?branch=pr-1260#search-application-coverage).<br><br>
+
+
 
 
 
