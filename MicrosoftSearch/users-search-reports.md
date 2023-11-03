@@ -56,7 +56,9 @@ The search users by application graph shows how many users have searched one or 
 
 :::image type="content" source="media/usage-reports/user-analytics-applications.png" alt-text="A dashboard page showing a bar chart." lightbox="media/usage-reports/user-analytics-applications.png":::
 
-For details on the search applications that are included in these usage reports, see ![Search Application Coverage](https://review.learn.microsoft.com/microsoftsearch/usage-reports?branch=pr-1260#search-application-coverage).
+For details on the search applications that are included in these usage reports, see [Search Application Coverage](https://review.learn.microsoft.com/microsoftsearch/usage-reports?branch=pr-1260#search-application-coverage).
+
+
 
 # User analytics detail pages
 
@@ -97,6 +99,8 @@ The Top 10 search users by occupation chart shows top you a distribution of sear
 The Top 10 search users by department or division chart shows top you a distribution of search users based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Microsoft Entra ID and for the selected set of filters.
 
 :::image type="content" source="media/usage-reports/user-analytics-by-department.png" alt-text="A  page showing a list of users by department." lightbox="media/usage-reports/user-analytics-by-department.png":::
+
+
 
 # User analytics – See what actions you can take 
 The **User analytics** section shows how people in your organization use Microsoft Search and allows you to compare user engagement and adoption across the search applications and time periods. Use the graphs to: 
