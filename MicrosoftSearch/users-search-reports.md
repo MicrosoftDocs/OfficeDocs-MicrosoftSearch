@@ -58,11 +58,12 @@ The search users by application graph shows how many users have searched one or 
 
 For details on the search applications that are included in these usage reports, see [Search Application Coverage](https://review.learn.microsoft.com/microsoftsearch/usage-reports?branch=pr-1260#search-application-coverage).<br><br>
 
+<br>
+<br>
 
 
 
-
-# User analytics detail pages
+## User analytics detail pages
 
 The User analytics details page shows how  people in your organization use Microsoft Search, measured by the filters you select.  These filters include:
 
@@ -79,7 +80,7 @@ The User analytics details page shows how  people in your organization use Micro
 
 You can view the User details page by selecting the **User analytics** tab or selecting the **View user analytics** button at the bottom of the **User analytics** section of the Usage analytics main page.  
 
-In addition to the user analytics graphs shown on the summary page (covered above), the user details page contains the following additional two charts:
+In addition to the user analytics graphs shown on the summary page (covered above), the user details page contains the following additional charts:
 
 - Search users by geography
 - Top 10 search users by occupation
@@ -104,7 +105,7 @@ The Top 10 search users by department or division chart shows top you a distribu
 
 
 
-# User analytics – See what actions you can take 
+## User analytics – See what actions you can take 
 The **User analytics** section shows how people in your organization use Microsoft Search and allows you to compare user engagement and adoption across the search applications and time periods. Use the graphs to: 
 
 - Validate key metrics for users who searched, users searching weekly and users with no search activity. What is the potential in increasing users searching weekly and addressing users with no search activity? 
