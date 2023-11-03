@@ -41,12 +41,16 @@ The **users who searched**, **users who searched weekly**, and **users not searc
 > [!NOTE]
 > The 12-month view will show average metrics for all graphs except the trend graph which can represent a good baseline to compare with the current metrics and identify areas with better or worse usage than average. 
 
-# User engagement  
+
+
+### User engagement  
 The user engagement graph shows how many unique days people have performed searches for the selected set of filters. The two bars compare the number of users in this period with the previous period. A high number of users in the 9+ days category represents a higher search engagement in the organization. Use the Search application filter to analyze user engagement for different search applications. 
 
 :::image type="content" source="media/usage-reports/user-analytics-engagement.png" alt-text="A dashboard page showing a bar chart for user engagement." lightbox="media/usage-reports/user-analytics-engagement.png":::
 
-# Search users by application
+
+
+### Search users by application
 
 The search users by application graph shows how many users have searched one or more times for each search application. The two bars compare the number of users that used search in this period with the previous period. Use the Search application filter to understand the user engagement for each search application.  
 
@@ -54,7 +58,7 @@ The search users by application graph shows how many users have searched one or 
 
 For details on the search applications that are included in these usage reports, see ![Search Application Coverage](https://review.learn.microsoft.com/microsoftsearch/usage-reports?branch=pr-1260#search-application-coverage).
 
-## User analytics detail pages
+# User analytics detail pages
 
 The User analytics details page shows how  people in your organization use Microsoft Search, measured by the filters you select.  These filters include:
 
@@ -65,6 +69,9 @@ The User analytics details page shows how  people in your organization use Micro
 |Country  |The country of the user performing query based on their **country** attribute in Microsoft Entra ID. |
 |Occupation    |The occupation of the user performing the query based on their **title** attribute in Microsoft Entra ID.  |
 |Department or division    |The department or division of the user performing the query, based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Microsoft Entra ID. |
+
+> [!NOTE]
+> To protect privacy, if the selected filter combination results in queries that are performed by only five or fewer individuals, those results will not be included in any report.
 
 You can view the User details page by selecting the **User analytics** tab or selecting the **View user analytics** button at the bottom of the **User analytics** section of the Usage analytics main page.  
 
@@ -86,7 +93,7 @@ The Top 10 search users by occupation chart shows top you a distribution of sear
 
 :::image type="content" source="media/usage-reports/user-analytics-by-occupation.png" alt-text="A  page showing a list of users by occupation." lightbox="media/usage-reports/user-analytics-by-occupation.png":::
 
-# Top 10 search users by department or division  
+### Top 10 search users by department or division  
 The Top 10 search users by department or division chart shows top you a distribution of search users based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Microsoft Entra ID and for the selected set of filters.
 
 :::image type="content" source="media/usage-reports/user-analytics-by-department.png" alt-text="A  page showing a list of users by department." lightbox="media/usage-reports/user-analytics-by-department.png":::

@@ -36,7 +36,7 @@ These are the search applications that are currently included in tenant level us
 | Search application | Description |
 |:-----|:-----|
 |Microsoft Search for Bing |A Bing search where the user is authenticated with organization credentials and the user navigated to the work tab in Microsoft Search in Bing.      |
-|Microsoft365.com |The Microsoft 365 App at microsoft365.com (formerly known as the Office app) at office.com.  |
+|Microsoft365.com |The Microsoft 365 App at microsoft365.com (formerly known as the Office app at office.com).  |
 |SharePoint Sites |SharePoint Online, including both classic (enterprise/site/basic search center) and modern (hub, communication, and team) site searches. |
 |SharePoint Start page |The site available when selecting SharePoint in the Microsoft 365 app launcher with the URL ending in /SharePoint.aspx. |
 |Windows Search Work results |Queries from the search box in the Start menu or taskbar for users authenticated with organization credentials and which produced work results.   |
