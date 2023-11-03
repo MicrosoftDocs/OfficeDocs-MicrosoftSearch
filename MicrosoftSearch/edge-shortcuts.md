@@ -1,6 +1,6 @@
 ---
 title: "Customize address bar shortcuts for Microsoft Edge"
-ms.author: dawholl
+ms.author: davidedwards
 author: dawholl
 manager: kellis
 ms.audience: Admin
