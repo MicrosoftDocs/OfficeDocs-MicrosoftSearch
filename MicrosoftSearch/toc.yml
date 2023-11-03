@@ -16,10 +16,10 @@ items:
   - name: Search usage reports 
     href: usage-reports.md
     items:
-    - name: Query reports
-      href: queries-usage-reports.md
     - name: User reports
       href: users-search-reports.md
+    - name: Query reports
+      href: queries-usage-reports.md
     - name: Answer analytics reports
       href: answer-analytics-usage-reports.md
     - name: Connection analytics reports
