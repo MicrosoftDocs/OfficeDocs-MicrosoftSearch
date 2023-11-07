@@ -32,13 +32,13 @@ To index content by using Microsoft Graph connectors, you need to have sufficien
 - Built-in entitlements
 
 ## What is an item of index quota?
-An item is 1 unit of index quota. An item can be considered as 1 search result. Every unique search result that you see can be considered as 1 item. Depending on the type of data source, 1 item is – 
+An item is 1 unit of index quota.  Each entity (or record) from the source system that you add to Microsoft Graph can be considered an item. Each item added to Microsoft Graph shows up as a unique citation in a Copilot response and as a unique search result in Microsoft search. Depending on the type of data source, 1 item is – 
 -	1 document (word, excel, ppt, pdf, etc.) in file share
 -	1 wiki page in Confluence
 -	1 webpage in a website
 -	1 ticket/issue in Jira
 
-Total quota utilized is calculated in terms of total items stored in the index. The number of updates/changes to an item are not counted in any manner. There are no cost implications of updating an item once in a month vs. a hundred times in a day. It still counts as 1 item only.
+Total quota utilized is calculated in terms of total items stored in the index. The number of updates/changes to an item are not counted in any manner. 
 
 ## Purchase of add-on index quota
 To purchase more Microsoft Graph connectors quota, contact your Microsoft account manager or complete the following steps:
@@ -55,6 +55,7 @@ Cost of indexing connector content is $1000/month for every million items. This 
 
 The following licenses include entitlement to 500 items of index quota, which counts towards your organization's quota for ingesting content from Microsoft Graph connectors:
 
+* Microsoft 365 Copilot
 * The Microsoft 365 E5 or Office 365 E5
 * [Microsoft Viva Topics](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
