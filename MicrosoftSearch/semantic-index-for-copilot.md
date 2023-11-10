@@ -81,7 +81,7 @@ User prompts from Microsoft 365 apps are sent to Copilot (1), and Copilot access
 
 The semantic index supports indexing of user mailbox and file types listed in the following table, with more file types supported over time. A list of supported file types for the user-level index and tenant-level index is included in the table.
 
-| **Content/file type**     | **User level** | **Tenant level** |
+|   Content/file type       |   User level   |   Tenant level   |
 |---------------------------|----------------|------------------|
 | User Mailbox              | Supported      | Not applicable   |
 | Delegated Mailbox         | Not supported  | Not applicable   |
