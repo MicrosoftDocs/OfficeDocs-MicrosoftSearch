@@ -117,7 +117,9 @@ items:
   - name: Federated Search connectors
     items:
     - name: Dataverse and Dynamics 365
-      href: manage-dynamics365.md  
+      href: manage-dynamics365.md
+  - name: Semantic Index for Copilot
+    href: semantic-index-for-copilot.md
 - name: Customize and configure
   items:
   - name: Manage verticals
