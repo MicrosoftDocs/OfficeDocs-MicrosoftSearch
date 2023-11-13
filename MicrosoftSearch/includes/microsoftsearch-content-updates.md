@@ -2,9 +2,10 @@
 
 
 
-## Week of October 02, 2023
+## Week of November 06, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 10/4/2023 | [Microsoft Graph connectors license requirements and pricing](/MicrosoftSearch/licensing) | modified |
+| 11/7/2023 | [Microsoft Graph connectors license requirements and pricing](/MicrosoftSearch/licensing) | modified |
+| 11/10/2023 | [Semantic Index for Copilot](/MicrosoftSearch/semantic-index-for-copilot) | added |
