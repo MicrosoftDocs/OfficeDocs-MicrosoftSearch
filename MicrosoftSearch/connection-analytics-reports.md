@@ -49,7 +49,7 @@ In the **Filters** menu, use one or more of the following to filter the data in 
 
 | Filter | Description |
 |:-----|:-----|
-|Date range |The date range for the analytics shown on the page. Available options are 7 days, 14 days, 31 days, and last 12 months.|
+|Date range |The date range for the analytics shown on the page. Available options are Last 28 days, and Last 12 months.|
 |Search application  |The search application where the user has performed the queries: SharePoint start page, SharePoint sites, Office (Microsoft 365 app), Bing, or all four applications combined. |
 |Country  |The country of the user performing query based on their **country** attribute in Microsoft Entra ID. |
 |Occupation    |The occupation of the user performing the query based on their **title** attribute in Microsoft Entra ID.  |
@@ -83,7 +83,7 @@ This report shows the details (connection type, queries with connection results,
 
 Each report and table have a download option that allows you to download the background data for the report that you see on the screen in an Excel format. Where the displayed report is limited to the top five to ten rows, the downloaded report will have up to 2000 top records.  
 
-Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 7, 14, or 31 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month.
+Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 28 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month.
 
 ## Prevent filtering by country, occupation, department, or division
 
@@ -103,4 +103,5 @@ To configure this setting:
 [Microsoft Search Usage Report](usage-reports.md)</br>
 [Microsoft Search Usage Report - Queries](queries-usage-reports.md)</br>
 [Microsoft Search Usage Report - Users](users-search-reports.md)</br>
+[Microsoft Search Usage Report - Answer analytics](answer-analytics-usage-reports.md)</br>
 [View search usage reports in modern sites](/sharepoint/view-search-usage-reports-modern-sites)
