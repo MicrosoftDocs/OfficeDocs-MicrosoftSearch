@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Topics – Item Delete Notification"
+title: "Topics – Item Delete Notification"
 ms.author: rmalhotra
 author: rmalhotra
 manager: james.lau
@@ -8,10 +8,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
-description: "Microsoft Topics – Item Delete Notification"
+description: "Topics – Item Delete Notification"
 ---
 
-# Microsoft Topics – Item Delete Notification
+# Topics – Item Delete Notification
 
 The following information pertains to our customers who are part of a preview offering wherein their ingested data from Microsoft Graph connectors will appear in the Topics card. This information is for when an item (e.g., file or another content) deleted from the source system should be processed and deleted from the Microsoft system within 30 days.
 
