@@ -2,6 +2,14 @@
 
 
 
+## Week of November 13, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/17/2023 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
+
+
 ## Week of November 06, 2023
 
 
