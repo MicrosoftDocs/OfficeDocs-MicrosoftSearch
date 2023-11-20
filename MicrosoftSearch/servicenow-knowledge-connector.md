@@ -49,13 +49,13 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
     
    **Name**: Enter a name for your connection (prefilled with a default name). You can always edit it later (even after the connection is published).
  
-   ![Name & ID.](media/servicenow-knowledge-connector-name&id.png)
+   ![Name & ID.](media/servicenow-knowledge-connector-name-and-id.png)
 
    ### 2. Data Source Settings:
 
    **ServiceNow instance URL**: To connect to your ServiceNow data, you need your organization's **ServiceNow    instance URL**. Your organization's ServiceNow instance URL typically looks like **https://&lt;your-organization-domain>.service-now.com**. 
 
-   ![Data Source Settings.](media/servicenow-knowledge-connector-DataSourceSettings.png)
+   ![Data Source Settings.](media/servicenow-knowledge-connector-data-source-settings.png)
 
    Along with this URL, you need a **service account** for setting up the connection to ServiceNow and for allowing Microsoft Search to periodically update the knowledge articles based on the refresh schedule. The service account needs read access to the following **ServiceNow table records** to successfully crawl various entities.
 
@@ -227,7 +227,7 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
 
 The ServiceNow connector supports access permissions visible to **Everyone** or **Only people with access to this data source**. Indexed data appears in the search results and is visible to all users in the organization or users who have access to them via user criteria permission respectively. If a knowledge article isn't enabled with a user criteria, it appears in search results of everyone in the organization.
 
-![Access permissions.](media/servicenow-knowledge-connector-AccessPermissions.png)
+![Access permissions.](media/servicenow-knowledge-connector-access-permissions.png)
 
 To access the Knowledge base articles in ServiceNow, users need both Article-level permissions and KB-level permissions. When using the ServiceNow Knowledge Base connector, if there are no Article-level restrictions, it applies the Knowledge Base-level permissions. However, if there are Article-level restrictions, they take priority over the Knowledge Base-level restrictions.
 
@@ -253,7 +253,7 @@ To identify which option is suitable for your organization:
 
 In this step, you can add or remove available properties from your ServiceNow data source. Microsoft 365 selects few properties by default.
 
-![Select properties.](media/servicenow-knowledge-connector-SelectProperties.png)
+![Select properties.](media/servicenow-knowledge-connector-select-properties.png)
 
 With a ServiceNow query string, you can specify conditions for syncing articles. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only articles that are published and active. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
