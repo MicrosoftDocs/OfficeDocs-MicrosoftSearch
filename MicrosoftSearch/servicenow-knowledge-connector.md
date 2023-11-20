@@ -115,7 +115,7 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
       Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds). | 31,536,000 (one year)
       Access token lifespan | The number of seconds that an access token is valid. | 43,200 (12 hours)
 
-      Enter the client id and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role. Refer to the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
+      Enter the client id and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role. Refer to the table in the beginning of [Step 2: Data Source Settings](#2-data-source-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
 </details>
 
@@ -218,7 +218,7 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
 
       6. Enable Knowledge role for the ServiceNow account
 
-         Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Refer to the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
+         Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Refer to the table in the beginning of [Step 2: Data Source Settings](#2-data-source-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
          Use Application ID as Client ID (from step 3.1), and Client secret (from step 3.2) in admin center configuration wizard to authenticate to your ServiceNow instance using Microsoft Entra ID OpenID Connect.
 </details>
@@ -269,22 +269,22 @@ In this step, you can map identities for both Microsoft Entra ID and Non Microso
 
 ### 3. Assign property labels
 
-Follow the general [setup instructions](./configure-connector#step-6-assign-property-labels.md).
+Follow the general [setup instructions](./configure-connector.md#step-6-assign-property-labels).
 
 ### 4. Manage schema
 
-Follow the general [setup instructions](./configure-connector#step-7-manage-schema.md).
+Follow the general [setup instructions](./configure-connector.md#step-7-manage-schema).
 
 ### 5. Refresh settings
 
-Follow the general [setup instructions](./configure-connector#step-8-refresh-settings.md).
+Follow the general [setup instructions](./configure-connector.md#step-8-refresh-settings).
 
 >[!NOTE]
 >For identities, only full crawl scheduled will be applied.
 
 ## Review & Publish
 
-Follow the general [setup instructions](./configure-connector#step-9-review-connection.md).
+Follow the general [setup instructions](./configure-connector.md#step-9-review-connection).
 
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
@@ -304,7 +304,7 @@ If your organization has enabled Single Sign-On (SSO) to ServiceNow, you may hav
 ### 2. Unauthorized or forbidden response to API request
 
 #### 2.1. Check table access permissions
-If you see forbidden or unauthorized response in connection status, check if the service account has the required access to the tables mentioned in [step 3: connection settings](#step-3-connection-settings). Check whether all the columns in the tables have read access.
+If you see forbidden or unauthorized response in connection status, check if the service account has the required access to the tables mentioned in [Step 2: Data Source Settings](#2-data-source-settings). Check whether all the columns in the tables have read access.
 
 #### 2.2. Change in account password
 The Microsoft Graph connector uses access token fetched on behalf of service account for crawl. The access token refreshes every 12 hours. Ensure that service account password isn't changed after publishing the connection. You may need to reauthenticate the connection if there's a change in password.
@@ -353,7 +353,7 @@ Finish reviewing your result type updates and hit **Submit**. Give it a minute o
 
 #### 4.1 Unable to choose *Only people with access to this data source*
 
-You may not be able to choose *Only people with access to this data source* option if the service account doesn't have read permissions to the required tables in [step 3: connection settings](#step-3-connection-settings). Check whether the service account can read tables mentioned under *Index and support user criteria permissions* feature.
+You may not be able to choose *Only people with access to this data source* option if the service account doesn't have read permissions to the required tables in [Step 2: Data Source Settings](#2-data-source-settings). Check whether the service account can read tables mentioned under *Index and support user criteria permissions* feature.
 
 #### 4.2 User mapping failures
 
