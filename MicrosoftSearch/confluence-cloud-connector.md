@@ -29,6 +29,10 @@ Each step in the setup process is listed below along with either a note that ind
 
 You must be the admin for your organization's Microsoft 365 tenant and the admin for your organization's Confluence site.
 
+>[!IMPORTANT]
+> * Atlassian is deprecating a set of Confluence cloud APIs (V1 version) and releasing new APIs (V2 version). You may read about their announcements [here](https://developer.atlassian.com/cloud/confluence/changelog/#CHANGE-864) or [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommunity.developer.atlassian.com%2Ft%2Frfc-19-deprecation-of-confluence-cloud-rest-api-v1-endpoints%2F71752&data=05%7C01%7Cvivg%40microsoft.com%7Cb8d049f07c3544de6b2c08dbe98b2a02%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638360556187110970%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=DIw8xhEwulo59mAm8T0f0TTKvbtRr4tIMTMpQYgPDDQ%3D&reserved=0). Some of these deprecating v1 APIs are used by the connector for **OAuth connections** only. Hence, post this change your existing Confluence connection(s) may stop working. This change is scheduled for Jan’24.
+> * The change to migrate to new v2 APIs will be released to all customers in **December 2023**. Post this release your existing connections will need to be reauthenticated. The new v2 APIs also require some more scopes (as compared to previous v1 APIs) which will need to be provided during re-authentication. New set of scopes required (complete list) – `read:group:confluence`, `read:user:confluence`, `read:content-details:confluence`, `Read:space:confluence`, `Read:permission:confluence`, `read:audit-log:confluence`, `read:content.metadata:confluence` and `read:page:confluence`.
+
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
 [Add Confluence cloud connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Confluence&type=Confluence)
