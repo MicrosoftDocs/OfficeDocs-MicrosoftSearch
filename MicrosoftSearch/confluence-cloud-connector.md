@@ -21,7 +21,7 @@ description: "Set up the Confluence Cloud Graph connector for Microsoft Search"
 
 Confluence Cloud Microsoft Graph connector allows your organization to index Confluence content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence Cloud connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. If you have not already done so, read the entire article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence Cloud connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. If you haven't already done so, read the entire article to understand the general setup process.
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence Cloud connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
@@ -73,15 +73,15 @@ The following steps provide guidance on how to register the app:
 
 5. Click **Save**.
 6. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL, for **M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`, for **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback` and save the changes.
-7. Navigate to `Settings` from the navigation pane on left. You will get the `Client ID` and `Secret` from this page.
+7. Navigate to `Settings` from the navigation pane on left. You'll get the `Client ID` and `Secret` from this page.
 
-On registering the app with the details above, you'll get the **Client ID** and **Secret**. Complete the connection settings step using these.
+Complete the connection settings step using the **Client ID** and **Secret**.
 
 ## Step 4: Select properties and filter data
 
-In this step, you can add or remove available properties from your Confluence data source. Microsoft 365 has already selected few properties by default.
+In this step, you can add or remove available properties from your Confluence data source. Microsoft 365 has selects few properties by default.
 
-With a Confluence Query Language (CQL) string, you can specify conditions for syncing pages. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only the pages that are modified in the last two years. To learn about creating your own query string, see [Advanced Searching using CQL](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/). By default, all blogs and pages will be indexed by the connector.
+With a Confluence Query Language (CQL) string, you can specify conditions for syncing pages. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only the pages that are modified in the last two years. To learn about creating your own query string, see [Advanced Searching using CQL](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/). All blogs and pages will be indexed by the connector by default.
 
 >[!TIP]
 >You may use the CQL filter to index **content modified after a certain time** using, *lastModified >= "2018/12/31"*
@@ -96,7 +96,7 @@ In Confluence Cloud, security permissions for users and groups are defined using
 
 If there are no page restrictions, the connector will check for space level permissions - 
 * In case space has 'anonymous users' access enabled, the content will be visible to all users within your tenant.
-* In case 'anonymous access' is not enabled, the space level permissions will be honored.
+* In case 'anonymous access' isn't enabled, the space level permissions will be honored.
 * In case space level permissions are not defined, the content will not be visible to any user in your tenant.
 
 >[!IMPORTANT]
@@ -138,7 +138,7 @@ After publishing the connection, you need to customize the search results page. 
 ## Step 10: Set up search result page
 
 After publishing the connection, you need to customize the search results page with verticals and result types. To learn about customizing search results, review how to [manage verticals](manage-verticals.md) and [result types](manage-result-types.md).
-You may also use the [sample result layout](confluence-cloud-connector-result-layout.md) for the Confluence cloud connector. Simply copy-paste the result layout JSON to get started.
+You may also use the [sample result layout](confluence-cloud-connector-result-layout.md) for the Confluence cloud connector. Copy-paste the result layout JSON to get started.
 
 ## Troubleshooting
 
