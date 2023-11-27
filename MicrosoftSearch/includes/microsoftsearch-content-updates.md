@@ -2,9 +2,27 @@
 
 
 
-## Week of October 02, 2023
+## Week of November 20, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 10/4/2023 | [Microsoft Graph connectors license requirements and pricing](/MicrosoftSearch/licensing) | modified |
+| 11/20/2023 | [ServiceNow Knowledge Microsoft Graph connector](/MicrosoftSearch/servicenow-knowledge-connector) | modified |
+| 11/21/2023 | [Confluence Cloud Microsoft Graph connector](/MicrosoftSearch/confluence-cloud-connector) | modified |
+
+
+## Week of November 13, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/17/2023 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
+
+
+## Week of November 06, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/7/2023 | [Microsoft Graph connectors license requirements and pricing](/MicrosoftSearch/licensing) | modified |
+| 11/10/2023 | [Semantic Index for Copilot](/MicrosoftSearch/semantic-index-for-copilot) | added |

@@ -24,11 +24,11 @@ Using on-premises connectors requires installing *Microsoft Graph connector agen
 
 [Download](https://aka.ms/gca) the latest version of the Microsoft Graph connector agent and install the software by using the installation configuration assistant. Release notes of the connector agent software are available [here](./graph-connector-agent-releases.md)
 
-Using the recommended configuration of the machine described below, the connector agent instance can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
+Using the recommended configuration of the machine, the connector agent instance can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
 
 Recommended configuration:
 
-* Windows 10, Windows Server 2016 R2 and above
+* Windows 10, Windows Server 2016 R2 and higher versions
 * [.NET Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
 * [.NET Core Desktop Runtime 7.0 (x64)](https://dotnet.microsoft.com/download/dotnet/7.0)
 * 8 cores, 3 GHz
@@ -37,20 +37,20 @@ Recommended configuration:
 
 If your organization's proxy servers or firewalls block communication to unknown domains, add the following rules to the 'allow' list:
 
-| **M365 Enterprise** | **M365 Government** |
-| ------------- | -------------|
-| 1. `*.servicebus.windows.net` | 1. `*.servicebus.usgovcloudapi.net`
-| 2. `*.events.data.microsoft.com` | 2. `*.events.data.microsoft.com`
-| 3. `*.office.com` | 3. `*.office.com`
-| 4. `https://login.microsoftonline.com` | 4. `https://login.microsoftonline.com`
-| 5. `https://gcs.office.com/` | 5. `https://gcsgcc.office.com/`
-| 6. `https://graph.microsoft.com/` | 6. `https://graph.microsoft.com/`
+| **M365 Enterprise** | **M365 GCC** | **M365 GCCH** |
+| ------------- | -------------| -------------|
+| 1. `*.servicebus.windows.net` | 1. `*.servicebus.usgovcloudapi.net` | 1. `*.servicebus.usgovcloudapi.net`
+| 2. `*.events.data.microsoft.com` | 2. `*.events.data.microsoft.com` | 2. `*.events.data.microsoft.com`
+| 3. `*.office.com` | 3. `*.office.com` | 3. `*.office.com`, `*.office365.us`
+| 4. `https://login.microsoftonline.com` | 4. `https://login.microsoftonline.com` | 4. `https://login.microsoftonline.com`, `https://login.microsoftonline.us`
+| 5. `https://gcs.office.com/` | 5. `https://gcsgcc.office.com` | 5. `https://gcs.office365.us/`
+| 6. `https://graph.microsoft.com/` | 6. `https://graph.microsoft.com` | 6. `https://graph.microsoft.com/`, `https://graph.microsoft.us/`
 
 >[!NOTE]
->Proxy authentication is not supported. If your environment has a proxy that requires authentication, we recommend allowing the connector agent to bypass the proxy.
+>Proxy authentication isn't supported. If your environment has a proxy that requires authentication, we recommend allowing the connector agent to bypass the proxy.
 
 ### Check Execution Policy
-The execution policy has to be set to allow the execution of remote signed scripts. If any machine or group level policy is restricting this, the installation of GCA will fail. Run the following command to get the execution policy:
+The execution policy has to be set to allow the execution of remote signed scripts. If any machine or group level policy is restricting the same, the installation of GCA fails. Run the following command to get the execution policy:
 
 ```powershell
 Get-ExecutionPolicy -List
@@ -64,39 +64,39 @@ Graph Connector Agent can be upgraded in two ways:
 
 1. Downloading and installing Graph Connector Agent manually from the link provided in the installation section.
 
-2. Clicking on the "Upgrade" button available in the connection pane as shown in the image below:
+2. Clicking on the "Upgrade" button available in the connection pane as shown in the image:
    :::image type="content" source="media/gca-releases/one-click-upgrade.png" alt-text="Sample snapshot of how to upgrade GCA with one-click from the connection pane.":::
-   
-The above upgrade button is not available for agents upgrading from 1.x version to 2.x version. Please follow the below steps if the agent is upgrading from 1.x to 2.x version:
+
+The upgrade button isn't available for agents upgrading from 1.x version to 2.x version. Follow these steps if the agent is upgrading from 1.x to 2.x version:
 
 1. Download the installer from the link provided in the installation section.
 
-2. The installer will ask you to install .NET 7 Desktop runtime, if not already installed.
+2. The installer asks you to install .NET 7 Desktop runtime, if not already installed.
 
 3. Allow communication to the endpoint *.office.com.
 
-4. Post installation, GCA configuration app will restart. If GCA is not registered, sign in and proceed with the registration.
+4. Post installation, GCA configuration app restarts. If GCA isn't registered, sign in and proceed with the registration.
 
-5. If GCA is already registered, the GCA configuration app will show the following success message:
+5. If GCA is already registered, the GCA configuration app shows the following success message:
    :::image type="content" source="media/onprem-agent/health-check-sign-in.jpg" alt-text="Sample snapshot of Health check success on GCA sign-in page.":::
 
-6. If you observe any errors, follow the suggested mitigation steps in the error message and close & re-open the GCA configuration app.
+6. If you observe any errors, follow the suggested mitigation steps in the error message and close & reopen the GCA configuration app.
 
-7. If the error message says, ""Cannot determine the health of the agent. If the error persists, contact support.", restart GcaHostService(steps mentioned in the troubleshooting section), and open the GCA configuration app again.
+7. If the error message says, "Can't determine the health of the agent. If the error persists, contact support.", restart GcaHostService(steps mentioned in the troubleshooting section), and open the GCA configuration app again.
 
-8. You can run the checks any time by closing and opening the GCA Config app or by using the "Health Check" button next to the "Edit" button in the registration details screen.
+8. You can run the checks anytime by closing and opening the GCA Config app or by using the "Health Check" button next to the "Edit" button in the registration details screen.
    :::image type="content" source="media/onprem-agent/health-check-registration.jpg" alt-text="Sample snapshot of Health check success on GCA registration page.":::
 
 ## Create and configure an app for the agent  
 
-First, sign-in and note that the minimum required privilege on the account is search administrator. The agent will then ask you to provide authentication details.
-Use the steps below to create an app and generate the required authentication details.
+First, sign-in and note that the minimum required privilege on the account is search administrator. The agent then asks you to provide authentication details.
+Use the steps to create an app and generate the required authentication details.
 
 ### Create an app
 
 1. Go to the [Azure portal](https://portal.azure.com) and sign in with admin credentials for the tenant.
 
-2. Navigate to **Azure Active Directory** -> **App registrations** from the navigation pane and select **New registration**.
+2. Navigate to **Microsoft Entra ID** -> **App registrations** from the navigation pane and select **New registration**.
 
 3. Provide a name for the app and select **Register**.
 
@@ -130,7 +130,7 @@ You can provide authentication details using a client secret or a certificate. F
 
 2. Open **App Registration** from the navigation pane and go to the appropriate App. Under **Manage**, select **Certificates and secrets**.
 
-3. Select **New Client secret** and select an expiry period for the secret. Copy the generated secret and save it because it won't be shown again.
+3. Select **New Client secret** and select an expiry period for the secret. Copy the generated secret and save it because it is not shown again.
 
 4. Use this Client secret and the application ID to configure the agent. Alphanumeric characters are accepted. You can't use blank spaces in the **Name** field of the agent.
 
@@ -144,7 +144,7 @@ There are three simple steps for using certificate-based authentication:
 
 ##### Step 1: Get a certificate
 
-You can use the script below to generate a self-signed certificate. Your organization may not allow self-signed certificates. In that case, use this information to understand the requirements and acquire a certificate according to your organization's policies.
+You can use the script to generate a self-signed certificate. Your organization may not allow self-signed certificates. In that case, use this information to understand the requirements and acquire a certificate according to your organization's policies.
 
 ```powershell
 $dnsName = "<TenantDomain like agent.onmicrosoft.com>" # Your DNS name
@@ -202,7 +202,7 @@ If there's an installation failure, check the installation logs by running: msie
 
 ### Registration failure
 
-If signing in to configure the application fails and shows the error: "Sign-in failed, please select the sign-in button to try again," even after browser authentication succeeded, then open services.msc and check if GcaHostService is running. If it doesn't start, start it manually. In Task Manager, go to Services tab, check if GcaHostService is in the running state (below screenshot in Windows 11). If not, right click and start the service.
+If signing in to configure the application fails and shows the error, "Sign-in failed, please select the sign-in button to try again," even after browser authentication succeeds, then open services.msc and check if GcaHostService is running. If it doesn't start, start it manually. In Task Manager, go to Services tab, check if GcaHostService is in the running state. If not, right click and start the service.
 
 ![Screenshot of services in Task Manager.](media/onprem-agent/GcaHostService_GcaUpdateService.png)
 
@@ -214,24 +214,24 @@ Post registration, some local settings may affect the connectivity of the agent.
 
 #### Agent is offline
 
-The agent is considered offline if it is not able to contact graph connector services. In such cases, please follow the below steps:
+The agent is considered offline if it isn't able to contact graph connector services. In such cases, follow these steps:
 
-1. Check if the agent is running - Sign-in to the machine where the agent is installed and check if it is running. In Task Manager, go to Services tab, check if GcaHostService is in the running state (below screenshot in Windows 11). If not, right click and start the service.
+1. Check if the agent is running - Sign-in to the machine where the agent is installed and check if it's running. In Task Manager, go to Services tab, check if GcaHostService is in the running state. If not, right click and start the service.
 ![Screenshot of services in Task Manager.](media/onprem-agent/GcaHostService_GcaUpdateService.png)
-2. Check if domain gcs.office.com is reachable. Follow the below steps:
+2. Check if domain gcs.office.com is reachable. Follow these steps:
     * From PowerShell, run the following command:
 
     ```powershell
     tnc gcs.office.com -Port 443
     ```
 
-    The response should contain the output “TcpTestSucceeded: True” as the screenshot below:
+    The response should contain the output “TcpTestSucceeded: True” as shown:
 
     ![Screenshot of tnc.](media/onprem-agent/tnc_gcs_1.png)
 
-    If it is false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
+    If it's false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
 
-    * If you cannot run tnc because ICMP ping is blocked in your network, run the following command:
+    * If you can't run tnc because ICMP ping is blocked in your network, run the following command:
 
     ```powershell
     wget https://gcs.office.com/v1.0/admin/AdminDataSetCrawl/healthcheck
@@ -241,26 +241,26 @@ The agent is considered offline if it is not able to contact graph connector ser
 
     ![Screenshot of wget 200.](media/onprem-agent/wget_gcs_1.png)
 
-    If it is not 200, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
-3. If the above steps have passed successfully and the agent is still offline, check the GCA logs for any network proxy issues.
-    * GcaHostService logs can be found in below location (you might need to manually navigate to this path - copy paste in file explorer may not work):
+    If it isn't 200, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
+3. If the steps have passed successfully and the agent is still offline, check the GCA logs for any network proxy issues.
+    * GcaHostService logs can be found in the given location (you might need to manually navigate to this path - copy paste in file explorer may not work):
         1. For Windows Server 2016 OS: C:\Users\GcaHostService\AppData\Local\Microsoft\GraphConnectorAgent\HostService\logs
         2. For all other supported Windows OS Version: C:\Windows\ServiceProfiles\GcaHostService\AppData\Local\Microsoft\GraphConnectorAgent\HostService\logs
     * Sort the log files in the folder in reverse order of “Modified Time” and open the latest two files.
     * Check for any error messages with following text: “No connection could be made because the target machine actively refused it.”
-        1. This indicates that there is an issue with the network settings that is preventing the GcaHostService virtual account from contacting "https://gcs.office.com" endpoint.
-        2. Please check with your network/proxy team to allow the virtual account (NT Service\GcaHostService), to send traffic to this domain.
+        1. This indicates that there's an issue with the network settings that is preventing the GcaHostService virtual account from contacting "https://gcs.office.com" endpoint.
+        2. Check with your network/proxy team to allow the virtual account (NT Service\GcaHostService), to send traffic to this domain.
         3. You can verify that the issue is resolved if the log file no longer contains these errors.
 
-4. If none of the above steps fix your issue, please contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the above-mentioned location.
+4. If none of the steps fix your issue, contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the aforementioned location.
 
 #### Agent is unreachable
 
-While setting up the connection if the agent is unreachable, you will see the below screen:
+While setting up the connection if the agent is unreachable, you see this screen:
 
 ![Screenshot of Agent unreachable](media/onprem-agent/AgentUnreachableError_AdminUX.png)
 
-Using the service bus namespace provided in the error details, follow the below steps to troubleshoot:
+Using the service bus namespace provided in the error details, follow these steps to troubleshoot:
 
 1. From PowerShell, run the following command:
 
@@ -268,37 +268,36 @@ Using the service bus namespace provided in the error details, follow the below 
     tnc <yournamespacename>.servicebus.windows.net -port 443
     ```
 
-   The response should contain the output “TcpTestSucceeded: True” as the below screenshot:
+   The response should contain the output “TcpTestSucceeded: True”:
 
    ![Screenshot of tnc 2.](media/onprem-agent/tnc_gcs_namespace.png)
 
-   If it is false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
-2. If you cannot run tnc because ICMP Ping is blocked in your network, run the following command in PowerShell:
+   If it's false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
+2. If you can't run tnc because ICMP Ping is blocked in your network, run the following command in PowerShell:
 
     ```powershell
     wget https://<yournamespacename>.servicebus.windows.net/
     ```
 
-   The output should contain “StatusCode: 200” as the below screenshot:
+   The output should contain “StatusCode: 200”:
 
    ![Screenshot of wget 2.](media/onprem-agent/wget_gcs_namespace.png)
 
-   If it is false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
-3. If none of the above steps fix your issue, please contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the above-mentioned location.
+   If it's false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
+3. If none of the steps fix your issue, contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the aforementioned location.
 
 #### Update in progress
 
-This error appears when there is an update already in progress and the error should go away after a maximum of 30 minutes.
+This error appears when there's an update already in progress and the error should go away after a maximum of 30 minutes.
 
 ![Screenshot of update in progress.](media/onprem-agent/AgentUpgradingError_AdminUX.png)
 
-If the error persists after 30 minutes, follow the steps below:
+If the error persists after 30 minutes, follow these steps:
 
-1. Check if the agent is running - Sign-in to the machine where the agent is installed and check if it is running. In Task Manager, go to Services tab, check if GcaHostService is in the running state (below screenshot in Windows 11). If not, right click and start the service.
+1. Check if the agent is running - Sign-in to the machine where the agent is installed and check if it's running. In Task Manager, go to Services tab, check if GcaHostService is in the running state. If not, right click and start the service.
 ![Screenshot of services in Task Manager 2.](media/onprem-agent/GcaHostService_GcaUpdateService.png)
-2. If the issue is still seen, contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files. Manually traverse to the location below to access the logs and share the same with the team.
-C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\GraphConnectorAgent\AgentUpdateApp\logs
+2. If the issue is still seen, contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files. Manually traverse to the location to access the logs and share the same with the team - C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\GraphConnectorAgent\AgentUpdateApp\logs
 
 ### Connection failure
 
-If the 'Test connection' action fails while creating a connection and shows the error: 'Please check username/password and the data source path', even when the provided username and password are correct, then ensure that the user account has interactive sign-in rights to the machine where the connector agent is installed. You can review the documentation about [logon policy management](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check sign in rights. Also, ensure that the data source and the agent machine are on the same network.
+If the 'Test connection' action fails while creating a connection and shows the error, 'Please check username/password and the data source path', even when the provided username and password are correct, then ensure that the user account has interactive sign-in rights to the machine where the connector agent is installed. You can review the documentation about [logon policy management](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) to check sign in rights. Also, ensure that the data source and the agent machine are on the same network.
