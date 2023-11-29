@@ -255,7 +255,7 @@ In this step, you can add or remove available properties from your ServiceNow da
 
 ![Screenshot that shows how to select properties.](media/servicenow-knowledge-connector-select-properties.png)
 
-With a ServiceNow query string, you can specify conditions for syncing articles. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only articles that are published and active. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
+With a ServiceNow query string, you can specify conditions for syncing articles. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only articles that are published and active. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/vancouver-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
 Use the preview results button to verify the sample values of the selected properties and query filter.
 
@@ -289,10 +289,10 @@ Follow the general [setup instructions](./configure-connector.md#step-9-review-c
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
 ## Limitations
-The ServiceNow Knowledge Microsoft Graph connector has the following limitations in its latest release:
-
-- *Only people with access to this data source* feature under Manage Search permissions step processes only [user criteria](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) permissions. Any other type of access permissions aren't applied in the search results.
-- User criteria with advanced scripts aren't supported in the current version. Any knowledge articles with such an access restriction are indexed with deny everyone access that is, they do not appear in search results to any user until we support them.
+>[!IMPORTANT]
+>The ServiceNow Knowledge Microsoft Graph connector has the following limitations in its latest release:
+>- *Only people with access to this data source* feature under Manage Search permissions step processes only [user criteria](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) permissions. Any other type of access permissions aren't applied in the search results.
+>- User criteria with advanced scripts aren't supported in the current version. Any knowledge articles with such an access restriction are indexed with deny everyone access that is, they do not appear in search results to any user until we support them.
 
 ## Troubleshooting
 After publishing your connection, customizing the results page, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
