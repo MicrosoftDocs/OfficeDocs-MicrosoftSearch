@@ -2,6 +2,14 @@
 
 
 
+## Week of November 27, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/29/2023 | [ServiceNow Knowledge Microsoft Graph connector](/MicrosoftSearch/servicenow-knowledge-connector) | modified |
+
+
 ## Week of November 20, 2023
 
 
