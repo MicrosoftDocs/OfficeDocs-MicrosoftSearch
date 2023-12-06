@@ -43,9 +43,7 @@ Also, for school search users, SafeSearch is set to strict by default. For more 
 
 **Manage school type**
 
-(Note: This option will only be visible if you select ‘School search’)
-
-Identify the type of educational institution to help us further tailor the search and chat experience for your users. We suggest you select the option that best aligns with your institution. Options include: 
+If you select ‘School search’ in the Microsoft 365 admin center, identify the type of educational institution you're affiliated with. This will help us further tailor the search and chat experience for your users. We suggest you select the option that best aligns with your institution. Options include: 
 
 - Higher education
 - Primary/Secondary/K-12
