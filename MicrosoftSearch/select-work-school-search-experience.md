@@ -41,6 +41,15 @@ School users can get to class and assignment answers by entering these queries i
 
 Also, for school search users, SafeSearch is set to strict by default. For more information about SafeSearch, see [Block adult content with SafeSearch](https://support.microsoft.com/topic/946059ed-992b-46a0-944a-28e8fb8f1814).
 
+**Manage school type**
+(Note: This option will only be visible if you select ‘School search’)
+
+Identify the type of educational institution to help us further tailor the search and chat experience for your users. We suggest you select the option that best aligns with your institution. Options include: 
+
+- Higher education
+- Primary/Secondary/K-12
+- Other (research institution, academic library, etc.)
+
 ### Work search
 
 The work search experience includes organizational charts and Power BI answers. They aren't available in the school search experience.
