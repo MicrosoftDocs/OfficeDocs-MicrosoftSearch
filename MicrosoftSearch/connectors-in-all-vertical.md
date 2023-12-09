@@ -49,7 +49,7 @@ Deselecting a Graph Connector source from being shown in All vertical | No | Yes
 2. To verify the setting, open the Admin Center, go to **Search & Intelligence** > **Customizations** > **Verticals** and select the **All vertical**.
 3. In the “Manage Connection results” panel, ensure that the option “Show results inline” is selected and that the connections that you want to enable for the All vertical are checked. 
 
-:::image type="content" alt-text="This screenshot shows an example of managing merged search results in the All tab." source="./media/manage-inline-connection-results.png" lightbox="./media/manage-inline-connection-results.png":::
+   :::image type="content" alt-text="This screenshot shows an example of managing merged search results in the All tab." source="./media/manage-inline-connection-results.png" lightbox="./media/manage-inline-connection-results.png":::
 
 ### Step 2: Check connection schema property settings
 
@@ -79,10 +79,10 @@ In this example, the query “Presentation templates” shows results only from 
 
 * You can contribute to ensure discovery of connector content by attributing the appropriate semantic labels for every connection. Semantic labels help the system identify shared properties (such as title, last modified datetime, created by, and more) across different connections and use these features in ranking items for a given query. 
 * You should ensure that Graph Connector search results don't interrupt the users’ habitual scanning patterns. Review the adaptive cards to help determine the appearance and experience of the results in the search result list. For example, 
-    * Add an icon to your custom result types – it makes the source of the content transparent to users. 
-    * Verify that all results are correctly indented and are vertically aligned.  
+  * Add an icon to your custom result types – it makes the source of the content transparent to users. 
+  * Verify that all results are correctly indented and are vertically aligned.  
 
-:::image type="content" alt-text="This screenshot shows an example of merged connector results in the All tab with and without icons." source="./media/results-with-without-icon.png" lightbox="./media/results-with-without-icon.png":::
+  :::image type="content" alt-text="This screenshot shows an example of merged connector results in the All tab with and without icons." source="./media/results-with-without-icon.png" lightbox="./media/results-with-without-icon.png":::
 
 ## Default setting
 
