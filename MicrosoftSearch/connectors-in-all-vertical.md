@@ -49,7 +49,7 @@ Deselecting a Graph Connector source from being shown in All vertical | No | Yes
 2. To verify the setting, open the Admin Center, go to **Search & Intelligence** > **Customizations** > **Verticals** and select the **All vertical**.
 3. In the **Manage Connection results** panel, ensure that the option **Show results inline** is selected and that the connections that you want to enable for the All vertical are checked. 
 
-   :::image type="content" alt-text="This screenshot shows an example of managing merged search results in the All tab." source="./media/manage-inline-connection-results.png" lightbox="./media/manage-inline-connection-results.png":::
+   :::image type="content" alt-text="This screenshot shows an example of managing merged search results in the All tab." source="./media/manage-inline-connection-results.png":::
 
 ### Step 2: Check connection schema property settings
 
