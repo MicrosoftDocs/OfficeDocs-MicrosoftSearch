@@ -22,7 +22,7 @@ Results in a result cluster are grouped together based on the search vertical co
 
 In this example, you can see how Graph Connectors have merged results from Confluence and ServiceNow data sources inline with SharePoint results:  
 
-![This screenshot shows an example of merged search results in the All tab.](./media/merged-results-example.png)
+:::image type="content" alt-text="This screenshot shows an example of merged search results in the All tab." source="./media/merged-results-example.png" lightbox="./media/merged-results-example.png":::
 
 Inline merging allows users to find relevant content in the search results page from all relevant sources. Graph Connector results are seamlessly integrated into the search page and are ranked by their relevance to the search query. See the table below for a comparison of Graph Connectors in Result cluster versus Inline mode. 
 
@@ -49,7 +49,7 @@ Deselecting a Graph Connector source from being shown in All vertical | No | Yes
 2. To verify the setting, open the Admin Center, go to **Search & Intelligence** > **Customizations** > **Verticals** and select the **All vertical**.
 3. In the “Manage Connection results” panel, ensure that the option “Show results inline” is selected and that the connections that you want to enable for the All vertical are checked. 
 
-![This screenshot shows an example of managing merged search results in the All tab.](./media/manage-inline-connection-results.png)
+:::image type="content" alt-text="This screenshot shows an example of managing merged search results in the All tab." source="./media/manage-inline-connection-results.png" lightbox="./media/manage-inline-connection-results.png":::
 
 ### Step 2: Check connection schema property settings
 
@@ -65,15 +65,15 @@ As a result, a user may see none or many connector results based on the AI model
 
 In this example, the query “Sahara project” shows results from Confluence, SharePoint, and ServiceNow to the user, as there are relevant items with matching titles from these sources: 
 
-![This screenshot shows an example of confluence and servicenow merged search results in the All tab.](./media/confluence-and-snow-match.png)
+:::image type="content" alt-text="This screenshot shows an example of confluence and servicenow merged search results in the All tab." source="./media/confluence-and-snow-match.png" lightbox="./media/confluence-and-snow-match.png":::
 
 In this example, the query “Change security settings” shows results only from Confluence to the user, as there are relevant matching items only in that source: 
 
-![This screenshot shows an example of confluence merged search results in the All tab.](./media/all-tab-confluence-results.png)
+:::image type="content" alt-text="This screenshot shows an example of confluence merged search results in the All tab." source="./media/all-tab-confluence-results.png" lightbox="./media/all-tab-confluence-results.png":::
 
 In this example, the query “Presentation templates” shows results only from SharePoint, as there are no relevant matching items from any connector data source: 
 
-![This screenshot shows an example of no merged connector results in the All tab.](./media/all-tab-no-connector-results.png)
+:::image type="content" alt-text="This screenshot shows an example of no merged connector results in the All tab." source="./media/all-tab-no-connector-results.png" lightbox="./media/all-tab-no-connector-results.png":::
 
 ## Recommendations
 
@@ -82,7 +82,7 @@ In this example, the query “Presentation templates” shows results only from 
     * Add an icon to your custom result types – it makes the source of the content transparent to users. 
     * Verify that all results are correctly indented and are vertically aligned.  
 
-![This screenshot shows an example of merged connector results in the All tab with and without icons.](./media/results-with-without-icon.png)
+:::image type="content" alt-text="This screenshot shows an example of merged connector results in the All tab with and without icons." source="./media/results-with-without-icon.png" lightbox="./media/results-with-without-icon.png":::
 
 ## Default setting
 
