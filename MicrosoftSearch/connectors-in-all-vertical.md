@@ -12,7 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Details of the Connectors Result Cluster experience"
+description: "Describes viewing Graph Connector results in All vertical."
 ---
 # Manage connector results in All vertical
 
