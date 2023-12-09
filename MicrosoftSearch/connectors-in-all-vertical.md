@@ -39,7 +39,7 @@ Deselecting a Graph Connector source from being shown in All vertical | No | Yes
 ## Limitations
 
 * Connector inline results experience isn't available at SharePoint site search scope.
-* The admin setting for Manage connection results can only be used to enable/disable Search Admin added connections. Microsoft-managed sources (such as Power BI and Viva Learning) can't be disabled from here and are included by default in Search. Only Fabric administrators can turn off Power BI from Search [(Learn more here)](/fabric/admin/admin-share-power-bi-metadata-microsoft-365-services#how-to-turn-sharing-with-microsoft-365-services-on-and-off).
+* The admin setting for Manage connection results can only be used to enable/disable Search Admin added connections. Microsoft-managed sources (such as Power BI and Viva Learning) can't be disabled from here and are included by default in Search. Only Fabric administrators can turn off Power BI from Search. For more information, see [How to turn sharing with Microsoft 365 services on and off](/fabric/admin/admin-share-power-bi-metadata-microsoft-365-services#how-to-turn-sharing-with-microsoft-365-services-on-and-off).
 * All vertical KQLs don't apply to Connector content. Example: The All-tab KQL "FIleType:xlsx" can be used to filter out Excel files from SharePoint and OneDrive, but won't apply to content indexed using Graph Connectors.
 
 ## How to view Graph Connector results in All vertical 
