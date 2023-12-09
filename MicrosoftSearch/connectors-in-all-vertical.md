@@ -17,6 +17,7 @@ description: "Describes viewing Graph Connector results in All vertical."
 # Manage connector results in All vertical
 
 When you use Graph Connectors to add data sources, your users are able to search for them in the All vertical by default. They can see the results from Graph Connector data sources merged inline with all the other results from Microsoft apps (for example, SharePoint, OneDrive for Business, or Power BI) in SharePoint, Office.com, and Microsoft Search in Bing. 
+
 Results in a result cluster are grouped together based on the search vertical configuration. Each result cluster only contains results from a single custom search vertical. To ensure discovery of content in a result cluster, the system expects meaningful titles on your items.
 
 In this example, you can see how Graph Connectors have merged results from Confluence and ServiceNow data sources inline with SharePoint results:  
