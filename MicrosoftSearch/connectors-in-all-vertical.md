@@ -16,7 +16,7 @@ description: "Details of the Connectors Result Cluster experience"
 ---
 # Manage connector results in All vertical
 
-When you use Graph Connectors to add data sources, your users will be able to search for them in the All vertical by default. They can see the results from Graph Connector data sources merged inline with all the other results from Microsoft apps (for example, SharePoint, OneDrive for Business, or Power BI) in SharePoint, Office.com, and Microsoft Search in Bing. 
+When you use Graph Connectors to add data sources, your users are able to search for them in the All vertical by default. They can see the results from Graph Connector data sources merged inline with all the other results from Microsoft apps (for example, SharePoint, OneDrive for Business, or Power BI) in SharePoint, Office.com, and Microsoft Search in Bing. 
 Results in a result cluster are grouped together based on the search vertical configuration. Each result cluster only contains results from a single custom search vertical. To ensure discovery of content in a result cluster, the system expects meaningful titles on your items.
 
 In this example, you can see how Graph Connectors have merged results from Confluence and ServiceNow data sources inline with SharePoint results:  
@@ -37,9 +37,9 @@ Deselecting a Graph Connector source from being shown in All vertical | No | Yes
 
 ## Limitations
 
-* Connector inline results experience is not available at SharePoint site search scope.
-* The admin setting for Manage connection results can only be used to enable/disable Search Admin added connections. Microsoft-managed sources (such as Power BI and Viva Learning) cannot be disabled from here and are included by default in Search. Only Fabric administrators can turn off Power BI from Search [(Learn more here)](https://learn.microsoft.com/en-us/fabric/admin/admin-share-power-bi-metadata-microsoft-365-services#how-to-turn-sharing-with-microsoft-365-services-on-and-off).
-* All vertical KQLs do not apply to Connector content. Example: The All-tab KQL "FIleType:xlsx" can be used to filter out Excel files from SharePoint and OneDrive, but will not apply to content indexed using Graph Connectors.
+* Connector inline results experience isn't available at SharePoint site search scope.
+* The admin setting for Manage connection results can only be used to enable/disable Search Admin added connections. Microsoft-managed sources (such as Power BI and Viva Learning) can't be disabled from here and are included by default in Search. Only Fabric administrators can turn off Power BI from Search [(Learn more here)](https://learn.microsoft.com/en-us/fabric/admin/admin-share-power-bi-metadata-microsoft-365-services#how-to-turn-sharing-with-microsoft-365-services-on-and-off).
+* All vertical KQLs don't apply to Connector content. Example: The All-tab KQL "FIleType:xlsx" can be used to filter out Excel files from SharePoint and OneDrive, but won't apply to content indexed using Graph Connectors.
 
 ## How to view Graph Connector results in All vertical 
 
@@ -54,11 +54,11 @@ Deselecting a Graph Connector source from being shown in All vertical | No | Yes
 
 Ensure that the connected content meets the following criteria, to show up in All vertical: 
 * One of the source properties must be mapped to the semantic label “title”. 
-* We recommend assigning a property label of 'lastModifiedDateTime' for this connection where applicable. This will ensure that you're able to filter the content for this connection with the 'Last Modified' filter in the All vertical. 
+* We recommend assigning a property label of 'lastModifiedDateTime' for this connection where applicable. This ensures that you're able to filter the content for this connection with the 'Last Modified' filter in the All vertical. 
 
 ## How it works
 
-When a user issues a search query, the system returns items from all data sources that are enabled for the All vertical. The system ranks and merges these items to return a single list of relevance-ordered results, which are shown to the user in a paginated list. Please note that inline results are powered by an AI model, that is non-deterministic. This means, the AI model will pay attention to the user query, previous interactions of users in a company with a specific source, and many more features to decide which results are most relevant for the query. The model will be continuously adapted and adjusted based on user interactions, for example, by selecting specific results. 
+When a user issues a search query, the system returns items from all data sources that are enabled for the All vertical. The system ranks and merges these items to return a single list of relevance-ordered results, which are shown to the user in a paginated list. Note that inline results are powered by an AI model, that is non-deterministic. This means, the AI model pays attention to the user query, previous interactions of users in a company with a specific source, and many more features to decide which results are most relevant for the query. The model is continuously adapted based on user interactions, for example, by selecting specific results. 
 
 As a result, a user may see none or many connector results based on the AI models assessment of whether specific items are relevant for each individual query term. 
 
@@ -77,7 +77,7 @@ In this example, the query “Presentation templates” shows results only from 
 ## Recommendations
 
 * You can contribute to ensure discovery of connector content by attributing the appropriate semantic labels for every connection. Semantic labels help the system identify shared properties (such as title, last modified datetime, created by, and more) across different connections and use these features in ranking items for a given query. 
-* You should ensure that Graph Connector search results do not interrupt the users’ habitual scanning patterns. Review the adaptive cards to help determine the appearance and experience of the results in the search result list. For example, 
+* You should ensure that Graph Connector search results don't interrupt the users’ habitual scanning patterns. Review the adaptive cards to help determine the appearance and experience of the results in the search result list. For example, 
     * Add an icon to your custom result types – it makes the source of the content transparent to users. 
     * Verify that all results are correctly indented and are vertically aligned.  
 
