@@ -47,7 +47,7 @@ Deselecting a Graph Connector source from being shown in All vertical | No | Yes
 ### Step 1: Check All vertical setting
 1. Inline results for Graph Connector data sources are enabled by default.  
 2. To verify the setting, open the Admin Center, go to **Search & Intelligence** > **Customizations** > **Verticals** and select the **All vertical**.
-3. In the “Manage Connection results” panel, ensure that the option “Show results inline” is selected and that the connections that you want to enable for the All vertical are checked. 
+3. In the **Manage Connection results** panel, ensure that the option **Show results inline** is selected and that the connections that you want to enable for the All vertical are checked. 
 
    :::image type="content" alt-text="This screenshot shows an example of managing merged search results in the All tab." source="./media/manage-inline-connection-results.png" lightbox="./media/manage-inline-connection-results.png":::
 
@@ -91,9 +91,9 @@ Inline results for Graph Connector content in All vertical is turned on by defau
 If you would like to continue using the previous result cluster experience, follow these steps at the organization level: 
 
 1. In the Microsoft 365 admin center, go to Verticals. 
-2. Select the All vertical, then in the “Manage connection results” panel, select “Show results in a cluster.” 
+2. Select the All vertical, then in the **Manage connection results** panel, select **Show results in a cluster**.
 
 If you would like to disable connector results from All vertical completely, follow these steps at the organization level: 
 
 1. In the Microsoft 365 admin center, go to Verticals. 
-2. Select the All vertical, then in the “Manage connection results” panel, turn the “Include connector results” toggle off. 
+2. Select the All vertical, then in the **Manage connection results** panel, turn the **Include connector results** toggle off. 
