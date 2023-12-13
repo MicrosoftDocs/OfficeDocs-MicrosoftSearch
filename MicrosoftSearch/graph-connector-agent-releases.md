@@ -20,6 +20,12 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
+## Version 2.3.0.0 (*December 12, 2023*)
+
+* Configurable payload size for File share connector to reduce ingestion failures
+* ID Sync framework improvements to resolve crawl errors
+* Bug fixes and reliability improvements
+
 ## Version 2.2.8.0 (*November 18, 2023*)
 
 * Bug fixes and reliability improvements
