@@ -59,7 +59,7 @@ To create a **connection** to a data source, admins need authenticated access to
 
 ## What data sources can be connected to Microsoft Search?
 
-Microsoft provides nine Microsoft Graph connectors, and our ecosystem partners have created over 100 more connectors. You can also build your own connector.
+Microsoft provides 16 Microsoft Graph connectors, and our ecosystem partners have created over 100 more connectors. You can also build your own connector.
 
 ### Microsoft Graph connectors by Microsoft
 
