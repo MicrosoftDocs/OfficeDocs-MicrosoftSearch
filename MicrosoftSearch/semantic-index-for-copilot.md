@@ -16,7 +16,7 @@ description: "Learn about Semantic Index for Copilot."
 
 # Semantic Index for Copilot
 
-The semantic index brings a whole new world of understanding to your data in Microsoft 365. Through enhanced interactions with your individual and company data via the Microsoft Graph, and the creation of a new index, the semantic index is an improvement to Microsoft 365 search that lays the foundation for the next generation of Search and Copilot experiences. The semantic index respects security and policies in the Microsoft Graph so that when a user issues a query either directly via search or in Microsoft 365 chat via Copilot, it's always in the security context of the user, and only content that a user has access to is returned. This article reviews the initial set of features that form the semantic index and explains how it brings your data to life.
+The semantic index brings a whole new world of understanding to your data in Microsoft 365. Through enhanced interactions with your individual and company data via the Microsoft Graph, and the creation of a new index, the semantic index is an improvement to Microsoft 365 search that lays the foundation for the next generation of Search and Copilot experiences. The semantic index respects security and policies in the Microsoft Graph so that when a user issues a query either directly via search or in Microsoft 365 chat via Copilot, it's always in the security context of the user, and only content that a user has access to is returned. This article reviews the initial set of features that form the semantic index and explains how it brings your data to life. To learn more, check out this video: [Semantic Index for Copilot: Explained by Microsoft](https://www.youtube.com/watch?v=KtsVRCsdvoU).
 
 ## Overview
 
