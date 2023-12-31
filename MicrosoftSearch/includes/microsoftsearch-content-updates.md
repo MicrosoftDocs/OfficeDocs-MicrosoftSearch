@@ -2,6 +2,16 @@
 
 
 
+## Week of December 25, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/30/2023 | [Microsoft SQL server and Azure SQL connector for Microsoft Search](/MicrosoftSearch/mssql-connector) | modified |
+| 12/30/2023 | [Oracle SQL connector for Microsoft Search](/MicrosoftSearch/oraclesql-connector) | added |
+| 12/30/2023 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | added |
+
+
 ## Week of December 11, 2023
 
 
@@ -18,20 +28,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 11/29/2023 | [ServiceNow Knowledge Microsoft Graph connector](/MicrosoftSearch/servicenow-knowledge-connector) | modified |
-
-
-## Week of November 20, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/20/2023 | [ServiceNow Knowledge Microsoft Graph connector](/MicrosoftSearch/servicenow-knowledge-connector) | modified |
-| 11/21/2023 | [Confluence Cloud Microsoft Graph connector](/MicrosoftSearch/confluence-cloud-connector) | modified |
-
-
-## Week of November 13, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/17/2023 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
