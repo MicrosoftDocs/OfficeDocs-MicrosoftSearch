@@ -20,7 +20,7 @@ The semantic index brings a whole new world of understanding to your data in Mic
 
 ## Overview
 
-The semantic index sits on top of the Microsoft Graph, which interprets user queries to produce sophisticated, meaningful, and multilingual responses that help you to be more productive. It allows organizations with Microsoft 365 Copilot, Microsoft 365 Business Standard, Business Premium, E3 and E5 to search through billions of vectors (mathematical representations of features or attributes) and return related results. Combined with enhancements across the Microsoft Graph, the semantic index connects you with relevant and actionable information in your organization and is built on Microsoft’s comprehensive approach to [security, compliance, privacy](/microsoft-365-copilot/microsoft-365-copilot-privacy), and respects all organizational boundaries within your tenant.
+The semantic index sits on top of the Microsoft Graph, which interprets user queries to produce sophisticated, meaningful, and multilingual responses that help you to be more productive. It allows organizations to search through billions of vectors (mathematical representations of features or attributes) and return related results. Combined with enhancements across the Microsoft Graph, the semantic index connects you with relevant and actionable information in your organization and is built on Microsoft’s comprehensive approach to [security, compliance, privacy](/microsoft-365-copilot/microsoft-365-copilot-privacy), and respects all organizational boundaries within your tenant.
 
 ## What is an Index?
 
@@ -42,7 +42,7 @@ The following semantic index features do more than enhance search results; they 
 
 :::image type="content" source="media/semantic-index-microsoft-365-chat.png" alt-text="Graphic showing the relationship between Microsoft 365 Chat and Microsoft Search." lightbox="media/semantic-index-microsoft-365-chat.png":::
 
-Microsoft 365 Copilot and Microsoft 365 E3, E5, Business Standard, and Business Premium customers will receive the features as part of a phased rollout, with status updates shared via the [Microsoft 365 admin center](https://admin.microsoft.com/) and [Microsoft 365 public roadmap](https://www.microsoft.com/microsoft-365/roadmap). A breakdown of each feature when searching for information is included below.
+Microsoft 365 Copilot and Microsoft 365 E3, E5, A3, A5, Business Standard, and Business Premium customers will receive the features as part of a phased rollout, with status updates shared via the [Microsoft 365 admin center](https://admin.microsoft.com/) and [Microsoft 365 public roadmap](https://www.microsoft.com/microsoft-365/roadmap). A breakdown of each feature when searching for information is included below.
 
 ### Microsoft 365 Chat
 
@@ -168,7 +168,7 @@ Organizations have long been able to take action to reduce oversharing in Micros
 
 - **Right size user access to data to reduce the list** – reduce oversharing by inheriting exclusion lists for SharePoint Online sites and performing access control checks in real time that is present in the semantic index. Organizations can consider using the [Syntex SharePoint Advanced Management add-on](/sharepoint/advanced-management) to manage and govern these permissions.
 
-- **Use sensitivity labels** - Another way is to label the data with [Microsoft Purview Information Protection](/purview/information-protection) sensitivity labels, available with Microsoft 365 Business Premium and Microsoft 365 E3 and E5. Labels that apply encryption use usage rights to provide an extra layer of protection, and these are also included in search trimming (that is, supported for filtering and application side rules used for visual marking and access restrictions).
+- **Use sensitivity labels** - Another way is to label the data with [Microsoft Purview Information Protection](/purview/information-protection) sensitivity labels. Labels that apply encryption use usage rights to provide an extra layer of protection, and these are also included in search trimming (that is, supported for filtering and application side rules used for visual marking and access restrictions).
 
 - **Limit access** – [Microsoft Purview Data Loss Prevention](/purview/dlp-learn-about-dlp) is available in Microsoft 365 E5 and could be used to retroactively and temporarily limit access to documents that have been reported as overshared. If you're not a Microsoft 365 E5 customer, organizations can use the 90-day Microsoft Purview solutions trial to explore how additional Purview capabilities can help your organization manage data security and compliance needs.
 
