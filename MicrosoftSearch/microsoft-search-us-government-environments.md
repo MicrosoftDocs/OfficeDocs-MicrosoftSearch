@@ -57,6 +57,7 @@ The following table outlines whether specified Microsoft Search features are ava
 | Topics | Yes | Yes | No | No  |
 | Power BI | Yes | No | No | No  |
 | Dynamics 365 | Yes | No | No | No  |
+| Video Vertical | Yes | Yes | Yes | Yes  |
 | **Data sources** | | | | |
 | Graph Connectors | Yes | No (October 2022) | No | No  |
 | Federation Connectors | Yes | Yes | No | No  |
