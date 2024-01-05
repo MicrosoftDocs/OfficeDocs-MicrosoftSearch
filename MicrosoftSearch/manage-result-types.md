@@ -2,7 +2,7 @@
 title: "Manage result types"
 ms.author: jypal
 author: jypal6
-manager: jeffkizn
+manager: bstucker
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -37,10 +37,10 @@ Each result type has a priority that determines the order of match evaluation. I
 
 ## Create or update result types
 
-The result type management experience is wizard driven, you're guided through steps to define the name, content source, rules, and layout. Result types can be customized at both the organization-level and SharePoint site level.
+The result type management experience is wizard driven, you're guided through steps to define the name, content source, rules, and layout. Result types can be customized at both the organization-level and SharePoint site level. A result types created at SharePoint site honors the search scope defined for site. If the search scope in a SharePoint site has been changed to hub or Organization scope, the result type created at respective hub or Organization scope will be applied to search results.
 
 > [!NOTE]
-> Result types for "SharePoint and OneDrive" content source is available in Targeted release ring at Site level for SharePoint canvas only. 
+> Result types for "SharePoint and OneDrive" content source is available in Microsoft Search in SharePoint home, sites and Office.com. The feature will be available in Microsoft Search in Bing soon. 
 
 ### Manage organization-level result types
 
@@ -62,7 +62,6 @@ The result type management experience is wizard driven, you're guided through st
 
 1. Custom SharePoint managed properties can't be used in the ‘Rules’ section of result type  
 2. Result types created for "SharePoint and OneDrive" content source doesn't apply to search results on Microsoft Search in Bing canvases. 
-3. If the search scope in a SharePoint site has been changed to hub or Organization scope, the result type created at site level will be applied to search results instead of honoring the result types at hub or Organization scope. In such cases, don't create site level result types to ensure search experience consistency with the change in scope. 
 
 ## Troubleshooting
 

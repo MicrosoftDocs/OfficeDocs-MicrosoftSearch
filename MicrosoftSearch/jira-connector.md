@@ -43,6 +43,9 @@ You'll need the following permissions granted to the user account whose credenti
 | Administer Jira | [Global permission](https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/) | ACL trimming of search results. This permission is **optional** and is required to select `Only people with access to this data source` option in step 4 below. |
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
+
+[Add Jira connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Jira&type=Jira)
+
 Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 2: Name the connection
@@ -129,15 +132,15 @@ The Atlassian Jira connector can index both default issue fields and custom crea
 
 The Atlassian Jira connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them. In Atlassian Jira, security permissions are defined using project permission schemes containing site-level groups and project roles. Issue level security can also be defined using issue-level permission schemes.
 
-If you choose **Only people with access to this data source**, you need to further choose whether your Jira site has Azure Active Directory (Azure AD) provisioned users or Non-Azure AD users.
+If you choose **Only people with access to this data source**, you need to further choose whether your Jira site has Microsoft Entra ID provisioned users or Non-Azure AD users.
 
 To identify which option is suitable for your organization:
 
-1. Choose the **Azure AD** option if the Email ID of Jira users is the **same** as the UserPrincipalName (UPN) of users in Azure AD.
-2. Choose the **Non-Azure AD** option if the email ID of Jira users is **different** from the UserPrincipalName (UPN) of users in Azure AD.
+1. Choose the **Microsoft Entra ID** option if the Email ID of Jira users is the **same** as the UserPrincipalName (UPN) of users in Microsoft Entra ID.
+2. Choose the **Non-Azure AD** option if the email ID of Jira users is **different** from the UserPrincipalName (UPN) of users in Microsoft Entra ID.
 
 >[!NOTE]
-> * If you choose Azure AD as the type of identity source, the connector maps the Email IDs of users obtained from Jira directly to UPN property from Azure AD.
+> * If you choose Microsoft Entra ID as the type of identity source, the connector maps the Email IDs of users obtained from Jira directly to UPN property from Microsoft Entra ID.
 > * If you chose "Non-Azure AD" for the identity type see [Map your non-Azure AD Identities](map-non-Azure AD.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
 
 ## Step 5: Assign property labels

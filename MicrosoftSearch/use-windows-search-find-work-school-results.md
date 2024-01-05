@@ -1,6 +1,6 @@
 ---
 title: "Use Windows Search to find work or school results"
-ms.author: dawholl
+ms.author: davidedwards
 author: dawholl
 manager: kellis
 ms.audience: Admin
@@ -41,7 +41,7 @@ To provide work or school results in Windows Search, a few requirements must be 
 - Microsoft Search in Bing is turned on for your organization
 - Web search in Windows is enabled
 - Cloud Content enabled for work or school account
-- Windows Search connected to work or school account (Azure AD)
+- Windows Search connected to work or school account (Microsoft Entra ID)
 - Customize your logo (optional)
 
 ### Turn on Microsoft Search in Bing
@@ -74,7 +74,9 @@ You can use group policy and registry keys to validate if Cloud content search p
 - Group policy path and setting: ```Computer Configuration/Administrative Templates/Windows Components/Search/Allow Cloud Search``` This policy should be set to Enabled. Learn more about [Allow Cloud Search MDM policy CSP](/windows/client-management/mdm/policy-csp-search#search-allowcloudsearch).
 - Registry key paths and settings: ```HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SearchSettings\IsAADCloudSearchEnabled``` and ```HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows SearchAllowCloudSearch``` Both registry key values should be 1.
 
-### Connect work or school account (Azure AD) to Windows Search
+<a name='connect-work-or-school-account-azure-ad-to-windows-search'></a>
+
+### Connect work or school account (Microsoft Entra ID) to Windows Search
 
 To verify a user's identity and determine the information and files they can access, Microsoft Search uses their work or school account. Your users can follow these steps to connect Windows Search with their work or school account:
 

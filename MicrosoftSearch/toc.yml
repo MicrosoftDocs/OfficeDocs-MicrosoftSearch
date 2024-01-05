@@ -16,10 +16,10 @@ items:
   - name: Search usage reports 
     href: usage-reports.md
     items:
-    - name: Query reports
-      href: queries-usage-reports.md
     - name: User reports
       href: users-search-reports.md
+    - name: Query reports
+      href: queries-usage-reports.md
     - name: Answer analytics reports
       href: answer-analytics-usage-reports.md
     - name: Connection analytics reports
@@ -56,6 +56,8 @@ items:
       items:
       - name: Setup overview
         href: configure-connector.md
+      - name: Add Staged rollout to connectors
+        href: staged-rollout-for-graph-connectors.md
       - name: On-prem connectors
         items:
         - name: Connector agent setup
@@ -64,7 +66,7 @@ items:
           href: graph-connector-agent-releases.md
       - name: Map non-Azure AD Identities
         href: map-non-aad.md
-      - name: Map Azure AD Identities
+      - name: Map Microsoft Entra identities
         href: map-aad.md
       - name: Connector-specific information
         items:
@@ -116,8 +118,10 @@ items:
     items:
     - name: Dataverse and Dynamics 365
       href: manage-dynamics365.md
-    - name: Azure Cognitive Search
-      href: manage-azure-cognitive-search.md      
+  - name: Semantic Index
+    items:
+    - name: Semantic Index for Copilot
+      href: semantic-index-for-copilot.md
 - name: Customize and configure
   items:
   - name: Manage verticals

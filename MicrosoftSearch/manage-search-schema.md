@@ -107,7 +107,7 @@ A semantic label is a well-known tag published by Microsoft that you can add aga
 Semantic labels provide a domain-independent approach to assigning properties from different content domains to a set of well-known classes. They find applications in many different content experiences, and provide automated support for tasks such as:
 
 * Data integration in heterogenous experiences
-* Building common knowledge graphs (for example, Viva Topics)
+* Building common knowledge graphs (for example, Topics)
 * Default templates for user experiences
 
 Labels provide semantic meaning, and let you integrate your connector data into Microsoft 365 experiences.  

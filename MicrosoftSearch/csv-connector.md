@@ -37,7 +37,7 @@ Verify the .csv files you want to index have been uploaded to a SharePoint docum
 
 #### Create a SharePoint app
 
-1. Go to  `https://Org-Name.sharepoint.com/sites/mysite/_layouts/15/appregnew.asp`.
+1. Go to  `https://Org-Name.sharepoint.com/sites/mysite/_layouts/15/appregnew.aspx`.
 2. On the Client Id and Client Secret fields, select **Generate**.
 1. For Title, enter an app name.
 1. In the App Domain field, enter `www.gcs.com`.
@@ -47,7 +47,7 @@ Verify the .csv files you want to index have been uploaded to a SharePoint docum
 
 #### Enable app permissions to allow CustomAppAuthentication
 
-In PowerShell, run these commands in administrative mode. Use the email address of the admin configuring the connector and your organization name. When the password pop-up appears, the admin should enter their password.
+In PowerShell ([SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)), run these commands in administrative mode. Use the email address of the admin configuring the connector and your organization name. When the password pop-up appears, the admin should enter their password.
 
 ```powershell
 Install-Module -Name Microsoft.Online.SharePoint.PowerShell
@@ -86,6 +86,8 @@ When you set up the CSV connector, you'll need to provide a primary storage conn
 
 ## Step 1: Add a Graph connector in the Microsoft 365 admin center
 
+[Add CSV connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_CSV&type=CSV)
+
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
@@ -106,6 +108,9 @@ instructions.-->
 
 The data source settings are different for SharePoint and ADLS.
 
+> [!NOTE]
+> Ensure that your csv file does not have any formatting or spaces (‘ ‘) present in header rows.
+
 ### For a SharePoint source
 
 1. In the Data Source settings, select **SharePoint** as your datasource.
@@ -117,7 +122,7 @@ The data source settings are different for SharePoint and ADLS.
 
 :::image type="content" source="media/csv-connector/csv-connector-data-source-settings.png" alt-text="CSV connector with Data Source Settings for a SharePoint site." lightbox="media/csv-connector/csv-connector-data-source-settings.png":::
 
-To control access on a file level, enter Azure AD users or groups.
+To control access on a file level, enter Microsoft Entra users or groups.
 
 :::image type="content" source="media/csv-connector/csv-connector-acl.png" alt-text="Access control list with user and group included." lightbox="media/csv-connector/csv-connector-acl.png":::
 
@@ -133,7 +138,7 @@ To control access on a file level, enter Azure AD users or groups.
 > [!NOTE]
 > If your datasource contains multiple .csv files with the same headers, select **include all CSV files in location**.
 
-To control access on a file level, enter Azure AD users or groups.
+To control access on a file level, enter Microsoft Entra users or groups.
 
 :::image type="content" source="media/csv-connector/csv-connector-acl.png" alt-text="Access control list with user and group included." lightbox="media/csv-connector/csv-connector-acl.png":::
 
@@ -145,7 +150,7 @@ If your source columns can take multiple values, enter a multi-items delimiter, 
 
 This page returns the first row from your .csv file as Source Properties. To modify the Datatype, in the **Unique Identifier** list select at least one option.
 
-To control access on an item level, select columns mapped to Allowed Users and Allowed Groups. You should include two columns, AllowedUsers and AllowedGroups, in the .csv file. Each row should contain the Azure AD IDs.
+To control access on an item level, select columns mapped to Allowed Users and Allowed Groups. You should include two columns, AllowedUsers and AllowedGroups, in the .csv file. Each row should contain the Microsoft Entra IDs.
 
 :::image type="content" source="media/csv-connector/csv-connector-acl-item-level.png" alt-text="Item level access control settings." lightbox="media/csv-connector/csv-connector-acl-item-level.png":::
 

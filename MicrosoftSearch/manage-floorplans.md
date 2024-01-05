@@ -67,7 +67,7 @@ As a best practice, DWG text labels should contain floor numbers, wing numbers (
 
 A user's office location is a combination of a building code and a room label. For example, if the building code is *2* and the room label is *1173*, the office location would be *2/1173*.
 
-Add or update office locations for users with an assigned work location. You can do this from their user profile in the [Microsoft 365](https://admin.microsoft.com) or [Azure Active Directory](https://portal.azure.com/) admin centers, or your on-premises Active Directory (will sync to Azure Active Directory). *PhysicalDeliveryOfficeName* is the field used for office location. If your room labels don't include floor numbers, see the [FAQs](#frequently-asked-questions) for tips.
+Add or update office locations for users with an assigned work location. You can do this from their user profile in the [Microsoft 365](https://admin.microsoft.com) or [Microsoft Entra ID](https://portal.azure.com/) admin centers, or your on-premises Active Directory (will sync to Microsoft Entra ID). *PhysicalDeliveryOfficeName* is the field used for office location. If your room labels don't include floor numbers, see the [FAQs](#frequently-asked-questions) for tips.
 
 In this example, Allan's office is in room 1173 on floor 1 of building 2.
 
@@ -132,7 +132,7 @@ In [admin center](https://admin.microsoft.com), go to [**Floor plans**](https://
 
 ### Step 8: (Optional) Specify location patterns
 
-When a floor plan is uploaded, the DWG text labels are compared to the office locations in your users' profiles. If the office locations or text labels don't consistently follow the recommended naming patterns in [Step 2](#step-2-review-your-floor-plans) and [Step 3](#step-3-update-office-locations-on-user-profiles), use the **Specify location patterns** screen to add more information to complete the mapping. Location patterns are used to extract floor, wing, and room information from Azure AD office locations.
+When a floor plan is uploaded, the DWG text labels are compared to the office locations in your users' profiles. If the office locations or text labels don't consistently follow the recommended naming patterns in [Step 2](#step-2-review-your-floor-plans) and [Step 3](#step-3-update-office-locations-on-user-profiles), use the **Specify location patterns** screen to add more information to complete the mapping. Location patterns are used to extract floor, wing, and room information from Microsoft Entra office locations.
 
 > [!div class="mx-imgBorder"]
 > ![Specify locations patterns screenshot.](media/floor-plans/floorplans-locationpattern.png)
@@ -141,14 +141,14 @@ Floor and wing are optional, only room is required, and you can skip locations a
 
 ## Update floor plans
 
-Before you update an existing floor plan, make sure your Azure AD office locations are current and you've waited for 48 hours for any Azure AD updates to process. To update a floor plan, go to Floor plans, select the building for the floor plan, and select **Edit**. If the floor plan has changed structurally, because of remodeling for example, remove the old file, then upload and publish the new DWG file.
+Before you update an existing floor plan, make sure your Microsoft Entra office locations are current and you've waited for 48 hours for any Microsoft Entra ID updates to process. To update a floor plan, go to Floor plans, select the building for the floor plan, and select **Edit**. If the floor plan has changed structurally, because of remodeling for example, remove the old file, then upload and publish the new DWG file.
 
 > [!NOTE]
 > You don't need to update floor plans when users move to a floor that's already been mapped. Just update their user profile to reflect the new office location:
 >
 > - In the Microsoft 365 admin center (Active users > Account > Manage contact information)
 > - In the Azure Active Director admin center (Users > Profile > Edit contact info)
-> - In your on-prem Active Directory (will sync to Azure Active Directory)
+> - In your on-prem Active Directory (will sync to Microsoft Entra ID)
 
 ## Delete floor plans
 
@@ -163,7 +163,7 @@ To delete a single floor plan, go to [Floor plans](https://admin.microsoft.com/A
 |Upload floor plans|No data found.|Error|Check your file to make sure it's the correct one and then upload it again or delete it.|
 |Upload floor plans|External references are missing in this file. Either upload CC_1_furniture.dwg or delete this file.|Warning|Upload external reference files or delete.|
 |Upload floor plans|Could not read room numbers or tags in the DWG file. Please delete this file.|Warning|Check your DWG file to make sure the data is included and then delete the file and try again.|
-|Link office locations|No office locations found in Azure Active Directory. Add location data to Azure Active Directory before setting up floor plans.|Error|[Update office locations on user profiles](#step-3-update-office-locations-on-user-profiles) |
+|Link office locations|No office locations found in Microsoft Entra ID. Add location data to Microsoft Entra ID before setting up floor plans.|Error|[Update office locations on user profiles](#step-3-update-office-locations-on-user-profiles) |
 
 ## Frequently asked questions
 
@@ -245,7 +245,7 @@ If the DWG file contains data for multiple wings, leave the wing field blank whe
 
 **A:** No. If you followed the formatting recommendations for labels and office locations in [Step 2](#step-2-review-your-floor-plans) and [Step 3](#step-3-update-office-locations-on-user-profiles), and completed items 1-8 in [Step 7](#step-7-upload-floor-plans), you shouldn't need to specify locations patterns.
 
-But, if your users still aren't mapped or you're not satisfied with the mapping, complete the optional [Step 8](#step-8-optional-specify-location-patterns). In Step 8, you need to define each *unique* location pattern found in your Azure AD for that building code. For example, you're uploading a floor plan for building A, which has 1,000 offices. Five different location patterns are used for the offices in Building A. When specifying location patterns, you'll need to define the five patterns that appear in your Azure AD for the building.
+But, if your users still aren't mapped or you're not satisfied with the mapping, complete the optional [Step 8](#step-8-optional-specify-location-patterns). In Step 8, you need to define each *unique* location pattern found in your Microsoft Entra ID for that building code. For example, you're uploading a floor plan for building A, which has 1,000 offices. Five different location patterns are used for the offices in Building A. When specifying location patterns, you'll need to define the five patterns that appear in your Microsoft Entra ID for the building.
 
 **Q:** Can I create floor plan answers for conference rooms, meeting rooms, or spaces that don't have a person assigned to them?
 
@@ -253,7 +253,7 @@ But, if your users still aren't mapped or you're not satisfied with the mapping,
 
 **Q:** I've completed all of the steps to add a floor plan. Why don't they appear in Microsoft Search results?
 
-**A:** A link to the floor plan answer may be appearing in the middle of the search results page. This type of ranking can happen when there's lower confidence that the answer matches the search intent. If no information is appearing on the results page, verify the searches follow a supported query pattern: an office name, a user name, or an office location as it appears in Azure AD. Partial or fuzzy word matches aren't supported for floor plan searches.
+**A:** A link to the floor plan answer may be appearing in the middle of the search results page. This type of ranking can happen when there's lower confidence that the answer matches the search intent. If no information is appearing on the results page, verify the searches follow a supported query pattern: an office name, a user name, or an office location as it appears in Microsoft Entra ID. Partial or fuzzy word matches aren't supported for floor plan searches.
 
 **Q:** I've added floor plans for my organization's workspaces. Why don't they appear when booking a workspace in Outlook?
 
@@ -287,7 +287,7 @@ Because of the differences between the office locations that appear on the users
 
 In the second review stage, Microsoft Search ignores the building code value in the users' office locations and tries again to match the office locations and text labels (F121 and 21, F1-25 and 25). The second review shows zero locations have been mapped. You'll need to continue mapping again. At this point, you'll be prompted to specify location patterns.
 
-When you specify location patterns, you don't need to add info for every office, only for the *unique patterns* that appear in your Azure AD. In this stage, Microsoft Search determines all unique location patterns for the building, it isn't limited to the floor plan you've uploaded. For the users in this scenario, there are two unique location patterns. You'll see a randomly picked location for each pattern. Enter the corresponding floor and room values:
+When you specify location patterns, you don't need to add info for every office, only for the *unique patterns* that appear in your Microsoft Entra ID. In this stage, Microsoft Search determines all unique location patterns for the building, it isn't limited to the floor plan you've uploaded. For the users in this scenario, there are two unique location patterns. You'll see a randomly picked location for each pattern. Enter the corresponding floor and room values:
 
 |Location|&nbsp;|Floor|Wing or zone|Room|
 |:-----|:-----|:-----|:-----|:-----|

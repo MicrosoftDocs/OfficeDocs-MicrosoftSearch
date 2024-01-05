@@ -1,6 +1,6 @@
 ---
 title: "Manage locations"
-ms.author: dawholl
+ms.author: davidedwards
 author: dawholl
 manager: kellis
 ms.audience: Admin
