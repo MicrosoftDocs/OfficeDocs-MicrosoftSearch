@@ -166,3 +166,7 @@ A bookmark can have several keywords and share the same keyword, but reserved ke
 **Q: How is country or region determined in bookmark settings?**
 
 **A**: If **Use Microsoft Entra locations** is selected, the bookmark will only appear to users whose Usage location profile setting matches the Countries or regions specified. If there's no Usage location value, the country or region in your organization's profile is used. If the check box isn't selected, RevIP-based location is used to determine if a bookmark will appear.
+
+**Q: Will bookmarks appear in Microsoft Teams search results?
+
+**A**: Yes, Microsoft Search bookmarks will appear in the Microsoft Teams client search results. However, the results may be different from what appears in SharePoint or microsoft365.com as search will rank the results with machine learning algorithm. If the bookmark result does not meet the machine learning ranker threshold, then the results will be suppressed in the Microsoft Teams client. This is by design and aligned to feedback received from many customers.

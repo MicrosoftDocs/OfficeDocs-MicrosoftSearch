@@ -35,7 +35,10 @@ Search admins can also customize bookmarks, Q&A answers and Acronyms answers (ad
 
 ## Microsoft Search features
 
-The following table outlines whether specified Microsoft Search features are available within the GCC, GCC-High, and DoD environments. 
+The following table outlines whether specified Microsoft Search features are available within the GCC, GCC-High, and DoD environments.
+
+- Next = The next wave of features currently being worked on and will be shipping soon.
+- Next+ = The wave of features that are planned to release after Next.
 
 | Feature | WW | GCC | GCC-High | DoD  |
 | --------- |--------- | --------- | --------- | ---------- |
@@ -86,4 +89,3 @@ The following table outlines whether specified Microsoft Search features are ava
 "Next+" = the wave after that
 
 In response to the unique, evolving requirements of the United States public sector, Microsoft has created Office 365 US Government plans (or Office 365 Government). For service descriptions and features overview specific to these environments, see [Office 365 Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
-
