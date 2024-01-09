@@ -42,7 +42,7 @@ The following semantic index features do more than enhance search results; they 
 
 :::image type="content" source="media/semantic-index-microsoft-365-chat.png" alt-text="Graphic showing the relationship between Microsoft 365 Chat and Microsoft Search." lightbox="media/semantic-index-microsoft-365-chat.png":::
 
-Microsoft 365 Copilot and Microsoft 365 E3, E5, A3, A5, Business Standard, and Business Premium customers will receive the features as part of a phased rollout, with status updates shared via the [Microsoft 365 admin center](https://admin.microsoft.com/) and [Microsoft 365 public roadmap](https://www.microsoft.com/microsoft-365/roadmap). A breakdown of each feature when searching for information is included below.
+Microsoft 365 Copilot and Microsoft 365 E3, E5, Business Standard, and Business Premium customers will receive the features as part of a phased rollout, with status updates shared via the [Microsoft 365 admin center](https://admin.microsoft.com/) and [Microsoft 365 public roadmap](https://www.microsoft.com/microsoft-365/roadmap). A breakdown of each feature when searching for information is included below.
 
 ### Microsoft 365 Chat
 
