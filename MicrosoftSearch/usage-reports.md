@@ -25,7 +25,7 @@ Search usage reports enable you to gain more understanding of how people in your
 
 :::image type="content" source="media/usage-reports/usage reports-key-metrics.png" alt-text="A dashboard showing key metrics for search and intelligence." lightbox="media/usage-reports/usage reports-key-metrics.png":::
 
-The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from the SharePoint Start Page, SharePoint Sites, Microsoft 365 app (formerly known as the Office app) at office.com, and Bing. User analytics is also available for Windows Search, Outlook, Teams, OneDrive and application search in Word, Excel and Powerpoint. You can see data from the last 28 days or for the previous year.
+The [Microsoft Search usage reports](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) include graphs and tables generated from searches that are executed from the SharePoint Start Page, SharePoint Sites, Microsoft 365 app (formerly known as the Office app) at office.com, and Bing. User analytics is also available for Windows Search, Outlook, Teams, OneDrive and application search in Word, Excel and PowerPoint. You can see data from the last 28 days or for the previous year.
 
 On some detail pages, you can filter reports by country, occupation, department, or division. To protect privacy, if any filters show data for five or less individuals, those results won't be included in the search usage reports. In addition, these filters can be toggled on or off for the entire organization on the Org settings page, in case your organization has specific privacy requirements.  
 
