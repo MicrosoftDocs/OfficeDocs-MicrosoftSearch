@@ -100,7 +100,7 @@ items:
           href: servicenow-catalog-connector.md
         - name: ServiceNow Knowledge
           href: servicenow-knowledge-connector.md
-        - name: ServiceNow Tickets (preview)
+        - name: ServiceNow Tickets
           href: servicenow-tickets-connector.md
     - name: Manage connections
       items:
