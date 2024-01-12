@@ -229,6 +229,9 @@ Here selecting the "Run once in a day" checkbox will let you choose the "Start t
 
 You can review your entire configuration and edit settings as needed before completing the connection. *Be sure to read the connector-specific information for your data source if you haven't already done so.* When you're ready to complete the connection, select **Publish**.
 
+### Staged Rollout
+Staged rollout is a feature that allows you to gradually introduce Microsoft Graph connectors to a select group of users in your production environment. Select **Publish to limited users** to deploy the connector to a limited audience. For more information, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
+
 ## Step 10: Manage connection results
 
 Results from your connection will be included in the All vertical by default after it’s published. If you do not want the connection results to be immediately available in All after it has been published, you can opt it out in this step.  
