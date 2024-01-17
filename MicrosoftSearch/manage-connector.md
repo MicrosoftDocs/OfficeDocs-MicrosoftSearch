@@ -108,7 +108,7 @@ If a scheduled or an on-demand crawl continues beyond the time of the schedule o
 
 The available index quota and consumption is displayed on the connectors landing page.
 
-:::image type="content" alt-text="Screenshot that shows index quota utilization bar." source="media/manage-connector/quota-exceeded..png" lightbox="media/manage-connector/quota-exceeded.png":::
+:::image type="content" alt-text="Screenshot that shows index quota utilization bar." source="media/manage-connector/quota-exceeded.png" lightbox="media/manage-connector/quota-exceeded.png":::
 
 The quota utilization bar indicates various states based on consumption of quota by your organization:
 
