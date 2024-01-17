@@ -16,7 +16,7 @@ description: "Learn about Semantic Index for Copilot."
 
 # Semantic Index for Copilot
 
-The semantic index brings a whole new world of understanding to your data in Microsoft 365. Through enhanced interactions with your individual and company data via the Microsoft Graph, and the creation of a new index, the semantic index is an improvement to Microsoft 365 search that lays the foundation for the next generation of Search and Copilot experiences. The semantic index respects security and policies in the Microsoft Graph so that when a user issues a query either directly via search or in Microsoft 365 chat via Copilot, it's always in the security context of the user, and only content that a user has access to is returned. This article reviews the initial set of features that form the semantic index and explains how it brings your data to life. To learn more, check out this video: [Semantic Index for Copilot: Explained by Microsoft](https://www.youtube.com/watch?v=KtsVRCsdvoU).
+The semantic index brings a whole new world of understanding to your data in Microsoft 365. Through enhanced interactions with your individual and company data via the Microsoft Graph, and the creation of a new index, the semantic index is an improvement to Microsoft 365 search that lays the foundation for the next generation of Search and Copilot experiences. The semantic index respects security and policies in the Microsoft Graph so that when a user issues a query either directly via search or in Microsoft Copilot, it's always in the security context of the user, and only content that a user has access to is returned. This article reviews the initial set of features that form the semantic index and explains how it brings your data to life. To learn more, check out this video: [Semantic Index for Copilot: Explained by Microsoft](https://www.youtube.com/watch?v=KtsVRCsdvoU).
 
 ## Overview
 
@@ -38,15 +38,15 @@ This approach provides for fast and accurate similarity search and retrieval of 
 
 ## Features
 
-The following semantic index features do more than enhance search results; they work together to help you understand your data, find information quicker and improve productivity. Users will be able to interact with the semantic index initially through Microsoft 365 Chat integration, and then over time, Microsoft will improve the search experience in SharePoint Online, Microsoft Teams, and the Microsoft 365 app by adding semantic index features that produce the results shown below:
+The following semantic index features do more than enhance search results; they work together to help you understand your data, find information quicker and improve productivity. Users will be able to interact with the semantic index initially through Microsoft Copilot integration, and then over time, Microsoft will improve the search experience in SharePoint Online, Microsoft Teams, and the Microsoft 365 app by adding semantic index features that produce the results shown below:
 
-:::image type="content" source="media/semantic-index-microsoft-365-chat.png" alt-text="Graphic showing the relationship between Microsoft 365 Chat and Microsoft Search." lightbox="media/semantic-index-microsoft-365-chat.png":::
+:::image type="content" source="media/semantic-index-microsoft-365-chat.png" alt-text="Graphic showing the relationship between Microsoft Copilot and Microsoft Search." lightbox="media/semantic-index-microsoft-365-chat.png":::
 
-Microsoft 365 Copilot and Microsoft 365 E3, E5, A3, A5, Business Standard, and Business Premium customers will receive the features as part of a phased rollout, with status updates shared via the [Microsoft 365 admin center](https://admin.microsoft.com/) and [Microsoft 365 public roadmap](https://www.microsoft.com/microsoft-365/roadmap). A breakdown of each feature when searching for information is included below.
+Semantic index will be available to Microsoft Copilot for Microsoft 365 users and Microsoft 365 E3, E5, Business Standard, and Business Premium users. Office 365 E3, E5, Business Standard, and Business Premium users who purchase Copilot for Microsoft 365 will also receive Semantic index. Semantic index will not be available for Office 365 subscriptions without the purchase of Microsoft Copilot for Microsoft 365. Eligible subscriptions will receive the features as part of a phased rollout, with status updates shared via the [Microsoft 365 admin center](https://admin.microsoft.com/) and [Microsoft 365 public roadmap](https://www.microsoft.com/microsoft-365/roadmap). A breakdown of each feature when searching for information is included below.
 
-### Microsoft 365 Chat
+### Microsoft Copilot with Graph-grounded chat
 
-The Semantic index helps surface results within Microsoft 365 Chat (part of Microsoft 365 Copilot) by understanding the intent of your query and appending additional information to your Microsoft 365 Chat prompt. Relevant information is obtained in the Microsoft Graph and semantic index to provide the LLM with more information to reason over. For example, if you ask Microsoft 365 Chat to find an email where a colleague was happy with the design work of a vendor, semantic index adds adjacent words (for example, elated, excited, amazed) into the search to widen the search area and provide the most relevant result. All of this work takes place behind the scenes to add relevance to results that you search for with Microsoft 365 Chat, without added complexity.
+The Semantic index helps surface results within Microsoft Copilot with Graph-grounded chat by understanding the intent of your query and appending additional information to your Microsoft Copilot prompt. Relevant information is obtained in the Microsoft Graph and semantic index to provide the LLM with more information to reason over. For example, if you ask Microsoft Copilot to find an email where a colleague was happy with the design work of a vendor, semantic index adds adjacent words (for example, elated, excited, amazed) into the search to widen the search area and provide the most relevant result. All of this work takes place behind the scenes to add relevance to results that you search for with Microsoft Copilot, without added complexity.
 
 ### Semantic Search
 
@@ -54,7 +54,7 @@ Semantic Search captures the semantic meaning of your query, such that semantica
 
 ## How the semantic index works
 
-The semantic index enhances Microsoft 365 Chat and search results in the [Microsoft 365 app](https://www.microsoft365.com/), SharePoint Online, and Microsoft Teams. It does this by creating two indexes to support an enhanced search experience and conceptual understanding of your online data that are enabled automatically by Microsoft. 
+The semantic index enhances Microsoft Copilot and search results in the [Microsoft 365 app](https://www.microsoft365.com/), SharePoint Online, and Microsoft Teams. It does this by creating two indexes to support an enhanced search experience and conceptual understanding of your online data that are enabled automatically by Microsoft.
 
 User-level indexing creates a personalized index for your eyes only on a working set of data, and makes it more accessible for you to use with everyday tasks. Any text-based content that you create or interact with is included, such as emails, documents you're mentioned in, comment on, or share. The tenant-level index adds text-based SharePoint Online files that are accessible by two or more people in your organization via site inheritance. However, it only surfaces the results to a user if the user already has access to the content controlled by role-based access control. Additionally, the SharePoint Online site must remain searchable.
 
@@ -64,7 +64,7 @@ This section reviews how each index is enabled, how the semantic index interacts
 
 We are in the early stages of rolling out the semantic index to all organizations with Microsoft 365 Copilot and an eligible Microsoft 365 license, without any administrative involvement. Microsoft automatically manages the enablement of the semantic index, with prioritization given for organizations that purchase more than 300 licenses for Microsoft 365 Copilot. When user indexing is complete, administrators will see the ‘Semantic indexing is complete’ status in the Microsoft 365 admin center for enabled users. When tenant-level indexing starts in an organization, admins will see ‘Semantic index is available for your organization’ on the Search and Intelligence page in the Microsoft 365 admin center.
 
-:::image type="content" source="media/semantic-index-enabled.png" alt-text="Screenshot showing semantic index enabled.":::
+:::image type="content" source="media/semantic-index-enabled.jpg" alt-text="Screenshot showing semantic index enabled.":::
 
 > [!IMPORTANT]
 > Microsoft will not provide timelines or status of semantic indexing of user and tenant-level indexing for individual tenants. Organizations are advised to use the process above to check on indexing status for their tenants.
@@ -126,7 +126,7 @@ On the Search and Intelligence page in the Microsoft 365 admin center, Item insi
 
 - **People insights** provide a list of relevant people to a user based on their public collaborative work in Microsoft 365. Public collaboration includes members of a public distribution group and individuals connected in the organizational chart.
 
-- **Item insights** allow recommendations for people in your organization based on their collaborative work in Microsoft 365. These recommendations might include but aren't limited to documents or other types of content and show up in people cards (contacts), Delve, The [Microsoft 365 app](https://www.microsoft365.com/), Microsoft 365 Chat results, and other locations.
+- **Item insights** allow recommendations for people in your organization based on their collaborative work in Microsoft 365. These recommendations might include but aren't limited to documents or other types of content and show up in people cards (contacts), Delve, The [Microsoft 365 app](https://www.microsoft365.com/), Microsoft Copilot results, and other locations.
 
 Both Item insights and People insights don't cover personalization features based on a user's own data.
 
