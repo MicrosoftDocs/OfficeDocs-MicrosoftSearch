@@ -68,7 +68,7 @@ The following table outlines whether specified Microsoft Search features are ava
 |Converged People Vertical|	Next+|	Next+|	Next+|	Next+|
 |Power BI|	Yes|	Next|	Next|	Next|
 |Images Vertical|	Yes|	Yes|	Yes|	Yes|
-|Video Vertical|	Yes|	Yes|	Yes|	Yes|
+|Video Vertical|	Yes|	Yes|	Next|	Next|
 | **Data sources** | | | | |	 	 	 	 
 |Graph Connectors|	Yes|	Yes|	Next|	Next+|
 |Federation Connectors|	Yes|	Next+|	Next+|	Next+|
