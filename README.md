@@ -18,7 +18,7 @@ Contributors who only make infrequent or small updates can edit the file directl
 
    ![Edit button on github.com.](https://learn.microsoft.com/compliance/media/quick-update-github.png)
 
-5. The topic opens in a line-numbered editing page where you can make changes to the file. Files in GitHub are written and edited using Markdown language. For help on using Markdown, see [Mastering Markdown](https://guides.github.com/features/mastering-markdown/). Select the **Preview changes** tab to view your changes as you go.
+5. The topic opens in a line numbered editing page where you can make changes to the file. Files in GitHub are written and edited using Markdown language. For help on using Markdown, see [Mastering Markdown](https://guides.github.com/features/mastering-markdown/). Select the **Preview changes** tab to view your changes as you go.
 
 6. When you're finished making changes, go to the **Propose file change** section at the bottom of the page:
 
