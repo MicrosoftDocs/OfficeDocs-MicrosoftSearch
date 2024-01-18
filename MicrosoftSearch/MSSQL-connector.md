@@ -129,7 +129,10 @@ The below table summarizes the SQL data types that are supported in the MS SQL a
 | Approximate numeric | float <br> real | double |
 | Character string | char <br> varchar <br> text | string |
 | Unicode character strings | nchar <br> nvarchar <br> ntext | string |
+| String collection | char <br> varchar <br> text | stringcollection* |
 | Other data types | uniqueidentifier | string |
+
+*To index a column as StringCollection, you need to cast a string to string collection type. This can be done by clicking the 'Edit datatypes' link in Full crawl settings and selecting the appropriate columns as StringCollection along with specifying a delimiter to split the string.
 
 For any other data type currently not directly supported, the column needs to be explicitly cast to a supported data type.
 

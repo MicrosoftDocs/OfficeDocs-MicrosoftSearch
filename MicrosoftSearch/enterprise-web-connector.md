@@ -99,7 +99,7 @@ For your on-premises websites, select **Agent** as the crawl mode and in the **O
 
 **Basic** requires a username and password.
 
-**OAuth 2.0** with [Microsoft Entra ID](/azure/active-directory/) requires a resource ID, Client ID, and a client Secret. OAuth 2.0 only works with Cloud mode.
+**OAuth 2.0** with [Microsoft Entra ID](/azure/active-directory/) requires a resource ID, Client ID, and a client Secret.
 
 The resource ID, client ID and client secret values will depend on how you did the setup for Microsoft Entra ID based authentication for your website:
 
