@@ -62,12 +62,7 @@ This section reviews how each index is enabled, how the semantic index interacts
 
 ## Enablement
 
-We are in the early stages of rolling out the semantic index to all organizations with Microsoft 365 Copilot and an eligible Microsoft 365 license, without any administrative involvement. Microsoft automatically manages the enablement of the semantic index, with prioritization given for organizations that purchase more than 300 licenses for Microsoft 365 Copilot. When user indexing is complete, administrators will see the ‘Semantic indexing is complete’ status in the Microsoft 365 admin center for enabled users. When tenant-level indexing starts in an organization, admins will see ‘Semantic index is available for your organization’ on the Search and Intelligence page in the Microsoft 365 admin center.
-
-:::image type="content" source="media/semantic-index-enabled.jpg" alt-text="Screenshot showing semantic index enabled.":::
-
-> [!IMPORTANT]
-> Microsoft will not provide timelines or status of semantic indexing of user and tenant-level indexing for individual tenants. Organizations are advised to use the process above to check on indexing status for their tenants.
+We are in the early stages of rolling out the semantic index to all organizations with Copilot for Microsoft 365 and an eligible Microsoft 365 license, without any administrative involvement. Microsoft automatically manages the enablement of the semantic index, with prioritization given for organizations that purchase more than 300 licenses for Copilot for Microsoft 365.
 
 ## Data flows
 
