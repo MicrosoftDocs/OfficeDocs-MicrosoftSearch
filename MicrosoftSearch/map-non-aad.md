@@ -34,7 +34,7 @@ These steps are only relevant to search administrators who are setting up a [Con
 
 ### 1. Select a Microsoft Entra user property  
 
-You can select the Microsoft Entra user property you are creating the mapping for. This is the target property you are aiming to map your non-Azure AD identities to.  
+You can select the Microsoft Entra user property you're creating the mapping for. This is the target property you're aiming to map your non-Azure AD identities to.  
 
 You can select one of the following Microsoft Entra properties:
 
@@ -86,9 +86,9 @@ See the snapshot below for a sample non-Azure AD mapping.
 
 ## Limitations  
 
-- Only one mapping is supported for all users. Conditional mappings are not supported.  
+- Only one mapping is supported for all users. Conditional mappings aren't supported.  
 
-- You cannot change your mapping once the connection is published.  
+- You can't change your mapping once the connection is published.  
 
 - Only regex-based expressions against the non-AAD user properties are currently supported for the transformation.
 
