@@ -24,7 +24,7 @@ To see your connections in the [Microsoft 365 admin center](https://admin.micros
 
 You can view the connection details and errors by selecting the connection.  
 
-:::image type="content" source="media/datasourcestab.png" alt-text="Connectors list with a connector selected and details pane showing information about this connector.":::
+:::image type="content" source="media/datasourcestab.png" alt-text="Screenshot that shows connectors list with a connector selected and details pane showing information about this connector.":::
 
 ## View your last crawl info
 
@@ -43,7 +43,7 @@ Value | Description
 ## Download errors
 
 Download error report is available in the Data Sources page in the connection pane.
-A limited number of connection errors are shown in the UI of connection pane. To get the complete list of errors, you can run the PowerShell script to download the complete error report. Here are the steps tp generate the report:
+A limited number of connection errors are shown in the UI of connection pane. To get the complete list of errors, you can run the PowerShell script to download the complete error report. Here are the steps to generate the report:
 
 * Open Windows PowerShell with administrator rights.
 * Run the command to download and install the script from the PowerShell Library.
@@ -67,17 +67,17 @@ A limited number of connection errors are shown in the UI of connection pane. To
 
 * Provide the connectionId of the connection for which you want to download the error report.
 * Give the name of the output file without extension as by default .csv extension is used.
-* Give the batch limit of the download. This is an optional parameter. A batch limit defines the batch of errors that is fetched from the service. Each batch fetch takes a few seconds. If you have a large number of errors in the order of thousands, larger batch size can be used to reduce the time spent in fetching the data with each batch. However, if the errors are in the order of hundreds, a lowe batch size would be ideal. Please note increasing batch size may increase the probability of failures. The maximum batch size limit is 5000.
-* The script will ask you to login from the tenant account. After the login is complete, the download will start.
+* Give the batch limit of the download. This is an optional parameter. A batch limit defines the batch of errors that is fetched from the service. Each batch fetch takes a few seconds. If you have a large number of errors in the order of thousands, larger batch size can be used to reduce the time spent in fetching the data with each batch. However, if the errors are in the order of hundreds, a low batch size would be ideal. Please note increasing batch size may increase the probability of failures. The maximum batch size limit is 5000.
+* The script will ask you to log in from the tenant account. After the login is complete, the download will start.
 * It will take some time based on the batch size and the number of errors to complete the download. The downloaded file will be present in the same folder where the script was run from with the name given during the run.
 
-:::image type="content" alt-text="PowerShell script run to download the error report." source="media/errorreport.png" lightbox="media/errorreport.png":::
+:::image type="content" alt-text="Screenshot that shows PowerShell script run to download the error report." source="media/errorreport.png" lightbox="media/errorreport.png":::
 
 ## Monitor errors
 
 For each **Active Connector** on the **Data sources** tab, any existing crawl errors show under the **Current crawl** header, in the **Errors** section. It lists error codes, the count of each, and error log download options. You can select an **error code** to view the error's details.
 
-:::image type="content" source="media/errormonitoring1.png" alt-text="Details pane showing the current crawl, and errors section for the selected connector.":::
+:::image type="content" source="media/errormonitoring1.png" alt-text="Screenshot that shows details pane showing the current crawl, and errors section for the selected connector.":::
 
 To view an error's specific details, select its error code. A screen appears with error details and a link. The most recent errors appear at the top.
 
