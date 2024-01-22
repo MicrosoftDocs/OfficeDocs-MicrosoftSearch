@@ -17,14 +17,11 @@ description: "Set up the ServiceNow Tickets Graph connector for Microsoft Search
 ---
 <!---Previous ms.author: kam1 --->
 
-# ServiceNow Tickets Microsoft Graph connector (Preview)
+# ServiceNow Tickets Microsoft Graph connector
 
 With the Microsoft Graph connector for ServiceNow Tickets, your organization can index various tickets that are serviced to users. After you configure the connector and index content from ServiceNow, end users can search for those tickets from any Microsoft Search client.  
 
->[!NOTE]
->ServiceNow Tickets Connector is in preview. If you wish to get early access to try it, sign up using [<b> this form </b>](https://forms.office.com/r/JniPmK5bzm).
-
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Tickets Graph connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. If you haven't already done so, read the entire Setup your Graph Connector article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Tickets Graph connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. If you haven't already done so, read the entire 'Setup your Graph Connector' article to understand the general setup process.
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR 
 other instructions that apply to only ServiceNow connector including information about [Troubleshooting](#troubleshooting) 
@@ -217,7 +214,7 @@ To identify which option is suitable for your organization:
 >[!NOTE]
 > * If you choose Microsoft Entra ID as the type of identity source, the connector maps the Email IDs of users obtained from ServiceNow directly to UPN property from Microsoft Entra ID.
 > * If you chose "Non-Azure AD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
-
+> * Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support processing of updates to permissions.
 
 ## Step 6: Assign property labels
 

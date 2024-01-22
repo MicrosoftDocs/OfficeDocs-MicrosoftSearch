@@ -2,35 +2,20 @@
 
 
 
-## Week of November 27, 2023
+## Week of January 15, 2024
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 11/29/2023 | [ServiceNow Knowledge Microsoft Graph connector](/MicrosoftSearch/servicenow-knowledge-connector) | modified |
+| 1/15/2024 | [Semantic Index for Copilot](/MicrosoftSearch/semantic-index-for-copilot) | modified |
+| 1/17/2024 | [Manage result types](/MicrosoftSearch/manage-result-types) | modified |
 
 
-## Week of November 20, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/20/2023 | [ServiceNow Knowledge Microsoft Graph connector](/MicrosoftSearch/servicenow-knowledge-connector) | modified |
-| 11/21/2023 | [Confluence Cloud Microsoft Graph connector](/MicrosoftSearch/confluence-cloud-connector) | modified |
-
-
-## Week of November 13, 2023
+## Week of December 25, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 11/17/2023 | [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent) | modified |
-
-
-## Week of November 06, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/7/2023 | [Microsoft Graph connectors license requirements and pricing](/MicrosoftSearch/licensing) | modified |
-| 11/10/2023 | [Semantic Index for Copilot](/MicrosoftSearch/semantic-index-for-copilot) | added |
+| 12/30/2023 | [Microsoft SQL server and Azure SQL connector for Microsoft Search](/MicrosoftSearch/mssql-connector) | modified |
+| 12/30/2023 | [Oracle SQL connector for Microsoft Search](/MicrosoftSearch/oraclesql-connector) | added |
+| 12/30/2023 | [Search Usage Reports](/MicrosoftSearch/usage-reports) | added |

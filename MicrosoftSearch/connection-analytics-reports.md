@@ -65,13 +65,13 @@ The Connection analytics details page contains the following three reports:
 
 This report shows a comparison of the number of queries with connection results and the number of queries that received one or more clicks for up to six of the most frequently used data connections.
 
-:::image type="content" source="media/usage-reports/queries-clicks-by-connection.png" alt-text="A bar chart graph that shows queries and click through data by connection type." lightbox="media/usage-reports/queries-clicks-by-connection.png":::
+:::image type="content" source="media/usage-reports/queries-clicks-by-connection.png" alt-text="A bar chart graph that shows queries and click through data by connection type.":::
 
 ### Total indexed items by connection
 
 This report shows a comparison of total indexed items used by each of the data connections.  
 
-:::image type="content" source="media/usage-reports/index-by-connection.png" alt-text="A bar chart graph that shows indexed items by data connection." lightbox="media/usage-reports/index-by-connection.png":::
+:::image type="content" source="media/usage-reports/index-by-connection.png" alt-text="A bar chart graph that shows indexed items by data connection.":::
 
 ### Connections
 

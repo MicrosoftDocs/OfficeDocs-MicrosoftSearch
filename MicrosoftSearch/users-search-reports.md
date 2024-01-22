@@ -46,7 +46,7 @@ The **users who searched**, **users who searched weekly**, and **users not searc
 ### User engagement  
 The user engagement graph shows how many unique days people have performed searches for the selected set of filters. The two bars compare the number of users in this period with the previous period. A high number of users in the 9+ days category represents a higher search engagement in the organization. Use the Search application filter to analyze user engagement for different search applications. 
 
-:::image type="content" source="media/usage-reports/user-analytics-engagement.png" alt-text="A dashboard page showing a bar chart for user engagement." lightbox="media/usage-reports/user-analytics-engagement.png":::
+:::image type="content" source="media/usage-reports/user-analytics-engagement.png" alt-text="A dashboard page showing a bar chart for user engagement.":::
 
 
 
@@ -92,13 +92,12 @@ The Search users by geography chart shows you a distribution of search users bas
 
 The Top 10 search users by occupation chart shows top you a distribution of search users based on their **title** attribute in Microsoft Entra ID and for the selected set of filters. Note that due to computational complexity, only the top 100 occupations are included in this list which means that some filter combinations might produce an empty list of occupations. 
 
-:::image type="content" source="media/usage-reports/user-analytics-by-occupation.png" alt-text="A  page showing a list of users by occupation." lightbox="media/usage-reports/user-analytics-by-occupation.png":::
+:::image type="content" source="media/usage-reports/user-analytics-by-occupation.png" alt-text="A page showing a list of users by occupation.":::
 
 ### Top 10 search users by department or division  
 The Top 10 search users by department or division chart shows top you a distribution of search users based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Microsoft Entra ID and for the selected set of filters.
 
-:::image type="content" source="media/usage-reports/user-analytics-by-department.png" alt-text="A  page showing a list of users by department." lightbox="media/usage-reports/user-analytics-by-department.png":::
-
+:::image type="content" source="media/usage-reports/user-analytics-by-department.png" alt-text="A page showing a list of users by department.":::
 
 
 ## User analytics – See what actions you can take 
@@ -119,7 +118,7 @@ Processing of the new search user reports varies for different tenants. If you s
 
 To view the previous search analytics reports, select the **New user analytics** toggle on the top right corner of the page.
 
-:::image type="content" source="media/usage-reports/user-analytics-toggle.png" alt-text="A picture of a toggle." lightbox="media/usage-reports/user-analytics-toggle.png":::
+:::image type="content" source="media/usage-reports/user-analytics-toggle.png" alt-text="A picture of a toggle.":::
 
 ## Prevent filtering by country, occupation, department, or division 
 
