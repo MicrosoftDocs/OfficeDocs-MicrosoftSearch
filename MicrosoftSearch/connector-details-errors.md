@@ -40,10 +40,9 @@ Value | Description
 **Successes** | Number of items that have been successfully ingested in the last crawl
 **Errors** | Number of items that produced an error in the last crawl
 
-## Download errors
+## Download item errors
 
-Download error report is available in the Data Sources page in the connection pane.
-A limited number of connection errors are shown in the UI of connection pane. To get the complete list of errors, you can run the PowerShell script to download the complete error report. Here are the steps to generate the report:
+Download error report is available in the errors tab of the connection pane. A limited number of connection errors are shown in the UI of connection pane. To get the complete list of errors, you can run the PowerShell script to download the complete error report. Here are the steps to generate the report:
 
 * Open Windows PowerShell with administrator rights.
 * Run the command to download and install the script from the PowerShell Library.
@@ -52,7 +51,7 @@ A limited number of connection errors are shown in the UI of connection pane. To
     Install-Script -Name DownloadErrorScript
 ```
 
-* This script downloads the item errors in a Microsoft Graph Connectors Connection. An Msal token is generated using the tenant credentials in which the connection is present. That token is then used to first get all the distinct error codes with which the items failed and then for each error code all the item errors are fetched iteratively. Getting item errors for a particular error code is a batched API call with default batch size as 250. Token is generated using MSAL.PS module, while installing this PS script, MSAL.PS module should be installed automatically. If this doesn't happen use the below command to install MSAL.PS
+* This script downloads the item errors in a Microsoft Graph Connectors Connection. An Msal token is generated using the tenant credentials in which the connection is present. The token is generated using MSAL.PS module, while installing this PS script, MSAL.PS module should be installed automatically. If this doesn't happen use the below command to install MSAL.PS
 
 ```powershell
     Install-Module -Name MSAL.PS
@@ -69,7 +68,7 @@ A limited number of connection errors are shown in the UI of connection pane. To
 * Give the name of the output file without extension as by default .csv extension is used.
 * Give the batch limit of the download. This is an optional parameter. A batch limit defines the batch of errors that is fetched from the service. Each batch fetch takes a few seconds. If you have a large number of errors in the order of thousands, larger batch size can be used to reduce the time spent in fetching the data with each batch. However, if the errors are in the order of hundreds, a low batch size would be ideal. Please note increasing batch size may increase the probability of failures. The maximum batch size limit is 5000.
 * The script will ask you to log in from the tenant account. After the login is complete, the download will start.
-* It will take some time based on the batch size and the number of errors to complete the download. The downloaded file will be present in the same folder where the script was run from with the name given during the run.
+* It will take some time based on the batch size and the number of errors to complete the download. The downloaded file will be present in the same path from where the script was run with the name given during the run.
 
 :::image type="content" alt-text="Screenshot that shows PowerShell script run to download the error report." source="media/errorreport.png" lightbox="media/errorreport.png":::
 
