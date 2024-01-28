@@ -2,6 +2,15 @@
 
 
 
+## Week of January 22, 2024
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/22/2024 | [Microsoft Graph connectors view details and errors](/MicrosoftSearch/connector-details-errors) | modified |
+| 1/23/2024 | [Semantic Index for Copilot](/MicrosoftSearch/semantic-index-for-copilot) | modified |
+
+
 ## Week of January 15, 2024
 
 
