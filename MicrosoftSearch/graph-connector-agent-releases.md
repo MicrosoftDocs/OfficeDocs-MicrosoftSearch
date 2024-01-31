@@ -20,6 +20,13 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
+## Version 2.3.1.0 (*January 29, 2023*)
+
+* Enabled OAuth2 support for Confluence connector.
+* Added schema edit support for Graph connector SDK.
+* Added support for SID or UPN identity type in Graph Connector Agent.
+* Bug fixes and reliability improvements.
+
 ## Version 2.3.0.0 (*December 12, 2023*)
 
 * Configurable payload size for File share connector to reduce ingestion failures
