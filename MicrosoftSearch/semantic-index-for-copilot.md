@@ -111,6 +111,9 @@ There are times when organizations without Microsoft Purview Data Loss Preventio
 
 Microsoft Search and the semantic index support the exclusion of SharePoint online content from the tenant-level index only. There's no option to exclude results from Microsoft Search only or the semantic index only; actions apply to both at the same time.
 
+> [!NOTE]
+> Files created or uploaded to the site after this change will not be processed by a number of Purview solutions, such as Data Loss Prevention, Auto Labelling and eDiscovery.
+
 ## Configuring Item insights
 
 On the Search and Intelligence page in the Microsoft 365 admin center, Item insights are enabled by default. Turning off people or item insights reduces the Microsoft Search and semantic index experience, as results won't include relevant people that would have been derived from distribution groups or from the organizational chart.
