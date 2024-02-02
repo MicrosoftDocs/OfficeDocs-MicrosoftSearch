@@ -60,7 +60,7 @@ This section reviews how each index is enabled, how the semantic index interacts
 
 We are in the early stages of rolling out the semantic index to all organizations with Copilot for Microsoft 365 and an eligible Microsoft 365 license, without any administrative involvement.  
 
-We have received feedback from customers that the semantic index enablement status indicator previously in the Microsoft 365 Admin Center was confusing. To reduce customer confusion, we have temporarily removed the indicator until we are able to determine a better approach. There is no change to our commitment to providing customers with an exceptional search experience, and Microsoft will continue to automatically index organizations.
+We have received feedback from customers that the semantic index enablement status indicator previously in the Microsoft 365 Admin Center was confusing. To reduce customer confusion, we have temporarily removed the indicator until we're able to determine a better approach. There's no change to our commitment to providing customers with an exceptional search experience, and Microsoft will continue to automatically index organizations.
 
 ## Data flows
 
@@ -145,11 +145,11 @@ The semantic index provides BYOK support for enterprises that have enabled BYOK 
 
 ## Information protection
 
-In the context of search, there are no additional ways to exclude data from the semantic index using information protection capabilities. The semantic index inherits security and privacy settings from Microsoft Search, and data brought in from third party connectors will be provided the same storage and protections as other Microsoft 365 data. For organizations that are investigating additional information protection options, Microsoft 365 provides built-in capabilities in Microsoft 365 apps and add-on products to help Administrators protect organizational data through data minimalization and reducing oversharing. The following sections outline the options available for organizations for reference only.
+In the context of search, there are no additional ways to exclude data from the semantic index using information protection capabilities. The semantic index inherits security and privacy settings from Microsoft Search, and data brought in from third party connectors will be provided the same storage and protections as other Microsoft 365 data. For organizations that are investigating additional information protection options, Microsoft 365 provides built-in capabilities in Microsoft 365 apps and add-on products to help Administrators protect organizational data through data minimization and reducing oversharing. The following sections outline the options available for organizations for reference only.
 
-## Data minimalization
+## Data minimization
 
-Data minimalization reduces the amount of data available to be accessed within your organization. Retaining and deleting content is often needed for compliance and regulatory requirements, but deleting content that no longer has business value also helps you manage risk and liability. [Microsoft Purview Data Lifecycle Management](/purview/data-lifecycle-management), which is [licensed separately](https://azure.microsoft.com/products/purview/), can be used to delete content that is no longer needed with retention policies for management at scale, and retention labels for exceptions and granular control.
+Data minimization reduces the amount of data available to be accessed within your organization. Retaining and deleting content is often needed for compliance and regulatory requirements, but deleting content that no longer has business value also helps you manage risk and liability. [Microsoft Purview Data Lifecycle Management](/purview/data-lifecycle-management), which is [licensed separately](https://azure.microsoft.com/products/purview/), can be used to delete content that is no longer needed with retention policies for management at scale, and retention labels for exceptions and granular control.
 
 ## Reduce oversharing
 
