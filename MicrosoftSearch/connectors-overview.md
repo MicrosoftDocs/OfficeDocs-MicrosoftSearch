@@ -111,8 +111,6 @@ Although Microsoft Graph connectors and Microsoft Search APIs are now generally 
 The set of connectors and features in preview include:
 
 * [Confluence On-premises connector](confluence-onpremises-connector.md)
-* [Azure DevOps Wiki connector](azure-devops-wiki-connector.md)
-* [ServiceNow Tickets connector](servicenow-tickets-connector.md)
 
 ## How do I customize and configure search results?
 
