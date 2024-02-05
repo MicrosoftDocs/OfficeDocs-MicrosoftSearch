@@ -238,7 +238,7 @@ Follow the general [setup instructions](./configure-connector.md).
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
 ## Limitations
-The ServiceNow Knowledge Microsoft Graph connector has the following limitations in its latest release:
+The ServiceNow Tickets Microsoft Graph connector has the following limitations in its latest release:
 
 - *Everyone* feature under Manage Search permissions step doesn't process any permissions. Don't select this option unless you want to test the connection between selected team members in an isolated environment.
 
