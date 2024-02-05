@@ -24,9 +24,19 @@ Using on-premises connectors requires installing *Microsoft Graph connector agen
 
 [Download](https://aka.ms/gca) the latest version of the Microsoft Graph connector agent and install the software by using the installation configuration assistant. Release notes of the connector agent software are available [here](./graph-connector-agent-releases.md)
 
-Using the recommended configuration of the machine, the connector agent instance can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent.
+### Check Execution Policy
 
-Recommended configuration:
+The execution policy has to be set to allow the execution of remote signed scripts. If any machine or group level policy is restricting the same, the installation of GCA fails. Run the following command to get the execution policy:
+
+```powershell
+Get-ExecutionPolicy -List
+```
+
+To know more and set the right execution policy, refer to [Execution Policy](/powershell/module/microsoft.powershell.core/about/about_execution_policies?).
+
+### Recommended Configuration
+
+Using the recommended configuration of the machine, the connector agent instance can handle up to three connections. Any connections beyond that might degrade the performance of all connections on the agent. Here is the recommended configuration:
 
 * Windows 10, Windows Server 2016 R2 and higher versions
 * [.NET Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
@@ -48,15 +58,6 @@ If your organization's proxy servers or firewalls block communication to unknown
 
 >[!NOTE]
 >Proxy authentication isn't supported. If your environment has a proxy that requires authentication, we recommend allowing the connector agent to bypass the proxy.
-
-### Check Execution Policy
-The execution policy has to be set to allow the execution of remote signed scripts. If any machine or group level policy is restricting the same, the installation of GCA fails. Run the following command to get the execution policy:
-
-```powershell
-Get-ExecutionPolicy -List
-```
-
-To know more and set the right execution policy, refer to [Execution Policy](/powershell/module/microsoft.powershell.core/about/about_execution_policies?).
 
 ## Upgrade
 
@@ -198,7 +199,9 @@ Using the sample script to generate a certificate would save the PFX file in the
 
 ### Installation failure
 
-If there's an installation failure, check the installation logs by running: msiexec /i "< path to msi >\GcaInstaller.msi" /L*V "< destination path >\install.log". If the errors aren't resolvable, send an email to support via MicrosoftGraphConnectorsFeedback@service.microsoft.com with the logs.
+If there's an installation failure, check the installation logs by running: msiexec /i "< path to msi >\GcaInstaller.msi" /L*V "< destination path >\install.log". Make sure you are not getting any security exception. Generally, these exceptions arise due to wrong policy settings. The execution policy needs to be remote signed. To know more, check the "Installation" section of this document.
+
+If the errors aren't resolvable, send an email to support via MicrosoftGraphConnectorsFeedback@service.microsoft.com with the logs.
 
 ### Registration failure
 
