@@ -214,7 +214,7 @@ To identify which option is suitable for your organization:
 >[!NOTE]
 > * If you choose Microsoft Entra ID as the type of identity source, the connector maps the Email IDs of users obtained from ServiceNow directly to UPN property from Microsoft Entra ID.
 > * If you chose "Non-Azure AD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
-
+> * Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support processing of updates to permissions.
 
 ## Step 6: Assign property labels
 
