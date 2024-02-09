@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
+ms.collection: essentials-overview
 ms.date: 03/11/2022
 search.appverid:
 - BFB160
