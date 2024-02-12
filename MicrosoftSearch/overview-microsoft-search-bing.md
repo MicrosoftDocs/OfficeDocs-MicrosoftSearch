@@ -88,6 +88,12 @@ To help increase adoption of Microsoft Search in Bing, consider ways to make it 
 
 **Default homepage**: Setting Bing as your organization's default homepage won't enable searching work or school from the address bar, but it does provide any easy way to access bing.com. For more information, see [Make Bing.com the default home page](set-default-homepage.md).
 
+## Control access to Copilot for Microsoft 365
+
+IT admins will soon be able control access to Copilot for Microsoft 365 in Bing, Edge, and Windows using a PowerShell script. Running this script will control access to Copilot for Microsoft 365 in Bing.com, Edge sidebar, Edge mobile app, Copilot in Windows, copilot.microsoft.com, and the Copilot app. It won’t change how users access Copilot in other Microsoft 365 apps.
+
+**Note:** The PowerShell script download link and run commands will be available in late February 2024. Please return to this page if you wish to configure Copilot for Microsoft 365 in Bing, Edge, and Windows after late February. 
+
 ## Security and privacy
 
 Microsoft Search in Bing uses enhanced security and privacy measures to help protect your organization's data and your users. For more information, see [Security and Privacy for Microsoft Search in Bing](security-for-search.md) and [How Microsoft Search in Bing helps keep your info secure](https://support.microsoft.com/office/how-microsoft-search-in-bing-helps-keep-your-info-secure-cbce46ae-bb1f-4d0e-86f1-5984f4589113).
