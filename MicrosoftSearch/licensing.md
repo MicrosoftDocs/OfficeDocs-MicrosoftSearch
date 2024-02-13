@@ -43,11 +43,24 @@ Total quota utilized is calculated in terms of total items stored in the index. 
 ## Purchase of add-on index quota
 To purchase more Microsoft Graph connectors quota, contact your Microsoft account manager or complete the following steps:
 
-1. In the **[Microsoft 365 admin center](https://admin.microsoft.com)**, go to **Billing > Purchase services**.
+The Microsoft 365 admin center currently has two layouts to navigate to purchase services.
+
+1. Go to **[Microsoft 365 admin center](https://admin.microsoft.com)**
+
+If, on the left-hand side you see **Marketplace**:
+1. Go to **Marketplace**
+2. Select **All products** at the top of the Marketplace page.
+3. Search for **Extra Graph Connector Capacity** in the search at the top of the Marketplace page.
+4. Select the **Details** button for **Extra Graph Connector Capacity**.
+
+If, on the left hand side you see **Billing**:
+1. go to **Billing > Purchase services**.
 2. At the bottom of the Purchase services page, select **Add-ons**.
 3. Select **Extra Graph Connector Capacity**.
-4. Select **Buy**, and then complete your order preferences.
-5. Select **Check out now**.
+
+Finally:
+1. Select **Buy**, and then complete your order preferences.
+2. Select **Check out now**.
 
 Cost of indexing connector content is $1000/month for every million items. This is assessed for items exceeding the entitled quota for each tenant (refer next section).
 
