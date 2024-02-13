@@ -1,13 +1,13 @@
 ---
 title: "Manage bookmarks"
-ms.author: jeffkizn
-author: jeffkizn
-manager: jeffkizn
+ms.author: bstucker
+author: bstuck
+manager: bstucker
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
-ms.date: 05/25/2023
+ms.date: 01/08/2024
 search.appverid:
 - BFB160
 - MET150
@@ -16,9 +16,6 @@ ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: "Create and update bookmarks and ways to bulk edit bookmark results for Microsoft Search"
 ---
 # Manage bookmarks
-
-> [!IMPORTANT]
-> On July 15, 2023, support for importing Promoted Results from SharePoint will discontinue. To learn about alternatives, refer to the section “Including SharePoint results in Microsoft Search” below. 
 
 Bookmarks help people quickly find important sites and tools with just a search. Each bookmark includes a title, URL, a set of user-friendly keywords to trigger the bookmark, and a category.
 
@@ -168,4 +165,8 @@ A bookmark can have several keywords and share the same keyword, but reserved ke
 
 **Q: How is country or region determined in bookmark settings?**
 
-**A**: If **Use Azure AD locations** is selected, the bookmark will only appear to users whose Usage location profile setting matches the Countries or regions specified. If there's no Usage location value, the country or region in your organization's profile is used. If the check box isn't selected, RevIP-based location is used to determine if a bookmark will appear.
+**A**: If **Use Microsoft Entra locations** is selected, the bookmark will only appear to users whose Usage location profile setting matches the Countries or regions specified. If there's no Usage location value, the country or region in your organization's profile is used. If the check box isn't selected, RevIP-based location is used to determine if a bookmark will appear.
+
+**Q: Will bookmarks appear in Microsoft Teams search results?
+
+**A**: Yes, Microsoft Search bookmarks will appear in the Microsoft Teams client search results. However, the results may be different from what appears in SharePoint or microsoft365.com as search will rank the results with machine learning algorithm. If the bookmark result does not meet the machine learning ranker threshold, then the results will be suppressed in the Microsoft Teams client. This is by design and aligned to feedback received from many customers.

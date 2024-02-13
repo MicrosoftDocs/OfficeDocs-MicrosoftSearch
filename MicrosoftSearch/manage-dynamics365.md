@@ -1,6 +1,6 @@
 ---
 title: "Dataverse and Dynamics 365 results in Microsoft Search"
-ms.author: dawholl
+ms.author: davidedwards
 author: dawholl
 manager: kellis
 ms.audience: Admin

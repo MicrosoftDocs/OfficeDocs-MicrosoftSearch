@@ -61,7 +61,7 @@ Complete the following steps to configure any of the Microsoft Graph connectors 
    > ![Data sources available include: ADLS Gen2, Enterprise websites, Microsoft SQL server, Azure SQL, Oracle SQL database, ServiceNow Knowledge, ServiceNow Catalog, File share, Azure DevOps, and MediaWiki.](media/add-connector.png)
 
 > [!NOTE]
-> You can add a maximum of ten Microsoft Graph connections to each tenant.
+> You can add a maximum of thirty(30) Microsoft Graph connections to each tenant.
 
 ## Step 2: Name the connection
 
@@ -91,7 +91,7 @@ You can choose the properties that are indexed by Microsoft Search.
 
 Access control lists (ACLs) determine which users in your organization can access each item.  
 
-Some connectors such as [Microsoft SQL](MSSQL-connector.md) and [Azure Data Lake Storage Gen2](azure-data-lake-connector.md) natively support [Azure Active Directory (Azure AD)](/azure/active-directory/) ACLs.
+Some connectors such as [Microsoft SQL](MSSQL-connector.md) and [Azure Data Lake Storage Gen2](azure-data-lake-connector.md) natively support [Microsoft Entra ID](/azure/active-directory/) ACLs.
 
 Other connectors such as [ServiceNow Knowledge](servicenow-knowledge-connector.md), [ServiceNow Catalog](servicenow-catalog-connector.md), [Azure DevOps Work Items](azure-devops-connector.md), and [Salesforce](salesforce-connector.md) support syncing of non-Azure AD users and groups.  
 
@@ -148,7 +148,7 @@ REFINE | The refine option can be used as on the Microsoft Search results page. 
 
 For all connectors except the File share connector, custom types must be set manually. To activate search capabilities for each field, you need a search schema mapped to a list of properties. The connection configuration assistant automatically selects a search schema based on the set of source properties you choose. You can modify this schema by selecting the check boxes for each property and attribute on the search schema page.
 
-:::image type="content" alt-text="Schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions." source="media/manageschema.png" lightbox="media/manageschema.png":::
+:::image type="content" alt-text="Screenshot that shows schema for a connector can be customized by adding or removing Query, Search, and Retrieve functions." source="media/manageschema.png" lightbox="media/manageschema.png":::
 
 ### Restrictions and recommendations for search schema settings
 
@@ -184,14 +184,53 @@ With an **Incremental refresh**, the search engine can process and index only th
 
 Incremental refreshes are much faster than full refreshes because unchanged items aren't processed. However, if you choose to run incremental refreshes, you still need to run full refreshes periodically to maintain correct data sync between the content source and the search index.
 
-> [!div class="mx-imgBorder"]
-> ![Incremental crawl and full crawl interval settings showing Incremental at 15 minutes and Full crawl at 1 week.](media/refreshschedule.png)
+### Crawl Scheduling
 
-<!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
+You can configure full and incremental crawls based on the advanced scheduling options present on the Refresh Settings page. Some connectors do not support incremental crawls and the option to configure incremental crawls will not be available for those connectors. For others, the incremental crawl is an optional crawl and enabled by default. A crawl schedule is selected by default for you based on the connector type. This default setting can be changed during connection creation or edited after a connection is published from the "Edit" flow of a connection. You can choose from these fields:
+
+* **Recurrence**: You can choose to run the crawls every day, week, 2nd week or 4th week.
+* **Day(s)**: This option is enabled when you choose to run crawls only on specific days of the week.
+* Run once a day check box lets you choose the start time of the crawl in a day. If not selected, the crawls will be repeated in a day by default. You can choose the repeat interval from the dropdown.
+* **Frequency**: Select this option if you want to repeat crawls in a day after certain time intervals. The smallest repeat frequency is 15 minutes, and the largest is 12 hours.
+* **Starting Time**: Select the time when you want the crawl to start.
+* **Reset**: This will reset the schedule to the connector's default schedule.
+
+:::image type="content" alt-text="Screenshot that shows sample configuration setting." source="media/refresh-settings/incremental-week-view.png":::
+
+Here are certain points to note while configuring the crawl schedule:
+
+* If you leave any of the fields empty, or unselected, Graph connectors will pick the best time to start a crawl. For example if you choose a crawl Recurrence as "Day" and do not select the start time, Graph connectors will choose the time based on your last crawl to start the new crawl. If you do not want to specify a start time of the crawl, it is a good practice to let the connector decide when to start the crawl.
+* Even if the start time is mentioned, the crawl start may delay by an hour. This can be because of reasons such as network load etc.
+* If the previous crawl overruns to the time of the next crawl, we do not stop the ongoing crawl and queue the next crawl. After the ongoing crawl is complete, we run the queued crawl only if it is of a different type (full/incremental) than the previous crawl. For example, if an incremental crawl overruns the next full crawl, we will not suspend the incremental crawl and queue the full crawl. After the completion of the incremental crawl, since the queued crawl is of different type (full), we will start the full crawl immediately.
+
+These are some of the scenarios:
+
+* Run incremental crawl daily after every 15 minutes
+
+:::image type="content" alt-text="Screenshot that shows run incremental crawl daily after every 15 minutes." source="media/refresh-settings/incremental-daily-view.png":::
+
+Here selecting the "Run once in a day" checkbox will let you choose the "Start time" to run incremental crawl only once in a day starting at the specified time. However, unselecting it will let you choose the frequency of crawl repetitions in a day. If you want your data to be continuously refreshed, you can choose to run incremental crawls frequently in a day. But if the number of items in data source is large and the crawls tend to be longer, or if frequent updates are not needed for the content, you can choose the incremental crawl to run once in a day.
+
+:::image type="content" alt-text="Screenshot that shows run incremental crawl daily at 2:00 PM" source="media/refresh-settings/incremental-run-once.png":::
+
+* Run incremental crawl every week on Wednesday, Saturday and Sunday repeating every 15 minutes and starting at 1:00 AM
+
+:::image type="content" alt-text="Screenshot that shows run incremental crawl every week on Wednesday, Saturday and Sunday repeating every 15 minutes and starting at 1:00 AM." source="media/refresh-settings/incremental-week-view.png":::
+
+* Run full crawl every day at 1:00 AM
+
+:::image type="content" alt-text="Screenshot that shows run full crawl every day at 1:00 AM." source="media/refresh-settings/full-day-view.png":::
+
+* Run full crawl every week on Friday at 8:00 PM
+
+:::image type="content" alt-text="Screenshot that shows run full crawl every week on Friday at 8:00 PM." source="media/refresh-settings/full-week-view.png":::
 
 ## Step 9: Review connection
 
 You can review your entire configuration and edit settings as needed before completing the connection. *Be sure to read the connector-specific information for your data source if you haven't already done so.* When you're ready to complete the connection, select **Publish**.
+
+### Staged Rollout
+Staged rollout is a feature that allows you to gradually introduce Microsoft Graph connectors to a select group of users in your production environment. Select **Publish to limited users** to deploy the connector to a limited audience. For more information, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
 
 ## Step 10: Manage connection results
 
@@ -217,4 +256,3 @@ Read the connector-specific information for your data source.
 To learn about limitations that apply to all data sources, see the [Overview of Microsoft Graph connectors](connectors-overview.md) article.
 
 See the connector-specific information for your data source to find out if other limitations apply to that particular Microsoft Graph connector.
-

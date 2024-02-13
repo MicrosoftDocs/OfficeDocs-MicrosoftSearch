@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
+ms.collection: essentials-security
 search.appverid:
 - BFB160
 - MET150
@@ -23,9 +24,11 @@ With enhanced privacy and security measures, Microsoft Search in Bing helps prot
 
 Microsoft Search in Bing requests are made over HTTPS. The connection is encrypted end-to-end for enhanced security.
   
-## Authentication and authorization with Azure Active Directory
+<a name='authentication-and-authorization-with-azure-active-directory'></a>
 
-Authentication for Microsoft Search in Bing is tied to Azure Active Directory. When Microsoft Search users go to Bing, the Bing header shows sign-in options for a Microsoft account and a work or school account. If Bing can't determine whether a user is an eligible participant, users can go to the [Explore Microsoft Search](https://www.bing.com/business/explore) page, where they are automatically redirected to your organization's sign-in page.
+## Authentication and authorization with Microsoft Entra ID
+
+Authentication for Microsoft Search in Bing is tied to Microsoft Entra ID. When Microsoft Search users go to Bing, the Bing header shows sign-in options for a Microsoft account and a work or school account. If Bing can't determine whether a user is an eligible participant, users can go to the [Explore Microsoft Search](https://www.bing.com/business/explore) page, where they are automatically redirected to your organization's sign-in page.
 
 Users can access Microsoft Search only through a work or school account. They need to sign in with the same credentials they use to access Office 365 services such as SharePoint or Outlook. A personal Microsoft account can't be used to sign in to Microsoft Search.
 

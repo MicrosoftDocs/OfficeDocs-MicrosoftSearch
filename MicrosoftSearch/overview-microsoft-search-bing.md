@@ -1,6 +1,6 @@
 ---
 title: "Overview of Microsoft Search in Bing"
-ms.author: dawholl
+ms.author: davidedwards
 author: dawholl
 manager: kellis
 ms.audience: Admin
@@ -87,6 +87,12 @@ To help increase adoption of Microsoft Search in Bing, consider ways to make it 
 **Default search engine**: If changing your default browser isn't an option, you can enable work or school search from the address bar by setting Bing as your default search engine. For details, see [Make Bing the default search engine](set-default-search-engine.md).
 
 **Default homepage**: Setting Bing as your organization's default homepage won't enable searching work or school from the address bar, but it does provide any easy way to access bing.com. For more information, see [Make Bing.com the default home page](set-default-homepage.md).
+
+## Control access to Copilot for Microsoft 365
+
+IT admins will soon be able control access to Copilot for Microsoft 365 in Bing, Edge, and Windows using a PowerShell script. Running this script will control access to Copilot for Microsoft 365 in Bing.com, Edge sidebar, Edge mobile app, Copilot in Windows, copilot.microsoft.com, and the Copilot app. It won’t change how users access Copilot in other Microsoft 365 apps.
+
+**Note:** The PowerShell script download link and run commands will be available in late February 2024. Please return to this page if you wish to configure Copilot for Microsoft 365 in Bing, Edge, and Windows after late February. 
 
 ## Security and privacy
 
