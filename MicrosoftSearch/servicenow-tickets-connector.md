@@ -41,7 +41,7 @@ To connect to your ServiceNow data, you need your organization's **ServiceNow in
 
 Along with this URL, you'll need a **service account** for setting up the connection to ServiceNow and for allowing Microsoft Search to periodically update the tickets details based on the refresh schedule. 
 
-In ServiceNow, Task table is the base class for ticket management. It can be extended to create ticket applications such as incident, problem and change Management. Learn more about [ServiceNow Task tables](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/task-table/concept/c_TaskTable.html).
+In ServiceNow, Task table is the base class for ticket management. It can be extended to create ticket applications such as incident, problem and change Management. Learn more about [ServiceNow Task tables](https://docs.servicenow.com/bundle/washingtondc-platform-administration/page/administer/task-table/concept/c_TaskTable.html).
 
 The service account you use to configure a connection **must have** read access to the following ServiceNow table records to successfully crawl default ticket fields.
 
@@ -51,7 +51,7 @@ Index base [Task table fields](https://docs.servicenow.com/bundle/sandiego-platf
 Sync user tables | `sys_user` | To index user access details for tickets
 
 
-If you want to index custom properties from [extended tables](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/table-administration/concept/table-extension-and-classes.html) of *task* table, provide read access to sys_dictionary and sys_db_object. 
+If you want to index custom properties from [extended tables](https://docs.servicenow.com/bundle/washingtondc-application-development/page/administer/table-administration/concept/table-extension-and-classes.html) of *task* table, provide read access to sys_dictionary and sys_db_object. 
 It is an **optional** feature. You'll be able to index *task* table properties without access to the two extra tables.
 
 **Feature** | **Read access required tables** | **Description**
@@ -59,7 +59,7 @@ It is an **optional** feature. You'll be able to index *task* table properties w
 Select custom table from your organization| `sys_db_object` | Find the list of extended task tables including custom tables
 Index custom fields from a specific <table_name> | `sys_dictionary` | Crawling custom fields from a specific table like incident, problem or change_management
 
-You can **create and assign a role** for the service account you use to connect with Microsoft Search. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be provided to the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/sandiego/new_to_servicenow/app_store_learnv2_securingapps_sandiego_securing_table_records). 
+You can **create and assign a role** for the service account you use to connect with Microsoft Search. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/washingtondc-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be provided to the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/sandiego/new_to_servicenow/app_store_learnv2_securingapps_sandiego_securing_table_records). 
 
 
 To authenticate and sync content from ServiceNow, choose **one of three** supported methods:
@@ -74,7 +74,7 @@ Enter the username and password of ServiceNow account with read access to `task`
 
 ## Step 3.2: ServiceNow OAuth
 
-To use ServiceNow OAuth, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance. After that Microsoft Search app will be able to access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
+To use ServiceNow OAuth, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance. After that Microsoft Search app will be able to access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/washingtondc-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
 The following table provides guidance on how to fill out the endpoint creation form:
 
@@ -145,7 +145,7 @@ Service Principal ID | An identity for the application running as a service. (fr
 
 The ServiceNow instance needs the following configuration:
 
-1. Register a new OAuth OIDC entity. To learn, see [Create an OAuth OIDC provider](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/security/task/add-OIDC-entity.html).
+1. Register a new OAuth OIDC entity. To learn, see [Create an OAuth OIDC provider](https://docs.servicenow.com/bundle/washingtondc-platform-security/page/administer/security/task/add-OIDC-entity.html).
 
 2. The following table provides guidance on how to fill out OIDC provider registration form
 
@@ -175,7 +175,7 @@ The ServiceNow instance needs the following configuration:
 
 ### Step 3.3.5: Create a ServiceNow account
 
-Refer the instructions to create a ServiceNow account, [create a user in ServiceNow](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
+Refer the instructions to create a ServiceNow account, [create a user in ServiceNow](https://docs.servicenow.com/bundle/washingtondc-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
 
 The following table provides guidance on how to fill out the ServiceNow user account registration
 
@@ -196,7 +196,7 @@ Use Application ID as Client ID (from step 3.a), and Client secret (from step 3.
 
 In this step, you can add or remove available tables and properties from your ServiceNow data source. Microsoft 365 has already selected few tables and properties by default.
 
-With a ServiceNow query string, you can specify conditions for syncing tickets. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only tickets that are created in the last six months and are in open state. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/en-US/bundle/sandiego-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
+With a ServiceNow query string, you can specify conditions for syncing tickets. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only tickets that are created in the last six months and are in open state. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/washingtondc-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
 Use the preview results button to verify the sample values of the selected properties and query filter.
 
