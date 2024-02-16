@@ -97,8 +97,11 @@ To control access to Copilot for Microsoft 365 in Bing, Edge, and Windows, follo
 1. Download the PowerShell script [to be provided by Ahalya].
 2. Open an instance of the PowerShell script in admin mode. 
 3. Run the appropriate command:
+
       a. To turn *on* Copilot for Microsoft 365 in Bing, Edge, and Windows, run the command “X” [to be provided by Ahalya]
+
       b. To turn *off* Copilot for Microsoft 365 in Bing, Edge, and Windows, run the command “X” [to be provided by Ahalya] 
+
 4. Run the PowerShell script.
 5. Follow the instructions on the script prompts.
 6. The cmdlet will prompt you to sign in with your AAD account.
