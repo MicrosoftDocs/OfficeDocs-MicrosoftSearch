@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: microsoft-365-copilot
 audience: Admin
 ms.audience: Admin
-ms.date: 11/10/2023 
+ms.date: 02/19/2024 
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
