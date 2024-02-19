@@ -2,6 +2,15 @@
 
 
 
+## Week of February 12, 2024
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/13/2024 | [Microsoft Graph connectors license requirements and pricing](/MicrosoftSearch/licensing) | modified |
+| 2/14/2024 | [ServiceNow Tickets Microsoft Graph connector](/MicrosoftSearch/servicenow-tickets-connector) | modified |
+
+
 ## Week of February 05, 2024
 
 
