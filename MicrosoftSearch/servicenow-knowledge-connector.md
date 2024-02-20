@@ -19,7 +19,7 @@ description: "Set up the ServiceNow Knowledge Graph connector for Microsoft Sear
 
 # ServiceNow Knowledge Microsoft Graph connector
 
-With the Microsoft Graph connector for ServiceNow, your organization can index knowledge-base articles that are visible to all users or restricted with user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, end users can search for those articles from any Microsoft Search client.  
+With the Microsoft Graph connector for ServiceNow, your organization can index knowledge-base articles that are visible to all users or restricted with user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, end users can search for those articles in Microsoft Copilot and from any Microsoft Search client.  
 
 You can also refer [this video](https://www.youtube.com/watch?v=TVSkJpk1RiE) to learn more about Graph Connector's capability in managing search permissions.
 
@@ -87,15 +87,15 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
    > ServiceNow Microsoft Graph connector can index knowledge articles and user criteria permissions without advanced scripts. If a user criteria contains advanced script all the related knowledge articles will be hidden from search results.
 
    **Authentication details**: To authenticate and sync content from ServiceNow, choose **one of three** supported methods:
-   - Basic authentication
-   - ServiceNow OAuth (recommended)
-   - Microsoft Entra ID OpenID Connect
+   - [Basic authentication](#1-basic-authentication)
+   - [ServiceNow OAuth (recommended)](#2-servicenow-oauth)
+   - [Microsoft Entra ID OpenID Connect](#3-microsoft-entra-id-openid-connect)
 
-   1. **Basic authentication**
+      #### 1. **Basic authentication**
 
       Enter the username and password of ServiceNow account with **knowledge** role to authenticate to your instance.
 
-   2. **ServiceNow OAuth**
+      #### 2. **ServiceNow OAuth**
 
       <details>
       <summary>To use the ServiceNow OAuth for authentication, follow the steps below.</summary>
@@ -117,11 +117,10 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
 
       Enter the client id and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role. Refer to the table in the beginning of [Step 2: Data Source Settings](#2-data-source-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
-</details>
+      </details>
 
-<a name='step-33-azure-ad-openid-connect'></a>
+     #### 3. **Microsoft Entra ID OpenID Connect**
 
-   3. **Microsoft Entra ID OpenID Connect**
       <details>
 
       <summary>To use Microsoft Entra ID OpenID Connect for authentication, follow the steps below.</summary>
