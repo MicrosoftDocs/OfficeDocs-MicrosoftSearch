@@ -90,22 +90,24 @@ To help increase adoption of Microsoft Search in Bing, consider ways to make it 
 
 ## Control access to Copilot for Microsoft 365
 
-IT admins should use a PowerShell script to control access to Copilot for Microsoft 365 in Bing, Edge, and Windows. Running this script controls access to Copilot for Microsoft 365 in Bing.com, Edge sidebar, Edge mobile app, Copilot in Windows, copilot.microsoft.com, and the Copilot app. It doesn’t change how users access Copilot in other Microsoft 365 apps. 
+IT admins should use a PowerShell script to control access to Copilot for Microsoft 365 in Bing, Edge, and Windows. Running this script controls access to Copilot for Microsoft 365 in Bing.com, Edge sidebar, Edge mobile app, Copilot in Windows, copilot.microsoft.com, and the Copilot app. It doesn’t change how users access Copilot in other Microsoft 365 apps.
 
-To control access to Copilot for Microsoft 365 in Bing, Edge, and Windows, follow these steps:
+To turn on or turn off Copilot for Microsoft 365 in Bing, Edge, and Windows, follow these steps:
 
-1. Download the PowerShell script [to be provided by Ahalya].
-2. Open an instance of the PowerShell script in admin mode. 
-3. Run the appropriate command:
-
-      - To turn *on* Copilot for Microsoft 365 in Bing, Edge, and Windows, run the command “X” [to be provided by Ahalya]
-      
-      - To turn *off* Copilot for Microsoft 365 in Bing, Edge, and Windows, run the command “X” [to be provided by Ahalya]
-
+1. Download the [PowerShell script](https://download.microsoft.com/download/8/9/d/89d41212-7ece-414c-b6d3-f4ecb070c613/ConfigureM365Copilot.ps1). 
+2. Open an instance of the Windows PowerShell in admin mode.
+3. Run the following command first: 'Set-ExecutionPolicy unrestricted'.
 4. Run the PowerShell script.
-5. Follow the instructions on the script prompts.
-6. The cmdlet will prompt you to sign in with your AAD account.
-7. Once signed in, it will turn Copilot for Microsoft 365 on or off in Bing, Edge, and Windows.
+5. Follow the instructions prompted by the script.
+6. The cmdlet will prompt you to sign in with your AAD account (must be a Search Admin or Global Admin account).
+7. Follow these steps
+
+      - To get the **current status** of Copilot for Microsoft 365 in Bing, Edge, and Windows in your tenant, run: '.\ConfigureM365Copilot.ps1'
+      
+      - To **turn on** Copilot for Microsoft 365 in Bing, Edge, and Windows, run: '.\ConfigureM365Copilot.ps1 -enable $true'
+      
+      - To **turn off** Copilot for Microsoft 365 in Bing, Edge, and Windows, run: '.\ConfigureM365Copilot.ps1 -enable $false'
+
 8. If anything goes wrong, please run the script again. If the issue persists, please contact support. 
 
 ## Security and privacy
