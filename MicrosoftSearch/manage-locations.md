@@ -54,7 +54,6 @@ Here are some important points regarding the template file:
 
 - Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*
 - If you include the *Id* of an existing location, it is replaced with the information in the import file.
-- If there's an existing location with the same name, the location is updated with information in the import file.
 - Not all fields in the template file are required and required fields vary depending on the location state.
 - Based on the *State* field, locations are saved as draft, suggested, scheduled, or they'll be published automatically.
 - For partners who manage multiple organizations, you can export your locations from one org and import them into another. But you must remove the data in the *Id* column before you import.
