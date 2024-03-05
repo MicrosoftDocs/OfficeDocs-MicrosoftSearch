@@ -75,7 +75,6 @@ A few important points about the template file:
 
 - Never edit data in these fields: *ID*, *Last Modified*, and *Last Modified By*
 - If you include the *ID* of an existing bookmark, it will be replaced with the information in the import file.
-- For existing bookmarks with the same title or URL, the bookmark will be updated with information in the import file.
 - Not all fields in the template file are required and required fields vary depending on the bookmark state.
 - Based on the *State* field, bookmarks will be saved as draft, suggested, scheduled, excluded, or they'll be published automatically.
 - For partners who manage multiple organizations, you can export your bookmarks from one org and import them into another. But you must remove the data in the *ID* column before you import.
