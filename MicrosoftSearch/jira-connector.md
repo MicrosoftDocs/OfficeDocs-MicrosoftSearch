@@ -193,4 +193,5 @@ Below is a list of common errors observed while configuring the connector or dur
 
 The following are known limitations of the Atlassian Jira connector:
 
+* The connector does not support the "Any user logged in" application role to grant access to issues.
 * Jira Server and Data Center versions aren't supported.
