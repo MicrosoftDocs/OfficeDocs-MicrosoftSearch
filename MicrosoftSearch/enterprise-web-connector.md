@@ -233,7 +233,9 @@ The Enterprise websites connector only supports search permissions visible to **
 
 ## Step 10: Set the refresh schedule
 
-The Enterprise websites connector supports full and incremental crawling. During an incremental refresh interval, only URLs that have been modified since the last incremental refresh are crawled. In a full refresh interval, the connector will recrawl all the website's content. For a full refresh, we recommend you set a large refresh schedule interval, between one and two weeks, to ensure the connector have enough time to complete the crawl. We recommend a scheduled refresh.
+The Enterprise websites connector supports full and incremental crawling. Incremental crawling is only supported for connections set up with sitemap crawling enabled. Sitemap for crawling can be selected in step 3. 
+
+During an incremental refresh interval, only URLs that have been modified since the last incremental refresh are crawled. In a full refresh interval, the connector will recrawl all the website's content. For a full refresh, we recommend you set a large refresh schedule interval, between one and two weeks, to ensure the connector have enough time to complete the crawl. We recommend a scheduled refresh.
 
 ## Step 11: Review connection
 
