@@ -264,6 +264,11 @@
       "source_path": "MicrosoftSearch/compliance-ediscovery.md",
       "redirect_url": "/microsoftsearch/connectors-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "MicrosoftSearch/manage-azure-cognitive-search.md",
+      "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
+      "redirect_document_id": false
     }
   ]
 }

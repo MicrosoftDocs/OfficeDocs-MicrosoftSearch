@@ -47,17 +47,16 @@
       "feedback_product_url": "https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch/issues",
       "searchScope": ["Microsoft Search"],
       "contributors_to_exclude": [
-        "rjagiewich",
-        "traya1",
-        "rmca14",
-        "claydetels19",
+        "rjagiewich",  
+        "American-Dipper",
+        "claydetels19", 
         "jborsecnik",
-        "tiburd",
-        "AngelaMotherofDragons",
-        "dstrome",
-        "v-dihans",
+        "v-stchambers",
+        "shdyas",
+        "Stacyrch140",
         "garycentric",
-        "beccarobins"
+        "beccarobins",
+        "dstrome"
       ]
     },
     "fileMetadata": {},

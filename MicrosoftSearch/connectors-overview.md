@@ -19,11 +19,10 @@ description: "Learn how your organization can use Microsoft Graph connectors to 
 
 # Microsoft Graph connectors overview for Microsoft Search
 
-[Microsoft Search](./overview-microsoft-search.md) indexes all your [Microsoft 365](https://www.microsoft.com/microsoft-365) data to make it searchable for users. With Microsoft Graph connectors, your organization can index third-party data so that it appears in Microsoft Search results. This feature expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem. The third-party data can be hosted on-premises or in the public or private clouds.
+[Microsoft Search](./overview-microsoft-search.md) indexes all your [Microsoft 365](https://www.microsoft.com/microsoft-365) data to make it searchable for users. With Microsoft Graph connectors, your organization can index third-party data so that it appears in Microsoft Search results. This feature expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem. The third-party data can be hosted on-premises or in the public or private clouds. Microsoft Graph connectors honor the source permissions as configured in your content source. As a result, users in your organization will only be able to view content to which they have access.
 
 > [!NOTE]
-> Microsoft Graph connectors with Microsoft 365 Copilot is in early access preview. When you get access to the [developer preview program](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR06na7ADVcFBoFXEJ5M8YD1UNkdQODE5VDNKOUQ2UlBSVUJJRlJDVktTVS4u), you'll receive instructions on how to build a Graph connector with Microsoft 365 Copilot.
-> Also, only customers who are part of the [Copilot Early Access Program](https://blogs.microsoft.com/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-2023-microsoft-work-trend-index/) will have Copilot enabled in their tenants in the coming months.
+> For details about how to build a Microsoft Graph connetor that is integrated with Microsoft 365 Copilot, see [Copilot for Microsoft Graph connectors](/graph/connecting-external-content-experiences#Copilot).
 
 The Microsoft Graph connectors setup process for the Microsoft Search experience is explained in the following video.
 
@@ -60,7 +59,7 @@ To create a **connection** to a data source, admins need authenticated access to
 
 ## What data sources can be connected to Microsoft Search?
 
-Microsoft provides nine Microsoft Graph connectors, and our ecosystem partners have created over 100 more connectors. You can also build your own connector.
+Microsoft provides 16 Microsoft Graph connectors, and our ecosystem partners have created over 100 more connectors. You can also build your own connector.
 
 ### Microsoft Graph connectors by Microsoft
 
@@ -112,15 +111,13 @@ Although Microsoft Graph connectors and Microsoft Search APIs are now generally 
 The set of connectors and features in preview include:
 
 * [Confluence On-premises connector](confluence-onpremises-connector.md)
-* [Azure DevOps Wiki connector](azure-devops-wiki-connector.md)
-* [ServiceNow Tickets connector](servicenow-tickets-connector.md)
 
 ## How do I customize and configure search results?
 
 There are many ways to customize and configure search results. To learn more, see the following articles:
 
 * [Manage search verticals](manage-verticals.md) and [result types](manage-result-types.md)
-* [Manage connector results in All vertical](connectors-in-all vertical.md)
+* [Manage connector results in All vertical](connectors-in-all-vertical.md)
 * [Manage search result layouts](customize-results-layout.md)
 * [Manage result cluster](result-cluster.md)
 * [Manage custom filters](custom-filters.md)

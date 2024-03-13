@@ -52,7 +52,7 @@ instructions.-->
 
 ### Register an app (for Azure SQL connector only)
 
-For Azure SQL connector, you must register an app in Azure Active Directory to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer to the Microsoft Graph documentation on how to [register an app](/graph/auth-register-app-v2).
+For Azure SQL connector, you must register an app in Microsoft Entra ID to allow Microsoft Search app to access data for indexing. To learn more about registering an app, refer to the Microsoft Graph documentation on how to [register an app](/graph/auth-register-app-v2).
 
 After completing the app registration and taking note of the app name, application (client) ID and tenant ID, you need to [generate a new client secret](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client secret will only be displayed once. Remember to note & store the client secret securely. Use the client ID and client secret while configuring a new connection in Microsoft Search.
 
@@ -66,7 +66,7 @@ To add the registered app to your Azure SQL Database, you need to:
    'ALTER ROLE db_datareader ADD MEMBER [app name]'
 
 >[!NOTE]
->To revoke access to any app registered in Azure Active Directory, refer the Azure documentation on [removing a registered app](/azure/active-directory/develop/quickstart-remove-app).
+>To revoke access to any app registered in Microsoft Entra ID, refer the Azure documentation on [removing a registered app](/azure/active-directory/develop/quickstart-remove-app).
 
 ### Connection settings
 
@@ -76,7 +76,7 @@ To connect your Microsoft SQL Server connector to a data source, you must config
 > - Your database must run SQL Server version 2008 or later for the Microsoft SQL Server connector to be able to connect.
 > - The Azure SQL connector only allows ingestion from an Azure SQL instance in the same [tenant](/azure/active-directory/develop/quickstart-create-new-tenant) as of Microsoft 365. Cross-tenant data flow is not supported.
 
-For the Azure SQL connector, you only need to specify the server name or IP address you want to connect to. Azure SQL connector only supports Azure Active Directory Open ID connect (OIDC) authentication to connect to the database.
+For the Azure SQL connector, you only need to specify the server name or IP address you want to connect to. Azure SQL connector only supports Microsoft Entra ID OpenID Connect (OIDC) authentication to connect to the database.
 
 For added security, you may configure IP firewall rules for your Azure SQL Server or database. To learn more about setting up IP firewall rules, refer documentation on [IP firewall rules](/azure/azure-sql/database/firewall-configure). Add the following client IP ranges in the firewall settings.
 
@@ -129,7 +129,10 @@ The below table summarizes the SQL data types that are supported in the MS SQL a
 | Approximate numeric | float <br> real | double |
 | Character string | char <br> varchar <br> text | string |
 | Unicode character strings | nchar <br> nvarchar <br> ntext | string |
+| String collection | char <br> varchar <br> text | stringcollection* |
 | Other data types | uniqueidentifier | string |
+
+*To index a column as StringCollection, you need to cast a string to string collection type. This can be done by clicking the 'Edit datatypes' link in Full crawl settings and selecting the appropriate columns as StringCollection along with specifying a delimiter to split the string.
 
 For any other data type currently not directly supported, the column needs to be explicitly cast to a supported data type.
 
@@ -163,7 +166,7 @@ Each of the ACL columns is expected to be a multi-valued column. These multiple 
 The following ID types are supported for using as ACLs:
 
 - **User Principal Name (UPN)**: A User Principal Name (UPN) is the name of a system user in an email address format. A UPN (for example: john.doe@domain.com) consists of the username (logon name), separator (the @ symbol), and domain name (UPN suffix).
-- **Azure Active Directory (AAD) ID**: In Azure AD, every user or group has an object ID that looks something like 'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b'.
+- **Microsoft Entra ID**: In Microsoft Entra ID, every user or group has an object ID that looks something like 'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b'.
 - **Active Directory (AD) Security ID**: In an on-premises AD setup, every user and group have an immutable, unique security identifier that looks something like 'S-1-5-21-3878594291-2115959936-132693609-65242.'
 
 ![Search permission settings to configure access control lists.](media/MSSQL-ACL2.png)
@@ -225,7 +228,6 @@ The following is a common error observed while configuring the connector, and it
 The SQL connectors have these limitations in the preview release:
 
 - Microsoft SQL Server connector: The on-premises database must run SQL Server version 2008 or later.
-- The Microsoft 365 subscription and Azure subscription (hosting Azure SQL database) must lie within the same Azure Active Directory.
-- ACLs are only supported by using a User Principal Name (UPN), Azure Active Directory (Azure AD), or Active Directory Security.
+- The Microsoft 365 subscription and Azure subscription (hosting Azure SQL database) must lie within the same Microsoft Entra ID.
+- ACLs are only supported by using a User Principal Name (UPN), Microsoft Entra ID, or Active Directory Security.
 - Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
-

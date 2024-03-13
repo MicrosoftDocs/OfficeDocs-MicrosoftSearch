@@ -24,7 +24,7 @@ To see your connections in the [Microsoft 365 admin center](https://admin.micros
 
 You can view the connection details and errors by selecting the connection.  
 
-:::image type="content" source="media/datasourcestab.png" alt-text="Connectors list with a connector selected and details pane showing information about this connector.":::
+:::image type="content" source="media/datasourcestab.png" alt-text="Screenshot that shows connectors list with a connector selected and details pane showing information about this connector.":::
 
 ## View your last crawl info
 
@@ -40,11 +40,43 @@ Value | Description
 **Successes** | Number of items that have been successfully ingested in the last crawl
 **Errors** | Number of items that produced an error in the last crawl
 
+## Download item errors
+
+Download error report is available in the errors tab of the connection pane. A limited number of connection errors are shown in the UI of connection pane. To get the complete list of errors, you can run the PowerShell script to download the complete error report. Here are the steps to generate the report:
+
+* Open Windows PowerShell with administrator rights.
+* Run the command to download and install the script from the PowerShell Library.
+
+```powershell
+    Install-Script -Name DownloadErrorScript
+```
+
+* This script downloads the item errors in a Microsoft Graph Connectors Connection. An Msal token is generated using the tenant credentials in which the connection is present. The token is generated using MSAL.PS module, while installing this PS script, MSAL.PS module should be installed automatically. If this doesn't happen use the below command to install MSAL.PS
+
+```powershell
+    Install-Module -Name MSAL.PS
+```
+
+* To know more about the script refer [DownloadErrorScript](https://www.powershellgallery.com/packages/DownloadErrorScript/2.1)
+* Once the install is complete run:
+
+```powershell
+    DownloadErrorScript.ps1
+```
+
+* Provide the connectionId of the connection for which you want to download the error report.
+* Give the name of the output file without extension as by default .csv extension is used.
+* Give the batch limit of the download. This is an optional parameter. A batch limit defines the batch of errors that is fetched from the service. Each batch fetch takes a few seconds. If you have a large number of errors in the order of thousands, larger batch size can be used to reduce the time spent in fetching the data with each batch. However, if the errors are in the order of hundreds, a low batch size would be ideal. Please note increasing batch size may increase the probability of failures. The maximum batch size limit is 5000.
+* The script will ask you to log in from the tenant account. After the login is complete, the download will start.
+* It will take some time based on the batch size and the number of errors to complete the download. The downloaded file will be present in the same path from where the script was run with the name given during the run.
+
+:::image type="content" alt-text="Screenshot that shows PowerShell script run to download the error report." source="media/errorreport.png" lightbox="media/errorreport.png":::
+
 ## Monitor errors
 
 For each **Active Connector** on the **Data sources** tab, any existing crawl errors show under the **Current crawl** header, in the **Errors** section. It lists error codes, the count of each, and error log download options. You can select an **error code** to view the error's details.
 
-:::image type="content" source="media/errormonitoring1.png" alt-text="Details pane showing the current crawl, and errors section for the selected connector.":::
+:::image type="content" source="media/errormonitoring1.png" alt-text="Screenshot that shows details pane showing the current crawl, and errors section for the selected connector.":::
 
 To view an error's specific details, select its error code. A screen appears with error details and a link. The most recent errors appear at the top.
 
@@ -75,10 +107,9 @@ Error code | Error message | Solution
 2003 | Indexing failed due to unsupported item content. | For more information, see connector-specific documentation.
 2004 | Indexing failed due to unsupported item or file size. | For more information, see connector-specific documentation.
 2005 | Indexing failed because the URI is too long. | For more information, see connector-specific documentation.
-2006 | User mapping failed due to an invalid mapping formula or no Azure AD user with this property. | Try deleting and recreating the connection with a different mapping formula. 
-2007 | This item won't be displayed in Microsoft Search because some users or groups without permission to view this item couldn't be indexed. | 
+2006 | User mapping failed due to an invalid mapping formula or no Microsoft Entra user with this property. | Try deleting and recreating the connection with a different mapping formula.
+2007 | This item won't be displayed in Microsoft Search because some users or groups without permission to view this item couldn't be indexed. |
 2008 | Connections can't have non-Azure AD groups with more than 50,000 members. | Try removing users from a group or try removing items ACLed with that group from ingestion and recreate the connection.
-2009 | Non-Azure AD group indexing is temporarily paused due to a large number of requests. Indexing will resume when the system finishes processing these requests. Check back later. | 
+2009 | Non-Azure AD group indexing is temporarily paused due to a large number of requests. Indexing will resume when the system finishes processing these requests. Check back later. |
 2010 | This connection is no longer valid because of an update made by Microsoft. | Delete the connection and create a new one.
 5000 | Something went wrong. If this issue continues, contact support. |
-

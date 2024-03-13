@@ -75,8 +75,12 @@ If your website contains dynamic content, for example, webpages that live in con
 In addition to the check box, there are three optional fields available:
 
 1. **DOM Ready**: Enter the DOM element the crawler should use as the signal that the content is fully rendered and the crawl should begin.
-1. **Headers to Add**: Specify which HTTP headers the crawler should include when sending that specific web URL. You can set multiple headers for different websites. We suggest including auth token values.
-1. **Headers to Skip**: Specify any unnecessary headers that should be excluded from dynamic crawling requests.
+2. **Headers to Add**: Specify which HTTP headers the crawler should include when sending that specific web URL. You can set multiple headers for different websites. We suggest including auth token values.
+3. **Headers to Skip**: Specify any unnecessary headers that should be excluded from dynamic crawling requests.
+
+Headers should be added in the following syntax: `{"Root-URL":["TKey=TValue"]}`
+
+Example: `{"https://www.contoso.com":["Token=Value","Type=Value2"]}`
 
 > [!NOTE]
 > Dynamic crawling is only supported for Agent crawl mode.
@@ -95,14 +99,14 @@ For your on-premises websites, select **Agent** as the crawl mode and in the **O
 
 **Basic** requires a username and password.
 
-**OAuth 2.0** with [Azure AD](/azure/active-directory/) requires a resource ID, Client ID, and a client Secret. OAuth 2.0 only works with Cloud mode.
+**OAuth 2.0** with [Microsoft Entra ID](/azure/active-directory/) requires a resource ID, Client ID, and a client Secret.
 
-The resource ID, client ID and client secret values will depend on how you did the setup for Azure Active Directory (Azure AD) based authentication for your website:
+The resource ID, client ID and client secret values will depend on how you did the setup for Microsoft Entra ID based authentication for your website:
 
 1. If you're using an application both as an identity provider and the client app to access the website, the client ID and the resource ID will be the application ID of the app, and the client secret will be the secret that you generated in the app.
     
     > [!NOTE]
-    > For detailed steps to configure a client application as an Identity provider, see [Quickstart: Register an application with the Microsoft identity platform and Configure your App Service or Azure Functions app to use Azure AD login](/azure/app-service/configure-authentication-provider-aad).
+    > For detailed steps to configure a client application as an Identity provider, see [Quickstart: Register an application with the Microsoft identity platform and Configure your App Service or Azure Functions app to use Microsoft Entra login](/azure/app-service/configure-authentication-provider-aad).
 
     After the client app is configured, make sure you create a new client secret by going to the **Certificates & Secrets** section of the app. Copy the client secret value shown in the page because it won't be displayed again.
 
@@ -134,7 +138,7 @@ The resource ID, client ID and client secret values will depend on how you did t
 2. If you're using an application as an identity provider for your website as the resource, and a different application to access the website, the client ID will be the application ID of your second app and the client secret will be the secret configured in the second app. However, the resource ID will be the ID of your first app.
 
     > [!NOTE]
-    > For steps to configure a client application as an identity provider see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) and [Configure your App Service or Azure Functions app to use Azure AD login](/azure/app-service/configure-authentication-provider-aad).
+    > For steps to configure a client application as an identity provider see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) and [Configure your App Service or Azure Functions app to use Microsoft Entra login](/azure/app-service/configure-authentication-provider-aad).
 
     You don't need to configure a client secret in this application, but you'll need to add an app role in the **App roles** section, which will later be assigned to your client application. Refer to the images to see how to add an app role.
 
@@ -229,7 +233,9 @@ The Enterprise websites connector only supports search permissions visible to **
 
 ## Step 10: Set the refresh schedule
 
-The Enterprise websites connector supports full and incremental crawling. During an incremental refresh interval, only URLs that have been modified since the last incremental refresh are crawled. In a full refresh interval, the connector will recrawl all the website's content. For a full refresh, we recommend you set a large refresh schedule interval, between one and two weeks, to ensure the connector have enough time to complete the crawl. We recommend a scheduled refresh.
+The Enterprise websites connector supports full and incremental crawling. Incremental crawling is only supported for connections set up with sitemap crawling enabled. Sitemap for crawling can be selected in step 3. 
+
+During an incremental refresh interval, only URLs that have been modified since the last incremental refresh are crawled. In a full refresh interval, the connector will recrawl all the website's content. For a full refresh, we recommend you set a large refresh schedule interval, between one and two weeks, to ensure the connector have enough time to complete the crawl. We recommend a scheduled refresh.
 
 ## Step 11: Review connection
 
@@ -254,4 +260,3 @@ When reading the website's content, the crawl may encounter some source errors, 
 
 * Errors 6001-6013 occur when the data source isn't reachable due to a network issue or when the data source itself is deleted, moved, or renamed. Check if the data source details provided are still valid.
 * Errors 6021-6024 occur when the data source contains non-textual content on the page or when the page isn't an HTML. Check the data source and add this page in exclusion list or ignore the error.
-

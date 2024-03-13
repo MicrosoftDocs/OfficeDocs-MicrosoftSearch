@@ -89,7 +89,7 @@ And here's the layout's associated JSON file:
                         },
                         {
                             "type": "TextBlock",
-                            "text": "__${LastPublishedAuthorName}__ modified on {{DATE({LastPublishedDate})}}",
+                            "text": "__${LastPublishedAuthorName}__ modified on {{DATE(${LastPublishedDate})}}",
                             "spacing": "Small"
                         },
                         {

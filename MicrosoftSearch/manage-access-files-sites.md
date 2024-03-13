@@ -1,6 +1,6 @@
 ---
 title: "Manage access to files and sites"
-ms.author: dawholl
+ms.author: davidedwards
 author: dawholl
 manager: kellis
 ms.audience: Admin

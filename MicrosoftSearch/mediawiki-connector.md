@@ -32,6 +32,8 @@ This article is for anyone who configures, runs, and monitors a MediaWiki connec
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
+[Add MediaWiki connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_MediaWiki&type=MediaWiki)
+
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
@@ -43,11 +45,11 @@ Follow the general [setup instructions](./configure-connector.md).
 ## Step 3: Configure the connection settings
 
 Enter your **Wiki URL** and choose the **Authentication type** from the drop-down menu of options. The options are **None**, **Basic**, and **OAuth
-2.0 AAD**.
+2.0 Microsoft Entra ID**.
 
 If you choose **Basic** as the Authentication type, you will need to provide the **Username** and **Password** for the wiki.
 
-If you choose **OAuth 2.0 AAD** as the Authentication type, you will need to provide the **Resource ID** of the wiki installation. You will also need to provide the **Client ID** and **Client secret** generated on the AAD Application registration page.
+If you choose **OAuth 2.0 Microsoft Entra ID** as the Authentication type, you will need to provide the **Resource ID** of the wiki installation. You will also need to provide the **Client ID** and **Client secret** generated on the Microsoft Entra Application registration page.
 
 ## Step 4: Manage search permissions
 
@@ -81,6 +83,6 @@ Follow the general [setup instructions](./configure-connector.md).
 The MediaWiki connector has these limitations in the preview release:
 
 * Supports only cloud-based wikis.
-* Supports only Basic or OAuth 2.0 with Azure Active Directory or Azure authentication.
+* Supports only Basic or OAuth 2.0 with Microsoft Entra ID or Azure authentication.
 * Doesn't support namespace selection for indexing. Indexes only Main, Category, and File namespaces.
 * Doesn't support Access Control Lists (ACLs). Thus, indexed pages are visible to all users in the organization.
