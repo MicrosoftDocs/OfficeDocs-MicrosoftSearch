@@ -159,6 +159,9 @@ To control access on an item level, select columns mapped to Allowed Users and A
 
 Follow the general [setup instructions](./configure-connector.md).
 
+> [!NOTE]
+> IconURL label is populated by default and the mapping cannot be changed.
+
 ## Step 8: Manage schema
 
 Follow the general [setup instructions](./configure-connector.md).
