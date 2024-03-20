@@ -148,5 +148,5 @@ After you create a support ticket, it takes up to 48 hours for system-curated ac
 
 **Q: Are there any special considerations while naming Acronyms?**
 
-**A:** Acronyms cannot contain any spaces. The acronym needs to be a contiguous string. If the acronym entered contains a space, it will be listed under Acronyms in the Search & intelligence admin portal however will not return the desired response when a search is executed. (E.g., “Helpdesk” is an acceptable acronym while “Help desk” is not.)
+**A:** Acronyms cannot contain any spaces. The acronym needs to be a contiguous string. If the acronym entered contains a space, it will be listed under Acronyms in the Search & intelligence admin portal, but the desired response will not be returned when a search is executed. For example, “Helpdesk” is an acceptable acronym while “Help desk” is not.)
 
