@@ -14,7 +14,7 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Manage the search schema for Microsoft built Graph connectors" 
-ms.date: 07/12/2022
+ms.date: 03/13/2024
 ---
 
 # Manage search schema (preview)
@@ -24,7 +24,11 @@ The search schema determines how your content ingested via a Graph connector is 
 The search schema contains crawled properties, search attributes, semantic labels and aliases. The next sections will define the various constituents of schema and management capabilities provided.
 
 > [!NOTE]
-> * Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions. Steps 6 and 7 define the schema while setting up a new connection.
+> Read the [**Setup your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions. Steps 6 and 7 define the schema while setting up a new connection.
+
+> [!NOTE]
+> If you are looking to modify the SharePoint Online search schema, read [**Manage the search schema in SharePoint**](/sharepoint/manage-search-schema).
+
 
 ## Crawled properties
 
