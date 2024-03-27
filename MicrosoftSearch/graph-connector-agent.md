@@ -221,7 +221,8 @@ The agent is considered offline if it isn't able to contact graph connector serv
 
 1. Check if the agent is running - Sign-in to the machine where the agent is installed and check if it's running. In Task Manager, go to Services tab, check if GcaHostService is in the running state. If not, right click and start the service.
 ![Screenshot of services in Task Manager.](media/onprem-agent/GcaHostService_GcaUpdateService.png)
-2. Check if domain gcs.office.com is reachable. Follow these steps:
+2. Check if domain gcs.office.com is reachable. (For a GCC tenant, substitute gcsgcc.office.com, and for a GCCHigh tenant, substitute gcs.office365.us, as shown in the initial table.)
+   Follow these steps:
     * From PowerShell, run the following command:
 
     ```powershell
@@ -234,7 +235,7 @@ The agent is considered offline if it isn't able to contact graph connector serv
 
     If it's false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
 
-    * If you can't run tnc because ICMP ping is blocked in your network, run the following command:
+    * For a more specific test, or if you can't run tnc because ICMP ping is blocked in your network, run the following command:
 
     ```powershell
     wget https://gcs.office.com/v1.0/admin/AdminDataSetCrawl/healthcheck
@@ -245,7 +246,7 @@ The agent is considered offline if it isn't able to contact graph connector serv
     ![Screenshot of wget 200.](media/onprem-agent/wget_gcs_1.png)
 
     If it isn't 200, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
-3. If the steps have passed successfully and the agent is still offline, check the GCA logs for any network proxy issues.
+4. If the steps have passed successfully and the agent is still offline, check the GCA logs for any network proxy issues.
     * GcaHostService logs can be found in the given location (you might need to manually navigate to this path - copy paste in file explorer may not work):
         1. For Windows Server 2016 OS: C:\Users\GcaHostService\AppData\Local\Microsoft\GraphConnectorAgent\HostService\logs
         2. For all other supported Windows OS Version: C:\Windows\ServiceProfiles\GcaHostService\AppData\Local\Microsoft\GraphConnectorAgent\HostService\logs
@@ -255,7 +256,7 @@ The agent is considered offline if it isn't able to contact graph connector serv
         2. Check with your network/proxy team to allow the virtual account (NT Service\GcaHostService), to send traffic to this domain.
         3. You can verify that the issue is resolved if the log file no longer contains these errors.
 
-4. If none of the steps fix your issue, contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the aforementioned location.
+5. If none of the steps fix your issue, contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the aforementioned location.
 
 #### Agent is unreachable
 
