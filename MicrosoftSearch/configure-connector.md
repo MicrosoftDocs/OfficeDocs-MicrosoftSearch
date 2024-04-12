@@ -69,10 +69,10 @@ Specify these attributes:
 
 * Name (required)
 * Connection ID (required)
-* Description (optional)
-* Select check box (required)
-
 The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters.
+* Description (required)
+Ensure the description encompasses the connection display name utilized within your organization, it can be written in a sentence format using natural language, you can add an alternative connection terminology referencing user-specific nomenclature. Incorporate the type of content that the source contains, its distinctive attributes, and delineate the type of information accessible within the connection.
+* Select check box (required)
 
 ## Step 3: Configure the connection settings
 
