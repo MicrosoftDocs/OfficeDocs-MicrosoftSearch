@@ -36,6 +36,8 @@ To index your Confluence server or data center content, you must install and reg
 
 You must be the admin for your organization's Microsoft 365 tenant and the admin for your organization's Confluence site.
 
+Note: GCA can be in a different Windows machine and need not be on the same machine as that of the on prem server. The machine can help generate App ID and secret which can be used for the setup. You must ensure that the GCA machine is on during the crawling. 
+
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
 Follow the general [setup instructions](./configure-connector.md).
@@ -65,11 +67,11 @@ You can choose either Basic Authentication or OAuth 1.0a (recommended) to authen
 >[!TIP]
 >Make sure the **service account has view access** to the Confluence content you want to index.
 
-#### Basic Authentication
+#### Basic Authentication (Available only for testing in preview): 
 
 Enter a service account's username (usually email ID) and password to authenticate using basic auth.
 
-#### OAuth 1.0a (recommended)
+#### OAuth 1.0a 
 
 Generate  a public/private key pair and create an application link in Confluence On-premises site so that the connector agent can access the instance. To learn more, see [step 1 in Atlassian developer documentation](https://developer.atlassian.com/server/jira/platform/oauth/#step-1--configure-jira) on how to configure OAuth 1.0a.
 
@@ -117,6 +119,16 @@ In the Confluence sign in screen, enter service account credentials. After succe
 ![Verification code](media/confluence-connector/confluence-onpremises-applications-link-3.png)
 
 Enter the **Verification Code** in connection creation configuration assistant and select **Finish Sign in**. After successful sign-in, select **Next**.
+
+#### OAuth 2.0 (Recommended)
+The following steps provide guidance on how to register the app [Configure an incoming link](https://confluence.atlassian.com/doc/configure-an-incoming-link-1115674733.html) 
+1. Go to Administration  > General Configuration > Application links. 
+2. Select Create link
+3. Select External application, and then choose Incoming as the direction. 
+4. Fill in the 
+      - Redirect URL: https://gcs.office.com/v1.0/admin/oauth/callback 
+      - Scope: Admin 
+5. Complete the connection settings step using the Client ID and Secret. 
 
 ## Step 4: Select properties
 
@@ -168,6 +180,10 @@ Follow the general [setup instructions](./configure-connector.md).
 Follow the general [setup instructions](./configure-connector.md).
 
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
+
+For testing purpose, you can choose [publish to limited audience](https://learn.microsoft.com/en-us/microsoftsearch/staged-rollout-for-graph-connectors#modify-or-stop-staged-rollout)   
+
+ 
 
 ## Troubleshooting
 
