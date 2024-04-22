@@ -77,7 +77,6 @@ Important template file tips:
 
 - Never edit data in these fields: **Id**, **Last Modified**, and **Last Modified By**
 - If you include the **Id** of an existing Q&A, it will be replaced with the information in the import file.
-- If there's an existing Q&A with the same title or URL, the Q&A will be updated with information in the import file.
 - Not all fields in the template file are required, and the required fields vary depending on the Q&A state.
 - The **State** field determines if Q&As are saved as *draft*, *suggested*, or *scheduled*, or are published automatically.
 - For partners who manage multiple organizations: You can export your Q&As from one org and import them into another. But you must remove the data in the **Id** column before you import.
