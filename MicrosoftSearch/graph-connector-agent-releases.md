@@ -20,6 +20,16 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
+## Version 2.3.4.0 (*April 17, 2024*)
+
+* Fixed issue where item url was getting ingested with changed case.
+* Other bug fixes and reliability improvements.
+
+## Version 2.3.3.0 (*April 1, 2024*)
+
+* Fixed upgrade failure issue
+* Other bug fixes and reliability improvements.
+
 ## Version 2.3.2.0 (*March 20, 2024*)
 
 * Enterprises Websites Graph Connector: Added error reporting for redirection related errors.
