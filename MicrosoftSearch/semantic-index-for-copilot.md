@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.collection:
 - scotvorg
 - m365copilot
+- magic-ai-copilot
 description: "Learn about Semantic Index for Copilot."
 ---
 
