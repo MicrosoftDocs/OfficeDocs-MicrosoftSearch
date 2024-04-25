@@ -36,7 +36,7 @@ To index your Confluence server or data center content, you must install and reg
 
 You must be the admin for your organization's Microsoft 365 tenant and the admin for your organization's Confluence site.
 
-Note: GCA can be in a different Windows machine and need not be on the same machine as that of the on prem server. The machine can help generate App ID and secret which can be used for the setup. You must ensure that the GCA machine is on during the crawling. 
+Note: GCA(Graph connector agent) can be in a different Windows machine and need not be on the same machine as that of the on prem server. The machine can help generate App ID and secret which can be used for the setup. You must ensure that the GCA machine is on during the crawling. 
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
