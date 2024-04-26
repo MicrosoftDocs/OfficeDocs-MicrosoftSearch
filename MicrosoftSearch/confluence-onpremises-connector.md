@@ -41,11 +41,11 @@ You must be the administrator for your organization's Microsoft 365 tenant and t
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
-Follow the general [setup instructions](./configure-connector.md).
+Follow the general instructions in [Step 1: Add a Microsoft Graph connector in the Microsoft 365 admin center](./configure-connector.md#step-1-add-a-microsoft-graph-connector-in-the-microsoft-365-admin-center).
 
 ## Step 2: Name the connection
 
-Follow the general [setup instructions](./configure-connector.md).
+Follow the general instructions in [Step 2: Name the connection](./configure-connector.md#step-2-name-the-connection).
 
 ## Step 3: Configure the connection settings
 
