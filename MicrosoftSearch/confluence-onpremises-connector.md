@@ -182,7 +182,7 @@ Follow the general [setup instructions](./configure-connector.md).
 
 Follow the general [setup instructions](./configure-connector.md).
 
-After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](./configure-connector.md#next-steps-customize-the-search-results-page).
+After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](./configure-connector.md#step-11-customize-the-search-results-page).
 
 For testing purpose, you can choose [publish to limited audience](./staged-rollout-for-graph-connectors.md#modify-or-stop-staged-rollout)   
 
