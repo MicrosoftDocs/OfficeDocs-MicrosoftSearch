@@ -129,8 +129,8 @@ The following steps provide guidance on how to register the app [Configure an in
 2. Select Create link
 3. Select External application, and then choose Incoming as the direction. 
 4. Fill in the 
-   - Redirect URL: https://gcs.office.com/v1.0/admin/oauth/callback 
-   - Scope: Admin 
+   - Redirect URL: `https://gcs.office.com/v1.0/admin/oauth/callback` 
+   - Scope: **Admin**
 5. Complete the connection settings step using the Client ID and Secret. 
 
 ## Step 4: Select properties
