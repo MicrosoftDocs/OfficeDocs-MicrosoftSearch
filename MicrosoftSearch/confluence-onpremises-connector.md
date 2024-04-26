@@ -22,9 +22,9 @@ description: "Set up the Confluence On-premises Graph Microsoft connector for Mi
 The Confluence on-premises Microsoft Graph connector allows your organization to index Confluence server or data center content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search.
 
 >[!NOTE]
->The Confluence on-premises connector is in preview. If you wish to get early access to try it, sign up using [<b> this form </b>](https://forms.office.com/r/JniPmK5bzm).
+>The Confluence on-premises connector is in preview. If you wish to get early access to try it, sign up using [this form](https://forms.office.com/r/JniPmK5bzm).
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence on-premises connector. It supplements the general instructions provided in the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md).
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence on-premises connector. It supplements the general instructions provided in [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md).
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence on-premises Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
@@ -82,10 +82,10 @@ Run the following openssl commands in your on-premises machine terminal.
 
 Step | Command
 --- | ---
-Generate a 1024-bit private key |```openssl genrsa -out confluence_privatekey.pem 1024```
-Create an X509 certificate |```openssl req -newkey rsa:1024 -x509 -key confluence_privatekey.pem -out confluence_publickey.cer -days 365```
-Extract the private key (PKCS8 format) to the `confluence_privatekey.pcks8` file |```openssl pkcs8 -topk8 -nocrypt -in confluence_privatekey.pem -out confluence_privatekey.pcks8```
-Extract the public key from the certificate to the `confluence_publickey.pem` file |```openssl x509 -pubkey -noout -in confluence_publickey.cer > confluence_publickey.pem```
+Generate a 1024-bit private key |`openssl genrsa -out confluence_privatekey.pem 1024`
+Create an X509 certificate |`openssl req -newkey rsa:1024 -x509 -key confluence_privatekey.pem -out confluence_publickey.cer -days 365`
+Extract the private key (PKCS8 format) to the `confluence_privatekey.pcks8` file | `openssl pkcs8 -topk8 -nocrypt -in confluence_privatekey.pem -out confluence_privatekey.pcks8`
+Extract the public key from the certificate to the `confluence_publickey.pem` file | `openssl x509 -pubkey -noout -in confluence_publickey.cer > confluence_publickey.pem`
 
 #### Step 3.4.2 Create an application link
 
@@ -95,19 +95,19 @@ Extract the public key from the certificate to the `confluence_publickey.pem` fi
 
 3. On the first screen of **Link applications** dialog, provide an **Application Name** and select **Generic Application** type. Select the **Create incoming link** checkbox. All other fields are optional. Select **Continue**.
 
-![Link Applications dialog](media/confluence-connector/confluence-onpremises-applications-link-1.png)
+   ![Link Applications dialog](media/confluence-connector/confluence-onpremises-applications-link-1.png)
 
 4. On the second screen of **Link applications** dialog, enter consumer details for sample client:
 
-Field | Recommended Value
---- | ---
-**Consumer key** | `OAuthkey`
-**Consumer name** | `Microsoft Graph Connector App`
-**Public key** | Copy the public key from `confluence_publickey.pem` file generated from *Step 3.4.1* and paste it into this field (for example, `iuasge87awegrq3...`).
+   Field | Recommended Value
+   --- | ---
+   **Consumer key** | `OAuthkey`
+   **Consumer name** | `Microsoft Graph Connector App`
+   **Public key** | Copy the public key from `confluence_publickey.pem` file generated from *Step 3.4.1* and paste it into this field (for example, `iuasge87awegrq3...`).
 
 5. Select **Continue**. After successful creation, the application link will be displayed like the following screen.
 
-![Link Applications post creation](media/confluence-connector/confluence-onpremises-applications-link-2.png)
+   ![Link Applications post creation](media/confluence-connector/confluence-onpremises-applications-link-2.png)
 
 #### Step 3.4.3 Enter consumer key and private key to sign in
 
@@ -122,13 +122,15 @@ In the Confluence sign in screen, enter service account credentials. After succe
 Enter the **Verification Code** in connection creation configuration assistant and select **Finish Sign in**. After successful sign-in, select **Next**.
 
 #### OAuth 2.0 (Recommended)
+
 The following steps provide guidance on how to register the app [Configure an incoming link](https://confluence.atlassian.com/doc/configure-an-incoming-link-1115674733.html) 
+
 1. Go to Administration  > General Configuration > Application links. 
 2. Select Create link
 3. Select External application, and then choose Incoming as the direction. 
 4. Fill in the 
-      - Redirect URL: https://gcs.office.com/v1.0/admin/oauth/callback 
-      - Scope: Admin 
+   - Redirect URL: https://gcs.office.com/v1.0/admin/oauth/callback 
+   - Scope: Admin 
 5. Complete the connection settings step using the Client ID and Secret. 
 
 ## Step 4: Select properties
@@ -155,11 +157,11 @@ To identify which option is suitable for your organization:
 1. Choose the **Microsoft Entra ID** option if the email ID of Confluence users is **same** as the UserPrincipalName (UPN) of users in Microsoft Entra ID.
 2. Choose the **Non-AAD** option if the email ID of Confluence users is **different** from the UserPrincipalName (UPN) of users in Microsoft Entra ID. 
 
->[!NOTE]
->
-> * If you choose Microsoft Entra ID as the type of identity source, the connector maps the Email IDs of users obtained from Confluence directly to UPN property from Microsoft Entra ID.
-> * If you chose "Non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
-> * Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support processing of updates to permissions.
+   >[!NOTE]
+   >
+   > * If you choose Microsoft Entra ID as the type of identity source, the connector maps the Email IDs of users obtained from Confluence directly to UPN property from Microsoft Entra ID.
+   > * If you chose "Non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
+   > * Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support processing of updates to permissions.
 
 ## Step 6: Assign property labels
 
