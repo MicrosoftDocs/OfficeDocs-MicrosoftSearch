@@ -107,7 +107,7 @@ Extract the public key from the certificate to the `confluence_publickey.pem` fi
 
 5. Select **Continue**. After successful creation, the application link will be displayed like the following screen.
 
-   :::image type="content" alt-text="Link Applications post creation" source="media/confluence-connector/confluence-onpremises-applications-link-2.png":::
+   :::image type="content" alt-text="Link Applications post creation" source="media/confluence-connector/confluence-onpremises-applications-link-2.png" lightbox="media/confluence-connector/confluence-onpremises-applications-link-2.png":::
 
 #### Step 3.4.3 Enter consumer key and private key to sign in
 
