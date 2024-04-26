@@ -95,7 +95,7 @@ Extract the public key from the certificate to the `confluence_publickey.pem` fi
 
 3. On the first screen of **Link applications** dialog, provide an **Application Name** and select **Generic Application** type. Select the **Create incoming link** checkbox. All other fields are optional. Select **Continue**.
 
-   :::image type="content" alt-text="Link Applications dialog" source="media/confluence-connector/confluence-onpremises-applications-link-1.png" lightbox="media/confluence-connector/confluence-onpremises-applications-link-1.png":::
+   :::image type="content" alt-text="Link Applications dialog" source="media/confluence-connector/confluence-onpremises-applications-link-1.png":::
 
 4. On the second screen of **Link applications** dialog, enter consumer details for sample client:
 
@@ -107,7 +107,7 @@ Extract the public key from the certificate to the `confluence_publickey.pem` fi
 
 5. Select **Continue**. After successful creation, the application link will be displayed like the following screen.
 
-   :::image type="content" alt-text="Link Applications post creation" source="media/confluence-connector/confluence-onpremises-applications-link-2.png" lightbox="media/confluence-connector/confluence-onpremises-applications-link-2.png":::
+   :::image type="content" alt-text="Link Applications post creation" source="media/confluence-connector/confluence-onpremises-applications-link-2.png":::
 
 #### Step 3.4.3 Enter consumer key and private key to sign in
 
@@ -117,7 +117,7 @@ In the connection creation configuration assistant in Microsoft 365 admin center
 
 In the Confluence sign in screen, enter service account credentials. After successful sign-in, you'll get a verification code like the following screen.
 
-![Verification code](media/confluence-connector/confluence-onpremises-applications-link-3.png)
+:::image type="content" alt-text="Verification code" source="media/confluence-connector/confluence-onpremises-applications-link-3.png" lightbox="media/confluence-connector/confluence-onpremises-applications-link-3.png":::
 
 Enter the **Verification Code** in connection creation configuration assistant and select **Finish Sign in**. After successful sign-in, select **Next**.
 
