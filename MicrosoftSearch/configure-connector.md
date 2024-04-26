@@ -69,10 +69,16 @@ Specify these attributes:
 
 * Name (required)
 * Connection ID (required)
-The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters.
-* Description (required)
-Write the description to match the connection display name used by your organization. The description can be a natural language sentence or you can use a different connection term that reflects user-specific language. Include the kind of content in the source, its unique features, and describe the kind of information available in the connection.
+* Description (optional)
 * Select check box (required)
+
+The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters.
+
+The description should answer the following questions briefly.  
+What kind of content does this connection have? 
+How do users refer to this content source in their respective orgs? 
+hat part of the workflow do users refer to this content in their day-to-day work? 
+What are some characteristics of the content? 
 
 ## Step 3: Configure the connection settings
 
