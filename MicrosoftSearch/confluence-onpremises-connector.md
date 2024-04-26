@@ -17,26 +17,27 @@ description: "Set up the Confluence On-premises Graph Microsoft connector for Mi
 ---
 <!---Previous ms.author: kam1 --->
 
-# Confluence On-premises Microsoft Graph connector (Preview)
+# Confluence on-premises Microsoft Graph connector (Preview)
 
-Confluence On-premises Microsoft Graph connector allows your organization to index Confluence server or data center content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search.
+The Confluence on-premises Microsoft Graph connector allows your organization to index Confluence server or data center content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search.
 
 >[!NOTE]
->Confluence On-premises Connector is in preview. If you wish to get early access to try it, sign up using [<b> this form </b>](https://forms.office.com/r/JniPmK5bzm).
+>The Confluence on-premises connector is in preview. If you wish to get early access to try it, sign up using [<b> this form </b>](https://forms.office.com/r/JniPmK5bzm).
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence On-premises connector. It supplements the general instructions provided in the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md).
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence on-premises connector. It supplements the general instructions provided in the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md).
 
-Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence On-premises Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
+Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence on-premises Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
 ## Before you get started
 
-### Install the Microsoft Graph connector agent
+### Install the Microsoft Graph connector agent (GCA)
 
 To index your Confluence server or data center content, you must install and register the connector agent. See [install the Microsoft Graph connector agent](./graph-connector-agent.md) for details.
 
-You must be the admin for your organization's Microsoft 365 tenant and the admin for your organization's Confluence site.
+You must be the administrator for your organization's Microsoft 365 tenant and the administrator for your organization's Confluence site.
 
-Note: GCA(Graph connector agent) can be in a different Windows machine and need not be on the same machine as that of the on prem server. The machine can help generate App ID and secret which can be used for the setup. You must ensure that the GCA machine is on during the crawling. 
+>[!NOTE]
+>GCA can be installed on a different Windows machine and need not be on the same machine as that of the on-premises server. The machine can help generate App ID and secret which can be used for the setup. You must ensure that the GCA machine is on during the crawling. 
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
