@@ -184,7 +184,7 @@ Follow the general [setup instructions](./configure-connector.md).
 
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
-For testing purpose, you can choose [publish to limited audience](https://learn.microsoft.com/en-us/microsoftsearch/staged-rollout-for-graph-connectors#modify-or-stop-staged-rollout)   
+For testing purpose, you can choose [publish to limited audience](/microsoftsearch/staged-rollout-for-graph-connectors#modify-or-stop-staged-rollout)   
 
  
 
