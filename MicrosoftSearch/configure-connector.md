@@ -74,11 +74,11 @@ Specify these attributes:
 
 The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters.
 
-The description should answer the following questions briefly.  
-What kind of content does this connection have? 
-How do users refer to this content source in their respective orgs? 
-hat part of the workflow do users refer to this content in their day-to-day work? 
-What are some characteristics of the content? 
+To better help administration of the connection and to help Copilot enhance connection results for user the description should answer the following questions briefly:  
+* What kind of content does this connection have? 
+* How do users refer to this content source in their respective orgs? 
+* What part of the workflow do users refer to this content in their day-to-day work? 
+* What are some characteristics of the content? 
 
 ## Step 3: Configure the connection settings
 
