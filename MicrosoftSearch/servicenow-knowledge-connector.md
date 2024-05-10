@@ -59,7 +59,7 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
 
    Along with this URL, you need a **service account** for setting up the connection to ServiceNow and for allowing Microsoft Search to periodically update the knowledge articles based on the refresh schedule. The service account needs read access to the following **ServiceNow table records** to successfully crawl various entities.
 
-   **Feature** | **Read access required tables** | **Description**
+   Feature | Read access required tables | Description
    --- | --- | ---
    Index knowledge articles available to <em>Everyone</em> | kb_knowledge | For crawling knowledge articles
    Index and support user criteria permissions | kb_uc_can_read_mtom | Who can read this knowledge base
@@ -299,7 +299,7 @@ The Microsoft Graph connector for ServiceNow doesn't support advanced scripts in
 > * **No criteria**: No user criteria is defined for the article or Knowledge base. (Different from empty criteria where a user criteria is defined but within the criteria all fields are empty)
 > * **Default user criteria**: User criteria defined using ServiceNow fields like Users, Groups, Roles, Location, Department etc.
 
-| **Knowledge Base** || **Knowledge Article** || **Access** |
+| Knowledge Base || Knowledge Article || Access |
 | :------ | :----- | :--- | :--- | :--- |
 |**_Can read_/_Can contribute_** | **_Cannot read_/_Cannot contribute_**| **_Can read_**| **_Cannot read_**|
 | Default user criteria + Advanced script | No criteria | No criteria | No criteria | Default user criteria followed. Advanced script is ignored. |
@@ -333,7 +333,7 @@ The Microsoft Graph connector uses access token fetched on behalf of service acc
 #### 2.3. Check if ServiceNow instance behind firewall
 The Microsoft Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You need to explicitly allow access to connector service. You can find public IP address range of connector service in the table below. Based on your tenant region, add it to your ServiceNow instance network allow list.
 
-**Environment** | **Region** | **Range**
+Environment | Region | Range
 --- | --- | ---
 PROD | North America | 52.250.92.252/30, 52.224.250.216/30
 PROD | Europe | 20.54.41.208/30, 51.105.159.88/30
@@ -346,11 +346,14 @@ If you observe discrepancies in access permissions applied to search results, ve
 ### 3. Change the URL of the knowledge article to view it in the support portal
 
 ServiceNow Knowledge connector computes the AccessUrl property using sys_id in the `<instance_url>/kb_view.do?sys_kb_id<sysId>` format. It opens the knowledge article in the backend system view. If you prefer redirecting the article to a different URL, follow the instructions below.
+
 #### 3.1 Edit your result type
 In customization tab in *Search & Intelligence* section of Microsoft 365 admin center, navigate to edit the result type configured for your ServiceNow Knowledge connection.
+
 ![Editing Result Type](media/servicenow-knowledge-connector/edit-result-type.png)
 
 When the edit result type dialog opens, click on **Edit** next to the result layout section. 
+
 ![Editing Result Layout](media/servicenow-knowledge-connector/edit-result-type-2.png)
 
 #### 3.2 Find the items block
@@ -362,7 +365,7 @@ Find the items block containing text property with `shortDescription` and `Acces
 
 To change the destination URL, edit the `AccessUrl` part of the text property in the items block. For example, if a ServiceNow Knowledge article should be redirected to `https://contoso.service-now.com/sp` where `sp` is the service URL portal prefix, follow the steps below.
 
-**Original value** | **New value**
+Original value | New value
 --- | ---
 `"[{shortdescription}]({AccessUrl})"` | `"[{shortdescription}](https://contoso.service-now.com/sp?id=kb_article_view&sysparm_article={number})"`
 
