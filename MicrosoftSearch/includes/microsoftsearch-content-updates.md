@@ -2,6 +2,14 @@
 
 
 
+## Week of February 26, 2024
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/29/2024 | [Overview of Microsoft Search in Bing](/MicrosoftSearch/overview-microsoft-search-bing) | modified |
+
+
 ## Week of February 19, 2024
 
 
@@ -34,12 +42,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 2/2/2024 | [Semantic Index for Copilot](/MicrosoftSearch/semantic-index-for-copilot) | modified |
-
-
-## Week of January 22, 2024
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/22/2024 | [Microsoft Graph connectors view details and errors](/MicrosoftSearch/connector-details-errors) | modified |
-| 1/23/2024 | [Semantic Index for Copilot](/MicrosoftSearch/semantic-index-for-copilot) | modified |

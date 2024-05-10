@@ -11,6 +11,8 @@ ms.date: 02/19/2024
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
+- m365copilot
+- magic-ai-copilot
 description: "Learn about Semantic Index for Copilot."
 ---
 
