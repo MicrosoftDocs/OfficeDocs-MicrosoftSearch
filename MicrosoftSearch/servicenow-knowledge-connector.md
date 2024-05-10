@@ -299,7 +299,7 @@ The Microsoft Graph connector for ServiceNow doesn't support advanced scripts in
 > * **No criteria**: No user criteria is defined for the article or Knowledge base. (Different from empty criteria where a user criteria is defined but within the criteria all fields are empty)
 > * **Default user criteria**: User criteria defined using ServiceNow fields like Users, Groups, Roles, Location, Department etc.
 
-| Knowledge Base || Knowledge Article || Access |
+| Knowledge Base | &nbsp; | Knowledge Article | &nbsp; | Access |
 | :------ | :----- | :--- | :--- | :--- |
 |**_Can read_/_Can contribute_** | **_Cannot read_/_Cannot contribute_**| **_Can read_**| **_Cannot read_**| |
 | Default user criteria + Advanced script | No criteria | No criteria | No criteria | Default user criteria followed. Advanced script is ignored. |
