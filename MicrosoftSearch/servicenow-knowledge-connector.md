@@ -359,7 +359,7 @@ When the edit result type dialog opens, click on **Edit** next to the result lay
 #### 3.2 Find the items block
 Find the items block containing text property with `shortDescription` and `AccessUrl` values.
 
-:::image type="content" alt-text="Editing items block in result type" source="media/servicenow-knowledge-connector/edit-result-type-3.png" lightbox="media/servicenow-knowledge-connector/edit-result-type-3.png":::
+:::image type="content" alt-text="Editing items block in result type" source="media/servicenow-knowledge-connector/edit-result-type-3.png":::
 
 #### 3.3 Edit AccessUrl property
 
