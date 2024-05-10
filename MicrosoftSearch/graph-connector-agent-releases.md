@@ -20,6 +20,10 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
+## Version 2.3.5.0 (*AMay 09, 2024*)
+
+* Bug fixes and reliability improvements.
+
 ## Version 2.3.4.0 (*April 17, 2024*)
 
 * Fixed issue where item url was getting ingested with changed case.
