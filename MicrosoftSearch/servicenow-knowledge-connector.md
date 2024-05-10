@@ -49,13 +49,13 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
     
    **Name**: Enter a name for your connection (prefilled with a default name). You can always edit it later (even after the connection is published).
  
-   ![Screenshot of the Name & ID fields.](media/servicenow-knowledge-connector-name-and-id.png)
+   :::image type="content" alt-text="Screenshot of the Name & ID fields." source="media/servicenow-knowledge-connector-name-and-id.png" lightbox="media/servicenow-knowledge-connector-name-and-id.png":::
 
    ### 2. Data Source Settings:
 
    **ServiceNow instance URL**: To connect to your ServiceNow data, you need your organization's **ServiceNow    instance URL**. Your organization's ServiceNow instance URL typically looks like **https://&lt;your-organization-domain>.service-now.com**. 
 
-   ![Screenshot of the Data Source Settings.](media/servicenow-knowledge-connector-data-source-settings.png)
+   :::image type="content" alt-text="Screenshot of the Data Source Settings." source="media/servicenow-knowledge-connector-data-source-settings.png" lightbox="media/servicenow-knowledge-connector-data-source-settings.png":::
 
    Along with this URL, you need a **service account** for setting up the connection to ServiceNow and for allowing Microsoft Search to periodically update the knowledge articles based on the refresh schedule. The service account needs read access to the following **ServiceNow table records** to successfully crawl various entities.
 
@@ -226,7 +226,7 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
 
 The ServiceNow connector supports access permissions visible to **Everyone** or **Only people with access to this data source**. Indexed data appears in the search results and is visible to all users in the organization or users who have access to them via user criteria permission respectively. If a knowledge article isn't enabled with a user criteria, it appears in search results of everyone in the organization.
 
-![Screenshot that shows access permissions.](media/servicenow-knowledge-connector-access-permissions.png)
+:::image type="content" alt-text="Screenshot that shows access permissions." source="media/servicenow-knowledge-connector-access-permissions.png" lightbox="media/servicenow-knowledge-connector-access-permissions.png":::
 
 
 
@@ -254,7 +254,7 @@ To identify which option is suitable for your organization:
 
 In this step, you can add or remove available properties from your ServiceNow data source. Microsoft 365 selects few properties by default.
 
-![Screenshot that shows how to select properties.](media/servicenow-knowledge-connector-select-properties.png)
+:::image type="content" alt-text="Screenshot that shows how to select properties." source="media/servicenow-knowledge-connector-select-properties.png" lightbox="media/servicenow-knowledge-connector-select-properties.png":::
 
 With a ServiceNow query string, you can specify conditions for syncing articles. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only articles that are published and active. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/vancouver-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
@@ -350,16 +350,16 @@ ServiceNow Knowledge connector computes the AccessUrl property using sys_id in t
 #### 3.1 Edit your result type
 In customization tab in *Search & Intelligence* section of Microsoft 365 admin center, navigate to edit the result type configured for your ServiceNow Knowledge connection.
 
-![Editing Result Type](media/servicenow-knowledge-connector/edit-result-type.png)
+:::image type="content" alt-text="Editing Result Type" source="media/servicenow-knowledge-connector/edit-result-type.png" lightbox="media/servicenow-knowledge-connector/edit-result-type.png":::
 
 When the edit result type dialog opens, click on **Edit** next to the result layout section. 
 
-![Editing Result Layout](media/servicenow-knowledge-connector/edit-result-type-2.png)
+:::image type="content" alt-text="Editing Result Layout" source="media/servicenow-knowledge-connector/edit-result-type-2.png":::
 
 #### 3.2 Find the items block
 Find the items block containing text property with `shortDescription` and `AccessUrl` values.
 
-![Editing items block in result type](media/servicenow-knowledge-connector/edit-result-type-3.png)
+:::image type="content" alt-text="Editing items block in result type" source="media/servicenow-knowledge-connector/edit-result-type-3.png" lightbox="media/servicenow-knowledge-connector/edit-result-type-3.png":::
 
 #### 3.3 Edit AccessUrl property
 
