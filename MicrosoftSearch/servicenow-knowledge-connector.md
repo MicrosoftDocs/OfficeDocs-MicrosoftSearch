@@ -301,7 +301,7 @@ The Microsoft Graph connector for ServiceNow doesn't support advanced scripts in
 
 | Knowledge Base || Knowledge Article || Access |
 | :------ | :----- | :--- | :--- | :--- |
-|**_Can read_/_Can contribute_** | **_Cannot read_/_Cannot contribute_**| **_Can read_**| **_Cannot read_**|
+|**_Can read_/_Can contribute_** | **_Cannot read_/_Cannot contribute_**| **_Can read_**| **_Cannot read_**| |
 | Default user criteria + Advanced script | No criteria | No criteria | No criteria | Default user criteria followed. Advanced script is ignored. |
 | Advanced script | No criteria | No criteria | No criteria | Access denied to everyone. |
 | Default user criteria or No criteria | Default user criteria + Advanced criteria | No criteria | No criteria | Access denied to everyone. |
