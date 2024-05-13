@@ -33,7 +33,7 @@ description: "Troubleshoot issues with the ServiceNow Knowledge Graph connector 
 
     2. If there's an Advanced script configured in any of the '_Cannot Read_' user criteria in the article level, the article is stamped with deny access in the indexed data.
 
-4. Check if there's an empty criteria present at the knowledge base level ('_Cannot Read_', "_Cannot Contribute_') or at the article level ('_Cannot Read_'). Empty criteria is a user criterion with empty fields. If there's an empty criterion present, the article is stamped with deny access in the indexed data.
+4. Check if there's an empty criteria present at the knowledge base level - '_Cannot Read_', "_Cannot Contribute_'. Also, check if there's an empty criteria at the article level - '_Cannot Read_'. Empty criteria is a user criterion with empty fields. If there's an empty criterion present, the article is stamped with deny access in the indexed data.
 
 5. If you're still not able to identify the root cause, reach out to [the Microsoft Graph connector support team](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com) with the following details.
     1. Tenant ID
@@ -52,17 +52,17 @@ description: "Troubleshoot issues with the ServiceNow Knowledge Graph connector 
 
 ### 2. Unable to log in due to single sign-on enabled ServiceNow instance
     
-If your organization has enabled single sign-on (SSO) to ServiceNow, you may have trouble logging in with the service account. You can bring up username and password based login by adding <em> `login.do`</em> to the ServiceNow instance URL. Example. `https://<your-organization-domain>.service-now.com./login.do`
+If your organization uses single sign-on (SSO) to ServiceNow, you may have trouble logging in with the service account. You can bring up username and password based login by adding <em> `login.do`</em> to the ServiceNow instance URL. Example. `https://<your-organization-domain>.service-now.com./login.do`
 
 ### 3. Unauthorized or forbidden response to API request
 <details>
 <summary>(Click to expand) Follow the steps to troubleshoot this issue.</summary><br>
 
-1. **Check table access permissions:** If you see forbidden or unauthorized response in connection status, check if the service account has the required access to the tables mentioned in [Step 2: Data Source Settings](/MicrosoftSearch/servicenow-knowledge-connector.md/#2-data-source-settings). Check whether all the columns in the tables have read access.
+1. **Check table access permissions:** If you see forbidden or unauthorized response in connection status, check if the service account has the required access to the tables mentioned in [Step 2: Data Source Settings](/MicrosoftSearch/servicenow-knowledge-connector.md/#2-data-source-settings). Check whether the service account has 'read' access to all the tables in the column.
 
 2. **Change in Account password:** The Microsoft Graph connector uses access token fetched on behalf of service account for crawl. The access token refreshes every 12 hours. Ensure that service account password isn't changed after publishing the connection. You may need to reauthenticate the connection if there's a change in password.
 
-3. **Check if ServiceNow instance behind firewall:** The Microsoft Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You need to explicitly allow access to connector service. You can find public IP address range of connector service in the table below. Based on your tenant region, add it to your ServiceNow instance network allow list.
+3. **Check if ServiceNow instance behind firewall:** The Microsoft Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You need to explicitly allow access to connector service. You can find public IP address range of connector service in this table. Based on your tenant region, add it to your ServiceNow instance network allow list.
 
    **Environment** | **Region** | **Range**
    --- | --- | ---
