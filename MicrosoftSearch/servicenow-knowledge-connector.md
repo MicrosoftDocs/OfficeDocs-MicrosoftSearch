@@ -13,7 +13,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the ServiceNow Knowledge Graph connector for Microsoft Copilot"
+description: "Set up the ServiceNow Knowledge Graph connector for Microsoft Search and Copilot."
 ---
 <!---Previous ms.author: kam1 --->
 

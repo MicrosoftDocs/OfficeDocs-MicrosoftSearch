@@ -13,7 +13,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Troubleshoot issues with the ServiceNow Knowledge Graph connector for Microsoft Copilot."
+description: "Troubleshoot issues with the ServiceNow Knowledge Graph connector for Microsoft Search and Copilot."
 ---
 # Troubleshooting guide for ServiceNow Knowledge Microsoft Graph connector
 
