@@ -49,7 +49,7 @@ description: "Troubleshoot issues with the ServiceNow Knowledge Graph connector 
         1. List of user criteria sys_id in the can_read_user_criteria field of the article
         2. List of user criteria sys_id in the cannot_read_user_criteria field of the article
 </details>
-  
+
 ### 2. Unable to log in due to Single Sign-On enabled ServiceNow instance
     
 If your organization has enabled Single Sign-On (SSO) to ServiceNow, you may have trouble logging in with the service account. You can bring up username and password based login by adding <em> `login.do`</em> to the ServiceNow instance URL. Example. `https://<your-organization-domain>.service-now.com./login.do`
