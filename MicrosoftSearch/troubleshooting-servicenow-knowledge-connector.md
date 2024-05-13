@@ -58,7 +58,7 @@ If your organization uses single sign-on (SSO) to ServiceNow, you may have troub
 <details>
 <summary>(Click to expand) Follow the steps to troubleshoot this issue.</summary><br>
 
-1. **Check table access permissions:** If you see forbidden or unauthorized response in connection status, check if the service account has the required access to the tables mentioned in [Step 2: Data Source Settings](/MicrosoftSearch/servicenow-knowledge-connector.md/#2-data-source-settings). Check whether the service account has 'read' access to all the tables in the column.
+1. **Check table access permissions:** If you see forbidden or unauthorized response in connection status, check if the service account has the required access to the tables mentioned in [Step 2: Data Source Settings](/MicrosoftSearch/servicenow-knowledge-connector/#2-data-source-settings). Check whether the service account has 'read' access to all the tables in the column.
 
 2. **Change in Account password:** The Microsoft Graph connector uses access token fetched on behalf of service account for crawl. The access token refreshes every 12 hours. Ensure that service account password isn't changed after publishing the connection. You may need to reauthenticate the connection if there's a change in password.
 
