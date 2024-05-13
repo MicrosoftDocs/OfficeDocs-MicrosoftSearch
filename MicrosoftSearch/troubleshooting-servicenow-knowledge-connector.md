@@ -24,7 +24,7 @@ description: "Troubleshoot issues with the ServiceNow Knowledge Graph connector 
 
 1. Check if the user searching for the article has the required permissions to access the ServiceNow Knowledge articles. You can do that by using the [User criteria diagnostics](https://docs.servicenow.com/bundle/washingtondc-servicenow-platform/page/product/knowledge-management/concept/diagnose-knowledge-user-criteria.html) tool in ServiceNow.
 
-2. Check if the user is correctly mapped to a Microsoft Entra identity. Mapping issues usually show up as a '2006' error in the Error tab. Check the user mapping formula and if needed change the mapping method.<br>
+2. Check if the user is correctly mapped to a Microsoft Entra identity. Mapping issues usually show up as a '2006' error in the Error tab. Check the user mapping formula and if needed, change the mapping method.<br>
 
    ![Screenshot of Mapping identity error.](media/troubleshooting-servicenow-knowledge-connector-map-identity-error.png)
 
@@ -33,9 +33,9 @@ description: "Troubleshoot issues with the ServiceNow Knowledge Graph connector 
 
     2. If there's an Advanced script configured in any of the '_Cannot Read_' user criteria in the article level, the article is stamped with deny access in the indexed data.
 
-4. Check if there's an empty criteria (user criteria with empty fields) present at the knowledge base level ('_Cannot Read_', "_Cannot Contribute_') or at the article level ('_Cannot Read_'). If there's an empty criterion present, the article is stamped with deny access in the indexed data.
+4. Check if there's an empty criteria present at the knowledge base level ('_Cannot Read_', "_Cannot Contribute_') or at the article level ('_Cannot Read_'). Empty criteria is a user criterion with empty fields. If there's an empty criterion present, the article is stamped with deny access in the indexed data.
 
-5. If you are still not able to identify the root cause, reach out to [the Microsoft Graph connector support team](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com) with the following details.
+5. If you're still not able to identify the root cause, reach out to [the Microsoft Graph connector support team](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com) with the following details.
     1. Tenant ID
     2. Connection ID
     3. Article Sys ID
@@ -83,7 +83,8 @@ ServiceNow Knowledge connector computes the AccessUrl property using sys_id in t
 In customization tab in *Search & Intelligence* section of Microsoft 365 admin center, navigate to edit the result type configured for your ServiceNow Knowledge connection.
 ![Editing Result Type](media/servicenow-knowledge-connector/edit-result-type.png)
 
-   When the edit result type dialog opens, click on **Edit** next to the result layout section. 
+   When the 'Edit result type'
+    dialog opens, click on **Edit** next to the result layout section. 
 ![Editing Result Layout](media/servicenow-knowledge-connector/edit-result-type-2.png)
 
 2. Find the items block containing text property with `shortDescription` and `AccessUrl` values.
@@ -105,7 +106,7 @@ In customization tab in *Search & Intelligence* section of Microsoft 365 admin c
 
 ### 5. Issues with '_Only people with access to this data source_' permission
 
-If you see differences in the user criteria validation between ServiceNow and Microsoft Search, set `glide.knowman.block_access_with_no_user_criteria` system property to `no`.
+If you see differences in the user criteria validation between ServiceNow and Microsoft Search or Copilot, set `glide.knowman.block_access_with_no_user_criteria` system property to `no`.
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
 
