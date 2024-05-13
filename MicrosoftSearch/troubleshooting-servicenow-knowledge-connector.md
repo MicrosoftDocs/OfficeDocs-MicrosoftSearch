@@ -13,29 +13,29 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Troubleshoot issues with the ServiceNow Knowledge Graph connector for Microsoft Copilot"
+description: "Troubleshoot issues with the ServiceNow Knowledge Graph connector for Microsoft Copilot."
 ---
 # Troubleshooting guide for ServiceNow Knowledge Microsoft Graph connector
 
 ### 1. **Not able to find ServiceNow Knowledge articles in Copilot or Microsoft Search.**
    
 <details>
-<summary>Follow the troubleshooting steps below to identify the root cause.</summary><br>
+<summary>(Click to expand) Follow the troubleshooting steps to identify the root cause.</summary><br>
 
 1. Check if the user searching for the article has the required permissions to access the ServiceNow Knowledge articles. You can do that by using the [User criteria diagnostics](https://docs.servicenow.com/bundle/washingtondc-servicenow-platform/page/product/knowledge-management/concept/diagnose-knowledge-user-criteria.html) tool in ServiceNow.
 
-2. If the user has access to the article in ServiceNow, check if the user is correctly mapped to a Microsoft Entra identity. This will usually show as a '2006' error in the Error tab. Check the user mapping formula and if needed change the mapping method.<br>
+2. Check if the user is correctly mapped to a Microsoft Entra identity. Mapping issues usually show up as a '2006' error in the Error tab. Check the user mapping formula and if needed change the mapping method.<br>
 
    ![Screenshot of Mapping identity error.](media/troubleshooting-servicenow-knowledge-connector-map-identity-error.png)
 
-3. If the user is correctly mapped to an identity, check if there is an Advanced script in any of the user criteria granting access to the article. (Note: Advanced scripts are not supported in the current version of Microsoft Graph connector for ServiceNow.)
-    1. If there is an Advanced script configured in any of the '_Cannot Read_' or '_Cannot Contribute_' user criteria in the knowledge base level (to which the article belongs to) all articles in the knowledge base are stamped with deny access in the indexed data.
+3. Check if there's an Advanced script in any of the user criteria granting access to the article. (Note: Advanced scripts aren't supported in the current version of Microsoft Graph connector for ServiceNow.)
+    1. If there's an Advanced script configured in any of the '_Cannot Read_' or '_Cannot Contribute_' user criteria in the knowledge base level, all articles in the knowledge base are stamped with deny access in the indexed data.
 
-    2. If there is an Advanced script configured in any of the '_Cannot Read_' user criteria in the article level, the article is stamped with deny access in the indexed data.
+    2. If there's an Advanced script configured in any of the '_Cannot Read_' user criteria in the article level, the article is stamped with deny access in the indexed data.
 
-4. If there is no advanced script present in any of the user criteria, check if there is an empty criteria (user criteria with empty fields) present at the knowledge base level ('_Cannot Read_', "_Cannot Contribute_') or at the article level ('_Cannot Read_'). If there is an empty criteria present, the article is stamped with deny access in the indexed data.
+4. Check if there's an empty criteria (user criteria with empty fields) present at the knowledge base level ('_Cannot Read_', "_Cannot Contribute_') or at the article level ('_Cannot Read_'). If there's an empty criterion present, the article is stamped with deny access in the indexed data.
 
-5. If you are still not able to identify the root cause, please reach out to [the Microsoft Graph connector support team](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com) with the following details.
+5. If you are still not able to identify the root cause, reach out to [the Microsoft Graph connector support team](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com) with the following details.
     1. Tenant ID
     2. Connection ID
     3. Article Sys ID
@@ -45,18 +45,18 @@ description: "Troubleshoot issues with the ServiceNow Knowledge Graph connector 
         2. List of user criteria sys_id available in the kb_uc_cannot_read_mtom (Who Cannot Read Knowledge Base) table
         3. List of user criteria sys_id available in the kb_uc_cannot_contribute_mtom (Who Cannot Contribute To Knowledge Base) table
         4. List of user criteria sys_id available in the kb_uc_can_contribute_mtom 
-    6. Also, for the Item sys_id collected in step 3, please share:
+    6. Also, for the Item sys_id collected in step 3, share:
         1. List of user criteria sys_id in the can_read_user_criteria field of the article
         2. List of user criteria sys_id in the cannot_read_user_criteria field of the article
 </details>
 
-### 2. Unable to log in due to Single Sign-On enabled ServiceNow instance
+### 2. Unable to log in due to single sign-on enabled ServiceNow instance
     
-If your organization has enabled Single Sign-On (SSO) to ServiceNow, you may have trouble logging in with the service account. You can bring up username and password based login by adding <em> `login.do`</em> to the ServiceNow instance URL. Example. `https://<your-organization-domain>.service-now.com./login.do`
+If your organization has enabled single sign-on (SSO) to ServiceNow, you may have trouble logging in with the service account. You can bring up username and password based login by adding <em> `login.do`</em> to the ServiceNow instance URL. Example. `https://<your-organization-domain>.service-now.com./login.do`
 
 ### 3. Unauthorized or forbidden response to API request
 <details>
-<summary>Follow the steps below to troubleshoot this issue.</summary><br>
+<summary>(Click to expand) Follow the steps to troubleshoot this issue.</summary><br>
 
 1. **Check table access permissions:** If you see forbidden or unauthorized response in connection status, check if the service account has the required access to the tables mentioned in [Step 2: Data Source Settings](/MicrosoftSearch/servicenow-knowledge-connector.md/#2-data-source-settings). Check whether all the columns in the tables have read access.
 
@@ -74,11 +74,11 @@ If your organization has enabled Single Sign-On (SSO) to ServiceNow, you may hav
 
 </details>
 
-### 4.  Change the URL of the knowledge article to view it in the support portal
+### 4. Change the URL of the knowledge article to view it in the support portal
 
-<details><summary>Follow the steps below to change the URL of the knowledge article.</summary><br>
+<details><summary>(Click to expand) Follow the steps to change the URL of the knowledge article.</summary><br>
 
-ServiceNow Knowledge connector computes the AccessUrl property using sys_id in the `<instance_url>/kb_view.do?sys_kb_id<sysId>` format. It opens the knowledge article in the backend system view. If you prefer redirecting the article to a different URL, follow the instructions below.
+ServiceNow Knowledge connector computes the AccessUrl property using sys_id in the `<instance_url>/kb_view.do?sys_kb_id<sysId>` format. It opens the knowledge article in the backend system view. If you prefer redirecting the article to a different URL, follow these instructions.
 1. Edit your result type
 In customization tab in *Search & Intelligence* section of Microsoft 365 admin center, navigate to edit the result type configured for your ServiceNow Knowledge connection.
 ![Editing Result Type](media/servicenow-knowledge-connector/edit-result-type.png)
@@ -86,14 +86,13 @@ In customization tab in *Search & Intelligence* section of Microsoft 365 admin c
    When the edit result type dialog opens, click on **Edit** next to the result layout section. 
 ![Editing Result Layout](media/servicenow-knowledge-connector/edit-result-type-2.png)
 
-2. Find the items block
-Find the items block containing text property with `shortDescription` and `AccessUrl` values.
+2. Find the items block containing text property with `shortDescription` and `AccessUrl` values.
 
    ![Editing items block in result type](media/servicenow-knowledge-connector/edit-result-type-3.png)
 
 3. Edit AccessUrl property
 
-   To change the destination URL, edit the `AccessUrl` part of the text property in the items block. For example, if a ServiceNow Knowledge article should be redirected to `https://contoso.service-now.com/sp` where `sp` is the service URL portal prefix, follow the steps below.
+   To change the destination URL, edit the `AccessUrl` part of the text property in the items block. For example, if a ServiceNow Knowledge article should be redirected to `https://contoso.service-now.com/sp` where `sp` is the service URL portal prefix, follow these steps.
 
    **Original value** | **New value**
    --- | ---
