@@ -49,17 +49,17 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
     
    **Name**: Enter a name for your connection (prefilled with a default name). You can always edit it later (even after the connection is published).
  
-   ![Screenshot of the Name & ID fields.](media/servicenow-knowledge-connector-name-and-id.png)
+   :::image type="content" alt-text="Screenshot of the Name & ID fields." source="media/servicenow-knowledge-connector-name-and-id.png" lightbox="media/servicenow-knowledge-connector-name-and-id.png":::
 
    ### 2. Data Source Settings:
 
    **ServiceNow instance URL**: To connect to your ServiceNow data, you need your organization's **ServiceNow    instance URL**. Your organization's ServiceNow instance URL typically looks like **https://&lt;your-organization-domain>.service-now.com**. 
 
-   ![Screenshot of the Data Source Settings.](media/servicenow-knowledge-connector-data-source-settings.png)
+   :::image type="content" alt-text="Screenshot of the Data Source Settings." source="media/servicenow-knowledge-connector-data-source-settings.png" lightbox="media/servicenow-knowledge-connector-data-source-settings.png":::
 
    Along with this URL, you need a **service account** for setting up the connection to ServiceNow and for allowing Microsoft Search to periodically update the knowledge articles based on the refresh schedule. The service account needs read access to the following **ServiceNow table records** to successfully crawl various entities.
 
-   **Feature** | **Read access required tables** | **Description**
+   Feature | Read access required tables | Description
    --- | --- | ---
    Index knowledge articles available to <em>Everyone</em> | kb_knowledge | For crawling knowledge articles
    Index and support user criteria permissions | kb_uc_can_read_mtom | Who can read this knowledge base
@@ -226,7 +226,7 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
 
 The ServiceNow connector supports access permissions visible to **Everyone** or **Only people with access to this data source**. Indexed data appears in the search results and is visible to all users in the organization or users who have access to them via user criteria permission respectively. If a knowledge article isn't enabled with a user criteria, it appears in search results of everyone in the organization.
 
-![Screenshot that shows access permissions.](media/servicenow-knowledge-connector-access-permissions.png)
+:::image type="content" alt-text="Screenshot that shows access permissions." source="media/servicenow-knowledge-connector-access-permissions.png" lightbox="media/servicenow-knowledge-connector-access-permissions.png":::
 
 
 
@@ -254,7 +254,7 @@ To identify which option is suitable for your organization:
 
 In this step, you can add or remove available properties from your ServiceNow data source. Microsoft 365 selects few properties by default.
 
-![Screenshot that shows how to select properties.](media/servicenow-knowledge-connector-select-properties.png)
+:::image type="content" alt-text="Screenshot that shows how to select properties." source="media/servicenow-knowledge-connector-select-properties.png" lightbox="media/servicenow-knowledge-connector-select-properties.png":::
 
 With a ServiceNow query string, you can specify conditions for syncing articles. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only articles that are published and active. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/vancouver-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
@@ -299,9 +299,9 @@ The Microsoft Graph connector for ServiceNow doesn't support advanced scripts in
 > * **No criteria**: No user criteria is defined for the article or Knowledge base. (Different from empty criteria where a user criteria is defined but within the criteria all fields are empty)
 > * **Default user criteria**: User criteria defined using ServiceNow fields like Users, Groups, Roles, Location, Department etc.
 
-| **Knowledge Base** || **Knowledge Article** || **Access** |
+| Knowledge Base | &nbsp; | Knowledge Article | &nbsp; | Access |
 | :------ | :----- | :--- | :--- | :--- |
-|**_Can read_/_Can contribute_** | **_Cannot read_/_Cannot contribute_**| **_Can read_**| **_Cannot read_**|
+|**_Can read_/_Can contribute_** | **_Cannot read_/_Cannot contribute_**| **_Can read_**| **_Cannot read_**| |
 | Default user criteria + Advanced script | No criteria | No criteria | No criteria | Default user criteria followed. Advanced script is ignored. |
 | Advanced script | No criteria | No criteria | No criteria | Access denied to everyone. |
 | Default user criteria or No criteria | Default user criteria + Advanced criteria | No criteria | No criteria | Access denied to everyone. |
@@ -332,7 +332,7 @@ The Microsoft Graph connector uses access token fetched on behalf of service acc
 #### 2.3. Check if ServiceNow instance behind firewall
 The Microsoft Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You need to explicitly allow access to connector service. You can find public IP address range of connector service in the table below. Based on your tenant region, add it to your ServiceNow instance network allow list.
 
-**Environment** | **Region** | **Range**
+Environment | Region | Range
 --- | --- | ---
 PROD | North America | 52.250.92.252/30, 52.224.250.216/30
 PROD | Europe | 20.54.41.208/30, 51.105.159.88/30
@@ -345,23 +345,26 @@ If you observe discrepancies in access permissions applied to search results, ve
 ### 3. Change the URL of the knowledge article to view it in the support portal
 
 ServiceNow Knowledge connector computes the AccessUrl property using sys_id in the `<instance_url>/kb_view.do?sys_kb_id<sysId>` format. It opens the knowledge article in the backend system view. If you prefer redirecting the article to a different URL, follow the instructions below.
+
 #### 3.1 Edit your result type
 In customization tab in *Search & Intelligence* section of Microsoft 365 admin center, navigate to edit the result type configured for your ServiceNow Knowledge connection.
-![Editing Result Type](media/servicenow-knowledge-connector/edit-result-type.png)
+
+:::image type="content" alt-text="Editing Result Type" source="media/servicenow-knowledge-connector/edit-result-type.png" lightbox="media/servicenow-knowledge-connector/edit-result-type.png":::
 
 When the edit result type dialog opens, click on **Edit** next to the result layout section. 
-![Editing Result Layout](media/servicenow-knowledge-connector/edit-result-type-2.png)
+
+:::image type="content" alt-text="Editing Result Layout" source="media/servicenow-knowledge-connector/edit-result-type-2.png":::
 
 #### 3.2 Find the items block
 Find the items block containing text property with `shortDescription` and `AccessUrl` values.
 
-![Editing items block in result type](media/servicenow-knowledge-connector/edit-result-type-3.png)
+:::image type="content" alt-text="Editing items block in result type" source="media/servicenow-knowledge-connector/edit-result-type-3.png":::
 
 #### 3.3 Edit AccessUrl property
 
 To change the destination URL, edit the `AccessUrl` part of the text property in the items block. For example, if a ServiceNow Knowledge article should be redirected to `https://contoso.service-now.com/sp` where `sp` is the service URL portal prefix, follow the steps below.
 
-**Original value** | **New value**
+Original value | New value
 --- | ---
 `"[{shortdescription}]({AccessUrl})"` | `"[{shortdescription}](https://contoso.service-now.com/sp?id=kb_article_view&sysparm_article={number})"`
 
