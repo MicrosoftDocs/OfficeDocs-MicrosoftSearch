@@ -99,7 +99,11 @@ items:
         - name: ServiceNow Catalog
           href: servicenow-catalog-connector.md
         - name: ServiceNow Knowledge
-          href: servicenow-knowledge-connector.md
+          items:
+            name: Setup
+            href: servicenow-knowledge-connector.md
+            name: Troubleshooting
+            href: troubleshooting-servicenow-knowledge-connector.md
         - name: ServiceNow Tickets
           href: servicenow-tickets-connector.md
     - name: Manage connections
