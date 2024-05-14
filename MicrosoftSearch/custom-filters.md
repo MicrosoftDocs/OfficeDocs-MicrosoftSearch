@@ -31,12 +31,11 @@ Out of the box filters are available by default in search verticals such as Al
 
 ## Content source filters 
 
-If you have multiple content sources (such as Microsoft Power BI, Viva Learning, or sources added via Graph Connectors) enabled in Microsoft Search, you can also see the content source filter in the ‘All’ vertical. 
+If you have multiple content sources enabled in Microsoft Search, you can also see the content source filter in the “All” vertical. These sources can be SharePoint-OneDrive, Power BI, Viva Learning, or sources added using Graph Connectors. 
 You can customize how Graph Connector content sources are shown in the filter experience. To customize the name and icon shown to users for a connection in content source filters: 
-      1) In Microsoft 365 admin center, go to Search and Intelligence > Data sources > select the connection you want to customize and then select Edit in the side panel. 
-      2) Set your Connection Display name and icon. Note that certain keywords are reserved and cannot be used in the Display name (such as Microsoft brands and default search vertical names). 
- 
-To group together multiple connections into a single value in the filter, you can set the same Display name for them.
+- In Microsoft 365 admin center, go to Search and Intelligence > Data sources > select the connection you want to customize and then select Edit in the side panel. 
+- Set your Connection Display name and icon. Certain keywords are reserved and can’t be used in the Display name (such as Microsoft brands and default search vertical names). 
+To group together multiple connections into a single value in the filter, set the same Display name for them.
 
 ## Custom filters
 
