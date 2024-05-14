@@ -63,6 +63,12 @@ Complete the following steps to configure any of the Microsoft Graph connectors 
 > [!NOTE]
 > You can add a maximum of thirty(30) Microsoft Graph connections to each tenant.
 
+
+> [!TIP]
+> **Product survey**
+> 
+> To help us understand your requirements related to connecting more data sources to Copilot or Microsoft Search, we request you to take few minutes to fill out this [survey form](https://forms.office.com/r/0Hh4GJNsJe). Based on the survey results, Microsoft will build connectors for the top demanded data sources.
+
 ## Step 2: Name the connection
 
 Specify these attributes:
