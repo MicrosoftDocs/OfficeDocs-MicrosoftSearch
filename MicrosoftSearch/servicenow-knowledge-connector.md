@@ -292,7 +292,7 @@ After publishing the connection, you need to customize the search results page. 
 
 ## Read and Deny Access to Knowledge Articles in Microsoft Graph Connector for ServiceNow
 <details>
-<summary>Here is a scenario-wise depiction of how the connector treats some special cases in ServiceNow Knowledge:</summary><br>
+<summary>Here is a scenario-wise depiction of how the connector treats access permissions based on user criteria in ServiceNow Knowledge:</summary><br>
 
 >[!NOTE]
 > Terms used in the table below:
