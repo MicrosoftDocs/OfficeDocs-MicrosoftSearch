@@ -81,15 +81,14 @@ If your organization uses single sign-on (SSO) to ServiceNow, you may have troub
 ServiceNow Knowledge connector computes the AccessUrl property using sys_id in the `<instance_url>/kb_view.do?sys_kb_id<sysId>` format. It opens the knowledge article in the backend system view. If you prefer redirecting the article to a different URL, follow these instructions.
 1. Edit your result type
 In customization tab in *Search & Intelligence* section of Microsoft 365 admin center, navigate to edit the result type configured for your ServiceNow Knowledge connection.
-![Editing Result Type](media/servicenow-knowledge-connector/edit-result-type.png)
+![Screenshot shows where to click for editing Result Type](media/servicenow-knowledge-connector/edit-result-type.png)
 
-   When the 'Edit result type'
-    dialog opens, click on **Edit** next to the result layout section. 
-![Editing Result Layout](media/servicenow-knowledge-connector/edit-result-type-2.png)
+   When the 'Edit result type' dialog opens, click on **Edit** next to the result layout section. 
+![Screenshot shows how to edit the Result Layout](media/servicenow-knowledge-connector/edit-result-type-2.png)
 
 2. Find the items block containing text property with `shortDescription` and `AccessUrl` values.
 
-   ![Editing items block in result type](media/servicenow-knowledge-connector/edit-result-type-3.png)
+   ![Screenshot shows how to find items block in result type](media/servicenow-knowledge-connector/edit-result-type-3.png)
 
 3. Edit AccessUrl property
 
