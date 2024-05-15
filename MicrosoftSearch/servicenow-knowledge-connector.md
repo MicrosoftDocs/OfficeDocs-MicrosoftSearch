@@ -13,7 +13,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the ServiceNow Knowledge Graph connector for Microsoft Search"
+description: "Set up the ServiceNow Knowledge Graph connector for Microsoft Search and Copilot."
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -84,7 +84,7 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
    If you want to index properties from [extended tables](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/table-administration/concept/table-extension-and-classes.html) of *kb_knowledge*, provide read access to sys_dictionary and sys_db_object. This is an optional feature. You can index *kb_knowledge* table properties without access to the two additional tables.
 
    >[!NOTE]
-   > Microsoft Graph Connector for ServiceNow can index knowledge articles and user criteria permissions without advanced scripts. To learn more about how the connector treats knowledge articles and user criteria permissions, see the section on [Advanced Scripts](#advanced-scripts).
+   > Microsoft Graph Connector for ServiceNow can index knowledge articles and user criteria permissions without advanced scripts. To learn more about how the connector treats knowledge articles and user criteria permissions, see the section on [Read and Deny Access to Knowledge Articles in Microsoft Graph Connector for ServiceNow](#read-and-deny-access-to-knowledge-articles-in-microsoft-graph-connector-for-servicenow).
 
    **Authentication details**: To authenticate and sync content from ServiceNow, choose **one of three** supported methods:
    - [Basic authentication](#1-basic-authentication)
@@ -233,7 +233,7 @@ The ServiceNow connector supports access permissions visible to **Everyone** or 
 >[!IMPORTANT]
 >In ServiceNow, while assessing read permissions for a user, both article-level permissions and KB-level permissions are looked at. The Microsoft Graph connector for ServiceNow treats permissions differently:
 >1. If the article contains '_Can Read_' user criteria, then they are stamped on the article during ingestion and Knowledge Base '_Can Read_' / '_Can Contribute_' user criteria are ignored.
->2. If the article contains '_Cannot Read_' user criteria, and if the corresponding Knowledge base also contains '_Cannot Read_' and '_Cannot Contribute_' user criteria, then both the user criteria are stamped on the article.
+>2. If the article contains '_Cannot Read_' user criteria, and if the corresponding Knowledge base also contains '_Cannot Read_' user criteria, then both the user criteria are stamped on the article.
 
 
 If you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Microsoft Entra ID provisioned users or Non-AAD users.
@@ -281,7 +281,7 @@ Follow the general [setup instructions](./configure-connector.md#step-7-manage-s
 Follow the general [setup instructions](./configure-connector.md#step-8-refresh-settings).
 
 >[!NOTE]
->For identities, only full crawl scheduled will be applied.
+>Identities are only refreshed in full crawls.
 
 ## Review & Publish
 
@@ -290,101 +290,47 @@ Follow the general [setup instructions](./configure-connector.md#step-9-review-c
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
 
-## Advanced Scripts
-
-The Microsoft Graph connector for ServiceNow doesn't support advanced scripts in its current release. Here is a scenario-wise depiction of how the connector treats cases with advanced scripts:
+## Read and Deny Access to Knowledge Articles in Microsoft Graph Connector for ServiceNow
+<details>
+<summary>Here is a scenario-wise depiction of how the connector treats access permissions based on user criteria in ServiceNow Knowledge:</summary><br>
 
 >[!NOTE]
 > Terms used in the table below:
 > * **No criteria**: No user criteria is defined for the article or Knowledge base. (Different from empty criteria where a user criteria is defined but within the criteria all fields are empty)
 > * **Default user criteria**: User criteria defined using ServiceNow fields like Users, Groups, Roles, Location, Department etc.
+>* **Empty Criteria**: A User criteriion where all fields have empty values.
 
-| Knowledge Base | &nbsp; | Knowledge Article | &nbsp; | Access |
-| :------ | :----- | :--- | :--- | :--- |
-|**_Can read_/_Can contribute_** | **_Cannot read_/_Cannot contribute_**| **_Can read_**| **_Cannot read_**| |
-| Default user criteria + Advanced script | No criteria | No criteria | No criteria | Default user criteria followed. Advanced script is ignored. |
-| Advanced script | No criteria | No criteria | No criteria | Access denied to everyone. |
-| Default user criteria or No criteria | Default user criteria + Advanced criteria | No criteria | No criteria | Access denied to everyone. |
-| Default user criteria or No criteria | Default user criteria or No criteria | No criteria | No criteria | Access denied to everyone. |
-| Default user criteria or No criteria | Default user criteria or No criteria | Default user criteria + Advanced script | No criteria | Default user criteria followed at the article level. Advanced script ignored. |
-| Default user criteria or No criteria | Default user criteria or No criteria | Advanced script | No criteria | Access denied to everyone for the article. |
-| Default user criteria or No criteria | Default user criteria or No criteria | Default user criteria or No criteria | Default user criteria + Advanced script | Access denied to everyone for the article. |
+### How Read access is determined
+
+| Knowledge Base |&nbsp;| Knowledge Article | Access |
+| :------ | :----- | :--- | :--- |
+|**_Can read_** | **_Can contribute_**| **_Can read_**| |
+| Any criteria | Any criteria | Default user criteria | Default user criteria followed |
+| Any criteria | Any criteria | Default + Advanced criteria | Default user criteria followed. Advanced criteria ignored. |
+| Any criteria | Any criteria | Empty criteria + Any criteria| Access provided to every ServiceNow user |
+| Default user criteria | Default user criteria | No criteria | Default user criteria followed. [_Note_: If the '_Cannot Contribute_' user criteria is not present, then default criteria from both '_Can read_' and '_Can Contribute_' are followed. **But if the '_Cannot Contribute_' user criteria is present, then '_Can Contribute_' user criteria is not stamped.**] |
+| Default + Advanced criteria | Default + Advanced criteria | No criteria | Default user criteria followed. Advanced criteria ignored.|
+| Empty criteria | Any criteria | No criteria | Access provided to every ServiceNow user |
+
+### How Deny access is determined
+
+| Knowledge Base | Knowledge Article | Access |
+| :------ | :----- | :--- |
+|**_Cannot read_** | **_Cannot read_**| |
+| Default user criteria | Default user criteria | Both criteria at base and article level are honored. |
+| Advanced criteria | Any criteria | Deny access to everyone. |
+| Any criteria | Advanced criteria | Deny access to everyone. |
+| Empty criteria + Default user criteria | Any criteria | Deny access to everyone. |
+| Any criteria | Empty criteria | Deny access to everyone. |
+</details>
 
 ## Limitations
 >[!IMPORTANT]
 >The ServiceNow Knowledge Microsoft Graph connector has the following limitations in its latest release:
->- User criteria with advanced scripts aren't supported in the current version. To learn more about how the connector treats knowledge articles with advanced scripts, see the section on [Advanced Scripts](#advanced-scripts).
+>- User criteria with advanced scripts aren't supported in the current version. To learn more about how the connector treats knowledge articles with advanced scripts, see the section on [Read and Deny Access to Knowledge Articles in Microsoft Graph Connector for ServiceNow](#read-and-deny-access-to-knowledge-articles-in-microsoft-graph-connector-for-servicenow).
 
 ## Troubleshooting
-After publishing your connection, customizing the results page, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
-You can find troubleshooting steps for commonly seen issues below.
-### 1. Unable to log in due to Single Sign-On enabled ServiceNow instance
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+You can find troubleshooting steps for commonly seen issues [here](/MicrosoftSearch/troubleshooting-servicenow-knowledge-connector).
 
-If your organization has enabled Single Sign-On (SSO) to ServiceNow, you may have trouble logging in with the service account. You can bring up username and password based login by adding <em> `login.do`</em> to the ServiceNow instance URL. Example. `https://<your-organization-domain>.service-now.com./login.do`
-
-### 2. Unauthorized or forbidden response to API request
-
-#### 2.1. Check table access permissions
-If you see forbidden or unauthorized response in connection status, check if the service account has the required access to the tables mentioned in [Step 2: Data Source Settings](#2-data-source-settings). Check whether all the columns in the tables have read access.
-
-#### 2.2. Change in account password
-The Microsoft Graph connector uses access token fetched on behalf of service account for crawl. The access token refreshes every 12 hours. Ensure that service account password isn't changed after publishing the connection. You may need to reauthenticate the connection if there's a change in password.
-
-#### 2.3. Check if ServiceNow instance behind firewall
-The Microsoft Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You need to explicitly allow access to connector service. You can find public IP address range of connector service in the table below. Based on your tenant region, add it to your ServiceNow instance network allow list.
-
-Environment | Region | Range
---- | --- | ---
-PROD | North America | 52.250.92.252/30, 52.224.250.216/30
-PROD | Europe | 20.54.41.208/30, 51.105.159.88/30
-PROD | Asia Pacific | 52.139.188.212/30, 20.43.146.44/30
-
-#### 2.4. Access permissions not working as expected
-
-If you observe discrepancies in access permissions applied to search results, verify access flow chart for user criteria in [managing access to knowledge bases and articles](https://docs.servicenow.com/bundle/vancouver-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html).
-
-### 3. Change the URL of the knowledge article to view it in the support portal
-
-ServiceNow Knowledge connector computes the AccessUrl property using sys_id in the `<instance_url>/kb_view.do?sys_kb_id<sysId>` format. It opens the knowledge article in the backend system view. If you prefer redirecting the article to a different URL, follow the instructions below.
-
-#### 3.1 Edit your result type
-In customization tab in *Search & Intelligence* section of Microsoft 365 admin center, navigate to edit the result type configured for your ServiceNow Knowledge connection.
-
-:::image type="content" alt-text="Editing Result Type" source="media/servicenow-knowledge-connector/edit-result-type.png" lightbox="media/servicenow-knowledge-connector/edit-result-type.png":::
-
-When the edit result type dialog opens, click on **Edit** next to the result layout section. 
-
-:::image type="content" alt-text="Editing Result Layout" source="media/servicenow-knowledge-connector/edit-result-type-2.png":::
-
-#### 3.2 Find the items block
-Find the items block containing text property with `shortDescription` and `AccessUrl` values.
-
-:::image type="content" alt-text="Editing items block in result type" source="media/servicenow-knowledge-connector/edit-result-type-3.png":::
-
-#### 3.3 Edit AccessUrl property
-
-To change the destination URL, edit the `AccessUrl` part of the text property in the items block. For example, if a ServiceNow Knowledge article should be redirected to `https://contoso.service-now.com/sp` where `sp` is the service URL portal prefix, follow the steps below.
-
-Original value | New value
---- | ---
-`"[{shortdescription}]({AccessUrl})"` | `"[{shortdescription}](https://contoso.service-now.com/sp?id=kb_article_view&sysparm_article={number})"`
-
-Where `number` is the knowledge article number property. It should be marked as *retrieve* in Manage Schema screen during connection creation.
-
-Finish reviewing your result type updates and hit **Submit**. Give it a minute or two to pick up the changes. Your search results should now redirect to the desired URLs.
-
-### 4. Issues with *Only people with access to this data source* permission
-
-#### 4.1 Unable to choose *Only people with access to this data source*
-
-You may not be able to choose *Only people with access to this data source* option if the service account doesn't have read permissions to the required tables in [Step 2: Data Source Settings](#2-data-source-settings). Check whether the service account can read tables mentioned under *Index and support user criteria permissions* feature.
-
-#### 4.2 User mapping failures
-
- ServiceNow user accounts that don't have an M365 user in Microsoft Entra ID will not map. Non-user, service accounts are expected to fail user mapping. Number of user mapping failures can be accessed in identity stats area in connection detail window. Log of failed user mappings can be downloaded from Error tab.
-
-### 5. Issues with user criteria access flow
-
-If you see differences in the user criteria validation between ServiceNow and Microsoft Search, set `glide.knowman.block_access_with_no_user_criteria` system property to `no`.
-
-If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
+If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
