@@ -29,7 +29,7 @@ description: "Troubleshoot issues with the ServiceNow Knowledge Graph connector 
    ![Screenshot of Mapping identity error.](media/troubleshooting-servicenow-knowledge-connector-map-identity-error.png)
 
 3. Check if there's an Advanced script in any of the user criteria granting access to the article. (Note: Advanced scripts aren't supported in the current version of Microsoft Graph connector for ServiceNow.)
-    1. If there's an Advanced script configured in any of the '_Cannot Read_' or '_Cannot Contribute_' user criteria in the knowledge base level, all articles in the knowledge base are stamped with deny access in the indexed data.
+    1. If there's an Advanced script configured in any of the '_Cannot Read_' user criteria in the knowledge base level, all articles in the knowledge base are stamped with deny access in the indexed data.
 
     2. If there's an Advanced script configured in any of the '_Cannot Read_' user criteria in the article level, the article is stamped with deny access in the indexed data.
 
