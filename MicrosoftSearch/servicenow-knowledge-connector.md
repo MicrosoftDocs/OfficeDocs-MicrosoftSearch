@@ -302,7 +302,7 @@ After publishing the connection, you need to customize the search results page. 
 
 ### How Read access is determined
 
-| Knowledge Base || Knowledge Article | Access |
+| Knowledge Base &nbsp;|| Knowledge Article | Access |
 | :------ | :----- | :--- | :--- |
 |**_Can read_** | **_Can contribute_**| **_Can read_**| |
 | Any criteria | Any criteria | Default user criteria | Default user criteria followed |
