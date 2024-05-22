@@ -3,7 +3,7 @@ title: "Semantic Index for Copilot"
 ms.author: camillepack   
 author: camillepack
 manager: scotv
-ms.topic: article
+ms.topic: overview
 ms.service: microsoft-365-copilot
 audience: Admin
 ms.audience: Admin
@@ -11,6 +11,8 @@ ms.date: 02/19/2024
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
+- m365copilot
+- magic-ai-copilot
 description: "Learn about Semantic Index for Copilot."
 ---
 
