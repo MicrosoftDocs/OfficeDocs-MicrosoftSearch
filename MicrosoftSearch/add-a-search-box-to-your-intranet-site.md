@@ -33,7 +33,7 @@ To provide your users with easy access to results from your organization, add a 
 
 If you have questions or comments about adding or using an embedded search box, share them with us at [aka.ms/ESB](https://aka.ms/ESB).
   
-## Add a search box to a SharePoint, WordPress, or intranet page
+## Add a search box to a SharePoint or intranet page
 
 You need to add two elements to the page: a container for the search box and the script that powers it.
   
@@ -47,8 +47,7 @@ You need to add two elements to the page: a container for the search box and the
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-- For SharePoint classic or modern pages, download bing-search-box.sppkg from the [Microsoft Search public repro](https://github.com/microsoft-search/bing-search-box/releases), deploy it to your SharePoint app catalog, then add the app to your SharePoint sites. For details, see [Deploy your client-side web part to a SharePoint page](/sharepoint/dev/spfx/web-parts/get-started/serve-your-web-part-in-a-sharepoint-page#deploy-the-helloworld-package-to-app-catalog).
-- For WordPress pages, open edit mode, add the Custom HTML widget, and add the script.
+For SharePoint classic or modern pages, download bing-search-box.sppkg from the [Microsoft Search public repro](https://github.com/microsoft-search/bing-search-box/releases), deploy it to your SharePoint app catalog, then add the app to your SharePoint sites. For details, see [Deploy your client-side web part to a SharePoint page](/sharepoint/dev/spfx/web-parts/get-started/serve-your-web-part-in-a-sharepoint-page#deploy-the-helloworld-package-to-app-catalog).
 
 ## Add a search box to your Confluence page
 
