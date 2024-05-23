@@ -5,7 +5,6 @@ author: mecampos
 manager: umas
 ms.audience: Admin
 ms.topic: landing-page
-layout: LandingPage
 ms.service: mssearch
 ms.localizationpriority: medium
 search.appverid:
