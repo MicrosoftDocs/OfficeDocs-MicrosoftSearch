@@ -30,7 +30,7 @@ You can view the connection details and errors by selecting the connection.
 
 Connection statistics will help you get overall information on what is happening to the data after the first full crawl completes successfully.
 
-This section will include the data about the total number of items discovered, successfully indexed, or failed across all crawls. The data will update after every crawl and will provide a cumulative perspective on the sync between the data source and Microsoft graph connector index. With this information, you can swiftly identify discrepancies and ensure that their connection is up to date. 
+This section will include the data about the total number of items discovered, successfully indexed, or failed across all crawls. The data will update after every crawl and will provide a cumulative perspective on the sync between the data source and Microsoft Graph Connector index. With this information, you can swiftly identify discrepancies and ensure that their connection is up to date. 
 Key perspective at this point is to understand the sync between Data source and Index is at a cumulative level and not just last Crawl. 
 
 An item is indexed with the following information - Content, Properties (Default + Custom) and Access.
