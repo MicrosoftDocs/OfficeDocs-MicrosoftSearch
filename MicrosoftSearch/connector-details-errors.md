@@ -38,14 +38,14 @@ An item is indexed with the following information - Content, Properties (Default
 2. We consider an item as partially indexed when some part of the data is indexed however some part is missing. The item is still searchable with the remaining properties. E.g. For an item we could index all the content but could not index some properties. 
 
 How to read the data in connection statistics:
-Sr. No | Section | Meaning
---- | --- | --- 
-1. |**Total number of discovered items** |Total items discovered in Data source during crawling. This is the number of items that the admin credentials have access to against the data source.
-2. |**Items currently in index**|All the items that could be index, partially or completely
-2.a	|**Completely indexed items**|Total items successfully indexed with complete information attached to it including content, Access and properties
-2.b	|**Partially indexed items**|Items which are partially indexed a) Partially indexed with incomplete ACL b) Partially indexed with incomplete Data c) Partially indexed with incomplete Properties 
-2.c	|**Items in index but out of sync**|All items that were not updated with the latest information from the data source. This will be attempted again in the next crawl.
-3. |**Items failed to index**|Items that were discovered but were not processed due to any error. Further details of each error can be seen on the errors tab
+| Sr. No | Section | Meaning |
+| --- | --- | --- |
+|1. |**Total number of discovered items** |Total items discovered in Data source during crawling. This is the number of items that the admin credentials have access to against the data source.
+|2. |**Items currently in index**|All the items that could be index, partially or completely
+|2.a	|**Completely indexed items**|Total items successfully indexed with complete information attached to it including content, Access and properties
+|2.b	|**Partially indexed items**|Items which are partially indexed<br> a) Partially indexed with incomplete ACL<br> b) Partially indexed with incomplete Data<br> c) Partially indexed with incomplete Properties <br>
+|2.c	|**Items in index but out of sync**|All items that were not updated with the latest information from the data source. This will be attempted again in the next crawl.
+|3. |**Items failed to index**|Items that were discovered but were not processed due to any error. Further details of each error can be seen on the errors tab
 
 ## View your last crawl info
 
