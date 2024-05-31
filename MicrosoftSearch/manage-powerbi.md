@@ -22,29 +22,29 @@ To make it easier for your users to find the data and analytics they need to mak
 
 * **Easy to use:** This out-of-box search experience helps users easily and quickly find Power BI dashboards and reports across your organization.
 * **Richer content:** To make Power BI search results more useful, they include key information like the type of content—dashboard or report—and the team or person that owns it.
-* **Built-in data protection:** Power BI results will only appear for users that have access to the dashboard or report.
 * **Unified search experience:** To maintain a cohesive experience, Power BI results are consistent across all search entry points. Wherever you search, you'll get the same results with the same look and feel.
 
 ## What users experience
 
-Microsoft Search users can find Power BI results by searching from the Windows search box, SharePoint, Office 365, and Bing. Users can search for reports and dashboards with queries like these:
+Microsoft Search users can find Power BI results by searching from the Windows search box, SharePoint, Office 365, and Bing. 
 
-* Power BI about `<topic>`
-* Power BI for `<topic>`
-* `<topic>` Power BI dashboard or Power BI dashboard `<topic>`
-* `<topic>` Power BI report or Power BI report `<topic>`
-* `<topic>` Power BI metrics or Power BI metrics `<topic>`
-* `<topic>` Power BI scorecard or Power BI scorecard `<topic>`
+PowerBI results can be queried from All tab
 
-Replace `<topic>` in the examples above with the information you're looking for, like sales, usage, capacity, 2021, Q1, and more, to see relevant results from Power BI.
+![PowerBI All Tab](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/72018014/70c6d1c8-5863-4518-b0b6-10da777ec96e)
 
-:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="Screenshot of a SERP with Power BI answers and vertical." border="true":::
+As well as from the custom vertical
 
-## Turn Power BI search on or off
+![PowerBI-Vertical](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/72018014/1a0bc8ac-0c8e-42f7-b4e7-8ff41539774c)
 
-Power BI results are enabled for your organization by default. Your Power BI admin can disable them at any time. In the Power BI Admin portal, go to Tenant settings and disable the **Use global search for Power BI** setting. To learn more, see [Administering Power BI in the admin portal](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview).
+## Manage Power BI search 
 
-:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Screenshot of setting to turn Power BI answers on or off." border="true":::
+Power BI results are enabled for your organization by default. Your Power BI admin can manage them at any time. In the Power BI Admin portal, go to Tenant settings and toggle the **Share data with your Microsoft 365 Services** setting. To learn more, see [Administering Power BI in the admin portal](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview).
+
+![PowerBI Admin - Search settings](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/72018014/c3641943-85d4-43b7-8952-613ebe6868de)
+
+By default the PowerBI search vertical is enabled in the list of verticals. It can be disabled from the vertical page too.
+
+![PowerBI vertical with disable option](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/72018014/1a6d05a3-69ed-4ab4-b662-2c4ed0516675)
 
 > [!NOTE]
 > When using Microsoft Search, your search query and the results returned from Power BI may be processed in a region or geography that's different than where your Power BI tenant data is located.
@@ -53,24 +53,16 @@ Power BI results are enabled for your organization by default. Your Power BI adm
 
 **Q: Is Power BI search enabled by default?**
 
-**A:** Yes. Power BI search is enabled by default for Microsoft Search. There's no first-time setup required by the tenant admin for this feature.
+**A:** Yes. Power BI search is enabled by default for Microsoft Search. 
 
 **Q: Can Power BI search be enabled or disabled for specific groups or users?**
 
 **A:** Currently, it can only be enabled or disabled for your entire organization.
 
-**Q: If Power BI search is disabled, is the Power BI search result page hidden?**
-
-**A:** No. The Power BI search result page will appear with a message informing users that it's not currently available for their organization.
-
-**Q: Will I see the Power BI search result page if I don’t have a Power BI license?**
-
-**A:** No. If a search user doesn’t have a Power BI license, the Power BI search result page won’t appear in Microsoft Search results.
-
-**Q: Will I see Power BI search results that I can't access?**
-
-**A:** No. Microsoft Search will only return Power BI results you have access to.
-
 **Q: Can I customize the Power BI search results (for example, the report type or report owner)?**
 
 **A:** Currently we don’t support customizing the fields included in Power BI search results.
+
+**Q: How much time does it take to see the affect of PowerBI Admin toggle in Microsoft Search?**
+
+**A:** It generally reflects in a few hours. In some cases it may take upto a day to show up in the list of Verticals.
