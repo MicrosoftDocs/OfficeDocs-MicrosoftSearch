@@ -1,5 +1,5 @@
 ---
-title: "Manage Power BI answers"
+title: "Manage Power BI Search results"
 ms.author: bstucker
 author: bstuck
 manager: bstucker
@@ -18,21 +18,21 @@ ms.date: 01/04/2021
 
 # Manage Power BI search results
 
-Users need to find the data and analytics so that they can make informed decisions. To make it easier for your users, Microsoft Search has added support for Power BI dashboards and reports. A few benefits of Power BI search are:
+Users need to find the data and analytics so that they can make informed decisions. To make it easier for your users, Microsoft Search has added support for Power BI dashboards and reports. A few benefits of Power BI search are
 
-* **Easy to use:** This out-of-box search experience helps users find Power BI dashboards and reports easily across your organization.
-* **Richer content:** To make Power BI search results more useful, they include key information like the type of content—dashboard or report—and the team or person that owns it.
-* **Unified search experience:** To maintain a cohesive experience, Power BI results are consistent across all search entry points. Wherever you search, you'll get the same results with the same look and feel.
+* **Easy to use** This out-of-box search experience helps users find Power BI dashboards and reports easily across your organization.
+* **Richer content** To make Power BI search results more useful, they include key information like the type of content (dashboard or report) and the team or person who owns it.
+* **Unified search experience** To maintain a cohesive experience, Power BI results are consistent across all search entry points. Wherever you search, you'll get the same results with the same look and feel.
 
 ## What users experience
 
-Microsoft Search users can find Power BI results by searching from the Windows search box, SharePoint, Office 365, and Bing. 
+Microsoft Search users can search for Power BI results from the Windows search box, SharePoint, Microsoft 365, and Bing. 
 
-PowerBI results can be queried from All tab on the Search page
+Power BI results can be queried from All tab on the Search page
 
 ![PowerBI All Tab](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/72018014/70c6d1c8-5863-4518-b0b6-10da777ec96e)
 
-As well as from the dedicated PowerBI Custom vertical
+As well as from the dedicated Power BI Custom vertical
 
 ![PowerBI-Vertical](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/72018014/1a0bc8ac-0c8e-42f7-b4e7-8ff41539774c)
 
@@ -42,12 +42,12 @@ Power BI results are enabled for your organization by default. Your Power BI adm
 
 ![PowerBI Admin - Search settings](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/72018014/c3641943-85d4-43b7-8952-613ebe6868de)
 
-PowerBI search vertical is enabled by default in the list of verticals. It can be disabled from the Verticals page too.
+Power BI search vertical is enabled by default in the list of verticals. It can be disabled from the Verticals page too.
 
 ![PowerBI vertical with disable option](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/72018014/1a6d05a3-69ed-4ab4-b662-2c4ed0516675)
 
 > [!NOTE]
-> When using Microsoft Search, your search query and the results returned from Power BI may be processed in a region or geography that's different than where your Power BI tenant data is located.
+> When using Microsoft Search, your search query and the results returned from Power BI, may be processed in a region or geography that's different than where your Power BI data is located.
 
 ## Frequently Asked Questions
 
