@@ -16,9 +16,9 @@ description: "Manage how Power BI reports and data appear in search results"
 ms.date: 01/04/2021
 ---
 
-# Manage Power BI answers
+# Manage Power BI search results
 
-To make it easier for your users to find the data and analytics they need to make informed decisions, Microsoft Search has added support for Power BI dashboards and reports. Here are a few of the benefits of Power BI search:
+To make it easier for your users, to find the data and analytics so that they can make informed decisions, Microsoft Search has added support for Power BI dashboards and reports. A few of the benefits of Power BI search are:
 
 * **Easy to use:** This out-of-box search experience helps users easily and quickly find Power BI dashboards and reports across your organization.
 * **Richer content:** To make Power BI search results more useful, they include key information like the type of content—dashboard or report—and the team or person that owns it.
@@ -28,21 +28,21 @@ To make it easier for your users to find the data and analytics they need to mak
 
 Microsoft Search users can find Power BI results by searching from the Windows search box, SharePoint, Office 365, and Bing. 
 
-PowerBI results can be queried from All tab
+PowerBI results can be queried from All tab on the Search page
 
 ![PowerBI All Tab](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/72018014/70c6d1c8-5863-4518-b0b6-10da777ec96e)
 
-As well as from the custom vertical
+As well as from the dedicated PowerBI Custom vertical
 
 ![PowerBI-Vertical](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/72018014/1a0bc8ac-0c8e-42f7-b4e7-8ff41539774c)
 
 ## Manage Power BI search 
 
-Power BI results are enabled for your organization by default. Your Power BI admin can manage them at any time. In the Power BI Admin portal, go to Tenant settings and toggle the **Share data with your Microsoft 365 Services** setting. To learn more, see [Administering Power BI in the admin portal](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview).
+Power BI results are enabled for your organization by default. Your Power BI admin can manage them at any time. To manage, in the Power BI Admin portal, go to Tenant settings and toggle the **Share data with your Microsoft 365 Services** setting. To learn more, see [Administering Power BI in the admin portal](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview).
 
 ![PowerBI Admin - Search settings](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/72018014/c3641943-85d4-43b7-8952-613ebe6868de)
 
-By default the PowerBI search vertical is enabled in the list of verticals. It can be disabled from the vertical page too.
+PowerBI search vertical is enabled by default in the list of verticals. It can be disabled from the Verticals page too.
 
 ![PowerBI vertical with disable option](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/72018014/1a6d05a3-69ed-4ab4-b662-2c4ed0516675)
 
