@@ -4,7 +4,7 @@ ms.author: bstucker
 author: bstuck
 manager: bstucker
 ms.audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: mssearch
 ms.localizationpriority: medium
 ms.collection: essentials-overview
