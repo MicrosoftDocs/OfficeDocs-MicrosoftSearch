@@ -22,7 +22,7 @@ ms.date: 01/08/2019
 To provide your users with easy access to results from your organization, add a Microsoft Search in Bing search box to any intranet site or page. These are some of the benefits:
 
 - A search box on your intranet portal provides a familiar, trusted entry point to start searching
-- Can be added to your SharePoint (classic and modern), WordPress, SalesForce, Confluence, and other intranet pages and sites
+- Can be added to your SharePoint (classic and modern), SalesForce, Confluence, and other intranet pages and sites
 - Supports all major web browsers, including Google Chrome and Microsoft Edge
 - Only search suggestions from your organization appear, web suggestions are never included
 - Takes users to a Microsoft Search in Bing work results page, which excludes ads and web results
@@ -33,7 +33,7 @@ To provide your users with easy access to results from your organization, add a 
 
 If you have questions or comments about adding or using an embedded search box, share them with us at [aka.ms/ESB](https://aka.ms/ESB).
   
-## Add a search box to a SharePoint, WordPress, or intranet page
+## Add a search box to a SharePoint or intranet page
 
 You need to add two elements to the page: a container for the search box and the script that powers it.
   
@@ -47,8 +47,7 @@ You need to add two elements to the page: a container for the search box and the
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-- For SharePoint classic or modern pages, download bing-search-box.sppkg from the [Microsoft Search public repro](https://github.com/microsoft-search/bing-search-box/releases), deploy it to your SharePoint app catalog, then add the app to your SharePoint sites. For details, see [Deploy your client-side web part to a SharePoint page](/sharepoint/dev/spfx/web-parts/get-started/serve-your-web-part-in-a-sharepoint-page#deploy-the-helloworld-package-to-app-catalog).
-- For WordPress pages, open edit mode, add the Custom HTML widget, and add the script.
+For SharePoint classic or modern pages, download bing-search-box.sppkg from the [Microsoft Search public repro](https://github.com/microsoft-search/bing-search-box/releases), deploy it to your SharePoint app catalog, then add the app to your SharePoint sites. For details, see [Deploy your client-side web part to a SharePoint page](/sharepoint/dev/spfx/web-parts/get-started/serve-your-web-part-in-a-sharepoint-page#deploy-the-helloworld-package-to-app-catalog).
 
 ## Add a search box to your Confluence page
 
