@@ -58,6 +58,10 @@ items:
         href: configure-connector.md
       - name: Add Staged rollout to connectors
         href: staged-rollout-for-graph-connectors.md
+      - name: Graph Connectors with Copilot
+        items:
+        - name: Enhance Copilot discovery with Graph connector content
+          href: enhancing-microsoft-copilot-with-graph-connector-content.md
       - name: On-prem connectors
         items:
         - name: Connector agent setup
