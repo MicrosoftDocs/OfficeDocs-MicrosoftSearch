@@ -13,7 +13,7 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: "Manage how Power BI reports and data appear in search results"
-ms.date: 01/04/2021
+ms.date: 06/17/2024
 ---
 
 # Manage Power BI answers
@@ -48,6 +48,12 @@ Power BI results are enabled for your organization by default. Your Power BI adm
 
 > [!NOTE]
 > When using Microsoft Search, your search query and the results returned from Power BI may be processed in a region or geography that's different than where your Power BI tenant data is located.
+
+## Limitations
+
+* PowerBI inline results experience isn't available at SharePoint site search scope.
+* All vertical configurations don't apply to PowerBI content. Example: The All-tab KQL "FileType:xlsx" can be used to filter out Excel files from SharePoint and OneDrive, but won't apply to PowerBI content.
+* All vertical sorting by date don't apply to PowerBI results. When sorting by date instead of relevance PowerBI results are omitted.
 
 ## Frequently Asked Questions
 
