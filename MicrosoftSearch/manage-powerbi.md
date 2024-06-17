@@ -22,7 +22,7 @@ To make it easier for your users to find the data and analytics they need to mak
 
 * **Easy to use:** This out-of-box search experience helps users easily and quickly find Power BI dashboards and reports across your organization.
 * **Richer content:** To make Power BI search results more useful, they include key information like the type of content—dashboard or report—and the team or person that owns it.
-* **Built-in data protection:** Power BI results will show for users that have access to the dashboard or report.
+* **Built-in data protection:** Power BI results show for users that have access to the dashboard or report.
 * **Unified search experience:** To maintain a cohesive experience, Power BI results are consistent across all search entry points. Wherever you search, you get the same results with the same look and feel.
 
 ## What users experience
@@ -52,8 +52,8 @@ Power BI results are enabled for your organization by default. Your Power BI adm
 ## Limitations
 
 * PowerBI inline results experience isn't available at SharePoint site search scope.
-* All vertical configurations don't apply to PowerBI content. Example: The All-tab keyword query language filter (KQL) "FileType:xlsx" can be used to filter out Excel files from SharePoint and OneDrive, but will not apply to PowerBI content.
-* All vertical sorting by date don't apply to PowerBI results. When sorting by date instead of relevance PowerBI results are omitted.
+* All vertical configurations don't apply to PowerBI content. Example: The All-tab keyword query language filter (KQL) "FileType:xlsx" can be used to filter out Excel files from SharePoint and OneDrive, but will not prevent PowerBI content from showing.
+* All vertical sorting by date don't apply to PowerBI results. Sorting by date instead of relevance will exclude PowerBI results.
 
 ## Frequently Asked Questions
 
