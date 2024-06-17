@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: "Manage how Power BI reports and data appear in search results"
-ms.date: 01/04/2021
+ms.date: 06/17/2024
 ---
 
 # Manage Power BI answers
 
-To make it easier for your users to find the data and analytics they need to make informed decisions, Microsoft Search has added support for Power BI dashboards and reports. Here are a few of the benefits of Power BI search:
+To make it easier for your users to find the data and analytics they need to make informed decisions, Microsoft Search has support for Power BI dashboards and reports. Here are a few of the benefits of Power BI search:
 
 * **Easy to use:** This out-of-box search experience helps users easily and quickly find Power BI dashboards and reports across your organization.
 * **Richer content:** To make Power BI search results more useful, they include key information like the type of content—dashboard or report—and the team or person that owns it.
-* **Built-in data protection:** Power BI results will only appear for users that have access to the dashboard or report.
-* **Unified search experience:** To maintain a cohesive experience, Power BI results are consistent across all search entry points. Wherever you search, you'll get the same results with the same look and feel.
+* **Built-in data protection:** Power BI results show for users that have access to the dashboard or report.
+* **Unified search experience:** To maintain a cohesive experience, Power BI results are consistent across all search entry points. Wherever you search, you get the same results with the same look and feel.
 
 ## What users experience
 
@@ -36,9 +36,9 @@ Microsoft Search users can find Power BI results by searching from the Windows s
 * `<topic>` Power BI metrics or Power BI metrics `<topic>`
 * `<topic>` Power BI scorecard or Power BI scorecard `<topic>`
 
-Replace `<topic>` in the examples above with the information you're looking for, like sales, usage, capacity, 2021, Q1, and more, to see relevant results from Power BI.
+Replace `<topic>` in the examples with the information you're looking for, like sales, usage, capacity, 2021, Q1, and more, to see relevant results from Power BI.
 
-:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="Screenshot of a SERP with Power BI answers and vertical." border="true":::
+:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="Screenshot of a search result page with Power BI answers and vertical." border="true":::
 
 ## Turn Power BI search on or off
 
@@ -48,6 +48,12 @@ Power BI results are enabled for your organization by default. Your Power BI adm
 
 > [!NOTE]
 > When using Microsoft Search, your search query and the results returned from Power BI may be processed in a region or geography that's different than where your Power BI tenant data is located.
+
+## Limitations
+
+* PowerBI inline results experience isn't available at SharePoint site search scope.
+* All vertical configurations don't apply to PowerBI content. Example: The All-tab keyword query language filter (KQL) "FileType:xlsx" can be used to filter out Excel files from SharePoint and OneDrive, but will not prevent PowerBI content from showing.
+* All vertical sorting by date don't apply to PowerBI results. Sorting by date instead of relevance will exclude PowerBI results.
 
 ## Frequently Asked Questions
 
@@ -61,15 +67,15 @@ Power BI results are enabled for your organization by default. Your Power BI adm
 
 **Q: If Power BI search is disabled, is the Power BI search result page hidden?**
 
-**A:** No. The Power BI search result page will appear with a message informing users that it's not currently available for their organization.
+**A:** No. The Power BI search result page appears with a message informing users that it's not currently available for their organization.
 
 **Q: Will I see the Power BI search result page if I don’t have a Power BI license?**
 
-**A:** No. If a search user doesn’t have a Power BI license, the Power BI search result page won’t appear in Microsoft Search results.
+**A:** No. If a search user doesn’t have a Power BI license, the Power BI search result page will not appear in Microsoft Search results.
 
 **Q: Will I see Power BI search results that I can't access?**
 
-**A:** No. Microsoft Search will only return Power BI results you have access to.
+**A:** No. Microsoft Search only return Power BI results you have access to.
 
 **Q: Can I customize the Power BI search results (for example, the report type or report owner)?**
 
