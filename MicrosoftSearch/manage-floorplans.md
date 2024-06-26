@@ -22,7 +22,7 @@ ms.date: 09/10/2019
 >
 > For organizations with no published floor plan answers, floor plan configuration will be disabled or not available. Organizations with at least one published floor plan answer won't be impacted by this change. Your admin and end-user experiences for floor plans will continue to be accessible.
 >
-> Microsoft Places is available in 2023. To learn more, see [Introducing Microsoft Places](https://www.microsoft.com/microsoft-365/blog/2022/10/12/introducing-microsoft-places-turn-your-spaces-into-places/).
+> Microsoft Places is available in Public Preview in 2024. To learn more, see [Introducing Microsoft Places](https://www.microsoft.com/microsoft-365/blog/2022/10/12/introducing-microsoft-places-turn-your-spaces-into-places/).
 
 Floor plans in Microsoft Search help users find people, rooms, and spaces within a building. Watch the video for an overview of floor plan answers and a walkthrough of the steps to add them.
 
