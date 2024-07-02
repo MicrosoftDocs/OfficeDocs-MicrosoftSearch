@@ -24,8 +24,6 @@ ms.date: 09/10/2019
 
 Floor plans in Microsoft Search help users find people, rooms, and spaces within a building. Watch the video for an overview of floor plan answers and a walkthrough of the steps to add them.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPJt7]
-
 ## What users experience
 
 Users can see floor plan answers on [Bing](https://bing.com), [SharePoint](https://sharepoint.com/), and [Office 365](https://office.com). Other entry points that return Bing results, including Windows Search and the Microsoft Edge address bar, are also supported. Query patterns that include a person's full name, first name, room name, or room location, like these examples, will return a floor plan answer:
