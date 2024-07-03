@@ -176,23 +176,14 @@ After publishing the connection, you need to customize the search results page. 
 After publishing the connection, you need to customize the search results page with verticals and result types. To learn about customizing search results, review how to [manage verticals](manage-verticals.md) and [result types](manage-result-types.md).
 You may also use the [sample result layout](jira-connector-result-layout.md) for Jira connector. Simply copy-paste the result layout JSON to get started.
 
-## Troubleshooting
-
-Below is a list of common errors observed while configuring the connector or during crawls, and their possible reasons.
-
-| Step | Error message | Possible reason(s) |
-| ------------ | ------------ | ------------ |
-| Connection settings | The request is malformed or incorrect. | Incorrect Jira site URL. |
-| Connection settings | Unable to reach the Jira cloud service for your Jira site. | Incorrect Jira site URL. |
-| Connection settings | The client doesn't have permission to perform the action. | Invalid API token provided for Basic auth. |
-| Connection settings | "Something went wrong" error in OAuth pop-up window. | The scopes granted to OAuth app don't match. The mismatched scopes are listed in the pop-up window. |
-| Crawl time (post connector configuration) | Can't authenticate with data source. Verify the credentials associated with this data source are correct. | The user doesn't have one or more permissions required to crawl Jira. |
-| Crawl time (post connector configuration) | You don't have permission to access this data source. You can contact the owner of this data source to request permission. | If you're using OAuth, the app scopes may have changed, or the app may have expired or deleted. <br> If you're using basic authentication, the API token may have expired or deleted. |
-| Crawl time (post connector configuration) | Error code: 1003 - You don't have permission to access this data source. <br> Detailed error code: 7612 | The crawl account does not have "Browse projects" permission for the listed project (under 'item id' column). |
-
 ## Limitations
 
 The following are known limitations of the Atlassian Jira connector:
 
 * The connector does not support the "Any user logged in" application role to grant access to issues.
 * Jira Server and Data Center versions aren't supported.
+
+## Troubleshooting
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md). You can find troubleshooting steps for commonly seen issues [here](troubleshooting-jira-cloud-connector.md).
+
+If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).

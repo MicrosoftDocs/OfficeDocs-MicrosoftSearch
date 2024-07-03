@@ -85,7 +85,11 @@ items:
         - name: CSV
           href: csv-connector.md          
         - name: Jira Cloud
-          href: jira-connector.md
+          items:
+          - name: Setup
+            href: jira-connector.md
+          - name: Troubleshooting
+            href: troubleshooting-jira-cloud-connector.md
         - name: Enterprise websites
           href: enterprise-web-connector.md
         - name: File share
