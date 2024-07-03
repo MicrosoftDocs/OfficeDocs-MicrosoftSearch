@@ -97,7 +97,11 @@ items:
         - name: Salesforce
           href: salesforce-connector.md
         - name: ServiceNow Catalog
-          href: servicenow-catalog-connector.md
+          items:
+          - name: Setup
+            href: servicenow-catalog-connector.md
+          - name: Troubleshooting
+            href: troubleshooting-servicenow-catalog-connector.md
         - name: ServiceNow Knowledge
           items:
           - name: Setup
