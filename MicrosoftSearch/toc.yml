@@ -79,7 +79,11 @@ items:
         - name: Azure SQL and Microsoft SQL Server
           href: MSSQL-connector.md
         - name: Confluence Cloud
-          href: confluence-cloud-connector.md
+          items:
+          - name: Setup
+            href: confluence-cloud-connector.md
+          - name: Troubleshooting
+            href: troubleshooting-confluence-cloud-connector.md
         - name: Confluence On-premises (preview)
           href: confluence-onpremises-connector.md
         - name: CSV
