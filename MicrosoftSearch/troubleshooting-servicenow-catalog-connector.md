@@ -1,6 +1,6 @@
 ---
 ms.date: 10/08/2019
-title: "ServiceNow Catalog Microsoft Graph connector"
+title: "Troubleshooting guide for ServiceNow Catalog Microsoft Graph connector"
 ms.author: kam1
 author: TheKarthikeyan
 manager: harshkum
@@ -13,7 +13,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the ServiceNow Catalog Microsoft Graph connector for Microsoft Search"
+description: "Troubleshoot issues with the ServiceNow Catalog Microsoft Graph connector for Microsoft Search"
 ---
 # Troubleshooting guide for ServiceNow Catalog Microsoft Graph connector
 

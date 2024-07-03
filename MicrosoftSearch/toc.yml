@@ -95,7 +95,9 @@ items:
         - name: Oracle SQL
           href: OracleSQL-connector.md
         - name: Salesforce
-          href: salesforce-connector.md
+          items:
+          - name: Setup
+            href: salesforce-connector.md
         - name: ServiceNow Catalog
           items:
           - name: Setup

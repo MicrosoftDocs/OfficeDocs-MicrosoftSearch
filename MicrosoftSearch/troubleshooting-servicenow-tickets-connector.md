@@ -1,6 +1,6 @@
 ---
 ms.date: 10/08/2019
-title: "Troubleshooting guide for ServiceNow Knowledge Microsoft Graph connector"
+title: "Troubleshooting guide for ServiceNow Tickets Microsoft Graph connector"
 ms.author: souravpoddar
 author: souravpoddar001
 manager: harshkum
