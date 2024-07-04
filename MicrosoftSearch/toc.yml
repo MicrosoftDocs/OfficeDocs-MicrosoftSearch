@@ -108,7 +108,12 @@ items:
           - name: Setup
             href: mediawiki-connector.md
         - name: Oracle SQL
-          href: OracleSQL-connector.md
+          items:
+          - name: Setup
+            href: OracleSQL-connector.md
+          - name: Troubleshooting
+            href: troubleshooting-oraclesql-connector.md
+        - name: ServiceNow Tickets
         - name: Salesforce
           href: salesforce-connector.md
         - name: ServiceNow Catalog
