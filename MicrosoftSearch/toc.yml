@@ -81,7 +81,11 @@ items:
         - name: Confluence Cloud
           href: confluence-cloud-connector.md
         - name: Confluence On-premises (preview)
-          href: confluence-onpremises-connector.md
+          items:
+          - name: Setup
+            href: confluence-onpremises-connector.md
+          - name: Troubleshooting
+            href: troubleshooting-confluence-onpremises-connector.md
         - name: CSV
           href: csv-connector.md          
         - name: Jira Cloud
