@@ -104,7 +104,9 @@ items:
           - name: Setup
             href: fileshare-connector.md
         - name: MediaWiki
-          href: mediawiki-connector.md
+          items:
+          - name: Setup
+            href: mediawiki-connector.md
         - name: Oracle SQL
           href: OracleSQL-connector.md
         - name: Salesforce
