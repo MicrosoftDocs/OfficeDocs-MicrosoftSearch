@@ -100,7 +100,9 @@ items:
           - name: Troubleshooting
             href: troubleshooting-enterprise-web-connector.md
         - name: File share
-          href: fileshare-connector.md
+          items:
+          - name: Setup
+            href: fileshare-connector.md
         - name: MediaWiki
           href: mediawiki-connector.md
         - name: Oracle SQL
