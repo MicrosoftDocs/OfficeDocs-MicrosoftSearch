@@ -71,13 +71,27 @@ items:
       - name: Connector-specific information
         items:
         - name: Azure Data Lake Storage Gen2
-          href: azure-data-lake-connector.md
+          items:
+          - name: Setup
+            href: azure-data-lake-connector.md
         - name: Azure DevOps Work Items
-          href: azure-devops-connector.md
+          items:
+          - name: Setup
+            href: azure-devops-connector.md
+          - name: Troubleshooting
+            href: troubleshooting-azure-devops-connector.md
         - name: Azure DevOps Wiki
-          href: azure-devops-wiki-connector.md          
+          items:
+          - name: Setup
+            href: azure-devops-wiki-connector.md
+          - name: Troubleshooting
+            href: troubleshooting-azure-devops-wiki-connector.md        
         - name: Azure SQL and Microsoft SQL Server
-          href: MSSQL-connector.md
+          items:
+          - name: Setup
+            href: MSSQL-connector.md
+          - name: Troubleshooting
+            href: troubleshooting-mssql-connector.md
         - name: Confluence Cloud
           href: confluence-cloud-connector.md
         - name: Confluence On-premises (preview)
