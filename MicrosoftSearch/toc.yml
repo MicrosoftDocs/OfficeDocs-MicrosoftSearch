@@ -87,11 +87,18 @@ items:
           - name: Troubleshooting
             href: troubleshooting-confluence-onpremises-connector.md
         - name: CSV
-          href: csv-connector.md          
+          href: csv-connector.md  
+          items:
+          - name: Setup
+            href: csv-connector.md      
         - name: Jira Cloud
           href: jira-connector.md
         - name: Enterprise websites
-          href: enterprise-web-connector.md
+          items:
+          - name: Setup
+            href: enterprise-web-connector.md
+          - name: Troubleshooting
+            href: troubleshooting-enterprise-web-connector.md
         - name: File share
           href: fileshare-connector.md
         - name: MediaWiki
