@@ -125,6 +125,18 @@ Select which fields you want the connection to index and preview data in these f
 
 The Atlassian Jira connector can index both default issue fields and custom created issue fields.
 
+*The list of properties that you select here, can impact how you can filter, search and view your results in Copilot for Microsoft 365.*
+
+**Source property** | **Label** | **Description**
+--- | --- | ---
+Authors   | `authors` | Name of people who participated/collaborated on the item in the data source.
+Created  | `createdDateTime` | Date and time that the item was created in the data source.
+IssueIconUrl  | `iconUrl` | The associated icon url with specific issue priority.
+IssueLink  | `url` | The target URL of the item in the data source.
+ReporterEmailId   | `createdBy` | Name of the person who most recently edited the item in the data source.
+Title   | `title` | The title of the item that you want shown in search and other experiences.
+Updated  | `lastModifiedDateTime` | Date and time the item was last modified in the data source.
+
 > [!NOTE]
 > If a selected custom created field is not present in some Jira issue type(s), the field will be ingested as *NULL* (blank).
 
@@ -188,6 +200,7 @@ Below is a list of common errors observed while configuring the connector or dur
 | Connection settings | "Something went wrong" error in OAuth pop-up window. | The scopes granted to OAuth app don't match. The mismatched scopes are listed in the pop-up window. |
 | Crawl time (post connector configuration) | Can't authenticate with data source. Verify the credentials associated with this data source are correct. | The user doesn't have one or more permissions required to crawl Jira. |
 | Crawl time (post connector configuration) | You don't have permission to access this data source. You can contact the owner of this data source to request permission. | If you're using OAuth, the app scopes may have changed, or the app may have expired or deleted. <br> If you're using basic authentication, the API token may have expired or deleted. |
+| Crawl time (post connector configuration) | Error code: 1003 - You don't have permission to access this data source. <br> Detailed error code: 7612 | The crawl account does not have "Browse projects" permission for the listed project (under 'item id' column). |
 
 ## Limitations
 

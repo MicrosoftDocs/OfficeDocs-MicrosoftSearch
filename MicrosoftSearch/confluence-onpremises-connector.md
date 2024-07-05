@@ -186,21 +186,14 @@ After publishing the connection, you need to customize the search results page. 
 
 For testing purpose, you can choose [publish to limited audience](./staged-rollout-for-graph-connectors.md#modify-or-stop-staged-rollout)   
 
- 
-
-## Troubleshooting
-
-The common errors that can be seen while configuring the connector and their possible reasons are listed below.
-
-| Configuration step | Error message | Possible reason(s) |
-| ------------ | ------------ | ------------ |
-| Connection settings | The request is malformed or incorrect. | Incorrect Confluence site URL |
-| Connection settings | Unable to reach the Confluence On-premises service for your Confluence site. | Incorrect Confluence site URL |
-| Connection settings | The client doesn't have permission to perform the action. | Invalid password provided for Basic auth |
-| Select properties | No preview results | Check your CQL query whether it's valid and matches the content to crawl |
-
 ## Limitations
 
 The confluence On-premises connector has the following known limitations in its latest release:
 
 * Confluence On-premises connector doesn't index blogs, attachment files and comments.
+
+## Troubleshooting
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+You can find troubleshooting steps for commonly seen issues [here](troubleshooting-confluence-onpremises-connector.md).
+
+If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).

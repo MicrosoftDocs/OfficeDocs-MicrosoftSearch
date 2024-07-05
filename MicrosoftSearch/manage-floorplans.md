@@ -18,15 +18,11 @@ ms.date: 09/10/2019
 # Manage floor plans
 
 > [!IMPORTANT]
-> On Dec 15, 2022 new onboarding for Microsoft Search floor plans will stop as Microsoft explores integration with the recently announced [Microsoft Places](https://www.microsoft.com/microsoft-365/blog/2022/10/12/introducing-microsoft-places-turn-your-spaces-into-places/).
+> The Microsoft Search floor plans feature has been retired. Customers can soon use [Microsoft Places](https://www.microsoft.com/en-us/microsoft-places#modal-Hero-1) for their floor plan solutions. Existing customers have until September 30, 2024 to download their existing floor plans for use in Microsoft Places. 
 >
-> For organizations with no published floor plan answers, floor plan configuration will be disabled or not available. Organizations with at least one published floor plan answer won't be impacted by this change. Your admin and end-user experiences for floor plans will continue to be accessible.
->
-> Microsoft Places is available in 2023. To learn more, see [Introducing Microsoft Places](https://www.microsoft.com/microsoft-365/blog/2022/10/12/introducing-microsoft-places-turn-your-spaces-into-places/).
+> If your tenant is interested in onboarding to Microsoft Places, please [begin the request process here](/deployoffice/places/opt-in-places-preview).
 
 Floor plans in Microsoft Search help users find people, rooms, and spaces within a building. Watch the video for an overview of floor plan answers and a walkthrough of the steps to add them.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPJt7]
 
 ## What users experience
 

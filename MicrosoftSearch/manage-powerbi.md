@@ -13,7 +13,7 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: "Manage how Power BI reports and data appear in search results"
-ms.date: 01/04/2021
+ms.date: 06/17/2024
 ---
 
 # Manage Power BI search results
@@ -49,6 +49,12 @@ Power BI search vertical is enabled by default in the list of verticals. It can 
 > [!NOTE]
 > When using Microsoft Search, your search query and the results returned from Power BI, may be processed in a region or geography that's different than where your Power BI data is located.
 
+## Limitations
+
+* PowerBI inline results experience isn't available at SharePoint site search scope.
+* All vertical configurations don't apply to PowerBI content. Example: The All-tab keyword query language filter (KQL) "FileType:xlsx" can be used to filter out Excel files from SharePoint and OneDrive, but will not prevent PowerBI content from showing.
+* All vertical sorting by date don't apply to PowerBI results. Sorting by date instead of relevance will exclude PowerBI results.
+
 ## Frequently Asked Questions
 
 **Q: Is Power BI search enabled by default?**
@@ -58,6 +64,7 @@ Power BI search vertical is enabled by default in the list of verticals. It can 
 **Q: Can Power BI search be enabled or disabled for specific groups or users?**
 
 **A:** Currently, it can only be enabled or disabled for your entire organization.
+
 
 **Q: Can I customize the Power BI search results (for example, the report type or report owner)?**
 

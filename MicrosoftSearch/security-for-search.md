@@ -4,7 +4,7 @@ ms.author: kellis
 author: kellis
 manager: makers
 ms.audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: mssearch
 ms.localizationpriority: medium
 ms.collection: essentials-security
