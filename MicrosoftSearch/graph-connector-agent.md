@@ -40,7 +40,7 @@ Using the recommended configuration of the machine, the connector agent instance
 
 * Windows 10, Windows Server 2016 R2 and higher versions
 * [.NET Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
-* [.NET Core Desktop Runtime 7.0 (x64)](https://dotnet.microsoft.com/download/dotnet/7.0)
+* [.NET Core Desktop Runtime 8.0 (x64)](https://dotnet.microsoft.com/download/dotnet/8.0)
 * 8 cores, 3 GHz
 * 16 GB RAM, 2 GB Disk Space
 * Network access to data source and internet through 443
@@ -72,7 +72,7 @@ The upgrade button isn't available for agents upgrading from 1.x version to 2.x 
 
 1. Download the installer from the link provided in the installation section.
 
-2. The installer asks you to install .NET 7 Desktop runtime, if not already installed.
+2. The installer asks you to install .NET 8 Desktop runtime, if not already installed.
 
 3. Allow communication to the endpoint *.office.com.
 
