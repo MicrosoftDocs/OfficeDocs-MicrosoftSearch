@@ -258,6 +258,19 @@ In this step, you can add or remove available properties from your ServiceNow da
 
 :::image type="content" alt-text="Screenshot that shows how to select properties." source="media/servicenow-knowledge-connector-select-properties.png" lightbox="media/servicenow-knowledge-connector-select-properties.png":::
 
+*The list of properties that you select here, can impact how can you filter, search and view your results in Copilot for Microsoft 365.*
+
+**Source property** | **Label** | **Description**
+--- | --- | ---
+AccessUrl  | `url` | The target URL of the item in the data source.
+Author   | `authors` | Name of all the people who participated/collaborated on the item in the data source.
+IconUrl   | `iconUrl` | Icon url that represents the article’s category or type.
+Short_description  | `title` | The title of the item that you want shown in search and other experiences.
+SysUpdatedBy   | `lastModifiedBy` | Name of the person who most recently edited the item in the data source.
+SysUpdatedOn  | `lastModifiedDateTime` | Date and time the item was last modified in the data source.
+SysCreatedBy   | `createdBy` | Name of the person who created the item in the data source.
+SysCreatedOn   | `createdDateTime` | Date and time that the item was created in the data source.
+
 With a ServiceNow query string, you can specify conditions for syncing articles. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only articles that are published and active. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/vancouver-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
 Use the preview results button to verify the sample values of the selected properties and query filter.
