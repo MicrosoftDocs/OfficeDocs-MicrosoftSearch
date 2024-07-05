@@ -95,19 +95,39 @@ items:
         - name: Confluence Cloud
           href: confluence-cloud-connector.md
         - name: Confluence On-premises (preview)
-          href: confluence-onpremises-connector.md
+          items:
+          - name: Setup
+            href: confluence-onpremises-connector.md
+          - name: Troubleshooting
+            href: troubleshooting-confluence-onpremises-connector.md
         - name: CSV
-          href: csv-connector.md          
+          href: csv-connector.md
+          items:
+          - name: Setup
+            href: csv-connector.md
         - name: Jira Cloud
           href: jira-connector.md
         - name: Enterprise websites
-          href: enterprise-web-connector.md
+          items:
+          - name: Setup
+            href: enterprise-web-connector.md
+          - name: Troubleshooting
+            href: troubleshooting-enterprise-web-connector.md
         - name: File share
-          href: fileshare-connector.md
+          items:
+          - name: Setup
+            href: fileshare-connector.md
         - name: MediaWiki
-          href: mediawiki-connector.md
+          items:
+          - name: Setup
+            href: mediawiki-connector.md
         - name: Oracle SQL
-          href: OracleSQL-connector.md
+          items:
+          - name: Setup
+            href: OracleSQL-connector.md
+          - name: Troubleshooting
+            href: troubleshooting-oraclesql-connector.md
+        - name: ServiceNow Tickets
         - name: Salesforce
           href: salesforce-connector.md
         - name: ServiceNow Catalog
