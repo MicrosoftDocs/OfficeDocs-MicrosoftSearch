@@ -38,7 +38,7 @@ Power BI results can also be queried from the dedicated Power BI Custom vertical
 
 ## Manage Power BI search 
 
-Power BI results are enabled by default. Your Power BI admin can manage them at any time. To manage in the Power BI Admin portal, go to Tenant settings and toggle the **Share data with your Microsoft 365 Services** setting. To learn more, see [Administering Power BI in the admin portal](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview).
+Power BI results are enabled by default. Your Power BI admin can manage them at any time. To manage in the Power BI Admin portal, go to settings and toggle the **Share data with your Microsoft 365 Services** setting. To learn more, see [Administering Power BI in the admin portal](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview).
 
 ![PowerBI Admin - Search settings](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/72018014/c3641943-85d4-43b7-8952-613ebe6868de)
 
@@ -47,13 +47,13 @@ Power BI search vertical is enabled by default in the list of verticals. It can 
 ![PowerBI vertical with disable option](https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch-pr/assets/72018014/1a6d05a3-69ed-4ab4-b662-2c4ed0516675)
 
 > [!NOTE]
-> When using Microsoft Search, your search query and the results returned from Power BI, may be processed in a region or geography different than where your Power BI data is located.
+> When using Microsoft Search, your search query and the results returned from Power BI, could be processed in a region or geography different than where your Power BI data is located.
 
 ## Limitations
 
-* PowerBI inline results experience isn't available in SharePoint site search scope.
-* All vertical configurations don't apply to PowerBI content. Example: The All-tab keyword query language filter (KQL) "FileType:xlsx" can be used to filter out Excel files from SharePoint and OneDrive, but will not prevent PowerBI content from showing.
-* All vertical sorting by date don't apply to PowerBI results. Sorting by date instead of relevance will exclude PowerBI results.
+* Power BI inline results experience isn't available in SharePoint site search scope.
+* All vertical configurations don't apply to Power BI content. Example: The All-tab keyword query language filter (KQL) "FileType:xlsx" can be used to filter out Excel files from SharePoint and OneDrive, but will not prevent Power BI content from showing.
+* All vertical sorting by date don't apply to Power BI results. Sorting by date instead of relevance will exclude Power BI results.
 
 ## Frequently Asked Questions
 
@@ -69,6 +69,6 @@ Power BI search vertical is enabled by default in the list of verticals. It can 
 
 **A:** No. We don’t support customizing the fields included in Power BI search results.
 
-**Q: How much time does it take to see the affect of PowerBI Admin toggle in Microsoft Search?**
+**Q: How much time does it take to see the affect of Power BI Admin toggle in Microsoft Search?**
 
 **A:** It generally reflects in a few hours. In some cases it may take upto a day to show up in the list of Verticals.
