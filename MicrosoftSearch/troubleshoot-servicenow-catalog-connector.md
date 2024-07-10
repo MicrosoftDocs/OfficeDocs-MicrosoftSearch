@@ -25,7 +25,7 @@ If your organization has enabled Single Sign-on (SSO) to ServiceNow, you may hav
 
 #### 2.1. Check table access permissions
 
-If you see forbidden or unauthorized response in connection status, check if the service account has required access to the tables mentioned in [step 3: connection settings](./servicenow-catalog-connector.md#step-3-connection-settings). Check whether all the columns in the tables have read access.
+If you see forbidden or unauthorized response in connection status, check if the service account has required access to the tables mentioned in [step 3: connection settings](/MicrosoftSearch/servicenow-catalog-connector.md#step-3-connection-settings). Check whether all the columns in the tables have read access.
 
 #### 2.2. Change in account password
 
@@ -49,7 +49,7 @@ If you observe discrepancies in access permissions applied to search results, ve
 
 #### 3.1 Unable to choose *Only people with access to this data source*
 
-You may not be able to choose *Only people with access to this data source* option if the service account doesn't have read permissions to the required tables in [step 3: connection settings](./servicenow-catalog-connector#step-3-connection-settings). Check whether the service account can read tables mentioned under *Index and support user criteria permissions* feature.
+You may not be able to choose *Only people with access to this data source* option if the service account doesn't have read permissions to the required tables in [step 3: connection settings](/MicrosoftSearch/servicenow-catalog-connector.md#step-3-connection-settings). Check whether the service account can read tables mentioned under *Index and support user criteria permissions* feature.
 
 #### 3.2 User mapping failures
 

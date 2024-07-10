@@ -81,6 +81,19 @@ Complete the connection settings step using the **Client ID** and **Secret**.
 
 In this step, you can add or remove available properties from your Confluence data source. Microsoft 365 has selected a few properties by default.
 
+*The list of properties that you select here, can impact how you can filter, search and view your results in Copilot for Microsoft 365.*
+
+**Source property** | **Label** | **Description**
+--- | --- | ---
+Authors   | `authors` | Name of people who participated/collaborated on the item in the data source.
+CreatedByName  | `createdBy` | Name of the person who most recently edited the item in the data source.
+CreatedOn  | `createdDateTime` | Date and time that the item was created in the data source.
+IconUrl  | `iconUrl` | The associated icon url of the item.
+Title   | `title` | The title of the item that you want shown in search and other experiences.
+UpdatedByName  | `lastModifiedBy` | Name of the person who most recently edited the item in the data source.
+UpdatedOn  | `lastModifiedDateTime` | Date and time the item was last modified in the data source.
+Url  | `url` | The target URL of the item in the data source.
+
 With a Confluence Query Language (CQL) string, you can specify conditions for syncing pages. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only the pages that are modified in the last two years. To learn about creating your own query string, see [Advanced Searching using CQL](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/). All blogs and pages will be indexed by the connector by default.
 
 >[!TIP]
