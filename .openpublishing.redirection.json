@@ -272,7 +272,7 @@
         },
         {
             "source_path": "MicrosoftSearch/troubleshooting-azure-devops-connector.md",
-            "redirect_url": "/MicrosoftSearch/troubleshoot-enterprise-web-connector",
+            "redirect_url": "/MicrosoftSearch/troubleshooting-azure-devops-connector",
             "redirect_document_id": true
         },
         {
