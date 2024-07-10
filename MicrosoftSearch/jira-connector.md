@@ -196,6 +196,6 @@ The following are known limitations of the Atlassian Jira connector:
 * Jira Server and Data Center versions aren't supported.
 
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md). You can find troubleshooting steps for commonly seen issues [here](troubleshooting-jira-cloud-connector.md).
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md). You can find troubleshooting steps for commonly seen issues [here](troubleshoot-jira-cloud-connector.md).
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).

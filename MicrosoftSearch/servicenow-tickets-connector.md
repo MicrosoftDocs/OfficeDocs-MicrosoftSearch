@@ -257,4 +257,4 @@ The ServiceNow Tickets Microsoft Graph connector has the following limitations i
 
 ## Troubleshooting
 After publishing your connection, customizing the results page, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
-You can find troubleshooting steps for commonly seen issues [here](troubleshooting-servicenow-tickets-connector.md).
+You can find troubleshooting steps for commonly seen issues [here](troubleshoot-servicenow-tickets-connector.md).
