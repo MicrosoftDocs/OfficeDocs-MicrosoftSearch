@@ -49,7 +49,7 @@ If you observe discrepancies in access permissions applied to search results, ve
 
 #### 3.1 Unable to choose *Only people with access to this data source*
 
-You may not be able to choose *Only people with access to this data source* option if the service account doesn't have read permissions to the required tables in [step 3: connection settings](/MicrosoftSearch/servicenow-catalog-connector.md#step-3-connection-settings). Check whether the service account can read tables mentioned under *Index and support user criteria permissions* feature.
+You may not be able to choose *Only people with access to this data source* option if the service account doesn't have read permissions to the required tables in [step 3: connection settings](./servicenow-catalog-connector.md#step-3-connection-settings). Check whether the service account can read tables mentioned under *Index and support user criteria permissions* feature.
 
 #### 3.2 User mapping failures
 
