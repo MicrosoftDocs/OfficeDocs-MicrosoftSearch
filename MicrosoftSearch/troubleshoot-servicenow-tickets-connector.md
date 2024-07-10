@@ -24,7 +24,7 @@ If your organization has enabled single sign-On (SSO) to ServiceNow, you may hav
 ### 2. **Unauthorized or forbidden response to API request**
 
 #### 2.1. Check table access permissions
-If you see forbidden or unauthorized response in connection status, check if the service account has required access to the tables mentioned in [step 3: connection settings](/MicrosoftSearch/servicenow-tickets-connector.md#step-3-connection-settings). Check whether all the columns in the tables have read access.
+If you see forbidden or unauthorized response in connection status, check if the service account has required access to the tables mentioned in [step 3: connection settings](./servicenow-tickets-connector.md#step-3-connection-settings). Check whether all the columns in the tables have read access.
 
 #### 2.2. Change in account password
 The Microsoft Graph connector uses access token fetched on behalf of service account for crawl. The access token refreshes every 12 hours. Ensure that service account password isn't changed after publishing the connection. You may need to reauthenticate the connection if there's a change in password.

@@ -26,7 +26,7 @@ description: "Troubleshoot issues with the ServiceNow Knowledge Graph connector 
 
 2. Check if the user is correctly mapped to a Microsoft Entra identity. Mapping issues usually show up as a '2006' error in the Error tab. Check the user mapping formula and if needed, change the mapping method.<br>
 
-   ![Screenshot of Mapping identity error.](media/troubleshoot-servicenow-knowledge-connector-map-identity-error.png)
+   ![Screenshot of Mapping identity error.](media/troubleshooting-servicenow-knowledge-connector-map-identity-error.png)
 
 3. Check if there's an Advanced script in any of the user criteria granting access to the article. (Note: Advanced scripts aren't supported in the current version of Microsoft Graph connector for ServiceNow.)
     1. If there's an Advanced script configured in any of the '_Cannot Read_' user criteria in the knowledge base level, all articles in the knowledge base are stamped with deny access in the indexed data.
