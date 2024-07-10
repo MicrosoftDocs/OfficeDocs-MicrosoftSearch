@@ -1,6 +1,6 @@
 --- 
 
-title: "Atlassian Jira Cloud Microsoft Graph connector" 
+title: "Atlassian Jira Cloud Microsoft Graph connector overview" 
 ms.author: mecampos 
 author: mecampos 
 manager: umas 
@@ -13,18 +13,24 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Atlassian Jira Cloud Graph connector for Microsoft Search" 
+description: "Overview of the Atlassian Jira Cloud Graph connector for Microsoft Search and Copilot" 
 ms.date: 07/22/2021
 ---
 
 # Atlassian Jira Cloud Microsoft Graph connector
 
-The Atlassian Jira Cloud Microsoft Graph connector allows your organization to index Jira issues. After you configure the connector and index content from the Jira site, end users can search for those items in Microsoft Search.
+The Atlassian Jira Cloud Microsoft Graph connector allows your organization to index Jira issues. After you configure the connector and index content from the Jira site, end users can search for those items in Microsoft Search and get answers in Microsoft Copilot.
 
-> [!NOTE]
-> Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general connectors setup instructions.
+# Connector overview
 
-This article is for anyone who configures, runs, and monitors an Atlassian Jira Cloud connector. It supplements the general setup process, and shows instructions that apply only for the Atlassian Jira Cloud connector.
+| Capability | Details |
+| --------- | --------- |
+| Data source version(s) supported | N/A |
+| Data entities indexed | Issues |
+| Supported auth types for crawling | Basic auth <br> OAuth 2.0 |
+| Supported permissions | Project-level permissions via groups <br> Item-level permissions |
+| Indexing filters | 
+
 
 >[!IMPORTANT]
 >The Atlassian Jira Cloud connector supports only Jira cloud hosted instances. Jira Server and Jira Data Center versions are not supported by this connector.
