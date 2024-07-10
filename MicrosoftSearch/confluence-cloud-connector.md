@@ -79,7 +79,7 @@ Complete the connection settings step using the **Client ID** and **Secret**.
 
 ## Step 4: Select properties and filter data
 
-In this step, you can add or remove available properties from your Confluence data source. Microsoft 365 has select few properties by default.
+In this step, you can add or remove available properties from your Confluence data source. Microsoft 365 has selected a few properties by default.
 
 With a Confluence Query Language (CQL) string, you can specify conditions for syncing pages. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only the pages that are modified in the last two years. To learn about creating your own query string, see [Advanced Searching using CQL](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/). All blogs and pages will be indexed by the connector by default.
 

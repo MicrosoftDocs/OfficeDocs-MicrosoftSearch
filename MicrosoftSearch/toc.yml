@@ -83,7 +83,7 @@ items:
           - name: Setup
             href: confluence-cloud-connector.md
           - name: Troubleshooting
-            href: troubleshooting-confluence-cloud-connector.md
+            href: troubleshoot-confluence-cloud-connector.md
         - name: Confluence On-premises (preview)
           href: confluence-onpremises-connector.md
         - name: CSV
@@ -93,7 +93,7 @@ items:
           - name: Setup
             href: jira-connector.md
           - name: Troubleshooting
-            href: troubleshooting-jira-cloud-connector.md
+            href: troubleshoot-jira-cloud-connector.md
         - name: Enterprise websites
           href: enterprise-web-connector.md
         - name: File share
@@ -111,19 +111,19 @@ items:
           - name: Setup
             href: servicenow-catalog-connector.md
           - name: Troubleshooting
-            href: troubleshooting-servicenow-catalog-connector.md
+            href: troubleshoot-servicenow-catalog-connector.md
         - name: ServiceNow Knowledge
           items:
           - name: Setup
             href: servicenow-knowledge-connector.md
           - name: Troubleshooting
-            href: troubleshooting-servicenow-knowledge-connector.md
+            href: troubleshoot-servicenow-knowledge-connector.md
         - name: ServiceNow Tickets
           items:
           - name: Setup
             href: servicenow-tickets-connector.md
           - name: Troubleshooting
-            href: troubleshooting-servicenow-tickets-connector.md
+            href: troubleshoot-servicenow-tickets-connector.md
     - name: Manage connections
       items:
       - name: Monitor connections
