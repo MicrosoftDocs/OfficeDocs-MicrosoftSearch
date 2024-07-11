@@ -1,13 +1,13 @@
 ---
 title: "Microsoft Search Usage Report – Queries "
-ms.author: efrene    
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 ms.topic: article
 ms.service: mssearch
 audience: Admin
 ms.audience: Admin
-ms.date: 07/07/2022 
+ms.date: 07/10/2024 
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
@@ -32,7 +32,7 @@ The data above the chart shows changes over the selected time period for the fol
 |Average result position   |Represents the average position of clicked items in a search result list where the number one represents the top position (the lower the value, the better).|
 |Click-through rate |The percentage of queries where the user has clicked on one or more of the answers or search results (the higher the value, the better)  |
 
-The Recent Search Activity chart shows trending activity over time for the query count and click-through query rate. For example, if the 28-day filter is selected, this will compare the current 28-day period data to the previous 28-day period data. In the case of downward trend, the arrow and the line are shown in red. In the case of upward trend, it's shown in green. Trend data isn't available for a 12-month view. 
+The Recent Search Activity chart shows trending activity over time for the query count and click-through query rate. For example, if the 28-day filter is selected, this will compare the current 28-day period data to the previous 28-day period data. In the case of downward trend, the arrow and the line are shown in red. In the case of upward trend, it's shown in green. Trend data isn't available for a 12-month view.
 
 ## Query Distribution
 
