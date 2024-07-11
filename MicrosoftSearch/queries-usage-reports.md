@@ -56,7 +56,7 @@ Each chart shows the top five values, and the remaining values are summarized in
 
 This report shows the top 10 most popular search queries. It shows the average users searched and clicked the search queries in the current period. Use this report to understand what types of information your users are searching for and the performance of the top 10 queries.
 
-:::image type="content" source="media/query-top10.png" alt-text="Screenshot showing a list of top 10 queries." lightbox="media/query-10.png":::
+:::image type="content" source="media/query-top10.png" alt-text="Screenshot showing a list of top 10 queries." lightbox="media/query-top10.png":::
 
 ## Query details page
 
@@ -65,6 +65,7 @@ The Query details page shows the frequency of search result engagement and ident
 :::image type="content" source="media/query-details-page.png" alt-text="Screenshot showing the dashboard for the Query details page." lightbox="media/query-details-page.png":::
 
 Each top search item provides the following data:
+
 | Column                 | Description                                           |
 |------------------------|-------------------------------------------------------|
 | **Users searched**     | The number of users performed search                  |
