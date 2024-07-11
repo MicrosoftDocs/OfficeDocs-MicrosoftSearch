@@ -135,7 +135,6 @@ items:
             href: OracleSQL-connector.md
           - name: Troubleshooting
             href: troubleshoot-oraclesql-connector.md
-        - name: ServiceNow Tickets
         - name: Salesforce
           items:
           - name: Setup
