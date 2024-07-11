@@ -71,7 +71,7 @@ Each top search item provides the following data:
 | **Users searched**     | The number of users performed search                  |
 | **Search trend**       | The search trend compared with last period            |
 | **Users clicked**      | The number of users performed click                   |
-| **Users with no clicks** | The number of users performed no clicks              |
+| **Users with no clicks** | The number of users performed no clicks             |
 | **Users with no results** | The number of users performed search that returned no results |
 | **Top clicked result** | Top result clicked for this query                     |
 | **Result URL**         | URL of top search result                              |
