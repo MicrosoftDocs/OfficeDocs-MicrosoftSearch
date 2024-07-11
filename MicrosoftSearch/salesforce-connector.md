@@ -108,6 +108,18 @@ Check that the connection was successful by searching for a green banner that sa
 
 Select the Salesforce objects that you want the connector to crawl and include in search results. If Contact is selected, Account will be automatically selected as well.
 
+*The list of properties that you select here, can impact how you can filter, search and view your results in Copilot for Microsoft 365.*
+
+**Source property** | **Label** | **Description**
+--- | --- | ---
+Authors   | `authors` | Name of people who participated/collaborated on the item in the data source.
+CreatedBy   | `createdBy` | Name of the person who created the item in the data source.
+CreatedDate   | `createdDateTime` | Date and time that the item was created in the data source.
+Url  | `url` | The target URL of the item in the data source.
+LastModifiedBy   | `lastModifiedBy` | Name of the person who most recently edited the item in the data source.
+LastModifiedDateTime  | `lastModifiedDateTime` | Date and time the item was last modified in the data source.
+Name   | `title` | The title of the item that you want shown in search and other experiences.
+
 >[!NOTE]
 >If a field has field level security (FLS) set for a profile, the connector won't ingest that field for any profiles in that Salesforce org. As a result, users won't be able to search on values for those fields, nor will it show up in the results.
 
@@ -204,3 +216,8 @@ Follow the general [setup instructions](./configure-connector.md).
     - LastModifiedByUrl
     - LastModifiedDate
     - ObjectName
+
+## Troubleshooting
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+
+If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).

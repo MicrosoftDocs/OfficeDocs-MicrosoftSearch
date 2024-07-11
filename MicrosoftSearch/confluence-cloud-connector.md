@@ -79,7 +79,20 @@ Complete the connection settings step using the **Client ID** and **Secret**.
 
 ## Step 4: Select properties and filter data
 
-In this step, you can add or remove available properties from your Confluence data source. Microsoft 365 has select few properties by default.
+In this step, you can add or remove available properties from your Confluence data source. Microsoft 365 has selected a few properties by default.
+
+*The list of properties that you select here, can impact how you can filter, search and view your results in Copilot for Microsoft 365.*
+
+**Source property** | **Label** | **Description**
+--- | --- | ---
+Authors   | `authors` | Name of people who participated/collaborated on the item in the data source.
+CreatedByName  | `createdBy` | Name of the person who most recently edited the item in the data source.
+CreatedOn  | `createdDateTime` | Date and time that the item was created in the data source.
+IconUrl  | `iconUrl` | The associated icon url of the item.
+Title   | `title` | The title of the item that you want shown in search and other experiences.
+UpdatedByName  | `lastModifiedBy` | Name of the person who most recently edited the item in the data source.
+UpdatedOn  | `lastModifiedDateTime` | Date and time the item was last modified in the data source.
+Url  | `url` | The target URL of the item in the data source.
 
 With a Confluence Query Language (CQL) string, you can specify conditions for syncing pages. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only the pages that are modified in the last two years. To learn about creating your own query string, see [Advanced Searching using CQL](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/). All blogs and pages will be indexed by the connector by default.
 
@@ -141,16 +154,6 @@ After publishing the connection, you need to customize the search results page. 
 After publishing the connection, you need to customize the search results page with verticals and result types. To learn about customizing search results, review how to [manage verticals](manage-verticals.md) and [result types](manage-result-types.md).
 You may also use the [sample result layout](confluence-cloud-connector-result-layout.md) for the Confluence cloud connector. Copy-paste the result layout JSON to get started.
 
-## Troubleshooting
-
-Common errors observed while configuring the connector and their possible reasons are listed below.
-
-| Configuration step | Error message | Possible reason(s) |
-| ------------ | ------------ | ------------ |
-| Connection settings | The request is malformed or incorrect. | Incorrect Confluence site URL |
-| Connection settings | Unable to reach the Confluence cloud service for your Confluence site. | Incorrect Confluence site URL |
-| Connection settings | The client doesn't have permission to perform the action. | Invalid API token provided for Basic auth |
-| Select properties | No error message and no preview results | Check your CQL query whether it is valid |
 
 ## Limitations
 
@@ -158,3 +161,8 @@ The Confluence Cloud connector has the following known limitations in its latest
 
 * Confluence Cloud connector does not index attachment files and comments.
 * Indexing Server and Data Center deployments will be released as a separate connector.
+
+## Troubleshooting
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md). You can find troubleshooting steps for commonly seen issues [here](troubleshoot-confluence-cloud-connector.md).
+
+If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).

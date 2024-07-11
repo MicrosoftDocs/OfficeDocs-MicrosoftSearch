@@ -83,47 +83,84 @@ items:
           - name: Setup
             href: azure-devops-connector.md
           - name: Troubleshooting
-            href: troubleshooting-azure-devops-connector.md
+            href: troubleshoot-azure-devops-connector.md
         - name: Azure DevOps Wiki
           items:
           - name: Setup
             href: azure-devops-wiki-connector.md
           - name: Troubleshooting
-            href: troubleshooting-azure-devops-wiki-connector.md
+            href: troubleshoot-azure-devops-wiki-connector.md
         - name: Azure SQL and Microsoft SQL Server
           items:
           - name: Setup
             href: MSSQL-connector.md
           - name: Troubleshooting
-            href: troubleshooting-mssql-connector.md
+            href: troubleshoot-mssql-connector.md
         - name: Confluence Cloud
-          href: confluence-cloud-connector.md
+          items:
+          - name: Setup
+            href: confluence-cloud-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-confluence-cloud-connector.md
         - name: Confluence On-premises (preview)
-          href: confluence-onpremises-connector.md
+          items:
+          - name: Setup
+            href: confluence-onpremises-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-confluence-onpremises-connector.md
         - name: CSV
-          href: csv-connector.md          
+          href: csv-connector.md
+          items:
+          - name: Setup
+            href: csv-connector.md
         - name: Jira Cloud
-          href: jira-connector.md
+          items:
+          - name: Setup
+            href: jira-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-jira-cloud-connector.md
         - name: Enterprise websites
-          href: enterprise-web-connector.md
+          items:
+          - name: Setup
+            href: enterprise-web-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-enterprise-web-connector.md
         - name: File share
-          href: fileshare-connector.md
+          items:
+          - name: Setup
+            href: fileshare-connector.md
         - name: MediaWiki
-          href: mediawiki-connector.md
+          items:
+          - name: Setup
+            href: mediawiki-connector.md
         - name: Oracle SQL
-          href: OracleSQL-connector.md
+          items:
+          - name: Setup
+            href: OracleSQL-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-oraclesql-connector.md
         - name: Salesforce
-          href: salesforce-connector.md
+          items:
+          - name: Setup
+            href: salesforce-connector.md
         - name: ServiceNow Catalog
-          href: servicenow-catalog-connector.md
+          items:
+          - name: Setup
+            href: servicenow-catalog-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-servicenow-catalog-connector.md
         - name: ServiceNow Knowledge
           items:
           - name: Setup
             href: servicenow-knowledge-connector.md
           - name: Troubleshooting
-            href: troubleshooting-servicenow-knowledge-connector.md
+            href: troubleshoot-servicenow-knowledge-connector.md
         - name: ServiceNow Tickets
-          href: servicenow-tickets-connector.md
+          items:
+          - name: Setup
+            href: servicenow-tickets-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-servicenow-tickets-connector.md
     - name: Manage connections
       items:
       - name: Monitor connections
