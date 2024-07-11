@@ -84,7 +84,9 @@ To better help administration of the connection and to help Copilot enhance conn
 * What kind of content does this connection have? 
 * How do users refer to this content source in their respective orgs? 
 * What part of the workflow do users refer to this content in their day-to-day work? 
-* What are some characteristics of the content? 
+* What are some characteristics of the content?
+
+To learn more, refer to the [Enhancing Microsoft Copilot discovery with Graph Connector Content](enhancing-microsoft-copilot-discovery-with-graph-connector-content.md) article.
 
 ## Step 3: Configure the connection settings
 
