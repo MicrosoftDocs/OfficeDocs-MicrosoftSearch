@@ -775,7 +775,7 @@ _Publisher: Infoland_
 
 Allows your organization to search for documents, process flows, forms, questionnaires and information cards which are managed in the Zenya quality and risk management solution. It’s easier than ever for joint Zenya and Microsoft users to find the content they need.
 
-[Deploy this Graph connector](https://zenya-software.com/en/software-suite/about-our-software-saas/integrations-and-links/sharepoint-online-integration/)
+[Deploy this Graph connector](https://zenya-software.com/solutions/technical-solutions/sharepoint-online/)
 
 ## Databases
 ### Amazon Aurora
