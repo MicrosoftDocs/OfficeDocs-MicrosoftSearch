@@ -25,7 +25,7 @@ The Graph connecotrs in this gallery are broken down into the following categori
 - Collaboration & Communications
 - Content Management Systems
 - Databases
-- ERP, CRM, Sales and Support
+- ERP, CRM, Sales, and Support
 - File Systems
 - IT Service Management Tools (ITSM)
 - Learning
@@ -79,7 +79,7 @@ Secure enterprise search connector for reliably indexing content from Atlassian 
 ### Atlassian Confluence
 _Publisher: Accenture_
 
-The Confluence connector will crawl content from any Confluence content repository. The connector retrieves spaces, pages, blogs, attachments, and comments. The connector uses the Confluence REST API to crawl Confluence content.
+The Confluence connector crawls content from any Confluence content repository. The connector retrieves spaces, pages, blogs, attachments, and comments. The connector uses the Confluence REST API to crawl Confluence content.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Atlassian+Confluence+Connector)
 
@@ -121,7 +121,7 @@ Allows your organization to search for work items in your Azure DevOps instance.
 ### Box
 _Publisher: Accenture_
 
-Box connector will crawl content from a Box repository. The connector will retrieve the supported elements using the RESTful API (Content API Basics 2.0 version); for authentication, it uses Box API (that uses OAuth 2). Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically.
+Box connector crawls content from a Box repository. The connector retrieves the supported elements using the RESTful API (Content API Basics 2.0 version); for authentication, it uses Box API (that uses OAuth 2). Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Box++Connector)
 
@@ -142,14 +142,14 @@ BA Insight’s Elite Connector provides a single point of access for lawyers to 
 ### Symantec Enterprise Vault
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Symantec Enterprise Vault and intelligently searching it with Microsoft Graph. It robustly indexes archived data, such as e-mails, attachments, files, calendar items and contacts from Enterprise Vault in near real time. The connector fully supports Symantec Enterprise Vault’s authentication models Basic, NTLM and Kerberos authentication.
+Secure enterprise search connector for reliably indexing content from Symantec Enterprise Vault and intelligently searching it with Microsoft Graph. It robustly indexes archived data, such as e-mails, attachments, files, calendar items, and contacts from Enterprise Vault in near real time. The connector fully supports Symantec Enterprise Vault’s authentication models Basic, NTLM, and Kerberos authentication.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-enterprise-vault-connector-2)
 
 ### Enterprise Vault
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Veritas Enterprise Vault and intelligently searching it with Microsoft Graph. It robustly indexes archived data, such as e-mails, attachments, files, calendar items and contacts from Enterprise Vault in near real time. The connector fully supports Veritas Enterprise Vault’s authentication models Basic, NTLM and Kerberos authentication.
+Secure enterprise search connector for reliably indexing content from Veritas Enterprise Vault and intelligently searching it with Microsoft Graph. It robustly indexes archived data, such as e-mails, attachments, files, calendar items, and contacts from Enterprise Vault in near real time. The connector fully supports Veritas Enterprise Vault’s authentication models Basic, NTLM, and Kerberos authentication.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-enterprise-vault-connector)
 
@@ -212,7 +212,7 @@ Secure enterprise search connector for reliably indexing content from IBM Connec
 ### IBM Connections
 _Publisher: Accenture_
 
-The IBM Connections connector will crawl content from IBM Connections server.
+The IBM Connections connector crawls content from IBM Connections server.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/IBM+Connections+Connector/)
 
@@ -254,7 +254,7 @@ The Jira Issues connector is a simple connector for extracting issues from Jira,
 ### Jive
 _Publisher: Accenture_
 
-The Jive connector will crawl content from any JIVE Community with an enabled REST API v3. The connector will retrieve documents stored in spaces, groups, projects, and blogs and any subfolders contained in it.
+The Jive connector crawls content from any JIVE Community with an enabled REST API v3. The connector retrieves documents stored in spaces, groups, projects, and blogs and any subfolders contained in it.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Jive+Connector)
 
@@ -359,7 +359,7 @@ Secure enterprise search connector for reliably indexing content from Slack and 
 ### TeamForge
 _Publisher: Accenture_
 
-The TeamForge connector will crawl content from a TeamForge server through its SOAP services.
+The TeamForge connector crawls content from a TeamForge server through its SOAP services.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/TeamForge+Connector)
 
@@ -374,21 +374,21 @@ Organizations who leverage Workplace by Facebook can now extend the reach of thi
 ### Adobe AEM
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from the Adobe Active Experience Manager (AEM) and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments and other generated document types from Adobe AEM in near real time. The connector fully supports Adobe AEM’s permission model, its built-in user and group management, as well as AEM installations based on Active Directory or other directory services.
+Secure enterprise search connector for reliably indexing content from the Adobe Active Experience Manager (AEM) and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other generated document types from Adobe AEM in near real time. The connector fully supports Adobe AEM’s permission model, its built-in user and group management, as well as AEM installations based on Active Directory or other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/adobe-experience-manager-aem)
 
 ### Adobe Experience Manager (AEM)
 _Publisher: Accenture_
 
-The Adobe Experience Manager (AEM) connector will crawl content from an Adobe Experience Manager server. The connector fetches access control lists for document level security (currently only Closed Users Groups). It can filter content based on properties using expected values or patterns or pages based on the scheduled on and off time.
+The Adobe Experience Manager (AEM) connector crawls content from an Adobe Experience Manager server. The connector fetches access control lists for document level security (currently only Closed Users Groups). It can filter content based on properties using expected values or patterns or pages based on the scheduled on and off time.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/AEM+Connector)
 
 ### Alfresco
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Alfresco One and intelligently searching it with Microsoft Graph. It robustly indexes files, folders and user profiles from Alfresco One in near real time. The connector fully supports Alfresco One’s permission model, its built-in user and group management, as well as Alfresco One installations based on Active Directory and other directory services.
+Secure enterprise search connector for reliably indexing content from Alfresco One and intelligently searching it with Microsoft Graph. It robustly indexes files, folders, and user profiles from Alfresco One in near real time. The connector fully supports Alfresco One’s permission model, its built-in user and group management, as well as Alfresco One installations based on Active Directory and other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-alfresco-connector)
 
@@ -423,21 +423,21 @@ BA Insight's CuadraSTAR Connector crawls content in CuadraSTAR and creates a sin
 ### Documentum
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from OpenText Documentum and intelligently searching it with Microsoft Graph. It robustly indexes repositories, folders and files together with their meta data and properties from Documentum in near real time. The connector fully supports OpenText Documentum’s built-in user and group management.
+Secure enterprise search connector for reliably indexing content from OpenText Documentum and intelligently searching it with Microsoft Graph. It robustly indexes repositories, folders, and files together with their meta data and properties from Documentum in near real time. The connector fully supports OpenText Documentum’s built-in user and group management.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-documentum-connector)
 
 ### Documentum DQL
 _Publisher: Accenture_
 
-The Aspire Documentum DQL connector will crawl content from Documentum.
+The Aspire Documentum DQL connector crawls content from Documentum.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Documentum+DQL+Connector)
 
 ### Documentum
 _Publisher: Accenture_
 
-The Documentum Connector will crawl content from any Documentum content repository. DQL is a query language that allows you to perform complex queries involving specialized searching capabilities for document and content management.
+The Documentum Connector crawls content from any Documentum content repository. DQL is a query language that allows you to perform complex queries involving specialized searching capabilities for document and content management.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Documentum+Connector)
 
@@ -451,7 +451,7 @@ Secure enterprise search connector for reliably indexing content from Drupal and
 ### Elasticsearch
 _Publisher: Accenture_
 
-The Elasticsearch connector will crawl content from an Elastic index using a user-defined query. It can identify updates automatically or use a timestamp in the index.
+The Elasticsearch connector crawls content from an Elastic index using a user-defined query. It can identify updates automatically or use a timestamp in the index.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Elasticsearch+Connector)
 
@@ -465,7 +465,7 @@ Allows your organization to search any non-SharePoint enterprise website.
 ### FirstSpirit
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from e-Spirit FirstSpirit and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments and other generated document types from FirstSpirit in near real time. The connector fully supports e-Spirit FirstSpirit’s built-in user, group and permission management, as well as FirstSpirit installations based on Active Directory and other directory services.
+Secure enterprise search connector for reliably indexing content from e-Spirit FirstSpirit and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other generated document types from FirstSpirit in near real time. The connector fully supports e-Spirit FirstSpirit’s built-in user, group and permission management, as well as FirstSpirit installations based on Active Directory and other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-firstspirit-connector)
 
@@ -584,7 +584,7 @@ BA Insight’s OpenText Documentum Cloud Connector securely indexes both the ful
 ### OpenText Documentum eRoom
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from OpenText Documentum eRoom and intelligently searching it with Microsoft Graph. It robustly indexes repositories, folders and files together with their meta data and properties from Documentum eRoom in near real time. The connector fully supports OpenText Documentum eRoom’s built-in user and group management.
+Secure enterprise search connector for reliably indexing content from OpenText Documentum eRoom and intelligently searching it with Microsoft Graph. It robustly indexes repositories, folders, and files together with their meta data and properties from Documentum eRoom in near real time. The connector fully supports OpenText Documentum eRoom’s built-in user and group management.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-opentext-documentum-eroom-connector)
 
@@ -661,7 +661,7 @@ The SAP HANA (Cloud Version) Connector honors the security of the source databas
 ### SharePoint
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Microsoft SharePoint and intelligently searching it with Microsoft Graph. It robustly indexes sites, webs, modern (SharePoint 2016 and later) and classic pages, wiki pages, OneNote documents, list items, tasks, calendar items, attachments, and files from SharePoint on-premises instances in near real time. The connector fully supports Microsoft SharePoint’s built-in user and group management, as well as Active Directory and also OAuth providers like SiteMinder and Okta. The connector comes with support for Basic, NTLM and Kerberos authentication.
+Secure enterprise search connector for reliably indexing content from Microsoft SharePoint and intelligently searching it with Microsoft Graph. It robustly indexes sites, webs, modern (SharePoint 2016 and later) and classic pages, wiki pages, OneNote documents, list items, tasks, calendar items, attachments, and files from SharePoint on-premises instances in near real time. The connector fully supports Microsoft SharePoint’s built-in user and group management, as well as Active Directory and also OAuth providers like SiteMinder and Okta. The connector comes with support for Basic, NTLM, and Kerberos authentication.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sharepoint-connector)
 
@@ -689,7 +689,7 @@ BA Insight’s SharePoint Connector allows you to connect to SharePoint 2016, fe
 ### SharePoint 2016
 _Publisher: Accenture_
 
-The SharePoint 2016 connector will crawl content from any SharePoint 2016 site collection URL. The connector supports lists, pages, and sites, and updates are identified either automatically or via the SharePoint change log.
+The SharePoint 2016 connector crawls content from any SharePoint 2016 site collection URL. The connector supports lists, pages, and sites, and updates are identified either automatically or via the SharePoint change log.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+2016+Connector)
 
@@ -703,7 +703,7 @@ BA Insight’s SharePoint Connector allows you to connect to SharePoint 2019, fe
 ### SharePoint 2019
 _Publisher: Accenture_
 
-The SharePoint 2019 connector will crawl content from any SharePoint 2019 site collection URL. The connector supports lists, pages, and sites, and updates are identified either automatically or via the SharePoint change log.
+The SharePoint 2019 connector crawls content from any SharePoint 2019 site collection URL. The connector supports lists, pages, and sites, and updates are identified either automatically or via the SharePoint change log.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+2019+Connector)
 
@@ -717,7 +717,7 @@ BA Insight’s SharePoint Online Connector allows you to connect to SharePoint O
 ### SharePoint Online
 _Publisher: Accenture_
 
-The SharePoint Online connector will crawl content from any SharePoint Online site collection URL. The connector will retrieve Sites, Lists, Folders, List Items, and Attachments and other pages (in .aspx format). This connector supports SharePoint running in the Microsoft O365 offering. Support for crawling the on-premise offerings of SharePoint is supported by SharePoint 2010/2007 Connector and SharePoint 2013 Connector.
+The SharePoint Online connector crawls content from any SharePoint Online site collection URL. The connector retrieves Sites, Lists, Folders, List Items, and attachments, and other pages (in .aspx format). This connector supports SharePoint running in the Microsoft O365 offering. Support for crawling the on-premise offerings of SharePoint is supported by SharePoint 2010/2007 Connector and SharePoint 2013 Connector.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+Online+Connector)
 
@@ -809,7 +809,7 @@ BA Insight’s Azure SQL Database Connector is built upon industry standard data
 ### Database Server
 _Publisher: Accenture_
 
-The Database Server connector will crawl content from a Relational Database server. The crawler discovers databases and tables and indexes all content. Updates are discovered.
+The Database Server connector crawls content from a Relational Database server. The crawler discovers databases and tables and indexes all content. Updates are discovered.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Database+Server+Connector)
 
@@ -823,7 +823,7 @@ BA Insight's Google Cloud SQL Connector indexes content from Google Cloud SQL in
 ### HBase
 _Publisher: Accenture_
 
-The HBase connector will crawl data from an HBase Server.
+The HBase connector crawls data from an HBase Server.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/HBase+Connector)
 
@@ -897,7 +897,7 @@ Secure enterprise search connector for reliably indexing content from SQL databa
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sql-database-connector)
 
-## ERP, CRM, Sales and Support
+## ERP, CRM, Sales, and Support
 ### Any SQL-based CRM system
 _Publisher: BA Insight_
 
@@ -950,7 +950,7 @@ Secure enterprise search connector for reliably indexing content from Salesforce
 ### Salesforce
 _Publisher: Accenture_
 
-The Salesforce connector will crawl content from any Salesforce Summer '16 (version 37). The connector will retrieve the supported elements using the SOAP API and the user's Salesforce Chatter feeds using the REST API.
+The Salesforce connector crawls content from any Salesforce Summer '16 (version 37). The connector retrieves the supported elements using the SOAP API and the user's Salesforce Chatter feeds using the REST API.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Salesforce+Connector)
 
@@ -986,14 +986,14 @@ Connector for Amazon S3. Indexes pages, attachments, and other generated documen
 ### Azure Blob Storage
 _Publisher: Accenture_
 
-The Azure Blob Storage connector will crawl content from the Azure Blob Container. Each blob is submitted with its metadata (size, location, last accessed, and so on.). Updates are discovered automatically.
+The Azure Blob Storage connector crawls content from the Azure Blob Container. Each blob is submitted with its metadata (size, location, last accessed, and so on.). Updates are discovered automatically.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Blob+Storage+Connector)
 
 ### Azure Data Lake
 _Publisher: Accenture_
 
-The Azure Data Lake connector will crawl content from the ADLS cloud at either root or specified paths. Each file is submitted with its metadata (size, location, last accessed, and so on.). Updates are discovered automatically.
+The Azure Data Lake connector crawls content from the ADLS cloud at either root or specified paths. Each file is submitted with its metadata (size, location, last accessed, and so on.). Updates are discovered automatically.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector)
 
@@ -1070,7 +1070,7 @@ The Aspire File Transfer Protocol (FTP) connector provides access to files and f
 ### Hadoop Distributed File System (HDFS)
 _Publisher: Accenture_
 
-The Hadoop Distributed File system (HDFS) connector will crawl content from any given HDFS Cluster using the WebHDFS http interface. Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically.
+The Hadoop Distributed File system (HDFS) connector crawls content from any given HDFS Cluster using the WebHDFS http interface. Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/HDFS+Connector)
 
@@ -1112,7 +1112,7 @@ The BA Insight OneDrive Connector makes it possible to index content from OneDri
 ### OneDrive
 _Publisher: Accenture_
 
-The OneDrive connector will crawl content from Microsoft OneDrive, traversing folders to find files. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed, and so on.) and access control lists.
+The OneDrive connector crawls content from Microsoft OneDrive, traversing folders to find files. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed, and so on.) and access control lists.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/OneDrive+Connector)
 
@@ -1133,7 +1133,7 @@ Secure enterprise search connector for reliably indexing content from SMB file s
 ### SMTP
 _Publisher: Accenture_
 
-The SMTP connector will process e-mails sent to it. The email and attachments are submitted with metadata such as to, from, and subject.
+The SMTP connector processes e-mails sent to it. The email and attachments are submitted with metadata such as to, from, and subject.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire32/SMTP+Connector)
 
@@ -1212,7 +1212,7 @@ Secure enterprise search connector for reliably indexing content from ServiceNow
 ### ServiceNow
 _Publisher: Accenture_
 
-The Service Now connector will crawl content from ServiceNow.
+The Service Now connector crawls content from ServiceNow.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/ServiceNow+Connector)
 
@@ -1235,14 +1235,14 @@ Go1 integration with Microsoft Search allows your employees to find and access l
 ### Twitter
 _Publisher: Accenture_
 
-The Twitter connector will crawl content from Twitter feeds. It collects tweet text and metadata including URL links, geo location, and hashtags.
+The Twitter connector crawls content from Twitter feeds. It collects tweet text and metadata including URL links, geo location, and hashtags.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Twitter+Connector)
 
 ### Yammer
 _Publisher: Accenture_
 
-The Yammer connector will crawl content from Yammer messages and metadata including sender, group, and thread details. It runs from any machine with access to the AEM server and optionally supports content fetching and connection throttling.
+The Yammer connector crawls content from Yammer messages and metadata including sender, group, and thread details. It runs from any machine with access to the AEM server and optionally supports content fetching and connection throttling.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Yammer+Connector)
 
@@ -1264,7 +1264,7 @@ Secure enterprise search connector for reliably indexing content from Microsoft 
 ### Aspider Web Crawler
 _Publisher: Accenture_
 
-The Aspider Web Crawler connector will crawl content from one or more websites. The content is submitted along with any metadata provided by the server.
+The Aspider Web Crawler connector crawls content from one or more websites. The content is submitted along with any metadata provided by the server.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Aspider+Web+Crawler)
 
@@ -1278,7 +1278,7 @@ The Aspire RSS connector allows you to retrieve feed information and trigger flo
 ### Selenium
 _Publisher: Accenture_
 
-The Selenium connector will crawl content from websites using an internet browser to retrieve the pages.
+The Selenium connector crawls content from websites using an internet browser to retrieve the pages.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Selenium+Crawler)
 
