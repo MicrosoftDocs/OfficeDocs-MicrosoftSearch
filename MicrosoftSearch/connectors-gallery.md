@@ -21,11 +21,11 @@ The Microsoft Graph connectors gallery includes a brief description of each of t
 
 With more than 100 connectors currently available, you can connect to popular Microsoft and non-Microsoft services. These include Azure services, Box, Confluence, Google services, MediaWiki, Salesforce, ServiceNow, and many more.
 
-The Graph connecotrs in this gallery are broken down into the following categories:
+The Graph connectors in this gallery are broken down into the following categories:
 - Collaboration & Communications
 - Content Management Systems
 - Databases
-- Enterpirse Resource Planning (ERP), Customer Relationship Management (CRM), Sales, and Support
+- Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), Sales, and Support
 - File Systems
 - IT Service Management Tools (ITSM)
 - Learning
@@ -33,7 +33,7 @@ The Graph connecotrs in this gallery are broken down into the following categori
 - Website (HTTP)
 - Other
 
-## Collaboration & Communcations
+## Collaboration & Communications
 ### Aderant
 _Publisher: BA Insight_
 
@@ -219,14 +219,14 @@ The IBM Connections connector crawls content from IBM Connections server.
 ### IBM Lotus Notes
 _Publisher: BA Insight_
 
-With BA Insight's IBM Notes Email Connector, users have the ability to search Notes emails directly from within SharePoint or another portal.  Security defined within IBM Notes is automatically reflected in the search experience, so users see search results from their own mailbox, public mailboxes, and other mailboxes they are allowed to access.
+With BA Insight's IBM Notes Email Connector, users have the ability to search Notes emails directly from within SharePoint or another portal.  Security defined within IBM Notes is automatically reflected in the search experience, so users see search results from their own mailbox, public mailboxes, and other mailboxes they're allowed to access.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/lotus-notes-connector-sharepoint-azure-elasticsearch/)
 
 ### iManage Work
 _Publisher: BA Insight_
 
-BA Insight's iManage Work Connector provides full security and operates at high throughput to minimize crawl times while maintaining a low performance impact on Work. It only requires read access, and there is no need to install client software on any iManage server. Users gain seamless and simultaneous access to all content stored in iManage Work.
+BA Insight's iManage Work Connector provides full security and operates at high throughput to minimize crawl times while maintaining a low performance impact on Work. It only requires read access, and there's no need to install client software on any iManage server. Users gain seamless and simultaneous access to all content stored in iManage Work.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/imanage-work-connector-sharepoint-azure-elasticsearch/)
 
@@ -335,7 +335,7 @@ Powtoon is a video creation platform and the Powtoon Connector enables the index
 
 [Deploy this Graph connector](https://www.powtoon.com/integrations/)
 
-### SAP Proudct Lifeycle Management (PLM) Document Management System (DMS)
+### SAP Product Lifeycle Management (PLM) Document Management System (DMS)
 _Publisher: Raytion_
 
 Secure enterprise search connector for reliably indexing content from SAP Product Lifecycle Management (PLM) Document Management System (DMS) and intelligently searching it with Microsoft Graph. It robustly indexes documents, attachments, and other records from SAP PLM DMS in near real time.
@@ -514,7 +514,7 @@ BA Insight’s OpenText LegalKEY Connector securely indexes both the full text a
 ### Lotus Notes Databases
 _Publisher: BA Insight_
 
-With BA Insight's IBM Notes Database Connector, users have the ability to find content stored in Notes databases using Microsoft Search. Security defined within IBM Notes is automatically reflected in the search experience, which ensures that users see content for which they are authorized. Ultimately, users can find everything they need in one place.
+With BA Insight's IBM Notes Database Connector, users have the ability to find content stored in Notes databases using Microsoft Search. Security defined within IBM Notes is automatically reflected in the search experience, which ensures that users see content for which they're authorized. Ultimately, users can find everything they need in one place.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/ibm-lotus-notes-connector-sharepoint-azure-elasticsearch/)
 
@@ -598,7 +598,7 @@ Users of BA Insight's OpenText eDOCS Document Management (DM) Connector are able
 ### OpenText Livelink/RM
 _Publisher: BA Insight_
 
-With BA Insight's OpenText Livelink Connector, users are able to search both Livelink and Microsoft data with a single query.  Security defined in Livelink is automatically reflected in the search experience, which ensures that users only see content for which they are authorized. Ultimately, users can find everything they need in one place.
+With BA Insight's OpenText Livelink Connector, users are able to search both Livelink and Microsoft data with a single query.  Security defined in Livelink is automatically reflected in the search experience, which ensures that users only see content for which they're authorized. Ultimately, users can find everything they need in one place.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/livelink-connector-sharepoint-azure-elasticsearch/)
 
@@ -1084,7 +1084,7 @@ BA Insight's IBM FileNet Content Manager Connector allows SharePoint, as well a
 ### Microsoft Windows File Server
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Microsoft Windows File Server including its Distributed File System (DFS) and intelligently searching it with Microsoft Graph. It robustly indexes files and folders from Windows File Server in near real time. The connector fully supports Microsoft Windows File Server’s document-level security and the latest versions of the Sever Message Block 2(SMB2) and Server Message Block 3 (SMB3) protocols.
+Secure enterprise search connector for reliably indexing content from Microsoft Windows File Server including its Distributed File System (DFS) and intelligently searching it with Microsoft Graph. It robustly indexes files and folders from Windows File Server in near real time. The connector fully supports Microsoft Windows File Server’s document-level security and the latest versions of the Server Message Block 2(SMB2) and Server Message Block 3 (SMB3) protocols.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-windows-file-server-connector)
 
@@ -1112,14 +1112,14 @@ The BA Insight OneDrive Connector makes it possible to index content from OneDri
 ### OneDrive
 _Publisher: Accenture_
 
-The OneDrive connector crawls content from Microsoft OneDrive, traversing folders to find files. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed, and so on.) and access control lists.
+The OneDrive connector crawls content from Microsoft OneDrive, traversing folders to find files. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata and access control lists.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/OneDrive+Connector)
 
 ### SMB File Share
 _Publisher: Accenture_
 
-The SMB connector crawls files and directories across shared drives. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed, and so on.) and access control lists.
+The SMB connector crawls files and directories across shared drives. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata and access control lists.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/SMB+Connector)
 
@@ -1148,7 +1148,7 @@ Secure enterprise search connector for reliably indexing content from GitLab and
 ### LDAP
 _Publisher: BA Insight_
 
-BA Insight's LDAP Connector enables organizations to connect to any LDAP compliant directory and index any record from it. Organizatins can filter to specific subsets of the directory and retrieve only specifc fields, making it simple to search for users, contract or groups stored anywhere in your directory.
+BA Insight's LDAP Connector enables organizations to connect to any LDAP compliant directory and index any record from it. Organizations can filter to specific subsets of the directory and retrieve only specifc fields, making it simple to search for users, contract or groups stored anywhere in your directory.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/ldap-connector-for-sharepoint-azure-elasticsearch/)
 
