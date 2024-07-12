@@ -65,7 +65,7 @@ BA Insight's Confluence (Cloud Version) Connector is an enterprise grade indexin
 ### Atlassian Confluence
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Atlassian Confluence and intelligently searching it with Microsoft Graph. It robustly indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from on-premise Confluence instances in near real time. The connector fully supports Atlassian Confluence’s built-in user and group management. The connector also supports Confluence installations based on Entra ID and other directory services.
+Secure enterprise search connector for reliably indexing content from Atlassian Confluence and intelligently searching it with Microsoft Graph. It robustly indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from one-premises Confluence instances in near real time. The connector fully supports Atlassian Confluence’s built-in user and group management. The connector also supports Confluence installations based on Entra ID and other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-confluence-connector)
 
@@ -86,7 +86,7 @@ The Confluence connector crawls content from any Confluence content repository. 
 ### Atlassian Jira
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Atlassian Jira and intelligently searching it with Microsoft Graph. It robustly indexes projects, issues, attachments, comments, work logs, issue histories, links, and profiles from on-premise Jira instances in near real time. The connector fully supports Atlassian Confluence’s built-in user and group management. The connector also supports Confluence installations based on Entra ID and other directory services.
+Secure enterprise search connector for reliably indexing content from Atlassian Jira and intelligently searching it with Microsoft Graph. It robustly indexes projects, issues, attachments, comments, work logs, issue histories, links, and profiles from one-premises Jira instances in near real time. The connector fully supports Atlassian Confluence’s built-in user and group management. The connector also supports Confluence installations based on Entra ID and other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jira-connector)
 
@@ -104,7 +104,7 @@ Secure enterprise search connector for reliably indexing content from Atlassian 
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jira-cloud-connector)
 
-### Microsoft Entra ID (formerly known as Azure Entra ID)
+### Microsoft Entra ID (formerly known as Azure Active Directory)
 _Publisher: Raytion_
 
 Secure enterprise search connector for reliably indexing content from Microsoft Entra ID and intelligently searching it with Microsoft Graph. It indexes objects from Microsoft Entra ID via the Microsoft Graph API. The connector can be used for ingesting principals into Microsoft Graph in near real time. This supports use cases like expert search, equipment search, or location search. The connector supports federated authentication against Microsoft 365.
@@ -198,7 +198,7 @@ BA Insight's IBM Connections Connector was specifically developed for IBM Connec
 ### IBM Connections
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from IBM Connections and intelligently searching it with Microsoft Graph. It robustly indexes public and personal files, blogs, wikis, forums, communities, bookmarks, profiles, and status updates from on-premises Connections instances in near real time. The connector fully supports IBM Connection’s built-in user and group management, as well as Connections installations based on Entra ID and other directory services.
+Secure enterprise search connector for reliably indexing content from IBM Connections and intelligently searching it with Microsoft Graph. It robustly indexes public and personal files, blogs, wikis, forums, communities, bookmarks, profiles, and status updates from one-premisess Connections instances in near real time. The connector fully supports IBM Connection’s built-in user and group management, as well as Connections installations based on Entra ID and other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-ibm-connections-connector)
 
@@ -261,7 +261,7 @@ The Jive connector crawls content from any JIVE Community with an enabled REST A
 ### Jive
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Jive and intelligently searching it with Microsoft Graph. It indexes discussions, polls, files, blogs, and more from on-premise and cloud-hosted Jive instances in near real time. The connector fully supports Jive’s built-in user and group management and supports Jive’s native authentication models, OAuth and Basic authentication.
+Secure enterprise search connector for reliably indexing content from Jive and intelligently searching it with Microsoft Graph. It indexes discussions, polls, files, blogs, and more from one-premises and cloud-hosted Jive instances in near real time. The connector fully supports Jive’s built-in user and group management and supports Jive’s native authentication models, OAuth and Basic authentication.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jive-connector)
 
@@ -406,10 +406,10 @@ Confluence Cloud connector allows your organization to index Confluence pages an
 
 [Deploy this Graph connector](confluence-cloud-connector.md)
 
-### Confluence On-premises
+### Confluence one-premisess
 _Publisher: Microsoft_
 
-Confluence On-premises connector allows your organization to index Confluence pages from server or data center deployments.
+Confluence one-premisess connector allows your organization to index Confluence pages from server or data center deployments.
 
 [Deploy this Graph connector](confluence-onpremises-connector.md)
 
@@ -661,7 +661,7 @@ The SAP HANA (Cloud Version) Connector honors the security of the source databas
 ### SharePoint
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Microsoft SharePoint and intelligently searching it with Microsoft Graph. It robustly indexes sites, webs, modern (SharePoint 2016 and later) and classic pages, wiki pages, OneNote documents, list items, tasks, calendar items, attachments, and files from SharePoint on-premises instances in near real time. The connector fully supports Microsoft SharePoint’s built-in user and group management, as well as Entra ID and also OAuth providers like SiteMinder and Okta. The connector comes with support for Basic, NTLM, and Kerberos authentication.
+Secure enterprise search connector for reliably indexing content from Microsoft SharePoint and intelligently searching it with Microsoft Graph. It robustly indexes sites, webs, modern (SharePoint 2016 and later) and classic pages, wiki pages, OneNote documents, list items, tasks, calendar items, attachments, and files from SharePoint one-premisess instances in near real time. The connector fully supports Microsoft SharePoint’s built-in user and group management, as well as Entra ID and also OAuth providers like SiteMinder and Okta. The connector comes with support for Basic, NTLM, and Kerberos authentication.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sharepoint-connector)
 
@@ -717,7 +717,7 @@ BA Insight’s SharePoint Online Connector allows you to connect to SharePoint O
 ### SharePoint Online
 _Publisher: Accenture_
 
-The SharePoint Online connector crawls content from any SharePoint Online site collection URL. The connector retrieves Sites, Lists, Folders, List Items, and attachments, and other pages (in .aspx format). This connector supports SharePoint running in the Microsoft O365 offering. Support for crawling the on-premise offerings of SharePoint is supported by SharePoint 2010/2007 Connector and SharePoint 2013 Connector.
+The SharePoint Online connector crawls content from any SharePoint Online site collection URL. The connector retrieves Sites, Lists, Folders, List Items, and attachments, and other pages (in .aspx format). This connector supports SharePoint running in the Microsoft O365 offering. Support for crawling the one-premises offerings of SharePoint is supported by SharePoint 2010/2007 Connector and SharePoint 2013 Connector.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+Online+Connector)
 
@@ -837,7 +837,7 @@ BA Insight's Db2 Connector allows organizations to tap into the wealth of data s
 ### Microsoft SQL
 _Publisher: Microsoft_
 
-Allows your organization to search on-premises Microsoft SQL server databases.
+Allows your organization to search one-premisess Microsoft SQL server databases.
 
 [Deploy this Graph connector](mssql-connector.md)
 
@@ -865,7 +865,7 @@ BA Insight’s Oracle Database Connector is built upon industry standard databas
 ### Oracle SQL
 _Publisher: Microsoft_
 
-Enables your organization to discover and index data from an on-premises database. Indexes specified content into Microsoft Search and supports periodic crawls. You can also restrict access to search results for certain users.
+Enables your organization to discover and index data from an one-premisess database. Indexes specified content into Microsoft Search and supports periodic crawls. You can also restrict access to search results for certain users.
 
 [Deploy this Graph connector](oraclesql-connector.md)
 
@@ -922,7 +922,7 @@ BA Insight's LexisNexis InterAction Connector makes it easier for lawyers and ot
 ### Microsoft Dynamics 365
 _Publisher: BA Insight_
 
-BA Insight's Microsoft Dynamics 365 CRM connector supports both on-premise CRM installations and Dynamics CRM Online.
+BA Insight's Microsoft Dynamics 365 CRM connector supports both one-premises CRM installations and Dynamics CRM Online.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-dynamics-crm-connector-sharepoint-azure-elasticsearch/)
 
@@ -993,7 +993,7 @@ The Azure Blob Storage connector crawls content from the Azure Blob Container. E
 ### Azure Data Lake
 _Publisher: Accenture_
 
-The Azure Data Lake connector crawls content from the ADLS cloud at either root or specified paths. Each file is submitted with its metadata (size, location, last accessed, and so on.). Updates are discovered automatically.
+The Azure Data Lake connector crawls content from the Azure Data Lake Storage (ADLS) cloud at either root or specified paths. Each file is submitted with its metadata (size, location, last accessed, and so on.). Updates are discovered automatically.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector)
 
@@ -1035,7 +1035,7 @@ Secure enterprise search connector for reliably indexing content from Box and in
 ### File Share
 _Publisher: Microsoft_
 
-Allows your organization to search on-premise Windows file shares.
+Allows your organization to search one-premises Windows file shares.
 
 [Deploy this Graph connector](fileshare-connector.md)
 
@@ -1098,7 +1098,7 @@ The Firm Directory Connector honors the security of the source system and provid
 ### Objective
 _Publisher: BA Insight_
 
-BA Insight's Objective Connector was specifically developed for Objective, establishing a secure connection to Objective and mapping the content including metadata from the Objective schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.
+BA Insight's Objective Connector was developed for Objective, establishing a secure connection to Objective and mapping the content including metadata from the Objective schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/objective-connector-sharepoint-azure-elasticsearch/)
 
@@ -1116,17 +1116,17 @@ The OneDrive connector crawls content from Microsoft OneDrive, traversing folder
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/OneDrive+Connector)
 
-### SMB File Share
+### Server Message Block (SMB) File Share
 _Publisher: Accenture_
 
 The SMB connector crawls files and directories across shared drives. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata and access control lists.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/SMB+Connector)
 
-### SMB File Share
+### Server Message Block (SMB) File Share
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from SMB file shares and intelligently searching it with Microsoft Graph. It robustly indexes files and folders from file shares in near real time. The connector fully supports SMB’s document-level security and the latest versions of the SMB2 and SMB3 protocols.
+Secure enterprise search connector for reliably indexing content from Server Message Block (SMB) File Shares and intelligently searching it with Microsoft Graph. It robustly indexes files and folders from file shares in near real time. The connector fully supports SMB’s document-level security and the latest versions of the SMB2 and SMB3 protocols.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-smb-file-share-connector)
 
