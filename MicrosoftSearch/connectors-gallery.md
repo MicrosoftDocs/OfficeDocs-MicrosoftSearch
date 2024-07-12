@@ -25,7 +25,7 @@ The Graph connecotrs in this gallery are broken down into the following categori
 - Collaboration & Communications
 - Content Management Systems
 - Databases
-- ERP, CRM, Sales, and Support
+- Enterpirse Resource Planning (ERP), Customer Relationship Management (CRM), Sales, and Support
 - File Systems
 - IT Service Management Tools (ITSM)
 - Learning
@@ -335,10 +335,10 @@ Powtoon is a video creation platform and the Powtoon Connector enables the index
 
 [Deploy this Graph connector](https://www.powtoon.com/integrations/)
 
-### SAP PLM DMS
+### SAP Proudct Lifeycle Management (PLM) Document Management System (DMS)
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from SAP PLM DMS and intelligently searching it with Microsoft Graph. It robustly indexes documents, attachments, and other records from SAP PLM DMS in near real time.
+Secure enterprise search connector for reliably indexing content from SAP Product Lifecycle Management (PLM) Document Management System (DMS) and intelligently searching it with Microsoft Graph. It robustly indexes documents, attachments, and other records from SAP PLM DMS in near real time.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sap-plm-dms-connector)
 
@@ -427,17 +427,17 @@ Secure enterprise search connector for reliably indexing content from OpenText D
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-documentum-connector)
 
-### Documentum DQL
+### Documentum Document Query Language (DQL)
 _Publisher: Accenture_
 
-The Aspire Documentum DQL connector crawls content from Documentum.
+The Aspire Documentum Document Query Language (DQL) connector crawls content from Documentum.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Documentum+DQL+Connector)
 
 ### Documentum
 _Publisher: Accenture_
 
-The Documentum Connector crawls content from any Documentum content repository. DQL is a query language that allows you to perform complex queries involving specialized searching capabilities for document and content management.
+The Documentum Connector crawls content from any Documentum content repository. Document Query Language (DQL) is a query language that allows you to perform complex queries involving specialized searching capabilities for document and content management.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Documentum+Connector)
 
@@ -644,14 +644,14 @@ BA Insight’s SAP ERP (Cloud Version) Connector is designed to bring items from
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-sap-erp-cloud/)
 
-### SAP HANA
+### SAP High-Performance Analytic Appliance (HANA)
 _Publisher: BA Insight_
 
-BA Insight's SAP HANA Connector honors the security of the source database and provides both full and incremental crawls so that users have the latest information available to them all of the time. It indexes content from SAP HANA into Microsoft Search, surfacing it through BA Insight’s SmartHub to provide users with integrated search results.
+BA Insight's SAP High-Performance Analytic Appliance (HANA) Connector honors the security of the source database and provides both full and incremental crawls so that users have the latest information available to them all of the time. It indexes content from SAP HANA into Microsoft Search, surfacing it through BA Insight’s SmartHub to provide users with integrated search results.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/sap-hana-connector-sharepoint-azure-elasticsearch/)
 
-### SAP HANA (Cloud)
+### SAP High-Performance Analytic Appliance (HANA) (Cloud)
 _Publisher: BA Insight_
 
 The SAP HANA (Cloud Version) Connector honors the security of the source database and provides both full and incremental crawls so that users have the latest information available all of the time.
@@ -785,10 +785,10 @@ BA Insight's Amazon Aurora Connector is built upon industry standard database ac
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/amazon-aurora-connector-sharepoint-azure-elasticsearch/)
 
-### Amazon RDS
+### Amazon Relational Database Service (RDS)
 _Publisher: BA Insight_
 
-BA Insight's Amazon RDS Connector is built upon industry standard database access methods, so it equally supports databases from other systems such as Oracle, MySQL, and IBM DB2.
+BA Insight's Amazon Relational Database Service (RDS) Connector is built upon industry standard database access methods, so it equally supports databases from other systems such as Oracle, MySQL, and IBM DB2.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/amazon-rds-connector-sharepoint-azure-elasticsearch/)
 
@@ -886,7 +886,7 @@ The BA Insight Practical Law Connector enables users to perform searches against
 ### Relational Databases
 _Publisher: Accenture_
 
-Crawls content from relational databases using third-party JDBC drivers. Updates are identified automatically or use an update table. An SQL select statement is used to control the data submitted. Access control lists can be extracted from a returned column.
+Crawls content from relational databases using third-party Java Database Connectivity (JDBC) drivers. Updates are identified automatically or use an update table. An SQL select statement is used to control the data submitted. Access control lists can be extracted from a returned column.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Relational+Databases)
 
@@ -897,7 +897,7 @@ Secure enterprise search connector for reliably indexing content from SQL databa
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sql-database-connector)
 
-## ERP, CRM, Sales, and Support
+## Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), Sales, and Support
 ### Any SQL-based CRM system
 _Publisher: BA Insight_
 
