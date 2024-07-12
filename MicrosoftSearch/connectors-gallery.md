@@ -95,7 +95,7 @@ _Publisher: Microsoft_
 
 Jira Cloud Graph connector allows your organization to index Jira issues and tickets.
 
-[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/jira-connector)
+[Deploy this Graph connector](https://docs.microsoft.com/microsoftsearch/jira-connector)
 
 ### Atlassian Jira Cloud
 _Publisher: Raytion_
@@ -116,7 +116,7 @@ _Publisher: Microsoft_
 
 Allows your organization to search for work items in your Azure DevOps instance.
 
-[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/azure-devops-connector)
+[Deploy this Graph connector](https://docs.microsoft.com/microsoftsearch/azure-devops-connector)
 
 ### Box
 _Publisher: Accenture_
@@ -404,14 +404,14 @@ _Publisher: Microsoft_
 
 Confluence Cloud connector allows your organization to index Confluence pages and blogs.
 
-[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/confluence-cloud-connector)
+[Deploy this Graph connector](https://docs.microsoft.com/microsoftsearch/confluence-cloud-connector)
 
 ### Confluence On-premises
 _Publisher: Microsoft_
 
 Confluence On-premises connector allows your organization to index Confluence pages from server or data center deployments.
 
-[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/confluence-onpremises-connector)
+[Deploy this Graph connector](https://docs.microsoft.com/microsoftsearch/confluence-onpremises-connector)
 
 ### CuadraSTAR
 _Publisher: BA Insights_
@@ -460,7 +460,7 @@ _Publisher: Microsoft_
 
 Allows your organization to search any non-SharePoint enterprise website.
 
-[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/enterprise-web-connector)
+[Deploy this Graph connector](https://docs.microsoft.com/microsoftsearch/enterprise-web-connector)
 
 ### FirstSpirit
 _Publisher: Raytion_
@@ -530,7 +530,7 @@ _Publisher: Microsoft_
 
 Enables your organization to search knowledge-based articles on sites it creates with MediaWiki.
 
-[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/mediawiki-connector)
+[Deploy this Graph connector](https://docs.microsoft.com/microsoftsearch/mediawiki-connector)
 
 ### MediaWiki
 _Publisher: Raytion_
@@ -797,7 +797,7 @@ _Publisher: Microsoft_
 
 Enables your organization to search for data from your Azure SQL.
 
-[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/mssql-connector)
+[Deploy this Graph connector](https://docs.microsoft.com/microsoftsearch/mssql-connector)
 
 ### Azure SQL Database
 _Publisher: BA Insight_
@@ -839,7 +839,7 @@ _Publisher: Microsoft_
 
 Allows your organization to search on-premises Microsoft SQL server databases.
 
-[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/mssql-connector)
+[Deploy this Graph connector](https://docs.microsoft.com/microsoftsearch/mssql-connector)
 
 ### Microsoft SQL Server
 _Publisher: BA Insight_
@@ -867,7 +867,7 @@ _Publisher: Microsoft_
 
 Enables your organization to discover and index data from an on-premises database. Indexes specified content into Microsoft Search and supports periodic crawls. You can also restrict access to search results for certain users.
 
-[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/oraclesql-connector)
+[Deploy this Graph connector](https://docs.microsoft.com/microsoftsearch/oraclesql-connector)
 
 ### PostgreSQL
 _Publisher: BA Insight_
@@ -938,7 +938,7 @@ _Publisher: Microsoft_
 
 Allows your organization to search your Salesforce instance for Contacts, Opportunities, Leads, and Accounts objects.
 
-[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/salesforce-connector)
+[Deploy this Graph connector](https://docs.microsoft.com/microsoftsearch/salesforce-connector)
 
 ### Salesforce
 _Publisher: Raytion_
@@ -1002,7 +1002,7 @@ _Publisher: Microsoft_
 
 Enables your organization to search for content stored in Azure Blob containers. Indexes hierarchy-enabled folders in specified Azure Data Lake Storage Gen2 accounts.
 
-[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/azure-data-lake-connector)
+[Deploy this Graph connector](https://docs.microsoft.com/microsoftsearch/azure-data-lake-connector)
 
 ### Azure Event Hub
 _Publisher: Accenture_
@@ -1037,7 +1037,7 @@ _Publisher: Microsoft_
 
 Allows your organization to search on-premise Windows file shares.
 
-[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/fileshare-connector)
+[Deploy this Graph connector](https://docs.microsoft.com/microsoftsearch/fileshare-connector)
 
 ### File Share
 _Publisher: BA Insight_
@@ -1178,14 +1178,14 @@ _Publisher: Microsoft_
 
 Allows your organization to search your ServiceNow instance for knowledge-based articles along with user criteria permissions.
 
-[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/servicenow-knowledge-connector)
+[Deploy this Graph connector](https://docs.microsoft.com/microsoftsearch/servicenow-knowledge-connector)
 
 ### ServiceNow Catalog
 _Publisher: Microsoft_
 
 Allows your organization to find Catalog items to order from ServiceNow instance. Supports item level user criteria permissions too.
 
-[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/servicenow-catalog-connector)
+[Deploy this Graph connector](https://docs.microsoft.com/microsoftsearch/servicenow-catalog-connector)
 
 ### ServiceNow
 _Publisher: BA Insight_
@@ -1288,7 +1288,7 @@ _Publisher: Microsoft_
 
 Enables your organization to search for content stored in CSV files.
 
-[Deploy this Graph connector](https://learn.microsoft.com/en-us/microsoftsearch/csv-connector)
+[Deploy this Graph connector](https://learn.microsoft.com/microsoftsearch/csv-connector)
 
 
 ### Website Crawler
