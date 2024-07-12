@@ -19,7 +19,7 @@ ms.date: 10/29/2019
 
 The Microsoft Graph connectors gallery includes a brief description of each of the connectors created by Microsoft and our partners, and a link to each partner's website.
 
-With more than 100 connectors currently available, you can connect to popular Microsoft and non-Microsoft services such as Azure services, Box, Confluence, Google services, MediaWiki, Salesforce, ServiceNow, and many more.
+With more than 100 connectors currently available, you can connect to popular Microsoft and non-Microsoft services. These include Azure services, Box, Confluence, Google services, MediaWiki, Salesforce, ServiceNow, and many more.
 
 The Graph connecotrs in this gallery are broken down into the following categories:
 - Collaboration & Communications
@@ -44,14 +44,14 @@ BA Insight's Aderant connector honors the security of the source system and prov
 ### Adobe Acrobat Sign
 _Publisher: Adobe_
 
-The Adobe Acrobat Sign connector for Microsoft Search securely stores agreement metadata, allowing users to quickly and easily find their agreements alongside other documents in Microsoft 365. Search for agreements explicitly or view recommendations when key events occur such as a new agreement is created, an agreement is viewed, or an agreement event occurs (e.g., canceled, expired, or delegated). The connector supports Acrobat Sign access permissions, ensuring only the permitted sender and recipients see agreement information. Users securely access full agreements in Acrobat Sign.
+The Adobe Acrobat Sign connector for Microsoft Search securely stores agreement metadata, allowing users to quickly and easily find their agreements alongside other documents in Microsoft 365. Search for agreements explicitly or view recommendations when key events occur. The connector supports Acrobat Sign access permissions, ensuring only the permitted sender and recipients see agreement information. Users securely access full agreements in Acrobat Sign.
 
 [Deploy this Graph connector](https://www.adobe.com/go/microsoft-search-connector-guide)
 
 ### Atlassian Confluence
 _Publisher: BA Insight_
 
-BA Insight's Confluence Connector is an enterprise grade indexing connector that enables content stored in Confluence to be crawled and indexed. This enables SharePoint, or any other portal, to serve as the single point from which users can search and retrieve the content they need from multiple content sources.
+BA Insight's Confluence Connector is an enterprise grade indexing connector that enables content stored in Confluence to be crawled and indexed. This enables SharePoint, Bing, or the Microsoft 365 app to serve as the single point from which users search for enterprise content.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-confluence-cloud-version/)
 
@@ -65,7 +65,7 @@ BA Insight's Confluence (Cloud Version) Connector is an enterprise grade indexin
 ### Atlassian Confluence
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Atlassian Confluence and intelligently searching it with Microsoft Graph. It robustly indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from on-premise Confluence instances in near real time. The connector fully supports Atlassian Confluence’s built-in user and group management, as well as Confluence installations based on Active Directory and other directory services.
+Secure enterprise search connector for reliably indexing content from Atlassian Confluence and intelligently searching it with Microsoft Graph. It robustly indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from on-premise Confluence instances in near real time. The connector fully supports Atlassian Confluence’s built-in user and group management. The connector also supports Confluence installations based on Entra ID and other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-confluence-connector)
 
@@ -86,7 +86,7 @@ The Confluence connector crawls content from any Confluence content repository. 
 ### Atlassian Jira
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Atlassian Jira and intelligently searching it with Microsoft Graph. It robustly indexes projects, issues, attachments, comments, work logs, issue histories, links, and profiles from on-premise Jira instances in near real time. The connector fully supports Atlassian Jira’s built-in user and group management, as well as Jira installations based on Active Directory and other directory services.
+Secure enterprise search connector for reliably indexing content from Atlassian Jira and intelligently searching it with Microsoft Graph. It robustly indexes projects, issues, attachments, comments, work logs, issue histories, links, and profiles from on-premise Jira instances in near real time. The connector fully supports Atlassian Confluence’s built-in user and group management. The connector also supports Confluence installations based on Entra ID and other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jira-connector)
 
@@ -104,10 +104,10 @@ Secure enterprise search connector for reliably indexing content from Atlassian 
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jira-cloud-connector)
 
-### Microsoft Entra ID (formerly known as Azure Active Directory)
+### Microsoft Entra ID (formerly known as Azure Entra ID)
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Microsoft Entra ID and intelligently searching it with Microsoft Graph. It indexes objects from Microsoft Entra ID via the Microsoft Graph API. The connector can be used for ingesting principals into Microsoft Graph in near real time to implement use cases like expert search, equipment search, and location search or to provide early-binding security trimming in conjunction with custom data sources. The connector supports federated authentication against Microsoft 365.
+Secure enterprise search connector for reliably indexing content from Microsoft Entra ID and intelligently searching it with Microsoft Graph. It indexes objects from Microsoft Entra ID via the Microsoft Graph API. The connector can be used for ingesting principals into Microsoft Graph in near real time. This supports use cases like expert search, equipment search, or location search. The connector supports federated authentication against Microsoft 365.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-azure-ad-connector)
 
@@ -191,14 +191,14 @@ Secure enterprise search connector for reliably indexing content from Happeo and
 ### IBM Connections
 _Publisher: BA Insight_
 
-BA Insight's IBM Connections Connector was specifically developed for IBM Connections, establishing a secure connection to the Connections application and mapping the content including metadata and attachments from the Connections schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.
+BA Insight's IBM Connections Connector was specifically developed for IBM Connections. This establishes a secure connection to the Connections application. This connection includes metadata and attachments. It then extracts content and feeds it to the search engine in a process called crawling.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/ibm-connections-connector-sharepoint-azure-elasticsearch/)
 
 ### IBM Connections
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from IBM Connections and intelligently searching it with Microsoft Graph. It robustly indexes public and personal files, blogs, wikis, forums, communities, bookmarks, profiles, and status updates from on-premises Connections instances in near real time. The connector fully supports IBM Connection’s built-in user and group management, as well as Connections installations based on Active Directory and other directory services.
+Secure enterprise search connector for reliably indexing content from IBM Connections and intelligently searching it with Microsoft Graph. It robustly indexes public and personal files, blogs, wikis, forums, communities, bookmarks, profiles, and status updates from on-premises Connections instances in near real time. The connector fully supports IBM Connection’s built-in user and group management, as well as Connections installations based on Entra ID and other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-ibm-connections-connector)
 
@@ -219,14 +219,14 @@ The IBM Connections connector crawls content from IBM Connections server.
 ### IBM Lotus Notes
 _Publisher: BA Insight_
 
-With BA Insight's IBM Notes Email Connector, users have the ability to search Notes emails directly from within SharePoint or another portal.  Security defined within IBM Notes is automatically reflected in the search experience, so users will see search results from their own mailbox, public mailboxes, and other mailboxes for which they have been granted access.
+With BA Insight's IBM Notes Email Connector, users have the ability to search Notes emails directly from within SharePoint or another portal.  Security defined within IBM Notes is automatically reflected in the search experience, so users see search results from their own mailbox, public mailboxes, and other mailboxes they are allowed to access.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/lotus-notes-connector-sharepoint-azure-elasticsearch/)
 
 ### iManage Work
 _Publisher: BA Insight_
 
-BA Insight's iManage Work Connector provides full security and operates at high throughput to minimize crawl times while maintaining a low performance impact on Work. It only requires read access, and there is no need to install client software on any iManage server. This results in seamless and simultaneous access to all content stored in iManage Work.
+BA Insight's iManage Work Connector provides full security and operates at high throughput to minimize crawl times while maintaining a low performance impact on Work. It only requires read access, and there is no need to install client software on any iManage server. Users gain seamless and simultaneous access to all content stored in iManage Work.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/imanage-work-connector-sharepoint-azure-elasticsearch/)
 
@@ -261,7 +261,7 @@ The Jive connector crawls content from any JIVE Community with an enabled REST A
 ### Jive
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Jive and intelligently searching it with Microsoft Graph. It robustly indexes discussions, polls, files, blogs, spaces, groups, projects, tasks, videos, messages, ideas, profiles, and status updates from on-premise and cloud-hosted Jive instances in near real time. The connector fully supports Jive’s built-in user and group management and supports Jive’s native authentication models, OAuth and Basic authentication.
+Secure enterprise search connector for reliably indexing content from Jive and intelligently searching it with Microsoft Graph. It indexes discussions, polls, files, blogs, and more from on-premise and cloud-hosted Jive instances in near real time. The connector fully supports Jive’s built-in user and group management and supports Jive’s native authentication models, OAuth and Basic authentication.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jive-connector)
 
@@ -366,7 +366,7 @@ The TeamForge connector crawls content from a TeamForge server through its SOAP 
 ### Facebook Workplace
 _Publisher: BA Insight_
 
-Organizations who leverage Workplace by Facebook can now extend the reach of this data into their existing search indexes via the BA Insight Workplace by Facebook Connector.
+Organizations who use Workplace by Facebook can now extend the reach of this data into their existing search indexes via the BA Insight Workplace by Facebook Connector.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-workplace-by-facebook/)
 
@@ -374,7 +374,7 @@ Organizations who leverage Workplace by Facebook can now extend the reach of thi
 ### Adobe AEM
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from the Adobe Active Experience Manager (AEM) and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other generated document types from Adobe AEM in near real time. The connector fully supports Adobe AEM’s permission model, its built-in user and group management, as well as AEM installations based on Active Directory or other directory services.
+Secure enterprise search connector for reliably indexing content from the Adobe Active Experience Manager (AEM) and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other generated document types from Adobe AEM in near real time. The connector fully supports Adobe AEM’s permission model, its built-in user and group management, as well as AEM installations based on Entra ID or other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/adobe-experience-manager-aem)
 
@@ -388,7 +388,7 @@ The Adobe Experience Manager (AEM) connector crawls content from an Adobe Experi
 ### Alfresco
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Alfresco One and intelligently searching it with Microsoft Graph. It robustly indexes files, folders, and user profiles from Alfresco One in near real time. The connector fully supports Alfresco One’s permission model, its built-in user and group management, as well as Alfresco One installations based on Active Directory and other directory services.
+Secure enterprise search connector for reliably indexing content from Alfresco One and intelligently searching it with Microsoft Graph. It robustly indexes files, folders, and user profiles from Alfresco One in near real time. The connector fully supports Alfresco One’s permission model, its built-in user and group management, as well as Alfresco One installations based on Entra ID and other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-alfresco-connector)
 
@@ -465,7 +465,7 @@ Allows your organization to search any non-SharePoint enterprise website.
 ### FirstSpirit
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from e-Spirit FirstSpirit and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other generated document types from FirstSpirit in near real time. The connector fully supports e-Spirit FirstSpirit’s built-in user, group and permission management, as well as FirstSpirit installations based on Active Directory and other directory services.
+Secure enterprise search connector for reliably indexing content from e-Spirit FirstSpirit and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other generated document types from FirstSpirit in near real time. The connector fully supports e-Spirit FirstSpirit’s built-in user, group and permission management, as well as FirstSpirit installations based on Entra ID and other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-firstspirit-connector)
 
@@ -535,7 +535,7 @@ Enables your organization to search knowledge-based articles on sites it creates
 ### MediaWiki
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from MediaWiki and intelligently searching it with Microsoft Graph. It robustly indexes pages, discussion pages, and attachments from MediaWiki instances in near real time. The connector fully supports MediaWiki’s built-in permission model, as well as MediaWiki installations based on Active Directory and other directory services.
+Secure enterprise search connector for reliably indexing content from MediaWiki and intelligently searching it with Microsoft Graph. It robustly indexes pages, discussion pages, and attachments from MediaWiki instances in near real time. The connector fully supports MediaWiki’s built-in permission model, as well as MediaWiki installations based on Entra ID and other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-mediawiki-connector)
 
@@ -661,7 +661,7 @@ The SAP HANA (Cloud Version) Connector honors the security of the source databas
 ### SharePoint
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Microsoft SharePoint and intelligently searching it with Microsoft Graph. It robustly indexes sites, webs, modern (SharePoint 2016 and later) and classic pages, wiki pages, OneNote documents, list items, tasks, calendar items, attachments, and files from SharePoint on-premises instances in near real time. The connector fully supports Microsoft SharePoint’s built-in user and group management, as well as Active Directory and also OAuth providers like SiteMinder and Okta. The connector comes with support for Basic, NTLM, and Kerberos authentication.
+Secure enterprise search connector for reliably indexing content from Microsoft SharePoint and intelligently searching it with Microsoft Graph. It robustly indexes sites, webs, modern (SharePoint 2016 and later) and classic pages, wiki pages, OneNote documents, list items, tasks, calendar items, attachments, and files from SharePoint on-premises instances in near real time. The connector fully supports Microsoft SharePoint’s built-in user and group management, as well as Entra ID and also OAuth providers like SiteMinder and Okta. The connector comes with support for Basic, NTLM, and Kerberos authentication.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sharepoint-connector)
 
@@ -731,7 +731,7 @@ BA Insight's Sitecore Connector honors the security of the source system and pro
 ### Sitecore
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Sitecore and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and further generated document types in near real time. The connector fully supports Sitecore’s permission model and the user and group management in the associated Active Directory.
+Secure enterprise search connector for reliably indexing content from Sitecore and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and further generated document types in near real time. The connector fully supports Sitecore’s permission model and the user and group management in the associated Entra ID.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sitecore-connector)
 
@@ -766,7 +766,7 @@ Secure enterprise search connector for reliably indexing content from Xerox Docu
 ### Zendesk Guide
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Zendesk Guide and intelligently searching it with Microsoft Search. It robustly indexes pages, comments and attachments from Zendesk Guide instances in near real time. The connector fully supports Zendesk Guide's built-in user and group management, as well as Zendesk Guide installations based on Active Directory and other directory services.
+Secure enterprise search connector for reliably indexing content from Zendesk Guide and intelligently searching it with Microsoft Search. It robustly indexes pages, comments and attachments from Zendesk Guide instances in near real time. The connector fully supports Zendesk Guide's built-in user and group management, as well as Zendesk Guide installations based on Entra ID and other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-zendesk-guide-connector)
 
@@ -964,7 +964,7 @@ BA Insight's Salesforce Connector integrates Salesforce’s Service, Sales and M
 ### Windream ECM-System
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from windream ECM-System and intelligently searching it with Microsoft Graph. It robustly indexes files and folders including the comprehensive sets of metadata associated by windream ECM-System in near real time. The connector fully supports windream ECM-System’s permission model and the user and group management in the associated Active Directory.
+Secure enterprise search connector for reliably indexing content from windream ECM-System and intelligently searching it with Microsoft Graph. It robustly indexes files and folders including the comprehensive sets of metadata associated by windream ECM-System in near real time. The connector fully supports windream ECM-System’s permission model and the user and group management in the associated Entra ID.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-windream-ecm-system-connector)
 
@@ -979,7 +979,7 @@ BA Insight's Amazon S3 Connector works with all content stored in S3.  Organiza
 ### Amazon S3
 _Publisher: Accenture_
 
-Connector for Amazon S3. Indexes pages, attachments, and other generated document types from Amazon S3 in near real time. The connector fully supports Amazon S3's built-in user and group management, as well as Amazon S3 installations based on Active Directory and other directory services.
+Connector for Amazon S3. Indexes pages, attachments, and other generated document types from Amazon S3 in near real time. The connector fully supports Amazon S3's built-in user and group management, as well as Amazon S3 installations based on Entra ID and other directory services.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Amazon+S3+Connector)
 
@@ -1155,7 +1155,7 @@ BA Insight's LDAP Connector enables organizations to connect to any LDAP complia
 ### LDAP
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from directory services compatible with the Lightweight Directory Access Protocol (LDAP) and intelligently searching it with Microsoft Graph. It robustly indexes LDAP objects from Active Directory, Novell E-Directory and other LDAP-compatible directory services in near real time. The connector can be used for ingesting principals into Google Cloud Search for use cases like expert, equipment and location searches or for implementing security trimming for custom data sources. The connector supports LDAP over SSL.
+Secure enterprise search connector for reliably indexing content from directory services compatible with the Lightweight Directory Access Protocol (LDAP) and intelligently searching it with Microsoft Graph. It robustly indexes LDAP objects from Entra ID, Novell E-Directory and other LDAP-compatible directory services in near real time. The connector can be used for ingesting principals into Google Cloud Search for use cases like expert, equipment and location searches or for implementing security trimming for custom data sources. The connector supports LDAP over SSL.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-ldap-connector)
 
@@ -1169,7 +1169,7 @@ Secure enterprise search connector for reliably indexing content from pirobase C
 ### SAP NeatWeaver Portal
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from the SAP NetWeaver Portal (NWP) and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other document types from SAP NWP, its Knowledge Management and Collaboration (KMC) and Portal Content Directory (PCD) areas in near real time. The connector fully supports SAP NetWeaver Portal’s built-in user and group management, as well as SAP NWP installations based on Active Directory and other directory services.
+Secure enterprise search connector for reliably indexing content from the SAP NetWeaver Portal (NWP) and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other document types from SAP NWP, its Knowledge Management and Collaboration (KMC) and Portal Content Directory (PCD) areas in near real time. The connector fully supports SAP NetWeaver Portal’s built-in user and group management, as well as SAP NWP installations based on Entra ID and other directory services.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sap-netweaver-portal-connector)
 
