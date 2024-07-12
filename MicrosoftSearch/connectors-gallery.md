@@ -116,7 +116,7 @@ _Publisher: Microsoft_
 
 Allows your organization to search for work items in your Azure DevOps instance.
 
-[Deploy this Graph connector](azure-dev-ops-connector.md)
+[Deploy this Graph connector](azure-devops-connector.md)
 
 ### Box
 _Publisher: Accenture_
@@ -588,10 +588,10 @@ Secure enterprise search connector for reliably indexing content from OpenText 
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-opentext-documentum-eroom-connector)
 
-### OpenText eDOCS DM
+### OpenText eDOCS Document Management (DM)
 _Publisher: BA Insight_
 
-Users of BA Insight's OpenText eDOCS DM Connector are able to search for content housed in eDOCS repositories directly from within Microsoft Search, eliminating the need to perform multiple searches to locate needed content.  Security established within eDOCS is maintained by the connector to make certain that content is only seen by those who have been granted access.
+Users of BA Insight's OpenText eDOCS Document Management (DM) Connector are able to search for content housed in eDOCS repositories directly from within Microsoft Search, eliminating the need to perform multiple searches to locate needed content.  Security established within eDOCS is maintained by the connector to make certain that content is only seen by those who have been granted access.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/edocs-dm-connector-sharepoint-azure-elasticsearch/)
 
@@ -1042,7 +1042,7 @@ Allows your organization to search on-premise Windows file shares.
 ### File Share
 _Publisher: BA Insight_
 
-BA Insight's File Share Connector makes it possible to surface content from File Shares (Windows, SMB/CIFS) in a single consolidated search index, along with content from other repositories.
+BA Insight's File Share Connector makes it possible to surface content from File Shares (Windows, Server Message Block/CIFS) in a single consolidated search index, along with content from other repositories.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/file-share-connector-sharepoint-azure-elasticsearch/)
 
@@ -1084,7 +1084,7 @@ BA Insight's IBM FileNet Content Manager Connector allows SharePoint, as well a
 ### Microsoft Windows File Server
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from Microsoft Windows File Server including its Distributed File System (DFS) and intelligently searching it with Microsoft Graph. It robustly indexes files and folders from Windows File Server in near real time. The connector fully supports Microsoft Windows File Server’s document-level security and the latest versions of the SMB2 and SMB3 protocols.
+Secure enterprise search connector for reliably indexing content from Microsoft Windows File Server including its Distributed File System (DFS) and intelligently searching it with Microsoft Graph. It robustly indexes files and folders from Windows File Server in near real time. The connector fully supports Microsoft Windows File Server’s document-level security and the latest versions of the Sever Message Block 2(SMB2) and Server Message Block 3 (SMB3) protocols.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-windows-file-server-connector)
 
@@ -1130,10 +1130,10 @@ Secure enterprise search connector for reliably indexing content from SMB file s
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-smb-file-share-connector)
 
-### SMTP
+### Simple Mail Transfer Protocol (SMTP)
 _Publisher: Accenture_
 
-The SMTP connector processes e-mails sent to it. The email and attachments are submitted with metadata such as to, from, and subject.
+The Simple Mail Transfer Protocol (SMTP) connector processes e-mails sent to it. The email and attachments are submitted with metadata such as to, from, and subject.
 
 [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire32/SMTP+Connector)
 
@@ -1159,10 +1159,10 @@ Secure enterprise search connector for reliably indexing content from directory 
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-ldap-connector)
 
-### Pirobase CMS
+### Pirobase Content Management System (CMS)
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from pirobase CMS and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other generated document types from pirobase CMS in near real time. The connector fully supports pirobase CMS’ built-in user and group management.
+Secure enterprise search connector for reliably indexing content from pirobase Content Management System (CMS) and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other generated document types from pirobase CMS in near real time. The connector fully supports pirobase CMS’ built-in user and group management.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-pirobase-cms-connector)
 
