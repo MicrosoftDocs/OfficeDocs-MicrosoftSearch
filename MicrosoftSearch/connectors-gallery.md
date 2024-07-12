@@ -200,7 +200,112 @@ _Publisher: Accenture_
 
 The IBM Connections connector will crawl content from IBM Connections server.
 
-[Deploy this Graph connector]([https://www.bainsight.com/connectors/ibm-connections-connector-sharepoint-azure-elasticsearch/](https://contentanalytics.digital.accenture.com/display/aspire40/IBM+Connections+Connector/))
+[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/IBM+Connections+Connector/)
+
+### IBM Lotus Notes
+_Publisher: BA Insight_
+
+With BA Insight's IBM Notes Email Connector, users have the ability to search Notes emails directly from within SharePoint or another portal.  Security defined within IBM Notes is automatically reflected in the search experience, so users will see search results from their own mailbox, public mailboxes, and other mailboxes for which they have been granted access.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/lotus-notes-connector-sharepoint-azure-elasticsearch/)
+
+### iManage Work
+_Publisher: BA Insight_
+
+BA Insight's iManage Work Connector provides full security and operates at high throughput to minimize crawl times while maintaining a low performance impact on Work. It only requires read access, and there is no need to install client software on any iManage server. This results in seamless and simultaneous access to all content stored in iManage Work.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/imanage-work-connector-sharepoint-azure-elasticsearch/)
+
+### Atlassian Jira
+_Publisher: BA Insight_
+
+The Jira Connector enables users to perform searches against all Jira objects, eliminating the need to go to Jira directly.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/jira-connector-for-sharepoint-azure-elasticsearch/)
+
+### Atlassian Jira (Cloud)
+_Publisher: BA Insight_
+
+The Jira (Cloud Version) Connector performs searches against all Jira objects,  eliminating the need to navigate to Jira directly.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/jira-cloud-connector-for-sharepoint-azure-elasticsearch/)
+
+### Atlassian Jira Issues
+_Publisher: Accenture_
+
+The Jira Issues connector is a simple connector for extracting issues from Jira, either inside the corporate firewall or to Jira cloud.
+
+[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Jira+Issue+Connector)
+
+### Jive
+_Publisher: Accenture_
+
+The Jive connector will crawl content from any JIVE Community with an enabled REST API v3. The connector will retrieve documents stored in spaces, groups, projects, and blogs and any subfolders contained in it.
+
+[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Jive+Connector)
+
+### Jive
+_Publisher: Raytion_
+
+Secure enterprise search connector for reliably indexing content from Jive and intelligently searching it with Microsoft Graph. It robustly indexes discussions, polls, files, blogs, spaces, groups, projects, tasks, videos, messages, ideas, profiles, and status updates from on-premise and cloud-hosted Jive instances in near real time. The connector fully supports Jive’s built-in user and group management and supports Jive’s native authentication models, OAuth and Basic authentication.
+
+[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jive-connector)
+
+### Kafka
+_Publisher: Accenture_
+
+The Kafka connector fetches messages from a Kafka message stream and submits them after performing an optional transform.
+
+[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Kafka+Connector)
+
+### Kinesis
+_Publisher: Accenture_
+
+The Kinesis connector fetches data from Amazon Kinesis Data Streams and submits them after performing an optional transform.
+
+[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Kinesis+Connector)
+
+### Microsoft Exchange Online
+_Publisher: BA Insight_
+
+Using the BA Insight Microsoft Exchange Online Connector, users can retrieve content from Exchange Online through various search platforms.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-exchange-online-connector-sharepoint-azure-elasticsearch/)
+
+### Microsoft Exchange Public Folders
+_Publisher: BA Insight_
+
+Using the BA Insight Microsoft Exchange Public Folders Connector, users can retrieve content from Exchange through various search platforms.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-exchange-connector-sharepoint-azure-elasticsearch/)
+
+### Microsoft Exchange Server
+_Publisher: BA Insight_
+
+Using the BA Insight Microsoft Exchange Connector, users can retrieve content from Exchange through various search engines.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-exchange-server-connector-sharepoint-azure-elasticsearch/)
+
+### Microsoft Teams
+_Publisher: BA Insight_
+
+The BA Insight Microsoft Teams Connector indexes content from Microsoft Teams alongside content from other enterprise systems to provide unified results.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-teams-connector-for-sharepoint-azure-elasticsearch/)
+
+### Notes
+_Publisher: Raytion_
+
+Secure enterprise search connector for reliably indexing content from IBM Notes (formerly Lotus Note) and intelligently searching it with Microsoft Graph. It robustly indexes records from a configurable set of Notes databases in near real time. The connector fully supports IBM Notes’ built-in user and group management.
+
+[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-notes-connector)
+
+### Oracle KA Cloud
+_Publisher: Raytion_
+
+Secure enterprise search connector for reliably indexing content from Oracle Knowledge Advanced (KA) Cloud and intelligently searching it Microsoft Graph. It robustly indexes pages and attachments from Oracle KA Cloud in near real time. The connector fully supports Oracle KA Cloud’s built-in user and group management. In particular, the connector handles snippet-based permissions within Oracle KA Cloud pages.
+
+[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-oracle-ka-cloud-connector)
 
 ## Content Management Systems
 ### Adobe AEM
@@ -294,6 +399,125 @@ BA Insight's IBM Content Manager Connector honors the security of source applica
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/ibm-content-manager-connector-sharepoint-azure-elasticsearch/)
 
+### IBM WebSphere
+_Publisher: BA Insight_
+
+BA Insight’s WebSphere Connector securely indexes both the full text and metadata of WebSphere objects into Microsoft's search engine, enabling a single searchable result set across content from multiple repositories. This allows organizations to tap into the wealth of information accessible within Microsoft platforms, and makes that data instantly actionable to users through search.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/ibm-websphere-connector-sharepoint-azure-elasticsearch/)
+
+### iManage Cloud
+_Publisher: BA Insight_
+
+BA Insight’s iManage Cloud Connector securely indexes both the full text and metadata of documents in the Work workspaces into the search engine. 
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-imanage-work-cloud/)
+
+### Kaltura
+_Publisher: BA Insight_
+
+The Kaltura Connector enables the indexing of not only video, but also a variety of other types of information including Categories, Data, Documents and more.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/kaltura-connector-for-sharepoint-azure-elasticsearch/)
+
+### LegalKEY
+_Publisher: BA Insight_
+
+BA Insight’s OpenText LegalKEY Connector securely indexes both the full text and metadata of client and matter records in LegalKEY into the Microsoft search engine, enabling a single searchable result set across content from multiple repositories. This allows organizations to tap into the wealth of information accessible within LegalKEY, SharePoint and other repositories, making that data instantly actionable to users through search.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/legalkey-connector-sharepoint-azure-elasticsearch/)
+
+### Lotus Notes Databases
+_Publisher: BA Insight_
+
+With BA Insight's IBM Notes Database Connector, users have the ability to find content stored in Notes databases using Microsoft Search. Security defined within IBM Notes is automatically reflected in the search experience, which ensures that users see content for which they are authorized. Ultimately, users can find everything they need in one place.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/ibm-lotus-notes-connector-sharepoint-azure-elasticsearch/)
+
+### MediaPlatform PrimeTime
+_Publisher: BA Insight_
+
+BA Insight’s MediaPlatform PrimeTime indexing connector makes it possible to make the content accessible to users via an organization’s enterprise search platform, combining the connector with BA Insight’s SmartHub. The BA Insight MediaPlatform PrimeTime Connector retrieves information about channels and videos from MediaPlatform PrimeTime and index them via Microsoft Search.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/mediaplatform-primetime-connector-sharepoint-azure-elasticsearch/)
+
+### MediaWiki
+_Publisher: Microsoft_
+
+Enables your organization to search knowledge-based articles on sites it creates with MediaWiki.
+
+[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/mediawiki-connector)
+
+### MediaWiki
+_Publisher: Raytion_
+
+Secure enterprise search connector for reliably indexing content from MediaWiki and intelligently searching it with Microsoft Graph. It robustly indexes pages, discussion pages, and attachments from MediaWiki instances in near real time. The connector fully supports MediaWiki’s built-in permission model, as well as MediaWiki installations based on Active Directory and other directory services.
+
+[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-mediawiki-connector)
+
+### Micro Focus Content Manager (HPE Records Manager/HP TRIM)
+_Publisher: BA Insight_
+
+BA Insight's HP TRIM Connector was specifically developed for HP Records Manager, establishing a secure connection to the TRIM application and mapping the content including metadata and attachments from the TRIM schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/hp-trim-connector-sharepoint-azure-elasticsearch/)
+
+### NetDocuments
+_Publisher: BA Insight_
+
+BA Insight's NetDocuments Connector indexes content stored in NetDocs so that users can search and retrieve NetDocuments content directly from within their portal.  The connector applies document security in NetDocs to Mirosoft Search automatically, so user information remains secure.  Metadata stored in NetDocuments can be mapped to equivalent terms so that users have a seamless search experience.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/netdocuments-connector-sharepoint-azure-elasticsearch/)
+
+### Nuxeo
+_Publisher: BA Insight_
+
+BA Insight's Nuxeo connector let organization index their Nuxeo content, including both security information and standard and custom metadata set on content into Microsoft Search along side content present in Office 365. Ultimately, users can find everything they need in one place.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/nuxeo-connector-for-sharepoint-azure-elasticsearch/)
+
+### OpenText Content Server
+_Publisher: Raytion_
+
+Secure enterprise search connector for reliably indexing content from OpenText Content Server and intelligently searching it with Microsoft Graph. It robustly indexes files, folders, virtual folders, compound documents, news, emails, volumes, collections, classifications, and many more objects from Content Server instances in near real time. The connector fully supports OpenText Content Server’s built-in user and group management.
+
+[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-opentext-content-server-connector)
+
+### OpenText Documentum
+_Publisher: BA Insight_
+
+BA Insight’s Documentum Connector securely indexes both the full text and metadata of Documentum objects into Microsoft Search, enabling a single searchable result set across content from multiple repositories. This is unlike some other connectors that surface Documentum records with Microsoft Search one at a time for process management.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/documentum-connector-sharepoint-azure-elasticsearch/)
+
+### OpenText Documentum (Cloud)
+_Publisher: BA Insight_
+
+BA Insight’s OpenText Documentum Cloud Connector securely indexes both the full text and metadata of Documentum objects into the search engine, enabling a single searchable result set across content from multiple repositories.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-documentum-cloud/)
+
+### OpenText Documentum eRoom
+_Publisher: Raytion_
+
+Secure enterprise search connector for reliably indexing content from OpenText Documentum eRoom and intelligently searching it with Microsoft Graph. It robustly indexes repositories, folders and files together with their meta data and properties from Documentum eRoom in near real time. The connector fully supports OpenText Documentum eRoom’s built-in user and group management.
+
+[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-opentext-documentum-eroom-connector)
+
+### OpenText eDOCS DM
+_Publisher: BA Insight_
+
+Users of BA Insight's OpenText eDOCS DM Connector are able to search for content housed in eDOCS repositories directly from within Microsoft Search, eliminating the need to perform multiple searches to locate needed content.  Security established within eDOCS is maintained by the connector to make certain that content is only seen by those who have been granted access.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/edocs-dm-connector-sharepoint-azure-elasticsearch/)
+
+### OpenText Livelink/RM
+_Publisher: BA Insight_
+
+With BA Insight's OpenText Livelink Connector, users are able to search both Livelink and Microsoft data with a single query.  Security defined in Livelink is automatically reflected in the search experience, which ensures that users only see content for which they are authorized. Ultimately, users can find everything they need in one place.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/livelink-connector-sharepoint-azure-elasticsearch/)
+
 ## Databases
 ### Amazon Aurora
 _Publisher: BA Insight_
@@ -351,6 +575,41 @@ BA Insight's Db2 Connector allows organizations to tap into the wealth of data s
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/ibm-db2-connector-sharepoint-azure-elasticsearch/)
 
+### Microsoft SQL
+_Publisher: Microsoft_
+
+Allows your organization to search on-premises Microsoft SQL server databases.
+
+[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/mssql-connector)
+
+### Microsoft SQL Server
+_Publisher: BA Insight_
+
+BA Insight's database connector is built upon industry standard database access methods, so it can equally support databases from other systems such as Oracle, MySQL, and IBM DB2.  It honors the security of the source database and provides both full and incremental crawls so the users have the latest information available to them all the time.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/sql-connector-sharepoint-azure-elasticsearch/)
+
+### MySQL
+_Publisher: BA Insight_
+
+BA Insight's MySQL connector is built upon industry standard database access methods, so it can equally support databases from other systems such as Oracle, MySQL, and IBM DB2.  It honors the security of the source database and provides both full and incremental crawls so the users have the latest information available to them all the time.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/mysql-connector-sharepoint-azure-elasticsearch/)
+
+### Oracle Database
+_Publisher: BA Insight_
+
+BA Insight’s Oracle Database Connector is built upon industry standard database access methods, so it can equally support databases from other systems such as Microsoft SQL Server, MySQL, and IBM DB2.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/oracle-database-connector-sharepoint-azure-elasticsearch/)
+
+### Oracle SQL
+_Publisher: Microsoft_
+
+Enables your organization to discover and index data from an on-premises database. Indexes specified content into Microsoft Search and supports periodic crawls. You can also restrict access to search results for certain users.
+
+[Deploy this Graph connector](https://docs.microsoft.com/en-us/microsoftsearch/oraclesql-connector)
+
 ## ERP, CRM, Sales and Support
 ### Any SQL-based CRM system
 _Publisher: BA Insight_
@@ -365,6 +624,27 @@ _Publisher: BA Insight_
 The Egnyte Connector supports both full and incremental crawls and\\nindexes with very high throughput.
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/egnyte-connector-for-sharepoint-azure-elasticsearch/)
+
+### LexisNexis InterAction
+_Publisher: BA Insight_
+
+BA Insight's LexisNexis InterAction Connector makes it easier for lawyers and other firm employees throughout the organization to find important information stored in InterAction without the need to directly log in and perform a separate search.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-dynamics-crm-connector-sharepoint-azure-elasticsearch/)
+
+### Microsoft Dynamics 365
+_Publisher: BA Insight_
+
+BA Insight's Microsoft Dynamics 365 CRM connector supports both on-premise CRM installations and Dynamics CRM Online.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-dynamics-crm-connector-sharepoint-azure-elasticsearch/)
+
+### Microsoft Dynamics 365 (Cloud)
+_Publisher: BA Insight_
+
+BA Insight's Microsoft Dynamics 365 (Cloud Version) CRM Connector establishes a secure connection to the CRM application and maps the content from the CRM schema to the search engine schema.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-microsoft-dynamics-cloud/)
 
 ## File Systems
 ### Amazon S3
@@ -465,6 +745,41 @@ BA Insight's IBM FileNet Content Manager Connector allows SharePoint, as well a
 
 [Deploy this Graph connector](https://www.bainsight.com/connectors/ibm-filenet-sharepoint-azure-elasticsearch/)
 
+### Microsoft Windows File Server
+_Publisher: Raytion_
+
+Secure enterprise search connector for reliably indexing content from Microsoft Windows File Server including its Distributed File System (DFS) and intelligently searching it with Microsoft Graph. It robustly indexes files and folders from Windows File Server in near real time. The connector fully supports Microsoft Windows File Server’s document-level security and the latest versions of the SMB2 and SMB3 protocols.
+
+[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-windows-file-server-connector)
+
+### Neudesic The Firm Directory
+_Publisher: BA Insight_
+
+The Firm Directory Connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/the-firm-directory-connector-sharepoint-azure-elasticsearch/)
+
+### Objective
+_Publisher: BA Insight_
+
+BA Insight's Objective Connector was specifically developed for Objective, establishing a secure connection to Objective and mapping the content including metadata from the Objective schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/objective-connector-sharepoint-azure-elasticsearch/)
+
+### OneDrive for Business
+_Publisher: BA Insight_
+
+The BA Insight OneDrive Connector makes it possible to index content from OneDrive into various search platforms, providing users with integrated search results from multiple sources.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/onedrive-business-connector-sharepoint-azure-elasticsearch/)
+
+### OneDrive
+_Publisher: Accenture_
+
+The OneDrive connector will crawl content from Microsoft OneDrive, traversing folders to find files. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed, and so on.) and access control lists.
+
+[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/OneDrive+Connector)
+
 ## IT Service Management Tools (ITSM)
 ### GitLab
 _Publisher: Raytion_
@@ -472,6 +787,20 @@ _Publisher: Raytion_
 Secure enterprise search connector for reliably indexing content from GitLab and intelligently searching it with Microsoft Graph. It robustly indexes projects, files, folders, commit messages, issues, and wiki pages from GitLab in near real time.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-gitlab-connector)
+
+### LDAP
+_Publisher: BA Insight_
+
+BA Insight's LDAP Connector enables organizations to connect to any LDAP compliant directory and index any record from it. Organizatins can filter to specific subsets of the directory and retrieve only specifc fields, making it simple to search for users, contract or groups stored anywhere in your directory.
+
+[Deploy this Graph connector](https://www.bainsight.com/connectors/ldap-connector-for-sharepoint-azure-elasticsearch/)
+
+### LDAP
+_Publisher: Raytion_
+
+Secure enterprise search connector for reliably indexing content from directory services compatible with the Lightweight Directory Access Protocol (LDAP) and intelligently searching it with Microsoft Graph. It robustly indexes LDAP objects from Active Directory, Novell E-Directory and other LDAP-compatible directory services in near real time. The connector can be used for ingesting principals into Google Cloud Search for use cases like expert, equipment and location searches or for implementing security trimming for custom data sources. The connector supports LDAP over SSL.
+
+[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-ldap-connector)
 
 ## Learning
 todo
