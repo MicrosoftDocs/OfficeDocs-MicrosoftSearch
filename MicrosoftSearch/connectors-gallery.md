@@ -33,27 +33,14 @@ The Graph connectors in this gallery are broken down into the following categori
 - Website (HTTP)
 - Other
 
-## Collaboration & Communications
-### Aderant
-_Publisher: BA Insight_
+## Collaboration & communications
+These are the connectors under collaboration & communications.
 
-BA Insight's Aderant connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/)
-
-### Adobe Acrobat Sign
-_Publisher: Adobe_
-
-The Adobe Acrobat Sign connector for Microsoft Search securely stores agreement metadata, allowing users to quickly and easily find their agreements alongside other documents in Microsoft 365. Search for agreements explicitly or view recommendations when key events occur. The connector supports Acrobat Sign access permissions, ensuring only the permitted sender and recipients see agreement information. Users securely access full agreements in Acrobat Sign.
-
-[Deploy this Graph connector](https://www.adobe.com/go/microsoft-search-connector-guide)
-
-### Atlassian Confluence
-_Publisher: BA Insight_
-
-BA Insight's Confluence Connector is an enterprise grade indexing connector that enables content stored in Confluence to be crawled and indexed. This enables SharePoint, Bing, or the Microsoft 365 app to serve as the single point from which users search for enterprise content.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-confluence-cloud-version/)
+| Connector name | Publisher | Description |
+|:------ |:----------- |:----------- |
+|Aderant|BA Insight|BA Insight's Aderant connector honors the security of the source system and provides both full and incremental crawls. Hence, the users have the latest information available to them at all times. [Deploy this Graph connector](https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/).|
+|Adobe Acrobat Sign|Adobe|The Adobe Acrobat Sign connector for Microsoft Search securely stores agreement metadata, allowing users to quickly and easily find their agreements alongside other documents in Microsoft 365. Search for agreements explicitly or view recommendations when key events occur. The connector supports Acrobat Sign access permissions, ensuring only the permitted sender and recipients see agreement information. Users securely access full agreements in Acrobat Sign. [Deploy this Graph connector](https://www.adobe.com/go/microsoft-search-connector-guide).|
+|Atlassian Confluence|BA Insight|BA Insight's Confluence Connector is an enterprise-grade indexing connector that enables content stored in Confluence to be crawled and indexed. It enables SharePoint, Bing, or the Microsoft 365 app to serve as the single point from which users search for enterprise content. [Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-confluence-cloud-version/).|
 
 ### Atlassian Confluence (Cloud)
 _Publisher: BA Insight_
