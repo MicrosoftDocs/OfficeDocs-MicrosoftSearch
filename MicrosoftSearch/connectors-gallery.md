@@ -143,48 +143,12 @@ These are the connectors under content management systems.
 |SharePoint 2019|BA Insight|BA Insight’s SharePoint Connector allows you to connect to SharePoint 2019, fetch data from any site, document library, or list; and index this content securely. [Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-sharepoint-2019/)
 |SharePoint 2019|Accenture|The SharePoint 2019 connector crawls content from any SharePoint 2019 site collection URL. The connector supports lists, pages, and sites, and updates are identified either automatically or via the SharePoint change log. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+2019+Connector)
 |SharePoint Online|BA Insight|BA Insight’s SharePoint Online Connector allows you to connect to SharePoint Online, fetch data from any site, document library, or list; and index this content securely. [Deploy this Graph connector](https://www.bainsight.com/connectors/sharepoint-online-connector/)
-
-### SharePoint Online
-_Publisher: Accenture_
-
-The SharePoint Online connector crawls content from any SharePoint Online site collection URL. The connector retrieves Sites, Lists, Folders, List Items, and attachments, and other pages (in .aspx format). This connector supports SharePoint running in the Microsoft O365 offering. Support for crawling the one-premises offerings of SharePoint is supported by SharePoint 2010/2007 Connector and SharePoint 2013 Connector.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+Online+Connector)
-
-### Sitecore
-_Publisher: BA Insight_
-
-BA Insight's Sitecore Connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/sitecore-connector-sharepoint-azure-elasticsearch/)
-
-### Sitecore
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Sitecore and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and further generated document types in near real time. The connector fully supports Sitecore’s permission model and the user and group management in the associated Entra ID.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sitecore-connector)
-
-### Veritas Enterprise Vault (Symantec eVault)
-_Publisher: BA Insight_
-
-BA Insight's Veritas Enterprise Vault Connector honors the security of the source system and provides full and incremental crawls so the users have the latest information available to them all the time.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/enterprise-vault-connector-sharepoint-azure-elasticsearch/)
-
-### West km
-_Publisher: BA Insight_
-
-The BA Insight West km Connector supports search across transaction and litigation documents, including the creation of custom search results pages.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/westkm-connector-sharepoint-azure-elasticsearch/)
-
-### Xerox DocuShare
-_Publisher: BA Insight_
-
-Users of BA Insight's Xerox DocuShare Connector are able to search for content housed in Docushare repositories directly from within Microsoft Search, eliminating the need to perform multiple searches to locate needed content.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/docushare-connector-sharepoint-azure-elasticsearch/)
+|SharePoint Online|Accenture|The SharePoint Online connector crawls content from any SharePoint Online site collection URL. The connector retrieves Sites, Lists, Folders, List Items, attachments, and other pages (in .aspx format). This connector supports SharePoint running in the Microsoft O365 offering. Support for crawling the one-premises offerings of SharePoint is supported by SharePoint 2010/2007 Connector and SharePoint 2013 Connector. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+Online+Connector)
+|Sitecore|BA Insight|BA Insight's Sitecore Connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time. [Deploy this Graph connector](https://www.bainsight.com/connectors/sitecore-connector-sharepoint-azure-elasticsearch/)
+|Sitecore|Raytion|Secure enterprise search connector for reliably indexing content from Sitecore and intelligently searching it with Microsoft Graph. It robustly indexes pages, and attachments, and further generated document types in near real-time. The connector fully supports Sitecore’s permission model and the user and group management in the associated Entra ID. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sitecore-connector)
+|Veritas Enterprise Vault (Symantec eVault)|BA Insight|BA Insight's Veritas Enterprise Vault Connector honors the security of the source system and provides full and incremental crawls. Hence, the users have the latest information available to them all the time. [Deploy this Graph connector](https://www.bainsight.com/connectors/enterprise-vault-connector-sharepoint-azure-elasticsearch/)
+|West km|BA Insight|The BA Insight West km Connector supports search across transaction and litigation documents, including the creation of custom search results pages. [Deploy this Graph connector](https://www.bainsight.com/connectors/westkm-connector-sharepoint-azure-elasticsearch/)
+|Xerox DocuShare|BA Insight|Users of BA Insight's Xerox DocuShare Connector are able to search for content housed in Docushare repositories directly from within Microsoft Search, eliminating the need to perform multiple searches to locate needed content. [Deploy this Graph connector](https://www.bainsight.com/connectors/docushare-connector-sharepoint-azure-elasticsearch/)
 
 ### Xerox DocuShare
 _Publisher: Raytion_
