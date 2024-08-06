@@ -90,7 +90,7 @@ _Publisher: _
 
 ## Content Management Systems
 
-These are the connectors under content management systems
+These are the connectors under content management systems.
 
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
