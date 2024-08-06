@@ -154,40 +154,15 @@ These are the connectors under content management systems.
 |Zenya|Infoland|Allows your organization to search for documents, process flows, forms, questionnaires, and information cards which are managed in the Zenya quality and risk management solution. It’s easier than ever for joint Zenya and Microsoft users to find the content they need. [Deploy this Graph connector](https://zenya-software.com/solutions/technical-solutions/sharepoint-online/).|
 
 ## Databases
-### Amazon Aurora
-_Publisher: BA Insight_
+These are the connectors under databases.
 
-BA Insight's Amazon Aurora Connector is built upon industry standard database access methods, so it equally supports databases from other systems such as Oracle, MySQL, and IBM DB2.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/amazon-aurora-connector-sharepoint-azure-elasticsearch/)
-
-### Amazon Relational Database Service (RDS)
-_Publisher: BA Insight_
-
-BA Insight's Amazon Relational Database Service (RDS) Connector is built upon industry standard database access methods, so it equally supports databases from other systems such as Oracle, MySQL, and IBM DB2.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/amazon-rds-connector-sharepoint-azure-elasticsearch/)
-
-### Azure SQL
-_Publisher: Microsoft_
-
-Enables your organization to search for data from your Azure SQL.
-
-[Deploy this Graph connector](mssql-connector.md)
-
-### Azure SQL Database
-_Publisher: BA Insight_
-
-BA Insight’s Azure SQL Database Connector is built upon industry standard database access methods, so it can equally support databases from other systems such as Oracle, MySQL, and IBM DB2.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/azure-sql-database-connector-sharepoint-azure-elasticsearch/)
-
-### Database Server
-_Publisher: Accenture_
-
-The Database Server connector crawls content from a Relational Database server. The crawler discovers databases and tables and indexes all content. Updates are discovered.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Database+Server+Connector)
+|Connector name|Publisher|Description|
+|:------ |:----------- |:----------- |
+|Amazon Aurora|BA Insight|BA Insight's Amazon Aurora Connector is built upon industry-standard database access methods, so it equally supports databases from other systems such as Oracle, MySQL, and IBM DB2. [Deploy this Graph connector](https://www.bainsight.com/connectors/amazon-aurora-connector-sharepoint-azure-elasticsearch/)
+|Amazon Relational Database Service (RDS)|BA Insight|BA Insight's Amazon Relational Database Service (RDS) Connector is built upon industry-standard database access methods, so it equally supports databases from other systems such as Oracle, MySQL, and IBM DB2. [Deploy this Graph connector](https://www.bainsight.com/connectors/amazon-rds-connector-sharepoint-azure-elasticsearch/)
+|Azure SQL|Microsoft|Enables your organization to search for data from your Azure SQL. [Deploy this Graph connector](mssql-connector.md)
+|Azure SQL Database|BA Insight|BA Insight’s Azure SQL Database Connector is built upon industry-standard database access methods, so it can equally support databases from other systems such as Oracle, MySQL, and IBM DB2. [Deploy this Graph connector](https://www.bainsight.com/connectors/azure-sql-database-connector-sharepoint-azure-elasticsearch/)
+|Database Server|Accenture|The Database Server connector crawls content from a Relational Database server. The crawler discovers databases and tables and indexes all content. Updates are discovered. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Database+Server+Connector)
 
 ### Google Cloud SQL
 _Publisher: BA Insight_
