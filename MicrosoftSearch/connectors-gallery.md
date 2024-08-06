@@ -43,55 +43,13 @@ These are the connectors under collaboration & communications.
 |Atlassian Confluence|BA Insight|BA Insight's Confluence Connector is an enterprise-grade indexing connector that enables content stored in Confluence to be crawled and indexed. It enables SharePoint, Bing, or the Microsoft 365 app to serve as the single point from which users search for enterprise content. [Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-confluence-cloud-version/).|
 |Atlassian Confluence (cloud)|BA Insight|BA Insight's Confluence (Cloud Version) Connector is an enterprise-grade indexing connector that enables content stored in Confluence to be crawled and indexed. [Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-confluence-cloud-version/).|
 |Atlassian Confluence|Raytion|Secure enterprise search connector for reliably indexing content from Atlassian Confluence and intelligently searching it with Microsoft Graph. It robustly indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from one-premises Confluence instances in near real-time. The connector fully supports Atlassian Confluence’s built-in user and group management. The connector also supports Confluence installations based on Entra ID and other directory services. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-confluence-connector).|
-
-### Atlassian Confluence (Cloud)
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Atlassian Confluence Cloud and intelligently searching it with Microsoft Graph. It robustly indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from Confluence Cloud instances in near real time. The connector fully supports Atlassian Confluence Cloud’s built-in user and group management.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-confluence-cloud-connector)
-
-### Atlassian Confluence
-_Publisher: Accenture_
-
-The Confluence connector crawls content from any Confluence content repository. The connector retrieves spaces, pages, blogs, attachments, and comments. The connector uses the Confluence REST API to crawl Confluence content.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Atlassian+Confluence+Connector)
-
-### Atlassian Jira
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Atlassian Jira and intelligently searching it with Microsoft Graph. It robustly indexes projects, issues, attachments, comments, work logs, issue histories, links, and profiles from one-premises Jira instances in near real time. The connector fully supports Atlassian Confluence’s built-in user and group management. The connector also supports Confluence installations based on Entra ID and other directory services.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jira-connector)
-
-### Atlassian Jira Cloud
-_Publisher: Microsoft_
-
-Jira Cloud Graph connector allows your organization to index Jira issues and tickets.
-
-[Deploy this Graph connector](jira-connector.md)
-
-### Atlassian Jira Cloud
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Atlassian Jira Cloud and intelligently searching it with Microsoft Graph. It robustly indexes projects, issues, attachments, comments, work logs, issue histories, links and profiles from Jira Cloud in near real time. The connector fully supports Atlassian Jira Cloud’s built-in user and group management.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jira-cloud-connector)
-
-### Microsoft Entra ID (formerly known as Azure Active Directory)
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Microsoft Entra ID and intelligently searching it with Microsoft Graph. It indexes objects from Microsoft Entra ID via the Microsoft Graph API. The connector can be used for ingesting principals into Microsoft Graph in near real time. This supports use cases like expert search, equipment search, or location search. The connector supports federated authentication against Microsoft 365.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-azure-ad-connector)
-
-### Azure DevOps
-_Publisher: Microsoft_
-
-Allows your organization to search for work items in your Azure DevOps instance.
-
-[Deploy this Graph connector](azure-devops-connector.md)
+|Atlassian Confluence (cloud)|Raytion|Secure enterprise search connector for reliably indexing content from Atlassian Confluence Cloud and intelligently searching it with Microsoft Graph. It robustly indexes pages, blog posts, attachments, comments, spaces, profiles, and hub sites for tags from Confluence Cloud instances in near real-time. The connector fully supports Atlassian Confluence Cloud’s built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-confluence-cloud-connector).|
+|Atlassian Confluence|Accenture|The Confluence connector crawls content from any Confluence content repository. The connector retrieves spaces, pages, blogs, attachments, and comments. The connector uses the Confluence REST API to crawl Confluence content. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Atlassian+Confluence+Connector).|
+|Atlassian Jira|Raytion|Secure enterprise search connector for reliably indexing content from Atlassian Jira and intelligently searching it with Microsoft Graph. It robustly indexes projects, issues, attachments, comments, work logs, issue histories, links, and profiles from one-premises Jira instances in near real-time. The connector fully supports Atlassian Confluence’s built-in user and group management. The connector also supports Confluence installations based on Entra ID and other directory services. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jira-connector).|
+|Atlassian Jira Cloud|Microsoft|The Jira Cloud Graph connector allows your organization to index Jira issues and tickets. [Deploy this Graph connector](jira-connector.md).|
+|Atlassian Jira Cloud|Raytion|Secure enterprise search connector for reliably indexing content from Atlassian Jira Cloud and intelligently searching it with Microsoft Graph. It robustly indexes projects, issues, attachments, comments, work logs, issue histories, links, and profiles from Jira Cloud in near real-time. The connector fully supports Atlassian Jira Cloud’s built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jira-cloud-connector).|
+|Microsoft Entra ID (formerly known as Azure Active Directory)|Raytion|Secure enterprise search connector for reliably indexing content from Microsoft Entra ID and intelligently searching it with Microsoft Graph. It indexes objects from Microsoft Entra ID via the Microsoft Graph API. The connector can be used for ingesting principals into Microsoft Graph in near real-time. This supports use cases like expert search, equipment search, or location search. The connector supports federated authentication against Microsoft 365. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-azure-ad-connector).|
+|Azure DevOps|Microsoft|Allows your organization to search for work items in your Azure DevOps instance. [Deploy this Graph connector](azure-devops-connector.md).|
 
 ### Box
 _Publisher: Accenture_
