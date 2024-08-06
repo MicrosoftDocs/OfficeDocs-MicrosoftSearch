@@ -118,55 +118,13 @@ These are the connectors under content management systems.
 |MediaPlatform PrimeTime|BA Insight|BA Insight’s MediaPlatform PrimeTime indexing connector makes it possible to make the content accessible to users via an organization’s enterprise search platform, combining the connector with BA Insight’s SmartHub. The BA Insight MediaPlatform PrimeTime Connector retrieves information about channels and videos from MediaPlatform PrimeTime and indexes them via Microsoft Search. [Deploy this Graph connector](https://www.bainsight.com/connectors/mediaplatform-primetime-connector-sharepoint-azure-elasticsearch/).|
 |MediaWiki|Microsoft|Enables your organization to search knowledge-based articles on sites it creates with MediaWiki. [Deploy this Graph connector](mediawiki-connector.md).|
 |MediaWiki|Raytion|Secure enterprise search connector for reliably indexing content from MediaWiki and intelligently searching it with Microsoft Graph. It robustly indexes pages, discussion pages, and attachments from MediaWiki instances in near real-time. The connector fully supports MediaWiki’s built-in permission model, as well as MediaWiki installations based on Entra ID and other directory services.[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-mediawiki-connector).|
-
-### Micro Focus Content Manager (HPE Records Manager/HP TRIM)
-_Publisher: BA Insight_
-
-BA Insight's HP TRIM Connector was specifically developed for HP Records Manager, establishing a secure connection to the TRIM application and mapping the content including metadata and attachments from the TRIM schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/hp-trim-connector-sharepoint-azure-elasticsearch/)
-
-### NetDocuments
-_Publisher: BA Insight_
-
-BA Insight's NetDocuments Connector indexes content stored in NetDocs so that users can search and retrieve NetDocuments content directly from within their portal.  The connector applies document security in NetDocs to Mirosoft Search automatically, so user information remains secure.  Metadata stored in NetDocuments can be mapped to equivalent terms so that users have a seamless search experience.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/netdocuments-connector-sharepoint-azure-elasticsearch/)
-
-### Nuxeo
-_Publisher: BA Insight_
-
-BA Insight's Nuxeo connector let organization index their Nuxeo content, including both security information and standard and custom metadata set on content into Microsoft Search along side content present in Office 365. Ultimately, users can find everything they need in one place.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/nuxeo-connector-for-sharepoint-azure-elasticsearch/)
-
-### OpenText Content Server
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from OpenText Content Server and intelligently searching it with Microsoft Graph. It robustly indexes files, folders, virtual folders, compound documents, news, emails, volumes, collections, classifications, and many more objects from Content Server instances in near real time. The connector fully supports OpenText Content Server’s built-in user and group management.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-opentext-content-server-connector)
-
-### OpenText Documentum
-_Publisher: BA Insight_
-
-BA Insight’s Documentum Connector securely indexes both the full text and metadata of Documentum objects into Microsoft Search, enabling a single searchable result set across content from multiple repositories. This is unlike some other connectors that surface Documentum records with Microsoft Search one at a time for process management.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/documentum-connector-sharepoint-azure-elasticsearch/)
-
-### OpenText Documentum (Cloud)
-_Publisher: BA Insight_
-
-BA Insight’s OpenText Documentum Cloud Connector securely indexes both the full text and metadata of Documentum objects into the search engine, enabling a single searchable result set across content from multiple repositories.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-documentum-cloud/)
-
-### OpenText Documentum eRoom
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from OpenText Documentum eRoom and intelligently searching it with Microsoft Graph. It robustly indexes repositories, folders, and files together with their meta data and properties from Documentum eRoom in near real time. The connector fully supports OpenText Documentum eRoom’s built-in user and group management.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-opentext-documentum-eroom-connector)
+|Micro Focus Content Manager (HPE Records Manager/HP TRIM)|BA Insight|BA Insight's HP TRIM Connector was specifically developed for HP Records Manager, establishing a secure connection to the TRIM application and mapping the content including metadata and attachments from the TRIM schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling. [Deploy this Graph connector](https://www.bainsight.com/connectors/hp-trim-connector-sharepoint-azure-elasticsearch/)
+|NetDocuments|BA Insight| BA Insight's NetDocuments Connector indexes content stored in NetDocs so that users can search and retrieve NetDocuments content directly from within their portal.  The connector applies document security in NetDocs to Mirosoft Search automatically, so user information remains secure. Metadata stored in NetDocuments can be mapped to equivalent terms so that users have a seamless search experience. [Deploy this Graph connector](https://www.bainsight.com/connectors/netdocuments-connector-sharepoint-azure-elasticsearch/)
+|Nuxeo|BA Insight|BA Insight's Nuxeo connector let organization index their Nuxeo content, including both security information and standard and custom metadata set on content into Microsoft Search along side content present in Office 365. Ultimately, users can find everything they need in one place. [Deploy this Graph connector](https://www.bainsight.com/connectors/nuxeo-connector-for-sharepoint-azure-elasticsearch/)
+|OpenText Content Server|Raytion|Secure enterprise search connector for reliably indexing content from OpenText Content Server and intelligently searching it with Microsoft Graph. It robustly indexes files, folders, virtual folders, compound documents, news, emails, volumes, collections, classifications, and many more objects from Content Server instances in near real time. The connector fully supports OpenText Content Server’s built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-opentext-content-server-connector)
+|OpenText Documentum|BA Insight|BA Insight’s Documentum Connector securely indexes both the full text and metadata of Documentum objects into Microsoft Search, enabling a single searchable result set across content from multiple repositories. This is unlike some other connectors that surface Documentum records with Microsoft Search one at a time for process management. [Deploy this Graph connector](https://www.bainsight.com/connectors/documentum-connector-sharepoint-azure-elasticsearch/)
+|OpenText Documentum (Cloud)|BA Insight|BA Insight’s OpenText Documentum Cloud Connector securely indexes both the full text and metadata of Documentum objects into the search engine, enabling a single searchable result set across content from multiple repositories. [Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-documentum-cloud/)
+|OpenText Documentum eRoom|Raytion|Secure enterprise search connector for reliably indexing content from OpenText Documentum eRoom and intelligently searching it with Microsoft Graph. It robustly indexes repositories, folders, and files together with their meta data and properties from Documentum eRoom in near real time. The connector fully supports OpenText Documentum eRoom’s built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-opentext-documentum-eroom-connector)
 
 ### OpenText eDOCS Document Management (DM)
 _Publisher: BA Insight_
