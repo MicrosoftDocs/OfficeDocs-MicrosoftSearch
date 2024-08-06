@@ -149,27 +149,9 @@ These are the connectors under content management systems.
 |Veritas Enterprise Vault (Symantec eVault)|BA Insight|BA Insight's Veritas Enterprise Vault Connector honors the security of the source system and provides full and incremental crawls. Hence, the users have the latest information available to them all the time. [Deploy this Graph connector](https://www.bainsight.com/connectors/enterprise-vault-connector-sharepoint-azure-elasticsearch/)
 |West km|BA Insight|The BA Insight West km Connector supports search across transaction and litigation documents, including the creation of custom search results pages. [Deploy this Graph connector](https://www.bainsight.com/connectors/westkm-connector-sharepoint-azure-elasticsearch/)
 |Xerox DocuShare|BA Insight|Users of BA Insight's Xerox DocuShare Connector are able to search for content housed in Docushare repositories directly from within Microsoft Search, eliminating the need to perform multiple searches to locate needed content. [Deploy this Graph connector](https://www.bainsight.com/connectors/docushare-connector-sharepoint-azure-elasticsearch/)
-
-### Xerox DocuShare
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Xerox DocuShare and intelligently searching it with Microsoft Graph. It robustly indexes data repositories, folders, profiles, groups, and files from DocuShare in near real time. The connector fully supports Xerox DocuShare’s built-in user and group management.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-xerox-docushare-connector)
-
-### Zendesk Guide
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Zendesk Guide and intelligently searching it with Microsoft Search. It robustly indexes pages, comments and attachments from Zendesk Guide instances in near real time. The connector fully supports Zendesk Guide's built-in user and group management, as well as Zendesk Guide installations based on Entra ID and other directory services.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-zendesk-guide-connector)
-
-### Zenya
-_Publisher: Infoland_
-
-Allows your organization to search for documents, process flows, forms, questionnaires and information cards which are managed in the Zenya quality and risk management solution. It’s easier than ever for joint Zenya and Microsoft users to find the content they need.
-
-[Deploy this Graph connector](https://zenya-software.com/solutions/technical-solutions/sharepoint-online/)
+|Xerox DocuShare|Raytion|Secure enterprise search connector for reliably indexing content from Xerox DocuShare and intelligently searching it with Microsoft Graph. It robustly indexes data repositories, folders, profiles, groups, and files from DocuShare in near real-time. The connector fully supports Xerox DocuShare’s built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-xerox-docushare-connector)
+|Zendesk Guide|Raytion|Secure enterprise search connector for reliably indexing content from Zendesk Guide and intelligently searching it with Microsoft Search. It robustly indexes pages, comments and attachments from Zendesk Guide instances in near real-time. The connector fully supports Zendesk Guide's built-in user and group management, as well as Zendesk Guide installations based on Entra ID and other directory services. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-zendesk-guide-connector)
+|Zenya|Infoland|Allows your organization to search for documents, process flows, forms, questionnaires, and information cards which are managed in the Zenya quality and risk management solution. It’s easier than ever for joint Zenya and Microsoft users to find the content they need. [Deploy this Graph connector](https://zenya-software.com/solutions/technical-solutions/sharepoint-online/)
 
 ## Databases
 ### Amazon Aurora
