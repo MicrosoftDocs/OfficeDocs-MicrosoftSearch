@@ -174,13 +174,7 @@ These are the connectors under databases.
 |PostgreSQL|BA Insight|BA Insight’s PostgreSQL Connector honors the security of the source database and provides full and incremental crawls so that users have the latest information available all of the time. It indexes content from PostgreSQL into Microsoft Search, surfacing it through BA Insight’s SmartHub to provide users with integrated search results. [Deploy this Graph connector](https://www.bainsight.com/connectors/postgresql-connector-connector-sharepoint-azure-elasticsearch/)
 |Practical Law|BA Insight|The BA Insight Practical Law Connector enables users to perform searches against the Practical Law database, eliminating the need to navigate to Practical Law directly. [Deploy this Graph connector](https://www.bainsight.com/connectors/practical-law-connector-sharepoint-azure-elasticsearch/)
 |Relational Databases|Accenture|Crawls content from relational databases using third-party Java Database Connectivity (JDBC) drivers. Updates are identified automatically or use an update table. An SQL select statement is used to control the data submitted. Access control lists can be extracted from a returned column. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Relational+Databases)
-
-### SQL Databases
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from SQL databases, such as Microsoft SQL Server or Oracle, and intelligently searching it with Microsoft Graph. It robustly indexes records and fields including binary documents from SQL databases in near real time. The connector supports the implementation of a custom document-level security model.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sql-database-connector)
+|SQL Databases|Raytion|Secure enterprise search connector for reliably indexing content from SQL databases, such as Microsoft SQL Server or Oracle, and intelligently searching it with Microsoft Graph. It robustly indexes records and fields including binary documents from SQL databases in near real time. The connector supports the implementation of a custom document-level security model. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sql-database-connector)
 
 ## Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), Sales, and Support
 ### Any SQL-based CRM system
