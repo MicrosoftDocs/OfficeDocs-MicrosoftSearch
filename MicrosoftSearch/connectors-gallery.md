@@ -163,41 +163,11 @@ These are the connectors under databases.
 |Azure SQL|Microsoft|Enables your organization to search for data from your Azure SQL. [Deploy this Graph connector](mssql-connector.md)
 |Azure SQL Database|BA Insight|BA Insight’s Azure SQL Database Connector is built upon industry-standard database access methods, so it can equally support databases from other systems such as Oracle, MySQL, and IBM DB2. [Deploy this Graph connector](https://www.bainsight.com/connectors/azure-sql-database-connector-sharepoint-azure-elasticsearch/)
 |Database Server|Accenture|The Database Server connector crawls content from a Relational Database server. The crawler discovers databases and tables and indexes all content. Updates are discovered. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Database+Server+Connector)
-
-### Google Cloud SQL
-_Publisher: BA Insight_
-
-BA Insight's Google Cloud SQL Connector indexes content from Google Cloud SQL into the Microsoft Search index surfacing it through BA Insight’s SmartHub to provide users with integrated search results.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/google-cloud-sql-connector-sharepoint-azure-elasticsearch/)
-
-### HBase
-_Publisher: Accenture_
-
-The HBase connector crawls data from an HBase Server.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/HBase+Connector)
-
-### IBM Db2
-_Publisher: BA Insight_
-
-BA Insight's Db2 Connector allows organizations to tap into the wealth of data stored within DB2 databases and applications, and make that data instantly actionable to users through search.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/ibm-db2-connector-sharepoint-azure-elasticsearch/)
-
-### Microsoft SQL
-_Publisher: Microsoft_
-
-Allows your organization to search one-premisess Microsoft SQL server databases.
-
-[Deploy this Graph connector](mssql-connector.md)
-
-### Microsoft SQL Server
-_Publisher: BA Insight_
-
-BA Insight's database connector is built upon industry standard database access methods, so it can equally support databases from other systems such as Oracle, MySQL, and IBM DB2.  It honors the security of the source database and provides both full and incremental crawls so the users have the latest information available to them all the time.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/sql-connector-sharepoint-azure-elasticsearch/)
+|Google Cloud SQL|BA Insight|BA Insight's Google Cloud SQL Connector indexes content from Google Cloud SQL into the Microsoft Search index surfacing it through BA Insight’s SmartHub to provide users with integrated search results. [Deploy this Graph connector](https://www.bainsight.com/connectors/google-cloud-sql-connector-sharepoint-azure-elasticsearch/)
+|HBase|Accenture|The HBase connector crawls data from an HBase Server. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/HBase+Connector)
+|IBM Db2|BA Insight|BA Insight's Db2 Connector allows organizations to tap into the wealth of data stored within DB2 databases and applications, and make that data instantly actionable to users through search. [Deploy this Graph connector](https://www.bainsight.com/connectors/ibm-db2-connector-sharepoint-azure-elasticsearch/)
+|Microsoft SQL|Microsoft|Allows your organization to search one-premisess Microsoft SQL server databases. [Deploy this Graph connector](mssql-connector.md)
+|Microsoft SQL Server|BA Insight|BA Insight's database connector is built upon industry-standard database access methods, so it can equally support databases from other systems such as Oracle, MySQL, and IBM DB2.  It honors the security of the source database and provides both full and incremental crawls so the users have the latest information available to them all the time. [Deploy this Graph connector](https://www.bainsight.com/connectors/sql-connector-sharepoint-azure-elasticsearch/)
 
 ### MySQL
 _Publisher: BA Insight_
