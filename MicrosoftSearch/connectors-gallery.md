@@ -50,48 +50,12 @@ These are the connectors under collaboration & communications.
 |Atlassian Jira Cloud|Raytion|Secure enterprise search connector for reliably indexing content from Atlassian Jira Cloud and intelligently searching it with Microsoft Graph. It robustly indexes projects, issues, attachments, comments, work logs, issue histories, links, and profiles from Jira Cloud in near real-time. The connector fully supports Atlassian Jira Cloud’s built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jira-cloud-connector).|
 |Microsoft Entra ID (formerly known as Azure Active Directory)|Raytion|Secure enterprise search connector for reliably indexing content from Microsoft Entra ID and intelligently searching it with Microsoft Graph. It indexes objects from Microsoft Entra ID via the Microsoft Graph API. The connector can be used for ingesting principals into Microsoft Graph in near real-time. This supports use cases like expert search, equipment search, or location search. The connector supports federated authentication against Microsoft 365. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-azure-ad-connector).|
 |Azure DevOps|Microsoft|Allows your organization to search for work items in your Azure DevOps instance. [Deploy this Graph connector](azure-devops-connector.md).|
-
-### Box
-_Publisher: Accenture_
-
-Box connector crawls content from a Box repository. The connector retrieves the supported elements using the RESTful API (Content API Basics 2.0 version); for authentication, it uses Box API (that uses OAuth 2). Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Box++Connector)
-
-### Deltek
-_Publisher: BA Insight_
-
-BA Insight's Deltek Vision Connector honors the security of the source system and provides both full and incremental crawls so that users have the latest information available to them all the time. It indexes content from Deltek Vision into Azure, SharePoint Online or SharePoint 2016/2013, surfacing it through BA Insight’s SmartHub to provide users with integrated search results.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/deltek-connector-sharepoint-azure-elasticsearch/)
-
-### Elite/3E
-_Publisher: BA Insight_
-
-BA Insight’s Elite Connector provides a single point of access for lawyers to access firm content and knowledge in line with Elite content using Microsoft Search.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/elite-connector-sharepoint-azure-elasticsearch/)
-
-### Symantec Enterprise Vault
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Symantec Enterprise Vault and intelligently searching it with Microsoft Graph. It robustly indexes archived data, such as e-mails, attachments, files, calendar items, and contacts from Enterprise Vault in near real time. The connector fully supports Symantec Enterprise Vault’s authentication models Basic, NTLM, and Kerberos authentication.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-enterprise-vault-connector-2)
-
-### Enterprise Vault
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Veritas Enterprise Vault and intelligently searching it with Microsoft Graph. It robustly indexes archived data, such as e-mails, attachments, files, calendar items, and contacts from Enterprise Vault in near real time. The connector fully supports Veritas Enterprise Vault’s authentication models Basic, NTLM, and Kerberos authentication.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-enterprise-vault-connector)
-
-### EMC eRoom
-_Publisher: BA Insight_
-
-BA Insight's eRoom Connector establishes a secure connection to the eRoom application and maps the content, including metadata and attachments, from the eRoom schema to the search engine schema.  It then extracts content and feeds it to the search engine in a process called crawling.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/eroom-connector-sharepoint-azure-elasticsearch/)
+|Box|Accenture|Box connector crawls content from a Box repository. The connector retrieves the supported elements using the RESTful API (Content API Basics 2.0 version); for authentication, it uses Box API (that uses OAuth 2). Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Box++Connector).|
+|Deltek|BA Insight|BA Insight's Deltek Vision Connector honors the security of the source system and provides both full and incremental crawls so that users have the latest information available to them all the time. It indexes content from Deltek Vision into Azure, SharePoint Online, or SharePoint 2016/2013, surfacing it through BA Insight’s SmartHub to provide users with integrated search results. [Deploy this Graph connector](https://www.bainsight.com/connectors/deltek-connector-sharepoint-azure-elasticsearch/).|
+|Elite/3E|BA Insight|BA Insight’s Elite Connector provides a single point of access for lawyers to access firm content and knowledge in line with Elite content using Microsoft Search. [Deploy this Graph connector](https://www.bainsight.com/connectors/elite-connector-sharepoint-azure-elasticsearch/).|
+|Symantec Enterprise Vault| Raytion| Secure enterprise search connector for reliably indexing content from Symantec Enterprise Vault and intelligently searching it with Microsoft Graph. It robustly indexes archived data, such as e-mails, attachments, files, calendar items, and contacts from Enterprise Vault in near real-time. The connector fully supports Symantec Enterprise Vault’s authentication models Basic, NTLM, and Kerberos authentication. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-enterprise-vault-connector-2).|
+|Enterprise Vault|Raytion|Secure enterprise search connector for reliably indexing content from Veritas Enterprise Vault and intelligently searching it with Microsoft Graph. It robustly indexes archived data, such as e-mails, attachments, files, calendar items, and contacts from Enterprise Vault in near real-time. The connector fully supports Veritas Enterprise Vault’s authentication models Basic, NTLM, and Kerberos authentication. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-enterprise-vault-connector).|
+|EMC eRoom|BA Insight|BA Insight's eRoom Connector establishes a secure connection to the eRoom application and maps the content, including metadata and attachments, from the eRoom schema to the search engine schema.  It then extracts content and feeds it to the search engine in a process called crawling. [Deploy this Graph connector](https://www.bainsight.com/connectors/eroom-connector-sharepoint-azure-elasticsearch/).|
 
 ### Facebook Workplace
 _Publisher: Raytion_
