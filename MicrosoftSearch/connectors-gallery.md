@@ -82,70 +82,22 @@ _Publisher: _
 |Oracle KA Cloud|Raytion|Secure enterprise search connector for reliably indexing content from Oracle Knowledge Advanced (KA) Cloud and intelligently searching it Microsoft Graph. It robustly indexes pages and attachments from Oracle KA Cloud in near real-time. The connector fully supports Oracle KA Cloud’s built-in user and group management. In particular, the connector handles snippet-based permissions within Oracle KA Cloud pages. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-oracle-ka-cloud-connector).|
 |Priority Matrix|Priority Matrix|The Priority Matrix connector for Graph will index every task and project in your account, allowing your team members to find relevant items directly from Office, Teams, Bing and more. Access your priorities without switching context! [Deploy this Graph connector](https://sync.appfluence.com/office365/external_connector/).|
 |Powtoon|Powtoon|Powtoon is a video creation platform and the Powtoon Connector enables the indexing of video and content with Microsoft Graph. [Deploy this Graph connector](https://www.powtoon.com/integrations/).|
-
-### SAP Product Lifeycle Management (PLM) Document Management System (DMS)
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from SAP Product Lifecycle Management (PLM) Document Management System (DMS) and intelligently searching it with Microsoft Graph. It robustly indexes documents, attachments, and other records from SAP PLM DMS in near real-time.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sap-plm-dms-connector)
-
-### ServiceNow Tickets
-_Publisher: Microsoft_
-
-ServiceNow Tickets connector allows your organization to index incident, change requests, problems status from ServiceNow instance for end user consumption.
-
-[Deploy this Graph connector](https://forms.office.com/r/JniPmK5bzm)
-
-### Slack
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Slack and intelligently searching it with Microsoft Graph. It robustly indexes messages, threads, and shared files from all public channels from Slack in near real time.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-slack-connector)
-
-### TeamForge
-_Publisher: Accenture_
-
-The TeamForge connector crawls content from a TeamForge server through its SOAP services.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/TeamForge+Connector)
-
-### Facebook Workplace
-_Publisher: BA Insight_
-
-Organizations who use Workplace by Facebook can now extend the reach of this data into their existing search indexes via the BA Insight Workplace by Facebook Connector.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-workplace-by-facebook/)
+|SAP Product Lifeycle Management (PLM) Document Management System (DMS)|Raytion|Secure enterprise search connector for reliably indexing content from SAP Product Lifecycle Management (PLM) Document Management System (DMS) and intelligently searching it with Microsoft Graph. It robustly indexes documents, attachments, and other records from SAP PLM DMS in near real-time. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sap-plm-dms-connector).|
+|ServiceNow Tickets|Microsoft|ServiceNow Tickets connector allows your organization to index incident, change requests, problems status from ServiceNow instance for end user consumption.[Deploy this Graph connector](https://forms.office.com/r/JniPmK5bzm).|
+|Slack|Raytion|Secure enterprise search connector for reliably indexing content from Slack and intelligently searching it with Microsoft Graph. It robustly indexes messages, threads, and shared files from all public channels from Slack in near real-time. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-slack-connector).|
+|TeamForge|Accenture|The TeamForge connector crawls content from a TeamForge server through its SOAP services. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/TeamForge+Connector).|
+|Facebook Workplace|BA Insight|Organizations who use Workplace by Facebook can now extend the reach of this data into their existing search indexes via the BA Insight Workplace by Facebook Connector. [Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-workplace-by-facebook/).|
 
 ## Content Management Systems
-### Adobe AEM
-_Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from the Adobe Active Experience Manager (AEM) and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other generated document types from Adobe AEM in near real time. The connector fully supports Adobe AEM’s permission model, its built-in user and group management, as well as AEM installations based on Entra ID or other directory services.
+These are the connectors under content management systems
 
-[Deploy this Graph connector](https://www.raytion.com/connectors/adobe-experience-manager-aem)
-
-### Adobe Experience Manager (AEM)
-_Publisher: Accenture_
-
-The Adobe Experience Manager (AEM) connector crawls content from an Adobe Experience Manager server. The connector fetches access control lists for document level security (currently only Closed Users Groups). It can filter content based on properties using expected values or patterns or pages based on the scheduled on and off time.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/AEM+Connector)
-
-### Alfresco
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Alfresco One and intelligently searching it with Microsoft Graph. It robustly indexes files, folders, and user profiles from Alfresco One in near real time. The connector fully supports Alfresco One’s permission model, its built-in user and group management, as well as Alfresco One installations based on Entra ID and other directory services.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-alfresco-connector)
-
-### Bentley
-_Publisher: BA Insights_
-
-The BA Insights Bentley AssetWise Connector makes it possible to surface content from AssetWise into a single consolidated search index, along with content from other repositories.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/bentley-connector-for-sharepoint-azure-elasticsearch/)
+|Connector name|Publisher|Description|
+|:------ |:----------- |:----------- |
+|Adobe AEM|Raytion|Secure enterprise search connector for reliably indexing content from the Adobe Active Experience Manager (AEM) and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other generated document types from Adobe AEM in near real-time. The connector fully supports Adobe AEM’s permission model, its built-in user and group management, as well as AEM installations based on Entra ID or other directory services.[Deploy this Graph connector](https://www.raytion.com/connectors/adobe-experience-manager-aem).|
+|Adobe Experience Manager (AEM)|Accenture|The Adobe Experience Manager (AEM) connector crawls content from an Adobe Experience Manager server. The connector fetches access control lists for document-level security (currently only Closed Users Groups). It can filter content based on properties using expected values or patterns or pages based on the scheduled on and off time. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/AEM+Connector).|
+|Alfresco|Raytion|Secure enterprise search connector for reliably indexing content from Alfresco One and intelligently searching it with Microsoft Graph. It robustly indexes files, folders, and user profiles from Alfresco One in near real-time. The connector fully supports Alfresco One’s permission model, its built-in user and group management, as well as Alfresco One installations based on Entra ID and other directory services. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-alfresco-connector).|
+|Bentley| BA Insights|The BA Insights Bentley AssetWise Connector makes it possible to surface content from AssetWise into a single consolidated search index, along with content from other repositories. [Deploy this Graph connector](https://www.bainsight.com/connectors/bentley-connector-for-sharepoint-azure-elasticsearch/).|
 
 ### Confluence Cloud
 _Publisher: Microsoft_
