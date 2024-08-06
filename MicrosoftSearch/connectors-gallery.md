@@ -168,48 +168,12 @@ These are the connectors under databases.
 |IBM Db2|BA Insight|BA Insight's Db2 Connector allows organizations to tap into the wealth of data stored within DB2 databases and applications, and make that data instantly actionable to users through search. [Deploy this Graph connector](https://www.bainsight.com/connectors/ibm-db2-connector-sharepoint-azure-elasticsearch/)
 |Microsoft SQL|Microsoft|Allows your organization to search one-premisess Microsoft SQL server databases. [Deploy this Graph connector](mssql-connector.md)
 |Microsoft SQL Server|BA Insight|BA Insight's database connector is built upon industry-standard database access methods, so it can equally support databases from other systems such as Oracle, MySQL, and IBM DB2.  It honors the security of the source database and provides both full and incremental crawls so the users have the latest information available to them all the time. [Deploy this Graph connector](https://www.bainsight.com/connectors/sql-connector-sharepoint-azure-elasticsearch/)
-
-### MySQL
-_Publisher: BA Insight_
-
-BA Insight's MySQL connector is built upon industry standard database access methods, so it can equally support databases from other systems such as Oracle, MySQL, and IBM DB2.  It honors the security of the source database and provides both full and incremental crawls so the users have the latest information available to them all the time.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/mysql-connector-sharepoint-azure-elasticsearch/)
-
-### Oracle Database
-_Publisher: BA Insight_
-
-BA Insight’s Oracle Database Connector is built upon industry standard database access methods, so it can equally support databases from other systems such as Microsoft SQL Server, MySQL, and IBM DB2.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/oracle-database-connector-sharepoint-azure-elasticsearch/)
-
-### Oracle SQL
-_Publisher: Microsoft_
-
-Enables your organization to discover and index data from an one-premisess database. Indexes specified content into Microsoft Search and supports periodic crawls. You can also restrict access to search results for certain users.
-
-[Deploy this Graph connector](oraclesql-connector.md)
-
-### PostgreSQL
-_Publisher: BA Insight_
-
-BA Insight’s PostgreSQL Connector honors the security of the source database and provides full and incremental crawls so that users have the latest information available all of the time. It indexes content from PostgreSQL into Microsoft Search, surfacing it through BA Insight’s SmartHub to provide users with integrated search results.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/postgresql-connector-connector-sharepoint-azure-elasticsearch/)
-
-### Practical Law
-_Publisher: BA Insight_
-
-The BA Insight Practical Law Connector enables users to perform searches against the Practical Law database, eliminating the need to navigate to Practical Law directly.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/practical-law-connector-sharepoint-azure-elasticsearch/)
-
-### Relational Databases
-_Publisher: Accenture_
-
-Crawls content from relational databases using third-party Java Database Connectivity (JDBC) drivers. Updates are identified automatically or use an update table. An SQL select statement is used to control the data submitted. Access control lists can be extracted from a returned column.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Relational+Databases)
+|MySQL|BA Insight|BA Insight's MySQL connector is built upon industry-standard database access methods, so it can equally support databases from other systems such as Oracle, MySQL, and IBM DB2.  It honors the security of the source database and provides both full and incremental crawls so the users have the latest information available to them all the time. [Deploy this Graph connector](https://www.bainsight.com/connectors/mysql-connector-sharepoint-azure-elasticsearch/)
+|Oracle Database|BA Insight|BA Insight’s Oracle Database Connector is built upon industry-standard database access methods, so it can equally support databases from other systems such as Microsoft SQL Server, MySQL, and IBM DB2. [Deploy this Graph connector](https://www.bainsight.com/connectors/oracle-database-connector-sharepoint-azure-elasticsearch/)
+|Oracle SQL|Microsoft|Enables your organization to discover and index data from an one-premisess database. Indexes specified content into Microsoft Search and supports periodic crawls. You can also restrict access to search results for certain users. [Deploy this Graph connector](oraclesql-connector.md)
+|PostgreSQL|BA Insight|BA Insight’s PostgreSQL Connector honors the security of the source database and provides full and incremental crawls so that users have the latest information available all of the time. It indexes content from PostgreSQL into Microsoft Search, surfacing it through BA Insight’s SmartHub to provide users with integrated search results. [Deploy this Graph connector](https://www.bainsight.com/connectors/postgresql-connector-connector-sharepoint-azure-elasticsearch/)
+|Practical Law|BA Insight|The BA Insight Practical Law Connector enables users to perform searches against the Practical Law database, eliminating the need to navigate to Practical Law directly. [Deploy this Graph connector](https://www.bainsight.com/connectors/practical-law-connector-sharepoint-azure-elasticsearch/)
+|Relational Databases|Accenture|Crawls content from relational databases using third-party Java Database Connectivity (JDBC) drivers. Updates are identified automatically or use an update table. An SQL select statement is used to control the data submitted. Access control lists can be extracted from a returned column. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Relational+Databases)
 
 ### SQL Databases
 _Publisher: Raytion_
