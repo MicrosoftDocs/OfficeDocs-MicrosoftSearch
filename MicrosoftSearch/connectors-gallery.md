@@ -56,139 +56,27 @@ These are the connectors under collaboration & communications.
 |Symantec Enterprise Vault| Raytion| Secure enterprise search connector for reliably indexing content from Symantec Enterprise Vault and intelligently searching it with Microsoft Graph. It robustly indexes archived data, such as e-mails, attachments, files, calendar items, and contacts from Enterprise Vault in near real-time. The connector fully supports Symantec Enterprise Vault’s authentication models Basic, NTLM, and Kerberos authentication. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-enterprise-vault-connector-2).|
 |Enterprise Vault|Raytion|Secure enterprise search connector for reliably indexing content from Veritas Enterprise Vault and intelligently searching it with Microsoft Graph. It robustly indexes archived data, such as e-mails, attachments, files, calendar items, and contacts from Enterprise Vault in near real-time. The connector fully supports Veritas Enterprise Vault’s authentication models Basic, NTLM, and Kerberos authentication. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-enterprise-vault-connector).|
 |EMC eRoom|BA Insight|BA Insight's eRoom Connector establishes a secure connection to the eRoom application and maps the content, including metadata and attachments, from the eRoom schema to the search engine schema.  It then extracts content and feeds it to the search engine in a process called crawling. [Deploy this Graph connector](https://www.bainsight.com/connectors/eroom-connector-sharepoint-azure-elasticsearch/).|
+|Facebook Workplace|Raytion|Secure enterprise search connector for reliably indexing content from Facebook Workplace and intelligently searching it with Microsoft Graph. It robustly indexes project groups, conversations, and shared documents from Facebook Workplace in near real-time. The connector fully supports Facebook Workplace’s built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-facebook-workplace-connector).|
+|Google Drive|BA Insight|The BA Insight Google Drive connector makes it possible to surface content from Google Drive in a single consolidated search index referencing Google Drive content, along with content from other repositories. [Deploy this Graph connector](https://www.bainsight.com/connectors/google-drive-connector-sharepoint-azure-elasticsearch/).|
+|Google Drive|Raytion|Secure enterprise search connector for reliably indexing content from Google Drive and intelligently searching it with Microsoft Graph. It robustly indexes files, folders, and comments on personal drives and team drives from Google Drive in near real-time. The connector fully supports Google Drive’s built-in permission model and the user and group management by the Google Admin Directory. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-google-drive-connector).|
+|Happeo|Raytion|Secure enterprise search connector for reliably indexing content from Happeo and intelligently searching it with Microsoft Search. It robustly indexes channels, posts, groups, and pages from Happeo instances in near real time. The connector fully supports Happeo's built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-happeo-connector).|
+|IBM Connections|BA Insight|BA Insight's IBM Connections Connector was specifically developed for IBM Connections. This establishes a secure connection to the Connections application. This connection includes metadata and attachments. It then extracts content and feeds it to the search engine in a process called crawling.[Deploy this Graph connector](https://www.bainsight.com/connectors/ibm-connections-connector-sharepoint-azure-elasticsearch/).|
+|IBM Connections|Raytion|Secure enterprise search connector for reliably indexing content from IBM Connections and intelligently searching it with Microsoft Graph. It robustly indexes public and personal files, blogs, wikis, forums, communities, bookmarks, profiles, and status updates from one-premisess Connections instances in near real time. The connector fully supports IBM Connection’s built-in user and group management, as well as Connections installations based on Entra ID and other directory services. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-ibm-connections-connector).|
+|IBM Connections (Cloud)|Raytion|Secure enterprise search connector for reliably indexing content from IBM Connections Cloud and intelligently searching it with Microsoft Graph. It robustly indexes public and personal files, blogs, wikis, forums, communities, profiles, and status updates from Connections Cloud in near real time. The connector fully supports IBM Connections Cloud’s built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-ibm-connections-cloud-connector).|
+|IBM Connections| Accenture|The IBM Connections connector crawls content from IBM Connections server. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/IBM+Connections+Connector/).|
+|IBM Lotus Notes|BA Insight|With BA Insight's IBM Notes Email Connector, users have the ability to search Notes emails directly from within SharePoint or another portal.  Security defined within IBM Notes is automatically reflected in the search experience, so users see search results from their own mailbox, public mailboxes, and other mailboxes they're allowed to access. [Deploy this Graph connector](https://www.bainsight.com/connectors/lotus-notes-connector-sharepoint-azure-elasticsearch/).|
+|iManage Work|BA Insight|BA Insight's iManage Work Connector provides full security and operates at high throughput to minimize crawl times while maintaining a low-performance impact on Work. It only requires read access, and there's no need to install client software on any iManage server. Users gain seamless and simultaneous access to all content stored in iManage Work. [Deploy this Graph connector](https://www.bainsight.com/connectors/imanage-work-connector-sharepoint-azure-elasticsearch/).|
+|Atlassian Jira|BA Insight|The Jira Connector enables users to perform searches against all Jira objects, eliminating the need to go to Jira directly. [Deploy this Graph connector](https://www.bainsight.com/connectors/jira-connector-for-sharepoint-azure-elasticsearch/).|
+|Atlassian Jira (Cloud)|BA Insight|The Jira (Cloud Version) Connector performs searches against all Jira objects,  eliminating the need to navigate to Jira directly. [Deploy this Graph connector](https://www.bainsight.com/connectors/jira-cloud-connector-for-sharepoint-azure-elasticsearch/).|
+_Publisher: _
+|Atlassian Jira Issues|Accenture|The Jira Issues connector is a simple connector for extracting issues from Jira, either inside the corporate firewall or to the Jira cloud. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Jira+Issue+Connector).|
+|Jive|Accenture|The Jive connector crawls content from any JIVE Community with an enabled REST API v3. The connector retrieves documents stored in spaces, groups, projects, and blogs and any subfolders contained in it. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Jive+Connector).|
+|Jive|Raytion|Secure enterprise search connector for reliably indexing content from Jive and intelligently searching it with Microsoft Graph. It indexes discussions, polls, files, blogs, and more from one-premises and cloud-hosted Jive instances in near real time. The connector fully supports Jive’s built-in user and group management and supports Jive’s native authentication models, OAuth, and Basic authentication. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jive-connector).|
+|Kafka|Accenture|The Kafka connector fetches messages from a Kafka message stream and submits them after performing an optional transform.Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Kafka+Connector).|
+|Kinesis|Accenture|The Kinesis connector fetches data from Amazon Kinesis Data Streams and submits them after performing an optional transform. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Kinesis+Connector).|
+|Microsoft Exchange Online|BA Insight|Using the BA Insight Microsoft Exchange Online Connector, users can retrieve content from Exchange Online through various search platforms. [Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-exchange-online-connector-sharepoint-azure-elasticsearch/).|
+|Microsoft Exchange Public Folders|BA Insight|Using the BA Insight Microsoft Exchange Public Folders Connector, users can retrieve content from Exchange through various search platforms. [Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-exchange-connector-sharepoint-azure-elasticsearch/).|
 
-### Facebook Workplace
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Facebook Workplace and intelligently searching it with Microsoft Graph. It robustly indexes project groups, conversations and shared documents from Facebook Workplace in near real time. The connector fully supports Facebook Workplace’s built-in user and group management.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-facebook-workplace-connector)
-
-### Google Drive
-_Publisher: BA Insight_
-
-The BA Insight Google Drive connector makes it possible to surface content from Google Drive in a single consolidated search index referencing Google Drive content, along with content from other repositories.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/google-drive-connector-sharepoint-azure-elasticsearch/)
-
-### Google Drive
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Google Drive and intelligently searching it with Microsoft Graph. It robustly indexes files, folders, and comments on personal drives and team drives from Google Drive in near real time. The connector fully supports Google Drive’s built-in permission model and the user and group management by the Google Admin Directory.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-google-drive-connector)
-
-### Happeo
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Happeo and intelligently searching it with Microsoft Search. It robustly indexes channels, posts, groups and pages from Happeo instances in near real time. The connector fully supports Happeo's built-in user and group management.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-happeo-connector)
-
-### IBM Connections
-_Publisher: BA Insight_
-
-BA Insight's IBM Connections Connector was specifically developed for IBM Connections. This establishes a secure connection to the Connections application. This connection includes metadata and attachments. It then extracts content and feeds it to the search engine in a process called crawling.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/ibm-connections-connector-sharepoint-azure-elasticsearch/)
-
-### IBM Connections
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from IBM Connections and intelligently searching it with Microsoft Graph. It robustly indexes public and personal files, blogs, wikis, forums, communities, bookmarks, profiles, and status updates from one-premisess Connections instances in near real time. The connector fully supports IBM Connection’s built-in user and group management, as well as Connections installations based on Entra ID and other directory services.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-ibm-connections-connector)
-
-### IBM Connections (Cloud)
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from IBM Connections Cloud and intelligently searching it with Microsoft Graph. It robustly indexes public and personal files, blogs, wikis, forums, communities, profiles, and status updates from Connections Cloud in near real time. The connector fully supports IBM Connections Cloud’s built-in user and group management.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-ibm-connections-cloud-connector)
-
-### IBM Connections
-_Publisher: Accenture_
-
-The IBM Connections connector crawls content from IBM Connections server.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/IBM+Connections+Connector/)
-
-### IBM Lotus Notes
-_Publisher: BA Insight_
-
-With BA Insight's IBM Notes Email Connector, users have the ability to search Notes emails directly from within SharePoint or another portal.  Security defined within IBM Notes is automatically reflected in the search experience, so users see search results from their own mailbox, public mailboxes, and other mailboxes they're allowed to access.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/lotus-notes-connector-sharepoint-azure-elasticsearch/)
-
-### iManage Work
-_Publisher: BA Insight_
-
-BA Insight's iManage Work Connector provides full security and operates at high throughput to minimize crawl times while maintaining a low performance impact on Work. It only requires read access, and there's no need to install client software on any iManage server. Users gain seamless and simultaneous access to all content stored in iManage Work.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/imanage-work-connector-sharepoint-azure-elasticsearch/)
-
-### Atlassian Jira
-_Publisher: BA Insight_
-
-The Jira Connector enables users to perform searches against all Jira objects, eliminating the need to go to Jira directly.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/jira-connector-for-sharepoint-azure-elasticsearch/)
-
-### Atlassian Jira (Cloud)
-_Publisher: BA Insight_
-
-The Jira (Cloud Version) Connector performs searches against all Jira objects,  eliminating the need to navigate to Jira directly.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/jira-cloud-connector-for-sharepoint-azure-elasticsearch/)
-
-### Atlassian Jira Issues
-_Publisher: Accenture_
-
-The Jira Issues connector is a simple connector for extracting issues from Jira, either inside the corporate firewall or to Jira cloud.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Jira+Issue+Connector)
-
-### Jive
-_Publisher: Accenture_
-
-The Jive connector crawls content from any JIVE Community with an enabled REST API v3. The connector retrieves documents stored in spaces, groups, projects, and blogs and any subfolders contained in it.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Jive+Connector)
-
-### Jive
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Jive and intelligently searching it with Microsoft Graph. It indexes discussions, polls, files, blogs, and more from one-premises and cloud-hosted Jive instances in near real time. The connector fully supports Jive’s built-in user and group management and supports Jive’s native authentication models, OAuth and Basic authentication.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jive-connector)
-
-### Kafka
-_Publisher: Accenture_
-
-The Kafka connector fetches messages from a Kafka message stream and submits them after performing an optional transform.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Kafka+Connector)
-
-### Kinesis
-_Publisher: Accenture_
-
-The Kinesis connector fetches data from Amazon Kinesis Data Streams and submits them after performing an optional transform.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Kinesis+Connector)
-
-### Microsoft Exchange Online
-_Publisher: BA Insight_
-
-Using the BA Insight Microsoft Exchange Online Connector, users can retrieve content from Exchange Online through various search platforms.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-exchange-online-connector-sharepoint-azure-elasticsearch/)
-
-### Microsoft Exchange Public Folders
-_Publisher: BA Insight_
-
-Using the BA Insight Microsoft Exchange Public Folders Connector, users can retrieve content from Exchange through various search platforms.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-exchange-connector-sharepoint-azure-elasticsearch/)
 
 ### Microsoft Exchange Server
 _Publisher: BA Insight_
