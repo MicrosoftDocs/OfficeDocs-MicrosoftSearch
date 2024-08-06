@@ -71,59 +71,22 @@ These are the connectors under collaboration & communications.
 _Publisher: _
 |Atlassian Jira Issues|Accenture|The Jira Issues connector is a simple connector for extracting issues from Jira, either inside the corporate firewall or to the Jira cloud. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Jira+Issue+Connector).|
 |Jive|Accenture|The Jive connector crawls content from any JIVE Community with an enabled REST API v3. The connector retrieves documents stored in spaces, groups, projects, and blogs and any subfolders contained in it. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Jive+Connector).|
-|Jive|Raytion|Secure enterprise search connector for reliably indexing content from Jive and intelligently searching it with Microsoft Graph. It indexes discussions, polls, files, blogs, and more from one-premises and cloud-hosted Jive instances in near real time. The connector fully supports Jive’s built-in user and group management and supports Jive’s native authentication models, OAuth, and Basic authentication. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jive-connector).|
+|Jive|Raytion|Secure enterprise search connector for reliably indexing content from Jive and intelligently searching it with Microsoft Graph. It indexes discussions, polls, files, blogs, and more from one-premises and cloud-hosted Jive instances in near real-time. The connector fully supports Jive’s built-in user and group management and supports Jive’s native authentication models, OAuth, and Basic authentication. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-jive-connector).|
 |Kafka|Accenture|The Kafka connector fetches messages from a Kafka message stream and submits them after performing an optional transform.Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Kafka+Connector).|
 |Kinesis|Accenture|The Kinesis connector fetches data from Amazon Kinesis Data Streams and submits them after performing an optional transform. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Kinesis+Connector).|
 |Microsoft Exchange Online|BA Insight|Using the BA Insight Microsoft Exchange Online Connector, users can retrieve content from Exchange Online through various search platforms. [Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-exchange-online-connector-sharepoint-azure-elasticsearch/).|
 |Microsoft Exchange Public Folders|BA Insight|Using the BA Insight Microsoft Exchange Public Folders Connector, users can retrieve content from Exchange through various search platforms. [Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-exchange-connector-sharepoint-azure-elasticsearch/).|
-
-
-### Microsoft Exchange Server
-_Publisher: BA Insight_
-
-Using the BA Insight Microsoft Exchange Connector, users can retrieve content from Exchange through various search engines.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-exchange-server-connector-sharepoint-azure-elasticsearch/)
-
-### Microsoft Teams
-_Publisher: BA Insight_
-
-The BA Insight Microsoft Teams Connector indexes content from Microsoft Teams alongside content from other enterprise systems to provide unified results.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-teams-connector-for-sharepoint-azure-elasticsearch/)
-
-### Notes
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from IBM Notes (formerly Lotus Note) and intelligently searching it with Microsoft Graph. It robustly indexes records from a configurable set of Notes databases in near real time. The connector fully supports IBM Notes’ built-in user and group management.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-notes-connector)
-
-### Oracle KA Cloud
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Oracle Knowledge Advanced (KA) Cloud and intelligently searching it Microsoft Graph. It robustly indexes pages and attachments from Oracle KA Cloud in near real time. The connector fully supports Oracle KA Cloud’s built-in user and group management. In particular, the connector handles snippet-based permissions within Oracle KA Cloud pages.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-oracle-ka-cloud-connector)
-
-### Priority Matrix
-_Publisher: Priority Matrix_
-
-The Priority Matrix connector for Graph will index every task and project in your account, allowing your team members to find relevant items directly from Office, Teams, Bing and more. Access your priorities without switching context!
-
-[Deploy this Graph connector](https://sync.appfluence.com/office365/external_connector/)
-
-### Powtoon
-_Publisher: Powtoon_
-
-Powtoon is a video creation platform and the Powtoon Connector enables the indexing of video and content with Microsoft Graph.
-
-[Deploy this Graph connector](https://www.powtoon.com/integrations/)
+|Microsoft Exchange Server|BA Insight|Using the BA Insight Microsoft Exchange Connector, users can retrieve content from Exchange through various search engines. [Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-exchange-server-connector-sharepoint-azure-elasticsearch/).|
+|Microsoft Teams| BA Insight|The BA Insight Microsoft Teams Connector indexes content from Microsoft Teams alongside content from other enterprise systems to provide unified results. [Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-teams-connector-for-sharepoint-azure-elasticsearch/).|
+|Notes|Raytion|Secure enterprise search connector for reliably indexing content from IBM Notes (formerly Lotus Note) and intelligently searching it with Microsoft Graph. It robustly indexes records from a configurable set of Notes databases in near real-time. The connector fully supports IBM Notes’ built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-notes-connector).|
+|Oracle KA Cloud|Raytion|Secure enterprise search connector for reliably indexing content from Oracle Knowledge Advanced (KA) Cloud and intelligently searching it Microsoft Graph. It robustly indexes pages and attachments from Oracle KA Cloud in near real-time. The connector fully supports Oracle KA Cloud’s built-in user and group management. In particular, the connector handles snippet-based permissions within Oracle KA Cloud pages. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-oracle-ka-cloud-connector).|
+|Priority Matrix|Priority Matrix|The Priority Matrix connector for Graph will index every task and project in your account, allowing your team members to find relevant items directly from Office, Teams, Bing and more. Access your priorities without switching context! [Deploy this Graph connector](https://sync.appfluence.com/office365/external_connector/).|
+|Powtoon|Powtoon|Powtoon is a video creation platform and the Powtoon Connector enables the indexing of video and content with Microsoft Graph. [Deploy this Graph connector](https://www.powtoon.com/integrations/).|
 
 ### SAP Product Lifeycle Management (PLM) Document Management System (DMS)
 _Publisher: Raytion_
 
-Secure enterprise search connector for reliably indexing content from SAP Product Lifecycle Management (PLM) Document Management System (DMS) and intelligently searching it with Microsoft Graph. It robustly indexes documents, attachments, and other records from SAP PLM DMS in near real time.
+Secure enterprise search connector for reliably indexing content from SAP Product Lifecycle Management (PLM) Document Management System (DMS) and intelligently searching it with Microsoft Graph. It robustly indexes documents, attachments, and other records from SAP PLM DMS in near real-time.
 
 [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sap-plm-dms-connector)
 
