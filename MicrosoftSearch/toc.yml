@@ -58,6 +58,10 @@ items:
         href: configure-connector.md
       - name: Add Staged rollout to connectors
         href: staged-rollout-for-graph-connectors.md
+      - name: Graph Connectors in Copilot
+        items:
+        - name: Enhancing Copilot Discovery with Graph Connector Content
+          href: enhancing-microsoft-copilot-discovery-with-graph-connector-content.md
       - name: On-prem connectors
         items:
         - name: Connector agent setup
@@ -79,40 +83,48 @@ items:
           - name: Setup
             href: azure-devops-connector.md
           - name: Troubleshooting
-            href: troubleshooting-azure-devops-connector.md
+            href: troubleshoot-azure-devops-connector.md
         - name: Azure DevOps Wiki
           items:
           - name: Setup
             href: azure-devops-wiki-connector.md
           - name: Troubleshooting
-            href: troubleshooting-azure-devops-wiki-connector.md
+            href: troubleshoot-azure-devops-wiki-connector.md
         - name: Azure SQL and Microsoft SQL Server
           items:
           - name: Setup
             href: MSSQL-connector.md
           - name: Troubleshooting
-            href: troubleshooting-mssql-connector.md
+            href: troubleshoot-mssql-connector.md
         - name: Confluence Cloud
-          href: confluence-cloud-connector.md
+          items:
+          - name: Setup
+            href: confluence-cloud-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-confluence-cloud-connector.md
         - name: Confluence On-premises (preview)
           items:
           - name: Setup
             href: confluence-onpremises-connector.md
           - name: Troubleshooting
-            href: troubleshooting-confluence-onpremises-connector.md
+            href: troubleshoot-confluence-onpremises-connector.md
         - name: CSV
           href: csv-connector.md
           items:
           - name: Setup
             href: csv-connector.md
         - name: Jira Cloud
-          href: jira-connector.md
+          items:
+          - name: Setup
+            href: jira-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-jira-cloud-connector.md
         - name: Enterprise websites
           items:
           - name: Setup
             href: enterprise-web-connector.md
           - name: Troubleshooting
-            href: troubleshooting-enterprise-web-connector.md
+            href: troubleshoot-enterprise-web-connector.md
         - name: File share
           items:
           - name: Setup
@@ -126,20 +138,29 @@ items:
           - name: Setup
             href: OracleSQL-connector.md
           - name: Troubleshooting
-            href: troubleshooting-oraclesql-connector.md
-        - name: ServiceNow Tickets
+            href: troubleshoot-oraclesql-connector.md
         - name: Salesforce
-          href: salesforce-connector.md
+          items:
+          - name: Setup
+            href: salesforce-connector.md
         - name: ServiceNow Catalog
-          href: servicenow-catalog-connector.md
+          items:
+          - name: Setup
+            href: servicenow-catalog-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-servicenow-catalog-connector.md
         - name: ServiceNow Knowledge
           items:
           - name: Setup
             href: servicenow-knowledge-connector.md
           - name: Troubleshooting
-            href: troubleshooting-servicenow-knowledge-connector.md
+            href: troubleshoot-servicenow-knowledge-connector.md
         - name: ServiceNow Tickets
-          href: servicenow-tickets-connector.md
+          items:
+          - name: Setup
+            href: servicenow-tickets-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-servicenow-tickets-connector.md
     - name: Manage connections
       items:
       - name: Monitor connections
