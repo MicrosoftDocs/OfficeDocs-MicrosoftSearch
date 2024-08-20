@@ -1,18 +1,16 @@
 items:
-- name: Plan for Microsoft Search
-  items:
-  - name: Overview
-    href: overview-microsoft-search.md
-  - name: Set up
-    href: setup-microsoft-search.md
-  - name: Manage access to files and sites
-    href: manage-access-files-sites.md
-  - name: US government environments
-    href: microsoft-search-us-government-environments.md
-  - name: Frequently asked questions
-    href: faqs.md
-- name: Get insights
-  items:
+- name: Overview of Microsoft Search
+  href: overview-microsoft-search.md
+- name: Set up
+  href: setup-microsoft-search.md
+- name: Manage access to files and sites
+  href: manage-access-files-sites.md
+- name: US government environments
+  href: microsoft-search-us-government-environments.md
+- name: Frequently asked questions
+  href: faqs.md
+  - name: Get insights
+    items:
   - name: Search usage reports 
     href: usage-reports.md
     items:
