@@ -193,47 +193,16 @@ These are the connectors under enterprise resource planning (ERP), customer rela
 |Windream ECM-System|Raytion|Secure enterprise search connector for reliably indexing content from windream ECM-System and intelligently searching it with Microsoft Graph. It robustly indexes files and folders including the comprehensive sets of metadata associated by windream ECM-System in near real time. The connector fully supports windream ECM-System’s permission model and the user and group management in the associated Entra ID. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-windream-ecm-system-connector).|
 
 ## File Systems
-### Amazon S3
-_Publisher: BA Insight_
+These are the connectors under file systems.
 
-BA Insight's Amazon S3 Connector works with all content stored in S3.  Organization can use the connector to securely connector to S3 and index content from S3 buckets. Powerfull filtering capabilities give organization control about what content found in S3 should be indexed.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/amazon-s3-connector-sharepoint-azure-elasticsearch/)
-
-### Amazon S3
-_Publisher: Accenture_
-
-Connector for Amazon S3. Indexes pages, attachments, and other generated document types from Amazon S3 in near real time. The connector fully supports Amazon S3's built-in user and group management, as well as Amazon S3 installations based on Entra ID and other directory services.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Amazon+S3+Connector)
-
-### Azure Blob Storage
-_Publisher: Accenture_
-
-The Azure Blob Storage connector crawls content from the Azure Blob Container. Each blob is submitted with its metadata (size, location, last accessed, and so on.). Updates are discovered automatically.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Blob+Storage+Connector)
-
-### Azure Data Lake
-_Publisher: Accenture_
-
-The Azure Data Lake connector crawls content from the Azure Data Lake Storage (ADLS) cloud at either root or specified paths. Each file is submitted with its metadata (size, location, last accessed, and so on.). Updates are discovered automatically.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector)
-
-### Azure Data Lake Storage Gen2
-_Publisher: Microsoft_
-
-Enables your organization to search for content stored in Azure Blob containers. Indexes hierarchy-enabled folders in specified Azure Data Lake Storage Gen2 accounts.
-
-[Deploy this Graph connector](azure-data-lake-connector.md)
-
-### Azure Event Hub
-_Publisher: Accenture_
-
-The Event Hub connector fetches events from Azure streams and submits them after performing an optional transform.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Events+Hub+Connector)
+|Connector name|Publisher|Description|
+|:------ |:----------- |:----------- |
+|Amazon S3|BA Insight|BA Insight's Amazon S3 Connector works with all content stored in S3.  Organization can use the connector to securely connector to S3 and index content from S3 buckets. Powerfull filtering capabilities give organization control about what content found in S3 should be indexed. [Deploy this Graph connector](https://www.bainsight.com/connectors/amazon-s3-connector-sharepoint-azure-elasticsearch/).|
+|Amazon S3|Accenture|Connector for Amazon S3. Indexes pages, attachments, and other generated document types from Amazon S3 in near real time. The connector fully supports Amazon S3's built-in user and group management, as well as Amazon S3 installations based on Entra ID and other directory services. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Amazon+S3+Connector).|
+|Azure Blob Storage|Accenture|The Azure Blob Storage connector crawls content from the Azure Blob Container. Each blob is submitted with its metadata (size, location, last accessed, and so on.). Updates are discovered automatically. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Blob+Storage+Connector).|
+|Azure Data Lake|Accenture|The Azure Data Lake connector crawls content from the Azure Data Lake Storage (ADLS) cloud at either root or specified paths. Each file is submitted with its metadata (size, location, last accessed, and so on.). Updates are discovered automatically. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector).|
+|Azure Data Lake Storage Gen2|Microsoft|Enables your organization to search for content stored in Azure Blob containers. Indexes hierarchy-enabled folders in specified Azure Data Lake Storage Gen2 accounts. [Deploy this Graph connector](azure-data-lake-connector.md).|
+|Azure Event Hub|Accenture|The Event Hub connector fetches events from Azure streams and submits them after performing an optional transform. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Events+Hub+Connector).|
 
 ### Box
 _Publisher: Box_
