@@ -177,75 +177,20 @@ These are the connectors under databases.
 |SQL Databases|Raytion|Secure enterprise search connector for reliably indexing content from SQL databases, such as Microsoft SQL Server or Oracle, and intelligently searching it with Microsoft Graph. It robustly indexes records and fields including binary documents from SQL databases in near real time. The connector supports the implementation of a custom document-level security model. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sql-database-connector)
 
 ## Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), Sales, and Support
-### Any SQL-based CRM system
-_Publisher: BA Insight_
+These are the connectors under enterprise resource planning (ERP), customer relationship management (CRM), sales, and support.
 
-BA Insight's SQL Server Connector is built upon industry standard database access methods, so it can equally support databases from other systems such as Oracle, MySQL, and IBM DB2.  It honors the security of the source database and provides both full and incremental crawls so the users have the latest information available to them all the time.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/sql-connector-sharepoint-azure-elasticsearch/)
-
-### Egnyte
-_Publisher: BA Insight_
-
-The Egnyte Connector supports both full and incremental crawls and\\nindexes with very high throughput.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/egnyte-connector-for-sharepoint-azure-elasticsearch/)
-
-### LexisNexis InterAction
-_Publisher: BA Insight_
-
-BA Insight's LexisNexis InterAction Connector makes it easier for lawyers and other firm employees throughout the organization to find important information stored in InterAction without the need to directly log in and perform a separate search.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-dynamics-crm-connector-sharepoint-azure-elasticsearch/)
-
-### Microsoft Dynamics 365
-_Publisher: BA Insight_
-
-BA Insight's Microsoft Dynamics 365 CRM connector supports both one-premises CRM installations and Dynamics CRM Online.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-dynamics-crm-connector-sharepoint-azure-elasticsearch/)
-
-### Microsoft Dynamics 365 (Cloud)
-_Publisher: BA Insight_
-
-BA Insight's Microsoft Dynamics 365 (Cloud Version) CRM Connector establishes a secure connection to the CRM application and maps the content from the CRM schema to the search engine schema.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-microsoft-dynamics-cloud/)
-
-### Salesforce
-_Publisher: Microsoft_
-
-Allows your organization to search your Salesforce instance for Contacts, Opportunities, Leads, and Accounts objects.
-
-[Deploy this Graph connector](salesforce-connector.md)
-
-### Salesforce
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Salesforce and intelligently searching it with Microsoft Graph. It robustly indexes accounts, chatter messages, profiles, leads, cases, and all other record objects from Salesforce in near real time. The connector fully supports Salesforce’s built-in user and group management.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-salesforce-connector)
-
-### Salesforce
-_Publisher: Accenture_
-
-The Salesforce connector crawls content from any Salesforce Summer '16 (version 37). The connector retrieves the supported elements using the SOAP API and the user's Salesforce Chatter feeds using the REST API.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Salesforce+Connector)
-
-### Salesforce
-_Publisher: BA Insight_
-
-BA Insight's Salesforce Connector integrates Salesforce’s Service, Sales and Marketing Cloud with Microsoft Search, making all the content within Salesforce available to all employees through this portal.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/salesforce-connector-sharepoint-azure-elasticsearch/)
-
-### Windream ECM-System
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from windream ECM-System and intelligently searching it with Microsoft Graph. It robustly indexes files and folders including the comprehensive sets of metadata associated by windream ECM-System in near real time. The connector fully supports windream ECM-System’s permission model and the user and group management in the associated Entra ID.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-windream-ecm-system-connector)
+|Connector name|Publisher|Description|
+|:------ |:----------- |:----------- |
+|Any SQL-based CRM system|BA Insight|BA Insight's SQL Server Connector is built upon industry-standard database access methods, so it can equally support databases from other systems such as Oracle, MySQL, and IBM DB2.  It honors the security of the source database and provides both full and incremental crawls so the users have the latest information available to them all the time. [Deploy this Graph connector](https://www.bainsight.com/connectors/sql-connector-sharepoint-azure-elasticsearch/).|
+|Egnyte|BA Insight|The Egnyte Connector supports both full and incremental crawls and\\nindexes with very high throughput. [Deploy this Graph connector](https://www.bainsight.com/connectors/egnyte-connector-for-sharepoint-azure-elasticsearch/).|
+|LexisNexis InterAction|BA Insight|BA Insight's LexisNexis InterAction Connector makes it easier for lawyers and other firm employees throughout the organization to find important information stored in InterAction without the need to directly log in and perform a separate search. [Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-dynamics-crm-connector-sharepoint-azure-elasticsearch/).|
+|Microsoft Dynamics 365|BA Insight|BA Insight's Microsoft Dynamics 365 CRM connector supports both one-premises CRM installations and Dynamics CRM Online. [Deploy this Graph connector](https://www.bainsight.com/connectors/microsoft-dynamics-crm-connector-sharepoint-azure-elasticsearch/).|
+|Microsoft Dynamics 365 (Cloud)|BA Insight|BA Insight's Microsoft Dynamics 365 (Cloud Version) CRM Connector establishes a secure connection to the CRM application and maps the content from the CRM schema to the search engine schema. [Deploy this Graph connector](https://www.bainsight.com/connectors/connector-for-microsoft-dynamics-cloud/).|
+|Salesforce|Microsoft|Allows your organization to search your Salesforce instance for Contacts, Opportunities, Leads, and Accounts objects. [Deploy this Graph connector](salesforce-connector.md).|
+|Salesforce|Raytion|Secure enterprise search connector for reliably indexing content from Salesforce and intelligently searching it with Microsoft Graph. It robustly indexes accounts, chatter messages, profiles, leads, cases, and all other record objects from Salesforce in near real time. The connector fully supports Salesforce’s built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-salesforce-connector).|
+|Salesforce|Accenture|The Salesforce connector crawls content from any Salesforce Summer '16 (version 37). The connector retrieves the supported elements using the SOAP API and the user's Salesforce Chatter feeds using the REST API. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Salesforce+Connector).|
+|Salesforce|BA Insight|BA Insight's Salesforce Connector integrates Salesforce’s Service, Sales and Marketing Cloud with Microsoft Search, making all the content within Salesforce available to all employees through this portal. [Deploy this Graph connector](https://www.bainsight.com/connectors/salesforce-connector-sharepoint-azure-elasticsearch/).|
+|Windream ECM-System|Raytion|Secure enterprise search connector for reliably indexing content from windream ECM-System and intelligently searching it with Microsoft Graph. It robustly indexes files and folders including the comprehensive sets of metadata associated by windream ECM-System in near real time. The connector fully supports windream ECM-System’s permission model and the user and group management in the associated Entra ID. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-windream-ecm-system-connector).|
 
 ## File Systems
 ### Amazon S3
