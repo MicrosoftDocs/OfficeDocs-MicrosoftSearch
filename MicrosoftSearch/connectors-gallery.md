@@ -203,34 +203,10 @@ These are the connectors under file systems.
 |Azure Data Lake|Accenture|The Azure Data Lake connector crawls content from the Azure Data Lake Storage (ADLS) cloud at either root or specified paths. Each file is submitted with its metadata (size, location, last accessed, and so on.). Updates are discovered automatically. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector).|
 |Azure Data Lake Storage Gen2|Microsoft|Enables your organization to search for content stored in Azure Blob containers. Indexes hierarchy-enabled folders in specified Azure Data Lake Storage Gen2 accounts. [Deploy this Graph connector](azure-data-lake-connector.md).|
 |Azure Event Hub|Accenture|The Event Hub connector fetches events from Azure streams and submits them after performing an optional transform. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Events+Hub+Connector).|
-
-### Box
-_Publisher: Box_
-
-With the Box Connector for Microsoft Graph, users can search for and surface their Box content from the Microsoft ecosystem, including Office 365, Office Online search, and SharePoint. It's easier than ever for joint Box and Microsoft users to explore, discover, and navigate to the content they need, when they need it. If you're interested in this integration, click below to learn more.
-
-[Deploy this Graph connector](https://support.box.com/hc/en-us/articles/4403605037587)
-
-### Box
-_Publisher: BA Insight_
-
-BA Insight's Box connector makes it possible to surface content from Box in SharePoint and other portals, enabling users to get integrated search results from SharePoint and Box. 
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/box-connector-sharepoint-azure-elasticsearch/)
-
-### Box
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Box and intelligently searching it with Microsoft Graph. It robustly indexes files, folders, comments, users, groups, and tasks from Box in near real time. The connector fully supports Box’ built-in user and group management.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-box-connector)
-
-### File Share
-_Publisher: Microsoft_
-
-Allows your organization to search one-premises Windows file shares.
-
-[Deploy this Graph connector](fileshare-connector.md)
+|Box|Box|With the Box Connector for Microsoft Graph, users can search for and surface their Box content from the Microsoft ecosystem, including Office 365, Office Online search, and SharePoint. It's easier than ever for joint Box and Microsoft users to explore, discover, and navigate to the content they need, when they need it. If you're interested in this integration, click below to learn more. [Deploy this Graph connector](https://support.box.com/hc/en-us/articles/4403605037587).|
+|Box|BA Insight|BA Insight's Box connector makes it possible to surface content from Box in SharePoint and other portals, enabling users to get integrated search results from SharePoint and Box. [Deploy this Graph connector](https://www.bainsight.com/connectors/box-connector-sharepoint-azure-elasticsearch/).|
+|Box|Raytion|Secure enterprise search connector for reliably indexing content from Box and intelligently searching it with Microsoft Graph. It robustly indexes files, folders, comments, users, groups, and tasks from Box in near real time. The connector fully supports Box’ built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-box-connector).|
+|File Share|Microsoft| Allows your organization to search one-premises Windows file shares. [Deploy this Graph connector](fileshare-connector.md).|
 
 ### File Share
 _Publisher: BA Insight_
