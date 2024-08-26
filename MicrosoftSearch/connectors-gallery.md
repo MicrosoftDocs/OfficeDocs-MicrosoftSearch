@@ -207,37 +207,11 @@ These are the connectors under file systems.
 |Box|BA Insight|BA Insight's Box connector makes it possible to surface content from Box in SharePoint and other portals, enabling users to get integrated search results from SharePoint and Box. [Deploy this Graph connector](https://www.bainsight.com/connectors/box-connector-sharepoint-azure-elasticsearch/).|
 |Box|Raytion|Secure enterprise search connector for reliably indexing content from Box and intelligently searching it with Microsoft Graph. It robustly indexes files, folders, comments, users, groups, and tasks from Box in near real time. The connector fully supports Box’ built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-box-connector).|
 |File Share|Microsoft| Allows your organization to search one-premises Windows file shares. [Deploy this Graph connector](fileshare-connector.md).|
-
-### File Share
-_Publisher: BA Insight_
-
-BA Insight's File Share Connector makes it possible to surface content from File Shares (Windows, Server Message Block/CIFS) in a single consolidated search index, along with content from other repositories.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/file-share-connector-sharepoint-azure-elasticsearch/)
-
-### File System
-_Publisher: Accenture_
-
-The File System connector crawls local file (or locally mounted) systems, traversing folders to build a complete index. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed, etc.).
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/File+System+Connector)
-
-### File System
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from locally mounted file systems and intelligently searching it with Microsoft Graph. It robustly indexes files and folders from file systems in near real time.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-file-system-connector)
-
-### File Transfer Protocol (FTP)
-_Publisher: Accenture_
-
-The Aspire File Transfer Protocol (FTP) connector provides access to files and folders on an FTP server. Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/FTP+Connector)
-
-### Hadoop Distributed File System (HDFS)
-_Publisher: Accenture_
+|File Share|BA Insight|BA Insight's File Share Connector makes it possible to surface content from File Shares (Windows, Server Message Block/CIFS) in a single consolidated search index, along with content from other repositories. [Deploy this Graph connector](https://www.bainsight.com/connectors/file-share-connector-sharepoint-azure-elasticsearch/).|
+|File System|Accenture|The File System connector crawls local file (or locally mounted) systems, traversing folders to build a complete index. It generates a signature for each item to allow incremental updates of only changed items. Each file is submitted with its metadata (size, location, last accessed, etc.).[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/File+System+Connector).|
+|File System|Raytion|Secure enterprise search connector for reliably indexing content from locally mounted file systems and intelligently searching it with Microsoft Graph. It robustly indexes files and folders from file systems in near real time. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-file-system-connector).|
+|File Transfer Protocol (FTP)|Accenture|The Aspire File Transfer Protocol (FTP) connector provides access to files and folders on an FTP server. Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/FTP+Connector).|
+|Hadoop Distributed File System (HDFS)|Accenture|
 
 The Hadoop Distributed File system (HDFS) connector crawls content from any given HDFS Cluster using the WebHDFS http interface. Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically.
 
