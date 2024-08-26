@@ -227,61 +227,35 @@ These are the connectors under file systems.
 These are the connectors under IT Service Management Tools (ITSM).
 
 |Connector name|Publisher|Description|
-|GitLab|Raytion|Secure enterprise search connector for reliably indexing content from GitLab and intelligently searching it with Microsoft Graph. It robustly indexes projects, files, folders, commit messages, issues, and wiki pages from GitLab in near real time. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-gitlab-connector).|
+|GitLab|Raytion|Secure enterprise search connector for reliably indexing content from GitLab and intelligently searching it with Microsoft Graph. It robustly indexes projects, files, folders, commit messages, issues, and wiki pages from GitLab in near real-time. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-gitlab-connector).|
 |LDAP|BA Insight| BA Insight's LDAP Connector enables organizations to connect to any LDAP-compliant directory and index any record from it. Organizations can filter to specific subsets of the directory and retrieve only specific fields, making it simple to search for users, contracts, or groups stored anywhere in your directory. [Deploy this Graph connector](https://www.bainsight.com/connectors/ldap-connector-for-sharepoint-azure-elasticsearch/)|
-|LDAP|Raytion|Secure enterprise search connector for reliably indexing content from directory services compatible with the Lightweight Directory Access Protocol (LDAP) and intelligently searching it with Microsoft Graph. It robustly indexes LDAP objects from Entra ID, Novell E-Directory, and other LDAP-compatible directory services in near real time. The connector can be used for ingesting principals into Google Cloud Search for use cases like expert, equipment, and location searches or for implementing security trimming for custom data sources. The connector supports LDAP over SSL. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-ldap-connector).|
-|Pirobase Content Management System (CMS)|Raytion|Secure enterprise search connector for reliably indexing content from Pirobase Content Management System (CMS) and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other generated document types from Pirobase CMS in near real time. The connector fully supports Pirobase CMS’ built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-pirobase-cms-connector).|
-|SAP NetWeaver Portal|Raytion|Secure enterprise search connector for reliably indexing content from the SAP NetWeaver Portal (NWP) and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other document types from SAP NWP, its Knowledge Management and Collaboration (KMC), and Portal Content Directory (PCD) areas in near real time. The connector fully supports SAP NetWeaver Portal’s built-in user and group management, as well as SAP NWP installations based on Entra ID and other directory services. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sap-netweaver-portal-connector).|
+|LDAP|Raytion|Secure enterprise search connector for reliably indexing content from directory services compatible with the Lightweight Directory Access Protocol (LDAP) and intelligently searching it with Microsoft Graph. It robustly indexes LDAP objects from Entra ID, Novell E-Directory, and other LDAP-compatible directory services in near real-time. The connector can be used for ingesting principals into Google Cloud Search for use cases like expert, equipment, and location searches or for implementing security trimming for custom data sources. The connector supports LDAP over SSL. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-ldap-connector).|
+|Pirobase Content Management System (CMS)|Raytion|Secure enterprise search connector for reliably indexing content from Pirobase Content Management System (CMS) and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other generated document types from Pirobase CMS in near real-time. The connector fully supports Pirobase CMS’ built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-pirobase-cms-connector).|
+|SAP NetWeaver Portal|Raytion|Secure enterprise search connector for reliably indexing content from the SAP NetWeaver Portal (NWP) and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other document types from SAP NWP, its Knowledge Management and Collaboration (KMC), and Portal Content Directory (PCD) areas in near real-time. The connector fully supports SAP NetWeaver Portal’s built-in user and group management, as well as SAP NWP installations based on Entra ID and other directory services. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sap-netweaver-portal-connector).|
 |ServiceNow Knowledge|Microsoft|Allows your organization to search your ServiceNow instance for knowledge-based articles along with user criteria permissions. [Deploy this Graph connector](servicenow-knowledge-connector.md).|
 |ServiceNow Catalog|Microsoft|Allows your organization to find Catalog items to order from the ServiceNow instance. Supports item-level user criteria permissions too. [Deploy this Graph connector](servicenow-catalog-connector.md).|
 |ServiceNow|BA Insight|BA Insight's ServiceNow Connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time. [Deploy this Graph connector](https://www.bainsight.com/connectors/servicenow-connector-sharepoint-azure-elasticsearch).|
 |ServiceNow (Cloud)|BA Insight|The BA Insight ServiceNow (Cloud Version) Connector honors the security of the source system and provides both full and incremental crawls so users have the latest information available all the time. [Deploy this Graph connector](https://www.bainsight.com/connectors/servicenow-cloud-connector/).|
-|ServiceNow|Raytion|Secure enterprise search connector for reliably indexing content from ServiceNow and intelligently searching it with Microsoft Graph. It robustly indexes issues, tasks, attachments, knowledge management articles, and pages, among others from ServiceNow in near real time. The connector supports ServiceNow’s built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-servicenow-connector).|
+|ServiceNow|Raytion|Secure enterprise search connector for reliably indexing content from ServiceNow and intelligently searching it with Microsoft Graph. It robustly indexes issues, tasks, attachments, knowledge management articles, and pages, among others from ServiceNow in near real-time. The connector supports ServiceNow’s built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-servicenow-connector).|
 |ServiceNow|Accenture|The Service Now connector crawls content from ServiceNow. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/ServiceNow+Connector).|
-
-### Veeva Vault
-_Publisher: BA Insight_
-
-BA Insight’s Veeva Vault Connector securely indexes both the full text and metadata of Veeva Vault objects into Microsoft Search. This enables users to retrieve a single result set for content within Veeva Vault and Microsoft 365.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/veeva-vault-connector-sharepoint-azure-elasticsearch/)
+|Veeva Vault|BA Insight|BA Insight’s Veeva Vault Connector securely indexes both the full text and metadata of Veeva Vault objects into Microsoft Search. This enables users to retrieve a single result set for content within Veeva Vault and Microsoft 365. [Deploy this Graph connector](https://www.bainsight.com/connectors/veeva-vault-connector-sharepoint-azure-elasticsearch/).|
 
 ## Learning
-### Go1
-_Publisher: Go1_
 
-Go1 integration with Microsoft Search allows your employees to find and access learning from Microsoft Search, in places like Office.com, SharePoint, and Bing.  Your employees can learn directly from Microsoft Search in their normal day-to-day routine.
+These are the connectors under learning.
 
-[Deploy this Graph connector](https://www.go1.com/en-au/go1-microsoft-search)
+|Connector name|Publisher|Description|
+|Go1|Go1|Go1 integration with Microsoft Search allows your employees to find and access learning from Microsoft Search, in places like Office.com, SharePoint, and Bing.  Your employees can learn directly from Microsoft Search in their normal day-to-day routine. [Deploy this Graph connector](https://www.go1.com/en-au/go1-microsoft-search).|
 
 ## Social Networks
-### Twitter
-_Publisher: Accenture_
 
-The Twitter connector crawls content from Twitter feeds. It collects tweet text and metadata including URL links, geo location, and hashtags.
+These are the connectors under social networks.
 
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Twitter+Connector)
-
-### Yammer
-_Publisher: Accenture_
-
-The Yammer connector crawls content from Yammer messages and metadata including sender, group, and thread details. It runs from any machine with access to the AEM server and optionally supports content fetching and connection throttling.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Yammer+Connector)
-
-### Yammer
-_Publisher: BA Insight_
-
-BA Insight's Yammer Connector establishes a secure connection to the Yammer application and maps the content including metadata and attachments from the Yammer schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.
-
-[Deploy this Graph connector](https://www.bainsight.com/connectors/yammer-connector-sharepoint-azure-elasticsearch/)
-
-### Yammer
-_Publisher: Raytion_
-
-Secure enterprise search connector for reliably indexing content from Microsoft Yammer and intelligently searching it with Microsoft Graph. It robustly indexes channels, posts, replies, attachments, polls and announcements from Yammer in near real time. The connector fully supports Microsoft Yammer’s built-in user and group management and in particular federated authentication against Microsoft 365.
-
-[Deploy this Graph connector](https://www.raytion.com/connectors/raytion-yammer-connector)
+|Connector name|Publisher|Description|
+|Twitter|Accenture|The Twitter connector crawls content from Twitter feeds. It collects tweet text and metadata including URL links, geo-location, and hashtags. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Twitter+Connector).|
+|Yammer|Accenture|The Yammer connector crawls content from Yammer messages and metadata including sender, group, and thread details. It runs from any machine with access to the AEM server and optionally supports content fetching and connection throttling. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Yammer+Connector).|
+|Yammer|BA Insight|BA Insight's Yammer Connector establishes a secure connection to the Yammer application and maps the content including metadata and attachments from the Yammer schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling. [Deploy this Graph connector](https://www.bainsight.com/connectors/yammer-connector-sharepoint-azure-elasticsearch/).|
+Yammer|Raytion|Secure enterprise search connector for reliably indexing content from Microsoft Yammer and intelligently searching it with Microsoft Graph. It robustly indexes channels, posts, replies, attachments, polls, and announcements from Yammer in near real-time. The connector fully supports Microsoft Yammer’s built-in user and group management and in particular federated authentication against Microsoft 365. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-yammer-connector).|
 
 ## Website (HTTP)
 ### Aspider Web Crawler
