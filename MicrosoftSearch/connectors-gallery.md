@@ -258,26 +258,13 @@ These are the connectors under social networks.
 Yammer|Raytion|Secure enterprise search connector for reliably indexing content from Microsoft Yammer and intelligently searching it with Microsoft Graph. It robustly indexes channels, posts, replies, attachments, polls, and announcements from Yammer in near real-time. The connector fully supports Microsoft Yammer’s built-in user and group management and in particular federated authentication against Microsoft 365. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-yammer-connector).|
 
 ## Website (HTTP)
-### Aspider Web Crawler
-_Publisher: Accenture_
 
-The Aspider Web Crawler connector crawls content from one or more websites. The content is submitted along with any metadata provided by the server.
+These are the connectors under website.
 
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Aspider+Web+Crawler)
-
-### RSS
-_Publisher: Accenture_
-
-The Aspire RSS connector allows you to retrieve feed information and trigger flows when new items are published in an RSS feed.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/RSS+Connector)
-
-### Selenium
-_Publisher: Accenture_
-
-The Selenium connector crawls content from websites using an internet browser to retrieve the pages.
-
-[Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Selenium+Crawler)
+|Connector name|Publisher|Description|
+|Aspider Web Crawler|Accenture|The Aspider Web Crawler connector crawls content from one or more websites. The content is submitted along with any metadata provided by the server. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Aspider+Web+Crawler).|
+|RSS|Accenture|The Aspire RSS connector allows you to retrieve feed information and trigger flows when new items are published in an RSS feed. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/RSS+Connector).|
+|Selenium|Accenture|The Selenium connector crawls content from websites using an internet browser to retrieve the pages. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Selenium+Crawler).|
 
 ## Other
 ### CSV
