@@ -18,10 +18,6 @@ description: "Learn about Semantic index for Microsoft Copilot."
 
 # Semantic index for Copilot
 
-Semantic index is a vector representation of data from Microsoft Graph to better interact with your personal and organizational data. It creates a new index that enables important Copilot for Microsoft 365 experiences. The semantic index follows the security and policies of the Microsoft Graph. Whenever a user generates a prompt in Copilot for Microsoft 365, it's always with the user's security context, and only content that a user can access is shown.
-
-## Overview
-
 Semantic index is generated from content in [Microsoft Graph](https://developer.microsoft.com/graph). It's used to aid in the production of contextually relevant responses to user queries. It allows organizations to search through billions of vectors (mathematical representations of features or attributes) and return related results. Combined with enhancements across the Microsoft Graph, semantic index connects you with relevant information in your organization. It's built on Microsoft’s comprehensive approach to [security, compliance, privacy](/microsoft-365-copilot/microsoft-365-copilot-privacy), and respects all organizational boundaries within your tenant.
 
 ## What is an index?
@@ -123,9 +119,7 @@ Both Item insights and People insights don't cover personalization features base
 
 ## Incorporating third party information
 
-Semantic index provides a way for organizations to bring your organizational data or content outside of Microsoft 365 into Copilot for Microsoft 365 and the Microsoft 365 ecosystem. Graph connectors enable ingestion of external data sources, which help enrich users’ Copilot experience with relevant results that leverage both Microsoft 365 data and third party data. Microsoft indexes all your Graph connectors data while maintaining access controls for content. This expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem, and works best when connector content is text rich. The third-party data can be hosted on-premises or in the public or private clouds, and this information is consumed by the Microsoft Graph, which can be ingested into the semantic index to help provide your organization with all the context across Microsoft 365 and your organization’s third party content. Learn more about graph connector licensing requirements for Microsoft 365 Enterprise and Copilot for Microsoft 365 at [License requirements and pricing](licensing.md).
-
-Additionally, more than 30 plugins and Graph connectors, including Web search powered by Bing, Microsoft Dataverse, Jira, Trello, Mural, Confluence, Freshworks, and Priority Matrix are now available. Thousands of additional line-of-business and third-party plugins will be enabled in the coming months as we integrate existing Teams message extensions and Microsoft Power Platform connectors with Copilot for Microsoft 365. This extensive ecosystem of plugins for Copilot for Microsoft 365 surfaced in the tools used every day for work will bring unprecedented value to our mutual customers as we transform how work gets done together.
+Using Copilot Connectors, organizations can bring organizational data or content from external sources into Microsoft Graph, where it is then brought into semantic index. Microsoft indexes all your Graph connectors data while maintaining access controls for content. This expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem, and works best when connector content is text rich. The third-party data can be hosted on-premises or in the public or private clouds, and this information is consumed by the Microsoft Graph, which can be ingested into the semantic index to help provide your organization with all the context across Microsoft 365 and your organization’s third party content. Learn more about graph connector licensing requirements for Microsoft 365 Enterprise and Copilot for Microsoft 365 at [License requirements and pricing](licensing.md).
 
 ## Privacy, compliance, and security
 
