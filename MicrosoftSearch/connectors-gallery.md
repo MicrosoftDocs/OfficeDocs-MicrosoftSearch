@@ -34,8 +34,8 @@ The Graph connectors in this gallery are broken down into the following categori
 - Other
 
 ## Collaboration & communications
-These are the connectors under collaboration & communications.
 
+These are the connectors under collaboration & communications.
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
 |Aderant|BA Insight|BA Insight's Aderant connector honors the security of the source system and provides both full and incremental crawls. Hence, the users have the latest information available to them at all times. [Deploy this Graph connector](https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/).|
@@ -90,7 +90,6 @@ These are the connectors under collaboration & communications.
 ## Content Management Systems
 
 These are the connectors under content management systems.
-
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
 |Adobe AEM|Raytion|Secure enterprise search connector for reliably indexing content from the Adobe Active Experience Manager (AEM) and intelligently searching it with Microsoft Graph. It robustly indexes pages, attachments, and other generated document types from Adobe AEM in near real-time. The connector fully supports Adobe AEM’s permission model, its built-in user and group management, as well as AEM installations based on Entra ID or other directory services.[Deploy this Graph connector](https://www.raytion.com/connectors/adobe-experience-manager-aem).|
@@ -153,8 +152,8 @@ These are the connectors under content management systems.
 |Zenya|Infoland|Allows your organization to search for documents, process flows, forms, questionnaires, and information cards which are managed in the Zenya quality and risk management solution. It’s easier than ever for joint Zenya and Microsoft users to find the content they need. [Deploy this Graph connector](https://zenya-software.com/solutions/technical-solutions/sharepoint-online/).|
 
 ## Databases
-These are the connectors under databases.
 
+These are the connectors under databases.
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
 |Amazon Aurora|BA Insight|BA Insight's Amazon Aurora Connector is built upon industry-standard database access methods, so it equally supports databases from other systems such as Oracle, MySQL, and IBM DB2. [Deploy this Graph connector](https://www.bainsight.com/connectors/amazon-aurora-connector-sharepoint-azure-elasticsearch/)
@@ -176,8 +175,8 @@ These are the connectors under databases.
 |SQL Databases|Raytion|Secure enterprise search connector for reliably indexing content from SQL databases, such as Microsoft SQL Server or Oracle, and intelligently searching it with Microsoft Graph. It robustly indexes records and fields including binary documents from SQL databases in near real time. The connector supports the implementation of a custom document-level security model. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-sql-database-connector)
 
 ## Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), Sales, and Support
-These are the connectors under enterprise resource planning (ERP), customer relationship management (CRM), sales, and support.
 
+These are the connectors under enterprise resource planning (ERP), customer relationship management (CRM), sales, and support.
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
 |Any SQL-based CRM system|BA Insight|BA Insight's SQL Server Connector is built upon industry-standard database access methods, so it can equally support databases from other systems such as Oracle, MySQL, and IBM DB2.  It honors the security of the source database and provides both full and incremental crawls so the users have the latest information available to them all the time. [Deploy this Graph connector](https://www.bainsight.com/connectors/sql-connector-sharepoint-azure-elasticsearch/).|
@@ -192,8 +191,8 @@ These are the connectors under enterprise resource planning (ERP), customer rela
 |Windream ECM-System|Raytion|Secure enterprise search connector for reliably indexing content from Windream ECM-System and intelligently searching it with Microsoft Graph. It robustly indexes files and folders including the comprehensive sets of metadata associated by Windream ECM-System in near real time. The connector fully supports Windream ECM-System’s permission model and the user and group management in the associated Entra ID. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-windream-ecm-system-connector).|
 
 ## File Systems
-These are the connectors under file systems.
 
+These are the connectors under file systems.
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
 |Amazon S3|BA Insight|BA Insight's Amazon S3 Connector works with all content stored in S3. Organizations can use the connector to securely connector to S3 and index content from S3 buckets. Powerful filtering capabilities give organizations control over what content found in S3 should be indexed. [Deploy this Graph connector](https://www.bainsight.com/connectors/amazon-s3-connector-sharepoint-azure-elasticsearch/).|
@@ -202,7 +201,7 @@ These are the connectors under file systems.
 |Azure Data Lake|Accenture|The Azure Data Lake connector crawls content from the Azure Data Lake Storage (ADLS) cloud at either root or specified paths. Each file is submitted with its metadata (size, location, last accessed, and so on.). Updates are discovered automatically. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector).|
 |Azure Data Lake Storage Gen2|Microsoft|Enables your organization to search for content stored in Azure Blob containers. Indexes hierarchy-enabled folders in specified Azure Data Lake Storage Gen2 accounts. [Deploy this Graph connector](azure-data-lake-connector.md).|
 |Azure Event Hub|Accenture|The Event Hub connector fetches events from Azure streams and submits them after performing an optional transform. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Events+Hub+Connector).|
-|Box|Box|With the Box Connector for Microsoft Graph, users can search for and surface their Box content from the Microsoft ecosystem, including Office 365, Office Online search, and SharePoint. It's easier than ever for joint Box and Microsoft users to explore, discover, and navigate to the content they need, when they need it. If you're interested in this integration, click below to learn more. [Deploy this Graph connector](https://support.box.com/hc/en-us/articles/4403605037587).|
+|Box|Box|With the Box Connector for Microsoft Graph, users can search for and surface their Box content from the Microsoft ecosystem, including Office 365, Office Online search, and SharePoint. It's easier than ever for joint Box and Microsoft users to explore, discover, and navigate to the content they need when they need it. If you're interested in this integration, click below to learn more. [Deploy this Graph connector](https://support.box.com/hc/en-us/articles/4403605037587).|
 |Box|BA Insight|BA Insight's Box connector makes it possible to surface content from Box in SharePoint and other portals, enabling users to get integrated search results from SharePoint and Box. [Deploy this Graph connector](https://www.bainsight.com/connectors/box-connector-sharepoint-azure-elasticsearch/).|
 |Box|Raytion|Secure enterprise search connector for reliably indexing content from Box and intelligently searching it with Microsoft Graph. It robustly indexes files, folders, comments, users, groups, and tasks from Box in near real-time. The connector fully supports Box’s built-in user and group management. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-box-connector).|
 |File Share|Microsoft| Allows your organization to search one-premises Windows file shares. [Deploy this Graph connector](fileshare-connector.md).|
@@ -212,7 +211,7 @@ These are the connectors under file systems.
 |File Transfer Protocol (FTP)|Accenture|The Aspire File Transfer Protocol (FTP) connector provides access to files and folders on an FTP server. Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/FTP+Connector).|
 |Hadoop Distributed File System (HDFS)|Accenture|The Hadoop Distributed File System (HDFS) connector crawls content from any given HDFS Cluster using the WebHDFS HTTP interface. Each file is submitted with its metadata (size, location, last accessed, etc.). Updates are discovered automatically. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/HDFS+Connector).|
 |IBM FileNet P8|Insight|BA Insight's IBM FileNet Content Manager Connector allows SharePoint, as well as other portal users, to securely search for content stored in FileNet repositories.  Access to content is determined by security established in FileNet, ensuring that your content is as safe when accessed through any other portal as it is directly within FileNet. [Deploy this Graph connector](https://www.bainsight.com/connectors/ibm-filenet-sharepoint-azure-elasticsearch/).|
-|Microsoft Windows File Server|Raytion|Secure enterprise search connector for reliably indexing content from Microsoft Windows File Server including its Distributed File System (DFS) and intelligently searching it with Microsoft Graph. It robustly indexes files and folders from Windows File Server in near real time. The connector fully supports Microsoft Windows File Server’s document-level security and the latest versions of the Server Message Block 2(SMB2) and Server Message Block 3 (SMB3) protocols. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-windows-file-server-connector).|
+|Microsoft Windows File Server|Raytion|Secure enterprise search connector for reliably indexing content from Microsoft Windows File Server including its Distributed File System (DFS) and intelligently searching it with Microsoft Graph. It robustly indexes files and folders from Windows File Server in near real-time. The connector fully supports Microsoft Windows File Server’s document-level security and the latest versions of the Server Message Block 2(SMB2) and Server Message Block 3 (SMB3) protocols. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-windows-file-server-connector).|
 |Neudesic The Firm Directory|BA Insight|The Firm Directory Connector honors the security of the source system and provides both full and incremental crawls so the users have the latest information available to them all the time. [Deploy this Graph connector](https://www.bainsight.com/connectors/the-firm-directory-connector-sharepoint-azure-elasticsearch/).|
 |Objective|BA Insight|BA Insight's Objective Connector was developed for Objective, establishing a secure connection to Objective and mapping the content including metadata from the Objective schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling. [Deploy this Graph connector](https://www.bainsight.com/connectors/objective-connector-sharepoint-azure-elasticsearch/).|
 |OneDrive for Business|BA Insight|The BA Insight OneDrive Connector makes it possible to index content from OneDrive into various search platforms, providing users with integrated search results from multiple sources. [Deploy this Graph connector](https://www.bainsight.com/connectors/onedrive-business-connector-sharepoint-azure-elasticsearch/).|
@@ -224,7 +223,6 @@ These are the connectors under file systems.
 ## IT Service Management Tools (ITSM)
 
 These are the connectors under IT Service Management Tools (ITSM).
-
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
 |GitLab|Raytion|Secure enterprise search connector for reliably indexing content from GitLab and intelligently searching it with Microsoft Graph. It robustly indexes projects, files, folders, commit messages, issues, and wiki pages from GitLab in near real-time. [Deploy this Graph connector](https://www.raytion.com/connectors/raytion-gitlab-connector).|
@@ -243,15 +241,15 @@ These are the connectors under IT Service Management Tools (ITSM).
 ## Learning
 
 These are the connectors under learning.
-
 |Connector name|Publisher|Description|
+|:------ |:----------- |:----------- |
 |Go1|Go1|Go1 integration with Microsoft Search allows your employees to find and access learning from Microsoft Search, in places like Office.com, SharePoint, and Bing.  Your employees can learn directly from Microsoft Search in their normal day-to-day routine. [Deploy this Graph connector](https://www.go1.com/en-au/go1-microsoft-search).|
 
 ## Social Networks
 
 These are the connectors under social networks.
-
 |Connector name|Publisher|Description|
+|:------ |:----------- |:----------- |
 |Twitter|Accenture|The Twitter connector crawls content from Twitter feeds. It collects tweet text and metadata including URL links, geo-location, and hashtags. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Twitter+Connector).|
 |Yammer|Accenture|The Yammer connector crawls content from Yammer messages and metadata including sender, group, and thread details. It runs from any machine with access to the AEM server and optionally supports content fetching and connection throttling. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Yammer+Connector).|
 |Yammer|BA Insight|BA Insight's Yammer Connector establishes a secure connection to the Yammer application and maps the content including metadata and attachments from the Yammer schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling. [Deploy this Graph connector](https://www.bainsight.com/connectors/yammer-connector-sharepoint-azure-elasticsearch/).|
@@ -260,8 +258,8 @@ Yammer|Raytion|Secure enterprise search connector for reliably indexing content 
 ## Website (HTTP)
 
 These are the connectors under website.
-
 |Connector name|Publisher|Description|
+|:------ |:----------- |:----------- |
 |Aspider Web Crawler|Accenture|The Aspider Web Crawler connector crawls content from one or more websites. The content is submitted along with any metadata provided by the server. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Aspider+Web+Crawler).|
 |RSS|Accenture|The Aspire RSS connector allows you to retrieve feed information and trigger flows when new items are published in an RSS feed. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/RSS+Connector).|
 |Selenium|Accenture|The Selenium connector crawls content from websites using an internet browser to retrieve the pages. [Deploy this Graph connector](https://contentanalytics.digital.accenture.com/display/aspire40/Selenium+Crawler).|
@@ -269,7 +267,7 @@ These are the connectors under website.
 ## Other
 
 These are the connectors under other categories.
-
 |Connector name|Publisher|Description|
+|:------ |:----------- |:----------- |
 |CSV|Microsoft|Enables your organization to search for content stored in CSV files. [Deploy this Graph connector](csv-connector.md).|
 |Website Crawler|BA Insight|The BA Insight Website Crawler Connector makes it possible to surface content from any website in a single consolidated search index, along with content from other repositories. [Deploy this Graph connector](https://www.bainsight.com/connectors/website-connector-for-sharepoint-azure-elasticsearch/).|
