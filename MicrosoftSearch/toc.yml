@@ -71,6 +71,7 @@ items:
       - name: Map Microsoft Entra identities
         href: map-aad.md
       - name: Connector-specific information
+        href: azure-data-lake-connector.md
         items:
         - name: Azure Data Lake Storage Gen2
           items:
