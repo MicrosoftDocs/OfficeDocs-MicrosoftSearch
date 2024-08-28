@@ -243,7 +243,7 @@ These are the connectors under IT Service Management Tools (ITSM).
 These are the connectors under learning.
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
-|Go1|Go1|Go1 integration with Microsoft Search allows your employees to find and access learning from Microsoft Search, in places like Office.com, SharePoint, and Bing.  Your employees can learn directly from Microsoft Search in their normal day-to-day routine. [Deploy this Graph connector](https://www.go1.com/en-au/go1-microsoft-search).|
+|Go1|Go1|Go1 integration with Microsoft Search allows your employees to find and access learning from Microsoft Search, in places like Office.com, SharePoint, and Bing. Your employees can learn directly from Microsoft Search in their normal day-to-day routine. [Deploy this Graph connector](https://www.go1.com/en-au/go1-microsoft-search).|
 
 ## Social Networks
 
