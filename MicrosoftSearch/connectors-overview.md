@@ -43,14 +43,14 @@ This article is intended to help Microsoft 365 administrators locate the resourc
 
 ## Architecture
 
-The following architectural diagram of the Microsoft Graph platform shows how Graph connector content flows through content indexing to user results in [Microsoft Search](./overview-microsoft-search.md) clients. The rest of this section explains each of the key building blocks in the diagram.
+The following architectural diagram of the Microsoft Graph platform shows how Microsoft Graph connector content flows through content indexing to user results in [Microsoft Search](./overview-microsoft-search.md) clients. The rest of this section explains each of the key building blocks in the diagram.
 
 ![Diagram: on-premises and cloud-based data is pulled by connectors and indexed by the Microsoft Search API, and then the Microsoft Search service delivers the results to users.](media/connectors-overview/highlevel-connectors.png)
-Graph connectors can pull data from cloud-based (SaaS) data sources and on-premises data stores. The above diagram shows connections to only two data sources, but you can add connections to up to ten sources per tenant.
+Microsoft Graph connectors can pull data from cloud-based (SaaS) data sources and on-premises data stores. The above diagram shows connections to only two data sources, but you can add connections to up to ten sources per tenant.
 
 The Microsoft Graph Connectors API instantiates one connection per data source. Then, the API indexes and stores the data. Established connections interact with Microsoft Search, so users can get search results.
 
-You can use the Microsoft 365 [admin center](https://admin.microsoft.com) to set up and manage any of the Graph connectors by Microsoft. The admin center has a simple user interface that makes it easy to establish the connection to your data source and monitor connection status and utilization.
+You can use the Microsoft 365 [admin center](https://admin.microsoft.com) to set up and manage any of the Microsoft Graph connectors. The admin center has a simple user interface that makes it easy to establish a connection to your data source and monitor connection status and utilization.
 
 To create a **connection** to a data source, admins need authenticated access to the data and the entire content repository. The data is fed to the graph connector service for indexing.--->
 
@@ -61,14 +61,13 @@ Microsoft provides 18 Microsoft Graph connectors, and our ecosystem partners hav
 > [!TIP]
 > **Product survey**
 >
-> To help us understand your requirements related to connecting more data sources to Copilot or Microsoft Search, we request you to take few minutes to fill out this [survey form](https://forms.office.com/r/0Hh4GJNsJe). Based on the survey results, Microsoft will build connectors for the top-demanded data sources.
+> To help us understand your requirements related to connecting more data sources to Copilot or Microsoft Search, we request you to take a few minutes to fill out this [survey form](https://forms.office.com/r/0Hh4GJNsJe). Based on the survey results, Microsoft will build connectors for the top-demanded data sources.
 
 
 ### Microsoft Graph connectors by Microsoft
 
 You can connect to the following data sources by using connectors created by Microsoft:
 
-<!---Add links below when new docs are created--->
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 * [Azure DevOps Work Items](azure-devops-connector.md)
 * [Azure DevOps Wiki](azure-devops-wiki-connector.md)
@@ -87,7 +86,7 @@ You can connect to the following data sources by using connectors created by Mic
 * [ServiceNow Catalog](servicenow-catalog-connector.md)
 * [ServiceNow Tickets](servicenow-tickets-connector.md)
 
-The [Microsoft Graph connectors gallery](https://www.microsoft.com/microsoft-search/connectors) contains a brief description of each of these connectors. If you're ready to connect one of these data sources to your tenant, be sure to read the [Setup overview](configure-connector.md) and any other articles in the Setup connectors by Microsoft section that apply to your data source.
+The [Microsoft Graph connectors gallery](https://www.microsoft.com/microsoft-search/connectors) contains a brief description of each of these connectors. If you're ready to connect one of these data sources to your tenant, be sure to read the [Setup overview](configure-connector.md) and any other articles in the setup connectors by Microsoft section that apply to your data source.
 
 ### Microsoft Graph connectors by our partners
 
