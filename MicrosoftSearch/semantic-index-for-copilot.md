@@ -44,7 +44,7 @@ The following semantic index features do more than enhance search results; they 
 
 ### Microsoft Copilot with Graph-grounded chat
 
-Semantic index helps surface results within Microsoft Copilot with Graph-grounded chat by understanding the intent of your query and appending additional information to your Microsoft Copilot prompt. Relevant information is obtained in the Microsoft Graph and semantic index to provide the LLM with more information to reason over. As an example, suppose you want Microsoft Copilot to locate an email where a colleague praised the design work of a vendor. Semantic index includes nearby words (for example, elated, excited, amazed) into the search to broaden the search area and give the best result. All of this work takes place behind the scenes to add relevance to results that you search for with Microsoft Copilot, without adding complexity.
+Semantic index helps surface results within Microsoft Copilot with Graph-grounded chat by understanding the intent of your query and appending additional information to your Microsoft Copilot prompt. Relevant information is obtained in the Microsoft Graph and semantic index to provide the large language model (LLM) with more information to reason over. As an example, suppose you want Microsoft Copilot to locate an email where a colleague praised the design work of a vendor. Semantic index includes nearby words (for example, elated, excited, amazed) into the search to broaden the search area and give the best result. All of this work takes place behind the scenes to add relevance to results that you search for with Microsoft Copilot, without adding complexity.
 
 ## How the semantic index works
 
@@ -119,7 +119,7 @@ Both Item insights and People insights don't cover personalization features base
 
 ## Incorporating third party information
 
-Using Copilot Connectors, organizations can bring organizational data or content from external sources into Microsoft Graph, where it is then brought into semantic index. Microsoft indexes all your Graph connectors data while maintaining access controls for content. This expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem, and works best when connector content is text rich. The third-party data can be hosted on-premises or in the public or private clouds, and this information is consumed by the Microsoft Graph, which can be ingested into the semantic index to help provide your organization with all the context across Microsoft 365 and your organization’s third party content. Learn more about graph connector licensing requirements for Microsoft 365 Enterprise and Copilot for Microsoft 365 at [License requirements and pricing](licensing.md).
+Using Copilot Connectors, organizations can bring organizational data or content from external sources into Microsoft Graph, where it's then brought into semantic index. Microsoft indexes all your Graph connectors data while maintaining access controls for content. This expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem, and works best when connector content is text rich. The third-party data can be hosted on-premises or in the public or private clouds, and this information is consumed by the Microsoft Graph, which can be ingested into the semantic index to help provide your organization with all the context across Microsoft 365 and your organization’s third party content. Learn more about graph connector licensing requirements for Microsoft 365 Enterprise and Copilot for Microsoft 365 at [License requirements and pricing](licensing.md).
 
 ## Privacy, compliance, and security
 
@@ -135,7 +135,7 @@ User-level index information is stored where the user's mailbox is located, and 
 
 ## Microsoft Purview Customer Key (BYOK) support
 
-The semantic index provides BYOK support for enterprises that have enabled BYOK in their environment. Microsoft automatically enables the semantic index for BYOK enabled customers without any administrative involvement.
+The semantic index provides bring your own key (BYOK) support for enterprises that have enabled BYOK in their environment. Microsoft automatically enables the semantic index for BYOK enabled customers without any administrative involvement.
 
 ## Information protection
 
