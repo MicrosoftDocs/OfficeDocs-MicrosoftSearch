@@ -34,7 +34,6 @@ The Graph connectors in this gallery are broken down into the following categori
 - Other
 
 ## Collaboration & communications
-
 These are the connectors under collaboration & communications.
 
 |Connector name|Publisher|Description|
