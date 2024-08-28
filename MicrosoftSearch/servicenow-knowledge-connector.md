@@ -13,30 +13,28 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the ServiceNow Knowledge Graph connector for Microsoft Search and Copilot."
+description: "Set up the ServiceNow Knowledge Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot."
 ---
-<!---Previous ms.author: kam1 --->
-
 # ServiceNow Knowledge Microsoft Graph connector
 
-With the Microsoft Graph connector for ServiceNow, your organization can index knowledge-base articles that are visible to all users or restricted with user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, end users can search for those articles in Microsoft Copilot and from any Microsoft Search client.  
+With the Microsoft Graph connector for ServiceNow, your organization can index knowledge-base articles that are visible to all users or restricted with user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, end users can search for those articles in Microsoft 365 Copilot and from any Microsoft Search client.  
 
-You can also refer [this video](https://www.youtube.com/watch?v=TVSkJpk1RiE) to learn more about Graph Connector's capability in managing search permissions.
+You can also refer to [this video](https://www.youtube.com/watch?v=TVSkJpk1RiE) to learn more about the Microsoft Graph connector's capability in managing search permissions.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Knowledge Graph  connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. If you haven't already done so, read the entire Setup your Graph Connector article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Knowledge Microsoft Graph connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. If you haven't already done so, read the entire setup your Microsoft Graph connector article to understand the general setup process.
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR 
 other instructions that apply to only ServiceNow connector including information about [Troubleshooting](#troubleshooting) 
 and [Limitations](#limitations).
 
-## Mandatory and Optional Settings
+## Mandatory and optional settings
 To get you quickly started with Microsoft Graph connectors, the steps in the setup process are split into two groups:
 
 **Mandatory settings** - You must provide some input for these steps to make the connection. The inputs (connection name, data source settings etc.) vary based on your organization's context and use-case.
 
-**Advanced settings (Optional)** - As the name suggests, Advanced settings are optional steps. For your convenience, these settings in the setup process are preconfigured with default values based on the most common selections made by admins. You can choose to accept the default values or modify them to suit your organization's needs.
+**Advanced settings (optional)** - As the name suggests, Advanced settings are optional steps. For your convenience, these settings in the setup process are preconfigured with default values based on the most common selections made by admins. You can choose to accept the default values or modify them to suit your organization's needs.
 
-## Get Started
+## Get started
 
 [Add ServiceNow Knowledge Connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowKB&type=ServiceNowKB)
 
@@ -45,13 +43,13 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
 ## Mandatory Settings
 
    ### 1. Name & ID:
-   **Connection Id**: Edit the Connection ID  if necessary(prefilled with a default and unique string). You can't edit it after you click on the **'Save and Proceed'** button.
+   **Connection ID**: Edit the connection ID  if necessary(prefilled with a default and unique string). You can't edit it after you click on the **'Save and Proceed'** button.
     
    **Name**: Enter a name for your connection (prefilled with a default name). You can always edit it later (even after the connection is published).
  
    :::image type="content" alt-text="Screenshot of the Name & ID fields." source="media/servicenow-knowledge-connector-name-and-id.png" lightbox="media/servicenow-knowledge-connector-name-and-id.png":::
 
-   ### 2. Data Source Settings:
+   ### 2. Data source settings:
 
    **ServiceNow instance URL**: To connect to your ServiceNow data, you need your organization's **ServiceNow    instance URL**. Your organization's ServiceNow instance URL typically looks like **https://&lt;your-organization-domain>.service-now.com**. 
 
@@ -84,7 +82,7 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
    If you want to index properties from [extended tables](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/table-administration/concept/table-extension-and-classes.html) of *kb_knowledge*, provide read access to sys_dictionary and sys_db_object. This is an optional feature. You can index *kb_knowledge* table properties without access to the two additional tables.
 
    >[!NOTE]
-   > Microsoft Graph Connector for ServiceNow can index knowledge articles and user criteria permissions without advanced scripts. To learn more about how the connector treats knowledge articles and user criteria permissions, see the section on [Read and Deny Access to Knowledge Articles in Microsoft Graph Connector for ServiceNow](#read-and-deny-access-to-knowledge-articles-in-microsoft-graph-connector-for-servicenow).
+   > The Microsoft Graph Connector for ServiceNow can index knowledge articles and user criteria permissions without advanced scripts. To learn more about how the connector treats knowledge articles and user criteria permissions, see the section on [Read and deny access to knowledge articles in the Microsoft Graph Connector for ServiceNow](#read-and-deny-access-to-knowledge-articles-in-microsoft-graph-connector-for-servicenow).
 
    **Authentication details**: To authenticate and sync content from ServiceNow, choose **one of three** supported methods:
    - [Basic authentication](#1-basic-authentication)
@@ -93,22 +91,22 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
 
       #### 1. **Basic authentication**
 
-      Enter the username and password of ServiceNow account with **knowledge** role to authenticate to your instance.
+      Enter the username and password of ServiceNow account with the **knowledge** role to authenticate to your instance.
 
       #### 2. **ServiceNow OAuth**
 
       <details>
       <summary>To use the ServiceNow OAuth for authentication, follow the steps below.</summary>
 
-      A ServiceNow admin will need to provision an endpoint in your ServiceNow instance, so that the Microsoft Search app can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/vancouver-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
+      A ServiceNow admin needs to provision an endpoint in your ServiceNow instance so that the Microsoft Search app can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/vancouver-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
       The following table provides guidance on how to fill out the endpoint creation form:
 
       Field | Description | Recommended Value
        --- | --- | ---
-      Name | Unique value that identifies the application that you require OAuth access for. | Microsoft Search
-      Client ID | A read-only, auto generated unique ID for the application. The instance uses the client ID when it requests an access token. | NA
-      Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each other. | Follow security best-practices by treating the secret as a password.
+      Name | Unique value that identifies the application that you require OAuth access to. | Microsoft Search
+      Client ID | A read-only, auto-generated unique ID for the application. The instance uses the client ID when it requests an access token. | NA
+      Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each other. | Follow security best practices by treating the secret as a password.
       Redirect URL | A required callback URL that the authorization server redirects to. | For **M365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback,</br> For **M365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback
       Logo URL | A URL that contains the image for the application logo. | NA
       Active | Select the check box to make the application registry active. | Set to active
@@ -159,7 +157,7 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
              Get-AzADServicePrincipal -ApplicationId "Application-ID"
              ```
    
-             Replace "Application-ID" with Application (client) ID (without quotes) of the application you registered in step 1. Note the value of ID object from PowerShell output. It's the Service Principal ID.
+             Replace "Application-ID" with Application (client) ID (without quotes) of the application you registered in step 1. Note the value of the ID object from PowerShell output. It's the Service Principal ID.
 
             Now you have all the information required from Azure portal. A quick summary of the information is given in the table below.
 
@@ -170,7 +168,7 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
          Client Secret | The secret key of the application (from step 3.b). Treat it like a password.
          Service Principal ID | An identity for the application running as a service. (from step 3.c)
 
-      4. Register ServiceNow Application
+      4. Register the ServiceNow application
 
          The ServiceNow instance needs the following configuration:
 
@@ -204,7 +202,7 @@ To get you quickly started with Microsoft Graph connectors, the steps in the set
 
       5. Create a ServiceNow account
 
-         Refer the instructions to create a ServiceNow account, [create a user in ServiceNow](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
+         Refer to the instructions to create a ServiceNow account, [create a user in ServiceNow](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
 
          The following table provides guidance on how to fill out the ServiceNow user account registration
 
@@ -232,40 +230,40 @@ The ServiceNow connector supports access permissions visible to **Everyone** or 
 
 >[!IMPORTANT]
 >In ServiceNow, while assessing read permissions for a user, both article-level permissions and KB-level permissions are looked at. The Microsoft Graph connector for ServiceNow treats permissions differently:
->1. If the article contains '_Can Read_' user criteria, then they are stamped on the article during ingestion and Knowledge Base '_Can Read_' / '_Can Contribute_' user criteria are ignored.
+>1. If the article contains '_Can Read_' user criteria, then they are stamped on the article during ingestion, and Knowledge Base '_Can Read_' / '_Can Contribute_' user criteria are ignored.
 >2. If the article contains '_Cannot Read_' user criteria, and if the corresponding Knowledge base also contains '_Cannot Read_' user criteria, then both the user criteria are stamped on the article.
 
->**Note**: If a user is part of the '_Can Read_' user criteria at the article level but not in the '_Can Read_' / '_Can Contribute_' user criteria at the Knowledge Base level, **then the user will not have access to the article in ServiceNow but will have access to the article in Microsoft Copilot, Microsoft Search and other M365 surfaces**. The workaround is to remove the user from the '_Can Read_' user criteria at the article level.
+>**Note**: If a user is part of the '_Can Read_' user criteria at the article level but not in the '_Can Read_' / '_Can Contribute_' user criteria at the Knowledge Base level, **then the user will not have access to the article in ServiceNow but will have access to the article in Microsoft 365 Copilot, Microsoft Search, and other Microsoft 365 surfaces**. The workaround is to remove the user from the '_Can Read_' user criteria at the article level.
 
 
 If you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Microsoft Entra ID provisioned users or Non-AAD users.
 
 To identify which option is suitable for your organization:
 
-1. Choose the **Microsoft Entra ID** option if the Email ID of ServiceNow users is **same** as the UserPrincipalName (UPN) of users in Microsoft Entra ID.
+1. Choose the **Microsoft Entra ID** option if the email ID of ServiceNow users is **same** as the UserPrincipalName (UPN) of users in Microsoft Entra ID.
 2. Choose the **Non-AAD** option if the email ID of ServiceNow users is **different** from the UserPrincipalName (UPN) of users in Microsoft Entra ID. 
 
 >[!NOTE]
-> * If you choose Microsoft Entra ID as the type of identity source, the connector maps the Email IDs of users obtained from ServiceNow directly to UPN property from Microsoft Entra ID.
-> * If you choose "Non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
-> * Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support processing of updates to permissions.
+> * If you choose Microsoft Entra ID as the type of identity source, the connector maps the email IDs of users obtained from ServiceNow directly to UPN property from Microsoft Entra ID.
+> * If you choose "Non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from email ID to UPN.
+> * Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support the processing of updates to permissions.
 
-## Advanced Settings (Optional)
+## Advanced settings (optional)
 
 ### 1. Select properties
 
-In this step, you can add or remove available properties from your ServiceNow data source. Microsoft 365 selects few properties by default.
+In this step, you can add or remove available properties from your ServiceNow data source. Microsoft 365 selects a few properties by default.
 
 :::image type="content" alt-text="Screenshot that shows how to select properties." source="media/servicenow-knowledge-connector-select-properties.png" lightbox="media/servicenow-knowledge-connector-select-properties.png":::
 
-*The list of properties that you select here, can impact how can you filter, search and view your results in Copilot for Microsoft 365.*
+*The list of properties that you select here, can impact how can you filter, search, and view your results in Microsoft 365 Copilot.*
 
 **Source property** | **Label** | **Description**
 --- | --- | ---
 AccessUrl  | `url` | The target URL of the item in the data source.
 Author   | `authors` | Name of all the people who participated/collaborated on the item in the data source.
 IconUrl   | `iconUrl` | Icon url that represents the article’s category or type.
-Short_description  | `title` | The title of the item that you want shown in search and other experiences.
+Short_description  | `title` | The title of the item that you want to be shown in search and other experiences.
 SysUpdatedBy   | `lastModifiedBy` | Name of the person who most recently edited the item in the data source.
 SysUpdatedOn  | `lastModifiedDateTime` | Date and time the item was last modified in the data source.
 SysCreatedBy   | `createdBy` | Name of the person who created the item in the data source.
@@ -275,11 +273,11 @@ With a ServiceNow query string, you can specify conditions for syncing articles.
 
 Use the preview results button to verify the sample values of the selected properties and query filter.
 
-### 2. Map Identities
+### 2. Map identities
 
-In this step, you can map identities for both Microsoft Entra ID and Non Microsoft Entra ID identity types.
+In this step, you can map identities for both Microsoft Entra ID and Non-Microsoft Entra ID identity types.
 
-* If you choose Microsoft Entra ID as the type of identity source, the connector maps the Email IDs of users obtained from ServiceNow directly to UPN property from Microsoft Entra ID.
+* If you choose Microsoft Entra ID as the type of identity source, the connector maps the email IDs of users obtained from ServiceNow directly to UPN property from Microsoft Entra ID.
 * If you choose "Non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities.
 
 
@@ -298,26 +296,26 @@ Follow the general [setup instructions](./configure-connector.md#step-8-refresh-
 >[!NOTE]
 >Identities are only refreshed in full crawls.
 
-## Review & Publish
+## Review & publish
 
 Follow the general [setup instructions](./configure-connector.md#step-9-review-connection).
 
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
 
-## Read and Deny Access to Knowledge Articles in Microsoft Graph Connector for ServiceNow
+## Read and deny access to knowledge articles in the Microsoft Graph connector for ServiceNow
 <details>
 <summary>Here is a scenario-wise depiction of how the connector treats access permissions based on user criteria in ServiceNow Knowledge:</summary><br>
 
 >[!NOTE]
 > Terms used in the table below:
-> * **No criteria**: No user criteria is defined for the article or Knowledge base. (Different from empty criteria where a user criteria is defined but within the criteria all fields are empty)
+> * **No criteria**: No user criteria are defined for the article or Knowledge base. (Different from empty criteria where a user criteria is defined but within the criteria all fields are empty)
 > * **Default user criteria**: User criteria defined using ServiceNow fields like Users, Groups, Roles, Location, Department etc.
->* **Empty Criteria**: A User criteriion where all fields have empty values.
+>* **Empty Criteria**: A user criteria where all fields have empty values.
 
-### How Read access is determined
+### How read access is determined
 
-| Knowledge Base |&nbsp;| Knowledge Article | Access |
+| Knowledge base |&nbsp;| Knowledge article | Access |
 | :------ | :----- | :--- | :--- |
 |**_Can read_** | **_Can contribute_**| **_Can read_**| |
 | Any criteria | Any criteria | Default user criteria | Default user criteria followed |
@@ -327,9 +325,9 @@ After publishing the connection, you need to customize the search results page. 
 | Default + Advanced criteria | Default + Advanced criteria | No criteria | Default user criteria followed. Advanced criteria ignored.|
 | Empty criteria | Any criteria | No criteria | Access provided to every ServiceNow user |
 
-### How Deny access is determined
+### How deny access is determined
 
-| Knowledge Base | Knowledge Article | Access |
+| Knowledge base | Knowledge article | Access |
 | :------ | :----- | :--- |
 |**_Cannot read_** | **_Cannot read_**| |
 | Default user criteria | Default user criteria | Both criteria at base and article level are honored. |
@@ -342,7 +340,7 @@ After publishing the connection, you need to customize the search results page. 
 ## Limitations
 >[!IMPORTANT]
 >The ServiceNow Knowledge Microsoft Graph connector has the following limitations in its latest release:
->- User criteria with advanced scripts aren't supported in the current version. To learn more about how the connector treats knowledge articles with advanced scripts, see the section on [Read and Deny Access to Knowledge Articles in Microsoft Graph Connector for ServiceNow](#read-and-deny-access-to-knowledge-articles-in-microsoft-graph-connector-for-servicenow).
+>- User criteria with advanced scripts aren't supported in the current version. To learn more about how the connector treats knowledge articles with advanced scripts, see the section on [Read and deny access to knowledge articles in the Microsoft Graph connector for ServiceNow](#read-and-deny-access-to-knowledge-articles-in-microsoft-graph-connector-for-servicenow).
 
 ## Troubleshooting
 After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
