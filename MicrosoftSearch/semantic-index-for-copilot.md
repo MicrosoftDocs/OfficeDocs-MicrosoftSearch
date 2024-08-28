@@ -30,7 +30,11 @@ Interactions with data in Microsoft Graph are based on keyword matching, persona
 
 Semantic index enhances the features of Microsoft 365 that allow you to find relevant content based on keywords, personal preferences, and social connections. It does this by creating vectorized indices. A vector is a numerical representation of a word, image pixel, or other data point. The vector is arranged or mapped with close numbers placed in proximity to one another to represent similarity. Vectors are stored in multi-dimensional spaces where semantically similar data points are clustered together in the vector space, enabling Microsoft 365 to handle a broader set of search queries beyond “exact match."
 
-What this means practically is that Microsoft 365 services like Copilot for Microsoft 365 can understand relationships between different forms of words (for example, tech, technology, technologies; USA, U.S.A, United States, United States of America; dog, cat, pet), and naturally capture synonyms to expand the amount of searchable information, including the intent of sentences, snippets, documents, and meetings. It also identifies related assets to your query or sample content.
+In practical terms, this means that Microsoft 365 services such as Copilot for Microsoft 365 can:
+
+- Understand relationships between different forms of words (for example, tech, technology, technologies; USA, U.S.A, United States, United States of America; dog, cat, pet).
+- Capture synonyms to expand the amount of searchable information, including the intent of sentences, snippets, documents, and meetings.
+- Identify related assets to your query or sample content.
 
 The following graphic uses text (instead of numbers used by vectorized indices) to show an example of similarity between data points:
 
@@ -50,7 +54,7 @@ Semantic index helps surface results within Microsoft Copilot with Graph-grounde
 
 Semantic index enhances Microsoft Copilot and search results in the [Microsoft 365 app](https://www.microsoft365.com/), SharePoint Online, and Microsoft Teams. It supports an enhanced search experience and conceptual understanding of your online data that is automatically enabled by Microsoft.
 
-Today, semantic index is created at the tenant level. It's an organization-wide index generated from text-based SharePoint Online files that are accessible by two or more people via site inheritance. However, it only surfaces the results to a user if the user already has access to the content controlled by role-based access control. Additionally, the SharePoint Online site must remain searchable. In time we will also generate user-level index content. This will add personalized index of a working set of data that is accessible for users performing everyday tasks. This includes any text-based content you make or interact with, such as emails, documents that mention you, or that you comment on or share.
+Today, semantic index is created at the tenant level. It's an organization-wide index generated from text-based SharePoint Online files that are accessible by two or more people via site inheritance. However, it only surfaces the results to a user if the user already has access to the content controlled by role-based access control. Additionally, the SharePoint Online site must remain searchable. In time, we'll also generate user-level index content. This adds personalized index of a working set of data that is accessible for users performing everyday tasks. This includes any text-based content you make or interact with, such as emails, documents that mention you, or that you comment on or share.
 
 The following section explains how to enable each index, how the data flow in Copilot for Microsoft 365 uses the semantic index, what file types each index can handle, and how each index deals with updates.
 
@@ -60,7 +64,7 @@ Every Copilot for Microsoft 365 customer now has a tenant-level semantic index. 
 
 ## Data flows
 
-The semantic index interacts with the Microsoft Graph to provide users with access to information in the index. The diagram below shows how the flow of data works for a request using Copilot for Microsoft 365.
+The semantic index interacts with the Microsoft Graph to provide users with access to information in the index. The following diagram shows how the flow of data works for a request using Copilot for Microsoft 365.
 
 :::image type="content" source="media/copilot-architecture.png" alt-text="Graphic showing the relationship between Copilot for Microsoft 365, Microsoft 365 Apps, Microsoft Graph, and Large Language Model." lightbox="media/copilot-architecture.png":::
 
@@ -86,13 +90,13 @@ The semantic index supports indexing of user mailbox and file types listed in th
 
 ## Index updates
 
-When Semantic index has completed indexing for a customer for the first time, documents created by users are indexed in near real-time in the user's mailbox. New documents that are added to SharePoint Online sites that are accessible, via site inheritance, by two or more users are indexed daily. When an indexed user and tenant level document is updated, the changes are immediately indexed.
+When Semantic index completes indexing for a customer for the first time, documents created by users are indexed in near real-time in the user's mailbox. New documents that are added to SharePoint Online sites that are accessible, via site inheritance, by two or more users are indexed daily. When an indexed user and tenant level document is updated, the changes are immediately indexed.
 
 ## Administration
 
 We provide administrators with optional activities to prepare and manage the semantic index via the Microsoft 365 admin center. There's no administrative involvement required to enable the semantic index, as the service is automatically enabled by Microsoft. Semantic index is an improvement to Microsoft 365 Search and can't be disabled.
 
-Administrators can choose to prepare and manage the semantic index by reviewing the considerations for [planning and deploying a file collaboration in SharePoint](/sharepoint/deploy-file-collaboration) and [sharing permissions in the SharePoint modern experience](/sharepoint/modern-experience-sharing-permissions). Administrators can choose to exclude files from the semantic index by reviewing the considerations for excluding data with Microsoft Purview Data Loss Prevention (DLP). If a DLP solution is not present, administrators can exclude SharePoint Online sites from the tenant level index.  
+Administrators can choose to prepare and manage the semantic index by reviewing the considerations for [planning and deploying a file collaboration in SharePoint](/sharepoint/deploy-file-collaboration) and [sharing permissions in the SharePoint modern experience](/sharepoint/modern-experience-sharing-permissions). Administrators can choose to exclude files from the semantic index by reviewing the considerations for excluding data with Microsoft Purview Data Loss Prevention (DLP). If a DLP solution isn't present, administrators can exclude SharePoint Online sites from the tenant level index.  
 
 ## Excluding SharePoint Online Sites
 
@@ -131,7 +135,7 @@ Microsoft Copilot for Microsoft 365 is compliant with our existing privacy, secu
 
 Data generated by the semantic index remains within your company’s tenant, and complies with your security, compliance, identity, and privacy policies and processes. The semantic index works only with content to which your users already have permission and doesn't affect storage quotas.
 
-User-level index information is stored where the user's mailbox is located, and the tenant-level index information is stored in an isolated and protected customer’s tenant container located in the region where the SharePoint site is located (Home region or otherwise specified by tenant admin). For customers within the European Union Data Boundary (EUDB), the index is stored in an EU/EFTA based datacenter. Processing other customers can take place either in a tenant region or in the United States. For multi-geo organizations, all geographical boundaries are respected. In-region data is stored and processed in each region.
+User-level index information is stored where the user's mailbox is located. Tenant-level index information, on the other hand, is stored in an isolated and protected customer’s tenant container. This container is located in the region where the SharePoint site is located, which can be the Home region or another region specified by the tenant admin. For customers within the European Union Data Boundary (EUDB), the index is stored in an EU/EFTA based datacenter. Processing other customers can take place either in a tenant region or in the United States. For multi-geo organizations, all geographical boundaries are respected. In-region data is stored and processed in each region.
 
 ## Microsoft Purview Customer Key (BYOK) support
 
@@ -139,11 +143,11 @@ The semantic index provides bring your own key (BYOK) support for enterprises th
 
 ## Information protection
 
-In the context of search, there are no other ways to exclude data from the semantic index using information protection capabilities. The semantic index inherits security and privacy settings from Microsoft Search, and data brought in from third party connectors are provided the same storage and protections as other Microsoft 365 data. For organizations that are investigating additional information protection options, Microsoft 365 provides built-in capabilities in Microsoft 365 apps.  Add-on products are also available to help Administrators protect organizational data through data minimization and reducing oversharing. The following sections outline the options available for organizations for reference only.
+In the context of search, there are no other ways to exclude data from the semantic index using information protection capabilities. The semantic index inherits security and privacy settings from Microsoft Search, and data brought in from third party connectors are provided the same storage and protections as other Microsoft 365 data. For organizations that are investigating additional information protection options, Microsoft 365 provides built-in capabilities in Microsoft 365 apps. Add-on products are also available to help Administrators protect organizational data through data minimization and reducing oversharing. The following sections outline the options available for organizations for reference only.
 
 ## Data minimization
 
-Data minimization reduces the amount of available data your organization may access. Retaining and deleting content is often needed for compliance and regulatory requirements, but deleting content that no longer has business value also helps you manage risk and liability. [Microsoft Purview Data Lifecycle Management](/purview/data-lifecycle-management), which is [licensed separately](https://azure.microsoft.com/products/purview/), can be used to delete content that is no longer needed with retention policies for management at scale, and retention labels for exceptions and granular control.
+Data minimization reduces the amount of available data your organization might access. Retaining and deleting content is often needed for compliance and regulatory requirements, but deleting content that no longer has business value also helps you manage risk and liability. [Microsoft Purview Data Lifecycle Management](/purview/data-lifecycle-management), which is [licensed separately](https://azure.microsoft.com/products/purview/), can be used to delete content that is no longer needed with retention policies for management at scale, and retention labels for exceptions and granular control.
 
 ## Reduce oversharing
 
@@ -161,7 +165,7 @@ For customers interested in exploring how to deploy advanced information protect
 
 ## Additional resources
 
-Microsoft 365, the Microsoft Graph and the semantic index enable an unprecedented expressiveness for search, chat and copilots leveraging Microsoft 365 data. This expressiveness helps surface the right grounding data to get the most out of your organizational data with Microsoft 365 and Copilot for Microsoft 365.
+Microsoft 365, the Microsoft Graph, and the semantic index enable an unprecedented expressiveness for search, chat, and copilots leveraging Microsoft 365 data. This expressiveness helps surface the right grounding data to get the most out of your organizational data with Microsoft 365 and Copilot for Microsoft 365.
 
 To learn more about Copilot for Microsoft 365, check out these resources:
 
