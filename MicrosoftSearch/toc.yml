@@ -9,8 +9,8 @@ items:
   href: microsoft-search-us-government-environments.md
 - name: Frequently asked questions
   href: faqs.md
-  - name: Get insights
-    items:
+- name: Get insights
+  items:
   - name: Search usage reports 
     href: usage-reports.md
     items:
