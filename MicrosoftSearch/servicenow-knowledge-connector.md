@@ -303,7 +303,7 @@ Follow the general [setup instructions](./configure-connector.md#step-9-review-c
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
 
-## Read and deny access to knowledge articles in the Microsoft Graph connector for ServiceNow
+## Read and deny access to Knowledge articles in the Microsoft Graph connector for ServiceNow
 <details>
 <summary>Here is a scenario-wise depiction of how the connector treats access permissions based on user criteria in ServiceNow Knowledge:</summary><br>
 

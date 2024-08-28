@@ -61,7 +61,7 @@ Microsoft provides 18 Microsoft Graph connectors, and our ecosystem partners hav
 > [!TIP]
 > **Product survey**
 >
-> To help us understand your requirements related to connecting more data sources to Copilot or Microsoft Search, we request you to take a few minutes to fill out this [survey form](https://forms.office.com/r/0Hh4GJNsJe). Based on the survey results, Microsoft will build connectors for the top-demanded data sources.
+> To help us understand your requirements related to connecting more data sources to Microsoft 365 Copilot or Microsoft Search, we request you to take a few minutes to fill out this [survey form](https://forms.office.com/r/0Hh4GJNsJe). Based on the survey results, Microsoft will build connectors for the top-demanded data sources.
 
 
 ### Microsoft Graph connectors by Microsoft
