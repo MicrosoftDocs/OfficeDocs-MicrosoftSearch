@@ -19,9 +19,9 @@ description: "Set up the Confluence Cloud Graph connector for Microsoft Search"
 
 # Confluence Cloud Microsoft Graph connector
 
-Confluence Cloud Microsoft Graph connector allows your organization to index Confluence content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search.
+The Confluence Cloud Microsoft Graph connector allows your organization to index Confluence content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence Cloud connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. If you haven't already done so, read the entire article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence Cloud Microsoft Graph connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. If you haven't already done so, read the entire article to understand the general setup process.
 
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence Cloud connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
@@ -35,7 +35,7 @@ You must be the admin for your organization's Microsoft 365 tenant and the admin
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
-[Add Confluence cloud connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Confluence&type=Confluence)
+[Add Confluence cloud Microsoft Graph connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Confluence&type=Confluence)
 
 Follow the general [setup instructions](./configure-connector.md).
 
@@ -63,17 +63,17 @@ The following steps provide guidance on how to register the app:
 1. Sign in to [Atlassian Developer console](https://developer.atlassian.com/console/myapps/) with your Atlassian Confluence admin account.
 2. Click on **Create** and select `OAuth 2.0 integration`.
 3. Provide an appropriate name for the application and create the new app.
-4. Navigate to `Permissions` from the navigation pane on left. Click **Add** for `Confluence API`. Once added, click on **Configure**, **Edit Scopes** and select the following scopes.
+4. Navigate to `Permissions` from the navigation pane on the left. Click **Add** for `Confluence API`. Once added, click on **Configure**, and **Edit scopes** and select the following scopes.
 
-| **Scope Name** | **Code** | **Description** |
+| **Scope name** | **Code** | **Description** |
 | ------------ | ------------ | ------------ |
-| View content details | `read:content-details:confluence` | Crawl content satisfying criteria
-| View groups | `read:group:confluence` | To access group permissions of content
-| View user details | `read:user:confluence` | To access individual user details to support permissions
+| View content details | `read:content-details:confluence` | Crawl content satisfying criteria.
+| View groups | `read:group:confluence` | To access group permissions of content.
+| View user details | `read:user:confluence` | To access individual user details to support permissions.
 
 5. Click **Save**.
 6. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL, for **M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`, for **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback` and save the changes.
-7. Navigate to `Settings` from the navigation pane on left. You'll get the `Client ID` and `Secret` from this page.
+7. Navigate to `Settings` from the navigation pane on the left. You'll get the `Client ID` and `Secret` from this page.
 
 Complete the connection settings step using the **Client ID** and **Secret**.
 
@@ -81,15 +81,15 @@ Complete the connection settings step using the **Client ID** and **Secret**.
 
 In this step, you can add or remove available properties from your Confluence data source. Microsoft 365 has selected a few properties by default.
 
-*The list of properties that you select here, can impact how you can filter, search and view your results in Copilot for Microsoft 365.*
+*The list of properties that you select here, can impact how you can filter, search and view your results in Microsoft 365 Copilot.*
 
 **Source property** | **Label** | **Description**
 --- | --- | ---
 Authors   | `authors` | Name of people who participated/collaborated on the item in the data source.
 CreatedByName  | `createdBy` | Name of the person who most recently edited the item in the data source.
 CreatedOn  | `createdDateTime` | Date and time that the item was created in the data source.
-IconUrl  | `iconUrl` | The associated icon url of the item.
-Title   | `title` | The title of the item that you want shown in search and other experiences.
+IconUrl  | `iconUrl` | The associated icon URL of the item.
+Title   | `title` | The title of the item that you want to be shown in search and other experiences.
 UpdatedByName  | `lastModifiedBy` | Name of the person who most recently edited the item in the data source.
 UpdatedOn  | `lastModifiedDateTime` | Date and time the item was last modified in the data source.
 Url  | `url` | The target URL of the item in the data source.
@@ -105,11 +105,11 @@ Use the preview results button to verify the sample values of the selected prope
 
 Confluence Cloud Microsoft Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them.
 
-In Confluence Cloud, security permissions for users and groups are defined using space permissions and page restrictions. Page level restrictions, if present, will take precedence over space permissions.
+In Confluence Cloud, security permissions for users and groups are defined using space permissions and page restrictions. Page-level restrictions, if present, will take precedence over space permissions.
 
-If there are no page restrictions, the connector will check for space level permissions - 
+If there are no page restrictions, the connector will check for space-level permissions - 
 * In case space has 'anonymous users' access enabled, the content will be visible to all users within your tenant.
-* In case 'anonymous access' isn't enabled, the space level permissions will be honored.
+* In case 'anonymous access' isn't enabled, the space-level permissions will be honored.
 * In case space level permissions are not defined, the content will not be visible to any user in your tenant.
 
 >[!IMPORTANT]
@@ -124,9 +124,9 @@ To identify which option is suitable for your organization:
 
 >[!NOTE]
 >
-> * If you choose Microsoft Entra ID as the type of identity source, the connector maps the Email IDs of users obtained from Confluence directly to UPN property from Microsoft Entra ID.
-> * If you chose "Non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
-> * Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support processing of updates to permissions.
+> * If you choose Microsoft Entra ID as the type of identity source, the connector maps the email IDs of users obtained from Confluence directly to UPN property from Microsoft Entra ID.
+> * If you chose "Non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from email ID to UPN.
+> * Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support the processing of updates to permissions.
 
 ## Step 6: Assign property labels
 
@@ -143,7 +143,7 @@ Follow the general [setup instructions](./configure-connector.md).
 >[!NOTE]
 >For access permission updates, only full crawl scheduled will be applied.
 
-## Step 9: Review Connection
+## Step 9: Review connection
 
 Follow the general [setup instructions](./configure-connector.md).
 
@@ -163,6 +163,6 @@ The Confluence Cloud connector has the following known limitations in its latest
 * Indexing Server and Data Center deployments will be released as a separate connector.
 
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md). You can find troubleshooting steps for commonly seen issues [here](troubleshoot-confluence-cloud-connector.md).
+After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md). You can find troubleshooting steps for commonly seen issues [here](troubleshoot-confluence-cloud-connector.md).
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
