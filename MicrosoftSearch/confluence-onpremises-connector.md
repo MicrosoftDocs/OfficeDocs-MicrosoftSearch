@@ -17,7 +17,7 @@ description: "Set up the Confluence On-premises Graph Microsoft connector for Mi
 ---
 <!---Previous ms.author: kam1 --->
 
-# Confluence on-premises Microsoft Graph connector (Preview)
+# Confluence on-premises Microsoft Graph connector (preview)
 
 The Confluence on-premises Microsoft Graph connector allows your organization to index Confluence server or data center content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search.
 
@@ -26,7 +26,7 @@ The Confluence on-premises Microsoft Graph connector allows your organization to
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence on-premises connector. It supplements the general instructions provided in [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md).
 
-Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence on-premises Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
+Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence on-premises Microsoft Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
 ## Before you get started
 
@@ -59,7 +59,7 @@ To connect to your Confluence site, use your site URL.
 
 ### Step 3.3: Select the Microsoft Graph connector agent
 
-Select the connector agent from the drop-down list. The agent will securely send Confluence On-premises content into Microsoft Graph index.
+Select the connector agent from the drop-down list. The agent will securely send Confluence On-premises content into the Microsoft Graph index.
 
 ### Step 3.4: Select authentication type
 
@@ -89,27 +89,27 @@ Extract the public key from the certificate to the `confluence_publickey.pem` fi
 
 #### Step 3.4.2 Create an application link
 
-1. In Confluence, navigate to **Administration** (cog icon) > **General configuration** > **Application Links** in the side pane.
+1. In Confluence, navigate to **Administration** (cog icon) > **General configuration** > **Application links** in the side pane.
 
 2. In the **Enter URL of the application you want to link** text box, enter any URL. For example, `https://example.com` and then select **Create new link**. Ignore *No response was received from the URL you entered* warning and select **Continue**.
 
-3. On the first screen of **Link applications** dialog, provide an **Application Name** and select **Generic Application** type. Select the **Create incoming link** checkbox. All other fields are optional. Select **Continue**.
+3. On the first screen of **Link applications** dialog, provide an **Application name** and select **Generic application** type. Select the **Create incoming link** checkbox. All other fields are optional. Select **Continue**.
 
    :::image type="content" alt-text="Link Applications dialog" source="media/confluence-connector/confluence-onpremises-applications-link-1.png":::
 
-4. On the second screen of **Link applications** dialog, enter consumer details for sample client:
+4. On the second screen of **Link applications** dialog, enter consumer details for the sample client:
 
    Field | Recommended Value
    --- | ---
    **Consumer key** | `OAuthkey`
-   **Consumer name** | `Microsoft Graph Connector App`
+   **Consumer name** | `Microsoft Graph connector App`
    **Public key** | Copy the public key from `confluence_publickey.pem` file generated from *Step 3.4.1* and paste it into this field (for example, `iuasge87awegrq3...`).
 
-5. Select **Continue**. After successful creation, the application link will be displayed like the following screen.
+5. Select **Continue**. After successful creation, the application link will be displayed on the following screen.
 
    :::image type="content" alt-text="Link Applications post creation" source="media/confluence-connector/confluence-onpremises-applications-link-2.png" lightbox="media/confluence-connector/confluence-onpremises-applications-link-2.png":::
 
-#### Step 3.4.3 Enter consumer key and private key to sign in
+#### Step 3.4.3 Enter the consumer key and private key to sign in
 
 In the connection creation configuration assistant in Microsoft 365 admin center, enter the **Consumer key** created during *Step 3.4.2* and **Private key** from `confluence_privatekey.pcks8` file in *Step 3.4.1*. Enable pop-up in the browser for Microsoft 365 admin center and select **Sign in**.
 
@@ -159,9 +159,9 @@ To identify which option is suitable for your organization:
 
    >[!NOTE]
    >
-   > * If you choose Microsoft Entra ID as the type of identity source, the connector maps the Email IDs of users obtained from Confluence directly to UPN property from Microsoft Entra ID.
-   > * If you chose "Non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
-   > * Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support processing of updates to permissions.
+   > * If you choose Microsoft Entra ID as the type of identity source, the connector maps the email IDs of users obtained from Confluence directly to UPN property from Microsoft Entra ID.
+   > * If you chose "Non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from email ID to UPN.
+   > * Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support the processing of updates to permissions.
 
 ## Step 6: Assign property labels
 
@@ -176,24 +176,24 @@ Follow the general [setup instructions](./configure-connector.md).
 Follow the general [setup instructions](./configure-connector.md).
 
 >[!NOTE]
->For access permission updates, only full crawl scheduled will be applied.
+>For access permission updates, only the full crawl schedule is applied.
 
-## Step 9: Review Connection
+## Step 9: Review connection
 
 Follow the general [setup instructions](./configure-connector.md).
 
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](./configure-connector.md#step-11-customize-the-search-results-page).
 
-For testing purpose, you can choose [publish to limited audience](./staged-rollout-for-graph-connectors.md#modify-or-stop-staged-rollout)   
+For testing purposes, you can choose [publish to limited audience](./staged-rollout-for-graph-connectors.md#modify-or-stop-staged-rollout)   
 
 ## Limitations
 
-The confluence On-premises connector has the following known limitations in its latest release:
+The Confluence On-premises Microsoft Graph connector has the following known limitations in its latest release:
 
-* Confluence On-premises connector doesn't index blogs, attachment files and comments.
+* The Confluence On-premises Microsoft Graph connector doesn't index blogs, attachment files, and comments.
 
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 You can find troubleshooting steps for commonly seen issues [here](troubleshoot-confluence-onpremises-connector.md).
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
