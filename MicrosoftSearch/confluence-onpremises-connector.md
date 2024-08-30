@@ -13,9 +13,8 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Confluence On-premises Graph Microsoft connector for Microsoft Search"
+description: "Set up the Confluence On-premises Microsoft Graph connector for Microsoft Search"
 ---
-<!---Previous ms.author: kam1 --->
 
 # Confluence on-premises Microsoft Graph connector (preview)
 
@@ -57,9 +56,9 @@ Select *Server or Data center* option to index Confluence On-premises content an
 
 To connect to your Confluence site, use your site URL.
 
-### Step 3.3: Select the Microsoft Graph connector agent
+### Step 3.3: Select the Microsoft  connector agent
 
-Select the connector agent from the drop-down list. The agent will securely send Confluence On-premises content into the Microsoft Graph index.
+Select the connector agent from the drop-down list. The agent securely sends Confluence On-premises content into the Microsoft  index.
 
 ### Step 3.4: Select authentication type
 
@@ -74,7 +73,7 @@ Enter a service account's username (usually email ID) and password to authentica
 
 #### OAuth 1.0a 
 
-Generate  a public/private key pair and create an application link in Confluence On-premises site so that the connector agent can access the instance. To learn more, see [step 1 in Atlassian developer documentation](https://developer.atlassian.com/server/jira/platform/oauth/#step-1--configure-jira) on how to configure OAuth 1.0a.
+Generate  a public/private key pair and create an application link in the Confluence On-premises site so that the connector agent can access the instance. To learn more, see [step 1 in Atlassian developer documentation](https://developer.atlassian.com/server/jira/platform/oauth/#step-1--configure-jira) on how to configure OAuth 1.0a.
 
 #### Step 3.4.1 Generate an RSA public/private key pair
 
@@ -102,30 +101,30 @@ Extract the public key from the certificate to the `confluence_publickey.pem` fi
    Field | Recommended Value
    --- | ---
    **Consumer key** | `OAuthkey`
-   **Consumer name** | `Microsoft Graph connector App`
+   **Consumer name** | `Microsoft  connector App`
    **Public key** | Copy the public key from `confluence_publickey.pem` file generated from *Step 3.4.1* and paste it into this field (for example, `iuasge87awegrq3...`).
 
-5. Select **Continue**. After successful creation, the application link will be displayed on the following screen.
+5. Select **Continue**. After successful creation, the application link is displayed on the following screen.
 
    :::image type="content" alt-text="Link Applications post creation" source="media/confluence-connector/confluence-onpremises-applications-link-2.png" lightbox="media/confluence-connector/confluence-onpremises-applications-link-2.png":::
 
 #### Step 3.4.3 Enter the consumer key and private key to sign in
 
-In the connection creation configuration assistant in Microsoft 365 admin center, enter the **Consumer key** created during *Step 3.4.2* and **Private key** from `confluence_privatekey.pcks8` file in *Step 3.4.1*. Enable pop-up in the browser for Microsoft 365 admin center and select **Sign in**.
+In the connection creation configuration assistant in the Microsoft 365 admin center, enter the **Consumer key** created during *Step 3.4.2* and **Private key** from `confluence_privatekey.pcks8` file in *Step 3.4.1*. Enable pop-up in the browser for Microsoft 365 admin center and select **Sign in**.
 
-#### Step 3.4.4 Enter verification code to Finish Sign in
+#### Step 3.4.4 Enter verification code to finish sign-in
 
-In the Confluence sign in screen, enter service account credentials. After successful sign-in, you'll get a verification code like the following screen.
+In the Confluence sign-in screen, enter service account credentials. After successful sign-in, you'll get a verification code like the following screen.
 
 :::image type="content" alt-text="Verification code" source="media/confluence-connector/confluence-onpremises-applications-link-3.png" lightbox="media/confluence-connector/confluence-onpremises-applications-link-3.png":::
 
-Enter the **Verification Code** in connection creation configuration assistant and select **Finish Sign in**. After successful sign-in, select **Next**.
+Enter the **Verification code** in connection creation configuration assistant and select **Finish sign in**. After successful sign-in, select **Next**.
 
-#### OAuth 2.0 (Recommended)
+#### OAuth 2.0 (recommended)
 
 The following steps provide guidance on how to register the app [Configure an incoming link](https://confluence.atlassian.com/doc/configure-an-incoming-link-1115674733.html) 
 
-1. Go to Administration  > General Configuration > Application links. 
+1. Go to Administration  > General configuration > Application links. 
 2. Select Create link
 3. Select External application, and then choose Incoming as the direction. 
 4. Fill in the 
@@ -137,7 +136,7 @@ The following steps provide guidance on how to register the app [Configure an in
 
 In this step, you can add or remove available properties from your Confluence data source. Microsoft 365 has already selected few properties by default.
 
-With a Confluence Query Language (CQL) string, you can specify conditions for syncing pages. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only the pages that are modified in the last two years. To learn about creating your own query string, see [Advanced Searching using CQL](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/). By default, all pages will be indexed by the connector.
+With a Confluence Query Language (CQL) string, you can specify conditions for syncing pages. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only the pages that are modified in the last two years. To learn about creating your own query string, see [Advanced Searching using CQL](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/). By default, all pages are indexed by the connector.
 
 >[!TIP]
 >You may use the CQL filter to index **content modified after a certain time** using, *lastModified >= "2018/12/31"*
@@ -146,7 +145,7 @@ Use the preview results button to verify the sample values of the selected prope
 
 ## Step 5: Manage search permissions
 
-Confluence On-premises connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them.
+Confluence On-premises connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data appears in the search results for all users. If you choose **Only people with access to this data source**, indexed data appears in the search results for users who have access to them.
 
 In Confluence On-premises, security permissions for users and groups are defined using space permissions and page restrictions. Confluence On-premises connector applies *effective permissions* provided by [content restrictions API](https://docs.atlassian.com/ConfluenceServer/rest/7.15.0/#api/content/{id}/restriction).
 
@@ -184,13 +183,13 @@ Follow the general [setup instructions](./configure-connector.md).
 
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](./configure-connector.md#step-11-customize-the-search-results-page).
 
-For testing purposes, you can choose [publish to limited audience](./staged-rollout-for-graph-connectors.md#modify-or-stop-staged-rollout)   
+For testing purposes, you can choose [publish to limited audience](./staged-rollout-for--connectors.md#modify-or-stop-staged-rollout)   
 
 ## Limitations
 
-The Confluence On-premises Microsoft Graph connector has the following known limitations in its latest release:
+The Confluence On-premises Microsoft  connector has the following known limitations in its latest release:
 
-* The Confluence On-premises Microsoft Graph connector doesn't index blogs, attachment files, and comments.
+* The Confluence On-premises Microsoft  connector doesn't index blogs, attachment files, and comments.
 
 ## Troubleshooting
 After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
