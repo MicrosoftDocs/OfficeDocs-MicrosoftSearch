@@ -1,10 +1,18 @@
 ---
+ms.date: 09/03/2024
 title: "Deploy Microsoft Graph connectors in Teams admin center"
-description: "Deploy Microsoft Graph connectors from our partners with a single click in Teams admin center."
-author: "muwagerikpe"
-ms.localizationpriority: high
-doc_type: conceptualPageType
-ms.subservice: search
+ms.author: muwagerikpe
+author: muwagerikpe
+audience: Admin
+ms.audience: Admin
+ms.topic: article
+ms.service: mssearch
+ms.localizationpriority: medium
+search.appverid:
+- BFB160
+- MET150
+- MOE150
+description: "Learn how to deploy partner-built Microsoft Graph connectors with a single click in Teams admin center, so you can index content that participates in experiences such as Copilot for Microsoft 365 and Microsoft Search."
 ---
 
 # Deploy Microsoft Graph connectors in Teams admin center
