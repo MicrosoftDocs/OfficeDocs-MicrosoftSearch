@@ -24,3 +24,5 @@ You will need to take the following steps to deploy a Graph connector Teams app:
 5. On the detail page of the Teams app, navigate to the **Graph Connector**, and click the **Connection status** toggle.
 6. Wait while the connection is in progress. Once the Graph connector has been enabled, the Connection status will be **on** in Teams admin center. At this point, the Graph connector can be managed from the [Data Sources tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in Microsoft 365 admin center's Search & Intelligence portal.
 7. If you want to delete the Graph connector, you can do so by turning off the Connection status toggle in Teams admin center or deleting the Graph connector in the Data sources tab.
+
+![simplified admin experience in the Teams admin center](media/oneclickadmin-TAC-connectors.png)
