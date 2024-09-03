@@ -19,7 +19,7 @@ description: "Troubleshoot issues with the ServiceNow Catalog Microsoft Graph co
 
 ### 1. **Unable to sign in due to Single Sign-on enabled ServiceNow instance**
 
-If your organization has enabled Single Sign-on (SSO) to ServiceNow, you may have trouble logging in with the service account. You can bring up username and password based sign-in by adding <em> `login.do`</em> to the ServiceNow instance URL. Example: `https://<your-organization-domain>.service-now.com./login.do`.
+If your organization has enabled Single Sign-on (SSO) to ServiceNow, you may have trouble logging in with the service account. You can bring up username and password-based sign-in by adding <em> `login.do`</em> to the ServiceNow instance URL. Example: `https://<your-organization-domain>.service-now.com./login.do`.
 
 ### 2. **Unauthorized or forbidden response to API request**
 
@@ -29,11 +29,11 @@ If you see forbidden or unauthorized response in connection status, check if the
 
 #### 2.2. Change in account password
 
-The connector uses access token fetched on behalf of service account for crawl. The access token refreshes every 12 hours. Ensure that service account password isn't changed after publishing the connection. You may need to reauthenticate the connection if there's a change in password.
+The connector uses an access token fetched on behalf of the service account for the crawl. The access token refreshes every 12 hours. Ensure that the service account password isn't changed after publishing the connection. You may need to reauthenticate the connection if there's a password change.
 
-#### 2.3. Check if ServiceNow instance behind firewall
+#### 2.3. Check if the ServiceNow instance behind the firewall
 
-Your Microsoft Graph connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You'll need to explicitly allow access to connector service. You can find public IP address range of the connector service in the table below. Based on your tenant region, add it to your ServiceNow instance network allowlist.
+Your Microsoft Graph connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You'll need to explicitly allow access to the connector service. You can find the public IP address range of the connector service in the table below. Based on your tenant region, add it to your ServiceNow instance network allowlist.
 
  Environment | Region | Range
 --- | --- | ---
@@ -53,7 +53,7 @@ You may not be able to choose *Only people with access to this data source* opti
 
 #### 3.2 User mapping failures
 
- ServiceNow user accounts that don't have a Microsoft 365 user in Microsoft Entra ID won't map. Non-user, service accounts are expected to fail user mapping. Number of user mapping failures can be accessed in identity stats area in connection detail window. Log of failed user mappings can be downloaded from Error tab.
+ ServiceNow user accounts that don't have a Microsoft 365 user in Microsoft Entra ID won't map. Non-user, service accounts are expected to fail user mapping. The number of user mapping failures can be accessed in the identity stats area in the connection detail window. Log of failed user mappings can be downloaded from the error tab.
 
 ### 4. **Issues with user criteria access flow**
 
