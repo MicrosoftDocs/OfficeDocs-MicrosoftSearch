@@ -81,8 +81,8 @@ To manage access to the search results, you can specify one or more ACL columns 
 
 The use of each of the ACL columns in the above query is described below. The following list explains the four **access control mechanisms**.
 
-* **AllowedUsers**: This option specifies the list of user IDs who will be able to access the search results. In the following example, a list of users: john@contoso.com, keith@contoso.com, and lisa@contoso.com would only have access to a record with OrderId = 12.
-* **AllowedGroups**: This option specifies the group of users who will be able to access the search results. In the following example, group sales-team@contoso.com would only have access to record with OrderId = 12.
+* **AllowedUsers**: This option specifies the list of user IDs who can access the search results. In the following example, a list of users: john@contoso.com, keith@contoso.com, and lisa@contoso.com would only have access to a record with OrderId = 12.
+* **AllowedGroups**: This option specifies the group of users who can access the search results. In the following example, group sales-team@contoso.com would only have access to record with OrderId = 12.
 * **DeniedUsers**: This option specifies the list of users who do **not** have access to the search results. In the following example, users john@contoso.com and keith@contoso.com do not have access to the record with OrderId = 13, whereas everyone else has access to this record.
 * **DeniedGroups**: This option specifies the group of users who do **not** have access to the search results. In the following example, groups engg-team@contoso.com and pm-team@contoso.com do not have access to a record with OrderId = 15, whereas everyone else has access to this record.  
 
