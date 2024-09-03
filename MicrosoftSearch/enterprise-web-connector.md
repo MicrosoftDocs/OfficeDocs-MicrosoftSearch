@@ -13,7 +13,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Enterprise websites Graph connector for Microsoft Search"
+description: "Set up the Enterprise websites Microsoft Graph connector for Microsoft Search"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,7 +26,7 @@ The Enterprise websites Microsoft Graph connector allows your organization to in
 > [!NOTE]
 > Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general connectors setup instructions.
 
-This article is for anyone who configures, runs, and monitors an Enterprise websites connector. It supplements the general setup process, and shows instructions that apply only for the Enterprise websites connector. This article also includes information about [Troubleshooting](#troubleshooting).
+This article is for anyone who configures, runs, and monitors an Enterprise websites connector. It supplements the general setup process and shows instructions that apply only to the Enterprise websites connector. This article also includes information about [Troubleshooting](#troubleshooting).
 
 <!---## Before you get started-->
 
@@ -34,7 +34,7 @@ This article is for anyone who configures, runs, and monitors an Enterprise webs
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
-[Add Enterprise website connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Intranet&type=IntranetSites)
+[Add Enterprise website Microsoft Graph connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Intranet&type=IntranetSites)
 
 (See general [setup instructions](./configure-connector.md) for more details)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -48,11 +48,11 @@ Specify these attributes:
 * Description (optional)
 * Select check box (required)
 
-The connection ID creates implicit properties for your connector. It must be unique and can only contain a maximum of 32 alphanumeric characters. To change the ID, go to Advanced settings.
+The connection ID creates implicit properties for your connector. It must be unique and can only contain a maximum of 32 alphanumeric characters. To change the ID, go to **Advanced settings**.
 
 ## Step 3: Configure the connection settings
 
-To connect to your data source, fill in the root URL of the website and select a custom vertical for the results. After you complete this information, select Test Connection to verify your settings.
+To connect to your data source, fill in the root URL of the website and select a custom vertical for the results. After you complete this information, select **Test connection** to verify your settings.
 
 ### Website URL
 
@@ -67,16 +67,16 @@ When selected the connector will only crawl the URLs listed in the sitemap. This
 
 ### Dynamic site configuration
 
-If your website contains dynamic content, for example, webpages that live in content management systems like Confluence or Unily, you can enable a dynamic crawler. To turn it on, select **Enable crawl for dynamic sites**. The crawler will wait for dynamic content to render before it begins crawling.
+If your website contains dynamic content, for example, webpages that live in content management systems like Confluence or Unily, you can enable a dynamic crawler. To turn it on, select **Enable crawl for dynamic sites**. The crawler waits for dynamic content to render before it begins crawling.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Connection Settings pane for Enterprise Web connector.](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
 
 In addition to the check box, there are three optional fields available:
 
-1. **DOM Ready**: Enter the DOM element the crawler should use as the signal that the content is fully rendered and the crawl should begin.
-2. **Headers to Add**: Specify which HTTP headers the crawler should include when sending that specific web URL. You can set multiple headers for different websites. We suggest including auth token values.
-3. **Headers to Skip**: Specify any unnecessary headers that should be excluded from dynamic crawling requests.
+1. **DOM ready**: Enter the DOM element the crawler should use as the signal that the content is fully rendered and the crawl should begin.
+2. **Headers to add**: Specify which HTTP headers the crawler should include when sending that specific web URL. You can set multiple headers for different websites. We suggest including auth token values.
+3. **Headers to skip**: Specify any unnecessary headers that should be excluded from dynamic crawling requests.
 
 Headers should be added in the following syntax: `{"Root-URL":["TKey=TValue"]}`
 
@@ -91,7 +91,7 @@ The crawl mode determines the type of websites you want to index, either cloud o
 
 Also, the connector now supports crawling of on-premises websites. To access your on-premises data, you must first install and configure the connector agent. To learn more, see [Microsoft Graph connector agent](./graph-connector-agent.md).
 
-For your on-premises websites, select **Agent** as the crawl mode and in the **On-prem Agent** field, choose the Graph connector agent that you installed and configured earlier.  
+For your on-premises websites, select **Agent** as the crawl mode, and in the **On-prem agent** field, choose the Microsoft Graph connector agent that you installed and configured earlier.  
 
 ### Authentication
 
@@ -101,7 +101,7 @@ For your on-premises websites, select **Agent** as the crawl mode and in the **O
 
 **OAuth 2.0** with [Microsoft Entra ID](/azure/active-directory/) requires a resource ID, Client ID, and a client Secret.
 
-The resource ID, client ID and client secret values will depend on how you did the setup for Microsoft Entra ID based authentication for your website:
+The resource ID, client ID, and client secret values will depend on how you did the setup for Microsoft Entra ID-based authentication for your website:
 
 1. If you're using an application both as an identity provider and the client app to access the website, the client ID and the resource ID will be the application ID of the app, and the client secret will be the secret that you generated in the app.
     
@@ -110,20 +110,20 @@ The resource ID, client ID and client secret values will depend on how you did t
 
     After the client app is configured, make sure you create a new client secret by going to the **Certificates & Secrets** section of the app. Copy the client secret value shown in the page because it won't be displayed again.
 
-    In the following screenshots you can see the steps to obtain the client ID, client secret, and set up the app if you're creating the app on your own.
+    In the following screenshots, you can see the steps to obtain the client ID, and client secret, and set up the app if you're creating the app on your own.
     
-    * View of the settings on the branding section:
+    * View of the settings in the branding section:
     
       > [!div class="mx-imgBorder"]
       > [ ![Image showing the settings section on the branding page.](media/enterprise-web-connector//connectors-enterpriseweb-branding.png) ](media/enterprise-web-connector//connectors-enterpriseweb-branding.png#lightbox)
     
-    * View of the settings on authentication section:
+    * View of the settings in authentication section:
     
       > [!div class="mx-imgBorder"]
       > [ ![Image showing the settings section on the authentication page.](media/enterprise-web-connector/connectors-enterpriseweb-authentication.png) ](media/enterprise-web-connector/connectors-enterpriseweb-authentication.png#lightbox)
     
       > [!NOTE]
-      > It is not required to have the above specified route for Redirect URI in your website. Only if you use the user token sent by Azure in your website for authentication you will need to have the route.
+      > It is not required to have the above-specified route for Redirect URI on your website. Only if you use the user token sent by Azure in your website for authentication you will need to have the route.
     
     * View of the client ID on the **Essentials** section:
     
@@ -152,7 +152,7 @@ The resource ID, client ID and client secret values will depend on how you did t
       > [!div class="mx-imgBorder"]
       > [ ![Image showing the section to edit an app role.](media/enterprise-web-connector/connectors-enterpriseweb-new-app-role2.png) ](media/enterprise-web-connector/connectors-enterpriseweb-new-app-role2.png#lightbox)
     
-      After configuring the resource app, create the client app and give it permissions to access the resource app by adding the app role configured above in the API permissions of the client app. 
+      After configuring the resource app, create the client app and give it permission to access the resource app by adding the app role configured above in the API permissions of the client app. 
     
       > [!NOTE]
       > To see how to grant permissions to the client app see [Quickstart: Configure a client application to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
@@ -175,11 +175,11 @@ The resource ID, client ID and client secret values will depend on how you did t
       > [ ![Image showing the selected permissions.](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions3.png) ](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions3.png#lightbox)
     
     Once the permissions are assigned, you'll need to create a new client secret for this application by going to the Certificates & secrets section.
-    Copy the client secret value shown in the page as it won't be displayed again. Use the application ID from this app as the client ID, the secret from this app as the client secret, and the application ID of the first app as the resource ID.
+    Copy the client secret value shown on the page as it won't be displayed again. Use the application ID from this app as the client ID, the secret from this app as the client secret, and the application ID of the first app as the resource ID.
 
 **SiteMinder** requires a properly formatted URL, ```https://custom_siteminder_hostname/smapi/rest/createsmsession```, a username, and a password.
 
-**Windows** authentication is only available in agent mode. It requires username, domain and password. You need to provide the username and domain in the **Username** field, in any of the following formats: domain\username, or username@domain. A password must be entered in the **Password** field. For Windows authentication, the username provided must also be an administrator in the server where the agent is installed.
+**Windows** authentication is only available in agent mode. It requires a username, domain, and password. You need to provide the username and domain in the **Username** field, in any of the following formats: domain\username, or username@domain. A password must be entered in the **Password** field. For Windows authentication, the username provided must also be an administrator in the server where the agent is installed.
 
 ## Step 4: Meta tag settings
 
@@ -187,13 +187,13 @@ The connector fetches any meta tags your root URLs may have and shows them. You 
 
 :::image type="content" source="media/enterprise-web-connector/connectors-enterpriseweb-meta-tags-settings.png" alt-text="Meta tag settings with author, locale, and other tags selected.":::
 
-Selected meta tags can be used to create custom properties. Also, on the Schema page you can manage them further (Queryable, Searchable, Retrievable, Refinable).
+Selected meta tags can be used to create custom properties. Also, on the schema page, you can manage them further (Queryable, Searchable, Retrievable, Refinable).
 
 ## Step 5: Custom property settings
 
 You can enrich your indexed data by creating custom properties for your selected meta tags or the connector's default properties. 
 
-:::image type="content" source="media/enterprise-web-connector/connectors-custom-property-setup.png" alt-text="Custom property set up with a rule for Team meta data.":::
+:::image type="content" source="media/enterprise-web-connector/connectors-custom-property-setup.png" alt-text="Custom property set up with a rule for Team metadata.":::
 
 To add a custom property:
 
@@ -225,7 +225,7 @@ You can assign a source property to each label by choosing from a menu of option
 
 ## Step 8: Manage schema
 
-On the **Manage Schema** screen, you can change the schema attributes (the options are **Query**, **Search**, **Retrieve**, and **Refine**) associated with the default or custom properties, add optional aliases, and choose the **Content** property.
+On the **Manage schema** screen, you can change the schema attributes (the options are **Query**, **Search**, **Retrieve**, and **Refine**) associated with the default or custom properties, add optional aliases, and choose the **Content** property.
 
 ## Step 9: Manage search permissions
 
@@ -235,7 +235,7 @@ The Enterprise websites connector only supports search permissions visible to **
 
 The Enterprise websites connector supports full and incremental crawling. Incremental crawling is only supported for connections set up with sitemap crawling enabled. Sitemap for crawling can be selected in step 3. 
 
-During an incremental refresh interval, only URLs that have been modified since the last incremental refresh are crawled. In a full refresh interval, the connector will recrawl all the website's content. For a full refresh, we recommend you set a large refresh schedule interval, between one and two weeks, to ensure the connector have enough time to complete the crawl. We recommend a scheduled refresh.
+During an incremental refresh interval, only URLs that have been modified since the last incremental refresh are crawled. In a full refresh interval, the connector will recrawl all the website's content. For a full refresh, we recommend you set a large refresh schedule interval, between one and two weeks, to ensure the connector has enough time to complete the crawl. We recommend a scheduled refresh.
 
 ## Step 11: Review connection
 
