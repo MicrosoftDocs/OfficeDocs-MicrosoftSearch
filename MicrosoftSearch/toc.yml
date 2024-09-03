@@ -160,6 +160,8 @@ items:
             href: servicenow-tickets-connector.md
           - name: Troubleshooting
             href: troubleshoot-servicenow-tickets-connector.md
+    - name: Deploy Microsoft Graph connectors in Teams admin center
+      href: connectors-deploy-teams.md
     - name: Manage connections
       items:
       - name: Monitor connections
