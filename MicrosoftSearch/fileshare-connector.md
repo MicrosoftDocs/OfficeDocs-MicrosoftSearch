@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: "Set up the File share Graph connector for Microsoft Search"
+description: "Set up the File share Microsoft Graph connector for Microsoft Search"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -58,7 +58,7 @@ Follow the general [setup instructions](./configure-connector.md).
 > [!NOTE]
 > You can index up to twenty different file shares in a single connection. Enter one file share per line in the file shares text box area.
 
-Enter the path to the file share and select your previously installed Graph connector agent. Enter the credentials for a [Microsoft Windows](https://microsoft.com/windows) user account with read access to all the files in the file share.
+Enter the path to the file share and select your previously installed Microsoft Graph connector agent. Enter the credentials for a [Microsoft Windows](https://microsoft.com/windows) user account with read access to all the files in the file share.
 
 ## Step 4: Preserve last access time
 
@@ -72,7 +72,7 @@ You have the ability to limit files and folders from indexing based on file type
 
 For these file formats, only the text is indexed: DOC, DOCM, DOCX, DOT, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS. For multimedia and other file types, only metadata is indexed.
 
-### Based on last modified date or number of days since last modification
+### Based on the last modified date or number of days since the last modification
 
 Use these selections to only index files modified within a specified number of days or since a specific date.
 
@@ -116,11 +116,11 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 9: Manage search permissions
 
-You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists, by selecting the desired option in **Manage search permissions** page. The user accounts and groups provided in the Access Control Lists must be managed by Active Directory (AD). If you're using any other system for user accounts management, you can select 'everyone' option, which lets users search for all the files without any access restrictions. However, when users try to open the file, access controls set at the source apply.
+You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists, by selecting the desired option on **Manage search permissions** page. The user accounts and groups provided in the Access Control Lists must be managed by Active Directory (AD). If you're using any other system for user accounts management, you can select the 'everyone' option, which lets users search for all the files without any access restrictions. However, when users try to open the file, access controls set at the source apply.
 
-Windows by default provides 'Read' permission to 'Everyone' in Share ACLs when a folder is shared on network. By extension, if you're choosing Share ACLs in **Manage search permissions**, users will be able to search for all the files. If you want to restrict access, remove 'Read' access for 'Everyone' in file shares and provide access only to the desired users and groups. The connector then reads these access restrictions and applies them to search.
+Windows by default provides 'Read' permission to 'Everyone' in Share ACLs when a folder is shared on network. By extension, if you're choosing Share ACLs in **Manage search permissions**, users will be able to search for all the files. If you want to restrict access, remove 'Read' access for 'Everyone' in file shares and provide access only to the desired users and groups. The connector then reads these access restrictions and applies them to the search.
 
-You can choose Share ACLs only if the share path you provided follows UNC path format. You can create a path in UNC format by going to 'Advanced Sharing' under 'Sharing' option.
+You can choose to share ACLs only if the share path you provided follows UNC path format. You can create a path in UNC format by going to 'Advanced Sharing' under the 'Sharing' option.
 
 :::image type="content" source="media/file-connector/file-advanced-sharing.png" alt-text="Screenshot of the Advanced settings dialog box.":::
 
