@@ -24,7 +24,7 @@ The MediaWiki Microsoft Graph connector allows your organization to discover and
 > [!NOTE]
 > Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general Microsoft Graph connectors setup instructions.
 
-This article is for anyone who configures, runs, and monitors a MediaWiki connector. It supplements the general setup process, and shows instructions that apply only for the MediaWiki connector. This article also includes information about [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors a MediaWiki connector. It supplements the general setup process and shows instructions that apply only for the MediaWiki connector. This article also includes information about [Limitations](#limitations).
 
 <!---## Before you get started-->
 
@@ -47,9 +47,9 @@ Follow the general [setup instructions](./configure-connector.md).
 Enter your **Wiki URL** and choose the **Authentication type** from the drop-down menu of options. The options are **None**, **Basic**, and **OAuth
 2.0 Microsoft Entra ID**.
 
-If you choose **Basic** as the Authentication type, you will need to provide the **Username** and **Password** for the wiki.
+If you choose **Basic** as the Authentication type, you need to provide the **Username** and **Password** for the wiki.
 
-If you choose **OAuth 2.0 Microsoft Entra ID** as the Authentication type, you will need to provide the **Resource ID** of the wiki installation. You will also need to provide the **Client ID** and **Client secret** generated on the Microsoft Entra Application registration page.
+If you choose **OAuth 2.0 Microsoft Entra ID** as the Authentication type, you need to provide the **Resource ID** of the wiki installation. You also need to provide the **Client ID** and **Client secret** generated on the Microsoft Entra Application registration page.
 
 ## Step 4: Manage search permissions
 
@@ -84,10 +84,10 @@ The MediaWiki connector has these limitations in the preview release:
 
 * Supports only cloud-based wikis.
 * Supports only Basic or OAuth 2.0 with Microsoft Entra ID or Azure authentication.
-* Doesn't support namespace selection for indexing. Indexes only Main, Category, and File namespaces.
+* Doesn't support namespace selection for indexing. Indexes only main, category, and file namespaces.
 * Doesn't support Access Control Lists (ACLs). Thus, indexed pages are visible to all users in the organization.
 
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
