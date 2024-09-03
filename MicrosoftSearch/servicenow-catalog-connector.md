@@ -35,7 +35,7 @@ Follow the general [setup instructions](./configure-connector.md).
 
 Follow the general [setup instructions](./configure-connector.md).
 
-## Step 3: Connection Settings
+## Step 3: Connection settings
 
 To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**. Your organization's ServiceNow instance URL typically looks like this: "**https://<span>&lt;your-organization-domain>.service-now.</span>com**".
 
@@ -136,10 +136,10 @@ Now you have all the information required from the Azure portal. A quick summary
 
 Property | Description
 --- | ---
-Directory ID (Tenant ID) | Unique ID of the Microsoft Entra tenant, from step 3.a.
-Application ID (Client ID) | Unique ID of the application registered in step 3.a.
-Client Secret | The secret key of the application (from step 3.b). Treat it like a password.
-Service Principal ID | An identity for the application running as a service. (from step 3.c)
+Directory ID (tenant ID) | Unique ID of the Microsoft Entra tenant, from step 3.a.
+Application ID (client ID) | Unique ID of the application registered in step 3.a.
+Client secret | The secret key of the application (from step 3.b). Treat it like a password.
+Service principal ID | An identity for the application running as a service. (from step 3.c)
 
 ### Step 3.3.4: Register ServiceNow Application
 
