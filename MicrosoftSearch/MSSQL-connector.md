@@ -1,6 +1,6 @@
----
+![image](https://github.com/user-attachments/assets/b746d947-a067-4b68-8440-aedbe0e2016c)---
 ms.date: 10/08/2019
-title: "Azure SQL and Microsoft SQL Server Microsoft Graph connector for Microsoft Search"
+title: "Azure SQL and Microsoft SQL Server Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,12 +13,12 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Azure SQL and Microsoft SQL Microsoft Graph connector for Microsoft Search."
+description: "Set up the Azure SQL and Microsoft SQL Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot."
 ---
 # Azure SQL and Microsoft SQL Server Microsoft Graph connectors
 
 The Microsoft SQL Server or Azure SQL Microsoft Graph connector allows your organization to discover and index data from an on-premises SQL Server database, or a database hosted in your Azure SQL instance in the cloud.
-The connector indexes specified content in Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
+The connector indexes specified content in Microsoft Search and Microsoft 365 Copilot. To keep the index up to date with source data, it supports periodic full and incremental crawls. With these SQL connectors, you can also restrict access to search results for certain users.
 
 > [!NOTE]
 > Read the [**Setup your Microsoft Graph connector**](configure-connector.md) article to understand the general Microsoft Graph connectors setup instructions.
@@ -50,9 +50,9 @@ instructions.-->
 
 ### Register an app (for Azure SQL connector only)
 
-For Azure SQL connector, you must register an app in Microsoft Entra ID to allow the Microsoft Search app to access data for indexing. To learn more about registering an app, refer to the Microsoft Graph documentation on how to [register an app](/graph/auth-register-app-v2).
+For Azure SQL connector, you must register an app in Microsoft Entra ID to allow the Microsoft Search app and Microsoft 365 Copilot to access data for indexing. To learn more about registering an app, refer to the Microsoft Graph documentation on how to [register an app](/graph/auth-register-app-v2).
 
-After completing the app registration and taking note of the app name, application (client) ID, and tenant ID, you need to [generate a new client secret](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client is only displayed once. Remember to note & store the client secret securely. Use the client ID and client secret while configuring a new connection in Microsoft Search.
+After completing the app registration and taking note of the app name, application (client) ID, and tenant ID, you need to [generate a new client secret](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). The client is only displayed once. Remember to note & store the client secret securely. Use the client ID and client secret while configuring a new connection in Microsoft Search and Microsoft 365 Copilot.
 
 To add the registered app to your Azure SQL Database, you need to:
 
@@ -181,7 +181,7 @@ The components in the following image resemble the full crawl components with on
 
 Follow the general [setup instructions](./configure-connector.md).
 
-<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from the general setup 
 instructions.-->
 
 ## Step 5: Manage schema
