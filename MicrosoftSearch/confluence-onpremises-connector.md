@@ -1,6 +1,6 @@
 ---
 ms.date: 02/02/2022
-title: "Confluence On-premises Microsoft Graph connector (Preview)"
+title: "Confluence On-premises Microsoft Graph connector (preview)"
 ms.author: kam1
 author: TheKarthikeyan
 manager: harshkum
@@ -13,19 +13,19 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Confluence On-premises Microsoft Graph connector for Microsoft Search"
+description: "Set up the Confluence On-premises Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
 
 # Confluence on-premises Microsoft Graph connector (preview)
 
-The Confluence on-premises Microsoft Graph connector allows your organization to index Confluence server or data center content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search.
+The Confluence On-premises Microsoft Graph connector allows your organization to index Confluence server or data center content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search and Microsoft 365 Copilot.
 
 >[!NOTE]
->The Confluence on-premises connector is in preview. If you wish to get early access to try it, sign up using [this form](https://forms.office.com/r/JniPmK5bzm).
+>The Confluence On-premises Microsoft Graph connector is in preview. If you wish to get early access to try it, sign up using [this form](https://forms.office.com/r/JniPmK5bzm).
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence on-premises connector. It supplements the general instructions provided in [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md).
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence On-premises Microsoft Graph connector. It supplements the general instructions provided in [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md).
 
-Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence on-premises Microsoft Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
+Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence On-premises Microsoft Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
 ## Before you get started
 
@@ -58,7 +58,7 @@ To connect to your Confluence site, use your site URL.
 
 ### Step 3.3: Select the Microsoft  connector agent
 
-Select the connector agent from the drop-down list. The agent securely sends Confluence On-premises content into the Microsoft  index.
+Select the connector agent from the drop-down list. The agent securely sends Confluence On-premises content into the Microsoft index.
 
 ### Step 3.4: Select authentication type
 
@@ -98,7 +98,7 @@ Extract the public key from the certificate to the `confluence_publickey.pem` fi
 
 4. On the second screen of **Link applications** dialog, enter consumer details for the sample client:
 
-   Field | Recommended Value
+   Field | Recommended value
    --- | ---
    **Consumer key** | `OAuthkey`
    **Consumer name** | `Microsoft  connector App`
@@ -130,13 +130,13 @@ The following steps provide guidance on how to register the app [Configure an in
 4. Fill in the 
    - Redirect URL: `https://gcs.office.com/v1.0/admin/oauth/callback` 
    - Scope: **Admin**
-5. Complete the connection settings step using the Client ID and Secret. 
+5. Complete the connection settings step using the client ID and secret. 
 
 ## Step 4: Select properties
 
-In this step, you can add or remove available properties from your Confluence data source. Microsoft 365 has already selected few properties by default.
+In this step, you can add or remove available properties from your Confluence data source. Microsoft 365 has already selected a few properties by default.
 
-With a Confluence Query Language (CQL) string, you can specify conditions for syncing pages. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only the pages that are modified in the last two years. To learn about creating your own query string, see [Advanced Searching using CQL](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/). By default, all pages are indexed by the connector.
+With a Confluence Query Language (CQL) string, you can specify conditions for syncing pages. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only the pages that have been modified in the last two years. To learn about creating your own query string, see [Advanced Searching using CQL](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/). By default, all pages are indexed by the connector.
 
 >[!TIP]
 >You may use the CQL filter to index **content modified after a certain time** using, *lastModified >= "2018/12/31"*
@@ -149,12 +149,12 @@ Confluence On-premises connector supports search permissions visible to **Everyo
 
 In Confluence On-premises, security permissions for users and groups are defined using space permissions and page restrictions. Confluence On-premises connector applies *effective permissions* provided by [content restrictions API](https://docs.atlassian.com/ConfluenceServer/rest/7.15.0/#api/content/{id}/restriction).
 
-If you choose **Only people with access to this data source**, you need to further choose whether your Confluence site has Microsoft Entra ID provisioned users or Non-AAD users.
+If you choose **Only people with access to this data source**, you need to further choose whether your Confluence site has Microsoft Entra ID provisioned users or non-AAD users.
 
 To identify which option is suitable for your organization:
 
 1. Choose the **Microsoft Entra ID** option if the email ID of Confluence users is **same** as the UserPrincipalName (UPN) of users in Microsoft Entra ID.
-2. Choose the **Non-AAD** option if the email ID of Confluence users is **different** from the UserPrincipalName (UPN) of users in Microsoft Entra ID. 
+2. Choose the **non-AAD** option if the email ID of Confluence users is **different** from the UserPrincipalName (UPN) of users in Microsoft Entra ID. 
 
    >[!NOTE]
    >
@@ -187,9 +187,9 @@ For testing purposes, you can choose [publish to limited audience](./staged-roll
 
 ## Limitations
 
-The Confluence On-premises Microsoft  connector has the following known limitations in its latest release:
+The Confluence On-premises Microsoft Graph connector has the following known limitations in its latest release:
 
-* The Confluence On-premises Microsoft  connector doesn't index blogs, attachment files, and comments.
+* The Confluence On-premises Microsoft Graph connector doesn't index blogs, attachment files, and comments.
 
 ## Troubleshooting
 After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
