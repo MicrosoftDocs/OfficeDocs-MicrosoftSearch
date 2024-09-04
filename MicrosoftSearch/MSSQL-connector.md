@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/b746d947-a067-4b68-8440-aedbe0e2016c)---
 ms.date: 10/08/2019
 title: " Azure SQL and Microsoft SQL Server Microsoft Graph connectors for Microsoft Search and Microsoft 365 Copilot"
 ms.author: mecampos
@@ -72,11 +71,11 @@ For the Azure SQL Microsoft Graph connector, you only need to specify the server
 
 For added security, you may configure IP firewall rules for your Azure SQL Server or database. To learn more about setting up IP firewall rules, refer to the documentation on [IP firewall rules](/azure/azure-sql/database/firewall-configure). Add the following client IP ranges in the firewall settings.
 
-| Region | M365 Enterprise | Microsoft 365 Government
+| Region | Microsoft 365 Enterprise | Microsoft 365 Government
 | ------------ | ------------ | ------------ |
-| NAM | 52.250.92.252/30, 52.224.250.216/30 | 52.245.230.216/30, 20.141.117.64/30
-| EUR | 20.54.41.208/30, 51.105.159.88/30 | NA
-| APC | 52.139.188.212/30, 20.43.146.44/30 | NA
+| NAM | 52.250.92.252/30, 52.224.250.216/30 | 52.245.230.216/30, 20.141.117.64/30|
+| EUR | 20.54.41.208/30, 51.105.159.88/30 | NA|
+| APC | 52.139.188.212/30, 20.43.146.44/30 | NA|
 
 To search your database content, you must specify SQL queries when you configure the connector. These SQL queries need to name all the database columns that you want to index (that is, source properties), including any SQL joins that need to be performed to get all the columns. To restrict access to search results, you must specify Access Control Lists (ACLs) within SQL queries when you configure the connector.
 
@@ -143,7 +142,7 @@ In the configuration shown in the following image, `CreatedDateTime` is the sele
 
 The first query fetches the first **N** number of rows by using: "CreatedDateTime > January 1, 1753 00:00:00" (min value of DateTime data type). After the first batch is fetched, the highest value of `CreatedDateTime` returned in the batch is saved as the checkpoint if the rows are sorted in ascending order. An example is March 1, 2019 03:00:00. Then the next batch of **N** rows is fetched by using "CreatedDateTime > March 1, 2019 03:00:00" in the query.
 
-### Skipping soft-deleted rows (Optional)
+### Skipping soft-deleted rows (optional)
 
 To exclude soft-deleted rows in your database from being indexed, specify the soft-delete column name and value that indicates the row is deleted.
 
