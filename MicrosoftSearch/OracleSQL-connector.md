@@ -14,29 +14,23 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: "Set up the Oracle SQL Microsoft Graph connector for Microsoft Search."
+description: "Set up the Oracle SQL Microsoft Graph connector for Microsoft Search and Microsoft Copilot 365."
 ---
-<!---Previous ms.author:vivg --->
-
 # Oracle SQL Microsoft Graph connector
 
-The Oracle SQL Graph connector allows your organization to discover and index data from an on-premises Oracle database. The connector indexes specified content in Microsoft Search. To keep the index up to date with source data, it supports periodic full and incremental crawls. With the Oracle SQL connector, you can also restrict access to search results for certain users.
+The Oracle SQL Microsoft Graph connector allows your organization to discover and index data from an on-premises Oracle database. The connector indexes specified content in Microsoft Search and Microsoft Copilot 365. To keep the index up to date with source data, it supports periodic full and incremental crawls. With the Oracle SQL Microsoft Graph connector, you can also restrict access to search results for certain users.
 
-> [!NOTE]
-> Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general Microsoft Graph connectors setup instructions.
-
-This article is for anyone who configures, runs, and monitors an Oracle SQL Graph connector. It supplements the general setup process and shows instructions that apply only to the Oracle SQL Graph connector. This article also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors an Oracle SQL Microsoft Graph connector. It supplements the general setup process and shows instructions that apply only to the Oracle SQL Microsoft Graph connector. It also includes information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
 ## Before you get started
 
 ### Install the connector agent
 
-In order to access your on-premises third-party data, you must install and configure the Microsoft Graph connector agent. See [Install the Microsoft Graph connector agent](graph-connector-agent.md) to learn more.  
+In order to access your on-premises third-party data, you must install and configure the Microsoft Graph connector agent. For more information, see [Install the Microsoft Graph connector agent](graph-connector-agent.md).
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
-
-[Add Oracle SQL connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_OracleSqlConnector&type=OracleSqlConnector​)
+[Add the Oracle SQL Microsoft Graph connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_OracleSqlConnector&type=OracleSqlConnector​)
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -48,11 +42,11 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 3: Configure the connection settings
 
-To connect your Oracle SQL connector to a data source, you must configure the database server you want crawled and the on-premises Microsoft Graph connector agent. You can then connect to the database with the required authentication method.
+To connect your Oracle SQL Microsoft Graph connector to a data source, you must configure the database server you want to be crawled and the on-premises Microsoft Graph connector agent. You can then connect to the database with the required authentication method.
 
-For Oracle SQL connector, you need to specify the hostname, port, and service (database) name along with the preferred authentication method, username, and password.
+For the Oracle SQL Microsoft Graph connector, you need to specify the hostname, port, and service (database) name along with the preferred authentication method, username, and password.
 
-If the service Name is not available and you connect using SID, the service Name can be derived using one of the following commands (to be executed as sys admin) - 
+If the service name is not available and you connect using SID, the service name can be derived using one of the following commands (to be executed as sys admin).
 * select SERVICE_NAME from gv$session where sid in (select sid from v$MYSTAT);
 * select sys_context('userenv','service_name') from dual;
 
@@ -63,7 +57,7 @@ To search your database content, you must specify SQL queries when you configure
 
 ## Step 3a: Full crawl (required)
 
-In this step, you configure the SQL query that runs a full crawl of the database. The full crawl selects all the columns or properties where you want to select the options **Query**, **Search**, or **Retrieve**. You can also specify ACL columns to restrict access of search results to specific users or groups.
+In this step, you configure the SQL query that runs a full crawl of the database. The full crawl selects all the columns or properties where you want to select the options **Query**, **Search**, or **Retrieve**. You can also specify ACL columns to restrict access to search results to specific users or groups.
 
 > [!Tip]
 > To get all the columns that you need, you can join multiple tables.
@@ -72,34 +66,34 @@ In this step, you configure the SQL query that runs a full crawl of the database
 
 ### Select data columns (required) and ACL columns (optional)
 
-The example demonstrates a selection of five data columns that hold the data for the search: OrderId, OrderTitle, OrderDesc, CreatedDateTime, and IsDeleted. To set view permissions for each row of data, you can optionally select these ACL columns: AllowedUsers, AllowedGroups, DeniedUsers, and DeniedGroups. For all these data columns you can select the options to **Query**, **Search**, or **Retrieve**.
+The example demonstrates a selection of five data columns that hold the data for the search: orderId, orderTitle, orderDesc, createdDateTime, and isDeleted. To set view permissions for each row of data, you can optionally select these ACL columns: allowedUsers, allowedGroups, deniedUsers, and deniedGroups. For all these data columns you can select the options to **Query**, **Search**, or **Retrieve**.
 
-Select data columns as shown in this example query:
- `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
+Select data columns as shown in this example query.
+ `SELECT OrderId, orderTitle, orderDesc, allowedUsers, allowedGroups, deniedUsers, deniedGroups, createdDateTime, isDeleted`.
 
 To manage access to the search results, you can specify one or more ACL columns in the query. The SQL connector allows you to control access at per record level. You can choose to have the same access control for all records in a table. If the ACL information is stored in a separate table, you might have to do a join with those tables in your query.
 
 The use of each of the ACL columns in the above query is described below. The following list explains the four **access control mechanisms**.
 
-* **AllowedUsers**: This option specifies the list of user IDs who can access the search results. In the following example, a list of users: john@contoso.com, keith@contoso.com, and lisa@contoso.com would only have access to a record with OrderId = 12.
-* **AllowedGroups**: This option specifies the group of users who can access the search results. In the following example, group sales-team@contoso.com would only have access to record with OrderId = 12.
-* **DeniedUsers**: This option specifies the list of users who do **not** have access to the search results. In the following example, users john@contoso.com and keith@contoso.com do not have access to the record with OrderId = 13, whereas everyone else has access to this record.
-* **DeniedGroups**: This option specifies the group of users who do **not** have access to the search results. In the following example, groups engg-team@contoso.com and pm-team@contoso.com do not have access to a record with OrderId = 15, whereas everyone else has access to this record.  
+* **allowedUsers**: This option specifies the list of user IDs who can access the search results. In the following example, a list of users: john@contoso.com, keith@contoso.com, and lisa@contoso.com would only have access to a record with OrderId = 12.
+* **allowedGroups**: This option specifies the group of users who can access the search results. In the following example, group sales-team@contoso.com would only have access to record with OrderId = 12.
+* **deniedUsers**: This option specifies the list of users who do **not** have access to the search results. In the following example, users john@contoso.com and keith@contoso.com do not have access to the record with OrderId = 13, whereas everyone else has access to this record.
+* **deniedGroups**: This option specifies the group of users who do **not** have access to the search results. In the following example, groups engg-team@contoso.com and pm-team@contoso.com do not have access to a record with OrderId = 15, whereas everyone else has access to this record.  
 
 ![Sample data showing the OrderTable and AclTable with example properties.](media/MSSQL-ACL1.png)
 
 ### Supported data types
 
-This table summarizes the data types that are supported by the Oracle SQL connector. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer to the documentation on [property resource types](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties).
+This table summarizes the data types that are supported by the Oracle SQL Microsoft Graph connector. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer to the documentation on [property resource types](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties).
 
 | Category | Source data type | Indexing data type |
 | ------------ | ------------ | ------------ |
-| Number datatype | NUMBER(p,0) | int64 (for p <= 18) <br> double (for p > 18) |
-| Floating-point number datatype | NUMBER(p,s) <br> FLOAT(p) | double |
-| Date datatype | DATE <br> TIMESTAMP <br> TIMESTAMP(n) | datetime |
-| Character datatype | CHAR(n) <br> VARCHAR <br> VARCHAR2 <br> LONG <br> CLOB <br> NCLOB | string |
-| Unicode character datatype | NCHAR <br> NVARCHAR | string |
-| RowID datatype | ROWID <br> UROWID | string |
+| Number datatype | NUMBER(p,0) | int64 (for p <= 18) <br> double (for p > 18). |
+| Floating-point number datatype | NUMBER(p,s) <br> FLOAT(p) | double. |
+| Date datatype | DATE <br> TIMESTAMP <br> TIMESTAMP(n) | datetime. |
+| Character datatype | CHAR(n) <br> VARCHAR <br> VARCHAR2 <br> LONG <br> CLOB <br> NCLOB | string. |
+| Unicode character datatype | NCHAR <br> NVARCHAR | string. |
+| RowID datatype | ROWID <br> UROWID | string. |
 
 For any other data type currently not directly supported, the column needs to be explicitly cast to a supported data type.
 
@@ -162,7 +156,7 @@ You can choose to use the [ACLs specified in the full crawl screen](#full-crawl-
 
 ## Step 7: Choose refresh settings
 
-The Oracle SQL connector supports refresh schedules for both full and incremental crawls. We recommend that you set both.
+The Oracle SQL Microsoft Graph connector supports refresh schedules for both full and incremental crawls. We recommend that you set both.
 
 A full crawl schedule finds deleted rows that were previously synced to the Microsoft Search index and any rows that moved out of the sync filter. When you first connect to the database, a full crawl runs to sync all the rows retrieved from the full crawl query. To sync new rows and make updates, you need to schedule incremental crawls.
 
@@ -179,14 +173,14 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 
 ## Limitations
 
-The Oracle SQL connector has these limitations in the preview release:
+The Oracle SQL Microsoft Graph connector has these limitations in the preview release:
 
 * The on-premises database must run Oracle Database version 11g or later.
 * ACLs are only supported by using a User Principal Name (UPN), Microsoft Entra ID, or Active Directory Security.
 * Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
 
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 You can find troubleshooting steps for commonly seen issues [here](troubleshoot-oraclesql-connector.md).
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
