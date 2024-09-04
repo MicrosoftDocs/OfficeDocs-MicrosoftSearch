@@ -1,6 +1,6 @@
 --- 
 
-title: "Azure DevOps Wiki Microsoft Graph connector for Microsoft Search" 
+title: "Azure DevOps Wiki Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.author: vivg 
 author: vivg 
 manager: harshkum 
@@ -13,16 +13,13 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Azure DevOps Wiki Microsoft Graph connector for Microsoft Search" 
+description: "Set up the Azure DevOps Wiki Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 06/03/2022
 ---
 
 # Azure DevOps Wiki Microsoft Graph connector
 
-The Azure DevOps Wiki Graph connector allows your organization to index wikis in its instance of the Azure DevOps service. After you configure the connector, end users can search for project wikis and code wikis from Azure DevOps in Microsoft Search.
-
-> [!NOTE]
-> * Read the [**Setup for your Microsoft Graph connector**](configure-connector.md) article to understand the general Microsoft Graph connectors setup instructions.
+The Azure DevOps Wiki Microsoft Graph connector allows your organization to index wikis in its instance of the Azure DevOps service. After you configure the connector, end users can search for project wikis and code wikis from Azure DevOps in Microsoft Search.
 
 This article is for anyone who configures, runs, and monitors an Azure DevOps Wiki Microsoft Graph connector. It supplements the general setup process and shows instructions that apply only to the Azure DevOps Wiki Microsoft Graph connector.
 
