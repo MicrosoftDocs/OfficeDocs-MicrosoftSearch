@@ -3,7 +3,7 @@ ms.date: 10/21/2019
 title: "Manage search result layouts"
 ms.author: jypal
 author: jypal6
-manager: jeffkizn
+manager: wobba
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch

@@ -1,8 +1,8 @@
 ---
 title: "Manage  filters"
-ms.author: jeffkizn
+ms.author: misvenso
 author: revathi-b
-manager: jeffkizn
+manager: wobba
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
