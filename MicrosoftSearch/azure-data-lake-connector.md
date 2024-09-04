@@ -1,6 +1,6 @@
 ---
 ms.date: 10/08/2019
-title: "Azure Data Lake Microsoft Graph connector for Microsoft Search"
+title: "Azure Data Lake Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,16 +13,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Azure Data Lake Storage Gen2 Microsoft Graph connector for Microsoft Search"
+description: "Set up the Azure Data Lake Storage Gen2 Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
 # Azure Data Lake Storage Gen2 Microsoft Graph connector
 
 The Azure Data Lake Storage Gen2 Microsoft Graph connector allows users in your organization to search for files stored in [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction) and [Azure Data Lake Gen 2 Storage](/azure/storage/blobs/data-lake-storage-introduction) accounts.
 
-> [!NOTE]
-> Read the [**Setup your Microsoft Graph connector**](configure-connector.md) article to understand the general connectors setup instructions.
-
-This article is for anyone who configures, runs, and monitors an Azure Data Lake Storage Gen2 Microsoft Graph connector. It supplements the general setup process and shows instructions that apply only to the Azure Data Lake Storage Gen2 Microsoft Graph connector. This article also includes information about [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors an Azure Data Lake Storage Gen2 Microsoft Graph connector. It supplements the general setup process and shows instructions that apply only to the Azure Data Lake Storage Gen2 Microsoft Graph connector. It  also includes information about [Limitations](#limitations).
 
 In the article, we use *Azure Storage* as a generic term for [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction) and [Azure Data Lake Gen 2 Storage](/azure/storage/blobs/data-lake-storage-introduction).
 
