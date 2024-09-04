@@ -36,7 +36,7 @@ To index your Confluence server or data center content, you must install and reg
 You must be the administrator for your organization's Microsoft 365 tenant and the administrator for your organization's Confluence site.
 
 >[!NOTE]
->GCA can be installed on a different Windows machine and need not be on the same machine as that of the on-premises server. The machine can help generate App ID and secret which can be used for the setup. You must ensure that the GCA machine is on during the crawling. 
+>GCA can be installed on a different Windows machine and need not be on the same machine as that of the On-premises server. The machine can help generate App ID and secret which can be used for the setup. You must ensure that the GCA machine is on during the crawling. 
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
@@ -145,9 +145,9 @@ Use the preview results button to verify the sample values of the selected prope
 
 ## Step 5: Manage search permissions
 
-Confluence On-premises connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data appears in the search results for all users. If you choose **Only people with access to this data source**, indexed data appears in the search results for users who have access to them.
+The Confluence On-premises Microsoft Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data appears in the search results for all users. If you choose **Only people with access to this data source**, indexed data appears in the search results for users who have access to them.
 
-In Confluence On-premises, security permissions for users and groups are defined using space permissions and page restrictions. Confluence On-premises connector applies *effective permissions* provided by [content restrictions API](https://docs.atlassian.com/ConfluenceServer/rest/7.15.0/#api/content/{id}/restriction).
+In Confluence On-premises, security permissions for users and groups are defined using space permissions and page restrictions.tthe Confluence On-premises  Microsoft Graph connector applies *effective permissions* provided by [content restrictions API](https://docs.atlassian.com/ConfluenceServer/rest/7.15.0/#api/content/{id}/restriction).
 
 If you choose **Only people with access to this data source**, you need to further choose whether your Confluence site has Microsoft Entra ID provisioned users or non-AAD users.
 
