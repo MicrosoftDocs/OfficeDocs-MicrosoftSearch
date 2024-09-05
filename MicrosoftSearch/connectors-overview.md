@@ -13,7 +13,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Learn how your organization can use Microsoft Graph connectors to index third-party data so that it appears in Microsoft Search results."
+description: "Learn how your organization can use Microsoft Graph connectors to index third-party data so that it appears in Microsoft Search and Microsoft 365 Copilot results."
 ---
 
 # Microsoft Graph connectors overview for Microsoft Search and Microsoft 365 Copilot
