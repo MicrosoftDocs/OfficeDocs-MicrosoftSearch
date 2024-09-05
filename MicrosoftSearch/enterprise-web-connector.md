@@ -1,6 +1,6 @@
 ---
 ms.date: 10/08/2019
-title: "Enterprise websites Microsoft Graph connector"
+title: "Enterprise Websites Microsoft Graph connector"
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,20 +13,15 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Enterprise websites Microsoft Graph connector for Microsoft Search"
+description: "Set up the Enterprise Websites Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
-<!---Previous ms.author: monaray --->
-
 <!-- markdownlint-disable no-inline-html -->
 
-# Enterprise websites Microsoft Graph connector
+# Enterprise Websites Microsoft Graph connector
 
-The Enterprise websites Microsoft Graph connector allows your organization to index articles and **content from your company-owned websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search client.
+The Enterprise Websites Microsoft Graph connector allows your organization to index articles and **content from your company-owned websites**. After you configure the connector and sync content from the website, end users can search for that content from any Microsoft Search and Microsoft 365 Copilot client.
 
-> [!NOTE]
-> Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general connectors setup instructions.
-
-This article is for anyone who configures, runs, and monitors an Enterprise websites connector. It supplements the general setup process and shows instructions that apply only to the Enterprise websites connector. This article also includes information about [Troubleshooting](#troubleshooting).
+This article is for anyone who configures, runs, and monitors an Enterprise Websites Microsoft Graph connector. It supplements the general setup process and shows instructions that apply only to the Enterprise Websites Microsoft Graph connector. This article also includes information about [Troubleshooting](#troubleshooting).
 
 <!---## Before you get started-->
 
@@ -34,7 +29,7 @@ This article is for anyone who configures, runs, and monitors an Enterprise webs
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
-[Add Enterprise website Microsoft Graph connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Intranet&type=IntranetSites)
+[Add Enterprise Websites Microsoft Graph connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_Intranet&type=IntranetSites)
 
 (See general [setup instructions](./configure-connector.md) for more details)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -56,14 +51,14 @@ To connect to your data source, fill in the root URL of the website and select a
 
 ### Website URL
 
-Specify the root of the website that you'd like to crawl. The enterprise websites connector will use this URL as the starting point and follow all the links from this URL for its crawl.
+Specify the root of the website that you'd like to crawl. The Enterprise Websites Microsoft Graph connector uses this URL as the starting point and follow all the links from this URL for its crawl.
 
 > [!NOTE]
 > You can index up to 50 different site URLs in a single connection. In the URLs field, enter the site URLs separated by commas (,). For example, `https://www.contoso.com,https://www.contosoelectronics.com`.
 
 ### Use sitemap for crawling
 
-When selected the connector will only crawl the URLs listed in the sitemap. This also allows you to configure incremental crawling during a later step. If not selected or no site map is found, the connector will do a deep crawl of all the links found on the root URL of the site.
+When selected the connector only crawls the URLs listed in the sitemap. This also allows you to configure incremental crawling during a later step. If not selected or no site map is found, the connector does a deep crawl of all the links found on the root URL of the site.
 
 ### Dynamic site configuration
 
@@ -99,11 +94,11 @@ For your on-premises websites, select **Agent** as the crawl mode, and in the **
 
 **Basic** requires a username and password.
 
-**OAuth 2.0** with [Microsoft Entra ID](/azure/active-directory/) requires a resource ID, Client ID, and a client Secret.
+**OAuth 2.0** with [Microsoft Entra ID](/azure/active-directory/) requires a resource ID, client ID, and a client secret.
 
-The resource ID, client ID, and client secret values will depend on how you did the setup for Microsoft Entra ID-based authentication for your website:
+The resource ID, client ID, and client secret values depend on how you did the setup for Microsoft Entra ID-based authentication for your website:
 
-1. If you're using an application both as an identity provider and the client app to access the website, the client ID and the resource ID will be the application ID of the app, and the client secret will be the secret that you generated in the app.
+1. If you're using an application both as an identity provider and the client app to access the website, the client ID and the resource ID are the application ID of the app, and the client secret  the secret that you generated in the app.
     
     > [!NOTE]
     > For detailed steps to configure a client application as an Identity provider, see [Quickstart: Register an application with the Microsoft identity platform and Configure your App Service or Azure Functions app to use Microsoft Entra login](/azure/app-service/configure-authentication-provider-aad).
@@ -199,7 +194,7 @@ To add a custom property:
 
   1. Enter a property name. This name will appear in search results from this connector.
   1. For the value, select Static or String/Regex Mapping. A static value will be included in all search results from this connector. A string/regex value will vary based on the rules you add.
-  1. Select **Edit Value**.
+  1. Select **Edit value**.
   1. If you selected a static value, enter the string you want to appear.
   1. If you selected a string/regex value:
       * In the **Add expressions** section, in the **Property** list, select a default property or meta tag from the list.
