@@ -1,6 +1,6 @@
 ---
 ms.date: 10/02/2019
-title: "Microsoft Graph connectors overview for Microsoft Search"
+title: "Microsoft Graph connectors overview for Microsoft Search and Microsoft 365 Copilot"
 ms.author: mecampos
 author: mecampos
 manager: lsheppard
@@ -15,11 +15,10 @@ search.appverid:
 - MOE150
 description: "Learn how your organization can use Microsoft Graph connectors to index third-party data so that it appears in Microsoft Search results."
 ---
-<!---Previous ms.author: monaray --->
 
-# Microsoft Graph connectors overview for Microsoft Search
+# Microsoft Graph connectors overview for Microsoft Search and Microsoft 365 Copilot
 
-[Microsoft Search](./overview-microsoft-search.md) indexes all your [Microsoft 365](https://www.microsoft.com/microsoft-365) data to make it searchable for users. With Microsoft Graph connectors, your organization can index third-party data so that it appears in Microsoft Search and Microsoft 365 Copilot results. This feature expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem. The third-party data can be hosted on-premises or in the public or private clouds. Microsoft Graph connectors honor the source permissions as configured in your content source. As a result, users in your organization will only be able to view content to which they have access.
+Microsoft Search indexes all your [Microsoft 365](https://www.microsoft.com/microsoft-365) data to make it searchable for users. With Microsoft Graph connectors, your organization can index third-party data so that it appears in Microsoft Search and Microsoft 365 Copilot results. This feature expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem. The third-party data can be hosted on-premises or in the public or private clouds. Microsoft Graph connectors honor the source permissions as configured in your content source. As a result, users in your organization will only be able to view content to which they have access.
 
 > [!NOTE]
 > For details about how to build a Microsoft Graph connector that is integrated with Microsoft 365 Copilot, see [Microsoft 365 Copilot for Microsoft Graph connectors](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-graph-connector).
@@ -48,13 +47,13 @@ The following architectural diagram of the Microsoft Graph platform shows how Mi
 ![Diagram: on-premises and cloud-based data is pulled by connectors and indexed by the Microsoft Search API, and then the Microsoft Search service delivers the results to users.](media/connectors-overview/highlevel-connectors.png)
 Microsoft Graph connectors can pull data from cloud-based (SaaS) data sources and on-premises data stores. The above diagram shows connections to only two data sources, but you can add connections to up to ten sources per tenant.
 
-The Microsoft Graph Connectors API instantiates one connection per data source. Then, the API indexes and stores the data. Established connections interact with Microsoft Search, so users can get search results.
+The Microsoft Graph Connectors API instantiates one connection per data source. Then, the API indexes and stores the data. Established connections interact with Microsoft Search and Microsoft 365 Copilot so that users can get search results.
 
 You can use the Microsoft 365 [admin center](https://admin.microsoft.com) to set up and manage any of the Microsoft Graph connectors. The admin center has a simple user interface that makes it easy to establish a connection to your data source and monitor connection status and utilization.
 
 To create a **connection** to a data source, admins need authenticated access to the data and the entire content repository. The data is fed to the graph connector service for indexing.--->
 
-## What data sources can be connected to Microsoft Search?
+## What data sources can be connected to Microsoft Search and Microsoft 365 Copilot?
 
 Microsoft provides 18 Microsoft Graph connectors, and our ecosystem partners have created over 100 more connectors. You can also build your own connector.
 
