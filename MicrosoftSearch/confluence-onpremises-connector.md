@@ -16,7 +16,7 @@ search.appverid:
 description: "Set up the Confluence On-premises Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
 
-# Confluence on-premises Microsoft Graph connector (preview)
+# Confluence On-premises Microsoft Graph connector (preview)
 
 The Confluence On-premises Microsoft Graph connector allows your organization to index Confluence server or data center content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search and Microsoft 365 Copilot.
 
@@ -147,7 +147,7 @@ Use the preview results button to verify the sample values of the selected prope
 
 The Confluence On-premises Microsoft Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data appears in the search results for all users. If you choose **Only people with access to this data source**, indexed data appears in the search results for users who have access to them.
 
-In Confluence On-premises, security permissions for users and groups are defined using space permissions and page restrictions.tthe Confluence On-premises  Microsoft Graph connector applies *effective permissions* provided by [content restrictions API](https://docs.atlassian.com/ConfluenceServer/rest/7.15.0/#api/content/{id}/restriction).
+In Confluence On-premises, security permissions for users and groups are defined using space permissions and page restrictions. The Confluence On-premises  Microsoft Graph connector applies *effective permissions* provided by [content restrictions API](https://docs.atlassian.com/ConfluenceServer/rest/7.15.0/#api/content/{id}/restriction).
 
 If you choose **Only people with access to this data source**, you need to further choose whether your Confluence site has Microsoft Entra ID provisioned users or non-AAD users.
 
@@ -159,7 +159,7 @@ To identify which option is suitable for your organization:
    >[!NOTE]
    >
    > * If you choose Microsoft Entra ID as the type of identity source, the connector maps the email IDs of users obtained from Confluence directly to UPN property from Microsoft Entra ID.
-   > * If you chose "Non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from email ID to UPN.
+   > * If you chose "non-AAD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from email ID to UPN.
    > * Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support the processing of updates to permissions.
 
 ## Step 6: Assign property labels
