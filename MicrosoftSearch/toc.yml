@@ -142,6 +142,8 @@ items:
           items:
           - name: Setup
             href: salesforce-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-salesforce-connector.md
         - name: ServiceNow Catalog
           items:
           - name: Setup
