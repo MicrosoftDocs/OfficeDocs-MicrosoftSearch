@@ -1,9 +1,9 @@
 --- 
 ms.date: 08/28/2024 
 title: "Troubleshooting guide for Salesforce Microsoft Graph connector" 
-ms.author: 
-author:  
-manager:  
+ms.author: gladysa
+author: gladysa
+manager: brian.jackett 
 audience: Admin 
 ms.audience: Admin 
 ms.topic: article 

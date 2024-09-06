@@ -112,6 +112,8 @@ items:
           items:
           - name: Setup
             href: csv-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-csv-connector.md
         - name: Jira Cloud
           items:
           - name: Setup
