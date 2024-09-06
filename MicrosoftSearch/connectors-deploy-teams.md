@@ -3,6 +3,7 @@ ms.date: 09/03/2024
 title: "Deploy Microsoft Graph connectors in Teams admin center"
 ms.author: muwagerikpe
 author: muwagerikpe
+manager: rajun
 audience: Admin
 ms.audience: Admin
 ms.topic: article
