@@ -13,13 +13,13 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Atlassian Jira Cloud Microsoft Graph connector for Microsoft Search" 
+description: "Set up the Atlassian Jira Cloud Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 07/22/2021
 ---
 
 # Atlassian Jira Cloud Microsoft Graph connector
 
-The Atlassian Jira Cloud Microsoft Graph connector allows your organization to index Jira issues. After you configure the connector and index content from the Jira site, end users can search for those items in Microsoft Search.
+The Atlassian Jira Cloud Microsoft Graph connector allows your organization to index Jira issues. After you configure the connector and index content from the Jira site, end users can search for those items in Microsoft Search and Microsoft 365 Copilot.
 
 > [!NOTE]
 > Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general connectors setup instructions.
@@ -58,7 +58,7 @@ To connect to your Jira site, use your Jira site URL. A Jira cloud site URL typi
 Enter your account's username (usually email ID) and API token to authenticate using basic auth. To learn more about generating an API token, refer Atlassian's documentation on how to [manage API tokens for your Atlassian account](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/).
 
 ### OAuth 2.0
-Register an app in Atlassian Jira so the Microsoft Search app can access the instance. To learn more, see Atlassian Support documentation on how to [Enable OAuth 2.0](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-).
+Register an app in Atlassian Jira so the Microsoft Search app and Microsoft 365 Copilot can access the instance. To learn more, see Atlassian Support documentation on how to [Enable OAuth 2.0](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-).
 
 The following steps provide guidance on how to register the app:
 
@@ -92,9 +92,9 @@ The following steps provide guidance on how to register the app:
    | 21 | View permissions | `read:permission:jira` |
 
 5. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL for **M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`, for **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback` and save the changes.
-6. Navigate to `Settings` from the navigation pane on the left. You'll get the `Client ID` and `Secret` from this page.
+6. Navigate to `Settings` from the navigation pane on the left. You'll get the `client ID` and `secret` from this page.
 
-Complete the connection settings step using the **Client ID** and **Secret**.
+Complete the connection settings step using the **client ID** and **secret**.
 
 > [!NOTE]
 >
@@ -145,7 +145,7 @@ Updated  | `lastModifiedDateTime` | Date and time the item was last modified in 
 The Atlassian Jira connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them. In Atlassian Jira, security permissions are defined using project permission schemes containing site-level groups and project roles. Issue-level security can also be defined using issue-level permission schemes.
 
 >[!IMPORTANT]
->The Jira cloud Microsoft Graph connector must be able to read a user’s email ID in Jira to appropriately assign security permissions in Microsoft Search. This requires you to ensure either of the following:
+>The Jira cloud Microsoft Graph connector must be able to read a user’s email ID in Jira to appropriately assign security permissions in Microsoft Search and Microsoft 365 Copilot. This requires you to ensure either of the following:
 - All users should have selected the ‘Anyone’ option for their profile visibility settings. To learn more about profile visibility settings, refer to the [documentation by Atlassian](https://support.atlassian.com/atlassian-account/docs/update-your-profile-and-visibility-settings/).
 - For organizations using ‘Managed accounts’ (All the Atlassian accounts with email addresses from your verified domain become managed accounts. Refer [this documentation](https://support.atlassian.com/user-management/docs/what-are-managed-accounts/) for more information) - 
 >    * All users, who are part of managed accounts, must have the managed account setting selected in profile visibility settings.
@@ -192,7 +192,7 @@ You may also use the [sample result layout](jira-connector-result-layout.md) for
 
 The following are known limitations of the Atlassian Jira connector:
 
-* The connector does not support the "Any user logged in" application role to grant access to issues.
+* The connector does not support the "any user logged in" application role to grant access to issues.
 * Jira Server and Data Center versions aren't supported.
 
 ## Troubleshooting
