@@ -21,10 +21,7 @@ description: "Set up the MediaWiki Microsoft Graph connector for Microsoft Searc
 
 The MediaWiki Microsoft Graph connector allows your organization to discover and index data from a wiki created by using MediaWiki software. This connector indexes specified content into Microsoft Search and Microsoft 365 Copilot and supports periodic crawls to keep the index up to date.
 
-> [!NOTE]
-> Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general Microsoft Graph connectors setup instructions.
-
-This article is for anyone who configures, runs, and monitors a MediaWiki connector. It supplements the general setup process and shows instructions that apply only to the MediaWiki Microsoft Graph connector. This article also includes information about [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors a MediaWiki Microsoft Graph connector. It supplements the general setup process and shows instructions that apply only to the MediaWiki Microsoft Graph connector. This article also includes information about [Limitations](#limitations).
 
 <!---## Before you get started-->
 
@@ -32,7 +29,7 @@ This article is for anyone who configures, runs, and monitors a MediaWiki connec
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
-[Add MediaWiki connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_MediaWiki&type=MediaWiki)
+[Add the MediaWiki Microsoft Graph connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_MediaWiki&type=MediaWiki)
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -53,7 +50,7 @@ If you choose **OAuth 2.0 Microsoft Entra ID** as the authentication type, you n
 
 ## Step 4: Manage search permissions
 
-The MediaWiki connector only supports search permissions visible to **Everyone**. Indexed data appears in the search results and is visible to all users in the organization.
+The MediaWiki Microsoft Graph connector only supports search permissions visible to **Everyone**. Indexed data appears in the search results and is visible to all users in the organization.
 
 ## Step 5: Assign property labels
 
@@ -80,7 +77,7 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ## Limitations
 
-The MediaWiki connector has these limitations in the preview release:
+The MediaWiki Microsoft Graph connector has these limitations in the preview release:
 
 * Supports only cloud-based wikis.
 * Supports only Basic or OAuth 2.0 with Microsoft Entra ID or Azure authentication.
