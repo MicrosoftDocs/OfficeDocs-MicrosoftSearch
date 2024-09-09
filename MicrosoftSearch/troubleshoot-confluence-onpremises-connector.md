@@ -41,11 +41,11 @@ The URL is <ConfluenceURL/rest/api/space?limit=500&start=0>
 
 At the end of response we can see output similar to:
 
-```
-  "start":0,
-  "limit":500,
-  "size":500,
-```
+"start":0,
+
+"limit":500,
+
+"size":500,
 
 For more than 500 pages, to get next set of pages of response run the URL in following format:
 The URL is <ConfluenceURL/rest/api/space?limit=500&start=500>
