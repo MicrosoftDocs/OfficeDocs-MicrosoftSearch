@@ -1,6 +1,6 @@
 ---
 ms.date: 10/08/2019
-title: "Troubleshooting guide for ServiceNow Catalog Microsoft Graph connector"
+title: "Troubleshooting the ServiceNow Catalog Microsoft Graph connector"
 ms.author: kam1
 author: TheKarthikeyan
 manager: harshkum
@@ -13,9 +13,10 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Troubleshoot issues with the ServiceNow Catalog Microsoft Graph connector for Microsoft Search"
+description: "Troubleshooting the ServiceNow Catalog Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
-# Troubleshooting guide for ServiceNow Catalog Microsoft Graph connector
+# Troubleshooting the ServiceNow Catalog Microsoft Graph connector
+The following common errors are observed while configuring the connector, or during crawling and their possible reasons.
 
 ### 1. Unable to sign in due to Single Sign-on enabled ServiceNow instance
 
