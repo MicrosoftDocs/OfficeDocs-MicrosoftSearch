@@ -56,7 +56,7 @@ To connect to your data source, fill in the root URL of the website and select a
 
 ### Website URL
 
-Specify the root of the website that you'd like to crawl. The enterprise websites connector uses this URL as the starting point and follow all the links from this URL for its crawl.
+Specify the root of the website that you'd like to crawl. The enterprise websites connector uses this URL as the starting point and follows all the links from this URL for its crawl.
 
 The connector only crawls webpages in the domain of root URLs and does not support crawling of out-of-domain URLs. Redirection is only supported within the same domain. If there are redirections in the webpages to be crawled, you may add the redirected URL directly in list of URLs to be crawled.
 
@@ -103,9 +103,9 @@ For your on-premises websites, select **Agent** as the crawl mode and in the **O
 
 **OAuth 2.0** with [Microsoft Entra ID](/azure/active-directory/) requires a resource ID, Client ID, and a client Secret.
 
-The resource ID, client ID and client secret values depends on how you did the setup for Microsoft Entra ID based authentication for your website:
+The resource ID, client ID, and client secret values depends on how you did the setup for Microsoft Entra ID based authentication for your website:
 
-1. If you're using an application both as an identity provider and the client app to access the website, the client ID and the resource ID is the application ID of the app, and the client secret is the secret that you generated in the app.
+1. If you're using an application both as an identity provider and the client app to access the website, the client ID and the resource ID are the application ID of the app, and the client secret is the secret that you generated in the app.
     
     > [!NOTE]
     > For detailed steps to configure a client application as an Identity provider, see [Quickstart: Register an application with the Microsoft identity platform and Configure your App Service or Azure Functions app to use Microsoft Entra login](/azure/app-service/configure-authentication-provider-aad).
