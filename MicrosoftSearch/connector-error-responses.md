@@ -1,8 +1,6 @@
 ms.date: 10/02/2019
 title: " Error responses in Microsoft Graph connectors"
-ms.author: mecampos
-author: mecampos
-manager: lsheppard
+ms.author: danielabom
 audience: Admin
 ms.audience: Admin
 ms.topic: article
