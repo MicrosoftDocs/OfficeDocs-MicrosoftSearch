@@ -13,18 +13,18 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the MediaWiki Microsoft Graph connector for Microsoft Search"
+description: "Set up the MediaWiki Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
 <!---Previous ms.author: monaray --->
 
 # MediaWiki Microsoft Graph connector
 
-The MediaWiki Microsoft Graph connector allows your organization to discover and index data from a wiki created by using MediaWiki software. This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.
+The MediaWiki Microsoft Graph connector allows your organization to discover and index data from a wiki created by using MediaWiki software. This connector indexes specified content into Microsoft Search and Microsoft 365 Copilot and supports periodic crawls to keep the index up to date.
 
 > [!NOTE]
 > Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general Microsoft Graph connectors setup instructions.
 
-This article is for anyone who configures, runs, and monitors a MediaWiki connector. It supplements the general setup process and shows instructions that apply only for the MediaWiki connector. This article also includes information about [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors a MediaWiki connector. It supplements the general setup process and shows instructions that apply only to the MediaWiki Microsoft Graph connector. This article also includes information about [Limitations](#limitations).
 
 <!---## Before you get started-->
 
@@ -49,7 +49,7 @@ Enter your **Wiki URL** and choose the **Authentication type** from the drop-dow
 
 If you choose **Basic** as the Authentication type, you need to provide the **Username** and **Password** for the wiki.
 
-If you choose **OAuth 2.0 Microsoft Entra ID** as the Authentication type, you need to provide the **Resource ID** of the wiki installation. You also need to provide the **Client ID** and **Client secret** generated on the Microsoft Entra Application registration page.
+If you choose **OAuth 2.0 Microsoft Entra ID** as the authentication type, you need to provide the **Resource ID** of the wiki installation. You also need to provide the **client ID** and **client secret** generated on the Microsoft Entra Application registration page.
 
 ## Step 4: Manage search permissions
 
