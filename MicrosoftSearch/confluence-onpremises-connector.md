@@ -8,7 +8,7 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: Normal
+ms.localizationpriority: high
 search.appverid:
 - BFB160
 - MET150
