@@ -73,7 +73,7 @@ The following steps provide guidance on how to register the app:
 3. Provide an appropriate name for the application and create the new app.
 4. Navigate to `Permissions` from the navigation pane on left. Under the 'Granular Permissions' header, select `Add` for `Jira API`. Once added, select on `Configure` and add the following scopes listed below.
 
-   | **#** | **Scope name** | **Code** |
+   |  #  |  Scope name  |  Code  |
    | ------------ | ------------ | ------------ |
    | 1 | View fields | `read:field:jira` |
    | 2 | View avatars | `read:avatar:jira` |
@@ -98,6 +98,7 @@ The following steps provide guidance on how to register the app:
    | 21 | View permissions | `read:permission:jira` |
 
 5. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL for **M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`, for **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback` and save the changes.
+
 6. Navigate to `Settings` from the navigation pane on the left. You'll get the `Client ID` and `Secret` from this page.
 
 Complete the connection settings step using the **Client ID** and **Secret**.
@@ -120,6 +121,7 @@ You can choose for the connection to index either the entire Jira site or specif
 You may further choose to filter the Jira issues that will be indexed in two ways.
 
 * Specify the **issue modified time period**. This will only index the Jira issues that are created or modified in the time period selected on a **rolling basis** based on current crawl.
+
 * Specify the **JQL**. This will only index the Jira issues that are returned after filtering based on provided Jira Query Language (JQL). To learn more about using JQL, see Atlassian Support documentation on [using advanced search with Jira Query Language](https://support.atlassian.com/jira-service-management-cloud/docs/use-advanced-search-with-jira-query-language-jql/)
 
 > [!TIP]
@@ -133,7 +135,7 @@ The Atlassian Jira connector can index both default issue fields and custom crea
 
 *The list of properties that you select here, can impact how you can filter, search and view your results in Copilot for Microsoft 365.*
 
-**Source property** | **Label** | **Description**
+Source property | Label | Description
 --- | --- | ---
 Authors   | `authors` | Name of people who participated/collaborated on the item in the data source.
 Created  | `createdDateTime` | Date and time that the item was created in the data source.
