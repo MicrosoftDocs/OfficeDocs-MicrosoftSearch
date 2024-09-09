@@ -1,16 +1,14 @@
 items:
-- name: Plan for Microsoft Search
-  items:
-  - name: Overview
-    href: overview-microsoft-search.md
-  - name: Set up
-    href: setup-microsoft-search.md
-  - name: Manage access to files and sites
-    href: manage-access-files-sites.md
-  - name: US government environments
-    href: microsoft-search-us-government-environments.md
-  - name: Frequently asked questions
-    href: faqs.md
+- name: Overview of Microsoft Search
+  href: overview-microsoft-search.md
+- name: Set up
+  href: setup-microsoft-search.md
+- name: Manage access to files and sites
+  href: manage-access-files-sites.md
+- name: US government environments
+  href: microsoft-search-us-government-environments.md
+- name: Frequently asked questions
+  href: faqs.md
 - name: Get insights
   items:
   - name: Search usage reports 
@@ -58,6 +56,10 @@ items:
         href: configure-connector.md
       - name: Add Staged rollout to connectors
         href: staged-rollout-for-graph-connectors.md
+      - name: Graph Connectors in Copilot
+        items:
+        - name: Enhancing Copilot Discovery with Graph Connector Content
+          href: enhancing-microsoft-copilot-discovery-with-graph-connector-content.md
       - name: On-prem connectors
         items:
         - name: Connector agent setup
@@ -69,6 +71,7 @@ items:
       - name: Map Microsoft Entra identities
         href: map-aad.md
       - name: Connector-specific information
+        href: azure-data-lake-connector.md
         items:
         - name: Azure Data Lake Storage Gen2
           items:
@@ -135,7 +138,6 @@ items:
             href: OracleSQL-connector.md
           - name: Troubleshooting
             href: troubleshoot-oraclesql-connector.md
-        - name: ServiceNow Tickets
         - name: Salesforce
           items:
           - name: Setup
@@ -158,6 +160,8 @@ items:
             href: servicenow-tickets-connector.md
           - name: Troubleshooting
             href: troubleshoot-servicenow-tickets-connector.md
+    - name: Deploy Microsoft Graph connectors in Teams admin center
+      href: connectors-deploy-teams.md
     - name: Manage connections
       items:
       - name: Monitor connections
