@@ -1,6 +1,6 @@
 ---
 ms.date: 02/02/2022
-title: "Troubleshooting guide for Confluence On-premises Microsoft Graph connector (preview)"
+title: "Troubleshooting the Confluence On-premises Microsoft Graph connector (preview)"
 ms.author: kam1
 author: TheKarthikeyan
 manager: harshkum
@@ -13,14 +13,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Troubleshoot issues with the Confluence On-premises Microsoft Graph connector for Microsoft Search"
+description: "Troubleshooting the Confluence On-premises Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
-# Troubleshooting guide for Confluence On-premises Microsoft Graph connector
+# Troubleshooting the Confluence On-premises Microsoft Graph connector
 
-### 1. **The common errors that can be seen while configuring the connector and their possible reasons are listed below.**
+The following common errors are observed while configuring the connector and their possible reasons.
 
-| Configuration step | Error message | Possible reason(s) |
-| ------------ | ------------ | ------------ |
+| Configuration step | Error message | Possible reason(s)
+|:------------ |:------------ |:------------ |
 | Connection settings | The request is malformed or incorrect. | Incorrect Confluence site URL. |
 | Connection settings | Unable to reach the Confluence On-premises service for your Confluence site. | Incorrect Confluence site URL. |
 | Connection settings | The client doesn't have permission to perform the action. | Invalid password provided for Basic auth. |
