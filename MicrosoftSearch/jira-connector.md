@@ -152,13 +152,18 @@ Updated  | `lastModifiedDateTime` | Date and time the item was last modified in 
 
 The Atlassian Jira connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them. In Atlassian Jira, security permissions are defined using project permission schemes containing site-level groups and project roles. Issue level security can also be defined using issue-level permission schemes.
 
->[!IMPORTANT]
->The Jira cloud Graph connector must be able to read a user’s email id in Jira to appropriately assign security permissions in Microsoft Search. This requires you to ensure either of the following:
-- All users should have selected the ‘Anyone’ option for their profile visibility settings. To learn more about profile visibility settings, refer the [documentation by Atlassian](https://support.atlassian.com/atlassian-account/docs/update-your-profile-and-visibility-settings/).
-- For organizations using ‘Managed accounts’ (All the Atlassian accounts with email addresses from your verified domain become managed accounts. Refer [this documentation](https://support.atlassian.com/user-management/docs/what-are-managed-accounts/) for more information) - 
->    * All users, who are part of managed accounts, must have the managed account setting selected in profile visibility settings.
->    * Users who are not part of the managed account (same as crawling account), need to have ‘Anyone’ selected in their profile visibility settings.
->    * The crawling account used during connection configuration must have the managed account domain.
+> [!IMPORTANT]
+> The Jira cloud Graph connector must be able to read a user’s email id in Jira to appropriately assign security permissions in Microsoft Search. This requires you to ensure either of the following:
+>
+> - All users should have selected the ‘Anyone’ option for their profile visibility settings. To learn more about profile visibility settings, refer the [documentation by Atlassian](https://support.atlassian.com/atlassian-account/docs/update-your-profile-and-visibility-settings/).
+>
+> - For organizations using ‘Managed accounts’ (All the Atlassian accounts with email addresses from your verified domain become managed accounts. Refer [this documentation](https://support.atlassian.com/user-management/docs/what-are-managed-accounts/) for more information) - 
+>
+> - All users, who are part of managed accounts, must have the managed account setting selected in profile visibility settings.
+>
+> - Users who are not part of the managed account (same as crawling account), need to have ‘Anyone’ selected in their profile visibility settings.
+>
+> - The crawling account used during connection configuration must have the managed account domain.
 
 If you choose **Only people with access to this data source**, you need to further choose whether your Jira site has Microsoft Entra ID provisioned users or Non-Azure AD users.
 
