@@ -13,13 +13,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Salesforce Microsoft Graph connector for Microsoft Search"
+description: "Set up the Salesforce Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
 <!---Previous ms.author: rusamai --->
 
 # Salesforce Microsoft Graph connector
 
-The Salesforce Microsoft Graph connector, allows your organization to index Contacts, Opportunities, Leads, Cases, and Accounts objects in your Salesforce instance. After you configure the connector and index content from Salesforce, end users can search for those items from any Microsoft Search client.
+The Salesforce Microsoft Graph connector, allows your organization to index Contacts, Opportunities, Leads, Cases, and Accounts objects in your Salesforce instance. After you configure the connector and index content from Salesforce, end users can search for those items from any Microsoft Search and Microsoft 365 Copilot client.
 
 > [!NOTE]
 > Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general Microsoft Graph connectors setup instructions.
@@ -58,7 +58,7 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
       > [!div class="mx-imgBorder"]
       > ![API section in Salesforce instance after admin has entered all required configurations listed above.](media/salesforce-connector/sf1.png)
 
-- Copy the consumer key and the consumer secret. This information is used as the Client ID and the Client Secret when you configure the Connection Settings for your Microsoft Graph Connector in the Microsoft 365 admin portal.
+- Copy the consumer key and the consumer secret. This information is used as the client ID and the client secret when you configure the Connection Settings for your Microsoft Graph Connector in the Microsoft 365 admin portal.
 
   > [!div class="mx-imgBorder"]
   > ![Results returned by API section in Salesforce instance after admin has submitted all required configurations. Consumer Key is at top of left column and Consumer Secret is at top of right column.](media/salesforce-connector/clientsecret.png)
@@ -90,7 +90,7 @@ Follow the general [setup instructions](./configure-connector.md).
 
 For the Instance URL, use https://[domain].my.salesforce.com where the domain would be the Salesforce domain for your organization.
 
-Enter the Client ID and Client Secret you obtained from your Salesforce instance and select Sign in.
+Enter the client ID and client Secret you obtained from your Salesforce instance and select Sign in.
 
 The first time you've attempted to sign in with these settings, you'll get a pop-up asking you to log in to Salesforce with your admin username and password. The screenshot below shows the popup. Enter your credentials and select "Log In".
 
@@ -193,7 +193,7 @@ Follow the general [setup instructions](./configure-connector.md).
 - The Salesforce Microsoft Graph connector doesn't currently support Apex-based, territory-based sharing and sharing using personal groups from Salesforce.
 - There's a known bug in the Salesforce API the connector uses, where the private org-wide defaults for leads aren't honored currently.  
 - If a field has field level security (FLS) set for a profile, the connector won't ingest that field for any profiles in that Salesforce org. As a result, users won't be able to search for values for those fields or  show up in the results.  
-- In the manage schema screen these common standard property names are listed once, the options are **Query**, **Search**, **Retrieve**, and **Refine**, and apply to all or none.
+- In the managed schema screen these common standard property names are listed once, the options are **Query**, **Search**, **Retrieve**, and **Refine**, and apply to all or none.
     - Name
     - Url
     - Description
