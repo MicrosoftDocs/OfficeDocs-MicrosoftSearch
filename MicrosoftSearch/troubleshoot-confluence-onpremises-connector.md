@@ -29,23 +29,21 @@ description: "Troubleshoot issues with the Confluence On-premises Graph Microsof
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
 
 ## 2. Test your connection
-a) To check active pages on confluence instance
-
+a) To check active pages on confluence instance <br>
 b) To check the list of spaces that account has access to
 
-Please run the below URL in browser or postman with the same cred used for connection creation.
+Run the URL mentioned below in browser or postman with the same cred used for connection creation.
+
 > [!NOTE]
-> Confluence space API will fetch maximum 500 spaces in a call, so we can split the request if we have more spaces
+> Confluence space API will fetch maximum 500 spaces in a call, so we can split the request if we have more spaces.
 
-The URL is <ConfluenceURL/rest/api/space?limit=500&start=0>
+The URL is <ConfluenceURL/rest/api/space?limit=500&start=0>.
 
-At the end of response we can see output similar to:
+At the end of response, we can see output similar to:
 
-"start":0,
+"start":0,<br>
+"limit":500,<br>
+"size":500,<br>
 
-"limit":500,
-
-"size":500,
-
-For more than 500 pages, to get next set of pages of response run the URL in following format:
+For more than 500 pages, to get the next set of pages of response, run the URL in the format that follows.
 The URL is <ConfluenceURL/rest/api/space?limit=500&start=500>
