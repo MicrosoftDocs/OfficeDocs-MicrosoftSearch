@@ -1,6 +1,6 @@
 ---
 ms.date: 10/08/2019
-title: "Troubleshooting guide for ServiceNow Knowledge Microsoft Graph connector"
+title: "Troubleshooting the ServiceNow Knowledge Microsoft Graph connector"
 ms.author: souravpoddar
 author: souravpoddar001
 manager: harshkum
@@ -13,11 +13,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Troubleshoot issues with the ServiceNow Knowledge Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot."
+description: "Troubleshooting the ServiceNow Knowledge Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot."
 ---
-# Troubleshooting guide for ServiceNow Knowledge Microsoft Graph connector
+# Troubleshooting the ServiceNow Knowledge Microsoft Graph connector
 
-### 1. **Not able to find ServiceNow Knowledge articles in Microsoft 365 Copilot or Microsoft Search.**
+The following common errors are observed while configuring the connector, or during crawling and their possible reasons.
+
+### 1. Not able to find ServiceNow Knowledge articles in Microsoft 365 Copilot or Microsoft Search.
    
 <details>
 <summary>(Click to expand) Follow the troubleshooting steps to identify the root cause.</summary><br>
@@ -60,7 +62,7 @@ If your organization uses single sign-on (SSO) to ServiceNow, you may have troub
 
 1. **Check table access permissions:** If you see a forbidden or unauthorized response in connection status, check if the service account has the required access to the tables mentioned in [Step 2: Data Source Settings](/MicrosoftSearch/servicenow-knowledge-connector/#2-data-source-settings). Check whether the service account has 'read' access to all the tables in the column.
 
-2. **Change in Account password:** The ServiceNow Knowledge Microsoft Graph connector uses an access token fetched on behalf of the service account for the crawl. The access token refreshes every 12 hours. Ensure that the service account password isn't changed after publishing the connection. You may need to reauthenticate the connection if there's a change in password.
+2. **Change in Account password:** The ServiceNow Knowledge Microsoft Graph connector uses an access token fetched on behalf of the service account for the crawl. The access token refreshes every 12 hours. Ensure that the service account password isn't changed after publishing the connection. You may need to reauthenticate the connection if there's a change in the password.
 
 3. **Check if the ServiceNow instance is behind a firewall:** The Microsoft Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You need to explicitly allow access to the connector service. You can find the public IP address range of the connector service in this table. Based on your tenant region, add it to your ServiceNow instance network allow list.
 
@@ -90,12 +92,11 @@ ServiceNow Knowledge connector computes the AccessUrl property using sys_id in t
    ![Screenshot shows how to find items block in result type](media/servicenow-knowledge-connector/edit-result-type-3.png)
 
 3. Edit AccessUrl property
+To change the destination URL, edit the `AccessUrl` part of the text property in the items block. For example, if a ServiceNow Knowledge article should be redirected to `https://contoso.service-now.com/sp` where `sp` is the service URL portal prefix, follow these steps.
 
-   To change the destination URL, edit the `AccessUrl` part of the text property in the items block. For example, if a ServiceNow Knowledge article should be redirected to `https://contoso.service-now.com/sp` where `sp` is the service URL portal prefix, follow these steps.
-
-   **Original value** | **New value**
-   --- | ---
-   `"[{shortdescription}]({AccessUrl})"` | `"[{shortdescription}](https://contoso.service-now.com/sp?id=kb_article_view&sysparm_article={number})"`
+   Original value|New value
+   |:--- |:---|
+   |`"[{shortdescription}]({AccessUrl})"` | `"[{shortdescription}](https://contoso.service-now.com/sp?id=kb_article_view&sysparm_article={number})"`
 
    Where `number` is the knowledge article number property. It should be marked as *retrieve* in the Manage Schema screen during connection creation.
 
