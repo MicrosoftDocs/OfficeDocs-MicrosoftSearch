@@ -14,16 +14,13 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: "Set up the File share Microsoft Graph connector for Microsoft Search"
+description: "Set up the File share Microsoft Graph connector for Microsoft Search and Microsoft Copilot 365"
 ---
 <!---Previous ms.author: rusamai --->
 
 # File share Microsoft Graph connector
 
 The File share Microsoft Graph connector allows users in your organization to search on-premises Windows file shares.
-
-> [!NOTE]
-> Read the [**Setup for your Microsoft Graph connector**](configure-connector.md) article to understand the general connectors setup process.
 
 ## Before you get started
 
@@ -118,7 +115,7 @@ Follow the general [setup instructions](./configure-connector.md).
 
 You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists, by selecting the desired option on **Manage search permissions** page. The user accounts and groups provided in the Access Control Lists must be managed by Active Directory (AD). If you're using any other system for user accounts management, you can select the 'everyone' option, which lets users search for all the files without any access restrictions. However, when users try to open the file, access controls set at the source apply.
 
-Windows by default provides 'Read' permission to 'Everyone' in Share ACLs when a folder is shared on network. By extension, if you're choosing Share ACLs in **Manage search permissions**, users will be able to search for all the files. If you want to restrict access, remove 'Read' access for 'Everyone' in file shares and provide access only to the desired users and groups. The connector then reads these access restrictions and applies them to the search.
+Windows by default provides 'Read' permission to 'Everyone' in Share ACLs when a folder is shared on the network. By extension, if you're choosing Share ACLs in **Manage search permissions**, users will be able to search for all the files. If you want to restrict access, remove 'Read' access for 'Everyone' in file shares and provide access only to the desired users and groups. The connector then reads these access restrictions and applies them to the search.
 
 You can choose to share ACLs only if the share path you provided follows UNC path format. You can create a path in UNC format by going to 'Advanced Sharing' under the 'Sharing' option.
 
@@ -138,7 +135,7 @@ instructions.-->
 <!---## Troubleshooting-->
 <!---Insert troubleshooting recommendations for this data source-->
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
 
