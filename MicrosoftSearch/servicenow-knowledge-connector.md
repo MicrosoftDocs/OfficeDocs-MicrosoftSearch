@@ -36,7 +36,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - If both Knowledge base and Knowledge article level permissions are defined, then only article-level permissions are honored.
 - Does not index attachments.
 
-## Pre-requisites
+## Prerequisites
 - **ServiceNow Instance URL**: To connect to your ServiceNow data, you need your organization's ServiceNow instance URL. Your organization's ServiceNow instance URL typically looks like https://your-organization-domain.service-now.com. (Don’t have one? [Check how to create a test instance](https://www.youtube.com/watch?v=OTdzVLqpFHY))
 - **Service Account**: To connect to ServiceNow and allow Microsoft Graph Connector to update knowledge articles regularly, you need a service account with read access to specific ServiceNow table records. The service account needs read access to the following **ServiceNow table records** to successfully crawl various entities.
 
@@ -62,7 +62,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
    You can **create and assign a role** for the service account you use to connect with Microsoft Search. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be assigned on the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/vancouver/new_to_servicenow/app_store_learnv2_securingapps_vancouver_creating_and_editing_access_controls). 
 
-   If you want to index properties from [extended tables](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/table-administration/concept/table-extension-and-classes.html) of *kb_knowledge*, provide read access to sys_dictionary and sys_db_object. This is an optional feature. You can index *kb_knowledge* table properties without access to the two additional tables.
+   If you want to index properties from [extended tables](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/table-administration/concept/table-extension-and-classes.html) of *kb_knowledge*, provide read access to sys_dictionary and sys_db_object. The access to these tables is optional. You can index *kb_knowledge* table properties without access to the two additional tables.
 
 ## Get Started
 
@@ -71,7 +71,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ![Connection creation screen for Microsoft Graph Connector for ServiceNow Knowledge](/MicrosoftSearch/media/servicenow-knowledge-create-page.png "Add Microsoft Graph Connector for ServiceNow Knowledge")
 
 ###1. Display name 
-A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization will recognize.
+A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ###2. ServiceNow URL
 To connect to your ServiceNow data, you need your organization's ServiceNow instance URL. Your organization's ServiceNow instance URL typically looks like https://your-organization-domain.service-now.com.
@@ -85,9 +85,9 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
 
    b. **ServiceNow OAuth**
    <details>
-   <summary>[Click to expand]To use the ServiceNow OAuth for authentication, follow the steps below.</summary>
+   <summary>[Click to expand]To use the ServiceNow OAuth for authentication, follow these steps.</summary><br>
     
-   A ServiceNow admin will need to provision an endpoint in your ServiceNow instance, so that the Microsoft Search app can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/vancouver-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
+   A ServiceNow admin needs to provision an endpoint in your ServiceNow instance, so that the Microsoft Search app can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/vancouver-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
    The following table provides guidance on how to fill out the endpoint creation form:
 
@@ -107,23 +107,23 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
 
    c. **Microsoft Entra ID OpenID Connect**
 
-    <details>
+   <details>
 
-      <summary>To use Microsoft Entra ID OpenID Connect for authentication, follow the steps below.</summary>
+   <summary>To use Microsoft Entra ID OpenID Connect for authentication, follow the steps below.</summary>
 
-      <a name='step-331-register-a-new-application-in-azure-active-directory'></a>
+   <a name='step-331-register-a-new-application-in-azure-active-directory'></a>
 
-       1. Register a new application in Microsoft Entra ID
+   1. Register a new application in Microsoft Entra ID
 
-          To learn about registering a new application in Microsoft Entra ID, see [Register an application](/azure/active-directory/develop/quickstart-register-app#register-an-application). Select single tenant organizational directory. Redirect URI isn't needed. After registration, note down the Application (client) ID and Directory (tenant) ID.
+      To learn about registering a new application in Microsoft Entra ID, see [Register an application](/azure/active-directory/develop/quickstart-register-app#register-an-application). Select single tenant organizational directory. Redirect URI isn't needed. After registration, note down the Application (client) ID and Directory (tenant) ID.
 
-      2. Create a client secret
+   2. Create a client secret
 
-         To learn about creating a client secret, see [Creating a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Take a note of client secret.
+      To learn about creating a client secret, see [Creating a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Take a note of client secret.
 
-      3. Retrieve Service Principal Object Identifier
+   3. Retrieve Service Principal Object Identifier
 
-         Follow the steps to retrieve Service Principal Object Identifier
+      Follow the steps to retrieve Service Principal Object Identifier
 
          1. Run PowerShell.
 
@@ -133,19 +133,19 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
             Install-Module -Name Az -AllowClobber -Scope CurrentUser
             ```
 
-          1. Connect to Azure.
+         1. Connect to Azure.
 
              ```powershell
              Connect-AzAccount
              ```
 
-          1. Get Service Principal Object Identifier.
+         1. Get Service Principal Object Identifier.
 
              ```powershell
              Get-AzADServicePrincipal -ApplicationId "Application-ID"
              ```
    
-             Replace "Application-ID" with Application (client) ID (without quotes) of the application you registered in step 1. Note the value of ID object from PowerShell output. It's the Service Principal ID.
+            Replace "Application-ID" with Application (client) ID (without quotes) of the application you registered in step 1. Note the value of ID object from PowerShell output. It's the Service Principal ID.
 
             Now you have all the information required from Azure portal. A quick summary of the information is given in the table below.
 
@@ -156,13 +156,13 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
          Client Secret | The secret key of the application (from step 3.b). Treat it like a password.
          Service Principal ID | An identity for the application running as a service. (from step 3.c)
 
-      4. Register ServiceNow Application
+   4. Register ServiceNow Application
 
-         The ServiceNow instance needs the following configuration:
+      The ServiceNow instance needs the following configuration:
 
-           1. Register a new OAuth OIDC entity. To learn, see [Create an OAuth OIDC provider](https://docs.servicenow.com/bundle/vancouver-platform-security/page/administer/security/task/add-OIDC-entity.html).
+         1. Register a new OAuth OIDC entity. To learn, see [Create an OAuth OIDC provider](https://docs.servicenow.com/bundle/vancouver-platform-security/page/administer/security/task/add-OIDC-entity.html).
 
-           1. The following table provides guidance on how to fill out OIDC provider registration form
+         1. The following table provides guidance on how to fill out OIDC provider registration form
 
               Field | Description | Recommended Value
               --- | --- | ---
@@ -170,11 +170,11 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
               Client ID | The client ID of the application registered in the third-party OAuth OIDC server. The instance uses the client ID when requesting an access token. | Application (Client) ID from step 3.a
               Client Secret | The client secret of the application registered in the third-party OAuth OIDC server. | Client Secret from step 3.b
 
-              All other values can be default.
+            All other values can be default.
 
-          1. In the OIDC provider registration form, you need to add a new OIDC provider configuration. Select the search icon against *OAuth OIDC Provider Configuration* field to open the records of OIDC configurations. Select New.
+         1. In the OIDC provider registration form, you need to add a new OIDC provider configuration. Select the search icon against *OAuth OIDC Provider Configuration* field to open the records of OIDC configurations. Select New.
 
-          1. The following table provides guidance on how to fill out OIDC provider configuration form
+         1. The following table provides guidance on how to fill out OIDC provider configuration form
 
              Field | Recommended Value
              --- | ---
@@ -186,32 +186,33 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
              User Field | User ID
              Enable JTI claim verification | Disabled
 
-          1. Select Submit and Update the OAuth OIDC Entity form.
+         1. Select Submit and Update the OAuth OIDC Entity form.
 
-      5. Create a ServiceNow account
+   5. Create a ServiceNow account
 
-         Refer the instructions to create a ServiceNow account, [create a user in ServiceNow](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
+      Refer the instructions to create a ServiceNow account, [create a user in ServiceNow](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
 
-         The following table provides guidance on how to fill out the ServiceNow user account registration
+      The following table provides guidance on how to fill out the ServiceNow user account registration
 
-         Field | Recommended Value
-          --- | ---
-         User ID | Service Principal ID from step 3.c 
-          Web service access only | Checked
+      Field | Recommended Value
+       --- | ---
+      User ID | Service Principal ID from step 3.c 
+      Web service access only | Checked
 
-            All other values can be left to default.
+      All other values can be left to default.
 
-      6. Enable Knowledge role for the ServiceNow account
+   6. Enable Knowledge role for the ServiceNow account
 
-         Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Refer to the table in the beginning of [Step 2: Data Source Settings](#2-data-source-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
+      Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Refer to the table in the beginning of [Step 2: Data Source Settings](#2-data-source-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
-         Use Application ID as Client ID (from step 3.1), and Client secret (from step 3.2) in admin center configuration wizard to authenticate to your ServiceNow instance using Microsoft Entra ID OpenID Connect.
+      Use Application ID as Client ID (from step 3.1), and Client secret (from step 3.2) in admin center configuration wizard to authenticate to your ServiceNow instance using Microsoft Entra ID OpenID Connect.
+
 </details>
 
 ###4. Rollout to limited audience
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, please click [here](/MicrosoftSearch/staged-rollout-for-graph-connectors.md).
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, click [here](/MicrosoftSearch/staged-rollout-for-graph-connectors.md).
 
-At this point, you are ready to create the connection for ServiceNow Knowledge. You can click on the ‘Create’ button and the Microsoft Graph connector will start indexing articles from your ServiceNow account.
+At this point, you are ready to create the connection for ServiceNow Knowledge. You can click on the "Create" button and the Microsoft Graph connector will start indexing articles from your ServiceNow account.
 
 For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency etc., we have set defaults based on what works best with ServiceNow data. You can see the default values below:
 
@@ -230,11 +231,11 @@ For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl
 |Incremental Crawl|_Frequency: Every 15 mins_|
 |Full Crawl|_Frequency: Every Day_|
 
-If you want to edit any of these values, you need to choose the ‘Custom Setup’ option.
+If you want to edit any of these values, you need to choose the "Custom Setup" option.
 
 ##Custom Setup
 
-Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click on the ‘Custom Setup’ option, you will see three additional tabs – Users, Content, and Sync.
+Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click on the "Custom Setup" option, you see three more tabs – Users, Content, and Sync.
 
 ###Users
 
@@ -242,7 +243,7 @@ Custom setup is for those admins who want to edit the default values for setting
 
 **Access Permissions**
 
-The ServiceNow connector supports access permissions visible to ‘Everyone’ or ‘Only people with access to content in data source’. Indexed data appears in results and is visible to all users in the organization or users who have access to them via user criteria permission respectively. Choose the one that is most appropriate for your organization.
+The ServiceNow connector supports access permissions visible to "Everyone" or "Only people with access to content in data source". Indexed data appears in results and is visible to all users in the organization or users who have access to them via user criteria permission respectively. Choose the one that is most appropriate for your organization.
 
 If a knowledge article isn't enabled with a user criterion, it appears in results of everyone in the organization.
 
@@ -255,7 +256,7 @@ If a knowledge article isn't enabled with a user criterion, it appears in result
 
 **Mapping Identities**
 
-The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the Email id of ServiceNow users is same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra ID. If you believe this would not work for your organization, you can provide a custom mapping formula. To know more about, mapping Non-EntraID identities, click [here](/MicrosoftSearch/map-non-aad.md).
+The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the Email id of ServiceNow users is same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra ID. If you believe the default mapping would not work for your organization, you can provide a custom mapping formula. To know more about, mapping Non-EntraID identities, click [here](/MicrosoftSearch/map-non-aad.md).
 
 ###Content
 
