@@ -70,7 +70,6 @@ The following licenses include entitlement to 500 items of index quota, which co
 
 * Microsoft 365 Copilot
 * The Microsoft 365 E5 or Office 365 E5
-* [Topics](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
 For example, if your organization has 100 Microsoft 365 E5 licenses, then your organization has 100 x 500 = 50,000 items worth of Microsoft Graph connectors index quota.
 
