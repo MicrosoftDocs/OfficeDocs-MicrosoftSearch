@@ -17,7 +17,7 @@ description: "Troubleshoot issues with the Azure DevOps Work Items Microsoft Gra
 ---
 # Troubleshooting the Azure DevOps Work Items Microsoft Graph connector
 
-1. The following common errors are observed while configuring the connector, or during crawling and their possible reasons.
+The following common errors are observed while configuring the connector, or during crawling and their possible reasons.
 
 | Step | Error message | Possible reason(s) |
 |:------------ |:------------ |:------------ |
