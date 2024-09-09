@@ -19,15 +19,12 @@ description: "Set up the Salesforce Microsoft Graph connector for Microsoft Sear
 
 # Salesforce Microsoft Graph connector
 
-The Salesforce Microsoft Graph connector, allows your organization to index Contacts, Opportunities, Leads, Cases, and Accounts objects in your Salesforce instance. After you configure the connector and index content from Salesforce, end users can search for those items from any Microsoft Search and Microsoft 365 Copilot client.
+The Salesforce Microsoft Graph connector, allows your organization to index contacts, opportunities, leads, cases, and accounts objects in your Salesforce instance. After you configure the connector and index content from Salesforce, end users can search for those items from any Microsoft Search and Microsoft 365 Copilot client.
 
-> [!NOTE]
-> Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general Microsoft Graph connectors setup instructions.
-
-This article is for anyone who configures, runs, and monitors a Salesforce connector. It supplements the general setup process and shows instructions that apply only to the Salesforce connector. This article also includes information about [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors a Salesforce Microsoft Graph connector. It supplements the general setup process and shows instructions that apply only to the Salesforce Microsoft Graph connector. This article also includes information about [Limitations](#limitations).
 
 >[!IMPORTANT]
->The Salesforce connector currently supports Summer '19 or later.
+>The Salesforce Microsoft Graph connector currently supports Summer '19 or later.
 
 ## Before you get started
 
@@ -58,7 +55,7 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
       > [!div class="mx-imgBorder"]
       > ![API section in Salesforce instance after admin has entered all required configurations listed above.](media/salesforce-connector/sf1.png)
 
-- Copy the consumer key and the consumer secret. This information is used as the client ID and the client secret when you configure the Connection Settings for your Microsoft Graph Connector in the Microsoft 365 admin portal.
+- Copy the consumer key and the consumer secret. This information is used as the client ID and the client secret when you configure the connection ettings for your Salesforce Microsoft Graph connector in the Microsoft 365 admin portal.
 
   > [!div class="mx-imgBorder"]
   > ![Results returned by API section in Salesforce instance after admin has submitted all required configurations. Consumer Key is at top of left column and Consumer Secret is at top of right column.](media/salesforce-connector/clientsecret.png)
