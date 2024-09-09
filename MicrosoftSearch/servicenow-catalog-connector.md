@@ -13,21 +13,21 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the ServiceNow Catalog Microsoft Graph connector for Microsoft Search"
+description: "Set up the ServiceNow Catalog Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
 <!---Previous ms.author: kam1 --->
 
 # ServiceNow Catalog Microsoft Graph connector
 
-With the Microsoft Graph connector for ServiceNow, your organization can list [service catalog](https://www.servicenow.com/products/it-service-automation-applications/service-catalog.html) items that are visible to all users or restricted with user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, end users can search for those catalog items from any Microsoft Search client.
+With the ServiceNow Catalog Microsoft Graph connector, your organization can list [service catalog](https://www.servicenow.com/products/it-service-automation-applications/service-catalog.html) items that are visible to all users or restricted with user criteria permissions within your organization. After you configure the connector and index content from ServiceNow, end users can search for those catalog items from any Microsoft Search and Microsoft 365 Copilot client.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Catalog Microsoft Graph connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. If you haven't already done so, read the entire Set-up your Microsoft Graph connector article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Catalog Microsoft Graph connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. 
 
-Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply only to ServiceNow connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
+Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply only to the ServiceNow Catalog Microsoft Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
-[Add ServiceNow Catalog connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowCatalog&type=ServiceNowCatalog​)
+[Add the ServiceNow Catalog Microsoft Graph connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowCatalog&type=ServiceNowCatalog​)
 
 Follow the general [setup instructions](./configure-connector.md).
 
@@ -39,27 +39,27 @@ Follow the general [setup instructions](./configure-connector.md).
 
 To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**. Your organization's ServiceNow instance URL typically looks like this: "**https://<span>&lt;your-organization-domain>.service-now.</span>com**".
 
-Along with this URL, you'll need a **service account** for setting up the connection to ServiceNow and for allowing Microsoft Search to periodically update the catalog items based on the refresh schedule. The service account needs read access to the following **ServiceNow table records** to successfully crawl various entities.
+Along with this URL, you'll need a **service account** for setting up the connection to ServiceNow and for allowing Microsoft Search and Microsoft 365 Copilot to periodically update the catalog items based on the refresh schedule. The service account needs read access to the following **ServiceNow table records** to successfully crawl various entities.
 
 Feature | Read access required tables | Description
---- | --- | ---
-Index catalog items available to <em>Everyone</em> | sc_cat_item | For crawling catalog items.
-Index and support user criteria permissions | sc_cat_item_user_criteria_mtom | Who can access this catalog item.
-| | sc_cat_item_user_criteria_no_mtom | Who can't access this catalog item.
-| | sys_user | Read user table.
-| | sys_user_has_role | Read role information of users.
-| | sys_user_grmember | Read group membership of users.
-| | user_criteria | Read user criteria permissions.
-| | sys_user_group | Read user group segments.
-| | sys_user_role | Read user roles.
-| | cmn_location | Read location information.
-| | cmn_department | Read department information.
-| | core_company | Read company attributes.
+|:--- |: --- |:---|
+Index catalog items available to <em>Everyone</em> | sc_cat_item | For crawling catalog items.|
+Index and support user criteria permissions | sc_cat_item_user_criteria_mtom | Who can access this catalog item.|
+| | sc_cat_item_user_criteria_no_mtom | Who can't access this catalog item.|
+| | sys_user | Read the user table.|
+| | sys_user_has_role | Read role information of users.|
+| | sys_user_grmember | Read group membership of users.|
+| | user_criteria | Read user criteria permissions.|
+| | sys_user_group | Read user group segments.|
+| | sys_user_role | Read user roles.|
+| | cmn_location | Read location information.|
+| | cmn_department | Read department information.|
+| | core_company | Read company attributes.|
 
-You can **create and assign a role** for the service account you use to connect with Microsoft Search. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be assigned on the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls).
+You can **create and assign a role** for the service account you use to connect with Microsoft Search and Microsoft 65 Copilot. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be assigned on the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls).
 
 >[!NOTE]
-> The ServiceNow Catalog connector can index catalog items and user criteria permissions without advanced scripts. If a user criteria contains an advanced script, all the related catalog items are hidden from search results.
+> The ServiceNow Catalog Microsoft Graph connector can index catalog items and user criteria permissions without advanced scripts. If a user criteria contains an advanced script, all the related catalog items are hidden from search results.
 
 To authenticate and sync content from ServiceNow, choose **one of three** supported methods:
 
@@ -69,24 +69,24 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
 
 ## Step 3.1: Basic authentication
 
-Enter the username and password of ServiceNow account with **catalog** role to authenticate to your instance.
+Enter the username and password of the ServiceNow account with the **catalog** role to authenticate to your instance.
 
 ## Step 3.2: ServiceNow OAuth
 
-To use ServiceNow OAuth for authentication, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance so that the Microsoft Search app can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
+To use ServiceNow OAuth for authentication, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance so that the Microsoft Search app and Microsoft 365 Copilot can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/en-US/bundle/sandiego-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
 The following table provides guidance on how to fill out the endpoint creation form:
 
 Field | Description | Recommended value
---- | --- | ---
-Name | Unique value that identifies the application that you requires OAuth access for. | Microsoft Search.
-Client ID | A read-only, auto-generated unique ID for the application. The instance uses the client ID when it requests an access token. | N/A.
-Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each other. | Follow security best practices by treating the secret as a password.
-Redirect URL | A required callback URL that the authorization server redirects to. | For **M365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback,</br> For **M365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback.
-Logo URL | A URL that contains the image for the application logo. | N/A.
-Active | Select the check box to make the application registry active. | Set to active.
-Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds). | 31,536,000 (one year).
-Access token lifespan | The number of seconds that an access token is valid. | 43,200 (12 hours).
+|:--- |: --- |:---|
+|Name | Unique value that identifies the application that you require OAuth access for. | Microsoft Search.|
+|Client ID | A read-only, auto-generated unique ID for the application. The instance uses the client ID when it requests an access token. | N/A.|
+|Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each other. | Follow security best practices by treating the secret as a password.|
+|Redirect URL | A required callback URL that the authorization server redirects to. | For **M365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback,</br> For **M365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback.|
+|Logo URL | A URL that contains the image for the application logo. | N/A.|
+|Active | Select the check box to make the application registry active. | Set to active.|
+|Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds). | 31,536,000 (one year).|
+|Access token lifespan | The number of seconds that an access token is valid. | 43,200 (12 hours).|
 
 Enter the client ID and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **catalog** role. Refer to the table at the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
@@ -134,14 +134,14 @@ Follow the steps to retrieve the service principal object identifier
 
 Now you have all the information required from the Azure portal. A quick summary of the information is given in the table below.
 
-Property | Description
---- | ---
-Directory ID (tenant ID) | Unique ID of the Microsoft Entra tenant, from step 3.a.
-Application ID (client ID) | Unique ID of the application registered in step 3.a.
-Client secret | The secret key of the application (from step 3.b). Treat it like a password.
-Service principal ID | An identity for the application running as a service. (from step 3.c)
+|Property | Description
+|:--- |: --- |:---|
+|Directory ID (tenant ID) | Unique ID of the Microsoft Entra tenant, from step 3.a.|
+|Application ID (client ID) | Unique ID of the application registered in step 3.a.|
+|Client secret | The secret key of the application (from step 3.b). Treat it like a password.|
+|Service principal ID | An identity for the application running as a service. (from step 3.c)|
 
-### Step 3.3.4: Register ServiceNow Application
+### Step 3.3.4: Register your ServiceNow application
 
 The ServiceNow instance needs the following configuration:
 
@@ -149,13 +149,13 @@ The ServiceNow instance needs the following configuration:
 
 2. The following table provides guidance on how to fill out the OIDC provider registration form
 
-   Field | Description | Recommended Value
-   --- | --- | ---
-   Name | A unique name that identifies the OAuth OIDC entity. | Microsoft Entra ID
-   Client ID | The client ID of the application registered in the third-party OAuth OIDC server. The instance uses the client ID when requesting an access token. | Application (Client) ID from step 3.a
-   Client Secret | The client secret of the application registered in the third-party OAuth OIDC server. | Client Secret from step 3.b
+|Field | Description | Recommended value
+|:--- |: --- |:---|
+|Name| A unique name that identifies the OAuth OIDC entity. | Microsoft Entra ID|
+|Client ID| The client ID of the application registered in the third-party OAuth OIDC server. The instance uses the client ID when requesting an access token. | Application (client) ID from step 3.a|
+|Client secret| The client secret of the application registered in the third-party OAuth OIDC server. | Client secret from step 3.b|
 
-   All other values can be default.
+All other values can be default.
 
 3. In the OIDC provider registration form, you need to add a new OIDC provider configuration. Select the search icon against *OAuth OIDC Provider Configuration* field to open the records of OIDC configurations. Select New.
 
@@ -256,7 +256,7 @@ After publishing the connection, you need to customize the search results page. 
 
 ServiceNow Catalog Microsoft Graph connector has the following limitations in its latest release:
 
-- *Only people with access to this data source* feature under Manage Search permissions step processes only [user criteria](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) permissions. Any other type of access permissions won't be applied in the search results.
+- *Only people with access to this data source* feature under Manage search permissions step processes only [user criteria](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) permissions. Any other type of access permissions won't be applied in the search results.
 - User criteria permissions configured at the catalog category aren't supported.
 - User criteria with advanced scripts aren't supported in the current version. Any catalog items with such an access restriction are indexed with deny everyone access that is, they won't appear in search results to any user until we support them.
 
