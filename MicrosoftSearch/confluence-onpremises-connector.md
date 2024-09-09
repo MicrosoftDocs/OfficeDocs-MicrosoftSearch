@@ -68,12 +68,12 @@ Select the connector agent from the drop-down list. The agent will securely send
    - Click on settings icon -> Click on manage apps
 [![Screnshot that shows clicking on settings icon -> clicking on manage apps.](https://github.com/user-attachments/assets/16a6a8f0-844e-49bd-9939-694d8741eaea)](https://github.com/user-attachments/assets/16a6a8f0-844e-49bd-9939-694d8741eaea#lightbox)
    - Click on upload app
-![Screnshot of clicking on upload app](https://github.com/user-attachments/assets/e1216fef-7c35-4e87-a1ad-4aef7062fd1a)
+[![Screnshot that shows clicking on upload app](https://github.com/user-attachments/assets/e1216fef-7c35-4e87-a1ad-4aef7062fd1a)](https://github.com/user-attachments/assets/e1216fef-7c35-4e87-a1ad-4aef7062fd1a#lightbox)
    - Choose the downloaded file and proceed
-![Screnshot of Plugin sussuesfully installed)](https://github.com/user-attachments/assets/58ba9e9e-e2c9-47e9-967d-401cd79a7c5d)
+[![Screnshot that shows Plugin sussuesfully installed)](https://github.com/user-attachments/assets/58ba9e9e-e2c9-47e9-967d-401cd79a7c5d)](https://github.com/user-attachments/assets/58ba9e9e-e2c9-47e9-967d-401cd79a7c5d#lightbox)
 
  >[!NOTE]
->Plugin is supported for confluence version above 8.0
+>Plugin is supported for confluence version above 8.0.
 
 ### Step 3.5: Select authentication type
 
