@@ -8,7 +8,7 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: high
 search.appverid:
 - BFB160
 - MET150
@@ -29,11 +29,13 @@ description: "Troubleshoot issues with the Confluence On-premises Graph Microsof
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
 
 ## 2. Test your connection
-### a) To check active pages on confluence instance
-### b) To check the list of spaces that account has access to
+a) To check active pages on confluence instance
+
+b) To check the list of spaces that account has access to
 
 Please run the below URL in browser or postman with the same cred used for connection creation.
-Note: Confluence space API will fetch maximum 500 spaces in a call, so we can split the request if we have more spaces
+> [!NOTE]
+> Confluence space API will fetch maximum 500 spaces in a call, so we can split the request if we have more spaces
 
 The URL is <ConfluenceURL/rest/api/space?limit=500&start=0>
 
