@@ -21,7 +21,7 @@ ms.date: 07/22/2021
 
 The Atlassian Jira Cloud Microsoft Graph connector allows your organization to index Jira issues. After you configure the connector and index content from the Jira site, end users can search for those items in Microsoft Search and get answers in Microsoft Copilot.
 
-# Connector overview
+## Connector overview
 
 | Capability | Details |
 | --------- | --------- |
