@@ -8,7 +8,7 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: Normal
 search.appverid:
 - BFB160
 - MET150
@@ -62,16 +62,18 @@ To connect to your Confluence site, use your site URL.
 Select the connector agent from the drop-down list. The agent will securely send Confluence On-premises content into Microsoft Graph index.
 
 ### Step 3.4: Install Confluence On-Prem Plugin
- 
+
    - Download the app from [Microsoft Graph Connectors Confluence On-prem Plugin | Atlassian Marketplace](https://marketplace.atlassian.com/apps/1234846?tab=overview&hosting=datacenter).
    - Log in to your confluence system
    - Click on settings icon -> Click on manage apps
-![undefined (2)](https://github.com/user-attachments/assets/16a6a8f0-844e-49bd-9939-694d8741eaea)
+![Screnshot of clicking on settings icon -> clicking on manage apps.](https://github.com/user-attachments/assets/16a6a8f0-844e-49bd-9939-694d8741eaea)
    - Click on upload app
+![Screnshot of clicking on upload app](https://github.com/user-attachments/assets/e1216fef-7c35-4e87-a1ad-4aef7062fd1a)
    - Choose the downloaded file and proceed
-   - Make a call to the URL: http://{BASE_URL}/rest/api/msplugin/1.0/healthcheck/version and check if it gives you the version. If yes, you are all set for crawling.
-![undefined](https://github.com/user-attachments/assets/e1216fef-7c35-4e87-a1ad-4aef7062fd1a)
-![undefined (1)](https://github.com/user-attachments/assets/58ba9e9e-e2c9-47e9-967d-401cd79a7c5d)
+![Screnshot of Plugin sussuesfully installed)](https://github.com/user-attachments/assets/58ba9e9e-e2c9-47e9-967d-401cd79a7c5d)
+
+ >[!NOTE]
+>Plugin is supported for confluence version above 8.0
 
 ### Step 3.5: Select authentication type
 
