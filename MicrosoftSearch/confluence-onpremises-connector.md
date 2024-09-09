@@ -8,7 +8,7 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: high
 search.appverid:
 - BFB160
 - MET150
@@ -61,7 +61,21 @@ To connect to your Confluence site, use your site URL.
 
 Select the connector agent from the drop-down list. The agent will securely send Confluence On-premises content into Microsoft Graph index.
 
-### Step 3.4: Select authentication type
+### Step 3.4: Install Confluence On-Prem Plugin
+
+   - Download the app from [Microsoft Graph Connectors Confluence On-prem Plugin | Atlassian Marketplace](https://marketplace.atlassian.com/apps/1234846?tab=overview&hosting=datacenter).
+   - Log in to your confluence system
+   - Click on settings icon -> Click on manage apps
+[![Screnshot that shows clicking on settings icon -> clicking on manage apps.](https://github.com/user-attachments/assets/16a6a8f0-844e-49bd-9939-694d8741eaea)](https://github.com/user-attachments/assets/16a6a8f0-844e-49bd-9939-694d8741eaea#lightbox)
+   - Click on upload app
+[![Screnshot that shows clicking on upload app](https://github.com/user-attachments/assets/e1216fef-7c35-4e87-a1ad-4aef7062fd1a)](https://github.com/user-attachments/assets/e1216fef-7c35-4e87-a1ad-4aef7062fd1a#lightbox)
+   - Choose the downloaded file and proceed
+[![Screnshot that shows Plugin sussuesfully installed)](https://github.com/user-attachments/assets/58ba9e9e-e2c9-47e9-967d-401cd79a7c5d)](https://github.com/user-attachments/assets/58ba9e9e-e2c9-47e9-967d-401cd79a7c5d#lightbox)
+
+ >[!NOTE]
+>Plugin is supported for confluence version above 8.0.
+
+### Step 3.5: Select authentication type
 
 You can choose either Basic Authentication or OAuth 1.0a (recommended) to authenticate to your Confluence site.
 
@@ -76,7 +90,7 @@ Enter a service account's username (usually email ID) and password to authentica
 
 Generate  a public/private key pair and create an application link in Confluence On-premises site so that the connector agent can access the instance. To learn more, see [step 1 in Atlassian developer documentation](https://developer.atlassian.com/server/jira/platform/oauth/#step-1--configure-jira) on how to configure OAuth 1.0a.
 
-#### Step 3.4.1 Generate an RSA public/private key pair
+#### Step 3.5.1 Generate an RSA public/private key pair
 
 Run the following openssl commands in your on-premises machine terminal.
 
@@ -87,7 +101,7 @@ Create an X509 certificate |`openssl req -newkey rsa:1024 -x509 -key confluence_
 Extract the private key (PKCS8 format) to the `confluence_privatekey.pcks8` file | `openssl pkcs8 -topk8 -nocrypt -in confluence_privatekey.pem -out confluence_privatekey.pcks8`
 Extract the public key from the certificate to the `confluence_publickey.pem` file | `openssl x509 -pubkey -noout -in confluence_publickey.cer > confluence_publickey.pem`
 
-#### Step 3.4.2 Create an application link
+#### Step 3.5.2 Create an application link
 
 1. In Confluence, navigate to **Administration** (cog icon) > **General configuration** > **Application Links** in the side pane.
 
@@ -109,11 +123,11 @@ Extract the public key from the certificate to the `confluence_publickey.pem` fi
 
    :::image type="content" alt-text="Link Applications post creation" source="media/confluence-connector/confluence-onpremises-applications-link-2.png" lightbox="media/confluence-connector/confluence-onpremises-applications-link-2.png":::
 
-#### Step 3.4.3 Enter consumer key and private key to sign in
+#### Step 3.5.3 Enter consumer key and private key to sign in
 
 In the connection creation configuration assistant in Microsoft 365 admin center, enter the **Consumer key** created during *Step 3.4.2* and **Private key** from `confluence_privatekey.pcks8` file in *Step 3.4.1*. Enable pop-up in the browser for Microsoft 365 admin center and select **Sign in**.
 
-#### Step 3.4.4 Enter verification code to Finish Sign in
+#### Step 3.5.4 Enter verification code to Finish Sign in
 
 In the Confluence sign in screen, enter service account credentials. After successful sign-in, you'll get a verification code like the following screen.
 
@@ -135,14 +149,14 @@ The following steps provide guidance on how to register the app [Configure an in
 
 ## Step 4: Select properties
 
-In this step, you can add or remove available properties from your Confluence data source. Microsoft 365 has already selected few properties by default.
+In this step, you can add or remove properties from your confluence data source. M365 has already selected few properties by default.
 
-With a Confluence Query Language (CQL) string, you can specify conditions for syncing pages. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only the pages that are modified in the last two years. To learn about creating your own query string, see [Advanced Searching using CQL](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/). By default, all pages will be indexed by the connector.
+**Specify the spaces you want to index:** By default, the connector will index all spaces. However, you can choose to include or exclude specific spaces using the space filter option. Enter the list of space keys you wish to include or exclude, and you will see a preview of the results.
+Space key: Each Confluence space has a **space key**, which is a short, unique identifier that forms part of the URL for that space. To get the space key please contact confluence admin
 
->[!TIP]
->You may use the CQL filter to index **content modified after a certain time** using, *lastModified >= "2018/12/31"*
-
-Use the preview results button to verify the sample values of the selected properties and CQL string.
+>[!NOTE]
+   > * CQL is not supported for Confluence on-premises.
+   > * Conflunce On-prem indexes only current pages and not archived pages
 
 ## Step 5: Manage search permissions
 
@@ -186,21 +200,14 @@ After publishing the connection, you need to customize the search results page. 
 
 For testing purpose, you can choose [publish to limited audience](./staged-rollout-for-graph-connectors.md#modify-or-stop-staged-rollout)   
 
- 
-
-## Troubleshooting
-
-The common errors that can be seen while configuring the connector and their possible reasons are listed below.
-
-| Configuration step | Error message | Possible reason(s) |
-| ------------ | ------------ | ------------ |
-| Connection settings | The request is malformed or incorrect. | Incorrect Confluence site URL |
-| Connection settings | Unable to reach the Confluence On-premises service for your Confluence site. | Incorrect Confluence site URL |
-| Connection settings | The client doesn't have permission to perform the action. | Invalid password provided for Basic auth |
-| Select properties | No preview results | Check your CQL query whether it's valid and matches the content to crawl |
-
 ## Limitations
 
 The confluence On-premises connector has the following known limitations in its latest release:
 
 * Confluence On-premises connector doesn't index blogs, attachment files and comments.
+
+## Troubleshooting
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+You can find troubleshooting steps for commonly seen issues [here](troubleshoot-confluence-onpremises-connector.md).
+
+If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).

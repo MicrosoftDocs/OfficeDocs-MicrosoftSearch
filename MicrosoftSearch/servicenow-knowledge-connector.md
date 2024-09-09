@@ -263,6 +263,19 @@ The default method for mapping your data source identities with Microsoft Entra 
 
 **Query String**
 
+*The list of properties that you select here, can impact how can you filter, search and view your results in Copilot for Microsoft 365.*
+
+**Source property** | **Label** | **Description**
+--- | --- | ---
+AccessUrl  | `url` | The target URL of the item in the data source.
+Author   | `authors` | Name of all the people who participated/collaborated on the item in the data source.
+IconUrl   | `iconUrl` | Icon url that represents the article’s category or type.
+Short_description  | `title` | The title of the item that you want shown in search and other experiences.
+SysUpdatedBy   | `lastModifiedBy` | Name of the person who most recently edited the item in the data source.
+SysUpdatedOn  | `lastModifiedDateTime` | Date and time the item was last modified in the data source.
+SysCreatedBy   | `createdBy` | Name of the person who created the item in the data source.
+SysCreatedOn   | `createdDateTime` | Date and time that the item was created in the data source.
+
 With a ServiceNow query string, you can specify conditions for syncing articles. It's like a **Where** clause in a **SQL Select** statement. For example, you can choose to index only articles that are published and active. To learn about creating your own query string, see [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/vancouver-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
 **Manage Properties**
@@ -341,6 +354,6 @@ You can change the default values of refresh interval from here if you want to.
 
 ## Troubleshooting
 After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
-You can find troubleshooting steps for commonly seen issues [here](troubleshooting-servicenow-knowledge-connector.md).
+You can find troubleshooting steps for commonly seen issues [here](troubleshoot-servicenow-knowledge-connector.md).
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
