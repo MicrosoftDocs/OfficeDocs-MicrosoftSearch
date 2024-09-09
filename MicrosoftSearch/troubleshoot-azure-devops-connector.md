@@ -1,6 +1,6 @@
 ---
 ms.date: 06/11/2020
-title: "Troubleshooting guide for Azure DevOps Work Items Microsoft Graph connector for Microsoft Search"
+title: "Troubleshooting the Azure DevOps Work Items Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ms.author: mecampos
 author: mecampos
 manager: lsheppard
@@ -13,14 +13,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Troubleshoot issues with the Azure DevOps Work Items Microsoft Graph connector for Microsoft Search"
+description: "Troubleshoot issues with the Azure DevOps Work Items Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
-# Troubleshooting guide for Azure DevOps Work Items Microsoft Graph connector
+# Troubleshooting the Azure DevOps Work Items Microsoft Graph connector
 
-### 1. **The following are common errors observed while configuring the connector, or during crawling, and their possible reasons.**
+1. The following common errors are observed while configuring the connector, or during crawling and their possible reasons.
 
 | Step | Error message | Possible reason(s) |
-| ------------ | ------------ | ------------ |
+|:------------ |:------------ |:------------ |
 | Connection settings | `Invalid credentials detected. Try signing in with a different account or check the permissions for your account`| *Third-party application access via OAuth* may be disabled. Follow steps to [manage security policies](/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops#manage-a-policy&preserve-view=true) to enable OAuth. |
 | Connection settings | `Bad state` message in OAuth pop-up window with URL stating `error=InvalidScope` | Wrong scopes provided to the registered app. |
 | Connection settings | `400 - Bad request` message in OAuth pop-up window | Incorrect App ID.|
