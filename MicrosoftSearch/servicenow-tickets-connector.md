@@ -13,23 +13,19 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the ServiceNow Tickets Microsoft Graph connector for Microsoft Search"
+description: "Set up the ServiceNow Tickets Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
-<!---Previous ms.author: kam1 --->
-
 # ServiceNow Tickets Microsoft Graph connector
 
-With the ServiceNow Tickets Microsoft Graph connector, your organization can index various tickets that are serviced to users. After you configure the connector and index content from ServiceNow, end users can search for those tickets from any Microsoft Search client.  
+With the ServiceNow Tickets Microsoft Graph connector, your organization can index various tickets that are serviced to users. After you configure the connector and index content from ServiceNow, end users can search for those tickets from any Microsoft Search and Microsoft 365 Copilot client.  
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Tickets Graph connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. If you haven't already done so, read the entire 'Setup your ServiceNow Tickets Microsoft Graph connector' article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Tickets Microsoft Graph connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. 
 
-Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR 
-other instructions that apply to only ServiceNow connector including information about [Troubleshooting](#troubleshooting). 
-and [Limitations](#limitations).  
+Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only the ServiceNow Microsoft Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).  
 
 ## Step 1: Add a connector in the Microsoft 365 admin center.
 
-[Add ServiceNow Tickets connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowTickets&type=ServiceNowTickets​)
+[Add the ServiceNow Tickets Microsoft Graph connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowTickets&type=ServiceNowTickets​)
 
 Follow the general [setup instructions](./configure-connector.md).
 
@@ -39,9 +35,9 @@ Follow the general [setup instructions](./configure-connector.md).
 ## Step 3: Connection settings
 To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**. Your organization's ServiceNow instance URL typically looks like **https://&lt;your-organization-domain>.service-now.com**. 
 
-Along with this URL, you'll need a **service account** for setting up the connection to ServiceNow and for allowing Microsoft Search to periodically update the ticket details based on the refresh schedule. 
+Along with this URL, you'll need a **service account** to set up the connection to ServiceNow and to allow Microsoft Search and Microsoft 365 Copilot to periodically update the ticket details based on the refresh schedule. 
 
-In ServiceNow, the task table is the base class for ticket management. It can be extended to create ticket applications such as incident, problem and change management. Learn more about [ServiceNow Task tables](https://docs.servicenow.com/bundle/washingtondc-platform-administration/page/administer/task-table/concept/c_TaskTable.html).
+In ServiceNow, the task table is the base class for ticket management. It can be extended to create ticket applications such as incident, problem, and change management. Learn more about [ServiceNow Task tables](https://docs.servicenow.com/bundle/washingtondc-platform-administration/page/administer/task-table/concept/c_TaskTable.html).
 
 The service account you use to configure a connection **must have** read access to the following ServiceNow table records to successfully crawl default ticket fields.
 
@@ -59,7 +55,7 @@ It is an **optional** feature. You'll be able to index *task* table properties w
 Select a custom table from your organization| `sys_db_object` | Find the list of extended task tables including custom tables
 Index custom fields from a specific <table_name> | `sys_dictionary` | Crawling custom fields from a specific table like incident, problem or change_management
 
-You can **create and assign a role** for the service account you use to connect with Microsoft Search. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/washingtondc-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be provided to the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/sandiego/new_to_servicenow/app_store_learnv2_securingapps_sandiego_securing_table_records). 
+You can **create and assign a role** for the service account you use to connect with Microsoft Search and Microsoft 365 Copilot. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/washingtondc-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be provided to the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/sandiego/new_to_servicenow/app_store_learnv2_securingapps_sandiego_securing_table_records). 
 
 
 To authenticate and sync content from ServiceNow, choose **one of three** supported methods:
@@ -74,7 +70,7 @@ Enter the username and password of the ServiceNow account with read access to th
 
 ## Step 3.2: ServiceNow OAuth
 
-To use ServiceNow OAuth, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance. After that Microsoft Search app will be able to access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/washingtondc-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
+To use ServiceNow OAuth, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance. After that Microsoft Search app can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/washingtondc-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
 The following table provides guidance on how to fill out the endpoint creation form:
 
