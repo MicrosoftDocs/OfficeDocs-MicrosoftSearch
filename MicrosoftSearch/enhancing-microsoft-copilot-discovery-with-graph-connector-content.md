@@ -41,7 +41,7 @@ For Microsoft-built connectors, you have the flexibility to **modify the conne
    >[!Note]
    >1. Microsoft Graph Connectors for Jira, ServiceNow Tickets, ADO Work Items, and Salesforce have a default description tailored to the generic use of the connectors.
    >2. We still advise reviewing and modifying the descriptions to tailor them to the specific terms/language used by your organization.
-   >3. For on-prem connectors, the connector description must be updated using the connector API. See more information here: [Microsoft Graph connector agent | Microsoft Learn](/MicrosoftSearch/graph-connector-agent.md)
+   >3. For on-prem connectors, the connector description must be updated using the connector API. See more information here: [Microsoft Graph connector agent | Microsoft Learn](/MicrosoftSearch/graph-connector-agent)
 
    ### Good practices to write a connector description
 

@@ -8,8 +8,8 @@ metadata:
   description: Microsoft Search increases productivity and saves time by delivering more relevant search results for your organization. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: mssearch #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: jeffkizn #Required; your GitHub user alias, with correct capitalization.
-  ms.author: jeffkizn #Required; microsoft alias of author; optional team alias.
+  author: wobba #Required; your GitHub user alias, with correct capitalization.
+  ms.author: misvenso #Required; microsoft alias of author; optional team alias.
   ms.date: 07/05/2022 #Required; mm/dd/yyyy format.
   ms.collection: essentials-navigation
 
