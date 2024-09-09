@@ -46,4 +46,4 @@ At the end of response, we can see output similar to:
 "size":500,<br>
 
 For more than 500 pages, to get the next set of pages of response, run the URL in the format that follows.
-The URL is <ConfluenceURL/rest/api/space?limit=500&start=500>
+The URL is <ConfluenceURL/rest/api/space?limit=500&start=500>.
