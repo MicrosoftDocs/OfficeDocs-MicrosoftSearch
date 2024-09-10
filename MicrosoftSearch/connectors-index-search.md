@@ -14,7 +14,11 @@ description: "Learn how to search and validate whether some content is indexed i
 You can now search to determine if specific content is indexed. You can also review its associated properties and access permissions.
 
 ## Using this feature
-When you enter the item ID of an indexed item, you can see its properties like its associated metadata and access control lists (ACLs), permissions, and user access status.
+When you enter the item ID of an indexed item, you can see its content, properties like its associated metadata and access control lists (ACLs), permissions, and user access status.
+
+:::image type="content" source="media/manage-connector/index-search.png" alt-text="Screenshot that shows connector what users can see when they enter an item ID of an indexed item.":::
+
+## View Connection Statistics 
 
 ### Locate the item ID
 To search for index content, you must enter the unique identifier for each document, content, or item.
