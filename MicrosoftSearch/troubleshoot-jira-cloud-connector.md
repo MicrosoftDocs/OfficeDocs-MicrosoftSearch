@@ -30,4 +30,4 @@ ms.date: 07/22/2021
 | Crawl time (post connector configuration) | You don't have permission to access this data source. You can contact the owner of this data source to request permission. | If you're using OAuth, the app scopes may have changed, or the app may have expired or deleted. <br> If you're using basic authentication, the API token may have expired or deleted. |
 | Crawl time (post connector configuration) | Error code: 1003 - You don't have permission to access this data source. <br> Detailed error code: 7612 | The crawl account does not have "Browse projects" permission for the listed project (under 'item id' column). |
 
-If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
+If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://developer.microsoft.com/en-us/graph/support)

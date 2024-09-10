@@ -106,7 +106,7 @@ ServiceNow Knowledge connector computes the AccessUrl property using sys_id in t
 
 If you see differences in the user criteria validation between ServiceNow and Microsoft Search or Copilot, set `glide.knowman.block_access_with_no_user_criteria` system property to `no`.
 
-If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
+If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://developer.microsoft.com/en-us/graph/support).
 
 
 
