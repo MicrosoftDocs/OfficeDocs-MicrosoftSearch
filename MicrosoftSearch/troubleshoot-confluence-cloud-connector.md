@@ -27,5 +27,4 @@ description: "Troubleshoot issues with Confluence Cloud Graph connector for Micr
 | Connection settings | The client doesn't have permission to perform the action. | Invalid API token provided for Basic auth |
 | Select properties | No error message and no preview results | Check your CQL query whether it is valid |
 
-If you have any other issues or want to provide feedback, reach out to us at 
-[Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)
+If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)
