@@ -1,8 +1,6 @@
 ms.date: 10/02/2019
 title: " Error responses in Microsoft Graph connectors"
 ms.author: danielabom
-audience: Admin
-ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
@@ -10,43 +8,44 @@ description: "Learn how to identify and handle error responses in Microsoft Grap
 ---
 # Error responses in Microsoft Graph connectors
 
-Download error report is available in the errors tab of the connection pane. A limited number of connection errors are shown in the UI of the connection pane. To get the complete list of errors, you can run the PowerShell script to download the complete error report. Here are the steps to generate the report:
+Error reports for connections can be accessed through the errors tab in the connection pane. The UI displays a limited number of connection errors. For a comprehensive list, follow these steps to generate a detailed error report using a PowerShell script.
 
-* Open Windows PowerShell with administrator rights.
-* Run the command to download and install the script from the PowerShell Library.
-
+1. Open Windows PowerShell with administrator rights.
+2. Install the script from the PowerShell Gallery using the following command
 ```powershell
     Install-Script -Name DownloadErrorScript
 ```
-
-* This script downloads the item errors in a Microsoft Graph connectors connection. An Msal token is generated using the tenant credentials in which the connection is present. The token is generated using MSAL.PS module, while installing this PS script, MSAL.PS module should be installed automatically. If this doesn't happen use the below command to install MSAL.PS
+With this script, you can download the item errors from a Microsoft Graph connectors connection. It generates an MSAL token using the tenant credentials associated with the connection. The installation of the script automatically includes the MSAL.PS module. If this doesn't occur, install the module manually with
 
 ```powershell
     Install-Module -Name MSAL.PS
 ```
+For more information, see [DownloadErrorScript](https://www.powershellgallery.com/packages/DownloadErrorScript/2.1).
 
-* To know more about the script refer [DownloadErrorScript](https://www.powershellgallery.com/packages/DownloadErrorScript/2.1)
-* Once the install is complete run:
-
+3. After installation, execute the script
+   
 ```powershell
     DownloadErrorScript.ps1
 ```
-
-* Provide the connectionId of the connection for which you want to download the error report.
-* Give the name of the output file without extension as by default .csv extension is used.
-* Give the batch limit of the download. This is an optional parameter. A batch limit defines the batch of errors that is fetched from the service. Each batch fetch takes a few seconds. If you have a large number of errors in the order of thousands, larger batch size can be used to reduce the time spent in fetching the data with each batch. However, if the errors are in the order of hundreds, a low batch size would be ideal. Please note increasing batch size may increase the probability of failures. The maximum batch size limit is 5000.
-* The script will ask you to log in from the tenant account. After the login is complete, the download will start.
-* It will take some time based on the batch size and the number of errors to complete the download. The downloaded file will be present in the same path from where the script was run with the name given during the run.
-
+4. Provide the connection ID of the connection for which you want to download the error report.
+5. Specify the name for the output file without extension (without extension, default is .csv).
+6. Define the batch size for downloading errors. Larger batches are suitable for thousands of errors to minimize data retrieval time but may increase the likelihood of failures. The maximum batch size is 5000 errors.
+   Once logged in using your tenant account, the download process begins.
+7. Depending on batch size and error count, the download duration varies. The generated file is saved in the script's execution path with the specified name.
+   
 :::image type="content" alt-text="Screenshot that shows PowerShell script run to download the error report." source="media/errorreport.png" lightbox="media/errorreport.png":::
 
 ## Monitor errors
 
-For each **Active Connector** on the **Data sources** tab, any existing crawl errors show under the **Current crawl** header, in the **Errors** section. It lists error codes, the count of each, and error log download options. You can select an **error code** to view the error's details.
+In the **Data sources**, under each Active connector, any existing crawl errors are displayed under the **Current crawl header in the **Errors** section. This section provides
+
+*Error codes: Lists the various error codes encountered.
+*Count: Displays the number of occurrences for each error code.
+*Error log download: Offers options to download the error log.
+
+To view detailed information about a specific error, select the corresponding Error Code.
 
 :::image type="content" source="media/errormonitoring1.png" alt-text="Screenshot that shows details pane showing the current crawl, and errors section for the selected connector.":::
-
-To view an error's specific details, select its error code. A screen appears with error details and a link. The most recent errors appear at the top.
 
 The following list shows the different errors that can appear against any connection.
 
