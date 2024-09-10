@@ -1,6 +1,6 @@
 --- 
 
-title: "Atlassian Jira Cloud Microsoft Graph connector" 
+title: "Atlassian Jira Cloud Microsoft Graph connector overview" 
 ms.author: mecampos 
 author: mecampos 
 manager: umas 
@@ -21,8 +21,15 @@ ms.date: 07/22/2021
 
 The Atlassian Jira Cloud Microsoft Graph connector allows your organization to index Jira issues. After you configure the connector and index content from the Jira site, end users can search for those items in Microsoft Search and Microsoft 365 Copilot.
 
-> [!NOTE]
-> Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general connectors setup instructions.
+## Connector overview
+
+| Capability | Details |
+| --------- | --------- |
+| Data source version(s) supported | N/A |
+| Data entities indexed | Issues |
+| Supported auth types for crawling | Basic auth <br> OAuth 2.0 |
+| Supported permissions | Project-level permissions via groups <br> Item-level permissions |
+| Indexing filters | 
 
 This article is for anyone who configures, runs, and monitors an Atlassian Jira Cloud connector. It supplements the general setup process and shows instructions that apply only for the Atlassian Jira Cloud connector.
 
@@ -67,7 +74,7 @@ The following steps provide guidance on how to register the app:
 3. Provide an appropriate name for the application and create the new app.
 4. Navigate to `Permissions` from the navigation pane on the left. Under the 'Granular permissions' header, select `Add` for `Jira API`. Once added, select on `Configure` and add the following scopes listed below.
 
-   | **#** | **Scope name** | **Code** |
+   |  #  |  Scope name  |  Code  |
    | ------------ | ------------ | ------------ |
    | 1 | View fields | `read:field:jira` |
    | 2 | View avatars | `read:avatar:jira` |
@@ -127,7 +134,7 @@ The Atlassian Jira connector can index both default issue fields and custom-crea
 
 *The list of properties that you select here, can impact how you can filter, search, and view your results in Microsoft 365 Copilot.*
 
-**Source property** | **Label** | **Description**
+Source property | Label | Description
 --- | --- | ---
 Authors   | `authors` | Name of people who participated/collaborated on the item in the data source.
 Created  | `createdDateTime` | Date and time that the item was created in the data source.

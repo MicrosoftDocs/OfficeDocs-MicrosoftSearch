@@ -53,6 +53,8 @@ To connect to your data source, fill in the root URL of the website and select a
 
 Specify the root of the website that you'd like to crawl. The Enterprise Websites Microsoft Graph connector uses this URL as the starting point and follow all the links from this URL for its crawl.
 
+The connector only crawls webpages in the domain of root URLs and does not support crawling of out-of-domain URLs. Redirection is only supported within the same domain. If there are redirections in the webpages to be crawled, you may add the redirected URL directly in list of URLs to be crawled.
+
 > [!NOTE]
 > You can index up to 50 different site URLs in a single connection. In the URLs field, enter the site URLs separated by commas (,). For example, `https://www.contoso.com,https://www.contosoelectronics.com`.
 
@@ -99,6 +101,7 @@ For your on-premises websites, select **Agent** as the crawl mode, and in the **
 The resource ID, client ID, and client secret values depend on how you did the setup for Microsoft Entra ID-based authentication for your website:
 
 1. If you're using an application both as an identity provider and the client app to access the website, the client ID and the resource ID are the application ID of the app, and the client secret  the secret that you generated in the app.
+
     
     > [!NOTE]
     > For detailed steps to configure a client application as an Identity provider, see [Quickstart: Register an application with the Microsoft identity platform and Configure your App Service or Azure Functions app to use Microsoft Entra login](/azure/app-service/configure-authentication-provider-aad).
@@ -130,7 +133,7 @@ The resource ID, client ID, and client secret values depend on how you did the s
       > [!div class="mx-imgBorder"]
       > [ ![Image showing the client secret.](media/enterprise-web-connector/connectors-enterpriseweb-client-secret.png) ](media/enterprise-web-connector/connectors-enterpriseweb-client-secret.png#lightbox)
     
-2. If you're using an application as an identity provider for your website as the resource, and a different application to access the website, the client ID will be the application ID of your second app and the client secret will be the secret configured in the second app. However, the resource ID will be the ID of your first app.
+2. If you're using an application as an identity provider for your website as the resource, and a different application to access the website, the client ID is the application ID of your second app and the client secret is the secret configured in the second app. However, the resource ID is the ID of your first app.
 
     > [!NOTE]
     > For steps to configure a client application as an identity provider see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) and [Configure your App Service or Azure Functions app to use Microsoft Entra login](/azure/app-service/configure-authentication-provider-aad).
@@ -208,7 +211,7 @@ There are two ways to prevent pages from being crawled: disallow them in your ro
 
 ### Support for robots.txt
 
-The connector checks to see if there's a robots.txt file for your root site. If one exists, it will follow and respect the directions found within that file. If you don't want the connector to crawl certain pages or directories on your site, include the pages or directories in the "Disallow" declarations in your robots.txt file.
+The connector checks to see if there's a robots.txt file for your root site. If one exists, it follows and respects the directions found within that file. If you don't want the connector to crawl certain pages or directories on your site, include the pages or directories in the "Disallow" declarations in your robots.txt file.
 
 ### Add URLs to exclude
 
@@ -216,7 +219,7 @@ You can optionally create an **Exclusion list** to exclude some URLs from gettin
 
 ## Step 7: Assign property labels
 
-You can assign a source property to each label by choosing from a menu of options. While this step isn't mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
+You can assign a source property to each label by choosing from a menu of options. While this step isn't mandatory, having some property labels improves the search relevance and ensure more accurate search results for end users.
 
 ## Step 8: Manage schema
 
