@@ -14,11 +14,14 @@ description: "Learn how to search and validate whether some content is indexed i
 You can now search to determine if specific content is indexed. You can also review its associated properties and access permissions.
 
 ## Using this feature
+When you enter the item ID of an indexed item, you can see its properties like its associated metadata and access control lists (ACLs), permissions, and user access status.
+
+### Locate the item ID
 To search for index content, you must enter the unique identifier for each document, content, or item.
 
 |Connector name|Input per item ID|Where to find the item ID|
 |:------------ |:------------ |:------------|
-|ADO WI|ID|ID is the work item ID.|	
+|ADO WI|ID|The ID is the work item ID.|	
 |ADO Wiki|OrganizationName, PageId|It can be found in the URL e.g- https://dev.azure.com/O365Exchange/Demolink/_wiki/O365%20Core.wiki/244161/xyzItemId: O365Exchange/244161.|		
 |ServiceNow KB|Sys_Id.DisplayValue|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information: https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest|
 |ServiceNow Catalog|Sys_Id.value|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information: https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest| 		
@@ -35,16 +38,8 @@ To search for index content, you must enter the unique identifier for each docum
 |Custom connector|item ID|Admin configured details.|  
 |SAP|user ID|Admin configured details.|  	 	
 
-### Troubleshooting search and access issues
-When testing your connection and unable to locate a particular item. b. Property and User Access Verification: When an item is indexed, you need to review its associated metadata and access control lists (ACLs). c. Troubleshooting Search Issues: If users report issues accessing items, use this feature to confirm proper indexing and correct data inclusion.
+### Permissions
+This tab lists the groups from the data source with permissions for the item ID. If the status is **allow**, all users in those groups can see the item. If the status is **Deny**, users in those groups can't access the item.
 
-About the Index Browser: When you enter an item ID to check its indexing status, if the item is indexed, you will see the following details:
-
-*Properties: Displays the status of all properties defined during the item’s configuration.
-*Permissions: Lists all groups and individual users associated with the item.
-*Check user access: Allows you to search for a specific user to verify their access to the item.
-
-The index browser shows the name of the content, its status, and the date it was last refreshed.
-
-Image 
-
+### Check user access
+To check user access, enter the user name or email address. A list of groups to which the user belongs is displayed. If the user is denied access to any of these groups, their overall permission to view the item is revoked.
