@@ -62,7 +62,7 @@ If your organization uses single sign-on (SSO) to ServiceNow, you may have troub
 
 2. **Change in Account password:** The Microsoft Graph connector uses access token fetched on behalf of service account for crawl. The access token refreshes every 12 hours. Ensure that service account password isn't changed after publishing the connection. You may need to reauthenticate the connection if there's a change in password.
 
-3. **Check if ServiceNow instance behind firewall:** The Microsoft Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You need to explicitly allow access to connector service. You can find public IP address range of connector service in this table. Based on your tenant region, add it to your ServiceNow instance network allow list.
+3. **Check if ServiceNow instance behind firewall:** The Microsoft Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You need to explicitly allow access to connector service. You can find public IP address range of connector service in this table. Based on your tenant region, add it to your ServiceNow instance network allowlist.
 
    **Environment** | **Region** | **Range**
    --- | --- | ---
