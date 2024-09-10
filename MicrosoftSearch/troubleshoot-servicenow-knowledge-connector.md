@@ -42,7 +42,7 @@ The following common errors are observed while configuring the connector, or dur
     2. Connection ID
     3. Article Sys ID
     4. Knowledge base Sys ID
-    5. For the above knowledge base collect:
+    5. For the knowledge base collect:
         1. List of user criteria sys_id available in the kb_uc_can_read_mtom (Who Can Read Knowledge Base) table
         2. List of user criteria sys_id available in the kb_uc_cannot_read_mtom (Who Cannot Read Knowledge Base) table
         3. List of user criteria sys_id available in the kb_uc_cannot_contribute_mtom (Who Cannot Contribute To Knowledge Base) table
@@ -62,9 +62,9 @@ If your organization uses single sign-on (SSO) to ServiceNow, you may have troub
 
 1. **Check table access permissions:** If you see a forbidden or unauthorized response in connection status, check if the service account has the required access to the tables mentioned in [Step 2: Data Source Settings](/MicrosoftSearch/servicenow-knowledge-connector/#2-data-source-settings). Check whether the service account has 'read' access to all the tables in the column.
 
-2. **Change in Account password:** The ServiceNow Knowledge Microsoft Graph connector uses an access token fetched on behalf of the service account for the crawl. The access token refreshes every 12 hours. Ensure that the service account password isn't changed after publishing the connection. You may need to reauthenticate the connection if there's a change in the password.
+2. **Change in account password:** The ServiceNow Knowledge Microsoft Graph connector uses an access token fetched on behalf of the service account for the crawl. The access token refreshes every 12 hours. Ensure that the service account password isn't changed after publishing the connection. You may need to reauthenticate the connection if there's a change in the password.
 
-3. **Check if the ServiceNow instance is behind a firewall:** The Microsoft Graph Connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You need to explicitly allow access to the connector service. You can find the public IP address range of the connector service in this table. Based on your tenant region, add it to your ServiceNow instance network allow list.
+3. **Check if the ServiceNow instance is behind a firewall:** The ServiceNow Knowledge Microsoft Graph connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You need to explicitly allow access to the connector service. You can find the public IP address range of the connector service in this table. Based on your tenant region, add it to your ServiceNow instance network allowlist.
 
    **Environment** | **Region** | **Range**
    --- | --- | ---
@@ -76,11 +76,11 @@ If your organization uses single sign-on (SSO) to ServiceNow, you may have troub
 
 </details>
 
-### 4. Change the URL of the knowledge article to view it in the support portal
+### 4. To view URL of the knowledge article, change it in the support portal
 
 <details><summary>(Click to expand) Follow the steps to change the URL of the knowledge article.</summary><br>
 
-ServiceNow Knowledge connector computes the AccessUrl property using sys_id in the `<instance_url>/kb_view.do?sys_kb_id<sysId>` format. It opens the knowledge article in the backend system view. If you prefer redirecting the article to a different URL, follow these instructions.
+The ServiceNow Knowledge Microsoft Graph connector computes the AccessUrl property using sys_id in the `<instance_url>/kb_view.do?sys_kb_id<sysId>` format. It opens the knowledge article in the backend system view. If you prefer redirecting the article to a different URL, follow these instructions.
 1. In the customization tab in the *Search & Intelligence* section of the Microsoft 365 admin center, navigate to edit the result type configured for your ServiceNow Knowledge connection.
 ![Screenshot shows where to click for editing Result Type](media/servicenow-knowledge-connector/edit-result-type.png)
 
