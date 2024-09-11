@@ -18,11 +18,11 @@ Any valid Microsoft 365 Copilot, Microsoft 365, or Office 365 license allows you
 ## What represents items in an index quota?
 An item represents one unit of index quota. Each entity (or record) from the source system that is added to Microsoft Graph is considered an item. In Microsoft Graph, each item appears as a unique citation in Microsoft 365 Copilot responses and as a distinct search result in Microsoft Search. 
 
-Depending on the type of data source, an item is defined as – 
+Depending on the type of data source, an item is defined as– 
 -	1 document (Word, Excel, PPT, PDF, etc.) in a file share
 -	1 wiki page in Confluence
 -	1 webpage on a website
--	1 ticket/issue in Jira
+-	1 ticket or issue in Jira
 
 The total quota utilized is based on the number of items stored in the index. The frequency of updates or changes to an item does not affect the quota calculation.
 
