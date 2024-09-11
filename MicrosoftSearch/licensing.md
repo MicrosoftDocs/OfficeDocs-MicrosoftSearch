@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 description: "Index quota for Microsoft Graph connectors."
 ---
 # Index quota
-Any valid **Microsoft 365 Copilot, Microsoft 365, or Office 365 license** allows you to view data from connectors in your Microsoft 365 Copilot and Microsoft Search results.
+Any valid Microsoft 365 Copilot, Microsoft 365, or Office 365 license allows you to view data from connectors in your Microsoft 365 Copilot and Microsoft Search results.
 
 >[!IMPORTANT]
 >All Microsoft connectors are provided at no additional cost. Microsoft offers an index quota limit of 50 million items per tenant, included at no extra charge. For more information, see this [public announcement](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/bg-p/Microsoft365CopilotBlog).
