@@ -43,7 +43,7 @@ To search for index content, you must enter the unique identifier for each docum
 |SAP|user ID|Admin configured details.|  	 	
 
 ### Permissions
-This tab lists the groups from the data source with permissions for the item ID. If the status is **allow**, all users in those groups can see the item. If the status is **Deny**, users in those groups can't access the item.
+This tab lists the groups from the data source with permissions for the item ID. If the status is **allow**, all users in those groups can see the item. If the status is **deny**, users in those groups can't access the item.
 
 ### Check user access
 To check user access, enter the user name or email address. A list of groups to which the user belongs is displayed. If the user is denied access to any of these groups, their overall permission to view the item is revoked.
