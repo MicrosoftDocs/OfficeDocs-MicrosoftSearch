@@ -15,7 +15,7 @@ Any valid Microsoft 365 Copilot, Microsoft 365, or Office 365 license allows you
 >[!IMPORTANT]
 >All Microsoft connectors are provided at no additional cost. Microsoft offers an index quota limit of 50 million items per tenant, included at no extra charge. For more information, see this [public announcement](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/bg-p/Microsoft365CopilotBlog).
 
-## What is an item in an index quota?
+## What represents items in an index quota?
 An item represents one unit of index quota. Each entity (or record) from the source system that is added to Microsoft Graph is considered an item. In Microsoft Graph, each item appears as a unique citation in Microsoft 365 Copilot responses and as a distinct search result in Microsoft Search. 
 
 Depending on the type of data source, an item is defined as – 
