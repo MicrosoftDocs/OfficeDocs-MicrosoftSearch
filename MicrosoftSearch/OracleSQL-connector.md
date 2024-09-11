@@ -184,3 +184,4 @@ After publishing your connection, you can review the status under the **Data sou
 You can find troubleshooting steps for commonly seen issues [here](troubleshoot-oraclesql-connector.md).
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
+

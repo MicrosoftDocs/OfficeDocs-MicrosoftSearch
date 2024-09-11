@@ -8,7 +8,7 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: Medium
 search.appverid:
 - BFB160
 - MET150
@@ -266,3 +266,4 @@ After publishing your connection, and customizing the results page, you can revi
 You can find troubleshooting steps for commonly seen issues [here](troubleshoot-servicenow-catalog-connector.md).
 
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
+
