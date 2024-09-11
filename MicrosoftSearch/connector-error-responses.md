@@ -9,7 +9,7 @@ description: "Learn how to identify and handle error responses in Microsoft Grap
 ---
 # Error responses in Microsoft Graph connectors
 
-Error reports for connections can be accessed through the errors tab in the connection pane. The UI displays a limited number of connection errors. For a comprehensive list, follow these steps to generate a detailed error report using a PowerShell script.
+You can access the errors tab in the connection pane to access error reports. The UI displays a limited number of connection errors. For a comprehensive list, follow these steps to generate a detailed error report using a PowerShell script.
 
 1. Open Windows PowerShell with administrator rights.
 2. Install the script from the PowerShell Gallery using the following command
@@ -21,7 +21,7 @@ With this script, you can download the item errors from a Microsoft Graph connec
 ```powershell
     Install-Module -Name MSAL.PS
 ```
-For more information, see [DownloadErrorScript](https://www.powershellgallery.com/packages/DownloadErrorScript/2.1).
+For more information, see [Download error script](https://www.powershellgallery.com/packages/DownloadErrorScript/2.1).
 
 3. After installation, execute the script
 
