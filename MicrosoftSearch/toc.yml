@@ -70,7 +70,7 @@ items:
         href: map-non-aad.md
       - name: Map Microsoft Entra identities
         href: map-aad.md
-      - name: Connector-specific information
+      - name: Out-of-the-box Microsoft Graph connectors
         href: out-of-the-box-overview.md
         items:
         - name: Azure Data Lake Storage Gen2
