@@ -71,7 +71,7 @@ items:
       - name: Map Microsoft Entra identities
         href: map-aad.md
       - name: Connector-specific information
-        href: azure-data-lake-connector.md
+        href: out-of-the-box-overview.md
         items:
         - name: Azure Data Lake Storage Gen2
           items:
@@ -166,8 +166,13 @@ items:
       items:
       - name: Monitor connections
         href: manage-connector.md
-      - name: View connection details and errors
-        href: connector-details-errors.md
+      - name: View connection details
+        href: connector-view-details.md
+        items:
+        - name: Searching and validating indexed content
+          href: connectors-index-search.md
+      - name: Error responses 
+        href: connector-error-responses.md
       - name: Item delete notification
         href: connectors-viva-topics-item-delete-notification.md
     - name: Licensing
