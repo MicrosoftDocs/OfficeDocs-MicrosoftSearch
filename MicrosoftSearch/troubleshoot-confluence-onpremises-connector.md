@@ -26,4 +26,7 @@ description: "Troubleshoot issues with the Confluence On-premises Graph Microsof
 | Connection settings | The client doesn't have permission to perform the action. | Invalid password provided for Basic auth |
 | Select properties | No preview results | Check your CQL query whether it's valid and matches the content to crawl |
 
+### 1. **What kind of spaces do we index?**
+We index only current spaces and not archived spaces.
+
 If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).

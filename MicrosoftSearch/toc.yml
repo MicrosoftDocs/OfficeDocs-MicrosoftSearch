@@ -77,6 +77,8 @@ items:
           items:
           - name: Setup
             href: azure-data-lake-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-azure-data-lake-connector.md
         - name: Azure DevOps Work Items
           items:
           - name: Setup
@@ -108,7 +110,6 @@ items:
           - name: Troubleshooting
             href: troubleshoot-confluence-onpremises-connector.md
         - name: CSV
-          href: csv-connector.md
           items:
           - name: Setup
             href: csv-connector.md
@@ -130,10 +131,14 @@ items:
           items:
           - name: Setup
             href: fileshare-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-file-share-connector.md
         - name: MediaWiki
           items:
           - name: Setup
             href: mediawiki-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-media-wiki-connector.md
         - name: Oracle SQL
           items:
           - name: Setup
