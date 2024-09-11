@@ -50,7 +50,7 @@ items:
       href: connectors-overview.md
     - name: Connectors gallery
       href: connectors-gallery.md
-    - name: Set up Microsoft built connectors
+    - name: Set up Microsoft-built connectors
       items:
       - name: Setup overview
         href: configure-connector.md
@@ -175,7 +175,7 @@ items:
         href: connector-error-responses.md
       - name: Item delete notification
         href: connectors-viva-topics-item-delete-notification.md
-    - name: Licensing
+    - name: Index quota
       href: licensing.md
     - name: Terms of use
       href: terms-of-use.md
