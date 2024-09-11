@@ -1,6 +1,6 @@
 ---
 ms.date: 10/02/2019
-title: "Searching and validating indexed Content Microsoft Graph connectors"
+title: "Searching and validating indexed content Microsoft Graph connectors"
 author: danielabom
 audience: Admin
 ms.topic: article
