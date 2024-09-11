@@ -13,7 +13,7 @@ Microsoft Graph connectors offer a streamlined way to integrate content from ext
 
 Microsoft provides prebuilt connectors that facilitate integration between third-party services and Microsoft products, improving data integration and functionality within the Microsoft ecosystem.
 
-## Key points about Microsoft Graph prebuilt Connectors
+## Key points about Microsoft Graph prebuilt connectors
 
 - Availability: Microsoft offers over 100 connectors, developed by Microsoft and its partners. These connectors enable integration with widely used services, including Azure, Box, ServiceNow, Salesforce, Google services, and MediaWiki.
 
