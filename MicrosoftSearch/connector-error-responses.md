@@ -40,11 +40,11 @@ For more information, see [Download error script](https://www.powershellgallery.
 
 In the **Data sources**, under each Active connector, any existing crawl errors are displayed under the **Current crawl header in the **Errors** section. This section provides
 
-*Error codes: Lists the various error codes encountered.
-*Count: Displays the number of occurrences for each error code.
-*Error log download: Offers options to download the error log.
+- Error codes: Lists the various error codes encountered.
+- Count: Displays the number of occurrences for each error code.
+- Error log download: Offers options to download the error log.
 
-To view detailed information about a specific error, select the corresponding Error Code.
+To view detailed information about a specific error, select the corresponding error code.
 
 :::image type="content" source="media/errormonitoring1.png" alt-text="Screenshot that shows details pane showing the current crawl, and errors section for the selected connector.":::
 
