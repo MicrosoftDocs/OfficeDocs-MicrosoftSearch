@@ -1,6 +1,6 @@
 ---
 ms.date: 10/08/2019
-title: "Microsoft Graph pre-built connectors overview"
+title: "Microsoft Graph prebuilt connectors overview"
 author: danielabom
 ms.topic: article
 ms.service: mssearch
@@ -11,13 +11,13 @@ description: "Microsoft Graph prebuilt connectors overview."
 
 Microsoft Graph connectors offer a streamlined way to integrate content from external services into Microsoft Graph, enhancing intelligent experiences such as Microsoft 365 Copilot and Microsoft Search. Microsoft Graph acts as the data fabric that supports these advanced capabilities.
 
-Microsoft provides a variety of pre-built connectors that facilitate integration between third-party services and Microsoft products, improving data integration and functionality within the Microsoft ecosystem.
+Microsoft provides prebuilt connectors that facilitate integration between third-party services and Microsoft products, improving data integration and functionality within the Microsoft ecosystem.
 
 ## Key points about Microsoft Graph prebuilt Connectors
 
 - Availability: Microsoft offers over 100 connectors, developed by Microsoft and its partners. These connectors enable integration with widely used services, including Azure, Box, ServiceNow, Salesforce, Google services, and MediaWiki.
 
-- Functionality: These connectors allow for the ingestion of external data into Microsoft 365 Copilot, search experiences, and other Microsoft 365 applications. For example, you can use Microsoft Graph connectors to integrate data from Salesforce and JIRA into Microsoft 365 Copilot, create declarative Copilots, and make data searchable within Microsoft Search.
+- Functionality: These connectors allow for the ingestion of external data into Microsoft 365 Copilot, search experiences, and other Microsoft 365 applications. For example, you can use Microsoft Graph connectors to integrate data from Salesforce and Jira into Microsoft 365 Copilot, create declarative Copilots, and make data searchable within Microsoft Search.
 
 - Configuration: Some connectors, such as the Enterprise Websites Microsoft Graph connector, can be configured to crawl dynamic content. Depending on the authentication requirements of the external service, you may need to include specific headers or user agents during the configuration process.
 
