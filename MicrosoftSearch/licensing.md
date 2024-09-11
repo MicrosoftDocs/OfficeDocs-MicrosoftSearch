@@ -1,22 +1,12 @@
 ---
 ms.date: 11/02/2020
 title: "Index quota"
-ms.author: mecampos
-author: mecampos
-manager: umas
-audience: Admin
-ms.audience: Global or Billing Admin
+author: danielabom
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
-search.appverid:
-- BFB160
-- MET150
-- MOE150
 description: "Index quota of Microsoft Graph connectors."
 ---
-<!---Previous ms.author: rusamai --->
-
 # Index quota
 Any valid **Microsoft 365 Copilot, Microsoft 365, or Office 365 license** allows you to view data from connectors in your Microsoft 365 Copilot and Microsoft Search results.
 
@@ -34,9 +24,9 @@ Depending on the type of data source, an item is defined as –
 
 The total quota utilized is based on the number of items stored in the index. The frequency of updates or changes to an item does not affect the quota calculation.
 
-### Index quota for enterprise users
+### Index quota for Microsoft 365 enterprise users
 
-All eligible enterprise customers with one of the following licenses are entitled to 50 million items of index quota. This quota contributes to your organization’s allocation for ingesting content through Microsoft Graph connectors.
+All eligible Microsoft 365 enterprise customers with one of the following licenses are entitled to 50 million items of index quota. This quota contributes to your organization’s allocation for ingesting content through Microsoft Graph connectors.
 
 |License name|
 |:---|
