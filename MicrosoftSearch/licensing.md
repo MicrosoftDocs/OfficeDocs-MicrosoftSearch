@@ -1,6 +1,6 @@
 ---
 ms.date: 11/02/2020
-title: "Microsoft Graph connectors license requirements and pricing"
+title: "Index quota"
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,32 +13,28 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "License requirements and pricing for Microsoft Graph connectors for Microsoft Search."
+description: "Index quota of Microsoft Graph connectors for Microsoft Search and Microsoft 65 Copilot."
 ---
 <!---Previous ms.author: rusamai --->
 
-# License requirements and pricing
+# Index quota
 
-This article is for global or billing admins who want to learn about how to purchase more Microsoft Graph connectors quota for their organization.
-
-Any valid **Microsoft 365 Copilot, Microsoft 365 or Office 365 license** allows you to view data from connectors in your search results.
+Any valid **Microsoft 365 Copilot, Microsoft 365 or Office 365 license** allows you to view data from connectors in your Microsoft 365 Copilot and Microsoft Serach results.
 
 >[!IMPORTANT]
->All of the connectors by Microsoft are free. However, you need to have sufficient index quota to ingest content from those connectors.
+>All of the connectors by Microsoft are free. Microsoft provides an index quota limit of 50 million items per tenant without any extra cost.
 
-To index content by using Microsoft Graph connectors, you need to have sufficient index quota. Microsoft Graph connectors index quota is available via:
+## Index quota items
 
-- Purchase of add-on index quota
-- Built-in entitlements
+An item represents one unit of index quota. Each entity (or record) from the source system that is added to Microsoft Graph is considered an item. In Microsoft Graph, each item appears as a unique citation in Microsoft 365 Copilot responses and as a distinct search result in Microsoft Search. 
 
-## What is an item of index quota?
-An item is 1 unit of index quota.  Each entity (or record) from the source system that you add to Microsoft Graph can be considered an item. Each item added to Microsoft Graph shows up as a unique citation in a Copilot response and as a unique search result in Microsoft Search. Depending on the type of data source, 1 item is – 
--	1 document (word, excel, ppt, pdf, etc.) in file share
+Depending on the type of data source, an item is defined as – 
+-	1 document (Word, Excel, PPT, PDF, etc.) in a file share
 -	1 wiki page in Confluence
--	1 webpage in a website
+-	1 webpage on a website
 -	1 ticket/issue in Jira
 
-Total quota utilized is calculated in terms of total items stored in the index. The number of updates/changes to an item are not counted in any manner. 
+Total quota utilized is calculated in terms of total items stored in the index. The number of updates/changes to an item are not counted in any manner.
 
 ## Purchase of add-on index quota
 To purchase more Microsoft Graph connectors quota, contact your Microsoft account manager or complete the following steps:
@@ -64,16 +60,39 @@ Finally:
 
 Cost of indexing connector content is $1000/month for every million items. This is assessed for items exceeding the entitled quota for each tenant (refer next section).
 
-## Entitlement built into Microsoft 365 Copilot, Microsoft 365 & Office 365 E5 licenses
+### Index quota for enterprise users
 
-The following licenses include entitlement to 500 items of index quota, which counts towards your organization's quota for ingesting content from Microsoft Graph connectors:
+All qualified* enterprise customers get a 50M entitlement. 
 
-* Microsoft 365 Copilot
-* The Microsoft 365 E5 or Office 365 E5
+The following licenses include entitlement to 50 million items of index quota, which counts towards your organization's quota for ingesting content from Microsoft Graph connectors.
+
+|License name|
+|:--- |
+Microsoft 365 Copilot
+Microsoft 365 E5 or Office 365 E5
+Office 365 E1
+Office 365 E3
+Office 365 E5
+Microsoft 365 E3
+Microsoft 365 E5
+Microsoft 365 F1
+Microsoft 365 F3
+Office 365 F3
+Microsoft 365 Business Basic
+Microsoft 365 Business Standard
+Microsoft 365 Business Premium
+Office 365 G1
+Office 365 G3
+Office 365 G5
+Microsoft 365 G3
+Microsoft 365 G5
+Office 365 A3
+Office 365 A5
+Microsoft 365 A3
+Microsoft 365 A5  
 
 For example, if your organization has 100 Microsoft 365 E5 licenses, then your organization has 100 x 500 = 50,000 items worth of Microsoft Graph connectors index quota.
 
-<!---Comment requested in PR#143--->
 > [!NOTE]
 > * Microsoft 365 A5 and Office 365 A5 do not include this entitlement.
 > * Microsoft 365 Copilot, Microsoft 365 E5 or Office 365 E5 license is not required for using Microsoft Graph connectors.
