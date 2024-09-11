@@ -13,7 +13,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Confluence Cloud Graph connector for Microsoft Search and Microsoft 65 Copilot"
+description: "Set up the Confluence Cloud Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
 <!---Previous ms.author: kam1 --->
 

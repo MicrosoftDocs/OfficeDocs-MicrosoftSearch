@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: "Set up the Oracle SQL Microsoft Graph connector for Microsoft Search and Microsoft Copilot 365."
+description: "Set up the Oracle SQL Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot."
 ---
 # Oracle SQL Microsoft Graph connector
 
