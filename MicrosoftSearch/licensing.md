@@ -68,28 +68,28 @@ The following licenses include entitlement to 50 million items of index quota, w
 
 |License name|
 |:--- |
-Microsoft 365 Copilot
-Microsoft 365 E5 or Office 365 E5
-Office 365 E1
-Office 365 E3
-Office 365 E5
-Microsoft 365 E3
-Microsoft 365 E5
-Microsoft 365 F1
-Microsoft 365 F3
-Office 365 F3
-Microsoft 365 Business Basic
-Microsoft 365 Business Standard
-Microsoft 365 Business Premium
-Office 365 G1
-Office 365 G3
-Office 365 G5
-Microsoft 365 G3
-Microsoft 365 G5
-Office 365 A3
-Office 365 A5
-Microsoft 365 A3
-Microsoft 365 A5  
+|Microsoft 365 Copilot|
+|Microsoft 365 E5 or Office 365 E5|
+|Office 365 E1|
+|Office 365 E3|
+|Office 365 E5|
+|Microsoft 365 E3|
+|Microsoft 365 E5|
+|Microsoft 365 F1|
+|Microsoft 365 F3|
+|Office 365 F3|
+|Microsoft 365 Business Basic|
+|Microsoft 365 Business Standard|
+|Microsoft 365 Business Premium|
+|Office 365 G1|
+|Office 365 G3|
+|Office 365 G5|
+|Microsoft 365 G3|
+|Microsoft 365 G5|
+|Office 365 A3|
+|Office 365 A5|
+|Microsoft 365 A3|
+|Microsoft 365 A5|  
 
 For example, if your organization has 100 Microsoft 365 E5 licenses, then your organization has 100 x 500 = 50,000 items worth of Microsoft Graph connectors index quota.
 
