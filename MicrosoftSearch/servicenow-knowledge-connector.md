@@ -23,21 +23,21 @@ With the Microsoft Graph connector for ServiceNow, your organization can index k
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Knowledge Graph connector.
 
-## Benefits
+## Capabilities
 - Index all types of knowledge articles
 - Enable your end users to ask questions related to your IT/HR workflows in Copilot.
    - How to request a new device?
    - How to create a new VPN connection?
    - How do I apply for leaves?
-- Use Semantic search in Copilot to enable end users to make natural language queries and get accurate responses.
+- Use [Semantic search in Copilot](/MicrosoftSearch/semantic-index-for-copilot.md) to enable users to find relevant content based on keywords, personal preferences, and social connections.
 
 ## Limitations
-- Doesn't support Advanced scripts.
+- Doesn't support [Advanced scripts](https://docs.servicenow.com/bundle/xanadu-servicenow-platform/page/product/knowledge-management/task/create-user-criteria-record-in-knowledge-management.html).
 - If both Knowledge base and Knowledge article level permissions are defined, then only article-level permissions are honored.
 - Does not index attachments.
 
 ## Prerequisites
-- **ServiceNow Instance URL**: To connect to your ServiceNow data, you need your organization's ServiceNow instance URL. Your organization's ServiceNow instance URL typically looks like https://your-organization-domain.service-now.com. (Don’t have one? [Check how to create a test instance](https://www.youtube.com/watch?v=OTdzVLqpFHY))
+- **ServiceNow Instance URL**: To connect to your ServiceNow data, you need your organization's ServiceNow instance URL. Your organization's ServiceNow instance URL typically looks like https://your-organization-name.service-now.com. (Don’t have one? [Check how to create a test instance](https://www.youtube.com/watch?v=OTdzVLqpFHY))
 - **Service Account**: To connect to ServiceNow and allow Microsoft Graph Connector to update knowledge articles regularly, you need a service account with read access to specific ServiceNow table records. The service account needs read access to the following **ServiceNow table records** to successfully crawl various entities.
 
    Feature | Read access required tables | Description
@@ -66,15 +66,13 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Get Started
 
-[Add Microsoft Graph Connector for ServiceNow Knowledge](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowKB&type=ServiceNowKB)
-
 ![Connection creation screen for Microsoft Graph Connector for ServiceNow Knowledge](/MicrosoftSearch/media/servicenow-knowledge-create-page.png "Add Microsoft Graph Connector for ServiceNow Knowledge")
 
 ###1. Display name 
 A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ###2. ServiceNow URL
-To connect to your ServiceNow data, you need your organization's ServiceNow instance URL. Your organization's ServiceNow instance URL typically looks like https://your-organization-domain.service-now.com.
+To connect to your ServiceNow data, you need your organization's ServiceNow instance URL. Your organization's ServiceNow instance URL typically looks like https://your-organization-name.service-now.com.
 
 ###3. Authentication Type
 To authenticate and sync content from ServiceNow, choose **one of three** supported methods:<br>
@@ -83,11 +81,11 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
      Enter the username and password of ServiceNow account with **knowledge** role to authenticate to your instance.
      <br>
 
-   b. **ServiceNow OAuth**
+   b. **ServiceNow OAuth (Recommended)**
    <details>
    <summary>[Click to expand]To use the ServiceNow OAuth for authentication, follow these steps.</summary><br>
     
-   A ServiceNow admin needs to provision an endpoint in your ServiceNow instance, so that the Microsoft Search app can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/vancouver-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
+   A ServiceNow admin needs to provision an endpoint in your ServiceNow instance, so that the Graph connector can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/vancouver-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
    The following table provides guidance on how to fill out the endpoint creation form:
 
@@ -233,6 +231,9 @@ For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl
 
 If you want to edit any of these values, you need to choose the "Custom Setup" option.
 
+[Get started with Microsoft Graph Connector for ServiceNow Knowledge](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowKB&type=ServiceNowKB)
+
+
 ##Custom Setup
 
 Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click on the "Custom Setup" option, you see three more tabs – Users, Content, and Sync.
@@ -309,7 +310,6 @@ Here, you can add or remove available properties from your ServiceNow data sourc
 Use the preview results button to verify the sample values of the selected properties and query filter.
 
 ![Preview data option to check the query filter and properties you have configured](/MicrosoftSearch/media/servicenow-knowledge-preview-data.png "Preview data to validate your Query filter and Manage Properties settings")
-
 
 ###Sync
 
