@@ -5,15 +5,15 @@ author: danielabom
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
-description: "Microsoft Graph pre-built connectors overview."
+description: "Microsoft Graph prebuilt connectors overview."
 ---
-# Microsoft Graph pre-built connectors overview for Microsoft Search and Microsoft 365 Copilot
+# Microsoft Graph prebuilt connectors overview for Microsoft Search and Microsoft 365 Copilot
 
 Microsoft Graph connectors offer a streamlined way to integrate content from external services into Microsoft Graph, enhancing intelligent experiences such as Microsoft 365 Copilot and Microsoft Search. Microsoft Graph acts as the data fabric that supports these advanced capabilities.
 
 Microsoft provides a variety of pre-built connectors that facilitate integration between third-party services and Microsoft products, improving data integration and functionality within the Microsoft ecosystem.
 
-## Key Points About Microsoft Graph Pre-Built Connectors
+## Key points about Microsoft Graph prebuilt Connectors
 
 - Availability: Microsoft offers over 100 connectors, developed by Microsoft and its partners. These connectors enable integration with widely used services, including Azure, Box, ServiceNow, Salesforce, Google services, and MediaWiki.
 
