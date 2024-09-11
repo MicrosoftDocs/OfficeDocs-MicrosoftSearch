@@ -8,7 +8,7 @@ audience: Admin
 ms.audience: Admin 
 ms.topic: article 
 ms.service: mssearch 
-localization_priority: Normal 
+ms.localization_priority: Normal 
 search.appverid: 
 - BFB160 
 - MET150 
@@ -32,7 +32,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
    - What is the return policy for apparels?
    - What are the product specifications for Surface laptop?
    - How can I upgrade my subscription?
-- Use [Semantic search in Copilot](/MicrosoftSearch/semantic-index-for-copilot.md) to enable users to find relevant content based on keywords, personal preferences, and social connections.
+- Use [Semantic search in Copilot](semantic-index-for-copilot.md) to enable users to find relevant content based on keywords, personal preferences, and social connections.
 
 ## Limitations
 - Doesn't support access restrictions to articles based on Zendesk user permissions. All users in your tenant have access to all indexed articles.
@@ -80,7 +80,7 @@ To authenticate and sync content from Zendesk, choose **one of the two** support
 </details>
 
 ### 4. Rollout to limited audience
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, [click here](/MicrosoftSearch/staged-rollout-for-graph-connectors.md).
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, [click here](staged-rollout-for-graph-connectors.md).
 
 At this point, you're ready to create the connection for Zendesk Help Center. You can click on the "Create" button to publish your connection and index articles from your Zendesk account.
 
