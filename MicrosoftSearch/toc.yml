@@ -168,9 +168,8 @@ items:
         href: manage-connector.md
       - name: View connection details
         href: connector-view-details.md
-        items:
-        - name: Search and validate indexed content
-          href: connectors-index-search.md
+      - name: Search and validate indexed content
+        href: connectors-index-search.md
       - name: Error responses 
         href: connector-error-responses.md
       - name: Item delete notification
