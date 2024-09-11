@@ -7,7 +7,7 @@ ms.service: mssearch
 ms.localizationpriority: medium
 description: "Microsoft Graph out-of-the-box connectors Overview for Microsoft Search and Microsoft 365 Copilot."
 ---
-# Microsoft Graph out of the box connectors Overview for Microsoft Search and Microsoft 365 Copilot
+# Microsoft Graph out-of-the-box connectors Overview for Microsoft Search and Microsoft 365 Copilot
 
 Microsoft Graph connectors provide a seamless way to integrate content from external services into Microsoft Graph, enhancing Microsoft 365 intelligent experiences such as Microsoft 365 Copilot and Microsoft Search. Microsoft Graph serves as the data fabric that underpins these intelligent experiences.
 Microsoft offers a range of out-of-the-box (OOB) Graph connectors. These pre-built integrations facilitate connections between various third-party services and Microsoft products, enhancing data integration and functionality within the Microsoft ecosystem.
