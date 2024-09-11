@@ -2,6 +2,8 @@
 ms.date: 11/02/2020
 title: "Index quota for Microsoft Graph connectors"
 author: danielabom
+ms.author: danielabo
+manager: stevewilkins
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
