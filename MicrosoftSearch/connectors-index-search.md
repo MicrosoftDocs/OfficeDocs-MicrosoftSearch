@@ -15,7 +15,7 @@ You can now use an index browser to search and determine if specific content is 
 
 :::image type="content" source="media/manage-connector/index-search.png" alt-text="Screenshot that shows connector what users can see when they enter an item ID of an indexed item.":::
 
-### Locate the item ID
+## Locate the item ID
 To search for indexed content, enter the unique identifier of the item in the index browser. If the item is indexed, it displays content, properties, and user access info.
 
 |Connector name|Input per item ID|Where to find the item ID|
@@ -37,7 +37,7 @@ To search for indexed content, enter the unique identifier of the item in the in
 |Custom connector|item ID|Admin configured details.|  
 |SAP|user ID|Admin configured details.|  	 	
 
-### Permissions
+## Permissions
 This tab lists the groups from the data source with permissions for the item ID. If the status is **allow**, all users in those groups can see the item. If the status is **deny**, users in those groups can't access the item.
 
 ### Check user access
