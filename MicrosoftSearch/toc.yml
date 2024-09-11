@@ -56,9 +56,9 @@ items:
         href: configure-connector.md
       - name: Add Staged rollout to connectors
         href: staged-rollout-for-graph-connectors.md
-      - name: Graph Connectors in Copilot
+      - name: Microsoft Graph connectors in Microsoft 365 Copilot
         items:
-        - name: Enhancing Copilot Discovery with Graph Connector Content
+        - name: Enhancing Microsoft 365 Copilot discovery with Microsoft Graph connector content
           href: enhancing-microsoft-copilot-discovery-with-graph-connector-content.md
       - name: On-prem connectors
         items:
@@ -124,7 +124,7 @@ items:
             href: enterprise-web-connector.md
           - name: Troubleshooting
             href: troubleshoot-enterprise-web-connector.md
-        - name: File share
+        - name: File Share
           items:
           - name: Setup
             href: fileshare-connector.md
@@ -183,9 +183,9 @@ items:
     items:
     - name: Dataverse and Dynamics 365
       href: manage-dynamics365.md
-  - name: Semantic Index
+  - name: Semantic index
     items:
-    - name: Semantic Index for Copilot
+    - name: Semantic index for Microsoft 365 Copilot
       href: semantic-index-for-copilot.md
 - name: Customize and configure
   items:
