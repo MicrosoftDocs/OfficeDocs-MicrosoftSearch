@@ -1,11 +1,11 @@
 ---
 ms.date: 11/02/2020
-title: "Index quota"
+title: "Index quota for Microsoft Graph connectors"
 author: danielabom
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
-description: "Index quota of Microsoft Graph connectors."
+description: "Index quota for Microsoft Graph connectors."
 ---
 # Index quota
 Any valid **Microsoft 365 Copilot, Microsoft 365, or Office 365 license** allows you to view data from connectors in your Microsoft 365 Copilot and Microsoft Search results.
