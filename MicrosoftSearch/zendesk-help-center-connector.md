@@ -35,13 +35,13 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - Use [Semantic search in Copilot](/MicrosoftSearch/semantic-index-for-copilot.md) to enable users to find relevant content based on keywords, personal preferences, and social connections.
 
 ## Limitations
-- Does not support access restrictions to articles based on Zendesk user permissions. All users in your tenant will have access to all indexed articles.
-- Does not index Zendesk Guide Community posts and topics.
-- Does not index attachments.
+- Doesn't support access restrictions to articles based on Zendesk user permissions. All users in your tenant have access to all indexed articles.
+- Doesn't index Zendesk Guide Community posts and topics.
+- Doesn't index attachments.
 
 ## Prerequisites
-- You must be the **search admin** for your organization's M365 tenant.
-- **Zendesk Instance URL**: To connect to your Zendesk Help Center data, you need your organization's Zendesk Help Center instance URL. Your organization's Zendesk Help Center instance URL typically looks like `https://<your-organization-domain>.zendesk.com`. If you do not have an instance already, refer the [article](https://support.zendesk.com/hc/articles/4408823799962-How-do-I-create-a-Support-trial-account) to learn about creating a test instance.
+- You must be the **search admin** for your organization's Microsoft 365 tenant.
+- **Zendesk Instance URL**: To connect to your Zendesk Help Center data, you need your organization's Zendesk Help Center instance URL. Your organization's Zendesk Help Center instance URL typically looks like `https://<your-organization-domain>.zendesk.com`. If you don't have an instance already, refer the [article](https://support.zendesk.com/hc/articles/4408823799962-How-do-I-create-a-Support-trial-account) to learn about creating a test instance.
 - **Service Account**: To connect to Zendesk Help Center and allow Microsoft Graph Connector to update knowledge articles regularly, you need a service account with read permissions granted to the service account.
 
 ## Get Started
@@ -76,13 +76,13 @@ To authenticate and sync content from Zendesk, choose **one of the two** support
    Client kind | Choose between Confidential and Public Oauth client | Confidential
    Redirect URL | A required callback URL that the authorization server redirects to. | For **M365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback,</br> For **M365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback
    
-   Enter the client id and secret to connect to your instance. After connecting, use a Zendesk account credential to authenticate permission to crawl.
+   Enter the client ID and Secret to connect to your instance. After connecting, use a Zendesk account credential to authenticate permission to crawl.
 </details>
 
 ### 4. Rollout to limited audience
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, click [here](/MicrosoftSearch/staged-rollout-for-graph-connectors.md).
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, [click here](/MicrosoftSearch/staged-rollout-for-graph-connectors.md).
 
-At this point, you are ready to create the connection for Zendesk Help Center. You can click on the "Create" button and the Microsoft Graph connector will start indexing articles from your Zendesk account.
+At this point, you're ready to create the connection for Zendesk Help Center. You can click on the "Create" button to publish your connection and index articles from your Zendesk account.
 
 ## Troubleshooting
 After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
