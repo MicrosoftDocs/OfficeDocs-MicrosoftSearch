@@ -2,8 +2,6 @@
 ms.date: 11/12/2020
 title: "File share Microsoft Graph connector"
 ms.author: mecampos
-author: mecampos
-manager: umas
 audience: Admin
 ms.audience: Admin
 ms.topic: article
@@ -14,19 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: "Set up the File share Microsoft Graph connector for Microsoft Search and Microsoft Copilot 365"
+description: "Set up the File Share Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
-<!---Previous ms.author: rusamai --->
+# File Share Microsoft Graph connector
 
-# File share Microsoft Graph connector
-
-The File share Microsoft Graph connector allows users in your organization to search on-premises Windows file shares.
+The File Share Microsoft Graph connector allows users in your organization to search on-premises Windows file shares.
 
 ## Before you get started
 
 ### Install the Microsoft Graph connector agent
 
-To index your Windows file shares, you must install and register the connector agent. See [Install the Microsoft Microsoft Graph connector agent](graph-connector-agent.md) to learn more.  
+To index your Windows file shares, you must install and register the connector agent. See [Install the Microsoft Graph connector agent](graph-connector-agent.md) to learn more.  
 
 ### Content requirements
 
@@ -40,7 +36,7 @@ The maximum supported file size is 100 MB. Files that exceed 100 MB aren't index
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
-[Add File share connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_FileShare&type=FileConnector)
+[Add File Share Microsoft Graph connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_FileShare&type=FileConnector)
 
 (See general [setup instructions](./configure-connector.md) for more details)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -65,7 +61,7 @@ When the connector attempts to crawl a file, the "last access time" field in its
 
 You have the ability to limit files and folders from indexing based on file type, modified date, and location.
 
-### Based on File Types
+### Based on file types
 
 For these file formats, only the text is indexed: DOC, DOCM, DOCX, DOT, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS. For multimedia and other file types, only metadata is indexed.
 
@@ -91,14 +87,14 @@ You can enrich your indexed data by creating custom properties based on the conn
 
 To add a custom property:
 
-  1. Enter a property name. This name will appear in search results from this connector.
-  1. For the value, select Static or String/Regex Mapping. A static value will be included in all search results from this connector. A string/regex value will vary based on the rules you add.
-  1. Select **Edit Value**.
+  1. Enter a property name. This name appears in the search results from this connector.
+  1. For the value, select **Static or String/Regex Mapping**. A static value is included in all search results from this connector. The string/regex value varies based on the rules you add.
+  1. Select **Edit value**.
   1. If you selected a static value, enter the string you want to appear.
   1. If you selected a string/regex value:
       * In the **Add expressions** section, in the **Property** list, select a default property from the list.
       * For **Sample value**, enter a string to represent the type of values that could appear. This sample is used when you preview your rule.
-      * For **Expression**, enter a regex expression to define the portion of the property value that should appear in search results. You can add up to three expressions. To learn more about regex expressions, see [Regular Expression Language Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) or search the web for a regex expression reference guide.
+      * For **Expression**, enter a regex expression to define the portion of the property value that should appear in search results. You can add up to three expressions. To learn more about regex expressions, see [Regular expression language quick reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) or search the web for a regex expression reference guide.
       * In the **Create formula** section, enter a formula to combine the values extracted from the expressions. 
 
 ## Step 7: Assign property labels
@@ -113,9 +109,9 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 9: Manage search permissions
 
-You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists, by selecting the desired option on **Manage search permissions** page. The user accounts and groups provided in the Access Control Lists must be managed by Active Directory (AD). If you're using any other system for user accounts management, you can select the 'everyone' option, which lets users search for all the files without any access restrictions. However, when users try to open the file, access controls set at the source apply.
+You can restrict the permission to search for any file based on Share Access Control Lists or New Technology File System (NTFS) Access Control Lists, by selecting the desired option on the **Manage search permissions** page. The user accounts and groups provided in the Access Control Lists must be managed by Active Directory (AD). If you're using any other system for user accounts management, you can select the 'everyone' option, which lets users search for all the files without any access restrictions. However, when users try to open the file, access controls set at the source apply.
 
-Windows by default provides 'Read' permission to 'Everyone' in Share ACLs when a folder is shared on the network. By extension, if you're choosing Share ACLs in **Manage search permissions**, users will be able to search for all the files. If you want to restrict access, remove 'Read' access for 'Everyone' in file shares and provide access only to the desired users and groups. The connector then reads these access restrictions and applies them to the search.
+Windows by default provides 'Read' permission to 'Everyone' in Share ACLs when a folder is shared on the network. By extension, if you're choosing Share ACLs in **Manage search permissions**, users can search for all the files. If you want to restrict access, remove 'Read' access for 'Everyone' in file shares and provide access only to the desired users and groups. The connector then reads these access restrictions and applies them to the search.
 
 You can choose to share ACLs only if the share path you provided follows UNC path format. You can create a path in UNC format by going to 'Advanced Sharing' under the 'Sharing' option.
 
