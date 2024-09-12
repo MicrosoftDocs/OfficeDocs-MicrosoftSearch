@@ -29,7 +29,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
    - How to request a new device?
    - How to create a new VPN connection?
    - How do I apply for leaves?
-- Use [Semantic search in Copilot](/MicrosoftSearch/semantic-index-for-copilot.md) to enable users to find relevant content based on keywords, personal preferences, and social connections.
+- Use [Semantic search in Copilot](/MicrosoftSearch/semantic-index-for-copilot) to enable users to find relevant content based on keywords, personal preferences, and social connections.
 
 ## Limitations
 - Doesn't support [Advanced scripts](https://docs.servicenow.com/bundle/xanadu-servicenow-platform/page/product/knowledge-management/task/create-user-criteria-record-in-knowledge-management.html).
@@ -212,7 +212,7 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
 
 ###4. Rollout to limited audience
 
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, click [here](/MicrosoftSearch/staged-rollout-for-graph-connectors.md).
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, click [here](/MicrosoftSearch/staged-rollout-for-graph-connectors).
 
 At this point, you are ready to create the connection for ServiceNow Knowledge. You can click on the "Create" button and the Microsoft Graph connector will start indexing articles from your ServiceNow account.
 
@@ -261,7 +261,7 @@ If a knowledge article isn't enabled with a user criterion, it appears in result
 
 **Mapping Identities**
 
-The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the Email id of ServiceNow users is same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra ID. If you believe the default mapping would not work for your organization, you can provide a custom mapping formula. To know more about, mapping Non-EntraID identities, click [here](/MicrosoftSearch/map-non-aad.md).
+The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the Email id of ServiceNow users is same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra ID. If you believe the default mapping would not work for your organization, you can provide a custom mapping formula. To know more about, mapping Non-EntraID identities, click [here](/MicrosoftSearch/map-non-aad).
 
 ###Content
 
