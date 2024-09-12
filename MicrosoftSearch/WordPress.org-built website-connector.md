@@ -1,8 +1,8 @@
 --- 
 
 title: "WordPress.org Graph connector for Microsoft Search and Copilot" 
-ms.author: ranran1998
-author: ranran1998
+ms.author: rantang
+author: rantang
 manager: jecui
 audience: Admin
 ms.audience: Admin 
