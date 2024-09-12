@@ -17,7 +17,7 @@ description: "Set up the Azure DevOps Work Items Microsoft Graph connector for M
 ---
 # Azure DevOps Work Items Microsoft Graph connector
 
-The Azure DevOps Microsoft Graph connector allows your organization to index work items in its instance of the Azure DevOps service. After you configure the connector and index content from Azure DevOps, end users can search for those items in Microsoft Search.
+The Azure DevOps Microsoft Graph connector allows your organization to index work items in its instance of the Azure DevOps service. After you configure the connector and index content from Azure DevOps, end users can search for those items in Microsoft Search and Microsoft 365 Copilot.
 
 This article is for anyone who configures, runs, and monitors an Azure DevOps Work Items Microsoft Graph connector. It supplements the general setup process and shows instructions that apply only to this connector.
 

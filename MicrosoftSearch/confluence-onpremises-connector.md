@@ -115,7 +115,7 @@ Extract the public key from the certificate to the `confluence_publickey.pem` fi
    Field | Recommended value
    --- | ---
    **Consumer key** | `OAuthkey`
-   **Consumer name** | `Microsoft  connector App`
+   **Consumer name** | `Microsoft Graph connector App`
    **Public key** | Copy the public key from `confluence_publickey.pem` file generated from *Step 3.4.1* and paste it into this field (for example, `iuasge87awegrq3...`).
 
 5. Select **Continue**. After successful creation, the application link is displayed on the following screen.
@@ -200,7 +200,7 @@ Follow the general [setup instructions](./configure-connector.md).
 
 After publishing the connection, you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](./configure-connector.md#step-11-customize-the-search-results-page).
 
-For testing purposes, you can choose [publish to limited audience](./staged-rollout-for--connectors.md#modify-or-stop-staged-rollout)   
+For testing purposes, you can choose [publish to limited audience](./staged-rollout-for-graph-connectors.md#modify-or-stop-staged-rollout)   
 
 ## Limitations
 

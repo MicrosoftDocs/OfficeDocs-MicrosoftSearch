@@ -20,14 +20,14 @@ You can view the connection details and errors by selecting the connection.
 
 :::image type="content" source="media/datasourcestab.png" alt-text="Screenshot that shows connectors list with a connector selected and details pane showing information about this connector.":::
 
-## View Connection Statistics 
+## View Connection statistics 
 
-Connection statistics will help you get overall information on what is happening to the data after the first full crawl is completed successfully.
+Connection statistics help you get overall information on what is happening to the data after the first full crawl is completed successfully.
 
-This section will include the data about the total number of items discovered, successfully indexed, or failed across all crawls. The data will update after every crawl and will provide a cumulative perspective on the sync between the data source and the Microsoft Graph Connector index. With this information, you can swiftly identify discrepancies and ensure that their connection is up to date. 
-Key perspective at this point is to understand the sync between the data source and the index is at a cumulative level and not just last Crawl. 
+This section includes the data about the total number of items discovered, successfully indexed, or failed across all crawls. The data updates after every crawl and provides a cumulative perspective on the sync between the data source and the Microsoft Graph Connector index. With this information, you can swiftly identify discrepancies and ensure that their connection is up to date. 
+The key perspective at this point is to understand the sync between the data source and the index is at a cumulative level and not just the last crawl. 
 
-An item is indexed with the following information - Content, Properties (Default + Custom) and Access.
+An item is indexed with the following information - content, properties (default + custom), and access.
 1. We consider an item as completely indexed when all 3 parts of the item are indexed successfully. 
 2. We consider an item as partially indexed when some part of the data is indexed however some part is missing. The item is still searchable with the remaining properties. E.g. For an item we could index all the content but could not index some properties. 
 
@@ -47,8 +47,8 @@ After the first initial incremental or full crawl completes successfully, the la
 
 The following last crawl values are available for each connection:
 
-Value | Description
---- | ---
+| Value | Description
+ | :--- | :--- | 
 **Completed at** | Date and time the last crawl was completed
 **Type** | Incremental or full crawl
 **Duration** | How much time the last crawl took to complete
