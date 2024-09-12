@@ -13,18 +13,18 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the WordPress.org-built website Microsoft Graph connector for Microsoft Search and Copilot" 
+description: "Set up the WordPress.org Microsoft Graph connector for Microsoft Search and Copilot" 
 ms.date: 09/12/2024
 ---
 
-# WordPress.org-built website Microsoft Graph connector (Preview)
+# WordPress.org Microsoft Graph connector (Preview)
 
-With the Microsoft Graph connector for WordPress.org-built websites, your organization can index published posts and pages of your WordPress.org-built websites. After you configure the connector and index content from WordPress.org -built websites, end users can search for those published posts and pages in Microsoft Copilot and from any Microsoft Search client. 
+With the Microsoft Graph connector for WordPress.org-built websites, your organization can index published posts and pages of your WordPress.org-built websites. After you configure the connector and index content from WordPress.org-built websites, end users can search for those published posts and pages in Microsoft Copilot and from any Microsoft Search client. 
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a WordPress.org Graph connector. 
 
 >[!NOTE]
->The "WordPress.org connector is in preview. If you wish to get early access to try it, sign up using [this form](https://forms.office.com/r/JniPmK5bzm).
+>The WordPress.org connector is in preview. If you wish to get early access to try it, sign up using [this form](https://forms.office.com/r/JniPmK5bzm).
 
 ## Capabilities
 - Index published posts and pages of your WordPress.org-built website.    
@@ -34,27 +34,27 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - Use [Semantic search in Copilot](semantic-index-for-copilot.md) to enable users to find relevant content.
 
 ## Limitations
-- Does not index comments. 
-- Does not crawl user identities and access permissions. All published pages or posts indexed using the WordPress connector are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
+- Doesn't index comments. 
+- Doesn't crawl user identities and access permissions. All published pages or posts indexed using the WordPress connector are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
 - **Install the Microsoft Graph connector agent**: To access your WordPress.org-built website, you must install and configure the [Microsoft Graph connector agent](https://www.microsoft.com/download/details.aspx?id=104045). [Download the agent installer](https://www.microsoft.com/download/details.aspx?id=104045) and follow the installation instructions to set it up. Once installed, ensure that the agent is configured correctly to connect your WordPress.org-built website with the graph connector. 
-- **WordPress.org-built website URL**: To connect to your WordPress.org-built website data, you need your organization's WordPress.org-built website URL. 
-- **WordPress.org-built website Admin account**: To connect to your WordPress.org-built website and allow Microsoft Graph Connector to update published posts and pages regularly, you need an **admin user account** of your WordPress.org-built website with the permission to create an application password. Application password is used to authenticate with a third-party service or application that connects to your WordPress.org-built website via REST API. 
+- **WordPress website URL**: To connect to your WordPress.org-built website data, you need your organization's WordPress.org-built website URL. 
+- **WordPress Admin account**: To connect to your WordPress.org-built website and allow Microsoft Graph Connector to update published posts and pages regularly, you need an **admin user account** of your WordPress.org-built website with the permission to create an application password. Application password is used to authenticate with a third-party service or application that connects to your WordPress.org-built website via REST API. 
 
 ## Get Started
 
 ### 1. Display name 
 A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
-### 2. WordPress.org-built website URL
+### 2. WordPress website URL
 A WordPress.org-built website URL is the unique web address assigned to each WordPress.org-built website, allowing you to access your specific WordPress.org-built website.   
 
 ### 3. Graph Connector Agent
 The graph connector agent acts as a bridge between your WordPress.org instance and the connector APIs, enabling secure and efficient data transfer. In this step, select the agent configuration you want to use for your connector.  
 
-If you do not installed the [Microsoft Graph connector agent](https://www.microsoft.com/download/details.aspx?id=104045), you can  [download the agent installer](https://www.microsoft.com/download/details.aspx?id=104045) and follow the installation instructions to set it up. Once installed, ensure that the agent is configured correctly to connect your on-premises WordPress.org instance with the graph connector. 
+If you have not installed the [Microsoft Graph connector agent](https://www.microsoft.com/download/details.aspx?id=104045) already, you can [download the agent installer](https://www.microsoft.com/download/details.aspx?id=104045) and follow the installation instructions to set it up. Once installed, ensure that the agent is configured correctly to connect your on-premises WordPress.org instance with the Graph connector. 
 
 ### 4. Authentication Type
 We support the basic authentication method. To enable and configure basic authentication in WordPress.org, find more details [here](https://make.wordpress.org/core/2020/11/05/application-passwords-integration-guide/).  
@@ -68,9 +68,9 @@ For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl
 
 **Page** | **Settings** | **Default Values**
 --- | ---- | ---
-Users | Access Permissions | All published pages or posts indexed using the WordPress.org connector are be visible to all M365 users in your tenant, from Microsoft Search or Copilot.
+Users | Access Permissions | All published pages or posts indexed using the WordPress.org connector are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
 Content | Index Content | All published posts and pages are selected by default.
-Content | Manage Properties | To check default properties and their schema, click here.
+Content | Manage Properties | To check default properties and their schema, [click here](#content).
 Sync | Incremental Crawl | Frequency: Every 15 mins
 Sync | Full crawl | Frequency: Every day
 
@@ -78,15 +78,15 @@ If you want to edit any of these values, you need to choose the ‘**Custom Setu
 
 ## Custom Setup 
 
-Custom setup is for those admins who want to edit the default values for settings. Once you click on the ‘Custom Setup’ option, you could see three other tabs – Users, Content, and Sync. 
+Custom setup is for those admins who want to edit the default values for settings. Once you click on the ‘Custom Setup’ option, you should see three other tabs – Users, Content, and Sync. 
 
 ### Users 
 
 **Access permissions**
 
-Currently only published pages and posts from your WordPress.org-built websites could be indexed. All data indexed using the WordPress.org connector is visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
+Currently only published pages and posts from your WordPress.org-built websites are indexed. All data indexed using the WordPress.org connector is visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
 
-### Data 
+### Content 
 
 **Filter the Indexed Content**   
 
@@ -116,7 +116,7 @@ Url | url | The target URL of the item in the data source.  |Retrieve
 
 ### Sync 
 
-You can configure full and incremental crawls based on the scheduling options present here. By default, incremental crawl is set for every 15 minutes, and full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs.     
+You can configure full and incremental crawls based on the scheduling options present here. By default, incremental crawl is set for every 15 minutes, and full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs.
 
 ## Troubleshooting
 After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
