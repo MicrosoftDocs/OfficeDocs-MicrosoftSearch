@@ -37,7 +37,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - Does not index attachments.
 
 ## Prerequisites
-- **ServiceNow Instance URL**: To connect to your ServiceNow data, you need your organization's ServiceNow instance URL. Your organization's ServiceNow instance URL typically looks like `https://your-organization-name.service-now.com`. (Don’t have one? [Take a look at this Youtube video on how to create a test instance](https://www.youtube.com/watch?v=OTdzVLqpFHY)).
+- **ServiceNow Instance URL**: To connect to your ServiceNow data, you need your organization's ServiceNow instance URL. Your organization's ServiceNow instance URL typically looks like `https://your-organization-name.service-now.com`. (Don’t have one? [Take a look at this YouTube video on how to create a test instance](https://www.youtube.com/watch?v=OTdzVLqpFHY)).
 - **Service Account**: To connect to ServiceNow and allow Microsoft Graph Connector to update knowledge articles regularly, you need a service account with read access to specific ServiceNow table records. The service account needs read access to the following **ServiceNow table records** to successfully crawl various entities.
 
    Feature | Read access required tables | Description
@@ -66,7 +66,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Get Started
 
-[![Screenshot that shows Connection creation screen for Microsoft Graph Connector for ServiceNow Knowledge](/MicrosoftSearch/media/servicenow-knowledge-create-page.png)](/MicrosoftSearch/media/servicenow-knowledge-create-page.png#lightbox)
+[![Screenshot that shows Connection creation screen for Microsoft Graph Connector for ServiceNow Knowledge.](/MicrosoftSearch/media/servicenow-knowledge-create-page.png)](/MicrosoftSearch/media/servicenow-knowledge-create-page.png#lightbox)
 
 ### 1. Display name
 
@@ -244,7 +244,7 @@ Custom setup is for those admins who want to edit the default values for setting
 
 ### Users
 
-[![Screenshot that shows Users tab where you can configure access permissions and user mapping rules](/MicrosoftSearch/media/servicenow-knowledge-users-tab.png)](/MicrosoftSearch/media/servicenow-knowledge-users-tab.png#lightbox)
+[![Screenshot that shows Users tab where you can configure access permissions and user mapping rules.](/MicrosoftSearch/media/servicenow-knowledge-users-tab.png)](/MicrosoftSearch/media/servicenow-knowledge-users-tab.png#lightbox)
 
 **Access Permissions**
 
@@ -266,7 +266,7 @@ The default method for mapping your data source identities with Microsoft Entra 
 
 ### Content
 
-[![Screenshot that shows Content tab where you can configure Query string and Properties](/MicrosoftSearch/media/servicenow-knowledge-content-tab.png)](/MicrosoftSearch/media/servicenow-knowledge-content-tab.png#lightbox)
+[![Screenshot that shows Content tab where you can configure Query string and Properties.](/MicrosoftSearch/media/servicenow-knowledge-content-tab.png)](/MicrosoftSearch/media/servicenow-knowledge-content-tab.png#lightbox)
 
 **Query String**
 
@@ -314,11 +314,11 @@ Here, you can add or remove available properties from your ServiceNow data sourc
 
 Use the preview results button to verify the sample values of the selected properties and query filter.
 
-![Screenshot that shows Preview data option to check the query filter and properties you have configured](/MicrosoftSearch/media/servicenow-knowledge-preview-data.png "Preview data to validate your Query filter and Manage Properties settings")
+[![Screenshot that shows Preview data option to check the query filter and properties you have configured.](/MicrosoftSearch/media/servicenow-knowledge-preview-data.png)](/MicrosoftSearch/media/servicenow-knowledge-preview-data.png#lightbox)
 
 ### Sync
 
-[![Screenshot that shows Sync tab where you can configure crawl frequency](/MicrosoftSearch/media/servicenow-knowledge-sync-tab.png)](/MicrosoftSearch/media/servicenow-knowledge-sync-tab.png#lightbox)
+[![Screenshot that shows Sync tab where you can configure crawl frequency.](/MicrosoftSearch/media/servicenow-knowledge-sync-tab.png)](/MicrosoftSearch/media/servicenow-knowledge-sync-tab.png#lightbox)
 
 The refresh interval determines how often your data is synced between the data source and the Graph connector index. There are two types of refresh intervals – full crawl and incremental crawl. For more details, click [here](/MicrosoftSearch/configure-connector#step-8-refresh-settings).
 
