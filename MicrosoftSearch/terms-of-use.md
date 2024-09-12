@@ -14,7 +14,6 @@ search.appverid:
 - MOE150
 description: "Legal terms and conditions for Microsoft Graph connectors public preview for Microsoft Search."
 ---
-<!---Previous ms.author: anfowler --->
 
 # Microsoft Graph connectors: Terms of use
 
