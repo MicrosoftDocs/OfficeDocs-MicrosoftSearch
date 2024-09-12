@@ -1,8 +1,8 @@
 --- 
 
 title: "WordPress.org Graph connector for Microsoft Search and Copilot" 
-ms.author: rantang
-author: rantang
+ms.author: ranran1998
+author: ran
 manager: jecui
 audience: Admin
 ms.audience: Admin 
@@ -54,7 +54,7 @@ A WordPress.org-built website URL is the unique web address assigned to each Wor
 ### 3. Graph Connector Agent
 The graph connector agent acts as a bridge between your WordPress.org instance and the connector APIs, enabling secure and efficient data transfer. In this step, select the agent configuration you want to use for your connector.  
 
-If you do not installed the [Microsoft Graph connector agent](https://learn.microsoft.com/en-US/microsoftsearch/graph-connector-agent), you can  [download the agent installer](https://www.microsoft.com/download/details.aspx?id=104045) and follow the installation instructions to set it up. Once installed, ensure that the agent is configured correctly to connect your on-premises WordPress.org instance with the graph connector. 
+If you do not installed the [Microsoft Graph connector agent](https://learn.microsoft.com/microsoftsearch/graph-connector-agent), you can  [download the agent installer](https://www.microsoft.com/download/details.aspx?id=104045) and follow the installation instructions to set it up. Once installed, ensure that the agent is configured correctly to connect your on-premises WordPress.org instance with the graph connector. 
 
 ### 4. Authentication Type
 We support the basic authentication method. To enable and configure basic authentication in WordPress.org, find more details [here](https://make.wordpress.org/core/2020/11/05/application-passwords-integration-guide/).  
