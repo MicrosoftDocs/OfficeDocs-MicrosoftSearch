@@ -37,7 +37,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - Does not index attachments.
 
 ## Prerequisites
-- **ServiceNow Instance URL**: To connect to your ServiceNow data, you need your organization's ServiceNow instance URL. Your organization's ServiceNow instance URL typically looks like https://your-organization-name.service-now.com. (Don’t have one? [Check how to create a test instance](https://www.youtube.com/watch?v=OTdzVLqpFHY))
+- **ServiceNow Instance URL**: To connect to your ServiceNow data, you need your organization's ServiceNow instance URL. Your organization's ServiceNow instance URL typically looks like `https://your-organization-name.service-now.com`. (Don’t have one? [Check how to create a test instance](https://www.youtube.com/watch?v=OTdzVLqpFHY))
 - **Service Account**: To connect to ServiceNow and allow Microsoft Graph Connector to update knowledge articles regularly, you need a service account with read access to specific ServiceNow table records. The service account needs read access to the following **ServiceNow table records** to successfully crawl various entities.
 
    Feature | Read access required tables | Description
@@ -66,15 +66,18 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Get Started
 
-![Connection creation screen for Microsoft Graph Connector for ServiceNow Knowledge](/MicrosoftSearch/media/servicenow-knowledge-create-page.png "Add Microsoft Graph Connector for ServiceNow Knowledge")
+![Screenshot that shows Connection creation screen for Microsoft Graph Connector for ServiceNow Knowledge](/MicrosoftSearch/media/servicenow-knowledge-create-page.png "Add Microsoft Graph Connector for ServiceNow Knowledge")
 
-###1. Display name 
+###1. Display name
+
 A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ###2. ServiceNow URL
-To connect to your ServiceNow data, you need your organization's ServiceNow instance URL. Your organization's ServiceNow instance URL typically looks like https://your-organization-name.service-now.com.
+
+To connect to your ServiceNow data, you need your organization's ServiceNow instance URL. Your organization's ServiceNow instance URL typically looks like `https://your-organization-name.service-now.com`.
 
 ###3. Authentication Type
+
 To authenticate and sync content from ServiceNow, choose **one of three** supported methods:<br>
 
    a. **Basic authentication** <br>
@@ -208,23 +211,24 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
 </details>
 
 ###4. Rollout to limited audience
+
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, click [here](/MicrosoftSearch/staged-rollout-for-graph-connectors.md).
 
 At this point, you are ready to create the connection for ServiceNow Knowledge. You can click on the "Create" button and the Microsoft Graph connector will start indexing articles from your ServiceNow account.
 
 For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency etc., we have set defaults based on what works best with ServiceNow data. You can see the default values below:
 
-|**Users** ||
+|**Users** |&nbsp;|
 |----|---|
 |Access permissions|_Only people with access to content in Data source._|
 |Map Identities|_Data source identities mapped using Microsoft Entra IDs._|
 
-|**Content**||
+|**Content**|&nbsp;|
 |---|---|
 |Query String|_active=true^workflow_state=published_|
 |Manage Properties|_To check default properties and their schema, click here_|
 
-|**Sync**||
+|**Sync**|&nbsp;|
 |---|---|
 |Incremental Crawl|_Frequency: Every 15 mins_|
 |Full Crawl|_Frequency: Every Day_|
@@ -240,7 +244,7 @@ Custom setup is for those admins who want to edit the default values for setting
 
 ###Users
 
-![Users tab where you can configure access permissions and user mapping rules](/MicrosoftSearch/media/servicenow-knowledge-users-tab.png "Configure settings related to Users")
+![Screenshot that shows Users tab where you can configure access permissions and user mapping rules](/MicrosoftSearch/media/servicenow-knowledge-users-tab.png "Configure settings related to Users")
 
 **Access Permissions**
 
@@ -253,7 +257,7 @@ If a knowledge article isn't enabled with a user criterion, it appears in result
 >1. If the article contains '_Can Read_' user criteria, then they are stamped on the article during ingestion and Knowledge Base '_Can Read_' / '_Can Contribute_' user criteria are ignored.
 >2. If the article contains '_Cannot Read_' user criteria, and if the corresponding Knowledge base also contains '_Cannot Read_' user criteria, then both the user criteria are stamped on the article.
 
->**Note**: If a user is part of the '_Can Read_' user criteria at the article level but not in the '_Can Read_' / '_Can Contribute_' user criteria at the Knowledge Base level, **then the user will not have access to the article in ServiceNow but will have access to the article in Microsoft Copilot, Microsoft Search and other M365 surfaces**. The workaround is to remove the user from the '_Can Read_' user criteria at the article level.
+>[!NOTE]: If a user is part of the '_Can Read_' user criteria at the article level but not in the '_Can Read_' / '_Can Contribute_' user criteria at the Knowledge Base level, **then the user will not have access to the article in ServiceNow but will have access to the article in Microsoft Copilot, Microsoft Search and other M365 surfaces**. The workaround is to remove the user from the '_Can Read_' user criteria at the article level.
 
 **Mapping Identities**
 
@@ -261,7 +265,7 @@ The default method for mapping your data source identities with Microsoft Entra 
 
 ###Content
 
-![Content tab where you can configure Query string and Properties](/MicrosoftSearch/media/servicenow-knowledge-content-tab.png "Configure settings related to your content")
+![Screenshot that shows Content tab where you can configure Query string and Properties](/MicrosoftSearch/media/servicenow-knowledge-content-tab.png "Configure settings related to your content")
 
 **Query String**
 
@@ -309,11 +313,11 @@ Here, you can add or remove available properties from your ServiceNow data sourc
 
 Use the preview results button to verify the sample values of the selected properties and query filter.
 
-![Preview data option to check the query filter and properties you have configured](/MicrosoftSearch/media/servicenow-knowledge-preview-data.png "Preview data to validate your Query filter and Manage Properties settings")
+![Screenshot that shows Preview data option to check the query filter and properties you have configured](/MicrosoftSearch/media/servicenow-knowledge-preview-data.png "Preview data to validate your Query filter and Manage Properties settings")
 
 ###Sync
 
-![Sync tab where you can configure crawl frequency](/MicrosoftSearch/media/servicenow-knowledge-sync-tab.png "Configure Crawl frequency")
+![Screenshot that shows Sync tab where you can configure crawl frequency](/MicrosoftSearch/media/servicenow-knowledge-sync-tab.png "Configure Crawl frequency")
 
 The refresh interval determines how often your data is synced between the data source and the Graph connector index. There are two types of refresh intervals – full crawl and incremental crawl. For more details, click [here](/MicrosoftSearch/configure-connector#step-8-refresh-settings).
 
