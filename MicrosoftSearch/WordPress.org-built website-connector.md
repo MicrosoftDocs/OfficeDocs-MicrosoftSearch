@@ -66,13 +66,57 @@ At this point, you are ready to create the connection for WordPress.org-built we
 
 For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency etc., we have set defaults based on what works best with WordPress.org-built website data. You can see the default values below: 
 
+**Page** | **Settings** | **Default Values**
+--- | ---- | ---
+Users | Access Permissions | All published pages or posts indexed using the WordPress.org connector will be visible to all M365 users in your tenant, from Microsoft Search or Copilot.
+Content | Index Content | All published posts and pages are selected by default.
+Content | Manage Properties | To check default properties and their schema, click here.
+Sync | Incremental Crawl | Frequency: Every 15 mins
+Sync | Full crawl | Frequency: Every day
 
+If you want to edit any of these values, you need to choose the ‘**Custom Setup**’ option. 
 
+## Custom Setup 
 
+Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click on the ‘Custom Setup’ option, you will see three additional tabs – Users, Content, and Sync. 
 
+### Users 
 
+**Access permissions**
 
+Currently only published pages and posts from your WordPress.org-built websites will be indexed. All data indexed using the WordPress.org connector will be visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.   
 
+### Data 
+
+**Filter the Indexed Content**   
+
+You can specify conditions for indexed content. For example, you can choose to index posts or pages and choose to index posts associated to specific categories.  
+
+Use the preview results button to verify the sample values of the selected properties and query filter. 
+
+**Manage Properties**
+
+Here, you can add or remove available properties from your WordPress.org data source, assign a schema to the property (define whether a property is searchable, queryable, retrievable or refinable), change the semantic label and add an alias to the property. Properties that are selected by default are listed below. 
+
+**Source Property** | **Label** |**Description**| **Schema**
+--- | ---- | --- | ---
+Author | Authors | Name of all the people who participated/collaborated on the item in the data source.  | Search, Query, Retrieve
+Categories  |  |  | Search, Query, Retrieve, Refine
+Content |  | | Search, Retrieve 
+Created | Created date time | Data and time that the item was created in the data source. | Query, Retrieve 
+CreatedBy | Created by| Name of the person who created the item in the data source.| Search, Query, Retrieve 
+Excerpt | | |Search, Retrieve 
+id | | |Query, Retrieve 
+Tags | | |Search, Query, Retrieve, Refine 
+Title |Title| The title of the item that you want to be shown in Copilot and other search experiences. |Search, Retrieve 
+Type | | |Query, Refine 
+Updated | Last modified date time | Date and time the item was last modified in the data source. |Query, Retrieve 
+UpdatedBy | Last modified by | Name of the person who most recently edited the item in the data source |Search, Query, Retrieve 
+Url | url | The target URL of the item in the data source.  |Retrieve 
+
+### Sync 
+
+You can configure full and incremental crawls based on the scheduling options present here. By default, incremental crawl is set for every 15 minutes, and full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs.     
 
 ## Troubleshooting
 After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
