@@ -28,20 +28,20 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Capabilities
 - Index published posts and pages of your WordPress.org-built website.    
-- Choose what data you want to index.Currently choosing to index posts or pages and choosing to index posts associated to specific categories are supported.
+- Set ingestion filters of published posts by categories. 
 - Customize your crawl frequency.  
 - Create workflows using this connection and plugins from Microsoft Copilot Studio.  
 - Use [Semantic search in Copilot](semantic-index-for-copilot.md) to enable users to find relevant content.
 
 ## Limitations
 - Does not index comments. 
-- Does not crawl user identities and access permissions. All published pages or posts indexed using the WordPress connector will be visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
+- Does not crawl user identities and access permissions. All published pages or posts indexed using the WordPress connector are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
-- **Install the Microsoft Graph connector agent**: To access your WordPress.org-built website, you must install and configure the [Microsoft Graph connector agent](https://learn.microsoft.com/microsoftsearch/graph-connector-agent). Please [download the agent installer](https://www.microsoft.com/download/details.aspx?id=104045) and follow the installation instructions to set it up. Once installed, ensure that the agent is configured correctly to connect your WordPress.org-built website with the graph connector. 
+- **Install the Microsoft Graph connector agent**: To access your WordPress.org-built website, you must install and configure the [Microsoft Graph connector agent](https://learn.microsoft.com/microsoftsearch/graph-connector-agent). [Download the agent installer](https://www.microsoft.com/download/details.aspx?id=104045) and follow the installation instructions to set it up. Once installed, ensure that the agent is configured correctly to connect your WordPress.org-built website with the graph connector. 
 - **WordPress.org-built website URL**: To connect to your WordPress.org-built website data, you need your organization's WordPress.org-built website URL. 
-- **WordPress.org-built website Admin account**: To connect to your WordPress.org-built website and allow Microsoft Graph Connector to update published posts and pages regularly, you need an admin user account of your WordPress.org-built website with the permission to create an application password.  Application password is used to authenticate with a third-party service or application that connects to your WordPress.org-built website via REST API. 
+- **WordPress.org-built website Admin account**: To connect to your WordPress.org-built website and allow Microsoft Graph Connector to update published posts and pages regularly, you need an **admin user account** of your WordPress.org-built website with the permission to create an application password. Application password is used to authenticate with a third-party service or application that connects to your WordPress.org-built website via REST API. 
 
 ## Get Started
 
@@ -54,21 +54,21 @@ A WordPress.org-built website URL is the unique web address assigned to each Wor
 ### 3. Graph Connector Agent
 The graph connector agent acts as a bridge between your WordPress.org instance and the connector APIs, enabling secure and efficient data transfer. In this step, select the agent configuration you want to use for your connector.  
 
-If you have not installed the [Microsoft Graph connector agent](https://learn.microsoft.com/en-US/microsoftsearch/graph-connector-agent) yet, you can  [download the agent installer](https://www.microsoft.com/download/details.aspx?id=104045) and follow the installation instructions to set it up. Once installed, ensure that the agent is configured correctly to connect your on-premises WordPress.org instance with the graph connector. 
+If you do not installed the [Microsoft Graph connector agent](https://learn.microsoft.com/en-US/microsoftsearch/graph-connector-agent), you can  [download the agent installer](https://www.microsoft.com/download/details.aspx?id=104045) and follow the installation instructions to set it up. Once installed, ensure that the agent is configured correctly to connect your on-premises WordPress.org instance with the graph connector. 
 
 ### 4. Authentication Type
-We support the basic authentication method. To enable and configure basic authentication in WordPress.org, please find more details [here](https://make.wordpress.org/core/2020/11/05/application-passwords-integration-guide/).  
+We support the basic authentication method. To enable and configure basic authentication in WordPress.org, find more details [here](https://make.wordpress.org/core/2020/11/05/application-passwords-integration-guide/).  
 
 ### 5. Staged rollout to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience.
 
 At this point, you are ready to create the connection for WordPress.org-built website. You can click on the ‘**Create**’ button to publish your connection and index published posts and pages from your WordPress.org-built website.  
 
-For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency etc., we have set defaults based on what works best with WordPress.org-built website data. You can see the default values below: 
+For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency etc., we set defaults based on what works best with WordPress.org-built website data. The default values settings are as follows.
 
 **Page** | **Settings** | **Default Values**
 --- | ---- | ---
-Users | Access Permissions | All published pages or posts indexed using the WordPress.org connector will be visible to all M365 users in your tenant, from Microsoft Search or Copilot.
+Users | Access Permissions | All published pages or posts indexed using the WordPress.org connector are be visible to all M365 users in your tenant, from Microsoft Search or Copilot.
 Content | Index Content | All published posts and pages are selected by default.
 Content | Manage Properties | To check default properties and their schema, click here.
 Sync | Incremental Crawl | Frequency: Every 15 mins
@@ -78,13 +78,13 @@ If you want to edit any of these values, you need to choose the ‘**Custom Setu
 
 ## Custom Setup 
 
-Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click on the ‘Custom Setup’ option, you will see three additional tabs – Users, Content, and Sync. 
+Custom setup is for those admins who want to edit the default values for settings. Once you click on the ‘Custom Setup’ option, you could see three other tabs – Users, Content, and Sync. 
 
 ### Users 
 
 **Access permissions**
 
-Currently only published pages and posts from your WordPress.org-built websites will be indexed. All data indexed using the WordPress.org connector will be visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.   
+Currently only published pages and posts from your WordPress.org-built websites could be indexed. All data indexed using the WordPress.org connector is visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
 
 ### Data 
 
@@ -96,7 +96,7 @@ Use the preview results button to verify the sample values of the selected prope
 
 **Manage Properties**
 
-Here, you can add or remove available properties from your WordPress.org data source, assign a schema to the property (define whether a property is searchable, queryable, retrievable or refinable), change the semantic label and add an alias to the property. Properties that are selected by default are listed below. 
+Here, you can add or remove available properties from your WordPress.org data source, assign a schema to the property (define whether a property is **searchable, queryable, retrievable or refinable**), change the semantic label and add an alias to the property. Properties that are selected by default are listed below. 
 
 **Source Property** | **Label** |**Description**| **Schema**
 --- | ---- | --- | ---
