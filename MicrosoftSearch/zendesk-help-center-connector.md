@@ -79,7 +79,7 @@ To authenticate and sync content from Zendesk, choose **one of the two** support
    Enter the client ID and Secret to connect to your instance. After connecting, use a Zendesk account credential to authenticate permission to crawl.
 </details>
 
-### 4. Rollout to limited audience
+### 4. Roll out to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, [click here](staged-rollout-for-graph-connectors.md).
 
 At this point, you're ready to create the connection for Zendesk Help Center. You can click on the "Create" button to publish your connection and index articles from your Zendesk account.
