@@ -11,12 +11,12 @@ description: "Learn how to search and validate whether some content is indexed i
 
 # Searching and validating indexed content Microsoft Graph connectors
 
-You can now use an index browser to search and determine if specific content is indexed. You can also review its associated properties, like its associated metadata and access control lists (ACLs), permissions, and access status.
+You can use an index browser to search and determine if specific content is indexed. If an item is indexed, you can view its associated properties, metadata, permissions, and access control lists (ACLs).
 
 :::image type="content" source="media/manage-connector/index-search.png" alt-text="Screenshot that shows connector what users can see when they enter an item ID of an indexed item.":::
 
 ## Locate the item ID
-To search for indexed content, enter the unique identifier of the item in the index browser. If the item is indexed, it displays content, properties, and user access info.
+To search for indexed content, enter the unique identifier of the item in the index browser. 
 
 |Connector name|Input per item ID|Where to find the item ID|
 |:------------ |:------------ |:------------|
