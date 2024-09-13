@@ -9,7 +9,7 @@ description: "Learn how to identify and handle error responses in Microsoft Grap
 ---
 # Error responses in Microsoft Graph connectors
 
-You can access the errors tab in the connection pane to access error reports. The UI displays a limited number of connection errors. For a comprehensive list, follow these steps to generate a detailed error report using a PowerShell script.
+You can access the errors tab in the connection pane to view error reports. The UI displays a limited number of connection errors. For a comprehensive list, follow these steps to generate a detailed error report using a PowerShell script.
 
 1. Open Windows PowerShell with administrator rights.
 2. Install the script from the PowerShell Gallery using the following command
@@ -38,11 +38,11 @@ For more information, see [Download error script](https://www.powershellgallery.
 
 ## Monitor errors
 
-In the **Data sources**, under each Active connector, any existing crawl errors are displayed under the **Current crawl header in the **Errors** section. This section provides
+To monitor errors, go to  **Data sources** > **Active connector**, any existing crawl errors are displayed under **Current crawl** > **Errors**. This section provides
 
-- Error codes: Lists the various error codes encountered.
-- Count: Displays the number of occurrences for each error code.
-- Error log download: Offers options to download the error log.
+- Error codes - Lists the various error codes encountered.
+- Count -  Displays the number of occurrences for each error code.
+- Error log download - Offers options to download the error log.
 
 To view detailed information about a specific error, select the corresponding error code.
 
