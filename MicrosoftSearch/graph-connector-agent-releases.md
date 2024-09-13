@@ -16,7 +16,7 @@ description: "Release history of Microsoft Graph connector agent, which is used 
 
 Indexing on-premises data sources require you to install *Microsoft Graph connector agent* software. It allows for secure data transfer between on-premises data and the connector APIs.
 
-For help on installation, refer to the [page](graph-connector-agent.md#installation)
+For help on installation, refer to the [this page](graph-connector-agent.md#installation).
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
@@ -30,7 +30,7 @@ For help on installation, refer to the [page](graph-connector-agent.md#installat
 
 ## Version 2.4.0.0 (*July 05, 2024*)
 
-* Support for .NET 8. The .NET 8 upgrade flow for the host machine will kick-in after you hit Upgrade button in the connection pane. Make sure to upgrade the machine's version to .NET 8 to avoid unexpected behavior. If there is a failure in the upgrade in the process, do a manual upgrade to the .NET version before upgrading the agent.
+* Support for .NET 8. The .NET 8 upgrade flow for the host machine will kick in after you hit Upgrade button in the connection pane. Make sure to upgrade the machine's version to .NET 8 to avoid unexpected behavior. If there is a failure in the upgrade in the process, do a manual upgrade to the .NET version before upgrading the agent.
 * Feature to show elaborate index statistics for a connection. This feature gives more information about the current state of items in the index. [Learn more.](connector-details-errors.md#view-connection-statistics)
 * Bug fixes and reliability improvements.
 
