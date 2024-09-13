@@ -29,4 +29,4 @@ description: "Troubleshoot issues with the Oracle SQL Microsoft Graph connector 
 | Database settings | `Error from database server: Login failed for user 'user'.` | Invalid username or password |
 | Full crawl | `Column column_name returned from full crawl SQL query contains non-alphanumeric character` | Nonalphanumeric characters (like underscores) are not allowed in column names in SELECT clause. Use aliases to rename columns and remove nonalphanumeric characters (Example - SELECT column_name AS columnName). |
 
-If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
+If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://developer.microsoft.com/en-us/graph/support).
