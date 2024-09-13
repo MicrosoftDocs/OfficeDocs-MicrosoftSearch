@@ -20,6 +20,10 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
+## Version 3.0.1.0 (*September 12, 2024)
+
+* Bug fixes and reliability improvements.
+
 ## Version 3.0.0.0 (*August 08, 2024)
 
 * This is a critical security patch that enhances the secure communication between endpoints. We recommend you to upgrade to this version immediately as Microsoft will deprecate the previous versions by September 30, 2024. For more details, follow the communication from Microsoft in the Message Center. Please ignore if you have already upgraded to this version.
