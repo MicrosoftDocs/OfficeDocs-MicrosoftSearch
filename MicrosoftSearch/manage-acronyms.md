@@ -145,3 +145,7 @@ Microsoft Search makes sure that only users with access and permissions to a doc
 
 **A:** To turn off showing system-curated acronyms in search results, create a customer support ticket by following the instructions at [Contact support for business products](/microsoft-365/admin/contact-support-for-business-products).
 After you create a support ticket, it takes up to 48 hours for system-curated acronyms to stop appearing in search results.
+
+**Q: Are there any special considerations for naming Acronyms?**
+
+**A:** Acronyms can't contain spaces. The acronym needs to be a contiguous string. If the acronym entered contains a space, it will be listed under Acronyms in the Search & intelligence admin portal, but the desired response will not be returned when a search is executed. For example, “Helpdesk” is an acceptable acronym but “Help desk” isn't.

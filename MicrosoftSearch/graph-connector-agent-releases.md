@@ -20,7 +20,45 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
-## Version 2.3.1.0 (*January 29, 2023*)
+## Version 3.0.0.0 (*August 08, 2024)
+
+* This is a critical security patch that enhances the secure communication between endpoints. We recommend you to upgrade to this version immediately as Microsoft will deprecate the previous versions by September 30, 2024. For more details, follow the communication from Microsoft in the Message Center. Please ignore if you have already upgraded to this version.
+
+## Version 2.4.0.0 (*July 05, 2024*)
+
+* Support for .NET 8. The .NET 8 upgrade flow for the host machine will kick-in after you hit "Upgrade" button in the connection pane. Make sure to upgrade the machine's version to .NET 8 to avoid unexpected behavior. If there is a failure in the upgrade in the process, do a manual upgrade to the .NET version before upgrading the agent.
+* Feature to show elaborate index statistics for a connection. This gives more information about the current state of items in the index. [Learn more.](connector-details-errors.md#view-connection-statistics)
+* Bug fixes and reliability improvements.
+
+## Version 2.3.7.0 (*June 12, 2024*)
+
+* Bug fixes and reliability improvements.
+
+## Version 2.3.6.0 (*May 15, 2024*)
+
+* Bug fixes and reliability improvements.
+
+## Version 2.3.5.0 (*May 09, 2024*)
+
+* Bug fixes and reliability improvements.
+
+## Version 2.3.4.0 (*April 17, 2024*)
+
+* Fixed issue where item url was getting ingested with changed case.
+* Other bug fixes and reliability improvements.
+
+## Version 2.3.3.0 (*April 1, 2024*)
+
+* Fixed upgrade failure issue
+* Other bug fixes and reliability improvements.
+
+## Version 2.3.2.0 (*March 20, 2024*)
+
+* Enterprises Websites Graph Connector: Added error reporting for redirection related errors.
+* Fixed identity sync crawls errors.
+* Other bug fixes and reliability improvements.
+
+## Version 2.3.1.0 (*January 29, 2024*)
 
 * Enabled OAuth2 support for Confluence connector.
 * Added schema edit support for Graph connector SDK.

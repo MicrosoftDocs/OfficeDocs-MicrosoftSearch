@@ -177,18 +177,6 @@ Create your own verticals and result types, so end users can view search results
 
 To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md). -->
 
-## Troubleshooting
-
-Underneath is a list of common errors observed while configuring the connector and their possible reasons.
-
-| Configuration step | Error message | Possible reason(s) |
-| ------------ | ------------ | ------------ |
-| Database settings | Error from database server: Connection request timed out | Invalid Hostname <br> Host not reachable |
-| Database settings | Error from database server: ORA-12541: TNS: No listener | Invalid Port |
-| Database settings | Error from database server: ORA-12514: TNS: listener does not currently know of service requested in connector descriptor | Invalid service (database) name |
-| Database settings | Error from database server: Login failed for user '`user`'. | Invalid username or password |
-| Full crawl | Column column_name returned from full crawl SQL query contains non-alphanumeric character | Non-alphanumeric characters (like underscores) are not allowed in column names in SELECT clause. Use aliases to rename columns and remove non-alphanumeric characters (Example - SELECT column_name AS columnName). |
-
 ## Limitations
 
 The Oracle SQL connector has these limitations in the preview release:
@@ -196,3 +184,9 @@ The Oracle SQL connector has these limitations in the preview release:
 * The on-premises database must run Oracle Database version 11g or later.
 * ACLs are only supported by using a User Principal Name (UPN), Microsoft Entra ID, or Active Directory Security.
 * Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
+
+## Troubleshooting
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+You can find troubleshooting steps for commonly seen issues [here](troubleshoot-oraclesql-connector.md).
+
+If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://developer.microsoft.com/en-us/graph/support).

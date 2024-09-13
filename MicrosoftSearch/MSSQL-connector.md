@@ -214,15 +214,6 @@ Create your own verticals and result types, so end users can view search results
 
 To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).-->
 
-## Troubleshooting
-
-The following is a common error observed while configuring the connector, and its possible reason.
-
-| Configuration step | Error message | Possible reason(s) |
-| ------------ | ------------ | ------------ |
-| Full crawl | `Error from database server: A transport level error has occurred when receiving results from the server.` | This error arises due to network issues. It is recommended to check network logs using [Microsoft network monitor](https://www.microsoft.com/download/details.aspx?id=4865) and reach out to Microsoft customer support. |
-| Full crawl | `Column column_name returned from full crawl SQL query contains non-alphanumeric character` | Non-alphanumeric characters (like underscores) are not allowed in column names in SELECT clause. Use aliases to rename columns and remove non-alphanumeric characters (Example - SELECT column_name AS columnName). |
-
 ## Limitations
 
 The SQL connectors have these limitations in the preview release:
@@ -231,3 +222,9 @@ The SQL connectors have these limitations in the preview release:
 - The Microsoft 365 subscription and Azure subscription (hosting Azure SQL database) must lie within the same Microsoft Entra ID.
 - ACLs are only supported by using a User Principal Name (UPN), Microsoft Entra ID, or Active Directory Security.
 - Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
+
+## Troubleshooting
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+You can find troubleshooting steps for commonly seen issues [here](troubleshoot-mssql-connector.md).
+
+If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)

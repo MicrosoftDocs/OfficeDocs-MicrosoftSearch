@@ -56,18 +56,20 @@ To connect to your data source, fill in the root URL of the website and select a
 
 ### Website URL
 
-Specify the root of the website that you'd like to crawl. The enterprise websites connector will use this URL as the starting point and follow all the links from this URL for its crawl.
+Specify the root of the website that you'd like to crawl. The enterprise websites connector uses this URL as the starting point and follows all the links from this URL for its crawl.
+
+The connector only crawls webpages in the domain of root URLs and does not support crawling of out-of-domain URLs. Redirection is only supported within the same domain. If there are redirections in the webpages to be crawled, you may add the redirected URL directly in list of URLs to be crawled.
 
 > [!NOTE]
 > You can index up to 50 different site URLs in a single connection. In the URLs field, enter the site URLs separated by commas (,). For example, `https://www.contoso.com,https://www.contosoelectronics.com`.
 
 ### Use sitemap for crawling
 
-When selected the connector will only crawl the URLs listed in the sitemap. This also allows you to configure incremental crawling during a later step. If not selected or no site map is found, the connector will do a deep crawl of all the links found on the root URL of the site.
+When selected the connector only crawls the URLs listed in the sitemap. This option also allows you to configure incremental crawling during a later step. If not selected or no site map is found, the connector does a deep crawl of all the links found on the root URL of the site.
 
 ### Dynamic site configuration
 
-If your website contains dynamic content, for example, webpages that live in content management systems like Confluence or Unily, you can enable a dynamic crawler. To turn it on, select **Enable crawl for dynamic sites**. The crawler will wait for dynamic content to render before it begins crawling.
+If your website contains dynamic content, for example, webpages that live in content management systems like Confluence or Unily, you can enable a dynamic crawler. To turn it on, select **Enable crawl for dynamic sites**. The crawler waits for dynamic content to render before it begins crawling.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Connection Settings pane for Enterprise Web connector.](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
@@ -101,9 +103,9 @@ For your on-premises websites, select **Agent** as the crawl mode and in the **O
 
 **OAuth 2.0** with [Microsoft Entra ID](/azure/active-directory/) requires a resource ID, Client ID, and a client Secret.
 
-The resource ID, client ID and client secret values will depend on how you did the setup for Microsoft Entra ID based authentication for your website:
+The resource ID, client ID, and client secret values depends on how you did the setup for Microsoft Entra ID based authentication for your website:
 
-1. If you're using an application both as an identity provider and the client app to access the website, the client ID and the resource ID will be the application ID of the app, and the client secret will be the secret that you generated in the app.
+1. If you're using an application both as an identity provider and the client app to access the website, the client ID and the resource ID are the application ID of the app, and the client secret is the secret that you generated in the app.
     
     > [!NOTE]
     > For detailed steps to configure a client application as an Identity provider, see [Quickstart: Register an application with the Microsoft identity platform and Configure your App Service or Azure Functions app to use Microsoft Entra login](/azure/app-service/configure-authentication-provider-aad).
@@ -135,7 +137,7 @@ The resource ID, client ID and client secret values will depend on how you did t
       > [!div class="mx-imgBorder"]
       > [ ![Image showing the client secret.](media/enterprise-web-connector/connectors-enterpriseweb-client-secret.png) ](media/enterprise-web-connector/connectors-enterpriseweb-client-secret.png#lightbox)
     
-2. If you're using an application as an identity provider for your website as the resource, and a different application to access the website, the client ID will be the application ID of your second app and the client secret will be the secret configured in the second app. However, the resource ID will be the ID of your first app.
+2. If you're using an application as an identity provider for your website as the resource, and a different application to access the website, the client ID is the application ID of your second app and the client secret is the secret configured in the second app. However, the resource ID is the ID of your first app.
 
     > [!NOTE]
     > For steps to configure a client application as an identity provider see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) and [Configure your App Service or Azure Functions app to use Microsoft Entra login](/azure/app-service/configure-authentication-provider-aad).
@@ -197,8 +199,8 @@ You can enrich your indexed data by creating custom properties for your selected
 
 To add a custom property:
 
-  1. Enter a property name. This name will appear in search results from this connector.
-  1. For the value, select Static or String/Regex Mapping. A static value will be included in all search results from this connector. A string/regex value will vary based on the rules you add.
+  1. Enter a property name. This name appears in search results from this connector.
+  1. For the value, select Static or String/Regex Mapping. A static value is included in all search results from this connector. A string/regex value varies based on the rules you add.
   1. Select **Edit Value**.
   1. If you selected a static value, enter the string you want to appear.
   1. If you selected a string/regex value:
@@ -213,7 +215,7 @@ There are two ways to prevent pages from being crawled: disallow them in your ro
 
 ### Support for robots.txt
 
-The connector checks to see if there's a robots.txt file for your root site. If one exists, it will follow and respect the directions found within that file. If you don't want the connector to crawl certain pages or directories on your site, include the pages or directories in the "Disallow" declarations in your robots.txt file.
+The connector checks to see if there's a robots.txt file for your root site. If one exists, it follows and respects the directions found within that file. If you don't want the connector to crawl certain pages or directories on your site, include the pages or directories in the "Disallow" declarations in your robots.txt file.
 
 ### Add URLs to exclude
 
@@ -221,7 +223,7 @@ You can optionally create an **Exclusion list** to exclude some URLs from gettin
 
 ## Step 7: Assign property labels
 
-You can assign a source property to each label by choosing from a menu of options. While this step isn't mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.
+You can assign a source property to each label by choosing from a menu of options. While this step isn't mandatory, having some property labels improves the search relevance and ensure more accurate search results for end users.
 
 ## Step 8: Manage schema
 
@@ -235,7 +237,7 @@ The Enterprise websites connector only supports search permissions visible to **
 
 The Enterprise websites connector supports full and incremental crawling. Incremental crawling is only supported for connections set up with sitemap crawling enabled. Sitemap for crawling can be selected in step 3. 
 
-During an incremental refresh interval, only URLs that have been modified since the last incremental refresh are crawled. In a full refresh interval, the connector will recrawl all the website's content. For a full refresh, we recommend you set a large refresh schedule interval, between one and two weeks, to ensure the connector have enough time to complete the crawl. We recommend a scheduled refresh.
+During an incremental refresh interval, only URLs that have been modified since the last incremental refresh are crawled. In a full refresh interval, the connector recrawls all the website's content. For a full refresh, we recommend you set a large refresh schedule interval, between one and two weeks, to ensure the connector have enough time to complete the crawl. We recommend a scheduled refresh.
 
 ## Step 11: Review connection
 
@@ -243,20 +245,7 @@ Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## Troubleshooting
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+You can find troubleshooting steps for commonly seen issues [here](troubleshoot-enterprise-web-connector.md).
 
-When reading the website's content, the crawl may encounter some source errors, which are represented by the detailed error codes below. To get more information on the types of errors, go to the **error details** page after selecting the connection. Select the **error code** to see more detailed errors. Also refer to [Monitor your connections](./manage-connector.md) to learn more.
-
- Detailed Error code | Error message
- --- | ---
- 6001 | The site that is being tried to index isn't reachable
- 6005 | The source page that is being tried to index has been blocked by as per robots.txt configuration.
- 6008 | Unable to resolve the DNS
- 6009 | For all client-side errors (Except HTTP 404, 408), refer to HTTP 4xx error codes for details.
- 6013 | The source page that is being tried to index couldn't be found. (HTTP 404 error)
- 6018 | The source page isn't responding, and the request has timed out. (HTTP 408 error)
- 6021 | The source page that is being tried to index has no textual content on the page.
- 6023 | The source page that is being tried to index is unsupported (not an HTML page)
- 6024 | The source page that is being tried to index has unsupported content.
-
-* Errors 6001-6013 occur when the data source isn't reachable due to a network issue or when the data source itself is deleted, moved, or renamed. Check if the data source details provided are still valid.
-* Errors 6021-6024 occur when the data source contains non-textual content on the page or when the page isn't an HTML. Check the data source and add this page in exclusion list or ignore the error.
+If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)
