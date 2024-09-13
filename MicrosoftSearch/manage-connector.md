@@ -45,7 +45,7 @@ The **State** column for each connection can display one of five statuses:
 
 ## Notifications for permanent crawl failures in your connections
 
-Connection crawls are scheduled to run at specific intervals. Failures can occur due to various issues with the connections. Some failures are temporary, and crawls will resume automatically, while others are permanent and require administrative intervention to restart. In cases of permanent failures, the connection is marked as **Failed**, and notifications are sent to the service health dashboard under the section Issues for your organization to act on.
+Connection crawls are scheduled to run at specific intervals. Failures can occur due to various issues with the connections. Some failures are temporary, and crawls resume automatically, while others are permanent and require administrative intervention to restart. In case of permanent failure, the connection is marked as **Failed**, and notifications are sent to the service health dashboard under the section Issues for your organization to act on.
 
 :::image type="content" alt-text="Screenshot that shows issues in your environment section of service health." source="media/manage-connector/shd-notification-home.png" lightbox="media/manage-connector/shd-notification-home.png":::
 
