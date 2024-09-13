@@ -63,6 +63,12 @@ Complete the following steps to configure any of the Microsoft Graph connectors 
 > [!NOTE]
 > You can add a maximum of thirty(30) Microsoft Graph connections to each tenant.
 
+
+> [!TIP]
+> **Product survey**
+> 
+> To help us understand your requirements related to connecting more data sources to Copilot or Microsoft Search, we request you to take few minutes to fill out this [survey form](https://forms.office.com/r/0Hh4GJNsJe). Based on the survey results, Microsoft will build connectors for the top demanded data sources.
+
 ## Step 2: Name the connection
 
 Specify these attributes:
@@ -73,6 +79,14 @@ Specify these attributes:
 * Select check box (required)
 
 The connection ID creates implicit properties for your connector. It must contain only alphanumeric characters and be a maximum of 32 characters.
+
+To better help administration of the connection and to help Copilot enhance connection results for user the description should answer the following questions briefly:  
+* What kind of content does this connection have? 
+* How do users refer to this content source in their respective orgs? 
+* What part of the workflow do users refer to this content in their day-to-day work? 
+* What are some characteristics of the content?
+
+To learn more, refer to the [Enhancing Microsoft Copilot discovery with Graph Connector Content](enhancing-microsoft-copilot-discovery-with-graph-connector-content.md) article.
 
 ## Step 3: Configure the connection settings
 

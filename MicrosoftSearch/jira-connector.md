@@ -1,6 +1,6 @@
 --- 
 
-title: "Atlassian Jira Cloud Microsoft Graph connector" 
+title: "Atlassian Jira Cloud Microsoft Graph connector overview" 
 ms.author: mecampos 
 author: mecampos 
 manager: umas 
@@ -13,18 +13,24 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Atlassian Jira Cloud Graph connector for Microsoft Search" 
+description: "Overview of the Atlassian Jira Cloud Graph connector for Microsoft Search and Copilot" 
 ms.date: 07/22/2021
 ---
 
 # Atlassian Jira Cloud Microsoft Graph connector
 
-The Atlassian Jira Cloud Microsoft Graph connector allows your organization to index Jira issues. After you configure the connector and index content from the Jira site, end users can search for those items in Microsoft Search.
+The Atlassian Jira Cloud Microsoft Graph connector allows your organization to index Jira issues. After you configure the connector and index content from the Jira site, end users can search for those items in Microsoft Search and get answers in Microsoft Copilot.
 
-> [!NOTE]
-> Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general connectors setup instructions.
+## Connector overview
 
-This article is for anyone who configures, runs, and monitors an Atlassian Jira Cloud connector. It supplements the general setup process, and shows instructions that apply only for the Atlassian Jira Cloud connector.
+| Capability | Details |
+| --------- | --------- |
+| Data source version(s) supported | N/A |
+| Data entities indexed | Issues |
+| Supported auth types for crawling | Basic auth <br> OAuth 2.0 |
+| Supported permissions | Project-level permissions via groups <br> Item-level permissions |
+| Indexing filters | 
+
 
 >[!IMPORTANT]
 >The Atlassian Jira Cloud connector supports only Jira cloud hosted instances. Jira Server and Jira Data Center versions are not supported by this connector.
@@ -67,7 +73,7 @@ The following steps provide guidance on how to register the app:
 3. Provide an appropriate name for the application and create the new app.
 4. Navigate to `Permissions` from the navigation pane on left. Under the 'Granular Permissions' header, select `Add` for `Jira API`. Once added, select on `Configure` and add the following scopes listed below.
 
-   | **#** | **Scope name** | **Code** |
+   |  #  |  Scope name  |  Code  |
    | ------------ | ------------ | ------------ |
    | 1 | View fields | `read:field:jira` |
    | 2 | View avatars | `read:avatar:jira` |
@@ -92,6 +98,7 @@ The following steps provide guidance on how to register the app:
    | 21 | View permissions | `read:permission:jira` |
 
 5. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL for **M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`, for **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback` and save the changes.
+
 6. Navigate to `Settings` from the navigation pane on the left. You'll get the `Client ID` and `Secret` from this page.
 
 Complete the connection settings step using the **Client ID** and **Secret**.
@@ -114,6 +121,7 @@ You can choose for the connection to index either the entire Jira site or specif
 You may further choose to filter the Jira issues that will be indexed in two ways.
 
 * Specify the **issue modified time period**. This will only index the Jira issues that are created or modified in the time period selected on a **rolling basis** based on current crawl.
+
 * Specify the **JQL**. This will only index the Jira issues that are returned after filtering based on provided Jira Query Language (JQL). To learn more about using JQL, see Atlassian Support documentation on [using advanced search with Jira Query Language](https://support.atlassian.com/jira-service-management-cloud/docs/use-advanced-search-with-jira-query-language-jql/)
 
 > [!TIP]
@@ -125,6 +133,18 @@ Select which fields you want the connection to index and preview data in these f
 
 The Atlassian Jira connector can index both default issue fields and custom created issue fields.
 
+*The list of properties that you select here, can impact how you can filter, search and view your results in Copilot for Microsoft 365.*
+
+Source property | Label | Description
+--- | --- | ---
+Authors   | `authors` | Name of people who participated/collaborated on the item in the data source.
+Created  | `createdDateTime` | Date and time that the item was created in the data source.
+IssueIconUrl  | `iconUrl` | The associated icon url with specific issue priority.
+IssueLink  | `url` | The target URL of the item in the data source.
+ReporterEmailId   | `createdBy` | Name of the person who most recently edited the item in the data source.
+Title   | `title` | The title of the item that you want shown in search and other experiences.
+Updated  | `lastModifiedDateTime` | Date and time the item was last modified in the data source.
+
 > [!NOTE]
 > If a selected custom created field is not present in some Jira issue type(s), the field will be ingested as *NULL* (blank).
 
@@ -132,13 +152,18 @@ The Atlassian Jira connector can index both default issue fields and custom crea
 
 The Atlassian Jira connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them. In Atlassian Jira, security permissions are defined using project permission schemes containing site-level groups and project roles. Issue level security can also be defined using issue-level permission schemes.
 
->[!IMPORTANT]
->The Jira cloud Graph connector must be able to read a user’s email id in Jira to appropriately assign security permissions in Microsoft Search. This requires you to ensure either of the following:
-- All users should have selected the ‘Anyone’ option for their profile visibility settings. To learn more about profile visibility settings, refer the [documentation by Atlassian](https://support.atlassian.com/atlassian-account/docs/update-your-profile-and-visibility-settings/).
-- For organizations using ‘Managed accounts’ (All the Atlassian accounts with email addresses from your verified domain become managed accounts. Refer [this documentation](https://support.atlassian.com/user-management/docs/what-are-managed-accounts/) for more information) - 
->    * All users, who are part of managed accounts, must have the managed account setting selected in profile visibility settings.
->    * Users who are not part of the managed account (same as crawling account), need to have ‘Anyone’ selected in their profile visibility settings.
->    * The crawling account used during connection configuration must have the managed account domain.
+> [!IMPORTANT]
+> The Jira cloud Graph connector must be able to read a user’s email ID in Jira to appropriately assign security permissions in Microsoft Search. This requires you to ensure either of the following:
+>
+> - All users, who are part of managed accounts, must have the managed account setting selected in profile visibility settings.
+>
+>   All users should have selected the ‘Anyone’ option for their profile visibility settings. To learn more about profile visibility settings, refer the [documentation by Atlassian](https://support.atlassian.com/atlassian-account/docs/update-your-profile-and-visibility-settings/).
+>
+> - Users who are not part of the managed account (same as crawling account), need to have ‘Anyone’ selected in their profile visibility settings.
+>
+>   For organizations using ‘Managed accounts’ (All the Atlassian accounts with email addresses from your verified domain become managed accounts. Refer to [this documentation](https://support.atlassian.com/user-management/docs/what-are-managed-accounts/) for more information).
+>
+> Also, the crawling account used during connection configuration must have the managed account domain.
 
 If you choose **Only people with access to this data source**, you need to further choose whether your Jira site has Microsoft Entra ID provisioned users or Non-Azure AD users.
 
@@ -176,22 +201,14 @@ After publishing the connection, you need to customize the search results page. 
 After publishing the connection, you need to customize the search results page with verticals and result types. To learn about customizing search results, review how to [manage verticals](manage-verticals.md) and [result types](manage-result-types.md).
 You may also use the [sample result layout](jira-connector-result-layout.md) for Jira connector. Simply copy-paste the result layout JSON to get started.
 
-## Troubleshooting
-
-Below is a list of common errors observed while configuring the connector or during crawls, and their possible reasons.
-
-| Step | Error message | Possible reason(s) |
-| ------------ | ------------ | ------------ |
-| Connection settings | The request is malformed or incorrect. | Incorrect Jira site URL. |
-| Connection settings | Unable to reach the Jira cloud service for your Jira site. | Incorrect Jira site URL. |
-| Connection settings | The client doesn't have permission to perform the action. | Invalid API token provided for Basic auth. |
-| Connection settings | "Something went wrong" error in OAuth pop-up window. | The scopes granted to OAuth app don't match. The mismatched scopes are listed in the pop-up window. |
-| Crawl time (post connector configuration) | Can't authenticate with data source. Verify the credentials associated with this data source are correct. | The user doesn't have one or more permissions required to crawl Jira. |
-| Crawl time (post connector configuration) | You don't have permission to access this data source. You can contact the owner of this data source to request permission. | If you're using OAuth, the app scopes may have changed, or the app may have expired or deleted. <br> If you're using basic authentication, the API token may have expired or deleted. |
-
 ## Limitations
 
 The following are known limitations of the Atlassian Jira connector:
 
 * The connector does not support the "Any user logged in" application role to grant access to issues.
 * Jira Server and Data Center versions aren't supported.
+
+## Troubleshooting
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md). You can find troubleshooting steps for commonly seen issues [here](troubleshoot-jira-cloud-connector.md).
+
+If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)
