@@ -27,4 +27,4 @@ The following common errors are observed while configuring the connector and the
 | Connection settings | The client doesn't have permission to perform the action. | Invalid API token provided for Basic auth. |
 | Select properties | No error message and no preview results | Check your CQL query whether it is valid. |
 
-If you have any other issues or want to provide feedback, write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
+If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).

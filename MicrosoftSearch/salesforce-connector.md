@@ -190,7 +190,7 @@ Follow the general [setup instructions](./configure-connector.md).
 - The Salesforce Microsoft Graph connector doesn't currently support Apex-based, territory-based sharing and sharing using personal groups from Salesforce.
 - There's a known bug in the Salesforce API the connector uses, where the private org-wide defaults for leads aren't honored currently.  
 - If a field has field level security (FLS) set for a profile, the connector won't ingest that field for any profiles in that Salesforce org. As a result, users won't be able to search for values for those fields or  show up in the results.  
-- In the managed schema screen these common standard property names are listed once, the options are **Query**, **Search**, **Retrieve**, and **Refine**, and apply to all or none.
+- In the manage schema screen these common standard property names are listed once, the options are **Query**, **Search**, **Retrieve**, and **Refine**, and apply to all or none.
     - Name
     - Url
     - Description
