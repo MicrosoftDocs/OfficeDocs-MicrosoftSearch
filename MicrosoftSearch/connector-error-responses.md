@@ -12,7 +12,7 @@ description: "Learn how to identify and handle error responses in Microsoft Grap
 The UI displays a limited number of connection errors, for a comprehensive list, follow these steps to generate a detailed error report using a PowerShell script.
 
 1. Open Windows PowerShell with administrator rights.
-2. Install the script from the PowerShell Gallery using the following command
+2. Install the script from the PowerShell gallery using the following command
 ```powershell
     Install-Script -Name DownloadErrorScript
 ```
@@ -78,6 +78,6 @@ Error code | Error message | Solution
 |2006 | User mapping failed due to an invalid mapping formula or no Microsoft Entra user with this property. | Try deleting and recreating the connection with a different mapping formula.
 |2007 | This item won't be displayed in Microsoft Search because some users or groups without permission to view this item couldn't be indexed.|
 |2008 | Connections can't have non-Azure AD groups with more than 50,000 members. | Try removing users from a group or try removing items ACLed with that group from ingestion and recreate the connection.|
-|2009 | Non-Azure AD group indexing is temporarily paused due to a large number of requests. Indexing will resume when the system finishes processing these requests. Check back later.|
+|2009 | Non-Azure AD group indexing is temporarily paused due to a large number of requests. Indexing resumes when the system finishes processing these requests. Check back later.|
 |2010 | This connection is no longer valid because of an update made by Microsoft. | Delete the connection and create a new one.|
 |5000 | Something went wrong. If this issue continues, contact support.|
