@@ -7,7 +7,7 @@ ms.service: mssearch
 ms.localizationpriority: medium
 description: "Microsoft Graph prebuilt connectors overview."
 ---
-# Microsoft Graph prebuilt connectors overview for Microsoft Search and Microsoft 365 Copilot
+# Microsoft Graph built connectors overview for Microsoft Search and Microsoft 365 Copilot
 
 Microsoft Graph connectors offer a streamlined way to integrate content from external services into Microsoft Graph, enhancing intelligent experiences such as Microsoft 365 Copilot and Microsoft Search. Microsoft Graph acts as the data fabric that supports these advanced capabilities.
 
