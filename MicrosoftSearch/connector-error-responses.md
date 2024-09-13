@@ -9,7 +9,7 @@ description: "Learn how to identify and handle error responses in Microsoft Grap
 ---
 # Error responses in Microsoft Graph connectors
 
-You can access the errors tab in the connection pane to view error reports. The UI displays a limited number of connection errors. For a comprehensive list, follow these steps to generate a detailed error report using a PowerShell script.
+The UI displays a limited number of connection errors, for a comprehensive list, follow these steps to generate a detailed error report using a PowerShell script.
 
 1. Open Windows PowerShell with administrator rights.
 2. Install the script from the PowerShell Gallery using the following command
