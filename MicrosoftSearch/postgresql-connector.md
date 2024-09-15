@@ -18,7 +18,7 @@ description: "Set up the PostgreSQL Microsoft Graph connector for Microsoft Sear
 
 # PostgreSQL Microsoft Graph connectors (Preview)
 
-The PostgreSQL Microsoft Graph connector allows your organization to index records from an PostgreSQL database. After you configure the connector, end users can search for these records from PostgreSQL in Microsoft Copilot and from any Microsoft Search client.
+The PostgreSQL Microsoft Graph connector allows your organization to index records from a PostgreSQL database. After you configure the connector, end users can search for these records from PostgreSQL in Microsoft Copilot and from any Microsoft Search client.
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a PostgreSQL Graph connector.
 
@@ -33,9 +33,9 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Limitations
 - Supported PostgreSQL versions: The connector supports PostgreSQL version 14 or above.
-- To support high crawl speed and better performance, the connector is built to support OLTP workloads only. OLAP workloads which may not execute the provided SQL query in 40 seconds will timeout and are not supported.
+- To support high crawl speed and better performance, the connector is built to support OLTP (Online Transaction Processing) workloads only. OLAP (Online Analytical Processing) workloads which do not execute the provided SQL query in 40 seconds timeout and aren't supported.
 - ACLs are only supported by using a User Principal Name (UPN), Microsoft Entra ID, or Active Directory Security.
-- Indexing rich content inside database columns is not supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
+- Indexing rich content inside database columns isn't supported. Examples of such content are HTML, JSON, XML, blobs, and document parsings that exist as links inside the database columns.
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
@@ -49,16 +49,16 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ### 2. PostgreSQL server
-To connect to your PostgreSQL data, you need your PostgreSQL server address, port and database name. 
+To connect to your PostgreSQL data, you need your PostgreSQL server address, port, and database name. 
 
 ### 3. Authentication Type
 PostgreSQL connector only supports password based authentication to connect to the database.
 
-### 4. Rollout to limited audience
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, click [here](staged-rollout-for-graph-connectors.md).
+### 4. Roll out to limited audience
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the roll out to a broader audience. To know more about limited rollout, [click here](staged-rollout-for-graph-connectors.md).
 
 ## Content
-To search your database content, you must specify SQL queries when you configure the connector. These SQL queries need to name all the database columns that you want to index (that is, source properties), including any SQL joins that need to be performed to get all the columns. To restrict access to search results, you must specify Access Control Lists (ACLs) within SQL queries when you configure the connector.
+To search your database content, you must specify SQL queries when you configure the connector. These SQL queries need to name all the database columns that you want to index (source properties). This includes any SQL joins that need to be performed to get all the columns. To restrict access to search results, you must specify Access Control Lists (ACLs) within SQL queries when you configure the connector.
 
 ### 1. Full crawl (Required)
 
@@ -77,16 +77,16 @@ The example demonstrates a selection of five data columns that hold the data for
 Select data columns as shown in this example query: 
  `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
-Note that the SQL connectors do not allow column names with non-alphanumeric characters  in the SELECT clause. Remove any non-alphanumeric characters from column names using an alias. Example - SELECT *column_name* AS *columnName*
+The SQL connectors don't allow column names with non-alphanumeric characters  in the SELECT clause. Remove any non-alphanumeric characters from column names using an alias. Example - SELECT *column_name* AS *columnName*
 
 To manage access to the search results, you can specify one or more ACL columns in the query. The SQL connector allows you to control access at per record level. You can choose to have the same access control for all records in a table. If the ACL information is stored in a separate table, you might have to do a join with those tables in your query.
 
 The use of each of the ACL columns in the above query is described below. The following list explains the four **access control mechanisms**.
 
-- **AllowedUsers**: This column specifies the list of user IDs who can access the search results. In the following example, list of users: john@contoso.com, keith@contoso.com, and lisa@contoso.com would only have access to a record with OrderId = 12.
-- **AllowedGroups**: This column specifies the group of users who will be able to access the search results. In the following example, group sales-team@contoso.com would only have access to record with OrderId = 12.
-- **DeniedUsers**: This column specifies the list of users who do **not** have access to the search results. In the following example, users john@contoso.com and keith@contoso.com do not have access to record with OrderId = 13, whereas everyone else has access to this record.
-- **DeniedGroups**: This column specifies the group of users who do **not** have access to the search results. In the following example, groups engg-team@contoso.com and pm-team@contoso.com do not have access to record with OrderId = 15, whereas everyone else has access to this record.
+- **AllowedUsers**: This column specifies the list of user IDs who can access the search results.
+- **AllowedGroups**: This column specifies the group of users who can access the search results.
+- **DeniedUsers**: This column specifies the list of users who do **not** have access to the search results.
+- **DeniedGroups**: This column specifies the group of users who do **not** have access to the search results.
 
 </details> <br>
 
@@ -95,7 +95,7 @@ b. **Supported data types** <br>
 <details>
 <summary>[Click to expand] List of supported data types.</summary><br>
 
-The below table summarizes the SQL data types that are supported in the PostgreSQL connector. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer documentation on [property resource types](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties).
+The table summarizes the SQL data types that are supported in the PostgreSQL connector. The table also summarizes the indexing data type for the supported SQL data type. To learn more about Microsoft Graph connectors supported data types for indexing, refer documentation on [property resource types](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties).
 
 | Category | Source data type | Indexing data type |
 | ------------ | ------------ | ------------ |
@@ -141,7 +141,7 @@ To exclude soft-deleted rows in your database from being indexed, specify the so
 
 Select **Map columns** to choose the various access control (ACL) columns that specify the access control mechanism. Select the column name you specified in the full crawl SQL query.
 
-Each of the ACL columns is expected to be a multi-valued column. These multiple ID values can be separated by separators such as semicolon (;), comma (,), and so on. You need to specify this separator in the **value separator** field.
+Each of the ACL columns is expected to be a multi-valued column. Separators such as semicolon (;), comma (,), and so on can separate these multiple ID values. You need to specify this separator in the **value separator** field.
 
 The following ID types are supported for using as ACLs:
 
@@ -151,14 +151,14 @@ The following ID types are supported for using as ACLs:
 
 ### 2. Access permissions
 
-You can choose to use the ACLs specified in the above step or you can override them to make your content visible to everyone. 
+You can choose to use the ACLs specified in the previous step or you can override them to make your content visible to everyone. 
 
 ## Sync
 The refresh interval determines how often your data is synced between the data source and the Graph connector index.
 
 You can configure full and incremental crawls based on the scheduling options present here. By default, incremental crawl (if configured) is set for every 15 minutes, and full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs.
 
-At this point, you are ready to create the connection for PostgreSQL. You can click on the "Create" button and the Microsoft Graph connector will start indexing rows from your databse.
+At this point, you're ready to create the connection for PostgreSQL. You can click on the "Create" button to publish your connection and index data from your database.
 
 ## Troubleshooting
 After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
