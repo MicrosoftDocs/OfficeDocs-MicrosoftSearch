@@ -39,12 +39,12 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - **Jira cloud instance URL**: To connect to your Jira data, you need your organization's Jira instance URL. Your organization's Jira instance URL typically looks like `https://<your-organization-domain>.atlassian.net`. If you don't have an instance already, refer the [page](https://www.atlassian.com/software/jira) to create a test instance.
 - **Service Account**: To connect to Jira and allow the Microsoft Graph Connector to update issues regularly, you need a service account with the following permissions granted to it.
 
-| Permission name | Permission type | Required for |
-| ------------ | ------------ | ------------ |
-| Browse projects | [Project permission](https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/) | Crawling Jira issues. This permission is **mandatory** for the projects that need to be indexed. |
-| Issue level security permissions | [Issue-level security](https://support.atlassian.com/jira-cloud-administration/docs/configure-issue-security-schemes/) | Crawling different issue types. This permission is **optional**. |
-| Browse users and groups   | [Global permission](https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/) | Security trimming based on access permissions of search results. This permission is **optional** and is required to select `Only people with access to this data source` option in step 4 below. |
-| Administer Jira | [Global permission](https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/) | Security trimming based on access permissions of search results. This permission is **optional** and is required to select `Only people with access to this data source` option in step 4 below. |
+  | Permission name | Permission type | Required for |
+  | ------------ | ------------ | ------------ |
+  | Browse projects | [Project permission](https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/) | Crawling Jira issues. This permission is **mandatory** for the projects that need to be indexed. |
+  | Issue level security permissions | [Issue-level security](https://support.atlassian.com/jira-cloud-administration/docs/configure-issue-security-schemes/) | Crawling different issue types. This permission is **optional**. |
+  | Browse users and groups   | [Global permission](https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/) | Security trimming based on access permissions of search results. This permission is **optional** and is required to select `Only people with access to this data source` option in step 4 below. |
+  | Administer Jira | [Global permission](https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/) | Security trimming based on access permissions of search results. This permission is **optional** and is required to select `Only people with access to this data source` option in step 4 below. |
 
 ## Get Started
 
