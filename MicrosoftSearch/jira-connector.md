@@ -63,9 +63,9 @@ To authenticate and sync issues from Jira, choose **one of the two** supported m
      Enter your account's username (usually email ID) and API token to authenticate using basic auth. Refer Atlassian's documentation on how to [manage API tokens for your Atlassian account](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) to learn more about generating an API token.
      <br>
 
-   b. **Atlassian Jira OAuth 2.0 (Recommended)**
-   <details>
-   <summary>[Click to expand] To use the Jira OAuth for authentication, follow these steps.</summary><br>
+   b. **Atlassian Jira OAuth 2.0 (Recommended)** <br>
+
+To use the Jira OAuth for authentication, follow these steps.
    
 Register an app in Atlassian Jira so that the Microsoft Search app can access the instance. To learn more, see Atlassian Support documentation on how to [Enable OAuth 2.0](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-).
 
@@ -110,10 +110,9 @@ Complete the connection settings step using the **Client ID** and **Secret**.
 >
 > * Refer the [list of scopes](https://developer.atlassian.com/cloud/jira/platform/scopes-for-oauth-2-3LO-and-forge-apps/#list-of-scopes) for OAuth 2.0 apps to learn more about Jira permissions.
 > * The original (Classic) OAuth permissions are being deprecated for Jira cloud. Refer the [changelog announcement](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-517) to learn more.
-</details>
 
 ### 4. Roll out to limited audience
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, [click here](staged-rollout-for-graph-connectors.md).
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, see [staged rollout](staged-rollout-for-graph-connectors.md).
 
 At this point, you're ready to create the connection for Jira cloud. You can click on the "Create" button to publish your connection and index issues from your Jira account.
 
@@ -128,7 +127,7 @@ For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl
 |---|---|
 | Site projects | _All projects are indexed._ |
 | Filter data | _All issues are indexed. No time filter or JQL criteria is applied._ |
-| Manage Properties | _To check default properties and their schema, [click here](#content)_ |
+| Manage Properties | _To check default properties and their schema, see [content](#content)_ |
 
 | **Sync** | |
 |---|---|
@@ -236,7 +235,7 @@ Use the preview results button to verify the sample values of the selected prope
 
 [![Screenshot that shows Sync tab where you can configure crawl frequency.](media/jira-cloud-sync-tab.png)](media/jira-cloud-sync-tab.png#lightbox)
 
-The refresh interval determines how often your data is synced between the data source and the Graph connector index. There are two types of refresh intervals - full crawl and incremental crawl. For more details, [click here](configure-connector.md#step-8-refresh-settings).
+The refresh interval determines how often your data is synced between the data source and the Graph connector index. There are two types of refresh intervals - full crawl and incremental crawl. For more details, see [refresh settings](configure-connector.md#step-8-refresh-settings).
 
 You can change the default values of refresh interval from here if you want to.
 
