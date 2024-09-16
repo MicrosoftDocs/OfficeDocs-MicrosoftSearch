@@ -62,9 +62,9 @@ It indicates that the item is indexed but remains inaccessible to all users, as 
 
 In the case of a ServiceNow connector, the **Deny all** status may result from different causes
 
-- Advanced criteria on an item - If advanced criteria are applied to an item in the deny list, it may be marked as **Deny all.** To resolve this, try removing the advanced criteria and triggering a full crawl. For more details, refer to troubleshooting ServiceNow knowledge connectors or check the relevant connector troubleshooting section.
+- Advanced criteria on an item - If advanced criteria are applied to an item in the deny list, it may be marked as **Deny all.** To resolve it, try removing the advanced criteria and triggering a full crawl. For more details, refer to troubleshooting ServiceNow knowledge connectors or check the relevant connector troubleshooting section.
 
-- Advanced criteria on a knowledge base - If advanced criteria on a knowledge base deny list affect all articles within that knowledge base, this can result in a **Deny all** status for those articles. Identify the knowledge base the item belongs to and remove the advanced criteria. Consult the respective connector troubleshooting section for further information.
+- Advanced criteria on a knowledge base - If advanced criteria on a knowledge base deny list affect all articles within that knowledge base. It can result in a **Deny all** status for those articles. Identify the knowledge base the item belongs to and remove the advanced criteria. Consult the respective connector troubleshooting section for further information.
 
 Additionally, temporary issues may cause a **Deny all** status, which could be resolved during the next full crawl.
 
@@ -72,11 +72,11 @@ Additionally, temporary issues may cause a **Deny all** status, which could be r
 
 When an item is configured to be visible to everyone, it is accessible to all users within the organization, regardless of the permissions set in the data source.
 
-If an item is discovered but not indexed, check the Errors tab for any issues that might have prevented the indexing process.
+If an item is discovered but not indexed, check the Errors tab for any issues that prevented the indexing process.
 
 > !Note
 > Changes to user or group permissions (ACL) may take up to 24 hours to reflect in Microsoft Search and Microsoft 365 Copilot.
 > Permissions updates occur during a full crawl, not an incremental crawl.
 > If your data source permissions change after the last full crawl, a new full crawl must be triggered on-demand or scheduled to update the index.
-> When testing in Microsoft Search or Copilot, ensure that you are searching with a searchable or queryable property. For more details, refer to Manage Search Schema.
+> When testing in Microsoft Search or Microsoft 365 Copilot, make sure that you are searching with a searchable or queryable property. For more information, see (/microsoftsearch/manage-search-schema). 
 
