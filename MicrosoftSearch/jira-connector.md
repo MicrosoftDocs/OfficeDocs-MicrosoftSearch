@@ -163,7 +163,7 @@ The Atlassian Jira connector supports search permissions visible to **Everyone**
 
 **Mapping Identities**
 
-The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the Email ID of Jira users is same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra. If you believe the default mapping wouldn't work for your organization, you can provide a custom mapping formula. To know more about, mapping Non-Microsoft Entra ID identities, [click here](map-non-aad.md).
+The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the Email ID of Jira users is same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra. If you believe the default mapping wouldn't work for your organization, you can provide a custom mapping formula. To know more about, mapping Non-Microsoft Entra ID identities, see [Map your non-Azure AD Identities](map-non-aad.md).
 
 To identify which option is suitable for your organization:
 
@@ -248,4 +248,4 @@ You may also use the [sample result layout](jira-connector-result-layout.md) for
 ## Troubleshooting
 After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md). You can find troubleshooting steps for commonly seen issues in [Troubleshooting guide for Atlassian Jira Cloud Microsoft Graph connector](troubleshoot-jira-cloud-connector.md).
 
-If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support)
+If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
