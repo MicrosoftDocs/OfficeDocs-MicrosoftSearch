@@ -1,6 +1,7 @@
 ---
 ms.date: 10/02/2019
 title: "Searching and validating indexed content Microsoft Graph connectors"
+ms.author: danielabo
 author: danielabom
 audience: Admin
 ms.topic: article
@@ -30,18 +31,18 @@ When you enter an item ID to check its index status, you can view the following 
 >If a user doesn't appear in the **Check user access** section, it may be due to a failed user mapping or the user not being discovered (e.g., the AAD user ID was not found). Verify if the user has access in the data source, check the user mapping formula, and review the Errors tab for any user mapping errors.
 
 ### Search for indexed content
-To search for indexed content, enter the unique identifier of the item in the index browser. 
 
+To search for indexed content, enter the unique identifier of the item in the index browser. 
 |Connector name|Input per item ID|Where to find the item ID|
 |:------------ |:------------ |:------------|
 |ADO WI|ID|The ID is the work item ID.|	
-|ADO Wiki|OrganizationName, page ID|It can be found in the URL e.g- https://dev.azure.com/O365Exchange/Demolink/_wiki/O365%20Core.wiki/244161/xyzItemId: O365Exchange/244161.|		
+|ADO Wiki|OrganizationName, page ID|It can be found in the URL e.g- https://dev.azure.com/O365Exchange/Demolink/_wiki/O365%20Core.wiki/244161/xyzItemId: O365Exchange/244161|		
 |ServiceNow KB|Sys_Id.DisplayValue|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information: https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest|
 |ServiceNow Catalog|Sys_Id.value|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information: https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest| 		
 |ServiceNow Tickets|Sys_Id.value|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information: https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest| 		 		
-|Salesforce|ID|It can be found in the URL e.g- - https://democompany123-dev-ed.my.salesforce.com/00T5w00008iy76x -Item ID: 00T5w00008iy76x.|
+|Salesforce|ID|It can be found in the URL e.g- - https://democompany123-dev-ed.my.salesforce.com/00T5w00008iy76x -Item ID: 00T5w00008iy76x|
 |Intranet (Cloud/OnPrem)|URL|Final Url in lowercase|Jira issue ID	Follow the link : https://confluence.atlassian.com/jirakb/how-to-get-issue-id-from-the-jira-user-interface-1115156394.html#:~:text=User%20needs%20to%20get%20the%20issue%20id%20in%20an%20easier|
-|Confluence (Cloud/OnPrem)|page blog post ID|It can be found in the item ID of the URL http://confluencedatacenter.dummy.dummyapp.azoro.com:1234/pages/viewinfo.action?pageId=13795332 itemID: 13795332. Example in the Confluence Cloud: URL from the data source - 	https://dummy_URL.atlassian.net/wiki/spaces/xyz/pages/5242881 page ID - 5242881.| 	
+|Confluence (Cloud/OnPrem)|page blog post ID|It can be found in the item ID of the URL http://confluencedatacenter.dummy.dummyapp.azoro.com:1234/pages/viewinfo.action?pageId=13795332 itemID: 13795332. Example in the Confluence Cloud: URL from the data source - 	https://dummy_URL.atlassian.net/wiki/spaces/xyz/pages/5242881 page ID - 5242881| 	
 |CSV|Unique identifier list, item key|Admin configured details.|
 |Azure SQL, Oracle DB, MS SQL|Values to all the columns in unique key columns|Admin configured details.|
 |Mediawiki|page ID, namespace, sourceUrl|Admin configured details.| 	 	
