@@ -62,9 +62,9 @@ It indicates that the item is indexed but remains inaccessible to all users, as 
 
 In the case of a ServiceNow connector, the **Deny all** status may result from different causes
 
-- Advanced criteria on an item - If advanced criteria are applied to an item in the deny list, it may be marked as **Deny all.** To resolve it, try removing the advanced criteria and triggering a full crawl. For more details, refer to troubleshooting ServiceNow knowledge connectors or check the relevant connector troubleshooting section.
+- Advanced criteria on an item - If advanced criteria are applied to an item in the deny list, it may be marked as **Deny all.** To resolve it, try removing the advanced criteria and triggering a full crawl. For more information, see the troubleshooting section of each connector. 
 
-- Advanced criteria on a knowledge base - If advanced criteria on a knowledge base deny list affect all articles within that knowledge base. It can result in a **Deny all** status for those articles. Identify the knowledge base the item belongs to and remove the advanced criteria. Consult the respective connector troubleshooting section for further information.
+- Advanced criteria on a knowledge base - If advanced criteria on a knowledge base deny list affect all articles within that knowledge base. It can result in a **Deny all** status for those articles. Identify the knowledge base the item belongs to and remove the advanced criteria. For more information, see the troubleshooting section of each connector. 
 
 Additionally, temporary issues may cause a **Deny all** status, which could be resolved during the next full crawl.
 
