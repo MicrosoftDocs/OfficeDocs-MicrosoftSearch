@@ -138,6 +138,10 @@ items:
             href: OracleSQL-connector.md
           - name: Troubleshooting
             href: troubleshoot-oraclesql-connector.md
+        - name: PostgreSQL
+          items:
+          - name: Setup
+            href: postgresql-connector.md
         - name: Salesforce
           items:
           - name: Setup
@@ -160,6 +164,10 @@ items:
             href: servicenow-tickets-connector.md
           - name: Troubleshooting
             href: troubleshoot-servicenow-tickets-connector.md
+        - name: WordPress.org (on-prem)
+          items:
+          - name: Setup
+            href: WordPress-onprem-connector.md
         - name: Zendesk Help Center
           items:
           - name: Setup
