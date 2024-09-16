@@ -48,7 +48,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Get Started
 
-[![Screenshot that shows connection creation screen for Microsoft Graph Connector for Jira cloud.](/media/jira-cloud-create-page.png)](/media/jira-cloud-create-page.png#lightbox)
+[![Screenshot that shows connection creation screen for Microsoft Graph Connector for Jira cloud.](media/jira-cloud-create-page.png)](media/jira-cloud-create-page.png#lightbox)
 
 ### 1. Display name 
 A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
@@ -143,7 +143,7 @@ Custom setup is for those admins who want to edit the default values for setting
 
 ### Users
 
-[![Screenshot that shows Users tab where you can configure access permissions and user mapping rules.](/media/jira-cloud-users-tab.png)](/media/jira-cloud-users-tab.png#lightbox)
+[![Screenshot that shows Users tab where you can configure access permissions and user mapping rules.](media/jira-cloud-users-tab.png)](media/jira-cloud-users-tab.png#lightbox)
 
 **Access Permissions**
 
@@ -234,7 +234,7 @@ Use the preview results button to verify the sample values of the selected prope
 
 ### Sync
 
-[![Screenshot that shows Sync tab where you can configure crawl frequency.](/media/jira-cloud-sync-tab.png)](/media/jira-cloud-sync-tab.png#lightbox)
+[![Screenshot that shows Sync tab where you can configure crawl frequency.](media/jira-cloud-sync-tab.png)](media/jira-cloud-sync-tab.png#lightbox)
 
 The refresh interval determines how often your data is synced between the data source and the Graph connector index. There are two types of refresh intervals - full crawl and incremental crawl. For more details, [click here](configure-connector.md#step-8-refresh-settings).
 
