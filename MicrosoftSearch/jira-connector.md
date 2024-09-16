@@ -118,18 +118,18 @@ At this point, you're ready to create the connection for Jira cloud. You can cli
 
 For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency etc., we have defaults based on what works best with Jira data. You can see the default values below:
 
-| **Users** | |
+| **Users** | **Description** |
 |----|---|
 | Access permissions | _Only people with access to content in Data source._ |
 | Map Identities | _Data source identities mapped using Microsoft Entra IDs._ |
 
-| **Content** | |
+| **Content** | **Description** |
 |---|---|
 | Site projects | _All projects are indexed._ |
 | Filter data | _All issues are indexed. No time filter or JQL criteria is applied._ |
 | Manage Properties | _To check default properties and their schema, see [content](#content)_ |
 
-| **Sync** | |
+| **Sync** | **Description** |
 |---|---|
 | Incremental Crawl | _Frequency: Every 15 mins_ |
 | Full Crawl | _Frequency: Every Day_ |
