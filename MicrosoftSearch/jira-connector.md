@@ -118,18 +118,18 @@ At this point, you're ready to create the connection for Jira cloud. You can cli
 
 For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency etc., we have defaults based on what works best with Jira data. You can see the default values below:
 
-| **Users** | **Description** |
+| Users | Description |
 |----|---|
 | Access permissions | _Only people with access to content in Data source._ |
 | Map Identities | _Data source identities mapped using Microsoft Entra IDs._ |
 
-| **Content** | **Description** |
+| Content | Description |
 |---|---|
 | Site projects | _All projects are indexed._ |
 | Filter data | _All issues are indexed. No time filter or JQL criteria is applied._ |
 | Manage Properties | _To check default properties and their schema, see [content](#content)_ |
 
-| **Sync** | **Description** |
+| Sync | Description |
 |---|---|
 | Incremental Crawl | _Frequency: Every 15 mins_ |
 | Full Crawl | _Frequency: Every Day_ |
@@ -163,7 +163,7 @@ The Atlassian Jira connector supports search permissions visible to **Everyone**
 
 **Mapping Identities**
 
-The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the Email ID of Jira users is same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra. If you believe the default mapping wouldn't work for your organization, you can provide a custom mapping formula. To know more about, mapping Non-Microsoft Entra ID identities, [click here](map-non-aad.md).
+The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the Email ID of Jira users is same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra. If you believe the default mapping wouldn't work for your organization, you can provide a custom mapping formula. To know more about, mapping Non-Microsoft Entra ID identities, see [Map your non-Azure AD Identities](map-non-aad.md).
 
 To identify which option is suitable for your organization:
 
@@ -178,26 +178,27 @@ To identify which option is suitable for your organization:
 
 **Choose projects and filter data**
 
-a. _Site projects_
+1. _Site projects_
 
-You can choose for the connection to index either the entire Jira site or specific projects only.
+   You can choose for the connection to index either the entire Jira site or specific projects only.
 
-* If you choose to index the entire Jira site, Jira issues in all projects in the site are indexed. New projects and issues are indexed during the next crawl after they're created.
-* If you choose individual projects, only Jira issues in the selected projects are indexed.
+   * If you choose to index the entire Jira site, Jira issues in all projects in the site are indexed. New projects and issues are indexed during the next crawl after they're created.
 
-> [!NOTE]
-> When you grant the _Browse projects_ permission to a Jira projects, it is listed in the project selection and can be crawled. If a project is missing, check the permissions for your account.
+   * If you choose individual projects, only Jira issues in the selected projects are indexed.
 
-b. _Filter data_
+   > [!NOTE]
+   > When you grant the _Browse projects_ permission to a Jira projects, it is listed in the project selection and can be crawled. If a project is missing, check the permissions for your account.
 
-You may further choose to filter the Jira issues that are indexed in two ways.
+1. _Filter data_
 
-* Specify the **issue modified time period**. This option will only index the Jira issues that are created or modified in the time period selected on a **rolling basis** based on current crawl.
+   You may further choose to filter the Jira issues that are indexed in two ways.
 
-* Specify the **JQL**. This option will only index the Jira issues that are returned after filtering based on provided Jira Query Language (JQL). To learn more about using JQL, see Atlassian Support documentation on [using advanced search with Jira Query Language](https://support.atlassian.com/jira-service-management-cloud/docs/use-advanced-search-with-jira-query-language-jql/)
+   * Specify the **issue modified time period**. This option will only index the Jira issues that are created or modified in the time period selected on a **rolling basis** based on current crawl.
 
-> [!TIP]
-> You may use the JQL filter to index only specific Jira issue types using "*issueType in (Bug,Improvement)*"
+   * Specify the **JQL**. This option will only index the Jira issues that are returned after filtering based on provided Jira Query Language (JQL). To learn more about using JQL, see Atlassian Support documentation on [using advanced search with Jira Query Language](https://support.atlassian.com/jira-service-management-cloud/docs/use-advanced-search-with-jira-query-language-jql/)
+
+   > [!TIP]
+   > You may use the JQL filter to index only specific Jira issue types using "*issueType in (Bug,Improvement)*"
 
 **Manage Properties**
 
@@ -245,6 +246,6 @@ After creating the connection, you need to customize the search results page wit
 You may also use the [sample result layout](jira-connector-result-layout.md) for the Jira connector. Copy-paste the result layout JSON to get started after reviewing the schema of the connection with required schema for the sample layout.
 
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md). You can find troubleshooting steps for commonly seen issues [here](troubleshoot-jira-cloud-connector.md).
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md). You can find troubleshooting steps for commonly seen issues in [Troubleshooting guide for Atlassian Jira Cloud Microsoft Graph connector](troubleshoot-jira-cloud-connector.md).
 
-If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)
+If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
