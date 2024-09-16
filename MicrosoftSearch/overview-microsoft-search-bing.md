@@ -99,7 +99,7 @@ To turn on or turn off Copilot for Microsoft 365 in Bing, Edge, and Windows, fol
 3. Run the following command first: 'Set-ExecutionPolicy unrestricted'.
 4. Run the PowerShell script.
 5. Follow the instructions prompted by the script.
-6. The cmdlet will prompt you to sign in with your AAD account (must be a Search Admin or Global Admin account).
+6. The cmdlet will prompt you to sign in with your AAD account (must be a Search Admin account).
 7. Follow these steps:
 
       - To get the **current status** of Copilot for Microsoft 365 in Bing, Edge, and Windows in your tenant, run: '.\ConfigureM365Copilot.ps1'
