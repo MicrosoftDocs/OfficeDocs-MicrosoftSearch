@@ -11,11 +11,25 @@ description: "Learn how to search and validate whether some content is indexed i
 
 # Searching and validating indexed content Microsoft Graph connectors
 
-You can use an index browser to search and determine if specific content is indexed. If an item is indexed, you can view its associated properties, metadata, permissions, and access control lists (ACLs).
+You can use the index browser **to test indexing** when you cannot find a particular item during connection testing. If you need **to verify properties and user access**, it helps **review the metadata and access control lists (ACLs)** of indexed items. Additionally, it is beneficial for **troubleshooting search issues**; if users report problems accessing items, this feature confirms whether the item was indexed correctly and includes the correct data.
 
 :::image type="content" source="media/manage-connector/index-search.png" alt-text="Screenshot that shows connector what users can see when they enter an item ID of an indexed item.":::
 
-## Locate the item ID
+## About the index browser
+
+When you enter an item ID to check its index status, you can view the following details if the item is indexed.
+
+- Name of the Content - The name of the indexed item.
+- Status - The current status of the item and its last refresh time.
+- Properties - Indicates the status of all properties defined during configuration for the item.
+- Permissions -  Lists all groups and individual users associated with the item. If the status is **allow**, all users in those groups can view the item. If the status is **deny**, users in those groups cannot access the item. If access permissions are configured as **Allow everyone** instead of **Only people with access** for the connection, all items in the index are visible to everyone, and no specific permissions are enforced.
+- Check user access - Allows searching for a specific user to verify their access to the item. Enter the user name or email address to display a list of groups to which the user belongs. If the user is denied access to any of these groups, their overall permission to view the item is revoked.
+
+>!Note
+>The Permissions tab displays only users present individually (outside of any group) in the data source and groups within the data source. To check for a user present in any group, use **Check user access**. 
+>If a user doesn't appear in the **Check user access** section, it may be due to a failed user mapping or the user not being discovered (e.g., the AAD user ID was not found). Verify if the user has access in the data source, check the user mapping formula, and review the Errors tab for any user mapping errors.
+
+### Search for indexed content
 To search for indexed content, enter the unique identifier of the item in the index browser. 
 
 |Connector name|Input per item ID|Where to find the item ID|
@@ -37,8 +51,5 @@ To search for indexed content, enter the unique identifier of the item in the in
 |Custom connector|item ID|Admin configured details.|  
 |SAP|user ID|Admin configured details.|  	 	
 
-## Permissions
-This tab lists the groups from the data source with permissions for the item ID. If the status is **allow**, all users in those groups can see the item. If the status is **deny**, users in those groups can't access the item.
-
-### Check user access
-To check user access, enter the user name or email address. A list of groups to which the user belongs is displayed. If the user is denied access to any of these groups, their overall permission to view the item is revoked.
+## Examples
+### Example 1
