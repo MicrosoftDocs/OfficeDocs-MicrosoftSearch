@@ -32,6 +32,7 @@ When you enter an item ID to check its index status, you can view the following 
 >- If a user doesn't appear in **Check user access**, it may be due to a failed user mapping or the user not being discovered (e.g., the AAD user ID was not found). To resolve this, check if the user has access in the data source, review the user mapping formula, and the error reports.
 
 To search for indexed content, enter the unique identifier of the item in the index browser. 
+
 |Connector name|Input per item ID|Where to find the item ID|
 |:---|:---|:---|
 |ADO WI|ID|The ID is the work item ID.|	
