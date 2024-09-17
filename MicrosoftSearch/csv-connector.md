@@ -193,9 +193,7 @@ If your source columns can take multiple values, enter a multi-item delimiter, a
 
 This page returns the first row from your .csv file as Source Properties. To modify the datatype, in the **Unique identifier** list select at least one option.
 
-```
 To control access on an item level, select columns mapped to allowed users and allowed groups. You should include two columns, AllowedUsers and AllowedGroups, in the .csv file. Each row should contain the Microsoft Entra IDs.
-```
 
 :::image type="content" source="media/csv-connector/csv-connector-acl-item-level.png" alt-text="Item level access control settings." lightbox="media/csv-connector/csv-connector-acl-item-level.png":::
 
