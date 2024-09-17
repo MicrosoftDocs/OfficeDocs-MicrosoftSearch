@@ -52,14 +52,14 @@ Navigate to the **Access control** tab of your Azure Storage account, and follow
 
 Support to process changes in real-time in the Microsoft Graph connectors service might be added in the future. In that case, we'll monitor Azure Storage change notifications stored in a queue. You'll need to create a queue in the same account as your Azure Storage account.
 
-After you create a queue, go to the **Events** tab on the queue page to configure **Event subscription**. Choose all the blob events that the queue receives, and connect the queue to the Azure Storage account.
+After you create a queue, go to the **Events** tab on the queue page to configure **Event Subscription**. Choose all the blob events that the queue receives, and connect the queue to the Azure Storage account.
 
 ### Test the connection
 
 Test the connection by clicking the **Test connection** button
 
 > [!NOTE]
-> The **Test connection** must succeed before you can move to the next configuration section. The ADLS gen 2 enabled storage account **MUST** have a container **AND** at least one file within it as a minimum for the **Test connection** to succeed. A connection error is raised if the content does not exist.
+> The **Test Connection** must succeed before you can move to the next configuration section. The ADLS gen 2 enabled storage account **MUST** have a container **AND** at least one file within it as a minimum for the **Test Connection** to succeed. A connection error is raised if the content does not exist.
 
 ## Step 4: Assign property labels
 
@@ -67,7 +67,7 @@ You can assign a source property to each label by choosing from a menu of option
 
 ## Step 5: Manage schema
 
-On the **Manage schema** screen, you can change the schema attributes associated with the properties, the options are **Query**, **Search**, **Retrieve**, and **Refine**. You also can add optional aliases, and choose the **Content** property.
+On the **Manage Schema** screen, you can change the schema attributes associated with the properties, the options are **Query**, **Search**, **Retrieve**, and **Refine**. You also can add optional aliases, and choose the **Content** property.
 
 ## Step 6: Manage search permissions
 
@@ -83,7 +83,7 @@ For a connection to [Azure Blob Storage](/azure/storage/blobs/storage-blobs-intr
 
 ## Step 7: Set the refresh schedule
 
-On the **Refresh settings** screen, you can set the incremental crawl interval and the full crawl interval. The default intervals for the Azure Data Lake Storage Gen2 Microsoft Graph connector are 15 minutes for an incremental crawl and one week for a full crawl.
+On the **Refresh Settings** screen, you can set the incremental crawl interval and the full crawl interval. The default intervals for the Azure Data Lake Storage Gen2 Microsoft Graph connector are 15 minutes for an incremental crawl and one week for a full crawl.
 
 ## Step 8: Review connection
 
