@@ -70,16 +70,16 @@ Verify the .csv files you want to index have been uploaded to a SharePoint docum
 
 1. Go to the [Azure portal](https://portal.azure.com) and sign in with admin credentials for the tenant.
 
-2. Open **App Registration** from the navigation pane and go to the appropriate App. Under **Manage**, select **Certificates and secrets**.
+2. Open **App Registration** from the navigation pane and go to the appropriate App. Under **Manage**, select **Certificates and Secrets**.
 
-3. Select **New Client secret** and select an expiry period for the secret. Copy the generated secret and save it because it is not shown again.
+3. Select **New Client Secret** and select an expiry period for the secret. Copy the generated secret and save it because it is not shown again.
 
 4. Use this Client secret and the application ID to configure the connector.
 
 ### Create a SharePoint app with OAuth configuration
 
 1. Go to  `https://Org-Name.sharepoint.com/sites/mysite/_layouts/15/appregnew.aspx`.
-2. On the Client Id and Client Secret fields, select **Generate**.
+2. On the Client ID and Client Secret fields, select **Generate**.
 3. For Title, enter an app name.
 4. In the App Domain field, enter `www.gcs.com`.
 5. In the Redirect URL field, enter `https://www.gcs.com`.
@@ -193,7 +193,9 @@ If your source columns can take multiple values, enter a multi-item delimiter, a
 
 This page returns the first row from your .csv file as Source Properties. To modify the datatype, in the **Unique identifier** list select at least one option.
 
+```
 To control access on an item level, select columns mapped to allowed users and allowed groups. You should include two columns, AllowedUsers and AllowedGroups, in the .csv file. Each row should contain the Microsoft Entra IDs.
+```
 
 :::image type="content" source="media/csv-connector/csv-connector-acl-item-level.png" alt-text="Item level access control settings." lightbox="media/csv-connector/csv-connector-acl-item-level.png":::
 
