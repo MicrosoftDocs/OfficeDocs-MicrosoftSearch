@@ -84,19 +84,16 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
    > The ServiceNow Knowledge Microsoft Graph connector can index knowledge articles and user criteria permissions without advanced scripts. For more information, see [Read and deny access to Knowledge articles in the ServiceNow Knowledge Microsoft Graph connector](#read-and-deny-access-to-knowledge-articles-in-the-servicenow-knowledge-microsoft-graph-connector).
 
  **Authentication details**: To authenticate and sync content from ServiceNow, choose **one of three** supported methods:
-   - [Basic authentication](#basic-authentication)
-   - [ServiceNow OAuth (recommended)](#servicenow-oauth)
-   - [Microsoft Entra ID OpenID Connect](#microsoft-entra-id-openid-connect)
-
+  
    a. **Basic authentication** <br>
-     Enter the username and password of ServiceNow account with **knowledge** role to authenticate to your instance.
+     Enter the username and password of the ServiceNow account with **knowledge** role to authenticate to your instance.
      <br>
 
    b. **ServiceNow OAuth (recommended)**
    <details>
    <summary>[Click to expand]To use the ServiceNow OAuth for authentication, follow these steps.</summary><br>
     
-   A ServiceNow admin needs to provision an endpoint in your ServiceNow instance, so that the Graph connector can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/vancouver-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
+   A ServiceNow admin needs to provision an endpoint in your ServiceNow instance so that the Microsoft Graph connector can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/vancouver-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
    The following table provides guidance on how to fill out the endpoint creation form:
 
@@ -111,7 +108,7 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
    |Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds). | 31,536,000 (one year)|
    |Access token lifespan | The number of seconds that an access token is valid. | 43,200 (12 hours)|
    
-   Enter the client ID and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role. Refer to the table mentioned under the Service account in the [Prerequisites](#prerequisites) section for providing read access to more ServiceNow table records and index user criteria permissions.
+   Enter the client ID and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role.
 </details> <br>
 
    c. **Microsoft Entra ID OpenID Connect**
@@ -198,12 +195,11 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
           1. Select Submit and update the OAuth OIDC entity form.
 
    5. Create a ServiceNow account
-
       Refer to the instructions to create a ServiceNow account, [create a user in ServiceNow](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
 
-     The following table provides guidance on how to fill out the ServiceNow user account registration
+     The following table provides guidance on how to fill out the ServiceNow user account registration.
 
-      |Field | Recommended value
+      |Field |Recommended value|
       |:--- |:---|
       |User ID | Service Principal ID from step 3.c|
       |Web service access only | Checked|
@@ -212,8 +208,8 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
 
    6. Enable Knowledge role for the ServiceNow account
 
-      Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions to assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Refer to the table mentioned under Service account in the [Prerequisites](#prerequisites) section for providing read access to more ServiceNow table records and index user criteria permissions.
-
+      Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions for assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
+      
       Use Application ID as client ID (from step 3.1), and client secret (from step 3.2) in the admin center configuration wizard to authenticate to your ServiceNow instance using Microsoft Entra ID OpenID Connect.
 </details>
 ### 3. Access permissions
@@ -325,7 +321,7 @@ Here is a scenario-wise depiction of how the connector treats access permissions
 ## Limitations
 >[!IMPORTANT]
 >The ServiceNow Knowledge Microsoft Graph connector has the following limitations in its latest release:
->User criteria with advanced scripts aren't supported in the current version. For more information, see [Read and deny access to knowledge articles in the ServiceNow Knowledge Microsoft Graph connector](#read-and-deny-access-to-knowledge-articles-in-microsoft-graph-connector-for-servicenow).
+>User criteria with advanced scripts aren't supported in the current version. For more information, see [Read and deny access to Knowledge articles in the ServiceNow Knowledge Microsoft Graph connector](#read-and-deny-access-to-knowledge-articles-in-the-servicenow-knowledge-microsoft-graph-connector).
 
 
 ## Troubleshooting
