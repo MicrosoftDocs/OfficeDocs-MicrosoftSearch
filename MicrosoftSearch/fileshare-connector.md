@@ -1,7 +1,9 @@
 ---
 ms.date: 11/12/2020
 title: "File share Microsoft Graph connector"
-ms.author: mecampos
+ms.author: danielabo
+author: danielabom
+manager: SteveWilkins1123
 audience: Admin
 ms.audience: Admin
 ms.topic: article
