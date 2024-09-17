@@ -74,9 +74,9 @@ When an item is configured to be visible to everyone, it is accessible to all us
 
 If an item is discovered but not indexed, check the Errors tab for any issues that prevented the indexing process.
 
-> Note
-> Changes to user or group permissions (ACL) may take up to 24 hours to reflect in Microsoft Search and Microsoft 365 Copilot.
-> Permissions updates occur during a full crawl, not an incremental crawl.
-> If your data source permissions change after the last full crawl, a new full crawl must be triggered on-demand or scheduled to update the index.
-> When testing in Microsoft Search or Microsoft 365 Copilot, make sure that you are searching with a searchable or queryable property. For more information, see (/microsoftsearch/manage-search-schema). 
+>[!NOTE]
+>- Changes to user or group permissions (ACL) may take up to 24 hours to reflect in Microsoft Search and Microsoft 365 Copilot.
+>- Permissions updates occur during a full crawl, not an incremental crawl.
+>- If your data source permissions change after the last full crawl, a new full crawl must be triggered on-demand or scheduled to update the index.
+>- When testing in Microsoft Search or Microsoft 365 Copilot, make sure that you are searching with a searchable or queryable property. For more information, see (/microsoftsearch/manage-search-schema). 
 
