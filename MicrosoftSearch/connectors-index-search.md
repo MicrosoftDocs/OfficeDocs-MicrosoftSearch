@@ -34,9 +34,9 @@ When you enter an item ID to check its index status, you can view the following 
 To search for indexed content, enter the unique identifier of the item in the index browser. 
 
 |Connector name|Input per item ID|Where to find the item ID|
-|:-----|:-----|:-----|
+|:---|:---|:---|
 |ADO WI|ID|The ID is the work item ID.|	
-|ADO Wiki|OrganizationName, page ID|It can be found in the URL e.g- (https://dev.azure.com/O365Exchange/Demolink/_wiki/O365%20Core.wiki/244161/xyzItemId:O365Exchange/244161)|		
+|ADO Wiki|OrganizationName, page ID|It can be found in the URL.|		
 |ServiceNow KB|Sys_Id.DisplayValue|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information, see [ServiceNow documentation] (https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest).|
 |ServiceNow Catalog|Sys_Id.value|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information, see [ServiceNow documentation] (https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest).| 		
 |ServiceNow Tickets|Sys_Id.value|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information, see [ServiceNow documentation] (https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest).|		
