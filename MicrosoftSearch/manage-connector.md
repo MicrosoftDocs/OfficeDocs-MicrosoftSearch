@@ -1,6 +1,8 @@
 ---
 title: "Monitor Microsoft Graph connectors for Microsoft Search"
-author: monaray97
+ms.author: danielabo
+author: danielabom
+manager: SteveWilkins1123
 audience: Admin
 ms.audience: Admin
 ms.topic: article
