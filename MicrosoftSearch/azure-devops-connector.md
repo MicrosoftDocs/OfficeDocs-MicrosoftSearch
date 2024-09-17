@@ -9,10 +9,6 @@ ms.audience: Admin
 ms.topic: article 
 ms.service: mssearch 
 ms.localizationpriority: medium 
-search.appverid: 
-- BFB160 
-- MET150 
-- MOE150 
 description: "Set up the Azure DevOps Work Items Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ---
 
