@@ -181,7 +181,6 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
 
          1. The following table provides guidance on how to fill out OIDC provider configuration form
             
-         ```
          |Field |Recommended value|
          |------ |-------|
          |OIDC provider |Microsoft Entra ID|
@@ -192,8 +191,7 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
          |User field | User ID|
          |Enable JTI claim verification | Disabled|
          
-         ```
-          1. Select **Submit** and update the OAuth OIDC entity form.
+         1. Select **Submit** and update the OAuth OIDC entity form.
 
    5. Create a ServiceNow account
       Refer to the instructions to create a ServiceNow account, [create a user in ServiceNow](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
