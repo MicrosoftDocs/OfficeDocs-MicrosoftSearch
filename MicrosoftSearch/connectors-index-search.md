@@ -32,7 +32,7 @@ When you enter an item ID to check its index status, you can view the following 
 
 To search for indexed content, enter the unique identifier of the item in the index browser. 
 
-|Connector name|Input per item ID|Where to find the item ID|
+|Connector name|Input per item ID|Where to find the item ID
 |:------------ |:------------ |:------------|
 |ADO WI|ID|The ID is the work item ID.|	
 |ADO Wiki|OrganizationName, page ID|It can be found in the URL e.g- https://dev.azure.com/O365Exchange/Demolink/_wiki/O365%20Core.wiki/244161/xyzItemId: O365Exchange/244161|		
@@ -78,5 +78,5 @@ If an item is discovered but not indexed, check the Errors tab for any issues th
 >- Changes to user or group permissions (ACL) may take up to 24 hours to reflect in Microsoft Search and Microsoft 365 Copilot.
 >- Permissions updates occur during a full crawl, not an incremental crawl.
 >- If your data source permissions change after the last full crawl, a new full crawl must be triggered on-demand or scheduled to update the index.
->- When testing in Microsoft Search or Microsoft 365 Copilot, make sure that you are searching with a searchable or queryable property. For more information, see [Manage schema](../microsoftsearch/manage-search-schema). 
+>- When testing in Microsoft Search or Microsoft 365 Copilot, make sure that you are searching with a searchable or queryable property. For more information, see [Manage schema](/microsoftsearch/manage-search-schema). 
 
