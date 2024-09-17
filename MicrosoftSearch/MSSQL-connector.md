@@ -1,17 +1,14 @@
+---
 ms.date: 10/08/2019
-title: " Azure SQL and Microsoft SQL Server Microsoft Graph connectors for Microsoft Search and Microsoft 365 Copilot"
-ms.author: mecampos
-author: mecampos
-manager: umas
+title: "Azure SQL and Microsoft SQL Server Microsoft Graph connectors for Microsoft Search and Microsoft 365 Copilot"
+ms.author: danielabom
+author: danielabom
+manager: SteveWilkins1123
 audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
-search.appverid:
-- BFB160
-- MET150
-- MOE150
 description: "Set up the Azure SQL and Microsoft SQL Microsoft Graph connectors for Microsoft Search and Microsoft 365 Copilot."
 ---
 # Azure SQL and Microsoft SQL Server Microsoft Graph connectors
