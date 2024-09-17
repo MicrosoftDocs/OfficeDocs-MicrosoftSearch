@@ -183,7 +183,7 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
             
          ```
          |Field |Recommended value|
-         |:--- |:---|
+         |------ |-------|
          |OIDC provider |Microsoft Entra ID|
          |OIDC Metadata URL | The URL must be in the form https\://login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>Replace "tenantID" with Directory (tenant) ID from step 3.a.|
          |OIDC configuration cache life span |  120|
@@ -191,6 +191,7 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
          |User claim | sub|
          |User field | User ID|
          |Enable JTI claim verification | Disabled|
+         
          ```
           1. Select **Submit** and update the OAuth OIDC entity form.
 
