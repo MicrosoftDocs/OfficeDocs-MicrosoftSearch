@@ -1,8 +1,9 @@
 ---
 ms.date: 10/08/2019
 title: "View your connection details"
-ms.author: monaray
-author: monaray97
+ms.author: danielabo
+author: danielabom
+manager: SteveWilkins1123
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
