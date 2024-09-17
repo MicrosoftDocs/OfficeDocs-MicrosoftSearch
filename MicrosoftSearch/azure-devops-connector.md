@@ -1,9 +1,9 @@
 --- 
 ms.date: 06/11/2020
 title: "Azure DevOps Work Items Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
-ms.author: mecampos 
-author: mecampos 
-manager: lsheppard 
+ms.author:danielabo
+author: danielabom
+manager: SteveWilkins1123
 audience: Admin
 ms.audience: Admin 
 ms.topic: article 
@@ -15,6 +15,7 @@ search.appverid:
 - MOE150 
 description: "Set up the Azure DevOps Work Items Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ---
+
 # Azure DevOps Work Items Microsoft Graph connector
 
 The Azure DevOps Microsoft Graph connector allows your organization to index work items in its instance of the Azure DevOps service. After you configure the connector and index content from Azure DevOps, end users can search for those items in Microsoft Search and Microsoft 365 Copilot.
@@ -36,17 +37,17 @@ You need the following permissions granted to the user account whose credentials
 | Permission name | Permission type | Required for |
 | ------------ | ------------ | ------------ |
 | View project-level information | [Project permission](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | Crawling Azure DevOps Work Items. This permission is **mandatory** for the projects that need to be indexed. |
-| _View analytics_ | [Project permission](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | Crawling Azure DevOps Work Items. This permission is **mandatory** for the projects that need to be indexed. |
-| _View work items in this node_ | [Area path](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#area-path-object-level&preserve-view=true) | Crawling Work Items in an area path. This permission is **optional**. Only those area paths are crawled for which the user account has permission. |
+| View analytics| [Project permission](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | Crawling Azure DevOps Work Items. This permission is **mandatory** for the projects that need to be indexed. |
+| View work items in this node| [Area path](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#area-path-object-level&preserve-view=true) | Crawling Work Items in an area path. This permission is **optional**. Only those area paths are crawled for which the user account has permission. |
 
 >[!IMPORTANT]
 >The user account must have **Basic** access level. To learn more about access levels in Azure DevOps, read [supported access levels](/azure/devops/organizations/security/access-levels?view=azure-devops#supported-access-levels&preserve-view=true).
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
-[Add Azure DevOps connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_AzureDevOps&type=AzureDevOps)
+[Add Azure DevOps Work Items Microsoft Graph connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_AzureDevOps&type=AzureDevOps)
 
-(See general [setup instructions](./configure-connector.md) for more details)
+See general [setup instructions](./configure-connector.md) for more details.
 
 ## Step 2: Name the connection
 
@@ -54,9 +55,64 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 3: Configure the connection settings
 
+To authenticate and sync content from Azure DevOps, choose **one of the two** supported methods:<br>
+
+> [!IMPORTANT]
+> - [Microsoft Entra ID OAuth](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops) is in preview and available to select customers. This is the recommended OAuth mechanism.
+> - [Azure DevOps OAuth](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops) is the legacy authentication mechanism, not being actively invested upon.
+
+### Microsoft Entra ID OAuth (Preview)
+
+**Ensure your ADO Organization is connected to Microsoft Entra**
+
+The Azure DevOps Graph connector only indexes content from an ADO organization connected with Microsoft Entra of your tenant. To ensure that your ADO organization is connected with Microsoft Entra account, use the following steps. 
+
+1. Navigate to [Azure DevOps](https://dev.azure.com/) and select the required organization.
+2. Select `Organization settings`.
+3. On the left navigation pane, select `Microsoft Entra` under the 'General' header.
+4. Ensure that the organization is connected to your tenant's Microsoft Entra account.
+
+**Create an app on Microsoft Entra ID**
+
+1. Go to the [Azure portal](https://portal.azure.com) and sign in with admin credentials for the tenant.
+2. Navigate to **Microsoft Entra ID** -> **Manage** -> **App registrations** from the navigation pane and select **New registration**.
+3. Provide a name for the app and select **Register**.
+4. Make a note of the Application (client) ID. This ID is used to grant the Microsoft Entra app access to projects in the ADO organization.
+5. Open **API permissions** from the navigation pane and select **Add a permission**.
+6. Select **Azure DevOps** and then **Delegated permissions**.
+7. Search for the following permissions and select **Add permissions**. <br>
+    a. Identity (read) <br>
+    b. Work Items (read) <br>
+    c. Variable Groups (read) <br>
+    d. Project and team (read) <br>
+    e. Graph (read) <br>
+    f. Analytics (read) <br>
+8. Select **Grant admin consent for [TenantName]** and confirm by selecting **Yes**.
+9. Check that the permissions are in the "**Granted**" state.
+10. Open **Authentication** from the navigation pane. Select `Add a platform` and choose `Web`. Add one of the following URIs under "Redirect URIs":
+    - For **M365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback
+    - For **M365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback
+11. Under **Implicit grant and hybrid flows**, check the option for `ID tokens (used for implicit and hybrid flows)` and click **Configure**.
+12. From the navigation pane, select **Certificates and secrets** under **Manage**.
+13. Select **New Client secret** and select an expiry period for the secret. Copy the generated secret (Value) and save it because it is not shown again.
+14. Use this Client secret and the application ID to configure the connector.
+
+**Grant the Microsoft Entra app access to projects in the ADO organization**
+
+You need to provide the Microsoft Entra app the necessary access to the projects which need to be indexed using the following steps:
+
+1. Navigate to [Azure DevOps](https://dev.azure.com/) and select the required organization.
+2. Select `Organization settings`.
+3. On the left navigation pane, select `Users` under the 'General' header.
+4. Select `Add users`.
+5. Copy the Application (client) ID obtained from the app to "Users or Service Principals".
+6. Grant the `Basic` access level and select the projects to allow access to index. Also add to the `Project Reader` Azure DevOps group (or equivalent) to ensure access. De-select the option to send email invitation to users.
+
+### Azure DevOps OAuth
+
 To connect to your Azure DevOps instance, you need your Azure DevOps [organization](/azure/devops/organizations/accounts/create-organization) name, its App ID, and client secret for OAuth authentication.
 
-### Register an app
+**Register an app**
 
 Register an app in Azure DevOps so that the Microsoft Search app and Microsoft 365 Copilot can access the instance. To learn more, see Azure DevOps documentation on how to [register an app](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app).
 
@@ -66,14 +122,14 @@ Mandatory Fields | Description | Recommended value
 --- | --- | ---
 | Company name         | The name of your company. | Use an appropriate value   |
 | Application name     | A unique value that identifies the application that you're authorizing.    | Microsoft Search     |
-| Application website  | The URL of the application that will request access to your Azure DevOps instance during connector setup. (Required).  | For **M365 Enterprise**: https://<span>gcs.office.</span>com/,</br> For **M365 Government**: https://<span>gcsgcc.<span>office.com/
+| Application website  | The URL of the application that requests access to your Azure DevOps instance during connector setup. (Required).  | For **M365 Enterprise**: https://<span>gcs.office.</span>com/,</br> For **M365 Government**: https://<span>gcsgcc.<span>office.com/
 | Authorization callback URL        | A required callback URL that the authorization server redirects to. | For **M365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback,</br> For **M365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback |
 | Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), work items (read), variable groups (read), project and team (read), Microsoft  (read), analytics (read)|
 
 >[!IMPORTANT]
 >The authorized scopes that you select for the app should match the scopes exactly as listed above. If you omit one of the authorized scopes in the list or add another scope, the authorization will fail.
 
-On registering the app with the details above, you'll get the **App ID** and **Client secret** used to configure the connector.
+On registering the app, you get the **App ID** and **Client Secret** that is used to configure the connector.
 
 >[!NOTE]
 >To revoke access to any app registered in Azure DevOps, go to User settings at the right top of your Azure DevOps instance. Select **Profile** and then select **Authorizations** in the Security section of the side pane. Hover over an authorized OAuth app to see the **Revoke** button at the corner of the app details.
@@ -88,9 +144,9 @@ After registering the Microsoft Search app with Azure DevOps, you can complete t
 
 You can choose for the connection to index either the entire organization or specific projects.
 
-If you choose to index the entire organization, items in all projects in the organization are indexed. New projects and items will be indexed during the next crawl after they're created.
+If you choose to index the entire organization, items in all projects in the organization get indexed. New projects and items are indexed during the next crawl after they're created.
 
-If you choose individual projects, only work items in those projects are indexed.
+If you choose individual projects, only work items in the selected projects are indexed.
 
 > [!NOTE]
 > Azure DevOps projects can be crawled after granting them the _View project-level information_ and _View analytics_ permissions.
@@ -132,4 +188,4 @@ Follow the general [setup instructions](./configure-connector.md).
 After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 You can find troubleshooting steps for commonly seen issues [here](troubleshoot-azure-devops-connector.md).
 
-If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)
+If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
