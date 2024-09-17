@@ -19,7 +19,7 @@ ms.date: 10/29/2019
 
 The Microsoft Graph connectors gallery includes a brief description of each of the connectors created by Microsoft and our partners, and a link to each partner's website.
 
-With more than 100 connectors currently available, you can connect to popular Microsoft and non-Microsoft services. These include Azure services, Box, Confluence, Google services, MediaWiki, Salesforce, ServiceNow, and many more.
+With more than 100 connectors currently available, you can connect to popular Microsoft and non-Microsoft services. These connectors include Azure services, Box, Confluence, Google services, MediaWiki, Salesforce, ServiceNow, and many more.
 
 The Graph connectors in this gallery are broken down into the following categories:
 - Collaboration & Communications
@@ -34,7 +34,7 @@ The Graph connectors in this gallery are broken down into the following categori
 - Other
 
 ## Collaboration & communications
-These are the connectors under collaboration & communications.
+The following connectors are under collaboration & communications.
 
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
@@ -89,7 +89,7 @@ These are the connectors under collaboration & communications.
 
 ## Content Management Systems
 
-These are the connectors under content management systems.
+The following connectors are under content management systems.
 
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
@@ -154,7 +154,7 @@ These are the connectors under content management systems.
 
 ## Databases
 
-These are the connectors under databases.
+The following connectors are under databases.
 
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
@@ -178,7 +178,7 @@ These are the connectors under databases.
 
 ## Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), Sales, and Support
 
-These are the connectors under enterprise resource planning (ERP), customer relationship management (CRM), sales, and support.
+The following connectors are under enterprise resource planning (ERP), customer relationship management (CRM), sales, and support.
 
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
@@ -195,7 +195,7 @@ These are the connectors under enterprise resource planning (ERP), customer rela
 
 ## File Systems
 
-These are the connectors under file systems.
+The following connectors are under file systems.
 
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
@@ -226,7 +226,7 @@ These are the connectors under file systems.
 
 ## IT Service Management Tools (ITSM)
 
-These are the connectors under IT Service Management Tools (ITSM).
+The following connectors are under IT Service Management Tools (ITSM).
 
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
@@ -253,7 +253,7 @@ These are the connectors under learning.
 
 ## Social Networks
 
-These are the connectors under social networks.
+The following connectors are under social networks.
 
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
@@ -264,7 +264,7 @@ Yammer|Raytion|Secure enterprise search connector for reliably indexing content 
 
 ## Website (HTTP)
 
-These are the connectors under website.
+The following connectors are under website.
 
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
@@ -274,7 +274,7 @@ These are the connectors under website.
 
 ## Other
 
-These are the connectors under other categories.
+The following connectors are under other categories.
 
 |Connector name|Publisher|Description|
 |:------ |:----------- |:----------- |
