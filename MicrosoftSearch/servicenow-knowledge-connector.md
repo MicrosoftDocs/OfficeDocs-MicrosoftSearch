@@ -181,32 +181,36 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
          1. In the OIDC provider registration form, you need to add a new OIDC provider configuration. Select the search icon against *OAuth OIDC Provider Configuration* field to open the records of OIDC configurations. Select New.
 
          1. The following table provides guidance on how to fill out OIDC provider configuration form
-
-             |Field | Recommended value
-             |:--- |:---|
-             |OIDC provider |  Microsoft Entra ID|
-             |OIDC Metadata URL | The URL must be in the form https\://login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>Replace "tenantID" with Directory (tenant) ID from step 3.a.|
-             |OIDC configuration cache life span |  120|
-             |Application | Global|
-             |User claim | sub|
-             |User field | User ID|
-             |Enable JTI claim verification | Disabled|
-
-          1. Select Submit and update the OAuth OIDC entity form.
+            
+         ```
+         |Field |Recommended value|
+         |:--- |:---|
+         |OIDC provider |Microsoft Entra ID|
+         |OIDC Metadata URL | The URL must be in the form https\://login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>Replace "tenantID" with Directory (tenant) ID from step 3.a.|
+         |OIDC configuration cache life span |  120|
+         |Application | Global|
+         |User claim | sub|
+         |User field | User ID|
+         |Enable JTI claim verification | Disabled|
+         ```
+          1. Select **Submit** and update the OAuth OIDC entity form.
 
    5. Create a ServiceNow account
       Refer to the instructions to create a ServiceNow account, [create a user in ServiceNow](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
 
-     The following table provides guidance on how to fill out the ServiceNow user account registration.
-
+      The following table provides guidance on how to fill out the ServiceNow user account registration.
+      
+      ```
       |Field |Recommended value|
       |:--- |:---|
       |User ID | Service Principal ID from step 3.c|
       |Web service access only | Checked|
 
+      ```
+
       All other values can be left to default.
 
-   6. Enable Knowledge role for the ServiceNow account
+   7. Enable Knowledge role for the ServiceNow account
 
       Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the knowledge role. Instructions for assigning a role to a ServiceNow account can be found here, [assign a role to a user](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
       
