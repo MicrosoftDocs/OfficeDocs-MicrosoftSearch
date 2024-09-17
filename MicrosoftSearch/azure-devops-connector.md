@@ -65,8 +65,8 @@ instructions.-->
 To authenticate and sync content from Azure DevOps, choose **one of the two** supported methods:<br>
 
 > [!IMPORTANT]
-> - [Microsoft Entra ID OAuth](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#microsoft-entra-id-oauth) is in preview and available to select customers. This is the recommended OAuth mechanism.
-> - [Azure DevOps OAuth](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#azure-devops-oauth) is the legacy authentication mechanism, not being actively invested upon.
+> - [Microsoft Entra ID OAuth](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops) is in preview and available to select customers. This is the recommended OAuth mechanism.
+> - [Azure DevOps OAuth](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops) is the legacy authentication mechanism, not being actively invested upon.
 
 ### Microsoft Entra ID OAuth (Preview)
 
