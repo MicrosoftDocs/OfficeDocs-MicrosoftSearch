@@ -56,7 +56,7 @@ After you create a queue, go to the **Events** tab on the queue page to configur
 
 ### Test the connection
 
-Test the connection by clicking the **Test connection** button
+Test the connection by clicking the **Test Connection** button.
 
 > [!NOTE]
 > The **Test Connection** must succeed before you can move to the next configuration section. The ADLS gen 2 enabled storage account **MUST** have a container **AND** at least one file within it as a minimum for the **Test Connection** to succeed. A connection error is raised if the content does not exist.
