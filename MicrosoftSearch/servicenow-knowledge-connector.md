@@ -81,18 +81,18 @@ Read access to tables can be assigned on the created role. For more information,
 If you want to index properties from [extended tables](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/table-administration/concept/table-extension-and-classes.html) of *kb_knowledge*, provide read access to sys_dictionary and sys_db_object. This is an optional feature. You can index *kb_knowledge* table properties without access to the two additional tables.
 
    >[!NOTE]
-   > The ServiceNow Knowledge Microsoft Graph connector can index knowledge articles and user criteria permissions without advanced scripts. For more information, see [Read and deny access to knowledge articles in the ServiceNow Knowledge Microsoft Graph connector](#read-and-deny-access-to-knowledge-articles-in-microsoft-graph-connector-for-servicenow).
+   > The ServiceNow Knowledge Microsoft Graph connector can index knowledge articles and user criteria permissions without advanced scripts. For more information, see [Read and deny access to Knowledge articles in the ServiceNow Knowledge Microsoft Graph connector](#read-and-deny-access-to-knowledge-articles-in-the-servicenow-knowledge-microsoft-graph-connector).
 
  **Authentication details**: To authenticate and sync content from ServiceNow, choose **one of three** supported methods:
-   - [Basic authentication](#1-basic-authentication)
-   - [ServiceNow OAuth (recommended)](#2-servicenow-oauth)
-   - [Microsoft Entra ID OpenID Connect](#3-microsoft-entra-id-openid-connect)
+   - [Basic authentication](#basic-authentication)
+   - [ServiceNow OAuth (recommended)](#servicenow-oauth)
+   - [Microsoft Entra ID OpenID Connect](#microsoft-entra-id-openid-connect)
 
    a. **Basic authentication** <br>
      Enter the username and password of ServiceNow account with **knowledge** role to authenticate to your instance.
      <br>
 
-   b. **ServiceNow OAuth (Recommended)**
+   b. **ServiceNow OAuth (recommended)**
    <details>
    <summary>[Click to expand]To use the ServiceNow OAuth for authentication, follow these steps.</summary><br>
     
@@ -100,18 +100,18 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
 
    The following table provides guidance on how to fill out the endpoint creation form:
 
-   |Field | Description | Recommended value
-   |:--- |:--- |:---   
-   Name | Unique value that identifies the application that you require OAuth access for. | Microsoft Search
-   Client ID | A read-only, auto generated unique ID for the application. The instance uses the client ID when it requests an access token. | NA
-   Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each other. | Follow security best-practices by treating the secret as a password.
-   Redirect URL | A required callback URL that the authorization server redirects to. | For **M365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback,</br> For **M365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback
-   Logo URL | A URL that contains the image for the application logo. | NA
-   Active | Select the check box to make the application registry active. | Set to active
-   Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds). | 31,536,000 (one year)
-   Access token lifespan | The number of seconds that an access token is valid. | 43,200 (12 hours)
+   |Field | Description | Recommended value|
+   |:--- |:--- |:---|
+   |Name | Unique value that identifies the application that you require OAuth access for. | Microsoft Search|
+   |Client ID | A read-only, auto-generated unique ID for the application. The instance uses the client ID when it requests an access token. | NA|
+   |Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each other. | Follow security best-practices by treating the secret as a password.|
+   |Redirect URL | A required callback URL that the authorization server redirects to. | For **M365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback,</br> For **M365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback|
+   |Logo URL | A URL that contains the image for the application logo. | NA|
+   |Active | Select the check box to activate the application registry. | Set to active|
+   |Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds). | 31,536,000 (one year)|
+   |Access token lifespan | The number of seconds that an access token is valid. | 43,200 (12 hours)|
    
-   Enter the client id and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role. Refer to the table mentioned under Service account in the [Prerequisites](#prerequisites) section for providing read access to more ServiceNow table records and index user criteria permissions.
+   Enter the client ID and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have **knowledge** role. Refer to the table mentioned under the Service account in the [Prerequisites](#prerequisites) section for providing read access to more ServiceNow table records and index user criteria permissions.
 </details> <br>
 
    c. **Microsoft Entra ID OpenID Connect**
@@ -128,7 +128,7 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
 
    2. Create a client secret
 
-      To learn about creating a client secret, see [Creating a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Take a note of client secret.
+      To learn about creating a client secret, see [Creating a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Take a note of the client secret.
 
    3. Retrieve service principal object identifier
 
@@ -158,12 +158,12 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
 
             Now you have all the information required from Azure portal. A quick summary of the information is given in the table below.
 
-         |Property | Description
-         |:--- |:---|
-         |Directory ID (tenant ID) | Unique ID of the Microsoft Entra tenant, from step 3.a.|
-         |Application ID (client ID) | Unique ID of the application registered in step 3.a.|
-         |Client secret | The secret key of the application (from step 3.b). Treat it like a password.|
-         |Service principal ID | An identity for the application running as a service. (from step 3.c)|
+         |Property| Description|
+         |:---|:---|
+         |Directory ID (tenant ID)| Unique ID of the Microsoft Entra tenant, from step 3.a.|
+         |Application ID (client ID)| Unique ID of the application registered in step 3.a.|
+         |Client secret| The secret key of the application (from step 3.b). Treat it like a password.|
+         |Service principal ID| An identity for the application running as a service. (from step 3.c)|
 
       4. Register the ServiceNow application
 
@@ -297,7 +297,7 @@ Here is a scenario-wise depiction of how the connector treats access permissions
 > Terms used in the table below:
 > **No criteria** - No user criteria are defined for the article or Knowledge base. (Different from empty criteria where a user criteria is defined but within the criteria all fields are empty).
 > **Default user criteria** - User criteria defined using ServiceNow fields like users, groups, roles, location, department etc.
-> **Empty Criteria** - A usercriteria where all fields have empty values.
+> **Empty Criteria** - A user criteria where all fields have empty values.
 
 ### How read access is determined
 
