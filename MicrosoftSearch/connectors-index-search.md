@@ -27,8 +27,8 @@ When you enter an item ID to check its index status, you can view the following 
 - Check user access - Allows searching for a specific user to verify their access to the item. Enter the user name or email address to display a list of groups to which the user belongs. If the user is denied access to any of these groups, their overall permission to view the item is revoked.
 
 >[!NOTE]
->In permissions, you can see users shown individually (outside of a group) in the data source and groups within the data source. To check for a user present in a group, use **Check user access**. 
->If a user doesn't appear in **Check user access**, it may be due to a failed user mapping or the user not being discovered (e.g., the AAD user ID was not found). To resolve this, check if the user has access in the data source, review the user mapping formula, and the error reports.
+>- In permissions, you can see users shown individually (outside of a group) in the data source and groups within the data source. To check for a user present in a group, use **Check user access**. 
+>- If a user doesn't appear in **Check user access**, it may be due to a failed user mapping or the user not being discovered (e.g., the AAD user ID was not found). To resolve this, check if the user has access in the data source, review the user mapping formula, and the error reports.
 
 To search for indexed content, enter the unique identifier of the item in the index browser. 
 
