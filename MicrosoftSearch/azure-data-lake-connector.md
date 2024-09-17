@@ -39,14 +39,14 @@ Enter your primary storage connection string. This string is required to allow a
 
 If you prefer not to provide the **Accountkey** (a parameter in the primary storage connection string), grant access to the Microsoft Graph connectors service for the following roles:
 
-* Storage blob data reader
+* Storage Blob Data Reader
 * Storage queue data contributor
 * Storage blob delegator
 
 Navigate to the **Access control** tab of your Azure Storage account, and follow the instructions there to grant access to the following app:
 
-* **First party app ID:** 56c1da01-2129-48f7-9355-af6d59d42766
-* **First party app same:** Microsoft Graph connector service
+* **First Party App ID:** 56c1da01-2129-48f7-9355-af6d59d42766
+* **First Party App Name:** Microsoft Graph connector service
 
 ### Storage account and queue notifications (optional)
 
