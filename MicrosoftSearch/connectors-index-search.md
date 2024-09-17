@@ -36,10 +36,10 @@ To search for indexed content, enter the unique identifier of the item in the in
 |Connector name|Input per item ID|Where to find the item ID|
 |:---|:---|:---|
 |ADO WI|ID|The ID is the work item ID.|	
-|ADO Wiki|OrganizationName, page ID|It can be found in the URL.|
-|ServiceNow KB|Sys_Id.DisplayValue|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information, see [ServiceNow documentation] (https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest).|
-|ServiceNow Catalog|Sys_Id.value|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information, see [ServiceNow documentation] (https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest).|
-|ServiceNow Tickets|Sys_Id.value|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information, see [ServiceNow documentation] (https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest).|
+|ADO Wiki|Organization name, page ID|It can be found in the URL.|
+|ServiceNow KB|Sys_Id.DisplayValue|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information, see [ServiceNow documentation](https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest).|
+|ServiceNow Catalog|Sys_Id.value|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information, see [ServiceNow documentation](https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest).|
+|ServiceNow Tickets|Sys_Id.value|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information, see [ServiceNow documentation](https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest).|
 |Salesforce|ID|It can be found in the URL.|
 |Intranet (Cloud/OnPrem)|URL|Final Url in lowercase|Jira issue ID. Follow the link (https://confluence.atlassian.com/jirakb/how-to-get-issue-id-from-the-jira-user-interface-1115156394.html#:~:text=User%20needs%20to%20get%20the%20issue%20id%20in%20an%20easier).|
 |Confluence (Cloud/OnPrem)|page blog post ID|It can be found in the item ID of the URL. Examples can be found in the Confluence Cloud URL from the data source.|
