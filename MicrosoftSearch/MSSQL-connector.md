@@ -1,7 +1,7 @@
 ---
 ms.date: 10/08/2019
 title: "Azure SQL and Microsoft SQL Server Microsoft Graph connectors for Microsoft Search and Microsoft 365 Copilot"
-ms.author: danielabom
+ms.author: danielabo
 author: danielabom
 manager: SteveWilkins1123
 audience: Admin
