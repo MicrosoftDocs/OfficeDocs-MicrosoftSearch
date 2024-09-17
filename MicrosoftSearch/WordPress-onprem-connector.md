@@ -40,15 +40,15 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
 - **Install the Microsoft Graph connector agent**: To access your WordPress.org-built website, you must install and configure the [Microsoft Graph connector agent](https://www.microsoft.com/download/details.aspx?id=104045). [Download the agent installer](https://www.microsoft.com/download/details.aspx?id=104045) and follow the installation instructions to set it up. Once installed, ensure that the agent is configured correctly to connect your WordPress.org-built website with the graph connector. 
-- **WordPress website URL**: To connect to your WordPress.org-built website data, you need your organization's WordPress.org-built website URL. 
-- **WordPress Admin account**: To connect to your WordPress.org-built website and allow Microsoft Graph Connector to update published posts and pages regularly, you need an **admin user account** of your WordPress.org-built website with the permission to create an application password. Application password is used to authenticate with a third-party service or application that connects to your WordPress.org-built website via REST API. 
+- **WordPress.org-built website URL**: To connect to your WordPress.org-built website data, you need your organization's WordPress.org-built website URL. 
+- **WordPress.org-built website Admin account**: To connect to your WordPress.org-built website and allow Microsoft Graph Connector to update published posts and pages regularly, you need an **admin user account** of your WordPress.org-built website with the permission to create an **application password**. Application password is used to authenticate with a third-party service or application that connects to your WordPress.org-built website via REST API. 
 
 ## Get Started
 
 ### 1. Display name 
 A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
-### 2. WordPress website URL
+### 2. WordPress.org-built website URL
 A WordPress.org-built website URL is the unique web address assigned to each WordPress.org-built website, allowing you to access your specific WordPress.org-built website.   
 
 ### 3. Graph Connector Agent
@@ -101,15 +101,15 @@ Here, you can add or remove available properties from your WordPress.org data so
 **Source Property** | **Label** |**Description**| **Schema**
 --- | ---- | --- | ---
 Author | Authors | Name of all the people who participated/collaborated on the item in the data source.  | Search, Query, Retrieve
-Categories  |  |  | Search, Query, Retrieve, Refine
+Categories  |  |  | Query, Retrieve, Refine
 Content |  | | Search, Retrieve 
 Created | Created date time | Data and time that the item was created in the data source. | Query, Retrieve 
 CreatedBy | Created by| Name of the person who created the item in the data source.| Search, Query, Retrieve 
 Excerpt | | |Search, Retrieve 
 id | | |Query, Retrieve 
-Tags | | |Search, Query, Retrieve, Refine 
+Tags | | | Query, Retrieve, Refine 
 Title |Title| The title of the item that you want to be shown in Copilot and other search experiences. |Search, Retrieve 
-Type | | |Query, Refine 
+Type | | | Query, Retrieve, Refine
 Updated | Last modified date time | Date and time the item was last modified in the data source. |Query, Retrieve 
 UpdatedBy | Last modified by | Name of the person who most recently edited the item in the data source |Search, Query, Retrieve 
 Url | url | The target URL of the item in the data source.  |Retrieve 
