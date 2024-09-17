@@ -1,7 +1,9 @@
 ---
 ms.date: 10/08/2019
 title: "Microsoft Graph prebuilt connectors overview"
+ms.author: danielabo
 author: danielabom
+manager: SteveWilkins1123
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
@@ -21,4 +23,4 @@ Microsoft provides prebuilt connectors that facilitate integration between third
 
 - Configuration - Some connectors, such as the Enterprise Websites Microsoft Graph connector, can be configured to crawl dynamic content. Depending on the authentication requirements of the external service, you may need to include specific headers or user agents during the configuration process.
 
-For more information, see the [Microsoft Graph connectors gallery](https://learn.microsoft.com/en-us/microsoftsearch/connectors-gallery).
+For more information, see the [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery).
