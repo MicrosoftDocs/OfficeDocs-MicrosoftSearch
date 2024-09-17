@@ -31,7 +31,7 @@ For help on installation, refer to [this page](graph-connector-agent.md#installa
 ## Version 2.4.0.0 (*July 05, 2024*)
 
 * Support for .NET 8. The .NET 8 upgrade flow for the host machine will kick in after you hit Upgrade button in the connection pane. Make sure to upgrade the machine's version to .NET 8 to avoid unexpected behavior. If there is a failure in the upgrade in the process, do a manual upgrade to the .NET version before upgrading the agent.
-* Feature to show elaborate index statistics for a connection. This feature gives more information about the current state of items in the index. [Learn more.](connector-details-errors.md#view-connection-statistics)
+* Feature to show elaborate index statistics for a connection. This feature gives more information about the current state of items in the index. [Learn more.](connector-view-details.md#view-connection-statistics)
 * Bug fixes and reliability improvements.
 
 ## Version 2.3.7.0 (*June 12, 2024*)
