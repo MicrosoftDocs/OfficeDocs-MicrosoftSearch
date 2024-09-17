@@ -88,7 +88,6 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
    a. **Basic authentication** <br>
      Enter the username and password of the ServiceNow account with **knowledge** role to authenticate to your instance.
      <br>
-
    b. **ServiceNow OAuth (recommended)**
    <details>
    <summary>[Click to expand]To use the ServiceNow OAuth for authentication, follow these steps.</summary><br>
@@ -202,13 +201,13 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
       
       ```
       |Field |Recommended value|
-      |:--- |:---|
-      |User ID | Service Principal ID from step 3.c|
-      |Web service access only | Checked|
-
-      ```
+      |------|------|
+      |User ID | Service Principal ID from step 3.c.|
+      |Web service access only| Checked.|
 
       All other values can be left to default.
+      
+      ```
 
    7. Enable Knowledge role for the ServiceNow account
 
@@ -216,6 +215,7 @@ If you want to index properties from [extended tables](https://docs.servicenow.c
       
       Use Application ID as client ID (from step 3.1), and client secret (from step 3.2) in the admin center configuration wizard to authenticate to your ServiceNow instance using Microsoft Entra ID OpenID Connect.
 </details>
+
 ### 3. Access permissions
                
 The ServiceNow Knowledge Microsoft Graph connector supports access permissions visible to **Everyone** or **Only people with access to this data source**. Indexed data appears in the search results and is visible to all users in the organization or users who have access to them via user criteria permission respectively. If a knowledge article isn't enabled with user criteria, it appears in the search results of everyone in the organization.
