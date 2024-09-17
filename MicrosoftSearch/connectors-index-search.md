@@ -50,7 +50,7 @@ To search for indexed content, enter the unique identifier of the item in the in
 |Sharepoint|GUID|Admin configured details.|
 |FileShare|filepath|Admin configured details.|
 |Custom connector|item ID|Admin configured details.|
-|SAP|user ID|Admin configured details.|  	 	
+|SAP|user ID|Admin configured details.|
 
 ## Examples
 ### Example 1: The item status is partially indexed
