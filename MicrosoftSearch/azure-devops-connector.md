@@ -97,8 +97,8 @@ The Azure DevOps Graph connector only indexes content from an ADO organization c
 8. Select **Grant admin consent for [TenantName]** and confirm by selecting **Yes**.
 9. Check that the permissions are in the "**Granted**" state.
 10. Open **Authentication** from the navigation pane. Select `Add a platform` and choose `Web`. Add one of the following URIs under "Redirect URIs":
-    - For **M365 Enterprise**: [`https://gcs.office.com/v1.0/admin/oauth/callback`](https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback)
-    - For **M365 Government**: [[https://gcsgcc.office.com/v1.0/admin/oauth/callback](https://gcsgcc.office.com/v1.0/admin/oauth/callback)](https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback)
+    - For **M365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback
+    - For **M365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback
 11. Under **Implicit grant and hybrid flows**, check the option for `ID tokens (used for implicit and hybrid flows)` and click **Configure**.
 12. From the navigation pane, select **Certificates and secrets** under **Manage**.
 13. Select **New Client secret** and select an expiry period for the secret. Copy the generated secret (Value) and save it because it is not shown again.
