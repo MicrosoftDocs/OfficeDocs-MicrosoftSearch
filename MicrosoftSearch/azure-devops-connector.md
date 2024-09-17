@@ -1,7 +1,7 @@
 --- 
 ms.date: 06/11/2020
 title: "Azure DevOps Work Items Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
-ms.author:danielabo
+ms.author: danielabo
 author: danielabom
 manager: SteveWilkins1123
 audience: Admin
