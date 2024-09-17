@@ -32,24 +32,23 @@ When you enter an item ID to check its index status, you can view the following 
 >- If a user doesn't appear in **Check user access**, it may be due to a failed user mapping or the user not being discovered (e.g., the AAD user ID was not found). To resolve this, check if the user has access in the data source, review the user mapping formula, and the error reports.
 
 To search for indexed content, enter the unique identifier of the item in the index browser. 
-
 |Connector name|Input per item ID|Where to find the item ID|
 |:---|:---|:---|
 |ADO WI|ID|The ID is the work item ID.|	
-|ADO Wiki|OrganizationName, page ID|It can be found in the URL.|		
+|ADO Wiki|OrganizationName, page ID|It can be found in the URL.|
 |ServiceNow KB|Sys_Id.DisplayValue|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information, see [ServiceNow documentation] (https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest).|
-|ServiceNow Catalog|Sys_Id.value|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information, see [ServiceNow documentation] (https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest).| 		
-|ServiceNow Tickets|Sys_Id.value|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information, see [ServiceNow documentation] (https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest).|		
+|ServiceNow Catalog|Sys_Id.value|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information, see [ServiceNow documentation] (https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest).|
+|ServiceNow Tickets|Sys_Id.value|Navigate to the record where you are looking for a sys_id, right-click the header bar, and select Copy sys_id.You can also click the Hamburger > Copy sys_id. For more information, see [ServiceNow documentation] (https://docs.servicenow.com/csh?topicname=c_UniqueRecordIdentifier.html&version=latest).|
 |Salesforce|ID|It can be found in the URL.|
 |Intranet (Cloud/OnPrem)|URL|Final Url in lowercase|Jira issue ID. Follow the link (https://confluence.atlassian.com/jirakb/how-to-get-issue-id-from-the-jira-user-interface-1115156394.html#:~:text=User%20needs%20to%20get%20the%20issue%20id%20in%20an%20easier).|
-|Confluence (Cloud/OnPrem)|page blog post ID|It can be found in the item ID of the URL. There is an example in the Confluence Cloud URL from the data source.| 	
+|Confluence (Cloud/OnPrem)|page blog post ID|It can be found in the item ID of the URL. Examples can be found in the Confluence Cloud URL from the data source.|
 |CSV|Unique identifier list, item key|Admin configured details.|
 |Azure SQL, Oracle DB, MS SQL|Values to all the columns in unique key columns|Admin configured details.|
-|Mediawiki|page ID, namespace, sourceUrl|Admin configured details.| 	 	
-|ADLS gen 2|File URI|Admin configured details.| 	 	
-|Sharepoint|GUID|Admin configured details.| 	 	
-|FileShare|filepath|Admin configured details.|  	 	
-|Custom connector|item ID|Admin configured details.|  
+|Mediawiki|page ID, namespace, sourceUrl|Admin configured details.|
+|ADLS gen 2|File URI|Admin configured details.|
+|Sharepoint|GUID|Admin configured details.|
+|FileShare|filepath|Admin configured details.|
+|Custom connector|item ID|Admin configured details.|
 |SAP|user ID|Admin configured details.|  	 	
 
 ## Examples
