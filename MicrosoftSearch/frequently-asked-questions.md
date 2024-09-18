@@ -35,7 +35,7 @@ Microsoft Graph connectors allow external content to be stored in Microsoft Grap
 **Learn More:** [Build Microsoft Graph connectors for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/extensibility/overview-graph-connector)
 
 ## 5. Is my data secure with Microsoft Graph connectors?
-Yes, one crucial aspect of bringing content into Microsoft 365 is maintaining security and data access controls. When implementing Microsoft Graph connectors, you map existing access control lists to objects in Microsoft 365 and Entra ID, ensuring that only individuals with the right permissions can access content.
+Yes, one crucial aspect of bringing content into Microsoft 365 is maintaining security and data access controls. When implementing Microsoft Graph connectors, you map existing access control lists to objects in Microsoft 365 and Microsoft Entra ID, ensuring that only individuals with the right permissions can access the content.
 
 ## 6. Where is the data stored when it is in Microsoft? 
 When data enters the Microsoft cloud through the Graph connectors platform, it is automatically stored in the same region where the customer's Microsoft 365 tenant is located. We would also be adding options for customers to override the default region (upcoming feature).
