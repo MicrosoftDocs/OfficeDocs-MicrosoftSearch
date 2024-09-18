@@ -12,7 +12,7 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Access and manage your Microsoft Graph connectors as a search administrator for your tenant."
+description: "View details and errors on Graph connectors."
 ---
 <!-- markdownlint-disable no-inline-html -->
 
