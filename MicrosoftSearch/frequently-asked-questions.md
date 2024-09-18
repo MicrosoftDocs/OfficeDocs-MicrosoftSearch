@@ -104,7 +104,7 @@ There could be several reasons why results are not showing up in Microsoft Searc
 
 - **Indexing delays:** Sometimes, it takes a while for the data to be indexed and displayed in search results. It can vary based on the volume of data and the complexity of the data source.
 - **All vertical setting:** Ensure *“include results in All vertical”* is enabled. It should be enabled by default for Microsoft-built Graph connectors. For custom-built and third-party Microsoft Graph connectors, it needs to be enabled explicitly. 
-- **Permissions Issues:** Ensure that the correct permissions are set for the data source. If the permissions are not configured correctly, the data might not be accessible for indexing.
+- **Permissions issues:** Ensure that the correct permissions are set for the data source. If the permissions are not configured correctly, the data might not be accessible for indexing.
 - **Configuration Errors:** Double-check the configuration settings of the Graph connector. Any misconfiguration can lead to issues with data indexing and search results.
 - **Staged Rollout:** If you are using a [staged rollout](/microsoftsearch/staged-rollout-for-graph-connectors), validate which users are in the staged rollout. If staged rollout is no longer needed, you can end the staged rollout and make the connection available to all applicable users.
 - **Supported File Types and Sizes:** Verify that the file types and sizes are supported by the Graph connector. Unsupported file types or sizes might not be indexed.
