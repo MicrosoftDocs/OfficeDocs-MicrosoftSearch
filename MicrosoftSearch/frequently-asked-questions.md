@@ -77,7 +77,7 @@ Microsoft-built connectors provide several benefits, including:
 - **Improved productivity:** With Microsoft-built connectors, users can access all relevant information from within Microsoft 365, reducing the need to switch between different applications and platforms.
 
 ## 4. What are Microsoft Graph custom connectors? 
-Microsoft Graph custom connectors allow you to integrate your own data sources into Microsoft Graph, enabling you to bring external data into Microsoft 365 experiences. This helps in making your data searchable and accessible within your organization. **Learn more:** [Microsoft Graph connectors overview](/graph/connecting-external-content-connectors-overview#get-started-with-custom-connectors)
+Microsoft Graph custom connectors allow you to integrate your own data sources into Microsoft Graph, enabling you to bring external data into Microsoft 365 experiences. It helps in making your data searchable and accessible within your organization. For more information, see [Microsoft Graph connectors overview](/graph/connecting-external-content-connectors-overview#get-started-with-custom-connectors).
 
 ## 5. How do I build a custom Microsoft Graph connector?
 To build a custom Microsoft Graph connector, you can use the Microsoft Graph API. The API provides full control over the connection. **Learn more:** [Build your first custom Microsoft Graph connector](/graph/connecting-external-content-build-quickstart)
