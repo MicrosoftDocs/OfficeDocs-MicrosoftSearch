@@ -59,7 +59,7 @@ We adhere to a general Microsoft 365 data retention period. For more information
 - Creating users in the test environment for ACL testing.
 - Ensuring you are using right credentials of test tenant.
 - Ensuring users are assigned to the test tenant for staged rollouts and test for only those users.
-- Using the [Index browser](/microsoftsearch/configure-connector) to verify if an item is indexed.
+- Use the [Index browser](/microsoftsearch/configure-connector) to verify if an item is indexed.
 
 ## Connectors specific FAQs
 
