@@ -94,7 +94,7 @@ To create a custom connector, you need a Microsoft work or school account with t
 
 **Incremental crawl:**
 - Only updates items that changed since the last crawl.
-- Does not handle deletions, so items removed from the data source will still be in the index. 
+- Doesn't handle deletions, so items removed from the data source remain in the index. 
 - Incremental crawls do not currently support processing of updates to permissions. 
 
 For more details on crawl schedules and refresh settings: [Microsoft Graph connectors refresh settings](/microsoftsearch/configure-connector#step-8-refresh-settings)
