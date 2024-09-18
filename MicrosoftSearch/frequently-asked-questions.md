@@ -1,5 +1,5 @@
 ---
-title: "Graph connectors Frequently Asked Questions"
+title: "Microsoft Graph connectors frequently asked questions"
 ms.author: gladysaj
 author: gladysaj
 manager: brian.j
