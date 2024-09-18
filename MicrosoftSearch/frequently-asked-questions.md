@@ -53,7 +53,7 @@ Yes, the data is encrypted. Here are the details:
 No, Microsoft would not have (or need) access to partner encryption keys. Content in the Microsoft cloud would be encrypted using Office 365 encryption keys by default. Customers can provide their own encryption key. For more information, see [Service encryption with customer key](/purview/customer-key-overview).
 
 ## 9. How long are copies of the customer content retained for when in Microsoft?
-We adhere to a general M365 data retention period. For more information, see [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
+We adhere to a general Microsoft 365 data retention period. For more information, see [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
 
 ## 10. What are the best practices to test a connection?
 - Creating users in the test environment for ACL testing.
