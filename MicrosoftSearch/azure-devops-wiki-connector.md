@@ -29,13 +29,13 @@ This article is for anyone who configures, runs, and monitors an Azure DevOps Wi
 >The Azure DevOps Wiki connector supports only the Azure DevOps cloud service. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015, and TFS 2013 are not supported by this connector.
 
 ## Before you get started
-You must be the **search admin** for your organization's M365 tenant as well as the admin for your organization's Azure DevOps instance.
+You must be the **search admin** for your organization's Microsoft 365 tenant and the admin for your organization's Azure DevOps instance.
 
 To allow the connector to connect to your Azure DevOps Organization, you must enable **Third-party application access via OAuth**. Refer Azure DevOps documentation to [manage security policies](/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops#manage-a-policy&preserve-view=true) to learn more.
 
 ![Third-party application access via OAuth](media/ado-workitems-connector-security-policies.png)
 
-You will need the following permissions granted to the user account whose credentials are used during the connector configuration:
+You need the following permissions granted to the user account whose credentials are used during the connector configuration:
 
 | Permission name | Permission type | Required for |
 | ------------ | ------------ | ------------ |
@@ -100,7 +100,7 @@ The Azure DevOps Graph connector only indexes content from an ADO organization c
     - For **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
 11. Under **Implicit grant and hybrid flows**, check the option for `ID tokens (used for implicit and hybrid flows)` and click **Configure**.
 12. From the navigation pane, select **Certificates and secrets** under **Manage**.
-13. Select **New Client secret** and select an expiry period for the secret. Copy the generated secret (Value) and save it because it is not shown again.
+13. Select **New Client secret** and select an expiry period for the secret. Copy the generated secret (Value) and save it because it isn't shown again.
 14. Use this Client secret and the application ID to configure the connector.
 
 **Grant the Microsoft Entra app access to projects in the ADO organization**
@@ -116,7 +116,7 @@ You need to provide the Microsoft Entra app the necessary access to the projects
 
 ### Azure DevOps OAuth
 
-To connect to your Azure DevOps instance, you need your Azure DevOps account App ID and client secret for OAuth authentication.
+To connect to your Azure DevOps instance, you need your Azure DevOps organization App ID and client secret for OAuth authentication.
 
 **Register an app**
 
@@ -128,14 +128,14 @@ Mandatory Fields | Description | Recommended Value
 --- | --- | ---
 | Company Name         | The name of your company. | Use an appropriate value   |
 | Application name     | A unique value that identifies the application that you're authorizing.    | Microsoft Search     |
-| Application website  | The URL of the application that will request access to your Azure DevOps instance during connector setup. (Required).  | For **M365 Enterprise**: https://<span>gcs.office.</span>com/,</br> For **M365 Government**: https://<span>gcsgcc.<span>office.com/
+| Application website  | The URL of the application that requests access to your Azure DevOps instance during connector setup. (Required).  | For **M365 Enterprise**: https://<span>gcs.office.</span>com/,</br> For **M365 Government**: https://<span>gcsgcc.<span>office.com/
 | Authorization callback URL        | A required callback URL that the authorization server redirects to. | For **M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`,</br> For **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback` |
 | Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), Code (read), Entitlements (Read), Project and team (read), Graph (read), MemberEntitlement Management (read), Wiki (read) |
 
 >[!IMPORTANT]
 >The authorized scopes selected for the app should exactly match the scopes listed above. If either more or less scopes are selected, authorization will fail.
 
-On registering the app with the details above, you'll get the **App ID** and **Client Secret** that will be used to configure the connector.
+On registering the app, you get the **App ID** and **Client Secret** that is used to configure the connector.
 
 >[!NOTE]
 >To revoke access to any app registered in Azure DevOps, go to User settings at the right top of your Azure DevOps instance. Select Profile and then select Authorizations in the Security section of the side pane. Hover over an authorized OAuth app to see the Revoke button at the corner of the app details.
@@ -146,7 +146,7 @@ After registering the Microsoft Search app with Azure DevOps, you can complete t
 
 ![Connection Application Settings.](media/azure-devops-wiki-connection-settings.png)
 
-### Configure data: select organization, projects and fields
+### Configure data: select organization, projects, and fields
 In this step, you specify the scope of data which you want to index using the Azure DevOps Wiki graph connector.
 
 As the first step, you choose the organization you want to index, out of all organizations you have access to. You can then choose for the connection to index either the entire organization or specific projects within the selected organization.
