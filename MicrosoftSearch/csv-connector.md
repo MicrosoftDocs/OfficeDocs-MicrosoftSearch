@@ -1,6 +1,6 @@
 --- 
 
-title: "CSV connector for Microsoft Search" 
+title: "CSV Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.author: rchanda 
 author: rchanda 
 manager: harshkum 
@@ -13,18 +13,15 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Microsoft Search CSV connector for SharePoint or Azure Data Lake Storage sources." 
+description: "Set up the CSV Microsoft Graph connector for SharePoint or Azure Data Lake Storage sources." 
 ms.date: 03/08/2022
 ---
 
-# CSV connector
+# CSV Microsoft Graph connector
 
-The CSV Graph connector allows your organization to ingest content from CSV files stored in SharePoint libraries and Azure Data Lake Storage (ADLS). After you configure the connector and index content from these sources, end users can find CSV files in Microsoft Search.
+The CSV Microsoft Graph connector allows your organization to ingest content from CSV files stored in SharePoint libraries and Azure Data Lake Storage (ADLS). After you configure the connector and index content from these sources, end users can find CSV files in Microsoft Search and Microsoft 365 Copilot.
 
-> [!NOTE]
-> Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.
-
-This article is for anyone who configures, runs, and monitors a CSV connector. It supplements the general setup process, and shows instructions that apply only for this connector.
+This article is for anyone who configures, runs, and monitors a CSV Microsoft Graph connector. It supplements the general setup process and shows instructions that apply only to this connector.
 
 <!---## Before you get started-->
 ## Before you get started
@@ -66,30 +63,30 @@ Verify the .csv files you want to index have been uploaded to a SharePoint docum
 9. Check that the permissions are in the "**granted**" state.
 
 10. Open **Authentication** from the navigation pane and add the following under Redirect URIs (Authorization callback URIs):
-    - For **M365 Enterprise**: [https://gcs.office.com/v1.0/admin/oauth/callback](https://gcs.office.com/v1.0/admin/oauth/callback)
-    - For **M365 Government**: [https://gcsgcc.office.com/v1.0/admin/oauth/callback](https://gcsgcc.office.com/v1.0/admin/oauth/callback)
+    - For **M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback](https://gcs.office.com/v1.0/admin/oauth/callback`
+    - For **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback](https://gcsgcc.office.com/v1.0/admin/oauth/callback`
 
 #### Configuring the client secret for authentication
 
 1. Go to the [Azure portal](https://portal.azure.com) and sign in with admin credentials for the tenant.
 
-2. Open **App Registration** from the navigation pane and go to the appropriate App. Under **Manage**, select **Certificates and secrets**.
+2. Open **App Registration** from the navigation pane and go to the appropriate App. Under **Manage**, select **Certificates and Secrets**.
 
-3. Select **New Client secret** and select an expiry period for the secret. Copy the generated secret and save it because it is not shown again.
+3. Select **New Client Secret** and select an expiry period for the secret. Copy the generated secret and save it because it is not shown again.
 
 4. Use this Client secret and the application ID to configure the connector.
 
 ### Create a SharePoint app with OAuth configuration
 
 1. Go to  `https://Org-Name.sharepoint.com/sites/mysite/_layouts/15/appregnew.aspx`.
-2. On the Client Id and Client Secret fields, select **Generate**.
+2. On the Client ID and Client Secret fields, select **Generate**.
 3. For Title, enter an app name.
 4. In the App Domain field, enter `www.gcs.com`.
 5. In the Redirect URL field, enter `https://www.gcs.com`.
 6. Select **Create**.
 7. Copy the app configuration information, including the Client ID and Client Secret. You'll need it when you set up the CSV connector.
 
-#### Enable app permissions to allow CustomAppAuthentication
+#### Enable app permissions to allow customAppAuthentication
 
 In PowerShell ([SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)), run these commands in administrative mode. Use the email address of the admin configuring the connector and your organization name. When the password pop-up appears, the admin should enter their password.
 
@@ -111,8 +108,8 @@ Set-spotenant –DisableCustomAppAuthentication $false
 #### Complete the app configuration
 
 1. Go to `https://Org-Name.sharepoint.com/sites/mysite/_layouts/15/appinv.aspx`.
-2. In the App Id field, paste the Client Id of the SharePoint app and select **Lookup**.
-3. In Permission Request XML field, paste this code and select **Create**.
+2. In the App ID field, paste the client ID of the SharePoint app and select **Lookup**.
+3. In the permission Request XML field, paste this code and select **Create**.
 
 ```xml
 <AppPermissionRequests AllowAppOnlyPolicy="true">
@@ -120,19 +117,19 @@ Set-spotenant –DisableCustomAppAuthentication $false
 </AppPermissionRequests>
 ```
 
-4. Select **Trust It**.
+4. Select **Trust it**.
 
 ## ADLS data source
 
 ### Create an ADLS storage account
 
-For step-by-step guidance, see [Create a storage account](/azure/storage/common/storage-account-create#create-a-storage-account-1). To allow file storage capabilities, on the Advanced tab, select **Enable hierarchical namespace** and **Create a Container for this site**.
+For step-by-step guidance, see [Create a storage account](/azure/storage/common/storage-account-create#create-a-storage-account-1). To allow file storage capabilities, on the Advanced tab, select **Enable hierarchical namespace** and **Create a container for this site**.
 
-When you set up the CSV connector, you'll need to provide a primary storage connection string. To find it, open the storage account you created and select **Access Keys**. Select **Show Keys** and copy the connection string for Key1.
+When you set up the CSV Microsoft Graph connector, you'll need to provide a primary storage connection string. To find it, open the storage account you created and select **Access keys**. Select **Show keys** and copy the connection string for Key1.
 
-## Step 1: Add a Graph connector in the Microsoft 365 admin center
+## Step 1: Add a Microsoft Graph connector in the Microsoft 365 admin center
 
-[Add CSV connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_CSV&type=CSV)
+[Add CSV Microsoft Graph connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_CSV&type=CSV)
 
 Follow the general [setup instructions](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -190,18 +187,18 @@ To control access on a file level, enter Microsoft Entra users or groups.
 
 ## Step 4: Multi-items delimiter (Optional)
 
-If your source columns can take multiple values, enter a multi-items delimiter, a semicolon (;) for example.
+If your source columns can take multiple values, enter a multi-item delimiter, a semicolon (;) for example.
 
 ## Step 5: Parsed properties settings
 
-This page returns the first row from your .csv file as Source Properties. To modify the Datatype, in the **Unique Identifier** list select at least one option.
+This page returns the first row from your .csv file as Source Properties. To modify the datatype, in the **Unique identifier** list select at least one option.
 
-To control access on an item level, select columns mapped to Allowed Users and Allowed Groups. You should include two columns, AllowedUsers and AllowedGroups, in the .csv file. Each row should contain the Microsoft Entra IDs.
+To control access on an item level, select columns mapped to allowed users and allowed groups. You should include two columns, AllowedUsers and AllowedGroups, in the .csv file. Each row should contain the Microsoft Entra IDs.
 
 :::image type="content" source="media/csv-connector/csv-connector-acl-item-level.png" alt-text="Item level access control settings." lightbox="media/csv-connector/csv-connector-acl-item-level.png":::
 
 > [!NOTE]
-> The CSV connector supports file- or item-level access control. If both are enabled, only the file-level access control is applied.
+> The CSV Microsoft Graph connector supports file- or item-level access control. If both are enabled, only the file-level access control is applied.
 
 ## Step 6: Assign property labels
 
@@ -232,10 +229,12 @@ Follow the general [setup instructions](./configure-connector.md).
 <!---## Limitations-->
 ## Limitations
 
-The following are known limitations of the CSV connector:
-* Profile enrichments scenarios aren't supported at this time.
+The following are known limitations of the CSV Microsoft Graph connector:
+* Profile enrichment scenarios aren't supported at this time.
 
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
-If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)
+If you have issues or want to provide feedback, contact [Microsoft Graph | Support (https://developer.microsoft.com/en-us/graph/support).
+
+

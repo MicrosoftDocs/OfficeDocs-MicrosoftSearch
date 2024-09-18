@@ -12,15 +12,18 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Jira cloud Microsoft Graph connector for Microsoft Search and Copilot" 
+description: "Set up the Atlassian Jira Cloud Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 07/22/2021
 ---
 
-# Atlassian Jira cloud Microsoft Graph connector
+# Atlassian Jira Cloud Microsoft Graph connector
 
-The Atlassian Jira cloud Microsoft Graph connector allows your organization to index issues from Jira cloud instance. After you configure the connector, end users can search for these issues from Jira in Microsoft Copilot and from any Microsoft Search client.
+The Atlassian Jira Cloud Microsoft Graph connector allows your organization to index Jira issues. After you configure the connector and index content from the Jira site, end users can search for those items in Microsoft Search and Microsoft 365 Copilot.
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Jira cloud Graph connector.
+
+>[!IMPORTANT]
+>The Atlassian Jira Cloud Microsoft Graph connector supports only Jira cloud-hosted instances. Jira Server and Jira Data Center versions are not supported by this connector.
 
 ## Capabilities
 - Index issues (or tickets) from Jira cloud
@@ -64,10 +67,9 @@ To authenticate and sync issues from Jira, choose **one of the two** supported m
      <br>
 
    b. **Atlassian Jira OAuth 2.0 (Recommended)** <br>
-
 To use the Jira OAuth for authentication, follow these steps.
-   
-Register an app in Atlassian Jira so that the Microsoft Search app can access the instance. To learn more, see Atlassian Support documentation on how to [Enable OAuth 2.0](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-).
+
+Register an app in Atlassian Jira so the Microsoft Search app and Microsoft 365 Copilot can access the instance. To learn more, see Atlassian Support documentation on how to [Enable OAuth 2.0](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-).
 
 The following steps provide guidance on how to register the app:
 
@@ -76,8 +78,8 @@ The following steps provide guidance on how to register the app:
 3. Provide an appropriate name for the application and create the new app.
 4. Navigate to `Permissions` from the navigation pane on left. Select `Add` for `Jira API` and click on `Configure`. Under the 'Granular Permissions' header, add the following scopes.
 
-   |  #  |  Scope name  |  Code  |
-   | ------------ | ------------ | ------------ |
+   |#|Scope name|Code|
+   |:------------|:------------|:------------|
    | 1 | View fields | `read:field:jira` |
    | 2 | View avatars | `read:avatar:jira` |
    | 3 | View project categories | `read:project-category:jira` |
@@ -101,22 +103,21 @@ The following steps provide guidance on how to register the app:
    | 21 | View permissions | `read:permission:jira` |
 
 5. Navigate to `Authorization` from the navigation pane on the left. Add the callback URL for **M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`, for **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback` and save the changes.
-
 6. Navigate to `Settings` from the navigation pane on the left to get the `Client ID` and `Secret` from this page.
 
 Complete the connection settings step using the **Client ID** and **Secret**.
 
 > [!NOTE]
 >
-> * Refer the [list of scopes](https://developer.atlassian.com/cloud/jira/platform/scopes-for-oauth-2-3LO-and-forge-apps/#list-of-scopes) for OAuth 2.0 apps to learn more about Jira permissions.
-> * The original (Classic) OAuth permissions are being deprecated for Jira cloud. Refer the [changelog announcement](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-517) to learn more.
+> * Refer to the [list of scopes](https://developer.atlassian.com/cloud/jira/platform/scopes-for-oauth-2-3LO-and-forge-apps/#list-of-scopes) for OAuth 2.0 apps to learn more about Jira permissions.
+> * The original (Classic) OAuth permissions are being deprecated for the Jira cloud. Refer the [changelog announcement](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-517) to learn more.
 
 ### 4. Roll out to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, see [staged rollout](staged-rollout-for-graph-connectors.md).
 
-At this point, you're ready to create the connection for Jira cloud. You can click on the "Create" button to publish your connection and index issues from your Jira account.
+At this point, you're ready to create the connection for Jira cloud. You can click **Create** to publish your connection and index issues from your Jira account.
 
-For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency etc., we have defaults based on what works best with Jira data. You can see the default values below:
+For other settings, like **Access Permissions**, **Data Inclusion Rules**, **Schema**, **Crawl frequency**, etc., we have defaults based on what works best with Jira data. You can see the default values below:
 
 | Users | Description |
 |----|---|
@@ -146,20 +147,15 @@ Custom setup is for those admins who want to edit the default values for setting
 
 **Access Permissions**
 
-The Atlassian Jira connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data appears in the search results for all users. If you choose **Only people with access to this data source**, indexed data appears in the search results only for users who have access to them. In Atlassian Jira, security permissions are defined using project permission schemes containing site-level groups and project roles. Issue level security can also be defined using issue-level permission schemes.
+The Atlassian Jira connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data will appear in the search results for all users. If you choose **Only people with access to this data source**, indexed data will appear in the search results for users who have access to them. In Atlassian Jira, security permissions are defined using project permission schemes containing site-level groups and project roles. Issue-level security can also be defined using issue-level permission schemes.
 
-> [!IMPORTANT]
-> The Jira cloud Graph connector must be able to read a user's email ID in Jira to appropriately assign security permissions in Microsoft Search. This requires you to ensure either of the following:
->
-> - All users, who are part of managed accounts, must have the managed account setting selected in profile visibility settings.
->
->   All users should have selected the ‘Anyone’ option for their profile visibility settings. To learn more about profile visibility settings, refer the [documentation by Atlassian](https://support.atlassian.com/atlassian-account/docs/update-your-profile-and-visibility-settings/).
->
-> - Users who are not part of the managed account (same as crawling account), need to have ‘Anyone’ selected in their profile visibility settings.
->
->   For organizations using ‘Managed accounts’ (All the Atlassian accounts with email addresses from your verified domain become managed accounts. Refer to [this documentation](https://support.atlassian.com/user-management/docs/what-are-managed-accounts/) for more information).
->
-> Also, the crawling account used during connection configuration must have the managed account domain.
+>[!IMPORTANT]
+>The Jira cloud Microsoft Graph connector must be able to read a user’s email ID in Jira to appropriately assign security permissions in Microsoft Search and Microsoft 365 Copilot. This requires you to ensure either of the following:
+- All users should have selected the ‘Anyone’ option for their profile visibility settings. To learn more about profile visibility settings, refer to the [documentation by Atlassian](https://support.atlassian.com/atlassian-account/docs/update-your-profile-and-visibility-settings/).
+- For organizations using ‘Managed accounts’ (All the Atlassian accounts with email addresses from your verified domain become managed accounts. Refer [this documentation](https://support.atlassian.com/user-management/docs/what-are-managed-accounts/) for more information) - 
+>    * All users, who are part of managed accounts, must have the managed account setting selected in profile visibility settings.
+>    * Users who are not part of the managed account (same as crawling account), need to have ‘Anyone’ selected in their profile visibility settings.
+>    * The crawling account used during connection configuration must have the managed account domain.
 
 **Mapping Identities**
 
@@ -194,8 +190,6 @@ To identify which option is suitable for your organization:
    You may further choose to filter the Jira issues that are indexed in two ways.
 
    * Specify the **issue modified time period**. This option will only index the Jira issues that are created or modified in the time period selected on a **rolling basis** based on current crawl.
-
-   * Specify the **JQL**. This option will only index the Jira issues that are returned after filtering based on provided Jira Query Language (JQL). To learn more about using JQL, see Atlassian Support documentation on [using advanced search with Jira Query Language](https://support.atlassian.com/jira-service-management-cloud/docs/use-advanced-search-with-jira-query-language-jql/)
 
    > [!TIP]
    > You may use the JQL filter to index only specific Jira issue types using "*issueType in (Bug,Improvement)*"

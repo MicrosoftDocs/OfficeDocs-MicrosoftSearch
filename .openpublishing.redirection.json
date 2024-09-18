@@ -304,6 +304,11 @@
             "source_path": "MicrosoftSearch/troubleshooting-servicenow-knowledge-connector.md",
             "redirect_url": "/MicrosoftSearch/troubleshoot-servicenow-knowledge-connector",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "MicrosoftSearch/connector-details-errors.md",
+            "redirect_url": "/MicrosoftSearch/connector-view-details",
+            "redirect_document_id": true
         }
     ]
 }
