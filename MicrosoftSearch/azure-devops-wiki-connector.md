@@ -123,7 +123,6 @@ The following table provides guidance on how to fill out the app registration fo
 
 Mandatory fields | Description | Recommended value
 --- | --- | ---
-
 | Company name         | The name of your company. | Use an appropriate value.|
 | Application name     | A unique value that identifies the application that you're authorizing.    | Microsoft Search.|
 | Application website  | The URL of the application that requests access to your Azure DevOps instance during connector setup. (required).| For **Microsoft 365 Enterprise**: https://<span>gcs.office.</span>com/,</br> For **Microsoft 365 Government**: https://<span>gcsgcc.<span>office.com/|
