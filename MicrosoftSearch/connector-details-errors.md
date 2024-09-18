@@ -1,9 +1,9 @@
 ---
 ms.date: 10/08/2019
 title: "Microsoft Graph connectors view details and errors"
-ms.author: monaray
-author: monaray97
-manager: mnirkhe
+ms.author: danielabo
+author: danielabom
+manager: SteveWilkins1123
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
