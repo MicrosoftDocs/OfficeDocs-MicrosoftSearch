@@ -1,6 +1,6 @@
 ---
 ms.date: 02/02/2022
-title: "Troubleshooting guide for Confluence On-premises Microsoft Graph connector (Preview)"
+title: "Troubleshooting the Confluence On-premises Microsoft Graph connector (preview)"
 ms.author: kam1
 author: TheKarthikeyan
 manager: harshkum
@@ -13,22 +13,23 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Troubleshoot issues with the Confluence On-premises Graph Microsoft connector for Microsoft Search"
+description: "Troubleshooting the Confluence On-premises Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
-# Troubleshooting guide for Confluence On-premises Microsoft Graph connector
+# Troubleshooting the Confluence On-premises Microsoft Graph connector
 
-## 1. **The common errors that can be seen while configuring the connector and their possible reasons are listed below.**
+The following common errors are observed while configuring the connector and their possible reasons.
 
-| Configuration step | Error message | Possible reason(s) |
-| ------------ | ------------ | ------------ |
-| Connection settings | The request is malformed or incorrect. | Incorrect Confluence site URL |
-| Connection settings | Unable to reach the Confluence On-premises service for your Confluence site. | Incorrect Confluence site URL |
-| Connection settings | The client doesn't have permission to perform the action. | Invalid password provided for Basic auth |
-| Select properties | No preview results | Check your CQL query whether it's valid and matches the content to crawl |
+
+| Configuration step | Error message | Possible reason(s)
+|:------------ |:------------ |:------------ |
+| Connection settings | The request is malformed or incorrect. | Incorrect Confluence site URL. |
+| Connection settings | Unable to reach the Confluence On-premises service for your Confluence site. | Incorrect Confluence site URL. |
+| Connection settings | The client doesn't have permission to perform the action. | Invalid password provided for Basic auth. |
+| Select properties | No preview results | Check your CQL query whether it's valid and matches the content to crawl. |
 
 If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)
 
-## 2. Test your connection
+## Test your connection
 a) To check active pages on confluence instance <br>
 b) To check the list of spaces that account has access to
 
