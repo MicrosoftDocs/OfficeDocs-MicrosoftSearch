@@ -63,8 +63,8 @@ Verify the .csv files you want to index have been uploaded to a SharePoint docum
 9. Check that the permissions are in the "**granted**" state.
 
 10. Open **Authentication** from the navigation pane and add the following under Redirect URIs (Authorization callback URIs):
-    - For **M365 Enterprise**: [https://gcs.office.com/v1.0/admin/oauth/callback](https://gcs.office.com/v1.0/admin/oauth/callback)
-    - For **M365 Government**: [https://gcsgcc.office.com/v1.0/admin/oauth/callback](https://gcsgcc.office.com/v1.0/admin/oauth/callback)
+    - For **M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback](https://gcs.office.com/v1.0/admin/oauth/callback`
+    - For **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback](https://gcsgcc.office.com/v1.0/admin/oauth/callback`
 
 #### Configuring the client secret for authentication
 
