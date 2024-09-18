@@ -26,7 +26,7 @@ There are three main steps to set up a Microsoft Graph connector:
 **Learn More:** [Set up Microsoft Graph connectors in the Microsoft 365 admin center](/microsoftsearch/configure-connector)
 
 ## 3. Can I edit the query string once the connection is published?
-Currently, the capability to edit the query string once the connection is published is not supported. You will have to create a new connection. However, the editability of the query string as a feature is in the roadmap and targeting availability by the end of CY24H2.
+Currently, the capability to edit the query string once the connection is published isn't supported. You need to create a new connection. However, the editability of the query string as a feature is in the roadmap and targeting availability by the end of CY24H2.
 > [!NOTE]
 > * As of publish date, query strings are available for ServiceNow Knowledge, ServiceNow Catalog, Confluence Cloud
 
