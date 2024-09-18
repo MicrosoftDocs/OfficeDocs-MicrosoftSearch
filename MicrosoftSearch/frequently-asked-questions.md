@@ -50,7 +50,7 @@ Yes, the data is encrypted. Here are the details:
 - Learn more about encryption in [Microsoft cloud](/purview/office-365-encryption-in-the-microsoft-cloud-overview?view=o365-worldwide) 
 
 ## 8. If customer data were already encrypted, would Microsoft now have access to the document encryption keys?
-No, Microsoft would not have (or need) access to partner encryption keys. Content in the Microsoft cloud would be encrypted using Office 365 encryption keys by default. Customers have the option to provide their own encryption key. **Learn More:** [Service Encryption with Customer Key](/purview/customer-key-overview)
+No, Microsoft would not have (or need) access to partner encryption keys. Content in the Microsoft cloud would be encrypted using Office 365 encryption keys by default. Customers can provide their own encryption key. For more information, see [Service encryption with customer key](/purview/customer-key-overview).
 
 ## 9. How long will copies of the Customer Content be retained for when in Microsoft?
 We adhere to a general M365 data retention period. **Learn more:** [Data Retention, Deletion, and Destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview)
