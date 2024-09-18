@@ -56,7 +56,7 @@ No, Microsoft would not have (or need) access to partner encryption keys. Conten
 We adhere to a general Microsoft 365 data retention period. For more information, see [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
 
 ## 10. What are the best practices to test a connection?
-- Creating users in the test environment for ACL testing.
+- Create users in the test environment for ACL testing.
 - Ensuring you are using right credentials of test tenant.
 - Ensuring users are assigned to the test tenant for staged rollouts and test for only those users.
 - Use the [Index browser](/microsoftsearch/configure-connector) to verify if an item is indexed.
