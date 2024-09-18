@@ -15,7 +15,7 @@ description: "Get answers to frequently asked questions about Microsoft Graph co
 
 ## 1. What are Microsoft Graph connectors?
 Microsoft Graph connectors increase the discoverability and engagement of your enterprise data by deeply integrating your data into the Microsoft 365 Copilot experience. With Microsoft Graph connectors, you can make the most of your external data for functions like enriched data analysis, giving Copilot the ability to access and summarize your diverse datasets from different sources, enabling more comprehensive insights.
-**Learn More:** [Microsoft Graph connectors overview](/graph/connecting-external-content-connectors-overview)
+For more information, see [Microsoft Graph connectors overview](/graph/connecting-external-content-connectors-overview)
 
 ## 2. How do I set up a Microsoft Graph connector?
 There are three main steps to set up a Microsoft Graph connector:
