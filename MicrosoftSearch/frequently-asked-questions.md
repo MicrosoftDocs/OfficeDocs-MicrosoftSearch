@@ -61,7 +61,7 @@ We adhere to a general M365 data retention period. For more information, see [Da
 - Ensuring users are assigned to the test tenant for staged rollouts and test for only those users.
 - Using the [Index browser](/microsoftsearch/configure-connector) to verify if an item is indexed.
 
-## Connectors Specific FAQs
+## Connectors specific FAQs
 
 ## 1. What are Microsoft offered Graph connectors?
 Microsoft offered connectors are pre-built connectors provided by Microsoft that allow you to integrate various third-party content sources into Microsoft 365. These connectors help you bring external data into Microsoft 365, making it searchable and accessible within your organization. **Learn more:** [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery)
