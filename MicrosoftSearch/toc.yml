@@ -108,16 +108,9 @@ items:
           - name: Troubleshooting
             href: troubleshoot-confluence-onpremises-connector.md
         - name: CSV
-          href: csv-connector.md
           items:
           - name: Setup
             href: csv-connector.md
-        - name: Jira Cloud
-          items:
-          - name: Setup
-            href: jira-connector.md
-          - name: Troubleshooting
-            href: troubleshoot-jira-cloud-connector.md
         - name: Enterprise websites
           items:
           - name: Setup
@@ -128,10 +121,16 @@ items:
           items:
           - name: Setup
             href: fileshare-connector.md
+        - name: Jira Cloud
+          items:
+          - name: Setup
+            href: jira-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-jira-cloud-connector.md            
         - name: MediaWiki
           items:
           - name: Setup
-            href: mediawiki-connector.md
+            href: mediawiki-connector.md  
         - name: Oracle SQL
           items:
           - name: Setup
