@@ -36,13 +36,13 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ## Limitations
 - Folder, replies & comments aren't inxedbale 
 - Doesn't crawl user identities and access permissions.
-- Only files accessible to anyone in Google Drive will be indexed.
+- Only files accessible to anyone in Google Drive are indexed.
 - All files indexed using the Google Drive connector are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
 
 ## Prerequisites
 Before you create a Google Drive connector, you must:
-### 1. Be a Google Workspace super admin role or have been granted the access
-Either have been granted access by a super admin role or are a user with administrative privileges. You do not need a super admin role for yourself if you have been granted access by a super admin role.
+### 1. Be a Google Workspace super admin role or be granted the access
+Either be granted access by a super admin role or are a user with administrative privileges. You do not need a super admin role for yourself if you have been granted access by a super admin role.
 
 ### 2. Configure Google Drive Service Account connection credentials
 Configured Google Drive Service Account connection credentials containing your admin account email, client email (service account email), and private key. See [Create and delete service account keys](https://cloud.google.com/iam/docs/keys-create-delete) for more info.
@@ -99,22 +99,22 @@ Custom setup is for those admins who want to edit the default values for setting
 
 **Access permissions**
 
-Currently only files that are accessible to anyone in Google Drive will be indexed and visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
+Currently only files that are accessible to anyone in Google Drive are indexed and visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
 
 ### Content 
 
 **Manage Properties**
 
-Here, you can add or remove available properties from your Google Drive data source, assign a schema to the property (define whether a property is **searchable, queryable, retrievable or refinable**), change the semantic label and add an alias to the property. Properties that are selected by default are listed below. 
+Here, you can add or remove available properties from your Google Drive data source. Assign a schema to the property (define whether a property is **searchable, queryable, retrievable or refinable**), change the semantic label and add an alias to the property. Properties that are selected by default are:
 
 **Source Property** | **Label** |**Description**| **Schema**
 --- | ---- | --- | ---
 CreatedTime | Created date time | The time at which the file was created.  | Search, Query, Retrieve
 Description |  | A short description of the file.  | 
-FileExtension | File extension | The final component of fullFileExtension. This is only available for files with binary content in Google Drive.  | Query, Refine, Retrieve
+FileExtension | File extension | The final component of fullFileExtension. This parameter is only available for files with binary content in Google Drive.  | Query, Refine, Retrieve
 FileType |  | The type of the file.  | 
 IconLink | IconUrl | A static, unauthenticated link to the file's icon.  | Retrieve
-LastModifingUser | Last modified by | The last user to modify the file. This field is only populated when the last modification was performed by a signed-in user..  | Query, Retrieve, Search
+LastModifingUser | Last modified by | The last user to modify the file. This field is only populated when the last modification was performed by a signed-in user.  | Query, Retrieve, Search
 Link | url | A link for opening the file in a relevant Google editor or viewer in a browser.  | Retrieve
 Name | Title | The name of the file.  | Query, Retrieve, Search
 Owner | Created by | The owner of this file. Only certain legacy files may have more than one owner. This field isn't populated for items in shared drives.  | Search, Query, Retrieve
@@ -128,15 +128,15 @@ Size |  | Size in bytes of blobs and first party editor files.  | Search, Query,
 You can configure full and incremental crawls based on the scheduling options present here. By default, incremental crawl is set for every 15 minutes, and full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs.
 
 ## Troubleshooting
-### Invalid credentials detected. Please check the credential info and check the permissions of the service account.
-This error occurs when the service account lacks necessary permissions for Google Drive access. Please check the credentials info of the account and ensure that they are correctly filled in the setup page. 
+### Invalid credentials detected. Check the credential info and check the permissions of the service account.
+This error occurs when the service account lacks necessary permissions for Google Drive access. Check the credentials info of the account and ensure that they are correctly filled in the setup page. 
 ### The required permissions for users/files are missing.
 Authentication error, one or more required OAuth scopes to your service account are missing. Your service account must include both API scopes:
 
 `https://www.googleapis.com/auth/admin.directory.user.readonly` 
 
 `https://www.googleapis.com/auth/drive.readonly` 
-### Failed to capture file information. Please ensure the workspace is not empty and has files accessible to the admin.
+### Failed to capture file information. Ensure the workspace is not empty and has files accessible to the admin.
  During the connector setup, at least one file must be present in your organization's workspace to test the connection successfully.
 
 
