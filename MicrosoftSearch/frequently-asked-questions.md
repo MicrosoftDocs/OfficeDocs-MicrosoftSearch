@@ -57,7 +57,7 @@ We adhere to a general Microsoft 365 data retention period. For more information
 
 ## 10. What are the best practices to test a connection?
 - Create users in the test environment for ACL testing.
-- Ensuring you are using right credentials of test tenant.
+- Ensure you're using the right credentials to test the tenant.
 - Ensuring users are assigned to the test tenant for staged rollouts and test for only those users.
 - Use the [Index browser](/microsoftsearch/configure-connector) to verify if an item is indexed.
 
