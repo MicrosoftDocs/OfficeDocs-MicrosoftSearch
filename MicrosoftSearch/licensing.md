@@ -32,7 +32,7 @@ All eligible Microsoft 365 enterprise customers with one of the following licens
 
 <details>
 <summary>Click to see the list of licenses.</summary>
-
+  
 |License name|
 |:---|
 |Microsoft 365 Copilot|
@@ -57,7 +57,6 @@ All eligible Microsoft 365 enterprise customers with one of the following licens
 |Office 365 A5|
 |Microsoft 365 A3|
 |Microsoft 365 A5|
-
 </details>
 
 > [!NOTE]
