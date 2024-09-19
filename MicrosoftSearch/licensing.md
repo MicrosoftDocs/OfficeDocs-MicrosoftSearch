@@ -43,7 +43,7 @@ All eligible Microsoft 365 enterprise customers with one of the following licens
 |Microsoft 365 Business Premium|
 |Office 365 E3|
 |Office 365 G1|
-|Office 365 E5
+|Office 365 E5|
 |Office 365 G3|
 |Microsoft 365 E3|
 |Office 365 G5|
