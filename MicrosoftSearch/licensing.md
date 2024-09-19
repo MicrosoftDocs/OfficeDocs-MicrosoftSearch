@@ -29,9 +29,9 @@ The total quota utilized is based on the number of items stored in the index. Th
 ### Index quota for Microsoft 365 enterprise users
 
 All eligible Microsoft 365 enterprise customers with one of the following licenses are entitled to 50 million items of index quota. This quota contributes to your organization’s allocation for ingesting content through Microsoft Graph connectors. For example, if your organization holds 100 Microsoft 365 E5 licenses, it is allocated a Microsoft Graph connectors index quota of 100 x 500 = 50,000 items.
-
 <details>
 <summary>Click to see license names.</summary>
+  
 |License name|
 |:---|
 |Microsoft 365 Copilot|
@@ -55,7 +55,8 @@ All eligible Microsoft 365 enterprise customers with one of the following licens
 |Office 365 F3|
 |Office 365 A5|
 |Microsoft 365 A3|
-|Microsoft 365 A5|  
+|Microsoft 365 A5| 
+ 
 
 > [!NOTE]
 >Microsoft Graph connectors support up to 50 million items of total index quota at no additional cost. By default, the item limit per connection is 5 million items. If you require a higher item count per connection or wish to increase your overall index quota, please contact your Microsoft account manager or complete this [form](https://aka.ms/GraphConnectorsHigherCapacity).
