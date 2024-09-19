@@ -32,7 +32,7 @@ All eligible Microsoft 365 enterprise customers with one of the following licens
 
 <details>
 <summary>Click to see license names.</summary>
-  
+
 |License name|
 |:---|
 |Microsoft 365 Copilot|
