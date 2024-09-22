@@ -122,11 +122,11 @@ Extract the public key from the certificate to the `confluence_publickey.pem` fi
 
    :::image type="content" alt-text="Link Applications post creation" source="media/confluence-connector/confluence-onpremises-applications-link-2.png" lightbox="media/confluence-connector/confluence-onpremises-applications-link-2.png":::
 
-#### Step 3.4.3 Enter the consumer key and private key to sign in
+#### Step 3.5.3 Enter the consumer key and private key to sign in
 
-In the connection creation configuration assistant in the Microsoft 365 admin center, enter the **Consumer key** created during *Step 3.4.2* and **Private key** from `confluence_privatekey.pcks8` file in *Step 3.4.1*. Enable pop-up in the browser for Microsoft 365 admin center and select **Sign in**.
+In the connection creation configuration assistant in the Microsoft 365 admin center, enter the **Consumer key** created during *Step 3.5.2* and **Private key** from `confluence_privatekey.pcks8` file in *Step 3.5.1*. Enable pop-up in the browser for Microsoft 365 admin center and select **Sign in**.
 
-#### Step 3.4.4 Enter verification code to finish sign-in
+#### Step 3.5.4 Enter verification code to finish sign-in
 
 In the Confluence sign-in screen, enter service account credentials. After successful sign-in, you'll get a verification code like the following screen.
 
