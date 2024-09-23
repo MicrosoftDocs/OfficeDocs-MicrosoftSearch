@@ -29,7 +29,7 @@ We index only current spaces and not archived spaces.
 | Connection settings | The client doesn't have permission to perform the action. | Invalid password provided for Basic auth. |
 | Select properties | No preview results | Check your CQL query whether it's valid and matches the content to crawl. |
 
-If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)
+If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
 
 ## Test your connection
 a) To check active pages on confluence instance <br>

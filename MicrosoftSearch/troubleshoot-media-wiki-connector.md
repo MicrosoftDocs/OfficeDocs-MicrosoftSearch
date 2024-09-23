@@ -18,6 +18,6 @@ description: "Troubleshoot issues with the Media Wiki Graph connector for Micros
 This can happen when there is an incorrect property mapping, please check your connection settings for this.
 
 ### 2. **Media Wiki connector throttling from well-known publicly available data sources.**
-This is a source throttling error due to public Media Wiki instance. If you are experiencing this error please write to us [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors).
+This is a source throttling error due to public Media Wiki instance. If you are experiencing this error please reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
 
 To get more information on the types of errors, go to the **error details** page after selecting the connection. Select the **error code** to see more detailed errors. Also refer to [Monitor your connections](./manage-connector.md) to learn more. 
