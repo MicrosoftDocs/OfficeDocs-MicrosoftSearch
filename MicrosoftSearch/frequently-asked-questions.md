@@ -32,7 +32,7 @@ Currently, the capability to edit the query string once the connection is publis
 
 ## 4. How do Graph connectors work Microsoft 365 Copilot?
 Microsoft Graph connectors allow external content to be stored in Microsoft Graph, enabling a way to surface external content in various Microsoft 365 experiences. This integration allows for Microsoft 365 Copilot to access and summarize your diverse datasets from different sources, enhancing the ways your users are already searching for answers.
-**Learn More:** [Build Microsoft Graph connectors for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/extensibility/overview-graph-connector)
+For more information, see [Build Microsoft Graph connectors for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/extensibility/overview-graph-connector)
 
 ## 5. Is my data secure with Microsoft Graph connectors?
 Yes, one crucial aspect of bringing content into Microsoft 365 is maintaining security and data access controls. When implementing Microsoft Graph connectors, you map existing access control lists to objects in Microsoft 365 and Microsoft Entra ID, ensuring that only individuals with the right permissions can access the content.
