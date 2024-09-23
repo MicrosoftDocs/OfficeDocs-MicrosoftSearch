@@ -177,6 +177,10 @@ items:
             href: servicenow-tickets-connector.md
           - name: Troubleshooting
             href: troubleshoot-servicenow-tickets-connector.md
+        - name: SharePoint Server
+          items:
+          - name: Setup
+            href: sharepoint-server-connector.md
         - name: WordPress.org (on-prem)
           items:
           - name: Setup
