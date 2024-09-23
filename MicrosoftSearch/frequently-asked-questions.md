@@ -23,7 +23,7 @@ There are three main steps to set up a Microsoft Graph connector:
 1. Create a connection.
 2. Register your schema.
 3. Ingest your content to the Microsoft Graph. Each item is sent with properties that match the schema you registered to power your content as discoverable in Microsoft 365 App.
-**Learn More:** [Set up Microsoft Graph connectors in the Microsoft 365 admin center](/microsoftsearch/configure-connector)
+For more information, see [Set up Microsoft Graph connectors in the Microsoft 365 admin center](/microsoftsearch/configure-connector).
 
 ## 3. Can I edit the query string once the connection is published?
 Currently, the capability to edit the query string once the connection is published isn't supported. You need to create a new connection. However, the editability of the query string as a feature is in the roadmap and targeting availability by the end of CY24H2.
