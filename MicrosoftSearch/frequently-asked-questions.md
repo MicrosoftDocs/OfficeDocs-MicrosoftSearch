@@ -100,7 +100,7 @@ To create a custom connector, you need a Microsoft work or school account with t
 For more details on crawl schedules and refresh settings: [Microsoft Graph connectors refresh settings](/microsoftsearch/configure-connector#step-8-refresh-settings)
 
 ## 8. Why don’t we get results to show up in Microsoft Search?
-There could be several reasons why results are not showing up in Microsoft Search after configuring the Graph connector. Here are some common issues and troubleshooting steps: 
+There could be several reasons why results are not displayed in Microsoft Search after configuring the Microsoft Graph connector. Here are some common issues and troubleshooting steps: 
 
 - **Indexing delays:** Sometimes, it takes a while for the data to be indexed and displayed in search results. It can vary based on the volume of data and the complexity of the data source.
 - **All vertical setting:** Ensure *“include results in All vertical”* is enabled. It should be enabled by default for Microsoft-built Graph connectors. For custom-built and third-party Microsoft Graph connectors, it needs to be enabled explicitly. 
