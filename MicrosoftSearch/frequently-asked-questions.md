@@ -30,7 +30,7 @@ Currently, the capability to edit the query string once the connection is publis
 > [!NOTE]
 > * As of publish date, query strings are available for ServiceNow Knowledge, ServiceNow Catalog, Confluence Cloud
 
-## 4. How do Graph connectors work Microsoft 365 Copilot?
+## 4. How do Microsoft Graph connectors work Microsoft 365 Copilot?
 Microsoft Graph connectors allow external content to be stored in Microsoft Graph, enabling a way to surface external content in various Microsoft 365 experiences. This integration allows for Microsoft 365 Copilot to access and summarize your diverse datasets from different sources, enhancing the ways your users are already searching for answers.
 For more information, see [Build Microsoft Graph connectors for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/extensibility/overview-graph-connector)
 
