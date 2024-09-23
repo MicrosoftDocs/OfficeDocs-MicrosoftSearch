@@ -36,24 +36,22 @@ All eligible Microsoft 365 enterprise customers with one of the following licens
 |Microsoft 365 Business Basic|
 |Microsoft 365 E5 or Office 365 E5|
 |Microsoft 365 Business Standard|
-|Office 365 E1|
 |Microsoft 365 Business Premium|
-|Office 365 E3|
 |Office 365 G1|
-|Office 365 E5|
 |Office 365 G3|
-|Microsoft 365 E3|
-|Office 365 G5|
-|Microsoft 365 E5|
-|Microsoft 365 G3|
-|Microsoft 365 F1|
-|Microsoft 365 G5|
-|Microsoft 365 F3|
 |Office 365 A3|
-|Office 365 F3|
 |Office 365 A5|
+|Office 365 E1|
+|Office 365 E3|
+|Office 365 E5|
+|Office 365 F3|
 |Microsoft 365 A3|
 |Microsoft 365 A5|
+|Microsoft 365 E3|
+|Microsoft 365 E5|
+|Microsoft 365 F1|
+|Microsoft 365 F3|
+|Microsoft 365 G5|
 
 > [!NOTE]
 >Microsoft Graph connectors support up to 50 million items of total index quota at no additional cost. By default, the item limit per connection is 5 million items. If you require a higher item count per connection or wish to increase your overall index quota, please contact your Microsoft account manager or complete this [form](https://aka.ms/GraphConnectorsHigherCapacity).
