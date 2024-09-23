@@ -1,7 +1,7 @@
 ---
 title: "Set default homepage"
-ms.author: anfowler
-author: adefowler
+ms.author: misvenso
+author: wobba
 manager: shohara
 ms.audience: Admin
 ms.topic: article

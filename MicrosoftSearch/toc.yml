@@ -1,16 +1,14 @@
 items:
-- name: Plan for Microsoft Search
-  items:
-  - name: Overview
-    href: overview-microsoft-search.md
-  - name: Set up
-    href: setup-microsoft-search.md
-  - name: Manage access to files and sites
-    href: manage-access-files-sites.md
-  - name: US government environments
-    href: microsoft-search-us-government-environments.md
-  - name: Frequently asked questions
-    href: faqs.md
+- name: Overview of Microsoft Search
+  href: overview-microsoft-search.md
+- name: Set up
+  href: setup-microsoft-search.md
+- name: Manage access to files and sites
+  href: manage-access-files-sites.md
+- name: US government environments
+  href: microsoft-search-us-government-environments.md
+- name: Microsoft Search FAQs
+  href: faqs.md
 - name: Get insights
   items:
   - name: Search usage reports 
@@ -52,15 +50,15 @@ items:
       href: connectors-overview.md
     - name: Connectors gallery
       href: connectors-gallery.md
-    - name: Set up Microsoft built connectors
+    - name: Set up Microsoft-built connectors
       items:
       - name: Setup overview
         href: configure-connector.md
       - name: Add Staged rollout to connectors
         href: staged-rollout-for-graph-connectors.md
-      - name: Graph Connectors in Copilot
+      - name: Microsoft Graph connectors in Microsoft 365 Copilot
         items:
-        - name: Enhancing Copilot Discovery with Graph Connector Content
+        - name: Enhancing Microsoft 365 Copilot discovery with Microsoft Graph connector content
           href: enhancing-microsoft-copilot-discovery-with-graph-connector-content.md
       - name: On-prem connectors
         items:
@@ -72,7 +70,8 @@ items:
         href: map-non-aad.md
       - name: Map Microsoft Entra identities
         href: map-aad.md
-      - name: Connector-specific information
+      - name: Microsoft Graph built connectors
+        href: pre-built-connectors-overview.md
         items:
         - name: Azure Data Lake Storage Gen2
           items:
@@ -109,36 +108,39 @@ items:
           - name: Troubleshooting
             href: troubleshoot-confluence-onpremises-connector.md
         - name: CSV
-          href: csv-connector.md
           items:
           - name: Setup
             href: csv-connector.md
-        - name: Jira Cloud
-          items:
-          - name: Setup
-            href: jira-connector.md
-          - name: Troubleshooting
-            href: troubleshoot-jira-cloud-connector.md
         - name: Enterprise websites
           items:
           - name: Setup
             href: enterprise-web-connector.md
           - name: Troubleshooting
             href: troubleshoot-enterprise-web-connector.md
-        - name: File share
+        - name: File Share
           items:
           - name: Setup
             href: fileshare-connector.md
+        - name: Jira Cloud
+          items:
+          - name: Setup
+            href: jira-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-jira-cloud-connector.md            
         - name: MediaWiki
           items:
           - name: Setup
-            href: mediawiki-connector.md
+            href: mediawiki-connector.md  
         - name: Oracle SQL
           items:
           - name: Setup
             href: OracleSQL-connector.md
           - name: Troubleshooting
             href: troubleshoot-oraclesql-connector.md
+        - name: PostgreSQL
+          items:
+          - name: Setup
+            href: postgresql-connector.md
         - name: Salesforce
           items:
           - name: Setup
@@ -161,15 +163,33 @@ items:
             href: servicenow-tickets-connector.md
           - name: Troubleshooting
             href: troubleshoot-servicenow-tickets-connector.md
+        - name: SharePoint Server
+          items:
+          - name: Setup
+            href: sharepoint-server-connector.md
+        - name: WordPress.org (on-prem)
+          items:
+          - name: Setup
+            href: WordPress-onprem-connector.md
+        - name: Zendesk Help Center
+          items:
+          - name: Setup
+            href: zendesk-help-center-connector.md
+    - name: Deploy Microsoft Graph connectors in Teams admin center
+      href: connectors-deploy-teams.md
     - name: Manage connections
       items:
       - name: Monitor connections
         href: manage-connector.md
-      - name: View connection details and errors
-        href: connector-details-errors.md
+      - name: View connection details
+        href: connector-view-details.md
+      - name: Search and validate indexed content
+        href: connectors-index-search.md
+      - name: Error responses 
+        href: connector-error-responses.md
       - name: Item delete notification
         href: connectors-viva-topics-item-delete-notification.md
-    - name: Licensing
+    - name: Index quota
       href: licensing.md
     - name: Terms of use
       href: terms-of-use.md
@@ -177,9 +197,9 @@ items:
     items:
     - name: Dataverse and Dynamics 365
       href: manage-dynamics365.md
-  - name: Semantic Index
+  - name: Semantic index
     items:
-    - name: Semantic Index for Copilot
+    - name: Semantic index for Microsoft 365 Copilot
       href: semantic-index-for-copilot.md
 - name: Customize and configure
   items:
