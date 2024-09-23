@@ -18,7 +18,7 @@ description: "Troubleshoot issues with the File Share Graph connector for Micros
 
 | Configuration step | Error message | Possible reason(s) |
 | ------------ | ------------ | ------------ |
-| Authentication | There are some errors with file paths or URLs. *The Graph connector agent associated with the connection is not reachable.* | Check if the agent is running or if the app credentials have been expired or revoked. Refer to [Graph connector agent troubleshooting](https://learn.microsoft.com/microsoftsearch/graph-connector-agent#troubleshooting)  |
+| Authentication | There are some errors with file paths or URLs. *The Graph connector agent associated with the connection is not reachable.* | Check if the agent is running or if the app credentials have been expired or revoked. Refer to [Graph connector agent troubleshooting](./graph-connector-agent.md#troubleshooting)  |
 | Authentication | There are some errors with file paths or URLs. *No files were found in the path provided. The client doesn't have permission to perform the action.* | Check if the path is correct and the account provided has access to the files. |
 | Authentication | There are some errors with file paths or URLs. *The user account provided does not have permissions for the files in this location.*  | Check if the client does have permission to perform the action, if the path is correct and the account provided has access to the files. |
 | Authentication | There are some errors with file paths or URLs. *Incorrect username or password.* | Check the authentication details with the data source. The username or password is incorrect, if the credentials are not correct, we don't check the file path access. |
