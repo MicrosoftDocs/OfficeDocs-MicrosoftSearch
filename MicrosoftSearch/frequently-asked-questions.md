@@ -28,7 +28,7 @@ For more information, see [Set up Microsoft Graph connectors in the Microsoft 36
 ## 3. Can I edit the query string once the connection is published?
 Currently, the capability to edit the query string once the connection is published isn't supported. You need to create a new connection. However, the editability of the query string as a feature is in the roadmap and targeting availability by the end of CY24H2.
 > [!NOTE]
-> * As of publish date, query strings are available for ServiceNow Knowledge, ServiceNow Catalog, Confluence Cloud
+> * As of publish date, query strings are available for ServiceNow Knowledge, ServiceNow Catalog, Confluence Cloud.
 
 ## 4. How do Microsoft Graph connectors work Microsoft 365 Copilot?
 Microsoft Graph connectors allow external content to be stored in Microsoft Graph, enabling a way to surface external content in various Microsoft 365 experiences. This integration allows for Microsoft 365 Copilot to access and summarize your diverse datasets from different sources, enhancing the ways your users are already searching for answers.
