@@ -13,35 +13,31 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the ServiceNow Tickets Graph connector for Microsoft Search"
+description: "Set up the ServiceNow Tickets Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
-<!---Previous ms.author: kam1 --->
-
 # ServiceNow Tickets Microsoft Graph connector
 
-With the Microsoft Graph connector for ServiceNow Tickets, your organization can index various tickets that are serviced to users. After you configure the connector and index content from ServiceNow, end users can search for those tickets from any Microsoft Search client.  
+With the ServiceNow Tickets Microsoft Graph connector, your organization can index various tickets that are serviced to users. After you configure the connector and index content from ServiceNow, end users can search for those tickets from any Microsoft Search and Microsoft 365 Copilot client.  
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Tickets Graph connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. If you haven't already done so, read the entire 'Setup your Graph Connector' article to understand the general setup process.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Tickets Microsoft Graph connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. 
 
-Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR 
-other instructions that apply to only ServiceNow connector including information about [Troubleshooting](#troubleshooting) 
-and [Limitations](#limitations).  
+Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only the ServiceNow Microsoft Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).  
 
 ## Step 1: Add a connector in the Microsoft 365 admin center.
 
-[Add ServiceNow Tickets connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowTickets&type=ServiceNowTickets​)
+[Add the ServiceNow Tickets Microsoft Graph connector](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowTickets&type=ServiceNowTickets​)
 
 Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 2: Name the connection.
 Follow the general [setup instructions](./configure-connector.md).
 
-## Step 3: Connection Settings
+## Step 3: Connection settings
 To connect to your ServiceNow data, you need your organization's **ServiceNow instance URL**. Your organization's ServiceNow instance URL typically looks like **https://&lt;your-organization-domain>.service-now.com**. 
 
-Along with this URL, you'll need a **service account** for setting up the connection to ServiceNow and for allowing Microsoft Search to periodically update the tickets details based on the refresh schedule. 
+Along with this URL, you'll need a **service account** to set up the connection to ServiceNow and to allow Microsoft Search and Microsoft 365 Copilot to periodically update the ticket details based on the refresh schedule. 
 
-In ServiceNow, Task table is the base class for ticket management. It can be extended to create ticket applications such as incident, problem and change Management. Learn more about [ServiceNow Task tables](https://docs.servicenow.com/bundle/washingtondc-platform-administration/page/administer/task-table/concept/c_TaskTable.html).
+In ServiceNow, the task table is the base class for ticket management. It can be extended to create ticket applications such as incident, problem, and change management. Learn more about [ServiceNow Task tables](https://docs.servicenow.com/bundle/washingtondc-platform-administration/page/administer/task-table/concept/c_TaskTable.html).
 
 The service account you use to configure a connection **must have** read access to the following ServiceNow table records to successfully crawl default ticket fields.
 
@@ -56,10 +52,10 @@ It is an **optional** feature. You'll be able to index *task* table properties w
 
 **Feature** | **Read access required tables** | **Description**
 --- | --- | ---
-Select custom table from your organization| `sys_db_object` | Find the list of extended task tables including custom tables
+Select a custom table from your organization| `sys_db_object` | Find the list of extended task tables including custom tables
 Index custom fields from a specific <table_name> | `sys_dictionary` | Crawling custom fields from a specific table like incident, problem or change_management
 
-You can **create and assign a role** for the service account you use to connect with Microsoft Search. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/washingtondc-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be provided to the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/sandiego/new_to_servicenow/app_store_learnv2_securingapps_sandiego_securing_table_records). 
+You can **create and assign a role** for the service account you use to connect with Microsoft Search and Microsoft 365 Copilot. [Learn how to assign role for ServiceNow accounts](https://docs.servicenow.com/bundle/washingtondc-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Read access to the tables can be provided to the created role. To learn about setting read access to table records, see [Securing Table Records](https://developer.servicenow.com/dev.do#!/learn/learning-plans/sandiego/new_to_servicenow/app_store_learnv2_securingapps_sandiego_securing_table_records). 
 
 
 To authenticate and sync content from ServiceNow, choose **one of three** supported methods:
@@ -70,26 +66,26 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
 
 ## Step 3.1: Basic authentication
 
-Enter the username and password of ServiceNow account with read access to `task` and `sys_user` tables to authenticate to your instance.
+Enter the username and password of the ServiceNow account with read access to the `task` and `sys_user` tables to authenticate to your instance.
 
 ## Step 3.2: ServiceNow OAuth
 
-To use ServiceNow OAuth, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance. After that Microsoft Search app will be able to access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/washingtondc-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
+To use ServiceNow OAuth, a ServiceNow admin needs to provision an endpoint in your ServiceNow instance. After that Microsoft Search app can access it. To learn more, see [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/washingtondc-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
 
 The following table provides guidance on how to fill out the endpoint creation form:
 
 Field | Description | Recommended Value
 --- | --- | ---
-Name | Unique value that identifies the application that you require OAuth access for. | Microsoft Search
-Client ID | A read-only, auto generated unique ID for the application. The instance uses the client ID when it requests an access token. | NA
-Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each other. | Follow security best-practices by treating the secret as a password.
+Name | Unique value that identifies the application that you require OAuth access to. | Microsoft Search
+Client ID | A read-only, auto-generated unique ID for the application. The instance uses the client ID when it requests an access token. | NA
+Client secret | With this shared secret string, the ServiceNow instance and Microsoft Search authorize communications with each other. | Follow security best practices by treating the secret as a password.
 Redirect URL | A required callback URL that the authorization server redirects to. | `https://gcs.office.com/v1.0/admin/oauth/callback`
 Logo URL | A URL that contains the image for the application logo. | NA
 Active | Select the check box to make the application registry active. | Set to active
 Refresh token lifespan | The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds). | 31,536,000 (one year)
 Access token lifespan | The number of seconds that an access token is valid. | 43,200 (12 hours)
 
-Enter the client ID and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have read access to `task` and `sys_user` tables. Refer to the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
+Enter the client ID and client secret to connect to your instance. After connecting, use a ServiceNow account credential to authenticate permission to crawl. The account should at least have read access to `task` and `sys_user` tables. Refer to the table at the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index user criteria permissions.
 
 <a name='step-33-azure-ad-openid-connect'></a>
 
@@ -130,9 +126,9 @@ Follow the steps to retrieve Service Principal Object Identifier
    ```powershell
    Get-AzADServicePrincipal -ApplicationId "Application-ID"
    ```
-   Replace "Application-ID" with Application (client) ID (without quotes) of the application you registered in step 3.a. Note the value of ID object from PowerShell output. It's the Service Principal ID.
+   Replace "Application-ID" with the Application (client) ID (without quotes) of the application you registered in step 3.a. Note the value of ID object from PowerShell output. It's the Service Principal ID.
 
-Now you have all the information required from Azure portal. A quick summary of the information is given in the table below.
+Now you have all the information required from the Azure portal. A quick summary of the information is given in the table below.
 
 Property | Description
 --- | ---
@@ -188,22 +184,22 @@ All other values can be left to default.
 
 ### Step 3.3.6: Enable Task, User table access for the ServiceNow account
 
-Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the read access to `task` and `sys_user` table. Refer to the table in the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index custom fields.
+Access the ServiceNow account you created with ServiceNow Principal ID as User ID and assign the read access to `task` and `sys_user` table. Refer to the table at the beginning of [step 3: connection settings](#step-3-connection-settings) for providing read access to more ServiceNow table records and index custom fields.
 
-Use Application ID as Client ID (from step 3.a), and Client secret (from step 3.b) in M365 admin center configuration window to authenticate to your ServiceNow instance using Microsoft Entra ID OpenID Connect.
+Use Application ID as Client ID (from step 3.a), and Client secret (from step 3.b) in the M365 admin center configuration window to authenticate to your ServiceNow instance using Microsoft Entra ID OpenID Connect.
 
-## Step 4: Select tables, properties and filter data
+## Step 4: Select tables, properties, and filter data
 
-In this step, you can add or remove available tables and properties from your ServiceNow data source. Microsoft 365 has already selected few tables and properties by default.
+In this step, you can add or remove available tables and properties from your ServiceNow data source. Microsoft 365 has already selected a few tables and properties by default.
 
-*The list of properties that you select here, can impact how can you filter, search and view your results in Copilot for Microsoft 365.*
+*The list of properties that you select here, can impact how can you filter, search, and view your results in Microsoft 365 Copilot.*
 
 **Source property** | **Label** | **Description**
 --- | --- | ---
 AccessUrl  | `url` | The target URL of the item in the data source.
 IconUrl   | `iconUrl` | Icon url that represents the article’s category or type.
 OpenedBy   | `authors` | Name of people who participated/collaborated on the item in the data source.
-ShortDescription   | `title` | The title of the item that you want shown in search and other experiences.
+ShortDescription   | `title` | The title of the item that you want to be shown in search and other experiences.
 SysCreatedBy   | `createdBy` | Name of the person who created the item in the data source.
 SysCreatedOn   | `createdDateTime` | Date and time that the item was created in the data source.
 SysUpdatedBy   | `lastModifiedBy` | Name of the person who most recently edited the item in the data source.
@@ -215,19 +211,19 @@ Use the preview results button to verify the sample values of the selected prope
 
 ## Step 5: Manage search permissions
 
-The ServiceNow Tickets Graph Connector supports search permissions visible to **Only people with access to this data source**. Indexed tickets appear in the search results and are visible to users who have access to them via `assigned_to` and `opened_by` fields.
+The ServiceNow Tickets Microsoft Graph connector supports search permissions visible to **Only people with access to this data source**. Indexed tickets appear in the search results and are visible to users who have access to them via `assigned_to` and `opened_by` fields.
 
-When you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Microsoft Entra ID provisioned users or Non-Azure AD users.
+When you choose **Only people with access to this data source**, you need to further choose whether your ServiceNow instance has Microsoft Entra ID provisioned users or non-Azure AD users.
 
 To identify which option is suitable for your organization:
 
-1. Choose the **Microsoft Entra ID** option if the Email ID of ServiceNow users is **same** as the UserPrincipalName (UPN) of users in Microsoft Entra ID.
+1. Choose the **Microsoft Entra ID** option if the email ID of ServiceNow users is **same** as the UserPrincipalName (UPN) of users in Microsoft Entra ID.
 2. Choose the **Non-Azure AD** option if the email ID of ServiceNow users is **different** from the UserPrincipalName (UPN) of users in Microsoft Entra ID. 
 
 >[!NOTE]
-> * If you choose Microsoft Entra ID as the type of identity source, the connector maps the Email IDs of users obtained from ServiceNow directly to UPN property from Microsoft Entra ID.
-> * If you chose "Non-Azure AD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from Email ID to UPN.
-> * Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support processing of updates to permissions.
+> * If you choose Microsoft Entra ID as the type of identity source, the connector maps the email IDs of users obtained from ServiceNow directly to UPN property from Microsoft Entra ID.
+> * If you chose "Non-Azure AD" for the identity type see [Map your non-Azure AD Identities](map-non-aad.md) for instructions on mapping the identities. You can use this option to provide the mapping regular expression from email ID to UPN.
+> * Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support the processing of updates to permissions.
 
 ## Step 6: Assign property labels
 
@@ -242,7 +238,7 @@ Follow the general [setup instructions](./configure-connector.md).
 Follow the general [setup instructions](./configure-connector.md).
 
 >[!NOTE]
->For identities, only full crawl scheduled will be applied.
+>For identities, only the full crawl schedule is applied.
 
 ## Step 9: Review Connection
 
@@ -253,8 +249,8 @@ After publishing the connection, you need to customize the search results page. 
 ## Limitations
 The ServiceNow Tickets Microsoft Graph connector has the following limitations in its latest release:
 
-- *Everyone* feature under Manage Search permissions step doesn't process any permissions. Don't select this option unless you want to test the connection between selected team members in an isolated environment.
+- *Everyone* feature under the Manage Search permissions step doesn't process any permissions. Don't select this option unless you want to test the connection between selected team members in an isolated environment.
 
 ## Troubleshooting
-After publishing your connection, customizing the results page, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After publishing your connection, and customizing the results page, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 You can find troubleshooting steps for commonly seen issues [here](troubleshoot-servicenow-tickets-connector.md).

@@ -1,5 +1,5 @@
 ---
-title: "FAQs"
+title: "Microsoft Search FAQs"
 ms.author: bstucker
 author: bstuck
 manager: bstucker
@@ -12,10 +12,9 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Get answers to commonly asked questions about enterprise search and Microsoft Search"
+description: "Get answers to commonly asked questions about Microsoft 365 enterprise and Microsoft Search"
 ---
-<!-- markdownlint-disable no-trailing-punctuation -->
-# Frequently asked questions
+# Microsoft Search FAQs
 
 Here's a list of the most common questions.
 
@@ -34,7 +33,7 @@ Yes. You can search on-premises [SharePoint](https://sharepoint.com/) files if y
   
 ## How do I make Bing the default search engine for people in my org?
 
-Here's the instructions for setting the default search engine, default homepage, and default browser to give your users the best experience with Microsoft Search in [Bing](https://Bing.com):
+These are the instructions for setting the default search engine, default homepage, and default browser to give your users the best experience with Microsoft Search in [Bing](https://Bing.com):
 
 - [Set Microsoft Edge as your default browser](/deployedge/edge-default-browser)
 - [Make Bing your default search engine](set-default-search-engine.md)
@@ -60,8 +59,8 @@ Microsoft 365 enables rich collaboration with people outside of your organizatio
 
 For most organizations, including enterprise and education, Microsoft Search in Bing is on by default. To turn on Microsoft Search in Bing, go to the [Configurations](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations) page in the Microsoft 365 admin center. Under Microsoft Search in Bing setting, choose **Change** and select **Enable Microsoft Search in Bing at your organization**. It takes up to 24 hours for this change to take effect.
 
-If this setting is off, users won't get internal results when they search on Bing, Windows Search, or in Microsoft Edge. They also won't be able to access Microsoft 365 Chat. Turning off Microsoft Search in Bing doesn't stop or prevent internal content from being added to your search index. It only disables Bing entry points to Microsoft Search. To find answers and internal results, users will need to use other entry points, for example SharePoint Online or an Office 365 app.
+If this setting is off, users won't get internal results when they search on Bing, Windows Search, or Microsoft Edge. They also won't be able to access Microsoft 365 Chat. Turning off Microsoft Search in Bing doesn't stop or prevent internal content from being added to your search index. It only disables Bing entry points to Microsoft Search. To find answers and internal results, users need to use other entry points, for example, SharePoint Online or an Office 365 app.
 
 ## What does Microsoft Search cost?
 
-Microsoft Search is the search for your Microsoft 365 experience; there is no additional cost to search your data. Some features like [Graph Connectors](connectors-overview.md) come with quotas that are included on certain [licenses and have extra quota available for purchase](licensing.md).
+Microsoft Search is the search for your Microsoft 365 experience; there is no additional cost to search your data. Some features like [Microsoft Graph connectors](connectors-overview.md) come with quotas that are included on certain [licenses and have extra quota available for purchase](licensing.md).
