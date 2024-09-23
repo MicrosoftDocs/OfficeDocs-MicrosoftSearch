@@ -90,7 +90,7 @@ To authenticate with the provided credentials, you need to click on Sign-in to l
 
 Select which site collections you want to index. The site collections belong to the web application that we identify from the SharePoint url provided. This list can be long based on the number of site-collections available in the data source.
 
-[![Screenshot that shows connection creation screen for Microsoft Graph Connector for SharePoint Server.](media/sharepoint-server/siteselection.png)](media/sharepoint-server/siteselection.png#lightbox)
+[![Screenshot that shows site collections available for the account.](media/sharepoint-server/siteselection.png)](media/sharepoint-server/siteselection.png#lightbox)
 
 ### 6. Roll out to limited audience
 
@@ -104,7 +104,7 @@ For other settings, like **Access Permissions**, **Data Exclusion Rules**, **Sch
 
 Once the connection creation is successful, it starts syncing the content. At this time, admins are asked to provide a description for the connection. The description helps Copilot discover the connection content better. The better the connection description for the intended content usage, the better would be Copilot responses. The description is also useful for users to select the right connection for their Declarative Agents.
 
-[![Screenshot that shows connection creation screen for Microsoft Graph Connector for SharePoint Server.](media/sharepoint-server/successscreen.png)](media/sharepoint-server/successscreen.png#lightbox)
+[![Screenshot that shows success screen.](media/sharepoint-server/successscreen.png)](media/sharepoint-server/successscreen.png#lightbox)
 
 ## Custom Setup
 
@@ -112,7 +112,7 @@ Custom setup is for those admins who want to edit the default values for setting
 
 If you edit any connection, it always opens in a custom setup window.
 
-[![Screenshot that shows connection creation screen for Microsoft Graph Connector for SharePoint Server.](media/sharepoint-server/customsetup.png)](media/sharepoint-server/customsetup.png#lightbox)
+[![Screenshot that shows custom setup window.](media/sharepoint-server/customsetup.png)](media/sharepoint-server/customsetup.png#lightbox)
 
 ### Users
 
@@ -125,7 +125,7 @@ The below options are available.
 
 The default and preferred option is the one where connector honors the data source permissions and only allowed users can see the results. You are free to change it to "Everyone" if you want to make it available for everyone in the organization.
 
-[![Screenshot that shows connection creation screen for Microsoft Graph Connector for SharePoint Server.](media/sharepoint-server/userstabsp.png)](media/sharepoint-server/userstabsp.png#lightbox)
+[![Screenshot that shows users tab](media/sharepoint-server/userstabsp.png)](media/sharepoint-server/userstabsp.png#lightbox)
 
 The SharePoint on-prem connector supports existing Access Controlled List on given items. Indexed data appears in the search results and is only visible to users who have permission to view. Microsoft 365 experiences understand and honor Entra Id permissions. To support Access Controlled List on items, we require that Active Directory identities and Entra Identities are synced.
 
@@ -140,7 +140,7 @@ Add the URLs of the sites you want to exclude from indexing. Exclusion rules wor
 
 If the URL ends with /\*, then all URLs prefixed with this URL are excluded from crawl. Example, abc.com/private/* excludes abc.com/private/terms.html and all content inside "/private". But, if you provide abc.com/private/terms.html as the URL to exclude, it is not honored as exclusion rules work at site or subsite level.
 
-[![Screenshot that shows connection creation screen for Microsoft Graph Connector for SharePoint Server.](media/sharepoint-server/exclusionrulessp.png)](media/sharepoint-server/exclusionrulessp.png#lightbox)
+[![Screenshot that shows exclusion rules.](media/sharepoint-server/exclusionrulessp.png)](media/sharepoint-server/exclusionrulessp.png#lightbox)
 
 #### Manage Properties
 
@@ -178,7 +178,7 @@ The default values setup for the connector are:
 | Incremental Crawl | _Frequency: Every 15 mins_ |
 | Full Crawl | _Frequency: Every Day_ |
 
-[![Screenshot that shows connection creation screen for Microsoft Graph Connector for SharePoint Server.](media/sharepoint-server/crawlschedulesync.png)](media/sharepoint-server/crawlschedulesync.png#lightbox)
+[![Screenshot that shows crawl schedule.](media/sharepoint-server/crawlschedulesync.png)](media/sharepoint-server/crawlschedulesync.png#lightbox)
 
 ### Set up search result page
 
