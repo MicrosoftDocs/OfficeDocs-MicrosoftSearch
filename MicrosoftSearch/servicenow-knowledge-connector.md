@@ -65,7 +65,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Get Started
 
-![Screenshot that shows Connection creation screen for Microsoft Graph Connector for ServiceNow Knowledge](/media/servicenow-knowledge-create-page.png "Add Microsoft Graph Connector for ServiceNow Knowledge")
+![Screenshot that shows Connection creation screen for Microsoft Graph Connector for ServiceNow Knowledge](media/servicenow-knowledge-create-page.png "Add Microsoft Graph Connector for ServiceNow Knowledge")
 
 ### 1. Display name
 
@@ -243,7 +243,7 @@ Custom setup is for those admins who want to edit the default values for setting
 
 ### Users
 
-![Screenshot that shows Users tab where you can configure access permissions and user mapping rules](/media/servicenow-knowledge-users-tab.png "Configure settings related to Users")
+![Screenshot that shows Users tab where you can configure access permissions and user mapping rules](media/servicenow-knowledge-users-tab.png "Configure settings related to Users")
 
 **Access Permissions**
 
@@ -264,7 +264,7 @@ The default method for mapping your data source identities with Microsoft Entra 
 
 ### Content
 
-![Screenshot that shows Content tab where you can configure Query string and Properties](/media/servicenow-knowledge-content-tab.png "Configure settings related to your content")
+![Screenshot that shows Content tab where you can configure Query string and Properties](media/servicenow-knowledge-content-tab.png "Configure settings related to your content")
 
 **Query String**
 
@@ -312,11 +312,11 @@ Here, you can add or remove available properties from your ServiceNow data sourc
 
 Use the preview results button to verify the sample values of the selected properties and query filter.
 
-![Screenshot that shows Preview data option to check the query filter and properties you have configured](/media/servicenow-knowledge-preview-data.png "Preview data to validate your Query filter and Manage Properties settings")
+![Screenshot that shows Preview data option to check the query filter and properties you have configured](media/servicenow-knowledge-preview-data.png "Preview data to validate your Query filter and Manage Properties settings")
 
 ### Sync
 
-![Screenshot that shows Sync tab where you can configure crawl frequency](/media/servicenow-knowledge-sync-tab.png "Configure Crawl frequency")
+![Screenshot that shows Sync tab where you can configure crawl frequency](media/servicenow-knowledge-sync-tab.png "Configure Crawl frequency")
 
 The refresh interval determines how often your data is synced between the data source and the Graph connector index. There are two types of refresh intervals – full crawl and incremental crawl. For more details, click [here](/configure-connector#step-8-refresh-settings).
 
