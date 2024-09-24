@@ -69,7 +69,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ### 1. Display name
 
-A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
+A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ### 2. ServiceNow URL
 
@@ -211,7 +211,7 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
 
 ###4. Rollout to limited audience
 
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, click [here](staged-rollout-for-graph-connectors).
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, click [here](/MicrosoftSearch/staged-rollout-for-graph-connectors).
 
 At this point, you are ready to create the connection for ServiceNow Knowledge. You can click on the "Create" button and the Microsoft Graph connector will start indexing articles from your ServiceNow account.
 
@@ -260,7 +260,7 @@ If a knowledge article isn't enabled with a user criterion, it appears in result
 
 **Mapping Identities**
 
-The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the Email id of ServiceNow users is same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra ID. If you believe the default mapping would not work for your organization, you can provide a custom mapping formula. To know more about, mapping Non-EntraID identities, click [here](map-non-aad).
+The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the Email id of ServiceNow users is same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra ID. If you believe the default mapping would not work for your organization, you can provide a custom mapping formula. To know more about, mapping Non-EntraID identities, click [here](/MicrosoftSearch/map-non-aad).
 
 ### Content
 
@@ -318,7 +318,7 @@ Use the preview results button to verify the sample values of the selected prope
 
 ![Screenshot that shows Sync tab where you can configure crawl frequency](media/servicenow-knowledge-sync-tab.png "Configure Crawl frequency")
 
-The refresh interval determines how often your data is synced between the data source and the Graph connector index. There are two types of refresh intervals – full crawl and incremental crawl. For more details, click [here](/configure-connector#step-8-refresh-settings).
+The refresh interval determines how often your data is synced between the data source and the Graph connector index. There are two types of refresh intervals – full crawl and incremental crawl. For more details, click [here](/MicrosoftSearch/configure-connector#step-8-refresh-settings).
 
 You can change the default values of refresh interval from here if you want to.
 
@@ -357,7 +357,7 @@ You can change the default values of refresh interval from here if you want to.
 </details>
 
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector).
-You can find troubleshooting steps for commonly seen issues [here](troubleshoot-servicenow-knowledge-connector).
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](/MicrosoftSearch/manage-connector).
+You can find troubleshooting steps for commonly seen issues [here](/MicrosoftSearch/troubleshoot-servicenow-knowledge-connector).
 
 If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)
