@@ -28,7 +28,7 @@ In the [Microsoft Search Usage Report](usage-reports.md), the **Query analytics*
 
 :::image type="content" source="media/query-result.png" alt-text="Screenshot showing charts for result entities and engagement for queries." lightbox="media/query-result.png":::
 
-:::image type="content" source="media/query-entity.png" alt-text="Screenshot showing charts for result engagement for queries." lightbox="media/query-entity.png":::
+:::image type="content" source="media/queries-perform-graph.png" alt-text="Screenshot showing charts for result engagement for queries." lightbox="media/queries-perform-graph.png":::
 
 The data on top of the chart displays how often users engage with search results for each entity type. It lets you see the patterns of users who do queries and clicks for each entity type. Currently, it supports the following entity types:
 
@@ -97,9 +97,9 @@ The following sections will show for each flyout:
 
 ## Download reports
 
-Each report and table have a download option that allows you to download the background data for the report that you see on the screen in Excel format. Where the displayed report is limited to the top five to ten rows, the downloaded report will have up to 2000 top records.
+Each report and table have a download option that allows you to download the background data for the report that you see on the screen in Excel format. Where the displayed report is limited to the top five to ten rows, the downloaded report will have up to 3,000 top records.
 
-Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 7, 14, or 31 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month.
+Downloading a report allows you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you choose the past 28 days, the spreadsheet will have an individual tab for each day. The past 12 months download will have a tab for each month.
 
 >[!NOTE]
 > New query analytics doesn't show Top 10 no-result queries and Top abandoned search terms, but you can still get these reports by switching to old query analytics.
