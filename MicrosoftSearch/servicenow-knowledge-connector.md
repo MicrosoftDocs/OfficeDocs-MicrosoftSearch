@@ -237,11 +237,11 @@ If you want to edit any of these values, you need to choose the "Custom Setup" o
 [Get started with Microsoft Graph Connector for ServiceNow Knowledge](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowKB&type=ServiceNowKB)
 
 
-##Custom Setup
+## Custom Setup
 
 Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click on the "Custom Setup" option, you see three more tabs – Users, Content, and Sync.
 
-###Users
+### Users
 
 ![Screenshot that shows Users tab where you can configure access permissions and user mapping rules](/media/servicenow-knowledge-users-tab.png "Configure settings related to Users")
 
@@ -262,7 +262,7 @@ If a knowledge article isn't enabled with a user criterion, it appears in result
 
 The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the Email id of ServiceNow users is same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra ID. If you believe the default mapping would not work for your organization, you can provide a custom mapping formula. To know more about, mapping Non-EntraID identities, click [here](map-non-aad).
 
-###Content
+### Content
 
 ![Screenshot that shows Content tab where you can configure Query string and Properties](/media/servicenow-knowledge-content-tab.png "Configure settings related to your content")
 
@@ -314,7 +314,7 @@ Use the preview results button to verify the sample values of the selected prope
 
 ![Screenshot that shows Preview data option to check the query filter and properties you have configured](/media/servicenow-knowledge-preview-data.png "Preview data to validate your Query filter and Manage Properties settings")
 
-###Sync
+### Sync
 
 ![Screenshot that shows Sync tab where you can configure crawl frequency](/media/servicenow-knowledge-sync-tab.png "Configure Crawl frequency")
 
