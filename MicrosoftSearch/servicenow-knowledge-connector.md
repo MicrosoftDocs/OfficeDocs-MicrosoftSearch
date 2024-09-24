@@ -149,12 +149,12 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
 
             Now you have all the information required from Azure portal. A quick summary of the information is given in the table below.
 
-         Property | Description
-         --- | ---
-         Directory ID (Tenant ID) | Unique ID of the Microsoft Entra tenant, from step 3.a.
-         Application ID (Client ID) | Unique ID of the application registered in step 3.a.
-         Client Secret | The secret key of the application (from step 3.b). Treat it like a password.
-         Service Principal ID | An identity for the application running as a service. (from step 3.c)
+            Property | Description
+            --- | ---
+            Directory ID (Tenant ID) | Unique ID of the Microsoft Entra tenant, from step 3.a.
+            Application ID (Client ID) | Unique ID of the application registered in step 3.a.
+            Client Secret | The secret key of the application (from step 3.b). Treat it like a password.
+            Service Principal ID | An identity for the application running as a service. (from step 3.c)
 
    4. Register ServiceNow Application
 
@@ -209,7 +209,7 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
 
 </details>
 
-###4. Rollout to limited audience
+### 4. Rollout to limited audience
 
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, click [here](/MicrosoftSearch/staged-rollout-for-graph-connectors).
 
