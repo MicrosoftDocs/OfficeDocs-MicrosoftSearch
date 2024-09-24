@@ -20,6 +20,11 @@ For help on installation, refer to [this page](graph-connector-agent.md#installa
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
+## Version 3.1.0.0 (*September 24, 2024)
+
+* This update marks the General Availability of [Confluence On-premises](confluence-onpremises-connector.md) and [SharePoint Server](sharepoint-server-connector.md) connectors.
+* Bug fixes and reliability improvements.
+
 ## Version 3.0.1.0 (*September 12, 2024)
 
 * Bug fixes and reliability improvements.
