@@ -1,6 +1,6 @@
 --- 
 ms.date: 09/11/2024 
-title: "Troubleshooting guide for CSV Microsoft Graph connector" 
+title: "Troubleshooting the CSV Microsoft Graph connector" 
 ms.author: gladysa
 author: gladysa
 manager: brian.jackett
