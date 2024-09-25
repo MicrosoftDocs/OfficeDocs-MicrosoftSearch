@@ -8,7 +8,7 @@ ms.topic: reference
 ms.service: mssearch
 ms.localizationpriority: medium
 ms.date: 09/11/2024
-description: "Get answers to frequently asked questions about Microsoft Graph connectors"
+description: "This FAQ answers questions related to Microsoft Graph connectors"
 ---
 
 # Microsoft Graph connectors FAQs
