@@ -17,4 +17,4 @@ description: "Troubleshooting the CSV Graph connector for Microsoft Search and M
 ### Review "spaces" in the CSV header which results in errors while trying to authenticate
 No spaces are allowed in headers. Not only leading or trailing spaces, but no spaces allowed even in the middle of the header name.
 
-To get more information on the types of errors, go to the **error details** page after selecting the connection. Select the **error code** to see more detailed errors. Also refer to [Monitor your connections](./manage-connector.md) to learn more.
+To view more error types,  select the connection and click **error details** > **error code**. For more information, see [Monitor your connections](./manage-connector.md)
