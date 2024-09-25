@@ -77,6 +77,8 @@ items:
           items:
           - name: Setup
             href: azure-data-lake-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-azure-data-lake-connector.md
         - name: Azure DevOps Work Items
           items:
           - name: Setup
@@ -111,6 +113,8 @@ items:
           items:
           - name: Setup
             href: csv-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-csv-connector.md
         - name: Enterprise websites
           items:
           - name: Setup
@@ -121,6 +125,14 @@ items:
           items:
           - name: Setup
             href: fileshare-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-file-share-connector.md
+        - name: MediaWiki
+          items:
+          - name: Setup
+            href: mediawiki-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-media-wiki-connector.md
         - name: Jira Cloud
           items:
           - name: Setup
@@ -145,6 +157,8 @@ items:
           items:
           - name: Setup
             href: salesforce-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-salesforce-connector.md
         - name: ServiceNow Catalog
           items:
           - name: Setup
@@ -163,6 +177,10 @@ items:
             href: servicenow-tickets-connector.md
           - name: Troubleshooting
             href: troubleshoot-servicenow-tickets-connector.md
+        - name: SharePoint Server
+          items:
+          - name: Setup
+            href: sharepoint-server-connector.md
         - name: WordPress.org (on-prem)
           items:
           - name: Setup

@@ -28,7 +28,7 @@ The total quota utilized is based on the number of items stored in the index. Th
 
 ### Index quota for Microsoft 365 enterprise users
 
-All eligible Microsoft 365 enterprise customers with one of the following licenses are entitled to 50 million items of index quota. This quota contributes to your organization’s allocation for ingesting content through Microsoft Graph connectors. For example, if your organization holds 100 Microsoft 365 E5 licenses, it is allocated a Microsoft Graph connectors index quota of 100 x 500 = 50,000 items.
+All eligible Microsoft 365 enterprise customers with one of the following licenses are entitled to 50 million items of index quota. This quota contributes to your organization’s allocation for ingesting content through Microsoft Graph connectors.
 
 |License name|
 |:---|
@@ -39,16 +39,11 @@ All eligible Microsoft 365 enterprise customers with one of the following licens
 |Office 365 E1|
 |Microsoft 365 Business Premium|
 |Office 365 E3|
-|Office 365 G1|
 |Office 365 E5
-|Office 365 G3|
 |Microsoft 365 E3|
-|Office 365 G5|
 |Microsoft 365 E5|
-|Microsoft 365 G3|
 |Microsoft 365 F1|
-|Microsoft 365 G5|
-|Microsoft 365 F3
+|Microsoft 365 F3|
 |Office 365 A3|
 |Office 365 F3|
 |Office 365 A5|
