@@ -14,7 +14,7 @@ description: "Troubleshooting the File Share Graph connector for Microsoft Searc
 
 # Troubleshooting the File Share Microsoft Graph connector  
 
-### 1. **The following are common errors observed while configuring the connector, or during crawling, and its possible reasons.**
+###  Common errors observed while configuring the connector
 
 | Configuration step | Error message | Possible reason(s) |
 | ------------ | ------------ | ------------ |
