@@ -219,4 +219,4 @@ After publishing your connection, you can review the status under the **Data Sou
 
 You can find troubleshooting steps for commonly seen issues [here](troubleshoot-salesforce-connector.md).
 
-If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
