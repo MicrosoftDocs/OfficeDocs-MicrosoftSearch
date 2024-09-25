@@ -21,4 +21,4 @@ description: "Troubleshooting the Azure Data Lake Storage Gen2 Graph Microsoft G
 | Connection settings | The connection fails even after allowing the public IP address in the ADLS firewall settings. |  Allow access to the VNet and the IP (for disaster recovery purposes) using a PowerShell command, as there is no option to do that in the Azure portal. |
 | Connection settings | InvalidConfigurationException |  Check if you have setup a valid storage for crawls but would have later deleted the storage account which will end up in this situation. |
 
-To get more information on the types of errors, go to the **error details** page after selecting the connection. Select the **error code** to see more detailed errors. Also refer to [Monitor your connections](./manage-connector.md) to learn more. 
+To view more error types,  select the connection and click **error details** > **error code**. For more information, see [Monitor your connections](./manage-connector.md). 
