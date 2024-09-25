@@ -205,6 +205,8 @@ items:
         href: connectors-viva-topics-item-delete-notification.md
     - name: Index quota
       href: licensing.md
+    - name: Frequently asked questions
+      href: frequently-asked-questions.md
     - name: Terms of use
       href: terms-of-use.md
   - name: Federated Search connectors
