@@ -15,9 +15,9 @@ description: "Troubleshoot issues with the Media Wiki Graph connector for Micros
 # Troubleshooting guide for Media Wiki Microsoft Graph connector 
 
 ### 1. **UnableToMapProperties = 3100 error code** 
-This can happen when there is an incorrect property mapping, please check your connection settings for this.
+The 3100 error code can happen when there is an incorrect property mapping. Check your connection settings to resolve the error.
 
 ### 2. **Media Wiki connector throttling from well-known publicly available data sources.**
-This is a source throttling error due to public Media Wiki instance. If you are experiencing this error please reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
+A source throttling error occurs due to a public Media Wiki instance. For assistance with this error reach out to [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
 
 To get more information on the types of errors, go to the **error details** page after selecting the connection. Select the **error code** to see more detailed errors. Also refer to [Monitor your connections](./manage-connector.md) to learn more. 
