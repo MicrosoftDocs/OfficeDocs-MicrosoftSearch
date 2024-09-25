@@ -17,7 +17,7 @@ description: "Troubleshooting the File Share Graph connector for Microsoft Searc
 ###  Common errors observed while configuring the connector
 
 | Configuration step | Error message | Possible reason(s) |
-| ------------ | ------------ | ------------ |
+|:----|:----|:----|
 | Authentication | There are some errors with file paths or URLs. *The Graph connector agent associated with the connection is not reachable.* | Check if the agent is running or if the app credentials have been expired or revoked. Refer to [Graph connector agent troubleshooting](./graph-connector-agent.md#troubleshooting)  |
 | Authentication | There are some errors with file paths or URLs. *No files were found in the path provided. The client doesn't have permission to perform the action.* | Check if the path is correct and the account provided has access to the files. |
 | Authentication | There are some errors with file paths or URLs. *The user account provided does not have permissions for the files in this location.*  | Check if the client does have permission to perform the action, if the path is correct and the account provided has access to the files. |
