@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 description: "Troubleshooting the CSV Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 --- 
 
-# Troubleshooting guide for CSV Microsoft Graph connector 
+# Troubleshooting the CSV Microsoft Graph connector 
 
 ### 1. **Review "spaces" in the CSV header which results in errors while trying to authenticate** 
 No spaces are allowed in headers. Not only leading or trailing spaces, but no spaces allowed even in the middle of the header name.
