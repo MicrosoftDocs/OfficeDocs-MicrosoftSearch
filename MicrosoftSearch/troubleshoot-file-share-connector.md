@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: article 
 ms.service: mssearch 
 ms.localizationpriority: medium 
-description: "Troubleshoot issues with the File Share Graph connector for Microsoft Search" 
+description: "Troubleshooting the File Share Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 --- 
 
 # Troubleshooting guide for File Share Microsoft Graph connector  
