@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 description: "Troubleshooting the File Share Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 --- 
 
-# Troubleshooting guide for File Share Microsoft Graph connector  
+# Troubleshooting the File Share Microsoft Graph connector  
 
 ### 1. **The following are common errors observed while configuring the connector, or during crawling, and its possible reasons.**
 
