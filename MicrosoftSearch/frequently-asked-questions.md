@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph connectors FAQ"
-ms.author: gladysaj
+ms.author: gladysa
 author: gladysaj
 manager: brian.j
 ms.audience: Admin
@@ -39,7 +39,7 @@ Yes, one crucial aspect of bringing content into Microsoft 365 is maintaining se
 
 ## 6. Where is the data stored when it is in Microsoft? 
 When data enters the Microsoft cloud through the Graph connectors platform, it is automatically stored in the same region where the customer's Microsoft 365 tenant is located. We would also be adding options for customers to override the default region (upcoming feature).
-**Learn More:** [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide)
+**Learn More:** [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations)
 
 ## 7. Is the data ingested into Microsoft Graph connections encrypted? What encryption algorithm is used?  
 Yes, the data is encrypted. Here are the details: 
@@ -47,7 +47,7 @@ Yes, the data is encrypted. Here are the details:
 - **Data at rest (in customer's master store):** Encrypted using DEK (Data Encryption Key) & KEK (Key Encryption Key) supplied to the partner. 
 - **Data in transit:** Secure tunnel. 
 - **Data at rest (in Office 365):** Encrypted using Office 365 encryption key by default (customers can provide their own encryption key) 
-- Learn more about encryption in [Microsoft cloud](/purview/office-365-encryption-in-the-microsoft-cloud-overview?view=o365-worldwide) 
+- Learn more about encryption in [Microsoft cloud](/purview/office-365-encryption-in-the-microsoft-cloud-overview) 
 
 ## 8. If customer data were already encrypted, would Microsoft now have access to the document encryption keys?
 No, Microsoft would not have (or need) access to partner encryption keys. Content in the Microsoft cloud would be encrypted using Office 365 encryption keys by default. Customers can provide their own encryption key. For more information, see [Service encryption with customer key](/purview/customer-key-overview).
@@ -83,7 +83,7 @@ Microsoft Graph custom connectors allow you to integrate your own data sources i
 To build a custom Microsoft Graph connector, you can use the Microsoft Graph API. The API provides full control over the connection. **Learn more:** [Build your first custom Microsoft Graph connector](/graph/connecting-external-content-build-quickstart)
 
 ## 6. What are the prerequisites for creating a custom connector?
-To create a custom connector, you need a Microsoft work or school account with the Global administrator role, and access to a Microsoft 365 tenant. If you don't have a Microsoft 365 tenant, you might qualify for one through the [Microsoft 365 Developer Program.](/microsoft-365/dev-program) **Learn more:** [Build your first custom Microsoft Graph connector](/graph/custom-connector-sdk-sample-create#prerequisites)
+To create a custom connector, you need a Microsoft work or school account with the Global administrator role, and access to a Microsoft 365 tenant. If you don't have a Microsoft 365 tenant, you might qualify for one through the [Microsoft 365 Developer Program.](/office/microsoft-365-developer-program) **Learn more:** [Build your first custom Microsoft Graph connector](/graph/custom-connector-sdk-sample-create#prerequisites)
 
 ## 7. What is the difference between full crawl and incremental crawl?
 **Full Crawl:** 
@@ -111,9 +111,9 @@ There could be several reasons why results are not displayed in Microsoft Search
 - **Custom Verticals:** Creating a custom vertical for each data source can help in troubleshooting and ensuring that the data is indexed correctly.
 
 > [!NOTE]
-> * If you have checked these common issues and are still facing problems, please reach out to [Microsoft Graph Support](/graph/support) for further assistance. They can provide more specific guidance based on your configuration and data source.
+> * If you have checked these common issues and are still facing problems, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support). 
 
-## Graph Connector Agent (GCA) specific 
+## Microsoft Graph Connector Agent (GCA) specific 
 
 ## 1. How does GCA interact with its system, and where is the indexed data stored?
 The agent is installed on premises and needs access to the data source. Once the account is authorized, the agent crawls the data and talks to Graph connector services to push data to the index. The data indexed through Graph connectors sit at the same place.
