@@ -83,7 +83,7 @@ Microsoft Graph custom connectors allow you to integrate your own data sources i
 To build a custom Microsoft Graph connector, you can use the Microsoft Graph API. The API provides full control over the connection. **Learn more:** [Build your first custom Microsoft Graph connector](/graph/connecting-external-content-build-quickstart)
 
 ## 6. What are the prerequisites for creating a custom connector?
-To create a custom connector, you need a Microsoft work or school account with the Global administrator role, and access to a Microsoft 365 tenant. If you don't have a Microsoft 365 tenant, you might qualify for one through the [Microsoft 365 Developer Program.](/office/microsoft-365-developer-program) **Learn more:** [Build your first custom Microsoft Graph connector](/graph/custom-connector-sdk-sample-create#prerequisites)
+To create a custom connector, you need a Microsoft work or school account with the Global administrator role, and access to a Microsoft 365 tenant. If you don't have a Microsoft 365 tenant, you might qualify for one through the [Microsoft 365 Developer Program.](/developer-program/microsoft-365-developer-program) **Learn more:** [Build your first custom Microsoft Graph connector](/graph/custom-connector-sdk-sample-create#prerequisites)
 
 ## 7. What is the difference between full crawl and incremental crawl?
 **Full Crawl:** 
