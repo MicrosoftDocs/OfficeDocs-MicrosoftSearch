@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: article 
 ms.service: mssearch 
 ms.localizationpriority: medium 
-description: "Troubleshoot issues with the Azure Data Lake Storage Gen2 Graph connector for Microsoft Search" 
+description: "Troubleshooting the Azure Data Lake Storage Gen2 Graph Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 --- 
 
 # Troubleshooting guide for Azure Data Lake Storage Gen2 Microsoft Graph connector 
