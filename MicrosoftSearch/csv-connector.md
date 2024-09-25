@@ -235,6 +235,6 @@ The following are known limitations of the CSV Microsoft Graph connector:
 ## Troubleshooting
 After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
+You can find troubleshooting steps for commonly seen issues [here](troubleshoot-csv-connector.md).
+
 If you have issues or want to provide feedback, contact [Microsoft Graph | Support (https://developer.microsoft.com/en-us/graph/support).
-
-
