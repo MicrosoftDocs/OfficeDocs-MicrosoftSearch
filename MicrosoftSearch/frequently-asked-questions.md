@@ -125,4 +125,4 @@ The agent should be installed on a machine on the same network as the data sourc
 This permission allows GCA to read and write external connection settings on behalf of the Admin, but it can't access or modify anything beyond its granted permissions.
 
 ## 4. Can GCA be installed on multiple servers, and does the service run on both?
-Yes, GCA can be installed on multiple machines, for multiple connections. One GCA can handle multiple connections. The crawl performance depends on the number of connections used for one GCA, crawl frequency, number of items etc. We recommend using not more than 3 connections per agent.
+Yes, GCA can be installed on multiple machines, for multiple connections. One GCA can handle multiple connections. The crawl performance depends on the number of connections used for one GCA, crawl frequency, number of items, etc. We recommend using not more than 3 connections per agent.
