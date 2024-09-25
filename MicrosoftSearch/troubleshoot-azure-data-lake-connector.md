@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 description: "Troubleshooting the Azure Data Lake Storage Gen2 Graph Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 --- 
 
-# Troubleshooting guide for Azure Data Lake Storage Gen2 Microsoft Graph connector 
+# Troubleshooting the Azure Data Lake Storage Gen2 Microsoft Graph connector 
 
 ### Common errors observed while configuring the connector.
 
