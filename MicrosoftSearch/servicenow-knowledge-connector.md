@@ -360,4 +360,4 @@ You can change the default values of refresh interval from here if you want to.
 After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](/MicrosoftSearch/manage-connector).
 You can find troubleshooting steps for commonly seen issues [here](/MicrosoftSearch/troubleshoot-servicenow-knowledge-connector).
 
-If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)
+If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
