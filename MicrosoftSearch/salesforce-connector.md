@@ -13,25 +13,22 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Salesforce Microsoft Graph connector for Microsoft Search"
+description: "Set up the Salesforce Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
 <!---Previous ms.author: rusamai --->
 
 # Salesforce Microsoft Graph connector
 
-The Salesforce Microsoft Graph connector, allows your organization to index Contacts, Opportunities, Leads, Cases, and Accounts objects in your Salesforce instance. After you configure the connector and index content from Salesforce, end users can search for those items from any Microsoft Search client.
+The Salesforce Microsoft Graph connector, allows your organization to index contacts, opportunities, leads, cases, and accounts objects in your Salesforce instance. After you configure the connector and index content from Salesforce, end users can search for those items from any Microsoft Search and Microsoft 365 Copilot client.
 
-> [!NOTE]
-> Read the [**Set up Microsoft Graph connectors in the Microsoft 365 admin center**](configure-connector.md) article to understand the general Microsoft Graph connectors setup instructions.
-
-This article is for anyone who configures, runs, and monitors a Salesforce connector. It supplements the general setup process, and shows instructions that apply only for the Salesforce connector. This article also includes information about [Limitations](#limitations).
+This article is for anyone who configures, runs, and monitors a Salesforce Microsoft Graph connector. It supplements the general setup process and shows instructions that apply only to the Salesforce Microsoft Graph connector. This article also includes information about [Limitations](#limitations).
 
 >[!IMPORTANT]
->The Salesforce connector currently supports Summer '19 or later.
+>The Salesforce Microsoft Graph connector currently supports Summer '19 or later.
 
 ## Before you get started
 
-To connect to your Salesforce instance, you need your Salesforce instance URL, the Client ID, and Client Secret for OAuth authentication. The following steps explain how you or your Salesforce administrator can get this information from your Salesforce account:
+To connect to your Salesforce instance, you need your Salesforce instance URL, the client ID, and the client secret for OAuth authentication. The following steps explain how you or your Salesforce administrator can get this information from your Salesforce account:
 
 - Log in to your Salesforce instance and go to Setup
 
@@ -41,15 +38,15 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
 
 - Complete the API section as follows:
 
-    - Select the checkbox for **Enable Oauth Settings**.
+    - Select the checkbox for **Enable Oauth settings**.
 
     - Specify the Callback URL as: For **M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`, for **M365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
 
     - Select these required OAuth scopes.
 
-        - Access and manage your data (api)
+        - Access and manage your data (API).
 
-        - Perform requests on your behalf at any time (refresh_token, offline_access)
+        - Perform requests on your behalf at any time (refresh_token, offline_access).
 
     - Select the checkbox for **Require secret for web server flow**.
 
@@ -58,21 +55,21 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
       > [!div class="mx-imgBorder"]
       > ![API section in Salesforce instance after admin has entered all required configurations listed above.](media/salesforce-connector/sf1.png)
 
-- Copy the consumer key and the consumer secret. This information will be used as the Client ID and the Client Secret when you configure the Connection Settings for your Graph Connector in the Microsoft 365 admin portal.
+- Copy the consumer key and the consumer secret. This information is used as the client ID and the client secret when you configure the connection ettings for your Salesforce Microsoft Graph connector in the Microsoft 365 admin portal.
 
   > [!div class="mx-imgBorder"]
   > ![Results returned by API section in Salesforce instance after admin has submitted all required configurations. Consumer Key is at top of left column and Consumer Secret is at top of right column.](media/salesforce-connector/clientsecret.png)
   
 - Before closing your Salesforce instance, follow these steps to ensure that refresh tokens don't expire:
-    - Go to Apps -> App Manager
-    - Find the app you created and select the drop-down on the right. Select **Manage**
-    - Select **edit policies**
-    - For refresh token policy, select **Refresh token is valid until revoked**
+    - Go to Apps -> App Manager.
+    - Find the app you created and select the drop-down on the right. Select **Manage**.
+    - Select **edit policies**.
+    - For the refresh token policy, select **Refresh token is valid until revoked**.
 
   > [!div class="mx-imgBorder"]
   > ![Select the Refresh Token Policy named "Refresh token is valid until revoked ".](media/salesforce-connector/oauthpolicies.png)
 
-You can now use the [Microsoft 365 Admin Center](https://admin.microsoft.com/) to complete the rest of the setup process for your Graph connector.
+You can now use the [Microsoft 365 Admin Center](https://admin.microsoft.com/) to complete the rest of the setup process for your Microsoft Graph connector.
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
 
@@ -88,27 +85,27 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ## Step 3: Configure the connection settings
 
-For the Instance URL, use https://[domain].my.salesforce.com where domain would be the Salesforce domain for your organization.
+For the Instance URL, use https://[domain].my.salesforce.com where the domain would be the Salesforce domain for your organization.
 
-Enter the Client ID and Client Secret you obtained from your Salesforce instance and select Sign in.
+Enter the client ID and client Secret you obtained from your Salesforce instance and select Sign in.
 
 The first time you've attempted to sign in with these settings, you'll get a pop-up asking you to log in to Salesforce with your admin username and password. The screenshot below shows the popup. Enter your credentials and select "Log In".
 
   ![Login pop up asking for Username and password.](media/salesforce-connector/sf4.png)
 
   >[!NOTE]
-  >If the pop up does not appear, it might be getting blocked in your browser, so you must allow pop-ups and redirects.
+  >If the pop-up does not appear, it might be getting blocked in your browser, so you must allow pop-ups and redirects.
 
-Check that the connection was successful by searching for a green banner that says "Connection successful" as show in the screenshot below.
+Check that the connection was successful by searching for a green banner that says "connection successful" as shown in the screenshot below.
 
   > [!div class="mx-imgBorder"]
   > ![Screenshot of successful login. The green banner that says "Connection successful" is located under the field for your Salesforce Instance URL](media/salesforce-connector/salesforce-connector-connection-settings.png)
 
 ## Step 4: Select properties
 
-Select the Salesforce objects that you want the connector to crawl and include in search results. If Contact is selected, Account will be automatically selected as well.
+Select the Salesforce objects that you want the connector to crawl and include in search results. If Contact is selected, Account is automatically selected as well.
 
-*The list of properties that you select here, can impact how you can filter, search and view your results in Copilot for Microsoft 365.*
+*The list of properties that you select here, can impact how you can filter, search, and view your results in Microsoft 365 Copilot.*
 
 **Source property** | **Label** | **Description**
 --- | --- | ---
@@ -118,18 +115,18 @@ CreatedDate   | `createdDateTime` | Date and time that the item was created in t
 Url  | `url` | The target URL of the item in the data source.
 LastModifiedBy   | `lastModifiedBy` | Name of the person who most recently edited the item in the data source.
 LastModifiedDateTime  | `lastModifiedDateTime` | Date and time the item was last modified in the data source.
-Name   | `title` | The title of the item that you want shown in search and other experiences.
+Name   | `title` | The title of the item that you want to show in search and other experiences.
 
 >[!NOTE]
->If a field has field level security (FLS) set for a profile, the connector won't ingest that field for any profiles in that Salesforce org. As a result, users won't be able to search on values for those fields, nor will it show up in the results.
+>If a field has field level security (FLS) set for a profile, the connector won't ingest that field for any profiles in that Salesforce org. As a result, users won't be able to search for values for those fields or show up in the results.
 
 ## Step 5: Manage search permissions
 
-You'll need to choose which users will see search results from this data source. If you allow only certain Microsoft Entra ID or Non-Azure AD users to see the search results, make sure you map the identities.
+You'll need to choose which users see search results from this data source. If you allow only certain Microsoft Entra ID or non-Azure AD users to see the search results, make sure you map the identities.
 
 ### Step 5.a: Select permissions
 
-You can choose to ingest Access Control Lists (ACLs) from your Salesforce instance, or allow everyone in your organization to see search results from this data source. ACLs can include Microsoft Entra identities (users who are federated from Microsoft Entra ID to Salesforce), non-Azure AD identities (native Salesforce users who have corresponding identities in Microsoft Entra ID), or both.
+You can choose to ingest Access Control Lists (ACLs) from your Salesforce instance or allow everyone in your organization to see search results from this data source. ACLs can include Microsoft Entra identities (users who are federated from Microsoft Entra ID to Salesforce), non-Azure AD identities (native Salesforce users who have corresponding identities in Microsoft Entra ID), or both.
 
 >[!NOTE]
 >If you use a third-party Identity Provider like Ping ID or secureAuth, you should select "non-AAD" as the identity type.
@@ -149,13 +146,13 @@ If you chose to ingest an ACL from your Salesforce instance and selected "AAD" f
 
 ### Apply user mapping to sync your Salesforce identities to Microsoft Entra identities
 
-In this video you can see the process to authenticate to your Salesforce instance, sync your non-Microsoft Entra identities to your Microsoft Entra identities, and apply the proper security trimmings to your Salesforce items.
+In this video, you can see the process to authenticate to your Salesforce instance, sync your non-Microsoft Entra identities to your Microsoft Entra identities, and apply the proper security trimmings to your Salesforce items.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
 ## Step 6: Assign property labels
 
-You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels will improve the search relevance and ensure better search results for end users. By default, some of the Labels like "Title," "URL," "CreatedBy," and  "LastModifiedBy" have already been assigned source properties.
+You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels improves the search relevance and ensures better search results for end users. By default, some of the Labels like "Title," "URL," "CreatedBy," and  "LastModifiedBy" have already been assigned source properties.
 
 ## Step 7: Manage schema
 
@@ -179,9 +176,9 @@ The recommended schedule is one week for a full crawl.
 Follow the general [setup instructions](./configure-connector.md).
 
 >[!TIP]
->**Default Result type**
+>**Default result type**
 >* The Salesforce connector automatically registers a [result type](./customize-search-page.md#step-2-create-result-types) once the connector is published. The result type uses a dynamically generated [result layout](./customize-results-layout.md) based on the fields selected in step 3.
->* You can manage the result type by navigating to [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) in the [Microsoft 365 admin center](https://admin.microsoft.com). The default result type will be named as "`ConnectionId`Default". For example, if your connection id is `Salesforce`, your result layout will be named: "SalesforceDefault"
+>* You can manage the result type by navigating to [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) in the [Microsoft 365 admin center](https://admin.microsoft.com). The default result type is named "`ConnectionId`Default". For example, if your connection ID is `Salesforce`, your result layout is named: "SalesforceDefault".
 >* Also, you can choose to create your own result type if needed.
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
@@ -190,10 +187,10 @@ Follow the general [setup instructions](./configure-connector.md).
 
 ## Limitations
 
-- The Salesforce Microsoft Graph connector doesn't currently support Apex based, territory-based sharing and sharing using personal groups from Salesforce.
+- The Salesforce Microsoft Graph connector doesn't currently support Apex-based, territory-based sharing and sharing using personal groups from Salesforce.
 - There's a known bug in the Salesforce API the connector uses, where the private org-wide defaults for leads aren't honored currently.  
-- If a field has field level security (FLS) set for a profile, the connector won't ingest that field for any profiles in that Salesforce org. As a result, users won't be able to search on values for those fields, nor will it show up in the results.  
-- In the Manage Schema screen these common standard property names are listed once, the options are **Query**, **Search**, **Retrieve**, and **Refine**, and apply to all or none.
+- If a field has field level security (FLS) set for a profile, the connector won't ingest that field for any profiles in that Salesforce org. As a result, users won't be able to search for values for those fields or  show up in the results.  
+- In the manage schema screen these common standard property names are listed once, the options are **Query**, **Search**, **Retrieve**, and **Refine**, and apply to all or none.
     - Name
     - Url
     - Description
@@ -218,6 +215,8 @@ Follow the general [setup instructions](./configure-connector.md).
     - ObjectName
 
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md). 
 
-If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)
+You can find troubleshooting steps for commonly seen issues [here](troubleshoot-salesforce-connector.md).
+
+If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).

@@ -15,7 +15,6 @@ search.appverid:
 - MOE150
 description: "Set up the ServiceNow Knowledge Graph connector for Microsoft Search and Copilot."
 ---
-<!---Previous ms.author: kam1 --->
 
 # ServiceNow Knowledge Microsoft Graph connector
 
@@ -29,7 +28,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
    - How to request a new device?
    - How to create a new VPN connection?
    - How do I apply for leaves?
-- Use [Semantic search in Copilot](/MicrosoftSearch/semantic-index-for-copilot.md) to enable users to find relevant content based on keywords, personal preferences, and social connections.
+- Use [Semantic search in Copilot](semantic-index-for-copilot.md) to enable users to find relevant content based on keywords, personal preferences, and social connections.
 
 ## Limitations
 - Doesn't support [Advanced scripts](https://docs.servicenow.com/bundle/xanadu-servicenow-platform/page/product/knowledge-management/task/create-user-criteria-record-in-knowledge-management.html).
@@ -66,17 +65,17 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Get Started
 
-![Screenshot that shows Connection creation screen for Microsoft Graph Connector for ServiceNow Knowledge](/MicrosoftSearch/media/servicenow-knowledge-create-page.png "Add Microsoft Graph Connector for ServiceNow Knowledge")
+![Screenshot that shows Connection creation screen for Microsoft Graph Connector for ServiceNow Knowledge](media/servicenow-knowledge-create-page.png "Add Microsoft Graph Connector for ServiceNow Knowledge")
 
-###1. Display name
+### 1. Display name
 
 A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
-###2. ServiceNow URL
+### 2. ServiceNow URL
 
 To connect to your ServiceNow data, you need your organization's ServiceNow instance URL. Your organization's ServiceNow instance URL typically looks like `https://your-organization-name.service-now.com`.
 
-###3. Authentication Type
+### 3. Authentication Type
 
 To authenticate and sync content from ServiceNow, choose **one of three** supported methods:<br>
 
@@ -150,12 +149,12 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
 
             Now you have all the information required from Azure portal. A quick summary of the information is given in the table below.
 
-         Property | Description
-         --- | ---
-         Directory ID (Tenant ID) | Unique ID of the Microsoft Entra tenant, from step 3.a.
-         Application ID (Client ID) | Unique ID of the application registered in step 3.a.
-         Client Secret | The secret key of the application (from step 3.b). Treat it like a password.
-         Service Principal ID | An identity for the application running as a service. (from step 3.c)
+            Property | Description
+            --- | ---
+            Directory ID (Tenant ID) | Unique ID of the Microsoft Entra tenant, from step 3.a.
+            Application ID (Client ID) | Unique ID of the application registered in step 3.a.
+            Client Secret | The secret key of the application (from step 3.b). Treat it like a password.
+            Service Principal ID | An identity for the application running as a service. (from step 3.c)
 
    4. Register ServiceNow Application
 
@@ -210,7 +209,7 @@ To authenticate and sync content from ServiceNow, choose **one of three** suppor
 
 </details>
 
-###4. Rollout to limited audience
+### 4. Rollout to limited audience
 
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, click [here](/MicrosoftSearch/staged-rollout-for-graph-connectors).
 
@@ -237,14 +236,13 @@ If you want to edit any of these values, you need to choose the "Custom Setup" o
 
 [Get started with Microsoft Graph Connector for ServiceNow Knowledge](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add?ms_search_referrer=MicrosoftSearchDocs_ServiceNowKB&type=ServiceNowKB)
 
-
-##Custom Setup
+## Custom Setup
 
 Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click on the "Custom Setup" option, you see three more tabs – Users, Content, and Sync.
 
-###Users
+### Users
 
-![Screenshot that shows Users tab where you can configure access permissions and user mapping rules](/MicrosoftSearch/media/servicenow-knowledge-users-tab.png "Configure settings related to Users")
+![Screenshot that shows Users tab where you can configure access permissions and user mapping rules](media/servicenow-knowledge-users-tab.png "Configure settings related to Users")
 
 **Access Permissions**
 
@@ -253,19 +251,20 @@ The ServiceNow connector supports access permissions visible to "Everyone" or "O
 If a knowledge article isn't enabled with a user criterion, it appears in results of everyone in the organization.
 
 >[!IMPORTANT]
->In ServiceNow, while assessing read permissions for a user, both article-level permissions and KB-level permissions are looked at. The Microsoft Graph connector for ServiceNow treats permissions differently:
->1. If the article contains '_Can Read_' user criteria, then they are stamped on the article during ingestion and Knowledge Base '_Can Read_' / '_Can Contribute_' user criteria are ignored.
->2. If the article contains '_Cannot Read_' user criteria, and if the corresponding Knowledge base also contains '_Cannot Read_' user criteria, then both the user criteria are stamped on the article.
+> In ServiceNow, while assessing read permissions for a user, both article-level permissions and KB-level permissions are looked at. The Microsoft Graph connector for ServiceNow treats permissions differently:
+> 1. If the article contains '_Can Read_' user criteria, then they are stamped on the article during ingestion and Knowledge Base '_Can Read_' / '_Can Contribute_' user criteria are ignored.
+> 2. If the article contains '_Cannot Read_' user criteria, and if the corresponding Knowledge base also contains '_Cannot Read_' user criteria, then both the user criteria are stamped on the article.
 
->[!NOTE]: If a user is part of the '_Can Read_' user criteria at the article level but not in the '_Can Read_' / '_Can Contribute_' user criteria at the Knowledge Base level, **then the user will not have access to the article in ServiceNow but will have access to the article in Microsoft Copilot, Microsoft Search and other M365 surfaces**. The workaround is to remove the user from the '_Can Read_' user criteria at the article level.
+>[!NOTE]
+> If a user is part of the '_Can Read_' user criteria at the article level but not in the '_Can Read_' / '_Can Contribute_' user criteria at the Knowledge Base level, **then the user will not have access to the article in ServiceNow but will have access to the article in Microsoft Copilot, Microsoft Search and other M365 surfaces**. The workaround is to remove the user from the '_Can Read_' user criteria at the article level.
 
 **Mapping Identities**
 
 The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the Email id of ServiceNow users is same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra ID. If you believe the default mapping would not work for your organization, you can provide a custom mapping formula. To know more about, mapping Non-EntraID identities, click [here](/MicrosoftSearch/map-non-aad).
 
-###Content
+### Content
 
-![Screenshot that shows Content tab where you can configure Query string and Properties](/MicrosoftSearch/media/servicenow-knowledge-content-tab.png "Configure settings related to your content")
+![Screenshot that shows Content tab where you can configure Query string and Properties](media/servicenow-knowledge-content-tab.png "Configure settings related to your content")
 
 **Query String**
 
@@ -313,11 +312,11 @@ Here, you can add or remove available properties from your ServiceNow data sourc
 
 Use the preview results button to verify the sample values of the selected properties and query filter.
 
-![Screenshot that shows Preview data option to check the query filter and properties you have configured](/MicrosoftSearch/media/servicenow-knowledge-preview-data.png "Preview data to validate your Query filter and Manage Properties settings")
+![Screenshot that shows Preview data option to check the query filter and properties you have configured](media/servicenow-knowledge-preview-data.png "Preview data to validate your Query filter and Manage Properties settings")
 
-###Sync
+### Sync
 
-![Screenshot that shows Sync tab where you can configure crawl frequency](/MicrosoftSearch/media/servicenow-knowledge-sync-tab.png "Configure Crawl frequency")
+![Screenshot that shows Sync tab where you can configure crawl frequency](media/servicenow-knowledge-sync-tab.png "Configure Crawl frequency")
 
 The refresh interval determines how often your data is synced between the data source and the Graph connector index. There are two types of refresh intervals – full crawl and incremental crawl. For more details, click [here](/MicrosoftSearch/configure-connector#step-8-refresh-settings).
 
@@ -358,7 +357,7 @@ You can change the default values of refresh interval from here if you want to.
 </details>
 
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector).
-You can find troubleshooting steps for commonly seen issues [here](troubleshoot-servicenow-knowledge-connector).
+After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](./manage-connector.md).
+You can find troubleshooting steps for commonly seen issues [here](./troubleshoot-servicenow-knowledge-connector.md).
 
-If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)
+If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).

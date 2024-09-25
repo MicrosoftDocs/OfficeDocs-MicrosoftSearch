@@ -16,18 +16,27 @@ description: "Release history of Microsoft Graph connector agent, which is used 
 
 Indexing on-premises data sources require you to install *Microsoft Graph connector agent* software. It allows for secure data transfer between on-premises data and the connector APIs.
 
-For help on installation, refer to this [page](graph-connector-agent.md#installation)
+For help on installation, refer to [this page](graph-connector-agent.md#installation).
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
 
+## Version 3.1.0.0 (*September 24, 2024)
+
+* This update marks the General Availability of [Confluence On-premises](confluence-onpremises-connector.md) and [SharePoint Server](sharepoint-server-connector.md) connectors.
+* Bug fixes and reliability improvements.
+
+## Version 3.0.1.0 (*September 12, 2024)
+
+* Bug fixes and reliability improvements.
+
 ## Version 3.0.0.0 (*August 08, 2024)
 
-* This is a critical security patch that enhances the secure communication between endpoints. We recommend you to upgrade to this version immediately as Microsoft will deprecate the previous versions by September 30, 2024. For more details, follow the communication from Microsoft in the Message Center. Please ignore if you have already upgraded to this version.
+* This update is with a critical security patch that enhances the secure communication between endpoints. We recommend you to upgrade to this version immediately as Microsoft will deprecate the previous versions by September 30, 2024. For more details, follow the communication from Microsoft in the Message Center.
 
 ## Version 2.4.0.0 (*July 05, 2024*)
 
-* Support for .NET 8. The .NET 8 upgrade flow for the host machine will kick-in after you hit "Upgrade" button in the connection pane. Make sure to upgrade the machine's version to .NET 8 to avoid unexpected behavior. If there is a failure in the upgrade in the process, do a manual upgrade to the .NET version before upgrading the agent.
-* Feature to show elaborate index statistics for a connection. This gives more information about the current state of items in the index. [Learn more.](connector-details-errors.md#view-connection-statistics)
+* Support for .NET 8. The .NET 8 upgrade flow for the host machine will kick in after you hit Upgrade button in the connection pane. Make sure to upgrade the machine's version to .NET 8 to avoid unexpected behavior. If there is a failure in the upgrade in the process, do a manual upgrade to the .NET version before upgrading the agent.
+* Feature to show elaborate index statistics for a connection. This feature gives more information about the current state of items in the index. [Learn more.](connector-view-details.md#view-connection-statistics)
 * Bug fixes and reliability improvements.
 
 ## Version 2.3.7.0 (*June 12, 2024*)
@@ -85,7 +94,7 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 
 ## Version 2.2.5.0 (*August 30, 2023*)
 
-* Added functionality to keep trying the multiple instances if they are unreachable in the first crawl. Before this if the connectivity with one of the instances was interrupted, Graph connector agent did not retry the path in the subsequent crawl and threw a warning for the instance path.
+* Added functionality to keep trying the multiple instances if they are unreachable in the first crawl. Before the update if the connectivity with one of the instances was interrupted, Graph connector agent did not retry the path in the subsequent crawl and threw a warning for the instance path.
 * Bug fixes and reliability improvements
 
 ## Version 2.2.4.0 (*August 28, 2023*)
@@ -122,8 +131,8 @@ For help on installation, refer to this [page](graph-connector-agent.md#installa
 ## Version 2.0.0.0 (*March 15, 2023*)
 
 * Microsoft Graph connectors SDK GA: Updated SDK test utility with more test cases. [Learn more about Graph Connectors SDK](/graph/custom-connector-sdk-overview).
-* Support for .NET 7. This version upgrade requires a manual installation of the GCA and the “Upgrade” feature will not be available until this new version is installed. If you're upgrading from GCA 1.x to 2.x, refer to this [page](graph-connector-agent.md).
-* Improved troubleshooting of common GCA issues through "Health Check" feature in Registration details page. Now, you can click on the "Health check" button, as in the image, to check GCA health.
+* Support for .NET 7. This version upgrade requires a manual installation of the Graph Connector Agent and the “Upgrade” feature will not be available until this new version is installed. If you're upgrading from Graph Connector Agent 1.x to 2.x, refer to this [page](graph-connector-agent.md).
+* Improved troubleshooting of common Graph Connector Agent issues through "Health Check" feature in Registration details page. Now, you can click on the "Health check" button, as in the image, to check Graph Connector Agent health.
 :::image type="content" source="media/onprem-agent/health-check-registration.jpg" alt-text="Sample snapshot of Health check success on GCA registration page.":::
 
 * Bug fixes and performance improvements
