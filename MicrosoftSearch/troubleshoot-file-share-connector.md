@@ -1,6 +1,6 @@
 --- 
 ms.date: 08/28/2024 
-title: "Troubleshooting guide for File Share Microsoft Graph connector" 
+title: "Troubleshooting the File Share Microsoft Graph connector" 
 ms.author: gladysa
 author: gladysa
 manager: brian.jackett
