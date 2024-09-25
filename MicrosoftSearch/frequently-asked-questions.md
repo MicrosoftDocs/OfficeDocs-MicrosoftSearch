@@ -116,13 +116,13 @@ There could be several reasons why results are not displayed in Microsoft Search
 ## Microsoft Graph Connector Agent (GCA) specific 
 
 ## 1. How does GCA interact with its system, and where is the indexed data stored?
-The agent is installed on premises and needs access to the data source. Once the account is authorized, the agent crawls the data and talks to Graph connector services to push data to the index. The data indexed through Graph connectors sit at the same place.
+The agent is installed on-premises and needs access to the data source. Once the account is authorized, the agent crawls the data and talks to the Microsoft Graph connector services to push data to the index. The data indexed through Microsoft Graph connectors sit in the same place.
 
 ## 2. Where should the Microsoft Graph Connector Agent be installed?
-The agent should be installed on a machine that is on the same network as the data source, not necessarily the same machine hosting the data source. The data source URL must be accessible from the GCA machine.
+The agent should be installed on a machine on the same network as the data source, not necessarily the same machine hosting the data source. The data source URL must be accessible from the GCA machine.
 
 ## 3. Why does GCA require the ExternalConnection.ReadWrite.OwnedBy permission?
 This permission allows GCA to read and write external connection settings on behalf of the Admin, but it can't access or modify anything beyond its granted permissions.
 
 ## 4. Can GCA be installed on multiple servers, and does the service run on both?
-Yes, GCA can be installed on multiple machines, for multiple connections. One GCA can handle multiple connections. The crawl performance depends on the number of connections used for one GCA, crawl frequency, number of items etc. We recommend using not more than 3 connections per agent.
+Yes, GCA can be installed on multiple machines, for multiple connections. One GCA can handle multiple connections. The crawl performance depends on the number of connections used for one GCA, crawl frequency, number of items, etc. We recommend using not more than 3 connections per agent.
