@@ -1,6 +1,6 @@
 --- 
 ms.date: 09/11/2024 
-title: "Troubleshooting guide for Azure Data Lake Storage Gen2 Microsoft Graph connector" 
+title: "Troubleshooting the Azure Data Lake Storage Gen2 Microsoft Graph connector" 
 ms.author: gladysa
 author: gladysa
 manager: brian.jackett
