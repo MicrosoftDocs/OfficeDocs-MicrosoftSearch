@@ -48,4 +48,4 @@ If you observe discrepancies in access permissions applied to search results, ve
 
  ServiceNow user accounts that don't have a Microsoft 365 user in Microsoft Entra ID won't map. Non-user, service accounts are expected to fail user mapping. Number of user mapping failures can be accessed in identity stats area in connection detail window. Log of failed user mappings can be downloaded from Error tab.
 
-If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
