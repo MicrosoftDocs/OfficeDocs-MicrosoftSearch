@@ -116,7 +116,7 @@ There could be several reasons why results are not displayed in Microsoft Search
 ## Graph Connector Agent (GCA) specific 
 
 ## 1. How does GCA interact with its system, and where is the indexed data stored?
-The agent is installed on premises and needs access to the data source. Once the account is authorized, the agent crawls the data and talks to Graph connector services to push data to the index. The data indexed through Graph connectors sit at the same place.
+The agent is installed on-premises and needs access to the data source. Once the account is authorized, the agent crawls the data and talks to the Microsoft Graph connector services to push data to the index. The data indexed through Microsoft Graph connectors sit in the same place.
 
 ## 2. Where should the Microsoft Graph Connector Agent be installed?
 The agent should be installed on a machine that is on the same network as the data source, not necessarily the same machine hosting the data source. The data source URL must be accessible from the GCA machine.
