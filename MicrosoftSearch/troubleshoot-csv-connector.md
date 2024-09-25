@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: article 
 ms.service: mssearch 
 ms.localizationpriority: medium 
-description: "Troubleshoot issues with the CSV Graph connector for Microsoft Search" 
+description: "Troubleshooting the CSV Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 --- 
 
 # Troubleshooting guide for CSV Microsoft Graph connector 
