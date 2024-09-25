@@ -14,7 +14,7 @@ description: "Troubleshooting the Azure Data Lake Storage Gen2 Graph Microsoft G
 
 # Troubleshooting guide for Azure Data Lake Storage Gen2 Microsoft Graph connector 
 
-### 1. **Common errors observed while configuring the connector and their possible reasons are listed below.**
+### Common errors observed while configuring the connector.
 
 | Configuration step | Error message | Possible reason(s) |
 | ------------ | ------------ | ------------ |
