@@ -189,6 +189,10 @@ items:
           items:
           - name: Setup
             href: zendesk-help-center-connector.md
+        - name: Google Drive
+          items:
+          - name: Setup
+            href: MicrosoftSearch/Google-Drive-connector.md
     - name: Deploy Microsoft Graph connectors in Teams admin center
       href: connectors-deploy-teams.md
     - name: Manage connections
