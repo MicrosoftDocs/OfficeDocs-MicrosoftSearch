@@ -19,7 +19,7 @@ ms.date: 09/19/2024
 
 # Google Drive Graph connector (Preview)
 
-With the Microsoft Graph connector, your organization in M365 can index files that accesslble to anyone in Google Drive, using in Microsoft Copilot and Search. 
+With the Microsoft Graph connector, your organization in M365 can index files that are accessible to anyone in Google Drive, using Microsoft Copilot and Search. 
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors Google Drive connector. 
 
@@ -34,7 +34,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 
 ## Limitations
-- Folder, replies & comments aren't inxedbale 
+- Folder, replies & comments aren't indexable 
 - Doesn't crawl user identities and access permissions.
 - Only files accessible to anyone in Google Drive are indexed.
 - All files indexed using the Google Drive connector are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
@@ -45,10 +45,10 @@ Before you create a Google Drive connector, you must:
 Either be granted access by a super admin role or are a user with administrative privileges. You do not need a super admin role for yourself if you have been granted access by a super admin role.
 
 ### 2. Configure Google Drive Service Account connection credentials
-Configured Google Drive Service Account connection credentials containing your admin account email, client email (service account email), and private key. See [Create and delete service account keys](https://cloud.google.com/iam/docs/keys-create-delete) for more info.
+Configured Google Drive Service Account connection credentials containing your admin account email, client email (service account email), and private key. For more information, see [Create and delete service account keys](https://cloud.google.com/iam/docs/keys-create-delete).
 
 ### 3. Create a Google Cloud Service Account
-Create a Google Cloud Service Account (an account with delegated authority to assume a user identity) with Enable G Suite Domain-wide Delegation activated for server-to-server authentication, and then generate a JSON private key using the account. See [Create service accounts](https://cloud.google.com/iam/docs/service-accounts-create) for more info.
+Create a Google Cloud Service Account (an account with delegated authority to assume a user identity) with Enable G Suite Domain-wide Delegation activated for server-to-server authentication, and then generate a JSON private key using the account. For more information, see [Create service accounts](https://cloud.google.com/iam/docs/service-accounts-create).
 
 ### 4. Add required APIs in your user account
 Add Admin SDK API and Google Drive API in your user account.
@@ -68,7 +68,7 @@ Add (or ask a user with a super admin role to add) the following OAuth scopes to
 A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item.   Display name also signifies trusted content.
 
 ### 2. Google Apps domain
-To sign up for Google Workspace, you need an internet domain name, like your-company.com. This domain can host a website (`www.your-company.com`) and email (`info@your-company.com`). See [What is a domain?](https://support.google.com/a/answer/177483?hl=en&ref_topic=3540977&sjid=7603839478714180429-AP) for more info.
+To sign up for Google Workspace, you need an internet domain name, like your-company.com. This domain can host a website (`www.your-company.com`) and email (`info@your-company.com`). For more information, see [What is a domain?](https://support.google.com/a/answer/177483?hl=en&ref_topic=3540977&sjid=7603839478714180429-AP).
 
 ### 3. Google Apps administrator account email
 Enter the email of a Google Apps administrator account in the `user@company.com` format.
@@ -144,4 +144,4 @@ Authentication error, one or more required OAuth scopes to your service account 
 
 After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
-If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support)
+If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
