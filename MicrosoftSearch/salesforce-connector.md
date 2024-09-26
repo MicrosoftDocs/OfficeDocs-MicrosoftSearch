@@ -55,7 +55,7 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
       > [!div class="mx-imgBorder"]
       > ![API section in Salesforce instance after admin has entered all required configurations listed above.](media/salesforce-connector/sf1.png)
 
-- Copy the consumer key and the consumer secret. This information is used as the client ID and the client secret when you configure the connection ettings for your Salesforce Microsoft Graph connector in the Microsoft 365 admin portal.
+- Copy the consumer key and the consumer secret. This information is used as the client ID and the client secret when you configure the connection settings for your Salesforce Microsoft Graph connector in the Microsoft 365 admin portal.
 
   > [!div class="mx-imgBorder"]
   > ![Results returned by API section in Salesforce instance after admin has submitted all required configurations. Consumer Key is at top of left column and Consumer Secret is at top of right column.](media/salesforce-connector/clientsecret.png)
@@ -105,20 +105,21 @@ Check that the connection was successful by searching for a green banner that sa
 
 Select the Salesforce objects that you want the connector to crawl and include in search results. If Contact is selected, Account is automatically selected as well.
 
-*The list of properties that you select here, can impact how you can filter, search, and view your results in Microsoft 365 Copilot.*
-
-**Source property** | **Label** | **Description**
---- | --- | ---
-Authors   | `authors` | Name of people who participated/collaborated on the item in the data source.
-CreatedBy   | `createdBy` | Name of the person who created the item in the data source.
-CreatedDate   | `createdDateTime` | Date and time that the item was created in the data source.
-Url  | `url` | The target URL of the item in the data source.
-LastModifiedBy   | `lastModifiedBy` | Name of the person who most recently edited the item in the data source.
-LastModifiedDateTime  | `lastModifiedDateTime` | Date and time the item was last modified in the data source.
-Name   | `title` | The title of the item that you want to show in search and other experiences.
-
 >[!NOTE]
 >If a field has field level security (FLS) set for a profile, the connector won't ingest that field for any profiles in that Salesforce org. As a result, users won't be able to search for values for those fields or show up in the results.
+
+_Filter data_
+
+   You may further choose to filter the Salesforce content that are indexed in two ways:
+
+   * Specify the item **modified time period**. This option will only index the Salesforce content that are created or modified in the time period selected on a **rolling basis** based on current crawl.
+   * Enter the Salesforce query ([SOQL](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql_select_conditionexpression.htm)) specifying what you want to index using the **WHERE** clause.
+
+  > [!div class="mx-imgBorder"]
+  > ![Screenshot of filtering options in the Salesforce connector](media/salesforce-connector/sf10.png)
+
+   > [!TIP]
+   > You may leave the **WHERE** clause empty if you want to index all the content of the particular entity
 
 ## Step 5: Manage search permissions
 
@@ -153,6 +154,18 @@ In this video, you can see the process to authenticate to your Salesforce instan
 ## Step 6: Assign property labels
 
 You can assign a source property to each label by choosing from a menu of options. While this step is not mandatory, having some property labels improves the search relevance and ensures better search results for end users. By default, some of the Labels like "Title," "URL," "CreatedBy," and  "LastModifiedBy" have already been assigned source properties.
+
+*The list of properties that you select here, can impact how you can filter, search, and view your results in Microsoft 365 Copilot.*
+
+**Source property** | **Label** | **Description**
+--- | --- | ---
+Authors   | `authors` | Name of people who participated/collaborated on the item in the data source.
+CreatedBy   | `createdBy` | Name of the person who created the item in the data source.
+CreatedDate   | `createdDateTime` | Date and time that the item was created in the data source.
+Url  | `url` | The target URL of the item in the data source.
+LastModifiedBy   | `lastModifiedBy` | Name of the person who most recently edited the item in the data source.
+LastModifiedDateTime  | `lastModifiedDateTime` | Date and time the item was last modified in the data source.
+Name   | `title` | The title of the item that you want to show in search and other experiences.
 
 ## Step 7: Manage schema
 
