@@ -42,9 +42,7 @@
       "breadcrumb_path": "/MicrosoftSearch/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "recommendations": true,
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/OfficeDocs-MicrosoftSearch",
-      "feedback_product_url": "https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch/issues",
+      "feedback_system": "None",
       "searchScope": ["Microsoft Search"],
       "contributors_to_exclude": [
         "rjagiewich",  
@@ -56,7 +54,9 @@
         "Stacyrch140",
         "garycentric",
         "beccarobins",
-        "dstrome"
+        "dstrome",
+        "padmagit77",
+        "aditisrivastava07"
       ]
     },
     "fileMetadata": {},

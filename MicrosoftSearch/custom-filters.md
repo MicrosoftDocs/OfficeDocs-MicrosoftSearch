@@ -1,8 +1,8 @@
 ---
 title: "Manage  filters"
-ms.author: jeffkizn
+ms.author: misvenso
 author: revathi-b
-manager: jeffkizn
+manager: wobba
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -19,14 +19,23 @@ description: "Manage filters for use on the SERP"
 
 Filters allow users to refine the results of their queries and display the refined results. You can customize the filters available to your users in the Microsoft Search experience.
 
-There are two types of filters available on the search page.
+There are three types of filters available on the search page.
 
 - Out of the box filters
+- Content source filters
 - Custom filters
 
 ## Out of the box filters
 
 Out of the box filters are available by default in search verticals such as All, Files, Images, and News. On the ‘All' and ‘File' verticals, you can see the "File type" filter on the FileType property and the "Last modified" filter on the LastModifiedTime property. These filters are available in SharePoint Home, Office.com, SharePoint Sites, and Work vertical in Bing.
+
+## Content source filters 
+
+If you have multiple content sources enabled in Microsoft Search, you can also see the content source filter in the “All” vertical. These sources can be SharePoint-OneDrive, Power BI, Viva Learning, or sources added using Graph Connectors. 
+You can customize how Graph Connector content sources are shown in the filter experience. To customize the name and icon shown to users for a connection in content source filters: 
+- In Microsoft 365 admin center, go to Search and Intelligence > Data sources > select the connection you want to customize and then select Edit in the side panel. 
+- Set your Connection Display name and icon. Certain keywords are reserved and can’t be used in the Display name (such as Microsoft brands and default search vertical names). 
+To group together multiple connections into a single value in the filter, set the same Display name for them.
 
 ## Custom filters
 

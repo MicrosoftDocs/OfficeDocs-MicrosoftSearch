@@ -40,7 +40,7 @@ Using the recommended configuration of the machine, the connector agent instance
 
 * Windows 10, Windows Server 2016 R2 and higher versions
 * [.NET Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
-* [.NET Core Desktop Runtime 7.0 (x64)](https://dotnet.microsoft.com/download/dotnet/7.0)
+* [.NET Core Desktop Runtime 8.0 (x64)](https://dotnet.microsoft.com/download/dotnet/8.0)
 * 8 cores, 3 GHz
 * 16 GB RAM, 2 GB Disk Space
 * Network access to data source and internet through 443
@@ -72,7 +72,7 @@ The upgrade button isn't available for agents upgrading from 1.x version to 2.x 
 
 1. Download the installer from the link provided in the installation section.
 
-2. The installer asks you to install .NET 7 Desktop runtime, if not already installed.
+2. The installer asks you to install .NET 8 Desktop runtime, if not already installed.
 
 3. Allow communication to the endpoint *.office.com.
 
@@ -219,9 +219,12 @@ Post registration, some local settings may affect the connectivity of the agent.
 
 The agent is considered offline if it isn't able to contact graph connector services. In such cases, follow these steps:
 
-1. Check if the agent is running - Sign-in to the machine where the agent is installed and check if it's running. In Task Manager, go to Services tab, check if GcaHostService is in the running state. If not, right click and start the service.
-![Screenshot of services in Task Manager.](media/onprem-agent/GcaHostService_GcaUpdateService.png)
-2. Check if domain gcs.office.com is reachable. Follow these steps:
+1. Check if the agent is running - Sign-in to the machine where the agent is installed and check if it's running. In Task Manager, go to Services tab, check if GcaHostService is in the running state. If not, right click and start the service. 
+
+    ![Screenshot of services in Task Manager.](media/onprem-agent/GcaHostService_GcaUpdateService.png)
+
+1. Check if domain gcs.office.com is reachable. (For a GCC tenant, substitute gcsgcc.office.com, and for a GCCHigh tenant, substitute gcs.office365.us, as shown in the initial table.)
+   Follow these steps:
     * From PowerShell, run the following command:
 
     ```powershell
@@ -234,7 +237,7 @@ The agent is considered offline if it isn't able to contact graph connector serv
 
     If it's false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
 
-    * If you can't run tnc because ICMP ping is blocked in your network, run the following command:
+    * For a more specific test, or if you can't run tnc because ICMP ping is blocked in your network, run the following command:
 
     ```powershell
     wget https://gcs.office.com/v1.0/admin/AdminDataSetCrawl/healthcheck
@@ -245,17 +248,18 @@ The agent is considered offline if it isn't able to contact graph connector serv
     ![Screenshot of wget 200.](media/onprem-agent/wget_gcs_1.png)
 
     If it isn't 200, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
-3. If the steps have passed successfully and the agent is still offline, check the GCA logs for any network proxy issues.
+
+1. If the steps have passed successfully and the agent is still offline, check the GCA logs for any network proxy issues.
     * GcaHostService logs can be found in the given location (you might need to manually navigate to this path - copy paste in file explorer may not work):
         1. For Windows Server 2016 OS: C:\Users\GcaHostService\AppData\Local\Microsoft\GraphConnectorAgent\HostService\logs
         2. For all other supported Windows OS Version: C:\Windows\ServiceProfiles\GcaHostService\AppData\Local\Microsoft\GraphConnectorAgent\HostService\logs
     * Sort the log files in the folder in reverse order of “Modified Time” and open the latest two files.
     * Check for any error messages with following text: “No connection could be made because the target machine actively refused it.”
-        1. This indicates that there's an issue with the network settings that is preventing the GcaHostService virtual account from contacting "https://gcs.office.com" endpoint.
+        1. This indicates that there's an issue with the network settings that is preventing the GcaHostService virtual account from contacting the https://gcs.office.com endpoint.
         2. Check with your network/proxy team to allow the virtual account (NT Service\GcaHostService), to send traffic to this domain.
         3. You can verify that the issue is resolved if the log file no longer contains these errors.
 
-4. If none of the steps fix your issue, contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the aforementioned location.
+1. If none of the steps fix your issue, contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the aforementioned location.
 
 #### Agent is unreachable
 
@@ -276,7 +280,7 @@ Using the service bus namespace provided in the error details, follow these step
    ![Screenshot of tnc 2.](media/onprem-agent/tnc_gcs_namespace.png)
 
    If it's false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
-2. If you can't run tnc because ICMP Ping is blocked in your network, run the following command in PowerShell:
+1. If you can't run tnc because ICMP Ping is blocked in your network, run the following command in PowerShell:
 
     ```powershell
     wget https://<yournamespacename>.servicebus.windows.net/
@@ -287,7 +291,8 @@ Using the service bus namespace provided in the error details, follow these step
    ![Screenshot of wget 2.](media/onprem-agent/wget_gcs_namespace.png)
 
    If it's false, verify that the domain is allowed in your proxy/firewall and requests are going through the proxy.
-3. If none of the steps fix your issue, contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the aforementioned location.
+
+1. If none of the steps fix your issue, contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files from the aforementioned location.
 
 #### Update in progress
 
@@ -299,7 +304,8 @@ If the error persists after 30 minutes, follow these steps:
 
 1. Check if the agent is running - Sign-in to the machine where the agent is installed and check if it's running. In Task Manager, go to Services tab, check if GcaHostService is in the running state. If not, right click and start the service.
 ![Screenshot of services in Task Manager 2.](media/onprem-agent/GcaHostService_GcaUpdateService.png)
-2. If the issue is still seen, contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files. Manually traverse to the location to access the logs and share the same with the team - C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\GraphConnectorAgent\AgentUpdateApp\logs
+
+1. If the issue is still seen, contact support by sending an email to MicrosoftGraphConnectorsFeedback@service.microsoft.com, and provide the two latest log files. Manually traverse to the location to access the logs and share the same with the team - C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\GraphConnectorAgent\AgentUpdateApp\logs
 
 ### Connection failure
 
