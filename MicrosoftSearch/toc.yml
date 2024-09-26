@@ -127,6 +127,10 @@ items:
             href: fileshare-connector.md
           - name: Troubleshooting
             href: troubleshoot-file-share-connector.md
+        - name: Google Drive
+          items:
+          - name: Setup
+            href: Google-Drive-connector.md
         - name: MediaWiki
           items:
           - name: Setup
