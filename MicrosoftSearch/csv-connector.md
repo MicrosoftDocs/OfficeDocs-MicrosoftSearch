@@ -28,7 +28,7 @@ This article is for anyone who configures, runs, and monitors a CSV Microsoft Gr
 
 - Make sure there's no whitespace in the CSV headers
 
-- For a SharePoint data source, you can authenticate using either of the two OAuth providers: **Microsoft Entra ID** (recommended) or **SharePoint provider** ([retiring soon](/sharepoint/dev/sp-add-ins/retirement-announcement-for-azure-acs)).
+- For a SharePoint data source, you can authenticate using either of the two OAuth providers: **Microsoft Entra ID** (coming soon) or **SharePoint provider** ([retiring soon](/sharepoint/dev/sp-add-ins/retirement-announcement-for-azure-acs)).
     - For authenticating using Microsoft Entra ID you'll need to create and register an app on Microsoft Entra ID.
     - For authenticating using SharePoint provider you'll need to create a SharePoint app with OAuth configuration.
 
@@ -155,7 +155,7 @@ The data source settings are different for SharePoint and ADLS.
 3. In **Document Library**, enter the name of the library where the .csv files are stored.
 4. In **OAuth provider**, you can either select **SharePoint Provider (retiring soon)** or **Microsoft Entra ID** <br>
 
-    a. For **Microsoft Entra ID**: <br>
+    a. For **Microsoft Entra ID (coming soon)**: <br>
         1. **Authentication Type**, select **Oauth2.0(authorization code)**.<br>
         2. Enter the Client ID and Client Secret you copied when you created the Microsoft Entra ID app.<br>
         3. Select **Sign In**. You should get a **Connection successful** message. <br>
