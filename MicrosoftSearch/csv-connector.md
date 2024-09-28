@@ -32,6 +32,9 @@ This article is for anyone who configures, runs, and monitors a CSV Microsoft Gr
     - For authenticating using Microsoft Entra ID you'll need to create and register an app on Microsoft Entra ID.
     - For authenticating using SharePoint provider you'll need to create a SharePoint app with OAuth configuration.
 
+> [!TIP]
+> You will be able to switch the OAuth provider for your published connection from SharePoint to Microsoft Entra ID, once available
+
 - For an ADLS data source, you'll need to create an ADLS storage account.
 
 ## SharePoint data source
