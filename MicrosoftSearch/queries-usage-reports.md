@@ -41,7 +41,7 @@ The data on top of the chart displays how often users engage with search results
 
 ## Query distribution
 
-:::image type="content" source="media/query-distribution.png" alt-text="Screenshot showing charts for query distribution." lightbox="media/query-distribution.png":::
+:::image type="content" source="media/queries-distribution.png" alt-text="Screenshot showing charts for query distribution." lightbox="media/queries-distribution.png":::
 
 The query data is provided in four charts:
 
@@ -84,7 +84,7 @@ Each top search item provides the following data:
 
 When selecting a search term, a fly-out for the term is shown:
 
-:::image type="content" source="media/query-flyout.png" alt-text="Screenshot showing the flyout pane for the selected search term." lightbox="media/query-flyout.png":::
+:::image type="content" source="media/queries-flyout.png" alt-text="Screenshot showing the flyout pane for the selected search term." lightbox="media/queries-flyout.png":::
 
 The flyout displays data for a particular search term across all Microsoft Search applications to help understand user behavior and top results for this query.
 
