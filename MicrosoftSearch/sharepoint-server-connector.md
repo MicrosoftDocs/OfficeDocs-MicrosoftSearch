@@ -123,14 +123,14 @@ The below options are available.
 | Access permissions | _Only people with access to content in Data source can see the content.(Recommended)._ |
 | Everyone | _The connection is open to everyone and anyone in your organization can see the content._ |
 
+> [!NOTE]
+> Graph Connectors support Users, Security Groups and Distribution Lists. However, the data source (SharePoint Server) does not support Distribution Lists as Access Control Lists. If there are nested distribution lists, members of those distribution lists may also get access to content through Graph connectors.
+
 The default and preferred option is the one where connector honors the data source permissions and only allowed users can see the results. You are free to change it to "Everyone" if you want to make it available for everyone in the organization.
 
 [![Screenshot that shows users tab](media/sharepoint-server/userstabsp.png)](media/sharepoint-server/userstabsp.png#lightbox)
 
-The SharePoint on-prem connector supports existing Access Controlled List on given items. Indexed data appears in the search results and is only visible to users who have permission to view. Microsoft 365 experiences understand and honor Entra Id permissions. To support Access Controlled List on items, we require that Active Directory identities and Entra Identities are synced.
-
-> [!NOTE]
-> Graph connectors support Users and Security Groups and not Distribution Lists because the data source (SharePoint Server) does not support Distribution Lists. To allow users or security groups for an item, make sure they are part of the Users or Security Groups and not Distribution Lists. If there are nested Distribution Lists inside Security Groups, they will not be synced and will not be honored by Graph connectors.
+The SharePoint on-prem connector supports existing Access Controlled List on given items. Indexed data appears in the search results and is visible to users who have permission to view it. Microsoft 365 experiences understand and honor Entra Id permissions. To support Access Controlled Lists on items, we require that Active Directory identities and Entra Identities are synced.
 
 ### Content
 
