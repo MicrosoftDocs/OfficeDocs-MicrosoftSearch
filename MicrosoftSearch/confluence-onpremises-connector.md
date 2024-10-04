@@ -16,36 +16,36 @@ search.appverid:
 description: "Set up the Confluence On-premises Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
 
-# Confluence On-premises Microsoft Graph connector
+# Confluence On-premises Microsoft Graph Connector
 
 The Confluence On-premises Microsoft Graph connector allows your organization to index Confluence server or data center content. After you configure the connector and index data from the Confluence site, end users can search for those contents in Microsoft Search and Microsoft 365 Copilot.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Confluence On-premises Microsoft Graph connector. It supplements the general instructions provided in Set up Microsoft Graph connectors in the Microsoft 365 admin center.
+This article is intended for Microsoft 365 administrators and those responsible for configuring, running, and monitoring the Confluence On-premises Microsoft Graph connector. It supplements the general instructions provided in Set up Microsoft Graph connectors in the Microsoft 365 admin center.
 Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only Confluence On-premises Microsoft Graph connector including information about troubleshooting and limitations.
 
 
 ## Benefits
-- Enable your end users to ask questions related to Wikis in your confluence in Copilot
+- **Enhanced Search Capabilities**: Users can ask natural language questions about Wiki content in Copilot, such as:
    - Summarize the architecture document </br>
-   - How to get access to a portal
-- Use Semantic search in Copilot to enable end users to make natural language queries and get accurate responses. </br>
-- Supports Confluence version above 8.0.
+   - How to get access to a portal </br>
+- **Semantic Search Support**: Users can perform natural language queries for accurate responses. </br>
+- **Compatibility**: Supports Confluence versions above 8.0.
   
 ## Limitations
-- The Confluence On-premises Microsoft Graph connector doesn't index blogs, attachment files, and comments.
-- Confluence On-prem indexes only current pages and not archived pages.
+- Does not index blogs, attachment files, or comments.
+- Only indexes current pages; archived pages are excluded.
 - CQL is not supported for Confluence on-premises.
 
 ## Prerequisites
-- **Install the GCA**: Ensure that the GCA is installed on a Windows machine within the same network as the data source, accessible via the Confluence URL. You can find more information [Microsoft Graph connector agent](https://learn.microsoft.com/en-us/microsoftsearch/graph-connector-agent)
-- **Install plugin**: Download and install the confluence on-prem plugin from Atlassian marketplace on your confluence setup. Get the plugin from [Microsoft Graph Connectors Confluence On-prem Plugin | Atlassian Marketplace](https://marketplace.atlassian.com/apps/1234846?tab=reviews&hosting=datacenter)
-- **Authentication**: Ensure that you have authentication credentials with right access. 
+1. **Install the GCA [Graph connector agent]**: Ensure that the GCA is installed on a Windows machine within the same network as the data source, accessible via the Confluence URL. You can find more information [Microsoft Graph connector agent](https://learn.microsoft.com/en-us/microsoftsearch/graph-connector-agent#installation)
+2. **Install plugin**: Download and install the confluence on-prem plugin from Atlassian marketplace on your confluence setup. Get the plugin from [Microsoft Graph Connectors Confluence On-prem Plugin | Atlassian Marketplace](https://marketplace.atlassian.com/apps/1234846?tab=reviews&hosting=datacenter)
+3. **Authentication**: Ensure that you have authentication credentials with right access. 
 
 ## Get Started
 
 ### 1. Display name
 
-A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
+A Display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ### 2. Confluence On-premises URL
 
@@ -59,9 +59,9 @@ To index your Confluence server or data center content, you must install and reg
 > GCA can be installed on a different Windows machine and need not be on the same machine as that of the On-premises server. The machine can help generate App ID and secret which can be used for the setup. You must ensure that the GCA machine is on during the crawling. 
 > You may find answers to common GCA realted questions in [FAQ section](https://learn.microsoft.com/en-us/microsoftsearch/frequently-asked-questions#microsoft-graph-connector-agent-gca-specific)
 
-### 4. Confluence On-prem Plugin - 
+### 4. Install the Confluence On-prem Plugin - 
 
-Before proceeding, ensure that Microsoft Graph Connectors Confluence On-prem Plugin is installed. You do not need to install the plugin for each confluence connector; if it is already installed in your Confluence instance, you can skip this step for subsequent Confluence on-prem connections.
+Verify that the Microsoft Graph Connectors Confluence On-prem Plugin is installed. You do not need to install the plugin for each confluence connector; if it is already installed in your Confluence instance, you can skip this step for subsequent Confluence on-prem connections.
 
    - Download the app from [Microsoft Graph Connectors Confluence On-prem Plugin | Atlassian Marketplace](https://marketplace.atlassian.com/apps/1234846?tab=overview&hosting=datacenter).
    - Log in to your confluence system
@@ -184,10 +184,9 @@ Here, you can add or remove available properties from your Confluence On-prem da
 
 **Preview Data**
 
-Use the preview results button to verify the sample values of the selected properties and query filter. 
+Use the preview results button to verify selected properties and filters.
 >[!NOTE]
-   >
-   > * The preview will only honour space level filtering data and not page filter
+   > Note that the preview only respects space-level filtering.
 
 ### Sync
 
