@@ -30,7 +30,7 @@ Interactions with data in Microsoft Graph are based on keyword matching, persona
 
 Semantic index enhances the features of Microsoft 365 that allow you to find relevant content based on keywords, personal preferences, and social connections. It does this by creating vectorized indices. A vector is a numerical representation of a word, image pixel, or other data point. The vector is arranged or mapped with close numbers placed in proximity to one another to represent similarity. Vectors are stored in multi-dimensional spaces where semantically similar data points are clustered together in the vector space, enabling Microsoft 365 to handle a broader set of search queries beyond “exact match."
 
-In practical terms, this means that Microsoft 365 services such as Copilot for Microsoft 365 can:
+In practical terms, this means that Microsoft 365 services such as Microsoft 365 Copilot can:
 
 - Understand relationships between different forms of words (for example, tech, technology, technologies; USA, U.S.A, United States, United States of America; dog, cat, pet).
 - Capture synonyms to expand the amount of searchable information, including the intent of sentences, snippets, documents, and meetings.
@@ -44,7 +44,7 @@ Semantic index provides for fast and accurate similarity search and retrieval of
 
 ## Features
 
-The following semantic index features do more than enhance search results; they work together to help you understand your data, find information more quickly, and improve your productivity. Users can interact with the semantic index initially through Microsoft Copilot for Microsoft 365 integration. We generate a semantic index for users with a paid Copilot for Microsoft 365 license. Here are the details of how each feature works.
+The following semantic index features do more than enhance search results; they work together to help you understand your data, find information more quickly, and improve your productivity. Users can interact with the semantic index initially through Microsoft 365 Copilot integration. We generate a semantic index for users with a paid Microsoft 365 Copilot license. Here are the details of how each feature works.
 
 ### Microsoft Copilot with Graph-grounded chat
 
@@ -56,17 +56,17 @@ Semantic index enhances Microsoft Copilot and search results in the [Microsoft
 
 Today, semantic index is created at the tenant level. It's an organization-wide index generated from text-based SharePoint Online files that are accessible by two or more people via site inheritance. However, it only surfaces the results to a user if the user already has access to the content controlled by role-based access control. Additionally, the SharePoint Online site must remain searchable. In time, we'll also generate user-level index content. This adds personalized index of a working set of data that is accessible for users performing everyday tasks. This includes any text-based content you make or interact with, such as emails, documents that mention you, or that you comment on or share.
 
-The following section explains how to enable each index, how the data flow in Copilot for Microsoft 365 uses the semantic index, what file types each index can handle, and how each index deals with updates.
+The following section explains how to enable each index, how the data flow in Microsoft 365 Copilot uses the semantic index, what file types each index can handle, and how each index deals with updates.
 
 ## Enablement
 
-Every Copilot for Microsoft 365 customer now has a tenant-level semantic index. The indexing process requires no administrative involvement.
+Every Microsoft 365 Copilot customer now has a tenant-level semantic index. The indexing process requires no administrative involvement.
 
 ## Data flows
 
-The semantic index interacts with the Microsoft Graph to provide users with access to information in the index. The following diagram shows how the flow of data works for a request using Copilot for Microsoft 365.
+The semantic index interacts with the Microsoft Graph to provide users with access to information in the index. The following diagram shows how the flow of data works for a request using Microsoft 365 Copilot.
 
-:::image type="content" source="media/copilot-architecture.png" alt-text="Graphic showing the relationship between Copilot for Microsoft 365, Microsoft 365 Apps, Microsoft Graph, and Large Language Model." lightbox="media/copilot-architecture.png":::
+:::image type="content" source="media/copilot-architecture.png" alt-text="Screenshot that shows the relationship between Microsoft 365 Copilot, Microsoft 365 Apps, Microsoft Graph, and Large Language Model." lightbox="media/copilot-architecture.png":::
 
 User prompts from Microsoft 365 apps are sent to Copilot (1), and Copilot accesses the Microsoft Graph and semantic index for processing (2). Copilot sends the modified prompt to the Large Language Model (3), receives the LLM response (4), and then accesses the Microsoft Graph and semantic index for post-processing (5). Copilot then sends the response and app command back to Microsoft 365 apps. All requests are encrypted by HTTPS and customer data remains encrypted at rest.
 
@@ -123,13 +123,13 @@ Both Item insights and People insights don't cover personalization features base
 
 ## Incorporating third party information
 
-Using Copilot Connectors, organizations can bring organizational data or content from external sources into Microsoft Graph, where it's then brought into semantic index. Microsoft indexes all your Graph connectors data while maintaining access controls for content. This expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem, and works best when connector content is text rich. The third-party data can be hosted on-premises or in the public or private clouds, and this information is consumed by the Microsoft Graph, which can be ingested into the semantic index to help provide your organization with all the context across Microsoft 365 and your organization’s third party content. Learn more about graph connector licensing requirements for Microsoft 365 Enterprise and Copilot for Microsoft 365 at [License requirements and pricing](licensing.md).
+Using Copilot Connectors, organizations can bring organizational data or content from external sources into Microsoft Graph, where it's then brought into semantic index. Microsoft indexes all your Graph connectors data while maintaining access controls for content. This expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem, and works best when connector content is text rich. The third-party data can be hosted on-premises or in the public or private clouds, and this information is consumed by the Microsoft Graph, which can be ingested into the semantic index to help provide your organization with all the context across Microsoft 365 and your organization’s third party content. Learn more about graph connector licensing requirements for Microsoft 365 Enterprise and Microsoft 365 Copilot at [License requirements and pricing](licensing.md).
 
 ## Privacy, compliance, and security
 
 The permissions model within your Microsoft 365 tenant can help ensure that data won't unintentionally leak between users, groups, and tenants. Semantic index presents only data that each individual can access using the same underlying controls for data access used in other Microsoft 365 services. Semantic index honors the user identity-based access boundary so that the grounding process only accesses content that the current user is authorized to access. For more information, see [Microsoft’s privacy policy and service documentation](https://privacy.microsoft.com/).
 
-Microsoft Copilot for Microsoft 365 is compliant with our existing privacy, security, and compliance commitments to Microsoft 365 commercial customers, including the General Data Protection Regulation (GDPR) and European Union (EU) Data Boundary. Prompts, responses, and data accessed through the semantic index aren't used to train foundation LLMs, including those used by Copilot for Microsoft 365. For more information, see [Data, Privacy, and Security for Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy).
+Microsoft 365 Copilot is compliant with our existing privacy, security, and compliance commitments to Microsoft 365 commercial customers, including the General Data Protection Regulation (GDPR) and European Union (EU) Data Boundary. Prompts, responses, and data accessed through the semantic index aren't used to train foundation LLMs, including those used by Microsoft 365 Copilot. For more information, see [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy).
 
 ## Storage and processing
 
@@ -161,14 +161,14 @@ Organizations have long been able to take action to reduce oversharing in Micros
 
 - **Limit access** – [Microsoft Purview Data Loss Prevention](/purview/dlp-learn-about-dlp) is available in Microsoft 365 E5 and could be used to retroactively and temporarily limit access to documents that have been reported as overshared. Organizations that you do not have Microsoft 365 E5 licenses can use the 90-day Microsoft Purview solutions trial to explore how additional Purview capabilities can help manage your data security and compliance needs.
 
-For customers interested in exploring how to deploy advanced information protection solutions, review the following article that explains how to [deploy an information protection solution with Microsoft Purview](/purview/information-protection-solution). For more information about how Microsoft Purview can help you strengthen your data security and compliance requirements for Copilot for Microsoft 365, see [Protect and manage Copilot for Microsoft 365 interactions with Microsoft Purview](/purview/ai-microsoft-purview).
+For customers interested in exploring how to deploy advanced information protection solutions, review the following article that explains how to [deploy an information protection solution with Microsoft Purview](/purview/information-protection-solution). For more information about how Microsoft Purview can help you strengthen your data security and compliance requirements for Microsoft 365 Copilot, see [Protect and manage Microsoft 365 Copilot interactions with Microsoft Purview](/purview/ai-microsoft-purview).
 
 ## Additional resources
 
-Microsoft 365, the Microsoft Graph, and the semantic index enable an unprecedented expressiveness for search, chat, and copilots leveraging Microsoft 365 data. This expressiveness helps surface the right grounding data to get the most out of your organizational data with Microsoft 365 and Copilot for Microsoft 365.
+Microsoft 365, the Microsoft Graph, and the semantic index enable an unprecedented expressiveness for search, chat, and copilots leveraging Microsoft 365 data. This expressiveness helps surface the right grounding data to get the most out of your organizational data with Microsoft 365 and Microsoft 365 Copilot.
 
-To learn more about Copilot for Microsoft 365, check out these resources:
+To learn more about Microsoft 365 Copilot, check out these resources:
 
-- [Get started with Copilot in Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-setup)
-- [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy)
-- [Microsoft Copilot for Microsoft 365 adoption site](https://adoption.microsoft.com/copilot/)
+- [Get started with Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-setup)
+- [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy)
+- [Microsoft 365 Copilot adoption site](https://adoption.microsoft.com/copilot/)
