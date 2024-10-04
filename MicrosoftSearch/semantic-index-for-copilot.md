@@ -66,7 +66,7 @@ Every Microsoft 365 Copilot customer now has a tenant-level semantic index. The 
 
 The semantic index interacts with the Microsoft Graph to provide users with access to information in the index. The following diagram shows how the flow of data works for a request using Microsoft 365 Copilot.
 
-:::image type="content" source="media/copilot-architecture.png" alt-text="Graphic showing the relationship between Microsoft 365 Copilot, Microsoft 365 Apps, Microsoft Graph, and Large Language Model." lightbox="media/copilot-architecture.png":::
+:::image type="content" source="media/copilot-architecture.png" alt-text="Screenshot that shows the relationship between Microsoft 365 Copilot, Microsoft 365 Apps, Microsoft Graph, and Large Language Model." lightbox="media/copilot-architecture.png":::
 
 User prompts from Microsoft 365 apps are sent to Copilot (1), and Copilot accesses the Microsoft Graph and semantic index for processing (2). Copilot sends the modified prompt to the Large Language Model (3), receives the LLM response (4), and then accesses the Microsoft Graph and semantic index for post-processing (5). Copilot then sends the response and app command back to Microsoft 365 apps. All requests are encrypted by HTTPS and customer data remains encrypted at rest.
 
