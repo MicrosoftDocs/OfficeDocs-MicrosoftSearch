@@ -127,7 +127,7 @@ Mandatory fields | Description | Recommended value
 | Application name     | A unique value that identifies the application that you're authorizing.    | Microsoft Search.|
 | Application website  | The URL of the application that requests access to your Azure DevOps instance during connector setup. (required).| For **Microsoft 365 Enterprise**: https://<span>gcs.office.</span>com/,</br> For **Microsoft 365 Government**: https://<span>gcsgcc.<span>office.com/|
 | Authorization callback URL| A required callback URL that the authorization server redirects to. | For **Microsoft 365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback,</br> For **Microsoft 365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback|
-| Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), code (read), entitlements (read), project and team (read), Microsoft Graph (read), member entitlement management (read), wiki (read).|
+| Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), code (read), entitlements (read), project and team (read), Graph (read), member entitlement management (read), wiki (read).|
 
 
 >[!IMPORTANT]
