@@ -174,7 +174,6 @@ Here, you can add or remove available properties from your Confluence On-prem da
 |UpdatedByName|lastModifiedBy|Retrieve|
 |UpdatedOn|lastModifiedDateTime|Query, Retrieve, Refine|
 |URL|url|Retrieve|
-</br>
 
 **Preview Data**
 
