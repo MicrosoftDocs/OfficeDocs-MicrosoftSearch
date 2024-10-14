@@ -157,6 +157,7 @@ In this step, you can specify the date range for indexing your documents. The pa
 **Manage Properties**
 
 Here, you can add or remove available properties from your Confluence On-prem data source. Assign a schema to the property (define whether a property is searchable, queryable, retrievable or refinable). Additionally you can change the semantic label and add an alias to the property. Default properties are as follows:
+
 |Source Property|Label|Schema|
 |----|----|----|
 |Author|authors|Query, Retrieve|
