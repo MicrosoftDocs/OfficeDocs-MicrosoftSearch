@@ -30,7 +30,7 @@ This article is intended for Microsoft 365 administrators and who are responsibl
 - **Compatibility**: Supports Confluence versions above 8.0.
 
 ## Prerequisites
-1. **Install the GCA [Graph connector agent]**: Ensure that the GCA is installed on a Windows machine within the same network as the data source, accessible via the Confluence URL. You can find more information [Microsoft Graph connector agent](https://learn.microsoft.com/en-us/microsoftsearch/graph-connector-agent)
+1. **Install the GCA [Graph connector agent]**: Ensure that the GCA is installed on a Windows machine within the same network as the data source, accessible via the Confluence URL. You can find more information [Microsoft Graph connector agent](./graph-connector-agent.md)
 2. **Install plugin**: Download and install the confluence on-prem plugin from Atlassian marketplace on your confluence setup. Get the plugin from [Microsoft Graph Connectors Confluence On-prem Plugin | Atlassian Marketplace](https://marketplace.atlassian.com/apps/1234846?tab=reviews&hosting=datacenter)
 3. **Authentication**: Ensure that you have authentication credentials with right access. 
 
@@ -38,21 +38,21 @@ This article is intended for Microsoft 365 administrators and who are responsibl
 
 ### 1. Display name
 
-A Display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
+A Display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](./custom-filters.md#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
-### 2. Confluence On-premises URL
+### 2. Confluence on-premises URL
 
 To connect to your Confluence On-premises data, you need your organization's Confluence instance URL. Your organization's Confluence instance URL typically looks like 'https://contoso.atlassian.net'.
 
 ### 3. Graph connector agent (GCA)
 
-To index your Confluence server or data center content, you must install and register the connector agent. See [Install the Microsoft Graph connector agent](https://learn.microsoft.com/en-us/microsoftsearch/graph-connector-agent) for details. You must be the administrator for your organization's Microsoft 365 tenant and the administrator for your organization's Confluence site.
+To index your Confluence server or data center content, you must install and register the connector agent. See [Install the Microsoft Graph connector agent](./graph-connector-agent.md) for details. You must be the administrator for your organization's Microsoft 365 tenant and the administrator for your organization's Confluence site.
 
 >[!NOTE]
 > GCA can be installed on a different Windows machine and need not be on the same machine as that of the On-premises server. The machine can help generate App ID and secret which can be used for the setup. You must ensure that the GCA machine is on during the crawling. 
-> You may find answers to common GCA realted questions in [FAQ section](https://learn.microsoft.com/en-us/microsoftsearch/frequently-asked-questions) 
+> You may find answers to common GCA realted questions in [FAQ section](./frequently-asked-questions.md) .
 
-### 4. Install the Confluence On-prem Plugin - 
+### 4. Install the Confluence on-premises plugin
 
 Verify that the Microsoft Graph Connectors Confluence On-prem Plugin is installed. You do not need to install the plugin for each confluence connector; if it's already installed in your Confluence instance, you can skip this step for subsequent Confluence on-prem connections.
 
@@ -68,18 +68,15 @@ Verify that the Microsoft Graph Connectors Confluence On-prem Plugin is installe
 >[!NOTE]
 >Plugin is supported for confluence version above 8.0.
 
-### 5. Authentication Type
+### 5. Authentication type
 
-To authenticate and sync content from Confluence On-prem, choose **one of three** supported methods:<br>
+To authenticate and synchronize content from Confluence On-prem, choose **one of three** supported methods:<br>
 
    **a. Basic authentication** <br>
    To authenticate to your instance, enter the username and password of Confluence account. <br>
-
-   **b. Oauth1.0a** <br>
-   Generate  a public/private key pair and create an application link in the Confluence On-premises site so that the connector agent can access the instance. To learn more, see [step 1 in Atlassian developer documentation](https://developer.atlassian.com/server/jira/platform/oauth/#step-1--configure-jira) on how to configure OAuth 1.0a. <br>
-   
-   **c. OAuth 2.0 (recommended)** <br> 
-   The following steps provide guidance on how to register the app [Configure an incoming link](https://confluence.atlassian.com/doc/configure-an-incoming-link-1115674733.html) 
+ 
+   **b. OAuth 2.0 (recommended)** <br> 
+   The following steps provide guidance on how to register the app [Configure an incoming link](https://confluence.atlassian.com/doc/configure-an-incoming-link-1115674733.html). 
 
   1. Go to Administration  > General configuration > Application links. 
   2. Select Create link
@@ -91,7 +88,7 @@ To authenticate and sync content from Confluence On-prem, choose **one of three*
 
 ### 6. Rollout to limited audience
 
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, click [here](/MicrosoftSearch/staged-rollout-for-graph-connectors).
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, click [here](./staged-rollout-for-graph-connectors.md).
 
 At this point, you are ready to create the connection for ServiceNow Knowledge. You can click on the "Create" button and the Microsoft Graph connector starts indexing page from your Confluence account.
 
@@ -107,16 +104,16 @@ For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl
 |Include/Exclude space|_All_|
 |Manage Properties|_To check default properties and their schema, click here_|
 
-|**Sync**|&nbsp;|
+|**Synchronization**|&nbsp;|
 |---|---|
 |Incremental Crawl|_Frequency: Every 15 mins_|
 |Full Crawl|_Frequency: Every Day_|
 
-If you want to edit any of these values, you need to choose the "Custom Setup" option.
+If you want to edit any of these values, you need to choose the `Custom Setup` option.
 
 ## Custom Setup
 
-Custom setup is for those admins who want to edit the default values for settings listed in the default table. Once you click on the ‘Custom Setup’ option, you see three more tabs – Users, Content, and Sync.
+Custom setup is for those admins who want to edit the default values for settings listed in the default table. Once you click on the `Custom Setup` option, you see three more tabs – Users, Content, and Sync.
 
 ### Users
 
@@ -181,16 +178,16 @@ Use the preview results button to verify selected properties and filters.
 >[!NOTE]
    > Note that the preview only respects space-level filtering.
 
-### Sync
+### Synchronization
 
-The refresh interval determines how often your data is synced between the data source and the Graph connector index. There are two types of refresh intervals – full crawl and incremental crawl. For more details, click [here](/MicrosoftSearch/configure-connector#step-8-refresh-settings).
+The refresh interval determines how often your data is synchronized between the data source and the Graph connector index. There are two types of refresh intervals – full crawl and incremental crawl. For more details, click [here](./configure-connector.md#step-8-refresh-settings).
 You can change the default values of refresh interval from here if you want to.
 
 ### Review and Test your connection
 
-- For testing, you can choose [publish to limited audience](./staged-rollout-for-graph-connectors.md#modify-or-stop-staged-rollout)   
-- Search and validate your indexed content and permissions using [Index browser](https://learn.microsoft.com/en-us/microsoftsearch/connectors-index-search)
-- Find answers to common questions in our [FAQ section](https://learn.microsoft.com/en-us/microsoftsearch/frequently-asked-questions)
+- For testing, you can choose [publish to limited audience](./staged-rollout-for-graph-connectors.md#modify-or-stop-staged-rollout).
+- Search and validate your indexed content and permissions using [Index browser](./connectors-index-search.md).
+- Find answers to common questions in our [FAQ section](https://learn.microsoft.com/en-us/microsoftsearch/frequently-asked-questions).
 
 For MS Search, if you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](./configure-connector.md#step-11-customize-the-search-results-page).
 
@@ -202,6 +199,5 @@ For MS Search, if you need to customize the search results page. To learn about 
 ## Troubleshooting
 After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 You can find troubleshooting steps for commonly seen issues [here](troubleshoot-confluence-onpremises-connector.md).
-
 
 If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
