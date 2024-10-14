@@ -187,7 +187,7 @@ You can change the default values of refresh interval from here if you want to.
 
 - For testing, you can choose [publish to limited audience](./staged-rollout-for-graph-connectors.md#modify-or-stop-staged-rollout).
 - Search and validate your indexed content and permissions using [Index browser](./connectors-index-search.md).
-- Find answers to common questions in our [FAQ section](https://learn.microsoft.com/en-us/microsoftsearch/frequently-asked-questions).
+- Find answers to common questions in our [FAQ section](./frequently-asked-questions.md).
 
 For MS Search, if you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](./configure-connector.md#step-11-customize-the-search-results-page).
 
