@@ -75,7 +75,7 @@ To authenticate and synchronize content from Confluence On-prem, choose **one of
    **a. Basic authentication** <br>
    To authenticate to your instance, enter the username and password of Confluence account. <br>
 
-   **b. Oauth1.0a** <br>
+   **b. OAuth1.0a** <br>
    Generate a public/private key pair and create an application link in the Confluence On-premises site so that the connector agent can access the instance. To learn more, see [step 1 in Atlassian developer documentation](https://developer.atlassian.com/server/jira/platform/oauth/#step-1--configure-jira) on how to configure OAuth 1.0a. <br>
  
    **c. OAuth 2.0 (recommended)** <br> 
