@@ -35,7 +35,7 @@ This article is intended for Microsoft 365 administrators and who are responsibl
 - CQL[Confluence Query Language] isn't supported for Confluence on-premises howevere we support a space and page level filter
 
 ## Prerequisites
-1. **Install the GCA [Graph connector agent]**: Ensure that the GCA is installed on a Windows machine within the same network as the data source, accessible via the Confluence URL. You can find more information [Microsoft Graph connector agent](https://learn.microsoft.com/en-us/microsoftsearch/graph-connector-agent#installation)
+1. **Install the GCA [Graph connector agent]**: Ensure that the GCA is installed on a Windows machine within the same network as the data source, accessible via the Confluence URL. You can find more information [Microsoft Graph connector agent](https://learn.microsoft.com/en-us/microsoftsearch/graph-connector-agent)
 2. **Install plugin**: Download and install the confluence on-prem plugin from Atlassian marketplace on your confluence setup. Get the plugin from [Microsoft Graph Connectors Confluence On-prem Plugin | Atlassian Marketplace](https://marketplace.atlassian.com/apps/1234846?tab=reviews&hosting=datacenter)
 3. **Authentication**: Ensure that you have authentication credentials with right access. 
 
@@ -55,7 +55,7 @@ To index your Confluence server or data center content, you must install and reg
 
 >[!NOTE]
 > GCA can be installed on a different Windows machine and need not be on the same machine as that of the On-premises server. The machine can help generate App ID and secret which can be used for the setup. You must ensure that the GCA machine is on during the crawling. 
-> You may find answers to common GCA realted questions in [FAQ section](https://learn.microsoft.com/en-us/microsoftsearch/frequently-asked-questions#microsoft-graph-connector-agent-gca-specific)
+> You may find answers to common GCA realted questions in [FAQ section](https://learn.microsoft.com/en-us/microsoftsearch/frequently-asked-questions) 
 
 ### 4. Install the Confluence On-prem Plugin - 
 
@@ -166,14 +166,14 @@ In this step, you can specify the date range for indexing your documents. The pa
 
 Here, you can add or remove available properties from your Confluence On-prem data source. Assign a schema to the property (define whether a property is searchable, queryable, retrievable or refinable). Additionally you can change the semantic label and add an alias to the property. Default properties are as follows:
 |Source Property|Label|Schema|
-|---|---|---|
+|----|----|----|
 |Author|authors|Query, Retrieve|
-|Content||Search|
+|Content| |Search|
 |CreatedByName|Created by|Search, Query, Retrieve|
 |CreatedOn|Created date time|Query, Retrieve|
-|Id||Query, Retrieve|
-|PageTree||Retrieve|
-|SpaceName||Search, Query, Retrieve|
+|Id| |Query, Retrieve|
+|PageTree| |Retrieve|
+|SpaceName| |Search, Query, Retrieve|
 |Title|title|Search, Retrieve|
 |UpdatedByName|lastModifiedBy|Retrieve|
 |UpdatedOn|lastModifiedDateTime|Query, Retrieve, Refine|
@@ -194,7 +194,7 @@ You can change the default values of refresh interval from here if you want to.
 ### Review and Test your connection
 
 - For testing, you can choose [publish to limited audience](./staged-rollout-for-graph-connectors.md#modify-or-stop-staged-rollout)   
-- Search and validate your indexed content and permissions using [Index browser](https://learn.microsoft.com/en-us/microsoftsearch/connectors-index-search) 
+- Search and validate your indexed content and permissions using [Index browser](https://learn.microsoft.com/en-us/microsoftsearch/connectors-index-search)
 - Find answers to common questions in our [FAQ section](https://learn.microsoft.com/en-us/microsoftsearch/frequently-asked-questions)
 
 For MS Search, if you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](./configure-connector.md#step-11-customize-the-search-results-page).
