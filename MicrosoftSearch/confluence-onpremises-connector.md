@@ -28,11 +28,6 @@ This article is intended for Microsoft 365 administrators and who are responsibl
    - How to get access to a portal </br>
 - **Semantic Search Support**: Users can perform natural language queries for accurate responses. </br>
 - **Compatibility**: Supports Confluence versions above 8.0.
-  
-## Limitations
-- Doesn't index blogs, attachment files, or comments.
-- Only indexes current pages; archived pages are excluded.
-- CQL[Confluence Query Language] isn't supported for Confluence on-premises howevere we support a space and page level filter
 
 ## Prerequisites
 1. **Install the GCA [Graph connector agent]**: Ensure that the GCA is installed on a Windows machine within the same network as the data source, accessible via the Confluence URL. You can find more information [Microsoft Graph connector agent](https://learn.microsoft.com/en-us/microsoftsearch/graph-connector-agent)
@@ -199,5 +194,14 @@ You can change the default values of refresh interval from here if you want to.
 
 For MS Search, if you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](./configure-connector.md#step-11-customize-the-search-results-page).
 
-If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
+## Limitations
+- Doesn't index blogs, attachment files, or comments.
+- Only indexes current pages; archived pages are excluded.
+- CQL[Confluence Query Language] isn't supported for Confluence on-premises howevere we support a space and page level filter
 
+## Troubleshooting
+After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+You can find troubleshooting steps for commonly seen issues [here](troubleshoot-confluence-onpremises-connector.md).
+
+
+If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
