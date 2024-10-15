@@ -15,8 +15,7 @@ search.appverid:
 description: "End user license agreement for Microsoft Graph connector plugin for Confluence on-prem"
 ---
 
-# MICROSOFT SOFTWARE LICENSE TERMS
-## MICROSOFT GRAPH CONNECTOR PLUGIN FOR CONFLUENCE ON-PREM
+# MICROSOFT SOFTWARE LICENSE TERMS FOR MICROSOFT GRAPH CONNECTOR PLUGIN FOR CONFLUENCE ON-PREMISES
 
 These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates). They apply to the software named above and any Microsoft services or software updates (except to the extent such services or updates are accompanied by new or additional terms, in which case those different terms apply prospectively and do not alter your or Microsoft’s rights relating to pre-updated software or services). IF YOU COMPLY WITH THESE LICENSE TERMS, YOU HAVE THE RIGHTS BELOW. BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS.
 
@@ -77,9 +76,9 @@ b. **Canada.** If you acquired this software in Canada, you may stop receiving u
 
 c. **Germany and Austria.**
 
-    i. Warranty. The properly licensed software will perform substantially as described in any Microsoft materials that accompany the software. However, Microsoft gives no contractual guarantee in relation to the licensed software.
+i. Warranty. The properly licensed software will perform substantially as described in any Microsoft materials that accompany the software. However, Microsoft gives no contractual guarantee in relation to the licensed software.
 
-    ii.	Limitation of Liability. In case of intentional conduct, gross negligence, claims based on the Product Liability Act, as well as, in case of death or personal or physical injury, Microsoft is liable according to the statutory law.
+ii.	Limitation of Liability. In case of intentional conduct, gross negligence, claims based on the Product Liability Act, as well as, in case of death or personal or physical injury, Microsoft is liable according to the statutory law.
 
     Subject to the foregoing clause ii., Microsoft will only be liable for slight negligence if Microsoft is in breach of such material contractual obligations, the fulfillment of which facilitate the due performance of this agreement, the breach of which would endanger the purpose of this agreement and the compliance with which a party may constantly trust in (so-called "cardinal obligations"). In other cases of slight negligence, Microsoft will not be liable for slight negligence.
 
