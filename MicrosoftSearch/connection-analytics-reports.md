@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: mssearch
 audience: Admin
 ms.audience: Admin
-ms.date: 07/07/2022 
+ms.date: 10/15/2024 
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
@@ -20,22 +20,30 @@ description: "Review Microsoft Search usage connection analytics report."
 
 # Microsoft Search Usage Report – Connection analytics
 
-In the [Microsoft Search Usage Report](usage-reports.md), the **Connection analytics** section allows you to analyze queries with search results from your connections.
+In the [Microsoft Search Usage Report](usage-reports.md), the **Connection analytics** section provides an overview of graph connector usage in your organization. It highlights metrics about how often users search for third party content and engage with it.
 
 :::image type="content" source="media/usage-reports/connection-analytics.png" alt-text="A report dashboard that shows graphs and tables of search usage for connection analytics." lightbox="media/usage-reports/connection-analytics.png":::
 
-The data above the chart shows changes over the selected time period for the following metrics: 
+The data above the chart shows changes over the selected time period for the following metrics:
 
 | Metric | Description |
 |:-----|:-----|
-|Queries with connection results|Number of queries that included one or more connection results.|
-|Click-through queries  |Number of queries where the user has clicked on one or more of the connection results.|
-|Total indexed items|Total number of indexed items across all connections.|
-|Active connections|The number of connections that are currently active.|
+|Active connection |The number of connections that are currently active. |
+|Total indexed items |Total number of indexed items across all connections. |
+|Queries with connection results|Number of queries that included one or more connection results. |
+|Click-through queries  |Number of queries where the user has clicked on one or more of the connection results. |
+|Unique users |Number of users who query at least once for graph connectors.|
+|Return rate |Unique users who have searched for connector at least once or more in the 7-day period.|
 
-The **Queries and click-throughs over time** graph shows trends over the selected time period showing the number of queries with connection results and the number of queries where the user clicked on one or more of the connection results.
+## Queries and queries with clicks
 
-You can click the **Download report** link to download the report as an Excel file and see more details.  
+The **Queries and click-throughs over time** graph shows the number of queries with connection results and how many of those queries received a click. See the following definitions:
+
+- **Queries** - The number of queries where connector results.
+- **Queries with clicks** - How many of the queries with connector results received a click.  
+- **Total impressions** – Total number of times connector results were shown to users for any query.
+
+You can select the **Download report** link to download the report as an Excel file and see more details.  
 
 You can view the **Connection Analytics details** page by selecting the **Connection analytics tab** or selecting the **View connection analytics** button at the bottom of the Connection analytics section of the Usage analytics main page.  
 
@@ -45,7 +53,7 @@ The Connection analytics details page allows you to analyze queries with search 
 
 :::image type="content" source="media/usage-reports/connection-analytics-details.png" alt-text="A report dashboard that shows graphs and tables of search usage for connection analytics details reports." lightbox="media/usage-reports/connection-analytics-details.png":::
 
-In the **Filters** menu, use one or more of the following to filter the data in the reports: 
+In the **Filters** menu, use one or more of the following to filter the data in the reports:
 
 | Filter | Description |
 |:-----|:-----|
