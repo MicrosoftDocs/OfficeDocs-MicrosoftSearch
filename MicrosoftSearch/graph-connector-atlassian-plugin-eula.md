@@ -1,6 +1,6 @@
 ---
 ms.date: 10/15/2024
-title: "MICROSOFT SOFTWARE LICENSE TERMS: MICROSOFT GRAPH CONNECTOR PLUGIN FOR CONFLUENCE ON-PREM"
+title: "MICROSOFT SOFTWARE LICENSE TERMS: MICROSOFT GRAPH CONNECTOR PLUGIN FOR JIRA AND CONFLUENCE ON-PREMISES"
 ms.author: vivg
 author: vivg
 manager: harshkum
@@ -12,10 +12,12 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "End user license agreement for Microsoft Graph connector plugin for Confluence on-prem"
+description: "End user license agreement for Microsoft Graph connector plugin for Jira and Confluence on-premises"
 ---
 
-# MICROSOFT SOFTWARE LICENSE TERMS FOR MICROSOFT GRAPH CONNECTOR PLUGIN FOR CONFLUENCE ON-PREMISES
+# MICROSOFT SOFTWARE LICENSE TERMS
+## MICROSOFT GRAPH CONNECTOR PLUGIN FOR CONFLUENCE ON-PREMISES
+## MICROSOFT GRAPH CONNECTOR PLUGIN FOR JIRA DATA CENTER
 
 These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates). They apply to the software named above and any Microsoft services or software updates (except to the extent such services or updates are accompanied by new or additional terms, in which case those different terms apply prospectively and do not alter your or Microsoft’s rights relating to pre-updated software or services). IF YOU COMPLY WITH THESE LICENSE TERMS, YOU HAVE THE RIGHTS BELOW. BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS.
 
