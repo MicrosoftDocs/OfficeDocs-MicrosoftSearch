@@ -22,7 +22,7 @@ description: "Review Microsoft Search usage connection analytics report."
 
 In the [Microsoft Search Usage Report](usage-reports.md), the **Connection analytics** section provides an overview of graph connector usage in your organization. It highlights metrics about how often users search for third party content and engage with it.
 
-:::image type="content" source="media/usage-reports/connection-analytics.png" alt-text="A report dashboard that shows graphs and tables of search usage for connection analytics." lightbox="media/usage-reports/connection-analytics.png":::
+:::image type="content" source="media/connection-key-metrics.png" alt-text="A report dashboard that shows graphs and tables of search usage for connection analytics." lightbox="media/connection-key-metrics.png":::
 
 The data above the chart shows changes over the selected time period for the following metrics:
 
@@ -37,11 +37,10 @@ The data above the chart shows changes over the selected time period for the fol
 
 ## Queries and queries with clicks
 
-The **Queries and click-throughs over time** graph shows the number of queries with connection results and how many of those queries received a click. See the following definitions:
+The graph below shows the number of queries with connection results and how many of those queries received a click see the definitions below:
 
-- **Queries** - The number of queries where connector results.
-- **Queries with clicks** - How many of the queries with connector results received a click.  
-- **Total impressions** – Total number of times connector results were shown to users for any query.
+- **Queries** The number of queries where connector results.
+- **Queries with clicks** How many of the queries with connector results received a click.  
 
 You can select the **Download report** link to download the report as an Excel file and see more details.  
 
@@ -51,7 +50,7 @@ You can view the **Connection Analytics details** page by selecting the **Co
 
 The Connection analytics details page allows you to analyze queries with search results from your connections.
 
-:::image type="content" source="media/usage-reports/connection-analytics-details.png" alt-text="A report dashboard that shows graphs and tables of search usage for connection analytics details reports." lightbox="media/usage-reports/connection-analytics-details.png":::
+:::image type="content" source="media/connection-summary.png" alt-text="A report dashboard that shows graphs and tables of search usage for connection analytics details reports." lightbox="media/connection-summary.png":::
 
 In the **Filters** menu, use one or more of the following to filter the data in the reports:
 
@@ -63,33 +62,38 @@ In the **Filters** menu, use one or more of the following to filter the data in 
 |Occupation    |The occupation of the user performing the query based on their **title** attribute in Microsoft Entra ID.  |
 |Department or division    |The department or division of the user performing the query, based on the **department** attribute of the second top-level user in the management chain of the user performing the search in Microsoft Entra ID. |
 
-The Connection analytics details page contains the following three reports:
+The Connection analytics details page contains the following reports:
 
-- Queries and click-throughs by connection
-- Total indexed items by connection
-- Connections
+- Unique users and weekly returning users  
+- Queries and queries with clicks over time
+- Connection specific usage  
+- Top 10 keywords
 
-### Queries and click-throughs by connection
+### Unique users and weekly returning users
 
-This report shows a comparison of the number of queries with connection results and the number of queries that received one or more clicks for up to six of the most frequently used data connections.
+The chart below displays two key metrics: the number of unique users who queried for the connector at least once in the past 30 days and the return rate for those users over the last 7 days. This data can help you assess user engagement and retention patterns during this recent period.
 
-:::image type="content" source="media/usage-reports/queries-clicks-by-connection.png" alt-text="A bar chart graph that shows queries and click through data by connection type.":::
+:::image type="content" source="media/connection-unique-chart.png" alt-text="Screenshot showing the chart for unique users and returning users." lightbox="media/connection-summary.png":::
 
-### Total indexed items by connection
+### Connection specific usage
 
-This report shows a comparison of total indexed items used by each of the data connections.  
+This report shows the details (Connection name, total items indexed, total impressions, unique users and click through rate) for all the connections that have been created. It shows the number of items indexed and how many times users are seeing that connector content. It also tells the number of unique users, which indicates whether your audience is expanding over time, and if the content is even useful to them by click-through rate.
 
-:::image type="content" source="media/usage-reports/index-by-connection.png" alt-text="A bar chart graph that shows indexed items by data connection.":::
+:::image type="content" source="media/connection-usage-chart.png" alt-text="Screenshot showing a table for the connection specific usage details." lightbox="media/connection-usage-chart.png":::
 
-### Connections
+### Top 10 keywords
 
-This report shows the details (connection type, queries with connection results, click through queries, and indexed items) for all the connections that have been created. It analyzes queries with search results from the connections, which helps to identify which connections are valuable to the organization. These critical metrics are useful to adopt graph connectors, identify potential areas for tuning, and justify the investments and connection quota.
+This report shows the details of top keywords which was searched for the most and corresponding queries for the keywords. It also shows from where these results are coming from.
 
-:::image type="content" source="media/usage-reports/connections.png" alt-text="A table that shows details about your connections." lightbox="media/usage-reports/connections.png":::
+- **Total queries** Indicates the number of queries where the mentioned keyword was used.  
+- **Total impressions** Indicates the number of times users where shown results from connector.
+- **Connector** Refers to the connectors where we got this information from.
+
+:::image type="content" source="media/connection-top-10.png" alt-text="Screenshot showing the table for top 10 keywords details." lightbox="media/connection-top-10.png":::
 
 ## Download reports
 
-Each report and table have a download option that allows you to download the background data for the report that you see on the screen in an Excel format. Where the displayed report is limited to the top five to ten rows, the downloaded report will have up to 2000 top records.  
+Each report and table have a download option that allows you to download the background data for the report that you see on the screen in an Excel format. Where the displayed report is limited to the top five to ten rows, the downloaded report will have up to 2000 top records.
 
 Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 28 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month.
 
@@ -99,12 +103,12 @@ By default, users with global administrator, search administrator, and search ed
 
 Only global administrators can configure this setting.
 
-To configure this setting: 
+To configure this setting:
 
 1. In the Microsoft 365 admin center, select **Settings**, then select **Org Settings**.
-2. On the Org Setting page, select **Search & intelligence usage analytics**. 
+2. On the Org Setting page, select **Search & intelligence usage analytics**.
 3. On the Search & intelligence usage analytics page, uncheck **Allow usage reports to be filtered by country, occupation, department, or division**.
-4. Select **Save**. 
+4. Select **Save**.
 
 ## Related Topics
 
