@@ -39,7 +39,7 @@ The data above the chart shows changes over the selected time period for the fol
 
 The graph below shows the number of queries with connection results and how many of those queries received a click see the definitions below:
 
-- **Queries** The number of queries where connector results.
+- **Queries** The number of queries where a connector results.
 - **Queries with clicks** How many of the queries with connector results received a click.  
 
 You can select the **Download report** link to download the report as an Excel file and see more details.  
@@ -93,13 +93,13 @@ This report shows the details of top keywords which was searched for the most an
 
 ## Download reports
 
-Each report and table have a download option that allows you to download the background data for the report that you see on the screen in an Excel format. Where the displayed report is limited to the top five to ten rows, the downloaded report will have up to 2000 top records.
+Each report and table have a download option that allows you to download the background data for the report that you see on the screen in an Excel format. Where the displayed report is limited to the top five to ten rows, the downloaded report has up to 2000 top records.
 
-Downloading a report will allow you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 28 days, the spreadsheet would have an individual tab for each day. The past 12 months download will have a tab for each month.
+Downloading a report allows you to see reports from a broader range of time. The report is downloaded as an Excel spreadsheet based on the selected date filter. If you chose the past 28 days, the spreadsheet would have an individual tab for each day. The past 12 months download has a tab for each month.
 
 ## Prevent filtering by country, occupation, department, or division
 
-By default, users with global administrator, search administrator, and search editor roles can filter search data by country, occupation, or department/division. If you do not want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators will not be able to filter the **Connection analytics details** reports by these filters.  
+By default, users with global administrator, search administrator, and search editor roles can filter search data by country, occupation, or department/division. If you don't want administrators to filter your report data using these dimensions, you can go into your organizational settings in the Microsoft 365 admin center and configure this setting.  When this setting is unchecked, administrators won't be able to filter the **Connection analytics details** reports by these filters.  
 
 Only global administrators can configure this setting.
 
@@ -110,7 +110,7 @@ To configure this setting:
 3. On the Search & intelligence usage analytics page, uncheck **Allow usage reports to be filtered by country, occupation, department, or division**.
 4. Select **Save**.
 
-## Related Topics
+## Related articles
 
 [Microsoft Search Usage Report](usage-reports.md)</br>
 [Microsoft Search Usage Report - Queries](queries-usage-reports.md)</br>
