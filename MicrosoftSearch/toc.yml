@@ -105,10 +105,18 @@ items:
             href: troubleshoot-confluence-cloud-connector.md
         - name: Confluence On-premises (preview)
           items:
-          - name: Setup
-            href: confluence-onpremises-connector.md
-          - name: Troubleshooting
-            href: troubleshoot-confluence-onpremises-connector.md
+            - name: Setup
+              href: confluence-onpremises-connector.md
+            - name: Troubleshooting
+              href: troubleshoot-confluence-onpremises-connector.md
+            - name: License agreement for Microsoft Graph connector plugin for Confluence
+              href: graph-connector-atlassian-plugin-eula.md
+        - name: Jira Cloud
+          items:
+            - name: Setup
+              href: jira-connector.md
+            - name: Troubleshooting
+              href: troubleshoot-jira-cloud-connector.md
         - name: CSV
           items:
           - name: Setup
@@ -137,12 +145,6 @@ items:
             href: mediawiki-connector.md
           - name: Troubleshooting
             href: troubleshoot-media-wiki-connector.md
-        - name: Jira Cloud
-          items:
-          - name: Setup
-            href: jira-connector.md
-          - name: Troubleshooting
-            href: troubleshoot-jira-cloud-connector.md            
         - name: MediaWiki
           items:
           - name: Setup

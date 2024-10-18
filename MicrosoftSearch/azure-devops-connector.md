@@ -80,7 +80,7 @@ The Azure DevOps Graph connector only indexes content from an ADO organization c
     a. Identity (read) <br>
     b. Work Items (read) <br>
     c. Variable Groups (read) <br>
-    d. Project and team (read) <br>
+    d. Project and Team (read) <br>
     e. Graph (read) <br>
     f. Analytics (read) <br>
 8. Select **Grant admin consent for [TenantName]** and confirm by selecting **Yes**.
@@ -120,7 +120,7 @@ Mandatory Fields | Description | Recommended value
 | Application name     | A unique value that identifies the application that you're authorizing.    | Microsoft Search     |
 | Application website  | The URL of the application that requests access to your Azure DevOps instance during connector setup. (Required).  | For **M365 Enterprise**: https://<span>gcs.office.</span>com/,</br> For **M365 Government**: https://<span>gcsgcc.<span>office.com/
 | Authorization callback URL        | A required callback URL that the authorization server redirects to. | For **M365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback,</br> For **M365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback |
-| Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), work items (read), variable groups (read), project and team (read), Microsoft  (read), analytics (read)|
+| Authorized scopes | The scope of access for the application | Select the following scopes: Identity (read), Work Items (read), Variable Groups (read), Project and Team (read), Graph (read), Analytics (read)|
 
 >[!IMPORTANT]
 >The authorized scopes that you select for the app should match the scopes exactly as listed above. If you omit one of the authorized scopes in the list or add another scope, the authorization will fail.
