@@ -23,23 +23,6 @@ description: "Learn how to configure your Microsoft Graph connector for Microsof
 
 This article shows the basic process required to set up Microsoft Graph connectors in the [Microsoft 365 admin center](https://admin.microsoft.com). The basic process includes the following steps:
 
-1. [Add a Microsoft Graph connector in the Microsoft 365 admin center](#step-1-add-a-microsoft-graph-connector-in-the-microsoft-365-admin-center)
-2. [Name the connection](#step-2-name-the-connection)
-3. [Configure the connection settings](#step-3-configure-the-connection-settings)
-4. [Select properties](#step-4-select-properties)
-5. [Manage search permissions](#step-5-manage-search-permissions)
-6. [Assign property labels](#step-6-assign-property-labels)
-7. [Manage schema](#step-7-manage-schema)
-8. [Refresh settings](#step-8-refresh-settings)
-9. [Review connection](#step-9-review-connection)
-10. [Manage connection results](#step-10-manage-connection-results)
-11. [Customize the search results page](#step-11-customize-the-search-results-page)
-
-This article also includes the following information:
-
-* [Troubleshooting](#troubleshooting)
-* [Limitations](#limitations)
-
 > [!NOTE]
 > The setup process is similar for all the Microsoft Graph connectors but is not exactly the same. In addition to reading this article, be sure to read the connector-specific information for your data source.
 
