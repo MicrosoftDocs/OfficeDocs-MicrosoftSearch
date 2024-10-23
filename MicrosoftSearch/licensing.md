@@ -13,7 +13,7 @@ description: "Index quota for Microsoft Graph connectors."
 Any valid Microsoft 365 Copilot, Microsoft 365, or Office 365 license allows you to view data from connectors in your Microsoft 365 Copilot and Microsoft Search results.
 
 >[!IMPORTANT]
->All Microsoft connectors are provided at no additional cost. Microsoft offers an index quota limit of 50 million items per tenant, included at no extra charge. For more information, see this [public announcement](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/bg-p/Microsoft365CopilotBlog).
+>All connectors by Microsoft are free. Microsoft provides an index quota limit of 50 million items per tenant without extra cost. For more information, see this [public announcement](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/bg-p/Microsoft365CopilotBlog).
 
 ## What represents items in an index quota?
 An item represents one unit of index quota. Each entity (or record) from the source system that is added to Microsoft Graph is considered an item. In Microsoft Graph, each item appears as a unique citation in Microsoft 365 Copilot responses and as a distinct search result in Microsoft Search. 
@@ -32,23 +32,21 @@ All eligible Microsoft 365 enterprise customers with one of the following licens
 
 |License name|
 |:---|
-|Microsoft 365 Copilot|
 |Microsoft 365 Business Basic|
-|Microsoft 365 E5 or Office 365 E5|
-|Microsoft 365 Business Standard|
-|Office 365 E1|
 |Microsoft 365 Business Premium|
-|Office 365 E3|
-|Office 365 E5
+|Microsoft 365 Business Standard|
+|Microsoft 365 A3|
+|Microsoft 365 A5|
 |Microsoft 365 E3|
 |Microsoft 365 E5|
 |Microsoft 365 F1|
 |Microsoft 365 F3|
 |Office 365 A3|
-|Office 365 F3|
 |Office 365 A5|
-|Microsoft 365 A3|
-|Microsoft 365 A5|  
+|Office 365 E1|
+|Office 365 E3|
+|Office 365 E5|
+|Office 365 F3|
 
 > [!NOTE]
 >Microsoft Graph connectors support up to 50 million items of total index quota at no additional cost. By default, the item limit per connection is 5 million items. If you require a higher item count per connection or wish to increase your overall index quota, please contact your Microsoft account manager or complete this [form](https://aka.ms/GraphConnectorsHigherCapacity).
