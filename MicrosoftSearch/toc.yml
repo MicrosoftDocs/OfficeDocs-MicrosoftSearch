@@ -77,6 +77,8 @@ items:
           items:
           - name: Setup
             href: azure-data-lake-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-azure-data-lake-connector.md
         - name: Azure DevOps Work Items
           items:
           - name: Setup
@@ -103,14 +105,24 @@ items:
             href: troubleshoot-confluence-cloud-connector.md
         - name: Confluence On-premises (preview)
           items:
-          - name: Setup
-            href: confluence-onpremises-connector.md
-          - name: Troubleshooting
-            href: troubleshoot-confluence-onpremises-connector.md
+            - name: Setup
+              href: confluence-onpremises-connector.md
+            - name: Troubleshooting
+              href: troubleshoot-confluence-onpremises-connector.md
+            - name: License agreement for Microsoft Graph connector plugin for Confluence
+              href: graph-connector-atlassian-plugin-eula.md
+        - name: Jira Cloud
+          items:
+            - name: Setup
+              href: jira-connector.md
+            - name: Troubleshooting
+              href: troubleshoot-jira-cloud-connector.md
         - name: CSV
           items:
           - name: Setup
             href: csv-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-csv-connector.md
         - name: Enterprise websites
           items:
           - name: Setup
@@ -121,12 +133,18 @@ items:
           items:
           - name: Setup
             href: fileshare-connector.md
-        - name: Jira Cloud
+          - name: Troubleshooting
+            href: troubleshoot-file-share-connector.md
+        - name: Google Drive
           items:
           - name: Setup
-            href: jira-connector.md
+            href: Google-Drive-connector.md
+        - name: MediaWiki
+          items:
+          - name: Setup
+            href: mediawiki-connector.md
           - name: Troubleshooting
-            href: troubleshoot-jira-cloud-connector.md            
+            href: troubleshoot-media-wiki-connector.md
         - name: MediaWiki
           items:
           - name: Setup
@@ -145,6 +163,8 @@ items:
           items:
           - name: Setup
             href: salesforce-connector.md
+          - name: Troubleshooting
+            href: troubleshoot-salesforce-connector.md
         - name: ServiceNow Catalog
           items:
           - name: Setup
@@ -191,6 +211,8 @@ items:
         href: connectors-viva-topics-item-delete-notification.md
     - name: Index quota
       href: licensing.md
+    - name: Frequently asked questions
+      href: frequently-asked-questions.md
     - name: Terms of use
       href: terms-of-use.md
   - name: Federated Search connectors
